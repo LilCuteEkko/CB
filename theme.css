@@ -167,3 +167,156 @@ body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;
 .chip-label{font-family:'Source Serif 4',serif;font-size:1.15rem;font-weight:600;color:var(--gold);padding:20px 20px 3px;border-top:1px solid var(--border);margin-top:6px}
 .chip-label:first-child{border-top:none;margin-top:0}
 @media(max-width:768px){.site-nav{padding:0 10px;height:44px}.site-nav .brand-text{display:none}.hero{padding:28px 14px 20px}.hero h1{font-size:1.5rem}.container{padding:20px 14px}.chroma-line{top:44px}.ma-header{padding:10px 12px}.ma-body{padding:10px 12px}.ma-tags{display:none}}
+
+/* ===== DROPDOWN MEGA-NAV ===== */
+.nav-cat{position:relative;padding:0 1px}
+.nav-cat>button{background:none;border:none;color:var(--text3);font-family:'Manrope',sans-serif;font-size:12.5px;font-weight:600;padding:5px 9px;border-radius:6px;cursor:pointer;white-space:nowrap;transition:all .2s;letter-spacing:.01em;display:flex;align-items:center;gap:3px}
+.nav-cat>button:hover{color:var(--text);background:var(--bg3)}
+.nav-cat>button .nav-chev{font-size:8px;transition:transform .2s;opacity:.5}
+.nav-cat:hover>button .nav-chev{transform:rotate(180deg);opacity:1}
+.nav-cat.has-active>button{color:var(--accent);background:var(--soft)}
+.nav-drop{display:none;position:absolute;top:100%;left:0;min-width:200px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:6px;box-shadow:0 8px 24px rgba(0,0,0,.1);z-index:110;margin-top:4px}
+.nav-cat:hover .nav-drop{display:block;animation:navDrop .2s ease}
+@keyframes navDrop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.nav-drop a{display:block;padding:6px 10px;border-radius:6px;text-decoration:none;color:var(--text2);font-size:12px;font-weight:500;transition:all .15s;white-space:nowrap}
+.nav-drop a:hover{background:var(--soft);color:var(--accent)}
+.nav-drop a.active{color:var(--accent);background:var(--soft);font-weight:700}
+.nav-drop-label{font-size:9px;font-family:'IBM Plex Mono',monospace;color:var(--text3);text-transform:uppercase;letter-spacing:1px;padding:8px 10px 3px;font-weight:600}
+
+/* ===== ENHANCED DESIGN v4 ===== */
+
+/* SCROLL-DRIVEN HUE SHIFT — background subtly shifts color as you scroll */
+body{transition:background .45s ease,color .35s ease,filter .8s ease}
+
+/* HERO ENHANCEMENTS */
+.hero{position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-30%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(var(--ar),.06) 0%,transparent 70%);pointer-events:none;animation:heroOrb 20s ease-in-out infinite alternate}
+.hero::after{content:'';position:absolute;bottom:-40%;left:-20%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(var(--ar),.04) 0%,transparent 70%);pointer-events:none;animation:heroOrb 15s ease-in-out infinite alternate-reverse}
+@keyframes heroOrb{0%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-20px) scale(1.1)}100%{transform:translate(-20px,10px) scale(.95)}}
+
+/* ENHANCED SECTION TITLES — gradient underline */
+.section-title{position:relative;display:inline-block;padding-bottom:6px}
+.section-title::after{content:'';position:absolute;bottom:0;left:0;width:48px;height:2.5px;background:linear-gradient(90deg,var(--chroma-1),var(--chroma-2));border-radius:2px;transition:width .4s ease}
+.container:hover .section-title::after{width:96px}
+
+/* ENHANCED CHIP NAV (TABS) — pill style with glow */
+.chip-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:6px 20px;display:flex;gap:4px;overflow-x:auto;transition:background .45s,border-color .45s}
+.chip-nav button{background:var(--bg3);border:1px solid transparent;color:var(--text3);font-family:'Manrope',sans-serif;font-size:13px;font-weight:600;padding:7px 14px;cursor:pointer;border-radius:20px;white-space:nowrap;transition:all .25s cubic-bezier(.4,0,.2,1);letter-spacing:.01em}
+.chip-nav button:hover{background:var(--bg4);color:var(--text);border-color:var(--border);transform:translateY(-1px)}
+.chip-nav button.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 2px 12px rgba(var(--ar),.25)}
+
+/* ENHANCED ACCORDION — animated gradient border on hover */
+.ma-item{border:1px solid var(--border);border-radius:14px;margin-bottom:10px;overflow:hidden;transition:all .3s ease;position:relative}
+.ma-item::before{content:'';position:absolute;inset:-1px;border-radius:14px;background:linear-gradient(135deg,var(--chroma-1),var(--chroma-2),var(--chroma-3));opacity:0;transition:opacity .4s ease;z-index:-1;padding:1px}
+.ma-item:hover::before{opacity:.4}
+.ma-item:hover{border-color:transparent;box-shadow:0 4px 20px rgba(var(--ar),.08)}
+.ma-header{background:var(--bg3);padding:14px 18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .25s;gap:14px}
+.ma-header:hover{background:var(--bg4)}
+.ma-header h4{font-family:'Manrope',sans-serif;font-size:15px;font-weight:700;color:var(--text);letter-spacing:-.01em;flex:1}
+.ma-body{display:none;padding:20px 18px;background:var(--bg2);border-top:1px solid var(--border)}
+.ma-body.open{display:block;animation:revealBody .4s cubic-bezier(.4,0,.2,1)}
+
+/* ENHANCED INFO STRIPS — glass morphism + animated border */
+.bl-strip{background:var(--soft);border:1px solid var(--mid);border-left:3.5px solid var(--accent);border-radius:12px;padding:16px 20px;margin:10px 0;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
+.bl-strip::after{content:'';position:absolute;top:0;right:0;width:100px;height:100%;background:linear-gradient(90deg,transparent,rgba(var(--ar),.03));pointer-events:none}
+.bl-strip:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(var(--ar),.08);border-left-width:5px}
+.bl-strip .bl-label{font-size:10.5px;font-family:'IBM Plex Mono',monospace;color:var(--accent);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:5px;font-weight:600}
+.bl-strip p,.bl-strip ul,.bl-strip ol{font-size:14.5px;color:var(--text);line-height:1.78}
+
+/* ENHANCED DATA TABLES — zebra + glow row */
+.data-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin:10px 0;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+.data-table th{background:var(--bg3);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.7px;padding:10px 14px;text-align:left;border-bottom:2px solid var(--border);font-weight:600}
+.data-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;transition:all .2s}
+.data-table tbody tr:nth-child(even) td{background:rgba(var(--ar),.02)}
+.data-table tbody tr:hover td{background:var(--soft);color:var(--text)}
+.data-table td strong{color:var(--text)}
+
+/* ENHANCED REVIEW CARDS — 3D lift + shine effect */
+.rc2-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:14px 0}
+.rc2{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:22px;cursor:pointer;position:relative;transition:all .35s cubic-bezier(.4,0,.2,1);overflow:hidden}
+.rc2::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(var(--ar),.06) 0%,transparent 50%);opacity:0;transition:opacity .4s;pointer-events:none}
+.rc2:hover{box-shadow:0 12px 40px rgba(var(--ar),.1);transform:translateY(-4px);border-color:var(--accent)}
+.rc2:hover::before{opacity:1}
+.rc2 .rc2-q{font-size:14.5px;font-weight:600;color:var(--text);line-height:1.6;padding-right:40px}
+.rc2 .rc2-flip{position:absolute;top:14px;right:14px;font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--accent);opacity:.4;transition:all .25s;background:var(--soft);padding:2px 8px;border-radius:10px}
+.rc2:hover .rc2-flip{opacity:1;transform:scale(1.1)}
+.rc2 .rc2-a{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:14px;color:var(--text2);line-height:1.7}
+.rc2 .rc2-a.open{display:block;animation:revealBody .35s ease}
+
+/* ENHANCED BADGES — pill glow on hover */
+.badge{background:var(--soft);border:1px solid var(--mid);color:var(--accent);font-size:11px;font-family:'IBM Plex Mono',monospace;padding:3px 11px;border-radius:20px;font-weight:500;transition:all .3s cubic-bezier(.4,0,.2,1)}
+.badge:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(var(--ar),.15);background:var(--mid)}
+
+/* ENHANCED TAGS — micro hover effect */
+.ma-tag{font-size:10px;font-family:'IBM Plex Mono',monospace;padding:2px 9px;border-radius:12px;font-weight:500;background:var(--soft);color:var(--accent);border:1px solid var(--mid);transition:all .25s}
+.ma-tag:hover{transform:scale(1.08);box-shadow:0 2px 8px rgba(var(--ar),.1)}
+
+/* SMOOTH PAGE TRANSITIONS */
+.tab-panel{display:none;animation:none}
+.tab-panel.active{display:block;animation:tabEnter .4s cubic-bezier(.4,0,.2,1)}
+@keyframes tabEnter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* CHROMA LINE ENHANCEMENT — thicker with glow */
+.chroma-line{position:fixed;top:48px;left:0;right:0;height:3px;z-index:102;background:linear-gradient(90deg,var(--chroma-1) 0%,var(--chroma-2) 50%,var(--chroma-3) 100%);transform-origin:left;transform:scaleX(0);transition:transform .08s linear;filter:brightness(1.2);box-shadow:0 0 8px rgba(var(--ar),.2)}
+
+/* ENHANCED NAV — glassmorphism depth */
+.site-nav{position:sticky;top:0;z-index:100;background:var(--bg-nav);backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);border-bottom:1px solid var(--border);padding:0 20px;display:flex;align-items:center;height:48px;gap:4px;overflow-x:auto;transition:all .45s ease;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+
+/* LOGO BOUNCE ENHANCED */
+.site-nav .mark{width:28px;height:28px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Source Serif 4',serif;font-weight:700;font-size:12px;transition:all .4s cubic-bezier(.34,1.56,.64,1);box-shadow:0 2px 10px rgba(var(--ar),.3)}
+.site-nav .logo-link:hover .mark{transform:scale(1.18) rotate(-8deg);box-shadow:0 4px 16px rgba(var(--ar),.4)}
+
+/* DROPDOWN NAV ENHANCEMENTS */
+.nav-drop{border-radius:12px;padding:8px;box-shadow:0 12px 40px rgba(0,0,0,.12);backdrop-filter:blur(20px)}
+.nav-drop a{padding:7px 12px;border-radius:8px;font-size:13px;font-weight:500}
+.nav-drop a:hover{transform:translateX(3px)}
+.nav-drop-label{font-size:9.5px;padding:10px 12px 4px;font-weight:600;color:var(--accent);opacity:.6}
+
+/* ENHANCED GRID GAPS */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+/* HERO BADGES STAGGER ANIMATION */
+.hero-badges .badge{opacity:0;animation:badgeIn .5s ease forwards}
+.hero-badges .badge:nth-child(1){animation-delay:.1s}
+.hero-badges .badge:nth-child(2){animation-delay:.18s}
+.hero-badges .badge:nth-child(3){animation-delay:.26s}
+.hero-badges .badge:nth-child(4){animation-delay:.34s}
+.hero-badges .badge:nth-child(5){animation-delay:.42s}
+.hero-badges .badge:nth-child(6){animation-delay:.5s}
+@keyframes badgeIn{from{opacity:0;transform:translateY(6px) scale(.9)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+/* CONTAINER BREATHING ROOM */
+.container{max-width:1120px;margin:0 auto;padding:32px 24px}
+
+/* SELECTION COLOR */
+::selection{background:rgba(var(--ar),.15);color:var(--text)}
+
+/* FOCUS VISIBLE */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--text3)}
+
+/* PRINT STYLES */
+@media print{.site-nav,.chroma-line,.chip-nav,.theme-toggle,.cb-fab,.cb-panel,.nav-cat{display:none!important}.hero{padding:20px 0}.ma-body{display:block!important}}
+
+/* MOBILE ENHANCEMENTS */
+@media(max-width:768px){
+  .site-nav{padding:0 12px;height:46px;gap:2px}
+  .site-nav .brand-text{display:none}
+  .hero{padding:28px 16px 22px}
+  .hero h1{font-size:1.45rem}
+  .container{padding:22px 16px}
+  .chroma-line{top:46px}
+  .ma-header{padding:12px 14px}
+  .ma-body{padding:14px}
+  .ma-tags{display:none}
+  .chip-nav{padding:4px 12px}
+  .chip-nav button{font-size:12px;padding:6px 11px}
+  .hero::before,.hero::after{display:none}
+  .nav-cat>button{font-size:11.5px;padding:4px 7px}
+}
