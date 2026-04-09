@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; Cardiopulmonary</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link active">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">Cardiopulmonary &middot; Cardiac &middot; Pulmonary &middot; Vascular &middot; Exercise</div>
+  <h1>Cardiopulmonary <span>&#8212; Every Patient is a CV &amp; Pulm Patient</span></h1>
+  <p>Comprehensive cardiopulmonary reference for PTs covering O&#8322; transport, cardiac &amp; respiratory pathophysiology, ECG interpretation, lab values, pharmacology, mechanical ventilation, pulmonary interventions, exercise prescription, cardiac rehab phases, vascular disease, and heart/lung transplant. Built from the full lecture series, study guides, and clinical lab notes.</p>
+  <div class="hero-badges">
+    <span class="badge gold">O&#8322; Transport &amp; Respiratory</span>
+    <span class="badge red">Cardiac Pathology &amp; ECG</span>
+    <span class="badge">Lab Values &amp; Pharmacology</span>
+    <span class="badge purple">Pulmonary Interventions</span>
+    <span class="badge green">Exercise &amp; Cardiac Rehab</span>
+    <span class="badge orange">Vascular &amp; Transplant</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('o2',this)">O&#8322; Transport</button>
+  <button onclick="showTab('cardiac',this)">Cardiac Pathology</button>
+  <button onclick="showTab('pulm',this)">Pulmonary</button>
+  <button onclick="showTab('ecg',this)">ECG</button>
+  <button onclick="showTab('labs',this)">Labs &amp; Pharm</button>
+  <button onclick="showTab('eval',this)">CP Evaluation</button>
+  <button onclick="showTab('interventions',this)">Interventions</button>
+  <button onclick="showTab('exercise',this)">Exercise &amp; Rehab</button>
+  <button onclick="showTab('vent',this)">Mech Ventilation</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ==================== O2 TRANSPORT TAB ==================== -->
+<div class="tab-panel active" id="tab-o2">
+<div class="container">
+  <div class="section-title">Oxygen Transport System</div>
+  <div class="section-sub">Every patient is a cardiovascular and pulmonary patient. The heart and lungs contribute to or impair the ability to exercise. CV and pulmonary disease are top 3 causes of death and disability. Primary impairments (asthma, COPD, CHF) or secondary impairments (CVA, SCI, fractures, surgery, burns) both impact the O&#8322; transport chain.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Ventilation, Respiration &amp; the O&#8322; Chain</h4>
+      <div class="ma-tags"><span class="ma-tag">Ventilation &#8800; Respiration</span><span class="ma-tag gold">Aerobic = 19&#215; more efficient</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Key Distinction</div>
+        <p><strong>Ventilation</strong> = movement of air between the atmosphere and the lungs (breathing). <strong>Respiration</strong> = exchange of O&#8322; and CO&#8322; between the lungs and the blood (gas exchange). If ventilation is impaired, respiration will be impaired.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">O&#8322; Transport Chain</div>
+        <ol>
+          <li><strong>Ventilation</strong> &#8212; movement of gas into and out of lungs</li>
+          <li><strong>Distribution</strong> &#8212; air traveling to areas within the lungs</li>
+          <li><strong>Diffusion</strong> &#8212; movement of gases between alveoli and blood</li>
+          <li><strong>Perfusion</strong> &#8212; blood pushed through pulmonary capillaries by the heart</li>
+          <li><strong>Circulation</strong> &#8212; movement of blood from pulmonary capillaries through the body</li>
+        </ol>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Aerobic vs Anaerobic Metabolism</div>
+        <p><strong>Aerobic:</strong> Requires O&#8322;, uses carbs/fats/proteins, occurs in mitochondria, produces H&#8322;O + CO&#8322;, yields ~38 ATP/glucose molecule. <strong>Anaerobic:</strong> No O&#8322; required, uses only carbs, occurs in cytoplasm, produces lactic acid, yields ~2 ATP/glucose. Aerobic is ~19&#215; more efficient.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Aerobic vs Anaerobic Tissues</div>
+        <p><strong>Aerobic cells:</strong> Heart (highest resting O&#8322; consumption at 9.7 mL/100g/min), CNS, PNS, skeletal muscle. <strong>Anaerobic:</strong> Connective tissue (bone, cartilage, RBCs), skeletal muscle (can do both). Cardiac muscle consumes the most O&#8322; at rest &#8212; this is why cardiac ischemia is so damaging.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lung Volumes &amp; Capacities</h4>
+      <div class="ma-tags"><span class="ma-tag">TV = 500 mL</span><span class="ma-tag gold">Normal V/Q = 0.8</span><span class="ma-tag purple">Dead space &#8776; body weight in lbs</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Volume/Capacity</th><th>Value</th><th>Definition</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Tidal Volume (VT)</td><td>500 mL</td><td>Normal respiratory volume per breath</td></tr>
+          <tr><td class="hi">Inspiratory Reserve (IRV)</td><td>3000 mL</td><td>Additional air that can be inhaled beyond normal tidal inspiration</td></tr>
+          <tr><td class="hi">Expiratory Reserve (ERV)</td><td>1100 mL</td><td>Additional air that can be exhaled beyond normal tidal exhalation</td></tr>
+          <tr><td class="hi">Residual Volume (RV)</td><td>~1200 mL</td><td>Air remaining after forceful expiration (cannot be measured by spirometry)</td></tr>
+          <tr><td class="hi">Inspiratory Capacity</td><td>IRV + VT</td><td>Max air inhaled after normal tidal exhalation</td></tr>
+          <tr><td class="hi">Functional Residual Capacity (FRC)</td><td>ERV + RV</td><td>Air remaining after normal tidal exhalation</td></tr>
+          <tr><td class="hi">Vital Capacity (VC)</td><td>ERV + VT + IRV</td><td>Max air exhaled after max inhalation</td></tr>
+          <tr><td class="hi">Total Lung Capacity (TLC)</td><td>Sum of all volumes</td><td>Max volume lungs can expand to</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Minute Ventilation &amp; Dead Space</div>
+        <p><strong>Minute ventilation</strong> = VT &#215; RR = 500 mL &#215; 12 = 6 L/min. Exercise can reach 70 L/min. <strong>Anatomical dead space</strong> (conducting airways, no gas exchange) &#8776; body weight in lbs in mL (e.g., 150 lb person = ~150 mL dead space). So of 500 mL tidal volume, only ~350 mL is available for alveolar ventilation. <strong>Critical:</strong> A neuro patient with TV of 200 mL has only 50 mL for gas exchange &#8212; this is why shallow breathing is so dangerous.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Ventilation-Perfusion (V/Q) Ratio</div>
+        <p>Normal V = 4 L/min, Q = 5 L/min, ratio &#8776; 0.8. <strong>High V/Q</strong> = "wasted" or dead-space ventilation (air reaching areas with poor blood flow, e.g., pulmonary embolism). <strong>Low V/Q</strong> = blood "shunted" past areas with no gas exchange (e.g., atelectasis, pneumonia). Both impair O&#8322; transport.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Pulmonary Function Tests (PFTs) &#8212; Obstructive vs Restrictive</h4>
+      <div class="ma-tags"><span class="ma-tag red">FEV1/FVC &lt; 0.8 = Obstructive</span><span class="ma-tag purple">Both &#8595; but ratio normal = Restrictive</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Parameter</th><th>Normal</th><th>Obstructive</th><th>Restrictive</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">FEV1</td><td>3.2 L</td><td class="bad">1.0 L (&#8595;&#8595;)</td><td class="warn">2.5 L (&#8595;)</td></tr>
+          <tr><td class="hi">FVC</td><td>4.0 L</td><td>4.0 L (normal)</td><td class="warn">3.0 L (&#8595;)</td></tr>
+          <tr><td class="hi">FEV1/FVC</td><td>80%</td><td class="bad">25% (&#8595;&#8595;)</td><td class="ok">83% (normal/&#8593;)</td></tr>
+        </tbody>
+      </table>
+      <div class="grid2">
+        <div class="bl-strip red">
+          <div class="bl-label">Obstructive Diseases</div>
+          <ul>
+            <li>COPD (emphysema + chronic bronchitis)</li>
+            <li>Asthma (reversible airway hyperresponsiveness)</li>
+            <li>Cystic fibrosis</li>
+            <li>Bronchiectasis</li>
+            <li>Air goes in but can't get out &#8212; air trapping</li>
+          </ul>
+        </div>
+        <div class="bl-strip purple">
+          <div class="bl-label">Restrictive Diseases</div>
+          <ul>
+            <li><strong>Intrinsic:</strong> Interstitial lung disease, idiopathic pulmonary fibrosis, sarcoidosis</li>
+            <li><strong>Extrinsic:</strong> Obesity, scoliosis, muscular dystrophy, ALS, pleural effusion</li>
+            <li>Lungs can't expand enough &#8212; decreased compliance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hypoxemia &#8212; Signs, Symptoms &amp; Consequences</h4>
+      <div class="ma-tags"><span class="ma-tag red">PaO&#8322; &lt; 55 mmHg</span><span class="ma-tag gold">Long-term &#8594; Cor Pulmonale</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Signs &amp; Symptoms of Hypoxemia</div>
+        <ul>
+          <li>Headache, SOB, breathlessness, palpitations, angina</li>
+          <li>Restlessness, tremors, bluish skin/fingernails/lips (cyanosis)</li>
+          <li><strong>Reverse dyspnea:</strong> false SOB that improves with exertion and worsens with rest</li>
+          <li>PaO&#8322; &lt; 55 mmHg &#8594; compensatory &#8593; minute ventilation, &#8595; PaCO&#8322;, peripheral vasodilation, &#8593; HR, &#8593; CO</li>
+        </ul>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">Severe Hypoxemia</div>
+        <p>Impaired judgment &#8594; progressive loss of cognitive function &#8594; progressive loss of motor function &#8594; loss of consciousness. Commonly seen: post-op, chronic lung disease, ARDS, pneumonia.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Long-Term Hypoxemia Cascade</div>
+        <p>Chronic hypoxemia &#8594; pulmonary hypertension &#8594; &#8593; right side workload &#8594; right ventricular dysfunction &#8594; <strong>cor pulmonale</strong> (right-sided heart failure from pulmonary disease). Cor pulmonale with chronic hypoxemia = poor prognosis (32&#8211;100% increase in mortality).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Oxygen Toxicity &amp; O&#8322; Tank Calculations</h4>
+      <div class="ma-tags"><span class="ma-tag red">FiO&#8322; &gt; 50% prolonged = toxic</span><span class="ma-tag gold">Tank math for PT</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Signs of O&#8322; Toxicity</div>
+        <p>Substernal chest pain, dry cough, dyspnea, pleuritic pain with inspiration, nasal stuffiness/congestion, sore throat. Occurs with prolonged exposure to high FiO&#8322; concentrations.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">O&#8322; Prescription for PT</div>
+        <p>PT writes: <strong>"SpO&#8322; &gt; ____% for PT intervention"</strong> (fill in target). This allows the PT to titrate O&#8322; flow rate during therapy to maintain the prescribed saturation level.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Tank Time Calculation</div>
+        <p><strong>Formula:</strong> Tank duration (min) = (PSI &#215; tank factor) &#247; flow rate (L/min). For a standard E-tank (factor = 0.28): if PSI = 1000, flow = 4 L/min &#8594; (1000 &#215; 0.28) / 4 = 70 minutes. <strong>Always subtract 200 PSI as safety reserve</strong> before calculating. So with 200 PSI buffer: (800 &#215; 0.28) / 4 = 56 minutes of usable time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== CARDIAC PATHOLOGY TAB ==================== -->
+<div class="tab-panel" id="tab-cardiac">
+<div class="container">
+  <div class="section-title">Cardiac Pathophysiology</div>
+  <div class="section-sub">Understanding cardiac pathology is essential for every PT &#8212; 62% of patients in an outpatient orthopedic practice have CVD. During MSK exams, determine if CVD exists and if risk factors are present, especially before aerobic exercise. Risk of cardiac event during exercise is higher in patients just starting exercise programs.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hypertension &#8212; Stages, Types &amp; Pathogenesis</h4>
+      <div class="ma-tags"><span class="ma-tag red">90-95% = Primary/Essential</span><span class="ma-tag gold">Arteriosclerosis = end result</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Category</th><th>Systolic</th><th>Diastolic</th><th>Treatment</th></tr></thead>
+        <tbody>
+          <tr><td class="warn">Prehypertension</td><td>120&#8211;139</td><td>80&#8211;89</td><td>Lifestyle modification</td></tr>
+          <tr><td class="bad">Stage I</td><td>140&#8211;159</td><td>90&#8211;99</td><td>Diuretics, ACE inhibitor, &#946;-blocker, Ca&#178;&#8314; channel blocker</td></tr>
+          <tr><td class="bad">Stage II</td><td>&gt;160</td><td>&gt;100</td><td>2-drug combination</td></tr>
+        </tbody>
+      </table>
+      <div class="grid2">
+        <div class="bl-strip">
+          <div class="bl-label">Primary HTN (90&#8211;95%)</div>
+          <p><strong>Modifiable:</strong> high sodium, obesity, DM, hypercholesterolemia. <strong>Non-modifiable:</strong> family history, age &gt;55, gender (M &lt;55, F &gt;55), ethnicity.</p>
+        </div>
+        <div class="bl-strip gold">
+          <div class="bl-label">Pathogenesis</div>
+          <p>&#8593; peripheral resistance from arteriole narrowing is the #1 characteristic. Sympathetic: NE/Epi &#8594; vasoconstriction + &#8593; CO. Renin-angiotensin: &#8595; renal blood flow &#8594; renin &#8594; angiotensin &#8594; vasoconstriction + aldosterone &#8594; Na&#8314;/H&#8322;O retention. Prolonged HTN &#8594; elastic tissue replaced by fibrous collagen &#8594; arteriosclerosis.</p>
+        </div>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Disease Risk by BMI &amp; Waist Circumference</div>
+        <p>Waist M &#8804;40" / F &#8804;35": Overweight (25&#8211;29.9) = Increased risk; Class I obesity (30&#8211;34.9) = High; Class II (35&#8211;39.9) = Very High; Class III (&#8805;40) = Extremely High. Waist M &gt;40" / F &gt;35": All categories shift one level higher.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Atherosclerosis &amp; Coronary Artery Disease</h4>
+      <div class="ma-tags"><span class="ma-tag">Plaque = smooth muscle + lipids + ECM</span><span class="ma-tag red">Thrombus = complete occlusion</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Atherosclerosis</div>
+        <p>Thickening and loss of elasticity of arterial walls with intimal lesions (atheromas/plaques) that protrude into and obstruct vascular lumina. Three components: smooth muscle cells + macrophages + leukocytes; ECM with collagen and elastic fibers; intra/extracellular lipids. Foam cells = large lipid-laden cells from monocytes. Primarily affects elastic arteries and large/medium muscular arteries.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Clinical Consequences</div>
+        <p>Focal rupture/ulceration &#8594; thrombus formation. Hemorrhage within plaque &#8594; expansion or rupture. Complete thrombotic occlusion &#8594; <strong>MI, cerebral infarction</strong>. Aneurysm from plaque pressure or ischemic atrophy of media. Leads to: CAD/CHD/IHD, PVD (gangrene of LEs), stroke.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Angina Scale</div>
+        <p><strong>0</strong> = No angina. <strong>1</strong> = Light, barely noticeable. <strong>2</strong> = Moderate, bothersome. <strong>3</strong> = Severe, very uncomfortable. <strong>4</strong> = Most pain ever experienced.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Heart Failure &#8212; Left vs Right, Stages &amp; Classes</h4>
+      <div class="ma-tags"><span class="ma-tag red">LHF = pulmonary edema</span><span class="ma-tag purple">RHF = peripheral edema, JVD</span><span class="ma-tag gold">Stage D = LVAD/transplant</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div class="bl-strip red">
+          <div class="bl-label">Left-Sided Heart Failure</div>
+          <p>LV can't maintain normal CO &#8594; blood backs up into lungs &#8594; <strong>pulmonary edema</strong> (dyspnea, orthopnea, crackles/rales, arrhythmia). Causes: CAD, MI, long-standing HTN, dilated cardiomyopathy. <strong>Systolic HF:</strong> Can't pump hard enough (low EF, e.g., 40/100 mL = 40%). <strong>Diastolic HF:</strong> Can't fill enough (stiff ventricle, reduced preload). Long-standing HTN &#8594; concentric hypertrophy &#8594; less room for blood &#8594; &#8593; O&#8322; demand &#8594; squeezes coronaries &#8594; weaker contraction.</p>
+        </div>
+        <div class="bl-strip purple">
+          <div class="bl-label">Right-Sided Heart Failure</div>
+          <p>Usually caused by advanced LHF &#8594; blood backs up into lungs &#8594; &#8593; pulmonary artery pressure &#8594; harder for RV &#8594; biventricular HF. Or from chronic lung disease (<strong>cor pulmonale</strong>): hypoxia &#8594; pulmonary arteriole constriction &#8594; &#8593; pulmonary BP &#8594; RV hypertrophy/failure. Signs: <strong>JVD, hepatosplenomegaly (pain), ascites, pitting edema</strong> (gravity-dependent pooling). Prolonged congestion &#8594; cardiac cirrhosis &#8594; liver failure.</p>
+        </div>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>ACC/AHA Stage</th><th>Description</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">A</td><td>High risk, no structural abnormality</td><td>HTN, CAD, DM, alcohol abuse, family hx</td></tr>
+          <tr><td class="hi">B</td><td>Structural abnormality, no symptoms</td><td>LV hypertrophy, previous MI, asymptomatic valvular disease</td></tr>
+          <tr><td class="warn">C</td><td>Structural + current/previous symptoms</td><td>Dyspnea/fatigue from LV dysfunction</td></tr>
+          <tr><td class="bad">D</td><td>End-stage, refractory to standard treatment</td><td>Frequent hospitalizations, IV support, <strong>VAD or transplant candidate</strong></td></tr>
+        </tbody>
+      </table>
+      <table class="data-table">
+        <thead><tr><th>NYHA Class</th><th>Symptom Level</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">I</td><td>Symptoms only at levels that would limit <em>normal</em> individuals</td></tr>
+          <tr><td class="hi">II</td><td>Symptoms with <strong>ordinary exertion</strong></td></tr>
+          <tr><td class="warn">III</td><td>Symptoms with <strong>less than ordinary</strong> exertion</td></tr>
+          <tr><td class="bad">IV</td><td>Symptoms <strong>at rest</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip green">
+        <div class="bl-label">CHF Treatment</div>
+        <p><strong>ACE inhibitors</strong> (gold standard for CHF) &#8594; dilate blood vessels. <strong>Diuretics</strong> &#8594; reduce fluid buildup. Positive inotropes (digoxin) &#8594; improve contractility. Stage D &#8594; VAD (bridge to transplant or destination therapy) or transplant. <strong>S3 heart sound</strong> in older adults indicates presence of CHF ("ventricular gallop" &#8212; sounds like "Kentucky").</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Pitting Edema Scale</div>
+        <p><strong>1+:</strong> Barely perceptible, immediate rebound, &lt;2mm. <strong>2+:</strong> Easily identifiable, rebounds in 15 sec, 2&#8211;4mm. <strong>3+:</strong> Rebounds in 15&#8211;30 sec, 5&#8211;7mm. <strong>4+:</strong> Rebound &gt;30 sec, &gt;7mm.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Heart Sounds &amp; Auscultation</h4>
+      <div class="ma-tags"><span class="ma-tag">S1 = Lub (AV valves close)</span><span class="ma-tag gold">S2 = Dub (semilunar valves close)</span><span class="ma-tag red">S3 in elderly = CHF</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Sound</th><th>Phase</th><th>Mechanism</th><th>Clinical Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">S1 "Lub"</td><td>Systole begins</td><td>Closure of mitral + tricuspid valves</td><td>Normal. Mitral component louder and comes first. Intensity &#8593; with HR 120+, stress, hyperthyroidism</td></tr>
+          <tr><td class="hi">S2 "Dub"</td><td>Diastole begins</td><td>Closure of aortic + pulmonic valves</td><td>Normal. Physiologic splitting occurs at peak inspiration (aortic closes before pulmonic)</td></tr>
+          <tr><td class="warn">S3</td><td>Early diastole</td><td>Deceleration of blood flow into LV from LA</td><td>Normal in young/athletic. <strong>In older adults = CHF indicator.</strong> "Ventricular gallop" sounds like "Ken-tu-cky"</td></tr>
+          <tr><td class="warn">S4</td><td>Late diastole</td><td>&#8593; LV stiffness</td><td>Scar tissue or coronary heart disease. Thickened LV wall. Sounds like "Ten-ne-ssee"</td></tr>
+          <tr><td class="ok">Innocent Murmur</td><td>Early systole</td><td>Non-cardiac conditions</td><td>Pregnancy, hyperthyroidism, exercise, anemia &#8212; resolves when cause treated. Short duration, &#8593; with inspiration</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lymphedema &#8212; Primary vs Secondary</h4>
+      <div class="ma-tags"><span class="ma-tag">10% Primary / 90% Secondary</span><span class="ma-tag red">Stage 3 = Elephantiasis</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div class="bl-strip">
+          <div class="bl-label">Primary Lymphedema (10%)</div>
+          <p>Congenital malformation or impairment of lymphatics. LE most often affected. Milroy's disease begins in infancy with abnormal lymph node formation.</p>
+        </div>
+        <div class="bl-strip gold">
+          <div class="bl-label">Secondary Lymphedema (90%)</div>
+          <p>Acquired disruption/damage. Causes: venous insufficiency, filariasis, <strong>cancer treatment</strong> (most common in developed countries), obesity, trauma, IV drug abuse.</p>
+        </div>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Staging</div>
+        <p><strong>Stage 0:</strong> No visible lymphedema. <strong>Stage 1:</strong> Reversible with elevation and rest, no secondary skin changes. <strong>Stage 2:</strong> Spontaneously irreversible, possible infections, some skin changes. <strong>Stage 3:</strong> Elephantiasis &#8212; many infections, fibrotic skin changes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== PULMONARY TAB ==================== -->
+<div class="tab-panel" id="tab-pulm">
+<div class="container">
+  <div class="section-title">Respiratory Pathophysiology</div>
+  <div class="section-sub">Respiratory diseases fall into three main categories: infectious (URI, pneumonia, TB), obstructive (COPD, asthma), and restrictive (fibrosis, chest wall). Vascular disorders (PE, pulmonary edema) and expansion disorders (atelectasis, pneumothorax, pleural effusion) also impact the respiratory system.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>COPD &#8212; Emphysema &amp; Chronic Bronchitis</h4>
+      <div class="ma-tags"><span class="ma-tag red">Pink Puffer = Emphysema</span><span class="ma-tag purple">Blue Bloater = Chronic Bronchitis</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">COPD Overview</div>
+        <p>Group of lung diseases that block airflow. Combination of emphysema + chronic bronchitis. Damage can't be reversed. Symptoms: SOB, wheezing, chronic cough. Treatment: rescue inhalers, inhaled/oral steroids. Typical PFT: low FEV1, low FEV1/FVC, high residual volume.</p>
+      </div>
+      <div class="grid2">
+        <div class="bl-strip red">
+          <div class="bl-label">Emphysema &#8212; "Pink Puffer"</div>
+          <p>Alveoli damaged &#8594; walls weaken and rupture &#8594; larger air spaces instead of many small ones &#8594; decreased surface area for gas exchange. Presentation: <strong>thin, breathing fast, pink skin</strong>, pursed lip breathing, tripod position, uses accessory muscles. Barrel chest &#8594; heart sounds very distant.</p>
+        </div>
+        <div class="bl-strip purple">
+          <div class="bl-label">Chronic Bronchitis &#8212; "Blue Bloater"</div>
+          <p>Inflammation/swelling of bronchial tubes &#8594; mucus buildup &#8594; decreased perfusion. Presentation: <strong>bluish skin/lips, deeper breaths but poor O&#8322; intake</strong>, frequent productive cough, wheezing, crackles, accessory muscle use.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Asthma, Pneumonia, Atelectasis &amp; PE</h4>
+      <div class="ma-tags"><span class="ma-tag green">Asthma = reversible</span><span class="ma-tag gold">PE = high V/Q</span><span class="ma-tag red">Atelectasis = collapse</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Mechanism</th><th>Key Features</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Asthma</td><td>Airway hyperresponsiveness from inflammatory process</td><td><strong>Reversible</strong> obstructive disease. Wheezing, SOB. Treated with &#946;-2 agonist inhalers (albuterol)</td></tr>
+          <tr><td class="hi">Pneumonia</td><td>Infection &#8594; fluid/pus fills air sacs</td><td>Crackles on auscultation, fever, productive cough, consolidation on X-ray</td></tr>
+          <tr><td class="hi">Atelectasis</td><td>Complete/partial lung/lobe collapse</td><td>Post-op, prolonged immobility. Chest wall pain. Decreased breath sounds over affected area</td></tr>
+          <tr><td class="hi">Pulmonary Embolism</td><td>Blood clot in pulmonary arteries</td><td>SOB, chest pain, high V/Q ratio. Sudden onset. Risk: DVT, surgery, immobility</td></tr>
+          <tr><td class="hi">Pleural Effusion</td><td>Fluid in pleural space</td><td>Decreased breath sounds, dullness to percussion, SOB</td></tr>
+          <tr><td class="hi">Pneumothorax</td><td>Air enters pleural space</td><td>Open: air in/out. <strong>Tension:</strong> air in but not out (medical emergency)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Breath Sounds &amp; Sputum Evaluation</h4>
+      <div class="ma-tags"><span class="ma-tag">Bronchial at periphery = abnormal</span><span class="ma-tag red">Stridor = emergency</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Sound</th><th>Location</th><th>I:E Ratio</th><th>Character</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Bronchial</td><td>Trachea</td><td>2:3</td><td>Loud, high pitch. <strong>Abnormal if heard in peripheral lung fields</strong></td></tr>
+          <tr><td class="hi">Bronchovesicular</td><td>Main stem bronchi</td><td>1:1</td><td>Soft, low pitch. Heard over main stem bronchi</td></tr>
+          <tr><td class="hi">Vesicular</td><td>Posterior scapula / peripheral lungs</td><td>3:1</td><td>Soft, low pitch. Normal peripheral lung sound</td></tr>
+        </tbody>
+      </table>
+      <table class="data-table">
+        <thead><tr><th>Adventitious Sound</th><th>Indicates</th><th>Character</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">Crackles (Rales)</td><td>Fluid in air sacs, pneumonia, CHF, restrictive/obstructive disease</td><td>Bubbling/crackling during inspiration</td></tr>
+          <tr><td class="warn">Wheezing</td><td>Obstruction &#8212; asthma, COPD</td><td>Musical/horn-like, heard on expiration</td></tr>
+          <tr><td class="bad">Stridor</td><td>Upper airway obstruction (croup in children)</td><td>Seal-like sound, <strong>often emergency</strong></td></tr>
+          <tr><td class="warn">Rhonchi</td><td>Secretions in large airways</td><td>Low-pitched, snoring quality, may clear with cough</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Sputum Evaluation</div>
+        <p><strong>Clear/white:</strong> Normal or viral. <strong>Yellow:</strong> Infection (WBCs present). <strong>Green:</strong> Chronic infection or Pseudomonas. <strong>Rust/brown:</strong> Pneumonia, old blood. <strong>Pink/frothy:</strong> Pulmonary edema. <strong>Red/bloody (hemoptysis):</strong> TB, cancer, PE. Always document color, consistency, amount, and odor.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Fremitus</div>
+        <p>Vibration felt through chest wall while patient says "99." <strong>&#8593; Fremitus:</strong> consolidation (pneumonia) &#8212; solid tissue transmits vibrations better. <strong>&#8595; Fremitus:</strong> air/fluid between lung and chest wall (effusion, pneumothorax, emphysema).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Mild, Moderate &amp; Severe Lung Disease</h4>
+      <div class="ma-tags"><span class="ma-tag green">Mild &#8805;80% FEV1</span><span class="ma-tag gold">Moderate &lt;80%</span><span class="ma-tag red">Severe &lt;50%</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Severity</th><th>FEV1</th><th>Presentation</th><th>Exercise Considerations</th></tr></thead>
+        <tbody>
+          <tr><td class="ok">Mild</td><td>&#8805;80% predicted</td><td>Difficulty during maximal effort only</td><td>Not pulm rehab appropriate. Home program after PT consult.</td></tr>
+          <tr><td class="warn">Moderate</td><td>&lt;80% predicted</td><td>Exercise limited by ventilation. SOB with ADLs (3&#8211;4 METs)</td><td>Exercise tolerance assessment needed. Supplemental O&#8322; may be required to keep SpO&#8322; &gt;88%.</td></tr>
+          <tr><td class="bad">Severe</td><td>&lt;50% predicted</td><td>May require continuous O&#8322; at rest. Signs of RV dysfunction with exercise</td><td>6MWT to evaluate. Low workloads + increased rest. Monitor for desaturation and exercise-induced arrhythmias. Small gains = significant functional improvements.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== ECG TAB ==================== -->
+<div class="tab-panel" id="tab-ecg">
+<div class="container">
+  <div class="section-title">Electrocardiogram (ECG)</div>
+  <div class="section-sub">ECG represents the electrical activity of the heart only &#8212; no information about mechanical events. Provides data on HR, rhythm, ischemia/infarction, drug and electrolyte abnormalities. PTs must recognize irregular or lethal rhythms and identify ischemia vs infarction.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>ECG Basics &#8212; Waveforms, Intervals &amp; Paper</h4>
+      <div class="ma-tags"><span class="ma-tag">P = Atrial depol</span><span class="ma-tag gold">QRS = Ventricular depol</span><span class="ma-tag purple">T = Ventricular repol</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Component</th><th>Normal Range</th><th>Represents</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">P wave</td><td>&#8212;</td><td>Atrial depolarization (SA node &#8594; AV node)</td></tr>
+          <tr><td class="hi">PR interval</td><td><strong>0.12&#8211;0.20 sec</strong> (3&#8211;5 small boxes)</td><td>Beginning of atrial activation to beginning of ventricular activation</td></tr>
+          <tr><td class="hi">QRS complex</td><td><strong>0.06&#8211;0.10 sec</strong> (1.5&#8211;2.5 small boxes)</td><td>Ventricular depolarization/contraction</td></tr>
+          <tr><td class="hi">ST segment</td><td>Isoelectric (&#177;0.5mm)</td><td>Ventricle initiating repolarization. <strong>&gt;2mm depression = terminate exercise</strong></td></tr>
+          <tr><td class="hi">T wave</td><td>&#8212;</td><td>Ventricular repolarization (slow)</td></tr>
+          <tr><td class="hi">QT interval</td><td><strong>0.32&#8211;0.40 sec</strong> (8&#8211;10 small boxes)</td><td>Total ventricular depolarization + repolarization</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip">
+        <div class="bl-label">ECG Paper</div>
+        <p>Records at 25 mm/sec. Small box = 0.04 sec. Large box (5 small) = 0.2 sec. 15 large boxes = 3 seconds. 30 large boxes = 6 seconds.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Calculating HR from ECG</div>
+        <p><strong>Method 1:</strong> Count QRS complexes in 6 seconds (30 large boxes), multiply by 10. Example: 7 QRS in 6 seconds = HR of 70 bpm. <strong>Method 2:</strong> 300 &#247; number of large boxes between R-R intervals.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">ST Segment &#8212; Critical for PT</div>
+        <p>Deviation &#8805;0.5mm from baseline = abnormal. <strong>ST elevation</strong> = myocardial infarction (tissue death). <strong>ST depression</strong> = ischemia (tissue starving). <strong>&gt;2mm ST depression during exercise = TERMINATE THE TEST immediately.</strong></p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Lead Placement &#8212; 5-Lead</div>
+        <p>RA = White (right arm), LA = Black (left arm), RL = Green (right leg), LL = Red (left leg), V1 = Brown (chest). <strong>Memory:</strong> "Smoke over fire" (black over red), "White to the RIGHT" (white over green), "Brown is ground" (chest). 12-lead used when ischemia/infarction suspected &#8212; 12 views of heart.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Sinus Rhythms &#8212; Normal, Brady, Tachy, Arrhythmia, Pause</h4>
+      <div class="ma-tags"><span class="ma-tag green">Normal = 60-100</span><span class="ma-tag">Brady &lt;60</span><span class="ma-tag red">Tachy &gt;100</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Rhythm</th><th>HR</th><th>Key Features</th><th>Clinical Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="ok">Normal Sinus</td><td>60&#8211;100</td><td>Regular R-R, P before each QRS, all intervals WNL</td><td>Normal</td></tr>
+          <tr><td class="hi">Sinus Bradycardia</td><td>&lt;60</td><td>All WNL except HR</td><td>&#8595; SA node automaticity. Seen in athletes (&#8593; stroke volume), &#946;-blocker use</td></tr>
+          <tr><td class="warn">Sinus Tachycardia</td><td>&gt;100</td><td>All WNL except HR</td><td>Usually benign. Causes: pain, fear, exercise, stimulants, CHF, infection, anemia, hemorrhage. &#8593; O&#8322; demand</td></tr>
+          <tr><td class="hi">Sinus Arrhythmia</td><td>Variable</td><td>All WNL except R-R interval varies</td><td>HR &#8593; with inspiration, &#8595; with expiration. <strong>Respiratory sinus arrhythmia is normal.</strong> Non-respiratory: infections, meds</td></tr>
+          <tr><td class="warn">Sinus Pause/Block</td><td>Variable</td><td>SA node fails to initiate impulse for 1 cycle. R-R regular except occasional pauses</td><td>Dizziness, syncope, &#8595; CO. Indicates possible SA node failure (sick sinus syndrome). Causes: ischemia, digoxin toxicity</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Atrial Arrhythmias &#8212; PAC, A-Tach, Flutter, A-Fib</h4>
+      <div class="ma-tags"><span class="ma-tag gold">A-Fib: no real P waves, irregular R-R</span><span class="ma-tag red">30% A-Fib &#8594; emboli</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Rhythm</th><th>Key Features</th><th>Clinical Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">PAC (Premature Atrial Complex)</td><td>Ectopic atrial focus fires before SA node. P-wave from early beat looks different. P may be buried in T-wave. PR and QRS WNL</td><td>Generally benign but may progress to A-tach, flutter, or A-fib. Causes: stress, stimulants, alcohol, MI</td></tr>
+          <tr><td class="warn">Paroxysmal Atrial Tach (SVT)</td><td>Sudden onset. 3+ PACs in a row. HR &gt;100. P-waves may merge with T-wave. PR &lt;0.20 sec. ST may be elevated/depressed</td><td>Poor ventricular function &#8594; chest discomfort, lightheadedness, possible CHF. Causes: hyperventilation, low K&#8314;, mitral valve prolapse, PE</td></tr>
+          <tr><td class="warn">Atrial Flutter</td><td>Ectopic atrial focus at 250&#8211;300/min. <strong>"Saw tooth" P-waves.</strong> &gt;1 P-wave per QRS. QRS WNL. HR varies</td><td>Not life threatening but may lead to A-fib. CO not compromised unless ventricular rate too fast/slow. Causes: heart disease, mitral valve disease, stress</td></tr>
+          <tr><td class="bad">Atrial Fibrillation</td><td><strong>No real P-waves</strong> (multiple ectopic foci, erratic quivering). QRS 0.06&#8211;0.10 sec. <strong>Irregular R-R.</strong> No true atrial contraction &#8594; no atrial kick &#8594; less ventricular filling</td><td>Not life threatening if ventricular response &lt;100 at rest. Monitor during exercise. <strong>30% of A-fib patients develop emboli &#8594; anticoagulant therapy.</strong> Causes: advanced age, CHF, ischemia, cardiomyopathy</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Heart Blocks &amp; Ventricular Arrhythmias</h4>
+      <div class="ma-tags"><span class="ma-tag orange">Mobitz 1: PR gets longer then drops</span><span class="ma-tag red">V-fib = lethal</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Rhythm</th><th>Key Features</th><th>Severity</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">1st Degree Heart Block</td><td>PR &gt;0.20 sec (prolonged), all QRS conducted</td><td class="ok">Usually benign</td></tr>
+          <tr><td class="warn">2nd Degree Type 1 (Mobitz 1 / Wenckebach)</td><td><strong>PR interval progressively lengthens</strong> until a QRS is dropped. Then cycle repeats</td><td class="warn">Usually transient, monitor</td></tr>
+          <tr><td class="bad">2nd Degree Type 2 (Mobitz 2)</td><td>PR intervals remain constant. P-wave suddenly not conducted &#8594; dropped QRS without warning</td><td class="bad">More serious, may need pacemaker</td></tr>
+          <tr><td class="bad">3rd Degree (Complete)</td><td>Complete dissociation &#8212; atria and ventricles beat independently. No relationship between P-waves and QRS</td><td class="bad">Requires pacemaker</td></tr>
+          <tr><td class="warn">PVC (Premature Ventricular Complex)</td><td>Ectopic ventricular focus fires before next SA nodal AP. Wide, bizarre QRS without preceding P-wave</td><td class="warn">Occasional = common. Frequent/multifocal = concerning. Causes: hypokalemia, hypomag, ischemia</td></tr>
+          <tr><td class="bad">Ventricular Tachycardia</td><td>3+ PVCs in a row. Wide QRS. HR 100&#8211;250</td><td class="bad">Can deteriorate to V-fib. Medical emergency</td></tr>
+          <tr><td class="bad">Torsades de Pointes</td><td>Polymorphic V-tach with QRS that rotate around baseline ("twisting of the points")</td><td class="bad">Associated with prolonged QT. Can degenerate to V-fib</td></tr>
+          <tr><td class="bad">Ventricular Fibrillation</td><td>Chaotic, no identifiable waveforms. No organized ventricular activity</td><td class="bad"><strong>LETHAL &#8212; no cardiac output. Requires immediate defibrillation</strong></td></tr>
+          <tr><td class="bad">Asystole</td><td>Flat line &#8212; no electrical activity</td><td class="bad"><strong>LETHAL &#8212; cardiac standstill</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Hypomagnesemia Cascade</div>
+        <p>Low Mg&#178;&#8314; &#8594; PVC &#8594; V-tach &#8594; V-fib. This electrolyte pathway is high-yield &#8212; always check Mg levels when you see ventricular ectopy.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== LABS & PHARM TAB ==================== -->
+<div class="tab-panel" id="tab-labs">
+<div class="container">
+  <div class="section-title">Lab Values &amp; Pharmacology</div>
+  <div class="section-sub">PTs must understand electrolyte balance, CBC, ABGs, coagulation, and cardiac markers. Acute changes (trauma, surgery) require more conservative care than chronic changes that allow physiologic adaptation. All medications produce side effects that may interfere with PT interventions.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Electrolytes &#8212; Na&#8314;, K&#8314;, Ca&#178;&#8314;, Mg&#178;&#8314;, Cl&#8315;, PO&#8324;&#179;&#8315;</h4>
+      <div class="ma-tags"><span class="ma-tag red">K&#8314; &lt;2.5 = cardiac arrest</span><span class="ma-tag gold">Low Mg = PVC &#8594; V-fib</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Electrolyte</th><th>Normal</th><th>Low &#8212; Signs &amp; Consequences</th><th>High &#8212; Consequences</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Sodium (Na&#8314;)</td><td>135&#8211;145 mEq/L</td><td><strong>Hyponatremia:</strong> confusion, seizures, cerebral edema. Causes: excess water, low Na diet, vomiting, Addison's, hypothyroid</td><td><strong>Hypernatremia:</strong> dry mucous membranes, &#8595; urine output, thirst, lethargy</td></tr>
+          <tr><td class="hi">Potassium (K&#8314;)</td><td>3.5&#8211;5.0 mEq/L</td><td><strong>Hypokalemia:</strong> dizziness, hypotension, arrhythmia, <strong>cardiac arrest if &lt;2.5</strong>, weakness, fatigue, leg cramps, &#8595; reflexes, metabolic alkalosis</td><td><strong>Hyperkalemia:</strong> arrhythmia, muscle weakness, paralysis</td></tr>
+          <tr><td class="hi">Calcium (Ca&#178;&#8314;)</td><td>8.6&#8211;10.3 mg/dL</td><td>Muscle spasms, tetany, seizures, prolonged QT</td><td>Lethargy, confusion, kidney stones, shortened QT</td></tr>
+          <tr><td class="hi">Magnesium (Mg&#178;&#8314;)</td><td>1.2&#8211;1.9 mEq/L</td><td><strong>Hypomagnesemia: PVC &#8594; V-tach &#8594; V-fib.</strong> Causes: &#8595; intake, vit D deficiency, hyperthyroid</td><td><strong>Hypermagnesemia:</strong> heart block, hypotension</td></tr>
+          <tr><td class="hi">Chloride (Cl&#8315;)</td><td>98&#8211;108 mEq/L</td><td>Metabolic alkalosis</td><td>Metabolic acidosis</td></tr>
+          <tr><td class="hi">Phosphate (PO&#8324;&#179;&#8315;)</td><td>2.3&#8211;4.1 mg/dL</td><td>ECG changes</td><td>Heart block, ventricular dysrhythmia, asystole</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>ABGs, CBC &amp; Coagulation</h4>
+      <div class="ma-tags"><span class="ma-tag">pH 7.35-7.45</span><span class="ma-tag red">Hb 5-7 = heart failure risk</span><span class="ma-tag gold">INR &gt;4 = severe bleeding risk</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Arterial Blood Gases (ABGs)</div>
+        <p><strong>pH:</strong> 7.35&#8211;7.45 (normal 7.40). <strong>PaCO&#8322;:</strong> 35&#8211;45 mmHg (normal 40). <strong>HCO&#8323;&#8315;:</strong> 22&#8211;26 mEq/L (normal 24). Interpretation: Acidemia + &#8593;CO&#8322; = respiratory acidosis. Alkalemia + &#8595;CO&#8322; = respiratory alkalosis. Acidemia + &#8595;HCO&#8323;&#8315; = metabolic acidosis. Alkalemia + &#8593;HCO&#8323;&#8315; = metabolic alkalosis.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Lab</th><th>Normal</th><th>PT Action Thresholds</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Hemoglobin (Hb)</td><td>M: 14&#8211;17 g/dL; F: 12&#8211;16</td><td><strong>5&#8211;7 = critically low (heart failure/death risk).</strong> 8&#8211;10 = symptoms-based approach. &gt;10 = therapy as indicated</td></tr>
+          <tr><td class="hi">Hematocrit (Hct)</td><td>M: 41&#8211;51%; F: 36&#8211;47%</td><td>15&#8211;20% = critically low (cardiac failure risk). &lt;25% = symptoms-based. &gt;60% = spontaneous blood clotting</td></tr>
+          <tr><td class="hi">WBC</td><td>M: 4.5&#8211;11.0 &#215;10&#179;/&#956;L</td><td>Leukocytosis &gt;11.0. Leukopenia &lt;5.0. Neutropenia &lt;1.8 (infection risk)</td></tr>
+          <tr><td class="hi">Platelets</td><td>140&#8211;400 k/&#956;L</td><td>Thrombocytosis &gt;450. Thrombocytopenia &lt;150 &#8212; fall risk awareness (spontaneous hemorrhage)</td></tr>
+          <tr><td class="hi">INR</td><td>1.0</td><td>2.0&#8211;3.0 = therapeutic for DVT risk. 2.5&#8211;3.5 = valve replacement. <strong>&gt;4.0 = severe bleeding risk &#8212; justify benefits vs risks</strong></td></tr>
+          <tr><td class="hi">PT/aPTT</td><td>PT: 11&#8211;13.5 sec; aPTT: 22&#8211;31 sec</td><td>Monitors anticoagulant effectiveness. Prolonged = bleeding risk</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Cardiac Injury Markers</div>
+        <p><strong>Troponin</strong> = gold standard for MI detection (stays positive 1&#8211;2 weeks). <strong>CK-MB</strong> = creatine phosphokinase specific to heart. <strong>BNP</strong> = B-type natriuretic peptide &#8212; heart failure marker. If troponin/CK-MB still rising post-surgery = possible ongoing MI.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cardiopulmonary Pharmacology</h4>
+      <div class="ma-tags"><span class="ma-tag gold">ACE inhibitors = gold std for CHF</span><span class="ma-tag red">BB may mask hypoglycemia</span><span class="ma-tag purple">NTG sublingual = best route</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Drug Class</th><th>Mechanism</th><th>Examples</th><th>PT-Relevant Side Effects</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Thiazide Diuretics</td><td>Inhibit Na&#8314; reabsorption at distal tubule</td><td>Hydrochlorothiazide (Microzide)</td><td>Orthostatic hypotension, weakness, fatigue, hyperglycemia, <strong>hypokalemia</strong></td></tr>
+          <tr><td class="hi">Loop Diuretics</td><td>Act on ascending loop of Henle, inhibit Na&#8314;/Cl&#8315; reabsorption</td><td>Furosemide (Lasix), Bumetanide (Bumex)</td><td>Same as thiazide + hyperglycemia, <strong>hypokalemia</strong></td></tr>
+          <tr><td class="hi">K&#8314;-Sparing Diuretics</td><td>Prevent K&#8314; secretion at distal tubule. Weak diuretic</td><td>Spironolactone (Aldactone)</td><td><strong>Hyperkalemia</strong> (especially with ACE inhibitors)</td></tr>
+          <tr><td class="hi">Beta Blockers</td><td>&#8595; HR, &#8595; force of contraction, &#8595; CO</td><td>Metoprolol (Lopressor), Propranolol (Inderal), Atenolol (Tenormin)</td><td>Excessive HR depression during exercise, <strong>may mask hypoglycemia signs</strong>, orthostatic hypotension, bronchoconstriction in asthma (non-selective)</td></tr>
+          <tr><td class="hi">Alpha Blockers</td><td>Block &#945;-1 receptor on vascular smooth muscle &#8594; &#8595; vascular resistance</td><td>Doxazosin (Cardura)</td><td>Reflex tachycardia, orthostatic hypotension</td></tr>
+          <tr><td class="hi">ACE Inhibitors</td><td>Block angiotensin II (potent vasoconstrictor) &#8594; vasodilation + &#8595; fluid</td><td>Lisinopril (Prinivil), Enalapril (Vasotec), Benazepril (Lotensin)</td><td><strong>Gold standard for CHF.</strong> Hacking dry cough, dry mouth</td></tr>
+          <tr><td class="hi">ARBs</td><td>Block angiotensin II receptors</td><td>Losartan (Cozaar), Valsartan (Diovan)</td><td>Angioedema (medical emergency), no cough</td></tr>
+          <tr><td class="hi">Ca&#178;&#8314; Channel Blockers</td><td>Block Ca&#178;&#8314; entry into vascular smooth muscle &#8594; vasodilation, &#8595; HR, &#8595; contractile force</td><td>Amlodipine (Norvasc), Diltiazem (Cardizem)</td><td>Excessive vasodilation (edema), orthostatic hypotension, reflex tachycardia</td></tr>
+          <tr><td class="hi">Nitrates</td><td>Converted to nitric oxide &#8594; systemic vasodilation &#8594; &#8595; preload &amp; afterload &#8594; &#8595; cardiac O&#8322; demand</td><td>Nitroglycerin (<strong>sublingual = best route</strong>)</td><td>Headache, dizziness, orthostatic hypotension</td></tr>
+          <tr><td class="hi">&#946;-2 Agonist Inhalers</td><td>Stimulate pulmonary &#946;-2 receptors &#8594; bronchodilation</td><td>Albuterol (rescue), Salmeterol (long-acting)</td><td>Tremulousness, palpitations, anxiety, tachycardia</td></tr>
+          <tr><td class="hi">Mucolytics</td><td>&#8595; viscosity of secretions</td><td>Acetylcysteine (Mucomyst) &#8212; via nebulizer</td><td>N/V, odiferous (rotten eggs), sticky face residue</td></tr>
+          <tr><td class="hi">Expectorants</td><td>Facilitate mucus ejection</td><td>Guaifenesin (Mucinex, Robitussin)</td><td>N/V, stomach pain</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Stepped-Care Approach to HTN</div>
+        <p><strong>Step 1:</strong> Mild HTN &#8212; monotherapy (diuretic, BB, ACE, or CCB). <strong>Step 2:</strong> Add 2nd drug from different class. <strong>Step 3:</strong> Add 3rd agent from unused class. <strong>Step 4:</strong> Add 4th from different class. Angina treatment: nitrates + BB + CCB.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Antiarrhythmic Classes</div>
+        <p><strong>Class I:</strong> Na&#8314; channel blockers (normalize Na entry). <strong>Class II:</strong> Beta blockers (&#8595; sympathetic effects, control AV node). <strong>Class III:</strong> Prolong repolarization/refractory period, e.g., Amiodarone (Pacerone) &#8212; pulmonary toxicity, liver damage. <strong>Class IV:</strong> CCBs (&#8595; SA discharge, &#8595; AV conduction).</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== CP EVALUATION TAB ==================== -->
+<div class="tab-panel" id="tab-eval">
+<div class="container">
+  <div class="section-title">Cardiopulmonary Evaluation</div>
+  <div class="section-sub">The CP evaluation follows the same patient management model but with specific emphasis on chart review for cardiac history, lab values, medications, and O&#8322; therapy. The patient interview is critical &#8212; if you appear hurried or distracted, the therapeutic relationship suffers.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Chart Review Sequence &amp; Key Elements</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Chart review = first priority</span><span class="ma-tag">Pack year = packs/day &#215; years</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Chart Review Sequence</div>
+        <ol>
+          <li>History, physical, and admission medical notes</li>
+          <li>Nurses' notes</li>
+          <li>Most recent medical notes</li>
+          <li>Reports from specialists (pulmonologist, neurologist, oncologist)</li>
+          <li>Lab tests (X-ray, CT, MRI, CBC, ABG, cardiac labs)</li>
+          <li>Medications (home meds + current since admission + O&#8322; therapy)</li>
+          <li>Procedures performed</li>
+          <li>Psychosocial information</li>
+        </ol>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Smoking Pack History</div>
+        <p># packs per day &#215; years as smoker. Examples: 1 pack/day &#215; 10 years = 10 pack-year. &#189; pack/day &#215; 20 years = 10 pack-year. 15 cigs/day &#215; 40 years = (15/20) &#215; 40 = 30 pack-year.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Key Questions to Answer from Chart</div>
+        <p>What is the primary diagnosis? What CV risk factors exist? Is this a readmission for chronic CP condition? Any additional diagnoses since admission? Is pt appropriate for therapy? What is the O&#8322; prescription and delivery method? Correlate with ABGs.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Physical Examination &amp; Monitoring</h4>
+      <div class="ma-tags"><span class="ma-tag red">Digital clubbing = chronic hypoxia</span><span class="ma-tag gold">Cyanosis of nails = CP dysfunction</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Inspection Checklist</div>
+        <p>General appearance (LOC, body type, posture, skin tone, monitoring equipment). Facial characteristics (expression, effort to breathe). Neck (accessory muscle activity, JVD, hypertrophy). Chest (resting and dynamic). <strong>Digital clubbing</strong> = chronic tissue hypoxia. <strong>Cyanosis of nail beds</strong> = may indicate CP dysfunction OR &#8595; circulation from cold/vasospasm/PVD/&#8595; CO. <strong>Acetone breath</strong> = diabetic ketoacidosis.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Monitoring Parameters</div>
+        <p>Patient history, HR, BP, RR, RPE, abnormal signs (dyspnea, angina), SpO&#8322; (if available), ECG (if available). Observe: distress, SOB, accessory muscle use, pallor/cyanosis, cough, posture, edema, JVD, wheezes.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Cardiovascular Tests</div>
+        <p><strong>Capillary refill time:</strong> Positive = PVD, &#8595; CO, or &#8595; oxygenation. <strong>Rubor of dependency:</strong> Indirectly assesses LE arterial flow. <strong>Venous filling time:</strong> Predictor for arterial/venous insufficiency. <strong>ABI:</strong> Arterial and PAD assessment. &lt;0.7 = red flag, no compression. 0.8&#8211;0.9 = refer. &gt;1.4 = calcified vessel, refer out.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Peripheral Vascular Disease (PVD/PAD)</h4>
+      <div class="ma-tags"><span class="ma-tag red">6 P's</span><span class="ma-tag gold">Claudication &#8594; walk to pain</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Signs &amp; Symptoms &#8212; The 6 P's</div>
+        <p><strong>Pulselessness, Paralysis, Paresthesia, Pain, Pallor, Poikilothermia</strong> (temperature changes). Also: intermittent claudication (aching/cramping in legs with walking, relieved by rest), numbness/tingling/weakness, burning/aching in feet at rest, non-healing sores, cold legs/feet, skin color changes, hair loss on legs.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Arterial vs Venous Insufficiency Signs</div>
+        <p><strong>Arterial:</strong> Less hair, dry skin, color changes, &#8595; temperature, pain with elevation. <strong>Venous:</strong> Medial location, hemosiderin staining, more drainage, glossy skin, edema. Risk factors for PVD: obesity, diabetes, smoking, CHF, sedentary lifestyle.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Claudication Scale</div>
+        <p><strong>Grade 1:</strong> Definite discomfort/pain but initial or modest level. <strong>Grade 2:</strong> Moderate pain from which you can be distracted. <strong>Grade 3:</strong> Intense pain you cannot be distracted from. <strong>Grade 4:</strong> Unbearable pain &#8212; stop walking, rest, resume when able.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== INTERVENTIONS TAB ==================== -->
+<div class="tab-panel" id="tab-interventions">
+<div class="container">
+  <div class="section-title">Pulmonary Interventions</div>
+  <div class="section-sub">O&#8322; transport is limited in patients with ineffective cough or impaired mucociliary clearance. Retained secretions or mucus plugs interfere with gas exchange. Secretions must be mobilized from small peripheral airways to larger central airways where coughing can remove them.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Breathing Techniques</h4>
+      <div class="ma-tags"><span class="ma-tag green">Diaphragmatic = normal breathing</span><span class="ma-tag gold">ACBT = 3-phase clearance</span><span class="ma-tag purple">PLB = COPD dyspnea</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Technique</th><th>When to Use</th><th>Method</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Diaphragmatic Breathing</td><td>Managing dyspnea, reducing atelectasis, &#8593; oxygenation</td><td>Normal ventilation mode. Belly inflates before chest. Easiest in supine with posterior pelvic tilt. Relax accessory muscles. Emphasize in multiple postures</td></tr>
+          <tr><td class="hi">Sniffing</td><td>When pt has difficulty with diaphragmatic breathing</td><td>Naturally enlists diaphragm. 3 quick sniffs through nose &#8594; slow exhalation. Therapist hands on abdomen for proprioceptive feedback. Progress to fewer, slower sniffs</td></tr>
+          <tr><td class="hi">Pursed Lip Breathing (PLB)</td><td>COPD patients during dyspnea episodes</td><td>Inhale through nose, slow exhale 4&#8211;6 sec through pursed lips. &#8593; exhalation time &#8594; &#8595; end-expiratory volume &#8594; &#8595; RR + &#8593; TV + &#8595; airway collapse during expiration</td></tr>
+          <tr><td class="hi">Active Cycle of Breathing (ACBT)</td><td>Clearance of excess secretions and improving ventilation</td><td><strong>3 phases repeated:</strong> (1) Breathing Control 5&#8211;10 sec (diaphragmatic at normal TV), (2) Thoracic Expansion Exercises 3&#8211;4 times (deep inspiration, relaxed expiration &#8212; can add percussion/vibration), (3) Huffing/FET (1&#8211;2 huffs: medium inspiration huff = mobilize peripheral; deep inspiration huff = mobilize proximal). Very effective with postural drainage.</td></tr>
+          <tr><td class="hi">Lateral Costal Expansion</td><td>Facilitating diaphragmatic excursion and intercostal breathing</td><td>Sitting erect. Therapist hands on lower ribs. Exhale through pursed lips while applying firm pressure. Inhale pushing ribs outward against hands. Progress to patient's own hands</td></tr>
+          <tr><td class="hi">Segmental Breathing</td><td>Post thoracotomy, trauma, pneumonia, post mastectomy, post radiation fibrosis</td><td>Hands on restricted area. "Send your breath down here." PNF facilitation: push in during expiration &#8594; quick stretch just before inspiration. Can use towel/belt around lower ribs</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Postural Drainage, Percussion &amp; Vibration</h4>
+      <div class="ma-tags"><span class="ma-tag red">Many contraindications</span><span class="ma-tag gold">Treat most affected segment first</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Postural Drainage</div>
+        <p>Passive technique placing pt in positions that allow gravity to assist drainage from bronchopulmonary tree. Priority: treat most affected lung segment first. Encourage deep breathing and coughing. Positions may be modified for precautions.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Contraindications to Postural Drainage</div>
+        <ul>
+          <li>ICP &gt;20 mmHg, unstable head/neck injury</li>
+          <li>Active hemorrhage with hemodynamic instability</li>
+          <li>Recent spinal surgery or acute spinal injury</li>
+          <li>Active hemoptysis, empyema, bronchopleural fistula</li>
+          <li>Pulmonary edema from heart failure, large pleural effusions, PE</li>
+          <li>Older/confused/anxious patients, rib fracture &#177; flail chest</li>
+        </ul>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">Trendelenburg Contraindications</div>
+        <p>ICP concerns, uncontrolled HTN, distended abdomen, esophageal surgery, recent hemoptysis from lung carcinoma, uncontrolled airway at risk for aspiration.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Contraindications to Chest Wall Manipulation (in addition to above)</div>
+        <ul>
+          <li>Subcutaneous emphysema, recent epidural/spinal anesthesia</li>
+          <li>Recent skin grafts/flaps on thorax, recently placed pacemaker</li>
+          <li>Suspected pulmonary TB, lung contusion, bronchospasm</li>
+          <li>Osteomyelitis of ribs, <strong>osteoporosis</strong>, coagulopathy</li>
+          <li>Chest wall pain complaint</li>
+        </ul>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Effective Cough &#8212; 4 Stages</div>
+        <p>(1) Inspire enough volume. (2) Close glottis to build positive intrathoracic pressure. (3) Active contraction of abdominals and intercostals. (4) Open glottis &#8594; explosive expulsion of air and secretions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== EXERCISE & REHAB TAB ==================== -->
+<div class="tab-panel" id="tab-exercise">
+<div class="container">
+  <div class="section-title">Exercise Prescription &amp; Cardiac Rehabilitation</div>
+  <div class="section-sub">Most clients will not know they have CP dysfunction. 45% of clinicians agree measuring HR and BP is essential, yet 38% never measured HR and 43% never measured BP in new patients. Risk of cardiac events is higher when just starting exercise. Chance of death from exercise: 6 per 100K in middle-aged men.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Exercise Testing &#8212; Maximal, Submaximal &amp; Low-Level</h4>
+      <div class="ma-tags"><span class="ma-tag">Maximal = symptom-limited</span><span class="ma-tag gold">Submax = predetermined endpoint</span><span class="ma-tag purple">Low-level = post-MI</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Test Type</th><th>Endpoint</th><th>Use Case</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Maximal Stress Test</td><td>Symptom-limited (SOB, leg fatigue, chest discomfort)</td><td>Testing for CAD. Stationary bike or treadmill. Full ECG monitoring</td></tr>
+          <tr><td class="hi">Submaximal</td><td>Predetermined endpoint (% of predicted max HR, target workload)</td><td>General fitness assessment, risk stratification</td></tr>
+          <tr><td class="hi">Low-Level (LLGXT)</td><td>Predetermined minutes of low-level exercise, even if symptom-free</td><td>Recuperative phase after MI or CABG. Data used to calculate Phase II intensity</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Contraindications &#8212; Exercise Testing vs Activity</div>
+        <p><strong>Exercise testing only:</strong> Change in resting ECG, aortic stenosis, PE, peri/myocarditis, infection. <strong>Both testing AND activity:</strong> Uncontrolled dysrhythmias, unstable/resting angina, uncontrolled CHF, S3 heart sound, JVD, pedal edema, Swan-Ganz catheter &gt;12 mmHg, suspected aneurysm.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Criteria for Termination of Exercise</div>
+        <ul>
+          <li>Severe fatigue, patient wants to stop</li>
+          <li>Signs of poor perfusion: ataxia, N/V, lightheadedness, pallor, cyanosis</li>
+          <li><strong>SpO&#8322; &lt; 90%</strong></li>
+          <li>Chest pain, peripheral ischemia claudication, &gt;8/10 VAS</li>
+          <li><strong>SBP &gt; 250 mmHg or DBP &gt; 115 mmHg</strong></li>
+          <li><strong>Drop in SBP &gt; 10 mmHg</strong> (cardiac tamponade concern)</li>
+          <li>HR not increasing with activity</li>
+          <li>SOB/dyspnea, monitoring equipment failure</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>4 Phases of Cardiac Rehabilitation</h4>
+      <div class="ma-tags"><span class="ma-tag red">Phase I = ICU/inpatient</span><span class="ma-tag gold">Phase II = monitored outpatient</span><span class="ma-tag green">Phase IV = lifelong</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Phase</th><th>Setting</th><th>Duration</th><th>Key Features</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">I &#8212; Inpatient</td><td>ICU &#8594; step-down</td><td>~5 days (uncomplicated MI)</td><td>Day 1&#8211;2: MET 1&#8211;2 (supine/sitting, self-care, ROM). Day 3&#8211;5: MET 2&#8211;4 (out of bed, walk 5&#8211;10 min, shower with seat, &#189; flight stairs). Self-care evaluation. Monitor ECG, BP, HR continuously. Graduates with LLGXT</td></tr>
+          <tr><td class="warn">II &#8212; Outpatient Monitored</td><td>Hospital setting</td><td>3&#215;/week for 12 weeks (insurance covers)</td><td>Monitored: BP, HR, telemetry ECG, angina/dyspnea/Borg scales. Mode: bike, treadmill, NuStep, UBE. <strong>Duration:</strong> Min 15&#8211;20 min exercise + 10&#8211;15 min warm-up + 10&#8211;15 min cool-down. <strong>Cool-down critical:</strong> cardiac events more likely when too short. Patient education: nutrition, smoking cessation, meds, sexual activity</td></tr>
+          <tr><td class="ok">III &#8212; Community</td><td>Athletic club/YMCA</td><td>Ongoing</td><td>Much lower monitoring (exercise leader + nurse + crash cart). 15 min stretching &#8594; 30&#8211;60 min exercise &#8594; cool-down. Patient largely self-monitors HR and symptoms. Insurance reimbursement variable</td></tr>
+          <tr><td class="ok">IV &#8212; Maintenance</td><td>Independent</td><td>Lifelong</td><td>Regular exercise commitment. Club experience. Patient fully independent with self-monitoring</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Karvonen's Formula &#8212; Target HR Calculation</div>
+        <p><strong>Target HR = (Max HR &#8211; Resting HR) &#215; % + Resting HR.</strong> % = 40&#8211;70% of heart rate reserve. Example: Resting HR = 80, Max HR = 172. Target = (172&#8211;80) &#215; 0.40 + 80 = <strong>117 bpm</strong> (starting intensity for first 1&#8211;2 weeks). Progress gradually as aerobic capacity develops.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Phase II Progression Example</div>
+        <p>Week 1&#8211;2: Treadmill 0% grade &#215; 3.0 mph, HR 117 &#215; 20 min. Week 2&#8211;4: 0% &#215; 3.5 mph, HR 126 &#215; 30 min. Week 4&#8211;6: 2% &#215; 3.5 mph, HR 136 &#215; 40 min. Week 6&#8211;8: 4% &#215; 3.8 mph, HR 144 &#215; 45 min.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Factors Making Pt Inappropriate for Cardiac Rehab</div>
+        <p>Overt CHF, unstable/resting angina, hemodynamic instability (near syncope), serious arrhythmias, conduction defects, impaired function of other organ systems, uncontrolled HTN (&gt;200 mmHg systolic), other precluding diseases.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Exercise for Specific Conditions &#8212; PVD, CHF, CABG, DM, HTN</h4>
+      <div class="ma-tags"><span class="ma-tag red">PAD = walk to pain grade 1-2</span><span class="ma-tag green">DM exercise &#8594; GLUT4 for 48 hrs</span><span class="ma-tag gold">CABG sternum = 3 months no resistance</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Exercise Prescription</th><th>Key Considerations</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">PAD / Claudication</td><td>Walk to grade 1&#8211;2 pain, rest until relieved, repeat for 30&#8211;60 min total. Daily if possible</td><td>Intervals of intensity eliciting max tolerable pain (&lt;Grade 3). Goal: delay claudication onset. Non-WB initially if walking difficult. Teach claudication scale</td></tr>
+          <tr><td class="hi">Venous Insufficiency</td><td>Standing heel raises (half max reps &#215; 3 sets), uphill walking</td><td>Assess ankle ROM and gastroc-soleus first. Inspect skin, pain, edema before each session. <strong>Exercise WITH compression stockings</strong></td></tr>
+          <tr><td class="hi">CHF</td><td>40&#8211;70% VO&#8322;max, 3&#8211;7 days/week, 20&#8211;40 min. Interval training</td><td>Must be on stable medical therapy. Monitor labs for hypokalemia. Monitor for malignant arrhythmia. Long warm-up and cool-down. RPE may be used</td></tr>
+          <tr><td class="hi">CABG (Post-Op)</td><td>ROM, mobility, light hand weights, stretching. Initial aerobic: resting HR + 30 bpm</td><td><strong>Avoid resistance training until sternum healed (3 months).</strong> Sternal precautions: no lifting &gt;5&#8211;10 lbs &#215; 8 weeks, no pushing up from chair, watch for grinding/popping. Saphenous vein harvest site: DVT, peripheral edema, &#8595; sensation risk</td></tr>
+          <tr><td class="hi">PTCA/Stent</td><td>Aerobic + resistance after access site healed</td><td>May progress rapidly if no myocardial damage</td></tr>
+          <tr><td class="hi">Valve Replacement</td><td>Slower progression than CABG</td><td>Longer recovery, more limitations</td></tr>
+          <tr><td class="hi">Type 1 DM</td><td>Moderate endurance: insulin-like effect &#8594; hypoglycemia risk. High intensity (&gt;80% VO&#8322;max): hyperglycemia can occur post-exercise</td><td>Reduce insulin dose + consume carbs before exercise. Monitor blood sugar before/after. Intermittent sports may not need adjustment. Exercise beneficial but does not cure Type 1</td></tr>
+          <tr><td class="hi">Type 2 DM</td><td>Aerobic: no &gt;48 hrs apart (GLUT4 transporter recruitment lasts 48 hrs). 40% VO&#8322;max &#8594; progress to 50&#8211;70%. Duration: 10&#8211;15 min &#8594; 30&#8211;60 min. Resistance: 2&#8211;3&#215;/week, 8&#8211;10 exercises, major groups</td><td><strong>Exercise can treat and prevent Type 2 DM.</strong> Non-WB (swimming, cycling) preferable due to neuropathy. Decreases death from DM by &gt;50%. GLUT4 recruitment also occurs with resistance training</td></tr>
+          <tr><td class="hi">HTN</td><td>Moderate intensity (&lt;70% VO&#8322;max) endurance + resistance 2&#8211;3&#215;/week. 30&#8211;60 min most days</td><td>Reduces BP during exercise AND for up to 22 hrs after. Reduces resting BP after several weeks. Same general guidelines as healthy adults</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>MET Levels &amp; RPE</h4>
+      <div class="ma-tags"><span class="ma-tag gold">1 MET = resting</span><span class="ma-tag">RPE 6-20 scale</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">RPE Scale (Borg 6&#8211;20)</div>
+        <p><strong>6</strong> = Nothing at all. <strong>9</strong> = Very light. <strong>11</strong> = Light. <strong>13</strong> = Somewhat hard. <strong>15</strong> = Hard. <strong>17</strong> = Very hard. <strong>19</strong> = Extremely hard. <strong>20</strong> = Maximal. 10-level scale also used: 1 = watching TV, 5 = just above comfortable, 7 = can talk but don't want to, 9 = probably going to die, 10 = dead.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Dyspnea Scale</div>
+        <p><strong>+1:</strong> Mild, noticeable. <strong>+2:</strong> Mild, some difficulty. <strong>+3:</strong> Moderate difficulty, can continue. <strong>+4:</strong> Severe difficulty, must stop.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== MECHANICAL VENTILATION TAB ==================== -->
+<div class="tab-panel" id="tab-vent">
+<div class="container">
+  <div class="section-title">Mechanical Ventilation &amp; Transplant</div>
+  <div class="section-sub">Mechanical ventilation provides positive pressure to inflate the lungs during acute illness, serious trauma, or exacerbation/progression of chronic illness. PTs work with ventilated patients and must understand modes, settings, weaning signs, and transplant considerations.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Indications &amp; Types of Mechanical Ventilation</h4>
+      <div class="ma-tags"><span class="ma-tag red">PaO&#8322; &lt;50 with O&#8322; = intubate</span><span class="ma-tag gold">Trach if &gt;1-2 weeks</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Indications for Mechanical Ventilation</div>
+        <ul>
+          <li>Apnea (temporary stoppage of breathing)</li>
+          <li>Acute hypercapnia not quickly reversed with standard treatment</li>
+          <li><strong>PaO&#8322; &lt; 50 mmHg with supplemental O&#8322;</strong></li>
+          <li>RR &gt; 30 breaths/min</li>
+          <li>Vital capacity &lt; 10 L/min</li>
+          <li>Protection of airway</li>
+          <li>Reversal of respiratory muscle fatigue</li>
+        </ul>
+      </div>
+      <div class="grid2">
+        <div class="bl-strip">
+          <div class="bl-label">Invasive</div>
+          <p><strong>Intubation:</strong> Artificial airway into trachea. For upper airway obstruction, inability to protect lower airways from aspiration, inability to clear secretions. Cuff leak suspected if patient can phonate. <strong>Tracheostomy:</strong> When &gt;1&#8211;2 weeks of intubation needed. Reduced laryngeal injury, improved oral comfort, feasible oral feeding and vocalization.</p>
+        </div>
+        <div class="bl-strip gold">
+          <div class="bl-label">Non-Invasive</div>
+          <p>Interface connects patient to ventilator without artificial airway. CPAP = continuous positive airway pressure. Used during weaning and for obstructive sleep apnea (5+ episodes of apnea lasting &#8805;10 sec each within 1 hour while sleeping).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Modes of Ventilation &#8212; CMV to CPAP</h4>
+      <div class="ma-tags"><span class="ma-tag">CMV = total control</span><span class="ma-tag gold">SIMV = partial support</span><span class="ma-tag green">CPAP = weaning/sleep apnea</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Mode</th><th>Patient Participation</th><th>Key Features</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">CMV (Control Mode)</td><td>None &#8212; total ventilator dependence</td><td>Pt may be sedated/paralyzed. No active respiratory muscle activity required</td></tr>
+          <tr><td class="warn">Assisted Ventilation (AV)</td><td>Controls RR</td><td>Pt-initiated breaths create negative airway pressure. Volume delivered at preset volume/pressure</td></tr>
+          <tr><td class="warn">Assist Control (AC)</td><td>CMV + AV combo</td><td>Delivers preset VT with pt effort. If pt doesn't initiate &#8594; vent delivers to maintain preset RR. Pt can trigger additional breaths</td></tr>
+          <tr><td class="hi">SIMV</td><td>Breathes spontaneously between machine breaths</td><td>Delivers intermittent breaths at preset intervals. Pt breathes on own through separate circuit between machine breaths</td></tr>
+          <tr><td class="ok">Pressure Support</td><td>Controls RR, inspiratory time, flow</td><td>Pt-initiated breaths augmented with preset pressure. <strong>Pt must be breathing spontaneously.</strong> Helps overcome endotracheal tube resistance</td></tr>
+          <tr><td class="ok">CPAP</td><td>Pt initiates all breaths</td><td>Positive pressure assists airway patency. Used during weaning and for sleep apnea treatment</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip">
+        <div class="bl-label">Ventilator Settings</div>
+        <p><strong>FiO&#8322;:</strong> Fraction of inspired O&#8322; (21% = room air &#8594; PaO&#8322; 95&#8211;100 mmHg). <strong>PEEP:</strong> Positive end-expiratory pressure (normal physiologic = 5 cm H&#8322;O). Maintains FRC above closing capacity to prevent alveolar collapse. <strong>RR:</strong> No spontaneous breathing = 10&#8211;20 breaths/min. <strong>VT:</strong> Monitor to prevent barotrauma. <strong>I:E ratio:</strong> Normally 1:2 or 1:3. High flow rates = longer expiratory time = prevents hyperinflation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Weaning &amp; Signs of Distress</h4>
+      <div class="ma-tags"><span class="ma-tag red">Paradoxical breathing = distress</span><span class="ma-tag gold">SpO&#8322; &lt;90% = distress</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Signs of Distress During Weaning</div>
+        <ul>
+          <li>Increased tachypnea (rapid, shallow breathing)</li>
+          <li>Drop in pH</li>
+          <li><strong>Paradoxical breathing pattern</strong> (abdomen goes in on inspiration)</li>
+          <li>SpO&#8322; &lt; 90%</li>
+          <li>Change in HR &gt; 20 beats/min</li>
+          <li>Change in BP &gt; 20 mmHg</li>
+          <li>Agitation, panic, diaphoresis, cyanosis, angina, arrhythmias</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>LVAD &amp; Heart/Lung Transplant</h4>
+      <div class="ma-tags"><span class="ma-tag gold">LVAD = no pulse (continuous)</span><span class="ma-tag red">No CPR with LVAD</span><span class="ma-tag purple">Transplant = denervated heart</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip gold">
+        <div class="bl-label">Ventricular Assist Device (VAD)</div>
+        <p>For Stage D heart failure (LVEF &lt;20%, 6&#8211;12 month prognosis). Bridge to transplant (BTT), bridge to candidacy (&#8595; BMI, cancer-free period), or destination therapy (DT). <strong>Continuous LVAD = no palpable pulse.</strong> No swimming/baths (shower only). <strong>No CPR with LVAD.</strong> Patient carries battery/controller in black bag. 2&#215; 6MWT distance improvement. Energy conservation techniques important.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Heart Transplant &#8212; Post-Op PT</div>
+        <p><strong>Denervated heart</strong> = no parasympathetic output. Higher resting HR (90&#8211;110 bpm). HR response to exercise is delayed (relies on circulating catecholamines, not vagal tone). <strong>Requires gradual warm-up and extended cool-down.</strong> Therapy initiated 12&#8211;24 hours post-op. Focus: gas exchange, airway clearance, pain, mobility. Progress: breathing exercises &#8594; coughing &#8594; bed mobility &#8594; ROM &#8594; seated exercises &#8594; ambulation (10&#8211;15 min continuous) &#8594; stationary cycle &#8594; stairs. Sternotomy precautions apply.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Allograft Rejection Signs</div>
+        <p>Malaise, reduced exercise tolerance, low-grade fever, ventricular dysrhythmias, hypotension with activity. Endomyocardial biopsy at 7&#8211;10 days.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Lung Resection Techniques</div>
+        <p><strong>Wedge resection:</strong> Small sample/wedge. <strong>Segmentectomy:</strong> Entire bronchopulmonary segment (larger than wedge). <strong>Lobectomy:</strong> Entire lobe. <strong>Bronchoplastic/sleeve resection:</strong> Entire lobe + portion of mainstem bronchus. <strong>Pneumonectomy:</strong> Entire lung &#177; surrounding pleura.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== REVIEW TAB ==================== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; Cardiopulmonary</div>
+  <div class="section-sub">Tap any card to flip. High-yield clinical pearls across cardiac, pulmonary, exercise, and vascular topics.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the difference between ventilation and respiration, and why does it matter?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Ventilation</strong> = mechanical movement of air in/out of lungs (breathing). <strong>Respiration</strong> = gas exchange (O&#8322;/CO&#8322;) between lungs and blood. If ventilation is impaired, respiration WILL be impaired. This is why PTs focus on breathing techniques, positioning, and airway clearance &#8212; improving ventilation directly improves gas exchange. Aerobic metabolism (requires O&#8322;) is 19&#215; more efficient than anaerobic &#8212; every effort to optimize O&#8322; transport matters.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How do you differentiate obstructive from restrictive lung disease on PFTs?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Obstructive:</strong> FEV1 drops dramatically but FVC stays normal &#8594; FEV1/FVC ratio &lt;0.8 (e.g., 1.0/4.0 = 25%). Air goes in but can't get out. Examples: COPD, asthma, CF. <strong>Restrictive:</strong> Both FEV1 and FVC decrease proportionally &#8594; ratio stays normal or slightly &#8593; (e.g., 2.5/3.0 = 83%). Lungs can't expand. Examples: pulmonary fibrosis, scoliosis, obesity, ALS. The ratio is the key discriminator.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the signs of right-sided vs left-sided heart failure, and how does one cause the other?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>LHF:</strong> Blood backs up into lungs &#8594; <strong>pulmonary edema</strong> (dyspnea, orthopnea, crackles, S3 sound). <strong>RHF:</strong> Blood backs up into body &#8594; <strong>JVD, hepatosplenomegaly, ascites, peripheral pitting edema.</strong> LHF &#8594; &#8593; pulmonary pressure &#8594; RV works harder &#8594; biventricular failure. Or chronic lung disease &#8594; cor pulmonale &#8594; RHF directly. <strong>S3 in elderly = CHF.</strong> ACE inhibitors = gold standard treatment.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 4 phases of cardiac rehab and when does the patient transition between them?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Phase I (inpatient):</strong> ICU &#8594; step-down, ~5 days. MET 1&#8211;4. Self-care eval, monitored mobility. Graduates with LLGXT. <strong>Phase II (outpatient monitored):</strong> Hospital, 3&#215;/week &#215; 12 weeks (insurance covers). Monitored: ECG telemetry, BP, HR, Borg. Karvonen's formula for target HR. Cool-down critical &#8212; cardiac events occur when too short. <strong>Phase III (community):</strong> YMCA/gym, lower monitoring. Self-monitoring. <strong>Phase IV:</strong> Lifelong independent exercise. Key: intensity is the crucial element &#8212; calculated from LLGXT data.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the significance of &gt;2mm ST depression on ECG during exercise?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Immediately terminate the exercise test.</strong> ST depression = myocardial ischemia (tissue starving for O&#8322;). &gt;2mm is significant and indicates the heart is not receiving adequate blood flow during exertion. ST elevation = more serious &#8212; indicates infarction (tissue death). Normal ST segment is isoelectric (flat at baseline). Any deviation &#8805;0.5mm from baseline is abnormal. This is the single most important ECG finding for PTs conducting or monitoring exercise.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why is A-fib dangerous and what should the PT monitor?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>A-fib:</strong> Multiple ectopic foci in atria &#8594; erratic quivering &#8594; no real P-waves, irregular R-R. No true atrial contraction = no "atrial kick" = less ventricular filling. Not immediately life-threatening if ventricular response &lt;100 at rest. <strong>But 30% of A-fib patients develop emboli</strong> &#8594; most are on anticoagulant therapy. PT must monitor: ventricular rate during exercise (if response &gt;100 = concern for &#8595; CO), INR levels (bleeding risk during therapy), signs of embolic events (sudden neuro changes).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How does beta blocker use affect your exercise prescription?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Beta blockers &#8595; HR and &#8595; force of contraction &#8594; <strong>the patient's HR will NOT rise normally with exercise.</strong> You cannot use standard age-predicted max HR formulas. Use RPE instead of HR to guide intensity. Non-selective BBs can cause bronchoconstriction in asthma. <strong>BBs may mask signs of hypoglycemia</strong> in diabetic patients &#8212; tachycardia and tremors won't appear. Watch for excessive HR depression and orthostatic hypotension. Always check med list before setting HR targets.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the hypomagnesemia cardiac cascade?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Low Mg&#178;&#8314; &#8594; PVC &#8594; V-tach &#8594; V-fib.</strong> This is a high-yield electrolyte-cardiac connection. Normal Mg: 1.2&#8211;1.9 mEq/L. Causes of low Mg: decreased intake/absorption, vitamin D deficiency, impaired renal absorption, hyperthyroidism, metabolic acidosis. Conversely, hypermagnesemia causes heart block and hypotension. Always check Mg levels when you see PVCs or ventricular ectopy on telemetry. Similarly: hypokalemia (K&#8314; &lt;2.5) can cause cardiac arrest; hyperphosphatemia can cause heart block, ventricular dysrhythmia, and asystole.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the key contraindications to postural drainage and percussion?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Postural drainage:</strong> ICP &gt;20 mmHg, unstable head/neck injury, active hemorrhage, recent spinal surgery, active hemoptysis, empyema, bronchopleural fistula, pulm edema from HF, large pleural effusion, PE, rib fracture &#177; flail chest. <strong>Trendelenburg specifically:</strong> uncontrolled HTN, distended abdomen, esophageal surgery, uncontrolled airway. <strong>Chest wall manipulation additionally:</strong> subcutaneous emphysema, recent pacemaker, suspected TB, bronchospasm, <strong>osteoporosis</strong> (big one for SNF populations), coagulopathy, chest wall pain.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the criteria for terminating exercise testing or activity?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Stop immediately for:</strong> Severe fatigue or patient request. Signs of poor perfusion (ataxia, N/V, pallor, cyanosis). SpO&#8322; &lt;90%. Chest pain or angina. Peripheral ischemia/claudication. VAS &gt;8/10. <strong>BP changes: SBP &gt;250, DBP &gt;115, or drop in SBP &gt;10 mmHg</strong> (drop may indicate cardiac tamponade). HR not increasing with activity (chronotropic incompetence). SOB/dyspnea. Equipment failure. Key: SBP dropping with increased activity is a red flag &#8212; the heart can't keep up with demand.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is unique about exercising a heart transplant patient?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Denervated heart</strong> = no parasympathetic (vagal) innervation. Consequences: higher resting HR (90&#8211;110 bpm). HR increase with exercise is <strong>delayed</strong> because it depends on circulating catecholamines rather than neural response. This means: <strong>gradual warm-up essential</strong> (heart needs time to respond), <strong>extended cool-down required</strong> (HR stays elevated longer). Therapy starts 12&#8211;24 hrs post-op. Sternotomy precautions apply. Monitor closely for rejection signs: malaise, &#8595; exercise tolerance, low-grade fever, ventricular dysrhythmias, hypotension with activity. No CPR if LVAD was used as bridge.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How does exercise affect Type 2 DM at the cellular level, and what's the exercise prescription?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Muscle contraction recruits GLUT4 transporters</strong> &#8594; uptake glucose from blood to working muscle for <strong>48 hours post-exercise.</strong> Long-term training &#8593; number of transporters and glucose uptake. This is why aerobic exercise should be no &gt;48 hrs apart. Exercise can TREAT and even PREVENT Type 2 DM: augments insulin sensitivity, &#8595; pancreas burden, &#8595; HTN, improves lipids, improves body composition, <strong>decreases death from DM by &gt;50%.</strong> Rx: 40% VO&#8322;max &#8594; 50&#8211;70%. 10&#8211;15 min &#8594; 30&#8211;60 min. Non-WB preferred (neuropathy). Resistance 2&#8211;3&#215;/week.</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  var panel = document.getElementById('tab-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

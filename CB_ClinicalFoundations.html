@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — Clinical Foundations</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link active">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+
+<div class="hero">
+  <div class="hero-tag">Clinical Practice · Patient Safety</div>
+  <h1>Clinical <span>Foundations</span></h1>
+  <p>Infection control, PPE sequencing, patient positioning, pressure injury prevention and staging, and bedrest complications. The non-negotiables of safe patient care — in the clinic, the SNF, the acute hospital, and everywhere in between.</p>
+  <div class="hero-badges">
+    <span class="badge">Infection Control</span>
+    <span class="badge">PPE Donning &amp; Doffing</span>
+    <span class="badge gold">Isolation Precautions</span>
+    <span class="badge gold">Positioning &amp; Draping</span>
+    <span class="badge red">Pressure Injuries</span>
+    <span class="badge purple">Bedrest Complications</span>
+  </div>
+</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('infection',this)">Infection Control</button>
+  <button onclick="showTab('ppe',this)">PPE Sequences</button>
+  <button onclick="showTab('precautions',this)">Isolation Precautions</button>
+  <button onclick="showTab('positioning',this)">Positioning &amp; Draping</button>
+  <button onclick="showTab('pressure',this)">Pressure Injuries</button>
+  <button onclick="showTab('bedrest',this)">Bedrest Complications</button>
+  <button onclick="showTab('balance',this)">Balance Assessment</button>
+  <button onclick="showTab('transfers',this)">Bed Mobility &amp; Transfers</button>
+  <button onclick="showTab('ddx',this)">DDx &amp; Screening</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ====== INFECTION CONTROL ====== -->
+<div class="tab-panel active" id="tab-infection">
+<div class="container">
+
+  <div class="section-title">Infection Control</div>
+  <div class="section-sub">Understanding how infections spread — and how to stop them — is a foundational clinical skill. HAIs are preventable. Every clinician is both a potential source and a potential victim of healthcare-associated infection.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Key Definitions</div>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Aseptic Technique</strong></td><td>Methods and procedures to create and maintain a sterile field</td></tr>
+      <tr><td><strong>Medical ("Clean") Asepsis</strong></td><td>Reduces number of organisms; not sterile</td></tr>
+      <tr><td><strong>Surgical Asepsis</strong></td><td>Eliminates ALL organisms; required for invasive procedures</td></tr>
+      <tr><td><strong>Cleaning</strong></td><td>Physical removal of organic material/soil</td></tr>
+      <tr><td><strong>Disinfection</strong></td><td>Kills organic material using pasteurization or chemicals</td></tr>
+      <tr><td><strong>Sterilization</strong></td><td>Kills ALL organic material using steam pressure, chemical, or dry heat</td></tr>
+      <tr><td><strong>HAI (Healthcare-Associated Infection)</strong></td><td class="bad">Formerly "nosocomial." Adds 6–10 days to hospital stay. Costs $28–34 billion annually. Patient-to-patient or caregiver-to-patient.</td></tr>
+      <tr><td><strong>Contaminated</strong></td><td>Anything nonsterile, or that has touched anything nonsterile</td></tr>
+      <tr><td><strong>Pathogens</strong></td><td>Disease-causing microorganisms</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Spread of Infection — Three Required Elements</div>
+  <div class="grid3" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">1. Source</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Patients, employees, visitors. Anyone can be a reservoir of infecting organisms.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">2. Susceptible Host</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Immunocompromised, elderly, post-surgical, on antibiotics. Risk varies by patient condition.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">3. Route of Transmission</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">How the organism moves from source to host. Breaking this chain is the target of infection control.</p>
+    </div>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;">5 Routes of Transmission</div>
+  <table class="data-table">
+    <thead><tr><th>Route</th><th>Mechanism</th><th>Examples</th><th>PT Relevance</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Contact</strong></td>
+        <td>Direct contact with host OR indirect (equipment, linen)</td>
+        <td class="bad">MRSA, lice, scabies, impetigo, C. diff</td>
+        <td>Most frequent route of HAI. Gait belts, plinths, parallel bars are vectors.</td>
+      </tr>
+      <tr>
+        <td><strong>Droplet</strong></td>
+        <td>Respiratory secretions via sneeze, cough, talking; close contact (&lt;3 ft)</td>
+        <td class="warn">Pertussis, influenza, mumps, COVID-19</td>
+        <td>Mask within 3 ft; patient education on cough etiquette</td>
+      </tr>
+      <tr>
+        <td><strong>Airborne</strong></td>
+        <td>Evaporated droplets or dust particles suspended in air</td>
+        <td class="warn">TB, measles, chickenpox, SARS, norovirus, H1N1</td>
+        <td>N-95 required; special ventilated room; don before entry, doff after exiting</td>
+      </tr>
+      <tr>
+        <td><strong>Vehicle</strong></td>
+        <td>Contaminated food, water, blood, medications</td>
+        <td>Foodborne illness, bloodborne pathogens</td>
+        <td>Safe injection practices; blood/body fluid precautions</td>
+      </tr>
+      <tr>
+        <td><strong>Vector-Borne</strong></td>
+        <td>Third-party (insects, animals)</td>
+        <td>Malaria, West Nile virus, EEE</td>
+        <td>Not significant in hospital settings; relevant in community/global health</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Standard Precautions</div>
+  <div class="section-sub" style="margin-bottom:12px;">Applied to ALL patients, ALL the time — regardless of diagnosis. Based on the principle that all blood, body fluids, secretions, excretions, non-intact skin, and mucous membranes may contain transmissible agents.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">5 Components of Standard Precautions</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li><strong>Hand hygiene</strong></li>
+        <li><strong>Personal protective equipment (PPE)</strong> — gloves, gowns, masks</li>
+        <li><strong>Respiratory hygiene / cough etiquette</strong></li>
+        <li><strong>Safe handling</strong> of contaminated equipment and surfaces</li>
+        <li><strong>Safe injection practices</strong></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title">Drug-Resistant Organisms — Know These</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.9;">
+        <li><strong>MRSA</strong> — methicillin-resistant <em>Staph aureus</em></li>
+        <li><strong>VRE</strong> — vancomycin-resistant <em>Enterococcus</em></li>
+        <li><strong>ESBLs</strong> — extended-spectrum beta-lactamases</li>
+        <li><strong>PRSP</strong> — penicillin-resistant <em>Streptococcus pneumoniae</em></li>
+        <li><strong>MDR-TB</strong> — multidrug-resistant tuberculosis</li>
+        <li><strong>C. difficile (C. diff)</strong> — NOT killed by hand sanitizer; requires soap + water or bleach</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Hand Hygiene</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Hand Rubbing (Preferred when not visibly soiled)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Alcohol-based product: 60–95% alcohol</strong> — most effective when washing not required</li>
+        <li>May also use antimicrobial/antiseptic wipe</li>
+        <li><strong>Exception:</strong> C. diff and norovirus — alcohol does NOT kill spores. Use soap and water.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Hand Washing (When contaminated or visibly soiled)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Vigorous rubbing all surfaces of lathered hands for <strong>15–30 seconds</strong></li>
+        <li>Rinse under running water from <strong>forearms toward fingertips</strong></li>
+        <li>Dry with clean paper towel; use towel to turn off faucet</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bl-strip gold" style="margin-top:4px;">
+    <div class="bl-label">Hand Hygiene Criteria — Jewelry &amp; Nails</div>
+    <p>Remove watches and jewelry (especially rings with high settings) · Keep fingernails <strong>shorter than fingertip length</strong> · <strong>No artificial nails</strong> · No nail polish. These are requirements, not suggestions — you will be tested on this in practicals.</p>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:24px;">When to Perform Hand Hygiene</div>
+  <div class="grid2">
+    <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+      <li>Before AND after patient contact</li>
+      <li>Before AND after contact with wounds, dressings, specimens, linen</li>
+      <li>After contact with secretions or excretions</li>
+      <li>When hands are soiled or visibly dirty</li>
+    </ul>
+    <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+      <li>Before and after toileting</li>
+      <li>After sneezing, coughing, or blowing nose</li>
+      <li><strong>After removing gloves</strong> (wearing gloves does NOT replace hand hygiene)</li>
+      <li>Before and after eating</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">C. difficile — Clinician Alert</div>
+  <div class="grid2">
+    <div>
+      <div class="bl-strip red">
+        <div class="bl-label">Critical Facts</div>
+        <p>94% of C. diff infections are connected to receiving medical care. Linked to ~14,000 deaths/year in the US. Hospital stays tripled in the last decade. Deaths increased 400% between 2000–2007. Risk highest in patients on antibiotics (good protective bacteria destroyed for months).</p>
+      </div>
+      <div class="bl-strip red" style="margin-top:4px;">
+        <div class="bl-label">Hand Sanitizer Does NOT Kill C. diff</div>
+        <p>Alcohol-based hand sanitizer is <strong>ineffective</strong> against C. diff spores. Use <strong>soap and water</strong>. Room surfaces require <strong>bleach or EPA-approved spore-killing disinfectant</strong> — not standard disinfectant wipes.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">6 Steps for Clinicians (CDC)</div>
+      <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+        <li>Prescribe antibiotics carefully (50% given unnecessarily)</li>
+        <li>Test for C. diff when patient has diarrhea on or within months of antibiotics</li>
+        <li>Isolate C. diff patients <strong>immediately</strong></li>
+        <li>Wear gloves AND gown — even during short visits</li>
+        <li>Clean surfaces with bleach or EPA-approved spore-killing disinfectant</li>
+        <li>Notify new facility when patient with C. diff transfers</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Environment &amp; Equipment</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">In the PT Gym/Clinic</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Floors are a source of infection</strong> — do not sit or kneel on floors</li>
+        <li>Gait belts, stethoscopes, towels, bed sheets are all vectors</li>
+        <li>Therapist shoes carry floor organisms — consider shoe covers in specific settings</li>
+        <li>All medical equipment and devices MUST be cleaned per manufacturer instructions</li>
+        <li>This includes gym equipment, plinths, parallel bars — any patient-contacted surface</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">After Patient Contact</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Wash hands <strong>even if you were wearing gloves</strong></li>
+        <li><strong>Never go from one patient to the next with the same gloves</strong></li>
+        <li>Remove PPE with contaminated sides turned inward</li>
+        <li>Remove soiled linens with minimal handling/movement</li>
+        <li>Disinfect, decontaminate, or sterilize patient contact surfaces as needed</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:24px;">Cough Etiquette</div>
+  <div class="grid4" style="margin-bottom:8px;">
+    <div class="card"><div class="card-title">Cover</div><p style="font-size:13px;color:var(--text2);">Nose and mouth when coughing or sneezing — elbow preferred over hands</p></div>
+    <div class="card"><div class="card-title">Tissue</div><p style="font-size:13px;color:var(--text2);">Immediate disposal of used tissues in nearest waste container</p></div>
+    <div class="card"><div class="card-title">Hygiene</div><p style="font-size:13px;color:var(--text2);">Immediate hand hygiene after coughing, sneezing, or handling tissues</p></div>
+    <div class="card"><div class="card-title">Distance</div><p style="font-size:13px;color:var(--text2);">Maintain <strong>&gt;3 feet</strong> distance; use mask when appropriate</p></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Hand Hygiene &mdash; Criteria &amp; Timing</div>
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Physical Requirements Before Patient Care</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Remove watches and jewelry if possible &mdash; especially rings with high settings</li>
+        <li>Keep fingernails trimmed <strong>shorter than fingertips</strong></li>
+        <li><strong>No artificial nails or nail polish</strong> &mdash; both harbor pathogens and prevent adequate cleaning</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Hand Rub vs. Hand Wash</div>
+        <p><strong>Alcohol-based hand rub (60&ndash;95% alcohol):</strong> Preferred when hands are not visibly soiled &mdash; fastest and most effective in that scenario. <strong>Hand washing with soap and water:</strong> Required when hands are visibly soiled or contaminated. Vigorous rubbing of all surfaces for <strong>15&ndash;30 seconds</strong>, rinse from forearms toward fingertips. <strong>Also required after <em>C. difficile</em> patients</strong> &mdash; alcohol does not kill spores.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">When to Perform Hand Hygiene</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Before and after <strong>every patient contact</strong></li>
+        <li>Before and after contact with wounds, dressings, specimens, bed linen, protective clothing</li>
+        <li>After contact with secretions or excretions</li>
+        <li>When hands are <strong>soiled or visibly dirty</strong></li>
+        <li>Before and after toileting</li>
+        <li>After sneezing, coughing, or nose blowing</li>
+        <li><strong>After removing gloves</strong> (gloves do not replace hand hygiene)</li>
+        <li>Before and after eating</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;"><em>C. difficile</em> &mdash; Special Precautions</div>
+  <div class="bl-strip red" style="margin-bottom:12px;">
+    <div class="bl-label">Critical SNF/PT Alert &mdash; Alcohol Does NOT Kill <em>C. diff</em></div>
+    <p><strong>Alcohol-based hand sanitizer does NOT kill <em>C. difficile</em> spores.</strong> Soap and water hand washing is required after caring for <em>C. diff</em> patients. Room surfaces must be cleaned with <strong>bleach or an EPA-approved spore-killing disinfectant</strong> &mdash; standard disinfectants are ineffective. <em>C. diff</em> spores survive on surfaces for months.</p>
+  </div>
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Scope of the Problem</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Linked to <strong>14,000 deaths in the US each year</strong></li>
+        <li>Hospital stays from <em>C. diff</em> tripled over the past decade</li>
+        <li><strong>94%</strong> of infections are connected to receiving medical care</li>
+        <li><strong>75% first show in nursing home patients</strong> or recently-treated outpatients &mdash; directly relevant to SNF PT</li>
+        <li>Most dangerous spread source: patients with active diarrhea</li>
+        <li>Patients can arrive with <em>C. diff</em> and spread it within a new facility &mdash; notification on transfer is critical</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">6 Clinician Prevention Steps (CDC)</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li>Use antibiotics carefully &mdash; ~50% are unnecessary; each course increases risk</li>
+        <li>Test for <em>C. diff</em> when patients have diarrhea while on or within months of antibiotics</li>
+        <li>Isolate patients with <em>C. diff</em> <strong>immediately</strong></li>
+        <li>Wear gloves <strong>AND gowns</strong> even during short visits</li>
+        <li>Clean room surfaces with <strong>bleach or EPA-approved spore-killing disinfectant</strong></li>
+        <li>When patient transfers, <strong>notify receiving facility</strong> of <em>C. diff</em> status</li>
+      </ol>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== PPE SEQUENCES ====== -->
+<div class="tab-panel" id="tab-ppe">
+<div class="container">
+
+  <div class="section-title">PPE — Donning &amp; Doffing Sequences</div>
+  <div class="section-sub">Sequence matters because it determines what is contaminated and when. The fundamental rule: contaminated surfaces must never touch clean skin, mucous membranes, or clothing. Remove all PPE before exiting the patient room, except a respirator (remove after exiting and closing the door).</div>
+
+  <div class="grid2">
+    <div>
+      <div class="section-title" style="font-size:1.1rem;color:var(--green);margin-bottom:12px;">Donning PPE — Putting On</div>
+      <div class="section-sub" style="margin-bottom:12px;">Always perform hand hygiene FIRST. Sequence: clean → most contaminated.</div>
+
+      <div class="ppe-steps">
+        <div class="ppe-step">
+          <div class="ppe-step-num on">0</div>
+          <div class="ppe-step-content">
+            <h5>Hand Hygiene</h5>
+            <p>Perform hand hygiene prior to placing any PPE. Start clean.</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num on">1</div>
+          <div class="ppe-step-content">
+            <h5>Gown</h5>
+            <p>Fully cover torso from neck to knees, arms to end of wrists, wrap around the back. Fasten at back of neck and waist.</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num on">2</div>
+          <div class="ppe-step-content">
+            <h5>Cap (if required)</h5>
+            <p>Cover all hair — front and back of head.</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num on">3</div>
+          <div class="ppe-step-content">
+            <h5>Mask or Respirator</h5>
+            <p>Secure ties/elastic bands at middle of head and neck. Fit flexible band to nose bridge. Fit snug to face and below chin. <strong>Fit-check respirator</strong> (inhale sharply — should collapse inward).</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num on">4</div>
+          <div class="ppe-step-content">
+            <h5>Goggles or Face Shield</h5>
+            <p>Place over face and eyes and adjust to fit. Face shield sits over forehead, rests on nose.</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num on">5</div>
+          <div class="ppe-step-content">
+            <h5>Gloves</h5>
+            <p>Don last. Extend gloves to cover the wrist of the isolation gown. Gloves go over the gown cuffs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bl-strip green" style="margin-top:8px;">
+        <div class="bl-label">Safe Work Practices While Wearing PPE</div>
+        <p>Keep hands away from face · Limit surfaces touched · Change gloves when torn or heavily contaminated · Perform hand hygiene between tasks as needed</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title" style="font-size:1.1rem;color:var(--red);margin-bottom:12px;">Doffing PPE — Taking Off</div>
+      <div class="section-sub" style="margin-bottom:12px;">Gown front, sleeves, and outside of gloves are <strong>contaminated</strong>. Remove without touching your face, skin, or clean clothing. Contaminated → inside out → waste container.</div>
+
+      <div class="ppe-steps">
+        <div class="ppe-step">
+          <div class="ppe-step-num off">1</div>
+          <div class="ppe-step-content">
+            <h5>Gloves — Outside is Contaminated!</h5>
+            <p>Grasp outside of one glove with opposite gloved hand and peel off. Hold removed glove in gloved hand. Slide fingers of bare hand under remaining glove at wrist — peel off over first glove. Discard in waste container.</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num off">2</div>
+          <div class="ppe-step-content">
+            <h5>Goggles or Face Shield — Outside is Contaminated!</h5>
+            <p>Handle by head band or ear pieces only — never touch the front. Remove from behind. Place in waste container or designated receptacle for reprocessing.</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num off">3</div>
+          <div class="ppe-step-content">
+            <h5>Gown — Front and Sleeves are Contaminated!</h5>
+            <p>Grasp gown in front and pull away from body so ties break. Touch <strong>inside of gown only</strong>. Turn inside out, fold or roll into a bundle. Discard. (Alt: while removing gown, simultaneously peel off gloves — fold gown inside out around gloves.)</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num off">4</div>
+          <div class="ppe-step-content">
+            <h5>Mask or Respirator — Front is Contaminated! DO NOT TOUCH!</h5>
+            <p>Grasp <strong>bottom ties/elastics first</strong>, then top ties. Remove without touching the front. Discard in waste container. If respirator: remove <strong>after</strong> leaving the patient room and closing the door.</p>
+          </div>
+        </div>
+        <div class="ppe-step">
+          <div class="ppe-step-num off">5</div>
+          <div class="ppe-step-content">
+            <h5>Hand Hygiene — Immediately After</h5>
+            <p>Wash hands or use alcohol-based hand sanitizer <strong>immediately</strong> after removing all PPE. Perform hand hygiene between steps if hands become contaminated.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">Critical Rule</div>
+        <p>If your hands become contaminated at ANY step during doffing — immediately wash hands or use hand sanitizer before continuing. Perform hand hygiene <strong>between steps</strong> if contamination occurs, and <strong>immediately after removing all PPE.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">PPE Types — Selection Guide</div>
+  <table class="data-table">
+    <thead><tr><th>PPE Item</th><th>Use When</th><th>Key Points</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Non-sterile Gloves</strong></td>
+        <td>Hands likely to contact infected materials (body fluids, blood)</td>
+        <td>Does NOT replace hand hygiene. Change between patients. Change when torn or contaminated.</td>
+      </tr>
+      <tr>
+        <td><strong>Sterile Gloves</strong></td>
+        <td>Invasive procedures; touching open wounds</td>
+        <td>Required for wound care, catheter insertion, sterile technique procedures</td>
+      </tr>
+      <tr>
+        <td><strong>Mask (surgical)</strong></td>
+        <td>Droplet precautions; working near patient with respiratory infection; working in sterile environment</td>
+        <td>Use once then discard. Covers large-particle droplets. Does NOT protect against airborne.</td>
+      </tr>
+      <tr>
+        <td><strong>N-95 Respirator</strong></td>
+        <td>Airborne precautions (TB, measles, chickenpox, SARS)</td>
+        <td class="bad">Must be fit-tested. Don BEFORE entering room. Remove AFTER leaving room. Filters ≥95% of airborne particles ≥0.3 microns.</td>
+      </tr>
+      <tr>
+        <td><strong>Goggles / Face Shield</strong></td>
+        <td>Risk of splash to eyes; airborne contaminants; droplet precautions with spraying anticipated</td>
+        <td>Face shield replaces goggles. Outside surface is contaminated — handle by head strap only.</td>
+      </tr>
+      <tr>
+        <td><strong>Gown</strong></td>
+        <td>Substantial contact with patient or environment anticipated; contact precautions</td>
+        <td>Prevents soiling; front and sleeves contaminated during patient care. Single-use.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+<!-- ====== ISOLATION PRECAUTIONS ====== -->
+<div class="tab-panel" id="tab-precautions">
+<div class="container">
+
+  <div class="section-title">Transmission-Based Isolation Precautions</div>
+  <div class="section-sub">Standard precautions are the baseline for all patients. Transmission-based precautions are added ON TOP of standard precautions for specific pathogens. Category designations can be combined (e.g., chickenpox = airborne + contact).</div>
+
+  <div class="bl-strip red" style="margin-bottom:20px;">
+    <div class="bl-label">Isolation Disadvantages — Clinical Awareness</div>
+    <p>Isolation adds cost to hospitalization. Forced solitude deprives patients of social interaction and can cause psychological harm. Isolated patients may not be able to access the PT gym — treat in the patient's room. Each facility has its own rules for treating contact-precaution patients outside their room — always check your facility's policy.</p>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Contact Precautions</h4>
+      <div class="ma-tags"><span class="ma-tag red">MRSA · C. diff · Scabies · ESBL</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Required Actions</p>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Hand hygiene before touching patient AND before wearing gloves</li>
+            <li>Wear <strong>gloves</strong> when touching patient and patient's immediate environment/belongings</li>
+            <li>Wear <strong>gown</strong> if substantial contact with patient or environment anticipated</li>
+            <li>Hand hygiene after removal of PPE</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">C. diff / Norovirus Special Rule</p>
+          <div class="bl-strip red" style="margin:0;">
+            <div class="bl-label">C. diff Hand Hygiene</div>
+            <p>After caring for patients with known/suspected infectious diarrhea (C. diff, norovirus): use <strong>soap and water — not alcohol sanitizer</strong>. Spores are not killed by alcohol.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-top:8px;">
+            <div class="bl-label">PT Equipment in Contact Rooms</div>
+            <p>Clean and disinfect anything the patient touched — parallel bars, gait belt, treatment table. For C. diff: bleach or EPA-approved spore-killing disinfectant required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Droplet Precautions</h4>
+      <div class="ma-tags"><span class="ma-tag warn">Pertussis · Flu · Mumps · COVID-19</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Wear a <strong>facemask</strong> for close contact — don <strong>upon entering the room</strong></li>
+            <li>If substantial spraying of respiratory fluids anticipated: add <strong>gloves + gown + goggles/face shield</strong></li>
+            <li>Hand hygiene before/after patient contact and after secretion/contaminated object contact</li>
+          </ul>
+        </div>
+        <div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Instruct patient to wear facemask when leaving room</li>
+            <li>Patient should avoid close contact with other patients</li>
+            <li>Practice respiratory hygiene and cough etiquette</li>
+            <li>Clean and disinfect exam room accordingly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Airborne Precautions</h4>
+      <div class="ma-tags"><span class="ma-tag red">TB · Measles · Chickenpox · SARS</span><span class="ma-tag red">N-95 Required</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Wear a <strong>fit-tested N-95 or higher</strong> disposable respirator</li>
+            <li>Don respirator <strong>BEFORE entering the room</strong></li>
+            <li>Remove respirator <strong>AFTER exiting the room and closing the door</strong></li>
+            <li>If substantial respiratory fluid spraying anticipated: add gloves, gown, goggles/face shield</li>
+          </ul>
+        </div>
+        <div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Hand hygiene before/after patient contact and respiratory secretion contact</li>
+            <li>Patient wears facemask when leaving room</li>
+            <li>Negative pressure room required (air flows in, not out)</li>
+            <li>Staff entering room during wait period must use respiratory protection</li>
+          </ul>
+          <div class="bl-strip red" style="margin-top:8px;">
+            <div class="bl-label">N-95 vs. Surgical Mask</div>
+            <p>Surgical mask = large-particle droplets only. N-95 = filters ≥95% of airborne particles. N-95 must be fit-tested individually. Come in multiple sizes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Neutropenic Precautions</h4>
+      <div class="ma-tags"><span class="ma-tag purple">Chemotherapy · Bone marrow suppression</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">ANC Levels (Absolute Neutrophil Count)</p>
+          <table class="data-table" style="margin:0;">
+            <thead><tr><th>Level</th><th>ANC</th><th>Risk</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Mild</strong></td><td>&lt;1000/ml</td><td>Elevated</td></tr>
+              <tr><td><strong>Moderate</strong></td><td>&lt;500/ml</td><td class="warn">~30% ↑ infection risk</td></tr>
+              <tr><td><strong>Profound/Severe</strong></td><td>&lt;100/ml</td><td class="bad">200% ↑ infection risk</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Precautions Required</p>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Appropriate hand washing</li>
+            <li>Mask required</li>
+            <li>Private room</li>
+            <li><strong>No fresh flowers</strong> (bacterial growth in water)</li>
+            <li><strong>No raw food</strong> (possible contamination)</li>
+            <li>Therapy performed in <strong>patient's room</strong></li>
+            <li>Patient wears mask when leaving room</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Quick Reference — Precaution by Diagnosis</div>
+  <table class="data-table">
+    <thead><tr><th>Diagnosis / Organism</th><th>Precaution Type</th><th>Key PPE</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Tuberculosis (TB)</strong></td><td class="bad">Airborne</td><td>N-95 respirator; private negative-pressure room; minimize transport</td></tr>
+      <tr><td><strong>MRSA</strong></td><td class="warn">Contact</td><td>Gloves + gown; private room; equipment stays in room; CHG soap handwash</td></tr>
+      <tr><td><strong>C. difficile</strong></td><td class="warn">Contact</td><td>Gloves + gown; soap+water (NOT alcohol gel); bleach for surfaces</td></tr>
+      <tr><td><strong>Influenza / COVID-19</strong></td><td class="warn">Droplet</td><td>Facemask upon entry; goggles/gown if spraying likely</td></tr>
+      <tr><td><strong>Chickenpox / Varicella</strong></td><td class="bad">Airborne + Contact</td><td>N-95 + gloves + gown</td></tr>
+      <tr><td><strong>Extensive open wounds</strong></td><td class="ok">Protective (Standard)</td><td>Sterile gloves + gown as needed; sterile technique for wound care</td></tr>
+      <tr><td><strong>Chemotherapy (low ANC)</strong></td><td class="ok">Neutropenic</td><td>Mask + hand hygiene; therapy in patient room; no flowers/raw food</td></tr>
+      <tr><td><strong>No apparent infection</strong></td><td class="ok">Standard Precautions</td><td>Hand hygiene; gloves as needed for body fluid contact</td></tr>
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+<!-- ====== POSITIONING & DRAPING ====== -->
+<div class="tab-panel" id="tab-positioning">
+<div class="container">
+
+  <div class="section-title">Positioning &amp; Draping</div>
+  <div class="section-sub">Proper positioning prevents pressure injuries, contractures, and deformity while maintaining patient dignity. Patient-centered positioning respects privacy and provides access for treatment — always the minimum exposure necessary for the task.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Goals of Proper Positioning</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li>Make the patient as <strong>comfortable</strong> as possible</li>
+        <li>Prevent development of <strong>deformities and pressure injuries</strong></li>
+        <li>Provide the patient <strong>access to the environment</strong></li>
+        <li>Proper positioning for treatment while <strong>respecting privacy</strong></li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title">General Principles</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Body mechanics</strong> — protect yourself, protect the patient</li>
+        <li><strong>Lift — do not drag</strong> — dragging creates shear forces = skin breakdown</li>
+        <li>Attend to <strong>bony prominences</strong> — never rest weight directly on them</li>
+        <li><strong>Maintain modesty</strong> — expose only the area necessary for intervention</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Pressure Relief</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Primary Objectives</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Disperse pressure</strong> over the greatest surface area possible</li>
+        <li>Provide comfort</li>
+        <li>Allow access for care</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Specific Techniques</div>
+        <p>No direct contact on bony prominences — support the area <em>around</em> them · Eliminate sheet wrinkles · Frequent position changes · Use trapeze or linen for transfers to reduce drag/shear · Avoid positions that extend beyond the support surface</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Pressure-Dispersing Surfaces &amp; Items</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Water flotation mattress</strong> — distributes pressure across fluid surface</li>
+        <li><strong>Gel pads</strong> — contours to body shape</li>
+        <li><strong>Dynamic air bed</strong> — alternating pressure cells cycle automatically</li>
+        <li><strong>Positioning pillows:</strong> under legs to elevate heels · between ankles · between knees · behind back · under head · under arm (sidelying)</li>
+        <li><strong>Limb elevators</strong> — heel off-loading devices</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Contracture Prevention by Position</div>
+  <table class="data-table">
+    <thead><tr><th>Position</th><th>Common Contractures</th><th>Prevention Strategy</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Supine</strong></td>
+        <td>Ankle PF contracture · Hip/knee flexion tendency</td>
+        <td>Footboard to prevent PF · Pillow under thighs if needed · Avoid prolonged knee flexion</td>
+      </tr>
+      <tr>
+        <td><strong>Prone</strong></td>
+        <td>Ankle PF contracture</td>
+        <td>Feet hanging off edge of surface · Pillow under ankles · Footboard alternative</td>
+      </tr>
+      <tr>
+        <td><strong>Sidelying</strong></td>
+        <td>Hip/knee flexion · Ankle PF</td>
+        <td>Pillow between knees · Pillow between ankles · Support top arm · Pillow behind back</td>
+      </tr>
+      <tr>
+        <td><strong>Sitting</strong></td>
+        <td>Hip and knee flexion contractures</td>
+        <td>Limit duration of sitting · Frequent position changes · Extend hips/knees during repositioning</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip gold" style="margin-top:8px;">
+    <div class="bl-label">Special Populations — Additional Considerations</div>
+    <p><strong>Transfemoral amp:</strong> Avoid hip flexion/ABD contracture — prone positioning critical. <strong>Transtibial amp:</strong> Avoid knee flexion contracture — no pillow under knee. <strong>Hemiplegia:</strong> Support affected UE; positioning to prevent shoulder subluxation. <strong>Quadriplegia:</strong> Full trunk support; prevent all contractures simultaneously. <strong>Burns:</strong> Position opposite to expected contracture — skin splinting. <strong>Agitated patient:</strong> Safety first; use minimal restraint; frequent reassessment.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Bridging the Gap</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">What It Is</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">A technique for relieving pressure around a <strong>sensitive area</strong> (wound, open area, fragile tissue). Instead of placing padding directly under the area, you support the limb segments <strong>proximal and distal</strong> to the sensitive area — creating a "bridge" that suspends the problem area off the surface.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Clinical Considerations</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Requires <strong>more frequent position changes</strong> than standard positioning — the suspended area has even less blood flow if the bridge collapses</li>
+        <li>Inspect the area frequently</li>
+        <li>Bridge may need to be rebuilt with each repositioning</li>
+        <li>Consider specialized devices (heel elevators, foam boots) for prolonged situations</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Footboards</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Purpose</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Keep sheets and blankets from pushing the foot into a <strong>plantarflexed position</strong>. The weight of bedding over the feet is enough to cause PF contracture over time in non-ambulatory patients.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Risk</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">If the foot is constantly pressed against the footboard, it can cause a <strong>pressure injury</strong> at the heel or dorsal foot. The footboard prevents contracture from below but can create pressure from above. Monitor regularly.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Skin Changes with Aging — Why This Matters</div>
+  <div class="grid4" style="margin-bottom:8px;">
+    <div class="card"><div class="card-title">↓ Thickness</div><p style="font-size:13px;color:var(--text2);">Thinner skin tears and breaks down more easily under pressure or friction</p></div>
+    <div class="card"><div class="card-title">↓ Vascularity</div><p style="font-size:13px;color:var(--text2);">Reduced blood supply = slower healing and less tolerance of ischemia</p></div>
+    <div class="card"><div class="card-title">↑ Rigidity</div><p style="font-size:13px;color:var(--text2);">Less pliable skin is less able to distribute stress; more prone to shear injury</p></div>
+    <div class="card"><div class="card-title">↓ Sensation</div><p style="font-size:13px;color:var(--text2);">Decreased neurosensory perception = patient cannot feel early pressure injury warning signs</p></div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== PRESSURE INJURIES ====== -->
+<div class="tab-panel" id="tab-pressure">
+<div class="container">
+
+  <div class="section-title">Pressure Injuries</div>
+  <div class="section-sub">Pressure injuries (formerly "pressure ulcers") result from unrelieved pressure causing tissue ischemia and necrosis. 95% develop at 5 classic locations. Staging is based on tissue depth involved and visual appearance. Never reverse-stage a healing wound.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:16px;">
+    <div class="bl-label">Terminology Note (NPUAP 2016)</div>
+    <p>Renamed from "pressure ulcer" to <strong>"pressure injury"</strong> — because an injury can occur without a break in skin (e.g., DTPI), but the old term implied skin disruption. The mechanism is unrelieved pressure causing ischemia → tissue damage at the bone-muscle interface.</p>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Classic Pressure Injury Locations</div>
+  <div class="section-sub" style="margin-bottom:10px;"><strong>95%</strong> of all pressure injuries develop at 5 locations — all bony prominences. Know these cold.</div>
+  <div class="grid4" style="margin-bottom:14px;">
+    <div class="card"><div class="card-title">1</div><p style="color:var(--text2);font-size:13.5px;"><strong>Sacral / Coccygeal</strong> — most common; supine patients</p></div>
+    <div class="card"><div class="card-title">2</div><p style="color:var(--text2);font-size:13.5px;"><strong>Greater Trochanter</strong> — sidelying patients</p></div>
+    <div class="card"><div class="card-title">3</div><p style="color:var(--text2);font-size:13.5px;"><strong>Ischial Tuberosity</strong> — seated patients</p></div>
+    <div class="card"><div class="card-title">4</div><p style="color:var(--text2);font-size:13.5px;"><strong>Heel</strong> — supine; at risk from footboard too</p></div>
+  </div>
+  <div class="card" style="margin-bottom:20px;"><p style="color:var(--text2);font-size:13.5px;">5. <strong>Lateral Malleolus</strong> — sidelying patients</p></div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Staging — NPUAP Classification</div>
+  <div class="section-sub" style="margin-bottom:12px;">Stages reflect tissue depth involved. Do NOT reverse-stage as wounds heal — a healing Stage 4 stays "healing Stage 4," not "Stage 2."</div>
+
+  <div class="stage-grid">
+    <div class="stage-card s1">
+      <div class="stage-label">Stage 1</div>
+      <div class="stage-title">Non-blanchable erythema</div>
+      <div class="stage-depth">Partial thickness: Epidermis only</div>
+      <div class="stage-desc">Red, swollen intact skin. Does NOT return to normal with pressure relief. No skin break.</div>
+    </div>
+    <div class="stage-card s2">
+      <div class="stage-label">Stage 2</div>
+      <div class="stage-title">Partial-thickness skin loss</div>
+      <div class="stage-depth">Partial thickness: Epidermis + Dermis</div>
+      <div class="stage-desc">Abrasion, blister, peeling, or shallow crater. Wound bed viable, pink/red, moist. May be intact or ruptured serum-filled blister.</div>
+    </div>
+    <div class="stage-card s3">
+      <div class="stage-label">Stage 3</div>
+      <div class="stage-title">Full-thickness skin loss</div>
+      <div class="stage-depth">Full thickness: Epi + Dermis + Subcutaneous</div>
+      <div class="stage-desc">Deep crater. Undermining and tunneling may occur. Fascia/muscle/tendon/bone NOT exposed.</div>
+    </div>
+    <div class="stage-card s4">
+      <div class="stage-label">Stage 4</div>
+      <div class="stage-title">Full-thickness tissue loss</div>
+      <div class="stage-depth">Full thickness: + Fascia, Muscle, Bone</div>
+      <div class="stage-desc">Deep crater with underlying tissue destruction. Fascia, muscle, and/or bone visible or palpable. Highest severity.</div>
+    </div>
+    <div class="stage-card su">
+      <div class="stage-label">Unstageable</div>
+      <div class="stage-title">Depth unknown</div>
+      <div class="stage-depth">Could be Stage 3 or 4</div>
+      <div class="stage-desc">Covered with slough or eschar — cannot determine severity visually. Do NOT remove stable, dry, adherent heel eschar on ischemic limbs.</div>
+    </div>
+    <div class="stage-card dt">
+      <div class="stage-label">Deep Tissue (DTPI)</div>
+      <div class="stage-title">Bone-muscle interface</div>
+      <div class="stage-depth">Maroon/purple discoloration</div>
+      <div class="stage-desc">Intact or non-intact skin with persistent non-blanchable deep red/maroon/purple. Pain and temp change often precede color changes. May evolve rapidly or resolve without tissue loss. Result of intense shear at bone-muscle interface.</div>
+    </div>
+  </div>
+
+  <div class="bl-strip red" style="margin-top:8px;">
+    <div class="bl-label">Critical Documentation Rule — Never Reverse-Stage</div>
+    <p>A healing pressure injury retains its original stage classification. Document as "<strong>healing Stage 4</strong>" — not "Stage 2" or "Stage 1" as it improves. The tissues that were destroyed in a Stage 4 do not regenerate as original tissue; they fill with scar/granulation tissue. The stage reflects the maximum depth reached, not the current appearance.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Risk Factors</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Primary Risk Factors</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>↓ Mobility / Activity</strong> — inability to self-reposition; chair/bedbound</li>
+        <li><strong>Poor circulation</strong> — ischemia accelerates tissue breakdown</li>
+        <li><strong>Fragile skin</strong> — aging, malnutrition, medications (steroids)</li>
+        <li><strong>↓ Sensation</strong> — cannot feel pain signals indicating pressure</li>
+        <li><strong>Friction and shear forces</strong> — dragging patient; head of bed elevation &gt;30°</li>
+        <li><strong>Moisture / Incontinence</strong> — softens and weakens skin; chemical irritation</li>
+        <li><strong>↓ Mentation</strong> — cannot communicate discomfort or reposition</li>
+        <li><strong>Malnutrition</strong> — protein deficit impairs wound healing; skin integrity</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Prevention by Risk Factor</div>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Risk</th><th>Intervention</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Immobility</strong></td><td>Repositioning, pressure-reducing surfaces, bridging</td></tr>
+          <tr><td><strong>Malnutrition</strong></td><td>Protein, calories, Vitamin C, zinc, iron supplements</td></tr>
+          <tr><td><strong>Friction/Shear</strong></td><td>Turning and draw sheets; lift don't drag</td></tr>
+          <tr><td><strong>Moisture</strong></td><td>Absorbent products; diagnose incontinence; skin care</td></tr>
+          <tr><td><strong>Skin fragility</strong></td><td>Moisturizers; minimize tape; gentle handling</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Position Change Frequency</div>
+  <div class="grid3" style="margin-bottom:14px;">
+    <div class="card" style="border-left:3px solid var(--teal);">
+      <div class="card-title">Initial Assessment</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Check skin after <strong>5–10 minutes</strong> of any new position to ensure no early erythema or pressure signs.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--gold);">
+      <div class="card-title">Supine / Prone / Sidelying</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Minimum every <strong>2 hours</strong> for bed-positioned patients. Increase frequency with any additional risk factors.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--red);">
+      <div class="card-title">Sitting</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Minimum every <strong>10 minutes</strong> — ischial tuberosity loading in seated position is much higher than in supine. Pressure relief (push-up or weight shift) every 10–15 min.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Documentation of Pressure Injuries</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">What to Document</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Location</strong> — specific (e.g., sacrum, L lateral malleolus)</li>
+        <li><strong>Stage</strong> — 1–4, Unstageable, or DTPI (never reverse-stage)</li>
+        <li><strong>Size</strong> — Length × Width × Depth in cm; use sterile Q-tip for depth measurement</li>
+        <li><strong>Drainage</strong> — color, odor, amount</li>
+        <li><strong>Signs of infection</strong> — erythema, warmth, purulent drainage, odor</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Also Document</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Activities, positions, and postures that <strong>aggravate or relieve</strong> pressure</li>
+        <li>Associated skin characteristics (surrounding tissue)</li>
+        <li>Vital signs from systems review</li>
+        <li>Patient/caregiver education provided</li>
+        <li>Turning/repositioning schedule implemented</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== BEDREST COMPLICATIONS ====== -->
+<div class="tab-panel" id="tab-bedrest">
+<div class="container">
+
+  <div class="section-title">Bedrest Complications</div>
+  <div class="section-sub">Bedrest is not benign. The sequelae of immobility affect nearly every organ system. As PTs, early mobilization is one of the most powerful interventions available — it directly reverses or prevents these complications.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Effects of Bedrest</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>↓ Muscle strength</strong> — up to 1–3% per day; faster in older adults</li>
+        <li><strong>↑ Fatigue</strong> — deconditioning causes disproportionate effort for any activity</li>
+        <li><strong>↓ Maximal stroke volume, cardiac output, O₂ uptake</strong> — cardiovascular deconditioning</li>
+        <li><strong>↓ Muscle mass</strong> (atrophy) — disuse atrophy begins within days</li>
+        <li><strong>↓ Bone density</strong> — disuse osteoporosis; mechanical loading required for bone maintenance</li>
+        <li><strong>DVT risk</strong></li>
+        <li><strong>Orthostatic hypotension</strong></li>
+        <li><strong>Pressure injury risk</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Why Mobilization is PT's Most Powerful Tool</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:10px;">Every effect of bedrest listed here is either prevented or reversed by appropriate early mobilization. The question isn't "should we mobilize?" — it's "how early and how aggressively can we safely mobilize given this patient's condition?"</p>
+      <div class="bl-strip">
+        <div class="bl-label">PT Role</div>
+        <p>Early mobilization reduces hospital length of stay, reduces DVT risk, prevents deconditioning, maintains bone density, prevents pressure injuries, maintains ROM and strength, and improves mood and cognitive function.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Deep Vein Thrombosis (DVT)</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Signs &amp; Symptoms (Unilateral)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Swelling</strong> — leg girth difference: ≥1.4 cm (male), ≥1.2 cm (female)</li>
+        <li><strong>Warmth</strong></li>
+        <li><strong>Tenderness</strong> along deep venous distribution</li>
+        <li><strong>Leg pain</strong></li>
+        <li><strong>Discoloration</strong></li>
+        <li><strong>Palpable cord</strong> (superficial thrombus)</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Homan's Sign — No Longer Recommended</div>
+        <p>Positive test does NOT confirm DVT; negative test does NOT rule it out. Ultrasound is the gold standard for diagnosis. Do not rely on Homan's sign clinically.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Well's Criteria for DVT</div>
+      <p style="font-size:12px;color:var(--text3);margin-bottom:8px;">Score ≥2 = "Likely" · Score &lt;2 = "Unlikely" — assess the more symptomatic leg if bilateral</p>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Criterion</th><th>Points</th></tr></thead>
+        <tbody>
+          <tr><td>Active cancer (treatment within 6 mo)</td><td class="hi">+1</td></tr>
+          <tr><td>Paralysis/paresis or recent lower extremity immobilization</td><td class="hi">+1</td></tr>
+          <tr><td>Bedridden &gt;3 days or major surgery within <strong>12 weeks</strong> (requiring general or regional anesthesia)</td><td class="hi">+1</td></tr>
+          <tr><td>Localized tenderness along deep venous system</td><td class="hi">+1</td></tr>
+          <tr><td>Entire leg swollen</td><td class="hi">+1</td></tr>
+          <tr><td>Calf swelling &gt;3 cm vs. asymptomatic side (10 cm below tibial tuberosity)</td><td class="hi">+1</td></tr>
+          <tr><td>Pitting edema confined to symptomatic leg</td><td class="hi">+1</td></tr>
+          <tr><td>Collateral superficial veins (non-varicose)</td><td class="hi">+1</td></tr>
+          <tr><td>Previously documented DVT</td><td class="hi">+1</td></tr>
+          <tr><td>Alternative diagnosis at least as likely as DVT</td><td class="bad">−2</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Pitting Edema — Grading Scale</div>
+  <div class="section-sub" style="margin-bottom:14px;">Pitting edema is assessed by applying firm pressure with a thumb or finger to the swollen area for 5 seconds, then observing the depth of the pit and how quickly it rebounds. Grade based on both pit depth and rebound time. Document bilaterally and track serially.</div>
+
+  <div class="grid4" style="margin-bottom:14px;">
+    <div class="card" style="border-left:3px solid var(--teal);">
+      <div class="card-title" style="font-size:1.4rem;color:var(--teal2);">1+</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:var(--teal2);font-weight:700;margin-bottom:6px;">2 mm</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Barely detectable depression.</strong> Immediate rebound — pit disappears as soon as pressure is released. Minimal edema; may only be visible on careful inspection.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--gold);">
+      <div class="card-title" style="font-size:1.4rem;color:var(--gold2);">2+</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:var(--gold2);font-weight:700;margin-bottom:6px;">4 mm</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Slight depression.</strong> A few seconds to rebound. Mild edema; visible and palpable. Commonly seen with mild CHF, venous insufficiency, or post-injury.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--orange);">
+      <div class="card-title" style="font-size:1.4rem;color:var(--orange);">3+</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:var(--orange);font-weight:700;margin-bottom:6px;">6 mm</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Deep depression.</strong> 10–12 seconds to rebound. Moderate edema; extremity appears grossly distorted. Skin may be tight, shiny, or weeping. DVT, significant CHF, lymphedema.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--red);">
+      <div class="card-title" style="font-size:1.4rem;color:var(--red);">4+</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:20px;color:var(--red);font-weight:700;margin-bottom:6px;">8 mm</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Very deep pit.</strong> &gt;20 seconds to rebound. Severe edema; extremity severely distorted, weeping. Indicates significant systemic pathology — referral required.</p>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:8px;">
+    <div class="card">
+      <div class="card-title">Clinical Documentation</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Document location (ankle, pretibial, sacral, bilateral), grade (1+–4+), and rebound time</li>
+        <li>Measure limb circumference at consistent landmarks for serial tracking (e.g., 10 cm above/below medial malleolus)</li>
+        <li>Note if edema is <strong>pitting vs. non-pitting</strong> — non-pitting edema suggests lymphedema, myxedema, or lipedema (not DVT or CHF)</li>
+        <li>Note if <strong>unilateral vs. bilateral</strong> — unilateral is a DVT red flag; bilateral suggests systemic cause (CHF, hypoalbuminemia, renal/hepatic disease)</li>
+        <li>Sacral edema in bedbound patients = dependent edema from gravity (not always pathological, but document)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Common Etiologies by Grade</div>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Grade</th><th>Common Causes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1+</strong></td><td>Post-exercise, prolonged standing, mild venous insufficiency, early medication effect</td></tr>
+          <tr><td><strong>2+</strong></td><td>Mild CHF, venous insufficiency, ankle sprain, early DVT, pregnancy</td></tr>
+          <tr><td><strong>3+</strong></td><td>Moderate CHF, DVT, lymphedema, hypoalbuminemia, nephrotic syndrome</td></tr>
+          <tr><td><strong>4+</strong></td><td>Severe CHF, end-stage renal/hepatic disease, severe lymphedema — refer to physician</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">PT Red Flag — 3+ or 4+ Edema</div>
+        <p>New or worsening 3+ / 4+ pitting edema with any systemic symptoms (dyspnea, chest pain, weight gain) = stop session, take vital signs, consider emergency referral. Combined with Wells Criteria ≥2 = urgent DVT workup.</p>
+      </div>
+    </div>
+  </div>
+  <p style="font-size:11px;color:var(--text3);margin-bottom:4px;">Hogan, M (2007) Medical-Surgical Nursing (2nd ed.). Salt Lake City: Prentice Hall</p>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Orthostatic Hypotension</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Definition &amp; Causes</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:8px;"><strong>Definition:</strong> ≥20 mmHg drop in systolic BP <em>or</em> ≥10 mmHg drop in diastolic BP within 3 minutes of standing from sitting/supine.</p>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text3);text-transform:uppercase;margin-bottom:4px;">Not a disease — a manifestation of abnormal BP regulation</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Normal aspect of aging</li>
+        <li>Medications (antihypertensives, diuretics, alpha-blockers)</li>
+        <li>Venous pooling (pregnancy, CHF)</li>
+        <li>Neurogenic origins (autonomic dysfunction)</li>
+        <li>Prolonged anesthesia</li>
+        <li><strong>Bedrest</strong> — most relevant to PT</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Symptoms &amp; Evaluation</div>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--red);text-transform:uppercase;margin-bottom:6px;">Symptoms</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;margin-bottom:12px;">
+        <li>Lightheadedness / dizziness</li>
+        <li>Syncope (loss of consciousness)</li>
+        <li>Mental or visual blurring</li>
+        <li>Sense of weakness</li>
+      </ul>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Clinical Evaluation</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>BP: lying → sitting → standing (wait 3 minutes at each)</li>
+        <li>Pulse (may show compensatory tachycardia)</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">PT Management</div>
+        <p>Dangle before standing. Monitor BP at each level. Progress slowly. Abdominal binders + compression stockings for recurrent cases. Tilt table for severe deconditioning.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== BALANCE ASSESSMENT ====== -->
+<div class="tab-panel" id="tab-balance">
+<div class="container">
+
+  <div class="section-title">Balance Assessment</div>
+  <div class="section-sub">Before performing any basic mobility activity — supine → sit or sit → stand — you must assess your patient's static and dynamic balance first. This protects both the patient and you. Always use a gait belt until independence is clearly demonstrated.</div>
+
+  <div class="bl-strip red" style="margin-bottom:20px;">
+    <div class="bl-label">Non-Negotiable Rule</div>
+    <p>Assess balance <strong>before</strong> mobility. Never attempt supine→sit or sit→stand without first confirming the patient can tolerate that level of postural challenge. A patient who cannot maintain static sitting unsupported should NOT be stood up without maximal support in place.</p>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">General Assessment Principles</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Progression Framework</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li><strong>Gait belt always</strong> — until independence is clearly demonstrated</li>
+        <li><strong>Sitting before standing</strong> — confirm sitting balance first</li>
+        <li><strong>Static before dynamic</strong> — held position before movement</li>
+        <li><strong>Small challenges before large</strong> — start close, work further</li>
+        <li><strong>Within BOS before outside BOS</strong> — reach inside base first, then challenge it</li>
+        <li>Progression to higher-level testing is based on performance at lower levels AND other movement precautions</li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title">Therapist Position</div>
+      <div class="grid2" style="gap:10px;">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Front</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Therapist can <strong>demonstrate</strong> to the patient. Hands NOT on the gait belt — patient does not need constant guard. Used when patient is more stable.</p>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Side</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Hand on belt</strong> at all times — ready to catch loss of balance. Used when patient is less stable or challenge is high. Position on the weaker/affected side.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Sitting Balance Assessment</div>
+  <div class="section-sub" style="margin-bottom:12px;">Signs of poor sitting balance to watch for: trunk leaning without compensation, frequent reaching strategies with hands, unable to sit without use of hands.</div>
+
+  <div class="grid2">
+    <div class="card" style="border-left:3px solid var(--teal);">
+      <div class="card-title" style="color:var(--teal2);">Static Sitting</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li><strong>Supported sitting</strong> — against back of chair, 30 seconds<br><span style="font-size:12px;color:var(--text3);">Can be done while taking patient history</span></li>
+        <li><strong>Unsupported sitting</strong> — no back support, 30 seconds<br><span style="font-size:12px;color:var(--text3);">Can be done while taking patient history</span></li>
+      </ol>
+    </div>
+    <div class="card" style="border-left:3px solid var(--gold);">
+      <div class="card-title" style="color:var(--gold2);">Dynamic Sitting (unsupported)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Head turns</strong> — right and left</li>
+        <li><strong>Head + trunk rotation</strong> — right and left until patient can see 180° behind them</li>
+        <li><strong>Picking up a pen from floor</strong> — hand on gait belt</li>
+        <li><strong>Reaching</strong> — start close, work farther; up, out, and down; both sides; to the point where buttocks lifts</li>
+        <li><strong>Perturbations</strong> — front, back, side-to-side, diagonals; resistance at shoulders</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Standing Balance Assessment</div>
+  <div class="section-sub" style="margin-bottom:12px;">Ask patient to stand and observe for stability and any stepping strategies. If stable, begin screening sequence.</div>
+
+  <div class="grid2">
+    <div class="card" style="border-left:3px solid var(--teal);">
+      <div class="card-title" style="color:var(--teal2);">Static Standing — Sequence</div>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Test</th><th>Duration</th><th>What to Observe</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Stand — Eyes Open</strong></td><td>60 sec</td><td>Postural sway; ankle vs. hip strategy; stepping</td></tr>
+          <tr><td><strong>Stand — Eyes Closed</strong></td><td>60 sec</td><td>Increased sway without visual input; stepping</td></tr>
+          <tr><td><strong>Romberg — Eyes Open</strong></td><td>Up to 60 sec</td><td>Feet together; reduced BOS challenge</td></tr>
+          <tr><td><strong>Romberg — Eyes Closed</strong></td><td>Timed</td><td>Romberg's sign = significant sway/fall EO→EC</td></tr>
+          <tr><td><strong>Tandem — Eyes Open</strong></td><td>Timed</td><td>Heel-to-toe stance; narrow BOS</td></tr>
+          <tr><td><strong>Tandem — Eyes Closed</strong></td><td>Timed</td><td>Maximum proprioceptive challenge</td></tr>
+          <tr><td><strong>Single Limb Stance (SLS) — EO</strong></td><td>30 sec</td><td>Arms out → progress to arms crossed over chest</td></tr>
+          <tr><td><strong>Single Limb Stance (SLS) — EC</strong></td><td>30 sec</td><td>Highest static challenge; max balance demand</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="border-left:3px solid var(--gold);">
+      <div class="card-title" style="color:var(--gold2);">Dynamic Standing (feet hip-width apart)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Head turns</strong> — right and left</li>
+        <li><strong>Head + trunk rotation</strong> — right and left until 180° behind</li>
+        <li><strong>Picking up a pen from floor</strong> — hand on gait belt</li>
+        <li><strong>Reaching</strong> — small to far; up, out, and down; CoM within then outside BOS</li>
+        <li><strong>Perturbations</strong> — front, back, side-to-side, diagonals; resistance at <em>shoulders and/or pelvis</em></li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Balance Strategies — What You're Observing</div>
+        <p><strong>Ankle strategy</strong>: small perturbations; distal activation first; sways at ankle. <strong>Hip strategy</strong>: larger/faster perturbation; hip flexion/extension to shift CoM. <strong>Step/Reach strategy</strong>: CoM outside BOS; stepping or reaching to recover. Observe which strategy the patient uses and at what challenge level they require it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bl-strip" style="margin-top:8px;">
+    <div class="bl-label">Why This Matters Before Mobility</div>
+    <p>A patient with poor dynamic sitting balance will not tolerate unsupported sit→stand. A patient who needs a hip strategy in quiet standing will be at high fall risk during dynamic gait tasks. The balance assessment directly drives the assist level, device selection, and treatment goals.</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== BED MOBILITY & TRANSFERS ====== -->
+<div class="tab-panel" id="tab-transfers">
+<div class="container">
+
+  <div class="section-title">Bed Mobility &amp; Transfers</div>
+  <div class="section-sub">Transfer selection is a clinical decision, not a preference. Sit-to-stand and bed-to-wheelchair are the tasks most associated with low back injuries in healthcare workers. Always gait belt, always guard, always body mechanics.</div>
+
+  <div class="bl-strip red" style="margin-bottom:20px;">
+    <div class="bl-label">Safety Non-Negotiables — Every Transfer</div>
+    <p>Gait belt every time &middot; Lock all surfaces (bed brakes, wheelchair brakes) &middot; Manage lines/tubes before you move &middot; Guard throughout &middot; Good body mechanics to protect yourself &middot; Communicate every step to the patient before it happens &middot; Know your abort plan &middot; Access to call bell when done</p>
+  </div>
+
+  <div class="divider" style="margin:16px 0;"></div>
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Why Transfers Are Performed</div>
+  <div class="grid3" style="margin-bottom:16px;">
+    <div class="card"><div class="card-title">Functional Placement</div><p style="font-size:13.5px;color:var(--text2);">Move person from one location to another for care, hygiene, or therapy.</p></div>
+    <div class="card"><div class="card-title">Mobility Training</div><p style="font-size:13.5px;color:var(--text2);">Progressive mobility retraining &mdash; from supine &rarr; sit &rarr; stand &rarr; ambulation.</p></div>
+    <div class="card"><div class="card-title">Independence</div><p style="font-size:13.5px;color:var(--text2);">Achieve the highest functional level of independence. Return to prior level of function (PLOF).</p></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Patient Considerations Before Any Transfer</div>
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Clinical Factors</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Muscle control</strong> &mdash; strength, tone, coordination</li>
+        <li><strong>ROM restrictions</strong> &mdash; contractures, pain-limited range</li>
+        <li><strong>Structural limitations</strong> &mdash; hip precautions, fractures, PMH</li>
+        <li><strong>Weight-bearing status</strong> &mdash; drives device and technique choice</li>
+        <li><strong>Pain</strong> &mdash; location, what provokes it</li>
+        <li><strong>Balance</strong> &mdash; assess BEFORE attempting any transfer</li>
+        <li><strong>Endurance</strong> &mdash; cardiac/pulmonary tolerance for upright activity</li>
+        <li><strong>Cognitive status</strong> &mdash; ability to follow commands and respond to cueing</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Contextual Factors + Screening</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Patient goals</strong> &mdash; what they want to return to</li>
+        <li><strong>Home situation</strong> &mdash; stairs, surfaces, caregiver support</li>
+        <li><strong>Return to PLOF</strong> &mdash; prior level of function as target</li>
+        <li><strong>Special populations:</strong> NWB restrictions, hemiplegia/CVA, total hip arthroplasty, SCI</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Quick Strength/Mobility Screen</div>
+        <p>Sit-to-stand repetitions &middot; Marching in place &middot; Taking a few steps. Real-time picture of LE strength and balance before committing to a transfer type.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Body Mechanics &mdash; Protecting Yourself</div>
+  <div class="bl-strip red" style="margin-bottom:12px;">
+    <div class="bl-label">Critical Fact</div>
+    <p>Sit-to-stand and bed-to-wheelchair transfers are the tasks <strong>most associated with low back injuries in healthcare workers.</strong> A hurt clinician cannot help patients.</p>
+  </div>
+  <div class="grid2" style="margin-bottom:8px;">
+    <div class="card">
+      <div class="card-title">Core Rules</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li><strong>Keep the load close</strong> &mdash; CoG of patient and PT as close as possible</li>
+        <li><strong>Wide enough BOS</strong> &mdash; staggered A-P foot position</li>
+        <li><strong>Core muscles isometric</strong> &mdash; maintain spine alignment throughout</li>
+        <li><strong>Lift with legs</strong> &mdash; flex knees AND hips, not the back</li>
+        <li><strong>Do NOT twist or rotate spine</strong> &mdash; pivot feet instead</li>
+        <li><strong>Adjust bed height</strong> &mdash; raise to reduce bending and strain</li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title">Gait/Transfer Belt &mdash; Correct Use</div>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px;">Indications: obesity limiting grip &middot; weakness/deconditioning &middot; decreased cognitive status &middot; facility policy</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Patient CLOSE to therapist</strong> &mdash; never at arm's length</li>
+        <li>Belt <strong>snug at pelvis</strong> &mdash; prevents sliding up trunk</li>
+        <li><strong>Do NOT push, pull, or lift belt alone</strong> &mdash; facilitates direct manual contact, not a handle</li>
+        <li>Underhand grip laterally for pivot transfers</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Assist Levels</div>
+  <table class="data-table" style="margin-bottom:16px;">
+    <thead><tr><th>Level</th><th>% Therapist Effort</th><th>Clinical Picture</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Max Assist</strong></td><td class="bad">75&ndash;100%</td><td>Therapist does most of the work. Patient contributes minimally.</td></tr>
+      <tr><td><strong>Mod Assist</strong></td><td class="warn">26&ndash;74%</td><td>Roughly shared effort. Patient needs significant but not total assistance.</td></tr>
+      <tr><td><strong>Min Assist</strong></td><td class="ok">1&ndash;24%</td><td>Patient does most of the work. Therapist provides minimal physical help.</td></tr>
+      <tr><td><strong>CGA</strong></td><td class="ok">Contact Guard</td><td>Hand on belt ready; no physical assist provided unless needed.</td></tr>
+      <tr><td><strong>Supervision</strong></td><td class="ok">0%</td><td>Therapist present/watching but not touching patient.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Transfer Selection Algorithm</div>
+  <div class="section-sub" style="margin-bottom:14px;">Work through this decision tree top-to-bottom. Each question drives the appropriate technique.</div>
+
+  <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:20px;">
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 18px;">
+      <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Step 1</div>
+      <p style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;">Is your patient awake and alert?</p>
+      <div class="grid2" style="gap:10px;">
+        <div class="bl-strip red" style="margin:0;"><div class="bl-label">NO &rarr;</div><p>Size/weight dependent: <strong>Mechanical Lift &middot; 3-Person &middot; 2-Person &middot; 1-Person Lift</strong></p></div>
+        <div class="bl-strip green" style="margin:0;"><div class="bl-label">YES &rarr;</div><p>Proceed to Step 2</p></div>
+      </div>
+    </div>
+    <div style="text-align:center;color:var(--text3);font-size:18px;">&darr;</div>
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 18px;">
+      <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Step 2</div>
+      <p style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;">Can patient bear weight in the lower extremities?</p>
+      <div class="grid2" style="gap:10px;">
+        <div class="bl-strip red" style="margin:0;"><div class="bl-label">NO &rarr; Check UE Strength</div><p><strong>Good UE:</strong> Sliding Board Transfer<br><strong>Poor UE:</strong> Mechanical / Multi-person Lift</p></div>
+        <div class="bl-strip green" style="margin:0;"><div class="bl-label">YES &rarr;</div><p>Proceed to Step 3</p></div>
+      </div>
+    </div>
+    <div style="text-align:center;color:var(--text3);font-size:18px;">&darr;</div>
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 18px;">
+      <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Step 3</div>
+      <p style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;">Are there weight-bearing restrictions?</p>
+      <div class="grid2" style="gap:10px;">
+        <div class="bl-strip red" style="margin:0;"><div class="bl-label">YES &rarr;</div><p>Factor restrictions into technique. Proceed to Step 4 with restrictions in mind.</p></div>
+        <div class="bl-strip green" style="margin:0;"><div class="bl-label">NO &rarr;</div><p>Proceed to Step 4</p></div>
+      </div>
+    </div>
+    <div style="text-align:center;color:var(--text3);font-size:18px;">&darr;</div>
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 18px;">
+      <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Step 4</div>
+      <p style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;">Is the contralateral leg strong enough to bear weight?</p>
+      <div class="grid2" style="gap:10px;">
+        <div style="background:rgba(212,168,80,.06);border:1px solid rgba(212,168,80,.15);border-left:3px solid var(--gold);border-radius:var(--radius2);padding:10px 14px;"><div style="font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:4px;">BILATERAL &rarr;</div><p style="font-size:13.5px;color:var(--text);">Proceed to Step 5</p></div>
+        <div style="background:rgba(167,139,250,.06);border:1px solid rgba(167,139,250,.15);border-left:3px solid var(--purple);border-radius:var(--radius2);padding:10px 14px;"><div style="font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--purple2);text-transform:uppercase;margin-bottom:4px;">UNILATERAL &rarr;</div><p style="font-size:13.5px;color:var(--text);">One leg available. Proceed to Step 5 with modified expectations.</p></div>
+      </div>
+    </div>
+    <div style="text-align:center;color:var(--text3);font-size:18px;">&darr;</div>
+    <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 18px;">
+      <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Step 5</div>
+      <p style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;">Is your patient strong enough to actively participate in bearing weight?</p>
+      <div class="grid2" style="gap:10px;">
+        <div class="bl-strip red" style="margin:0;"><div class="bl-label">NO &rarr;</div><p><strong>Standing Assisted Pivot</strong> &mdash; WBs but needs significant assist to pivot (Mod&ndash;Max A)</p></div>
+        <div class="bl-strip green" style="margin:0;"><div class="bl-label">YES &rarr;</div><p><strong>Standing Pivot</strong> &mdash; WBs and can pivot with therapist guiding (CGA&ndash;Mod A)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Transfer Types &mdash; Detailed Techniques</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lateral Transfer &mdash; With Sliding Board</h4>
+      <div class="ma-tags"><span class="ma-tag red">No LE WB</span><span class="ma-tag gold">Good UE strength required</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Indications</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:10px;">Patients with inadequate LE strength for WB. Side-to-side between similar-height surfaces: beds, chairs, wheelchairs, car seats, toilets, tub benches.</p>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">6-Step Technique (W/C &rarr; Bed)</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:2.0;">
+            <li>Position W/C at slight angle adjacent to bed; lock; remove armrest and legrest on transfer side</li>
+            <li>Lean trunk away from W/C; lift hip enough to slide board under hip nearest W/C</li>
+            <li>Position opposite end of board in front of W/C drive wheel into seat</li>
+            <li>Open hand on board toward W/C, other hand on bed; lift on extended arms; shift hips toward W/C; repeat</li>
+            <li>Lean trunk away from bed; lift other hip to remove board</li>
+            <li>Replace armrest and legrest; adjust sitting position</li>
+          </ol>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--purple2);text-transform:uppercase;margin-bottom:6px;">Clinician Assistance</p>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Guarding</div>
+            <p>Stand in front; hands at patient shoulders and knees to block forward movement; verbal and tactile cueing throughout.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Physical Assist Options</div>
+            <p>Lift at hips using: gait belt &middot; under ischial tuberosities &middot; sides of trousers &middot; draw sheet.</p>
+          </div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-top:10px;margin-bottom:6px;">Without Board (sufficient UE strength)</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.8;">
+            <li>Remove armrest/legrest; W/C at slight angle</li>
+            <li>Lean trunk toward destination; place closest hand on destination surface beyond where hips will land</li>
+            <li>Lift body straightening elbows; shift across gap</li>
+            <li>Adjust position</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Squat-Pivot Transfer</h4>
+      <div class="ma-tags"><span class="ma-tag warn">Mod A</span><span class="ma-tag">Partial LE WB</span><span class="ma-tag">Partially erect &mdash; all one movement</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Patient Instructions &mdash; 7 Steps</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:2.0;">
+            <li>Shift hips forward; lean trunk forward</li>
+            <li>Place hand on outside arm of starting chair</li>
+            <li>Place other hand on far arm of destination surface</li>
+            <li>Partially straighten legs; lift with arms; clear bottom over obstacles</li>
+            <li>Pivot on balls of feet until hips over destination</li>
+            <li>Lower hips controlled; keep trunk flexed forward</li>
+            <li>Adjust position</li>
+          </ol>
+          <div class="bl-strip" style="margin-top:8px;">
+            <div class="bl-label">Setup &mdash; Environment</div>
+            <p>Lock both surfaces &middot; Remove legrests &middot; Clear obstacles &middot; Non-skid footwear on patient</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Patient Position</div>
+            <p>Hips forward in seat (shifts CoM). Feet beneath CoM, as far back as possible, feet flat, shoulder-width. "Nose over toes" cue for trunk flexion.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Knee Blocking</div>
+            <p>Gravity creates flexion moments; insufficient strength needs counterforce.<br><strong>One weak knee:</strong> PT flexes hip/knee to place just below patient's tibial tuberosity.<br><strong>Both weak:</strong> PT wedges patient knees between own knees (two-to-two: medial aspect of PT knees against anterolateral patient knees).</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Clinician Position</div>
+            <p>In front of patient &middot; Flexed hips/knees &middot; Wide staggered A-P BOS &middot; Underhand lateral grip on belt &middot; Patient hands on PT forearms or hips &mdash; <strong>NOT around PT's neck</strong>. Watch for fear/"white-knuckle grip."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Stand-Pivot Transfer</h4>
+      <div class="ma-tags"><span class="ma-tag green">CGA &rarr; Min A</span><span class="ma-tag">Full stand</span><span class="ma-tag">Most functional goal</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Patient Instructions &mdash; 6 Steps</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:2.0;">
+            <li>Place both hands on W/C armrests</li>
+            <li>Push through legs AND arms &mdash; stand fully upright</li>
+            <li>Pivot on balls of feet until directly in front of target surface</li>
+            <li>Reach back with each hand to target armrests/surface</li>
+            <li>Flex trunk slightly; lower yourself into chair with control</li>
+            <li>Adjust position</li>
+          </ol>
+          <div class="bl-strip" style="margin-top:8px;">
+            <div class="bl-label">Counting &amp; Communication</div>
+            <p>"On the count of 3, you are going to stand, turn, and sit." Stand-pivot can be <strong>separate movements with pauses</strong> as needed. Give each next direction during transfer. Squat-pivot = all one movement &mdash; no separating.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Squat vs. Stand Pivot &mdash; Differences</div>
+            <p><strong>Same:</strong> foot position, chair position, controlled descent.<br><strong>Different:</strong> Hand placement (stand: push up from behind; squat: one reaching to surface) &middot; Rise (stand: fully erect, separable; squat: partially erect, all one) &middot; Mode of weight shift.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Abort Criteria</div>
+            <p>If patient is unstable during rise &mdash; leaning backward, creating strain &mdash; <strong>ABORT immediately.</strong> Return to sitting. Regroup. Never power through an unsafe transfer.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Sitting the Patient Down</div>
+            <p>Patient reaches back to armrests &middot; Assists with lowering &middot; Flexes trunk to get hips back in chair &middot; This keeps CoM over BOS and reduces strain on PT.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Transfer Quick Reference</div>
+  <table class="data-table">
+    <thead><tr><th>Type</th><th>Patient Requirements</th><th>Assist Level</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Mechanical Lift</strong></td><td>Not alert OR no LE/UE; large/heavy</td><td class="bad">Dependent</td><td>2 staff minimum; sling type matches goal</td></tr>
+      <tr><td><strong>Multi-person Lift</strong></td><td>Not alert OR no LE/UE; size-dependent</td><td class="bad">Dependent</td><td>2-person min; 1-person only very small patients</td></tr>
+      <tr><td><strong>Sliding Board</strong></td><td>No LE WB; good UE strength</td><td class="warn">Mod A &rarr; Min A</td><td>Board bridges similar-height surfaces</td></tr>
+      <tr><td><strong>Lateral (No Board)</strong></td><td>No LE WB; strong UE; similar height</td><td class="warn">Mod A</td><td>Lift on extended arms; clear obstacles</td></tr>
+      <tr><td><strong>Squat Pivot</strong></td><td>Partial LE WB; follows commands</td><td class="warn">Mod A</td><td>All one movement; partially erect</td></tr>
+      <tr><td><strong>Standing Assisted Pivot</strong></td><td>WBs but needs significant assist</td><td class="warn">Mod&ndash;Max A</td><td>Between squat and stand pivot</td></tr>
+      <tr><td><strong>Stand Pivot</strong></td><td>Full stand; adequate balance; follows commands</td><td class="ok">CGA &rarr; Min A</td><td>Separable movements; goal for most patients</td></tr>
+      <tr><td><strong>Pivot Disk / Pole / Walker</strong></td><td>Any pivot-capable patient</td><td>Varies</td><td>Assistive devices to supplement pivot transfers</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Bed Mobility Techniques</div>
+  <div class="section-sub" style="margin-bottom:12px;">Bed mobility precedes all transfers. Maximize patient participation (AMAP/ANAP). Maximize gravity to assist, minimize friction. Adjust bed height first.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Scooting Laterally in Bed</h4>
+      <div class="ma-tags"><span class="ma-tag">Therapist-assisted &amp; patient-assisted</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Therapist-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Move body segments individually &mdash; begin at the head</li>
+            <li>One arm under patient neck, one arm across chest; gently slide toward you</li>
+            <li>Repeat at pelvis; repeat at feet</li>
+            <li>Multiple passes may be needed for safety and body mechanics</li>
+          </ol>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Patient-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Flex hips/knees; feet flat on bed</li>
+            <li>One hand next to trunk; other hand ~4" from trunk toward direction of movement</li>
+            <li>Push with hands and feet (can also push with head and feet simultaneously) to lift pelvis and trunk</li>
+            <li>Several small moves; therapist assists at pelvis as needed</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Scooting Toward Head of Bed</h4>
+      <div class="ma-tags"><span class="ma-tag">Both techniques</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Therapist-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Flatten bed; remove pillows; Trendelenburg position if needed</li>
+            <li>Move patient to edge of bed closest to you</li>
+            <li>Bend patient LEs; feet flat on bed (pillow support if needed)</li>
+            <li>Staggered stance facing patient; hands under bilateral scapulae</li>
+            <li>Shift body weight to lift trunk toward head; several small boosts</li>
+            <li>Reposition to center; two-person draw sheet if needed; patient can use trapeze/bars</li>
+          </ol>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Patient-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Flex hips/knees; feet flat</li>
+            <li>Tuck elbows</li>
+            <li>Push simultaneously with feet and forearms to lift trunk/pelvis toward head</li>
+            <li>Assist at pelvis as needed</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Scooting Toward Foot of Bed</h4>
+      <div class="ma-tags"><span class="ma-tag">Both techniques</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Therapist-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Move patient to edge of bed closest to you</li>
+            <li>Raise bed to appropriate height for body mechanics</li>
+            <li>Staggered stance; cradle patient pelvis</li>
+            <li>Shift weight toward foot of bed</li>
+            <li>Reposition to center after</li>
+          </ol>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Patient-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Flex hips/knees; feet flat</li>
+            <li>Arms alongside trunk; palms on surface</li>
+            <li>Push with arms and head to lift trunk/pelvis toward foot</li>
+            <li>Assist at pelvis as needed</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Supine &rarr; Sidelying</h4>
+      <div class="ma-tags"><span class="ma-tag red">Inherently unstable &mdash; ensure safety throughout</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Therapist-Assisted</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>May need patient at far edge of bed &mdash; <strong>raise far bed rail first</strong></li>
+            <li>Stand facing patient; roll patient toward you</li>
+            <li>Cross patient arms across chest</li>
+            <li>Pull with hands on far-side scapula and pelvis</li>
+            <li>Patient can help with UE reach, LE push</li>
+            <li>Flex hips/knees; pillow support for comfort</li>
+            <li><strong>Continuously confirm patient safety</strong></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Patient-Assisted</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Flex far LE</li>
+            <li>Reach across body with far UE</li>
+            <li>Head flexion + abdominal muscles to initiate roll</li>
+            <li>Use edge of mattress, draw sheet, or bed rail to assist</li>
+            <li><strong>Assess both directions</strong> &mdash; ensure patient can roll right and left</li>
+          </ul>
+          <div class="bl-strip red" style="margin-top:8px;">
+            <div class="bl-label">Safety Alert</div>
+            <p>Sidelying is inherently unstable. Never leave patient unattended. Rail UP on far side before rolling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Supine &rarr; Sitting (Edge of Bed)</h4>
+      <div class="ma-tags"><span class="ma-tag">Log-roll then lever</span><span class="ma-tag gold">Always assess vitals after</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Therapist-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Roll patient to sidelying first</li>
+            <li>Flex hips/knees slightly</li>
+            <li>Elevate trunk with <strong>opposing forces at pelvis and scapula</strong></li>
+            <li>Patient assists with push if able</li>
+            <li>Pivot LEs over bedside &mdash; timing leg drop can be used as lever assist for trunk elevation</li>
+          </ol>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Patient-Assisted</p>
+          <ol style="color:var(--text2);font-size:13px;padding-left:16px;line-height:1.9;">
+            <li>Roll to sidelying; flex hips/knees; feet flat on bed</li>
+            <li>Therapist arm behind patient around shoulders</li>
+            <li>Patient pushes with UEs to come into sitting</li>
+            <li>Legs drop over side simultaneously</li>
+          </ol>
+          <div class="bl-strip red" style="margin-top:8px;">
+            <div class="bl-label">Always Assess After Sitting Up</div>
+            <p>Assess for <strong>dizziness, change in vitals, change in appearance</strong> (pallor, diaphoresis). Dangle at edge before any standing attempt. Orthostatic hypotension is common after prolonged bedrest.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Completing the Transfer</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Transfer Completion Checklist</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Confirm patient is secure and comfortable</li>
+        <li>Replace W/C armrests and legrests</li>
+        <li>Place patient feet on foot pedals</li>
+        <li>Ensure access to personal items</li>
+        <li><strong>Ensure access to call bell</strong></li>
+        <li>Assess and correct sitting posture (reverse lumbar curve, sacral sitting, unequal IT pressure)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Practice Principles</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Vary Body Size</div>
+        <p>Practice with at least 3 partners of different body sizes. Technique for a 120 lb patient does NOT work for a 250 lb patient.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Vary Assist Level</div>
+        <p><strong>CGA:</strong> More verbal, less physical &mdash; promotes independence. <strong>Mod&ndash;Max A:</strong> Challenges your body mechanics and safety control. Practice both every session.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== DDx & SCREENING ====== -->
+<div class="tab-panel" id="tab-ddx">
+<div class="container">
+
+  <div class="section-title">Differential Diagnosis &amp; Screening</div>
+  <div class="section-sub">The patient interview is our most important screening tool &mdash; it yields 80% of the information needed to determine the cause of symptoms. The PT's role is not to establish a medical diagnosis, but to determine when symptoms are beyond the scope of PT practice and refer appropriately.</div>
+
+  <div class="bl-strip red" style="margin-bottom:20px;">
+    <div class="bl-label">Foundational Case &mdash; Why This Matters</div>
+    <p>A patient with 8-week neck pain was referred to PT with imaging showing cervical degenerative changes. Full cervical and upper quarter examination failed to reproduce symptoms. Brief exercise on gym equipment reproduced the pain; rest resolved it. Referred back to MD &rarr; cardiovascular testing revealed multi-vessel coronary artery blockage and evidence of infarction &rarr; coronary artery bypass graft 4 days later. <strong>His "neck pain" was atypical angina.</strong> The PT's clinical reasoning saved his life.</p>
+  </div>
+
+  <div class="divider" style="margin:16px 0;"></div>
+
+  <!-- WHY SCREENING IS CRITICAL -->
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Why Screening Is More Critical Than Ever</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Factors Increasing PT Screening Responsibility</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Direct access</strong> &mdash; patients arrive without physician evaluation</li>
+        <li><strong>Quicker and sicker client base</strong> &mdash; shorter hospital stays, more complexity in outpatient</li>
+        <li><strong>Prescriptions issued on past complaints</strong> without being seen by referring MD</li>
+        <li><strong>Medical specialization</strong> &mdash; specialists may miss systemic presentations</li>
+        <li><strong>Disease progression</strong> &mdash; conditions evolve between visits</li>
+        <li><strong>Patients may not report all symptoms to MD</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Screening Factors to Always Consider</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Side effects of medications</strong> &mdash; can mimic or mask MSK symptoms</li>
+        <li><strong>Comorbidities</strong> &mdash; multiple diagnoses interact unpredictably</li>
+        <li><strong>Visceral pain mechanisms</strong> &mdash; referred pain from organs to body wall</li>
+        <li><strong>Population-specific factors</strong>: age/aging, sex/gender, race/ethnicity</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Key Principle</div>
+        <p>We are NOT trying to establish a medical diagnosis. We are determining whether symptoms are beyond the scope of PT practice &mdash; and referring appropriately when they are.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- RED vs YELLOW FLAGS -->
+  <div class="section-title" style="font-size:1.2rem;">Red Flags vs. Yellow Flags</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card" style="border-left:3px solid var(--gold);">
+      <div class="card-title" style="color:var(--gold2);">Yellow Flags &mdash; Cautionary</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Slow down. Something may need further exploration. Not an emergency but warrants deeper screening. Examples: pain inconsistent with mechanism, patient history suggesting psychosocial factors, occupational exposures, lifestyle risk factors.</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--red);">
+      <div class="card-title" style="color:var(--red);">Red Flags &mdash; Warning</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Requires <strong>immediate action</strong>:</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Further questioning or diagnostic tests</li>
+        <li>Appropriate referral to physician or emergency services</li>
+        <li>Document findings and communication thoroughly</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- RED FLAGS ORGANIZED -->
+  <div class="section-title" style="font-size:1.2rem;">Red Flags &mdash; Organized by Category</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Red Flags &mdash; Personal / Family History</h4>
+      <div class="ma-tags"><span class="ma-tag red">PMH</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>Cancer history</strong> (personal or family) &mdash; bone mets, paraneoplastic syndromes</li>
+          <li><strong>Recent infection</strong> &mdash; septic arthritis, osteomyelitis, discitis</li>
+          <li><strong>Persistent / recurring cold or flu</strong> &mdash; may signal immunosuppression or systemic illness</li>
+        </ul>
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>Recent trauma</strong> &mdash; fracture, internal injury, abuse</li>
+          <li><strong>History of immunosuppression</strong> &mdash; transplant meds, HIV, steroids</li>
+          <li><strong>History of injection drug use</strong> &mdash; septic arthritis, endocarditis, osteomyelitis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Red Flags &mdash; Clinical Presentation</h4>
+      <div class="ma-tags"><span class="ma-tag red">Examination findings</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>No known etiology</strong> &mdash; insidious onset with no mechanism</li>
+          <li><strong>Symptoms not improved with PT</strong> &mdash; failing to respond to appropriate treatment</li>
+          <li><strong>Unintentional weight gain or loss</strong> &mdash; systemic illness, malignancy</li>
+          <li><strong>Symptoms unrelieved with position change</strong> &mdash; true visceral pain doesn't change with positioning</li>
+          <li><strong>Symptoms out of proportion to injury</strong></li>
+          <li><strong>Unable to alter symptoms during examination</strong></li>
+        </ul>
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>Does not fit expected neuromusculoskeletal patterns</strong></li>
+          <li><strong>A growing mass</strong> &mdash; always refer</li>
+          <li><strong>Bilateral symptoms</strong>: edema, nail bed changes, skin rash, numbness/tingling</li>
+          <li><strong>Change in muscle tone or ROM in patients with neurological diagnosis</strong> &mdash; may signal disease progression</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Red Flags &mdash; Pain Characteristics</h4>
+      <div class="ma-tags"><span class="ma-tag red">Pain patterns</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>Back or shoulder pain</strong> &mdash; most common areas of visceral pain referral; always screen for systemic cause</li>
+          <li><strong>Night pain</strong> &mdash; pain that awakens patient; cancer, infection, inflammatory arthritis</li>
+          <li><strong>Pain that worsens with activity / relieved with rest</strong> &mdash; cardiac, vascular, or systemic origin (not typical MSK which improves with gentle movement)</li>
+          <li><strong>Poorly localized pain</strong> &mdash; diffuse, cannot point to a spot</li>
+        </ul>
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>Viscerogenic pain</strong> &mdash; organ-referred pain to body wall or extremity</li>
+          <li><strong>Throbbing pain</strong> &mdash; vascular etiology (aortic aneurysm, vascular claudication)</li>
+          <li><strong>Pain not consistent with emotional/psychological overlay</strong> &mdash; pain out of proportion to apparent emotional state</li>
+        </ul>
+      </div>
+      <div class="bl-strip red" style="margin-top:10px;">
+        <div class="bl-label">Critical Pattern &mdash; Activity-Related Pain That Resolves with Rest</div>
+        <p>This is the cardinal pattern of <strong>cardiac or vascular etiology</strong>. MSK pain typically improves with gentle activity and worsens only at extreme loads. Pain that appears with a consistent activity load and resolves within minutes of rest = refer cardiac. The opening case demonstrates this exactly.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Health Risk Factors</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Social history</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>Substance / alcohol abuse</strong> &mdash; liver disease, peripheral neuropathy, fall risk</li>
+          <li><strong>Tobacco use</strong> &mdash; vascular disease, lung cancer, COPD, wound healing</li>
+          <li><strong>Sedentary lifestyle</strong> &mdash; cardiovascular risk, deconditioning, metabolic syndrome</li>
+        </ul>
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+          <li><strong>BMI</strong> &mdash; obesity-related comorbidities; underweight may signal eating disorder or malignancy</li>
+          <li><strong>Occupation</strong> &mdash; repetitive stress, toxin exposure, ergonomic risk</li>
+          <li><strong>Domestic violence</strong> &mdash; unexplained injuries, pattern of trauma</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CONSTITUTIONAL SYMPTOMS -->
+  <div class="section-title" style="font-size:1.2rem;">Constitutional Symptoms</div>
+  <div class="section-sub" style="margin-bottom:12px;">Constitutional symptoms almost always warrant physician referral. They reflect systemic illness rather than isolated MSK dysfunction. Always screen for them explicitly &mdash; patients rarely volunteer them unprompted.</div>
+
+  <div class="grid4" style="margin-bottom:16px;">
+    <div class="card"><div class="card-title" style="color:var(--red);">Fever</div><p style="font-size:13.5px;color:var(--text2);">Infection, inflammatory arthritis, malignancy, drug reaction</p></div>
+    <div class="card"><div class="card-title" style="color:var(--red);">Night Sweats</div><p style="font-size:13.5px;color:var(--text2);">Lymphoma, TB, HIV, menopause, endocarditis</p></div>
+    <div class="card"><div class="card-title" style="color:var(--red);">Diaphoresis</div><p style="font-size:13.5px;color:var(--text2);">Cardiac event, sepsis, severe hypoglycemia, autonomic dysfunction</p></div>
+    <div class="card"><div class="card-title" style="color:var(--red);">Nausea / Vomiting</div><p style="font-size:13.5px;color:var(--text2);">GI pathology, cardiac event, medication side effect, CNS involvement</p></div>
+    <div class="card"><div class="card-title" style="color:var(--red);">Diarrhea</div><p style="font-size:13.5px;color:var(--text2);">Infection, IBD, malabsorption, medication effect</p></div>
+    <div class="card"><div class="card-title" style="color:var(--red);">Dizziness / Syncope</div><p style="font-size:13.5px;color:var(--text2);">Cardiac arrhythmia, orthostatic hypotension, neurological, vestibular</p></div>
+    <div class="card"><div class="card-title" style="color:var(--red);">Pallor</div><p style="font-size:13.5px;color:var(--text2);">Anemia, circulatory shock, cardiac event, severe blood loss</p></div>
+    <div class="card"><div class="card-title" style="color:var(--red);">Fatigue / Weight Loss</div><p style="font-size:13.5px;color:var(--text2);">Malignancy, systemic infection, endocrine disorder, heart failure</p></div>
+  </div>
+
+  <div class="bl-strip" style="margin-bottom:16px;">
+    <div class="bl-label">Screening Question &mdash; Use This</div>
+    <p>"Are there any other symptoms or problems anywhere else in your body that may not seem related to your current problem?" This single question opens the door to constitutional symptoms and associated signs the patient may not have thought to mention.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ASSOCIATED SIGNS & SYMPTOMS -->
+  <div class="section-title" style="font-size:1.2rem;">Associated Signs &amp; Symptoms &mdash; What to Watch For</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Always Screen For</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Recent confusion</strong> &mdash; CNS involvement, metabolic disturbance, medication toxicity</li>
+        <li><strong>Proximal muscle weakness</strong> &mdash; myopathy, polymyalgia rheumatica, paraneoplastic</li>
+        <li><strong>Joint pain with skin rashes</strong> &mdash; systemic lupus, Lyme disease, reactive arthritis, psoriatic arthritis</li>
+        <li><strong>Cluster of S&S during ROS related to a specific organ system</strong> &mdash; suggests systemic source</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Other History Items &mdash; Don't Skip</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Current level of fitness</strong> &mdash; baseline for activity tolerance and exertional symptoms</li>
+        <li><strong>Sleep-related history</strong> &mdash; night pain, sleep apnea, restorative vs. non-restorative sleep</li>
+        <li><strong>Stress</strong> &mdash; psychosocial load; symptom amplification; yellow flag</li>
+        <li><strong>Eating disorders, substance abuse, domestic violence, toxin exposure</strong> &mdash; sensitive but clinically essential</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- VISCERAL PAIN & ANS -->
+  <div class="section-title" style="font-size:1.2rem;">Visceral Pain &amp; the Autonomic Nervous System</div>
+  <div class="section-sub" style="margin-bottom:12px;">Visceral pain is referred to the body wall at the same spinal level as the organ's autonomic innervation. Understanding sympathetic and parasympathetic pathways explains why cardiac pain presents as neck/shoulder/arm pain, why kidney pathology can cause low back pain, and why appendicitis starts as periumbilical pain.</div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Sympathetic Division (Thoracolumbar T1&ndash;L2)</div>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px;">Presynaptic neurons in lateral horn; paravertebral (sympathetic chain) and prevertebral ganglia</p>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Spinal Level</th><th>Ganglion / Nerve</th><th>Organs Innervated</th></tr></thead>
+        <tbody>
+          <tr><td>C1&ndash;C8</td><td>Superior/Middle/Inferior cervical ganglia</td><td>Head, neck, blood vessels, heart (atrial fibers, SA/AV nodes), upper limbs</td></tr>
+          <tr><td>T1&ndash;T5</td><td>Cardiac plexus</td><td>Heart (ventricular muscle fibers), trachea, bronchi, lungs</td></tr>
+          <tr><td>T5&ndash;T9</td><td>Greater splanchnic nerve &rarr; Celiac ganglion</td><td>Liver, gallbladder &amp; bile ducts, stomach, spleen, pancreas</td></tr>
+          <tr><td>T10&ndash;T11</td><td>Lesser splanchnic &rarr; Superior mesenteric ganglion</td><td>Small intestine, ascending colon</td></tr>
+          <tr><td>T12&ndash;L2</td><td>Lumbar splanchnic &rarr; Inferior mesenteric ganglion</td><td>Descending colon, sigmoid, rectum, kidney, ureter, adrenal medulla</td></tr>
+          <tr><td>All levels</td><td>Paravertebral chain</td><td>Sweat glands, hair follicles, adipose tissue, blood vessels (skin)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Parasympathetic Division (Craniosacral)</div>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px;">Long presynaptic neurons; ganglia near or in target organ wall</p>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Source</th><th>Nerve/Ganglion</th><th>Organs</th></tr></thead>
+        <tbody>
+          <tr><td><strong>CN III</strong></td><td>Ciliary ganglion</td><td>Eye (pupil constriction, accommodation)</td></tr>
+          <tr><td><strong>CN VII</strong></td><td>Sphenopalatine / submandibular ganglia</td><td>Lacrimal gland, sublingual &amp; submandibular salivary glands, nasal/palate mucosa</td></tr>
+          <tr><td><strong>CN IX</strong></td><td>Otic ganglion</td><td>Parotid gland</td></tr>
+          <tr><td><strong>CN X (Vagus)</strong></td><td>Cardiac &amp; enteric ganglia; visceral afferents</td><td>Heart, airways/lungs, liver, gallbladder, stomach, small intestine, ascending colon; <em>visceral afferents in spinal nerves carry pain</em></td></tr>
+          <tr><td><strong>S2&ndash;S4</strong></td><td>Mixed pelvic ganglia (both sympathetic &amp; parasympathetic)</td><td>Descending colon, rectum, bladder/urethra, reproductive organs, sphincters, external genitalia</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bl-strip gold">
+    <div class="bl-label">Visceral Referral Patterns &mdash; Clinical Application</div>
+    <p><strong>Cardiac:</strong> T1&ndash;T5 &rarr; left chest, left arm, jaw, neck, shoulder. <strong>Liver/Gallbladder:</strong> T5&ndash;T9 right &rarr; right shoulder (C3&ndash;C5 via phrenic nerve irritation of diaphragm). <strong>Kidney/Ureter:</strong> T10&ndash;L2 &rarr; flank, lower back, groin. <strong>Appendix:</strong> T10 &rarr; periumbilical early; localizes to RLQ as parietal peritoneum involved. <strong>Bladder/Uterus:</strong> S2&ndash;S4 &rarr; low back, sacrum, perineum. <strong>Key test: Position change and PT treatment should NOT affect true visceral pain.</strong></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- INTERVIEW FRAMEWORK -->
+  <div class="section-title" style="font-size:1.2rem;">The Patient Interview &mdash; Framework</div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Interview Components</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li><strong>Chief complaint</strong> &mdash; in patient's own words</li>
+        <li><strong>History of present illness (HPI)</strong> &mdash; onset, mechanism, course, prior episodes</li>
+        <li><strong>Pain assessment</strong> &mdash; location, quality, quantity, timing, aggravating/relieving, associated symptoms</li>
+        <li><strong>Contraindications / precautions</strong> &mdash; red/yellow flags screening</li>
+        <li><strong>Review of systems (ROS)</strong> &mdash; organ-system cluster check</li>
+        <li>Subjective info correlated with objective findings during examination</li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title">Other Subjective Data Sources</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Medical record</strong> &mdash; prior evaluations, labs, imaging</li>
+        <li><strong>Intake form</strong> &mdash; PMH, PSH, medications, allergies</li>
+        <li><strong>Patient's self-prepared list</strong> &mdash; PMH/PSH/meds (highly reliable)</li>
+        <li><strong>Family members / caregivers</strong> &mdash; especially for cognitive impairment</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Building the Relationship First</div>
+        <p>Full attention to the patient &middot; Compassion and caring &middot; Cultural competence &middot; Awareness of literacy and language barriers (ESL). Without trust, patients withhold information. Without information, you miss red flags.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;">Follow-Up Questions &mdash; When to Probe Deeper</div>
+  <div class="section-sub" style="margin-bottom:12px;">When a patient says something that makes you suspect more is going on, follow up immediately. These are not casual comments &mdash; each is a potential red flag worth exploring.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Statements That Require Follow-Up</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li>"I started having neck pain after the car accident." &rarr; trauma mechanism, possible fracture, ligament injury</li>
+        <li>"I had a fall." &rarr; mechanism, LOC, head injury, fracture risk</li>
+        <li>"I sleep in the recliner." &rarr; orthopnea, CHF, GERD, pain avoidance posture</li>
+        <li>"I've had that sore on my leg for months." &rarr; wound healing, vascular insufficiency, malignancy</li>
+        <li>"I get short of breath walking up a flight of stairs." &rarr; cardiac, pulmonary, deconditioning</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Case Example &mdash; Recognizing Red Flags</div>
+      <div class="bl-strip red">
+        <div class="bl-label">Progressive Bilateral Weakness</div>
+        <p>A patient referred for LE weakness also reports dysesthesia (pain with touch). Social history: alcohol abuse, 60 pack-year tobacco use. Presents with mild distal weakness (L &gt; R). Over 2 weeks: weakness increases, L foot drop develops. Then R wrist and finger flexor/extensor weakness appears.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-top:6px;">
+        <div class="bl-label">Why This is a Red Flag</div>
+        <p>Progressive, bilateral, ascending peripheral neuropathy in a patient with alcohol abuse history and heavy tobacco use &mdash; not a simple MSK problem. Combination suggests toxic/metabolic neuropathy or ascending pattern (GBS). Heavy alcohol use, not improving with PT, bilateral progression &rarr; requires medical workup, not continued PT in isolation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- KEY POINTS -->
+  <div class="section-title" style="font-size:1.2rem;">Key Principles</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">What We Are and Are Not Doing</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">We Are NOT</div>
+        <p>Establishing a medical diagnosis. That is the physician's role. We are gathering clinical data to assess if the presentation is within our scope.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">We ARE</div>
+        <p>Determining if symptoms are beyond the scope of PT practice. Referring appropriately and promptly when they are. Documenting our clinical reasoning and communication.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Intake Forms &amp; Follow-Up</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Intake forms often require follow-up questions &mdash; they are a starting point, not the end</li>
+        <li>Constitutional symptoms almost always warrant physician referral but require follow-up questioning in PT</li>
+        <li>Areas of concern identified during history-taking must be addressed during physical examination</li>
+        <li>Document all red flags found, follow-up actions taken, and referrals made</li>
+      </ul>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Pain Neuroscience</div>
+  <div class="section-sub" style="margin-bottom:14px;">From Gifford (1998), Louw (2016), Wall &amp; Melzack (2005). Understanding pain as a brain output — not a tissue input — is foundational to patient education, fear reduction, and chronic pain management. ~20% of the population in developed countries experience ongoing pain without apparent biological source persisting beyond normal healing. 116 million Americans with chronic pain ($635 billion/year).</div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">False Assumptions About Pain</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>"Direct link between tissue damage and pain level"</strong> — False. Pain does not reliably correlate with tissue damage. Catastrophic injuries can present with minimal pain; minor injuries can present with severe pain.</li>
+        <li><strong>"All pain is caused by injury"</strong> — False. Pain is a brain output based on perceived threat, not a direct readout of tissue damage.</li>
+        <li><strong>"Increased pain = increased tissue damage"</strong> — False. Central sensitization explains ongoing or worsening pain despite tissue healing.</li>
+        <li><strong>"Pain is either physical OR psychological"</strong> — False. Pain is always both — it is a multisystem brain output integrating sensory, cognitive, emotional, and social inputs.</li>
+        <li><strong>"With chronic pain, tissues are not healing / damage is ongoing"</strong> — False. Tissues heal on predictable timelines. Persistent pain beyond healing = central sensitization driving the experience.</li>
+        <li><strong>"Nociception = pain"</strong> — False. Nociceptors are <em>danger</em> fibers, not pain fibers. Nociceptor activation does not automatically produce pain; the brain decides.</li>
+        <li><strong>"Pain is an input system"</strong> — False. Pain is an <em>output</em> system — a protective response generated by the brain based on perceived threat.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Pain — The Correct Definition</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">IASP / Gifford Definition</div>
+        <p><strong>Pain is a multiple system output activated by the brain based on perceived threat.</strong> The brain receives sensory signals (nociception), processes them alongside memory, context, emotion, past experience, beliefs, and social cues, then generates pain as a protective output when it concludes the body is under threat.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Mature Organism Model (Gifford 1998)</div>
+        <p>Three components of the pain experience: <strong>Inputs</strong> (tissue signals, nociception) → <strong>Processing</strong> (CNS integration: dorsal horn, ascending pathways, brain) → <strong>Outputs</strong> (pain, autonomic response, motor changes, immune response). All three components are targets for treatment — not just tissue inputs.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Patient Education Goal</div>
+        <p>Educate patients that tissue injury can be non-threatening. Goal: reduce the patient's perception of fear or threat. Evidence: pain neuroscience education (PNE/TNE) reduces pain catastrophization, fear-avoidance, and disability — and improves participation in active rehabilitation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Nerve Fiber Types — Inputs</div>
+      <table class="data-table" style="margin:0;font-size:12.5px;">
+        <thead><tr><th>Fiber</th><th>Characteristics</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Type A</strong></td><td>Thickest + fastest (myelinated)</td><td>Skeletomotor fibers; afferent skin fibers (sharp, immediate pain)</td></tr>
+          <tr><td><strong>Type B</strong></td><td>Medium size (myelinated)</td><td>Pre-ganglionic autonomic efferents</td></tr>
+          <tr><td><strong>Type C</strong></td><td>Smallest + thinnest (non-myelinated); slowest conduction</td><td>Post-ganglionic autonomic efferents; afferent skin fibers (slow, aching, diffuse pain)</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">Nociceptive Fibers = Danger Fibers — NOT Pain Fibers</div>
+        <p>Nociceptors signal potential tissue threat to the CNS. The brain then decides whether to generate pain. Activation of nociceptors without the brain perceiving threat = no pain experience. This is why injured soldiers in battle sometimes feel no pain until they reach safety.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Ion Channel Types — Peripheral Nerve Activation</div>
+      <table class="data-table" style="margin:0;font-size:12.5px;">
+        <thead><tr><th>Channel</th><th>Activation Signal</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Voltage</strong></td><td>Electrical ion activity (voltage-gated); pH-sensitive (open with depolarization)</td></tr>
+          <tr><td><strong>Chemical</strong></td><td>Circulating fluid (e.g., adrenaline, inflammatory mediators)</td></tr>
+          <tr><td><strong>Temperature</strong></td><td>Changes in tissue temperature (TRPV1 — heat/capsaicin)</td></tr>
+          <tr><td><strong>Mechanical</strong></td><td>Mechanical stimuli: pressure, tension, stretch</td></tr>
+          <tr><td><strong>Immune</strong></td><td>Immune molecules: cytokines, prostaglandins</td></tr>
+          <tr><td><strong>Spontaneous</strong></td><td>Unknown reason — can fire in absence of clear stimulus</td></tr>
+          <tr><td><strong>Light-gated</strong></td><td>Changes in light (experimental context)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">CNS Processing — Central Sensitization</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Normal Dorsal Horn Processing</div>
+        <p>Dorsal horn (spinal cord) receives sensory information from A and C fibers. <strong>Interneurons (IN)</strong> communicate with peripheral fibers, blocking or inhibiting signals to second-order neurons. Second-order neurons carry signals from spinal cord to brain for interpretation.</p>
+      </div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Central Sensitization Mechanism</div>
+        <p>Repeated firing of C fibers → death of inhibitory interneurons. Frequent "danger" signals → brain develops a <strong>"memory" for those signals</strong> → can respond faster with less stimulus over time. Result: hyperalgesia (exaggerated response to painful stimuli) and allodynia (pain with non-painful stimuli). Sensitization = the CNS problem, not the tissue problem.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Clinical Application</div>
+        <p>When pain persists without ongoing tissue injury → think <strong>central sensitization</strong>. These patients need pain neuroscience education, graded exposure, and psychological coping strategies — NOT more structural imaging or passive treatments targeting tissue that has already healed.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">CNS Output — The Stress Response</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Fight-or-Flight Output</div>
+        <p>When the brain generates a pain output, it simultaneously activates the stress response: large muscle groups activated · respiration increases · digestion slows · reproductive system inhibited · adrenaline + cortisol released · immune changes + chronic inflammation risk.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Chronic Pain Consequences</div>
+        <p>Persistent stress response from chronic pain drives: chronic inflammation, autonomic dysregulation, HPA axis disruption, sleep disturbance, mood disorders, and immune suppression. Pain is not just a sensory experience — it is a whole-body threat-response system. This is why biopsychosocial treatment models are essential for chronic pain.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Language in MSK Rehabilitation</div>
+  <div class="section-sub" style="margin-bottom:14px;">Stewart &amp; Loftus, JOSPT 2018 (48:7). "Words are, of course, the most powerful drug used by mankind." — Rudyard Kipling. The words clinicians use can significantly impact clinical outcomes. Pathoanatomical language increases patient fear and catastrophization — often unintentionally. Psychological factors are more effective predictors of pain and disability levels than pathoanatomical factors (Chester et al.).</div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Why Language Matters</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Words Contain Both the Ability to Heal and Harm</div>
+        <p>Like drugs, words change how a person thinks and feels. A term like "degenerative discs" sounds clinical and mild to a clinician — but can be catastrophic to a patient. Single, offhand statements can heavily influence recovery expectations (Biro 2010). Low recovery expectations are strong predictors of poor outcomes.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Attentional Bias in Chronic Pain</div>
+        <p>Patients in pain naturally seek information confirming their worst fears (Ben's case: "surgery <em>may</em> be indicated" → "I <em>will</em> need surgery"). Words like "may," "possibly," or "perhaps" are easily dismissed — patients selectively attend to the alarming interpretation. Always consider how the patient will interpret the words you choose.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Therapeutic Emplotment (Mattingly)</div>
+        <p>Frame therapy around what the patient <em>can</em> do and <em>will</em> be able to do — not what they cannot do. Emphasize purpose and meaning in rehabilitation. Help the patient develop a positive narrative around recovery. This is "therapeutic emplotment" — essential for patient engagement and belief in recovery.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Words to Avoid → Preferred Alternatives</div>
+      <table class="data-table" style="margin:0;font-size:12.5px;">
+        <thead><tr><th>Avoid</th><th>Use Instead</th></tr></thead>
+        <tbody>
+          <tr><td>Chronic degenerative changes</td><td class="ok">Normal age-related changes</td></tr>
+          <tr><td>Negative test results</td><td class="ok">Everything appears normal</td></tr>
+          <tr><td>Instability</td><td class="ok">Needs more strength and control</td></tr>
+          <tr><td>Wear and tear</td><td class="ok">Normal age-related changes</td></tr>
+          <tr><td>Bone on bone</td><td class="ok">Narrowing / tightness</td></tr>
+          <tr><td>Tear</td><td class="ok">Pull</td></tr>
+          <tr><td>Damage</td><td class="ok">Reparable harm</td></tr>
+          <tr><td>Trapped nerve</td><td class="ok">Tight, but can be stretched</td></tr>
+          <tr><td>Bulge / herniation</td><td class="ok">Bump / swelling</td></tr>
+          <tr><td>Paresthesia</td><td class="ok">Altered sensations</td></tr>
+          <tr><td>Lordosis / Kyphosis</td><td class="ok">The normal curve in your back</td></tr>
+          <tr><td>Disease</td><td class="ok">Condition</td></tr>
+          <tr><td>Effusion</td><td class="ok">Swelling</td></tr>
+          <tr><td>Chronic</td><td class="ok">It may persist, but you can overcome it</td></tr>
+          <tr><td>Diagnostics</td><td class="ok">X-ray or scan</td></tr>
+          <tr><td>You'll have to live with this</td><td class="ok">You may need to make some adjustments</td></tr>
+          <tr><td>Don't worry</td><td class="ok">Everything will be okay</td></tr>
+          <tr><td>Neurological</td><td class="ok">Nervous system</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+
+  <div class="section-title">Review Cards</div>
+  <div class="section-sub">Tap to flip. Covers infection control, PPE sequences, isolation precautions, positioning, pressure injury staging, and bedrest complications.</div>
+
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">PPE donning sequence — what is the correct order?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Hand hygiene → Gown → Cap → Mask/Respirator → Goggles/Face shield → Gloves.</strong> Memory: "Hands Go Clean — Make Good Choices." Gloves always last — they cover the gown cuffs and are donned last to minimize contamination risk during donning.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">PPE doffing sequence — what comes off first and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Gloves → Goggles/face shield → Gown → Mask/Respirator → Hand hygiene.</strong> Gloves off first because outside is contaminated — you need gloved hands to safely remove other equipment. Mask last because the front is contaminated and you grab by ties/elastics. Hand hygiene immediately after ALL PPE removed.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why can't you use alcohol hand sanitizer with C. difficile?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">C. diff produces <strong>spores</strong> that are <strong>not killed by alcohol</strong>. Alcohol-based sanitizer is effective against vegetative bacteria but not spores. C. diff requires <strong>soap and water</strong> for hands and <strong>bleach or EPA-approved spore-killing disinfectant</strong> for room surfaces. Standard disinfectant wipes are also ineffective.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 5 routes of transmission? Which is most frequent for HAIs?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Contact · Droplet · Airborne · Vehicle · Vector-borne. <strong>Contact transmission is the most frequent route of HAI.</strong> Occurs via direct contact (with patient) or indirect contact (equipment, linen, parallel bars, gait belts). MRSA is the classic PT-relevant contact pathogen.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">N-95 vs. surgical mask — when is each required?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Surgical mask:</strong> Droplet precautions (flu, COVID-19, pertussis); filters large-particle droplets; don on room entry, remove on exit. <strong>N-95 respirator:</strong> Airborne precautions (TB, measles, chickenpox, SARS); must be fit-tested; filters ≥95% particles ≥0.3 microns; don BEFORE entering room, remove AFTER exiting and closing door.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Name the 5 most common pressure injury locations.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>95% of pressure injuries occur at these 5 sites:</strong> (1) Sacral/coccygeal — most common; (2) Greater trochanter — sidelying; (3) Ischial tuberosity — sitting; (4) Heel — supine; (5) Lateral malleolus — sidelying. All are bony prominences with thin overlying tissue.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Pressure injury staging — what tissue layers are involved in each stage?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Stage 1:</strong> Epidermis intact (non-blanchable erythema). <strong>Stage 2:</strong> Epidermis + Dermis (partial thickness — blister/abrasion). <strong>Stage 3:</strong> + Subcutaneous tissue (full thickness — deep crater, no bone/tendon visible). <strong>Stage 4:</strong> + Fascia/Muscle/Bone (full thickness — all layers destroyed). <strong>Unstageable:</strong> Covered by eschar/slough.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why do you never "reverse-stage" a healing pressure injury?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Stages reflect the <strong>maximum depth of tissue destruction</strong>, not current appearance. Healing fills with scar/granulation tissue — not original tissue. A "healing Stage 4" that looks like Stage 2 still has Stage 4 tissue destruction underneath. Document as <strong>"healing Stage 4"</strong>, never "Stage 2" or "Stage 1."</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How often should you reposition a sitting patient? A supine patient?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Sitting: every 10 minutes minimum</strong> — ischial tuberosity pressure in sitting far exceeds supine. Pressure relief (push-up or weight shift) needed frequently. <strong>Supine/prone/sidelying: every 2 hours minimum.</strong> Initially check skin after 5–10 minutes in any new position. Increase frequency with any additional risk factors.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is orthostatic hypotension — definition, cause in PT context, and management?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Definition:</strong> ≥20 mmHg systolic or ≥10 mmHg diastolic drop within 3 min of standing. <strong>In PT context:</strong> most often from <em>bedrest</em> → cardiovascular deconditioning → venous pooling on standing. <strong>Management:</strong> Dangle before standing; monitor BP at each level; abdominal binder; compression stockings; progress slowly; tilt table for severe deconditioning.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Well's Criteria for DVT — what score means "likely"?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Score <strong>≥2 = "likely"</strong>. Score &lt;2 = "unlikely." Key items: active cancer (+1), paralysis/immobilization (+1), bedridden &gt;3 days or recent surgery (+1), entire leg swelling (+1), calf &gt;3 cm larger (+1), previously documented DVT (+1). <strong>Alternative diagnosis as likely = −2.</strong> Ultrasound is gold standard for confirmation.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What contracture risk does supine positioning pose and how do you prevent it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Primary risk: <strong>ankle plantarflexion contracture</strong> (sheets push feet down) and hip/knee flexion tendency. Prevention: <strong>footboard</strong> to keep sheets off feet; pillow under lower legs to elevate heels; avoid prolonged knee flexion under pillows. Monitor footboard to ensure foot not continuously pressed against it (causing heel pressure injury).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is "bridging the gap" in positioning?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">A technique to relieve pressure around a sensitive area (wound, fragile tissue) by supporting the limb <strong>proximal and distal</strong> to the area — creating a bridge that suspends the problem area off the surface. The sensitive area contacts nothing. Requires <strong>more frequent position changes</strong> than standard positioning. Can be done with pillows, rolled blankets, or specialized devices.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 8 risk factors for pressure injuries?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>(1)</strong> ↓ Mobility/Activity · <strong>(2)</strong> Poor circulation · <strong>(3)</strong> Fragile skin · <strong>(4)</strong> ↓ Sensation · <strong>(5)</strong> Friction and shear forces · <strong>(6)</strong> Moisture/incontinence · <strong>(7)</strong> ↓ Mentation · <strong>(8)</strong> Malnutrition. Memory: "My Poor Fragile Skin Feels Moisture, Mental Nutrition" — or just know these cold for clinical practice.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What PPE does each isolation precaution level require?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Contact:</strong> Gloves + Gown (always). <strong>Droplet:</strong> Surgical facemask on room entry; add gloves+gown+goggles if spraying expected. <strong>Airborne:</strong> Fit-tested N-95 (don before entry, remove after exiting); add gloves+gown+goggles if spraying expected. <strong>Neutropenic:</strong> Mask + hand hygiene; private room; no flowers/raw food.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 5 components of standard precautions?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>(1)</strong> Hand hygiene · <strong>(2)</strong> PPE (gloves, gowns, masks, eye protection) · <strong>(3)</strong> Respiratory hygiene/cough etiquette · <strong>(4)</strong> Safe handling of contaminated equipment/surfaces · <strong>(5)</strong> Safe injection practices. Applied to ALL patients, ALL the time. Based on the principle that all body fluids may be infectious.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Balance assessment progression — what are the 5 framework principles?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>(1)</strong> Gait belt until independence demonstrated · <strong>(2)</strong> Sitting before standing · <strong>(3)</strong> Static before dynamic · <strong>(4)</strong> Small challenges before large · <strong>(5)</strong> Within BOS before outside BOS. Progression at each level is based on performance at the lower level AND movement precautions.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Transfer algorithm — first question and what happens if the patient is NOT alert?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">First question: <strong>Is your patient awake and alert?</strong> If NO → depends on size/weight: <strong>Mechanical Lift · 3-person · 2-person · 1-person Lift</strong>. A patient who is not alert cannot actively participate in any pivot or sliding transfer safely.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">When is a sliding board transfer indicated? What must the patient have?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">When patient <strong>cannot bear weight in LEs</strong> but has <strong>good upper extremity strength</strong>. Board bridges surfaces and patient scoots across using UE pushing. No LE WB + poor UE → mechanical or multi-person lift instead.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Standing Assisted Pivot vs. Standing Dependent Pivot — how do they differ?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Standing Assisted Pivot:</strong> Patient WBs but needs significant physical assist to complete the pivot (Mod–Max A). <strong>Standing Dependent Pivot:</strong> Patient WBs passively through legs; therapist controls the rotation (Mod A). Both require the patient to be alert and able to bear weight in LEs.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 balance strategies and what level of challenge triggers each?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Ankle strategy:</strong> small/slow perturbations; distal→proximal activation; quiet standing. <strong>Hip strategy:</strong> larger/faster perturbations; proximal→distal activation; narrow BOS. <strong>Step/Reach strategy:</strong> CoM outside BOS; stepping or reaching to recover; largest challenge. The strategy used reflects the patient's balance capability and the size of the perturbation.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Red flag vs. yellow flag &mdash; distinction and what each requires?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Yellow flag = Cautionary.</strong> Slow down; determine if screening is needed. Psychosocial factors, lifestyle risks, inconsistent presentation. <strong>Red flag = Warning.</strong> Requires immediate action: further questioning/testing, physician referral, documentation. Red flags signal symptoms may be beyond PT scope of practice.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Name 6 clinical presentation red flags.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>(1)</strong> No known etiology &middot; <strong>(2)</strong> Symptoms not improved with PT &middot; <strong>(3)</strong> Unintentional weight gain/loss &middot; <strong>(4)</strong> Symptoms unrelieved with position change &middot; <strong>(5)</strong> Symptoms out of proportion to injury &middot; <strong>(6)</strong> Does not fit expected NMS patterns. Also: growing mass, bilateral edema/nail changes/rash/paresthesias, change in tone/ROM in neurological patient.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">List the 10 constitutional symptoms. When do they require referral?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Fever &middot; Sweats &middot; Diaphoresis &middot; Nausea &middot; Vomiting &middot; Diarrhea &middot; Dizziness/syncope &middot; Pallor &middot; Fatigue &middot; Weight loss.</strong> Almost always warrant <strong>physician referral</strong> &mdash; signal systemic illness. Still require PT follow-up questions. Screen with: "Are there any other symptoms anywhere else in your body that may not seem related to your current problem?"</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Pain worsens with activity, resolves with rest &mdash; why is this a red flag?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Cardinal pattern of <strong>cardiac or vascular etiology</strong>. MSK pain improves with gentle activity; this pattern does not. Pain that appears at a consistent activity level and resolves within minutes of rest &rarr; suspect angina, vascular claudication, systemic origin. The opening case (neck pain = atypical angina, multi-vessel CAD) is the quintessential example. Refer cardiac.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What spinal levels innervate the heart sympathetically and what referral pattern does this explain?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Cardiac sympathetic innervation: <strong>T1&ndash;T5</strong> via cervical ganglia and cardiac plexus. Explains referral of cardiac pain to <strong>left chest, left arm, jaw, neck, shoulder</strong>. Liver/gallbladder (T5&ndash;T9 right) &rarr; right shoulder (phrenic nerve). Kidney (T10&ndash;L2) &rarr; flank/low back. Bladder/uterus (S2&ndash;S4) &rarr; sacrum/perineum. True visceral pain is NOT altered by position change or PT treatment.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the PT's role in DDx, and what are we NOT doing?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">We are <strong>NOT</strong> establishing a medical diagnosis. We <strong>ARE</strong> determining whether symptoms are beyond PT scope &mdash; and referring appropriately. The interview yields ~<strong>80% of information</strong> needed to determine cause of symptoms. Constitutional symptoms almost always require physician referral. Document all red flags found, actions taken, and referrals made.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Pitting edema grading — pit depth and rebound time for 1+ through 4+?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>1+ = 2mm, immediate rebound</strong> &middot; <strong>2+ = 4mm, few seconds rebound</strong> (mild CHF, venous insufficiency) &middot; <strong>3+ = 6mm, 10–12 seconds rebound</strong> (DVT, significant CHF, lymphedema) &middot; <strong>4+ = 8mm, &gt;20 seconds rebound</strong> (severe, systemic — refer to physician). Key: <strong>unilateral = DVT red flag</strong>; bilateral = systemic cause; non-pitting = lymphedema/myxedema (not DVT/CHF). New 3+/4+ with dyspnea or chest pain = emergency referral.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Wells DVT CPR — corrected surgery timeframe and bilateral leg rule.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Surgery criterion: recently bedridden &gt;3 days OR major surgery within <strong>12 weeks</strong> (requiring general or regional anesthesia) = +1. In patients with symptoms in both legs: score using the <strong>more symptomatic leg</strong>. Probability: &gt;2 = High; 1–2 = Moderate; 0 = Low. Alternative diagnosis as likely as DVT = &minus;2 (prevents false high scores). Ultrasound is gold standard for confirmation.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the correct definition of pain and why does it matter clinically?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Pain is a multiple system output activated by the brain based on perceived threat</strong> (Gifford 1998, IASP). It is NOT a direct readout of tissue damage — it is the brain's protective response. This matters because: (1) Pain can persist after tissue has healed (central sensitization). (2) Treatments targeting only tissue may be insufficient or wrong. (3) Patient education reducing threat perception directly reduces pain. The Mature Organism Model (Gifford): Inputs → Processing → Outputs — all three are treatment targets.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Central sensitization — mechanism and clinical implications.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Repeated C-fiber firing → death of inhibitory interneurons in the dorsal horn → brain develops a "memory" for danger signals → responds faster with less stimulus. Result: <strong>hyperalgesia</strong> (exaggerated response to painful stimuli) and <strong>allodynia</strong> (pain with non-painful stimuli). Clinical implication: when pain persists beyond expected tissue healing timeline → central sensitization likely driving the experience. These patients need pain neuroscience education, graded exposure, and psychological support — NOT more structural imaging or passive tissue-based treatments.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Name 4 false assumptions about pain and the correct understanding for each.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">(1) "Direct link between tissue damage and pain" — False: pain is a brain output based on perceived threat, not tissue damage severity. (2) "Nociception = pain" — False: nociceptors are danger fibers; pain is a brain decision. (3) "Chronic pain means ongoing tissue damage" — False: tissue heals on predictable timelines; persistent pain = CNS sensitization. (4) "Pain is either physical or psychological" — False: pain is always both — it is a multisystem output integrating sensory, cognitive, emotional, and social inputs. The stress response (cortisol/adrenaline, immune changes) is also a pain output, not just pain sensation.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Stewart &amp; Loftus (JOSPT 2018) — what is "therapeutic emplotment" and name 4 words to replace?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Therapeutic emplotment</strong> (Mattingly): framing therapy around what the patient CAN do and WILL be able to do — focusing on purpose and meaning, not limitation. Words have drug-like effects; patients in pain selectively attend to alarming interpretations. <strong>Four replacements:</strong> "bone on bone" → "narrowing/tightness" · "tear" → "pull" · "instability" → "needs more strength and control" · "chronic degenerative changes" → "normal age-related changes." Also: "trapped nerve" → "tight but can be stretched" · "wear and tear" → "normal age changes" · "you'll have to live with this" → "you may need to make some adjustments."</div>
+    </div>
+
+
+  </div>
+
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — Gait Training &amp; Assistive Devices</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+
+<div class="hero">
+  <div class="hero-tag">Clinical Skills · Gait Training</div>
+  <h1>Gait Training &amp; <span>Assistive Devices</span></h1>
+  <p>Weight-bearing status, assistive device selection and fitting, gait patterns, safety principles, and clinical decision-making. The foundation of functional mobility in PT practice — from the acute care floor to community reintegration.</p>
+  <div class="hero-badges">
+    <span class="badge">WB Status</span>
+    <span class="badge">Device Selection</span>
+    <span class="badge gold">Fitting Guidelines</span>
+    <span class="badge gold">Gait Patterns</span>
+    <span class="badge purple">Stairs &amp; Safety</span>
+    <span class="badge red">Clinical Cases</span>
+  </div>
+</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('wbstatus',this)">WB Status</button>
+  <button onclick="showTab('devices',this)">Device Types</button>
+  <button onclick="showTab('fitting',this)">Fitting &amp; Measurement</button>
+  <button onclick="showTab('patterns',this)">Gait Patterns</button>
+  <button onclick="showTab('safety',this)">Safety &amp; Technique</button>
+  <button onclick="showTab('cases',this)">Clinical Cases</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ====== WB STATUS ====== -->
+<div class="tab-panel active" id="tab-wbstatus">
+<div class="container">
+
+  <div class="section-title">Weight-Bearing Status</div>
+  <div class="section-sub">WB status is determined by the physician or surgeon and must be strictly followed. It drives every decision about assistive device selection and gait pattern. Know the exact definitions — "WBAT" and "PWB" are not the same thing.</div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+
+    <div class="card" style="border-left:3px solid var(--red);">
+      <div class="card-title" style="color:var(--red);">NWB — Non-Weight Bearing</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong style="color:var(--red);">0% weight through involved extremity.</strong></p>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:6px;">Foot must not contact the ground at all. Patient must be capable of full weight-bearing through upper extremities. Requires <strong>most stable</strong> devices — crutches or walker.</p>
+      <div class="bl-strip red" style="margin-top:10px;">
+        <div class="bl-label">Required UE Strength</div>
+        <p>NWB in LE = FWB in <em>both</em> upper extremities (BUE). Patient must be screened for UE strength before issuing crutches. If UE strength insufficient → walker (wider base, distributes load).</p>
+      </div>
+    </div>
+
+    <div class="card" style="border-left:3px solid var(--orange);">
+      <div class="card-title" style="color:var(--orange);">TTWB / TDWB — Toe Touch / Touch Down WB</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong style="color:var(--orange);">Toes rest on ground for balance only — no weight transmitted through LE.</strong></p>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:6px;">Foot <em>may</em> rest on floor but the limb is not bearing weight. Serves as proprioceptive grounding. Functionally treated like NWB for device selection. Some sources use TTWB and TDWB interchangeably.</p>
+    </div>
+
+    <div class="card" style="border-left:3px solid #fde047;">
+      <div class="card-title" style="color:#fde047;">PWB — Partial Weight Bearing</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong style="color:#fde047;">Specific percentage of body weight (typically 20–50%) established by physician.</strong></p>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:6px;">Unlike WBAT, the amount is determined <em>by the physician</em>, not patient tolerance. Requires patient education on how to gauge partial loading (scale practice, verbal cues). Bathroom scale training is helpful.</p>
+    </div>
+
+    <div class="card" style="border-left:3px solid #a3e635;">
+      <div class="card-title" style="color:#a3e635;">WBAT — Weight Bearing As Tolerated</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong style="color:#a3e635;">Amount determined by patient tolerance — typically 50–100%.</strong></p>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:6px;">Patient self-regulates based on pain and comfort. More permissive than PWB. Most patients bear as much as comfortable — device used primarily for support and safety rather than strict WB limitation.</p>
+    </div>
+
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--green);">
+    <div class="card-title" style="color:var(--green);">FWB — Full Weight Bearing</div>
+    <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong style="color:var(--green);">No weight-bearing restriction — 100%.</strong> Device is used for <em>balance only</em>, not for off-loading. Patient has unrestricted loading through the limb. Focus shifts entirely to safety, balance, and mobility retraining.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">WB Status Summary Table</div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Status</th><th>% Load</th><th>Who Determines</th><th>Device Need</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb-pill wb-nwb">NWB</span></td>
+        <td class="bad">0%</td>
+        <td>Physician</td>
+        <td class="bad">High</td>
+        <td>No contact with floor; BUE must be FWB</td>
+      </tr>
+      <tr>
+        <td><span class="wb-pill wb-ttwb">TTWB / TDWB</span></td>
+        <td class="bad">~0% (balance)</td>
+        <td>Physician</td>
+        <td class="bad">High</td>
+        <td>Toes on floor for balance only; functionally = NWB</td>
+      </tr>
+      <tr>
+        <td><span class="wb-pill wb-pwb">PWB</span></td>
+        <td class="warn">20–50%</td>
+        <td>Physician (specific %)</td>
+        <td class="warn">Moderate-High</td>
+        <td>Train patient on scale; physician sets the exact %</td>
+      </tr>
+      <tr>
+        <td><span class="wb-pill wb-wbat">WBAT</span></td>
+        <td class="ok">50–100%</td>
+        <td>Patient tolerance</td>
+        <td class="warn">Moderate</td>
+        <td>Patient self-regulates; may wean device as tolerated</td>
+      </tr>
+      <tr>
+        <td><span class="wb-pill wb-fwb">FWB</span></td>
+        <td class="ok">100%</td>
+        <td>None / physician clearance</td>
+        <td class="ok">Low (balance)</td>
+        <td>Device for balance only; wean toward independence</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip gold" style="margin-top:8px;">
+    <div class="bl-label">Assistance Levels — Documenting What You Provide</div>
+    <p><strong>I</strong> (Independent) · <strong>MI</strong> (Modified Independent) · <strong>S</strong> (Supervision) · <strong>CGA</strong> (Contact Guard Assist) · <strong>Min A</strong> (Minimal Assist, &lt;25% effort) · <strong>Mod A</strong> (Moderate, 25–50%) · <strong>Max A</strong> (Maximal, 50–75%) · <strong>×2</strong> (Two-person assist required). Always document the WB status alongside the assist level.</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== DEVICE TYPES ====== -->
+<div class="tab-panel" id="tab-devices">
+<div class="container">
+
+  <div class="section-title">Assistive Device Types</div>
+  <div class="section-sub">Devices exist on a spectrum from maximum stability (parallel bars) to minimum support (single cane). Choice depends on WB status, UE strength, balance, cognition, environment, and patient goals. <strong>Least restrictive device that does not compromise safety.</strong></div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Stability → Mobility Spectrum</div>
+  <div class="section-sub" style="margin-bottom:8px;">More stability = less mobility and speed. Match device to what the patient actually needs — not always the most stable option.</div>
+
+  <div class="spectrum-bar">
+    <div class="spectrum-track">
+      <div class="spectrum-item"><span class="spec-1">Parallel Bars</span><div class="spectrum-label">Max stable</div></div>
+      <div class="spectrum-item"><span class="spec-2">Walker</span><div class="spectrum-label">Standard</div></div>
+      <div class="spectrum-item"><span class="spec-3">Bilat. Ax. Crutches</span><div class="spectrum-label">High stable</div></div>
+      <div class="spectrum-item"><span class="spec-4">Bilat. Forearm Crutch</span><div class="spectrum-label">Moderate</div></div>
+      <div class="spectrum-item"><span class="spec-5">Bilateral Canes</span><div class="spectrum-label">Moderate</div></div>
+      <div class="spectrum-item"><span class="spec-6">Hemi-Walker</span><div class="spectrum-label">Asymmetric</div></div>
+      <div class="spectrum-item"><span class="spec-7">Quad Cane</span><div class="spectrum-label">Low moderate</div></div>
+      <div class="spectrum-item"><span class="spec-8">Single Cane</span><div class="spectrum-label">Low</div></div>
+      <div class="spectrum-item"><span class="spec-9">No Device</span><div class="spectrum-label">Independent</div></div>
+    </div>
+    <div class="spectrum-axis"><span>← More Stable</span><span>More Mobile →</span></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Walkers</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Standard (Pick-Up) Walker</h4>
+      <div class="ma-tags"><span class="ma-tag">Max stability</span><span class="ma-tag gold">NWB capable</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Advantages:</strong> Most stable walker. Maximum BOS. Appropriate for NWB/TTWB when UE strength is insufficient for crutches. No rolling — cannot slip.</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:8px;"><strong>Disadvantages:</strong> Must be picked up with each step → interrupts reciprocal gait. Requires adequate UE strength to lift. Not suitable for stairs. Slow. Cognitively demanding to learn step-to pattern.</p>
+        </div>
+        <div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Gait pattern:</strong> Step-to only (walker → affected LE → unaffected LE). No step-through with standard walker.</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:8px;"><strong>WB status:</strong> NWB, TTWB, PWB, WBAT, FWB</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Front-Wheeled Walker (2-Wheeled)</h4>
+      <div class="ma-tags"><span class="ma-tag">Good for parkinsonian gait</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Advantages:</strong> Maintains forward momentum better than standard walker. Better for patients who cannot lift the walker fully (e.g., Parkinson's festinating gait where external cue of wheels rolling helps). Less cognitively demanding. <strong>Disadvantages:</strong> Less stable than standard walker — can roll away on inclines. Not appropriate for NWB.</p>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Rollator (4-Wheeled Walker)</h4>
+      <div class="ma-tags"><span class="ma-tag">Brakes required</span><span class="ma-tag gold">Seat + basket</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Advantages:</strong> Allows near-normal reciprocal gait. Folds, has seat for rest and basket for carrying items. Good for endurance-limited patients (e.g., COPD, MS, cardiac). <strong>Disadvantages:</strong> Least stable walker — rolls freely. Patient must have good cognition and coordination to manage brakes. NOT appropriate for NWB, TTWB, or PWB. Risk of rollator sliding away.</p>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">Safety Note</div>
+        <p>Always teach brakes FIRST. Locking brakes for sit-to-stand, unlocking for ambulation. Patient must be cognitively able to manage brakes safely.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Platform Walker</h4>
+      <div class="ma-tags"><span class="ma-tag">UE weight-bearing limitation</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Forearms rest on padded platform instead of handgrips. Used when patient cannot bear weight through the wrist/hand (e.g., RA with wrist involvement, recent UE fracture, carpal tunnel). Load transfers through the forearm rather than the hand. Requires more UE involvement to stabilize.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Crutches</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Axillary Crutches</h4>
+      <div class="ma-tags"><span class="ma-tag">Most versatile</span><span class="ma-tag gold">All WB status</span><span class="ma-tag green">Stairs capable</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Advantages:</strong> Most versatile crutch. Capable of all WB statuses including NWB. Can be used on stairs. Allows multiple gait patterns. Good for temporary injuries in young, UE-strong patients.</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:8px;"><strong>Disadvantages:</strong> Requires significant UE strength. Risk of <strong>crutch palsy</strong> (radial nerve compression) if patient leans on axillary pad — must be educated that weight goes through HANDS, not axilla. Not suitable if UE weakness, poor coordination, or poor cognition.</p>
+        </div>
+        <div>
+          <div class="bl-strip red">
+            <div class="bl-label">Critical Teaching Point</div>
+            <p>Weight goes through the HANDS and wrists — NOT the axilla. Resting weight on the axillary pad compresses the radial nerve → crutch palsy (wrist drop). <strong>2–3 finger widths must always be maintained between the axillary pad and the axilla.</strong></p>
+          </div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:8px;"><strong>WB Status compatible:</strong> NWB, TTWB, PWB, WBAT, FWB — all patterns available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lofstrand / Forearm / Canadian Crutches</h4>
+      <div class="ma-tags"><span class="ma-tag">Long-term use</span><span class="ma-tag gold">Energy efficient</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Advantages:</strong> Preferred for <em>long-term</em> crutch use (e.g., paraplegia, post-polio). Forearm cuff allows patient to release hand without dropping crutch. More energy-efficient gait. Allows more reciprocal, normal-appearing gait. Can use hands momentarily while cuff maintains grip.</p>
+        </div>
+        <div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Disadvantages:</strong> Less stable than axillary crutches. Requires high UE strength and coordination. Longer learning curve. Requires good trunk control.</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:8px;"><strong>WB Status compatible:</strong> NWB, TTWB, PWB, WBAT, FWB</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Platform Crutch</h4>
+      <div class="ma-tags"><span class="ma-tag">UE limitation</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Forearm rests on padded platform trough. Used when patient cannot bear weight through wrist/hand (e.g., RA, wrist fracture, UE orthopedic conditions). Load through forearm. Less commonly used than axillary or forearm crutches.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Canes</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Standard (Straight) Cane</h4>
+      <div class="ma-tags"><span class="ma-tag">WBAT / FWB</span><span class="ma-tag gold">Most common</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Advantages:</strong> Lightweight, least restrictive, easy to use on stairs and in community. Appropriate for WBAT and FWB patients who need modest balance support. Contralateral hand to affected limb.</p>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-top:8px;"><strong>WB status:</strong> WBAT and FWB only. Not appropriate for NWB, TTWB, or PWB.</p>
+        </div>
+        <div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Which Hand?</div>
+            <p>Cane in the <strong>contralateral hand</strong> to the affected/weaker leg. This is the biomechanically correct position — allows normal trunk mechanics and reduces hip abductor demand on the affected side.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Quad Cane (LBQC / SBQC)</h4>
+      <div class="ma-tags"><span class="ma-tag">4-point base</span><span class="ma-tag gold">More stable than straight cane</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>LBQC</strong> = Large Base Quad Cane (wider base = more stable). <strong>SBQC</strong> = Small Base Quad Cane (smaller base = more mobile). <strong>Advantages:</strong> Can stand alone. Greater stability than straight cane. Good for patients who cannot maintain grip or need more lateral stability (e.g., hemiplegia/hemiparesis). <strong>Disadvantages:</strong> Heavier, cumbersome on stairs, slower gait. All four feet must contact floor simultaneously for stability — fails on uneven terrain. <strong>WB status:</strong> WBAT and FWB.</p>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hemi-Walker</h4>
+      <div class="ma-tags"><span class="ma-tag">One-sided support</span><span class="ma-tag gold">CVA / hemiplegia</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">A walker used with one hand — sized to go on one side of the patient. Used for patients with hemiplegia/hemiparesis who cannot use bilateral devices (e.g., non-functional UE after CVA). More stable than a quad cane. Provides broader base of support than quad cane but less than bilateral walker. <strong>Disadvantages:</strong> Cannot be used on stairs. Slower. <strong>WB status:</strong> WBAT, FWB primarily.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Device Selection — Decision Framework</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Indications for Assistive Devices</div>
+      <div class="grid2" style="gap:8px;">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Musculoskeletal</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>WB restriction (injury/surgery)</li>
+            <li>Disease or deformity</li>
+            <li>Pain</li>
+            <li>Weakness or paralysis</li>
+            <li>Decreased sensation</li>
+            <li>Open wounds on WB surfaces</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Neuromuscular / Balance</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Poor motor control or coordination</li>
+            <li>Abnormal tone or reflexes</li>
+            <li>Primary balance deficit</li>
+            <li>Secondary balance deficit</li>
+            <li>Fear of falling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Guidelines for Choosing — PSSA</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Protection</strong> — post-injury/post-surgical WB restrictions drive the choice</li>
+        <li><strong>Support</strong> — NWB in LE requires FWB in BUE; assess UE strength first</li>
+        <li><strong>Stability</strong> — more stable device for less stable patient</li>
+        <li><strong>Accessibility / Adaptability</strong> — least restrictive without compromising safety; consider environment (stairs, terrain, home layout)</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Other Factors to Consider</div>
+        <p>Cognition · Coordination · Endurance/fatigue · UE strength and integrity · Home environment (stairs, doorways, surface types) · Community access · Patient goals and compliance · Anticipated duration of use</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== FITTING ====== -->
+<div class="tab-panel" id="tab-fitting">
+<div class="container">
+
+  <div class="section-title">Fitting &amp; Measurement</div>
+  <div class="section-sub">Proper fit is non-negotiable. A poorly fitted device is dangerous — too tall creates shoulder shrug/lateral trunk lean; too short causes forward trunk lean and increased WB through device. Always check fit before initiating gait training.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Universal Reference Points</div>
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Greater Trochanter</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">The primary bony landmark for handpiece height for <strong>canes, walkers, and crutch handpieces</strong>. With patient standing erect in shoes, handle should be at the level of the greater trochanter.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Ulnar Styloid Process</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Alternate landmark — with arms relaxed at sides, handle aligns with ulnar styloid process. Both GT and ulnar styloid result in approximately <strong>20–30° elbow flexion</strong> at the handpiece — the target position.</p>
+    </div>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;">Device-Specific Fitting</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Axillary Crutches — Detailed Fitting</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Most fitting points to memorize</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:8px;">Standing Measurement (Primary Method)</p>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+            <li><strong>Axillary rest:</strong> 2–3 finger widths (2") below the floor of the axilla — patient standing upright</li>
+            <li><strong>Handpiece:</strong> Level of greater trochanter or ulnar styloid</li>
+            <li><strong>Elbow flexion:</strong> 20–30°</li>
+            <li><strong>Crutch tip position:</strong> 2"(–4") lateral and (4"–)6" anterior to small toe</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:8px;">Formulas (when patient cannot stand)</p>
+          <div class="bl-strip gold">
+            <div class="bl-label">Formula 1 — Height Method</div>
+            <p><strong>Crutch length = 77% of patient's height</strong><br>Example: 66" × 0.77 = 50.82" → 51" crutches<br>Or: Height − 16" (66" − 16" = 50")</p>
+          </div>
+          <div class="bl-strip" style="margin-top:8px;">
+            <div class="bl-label">Formula 2 — ATNR Sitting Method</div>
+            <p>Arms abducted to shoulder height, one elbow flexed 90°, other fully extended (like an "/" position). Crutch top = olecranon of flexed arm. Crutch tip = tip of middle finger of opposite hand.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lofstrand / Forearm Crutches</h4>
+      <div class="ma-tags"><span class="ma-tag">Cuff height matters</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Handpiece:</strong> Same as cane — level of GT or ulnar styloid; 20–30° elbow flexion</li>
+        <li><strong>Forearm cuff:</strong> 1–1.5" distal to the olecranon process (so cuff sits on proximal forearm, not the elbow itself)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cane &amp; Walker</h4>
+      <div class="ma-tags"><span class="ma-tag">Simple</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Handle height:</strong> Greater trochanter OR ulnar styloid process</li>
+        <li><strong>Resulting elbow flexion:</strong> 20–25° (slightly less than crutches)</li>
+        <li><strong>Check:</strong> No shoulder elevation; no forward trunk lean; comfortable grip; rubber tip in good condition</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Parallel Bars</h4>
+      <div class="ma-tags"><span class="ma-tag">Pre-gait training</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Width:</strong> 2" clearance on each side of the greater trochanters (patient should not be squeezed or leaning out)</li>
+        <li><strong>Height:</strong> 20–25° elbow flexion; same GT/ulnar styloid reference</li>
+        <li>Therapist stands <em>inside</em> the bars to guard patient during initial training</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Quick Fitting Reference</div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Device</th><th>Handpiece Height</th><th>Elbow Flexion</th><th>Other Measurement</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Axillary Crutches</strong></td><td>GT or ulnar styloid</td><td class="hi">20–30°</td><td>Axillary pad: 2–3 fingers below axilla. Tip: 2" lateral, 6" anterior to small toe</td></tr>
+      <tr><td><strong>Lofstrand Crutches</strong></td><td>GT or ulnar styloid</td><td class="hi">20–30°</td><td>Cuff: 1–1.5" distal to olecranon</td></tr>
+      <tr><td><strong>Walker</strong></td><td>GT or ulnar styloid</td><td class="hi">20–25°</td><td>All four tips on ground simultaneously</td></tr>
+      <tr><td><strong>Cane</strong></td><td>GT or ulnar styloid</td><td class="hi">20–25°</td><td>Contralateral hand to affected leg</td></tr>
+      <tr><td><strong>Parallel Bars</strong></td><td>GT or ulnar styloid</td><td class="hi">20–25°</td><td>Width: 2" clearance each side of GT</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip red">
+    <div class="bl-label">General Maintenance Check (Before Every Session)</div>
+    <p>Inspect rubber tips for wear (replace if smooth). Check all bolts/wing nuts are tightened. Confirm height settings are locked. Look for cracks, bends, or damage to frame. For rollators: test brake function. Never use a device that is damaged or in disrepair.</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== GAIT PATTERNS ====== -->
+<div class="tab-panel" id="tab-patterns">
+<div class="container">
+
+  <div class="section-title">Gait Patterns</div>
+  <div class="section-sub">The gait pattern must match the weight-bearing status and the patient's capability. Wrong pattern selection can cause re-injury or falls. Learn the patterns by their WB compatibility — that's how you'll apply them clinically.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Gait Pattern Overview</div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Pattern</th><th>Devices</th><th>NWB</th><th>TTWB</th><th>PWB</th><th>WBAT</th><th>FWB</th><th>Speed</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>3-Point (NWB)</strong></td>
+        <td>Crutches or Walker</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="bad">✗</td>
+        <td class="bad">✗</td>
+        <td class="bad">✗</td>
+        <td>Slow-Moderate</td>
+      </tr>
+      <tr>
+        <td><strong>3-Point (PWB)</strong></td>
+        <td>Crutches, Bilat. canes, Walker</td>
+        <td class="bad">✗</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="bad">✗</td>
+        <td class="bad">✗</td>
+        <td>Slow-Moderate</td>
+      </tr>
+      <tr>
+        <td><strong>4-Point</strong></td>
+        <td>Crutches or Bilat. canes</td>
+        <td class="bad">✗</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="bad">✗</td>
+        <td>Slowest</td>
+      </tr>
+      <tr>
+        <td><strong>2-Point (Reciprocal)</strong></td>
+        <td>Crutches or Bilat. canes</td>
+        <td class="bad">✗</td>
+        <td class="bad">✗</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="bad">✗</td>
+        <td>Fastest non-swing</td>
+      </tr>
+      <tr>
+        <td><strong>Swing-To</strong></td>
+        <td>Axillary or forearm crutches</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="bad">✗</td>
+        <td>Moderate</td>
+      </tr>
+      <tr>
+        <td><strong>Swing-Through</strong></td>
+        <td>Axillary or forearm crutches</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="bad">✗</td>
+        <td>Fast</td>
+      </tr>
+      <tr>
+        <td><strong>Step-To (Walker)</strong></td>
+        <td>Any walker</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td class="ok">✓</td>
+        <td>Slow</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Pattern Details</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>3-Point Gait — NWB (Non-Weight Bearing)</h4>
+      <div class="ma-tags"><span class="ma-tag red">NWB only</span><span class="ma-tag">Both crutches + affected LE move together</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Sequence</p>
+          <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+            <li>Both assistive devices advance simultaneously WITH the NWB leg</li>
+            <li>Weight-bearing leg advances — <em>step-to</em> or <em>step-through</em></li>
+          </ol>
+          <div class="bl-strip" style="margin-top:10px;">
+            <div class="bl-label">Step-To vs. Step-Through</div>
+            <p><strong>Step-to:</strong> WB foot advances to line of devices. Safer, more controlled.<br><strong>Step-through:</strong> WB foot advances <em>beyond</em> line of devices. Faster, longer stride, requires more balance.</p>
+          </div>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Devices &amp; WB Status</div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Axillary crutches, Lofstrand crutches, or Walker</li>
+            <li><strong>NWB and TTWB only</strong> — if ANY weight placed on affected LE, it becomes 3-point PWB pattern</li>
+            <li>NOT for PWB, WBAT, or FWB</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>3-Point Gait — PWB (Partial Weight Bearing)</h4>
+      <div class="ma-tags"><span class="ma-tag warn">PWB / TTWB</span><span class="ma-tag">AD + affected LE advance together</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Sequence</p>
+          <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+            <li>Assistive device(s) advance simultaneously with the <strong>affected LE</strong></li>
+            <li>FWB leg advances — placing the affected leg on the ground as it steps through</li>
+          </ol>
+          <p style="font-size:13.5px;color:var(--text2);margin-top:8px;line-height:1.6;">Key distinction from NWB 3-point: the affected leg <em>touches down</em> with each step — weight limited to prescribed %.</p>
+        </div>
+        <div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Crutches, bilateral canes, or walker</li>
+            <li><strong>PWB and TTWB — NOT NWB</strong></li>
+            <li>Step-to vs. step-through applies here too</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>4-Point Gait</h4>
+      <div class="ma-tags"><span class="ma-tag green">Most stable with crutches</span><span class="ma-tag">Alternating pattern</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Sequence (alternating)</p>
+          <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+            <li>One AD advances</li>
+            <li>Opposite LE advances</li>
+            <li>Other AD advances</li>
+            <li>Remaining LE advances</li>
+          </ol>
+        </div>
+        <div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Crutches or bilateral canes</li>
+            <li>3 points of contact on ground at all times → <strong>most stable crutch pattern</strong></li>
+            <li><strong>NOT for NWB</strong> — both LEs are bearing weight</li>
+            <li>TTWB, PWB, WBAT compatible</li>
+            <li>Slowest pattern — high energy, low speed</li>
+            <li>Uses normal trunk rotation (reciprocal)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>2-Point Gait (Reciprocal Gait)</h4>
+      <div class="ma-tags"><span class="ma-tag">Fastest non-swing</span><span class="ma-tag gold">Normal trunk rotation</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Sequence</p>
+          <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+            <li>One AD + <strong>contralateral LE</strong> advance simultaneously</li>
+            <li>Other AD + other LE advance simultaneously</li>
+          </ol>
+          <p style="font-size:13.5px;color:var(--text2);margin-top:8px;line-height:1.6;">Mimics normal reciprocal walking with trunk rotation. Most energy-efficient crutch pattern after swing-through.</p>
+        </div>
+        <div>
+          <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+            <li>Crutches or bilateral canes</li>
+            <li><strong>NOT for NWB or TTWB</strong></li>
+            <li>PWB and WBAT only</li>
+            <li>Uses normal trunk rotation — most natural pattern</li>
+            <li>Requires coordination to move contralateral limbs simultaneously</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Swing-To &amp; Swing-Through</h4>
+      <div class="ma-tags"><span class="ma-tag purple">SCI / Paraplegia</span><span class="ma-tag">Both crutches advance together</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Swing-To</p>
+          <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+            <li>Both crutches advance simultaneously</li>
+            <li>Both LEs swing forward <em>to</em> the line of the crutches</li>
+          </ol>
+          <p style="font-size:13.5px;color:var(--text2);margin-top:8px;">Safer than swing-through. Requires less trunk control and balance. Less efficient.</p>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Swing-Through</p>
+          <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+            <li>Both crutches advance simultaneously</li>
+            <li>Both LEs swing <em>beyond</em> the crutch line</li>
+          </ol>
+          <p style="font-size:13.5px;color:var(--text2);margin-top:8px;"><strong>Fastest gait pattern available.</strong> Requires excellent UE strength, trunk control, and balance. Used by patients with SCI/complete paraplegia who are strong ambulators with KAFOs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Stairs &amp; Curbs</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Ascending Stairs — "Good Leads Up"</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:8px;"><em>"The good go to heaven."</em> Unaffected (good) leg leads going UP.</p>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li>Hold rail with one hand (if available), crutch(es) in other</li>
+        <li><strong>Unaffected LE steps up first</strong></li>
+        <li>Crutches + affected LE follow up to same step</li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Descending Stairs — "Bad Leads Down"</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:8px;"><em>"Bad guys go to hell."</em> Affected (bad) leg leads going DOWN.</p>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li>Hold rail with one hand (if available), crutch(es) in other</li>
+        <li><strong>Crutches + affected LE step down first</strong></li>
+        <li>Unaffected LE follows down</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="bl-strip purple" style="margin-top:4px;">
+    <div class="bl-label">Therapist Position on Stairs</div>
+    <p><strong>Ascending:</strong> Therapist is BEHIND and slightly to the side (below the patient) — to catch a fall backward. <strong>Descending:</strong> Therapist is IN FRONT and slightly to the side (below the patient) — to catch a forward fall. Always maintain grip on gait belt.</p>
+  </div>
+
+  <div class="mnemonic-box" style="margin-top:12px;">
+    <div class="mn-title">Stair Mnemonic</div>
+    <div class="mn-phrase">"Up with the Good, Down with the Bad"</div>
+    <div class="mn-expand">
+      <span>Ascending</span>: Unaffected (good) leg leads up first. Crutches + affected follow. &nbsp;|&nbsp;
+      <span>Descending</span>: Crutches + affected (bad) leg lead down first. Unaffected follows.
+    </div>
+  </div>
+
+</div>
+
+<!-- ====== SAFETY ====== -->
+<div class="tab-panel" id="tab-safety">
+<div class="container">
+
+  <div class="section-title">Safety, Guarding &amp; Clinical Technique</div>
+  <div class="section-sub">Patient safety is the number one priority. Every gait training session requires systematic preparation and continuous vigilance. A patient can lose balance at any time — even when they "look stable."</div>
+
+  <div class="bl-strip red" style="margin-bottom:20px;">
+    <div class="bl-label">Non-Negotiables — Every Single Session</div>
+    <p><strong>1. Gait belt — always.</strong> No exceptions. Even for patients who appear stable.<br>
+    <strong>2. Guard the patient at all times.</strong> Never leave unattended while standing, even briefly.<br>
+    <strong>3. Good body mechanics.</strong> Protect yourself so you can protect your patient.</p>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Before You Begin — Safety Checklist</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Patient Preparation</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Review medical record (WB status, precautions, contraindications)</li>
+        <li>Assess patient — physically AND mentally (arousal, cognition, pain level)</li>
+        <li>Check vital signs as appropriate</li>
+        <li>Appropriate footwear (no socks only, no loose slippers)</li>
+        <li>Gather all equipment BEFORE getting patient up</li>
+        <li>Explain to patient exactly what you want them to do</li>
+        <li>Protect lines, tubes, catheters, drains</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Environment &amp; Device Preparation</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Clear pathway of hazards (cords, furniture, wet floors)</li>
+        <li>Check device is properly fitted for this patient</li>
+        <li>Inspect device for damage, wear, or loose parts</li>
+        <li>Confirm rubber tips are intact and not worn smooth</li>
+        <li>Gait belt applied snugly around patient's waist (not hips)</li>
+        <li>Loose clothing = hazard (can snag device or therapist's hands)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Guarding Technique</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Level Surface Guarding</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Position: <strong>behind and slightly to one side</strong> of patient</li>
+        <li>Preferred side: affected/weaker side (where fall is most likely)</li>
+        <li>Maintain <strong>safe grip on gait belt</strong> at all times — underhand grip preferred</li>
+        <li><strong>Never grasp the patient's arm or clothing</strong> — this can cause injury to either party and cannot support a fall safely</li>
+        <li>Anticipate that patient could lose balance at ANY time</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">If Patient Begins to Fall</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Human instinct is to reach/grab — resist this. You will injure yourself or the patient.</li>
+        <li>Use gait belt to control descent</li>
+        <li><strong>Two types of fall:</strong> collapsing fall (straight down) or angular fall (to one side)</li>
+        <li>Options: re-orient pt to upright by lifting belt; lower pt to your thigh; lower pt to floor (controlled)</li>
+        <li>Know your options BEFORE starting — be prepared</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Pre-Gait Activities — Parallel Bars</div>
+  <div class="section-sub" style="margin-bottom:12px;">Always begin in parallel bars before progressing to assistive devices. Bars allow maximum safety while the patient learns the basics of upright activity.</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title">Foundational Activities</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Sit ↔ Stand transitions</li>
+        <li>Static balance (double then single limb)</li>
+        <li>Weight shifting side-to-side and forward-backward</li>
+        <li>Turning in place</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Preparatory Activities</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Marching in place</li>
+        <li>"Push-up" on bars (unweighting for relief/strengthening)</li>
+        <li>Maintaining appropriate WB status throughout</li>
+        <li>Practice gait pattern in bars BEFORE attempting with device</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Guarding in Parallel Bars</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Therapist stands <em>inside</em> the bars</li>
+        <li>Maintain grip on gait belt</li>
+        <li>Stay close but allow patient to bear own weight</li>
+        <li>Do not hold patient up — let them learn to bear their own weight</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">When to Change or Discontinue a Device</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title" style="color:var(--green);">Progress to Less Restrictive Device When...</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>WB status advances (physician order)</li>
+        <li>Patient demonstrates safe, consistent technique</li>
+        <li>Strength and balance have improved</li>
+        <li>Patient can manage community-level challenges (uneven terrain, curbs, crowds)</li>
+        <li>Patient requests less restrictive device and is safe to use it</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Change or Terminate When...</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Patient condition changes (new injury, acute illness)</li>
+        <li>WB status becomes more restrictive</li>
+        <li>Patient cannot safely manage current device</li>
+        <li>Device is damaged, worn, or no longer fits properly</li>
+        <li>Vital signs become unstable during activity</li>
+        <li>Patient fatigues beyond safe capacity</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== CLINICAL CASES ====== -->
+<div class="tab-panel" id="tab-cases">
+<div class="container">
+
+  <div class="section-title">Clinical Case Scenarios</div>
+  <div class="section-sub">Ten cases requiring assistive device selection, gait pattern choice, and clinical reasoning. For each case, work through: <strong>(1)</strong> device selection and rationale, <strong>(2)</strong> important considerations, <strong>(3)</strong> gait pattern and why, <strong>(4)</strong> other influencing factors, <strong>(5)</strong> teaching cues. Expand each case to see clinical reasoning guidance.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:20px;">
+    <div class="bl-label">Clinical Reasoning Framework — For Every Case</div>
+    <p>WB status → UE strength/integrity → Balance/coordination → Cognition → Environment (home layout, stairs, terrain) → Social support → Duration of need → Patient goals and compliance → Specific pathology considerations</p>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Carlos Perez — 28 y/o male, pre-op ACL reconstruction</div>
+        <div class="case-meta">WBAT post-op · Bledsoe brace locked in extension · 2nd floor walk-up · Lives alone · Sister 3 miles away</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag">WBAT</span><span class="ma-tag gold">ACL</span><span class="ma-tag purple">Stairs</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Axillary crutches</strong> (bilateral). WBAT post-op means some WB allowed, but early post-surgical protection needed. Young, presumably strong UE — crutches appropriate. Brace locked in extension means he cannot flex the knee during swing → needs to swing the leg through in extension (stiff-knee gait), which crutches accommodate better than a walker. <strong>Walker is an option</strong> if he cannot manage crutches pre-op training, but limits community mobility and stair access.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">He <strong>lives alone on the 2nd floor with stairs</strong> — crutches are the only practical option for stairs. Must train on stairs before surgery. Sister is 3 miles away — she cannot be relied upon for immediate assistance. Must be fully independent with crutches, including stairs, toilet transfer, bathing, meal prep, before discharge. Consider pre-op crutch training visit.</div>
+      <div class="case-q">Gait Pattern</div>
+      <div class="case-a"><strong>3-point PWB pattern</strong> initially → progress to <strong>2-point (reciprocal)</strong> as WBAT advances. Walker: step-to. Crutches: step-through when comfortable. On stairs: "up with good, down with bad" — unaffected leg up first, crutches + affected down first.</div>
+      <div class="case-q">Other Factors &amp; Teaching Cues</div>
+      <div class="case-a">Brace in extension means stiff-leg gait — cue "swing the leg like a pendulum, don't try to bend it." Teach sit-to-stand, toilet, car transfer. Ice and elevation for pain/swelling management at home. What to do if he falls — has a phone reachable? Emergency plan. Review at post-op appointment.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Ruth Leibowitz — 68 y/o female, bilateral TKR</div>
+        <div class="case-meta">Going to rehab facility in 2 days · Arthritis in both hands AND low back · Bilateral involvement</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag">Bilateral</span><span class="ma-tag gold">Hand arthritis</span><span class="ma-tag">Rehab facility</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Walker — likely platform walker</strong> given hand and wrist arthritis. Standard walker handgrip requires wrist extension and grip strength — painful with hand arthritis. Platform walker shifts load to forearms. A 4-wheeled rollator may be considered at rehab when more stable, as it allows near-normal gait and has a seat for resting (relevant with low back pain). Bilateral TKR means both legs have some restriction — bilateral device essential. Crutches NOT appropriate: bilateral involvement, age, hand arthritis make bilateral crutch management impractical.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">Hand arthritis = grip limitation — molded hand grips on walker may help. Low back pain with walker use — bending forward over standard walker can exacerbate lumbar symptoms; platform walker or rollator (upright posture) better. Going to rehab = supervised setting → OK to be more aggressive with mobility. Bilateral symmetry of WB status important.</div>
+      <div class="case-q">Gait Pattern &amp; Other Factors</div>
+      <div class="case-a"><strong>Step-to pattern</strong> initially with walker. May progress to rollator with reciprocal gait as strength and balance improve. WB status per surgeon for bilateral TKR — often WBAT. Teach energy conservation; knee swelling management; seating at rehab. Evaluate for power wheelchair or scooter if fatigue is severe.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Stanley Parsons — 54 y/o male, right AKA + right radius/ulna ORIF + cast</div>
+        <div class="case-meta">10 days post traumatic amp · Right UE non-functional (casted) · Married · Double-wide with 3 steps</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag red">AKA</span><span class="ma-tag red">UE fracture</span><span class="ma-tag gold">Prosthetic candidate</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>This is a highly complex case.</strong> Right AKA = NWB on right LE. Right UE casted = cannot bear weight through right UE. This eliminates standard bilateral axillary crutches (requires bilateral UE WB). Options: <strong>Platform crutch on right</strong> (forearm instead of hand bears weight through the cast side) + standard axillary crutch on left. Or: <strong>Walker with platform attachment on right side</strong>. Wheelchair for safety as primary mobility while healing — cannot safely ambulate with this combination in acute phase. Pre-prosthetic strengthening is priority.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">3 steps into home — needs to negotiate. Wife can assist. Cannot do standard crutch gait safely with casted UE. Pre-prosthetic training is the priority: residual limb care, wrapping, strengthening. Emotional support critical — traumatic AKA is devastating. 10 days post-op = still healing. Wheelchair + platform crutch hybrid as transition device. Prosthetic fitting timeline to discuss with surgeon.</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a">Wheelchair for primary mobility now. Limited crutch/platform crutch ambulation for short distances only — heavily guarded. Hopping on left leg for very short transfers. Teach residual limb positioning, strengthening exercises, wheelchair management including 3-step entry technique. "Never put weight on the cast."</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Josephina Roberge — 45 y/o female, femoral metastasis, max 30% WB left leg</div>
+        <div class="case-meta">Tumor removal in 3 days · Married · 2-story cape · Pathological fracture risk</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag red">30% PWB</span><span class="ma-tag red">Metastasis</span><span class="ma-tag gold">Pathological risk</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Axillary crutches or walker</strong> for strict 30% WB. Crutches preferred if she has adequate UE strength — allow stair access for 2-story home. Walker is safer but cannot be used on stairs. Scale training ESSENTIAL — 30% of body weight must be accurately gauged. Femoral metastasis = <strong>extreme pathological fracture risk</strong> — any excessive loading could fracture the femur through tumor. Non-compliance = catastrophic.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">Pathological fracture risk is the overriding concern — education on what loading feels like and how to monitor. Husband can assist. 2-story cape — bedroom likely on 2nd floor; may need to set up 1st floor sleeping until post-op. 3 days pre-op = limited training window. Pain management. Emotional support for cancer diagnosis.</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a"><strong>3-point PWB pattern</strong> (30% = very close to TTWB). Cue: "Touch down gently, like stepping on eggshells." Scale practice: stand on bathroom scale with affected leg only, feel what 30% feels like. "If it hurts more than usual, stop immediately." Fall prevention absolute priority — falling = almost certain fracture.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Carter Campbell — 11 y/o male, Legg-Calvé-Perthes, NWB × 4 weeks then WBAT × 4 weeks</div>
+        <div class="case-meta">Lives with both parents + older sister · Multi-level home · Bedroom on 2nd floor · School-aged</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag red">NWB</span><span class="ma-tag gold">Pediatric</span><span class="ma-tag green">Phase progression</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Axillary crutches</strong> (Phase 1 NWB) — pediatric sized. Children learn quickly. Parents and sister can assist. At 4 weeks → progress to <strong>bilateral canes or single cane</strong> for WBAT phase, then wean. Pediatric walker is an option if crutches too difficult or cognitively challenging, but 11-year-old is typically capable. Consider that school mobility (long corridors, crowded hallways) is a key concern — crutches more maneuverable than walker.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">School attendance — crutches in school corridors, cafeteria. Bedroom on 2nd floor → stairs with crutches or temporary ground floor sleeping. Play and peer interaction — 11-year-old will try to keep up with peers; compliance education critical. Parents must understand NWB strictly means NO weight. Multi-level home = stairs training essential.</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a"><strong>Phase 1 (NWB):</strong> 3-point NWB pattern. Step-through for speed/efficiency in school. "Foot off the ground — it's like a broken egg, no stepping on it." <strong>Phase 2 (WBAT):</strong> Transition to 2-point or 3-point PWB → wean to cane → wean to no device as tolerated. Teach parents to supervise. School letter for elevator access and modified PE.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Savannah Winters — 4 y/o female, spastic diplegia CP</div>
+        <div class="case-meta">Bilateral AFOs · Can stand briefly but no independent ambulation · Lives with 56 y/o grandmother · Ranch house</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag purple">CP</span><span class="ma-tag gold">Pediatric</span><span class="ma-tag">Bilateral AFOs</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Pediatric posterior walker</strong> — the preferred choice for children with spastic diplegia CP. Posterior walker promotes upright posture and discourages the forward trunk lean that anterior walkers and standard walkers cause in children with spastic diplegia. It also facilitates a more normal gait pattern by discouraging the compensatory hip flexion that comes with forward-leaning on a standard walker. Bilateral AFOs already in place for foot/ankle stability. Do NOT use axillary crutches — she lacks motor control for independent ambulation, 4 y/o with motor coordination issues.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">56 y/o grandmother as sole caregiver — must be trained in guarding, transfers, walker management, and AFO donning/doffing. Ranch house = no stairs = advantage. Fatigue is a major factor in young children with CP. Short, frequent practice sessions more effective than long sessions. Motor learning principles — consistent repetition. Grandmother's physical capacity for guarding a growing child over time. Consider occupational therapy for ADL independence.</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a">Step-to initially, progressing to step-through as motor control develops. Cue to grandmother: "Let her do the work — support only when she's unstable." Use play-based gait training (reaching for toys, walking to targets). Heel strike and toe clearance cues as she advances. AFO function check before each session.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Tony D'Antonio — 78 y/o male, CVA with right hemiparesis (UE primarily)</div>
+        <div class="case-meta">Good R LE strength + motor control · Fair dynamic balance (no R UE active movement) · Split-level home · 9 y/o great-grandson in home</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag purple">CVA</span><span class="ma-tag gold">Hemiparesis</span><span class="ma-tag">LE intact</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Quad cane or hemi-walker in left (unaffected) hand</strong>. Right UE has no active movement — cannot hold a device on that side. Good right LE strength means NWB restrictions don't apply. Fair dynamic balance from absent R UE swing → need balance device. Quad cane (LBQC) appropriate: more stable than straight cane, one-handed. Hemi-walker if balance is more significantly impaired. As balance improves, progress to straight cane then no device.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">Right UE sling or support to prevent shoulder subluxation during ambulation. Split-level home — stairs will require negotiation; railing + cane technique. 9 y/o great-grandson in home = fall risk from child underfoot. Consider home safety evaluation. Italian language — ensure instructions are translated or he has a translator present. Balance training alongside device use. AFO evaluation for any foot drop component.</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a"><strong>2-point or step-to pattern with quad cane in left hand</strong>. Cane moves with RIGHT (affected) leg — cane + R leg advance, then L leg. Cue: "Cane and bad leg together, then good leg follows." On stairs with railing: "Up with good leg — R hand on railing if any grip, L hand on cane." Fall risk education. Instruct granddaughter on guarding.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Maria Hernandez — 38 y/o female, newly diagnosed MS</div>
+        <div class="case-meta">Widow · 2 elementary school-aged children · Research librarian · Ranch home · Fatigues easily · Very concerned about independence</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag purple">MS</span><span class="ma-tag gold">Fatigue</span><span class="ma-tag">Independence priority</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Depends on current functional presentation</strong> — MS symptoms vary widely. If balance is the primary issue with good strength: <strong>single straight cane or rollator</strong> (rollator has seat for rest = critical for MS fatigue). If weakness predominates: <strong>walker or forearm crutches</strong>. She is independently motivated and values her independence — least restrictive device that is safe is essential for compliance. Rollator with seat is often the most functional for MS patients with fatigue — allows frequent rest without finding a chair.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">Fatigue is the defining factor — energy conservation strategies are as important as device selection. Librarian = sedentary work, likely able to work, but mobility within the library matters. Two children to care for — what does she need to do as a parent? Ranch house = no stairs = advantage. Emotional support — new diagnosis is devastating. Discuss disease course, realistic expectations, and the fluctuating nature of MS. Referral to MS specialist and MS support groups. Heat sensitivity (Uhthoff's).</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a">Teach energy conservation: plan heavy activities early in day, break up tasks, use rollator seat. "When you feel tired, sit — don't push through until you fall." Cooling strategies if heat-sensitive. Pacing. Teach children age-appropriate understanding of mom's condition. Plan for disease management — device may change as disease fluctuates.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Marcus Zofar — 14 y/o male, post-polio, recently fitted with KAFOs</div>
+        <div class="case-meta">Newly immigrated from Africa · Minimal prior care · Excellent UE + trunk strength · R LE slightly stronger than L · Previously walked on hands · Foster family, 2-story house</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag purple">Post-polio</span><span class="ma-tag gold">KAFO</span><span class="ma-tag green">Excellent UE</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Lofstrand (forearm) crutches</strong> — preferred for long-term use in post-polio patients with KAFOs. He has excellent UE and trunk strength (evidenced by walking on his hands). Forearm crutches allow swing-through gait which will be his most efficient pattern. Axillary crutches are an option for initial training but forearm crutches are the long-term recommendation for a young, strong, motivated patient. KAFOs lock the knee and ankle — ambulation will be swing-through or swing-to gait.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">New to KAFOs — must learn donning/doffing, locking/unlocking. Cultural adjustment — new country, new system. Foster family must be trained. Language barriers. Exceptionally strong UE means swing-through is achievable. 2-story house → stairs with crutches + KAFOs is challenging (may use bannister + crutch technique). School integration. Psychological adjustment — transitioning from hand-walking to upright gait is a major change in self-concept. Post-polio syndrome awareness for long-term planning.</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a"><strong>Swing-through gait</strong> with forearm crutches and KAFOs — most efficient. Begin with <strong>swing-to</strong> as he learns the device. "Both crutches forward, then swing both legs through — lean forward and let your hips carry you." KAFO management: teach locking for ambulation, unlocking for sitting. Stairs: may use 3-point step-to with railing for safety. Celebrate his existing strength — he is highly capable.</div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header" onclick="toggleCase(this)">
+      <div>
+        <div class="case-title">Katherine O'Connell — 50 y/o female, recovering from GBS</div>
+        <div class="case-meta">Can sit at edge of bed independently · Stand with assistance · Weakness all extremities + trunk · Very limited endurance</div>
+      </div>
+      <div class="case-tags">
+        <span class="ma-tag purple">GBS</span><span class="ma-tag red">Global weakness</span><span class="ma-tag gold">Limited endurance</span>
+        <div class="ma-chevron">▼</div>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-q">Device &amp; Rationale</div>
+      <div class="case-a"><strong>Start: Parallel bars for initial ambulation training.</strong> Global weakness means no device is immediately safe — parallel bars provide maximum support while she rebuilds strength. As strength returns: <strong>standard walker</strong> (4-point base, stable, no UE strength demands). Progress to front-wheeled walker → rollator → cane as recovery progresses. <strong>Do NOT start with crutches</strong> — requires UE strength she does not have. Wheelchair is appropriate for distance mobility to conserve limited endurance.</div>
+      <div class="case-q">Key Considerations</div>
+      <div class="case-a">GBS is recovering (ascending paralysis has typically peaked, recovery is proximal-to-distal) — she will likely improve significantly. Recovery timeline is weeks to months. Very limited endurance → SHORT sessions, frequent rest, monitor vitals. Global weakness → monitor for respiratory compromise (peak flow, SpO2). All extremity weakness means wheelchair + AD combination for mobility. <strong>The device and assistance level will change rapidly</strong> as she recovers — reassess frequently. Fall risk extreme.</div>
+      <div class="case-q">Gait Pattern &amp; Teaching Cues</div>
+      <div class="case-a">Parallel bars: step-to both directions. Educate on conserving energy. "We're going to take this in very short bursts — as soon as you feel your legs get heavy or you're breathing hard, we stop." Document assist level carefully (Max A → Mod A → Min A as she recovers). Coordinate with nursing for activity pacing throughout day. Family education on supporting recovery.</div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+
+  <div class="section-title">Review Cards</div>
+  <div class="section-sub">Tap to flip. Covers WB status, device selection, fitting, gait patterns, stairs, and safety.</div>
+
+  <div class="mnemonic-box" style="margin-bottom:16px;">
+    <div class="mn-title">Key Mnemonics</div>
+    <div class="mn-phrase">MALT (wait, wrong module) · "Up Good, Down Bad" · 77% or −16" · VAN (also wrong) · 8–10–12 (nope)</div>
+    <div class="mn-expand">
+      <span>"Good up to heaven, bad down to hell"</span>: Unaffected leg leads going UP stairs; Affected leg + device lead going DOWN. &nbsp;|&nbsp;
+      <span>77% or −16"</span>: Axillary crutch length formula (height × 0.77 OR height minus 16 inches). &nbsp;|&nbsp;
+      <span>2–3 fingers</span>: Space between axillary pad and axilla. &nbsp;|&nbsp;
+      <span>GT or ulnar styloid</span>: Universal handpiece height landmark for all devices.
+    </div>
+  </div>
+
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the difference between TTWB and PWB?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>TTWB (Toe Touch/Touch Down)</strong>: Toes rest on floor for balance only — no weight transmitted through the LE (~0%). Functionally treated like NWB for device selection. <strong>PWB</strong>: Specific physician-prescribed percentage of body weight (typically 20–50%). Unlike TTWB, the patient actually loads the limb to that prescribed amount.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Which gait patterns are NOT appropriate for NWB? Which IS appropriate?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>NOT for NWB:</strong> 4-point, 2-point (both require LE WB), 3-point PWB. <strong>Appropriate for NWB:</strong> 3-point NWB (crutches advance with affected LE, then WB leg steps); Swing-to; Swing-through; Step-to (walker). Key: the affected leg must NOT contact the ground bearing weight.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Two formulas for axillary crutch length — what are they?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Formula 1:</strong> Height × 0.77 (77% of height). Example: 66" × 0.77 = ~51" crutches. <strong>Formula 2:</strong> Height − 16". Example: 66" − 16" = 50" crutches. Both result in approximately the same length. Use these when patient cannot stand for direct measurement.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Axillary crutch fit — 5 key measurements/positions.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>(1)</strong> Axillary pad: <strong>2–3 finger widths below</strong> axilla. <strong>(2)</strong> Handpiece: level of GT or ulnar styloid. <strong>(3)</strong> Elbow flexion: <strong>20–30°</strong>. <strong>(4)</strong> Crutch tips: <strong>2" lateral, 6" anterior</strong> to small toe. <strong>(5)</strong> Weight through HANDS — NOT axilla. Pad is for positioning, not weight-bearing.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Stability spectrum — order from most stable to most mobile (all 9).</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Parallel bars → Standard Walker → Bilateral Axillary Crutches → Bilateral Forearm Crutches → Bilateral Canes → Hemi-Walker → Quad Cane → Single Cane → No Device. More stable = less mobile. Choose the <strong>least restrictive device that does not compromise safety.</strong></div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">4-point gait pattern — sequence and when is it used?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Alternating: R crutch → L leg → L crutch → R leg (or vice versa). Always 3 points of contact = <strong>most stable crutch pattern</strong>. Uses normal trunk rotation. <strong>NOT for NWB</strong> (both legs bear weight). Appropriate for TTWB, PWB, WBAT with bilateral involvement or poor balance. Slowest pattern.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Where do you hold the cane and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Contralateral hand to the affected/weaker leg.</strong> Biomechanical rationale: cane on opposite side allows normal trunk rotation, reduces demand on hip abductors of the affected side (reduces Trendelenburg), and allows cane to advance with affected leg (normal reciprocal pattern). Ipsilateral cane placement disrupts trunk mechanics and increases hip load.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Swing-to vs. swing-through — difference and who uses them?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Swing-to</strong>: Both crutches advance → both LEs swing TO the line of crutches. Safer, slower, less balance needed. <strong>Swing-through</strong>: Both crutches advance → both LEs swing BEYOND the crutch line. <strong>Fastest gait pattern.</strong> Requires excellent UE strength, trunk control, balance. Used by SCI/paraplegic patients with KAFOs.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Stairs mnemonic — which leg leads going up vs. going down?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">"<strong>Up with the Good, Down with the Bad</strong>" (or: Good go to heaven, Bad go to hell). <strong>Ascending</strong>: Unaffected (good) leg steps up first, then crutches + affected follow. <strong>Descending</strong>: Crutches + affected (bad) leg step down first, then unaffected follows. Therapist: behind and below when ascending, in front and below when descending.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why must you NEVER grab a patient's arm or clothing if they fall?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Grabbing an arm or clothing cannot safely support body weight and will likely injure either the patient (joint dislocation, skin tear, fracture from sudden force) or yourself (back injury, UE injury from sudden load). Proper technique: maintain grip on <strong>gait belt</strong>. Use belt to control descent — lower to your thigh then to the floor in a controlled manner.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why would you choose a rollator over a standard walker for an MS patient?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Rollator (4-wheeled) allows <strong>near-normal reciprocal gait</strong> without the disrupted step-to pattern of a pick-up walker — better for patients who fatigue easily (MS) since normal gait is more energy-efficient. The built-in <strong>seat</strong> allows frequent rest without searching for a chair — critical for MS fatigue management. The basket also allows hands-free carrying. However, patient must have adequate cognition and coordination to manage brakes safely.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why is a posterior walker preferred over an anterior walker for a child with spastic diplegia CP?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">A <strong>posterior (behind the child) walker</strong> promotes upright trunk posture and facilitates a more normal gait pattern. An anterior (standard) walker encourages forward trunk lean and increased hip flexion, which worsens the already-flexed posture of spastic diplegia. Posterior walker placement forces the child to stand more upright and push the pelvis forward — facilitating better hip extension and a more functional gait pattern.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 indications categories for assistive devices?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Musculoskeletal:</strong> WB restriction, injury/surgery, disease, deformity, pain, weakness/paralysis, decreased sensation, open wounds on WB surfaces. <strong>Neuromuscular:</strong> Poor motor control/coordination, abnormal tone/reflexes. <strong>Balance:</strong> Primary balance deficit, secondary balance deficit, fear of falling.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">NWB in one LE — what does this require of the upper extremities?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>FWB in both upper extremities (BUE).</strong> The entire body weight that would normally go through the NWB leg must be redistributed through the UEs via the assistive device. Screen UE strength, wrist/hand integrity, and shoulder function before issuing crutches for NWB. If UE strength insufficient → walker distributes load differently, may still be appropriate. UE pathology = significant limiting factor for NWB ambulation.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the purpose of an assistive device, biomechanically?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">To <strong>increase the base of support (BOS)</strong> and provide additional means of support for a larger area, allowing the center of gravity (CoG) to move without loss of balance. Additionally: off-load weight from an injured/healing extremity; provide proprioceptive input; reduce energy cost of abnormal gait; increase confidence and reduce fear of falling.</div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function toggleCase(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

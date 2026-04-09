@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint - Motor Control</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">Motor Control Across the Lifespan &middot; Neurorehabilitation</div>
+  <h1>Theory of Motor Control <span>&#8212; Clinical Application</span></h1>
+  <p>Motor control is the science of how the nervous system organizes, coordinates, and adapts movement across tasks and environments. This is everything for PT &#8212; it explains why patients move the way they do after neurological injury, what recovery actually looks like, and why specific interventions work. This module covers the I-T-E framework, all five theories, motor learning principles, neurofacilitation approaches, task-oriented methods, stroke rehabilitation, postural control across the lifespan, and every functional outcome measure you need in clinic.</p>
+  <div class="hero-badges">
+    <span class="badge gold">I-T-E Framework</span>
+    <span class="badge">5 Theories of MC</span>
+    <span class="badge purple">Motor Learning</span>
+    <span class="badge red">Neurofacilitation</span>
+    <span class="badge green">Task-Oriented</span>
+    <span class="badge orange">Stroke Rehab</span>
+    <span class="badge">Postural Control</span>
+    <span class="badge gold">FOMs &amp; Cutoffs</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('foundations',this)">Foundations</button>
+  <button onclick="showTab('theories',this)">Theories of MC</button>
+  <button onclick="showTab('learning',this)">Motor Learning</button>
+  <button onclick="showTab('stages',this)">Stages of Learning</button>
+  <button onclick="showTab('neuroplasticity',this)">Neuroplasticity</button>
+  <button onclick="showTab('neurofac',this)">Neurofacilitation</button>
+  <button onclick="showTab('taskoriented',this)">Task-Oriented</button>
+  <button onclick="showTab('postural',this)">Postural Control</button>
+  <button onclick="showTab('stroke',this)">Stroke</button>
+  <button onclick="showTab('foms',this)">FOMs</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ====== TAB 1: FOUNDATIONS ====== -->
+<div class="tab-panel active" id="tab-foundations">
+<div class="container">
+  <div class="section-title">Foundations of Motor Control</div>
+  <div class="section-sub">APTA Vision: "Transforming society by optimizing movement to improve the human experience." Motor control is the science that underpins this mission. The I-T-E framework organizes every clinical encounter: who is the patient (Individual), what are they doing (Task), and where are they doing it (Environment)?</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Core Definitions</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Motor Control</div>
+        <p><strong>"The ability to regulate the mechanisms required to generate movement to meet the demands of a given task in a specific environment."</strong> (Shumway-Cook &amp; Woollacott 2011) Field definition: "the nature of movement and how movement is controlled." You are a movement scientist.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Motor Learning</div>
+        <p>"The acquisition and/or modification of skilled action." Involves practice and experience leading to relatively permanent changes in the capability to generate skilled actions. <strong>Performance</strong> = temporary changes in motor behavior. <strong>Learning</strong> = permanent structural/synaptic changes.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Motor Development</div>
+        <p>"The evolution of changes in motor behavior occurring as a result of growth, maturation, and experience across a lifespan." In pediatrics: work to <em>gain</em> a skill. In adults: work to <em>return</em> a skill. This distinction shapes how you frame goals, activities, and prognosis.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">The I-T-E Framework</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Individual &#8212; Who?</div>
+        <p><strong>Action</strong> (motor/neuromuscular system), <strong>Perception</strong> (sensory/perceptual system &#8212; integration of sensory input into meaningful information), <strong>Cognition</strong> (attention, planning, motivation, emotion &#8212; provides the goal and intent). All three must be assessed and addressed. A patient with intact motor function but impaired cognition cannot perform a complex functional task.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Task &#8212; What?</div>
+        <p><strong>Stability</strong> (maintaining posture/balance), <strong>Mobility</strong> (moving through space &#8212; ADLs, transfers, walking), <strong>Manipulation</strong> (UE demands + increased cognitive load). Also: open vs. closed task characteristics. Design principle: simple &#8594; complex, closed &#8594; open, stability &#8594; mobility &#8594; manipulation.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Environment &#8212; Where?</div>
+        <p><strong>Closed/Predictable:</strong> fixed, stable &#8212; floor doesn't change, patient controls pace. <strong>Open/Unpredictable:</strong> constantly changing &#8212; busy hallway, uneven terrain. <strong>Regulatory factors:</strong> directly constrain movement (floor surface, cup shape). <strong>Non-regulatory factors:</strong> background noise, distractions &#8212; don't directly constrain but affect performance.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Task Taxonomy &#8212; The 2x2 Grid</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table" style="margin:0;">
+      <thead><tr><th></th><th>Closed / Predictable Environment</th><th>Open / Unpredictable Environment</th></tr></thead>
+      <tbody>
+        <tr><td class="hi"><strong>Stability</strong></td><td>Sitting on chair at rest; standing at sink; holding a railing</td><td>Standing on rocker board; perturbations; seated on moving bus</td></tr>
+        <tr><td class="hi"><strong>Mobility</strong></td><td>Walking on flat empty hallway; running on treadmill; climbing fixed stairs</td><td>Walking in crowded mall; crossing busy street; gait over uneven terrain</td></tr>
+        <tr><td class="hi"><strong>Manipulation</strong></td><td>Picking up a cup from same location; cutting food at table</td><td>Catching a ball; carrying groceries in a crowd; driving in traffic</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="bl-strip" style="margin-top:12px;">
+      <div class="bl-label">Design Principle</div>
+      <p>Progression always: <strong>simple &#8594; complex, closed &#8594; open, stability &#8594; mobility.</strong> A patient who can sit safely in a quiet PT gym cannot yet navigate a busy SNF hallway. These are different tasks in different environments and must be trained separately. Ecological validity = the patient's real-world environment.</p>
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:14px;">
+    <div class="card">
+      <div class="card-title">Sensory Systems in Motor Control</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Three Balance Sensory Inputs</div>
+        <ul>
+          <li><strong>Visual system</strong> &#8212; eyes, horizon reference</li>
+          <li><strong>Vestibular system</strong> &#8212; inner ear, acceleration/head position</li>
+          <li><strong>Somatosensation</strong> &#8212; tactile, proprioception, joint position</li>
+        </ul>
+      </div>
+      <p style="font-size:13px;color:var(--text3);margin-top:8px;">Cerebellum = automatic response/fine tuner/adapter. Basal ganglia = memory-dependent motor patterns. These systems don't operate independently &#8212; damage to one forces reliance on the others (sensory reweighting). Loss of reweighting capacity = major fall risk factor in aging and neurological patients.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Cognition's Role</div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Cognitive Systems</div>
+        <p>Attention, planning, problem solving, motivation, and emotion underlie intentions and goals. Cognition provides the "why" behind movement. Cognitive load directly affects movement quality: dual-tasking (cognitive + motor) degrades both in neurological patients, aging adults, and healthy novice learners.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Clinical Gap</div>
+        <p>The gap between clinic performance and real-world function is the central problem motor control science helps solve. A patient who can walk perfectly in your gym will fall at home if you haven't trained them in their actual environment with its actual demands. Always ask: does this task reflect their real life?</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 2: THEORIES ====== -->
+<div class="tab-panel" id="tab-theories">
+<div class="container">
+  <div class="section-title">Five Theories of Motor Control</div>
+  <div class="section-sub">Theories provide frameworks for interpreting movement and guidelines for clinical practice. They are dynamic &#8212; evolving as science advances. Each theory has elements that remain clinically relevant today. Understanding limitations is as important as the core ideas, because limitations reveal which approach emerged as a correction.</div>
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>1. Reflex Theory &#8212; Sherrington (early 1900s)</h4>
+      <div class="ma-tags"><span class="ma-tag">Reflexes = building blocks</span><span class="ma-tag gold">Stimulus &#8594; Response</span><span class="ma-tag red">Cannot explain spontaneous movement</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Core Idea</div>
+            <p>Reflexes are the fundamental building blocks of complex behavior. All movement is ultimately a chain of reflexes triggered by sensory input. Complex voluntary movement = integrated chains of simple reflexes. The nervous system operates as a stimulus-response machine.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Clinical Application</div>
+            <p>Neurofacilitation approaches built on this: sensory input (brushing, icing, tapping) to elicit or inhibit movement. Using primitive reflexes to facilitate movement in early recovery. Reflex testing remains a core part of the neuro exam today.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red">
+            <div class="bl-label">Limitations</div>
+            <ul>
+              <li>Cannot explain <strong>spontaneous movement</strong> without sensory trigger</li>
+              <li>Cannot explain <strong>speed of rapid movement</strong> &#8212; feedback loops too slow</li>
+              <li>Cannot explain <strong>novel movement</strong> in novel environments</li>
+              <li>Deafferented animals still move &#8212; reflex chains aren't the whole story</li>
+              <li>Ignores motivation, context, and anticipation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>2. Hierarchical Theory &#8212; Jackson (late 1800s), expanded mid-20th century</h4>
+      <div class="ma-tags"><span class="ma-tag">Higher centers control lower</span><span class="ma-tag gold">Cortex &#8594; Brainstem &#8594; SC</span><span class="ma-tag red">Not strictly top-down</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Core Idea</div>
+            <p>The nervous system is organized hierarchically &#8212; higher centers control lower. Cortex controls brainstem which controls spinal cord. Development follows cephalocaudal and proximal-to-distal progression, with cortical control gradually suppressing primitive reflexes.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Clinical Application</div>
+            <p>Explains why primitive reflexes re-emerge after cortical damage. Explains developmental sequence. NDT/Bobath used this concept. Still foundational for UMN vs LMN lesion understanding.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red">
+            <div class="bl-label">Limitations</div>
+            <ul>
+              <li>Movement is NOT strictly top-down &#8212; spinal CPGs generate coordinated movement independently</li>
+              <li>Cerebellum and basal ganglia modulate without being "higher" or "lower"</li>
+              <li>Does not explain bidirectional communication among levels</li>
+              <li>Too rigid to explain adaptability and context-dependence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>3. Motor Programming Theory &#8212; Schmidt (1970s)</h4>
+      <div class="ma-tags"><span class="ma-tag">Central motor programs (GMP)</span><span class="ma-tag gold">Open-loop control</span><span class="ma-tag purple">Schema Theory</span><span class="ma-tag red">Underweights feedback</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Core Idea</div>
+            <p>"Control of movement is managed by a motor program that organizes, initiates, and carries out intended action." <strong>GMP (Generalized Motor Program)</strong> = stored abstract representation of a movement class; contains rules for spatial/temporal patterns of muscle activity. Movement can be executed without sensory feedback (open-loop control).</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Schmidt's Schema Theory (1975)</div>
+            <p>A <strong>schema</strong> = set of rules stored in memory following multiple presentations. GMP stores the rules; short-term memory stores: initial conditions, parameters used, KR received, sensory consequences. <strong>Variability of practice strengthens schema</strong> &#8212; you get better at lifting ANY unknown weight, not just trained ones. Best support for variable practice schedules.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Open vs. Closed Loop</div>
+            <p><strong>Open-loop:</strong> pre-programmed command; no real-time feedback correction; fast ballistic movements (throwing, tennis serve). <strong>Closed-loop:</strong> continuous sensory feedback to compare actual vs. desired position; slow controlled learning tasks (tracing a star). Open-loop control &#8260; open environment (separate concepts).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Clinical Application</div>
+            <p>Explains why variable practice leads to better generalization. Mental practice activates same GMPs as physical practice &#8212; strong evidence for stroke rehab. Design variable practice schedules for patients who need to function in multiple environments.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Limitations</div>
+            <ul>
+              <li>Cannot explain all novel movements &#8212; programs can't be stored for every possibility</li>
+              <li>Underestimates role of ongoing sensory feedback</li>
+              <li>Same program produces different movement in different environments &#8212; theory can't explain this</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>4. Systems / Dynamic Systems Theory &#8212; Bernstein (1967), Shumway-Cook (2007)</h4>
+      <div class="ma-tags"><span class="ma-tag">Multiple interacting systems</span><span class="ma-tag gold">Internal + external forces</span><span class="ma-tag purple">Task-centered</span><span class="ma-tag green">Foundation of modern PT</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Core Idea</div>
+            <p>"Movement is controlled through many interacting systems including internal and external forces acting on the body." No single system is in charge. Movement emerges from cooperation of multiple subsystems (neurological, MSK, cardiopulmonary, sensory, cognitive). Development is nonlinear. Foundation for the task-oriented approach and I-T-E framework.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Bernstein's Degrees of Freedom Problem</div>
+            <p>The body has far more DOF than needed for any task &#8212; the CNS must constrain unnecessary DOF. <strong>Stage 1: Freeze DOF</strong> (co-contraction, minimal joints &#8212; stiff but manageable). <strong>Stage 2: Release DOF</strong> (more joints, better coordination). <strong>Stage 3: Exploit DOF</strong> (use ALL DOF including gravitational/momentum forces &#8212; expert efficiency). See Stages tab for full breakdown.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Shumway-Cook's Task-Centered Approach</div>
+            <p>Movement organized around a <strong>goal (task) in a specific environment</strong>. Assessment and treatment focus on functional tasks, not isolated muscles. Interventions must vary both task AND environment. Patient motivation and cognition are part of the system. This shifted PT from neurofacilitation to task-oriented training in the 1990s-2000s.</p>
+          </div>
+          <div class="bl-strip green">
+            <div class="bl-label">Why It Changed PT</div>
+            <p>Isolated muscle strengthening does not automatically improve functional gait. Practice of the TASK in the ENVIRONMENT is required. Treatment must be functional, goal-directed, and ecologically valid. This directly supports CIMT, locomotor training, and ASAP frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>5. Ecological Theory &#8212; Gibson (1979), Newell (1991)</h4>
+      <div class="ma-tags"><span class="ma-tag">Environment drives movement</span><span class="ma-tag gold">Affordances</span><span class="ma-tag purple">Perception-action coupling</span><span class="ma-tag green">Search strategies</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Core Idea</div>
+            <p>"Movement is controlled by the information in our environment that is detected by our motor systems." <strong>Affordances</strong> = opportunities for action perceived directly from the environment (a chair affords sitting, a handle affords pulling). Movement = coupling of perception and action &#8212; they are inseparable. The CNS learns to detect the most relevant perceptual cues to select optimal movement strategies.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Newell's Ecological Motor Learning (1991)</div>
+            <p>Motor learning = increasing coordination between <strong>perception</strong> and <strong>action</strong>, consistent with task and environmental constraints. Core concept: <strong>search strategy</strong> &#8212; exploring all perceptual cues to find the most relevant ones for performing a task efficiently. Example: learning wheelchair propulsion by exploring perceptual cues to find optimal movement strategy.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">MC vs. ML Ecological Theories</div>
+            <p>Ecological MC (Gibson): how environment provides information guiding movement <em>in the moment</em>. Ecological ML (Newell): how the individual learns to better detect/use environmental information <em>over time</em>. Same distinction as MC vs ML: MC = current movement control, ML = future capability acquisition.</p>
+          </div>
+          <div class="bl-strip green">
+            <div class="bl-label">Clinical Application</div>
+            <p>Training in real-world environments &#8212; PT gym doesn't provide same perceptual cues as patient's home, street, workplace. Community reintegration training is grounded here. Using both KP (during) and KR (outcome) feedback to improve perception-action pairing. Discovery learning often more effective than prescriptive instruction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:14px;">
+    <div class="card-title">Five Theories &#8212; Quick Comparison</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table" style="margin:0;">
+      <thead><tr><th>Theory</th><th>Core Mechanism</th><th>Key Limitation</th><th>Still Used In PT</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">Reflex</td><td>S &#8594; R chains; reflexes = building blocks</td><td>Cannot explain spontaneous or novel movement</td><td>Reflex testing; sensory facilitation techniques</td></tr>
+        <tr><td class="hi">Hierarchical</td><td>Higher centers control lower; developmental sequence</td><td>Not strictly top-down; CPGs show spinal independence</td><td>UMN/LMN framework; primitive reflex integration</td></tr>
+        <tr><td class="hi">Motor Programming</td><td>Pre-stored GMPs; open-loop for fast movement</td><td>Ignores role of ongoing sensory feedback</td><td>Mental practice; schema; variable practice</td></tr>
+        <tr><td class="hi">Systems/Dynamic</td><td>Emergent from multiple interacting subsystems</td><td>Complex; difficult to apply without framework</td><td>Task-oriented approach; I-T-E; modern PT</td></tr>
+        <tr><td class="hi">Ecological</td><td>Environment provides affordances; perception-action coupling</td><td>Underestimates CNS role in generating movement</td><td>Real-world training; community reintegration; discovery learning</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 3: MOTOR LEARNING ====== -->
+<div class="tab-panel" id="tab-learning">
+<div class="container">
+  <div class="section-title">Motor Learning &#8212; Principles for Clinical Practice</div>
+  <div class="section-sub">Every PT session is a motor learning session. How you structure practice, deliver feedback, and sequence tasks has a direct, measurable effect on whether patients retain and generalize what they learn. The research on this is strong &#8212; apply it deliberately.</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Forms of Learning</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Nondeclarative (Implicit)</div>
+        <p>More reflexive, automatic, habitual. Requires frequent repetition. Performed unconsciously once established. Types: <strong>Habituation</strong> (decreased response to repeated non-painful stimulus), <strong>Sensitization</strong> (increased response to threatening stimulus), <strong>Classical conditioning</strong> (pairing stimuli), <strong>Operant conditioning</strong> (trial-and-error), <strong>Procedural learning</strong> (brushing teeth, driving &#8212; performed without thinking). Most functional motor skills in rehab become procedural with sufficient practice.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Declarative (Explicit)</div>
+        <p>Knowledge that can be consciously recalled &#8212; requires awareness, attention, reflection. Facts and events. Neurological insight: Alzheimer's patients lose declarative memory but often retain procedural skills. Early-stage learning requires explicit instruction; automaticity (implicit) develops with practice.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Feedback &#8212; The Therapist's Most Powerful Tool</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Intrinsic Feedback</div>
+        <p>Information the patient receives naturally from sensory systems during and after movement &#8212; proprioception, vision, vestibular, touch. Cannot be directly controlled by clinician but can be manipulated: remove visual cues to force proprioceptive reliance, or block sensation to reduce overreliance.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Extrinsic Feedback &#8212; PT's Role</div>
+        <p><strong>KP (Knowledge of Performance)</strong> &#8212; information about movement quality/pattern DURING movement ("your trunk is rotating too much"). <strong>KR (Knowledge of Results)</strong> &#8212; information about outcome AFTER movement ("you reached 8 inches today"). Best practice: give KR every 5 trials (Schmidt &amp; Lee, 2005) &#8212; allows self-correction and prevents feedback dependency.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Feedback Dependency Trap</div>
+        <p>Giving feedback after every rep improves session performance but degrades learning. Fading feedback (reducing frequency as skill improves) produces better long-term outcomes. Goal: a patient who self-monitors and self-corrects without the PT present. That's the difference between performance and learning.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Practice Conditions &#8212; Design Is the Intervention</h4>
+      <div class="ma-tags"><span class="ma-tag">Blocked vs Random</span><span class="ma-tag gold">Massed vs Distributed</span><span class="ma-tag purple">Variable vs Constant</span><span class="ma-tag green">Contextual interference</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Blocked vs. Random Practice</div>
+            <p><strong>Blocked:</strong> same task repeated before moving to next (10 STS, then 10 step-ups). Better session performance, WORSE retention. <strong>Random:</strong> different tasks in random order (STS, door, step-up, STS...). Harder, performs worse in session, significantly BETTER for retention and real-world generalization. This is the <strong>contextual interference effect</strong> &#8212; cognitive challenge of switching tasks enhances memory encoding. Clinical application: random practice for intermediate to late-stage rehab; some blocked practice acceptable for early-stage (patient needs to understand the task first).</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Massed vs. Distributed Practice</div>
+            <p><strong>Massed:</strong> more practice time than rest within session. Higher volume. May fatigue patient but maximizes repetitions. <strong>Distributed:</strong> equal or more rest than practice. Better tolerated for patients with limited endurance (MS, post-stroke). Generally produces better learning when patient fatigue is a factor. Clinical judgment required based on patient capacity and diagnosis.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Variable vs. Constant Practice</div>
+            <p><strong>Constant:</strong> same task, same parameters each time. Builds a specific skill &#8212; limited generalization. <strong>Variable:</strong> same task class, different parameters (different cup sizes, surfaces, speeds). Strengthens the schema (Schmidt) &#8212; better generalization to novel situations. Variable practice is most effective for long-term learning, especially for patients who function in multiple environments (home, community, workplace).</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Part vs. Whole Practice</div>
+            <p><strong>Whole practice:</strong> practice entire task as one unit &#8212; best when parts depend on each other (gait, rolling). <strong>Part practice:</strong> break into components and practice separately before combining &#8212; best for complex tasks with one particularly difficult component. Example: practice weight shift component of STS before adding the standing phase for patient with severe knee instability.</p>
+          </div>
+          <div class="bl-strip green">
+            <div class="bl-label">Mental Practice</div>
+            <p>Cognitive rehearsal of a physical skill without overt movement. Activates same GMPs and cortical regions as physical practice. Evidence supports mental + physical &gt; physical alone, especially post-stroke. Use when physical attempt is not yet possible (post-surgical restrictions, severe weakness). Have patient mentally rehearse a transfer before attempting it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:14px;">
+    <div class="card-title">Schema Theory vs. Ecological Theory of Motor Learning</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table" style="margin:0;">
+      <thead><tr><th></th><th>Schema Theory (Schmidt)</th><th>Ecological Theory (Newell)</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">Foundation</td><td>Generalized Motor Programming &#8212; rules stored in memory</td><td>Systems + Ecological theory &#8212; search strategies</td></tr>
+        <tr><td class="hi">Core Concept</td><td>Schema: set of rules built from multiple presentations</td><td>Search strategy: explore perceptual cues for optimal action</td></tr>
+        <tr><td class="hi">Learning Process</td><td>Practice builds cumulative motor programming via schema</td><td>Learning = increasing perception-action coordination</td></tr>
+        <tr><td class="hi">Role of Feedback</td><td>KR strengthens schema; variability of practice is key</td><td>Both KP and KR shape perception-action pairing</td></tr>
+        <tr><td class="hi">Clinical Example</td><td>Practice lifting objects of varied weight/size &#8594; schema generalizes</td><td>Explore wheelchair on multiple surfaces &#8594; find optimal movement</td></tr>
+        <tr><td class="hi">Best Supports</td><td>Variable practice, KR scheduling, mental practice</td><td>Real-world training, discovery learning, ecological validity</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 4: STAGES ====== -->
+<div class="tab-panel" id="tab-stages">
+<div class="container">
+  <div class="section-title">Stages of Motor Learning</div>
+  <div class="section-sub">Three major frameworks describe progression from novice to expert. Each stage has distinct characteristics and requires different feedback strategies and practice designs. In neurorehab, the patient's current stage tells you exactly how much instruction, demonstration, and feedback to provide.</div>
+  <div class="grid3" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Fitts &amp; Posner &#8212; 3 Stage Model (1967)</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Stage 1 &#8212; Cognitive</div>
+        <p>Understanding the task. HIGH attention demand. Slow, variable, error-prone. Cannot dual-task at all. PT role: active instructor. "What do I need to do?"</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Stage 2 &#8212; Associative</div>
+        <p>Refining movement. Fewer errors, smoother. Moderate attention. Beginning self-correction. PT role: facilitator. "How do I do this better?"</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Stage 3 &#8212; Autonomous</div>
+        <p>Automatic. LOW attention demand. Can dual-task (talk while walking). Fast, consistent, adaptable. Minimal feedback needed. PT role: challenge creator. "I do this without thinking."</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Bernstein's 3 Stage Model &#8212; Degrees of Freedom</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Stage 1 &#8212; Freeze DOF</div>
+        <p>Minimize joints involved. Co-contraction locks unused joints. Reasonably accurate but very inefficient. Cannot adapt to environmental changes. Note: co-contraction also seen in CP, dystonia &#8212; don't confuse pathological tone with early-learning co-contraction.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Stage 2 &#8212; Release DOF</div>
+        <p>Allow more joints to participate. Begin coordinating between joints. Movement becomes more efficient and adaptable. Example: wrist now flex/extends during hammering rather than being held rigid.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Stage 3 &#8212; Exploit DOF</div>
+        <p>All DOF used optimally. Now exploits passive/reactive forces (gravity, momentum, elastic storage). Energy-efficient and context-adaptive. Expert tennis serve uses trunk and leg recoil &#8212; no joint wasted.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Gentile's 2 Stage Model</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Stage 1 &#8212; Getting the Idea</div>
+        <p>Understand the movement goal AND distinguish regulatory from non-regulatory environmental features. Which features matter (floor surface, cup shape) vs. irrelevant (background noise, color). First successful attempt &#8212; the "aha" moment. Most instruction and modeling happens here.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Stage 2 &#8212; Fixation / Diversification</div>
+        <p><strong>Fixation</strong> (closed tasks): refine and make consistent &#8212; practice same movement until reliable. Example: household transfers. <strong>Diversification</strong> (open tasks): adapt across varying conditions &#8212; community ambulation in varied environments. Most real-world tasks require BOTH.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Stage-Matched Clinical Practice Guide</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table" style="margin:0;">
+      <thead><tr><th>Stage</th><th>Characteristics</th><th>Feedback Strategy</th><th>Practice Design</th><th>PT Role</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">Early/Cognitive</td><td>Slow, variable, error-prone; HIGH attention; can't dual-task</td><td>Frequent KP + KR; verbal cues, demonstration, guidance</td><td>Blocked, massed, constant; whole or part</td><td>Active instructor &#8212; demonstrate, guide, correct explicitly</td></tr>
+        <tr><td class="hi">Middle/Associative</td><td>Smoother, fewer errors; moderate attention; self-correcting begins</td><td>Reduce frequency; fade from KP to KR only</td><td>Begin random and variable; distributed rest</td><td>Facilitator &#8212; decrease hands-on, increase self-assessment</td></tr>
+        <tr><td class="hi">Late/Autonomous</td><td>Automatic, fast, consistent; LOW attention; dual-task capable</td><td>Minimal &#8212; patient self-monitors; error detection only</td><td>Random, variable, distributed; community environments</td><td>Challenge creator &#8212; dual-tasks, novel environments, perturbations</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="bl-strip" style="margin-top:12px;">
+      <div class="bl-label">ASAP Language Principle</div>
+      <p>ASAP (Accelerated Skill Acquisition Program) emphasizes empowering language as an intervention: "How can you make this harder now?" Patients given timed gait feedback and encouragement walked significantly faster at discharge AND 3 months later vs. controls. For practice to affect motor learning, it must have <strong>purpose and goal-directedness</strong> &#8212; repetition without purpose is exercise, not learning.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 5: NEUROPLASTICITY ====== -->
+<div class="tab-panel" id="tab-neuroplasticity">
+<div class="container">
+  <div class="section-title">Neuroplasticity &amp; Recovery of Function</div>
+  <div class="section-sub">Neuroplasticity is the biological basis for motor learning and neurological rehabilitation. The brain is not fixed after injury &#8212; it reorganizes, forms new connections, and recruits adjacent cortex in response to active, goal-directed practice. Understanding the mechanisms and the role of aerobic exercise gives you the rationale for every evidence-based neurorehab intervention.</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Neuroplasticity &#8212; Mechanisms</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Definition</div>
+        <p>"Facilitated by actively attending and adapting to functional tasks (goal-oriented)" as opposed to training muscle activation patterns in isolation. Plasticity = the ability to show modification. Short-term changes = enhanced synaptic efficacies. On a continuum, these lead to relatively permanent structural changes.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Short-Term Plasticity</div>
+        <p>Enhanced synaptic efficacy &#8212; more neurotransmitter release, increased receptor sensitivity, increased firing rates. Occurs rapidly with practice. Underlies performance improvements within a single session. Without continued practice, these changes are not sustained.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Long-Term Structural Plasticity</div>
+        <p>Axon sprouting, synaptogenesis, dendritic branching, cortical map reorganization. Requires sustained active goal-directed practice over time. Use-dependent &#8212; cortex representing most-practiced movements expands. Disuse causes cortical shrinkage. <strong>Learned nonuse:</strong> affected limb avoided because success rate is low &#8594; cortical representation shrinks &#8594; limb less usable &#8594; more avoidance. CIMT is designed to break this cycle.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Recovery vs. Compensation</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Recovery</div>
+        <p>Achieving function through original processes or previously-used mechanisms. True neural recovery &#8212; restoring the original movement strategy. Walking with normal gait pattern; using affected limb for reaching. This is the goal &#8212; but not always achievable depending on lesion size/site and time since injury.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Compensation</div>
+        <p>Substituting for impairments using an assistive device or atypical motor patterns. Allows function but has costs: energy inefficiency, long-term MSK consequences, risk of learned nonuse. PTs must weigh when to encourage compensation (safety, function) vs. push toward true recovery.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Factors Affecting Recovery</div>
+        <ul>
+          <li><strong>Age</strong> &#8212; younger brain has greater neuroplasticity</li>
+          <li><strong>Genetics</strong> &#8212; BDNF Val66Met polymorphism affects BDNF-dependent learning</li>
+          <li><strong>Lesion size and site</strong> &#8212; larger/deeper lesions = worse prognosis</li>
+          <li><strong>Pre-injury experience and activity level</strong> &#8212; higher brain reserve is protective</li>
+          <li><strong>Quality and intensity of post-injury rehabilitation</strong> &#8212; more right-task practice = better outcomes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>BDNF, Aerobic Exercise &amp; Neuroplasticity</h4>
+      <div class="ma-tags"><span class="ma-tag">BDNF = growth factor for learning</span><span class="ma-tag gold">Aerobic primes motor learning</span><span class="ma-tag purple">&gt;30 min | ~70% HRmax | 4x/week</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">What Is BDNF?</div>
+            <p>Brain-Derived Neurotrophic Factor. Promotes neuronal survival, growth, differentiation, and synaptic plasticity. Necessary for long-term potentiation (the cellular mechanism underlying learning). Bidirectionally transported across the blood-brain barrier. BDNF peaks 10&#8211;60 minutes following aerobic exercise in humans.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Aerobic Exercise BEFORE Practice</div>
+            <p>High-intensity cycling (3 x 3 min, above ventilatory threshold) immediately BEFORE motor task practice enhanced retention at 1 AND 7 days vs. no prime. Mechanism: elevated BDNF &#8594; facilitates detection and encoding of task-relevant info during subsequent practice &#8594; enhanced motor memory consolidation.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Aerobic Exercise AFTER Practice</div>
+            <p>Also enhances retention. Mechanism: facilitates motor memory consolidation processes (via BDNF-mediated synaptic strengthening). Both timing windows are clinically viable &#8212; "prime then practice" or "practice then consolidate."</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Optimal Prescription (Mang) for Neuroplasticity</div>
+            <ul>
+              <li><strong>Duration:</strong> &gt;30 minutes per session</li>
+              <li><strong>Intensity:</strong> ~70% of heart rate maximum</li>
+              <li><strong>Frequency:</strong> 4 days per week</li>
+              <li><strong>Mode:</strong> combination aerobic + resistance</li>
+              <li>Cycling and high-intensity intervals well-supported</li>
+            </ul>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Stroke Aerobic Guidelines (Billinger)</div>
+            <p>Minimum: 20 minutes moderate intensity aerobic exercise, 3 days per week. Intensity: &gt;30% heart rate reserve. Benefits stop when exercise stops &#8212; must be ongoing. Early mobility (acute) prevents deconditioning and learned nonuse and improves discharge disposition.</p>
+          </div>
+          <div class="bl-strip green">
+            <div class="bl-label">SNF Clinical Application</div>
+            <p>Start neurorehab session with 10&#8211;20 min aerobic activity (seated bike, arm ergometer, supported treadmill) before task-specific practice. This is especially relevant in SNF and outpatient. Even low-intensity movement before motor tasks may produce priming effects. The "exercise-then-practice" sequence has a growing evidence base.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 6: NEUROFACILITATION ====== -->
+<div class="tab-panel" id="tab-neurofac">
+<div class="container">
+  <div class="section-title">Neurofacilitation Approaches</div>
+  <div class="section-sub">Neurofacilitation emerged from reflex and hierarchical theories &#8212; using sensory input to facilitate desired movement and inhibit abnormal patterns. Though task-oriented approaches now dominate the evidence base, these techniques remain clinically valuable especially in early-stage neurological rehab. Key principle: Facilitation = increase patient's ability to move. Inhibition = decrease use of abnormal movement patterns.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Brunnstrom &#8212; Stages of Stroke Recovery &amp; Abnormal Synergies</h4>
+      <div class="ma-tags"><span class="ma-tag">Stroke-specific</span><span class="ma-tag red">Abnormal synergies</span><span class="ma-tag gold">7 Stages</span><span class="ma-tag purple">Overflow / Raimiste's</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Context</div>
+            <p>Anna Signe Sofia Brunnstrom &#8212; Swedish physiotherapist. Programme designed specifically for stroke recovery and resultant abnormal synergies. Most applicable to stroke; possibly applied to TBI if abnormal synergies are present.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Synergy Defined</div>
+            <p><strong>Normal synergy:</strong> muscles contract in coupled sequence for efficient movement. <strong>Abnormal synergy:</strong> obligatory, stereotyped patterns that prevent selective isolated joint control. After stroke, attempting to move one joint fires the whole synergy &#8212; patient cannot isolate elbow flexion without shoulder ABD, forearm sup, and wrist flexion all activating simultaneously.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">UE Flexion Synergy</div>
+            <p>Scap retraction &amp; elevation, shoulder ABD &amp; ER, <strong>elbow flexion (dominant)</strong>, forearm supination, wrist flexion, finger/thumb flexion &amp; adduction. Elbow flexion dominates &#8212; locks arm against body in flexed, IR position.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">UE Extension Synergy</div>
+            <p>Scap protraction &amp; depression, <strong>shoulder ADD &amp; IR (dominant)</strong>, elbow extension, <strong>forearm pronation (dominant)</strong>, wrist flex or ext, finger/thumb flexion &amp; adduction.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">LE Flexion Synergy</div>
+            <p>Pelvis elevation &amp; retraction, <strong>hip flexion (dominant)</strong>, knee flexion, ankle DF &amp; inversion, toe dorsiflexion. Hip flexion dominates &#8212; shortens leg for swing clearance.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">LE Extension Synergy</div>
+            <p><strong>Hip extension &amp; ADD (dominant)</strong>, <strong>knee extension (dominant)</strong>, <strong>ankle PF &amp; inversion</strong>, toe PF. This is the stance phase pattern &#8212; helps weight-bearing but causes circumduction gait and toe drag during swing.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Overflow / Raimiste's Phenomenon</div>
+            <p>Resistance to the <strong>uninvolved side</strong> facilitates movement on the <strong>involved side</strong>. Mechanism: irradiation of neural activity across the midline. Example: resist hip ABD on uninvolved LE &#8594; involved LE also abducts. Used in Stages 1&#8211;2 to elicit initial AROM on the affected side.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:6px;">
+            <div class="bl-label">Brunnstrom 7 Stages + Intervention Ideas</div>
+          </div>
+          <div style="overflow-x:auto;">
+          <table class="data-table" style="margin:0;font-size:12px;">
+            <thead><tr><th>Stage</th><th>Description</th><th>Intervention Focus</th></tr></thead>
+            <tbody>
+              <tr><td class="hi">1</td><td>Flaccidity &#8212; no voluntary movement</td><td>PROM; positioning; family education; weight-bearing for sensory input</td></tr>
+              <tr><td class="hi">2</td><td>Spasticity begins; minimal vol mvt; may be in synergies; associated reactions</td><td>Initiate AROM; stretching; use overflow/Raimiste's to elicit movement</td></tr>
+              <tr><td class="hi">3</td><td>Spasticity increases &amp; peaks; synergies controlled in partial ROM</td><td>As above; consider Botox; neuroplasticity-focused interventions</td></tr>
+              <tr><td class="hi">4</td><td>Spasticity decreases; can combine synergies for limited movement</td><td>Tabletop UE/hand; strengthening; gait; balance training</td></tr>
+              <tr><td class="hi">5</td><td>Complex movement returns; further spasticity decrease; more isolated control</td><td>Fine motor; functional skill fine-tuning; advanced gait</td></tr>
+              <tr><td class="hi">6</td><td>Spasticity disappears; isolated movements; improved coordination</td><td>Nearly recovered; high-level coordination and community tasks</td></tr>
+              <tr><td class="hi">7*</td><td>Normal function returns</td><td>Return to sport, work, community activities</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p style="font-size:11px;color:var(--text3);margin-top:6px;">*Stage 7 listed in later modern references. Six stages were originally defined by Brunnstrom.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Rood &#8212; Sensory Facilitation and Inhibition</h4>
+      <div class="ma-tags"><span class="ma-tag">PT &amp; OT dual credential</span><span class="ma-tag gold">5 key techniques</span><span class="ma-tag">Purposeful movement</span><span class="ma-tag red">3&#8211;5 reps to facilitate</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Overview</div>
+            <p>Margaret S. Rood &#8212; both PT and OT. Used sensory techniques to facilitate or inhibit movement with intent of purposeful movement. Typically: 3&#8211;5 reps to facilitate voluntary contractions; 10&#8211;20 minutes for neutral warmth. Always note effect on agonist vs. antagonist &#8212; same technique applied differently produces different results.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Brushing (Fast)</div>
+            <p><strong>FACILITATES.</strong> Fast brush over muscle belly to excite the targeted muscle group. Also used to promote static holding of extensors for postural control.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Icing</div>
+            <p><strong>Quick ice: FACILITATES</strong> &#8212; brief cold application excites muscle via thermal stimulus. <strong>Prolonged icing: INHIBITS</strong> &#8212; vasoconstriction, decreased nerve conduction velocity, reduced movement. Clinical rule: short cold exposure facilitates; extended cold inhibits.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Tapping (over muscle belly or tendon)</div>
+            <p><strong>FACILITATES.</strong> Light repetitive percussion activates the stretch reflex to elicit contraction. Applied directly to the target muscle. Useful for activating weak or hypoactive muscles.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Deep Pressure</div>
+            <p><strong>INHIBITS.</strong> Sustained deep pressure stimulates the GTO &#8594; autogenic inhibition &#8594; muscle relaxes. Holding the tendon firmly can relieve spasms. Also used for calming effects in sensory processing dysfunction. Pressure over the thenar eminence is key to releasing the fisted hand.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Neutral Warmth</div>
+            <p><strong>INHIBITS.</strong> Wrapping body part (or whole body) in blanket at body temperature &#8212; 10&#8211;20 minutes. Produces calming/inhibitory effects via sustained warmth. Used to decrease overall muscle tone and spasticity before movement activities. Different from therapeutic heat &#8212; neutral warmth is about sustained body-temperature contact, not external heat.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Ayres &#8212; Sensory Integration (SI)</div>
+            <p>Jean Ayres, 1960s. SI theory: brain must register, modulate, and discriminate info from all sensory systems to produce purposeful movement. <strong>8 senses:</strong> tactile, auditory, visual, taste, smell, proprioception, vestibular, interoception. <strong>Sensory Processing Disorder (SPD)</strong> = sensory input enters brain but not organized into appropriate responses. Gravitational insecurity = purely vestibular problem. Tactile defensiveness = heightened touch sensitivity. Primarily pediatric and ABI populations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>PNF &#8212; Proprioceptive Neuromuscular Facilitation (Knott, Voss, Kabat)</h4>
+      <div class="ma-tags"><span class="ma-tag">Diagonal patterns</span><span class="ma-tag gold">D1/D2 UE complete detail</span><span class="ma-tag purple">Facilitation &amp; inhibition</span><span class="ma-tag green">Irradiation / overflow</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">D1 UE &#8212; Flexion</div>
+            <p>Shoulder: <strong>Flexion &#8211; Adduction &#8211; External Rotation</strong>; forearm supinated; fingers flexed. Resembles combing hair or pulling a seatbelt across body. <strong>Hand placement:</strong> right hand &#8212; palmar surface cupped over dorsal-ulnar aspect of patient's right hand/wrist. Left hand &#8212; posterior-lateral arm surface to control IR and proximal components.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">D1 UE &#8212; Extension</div>
+            <p>Shoulder: <strong>Extension &#8211; Abduction &#8211; Internal Rotation</strong>; forearm pronated; fingers extended. Resembles pushing away or throwing to the side.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">D2 UE &#8212; Flexion</div>
+            <p>Shoulder: <strong>Flexion &#8211; Abduction &#8211; External Rotation</strong>; forearm supinated; fingers extended; elbow extension pattern. Resembles drawing a sword or raising arm overhead. <strong>Hand placement:</strong> left hand &#8212; palmar surface cupped over dorsal-radial aspect of patient's right hand/wrist. Right hand &#8212; anterior-lateral arm surface to control rotation and proximal components.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">D2 UE &#8212; Extension</div>
+            <p>Shoulder: <strong>Extension &#8211; Adduction &#8211; Internal Rotation</strong>; forearm pronated; fingers flexed. Resembles putting sword back or reaching down and across.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">LE Patterns (overview)</div>
+            <p><strong>D1 LE Flexion:</strong> Hip flex-ADD-ER; knee flex; ankle DF + inversion; toe extension. <strong>D1 LE Extension:</strong> Hip ext-ABD-IR; knee ext; ankle PF + eversion; toe flex. <strong>D2 LE Flexion:</strong> Hip flex-ABD-IR; knee flex; ankle DF + eversion; toe extension. <strong>D2 LE Extension:</strong> Hip ext-ADD-ER; knee ext; ankle PF + inversion; toe flex.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Facilitation Uses</div>
+            <p>Apply resistance in direction of desired movement &#8212; strengthen weak muscles, improve coordination. Irradiation (Raimiste's): strong resistance on stronger muscle groups overflows to weaker ones. Used for LE strengthening in gait retraining, UE strengthening post-stroke. Rhythmic initiation (passive &#8594; active &#8594; resisted) for hypoactive patients.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Inhibition Uses</div>
+            <p><strong>Contract-relax / Hold-relax:</strong> apply resistance to spastic muscle group &#8594; patient contracts maximally &#8594; relax &#8594; GTO autogenic inhibition &#8594; passive stretch into new range. Used before functional activities in high-tone patients (stroke, CP). Slow rhythmic movement through diagonal pattern (antagonist direction to spastic synergy) also inhibitory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>NDT / Bobath &#8212; Neurodevelopmental Technique</h4>
+      <div class="ma-tags"><span class="ma-tag">Karel &amp; Berta Bobath (1940s)</span><span class="ma-tag gold">Handling &amp; elongation</span><span class="ma-tag purple">All mobility is multiplanar</span><span class="ma-tag">Thenar handshake</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Core Concepts</div>
+            <p>Feedback AND feed-forward control. Posture is initiated from the base of support. <strong>ALL MOBILITY IS MULTIPLANAR.</strong> Weight shift = COG moving off the BOS = elongation on the weight-bearing side. Controlled asymmetry is always multiplanar. Fixation patterns develop to compensate for inadequate motor control.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Elongation Principle</div>
+            <p>Weight shift &#8594; elongation on the WB side (lateral trunk flexion of loaded side). This frontal plane control unlocks transverse plane mobility = greater freedom of movement. Elongation is the key to unlocking tone and facilitating isolated movement in neurological patients.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Handling Rules</div>
+            <p>Always a <strong>facilitating hand</strong> (provides sensory input, alters tone) and a <strong>guiding hand</strong> (directs movement). Critical: <strong>NEVER pull or push.</strong> Hands GUIDE &#8212; not force. Use deep tactile and proprioceptive input. Move WITH the patient &#8212; feel the weight shift in your own body. Patient should not actively help you move them (passive &#8594; active progression).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Tone Reduction Sequence</div>
+            <p>Rotation at the proximal joint with ER component &gt; IR. As tone reduces, DOF for the limb increases. Work proximal to distal: proximal shoulder &#8594; proximal elbow &#8594; wrist &#8594; thenar eminence.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">The Thenar Handshake</div>
+            <p>Apply pressure with your thumb into patient's thenar eminence while rotating at the wrist (supination/pronation). As thenar eminence relaxes, fingers automatically release from flexion. Take up the new open space with your hand as you apply deep pressure with more of your hand. The goal is never to pry fingers apart &#8212; this stimulates protective grasp reflex. Final position: patient's hand open with your thenar eminence contacting theirs.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">After Opening the Hand</div>
+            <p>Place open hand on surface and weight bear using elongation strategies. Clean and dry skin. Consider splinting or cone use. Work with OT when applicable. Fisted position + moisture = maceration + infection risk &#8212; critical in your SNF patients. Document skin condition at each visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Sensory Systems Lab &#8212; Alerting vs. Calming Input</h4>
+      <div class="ma-tags"><span class="ma-tag">Visual / Auditory / Olfactory</span><span class="ma-tag gold">Tactile / Vestibular</span><span class="ma-tag purple">Same activity can alert or calm</span><span class="ma-tag green">Depends on patient's starting state</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip" style="margin-bottom:10px;">
+        <div class="bl-label">Key Principle</div>
+        <p>With ALL senses, the SAME activity can be used to stimulate/alert OR calm/decrease activation DEPENDING ON THE STATE THE PATIENT STARTS IN. Goal: help patient work in their optimal state for sensory processing and motor learning.</p>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Sensory System</th><th>Alerting / Arousing Input</th><th>Calming / Organizing Input</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Visual</td><td>Bright/high-contrast colors; prints &amp; patterns; flashing toys; unexpected movement</td><td>Soothing/low-contrast colors; remove clutter; dim lighting; constant rhythmic pattern</td></tr>
+          <tr><td class="hi">Auditory</td><td>Louder background noise/music; unexpected sounds; toy sounds</td><td>Earplugs or noise-cancelling headphones; calming background noise; quiet environment</td></tr>
+          <tr><td class="hi">Olfactory/Gustatory</td><td>Scented items; strong smells/flavors; crunchy; chewy textures</td><td>Non-scented; familiar smells/flavors; no surprises &#8212; response is memory-linked for each individual</td></tr>
+          <tr><td class="hi">Tactile</td><td>Hand fidgets; variety of textures (bumpy, rough); light/unexpected touch; cold temperatures</td><td>Soft uniform textures; deep touch pressure; consistent smooth textures; warm temperatures</td></tr>
+          <tr><td class="hi">Vestibular</td><td>Fast, unpredictable movement; linear acceleration; spinning; sudden position changes</td><td>Slow, rhythmic, predictable movement; gentle rocking; linear swinging; feet on floor</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 7: TASK-ORIENTED ====== -->
+<div class="tab-panel" id="tab-taskoriented">
+<div class="container">
+  <div class="section-title">Task-Oriented &amp; Modern Approaches to Neurorehabilitation</div>
+  <div class="section-sub">Task-oriented approaches emerged as the evidence base shifted away from neurofacilitation toward functional, goal-directed, neuroplasticity-driven interventions. Core insight: practicing the task in the environment where it will be performed produces the best outcomes. The PT's role shifts from facilitator-of-movement to coach of functional performance. Currently, there is greater emphasis on explicitly training function and less on inhibiting reflexes and retraining normal patterns of movement.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Carr &amp; Shepherd &#8212; Motor Relearning Programme (MRP)</h4>
+      <div class="ma-tags"><span class="ma-tag">Movement Science-Based (MSB)</span><span class="ma-tag gold">Anticipatory postural control</span><span class="ma-tag purple">Kinematics of normal movement</span><span class="ma-tag green">Motor learning applied</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Framework</div>
+            <p>Motor Relearning Programme (MRP): "PT training of motor control based on understanding of the kinematics and kinetics of normal movement, motor control processes, and motor learning." Sensory input modulates movement. Anticipatory feedback and postural control are central. Motor learning principles explicitly applied &#8212; practice design, feedback scheduling, variable practice all built in.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Movement Science-Based (MSB)</div>
+            <p>Grounded in biomechanics and motor control science rather than traditional neurofacilitation theory. Normal movement kinematics (joint angles, muscle timing, forces) are the reference standard. Treatment involves analysis of deviations from normal movement and targeted practice to restore them. Emphasizes patient understanding of the goal, not just following instruction.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Tasks Addressed</div>
+            <p>Functional mobility skills: bed mobility, sitting (scooting, edge sitting), transfers, standing/stepping, walking, stair climbing. For each task, PT analyzes which components are missing or deviated and designs specific practice targeting those components.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">ASAP &#8212; Accelerated Skill Acquisition Program (Winstein)</div>
+            <p>Hybrid combination of task-specific + skill-based + impairment-mitigating training with embedded patient-centered motivational enhancements. Three domains: <strong>Skill</strong> (motor learning + self-management), <strong>Capacity</strong> (impairment mitigation), <strong>Motivation</strong> (intrinsic drive). Empowering language is a core component &#8212; "How can you make this harder now?" Patients with timed gait feedback and encouragement walked significantly faster at discharge and 3 months later. <strong>Language specificity is an intervention.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>CIMT &#8212; Constraint-Induced Movement Therapy</h4>
+      <div class="ma-tags"><span class="ma-tag">Force use of affected limb</span><span class="ma-tag red">90% waking hours constraint</span><span class="ma-tag gold">Shaping &#8212; multi-trial practice</span><span class="ma-tag green">Reverses learned nonuse</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Core Mechanism</div>
+            <p>Forced use of the hemiparetic UE (mitt/sling on unaffected UE for 90% of waking hours) combined with intensive massed practice of functional activities (shaping &#8212; graded task difficulty, multi-trial practice). Directly targets <strong>learned nonuse:</strong> after stroke, affected limb avoided due to low success rate &#8594; cortical map shrinks &#8594; limb less capable &#8594; more avoidance. CIMT reverses this by forcing cortical map expansion through use.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Candidate Criteria</div>
+            <p>Strong evidence for mild-moderate UE hemiparesis. Minimum criteria: <strong>10&deg; active wrist extension + 10&deg; active finger extension</strong>, adequate cognition, no severe balance impairment (removing unaffected UE = fall risk). Not appropriate for Stage 1&#8211;2 Brunnstrom (flaccid/minimal movement). Intensive protocol: 6 hrs/day for 10 consecutive weekdays. Modified CIMT (mCIMT) for less intensive schedule.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red">
+            <div class="bl-label">Contraindications and Limitations</div>
+            <ul>
+              <li>Severe balance impairment &#8212; removing unaffected UE support creates fall risk</li>
+              <li>Significant cognitive impairment &#8212; cannot self-monitor or follow safety precautions</li>
+              <li>Severe UE spasticity (paradoxically) &#8212; affected limb too rigid to benefit from forced use</li>
+              <li>Acute phase &#8212; most appropriate for subacute/chronic stroke</li>
+              <li>Shaping requires skilled therapist supervision &#8212; not a home program alone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Locomotor Training &#8212; Body Weight Support + CPG</h4>
+      <div class="ma-tags"><span class="ma-tag">Central Pattern Generator</span><span class="ma-tag gold">BWS treadmill training</span><span class="ma-tag purple">Speed drives CPG input</span><span class="ma-tag green">Overground generalization</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">The CPG</div>
+            <p><strong>Central Pattern Generator (CPG):</strong> spinal cord interneuron networks that generate rhythmic, coordinated stepping movements without requiring voluntary cortical input. In lower mammals (cats), the spinal CPG produces stepping even after complete spinal cord transection when hindlimbs are supported over a treadmill. In humans, the CPG is less dominant but still contributes to gait &#8212; locomotor training aims to activate and strengthen it through repetitive, correctly-timed sensory input.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">BWS Protocol</div>
+            <p>Patient supported in harness over treadmill (reducing gravitational load). Therapists manually facilitate limb movement timing and patterning. <strong>Speed is key</strong> &#8212; treadmill speed drives rhythmic sensory input to CPG. Start with higher BWS (30&#8211;40%) and faster speeds as tolerated; progressively reduce BWS and increase challenge. Used for: stroke, incomplete SCI, TBI, MS, CP.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Previously Part-Whole, Now Task-Specific</div>
+            <p>Earlier approach trained gait components separately (part practice). Current evidence favors whole-task practice with CPG activation via BWS + treadmill &#8212; provides the complete sensory experience of walking rather than isolated component training. Functional, goal-directed, ecologically valid.</p>
+          </div>
+          <div class="bl-strip green">
+            <div class="bl-label">Overground vs. Treadmill</div>
+            <p>Both have supporting evidence. Treadmill/BWS: high step volume, controlled speed, CPG activation, BWS option. Overground: ecological validity, community integration. Combination likely optimal &#8212; use treadmill/BWS for high-volume CPG training, transition to overground in varied environments for generalization. Goal is always community-level ambulation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 8: POSTURAL CONTROL ====== -->
+<div class="tab-panel" id="tab-postural">
+<div class="container">
+  <div class="section-title">Postural Control, Motor Development &amp; Aging</div>
+  <div class="section-sub">Postural control is the foundation for every functional movement. In pediatrics, it develops through a predictable sequence driven by primitive reflexes, righting reactions, and equilibrium reactions. In adults, postural control declines with aging through multisystem degradation. In neurological patients, it is disrupted in ways that predict fall risk, functional limitation, and quality of life.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Reflexes, Righting Reactions &amp; Equilibrium Reactions</h4>
+      <div class="ma-tags"><span class="ma-tag">Primitive = innate, always stimulus-response</span><span class="ma-tag gold">Righting = gravity-driven, vision</span><span class="ma-tag purple">Equilibrium = sensory integration</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Primitive Reflexes</div>
+            <p>Without volitional control; ALWAYS in response to stimuli; initially protective; integrate with neural maturation. Primitive reflexes NEVER truly disappear &#8212; inhibited by cortical maturation and re-emerge after cortical damage (stroke, TBI). In adults with neurological injury, returning primitive reflexes indicate loss of cortical inhibitory control.</p>
+          </div>
+          <div style="overflow-x:auto;">
+          <table class="data-table" style="margin:0;font-size:12px;">
+            <thead><tr><th>Reflex</th><th>Stimulus</th><th>Response</th><th>Integrates</th></tr></thead>
+            <tbody>
+              <tr><td class="hi">ATNR</td><td>Head rotation</td><td>Skull side arm extends; face side arm flexes</td><td>4&#8211;6 months</td></tr>
+              <tr><td class="hi">Startle / Moro</td><td>Unexpected head extension or loud noise</td><td>Arms extend-ABD then flex-ADD; fists close</td><td>5&#8211;6 months</td></tr>
+              <tr><td class="hi">Palmar grasp</td><td>Touch palm</td><td>Finger flexion grip</td><td>4&#8211;7 months</td></tr>
+              <tr><td class="hi">Plantar grasp</td><td>Touch ball of foot</td><td>Toe flexion</td><td>9&#8211;10 months</td></tr>
+              <tr><td class="hi">Babinski</td><td>Stroke lateral plantar surface</td><td>Toe extension + fan &#8212; red flag if persists</td><td>9&#8211;10 months</td></tr>
+              <tr><td class="hi">STNR</td><td>Head flex/ext</td><td>Head flex &#8594; arms flex, legs extend; head ext &#8594; arms ext, legs flex</td><td>9&#8211;10 months (crawling)</td></tr>
+              <tr><td class="hi">Stepping</td><td>Brush feet on surface</td><td>Rhythmic stepping movement</td><td>2&#8211;4 months</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Righting Reactions</div>
+            <p>Driven by vision and gravity. Develop as a result of positions AGAINST GRAVITY. Orient the head and body to the vertical (upright) position. Allow rolling and transitions from lying to sitting &#8212; patient "finds upright" after displacement. Emerge after primitive reflex integration; bridge to equilibrium reactions. Also driven by labyrinthine and visual input &#8212; require intact vestibular and visual systems.</p>
+          </div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Equilibrium Reactions</div>
+            <p>Protective; driven by sensory integration to environment; response to mobility. Required for functional balance. Include three postural strategies: <strong>Ankle strategy</strong> (small perturbation on firm surface &#8212; distal to proximal; sway at ankle to return COG), <strong>Hip strategy</strong> (larger perturbation or compliant surface &#8212; trunk flexes/extends quickly; proximal to distal), <strong>Stepping strategy</strong> (COG displaced outside BOS &#8212; must step to prevent fall). Normal individuals use all three selectively. Neurological patients often stuck in hip/stepping strategy even for small perturbations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Motor Development &#8212; Lifespan Sequence</h4>
+      <div class="ma-tags"><span class="ma-tag">Rolling &#8594; walking</span><span class="ma-tag gold">No creeping = LD risk</span><span class="ma-tag purple">Positions of play matter</span><span class="ma-tag green">Peds vs adult PT</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Developmental Sequence</div>
+            <p>Rolling &#8594; Sit to quadruped &#8594; Tall kneeling &#8594; Half kneel to stand &#8594; Cruising &#8594; Walking. Each stage builds specific postural control, strength, and motor planning. <strong>Creeping (hands-and-knees):</strong> all planes of motion simultaneously &#8212; the only full-body, multiplanar, reciprocal coordination pattern in development. <strong>No creeping is correlated with learning disorders.</strong> <strong>Cruising:</strong> frontal plane ABD/ADD &#8212; the only time frontal plane lower extremity work occurs in development.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Positions of Play</div>
+            <p>Infants develop motor skills based on positions they're placed in and encouraged to explore. <strong>Prone:</strong> head control, neck extension, shoulder girdle strength. <strong>Supine:</strong> reaching, ATNR integration, bilateral coordination. <strong>Seated:</strong> trunk control, visual-motor coordination. Each position provides a different postural challenge. Tummy time is medically recommended precisely because prone play drives critical motor development.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Key Developmental Age Milestones</div>
+            <p><strong>0&#8211;2 months:</strong> newborn. <strong>0&#8211;1 year:</strong> infant &#8212; primitive reflex integration. <strong>1 year:</strong> hand preference (NOT dominance), destruction over construction, knows body parts. <strong>1&#8211;3 years:</strong> toddler &#8212; increased strength/coordination, gait components refined, curiosity. <strong>4&#8211;7 years:</strong> bilateral coordination, gait toward adult pattern, feedback &gt; feed-forward learning, balance for game play. <strong>10&#8211;18:</strong> adolescent. Development depends on practice, exploration, experience.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Peds vs. Adult PT</div>
+            <p><strong>Peds:</strong> working to GAIN or acquire a skill (development). <strong>Adult:</strong> working to RETURN a skill or function (recovery/compensation). Peds evaluation adds: developmental milestone assessment, primitive reflex testing, play-based observation, normative vs. criterion-referenced comparison. Both share: I-T-E framework, functional task focus, family/caregiver education, motivational strategies.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Pediatric Outcome Measures</div>
+            <p><strong>PDMS-2:</strong> 0&#8211;6 yrs, norm-referenced, 6 subtests (reflexes, stationary, locomotion, object manipulation, grasping, visual-motor integration). <strong>Bot-2:</strong> 4&#8211;21 yrs, norm-referenced, identifies mild-moderate motor deficits, requires cognition. <strong>HELP:</strong> birth&#8211;36 months, gross/fine motor checklist, criterion-referenced. <strong>GMFM:</strong> cerebral palsy specific, 5 areas, no standardized criterion-reference. GMFCS Levels 1&#8211;5 classify CP functional mobility level.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Aging &amp; Postural Control</h4>
+      <div class="ma-tags"><span class="ma-tag">Multisystem decline</span><span class="ma-tag gold">Sensory reweighting impaired</span><span class="ma-tag red">mCTSIB &#8212; 30 sec gold standard</span><span class="ma-tag green">Exercise is the intervention</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Age-Related Changes Affecting Postural Control</div>
+            <ul>
+              <li><strong>Visual:</strong> &#8595; acuity, &#8595; contrast sensitivity, &#8595; dark adaptation, &#8595; depth perception</li>
+              <li><strong>Vestibular:</strong> &#8595; hair cell numbers, &#8595; VOR gain, &#8595; ability to resolve sensory conflict</li>
+              <li><strong>Somatosensory:</strong> &#8595; peripheral nerve conduction; vibration is the first sensation to go in peripheral neuropathy/diabetes; &#8595; plantar sensation</li>
+              <li><strong>Musculoskeletal:</strong> sarcopenia; &#8595; ankle DF strength and ROM; &#8595; Type II fiber recruitment speed</li>
+              <li><strong>Cognitive:</strong> &#8595; dual-task ability; &#8595; attention allocation to balance; slower reaction times</li>
+              <li><strong>CNS processing:</strong> slower integration; less ability to reweight sensory systems when one is unreliable</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">mCTSIB &#8212; Modified Clinical Test for Sensory Interaction &amp; Balance</div>
+            <p>4 conditions testing VSR (vestibulospinal reflex). Each condition: 30 seconds. <strong>Condition 1:</strong> Firm, Eyes Open &#8212; all sensory systems available. <strong>Condition 2:</strong> Firm, Eyes Closed &#8212; removes vision. <strong>Condition 3:</strong> Foam, Eyes Open &#8212; reduces somatosensory. <strong>Condition 4:</strong> Foam, Eyes Closed &#8212; removes vision AND reduces somatosensory &#8212; tests VESTIBULAR in isolation. Gold standard: 30 seconds per condition. Failure pattern reveals which system is impaired or over-relied upon. Document: sway pattern, strategy used (ankle vs hip vs stepping), need for assist.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Sensory Reweighting</div>
+            <p>Normal balance requires selecting the most reliable sensory input for the current environment. Example: on foam (somatosensory reduced) &#8594; rely more on visual and vestibular. In fog (visual reduced) &#8594; rely more on somatosensory and vestibular. Elderly and neurological patients lose this flexibility &#8212; over-rely on one system or cannot switch when one is removed. mCTSIB systematically tests each combination to identify the impaired system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 9: STROKE ====== -->
+<div class="tab-panel" id="tab-stroke">
+<div class="container">
+  <div class="section-title">Stroke &#8212; Motor Control Perspective</div>
+  <div class="section-sub">795,000 strokes per year in the US. 4th leading cause of death. Leading cause of long-term disability. 87% ischemic. In your SNF you will treat more stroke patients than almost any other neurological diagnosis. Motor control science provides the framework for understanding what the patient lost, why they move the way they do, and what will drive recovery.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Demographics &amp; Emergency Management</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Key Statistics</div>
+        <ul style="font-size:13px;">
+          <li>795,000 per year; 4th leading cause of death in US</li>
+          <li>Leading cause of long-term disability; kills 1 per 4 minutes</li>
+          <li>610,000 first strokes; 185,000 recurrent; 1/4 had previous stroke</li>
+          <li>87% ischemic; 13% hemorrhagic</li>
+        </ul>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Ischemic Stroke &#8212; tPA</div>
+        <p>Tissue Plasminogen Activator (tPA) = "clot buster." Window: 3&#8211;4.5 hours from symptom onset. Restores blood flow. <strong>Contraindicated in hemorrhagic stroke</strong> &#8212; worsens bleeding. Post-acute meds: heparin, Coumadin, Eliquis, Plavix (anticoagulants). Aspirin to decrease cerebral edema.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Hemorrhagic Stroke</div>
+        <p>Blood is toxic to brain tissue &#8212; kills cells directly. Goal: reduce ICP ASAP. Surgical evacuation of blood, reduce compression, intracranial blood clot removal. NO tPA. Medical management critical before PT begins safely.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Phases of Rehabilitation</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Acute Phase</div>
+        <p>Early mobility is critical. Prevent bed rest deconditioning. Prevent <strong>learned nonuse</strong>. Functional mobility training, ADLs. Discharge disposition determination. Even rolling in bed and sitting at edge begins the neuroplasticity process.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Sub-Acute (SNF / Inpatient Rehab)</div>
+        <p>Inpatient rehab: 3 hrs rehab, 2+ disciplines, 6 days/week. SNF: less intensive but sustained. Decrease time from onset to admission = increase functional outcomes. This is where you see most stroke patients. Brunnstrom staging guides intervention selection.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Chronic (&gt;6 months post CVA)</div>
+        <p>Transition to outpatient neuro rehab should occur BEFORE 6 months. Goals: higher function, return to home/work/community. Ongoing neuroplasticity possible years post-stroke. CIMT evidence exists for chronic stroke. Aerobic exercise and task-specific practice continue to produce gains even years later.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Stroke by Vascular Territory &amp; Hemisphere</h4>
+      <div class="ma-tags"><span class="ma-tag">ACA / MCA / PCA</span><span class="ma-tag gold">Left = aphasia, apraxia</span><span class="ma-tag red">Right = neglect, pusher</span><span class="ma-tag purple">Lobes and syndromes</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">ACA (Anterior Cerebral Artery)</div>
+            <p>Medial region: lower body areas of both motor and sensory cortex (LE more affected than UE), cingulate cortex, prefrontal/orbitofrontal cortex. Internal capsule and basal ganglia perforators. Clinical: contralateral LE &gt; UE weakness; transcortical motor aphasia; echolalia possible; executive dysfunction.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">MCA (Middle Cerebral Artery)</div>
+            <p>Lateral region: arm/face areas of motor and sensory cortex (UE + face more affected), dorsolateral prefrontal cortex, association areas, part of optic tract (Meyer's loop). Most common stroke territory. L MCA: right hemiplegia, Broca's/Wernicke's/global aphasia. R MCA: left hemiplegia, left hemineglect, pusher syndrome.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">PCA (Posterior Cerebral Artery)</div>
+            <p>Occipital lobe (primary vision), inferior temporal lobe (ventral visual pathway &#8212; form and color), perforating branches to diencephalon, internal capsule, midbrain. Clinical: homonymous hemianopsia; visual agnosia; cortical blindness (bilateral); memory deficits (temporal lobe).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Left Hemisphere</div>
+            <p>Right-sided hemiplegia/hemiparesis. <strong>Aphasia</strong> (Broca's = nonfluent, expressive; Wernicke's = fluent but nonsensical; global = neither). <strong>Apraxia</strong> = cannot plan/perform motor task despite intact motor system. Right visual field cut. Right sensory loss.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Right Hemisphere</div>
+            <p>Left-sided hemiplegia. <strong>Left hemineglect</strong> &#8212; spatial attention deficit, not visual deficit. Visual field cut left. Motor impersistence. Anosognosia (denies deficit). <strong>Pusher syndrome.</strong> Left gaze preference (eyes deviate right, toward lesion). Right hemisphere processes spatial attention for BOTH hemifields &#8212; that's why left neglect is so profound and right hemisphere lesion rarely causes right neglect.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Critical Distinction: Hemineglect vs. Hemianopsia</div>
+            <p><strong>Hemianopsia</strong> = visual field cut &#8212; the patient CANNOT SEE stimuli in the affected hemifield (visual pathway damage). <strong>Hemineglect</strong> = attention deficit &#8212; the patient CAN see the stimuli but has lost the will or motivation to attend to them. They ignore or disown the left limbs and left space. Not non-compliance. Clinically: a patient who doesn't dress the left side of their body, doesn't eat food on the left side of the plate, or turns only to the right during conversation &#8212; this is neglect.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Clinical Syndromes &amp; Special Presentations</h4>
+      <div class="ma-tags"><span class="ma-tag">Locked-in syndrome</span><span class="ma-tag gold">Wallenberg syndrome</span><span class="ma-tag red">Pusher syndrome</span><span class="ma-tag purple">Aphasia types</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Locked-In Syndrome</div>
+            <p>Basilar artery thrombosis &#8212; bilateral infarction of ventral pons. CATASTROPHIC. Sudden onset &#8594; acute progressive hemiparesis &#8594; tetraplegia &#8594; bulbar paralysis (CN 5&#8211;12) &#8594; mutism. <strong>CANNOT MOVE OR SPEAK BUT IS ALERT, ORIENTED, AND FEELS EVERYTHING.</strong> Only vertical eye movements and blinking are preserved. Communication via eye blinks. Requires specialized team care.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Lateral Medullary / Wallenberg Syndrome</div>
+            <p>Ipsilateral lesion. Clinical features: (-) pain and temperature in IPSILATERAL face; ataxia in limbs and gait; vertigo, N&amp;V; nystagmus; Horner's syndrome (ptosis, miosis, anhydrosis); contralateral pain/temp loss over body; hoarse voice; dysphagia. Dysphagia &#8594; aspiration &#8594; pneumonia risk is a critical safety concern.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Pusher Syndrome</div>
+            <p>Patient actively pushes toward the paretic/hemiplegic side. Driven by distorted perception of upright &#8212; they perceive their tilted body as vertical. Combats therapist attempts to correct alignment. Cannot use visual feedback to self-correct because visual body schema is also disrupted. Treatment: heavy reliance on verbal feedback, mirror, environmental vertical cues. Prognosis: typically resolves, but significantly slows rehab progress.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Tone Terminology for Stroke</div>
+            <p><strong>Flaccidity:</strong> nothing there, just hanging. Complete loss of muscle tone. Stage 1 Brunnstrom. <strong>Hypotonia:</strong> weak, reduced tone &#8212; more than flaccidity. <strong>Normal tone.</strong> <strong>Spasticity:</strong> velocity-dependent increased resistance. UMN. <strong>Rigidity:</strong> non-velocity-dependent resistance. Extrapyramidal (basal ganglia). <strong>Clonus:</strong> rhythmic oscillatory contraction &#8212; sustained stretch triggers repeated reflex contractions. Severe UMN lesions.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Hidden Stroke Risks for Women</div>
+            <ul style="font-size:13px;">
+              <li><strong>Oral contraceptives:</strong> even low-estrogen pills &#8212; 2x risk; higher with other risk factors</li>
+              <li><strong>Migraine with aura:</strong> up to 10x risk; combined with OCPs &#8594; both hemorrhagic AND ischemic risk</li>
+              <li><strong>Hormone replacement therapy:</strong> slight increased risk</li>
+              <li><strong>History of preeclampsia/eclampsia:</strong> increased HTN and stroke risk 1&#8211;30 years post-delivery</li>
+              <li><strong>Autoimmune illness:</strong> diabetes, lupus</li>
+              <li><strong>Clotting issues:</strong> LE DVT, multiple miscarriages, Livedo Reticularis (purplish net-like mottled skin pattern from vascular spasms)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Modified Ashworth Scale &amp; Gait Deviations Post-Stroke</h4>
+      <div class="ma-tags"><span class="ma-tag">MAS &#8212; ONE AND DONE</span><span class="ma-tag gold">Circumduction = extension synergy</span><span class="ma-tag red">Vaulting = compensation</span><span class="ma-tag purple">Eccentric control = key exercise</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:6px;">
+            <div class="bl-label">Modified Ashworth Scale</div>
+          </div>
+          <div style="overflow-x:auto;">
+          <table class="data-table" style="margin:0;margin-bottom:10px;">
+            <thead><tr><th>Grade</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td class="hi">0</td><td>No increase in muscle tone</td></tr>
+              <tr><td class="hi">1</td><td>Slight &#8212; catch and release, or minimal resistance at end ROM</td></tr>
+              <tr><td class="hi">1+</td><td>Slight &#8212; catch + minimal resistance through &lt;1/2 ROM</td></tr>
+              <tr><td class="hi">2</td><td>More marked through most of ROM &#8212; limb still easily moved</td></tr>
+              <tr><td class="hi">3</td><td>Considerable increase &#8212; passive movement difficult</td></tr>
+              <tr><td class="hi">4</td><td>Limb rigid in flexion or extension</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Key Rules</div>
+            <p>Count 1,1000&#8211;2,1000 for standardized velocity. <strong>ONE AND DONE</strong> &#8212; test becomes inaccurate when repeated multiple times in one session (repeated stretching reduces tone &#8594; false low scores). PT hand position: one hand under mid-thigh; other in U-shape over ankle. LE: quads into flexion, hamstrings into extension. Document bilaterally.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Why Extension Synergy Produces Circumduction</div>
+            <p>LE extension synergy (hip ADD + knee ext + ankle PF + inversion) locks leg in extension during stance &#8212; helpful for weight-bearing. During swing phase, patient cannot selectively flex hip/knee/ankle (flexion synergy would fire the whole pattern). Result: patient hikes the hip (pelvis elevation) and swings the stiff leg outward (circumduction) to clear the ground. Ankle PF also prevents dorsiflexion &#8594; foot drop and toe drag.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Vaulting</div>
+            <p>Patient rises on toes of the UNAFFECTED leg during swing of affected leg &#8212; compensating for inability to shorten the affected leg during swing. Energy-costly, asymmetric step length. Goal: reduce vaulting by improving swing-phase limb shortening (hip/knee flexion, ankle DF) on affected side.</p>
+          </div>
+          <div class="bl-strip green">
+            <div class="bl-label">Key Intervention Exercises</div>
+            <ul style="font-size:13px;">
+              <li><strong>"Pump the water"</strong> &#8212; rhythmic DF/PF to break ankle synergy and facilitate ankle movement</li>
+              <li><strong>Facilitating knee flexion/extension</strong> &#8212; selective knee control isolated from LE extension synergy</li>
+              <li><strong>Tall kneeling to sit</strong> &#8212; eccentric knee flexion control; critical for stepping</li>
+              <li>Focus on <strong>eccentric quad control</strong> &#8212; the missing component in circumduction gait</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 10: FOMS ====== -->
+<div class="tab-panel" id="tab-foms">
+<div class="container">
+  <div class="section-title">Functional Outcome Measures &#8212; Complete Reference</div>
+  <div class="section-sub">FOMs are standardized tools that objectively quantify performance, track progress, and communicate patient status across care settings. Selection depends on: what you need to know, the patient's diagnosis, and which FOM has EDGE (Neurological PT Section) recommendation for that population. Know every tool below cold &#8212; purpose, equipment, population-specific cutoffs, and clinical meaning.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Timed Up and Go (TUG)</h4>
+      <div class="ma-tags"><span class="ma-tag">Mobility + balance + fall risk</span><span class="ma-tag gold">Most widely used</span><span class="ma-tag red">Normal adult &gt;13.5s</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip">
+            <div class="bl-label">Purpose &amp; Protocol</div>
+            <p>Assess mobility, balance, walking ability, and fall risk in older adults. Protocol: patient sits in chair with arms. At "go" &#8212; stand up, walk 3 meters, turn around, walk back, sit down. Time from "go" to fully seated. Use assistive device if normal for patient; record which device. No practice trial.</p>
+          </div>
+        </div>
+        <div>
+          <div style="overflow-x:auto;">
+          <table class="data-table" style="margin:0;">
+            <thead><tr><th>Population</th><th>At Risk if Time &gt;</th></tr></thead>
+            <tbody>
+              <tr><td>Normal adult</td><td class="bad">13.5 sec (CDC: 12 sec)</td></tr>
+              <tr><td>Older stroke</td><td class="bad">14 sec</td></tr>
+              <tr><td>Older adults in fall clinics</td><td class="bad">15 sec</td></tr>
+              <tr><td>Frail elderly</td><td class="bad">32.6 sec</td></tr>
+              <tr><td>LE amputees</td><td class="bad">19 sec</td></tr>
+              <tr><td>Parkinson's</td><td class="bad">11.5 sec</td></tr>
+              <tr><td>Hip OA</td><td class="bad">7.95 sec</td></tr>
+              <tr><td>Vestibular disorders</td><td class="bad">10&#8211;11.1 sec</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Five Times Sit to Stand (5xSTS / FTSTS)</h4>
+      <div class="ma-tags"><span class="ma-tag">LE strength + transfer + fall risk</span><span class="ma-tag gold">Stroke &gt;12s</span><span class="ma-tag red">Parkinson's &gt;16s</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip">
+            <div class="bl-label">Purpose &amp; Protocol</div>
+            <p>Assess transfer skill, fall risk, lower extremity strength. Protocol: patient sits with arms crossed over chest. "Go" &#8212; stand up and sit down 5 times as fast as possible without using arms. Seat height: 90&#176; hip and knee &#8212; use step stool if needed. Timer starts when patient begins to rise; stops when patient seated after 5th repetition.</p>
+          </div>
+        </div>
+        <div>
+          <div style="overflow-x:auto;">
+          <table class="data-table" style="margin:0;">
+            <thead><tr><th>Population</th><th>At Risk if Time &gt;</th></tr></thead>
+            <tbody>
+              <tr><td>Parkinson's</td><td class="bad">16 sec</td></tr>
+              <tr><td>Stroke</td><td class="bad">12 sec</td></tr>
+              <tr><td>Balance/Vestibular</td><td class="bad">15 sec</td></tr>
+              <tr><td>Balance/Vestibular &lt;60 yo</td><td class="bad">10 sec</td></tr>
+              <tr><td>Balance/Vestibular &gt;60 yo</td><td class="bad">14.2 sec</td></tr>
+              <tr><td>Fallers vs non-fallers</td><td class="bad">16 sec</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Functional Reach Test (FR)</h4>
+      <div class="ma-tags"><span class="ma-tag">Static balance + fall risk</span><span class="ma-tag gold">Community elderly &lt;7 in</span><span class="ma-tag">Modified for seated</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip">
+            <div class="bl-label">Purpose &amp; Protocol</div>
+            <p>Predict fall risk while assessing balance in stand or sit (modified). Protocol: standing, arm raised to 90&#176; shoulder flexion alongside a yardstick. Measure start point at knuckles. Reach forward as far as possible without stepping or touching wall. Measure end at knuckles. Distance = functional reach. 3 trials, average last 2.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Cutoffs</div>
+            <p><strong>Community dwelling elderly:</strong> &lt;7 inches = at risk. <strong>Frail elderly:</strong> &lt;7.28 inches (18.5 cm). Clinical note: tests anterior limits of stability specifically. Supplement with Berg for comprehensive balance assessment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Berg Balance Scale (BBS)</h4>
+      <div class="ma-tags"><span class="ma-tag">Static balance + fall risk</span><span class="ma-tag gold">56 = functional balance</span><span class="ma-tag red">&lt;40 = 100% fall risk in nursing home</span><span class="ma-tag purple">14 items, 0&#8211;4 each</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip">
+            <div class="bl-label">Overview</div>
+            <p>Assess static balance and fall risk in adults. 14 items, each scored 0&#8211;4. Total: 56 points. Higher = better balance. 15&#8211;20 min. Equipment: stopwatch, ruler, chair, step, tape. Widely used for stroke and geriatric populations. Items progress from sitting &#8594; standing &#8594; challenging positions.</p>
+          </div>
+        </div>
+        <div>
+          <div style="overflow-x:auto;">
+          <table class="data-table" style="margin:0;">
+            <thead><tr><th>Population</th><th>At Risk</th></tr></thead>
+            <tbody>
+              <tr><td>Older adults (general)</td><td class="bad">&lt;45</td></tr>
+              <tr><td>Older adults with fall history</td><td class="bad">&lt;42</td></tr>
+              <tr><td>Nursing home residents</td><td class="bad">&lt;47; &lt;40 = 100% fall risk</td></tr>
+              <tr><td>Functional balance</td><td class="ok">56/56</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Dynamic Gait Index (DGI)</h4>
+      <div class="ma-tags"><span class="ma-tag">Balance during gait</span><span class="ma-tag gold">&lt;19 = fall risk</span><span class="ma-tag red">Ceiling effect &#8212; athletes</span><span class="ma-tag purple">22/24 = community safe</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">8 Items &amp; Equipment</div>
+            <p>Assess ability to modify balance during gait. 8 items, 0&#8211;3 each; total 24 pts. Equipment: shoebox, 2 cones, stairs, 20' walkway (15" wide). Items: (1) gait level surface, (2) change speed, (3) horizontal head turns, (4) vertical head turns, (5) pivot turn, (6) step over obstacle, (7) step around obstacles, (8) stairs. Normal 20 ft walk = ~4 sec.</p>
+          </div>
+        </div>
+        <div>
+          <div style="overflow-x:auto;">
+          <table class="data-table" style="margin:0;margin-bottom:8px;">
+            <thead><tr><th>Population</th><th>At Risk</th></tr></thead>
+            <tbody>
+              <tr><td>Community dwelling elderly (&gt;65)</td><td class="bad">&lt;19</td></tr>
+              <tr><td>Parkinson's</td><td class="bad">&lt;19</td></tr>
+              <tr><td>Multiple sclerosis</td><td class="bad">&lt;12</td></tr>
+              <tr><td>Vestibular disorders</td><td class="bad">&lt;19</td></tr>
+              <tr><td>Community safety</td><td class="ok">22/24</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Ceiling Effect Warning</div>
+            <p>Patient may score 24/24 and still be unsafe &#8212; especially athletes, previously active patients. High score does not guarantee community safety. Use clinical judgment and supplement with community-level testing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Function in Sitting Test (FIST)</h4>
+      <div class="ma-tags"><span class="ma-tag">Non-ambulatory post-stroke</span><span class="ma-tag gold">MDC = 5 points</span><span class="ma-tag purple">&gt;41 = home discharge indicator</span><span class="ma-tag red">Sensory + motor + proactive + reactive</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Overview</div>
+        <p>Purpose: sitting balance, sensory, motor, proactive, reactive, and steady-state factors. Use for non-ambulatory, post-stroke patients who cannot participate in TUG or DGI. <strong>MDC = 5 points.</strong> Clinically significant change: &gt;6 points. <strong>Score &gt;41 = home discharge indicator vs. facility.</strong> Task-specific: reveals which specific sitting tasks the patient can/cannot perform safely. Administration: patient keeps hands on lap &#8212; do NOT use arms unless necessary. 90/90 hip and knee; use step stool if needed. Need stopwatch and item for grasping. Meant to be done in order &#8212; try not to skip steps. Do not repeat more than 2x. Do not repeat timed tests.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>All Other FOMs &#8212; Quick Reference</h4>
+      <div class="ma-tags"><span class="ma-tag">mCTSIB</span><span class="ma-tag gold">10m Walk</span><span class="ma-tag purple">ABC Scale</span><span class="ma-tag red">DHI</span><span class="ma-tag green">Peds tools</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div style="overflow-x:auto;">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Tool</th><th>Purpose</th><th>Key Cutoffs</th><th>Population</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">mCTSIB</td><td>Sensory organization + VSR; 4 conditions (firm/foam x EO/EC); 30 sec each</td><td>30 sec = gold standard per condition</td><td>All neurological, vestibular, aging</td></tr>
+          <tr><td class="hi">10m Walk Test</td><td>Gait speed; community ambulation safety; most sensitive gait FOM for change</td><td>&lt;0.6 m/s = household only; &gt;1.0 m/s = community safe</td><td>Stroke, SCI, aging, neurological</td></tr>
+          <tr><td class="hi">ABC Scale</td><td>Self-reported balance confidence; 16 items 0&#8211;100%</td><td>PD &lt;69%; Stroke 81.1% (no fall history); Vestibular &lt;67%; Elderly &lt;67%</td><td>PD, stroke, vestibular, elderly</td></tr>
+          <tr><td class="hi">DHI</td><td>Self-perceived handicap from dizziness; physical/emotional/functional</td><td>MS &gt;59; Mild 0&#8211;30; Mod 31&#8211;60; Severe 61&#8211;100</td><td>Vestibular disorders, MS</td></tr>
+          <tr><td class="hi">GMFM</td><td>Gross motor function in CP; 5 areas; tracks change</td><td>No single cutoff &#8212; criterion-referenced; 88-item version</td><td>Cerebral palsy (GMFCS levels)</td></tr>
+          <tr><td class="hi">PDMS-2</td><td>Motor development 0&#8211;6 yrs; 6 subtests; norm-referenced; every 6 months</td><td>Percentile-based vs. norm; basal: 3 consecutive "2"s; ceiling: 3 "0"s</td><td>Pediatric 0&#8211;6 years</td></tr>
+          <tr><td class="hi">Bot-2</td><td>Identify mild-moderate motor deficits; norm-referenced; needs cognition</td><td>Percentile-based</td><td>Ages 4&#8211;21 years</td></tr>
+          <tr><td class="hi">HELP</td><td>Gross + fine motor checklist; criterion-referenced</td><td>Skill-by-skill; no total cutoff</td><td>Birth to 36 months</td></tr>
+          <tr><td class="hi">Mini-Mental Status</td><td>Cognitive screening</td><td>&lt;24 = abnormal; 24&#8211;30 = no cognitive impairment</td><td>Adults; dementia screening</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="bl-strip" style="margin-top:12px;">
+        <div class="bl-label">Why Use One FOM Over Another?</div>
+        <p>Ask yourself: what do I need to know about this patient? TUG + 5xSTS: fall risk + transfer function. Berg: comprehensive static balance (14 items &#8212; most thorough but most time-intensive). DGI: dynamic balance during gait specifically, community ambulation. FIST: non-ambulatory patients only. FR: forward reaching limit of stability. ABC: self-confidence and fear of falling (may explain avoidance). mCTSIB: WHICH sensory system is driving the balance dysfunction. Choose based on what's clinically actionable for that patient right now.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ====== TAB 11: REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; Motor Control Across the Lifespan</div>
+  <div class="section-sub">Tap any card to flip. Covers all major motor control concepts, clinical applications, and exam-level questions. Master these and you can explain every motor behavior you observe in clinic &#8212; and design interventions to change it.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the best definition of motor control? What are the three factors that influence movement organization?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Motor Control:</strong> "The ability to regulate the mechanisms required to generate movement to meet the demands of a given task in a specific environment." (Shumway-Cook &amp; Woollacott). Three factors: <strong>Individual</strong> (Who &#8212; action, perception, cognition), <strong>Task</strong> (What &#8212; stability, mobility, manipulation; open vs. closed), <strong>Environment</strong> (Where &#8212; regulatory vs. non-regulatory; closed predictable vs. open unpredictable). APTA Vision: "Transforming society by optimizing movement to improve the human experience." You are a movement scientist.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Compare the five theories of motor control: core idea, key limitation, and clinical contribution.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Reflex (Sherrington):</strong> reflexes = building blocks; can't explain spontaneous movement; contributed sensory facilitation techniques. <strong>Hierarchical (Jackson):</strong> higher controls lower; spinal CPGs work independently; contributed UMN/LMN framework, developmental sequence. <strong>Motor Programming (Schmidt):</strong> GMPs + open-loop; ignores ongoing feedback; contributed mental practice, schema, variable practice. <strong>Systems/Dynamic (Bernstein/Shumway-Cook):</strong> emergent from multiple subsystems; complex to apply; contributed task-oriented approach, I-T-E. <strong>Ecological (Gibson/Newell):</strong> affordances and perception-action coupling; underestimates CNS; contributed real-world training, discovery learning.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the difference between performance and learning? Why does giving KR after every trial hurt long-term learning?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Performance</strong> = temporary changes in motor behavior (visible during session). <strong>Learning</strong> = relatively permanent changes in capability to generate skilled actions &#8212; observable in retention and transfer tests, not acquisition. Giving KR after every trial: patient uses feedback as a crutch &#8594; high session performance but poor retention. <strong>Best practice:</strong> KR every 5 trials (Schmidt &amp; Lee, 2005). Fading frequency as skill improves produces better long-term outcomes. Goal: self-monitoring, self-correcting patient who doesn't need the PT present.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Explain Bernstein's 3-stage DOF model and the clinical relevance of co-contraction.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Stage 1 &#8212; Freeze DOF:</strong> minimal joints, co-contraction stabilizes unused joints. Stiff, reasonably accurate, inefficient. <strong>Stage 2 &#8212; Release DOF:</strong> allow more joints, coordinate between them, improves efficiency. <strong>Stage 3 &#8212; Exploit DOF:</strong> all DOF used optimally including passive forces (gravity, momentum) &#8212; expert movement. <strong>Co-contraction clinical note:</strong> normal in Stage 1 of learning &#8212; don't pathologize it in a patient learning a new skill. Also a characteristic of neurological pathology (CP, dystonia) where it does NOT diminish with practice as skill is acquired.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the Brunnstrom 7 stages and the abnormal UE and LE synergy patterns?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Stages:</strong> (1) Flaccidity &#8212; PROM, positioning; (2) Spasticity begins, minimal vol mvt &#8212; initiate AROM, overflow; (3) Spasticity peaks, synergies controlled &#8212; neuroplasticity focus; (4) Spasticity decreases, combine synergies &#8212; tabletop, gait; (5) Complex movement returns &#8212; fine motor, advanced gait; (6) Spasticity gone, isolated mvts; (7) Normal. <strong>UE Flexion synergy:</strong> scap retract/elev, shoulder ABD+ER, elbow flex (dominant), forearm sup, wrist/finger flex. <strong>LE Extension synergy:</strong> hip ext+ADD (dominant), knee ext (dominant), ankle PF+inv, toe PF &#8212; this is what causes circumduction and toe drag in gait.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is BDNF, how does aerobic exercise affect it, and what is the optimal prescription for neuroplasticity?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">BDNF (Brain-Derived Neurotrophic Factor) = growth factor for neuronal survival, differentiation, synaptic plasticity, and LTP (the cellular mechanism of learning). Bidirectionally crosses BBB. Peaks 10&#8211;60 min post aerobic exercise. <strong>Before practice:</strong> facilitates encoding of task-relevant info. <strong>After practice:</strong> facilitates motor memory consolidation. Both timing windows work. <strong>Optimal Rx (Mang):</strong> &gt;30 min/session, ~70% HRmax, 4 days/week, aerobic + resistance. <strong>Stroke minimum (Billinger):</strong> 20 min moderate intensity, 3x/week, &gt;30% HRR. Benefits stop when exercise stops. SNF application: seated bike or arm ergometer BEFORE task-specific practice.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Describe Rood's 5 sensory techniques &#8212; does each facilitate or inhibit, and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Fast brushing: FACILITATES</strong> &#8212; excites muscle group; also used for static extensor holding. <strong>Quick icing: FACILITATES</strong> &#8212; thermal stimulus excites muscle. <strong>Prolonged icing: INHIBITS</strong> &#8212; vasoconstriction, decreased nerve conduction, reduced movement. <strong>Tapping (belly or tendon): FACILITATES</strong> &#8212; activates stretch reflex. <strong>Deep pressure: INHIBITS</strong> &#8212; GTO activation &#8594; autogenic inhibition &#8594; muscle relaxes; releases spasms; thenar handshake. <strong>Neutral warmth: INHIBITS</strong> &#8212; 10&#8211;20 min body-temp wrap calms and decreases overall tone before functional activities. Protocol: 3&#8211;5 reps to facilitate voluntary contractions.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the PNF D1 and D2 UE flexion patterns with hand placements? How is PNF used for spasticity inhibition?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>D1 UE Flexion:</strong> Shoulder Flex-Add-ER; forearm sup; fingers flex. (Seatbelt). RH: palmar over dorsal-ulnar wrist/fingers. LH: posterior-lateral arm to control IR. <strong>D2 UE Flexion:</strong> Shoulder Flex-Abd-ER; forearm sup; fingers extended; elbow extension pattern. (Draw sword). LH: palmar over dorsal-radial wrist/fingers. RH: anterior-lateral arm to control rotation. <strong>Spasticity inhibition via PNF:</strong> Contract-relax &#8212; resist the SPASTIC muscle group &#8594; patient contracts maximally &#8594; relax &#8594; GTO fires &#8594; autogenic inhibition &#8594; tone reduces &#8594; passive stretch into new range. Slow rhythmic movement through the diagonal in the ANTAGONIST direction to the spastic synergy is also inhibitory.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is NDT elongation and what are the thenar handshake steps for releasing a fisted hand?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Elongation:</strong> weight shift = COG off BOS = elongation on WB side (lateral trunk flexion of loaded side). This frontal plane control unlocks transverse plane mobility. ALL MOBILITY IS MULTIPLANAR. Always: facilitating hand + guiding hand. NEVER pull or push. Move WITH patient &#8212; feel WS in your own body. <strong>Thenar handshake:</strong> (1) Apply pressure with your thumb into patient's thenar eminence. (2) Rotate at wrist (sup/pronation). (3) As thenar eminence relaxes, fingers automatically release from flexion. (4) Take up the new open space with more of your hand. (5) Never pry fingers &#8212; stimulates protective grasp reflex. After: WB open hand on surface, clean/dry skin, consider splinting or OT referral.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 4 mCTSIB conditions, what does each test, and what is the gold standard?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>mCTSIB</strong> tests VSR (vestibulospinal reflex). 4 conditions, 30 seconds each. <strong>Condition 1:</strong> Firm surface, Eyes Open &#8212; baseline, all systems available. <strong>Condition 2:</strong> Firm, Eyes Closed &#8212; removes vision; tests somatosensory + vestibular. <strong>Condition 3:</strong> Foam, Eyes Open &#8212; reduces somatosensory; tests vision + vestibular. <strong>Condition 4:</strong> Foam, Eyes Closed &#8212; removes vision AND reduces somatosensory; tests <strong>VESTIBULAR in isolation.</strong> Gold standard: <strong>30 seconds per condition</strong> without losing balance. Failure pattern reveals impaired system. Document: sway pattern, strategy used (ankle vs hip vs stepping), need for assist.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Modified Ashworth Scale &#8212; all 6 grades and key administration rules.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Grades:</strong> 0 = no tone; 1 = slight catch and release; 1+ = catch + minimal resistance through &lt;1/2 ROM; 2 = marked through most ROM (still movable); 3 = considerable (passive movement difficult); 4 = rigid. <strong>Rules:</strong> Count 1,1000&#8211;2,1000 for standardized velocity. <strong>ONE AND DONE</strong> &#8212; repeated testing gives false-low scores (repeated stretching reduces tone temporarily). PT hand position: one hand under mid-thigh, other in U-shape over ankle. LE: quads into flexion, hamstrings into extension. Document bilaterally &#8212; compare affected vs. unaffected. Berg &lt;40 in your SNF patient = 100% fall risk.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What TUG cutoff indicates fall risk for: normal adult, older stroke, frail elderly, Parkinson's, Hip OA, vestibular?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Normal adult:</strong> &gt;13.5 sec (CDC: &gt;12). <strong>Older stroke:</strong> &gt;14 sec. <strong>Older adults in fall clinics:</strong> &gt;15 sec. <strong>Frail elderly:</strong> &gt;32.6 sec. <strong>Parkinson's:</strong> &gt;11.5 sec. <strong>Hip OA:</strong> &gt;7.95 sec. <strong>Vestibular disorders:</strong> &gt;10&#8211;11.1 sec. <strong>LE amputees:</strong> &gt;19 sec. Clinical note: TUG is a composite task &#8212; a slow score tells you there is a problem but not WHY. Combine with observational gait analysis and balance testing to identify the specific impairments driving the result.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is CIMT? Who is a good candidate, and what is the mechanism for why it works?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>CIMT:</strong> forced use of hemiparetic UE by constraining unaffected UE (mitt 90% waking hours) + intensive massed practice of functional activities (shaping &#8212; graded difficulty, multi-trial). <strong>Mechanism:</strong> targets learned nonuse &#8212; affected limb avoided &#8594; cortical map shrinks &#8594; less capable &#8594; more avoidance. CIMT forces cortical map expansion via use. <strong>Candidate:</strong> 10&deg; active wrist extension + 10&deg; active finger extension, adequate cognition, no severe balance impairment. NOT for Stage 1&#8211;2 Brunnstrom. Strong evidence for mild-moderate chronic UE hemiparesis. Intensive protocol: 6 hrs/day x 10 consecutive weekdays. mCIMT for less intensive schedule.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why does R MCA stroke cause left hemineglect while L MCA stroke rarely causes right neglect?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">The RIGHT parietal lobe controls spatial attention for BOTH right AND left hemifields. The LEFT parietal lobe controls attention primarily for the right hemifield only. Therefore: <strong>Right parietal damage &#8594; left hemineglect</strong> (right hemisphere no longer attends to left space). <strong>Left parietal damage &#8594; right parietal takes over spatial processing for both sides</strong> &#8594; no significant neglect. This asymmetry is why left-sided neglect from right hemisphere stroke is profound and persistent. Critical distinction: hemineglect = ATTENTION deficit; hemianopsia = VISUAL FIELD deficit. Patient who ignores left side of plate, left limbs, left space &#8212; this is neglect, not non-compliance.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Blocked vs. random practice &#8212; which produces better session performance? Which produces better retention? Why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Blocked practice:</strong> same task repeated before moving to next. Better <em>session</em> performance. WORSE <em>retention</em> &#8212; less cognitive engagement = weaker memory traces. <strong>Random practice:</strong> different tasks in random order. Worse session performance. BETTER retention and transfer &#8212; the contextual interference effect. Each task switch forces the learner to reconstruct the motor plan, elaborating it more deeply in memory. <strong>Clinical application:</strong> early-stage patients may benefit from some blocked practice (cognitive stage &#8212; needs to understand the task first). Intermediate/late stage: shift to random practice for retention. Variable practice + random order = best long-term learning outcomes.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the CPG, and how does body weight support treadmill training exploit it for gait retraining?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>CPG (Central Pattern Generator):</strong> spinal cord interneuron networks that generate rhythmic, coordinated stepping without voluntary cortical input. Cats with complete SCI still step on treadmill when hindlimbs are supported &#8212; driven by repetitive sensory input (rhythmic load + limb position) activating spinal circuits. In humans, CPG contributes to gait but is less dominant. <strong>BWS Treadmill Training:</strong> harness over treadmill; therapist manually facilitates limb timing; treadmill speed provides rhythmic sensory input activating CPG. Start with 30&#8211;40% BWS; progressively reduce. Speed is key &#8212; drives sensory input. Transition to overground for generalization. Evidence strongest for chronic incomplete SCI and subacute stroke.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is ASAP and what is the evidence for language specificity in stroke rehabilitation?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>ASAP (Accelerated Skill Acquisition Program, Winstein):</strong> hybrid task-specific + impairment-mitigating training with patient-centered motivational enhancements. Three domains: <strong>Skill</strong> (motor learning + self-management), <strong>Capacity</strong> (impairment mitigation), <strong>Motivation</strong> (intrinsic drive). <strong>Evidence:</strong> patients given daily timed gait feedback and encouragement walked significantly faster at discharge AND 3 months later vs. controls. Empowering language: "How can you make this harder now?" "Active people like you usually do very well on this task." For practice to affect motor learning: <strong>purpose and goal-directedness are required</strong> &#8212; repetition without purpose is exercise, not learning. Language IS a clinical intervention.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the developmental sequence in NDT, and what does each transition train?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Rolling &#8594; Sit to quadruped &#8594; Tall kneeling &#8594; Half kneel to stand &#8594; Cruising &#8594; Walking. <strong>Rolling:</strong> trunk rotation, upper/lower body dissociation. <strong>Sit to quadruped:</strong> weight shift in sitting, hip extension, transition through asymmetric WB. <strong>Tall kneeling:</strong> hip extension + stability without knee; frontal plane WS. <strong>Half kneel &#8594; stand:</strong> hip and knee extension through full range; step-to-stand component. <strong>Cruising:</strong> frontal plane ABD/ADD &#8212; the only developmental position that trains frontal plane LE work; lateral WS, momentum management. <strong>Walking:</strong> dynamic postural control all planes, reciprocal arm swing, CPG activation. Each transition usable therapeutically for patients at corresponding motor recovery level.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What primitive reflexes persist into adulthood after cortical damage? What does their return indicate?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Primitive reflexes are inhibited (not eliminated) by cortical maturation. After cortical damage (stroke, TBI), lower centers are released from cortical inhibition &#8212; primitive reflexes re-emerge. <strong>Returning in adults with CNS damage:</strong> ATNR (head rotation &#8594; asymmetric arm posturing), grasp reflex (palm touch &#8594; involuntary grip), Babinski (plantar stroke &#8594; toe extension + fan &#8212; always pathological in adults), Moro-like startle response. <strong>Frontal release signs</strong> (excessive blinking, grope, grasp, palmomental) indicate frontal lobe dysfunction. Their return indicates the cortex can no longer inhibit lower centers &#8212; tells you where the lesion is (cortical/subcortical UMN damage) and guides prognosis/intervention.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">FIST score &gt;41 means what clinically? MDC = ? Clinically significant change = ?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>FIST score &gt;41</strong> = indicator for discharge to HOME vs. facility (supports home discharge decision). <strong>MDC (Minimal Detectable Change) = 5 points</strong> &#8212; change of 5 or more exceeds measurement error, meaning real change has occurred. <strong>Clinically significant change = &gt;6 points.</strong> Used for non-ambulatory post-stroke patients who cannot participate in TUG or DGI. Tests: sitting balance, sensory components, motor components, proactive (anticipatory), reactive balance, steady-state sitting. Tasks are meant to be done in order &#8212; don't skip steps. Don't repeat timed tests. Document specific tasks patient fails &#8212; those become your treatment targets.</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

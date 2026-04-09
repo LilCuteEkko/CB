@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — Abdomen &amp; Thorax</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+
+<div class="hero">
+  <div class="hero-tag">Regional Anatomy</div>
+  <h1>Abdomen <span>&amp; Thorax</span></h1>
+  <p>Gross anatomy of the abdominal and thoracic regions — surface anatomy, abdominal wall muscles, peritoneum, viscera, diaphragm, thoracic wall, lungs, and heart. Essential regional anatomy for differential diagnosis and clinical reasoning.</p>
+  <div class="hero-badges">
+    <span class="badge">Abdominal Wall</span>
+    <span class="badge">Peritoneum &amp; Viscera</span>
+    <span class="badge gold">Inguinal Region</span>
+    <span class="badge gold">Diaphragm</span>
+    <span class="badge purple">Thoracic Wall</span>
+    <span class="badge purple">Heart &amp; Lungs</span>
+  </div>
+</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('surface',this)">Surface Anatomy</button>
+  <button onclick="showTab('abwall',this)">Abdominal Wall</button>
+  <button onclick="showTab('inguinal',this)">Inguinal Region</button>
+  <button onclick="showTab('diaphragm',this)">Diaphragm</button>
+  <button onclick="showTab('viscera',this)">Abdominal Viscera</button>
+  <button onclick="showTab('retroperitoneal',this)">Peritoneum &amp; Retro</button>
+  <button onclick="showTab('thoraxwall',this)">Thoracic Wall</button>
+  <button onclick="showTab('thoraxviscera',this)">Heart &amp; Lungs</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ====== SURFACE ANATOMY ====== -->
+<div class="tab-panel active" id="tab-surface">
+<div class="container">
+
+  <div class="section-title">Surface Anatomy — Abdomen</div>
+  <div class="section-sub">Two reference systems divide the abdomen: the 4-quadrant system (clinical, simple) and the 9-region system (anatomical, precise). Know both — clinical documentation uses quadrants; anatomical description uses regions.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">4-Quadrant System</div>
+  <div class="section-sub" style="margin-bottom:10px;">Divided by the <strong>Transumbilical Plane</strong> (horizontal through umbilicus) and <strong>Median Plane</strong> (vertical midline).</div>
+
+  <div class="quad-grid">
+    <div class="quad-cell ruq">
+      <h4>Right Upper Quadrant (RUQ)</h4>
+      <ul>
+        <li>Liver (right lobe)</li>
+        <li>Pylorus of stomach</li>
+        <li>Duodenum</li>
+        <li>Head of pancreas</li>
+        <li>Right adrenal gland</li>
+        <li>Right kidney</li>
+        <li>Ascending colon (superior)</li>
+        <li>Transverse colon (right half)</li>
+      </ul>
+    </div>
+    <div class="quad-cell luq">
+      <h4>Left Upper Quadrant (LUQ)</h4>
+      <ul>
+        <li>Liver (left lobe)</li>
+        <li>Stomach</li>
+        <li>Spleen</li>
+        <li>Jejunum + proximal ileum</li>
+        <li>Body and tail of pancreas</li>
+        <li>Left adrenal gland</li>
+        <li>Left kidney</li>
+        <li>Descending colon (superior)</li>
+        <li>Transverse colon (left half)</li>
+      </ul>
+    </div>
+    <div class="quad-cell rlq">
+      <h4>Right Lower Quadrant (RLQ)</h4>
+      <ul>
+        <li>Cecum + appendix</li>
+        <li>Most of ileum</li>
+        <li>Ascending colon (inferior)</li>
+        <li>Right ovary + uterine tube</li>
+        <li>Right ureter</li>
+        <li>Full urinary bladder</li>
+      </ul>
+    </div>
+    <div class="quad-cell llq">
+      <h4>Left Lower Quadrant (LLQ)</h4>
+      <ul>
+        <li>Sigmoid colon</li>
+        <li>Descending colon (inferior)</li>
+        <li>Left ovary + uterine tube</li>
+        <li>Left ureter</li>
+        <li>Full urinary bladder</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">9-Region System</div>
+  <div class="section-sub" style="margin-bottom:10px;">Divided by 2 horizontal planes (subcostal + transtubercular) and 2 vertical lines (right + left midclavicular).</div>
+
+  <table class="data-table">
+    <thead><tr><th>Right</th><th>Center</th><th>Left</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Right Hypochondriac</strong><br><span style="font-size:12px;color:var(--text3);">Liver, R kidney, R adrenal</span></td><td><strong>Epigastric</strong><br><span style="font-size:12px;color:var(--text3);">Stomach, liver, pancreas head, aorta</span></td><td><strong>Left Hypochondriac</strong><br><span style="font-size:12px;color:var(--text3);">Spleen, stomach, L kidney</span></td></tr>
+      <tr><td><strong>Right Lumbar</strong><br><span style="font-size:12px;color:var(--text3);">Ascending colon, R kidney</span></td><td><strong>Umbilical</strong><br><span style="font-size:12px;color:var(--text3);">Transverse colon, small intestine</span></td><td><strong>Left Lumbar</strong><br><span style="font-size:12px;color:var(--text3);">Descending colon, L kidney</span></td></tr>
+      <tr><td><strong>Right Inguinal (Iliac)</strong><br><span style="font-size:12px;color:var(--text3);">Cecum, appendix, ileum</span></td><td><strong>Hypogastric (Pubic)</strong><br><span style="font-size:12px;color:var(--text3);">Bladder, uterus, sigmoid</span></td><td><strong>Left Inguinal (Iliac)</strong><br><span style="font-size:12px;color:var(--text3);">Sigmoid colon</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Abdominal Cavity — Boundaries</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Boundaries</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Superior:</strong> Thoracic diaphragm</li>
+        <li><strong>Inferior:</strong> Pelvic inlet (continuous with pelvic cavity)</li>
+        <li><strong>Anterior/Lateral:</strong> Musculotendinous abdominal wall</li>
+        <li><strong>Posterior:</strong> Lumbar vertebrae, IVDs, and posterior muscles</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Abdominal Wall Layers — Superficial to Deep</div>
+      <ol style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Skin</li>
+        <li>Superficial fascia: <strong>Camper's</strong> (fatty) + <strong>Scarpa's</strong> (membranous)</li>
+        <li>Deep fascia (epimysium of muscles)</li>
+        <li><strong>Transversalis fascia</strong> — deepest muscle layer, lines abdominal wall</li>
+        <li>Peritoneum (parietal + visceral)</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Dermatomal Nerve Supply — Abdominal Skin</div>
+  <table class="data-table">
+    <thead><tr><th>Level</th><th>Region Supplied</th></tr></thead>
+    <tbody>
+      <tr><td><strong>T7, T8, T9</strong></td><td>Skin superior to umbilicus</td></tr>
+      <tr><td><strong>T10</strong></td><td class="hi">Skin around the umbilicus</td></tr>
+      <tr><td><strong>T11, T12 (subcostal), L1 (iliohypogastric/ilioinguinal)</strong></td><td>Skin inferior to umbilicus</td></tr>
+      <tr><td><strong>L1–2 (Genitofemoral nerve)</strong></td><td>Inguinal/groin region</td></tr>
+    </tbody>
+  </table>
+  <div class="bl-strip gold">
+    <div class="bl-label">Neurovascular Plane</div>
+    <p>All abdominal nerves (thoracoabdominal, subcostal, iliohypogastric, ilioinguinal) travel from posterolateral → anterior within the <strong>neurovascular plane between the internal oblique and transversus abdominis</strong>. Analogous to nerves running between internal oblique and transverse abdominis — same principle as the intercostal space in the thorax.</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== ABDOMINAL WALL ====== -->
+<div class="tab-panel" id="tab-abwall">
+<div class="container">
+
+  <div class="section-title">Muscles of the Abdominal Wall</div>
+  <div class="section-sub">Five muscles form the anterolateral abdominal wall. They function together to support viscera, increase intra-abdominal pressure, move the trunk, and protect against blows. The 4 "F"s: fluids, flatulence, feces, and fetuses.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>External Oblique (EO)</h4>
+      <div class="ma-tags"><span class="ma-tag">Outermost</span><span class="ma-tag gold">T8–12</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>External surfaces of ribs 5–12</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Linea alba, pubic tubercle, anterior half of iliac crest</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Ventral rami T8–12 (T12 = subcostal nerve)</p></div>
+        <div class="ma-field"><label>Action</label><p>Flex and rotate trunk; compress/support abdominal viscera</p></div>
+        <div class="ma-field"><label>Fiber Direction</label><p>Inferior and medial — "hands in pockets" direction</p></div>
+        <div class="ma-field"><label>Special</label><p>Aponeurosis forms <strong>inguinal ligament</strong> (inferior edge folds back); aponeurosis folds onto itself forming <strong>inguinal canal</strong></p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Internal Oblique (IO)</h4>
+      <div class="ma-tags"><span class="ma-tag">Middle layer</span><span class="ma-tag gold">T8–12, L1</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Thoracolumbar fascia, anterior 2/3 of iliac crest, lateral half of inguinal ligament</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Inferior borders of ribs 10–12, linea alba, pecten pubis via conjoint tendon</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Ventral rami T8–12 and L1</p></div>
+        <div class="ma-field"><label>Action</label><p>Flex and rotate trunk; compress/support abdominal viscera</p></div>
+        <div class="ma-field"><label>Fiber Direction</label><p>Primarily superior and medial (perpendicular to EO)</p></div>
+        <div class="ma-field"><label>Special</label><p>Aponeurosis contributes to rectus sheath; inferior aponeurotic fibers form arch over spermatic cord; most inferior fibers combine with TA to form <strong>conjoint tendon</strong> (posterior wall of inguinal canal)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Transversus Abdominis (TA)</h4>
+      <div class="ma-tags"><span class="ma-tag">Innermost flat</span><span class="ma-tag gold">T8–12, L1</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Internal surfaces of ribs 7–12 costal cartilages, thoracolumbar fascia, iliac crest, lateral third of inguinal ligament</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Linea alba with aponeurosis of IO, pubic crest, pecten pubis via conjoint tendon</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Ventral rami T8–12 and L1</p></div>
+        <div class="ma-field"><label>Action</label><p>Compress/support abdominal viscera</p></div>
+        <div class="ma-field"><label>Fiber Direction</label><p>Horizontal — provides circumferential compression (like a corset)</p></div>
+        <div class="ma-field"><label>Special</label><p>Primary function is compressive — no significant trunk movement. Along with IO forms conjoint tendon.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Rectus Abdominis (RA)</h4>
+      <div class="ma-tags"><span class="ma-tag">Vertical</span><span class="ma-tag gold">T7–12</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Pubic symphysis and pubic crest</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Xiphoid process and costal cartilages of ribs 5–7</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Ventral rami T7–12</p></div>
+        <div class="ma-field"><label>Action</label><p>Flex trunk; compress/support abdominal viscera</p></div>
+        <div class="ma-field"><label>Special Features</label><p>Paired, separated by <strong>linea alba</strong>; anchored by ≥3 <strong>tendinous intersections</strong>; enclosed in <strong>rectus sheath</strong></p></div>
+        <div class="ma-field"><label>Key Lines</label><p><strong>Semilunar line</strong> = lateral edge of RA. <strong>Arcuate line</strong> = ~1/3 distance umbilicus to pubis; below it all aponeuroses pass anterior to RA</p></div>
+      </div>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Rectus Sheath — Above vs. Below Arcuate Line</div>
+        <p><strong>Above arcuate line:</strong> Anterior = EO aponeurosis + anterior IO aponeurosis. Posterior = posterior IO aponeurosis + TA aponeurosis.<br><strong>Below arcuate line:</strong> ALL three aponeuroses pass <em>anterior</em> to RA. Transversalis fascia alone passes posterior.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cremaster</h4>
+      <div class="ma-tags"><span class="ma-tag">Male only (mostly)</span><span class="ma-tag gold">L1–2</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Internal oblique and middle of inguinal ligament</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Tunica vaginalis of testis</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Genital branch of genitofemoral nerve (L1–2)</p></div>
+        <div class="ma-field"><label>Action</label><p>Raises and lowers scrotum to maintain optimal temperature for sperm formation</p></div>
+        <div class="ma-field"><label>Clinical</label><p><strong>Cremasteric reflex:</strong> Stroke inner thigh superior → inferior = scrotum rises on that side. Tests L1–2 integrity. Absent in upper motor neuron lesions.</p></div>
+        <div class="ma-field"><label>Name Origin</label><p>Greek "I hang" (κρεμάννυμι)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Posterior Abdominal Wall Muscles</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Psoas Major</h4>
+      <div class="ma-tags"><span class="ma-tag">Hip Flexor</span><span class="ma-tag gold">L2–4</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Transverse processes of lumbar vertebrae; sides of vertebral bodies T12–L5; intervertebral discs</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Lesser trochanter of femur (with iliacus = <strong>iliopsoas</strong>)</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Lumbar plexus via branches of L1–3 (or L2–4)</p></div>
+        <div class="ma-field"><label>Action</label><p>Flex hip; ER femur; flex vertebral column</p></div>
+        <div class="ma-field"><label>Clinical</label><p>Tight psoas → anterior pelvic tilt, increased lumbar lordosis, limited hip extension in terminal stance. Psoas abscess can present as hip pain/flexion contracture.</p></div>
+        <div class="ma-field"><label>Note</label><p>Lumbar plexus rests anterior to psoas; nerves travel laterally around abdominal wall</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Iliacus</h4>
+      <div class="ma-tags"><span class="ma-tag">Hip Flexor</span><span class="ma-tag gold">Femoral N. L2–3</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Superior 2/3 of iliac fossa, ala of sacrum, anterior sacroiliac ligaments</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Lesser trochanter and shaft inferior, joining psoas major tendon</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Femoral nerve (L2–3)</p></div>
+        <div class="ma-field"><label>Action</label><p>Flex hip; ER hip; stabilize hip joint</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Quadratus Lumborum (QL)</h4>
+      <div class="ma-tags"><span class="ma-tag">Lateral trunk</span><span class="ma-tag gold">T12, L1–4</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Medial half of inferior border of 12th rib, tips of transverse processes L1–5</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Iliolumbar ligament, internal lip of iliac crest</p></div>
+        <div class="ma-field"><label>Innervation</label><p>Ventral branches T12 and L1–2</p></div>
+        <div class="ma-field"><label>Action</label><p>Extend and laterally flex vertebral column; <strong>fixes 12th rib during inspiration</strong> (gives diaphragm a fixed base)</p></div>
+        <div class="ma-field"><label>Clinical</label><p>Hip hiking in gait = QL overuse. Common source of low back pain, especially with unilateral weakness/tightness.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bl-strip" style="margin-top:8px;">
+    <div class="bl-label">Abdominal Muscle Functions Summary</div>
+    <p>Strong expandable support (organ movement) · Protects viscera from trauma · Compresses contents for defecation/urination/birth (4 F's: fluids, flatulence, feces, fetuses) · Increases intra-abdominal pressure (back support) · Moves trunk + maintains posture</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== INGUINAL REGION ====== -->
+<div class="tab-panel" id="tab-inguinal">
+<div class="container">
+
+  <div class="section-title">Inguinal Region</div>
+  <div class="section-sub">The inguinal canal is a clinically critical passageway through the abdominal wall. ~75% of all hernias occur in the groin. Understanding the anatomy explains why hernias occur and how to distinguish types.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Inguinal Ligament</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Spans <strong>ASIS → pubic tubercle</strong></li>
+        <li><strong>Thickening of the inferior edge</strong> of the External Oblique aponeurosis — folds back on itself</li>
+        <li>Forms the <strong>floor of the inguinal canal</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Inguinal Canal Contents</div>
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Male</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Spermatic cord (vas deferens, BVs)</li>
+            <li>Cremasteric muscle</li>
+            <li>Ilioinguinal nerve</li>
+            <li>Lymphatic vessels</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Female</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Round ligament</li>
+            <li>Ilioinguinal nerve</li>
+            <li>BVs + lymphatic vessels</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mnemonic-box" style="margin-top:8px;">
+    <div class="mn-title">Inguinal Canal Borders — MALT</div>
+    <div class="mn-phrase">M · A · L · T</div>
+    <div class="mn-expand">
+      <span>M</span>uscle = <strong>Roof</strong> — fibers of internal oblique + transverse abdominis &nbsp;|&nbsp;
+      <span>A</span>poneurosis = <strong>Anterior Wall</strong> — external oblique aponeurosis (+ internal oblique laterally) &nbsp;|&nbsp;
+      <span>L</span>igament = <strong>Floor</strong> — in-curving/trough of inguinal ligament &nbsp;|&nbsp;
+      <span>T</span>endon = <strong>Posterior Wall</strong> — transversalis fascia + conjoint tendon (IO + TA)
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:8px;">
+    <div class="card">
+      <div class="card-title">Deep Inguinal Ring</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Lateral</strong> opening of the canal. Outpouching of the <strong>transversalis fascia</strong> — fascia continues into canal around spermatic cord. Located lateral to inferior epigastric vessels.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Superficial Inguinal Ring</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Medial</strong> opening. Slit-like opening through the fibers of the <strong>external oblique aponeurosis</strong>. Lateral crus attaches to pubic tubercle; medial crus to pubic crest.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Hernias</div>
+
+  <div class="grid3" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Reducible</div>
+      <p style="font-size:13.5px;color:var(--text2);">Herniated material can be manually reduced back into abdomen. Non-urgent.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Incarcerated</div>
+      <p style="font-size:13.5px;color:var(--text2);">Cannot reduce herniated material. Blood supply intact but tissue trapped. Requires urgent evaluation.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Strangulated</div>
+      <p style="font-size:13.5px;color:var(--text2);">Blood supply to herniated material compromised → <strong>necrosis. Surgical emergency.</strong></p>
+    </div>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Type</th><th>Path</th><th>Relation to Epigastric A.</th><th>Scrotum?</th><th>Epidemiology</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Indirect Inguinal</strong></td>
+        <td>Through <strong>deep ring</strong> → entire canal → superficial ring</td>
+        <td class="hi">Lateral to inferior epigastric artery</td>
+        <td class="hi">Often enters scrotum</td>
+        <td>Most common overall (90% male); 2:1 over direct; congenital type</td>
+      </tr>
+      <tr>
+        <td><strong>Direct Inguinal</strong></td>
+        <td>Through <strong>Hesselbach's triangle</strong> — weak transversalis fascia; medial portion of canal only</td>
+        <td class="warn">Medial to inferior epigastric artery</td>
+        <td class="warn">Rarely enters scrotum</td>
+        <td>Less common; acquired type (muscle weakness); male predominance</td>
+      </tr>
+      <tr>
+        <td><strong>Femoral</strong></td>
+        <td>Into femoral triangle, follows femoral vessels; may exit saphenous hiatus</td>
+        <td>—</td>
+        <td>No</td>
+        <td>Rare (3% of hernias); <strong>most common hernia in females</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip gold" style="margin-top:8px;">
+    <div class="bl-label">Hesselbach's Triangle — Direct Hernia Site</div>
+    <p><strong>Medial border:</strong> Lateral margin of rectus sheath. <strong>Superolateral border:</strong> Inferior epigastric vessels. <strong>Inferior border:</strong> Inguinal ligament. Direct hernias protrude through the weak transversalis fascia within this triangle. <em>Corona Mortis</em>: abnormal anastomosis between inferior epigastric artery (external iliac branch) and obturator artery — if cut during hernia repair, retracts into pelvis causing severe blood loss.</p>
+  </div>
+
+  <div class="bl-strip">
+    <div class="bl-label">Hernia Statistics</div>
+    <p>~75% of all hernias occur in the groin · ~90% of inguinal hernias occur in males · Indirect:Direct = 2:1 · Incisional/ventral = 10% of hernias · Femoral = only 3%, most common hernia in women</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== DIAPHRAGM ====== -->
+<div class="tab-panel" id="tab-diaphragm">
+<div class="container">
+
+  <div class="section-title">Thoracic Diaphragm</div>
+  <div class="section-sub">The primary muscle of breathing — a dome-shaped musculotendinous partition separating thoracic and abdominal cavities. Contraction flattens the dome → increases thoracic volume → inspiration. Relaxation restores dome (elastic recoil) → expiration.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Structure — Two Portions</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:8px;"><strong>1. Peripheral muscular portion</strong> — three parts:</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;margin-bottom:10px;">
+        <li><strong>Sternal</strong> — attaches to xiphoid process</li>
+        <li><strong>Costal</strong> — attaches to internal surfaces of inferior 6 costal cartilages/ribs</li>
+        <li><strong>Lumbar</strong> — arises from L1–3 and two aponeurotic arches (medial + lateral arcuate ligaments)</li>
+      </ul>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>2. Central aponeurotic portion (central tendon)</strong> — no bony attachments; caval foramen perforates through it</p>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Dome Position</div>
+        <p>During expiration: right dome → level of 5th rib; left dome → 5th intercostal space (heart pushes left dome down slightly). During inspiration both domes descend.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Arcuate Ligaments</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Median Arcuate Ligament</strong> — unites R/L crura; forms arch of aortic hiatus</li>
+        <li><strong>Medial Arcuate Ligament</strong> — thickening of fascia of <em>psoas major</em></li>
+        <li><strong>Lateral Arcuate Ligament</strong> — thickening of fascia of <em>quadratus lumborum</em>; QL fixes 12th rib to give diaphragm a stable base</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Nerve Supply</div>
+        <p>Motor + central sensory: <strong>Phrenic nerves (C3–C5)</strong> — "C3, 4, 5 keeps the diaphragm alive." Peripheral diaphragm sensory: lower 6–7 intercostal nerves + subcostal nerve.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Three Diaphragmatic Apertures</div>
+  <div class="section-sub" style="margin-bottom:12px;">2 vascular + 1 gastrointestinal. Level of each is critical — remember the rule: <strong>8, 10, 12</strong> (caval at T8, esophageal at T10, aortic at T12).</div>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Aperture</th><th>Level</th><th>What Passes Through</th><th>Location</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Caval Foramen</strong></td>
+        <td class="hi">T8</td>
+        <td>Inferior vena cava (IVC)</td>
+        <td>Most anterior and superior; through central tendon</td>
+      </tr>
+      <tr>
+        <td><strong>Esophageal Hiatus</strong></td>
+        <td class="hi">T10</td>
+        <td>Esophagus + vagus nerves</td>
+        <td>Through lumbar (muscular) portion</td>
+      </tr>
+      <tr>
+        <td><strong>Aortic Hiatus</strong></td>
+        <td class="hi">T12</td>
+        <td>Aorta + thoracic duct</td>
+        <td>Most posterior and inferior; formed by R/L crura + median arcuate ligament</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip red" style="margin-top:8px;">
+    <div class="bl-label">Referred Diaphragm Pain — Clinical Pearl</div>
+    <p>Anything irritating the diaphragm sends signals via the phrenic nerve (C3–5) → brain maps it to those <strong>C3–5 dermatomes = shoulder</strong>.<br>
+    <strong>Heart attack</strong> — heart rests on diaphragm → <strong>left shoulder/arm pain</strong>.<br>
+    <strong>Liver/Gall bladder disease</strong> — right lobe of liver under right diaphragm → <strong>right shoulder pain</strong>.<br>
+    <strong>Splenic rupture</strong> — left diaphragm irritation → left shoulder pain (Kehr's sign).</p>
+  </div>
+
+  <div class="bl-strip gold" style="margin-top:4px;">
+    <div class="bl-label">Blood Supply</div>
+    <p>Musculophrenic A. + pericardiophrenic A. (both from internal thoracic A.) · Superior phrenic A. (aorta) · Inferior phrenic A. (aorta)</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== ABDOMINAL VISCERA ====== -->
+<div class="tab-panel" id="tab-viscera">
+<div class="container">
+
+  <div class="section-title">Abdominal Viscera</div>
+  <div class="section-sub">Understand each organ's function, blood supply, and clinical significance. The liver and kidneys are the most clinically tested. Know the abdominal aorta branches in order.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Esophagus → Stomach → Small Intestine</h4>
+      <div class="ma-tags"><span class="ma-tag">GI Tract</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Esophagus</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Delivers food to stomach via peristalsis</li>
+            <li>Enters abdomen through esophageal hiatus (T10)</li>
+            <li>Retroperitoneal</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Stomach</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Acidic (HCl) + pepsin (proteolytic)</li>
+            <li>Mechanical + chemical digestion</li>
+            <li>Produces intrinsic factor → absorbs vitamin B12</li>
+            <li>Intraperitoneal; in LUQ</li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:10px;">
+        <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--purple2);text-transform:uppercase;margin-bottom:6px;">Small Intestine (~25 feet long)</p>
+        <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+          <li><strong>Alkaline</strong> — neutralizes stomach acid; site of most digestion and absorption</li>
+          <li>Absorbs: free fatty acids, amino acids, monosaccharides</li>
+          <li><strong>Duodenum</strong> — "U"-shaped; receives bile duct (from liver) + pancreatic duct; flow controlled by <strong>Sphincter of Oddi</strong></li>
+          <li><strong>Jejunum</strong> — most absorption</li>
+          <li><strong>Ileum</strong> — leads to cecum via ileocecal junction</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Large Intestine</h4>
+      <div class="ma-tags"><span class="ma-tag">Absorption + Storage</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Functions:</strong> absorbs water; stores feces until defecation; gut bacteria produce <strong>Vitamin K</strong> (used by liver to make clotting factors)</li>
+        <li>Cecum → Appendix → Ascending Colon → Transverse Colon → Descending Colon → Sigmoid Colon → Rectum</li>
+        <li>Ascending + descending colon = <strong>secondarily retroperitoneal</strong></li>
+        <li>Transverse + sigmoid colon = intraperitoneal</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Liver</h4>
+      <div class="ma-tags"><span class="ma-tag">Largest gland</span><span class="ma-tag gold">RUQ</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Dual Circulation</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li><strong>80%</strong> from Hepatic Portal Vein (from small intestine + stomach)</li>
+            <li><strong>20%</strong> from Hepatic Artery</li>
+            <li><strong>Portal Triad</strong>: Portal Vein + Hepatic Artery + Bile Duct (at periphery of lobule)</li>
+            <li>Hepatic veins drain into IVC</li>
+            <li>Exception: <strong>fats</strong> go into lymphatic system, not portal vein</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Functions</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Detoxifies chemicals from blood</li>
+            <li>Converts ammonia → urea</li>
+            <li>Produces plasma proteins (albumin) + clotting factors (Vitamin K–dependent)</li>
+            <li>Produces bile → emulsifies fats</li>
+            <li>Stores glycogen; makes cholesterol + triglycerides</li>
+            <li>Breaks down Hgb → bilirubin; excreted in bile → gives feces color; liver disease → jaundice</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Pancreas &amp; Gall Bladder &amp; Spleen</h4>
+      <div class="ma-tags"><span class="ma-tag">Accessory Organs</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid3">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Pancreas</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li><strong>Endocrine:</strong> insulin + glucagon → regulate blood glucose</li>
+            <li><strong>Exocrine:</strong> pancreatic juice (alkaline) + digestive enzymes → pancreatic duct → duodenum via Sphincter of Oddi</li>
+            <li>Head = retroperitoneal; tail = intraperitoneal</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Gall Bladder</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Stores and concentrates bile</li>
+            <li>Releases bile: cystic duct → bile duct → duodenum</li>
+            <li>Emulsifies fats for absorption</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--purple2);text-transform:uppercase;margin-bottom:6px;">Spleen</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li>Destroys old RBCs + platelets</li>
+            <li>Recycles iron + globin</li>
+            <li>Reservoir of platelets</li>
+            <li>Intraperitoneal; LUQ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Kidneys &amp; Adrenal Glands</h4>
+      <div class="ma-tags"><span class="ma-tag">Retroperitoneal</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Kidneys — "Filter everything, reabsorb the good stuff"</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li><strong>Filtration</strong> — passive; blood pressure driven; non-selective (everything but proteins/RBCs)</li>
+            <li><strong>Reabsorption</strong> — active; selective; nutrients returned to blood</li>
+            <li><strong>Secretion</strong> — active; wastes added to filtrate for excretion</li>
+            <li>Produces <strong>erythropoietin</strong> — stimulates RBC formation (EPO doping in athletes)</li>
+            <li>Internal structure: cortex → medulla → renal pyramid → renal papilla → minor calyx → major calyx → renal pelvis → ureter</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Adrenal Glands — Superior pole of each kidney</p>
+          <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+            <li><strong>Adrenal Cortex</strong>: secretes corticosteroids + androgens; aldosterone → kidney retains Na/water</li>
+            <li><strong>Adrenal Medulla</strong>: modified sympathetic ganglion; secretes <strong>epinephrine + norepinephrine</strong> (fight-or-flight: ↑BP, ↑HR, bronchodilation, ↓GI flow, ↑muscle blood flow)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Abdominal Aorta — Major Branches</div>
+  <table class="data-table">
+    <thead><tr><th>Branch</th><th>Supplies</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Celiac Trunk</strong></td><td>Liver, spleen, stomach (foregut derivatives)</td></tr>
+      <tr><td><strong>Superior Mesenteric A.</strong></td><td>Small intestine + right half of large intestine</td></tr>
+      <tr><td><strong>Renal A.</strong></td><td>Kidneys (paired)</td></tr>
+      <tr><td><strong>Gonadal A.</strong> (ovarian/spermatic)</td><td>Gonads (paired)</td></tr>
+      <tr><td><strong>Inferior Mesenteric A.</strong></td><td>Left half of large intestine + sigmoid + upper rectum</td></tr>
+      <tr><td><strong>Lumbar A.</strong></td><td>Posterior abdominal wall (paired, 4 pairs)</td></tr>
+      <tr><td colspan="2" style="color:var(--text3);font-size:12px;">Abdominal aorta ends by splitting into common iliac arteries at L4</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Referred Visceral Pain</div>
+  <div class="card">
+    <div class="card-title">Mechanism</div>
+    <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Internal organs lack specific sensory fibers with dermatomal distribution. They respond only to <strong>stretch and chemical irritation</strong>. Pain impulses travel via <strong>splanchnic nerves</strong> → spinal segments → poorly localized. Brain maps them to the dermatomes at the level the afferent fibers enter the cord — hence referred pain.</p>
+    <div class="bl-strip red" style="margin-top:10px;">
+      <div class="bl-label">Visceral vs. Parietal Peritoneum Pain</div>
+      <p><strong>Visceral peritoneum</strong>: insensitive to touch/heat/cold/laceration; sensitive to stretch + chemical irritation; pain <em>poorly localized to midline</em> along sympathetic fibers.<br><strong>Parietal peritoneum</strong>: same supply as wall lining; pain <em>well localized</em> (except central diaphragm → referred to C3–5 = shoulder).</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== PERITONEUM & RETRO ====== -->
+<div class="tab-panel" id="tab-retroperitoneal">
+<div class="container">
+
+  <div class="section-title">Peritoneum &amp; Retroperitoneal Structures</div>
+  <div class="section-sub">Understanding peritoneal relationships is essential for understanding organ mobility, surgical access, infection spread, and referred pain patterns.</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Mesentery</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Double layer of peritoneum — the <strong>neurovascular highway</strong> to an organ that has invaginated into peritoneum. Carries blood vessels, nerves, and lymphatics to intraperitoneal organs.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Greater Omentum</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Double layer hanging like an <strong>apron</strong> from the greater curvature of the stomach, folds back up (posteriorly) to the transverse colon. Contains fat; acts as immune sentinel — migrates to sites of infection.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--purple2);">Lesser Omentum</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Double layer connecting <strong>lesser curvature of stomach → liver</strong>. Contains hepatic portal vein, hepatic artery, and bile duct in its free edge (hepatoduodenal ligament).</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Organ Classification</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Intraperitoneal</div>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px;">Nearly completely covered by visceral peritoneum. NOT literally inside peritoneum — organs invaginated into it.</p>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Stomach, spleen, liver</li>
+        <li>Tail of pancreas</li>
+        <li>Jejunum, ileum</li>
+        <li>Transverse colon, sigmoid colon</li>
+        <li>Ovaries</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Retroperitoneal</div>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px;">Covered only on anterior surface. Fixed to posterior abdominal wall.</p>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Kidneys + adrenal glands</li>
+        <li>Aorta + IVC</li>
+        <li>Ureters</li>
+        <li>Esophagus + rectum</li>
+        <li>Uterus + uterine tubes</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--purple2);">Secondarily Retroperitoneal</div>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px;">Started intraperitoneal embryologically, lost mesentery and became retroperitoneal.</p>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Head + neck of pancreas</li>
+        <li>Duodenum (2nd + 3rd segments)</li>
+        <li>Ascending colon</li>
+        <li>Descending colon</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mnemonic-box" style="margin-top:16px;">
+    <div class="mn-title">Retroperitoneal Structures — SAD PUCKER</div>
+    <div class="mn-phrase">SAD PUCKER</div>
+    <div class="mn-expand">
+      <span>S</span>uprarenal glands (adrenals) ·
+      <span>A</span>orta/IVC ·
+      <span>D</span>uodenum (2nd + 3rd segments) ·
+      <span>P</span>ancreas (head; tail is intraperitoneal) ·
+      <span>U</span>reters ·
+      <span>C</span>olon (ascending + descending only) ·
+      <span>K</span>idneys ·
+      <span>E</span>sophagus ·
+      <span>R</span>ectum
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== THORACIC WALL ====== -->
+<div class="tab-panel" id="tab-thoraxwall">
+<div class="container">
+
+  <div class="section-title">Thoracic Wall</div>
+  <div class="section-sub">The thoracic cage protects thoracic contents, facilitates breathing (anchor for diaphragm, negative intrapleural pressure −5 mmHg), and provides attachment for upper extremity and neck muscles. Intrapleural pressure is always slightly negative, keeping lungs inflated.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Ribs — Classification</div>
+  <div class="grid3" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">True Ribs (Vertebrocostal) — 1–7</div>
+      <p style="font-size:13.5px;color:var(--text2);">Have their own costal cartilage attachment <strong>directly to sternum</strong></p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">False Ribs (Vertebrochondral) — 8–10</div>
+      <p style="font-size:13.5px;color:var(--text2);">Costal cartilage attaches to <strong>costal cartilage of rib above</strong> (indirect)</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Floating Ribs — 11–12</div>
+      <p style="font-size:13.5px;color:var(--text2);"><strong>No attachment</strong> to sternum; no tubercle; one facet on head</p>
+    </div>
+  </div>
+
+  <div class="bl-strip" style="margin-bottom:16px;">
+    <div class="bl-label">Typical (3–9) vs. Atypical Ribs</div>
+    <p><strong>Typical ribs (3–9):</strong> 2 facets on head, transverse process articulates with same vertebra, costal groove (VAN: Vein Artery Nerve from top to bottom).<br>
+    <strong>Atypical:</strong> Rib 1 — one facet, grooves for subclavian vessels, scalenes attach. Rib 2 — two facets, no costal groove. Rib 10 — one facet. Ribs 11–12 — one facet, no neck or tubercle.</p>
+  </div>
+
+  <div class="section-title" style="font-size:1.2rem;">Sternum</div>
+  <table class="data-table">
+    <thead><tr><th>Part</th><th>Articulates With</th><th>Clinical Note</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Manubrium</strong></td><td>Clavicle (SC joint) + Rib 1 + Rib 2 at manubriosternal joint</td><td>Manubriosternal joint = fibrous, often fuses; angle of Louis at rib 2 level</td></tr>
+      <tr><td><strong>Body</strong></td><td>Ribs 2–6 via chondrosternal joints</td><td>Ribs 3–6 have direct attachment to body</td></tr>
+      <tr><td><strong>Xiphoid Process</strong></td><td>Rib 7 at xiphosternal joint</td><td>Xiphosternal joint fuses ~age 40; landmark for CPR hand placement</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Thoracic Wall Joints</div>
+  <table class="data-table">
+    <thead><tr><th>Joint</th><th>Articulation</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Costovertebral</strong></td><td>Posterior rib head with vertebral body</td></tr>
+      <tr><td><strong>Costotransverse</strong></td><td>Rib tubercle with transverse process (ribs 3–10)</td></tr>
+      <tr><td><strong>Sternoclavicular (SC)</strong></td><td>Medial clavicle + superolateral manubrium (has intra-articular disc)</td></tr>
+      <tr><td><strong>Costochondral</strong></td><td>Anterior rib (1–10) with costal cartilage (hyaline)</td></tr>
+      <tr><td><strong>Chondrosternal</strong></td><td>Medial costal cartilage (ribs 1–7) with sternum</td></tr>
+      <tr><td><strong>Interchondral</strong></td><td>Costal cartilages of ribs 7–8, 8–9, 9–10 with each other</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Muscles of the Thorax</div>
+
+  <div class="bl-strip gold" style="margin-bottom:12px;">
+    <div class="bl-label">Inspiration vs. Expiration Muscles</div>
+    <p><strong>Inspiration:</strong> Diaphragm (primary) · External intercostals · Serratus posterior superior · Levator costarum · Subcostals. Accessory: Pec major/minor, Serratus anterior, Scalenes, SCM.<br>
+    <strong>Expiration:</strong> Elastic recoil (passive, quiet breathing) · Internal intercostals · Innermost intercostals (?) · Serratus posterior inferior · Transversus thoracis. Accessory: External oblique, Internal oblique, Rectus abdominis (forced expiration).</p>
+  </div>
+
+  <table class="data-table">
+    <thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th><th>Nerve</th></tr></thead>
+    <tbody>
+      <tr><td><strong>External Intercostals</strong></td><td>Inferior border of rib</td><td>Superior border of rib below</td><td class="hi">Elevates rib (inspiration)</td><td>Intercostal nerves</td></tr>
+      <tr><td><strong>Internal Intercostals</strong></td><td>Inferior border of rib</td><td>Superior border of rib below</td><td class="warn">Depresses rib (expiration)</td><td>Intercostal nerves</td></tr>
+      <tr><td><strong>Innermost Intercostals</strong></td><td>Inferior edge of rib</td><td>Superior edge of rib below</td><td class="hi">Probably elevates (fiber direction)</td><td>Intercostal nerves</td></tr>
+      <tr><td><strong>Transversus Thoracis</strong></td><td>Deep surface sternum</td><td>Deep surface ribs 2–5</td><td class="warn">Depresses rib</td><td>Intercostal nerves</td></tr>
+      <tr><td><strong>Subcostals</strong></td><td>Inferior edge of rib</td><td>Superior edge of rib 2 levels below</td><td class="hi">Elevates ribs</td><td>Intercostal nerves</td></tr>
+      <tr><td><strong>Levator Costarum</strong></td><td>Transverse process</td><td>Inferior rib, 1–2 levels below</td><td class="hi">Elevates rib</td><td>Dorsal rami C7–T11</td></tr>
+      <tr><td><strong>Serratus Posterior Superior</strong></td><td>—</td><td>—</td><td class="hi">Elevates ribs</td><td>2nd–5th intercostal nerves</td></tr>
+      <tr><td><strong>Serratus Posterior Inferior</strong></td><td>—</td><td>—</td><td class="warn">Depresses ribs</td><td>Ventral rami T9–T12</td></tr>
+      <tr><td><strong>Scalenes (Ant/Mid)</strong></td><td>Cervical TPs</td><td>1st rib</td><td class="hi">Elevates rib 1 (accessory)</td><td>C4–C8</td></tr>
+      <tr><td><strong>Posterior Scalene</strong></td><td>Cervical TPs</td><td>2nd rib</td><td class="hi">Elevates rib 2</td><td>C7–C8</td></tr>
+      <tr><td><strong>SCM</strong></td><td>Mastoid process</td><td>Manubrium + clavicle</td><td class="hi">Forced inspiration (emphysema)</td><td>CN XI (spinal accessory)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip" style="margin-top:8px;">
+    <div class="bl-label">Fiber Direction Rule — Intercostals mimic obliques</div>
+    <p>External intercostals = same fiber direction as External Oblique (inferior + medial). Internal intercostals = same fiber direction as Internal Oblique. This helps recall their actions: EO + EIC = elevation during inspiration; IO + IIC = depression during expiration.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Intercostal Space — Neurovascular Plane</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">VAN Order in Costal Groove</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Intercostal structures run in the <strong>costal groove on the inferior border of each rib</strong>. Order from superior to inferior:<br>
+      <strong>V</strong>ein → <strong>A</strong>rtery → <strong>N</strong>erve (VAN)</p>
+      <div class="bl-strip red" style="margin-top:10px;">
+        <div class="bl-label">Clinical: Needle/Tube Placement</div>
+        <p>Always insert needles (thoracentesis, chest tube) just <strong>superior to the rib below</strong> — avoids NVB in costal groove. Going too high = hitting VAN bundle of rib above.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Vascular Supply</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Posterior intercostal arteries</strong> — direct branches of thoracic aorta (ribs 3–11); subclavian for 1–2</li>
+        <li><strong>Anterior intercostal arteries</strong> — branches of internal thoracic artery</li>
+        <li><strong>Internal thoracic artery</strong> — branch of subclavian; continues as superior epigastric artery</li>
+        <li><strong>Azygous venous system</strong> — posterior intercostal veins drain here → SVC</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bl-strip purple" style="margin-top:8px;">
+    <div class="bl-label">Thoracic Outlet Syndrome</div>
+    <p>Compression of neurovascular structures (brachial plexus C8-T1, subclavian artery/vein) at the thoracic outlet — between clavicle, 1st rib, and scalene muscles. Presents with arm pain, paresthesia, weakness, vascular compromise. Scalene muscle hypertrophy or cervical rib are common causes.</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== HEART & LUNGS ====== -->
+<div class="tab-panel" id="tab-thoraxviscera">
+<div class="container">
+
+  <div class="section-title">Thoracic Viscera — Heart &amp; Lungs</div>
+  <div class="section-sub">The mediastinum contains the heart, great vessels, trachea, esophagus, and thoracic duct. The lungs occupy the lateral thoracic cavities. Pleura reduces friction and bonds lung to chest wall.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Lungs</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Structure &amp; Lobes</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Right lung:</strong> 3 lobes (upper/middle/lower)</li>
+        <li><strong>Left lung:</strong> 2 lobes (upper/lower) — cardiac notch accommodates heart</li>
+        <li><strong>Right bronchus</strong> — straighter and wider than left → foreign bodies and aspirated material more likely to enter right lung</li>
+        <li><strong>Alveoli</strong> — air sacs; site of O₂/CO₂ exchange; surrounded by capillary bed</li>
+        <li><strong>Pleura</strong> — double layer of epithelial tissue; visceral (on lung) + parietal (on thoracic wall); reduces friction, bonds lung to chest wall</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Pulmonary Blood Supply</div>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Vessel</th><th>Carries</th><th>Direction</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Pulmonary Trunk → L/R pulmonary arteries</strong></td><td class="warn">Deoxygenated blood</td><td>R ventricle → lungs</td></tr>
+          <tr><td><strong>Pulmonary veins (4 total)</strong></td><td class="hi">Oxygenated blood</td><td>Lungs → L atrium</td></tr>
+          <tr><td><strong>Bronchial arteries</strong></td><td class="hi">Oxygenated blood</td><td>Aorta → lung tissue itself</td></tr>
+          <tr><td><strong>Bronchial veins</strong></td><td>—</td><td>Return via azygous system</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red" style="margin-top:10px;">
+        <div class="bl-label">Tension Pneumothorax</div>
+        <p>Air enters pleural cavity but cannot exit → compresses lung + great vessels + heart. Trachea deviates away from affected side. Surgical emergency: needle decompression at 2nd ICS, MCL, then chest tube.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Heart</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Chambers &amp; Valves</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;margin-bottom:10px;">
+        <li><strong>Right side:</strong> deoxygenated blood (systemic → pulmonary circulation)</li>
+        <li><strong>Left side:</strong> oxygenated blood (pulmonary → systemic circulation)</li>
+      </ul>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Valve</th><th>Location</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Tricuspid</strong></td><td>R atrium → R ventricle</td><td>Atrioventricular (3 cusps)</td></tr>
+          <tr><td><strong>Mitral (Bicuspid)</strong></td><td>L atrium → L ventricle</td><td>Atrioventricular (2 cusps)</td></tr>
+          <tr><td><strong>Pulmonic (Semilunar)</strong></td><td>R ventricle → pulmonary trunk</td><td>Semilunar</td></tr>
+          <tr><td><strong>Aortic (Semilunar)</strong></td><td>L ventricle → aorta</td><td>Semilunar</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">Pericardium &amp; Coronary Arteries</div>
+      <div class="bl-strip" style="margin-bottom:10px;">
+        <div class="bl-label">Pericardium — Two Layers</div>
+        <p><strong>Fibrous pericardium</strong>: outer; dense irregular CT; anchors heart. <strong>Serous pericardium</strong>: visceral (on heart surface = epicardium) + parietal; double layer of epithelial tissue; contains pericardial fluid to reduce friction.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Coronary Arteries</div>
+        <p>First branches off the aorta — just superior to the aortic semilunar valve (when valve opens during systole, blood enters coronary ostia). Left and right coronary arteries supply the <strong>myocardium</strong>. CAD = narrowing of coronary arteries → MI.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Cardiac Circulation Summary</div>
+  <div class="bl-strip purple">
+    <div class="bl-label">Blood Flow Pathway</div>
+    <p>Systemic veins → <strong>R atrium</strong> → tricuspid → <strong>R ventricle</strong> → pulmonic valve → <strong>pulmonary trunk</strong> → pulmonary arteries → <strong>lungs</strong> (O₂/CO₂ exchange) → pulmonary veins → <strong>L atrium</strong> → mitral → <strong>L ventricle</strong> → aortic valve → <strong>aorta</strong> → systemic circulation</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+
+  <div class="section-title">Review Cards</div>
+  <div class="section-sub">Tap to flip. Covers abdominal wall, inguinal region, diaphragm, viscera, peritoneum, thoracic wall, and heart and lungs.</div>
+
+  <div class="mnemonic-box" style="margin-bottom:16px;">
+    <div class="mn-title">Key Mnemonics</div>
+    <div class="mn-phrase">MALT · SAD PUCKER · VAN · 8-10-12</div>
+    <div class="mn-expand">
+      <span>MALT</span>: Inguinal canal borders (Muscle roof · Aponeurosis anterior · Ligament floor · Tendon posterior) &nbsp;|&nbsp;
+      <span>SAD PUCKER</span>: Retroperitoneal (Suprarenal · Aorta/IVC · Duodenum · Pancreas · Ureters · Colon · Kidneys · Esophagus · Rectum) &nbsp;|&nbsp;
+      <span>VAN</span>: Costal groove order (Vein · Artery · Nerve) &nbsp;|&nbsp;
+      <span>8-10-12</span>: Diaphragmatic apertures (Caval · Esophageal · Aortic)
+    </div>
+  </div>
+
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What organ is found in each abdominal quadrant — name one unique organ per quadrant.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>RUQ</strong>: liver (right lobe), duodenum, head of pancreas. <strong>LUQ</strong>: spleen, stomach, body/tail of pancreas. <strong>RLQ</strong>: cecum + appendix, most of ileum. <strong>LLQ</strong>: sigmoid colon. Both lower: ureters, ovaries/uterine tubes, full bladder.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 5 layers of the abdominal wall from superficial to deep?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Skin → <strong>Camper's fascia</strong> (fatty superficial) → <strong>Scarpa's fascia</strong> (membranous deep) → Deep fascia (muscle epimysium) → <strong>Transversalis fascia</strong> → Peritoneum.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the arcuate line and what changes below it in the rectus sheath?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">~1/3 of the way from umbilicus to pubis. <strong>Below it</strong>: ALL three aponeuroses (EO, IO, TA) pass <em>anterior</em> to rectus abdominis; only transversalis fascia remains posterior. Above it: normal anterior + posterior rectus sheath.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What does MALT stand for for the inguinal canal borders?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>M</strong>uscle = Roof (IO + TA) · <strong>A</strong>poneurosis = Anterior wall (EO aponeurosis) · <strong>L</strong>igament = Floor (inguinal lig.) · <strong>T</strong>endon = Posterior wall (transversalis fascia + conjoint tendon)</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Direct vs. Indirect inguinal hernia — how do you distinguish them?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Indirect</strong>: lateral to inferior epigastric artery; enters deep ring; traverses entire canal; often enters scrotum; congenital; most common. <strong>Direct</strong>: medial to inferior epigastric artery; through Hesselbach's triangle (transversalis fascia weakness); acquired; rarely enters scrotum.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 diaphragmatic apertures, their levels, and what passes through each?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>T8 — Caval foramen:</strong> IVC (most anterior/superior; through central tendon). <strong>T10 — Esophageal hiatus:</strong> esophagus + vagus nerves. <strong>T12 — Aortic hiatus:</strong> aorta + thoracic duct (most posterior/inferior; between crura). Memory: <strong>8, 10, 12</strong>.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why does liver/gallbladder disease cause right shoulder pain?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Liver and gallbladder irritate the <strong>right hemidiaphragm</strong> → pain signals travel via <strong>right phrenic nerve (C3–5)</strong> → brain maps it to C3–5 dermatomes = <strong>right shoulder</strong>. Same mechanism: heart attack on left diaphragm → left shoulder/arm pain.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 renal processes and what drives each?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Filtration</strong>: passive, blood pressure–driven, non-selective (everything except proteins/RBCs filtered). <strong>Reabsorption</strong>: active transport, selective, returns nutrients to blood. <strong>Secretion</strong>: active transport, wastes added to filtrate for excretion. + Produces <strong>erythropoietin</strong>.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What does SAD PUCKER stand for?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>S</strong>uprarenal · <strong>A</strong>orta/IVC · <strong>D</strong>uodenum · <strong>P</strong>ancreas · <strong>U</strong>reters · <strong>C</strong>olon (ascending + descending) · <strong>K</strong>idneys · <strong>E</strong>sophagus · <strong>R</strong>ectum. All retroperitoneal. Note: pancreatic tail is intraperitoneal.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the liver's dual blood supply and what percentage comes from each?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>80%</strong> from Hepatic Portal Vein (from small intestine + stomach — nutrient-rich but low O₂). <strong>20%</strong> from Hepatic Artery (oxygenated). Portal triad = portal vein + hepatic artery + bile duct at periphery of lobule. Fats are an exception — enter lymphatics not portal vein.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the neurovascular plane of the abdomen and what travels in it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">The plane between the <strong>internal oblique and transversus abdominis</strong>. Carries: thoracoabdominal nerves (T7–11), subcostal nerve (T12), iliohypogastric (L1), ilioinguinal (L1), and corresponding blood vessels. Nerves travel from posterolateral → anterior in this plane.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">True, false, and floating ribs — which numbers are which?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>True (vertebrocostal) 1–7</strong>: own costal cartilage direct to sternum. <strong>False (vertebrochondral) 8–10</strong>: costal cartilage to rib above (indirect). <strong>Floating 11–12</strong>: no sternal attachment at all. Typical ribs = 3–9; atypical = 1, 2, 10, 11, 12.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Where do you insert a needle for thoracentesis and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Insert just <strong>superior to the lower rib</strong> (i.e., along the upper edge of the rib below). The VAN bundle (Vein, Artery, Nerve) runs in the <strong>costal groove on the inferior border</strong> of each rib — inserting below the groove avoids the neurovascular bundle.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Right lung vs. left lung — lobes and why right bronchus matters clinically.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Right: 3 lobes</strong> (upper/middle/lower). <strong>Left: 2 lobes</strong> (upper/lower; cardiac notch). Right main bronchus is <strong>straighter, wider, and shorter</strong> than left → aspirated foreign bodies and aspirated fluids (during intubation) tend to enter the <strong>right lung</strong>.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Name the 4 heart valves, their types, and their positions.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>AV valves (prevent backflow from ventricle to atrium):</strong> Tricuspid (R atria → R ventricle, 3 cusps) · Mitral/Bicuspid (L atria → L ventricle, 2 cusps). <strong>Semilunar valves (prevent backflow from great vessels):</strong> Pulmonic (R ventricle → pulmonary trunk) · Aortic (L ventricle → aorta).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Where do the coronary arteries originate and what do they supply?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">First branches of the aorta — ostia located just <strong>superior to the aortic semilunar valve</strong>. They supply the <strong>myocardium (heart muscle)</strong> with oxygenated blood. Left and right coronary arteries. Coronary artery disease → myocardial infarction when supply is compromised.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the cremasteric reflex and what does it test?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Lightly stroke inner thigh superior → inferior → scrotum rises on that side (cremaster muscle contracts). Tests integrity of <strong>L1–2</strong> (genitofemoral nerve, genital branch). Absent in upper motor neuron lesions. Also useful to test in acute scrotal pain — absent = testicular torsion until proven otherwise.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the abdominal aorta branches in order from superior to inferior?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Celiac trunk</strong> (liver, spleen, stomach) → <strong>Superior mesenteric A.</strong> (small intestine) → <strong>Renal A.</strong> (kidneys) → <strong>Gonadal A.</strong> (ovaries/testes) → <strong>Inferior mesenteric A.</strong> (large intestine/sigmoid) → splits into <strong>common iliac arteries</strong> at L4.</div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

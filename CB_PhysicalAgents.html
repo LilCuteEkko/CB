@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — Physical Agents</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+
+<div class="hero">
+  <div class="hero-tag">PTH 546 &middot; Michlovitz's Modalities &middot; Clinical Application</div>
+  <h1>Physical Agents <span>&amp; Modalities</span></h1>
+  <p>Cryotherapy, thermotherapy, ultrasound, diathermy, laser, hydrotherapy, traction, compression, and electrotherapy. For each modality: the physics, the physiological effects, the evidence, the clinical indications, the contraindications, the precautions, and the documentation. Modalities support a comprehensive POC — they don't replace exercise, manual therapy, or patient education.</p>
+  <div class="hero-badges">
+    <span class="badge red">Cryotherapy</span>
+    <span class="badge gold">Thermotherapy</span>
+    <span class="badge">Ultrasound</span>
+    <span class="badge purple">Electromagnetic</span>
+    <span class="badge green">Hydrotherapy</span>
+    <span class="badge orange">Traction</span>
+    <span class="badge">Compression</span>
+    <span class="badge gold">Electrotherapy</span>
+  </div>
+</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('intro',this)">Intro &amp; Framework</button>
+  <button onclick="showTab('cryo',this)">Cryotherapy</button>
+  <button onclick="showTab('heat',this)">Thermotherapy</button>
+  <button onclick="showTab('us',this)">Ultrasound</button>
+  <button onclick="showTab('em',this)">Electromagnetic</button>
+  <button onclick="showTab('hydro',this)">Hydrotherapy</button>
+  <button onclick="showTab('traction',this)">Traction</button>
+  <button onclick="showTab('compression',this)">Compression / IPC</button>
+  <button onclick="showTab('estim',this)">Electrotherapy</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ====== INTRO & FRAMEWORK ====== -->
+<div class="tab-panel active" id="tab-intro">
+<div class="container">
+
+  <div class="section-title">Therapeutic Modalities — Framework &amp; Clinical Reasoning</div>
+  <div class="section-sub">Modalities are adjunctive interventions — they complement exercise, manual therapy, and patient education. Used alone, they are rarely sufficient. Used intelligently as part of a comprehensive plan of care, they accelerate recovery, reduce pain, and prepare tissue for the therapeutic work that actually drives long-term outcomes.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Types of Therapeutic Modalities</div>
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Category</th><th>Examples</th><th>Primary Use</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--red);">Thermal</strong></td><td>Cryotherapy (ice), thermotherapy (heat packs, paraffin, Fluidotherapy)</td><td>Pain, edema, muscle spasm, tissue extensibility</td></tr>
+          <tr><td><strong style="color:var(--orange);">Electromagnetic</strong></td><td>Electrotherapy (TENS, NMES), diathermy (SWD, MWD), UV, infrared, laser</td><td>Pain modulation, muscle activation, deep heating, tissue healing</td></tr>
+          <tr><td><strong style="color:var(--teal2);">Mechanical</strong></td><td>Traction (cervical, lumbar), compression (IPC, wraps, garments)</td><td>Spinal decompression, edema management, DVT prevention</td></tr>
+          <tr><td><strong style="color:var(--purple2);">Sound</strong></td><td>Therapeutic ultrasound (1 MHz, 3 MHz)</td><td>Deep heating, tissue extensibility, inflammation, CTS, myofascial pain</td></tr>
+          <tr><td><strong style="color:var(--green);">Hydrotherapy</strong></td><td>Whirlpool, aquatic therapy, pool therapy, PLWS</td><td>Wound care, buoyancy-assisted exercise, relaxation, spasticity</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">When Modalities Are Used — Clinical Staging</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Acute / Inflammatory Phase</div>
+        <p><strong>Cold + compression</strong> are the primary interventions. Cryotherapy limits swelling, reduces pain, decreases secondary hypoxic tissue injury. PRICES (Protection, Rest, Ice, Compression, Elevation, Stabilization). Heat at this stage may aggravate inflammation — generally avoid.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Subacute / Proliferative Phase</div>
+        <p><strong>Ultrasound</strong> or <strong>heat</strong> can facilitate collagen formation and organization. Continuous US before soft tissue mobilization and flexibility exercise. Heat prepares stiff joints and tight muscles before ROM activities. Transition from cold to heat is patient-dependent.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Chronic / Remodeling Phase</div>
+        <p><strong>Heat, diathermy, ultrasound</strong> for tissue extensibility and collagen remodeling. <strong>Electrical stimulation</strong> (NMES) for muscle activation deficits. Modalities prepare the tissue for the exercises that drive remodeling. The modality is not the treatment — the exercise and manual therapy are.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Pain Modulation Mechanisms</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Gate Control Theory</div>
+        <p>Pain signals carried by small myelinated <strong>A-delta</strong> and unmyelinated <strong>C fibers</strong> can be blocked or reduced by sensory input along larger myelinated <strong>A-beta fibers</strong>. Modalities stimulate A-beta fibers (e.g., TENS at high frequency, cold application) → "gate" closes → perceived pain decreases. E-stim specifically targets large afferent A-beta fibers for this mechanism. US, cold, heat, and diathermy also help decrease/modulate noxious sensory input.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Chemical Pain Reduction</div>
+        <p>Following soft tissue injury, bradykinin, PGE1, PGE2, and other chemical irritants are released and facilitate pain transmission. Cold and compression in initial stages reduce swelling and limit production of pain-associated chemicals → reduce pain perception. Modalities can act locally at injury site to limit chemical irritants. Neutrophils and macrophages can be influenced by modalities to move over the site of injury.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Bottom Line</div>
+        <p>The most important principle: <strong>competency with clinical decision-making is the basis for effective patient outcomes.</strong> When identifying an intervention plan, focus on selecting interventions that will most likely achieve positive results — both quantitative (ROM, strength, gait) and qualitative (patient experience, function, return to life). Using modalities as supplements to a comprehensive POC is evidence-based; using them alone is not.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Universal Contraindications &amp; Precautions</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">General Contraindications — Most Modalities</div>
+        <ul style="color:var(--text);font-size:13.5px;padding-left:18px;line-height:1.8;">
+          <li><strong>DVT</strong> (deep vein thrombosis) — risk of embolism</li>
+          <li><strong>Hemorrhagic conditions</strong> — active bleeding</li>
+          <li><strong>Impaired sensation</strong> — no feedback for thermal injury or excessive stimulation</li>
+          <li><strong>Impaired cognition</strong> — cannot report discomfort</li>
+          <li><strong>Electronic implants</strong> (pacemaker, cochlear implants) — interference risk</li>
+          <li><strong>Pregnancy</strong> — especially over abdomen and lumbar spine</li>
+          <li><strong>Active malignancy / cancer</strong> — risk of stimulating tumor growth or metastasis</li>
+        </ul>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Contraindication vs. Precaution</div>
+        <p><strong>Contraindication:</strong> the procedure should NOT be used — doing so may cause harm. Absolute = never use. Relative = use only with extraordinary caution and justification. <strong>Precaution:</strong> patient is at some risk for an adverse event — additional monitoring, modified parameters, informed consent, and close observation required. Document both in the clinical record.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== CRYOTHERAPY ====== -->
+<div class="tab-panel" id="tab-cryo">
+<div class="container">
+
+  <div class="section-title">Cryotherapy — Cold Therapy</div>
+  <div class="section-sub">Cold is the most effective and least expensive mode of acute injury and pain management. Used as a first-aid measure after trauma and as an adjunctive tool throughout rehabilitation. The key insight: cooling is removing heat from tissue, not adding cold. The physics of heat transfer determine which cold agent to select and how long to apply it.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Physiological Effects of Cold</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Hemodynamic Effects</div>
+        <p><strong>Vasoconstriction</strong> of cutaneous blood vessels occurs immediately. Cold thermal sensors (free nerve endings) in skin → stimulate sympathetic adrenergic fibers → vasoconstriction → reduced vessel diameter → reduced blood flow → reduced fluid filtration into tissue. Cold-induced vasoconstriction also occurs to a lesser extent in the contralateral extremity (generalization effect). <strong>CIVD (Cold-Induced Vasodilation — Lewis's Hunting Reaction):</strong> below 50°F (10°C), neurotransmitter substance H (similar to histamine) is released → arteriolar vasodilation → skin temp rises → vasoconstriction resumes → cyclical pattern. Prevents frostbite in distal digits. Located at areas with AV anastomoses (fingers, toes).</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Nerve Conduction Effects</div>
+        <p>Cold increases depolarization threshold, slows nerve conduction velocity, can block conduction completely. <strong>Order of fiber sensitivity to cold (most sensitive first):</strong> A-delta fibers (small myelinated, pain) → C fibers (unmyelinated, pain) affected last. Clinically: cold provides analgesia because A-delta pain fibers are blocked first. Skin temp of 56.5°F (13.6°C) = local analgesia. 50°F (10°C) = 33% reduction in nerve conduction velocity. <strong>After 10 minutes of cold:</strong> may increase isometric force briefly. <strong>Longer than 10 minutes:</strong> decreased muscle performance — avoid muscle force generation tasks immediately after cold application.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Spasticity Reduction (Neuromuscular)</div>
+        <p>Cold reduces spasticity via 2 mechanisms: (1) Reflex decrease in gamma-motoneuron activity through stimulation of cutaneous afferents; (2) Direct decrease in afferent spindle discharge by cooling muscle directly. Effects on spasticity: decreased DTR amplitude, decreased clonus frequency, facilitated alpha motoneuron activity, decreased gamma motoneuron firing. In MS: cold reduces fatigue, spasticity, weakness, balance deficits, gait difficulties — effects last 2–8 hours after removal. Myasthenia gravis: cooling vests improve muscle strength, respiratory function, and fatigue.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Physics of Heat Transfer &amp; Cooling Selection</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">3 Mechanisms of Cold Transfer</div>
+        <p><strong>Conduction</strong> (most common): direct molecular interaction between cold agent and skin. Rate depends on: temperature difference, time, thermal conductivity, type/size of agent, adipose thickness. 1 cm fat → 10 min to reduce muscle temp by 12.5°F. 3–4 cm fat → 60 min for same reduction. After ice pack removal: requires &gt;60 minutes before tissue temp returns to baseline (vs. heat: returns to baseline in 15 min). <strong>Convection:</strong> moving fluid particles take away heat faster than conduction; whirlpool uses this — avoid in acute phase (dependent position = more edema). <strong>Evaporation:</strong> vapocoolant sprays; liquid evaporates on skin → extracts heat; used for trigger points and muscle spasm.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Selecting the Right Cold Agent</div>
+        <table style="width:100%;font-size:12px;border-collapse:collapse;margin-top:4px;">
+          <tr style="color:var(--text3);font-size:10px;font-family:'JetBrains Mono',monospace;border-bottom:1px solid var(--border);"><td style="padding:3px 6px;">Target Area</td><td style="padding:3px 6px;">Best Agent</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 6px;color:var(--text2);">Small area (tendon, bursa, trigger point)</td><td style="padding:4px 6px;color:var(--teal2);">Ice massage</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 6px;color:var(--text2);">Distal extremity</td><td style="padding:4px 6px;color:var(--teal2);">Ice bath / cold bath</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 6px;color:var(--text2);">Distal extremity + edema concern</td><td style="padding:4px 6px;color:var(--gold);">Cold compression unit</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 6px;color:var(--text2);">Joint or large muscle mass</td><td style="padding:4px 6px;color:var(--teal2);">Ice pack (secured with bandage)</td></tr>
+          <tr><td style="padding:4px 6px;color:var(--text2);">Trigger point treatment</td><td style="padding:4px 6px;color:var(--teal2);">Vapocoolant spray (12–18 inches from skin)</td></tr>
+        </table>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Application Guidelines</div>
+        <p>Conductive cooling: 20–30 min (longer for adipose). Deeper tissue cooling goal: avoid activity after cold. Muscle performance goal: avoid force-generating tasks immediately after (performance decreases). Cold application over casts: takes longer to reach target temp. Always test on small skin area first. Cold gel packs give perceived sensation of cold but do NOT actually cool tissue.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">4 Stages of Sensation During Cold Application</div>
+        <p>1. Intense cold → 2. Burning sensation → 3. Aching → 4. Numbness (analgesia). Educating patients about this sequence prevents unnecessary discontinuation. 34°F had 43% higher discomfort than 50°F. Patients adapt over repeated applications — intensity of coldness perceived decreases with repeated treatments.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Clinical Indications &amp; Special Applications</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Primary Indications for Cold Therapy</div>
+        <ul style="color:var(--text);font-size:13.5px;padding-left:18px;line-height:1.8;">
+          <li>Limit edema formation (first 24–48 hours after injury)</li>
+          <li>Reduce pain (analgesia via A-delta blockade)</li>
+          <li>Facilitate muscle relaxation</li>
+          <li>Limit secondary hypoxic tissue injury (reduced metabolism)</li>
+          <li>Post-surgical: prevent rise in intra-articular temperature → reduces swelling and pain</li>
+          <li>Reduce compartment syndrome risk (reduces intramuscular pressure)</li>
+        </ul>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">PRICES Protocol</div>
+        <p><strong>P</strong>rotection · <strong>R</strong>est · <strong>I</strong>ce · <strong>C</strong>ompression · <strong>E</strong>levation · <strong>S</strong>tabilization. Compression limits fluid loss from vessels by increasing external pressure. Elevation reduces capillary hydrostatic pressure → less fluid forced out of vessels. Combining cold + compression improves microcirculation and tissue oxygenation vs. cold alone.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Cryokinetics &amp; Cryostretch</div>
+        <p><strong>Cryokinetics:</strong> cold + exercise. Cold raises pain threshold enough to allow pain-free exercise → improves ROM and strength without pain-inhibited contraction. <strong>Cryostretch:</strong> cold + static stretch or hold-relax PNF. Reduces muscle spasm, decreases exercise-induced muscle soreness, increases ROM. <strong>DOMS:</strong> little evidence that ice reduces DOMS — studies show no difference in ice bath vs. no ice bath for muscle soreness, swelling, or pain after exercise.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Contraindications &amp; Precautions</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Absolute Contraindications to Cryotherapy</div>
+        <ul style="color:var(--text);font-size:13.5px;padding-left:18px;line-height:1.8;">
+          <li><strong>Cold urticaria</strong> — develops hives/wheals on cold exposure</li>
+          <li><strong>Cryoglobulinemia</strong> — blood proteins precipitate to gel with cold → can lead to ischemia or gangrene</li>
+          <li><strong>Raynaud's phenomenon/disease</strong> — vasospastic disorder; fingers change color and experience numbness/tingling; also triggered by emotional stress</li>
+          <li><strong>Paroxysmal cold hemoglobinuria</strong> — red blood cells released in urine with cold exposure</li>
+        </ul>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Precautions for Cold Therapy</div>
+        <ul style="color:var(--text);font-size:13.5px;padding-left:18px;line-height:1.8;">
+          <li>Over an open wound — use caution, document skin response</li>
+          <li>Over a superficial nerve — place small pad between cold source and nerve</li>
+          <li>Impaired circulation</li>
+          <li>Impaired sensation (no feedback for tissue injury)</li>
+          <li>Hypertension</li>
+          <li>Area with jewelry/piercing — remove before application</li>
+          <li>Cold hypersensitivity — test small area first; watch for hives/wheals</li>
+        </ul>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Documentation for Cold Therapy</div>
+        <p>Type of cold agent · Treatment duration · Site of application · Patient position · Use of concurrent compression or elevation · Change in skin appearance · Patient response (pain, edema, ROM changes) · Any adverse responses. Always document before and after skin inspection.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== THERMOTHERAPY ====== -->
+<div class="tab-panel" id="tab-heat">
+<div class="container">
+
+  <div class="section-title">Thermotherapy — Therapeutic Heat</div>
+  <div class="section-sub">Heat promotes relaxation, provides pain relief, increases blood flow, facilitates tissue healing, decreases muscle spasm, and decreases tissue tightness — preparing stiff joints and tight muscles for exercise. Therapeutic effects occur between 104°F and 113°F (40°C–45°C). Knowing what heat does to collagen is essential for understanding why it's used before stretching and manual therapy.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Physiological Effects of Heat</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Metabolic Effects</div>
+        <p>Chemical reactions in cells are temperature-dependent. Each 10°C increase = 2–3× increase in cell metabolic activity and energy expenditure. ↑ Oxygen uptake by tissues. Theoretically: more nutrients available to promote tissue healing. ↑ Cell activity. Caution: increased metabolism can worsen inflammation in acute phase — heat is contraindicated acutely.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Vascular Effects</div>
+        <p>Vasodilation results from: (1) axon reflex, (2) release of chemical mediators including histamine and prostaglandins (producing mild inflammatory reaction), (3) local spinal cord reflex. Enzyme kallikrein from sweat glands → acts on kininogen → releases bradykinin → vasodilation. Blood flow to the feet can be increased by applying heat to the lower back (reflex vasodilation). Fine motor tasks: heat → improved performance. Cold → decreased fine motor performance. Both cold and heat are appropriate for muscle spasm (heat via relaxation, cold via analgesia).</p>
+      </div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Connective Tissue Effects — Why Heat Before Stretching</div>
+        <p><strong>Plastic deformation/elongation:</strong> viscous properties of connective tissue permit residual elongation after stretch is applied then released. Heat: ↑ elasticity, ↓ viscosity, ↓ joint stiffness, ↑ muscle flexibility. Two factors required: temperature elevation (site, time, amount) + stretch (duration, amount, velocity). Three techniques for permanent collagen elongation: (1) constant load overcoming tissue elasticity, (2) rapid stretch then hold, (3) slow steady constant-rate stretch. Collagen at therapeutic temp is more extensible — stretch applied during heating produces greater and more lasting gains.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Neuromuscular Effects</div>
+        <p>Functional brain imaging shows central effects of non-noxious warming: increased activity of thalamus and posterior insula (supports psychosomatic benefits of heat). Pain → reflexive tonic muscle contraction → pain-spasm-pain cycle. Heat reduces this cycle by: decreasing muscle spindle firing rates, reducing pain (via improved blood flow and chemical mediator clearance), promoting relaxation. Type II muscle spindle afferents (respond to tonic stretch) are altered by heating.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Heat Modalities — Selection &amp; Application</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Moist Heat Packs (Hot Packs)</div>
+        <p>Stored in thermostatically controlled cabinet at 158°F–167°F (70°C–75°C). Cover with 6–8 layers of terry cloth/towels (damp towels preferred). Monitor patient after ~5 min — inspect skin color, obtain subjective report. <strong>Do NOT let patient lie on the pack.</strong> Heat pack should not be secured so tightly that patient cannot remove it. Does NOT retain heat after ~20 min. Passive intervention — cannot exercise simultaneously. <strong>Application time:</strong> 15–30 min. Advantages: ease of use, moist comfortable heat, inexpensive. Disadvantages: no temp control once applied, doesn't conform to all body parts.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Paraffin Wax</div>
+        <p>Melted paraffin applied to distal extremities (fingers, hand, foot). Heats slowly — good for sensitive skin. Low burn risk. <strong>Dip and wrap:</strong> 8–10 dips, then wrap; treatment time 15–30 min (more practical). <strong>Dip and re-immerse:</strong> once "glove" formed, leave in bath 10–20 min — avoid if edema present. Lubricates/conditions skin (mineral oil content). Useful for: scarred skin, RA in non-flare stages, systemic sclerosis. <strong>Using wax alone is not as beneficial</strong> — must follow with active exercise (improves ROM, stiffness, grip). Not for open wounds.</p>
+      </div>
+      <div class="bl-strip purple" style="margin-bottom:8px;">
+        <div class="bl-label">Fluidotherapy (Convective Heat)</div>
+        <p>Dry-heat modality using forced convection through a fluidized bed of cellulose particles. Patient submerges distal extremity. <strong>Best for:</strong> distal extremities. Produced greatest tissue temp increase compared to other modalities (higher temps tolerated in dry environment). Temperature is controllable. Patient can perform exercises during treatment. Uses: increase soft tissue extensibility, reduce joint stiffness with active or passive movement.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Wearable Heat Wraps</div>
+        <p>Air-activated wraps (iron powder + activated charcoal + NaCl + water) worn up to 8 hours. Can be worn during ADLs, work, and sleep. Uses: improve trunk flexibility, reduce pain (comparable to OTC analgesics), reduce muscle stiffness. <strong>Electric heating pads:</strong> low-level heat over long duration; risk of burns if left unattended; don't use during sleep.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Contraindications to Thermotherapy</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Lack of sensation at the affected area (cannot report overheating)</li>
+        <li>Vascular disease at the affected area (impaired heat dissipation)</li>
+        <li>Areas of active hemorrhage</li>
+        <li>Areas with cancer/malignancy</li>
+        <li>Areas with acute inflammation</li>
+        <li>Infected areas</li>
+        <li>Where heat rubs have recently been applied</li>
+        <li>Whenever patient is deemed unreliable: language barriers, impaired cognition, inability to give consent</li>
+      </ul>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">Before Applying Heat</div>
+        <p>Determine patient's circulation status and sensitivity to temperature/pain. Test small area of skin first with hot and cold water. Test pain sensation with pin prick vs. blunt (establishes pain threshold). Patients who are overweight: heat accumulates MORE in skin (due to adipose insulation) → greater skin temp increase, lower muscle temp increase. Monitor closely.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Heat vs. Cold — Clinical Decision</div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">When to Choose Cold</div>
+        <p>Acute stages of inflammation (first 24–48 hrs). Heat at this stage may aggravate inflammation. Reducing acute edema, limiting secondary hypoxic injury. Post-surgical immediately after procedure. Cold also good for muscle spasm (analgesic mechanism). After cold: avoid muscle force-generating tasks for longer than after heat (tissues remain cold longer).</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">When to Choose Heat</div>
+        <p>Subacute and chronic stages. Decreasing stiffness and increasing CT extensibility. Before stretching, manual therapy, joint mobilization. Muscle spasm relaxation. Distal extremities (better tolerated than cold modalities at these sites). Psychologically better tolerated than cold. Moist heat penetrates slightly deeper than dry heat. Dry heat can elevate surface temps to a greater degree.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Documentation for Thermotherapy</div>
+        <p>Thermal modality used · Method of application + duration · Body area treated · Patient position · Special precautions or application concerns. One modality at a time. Decision based on: diagnosis, medical status, objective findings.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== ULTRASOUND ====== -->
+<div class="tab-panel" id="tab-us">
+<div class="container">
+
+  <div class="section-title">Therapeutic Ultrasound</div>
+  <div class="section-sub">One of the most commonly used — and misused — biophysical agents in PT. 82.4% of physical therapists use US; 36.4% use it daily. The evidence base is strong for specific conditions (myofascial pain, back pain, CTS, arthritis) but weak for others. Understand the physics, select parameters based on what you're treating, and apply to the right area size — the most common clinical mistake is treating too large an area.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Physical Principles &amp; Parameters</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">What Ultrasound Is</div>
+        <p>High-frequency mechanical (acoustic) sound waves above human hearing (15,000–20,000 Hz). Delivered via piezoelectric crystal in the sound head. Aqueous gel used between transducer and skin to couple the wave. Compressions (increased molecular density) + rarefactions (decreased density) = acoustic wave. When wave is absorbed by tissue, kinetic energy converts to thermal energy. Range: 0.75–3.3 MHz.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Frequency — Depth of Penetration</div>
+        <p><strong>Depth is inversely proportional to frequency.</strong> <strong>1 MHz:</strong> deeper penetration (up to 5 cm) — use for deeper structures (hip, large joints). <strong>3 MHz (3.3 MHz):</strong> more superficial penetration (1–2 cm) — use for superficial structures (hand tendons, superficial ligaments). Dense connective tissues (ligaments, tendons) absorb US better than muscle or fat → US heats dense collagen more effectively. US applied to tendons: significantly greater and faster temp rise than muscle.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Continuous vs. Pulsed — Thermal vs. Nonthermal</div>
+        <p><strong>Continuous US (100% duty cycle):</strong> primarily thermal effects — heating. Used for: tissue extensibility, collagen remodeling, chronic inflammation. <strong>Pulsed US (20%, 50% duty cycle):</strong> primarily nonthermal effects — cavitation and acoustic streaming. Used for: acute inflammation, wound healing, nonthermal tissue effects. Most US machines: at least three duty cycles (20%, 50%, 100%). Duration: limit to 5–10 min (insurance often caps at 8 min). Treatments: 2–3×/week for 10–15 treatments typical course.</p>
+      </div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Critical Application Rule — Area Size</div>
+        <p><strong>Applying US over too large an area is the biggest clinical mistake.</strong> US must be applied in an area preferably <strong>2–4× the ERA (Effective Radiating Area)</strong> of the sound head. Too large = inadequate dose to target tissue. Vigorous heating = ~7°F increase in tissue. Keep the sound head perpendicular (90°) to skin — not angled. To minimize hot spots: use device with <strong>BNR (beam nonuniformity ratio) ≤ 3</strong>.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Nonthermal Effects — Cavitation &amp; Acoustic Streaming</div>
+        <p><strong>Cavitation:</strong> formation of gas bubbles in tissue from acoustic pressure. Stable cavitation (at safe parameters) = micro-oscillation of bubbles → positive cell membrane effects. Unstable cavitation (excessive intensity) = bubble collapse → tissue damage. <strong>Acoustic streaming:</strong> forward movement of fluid by US waves → cell membrane effects, altered permeability, enhanced metabolic activity. Both affect membrane properties and may enhance tissue repair at cellular level.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Evidence by Condition &amp; Contraindications</div>
+      <div class="bl-strip green" style="margin-bottom:8px;">
+        <div class="bl-label">Strong Substantiated Evidence (Continuous US)</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li><strong>Myofascial pain syndrome / trigger points</strong> — 60% improvement</li>
+          <li><strong>Back pain</strong> — optimal: 1MHz, continuous, 1–2 W/cm², 3×/week × 10 min × 4 weeks</li>
+          <li><strong>Carpal tunnel syndrome</strong> — positive functional outcomes + pain reduction</li>
+          <li><strong>Arthritis</strong> — 67% positive outcomes (pain reduction, ROM, function)</li>
+        </ul>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Moderate Substantiated Evidence (Continuous US)</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li>Nonspecific shoulder conditions — more improvement in ROM than pain</li>
+          <li>Calcific tendinitis</li>
+          <li>Bursitis (7/8 studies = decreased pain, increased ROM)</li>
+        </ul>
+      </div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Contraindications — Continuous US</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li>Pregnancy — over abdomen or low back</li>
+          <li>Active bone growth at epiphysis (pediatric patients)</li>
+          <li>Cancer — over known or suspected malignancy</li>
+          <li>Tuberculosis infection</li>
+          <li>Hemorrhagic conditions — over active bleeding area (can use near hematoma)</li>
+          <li>Impaired circulation</li>
+        </ul>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Precautions — Continuous US</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li>Plastic or cemented implants — moderate evidence for damage</li>
+          <li>Spinal cord and superficial or regenerating nerves</li>
+        </ul>
+      </div>
+      <div class="bl-strip orange" style="margin-bottom:8px;">
+        <div class="bl-label">Precautions — Pulsed US (Additional)</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li>Active bone growth at epiphysis (precaution, not absolute contraindication)</li>
+          <li>Areas of infection (under tension/abscess)</li>
+          <li>Acute injury — signs of active inflammation</li>
+          <li>Impaired sensation — no thermal feedback</li>
+          <li>Impaired cognition — no feedback about burning</li>
+          <li>Skin disease / damaged skin</li>
+        </ul>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Documentation for US</div>
+        <p>Intensity (W/cm²) · Frequency (1, 3, or 3.3 MHz) · Duty cycle (20%, 50%, 100%) · Duration (minutes) · Sound head size · Treatment area · Coupling agent (gel, gel pad, underwater) · Patient position · Patient response.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== ELECTROMAGNETIC ====== -->
+<div class="tab-panel" id="tab-em">
+<div class="container">
+
+  <div class="section-title">Electromagnetic Modalities — Laser, Diathermy &amp; PEMF</div>
+  <div class="section-sub">The electromagnetic spectrum provides multiple therapeutic tools with different penetration depths and tissue targets. Laser targets superficial chromophores for photobiostimulation. Diathermy heats deep tissues (3–5 cm) via electromagnetic waves — the best choice for large muscles and large joints where ultrasound's limited area coverage is inadequate. PEMF promotes tissue healing through nonthermal mechanisms.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Laser Therapy — Low-Level (LLLT) &amp; High-Intensity (HILT)</h4>
+      <div class="ma-tags"><span class="ma-tag">Eye protection required</span><span class="ma-tag gold">Chromophores absorb 700–1200nm</span><span class="ma-tag red">Contraindicated over eyes</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Physical Properties</div>
+            <p><strong>LASER:</strong> Light Amplification by Stimulated Emission of Radiation. <strong>Monochromaticity:</strong> produces single wavelength (expressed in nm) — either infrared (invisible) or visible color. Amount absorbed by biological tissue depends on wavelength. <strong>Class 3b (LLLT):</strong> ≤500 milliwatts. <strong>Class 4 (HILT):</strong> &gt;500 milliwatts. LLLT = photobiostimulatory effects (nonthermal). HILT positive outcomes = primarily from thermal effects. Both require <strong>protective eyewear for patient AND clinician</strong> — risk of retinal damage.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Chromophores &amp; Wavelength Absorption</div>
+            <p><strong>Chromophores:</strong> photosensitive molecules within cell membranes and organelles that absorb specific wavelengths. <strong>Mitochondrial cytochromes:</strong> absorb 700–1200 nm. <strong>Myoglobin and hemoglobin:</strong> absorb 400–700 nm. Mitochondrial chromophore stimulation: ↑ respiratory chain activity, ↑ ATP synthesis, cellular repair and reproduction, ↑ pro-collagen mRNA production. Increased osteoblastic proliferation observed in vitro.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Physiological Effects</div>
+            <p><strong>Inflammation:</strong> Infrared laser → vasodilation via increased histamine and nitric oxide → decreased tissue ischemia + increased perfusion. Also decreases PGE2 (prostaglandin E2 — key inflammatory mediator) in patients with Achilles tendinitis. <strong>Pain:</strong> Infrared laser → increased beta-endorphin (endogenous opiate) + decreased bradykinin and kallikrein (pro-inflammatory/pain mediators) + suppression of C-fiber depolarization + decreased motor and sensory conduction velocity. <strong>Tissue repair:</strong> increased vasodilation (NO release from RBCs), enhanced oxygenation, increased ATP in lymphocytes.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Contraindications for Laser</div>
+            <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+              <li>Direct eye irradiation — retinal damage</li>
+              <li>Over malignancy</li>
+              <li>Over pregnancy (abdomen/lumbar)</li>
+              <li>Photosensitive patients (certain medications or conditions)</li>
+              <li>Skin with tattoos or dark pigmentation (absorbs more energy)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Diathermy — SWD, MWD, PSWD &amp; PEMF</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Inductive heats muscle</span><span class="ma-tag">Capacitive heats fat/skin</span><span class="ma-tag red">Remove all metal first</span><span class="ma-tag purple">Best for large areas/joints</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Types of Diathermy</div>
+            <p><strong>SWD (Shortwave Diathermy):</strong> electromagnetic waves from radio frequency range. Power output 55–500W. Can raise tissue temp to 99.5°F–111.2°F (37.5°C–44°C). Two methods: capacitive (electric field) and inductive (magnetic field). <strong>MWD (Microwave Diathermy):</strong> 2,450 MHz frequency; generated by magnetron. <strong>PSWD (Pulsed Shortwave Diathermy):</strong> bursts of EM waves with pulse duration 40–400 microseconds. Good for mild/moderate heating; suitable for acute conditions at nonthermal levels. <strong>PEMF (Pulsed Electromagnetic Fields):</strong> very low average power (≤1W); primarily nonthermal; promotes tissue healing via facilitation of cellular metabolism and ionic fluctuation.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Capacitive vs. Inductive — Key Clinical Distinction</div>
+            <p><strong>Capacitive (electric field):</strong> body part placed between two electrodes; oscillating electric current flows through body; greatest heating in <strong>skin and subcutaneous fat</strong> (high resistance to current). <strong>Inductive (magnetic field):</strong> inductive drum placed over tissues; oscillating magnetic field induces "eddy currents" in conducting tissues; greatest heating in <strong>low-impedance, high-conductivity tissues (skeletal muscle, blood)</strong>; less heating of fat and skin. <strong>Clinical rule:</strong> Inductive &gt; capacitive for deep muscle heating. Capacitive &gt; inductive for superficial fat heating.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip green" style="margin-bottom:8px;">
+            <div class="bl-label">When Diathermy Is the Best Choice</div>
+            <p>Diathermy heats to 3–5 cm depth (vs. hot pack ~1 cm, US = small area). Two primary advantages over US: (1) <strong>greater depth of heating</strong>, (2) <strong>can heat larger area</strong>. Best choice for: large joints (knee, shoulder, hip), large muscle groups (hamstrings, quadriceps), conditions requiring deep vigorous heating of a large volume of tissue. Risk of burns less than conductive heating modalities (hot packs). Treat 15–30 min; peak muscle temp increase at 15 min then slight decline at 20 min.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Application — Critical Steps</div>
+            <p>Explain purpose to patient · Remove ALL metal (jewelry, keys, belt buckles, coins) from treatment area and patient · Position on NON-metallic table or chair · Place one layer of terry cloth or cotton towel over skin · Position applicator appropriately (capacitive: 1–3 inches from skin; inductive drum: almost touching towel; microwave: 1–3 inches parallel to skin) · Instruct patient NOT to move body part and NOT to touch device during treatment · Slowly increase intensity · Monitor patient throughout.</p>
+          </div>
+          <div class="bl-strip orange">
+            <div class="bl-label">Diathermy Contraindications</div>
+            <p>Electronic implants (pacemakers, cochlear implants, neurostimulators) · Metal implants in treatment field · Pregnancy · Malignancy · Eyes · Testes (temperature-sensitive for spermatogenesis) · Areas of impaired sensation · Areas of active bleeding or hemorrhagic conditions · Growth plates in children</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">US vs. Diathermy — Clinical Decision Guide</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table" style="margin:0;">
+      <thead><tr><th>Feature</th><th>Ultrasound</th><th>Diathermy (SWD Inductive)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Depth of heating</strong></td><td>Up to 5 cm (1 MHz); 1–2 cm (3 MHz)</td><td class="ok">3–5 cm deep</td></tr>
+        <tr><td><strong>Area of tissue heated</strong></td><td class="warn">Small (2–4× sound head ERA)</td><td class="ok">Large (entire joint or large muscle)</td></tr>
+        <tr><td><strong>Best tissue target</strong></td><td>Dense collagen: tendons, ligaments, joint capsules</td><td>High-fluid tissue: skeletal muscle, blood</td></tr>
+        <tr><td><strong>Best clinical use</strong></td><td>Small structure (CTS, calcific tendinitis, trigger points)</td><td class="ok">Large joint (knee, shoulder), large muscle (hamstrings)</td></tr>
+        <tr><td><strong>Nonthermal effects</strong></td><td class="ok">Yes (cavitation, acoustic streaming)</td><td>Minimal (PEMF only)</td></tr>
+        <tr><td><strong>Metal implants</strong></td><td class="bad">Precaution (can concentrate energy)</td><td class="bad">Contraindication</td></tr>
+        <tr><td><strong>Burn risk</strong></td><td class="warn">Moderate (stationary = hot spots)</td><td class="ok">Lower than hot packs</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- ====== HYDROTHERAPY ====== -->
+<div class="tab-panel" id="tab-hydro">
+<div class="container">
+
+  <div class="section-title">Hydrotherapy</div>
+  <div class="section-sub">Water has unique physical properties that make it a versatile therapeutic medium. Buoyancy reduces gravitational load on joints. Viscosity provides graded resistance. Hydrostatic pressure promotes venous return and edema reduction. Temperature controls vasomotor response. Understanding these four properties is the foundation of all aquatic PT clinical decision-making.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Physical Properties of Water — The 4 Key Forces</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Buoyancy — Archimedes' Principle</div>
+        <p>Buoyant force on an immersed body equals the weight of fluid displaced. Reduces gravity's effect on the body — decreasing weight-bearing on the lower extremities. <strong>Depth determines % body weight borne:</strong></p>
+        <table style="width:100%;font-size:12px;border-collapse:collapse;margin:6px 0;">
+          <tr style="background:var(--bg3);"><td style="padding:4px 8px;color:var(--teal2);font-family:'JetBrains Mono',monospace;font-size:10px;">DEPTH OF IMMERSION</td><td style="padding:4px 8px;color:var(--teal2);font-family:'JetBrains Mono',monospace;font-size:10px;">% BODY WEIGHT BORNE</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 8px;color:var(--text2);">Neck-deep</td><td style="padding:4px 8px;color:var(--green);font-weight:600;">~10%</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 8px;color:var(--text2);">Xiphoid process</td><td style="padding:4px 8px;color:var(--gold);font-weight:600;">~33%</td></tr>
+          <tr><td style="padding:4px 8px;color:var(--text2);">Anterior superior iliac spine (ASIS)</td><td style="padding:4px 8px;color:var(--orange);font-weight:600;">~50%</td></tr>
+        </table>
+        <p>Exercising WITH buoyancy = assisted exercise. Exercising AGAINST buoyancy = resisted exercise. Clinically: post-surgical rotator cuff patient in neck-deep water can use buoyancy to assist shoulder flexion to 90° — impossible on land due to pain and weakness.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Viscosity &amp; Drag Force</div>
+        <p><strong>Viscosity:</strong> internal friction between water molecules resists limb movement. Faster movement = greater resistance (protective property — if patient stops pushing due to pain, resistance instantly drops to zero). <strong>Drag force:</strong> parallel to direction of movement but opposite direction. Doubling velocity = quadruples drag force (velocity²). Paddle held flat = more drag than turned sideways. Moving downward in water = drag + buoyancy combined resistance. Turbulent flow (whirlpool) increases viscosity → more resistance to movement.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Hydrostatic Pressure</div>
+        <p>Water exerts force equally from all directions at a given depth. Greater pressure at feet than shoulders when standing in pool. Clinically: promotes venous return from LE to proximal → beneficial for lymphedema, edema reduction, venous insufficiency. Combined with viscosity → increases lymph flow. <strong>Key point: the deeper the body part is immersed, the greater the hydrostatic pressure.</strong> Hydrostatic pressure against the chest inhibits lung expansion → total work of breathing increases 60% at neck-deep immersion (1L tidal volume).</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Dive Reflex (Immersion Response)</div>
+        <p>Full-body or face immersion triggers the dive reflex: <strong>bradycardia + peripheral vasoconstriction + preferential shunting of blood to vital organs.</strong> BP may be blunted by bradycardia. Enhanced venous return → increased right atrial pressure → increased cardiac output (if normal cardiac mechanics). Patients with cardiovascular deficits may not tolerate these changes. Enter water slowly, wet face and hands first. <strong>Heart rate monitoring during aquatic exercise is unreliable — use RPE (Rate of Perceived Exertion) instead.</strong></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Physiological Effects by System</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Cardiovascular &amp; Hemodynamic</div>
+        <p>Warm water (&gt;80.6°F/27°C) → vasodilation → increased local circulation. Cold water (&lt;80.6°F/27°C) → vasoconstriction. Hydrostatic pressure → increased venous return → increased cardiac output. Dive reflex may reduce HR despite increased venous return. Avoid sudden full-body cold immersion in cardiac patients.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Renal &amp; Fluid Balance</div>
+        <p>Immersion causes increased urine output (diuresis), increased sodium excretion, and increased potassium excretion — especially enhanced in cold water. Clinical implication: <strong>patients should empty their bladders before entering a therapeutic pool.</strong> This is not a minor consideration — plan accordingly in scheduling and patient preparation.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Muscular &amp; Neurological</div>
+        <p>Warm water immersion → increased O2 delivery to muscle + removal of metabolic waste (via reflex changes in blood vessel tone + hydrostatic compressive effect). Clinical use: muscle spasm relaxation via increased blood flow + breaking pain/spasm cycle through sensory stimulation of skin. Muscle strength increases with water exercise, especially against turbulence. Warm water = relaxing (neurological). Cold water = invigorating/stimulating.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Aquatic Therapy Clinical Uses</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li>Relaxation and pain management</li>
+          <li>Gait training with reduced joint stress (graded weight-bearing by depth)</li>
+          <li>Muscle strengthening against buoyancy/turbulence resistance</li>
+          <li>Spasticity reduction — slow rhythmical rotary movements</li>
+          <li>Vestibular stimulation</li>
+          <li>Edema reduction via hydrostatic pressure</li>
+          <li>Lymphedema management</li>
+          <li>Improved psychological/emotional outlook</li>
+          <li>Restored mobility (buoyancy-assisted ROM)</li>
+          <li>Case example: CP patient performed slow rhythmic rotary pool movements → improved lower extremity tone → less spasticity → more normal gait</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Whirlpool — Indications, Precautions, Contraindications</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Whirlpool Temperature Selection</div>
+        <p><strong>Cold whirlpool:</strong> acute sprains/strains → pain and swelling control. <strong>Warm whirlpool:</strong> subacute/chronic stages → facilitates motion, exercise, softens scar tissue, reduces pain, promotes ROM. Post-orthopedic surgery (after wounds fully healed): soften scar tissue, reduce pain, restore motion. Cast removal: fluidity and pressure help remove dry scaly skin; warmth aids mobility. <strong>Do NOT use whirlpool for wounds</strong> in acute phase — dependent position increases edema. PLWS preferred for all wound care.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">MSK Conditions Treated by Whirlpool</div>
+        <p>Sprains and strains · Contractures · Post-surgical repair of joints and soft tissues · Healing fractures of bones · Osteoarthritis · Rheumatoid arthritis (in non-flare). Turbine motor creates agitation. Patient monitoring required continuously — especially for decreased mental function or medication-induced drowsiness (muscle relaxers, sedatives). Always have complete medication list.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Whirlpool Contraindications</div>
+        <p>Acute bleeding · DVT · Cardiac instability · Severe peripheral vascular disease · Severe hypertension · Maceration of wounds with infection risk · Open wounds in acute phase (infection concern, dependent position) · Urinary incontinence (pool sanitation) · Bowel incontinence · Fever / systemic infection · Altered mental status without direct supervision</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">PLWS — Pulsed Lavage With Suction</div>
+      <div class="bl-strip green" style="margin-bottom:8px;">
+        <div class="bl-label">Why PLWS Replaced Whirlpool for Wound Care</div>
+        <p>PLWS delivers a controlled pulsating pressurized stream of irrigants to wounds, then suctions the effluent. <strong>PLWS is preferred over whirlpool for wound cleansing/debridement because:</strong> (1) Decreased risk of tissue damage, (2) No cross-contamination risk, (3) Treatment can be performed with limb in a <strong>non-dependent position</strong> (reduces edema risk), (4) Targeted irrigation, (5) Better infection control. Standard of care for open wound hydrotherapy in modern PT practice.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Documentation — Hydrotherapy</div>
+        <p><strong>Aquatic therapy:</strong> water temperature · duration · goals · movement/exercise techniques · assistive equipment · means of entry/exit · vital signs · adverse reactions · post-pool changes in impairments. <strong>Whirlpool:</strong> type · body part · water temperature · agitation (mild/moderate/full, directed at or away from body) · duration · passive or active · patient response. <strong>PLWS:</strong> wound location/size/characteristics · irrigation pressure (psi) · patient response · wound response (bleeding, debridement, exudate) · duration.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== TRACTION ====== -->
+<div class="tab-panel" id="tab-traction">
+<div class="container">
+
+  <div class="section-title">Spinal Traction</div>
+  <div class="section-sub">Traction applies tensile forces to the long axis of the spine. Evidence is mixed — no definitive criteria exist for which patients will respond most favorably. The clinical consensus: traction cannot be the sole intervention. Manual therapy, exercise, and neural mobilizations have stronger evidence for cervical and lumbar spine dysfunction and should be considered first-line, with traction as second-line or complementary. When used, the rule is simple: traction should never cause or increase symptoms.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Proposed Biomechanical &amp; Physiological Effects</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Cervical Traction Effects</div>
+        <p>Increases intervertebral space. Fluid exchange and nutrient transport within disc may be enhanced (duration of effect unknown). Intervertebral foramina dimensions increase during application — may reduce nerve root compression. Limited evidence suggests disc herniation extension is reduced immediately after traction. Evidence conflicting on effects on cervical musculature.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Lumbar Traction Effects</div>
+        <p>During passive traction, intradiscal pressures can be reduced or become negative. (Patient-generated forces can increase intradiscal pressure — differentiate passive from active). Herniated disc material suggested to reduce during traction in some subjects — most evidence suggests effect is temporary and rapidly returns when traction ceases. May increase blood flow in musculature commensurate with pain reduction. Cumulative effects with repeated sessions: limited evidence.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">The Most Important Rule</div>
+        <p><strong>Traction should NEVER cause or increase symptoms.</strong> A modest pulling or stretching sensation near the spine during treatment is common and acceptable — this is not an indication to stop. If symptoms increase peripherally (radiating pain worsens distally), stop immediately and reassess. Conservative dosage for initial application. Establish favorable or at least neutral patient response before progressing.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Cervical vs. Lumbar — Setup &amp; Dosage</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Cervical Traction Setup</div>
+        <p>Patient supine. Harness placed at occiput — wedges contact along inferior cranium (not over posterior cranium). Adjust sagittal angle via table height. Add pillows/bolster under knees for comfort. Small insulated hydrocollator packs across upper thoracic/scapular region help relaxation (negligible direct therapeutic value). Patient given safety switch. Minimum 2–3 minutes of observation after initiation. Typical tension range: <strong>10–25 lbs upper limit</strong> for intermittent cervical traction. Dosage variables: static vs. intermittent, angle, amount of tension, duration, cycle timing.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Lumbar Traction Setup</div>
+        <p>Supine (preferred if patient gets most relief from lying with hips/knees flexed) or prone. Pelvic harness placed with upper strap <strong>superior to iliac crests</strong> — seats against bony prominence to prevent slipping. Thoracic harness anchored to fixed table segment. Patient's lumbosacral junction positioned over the split between mobile and stationary table segments. Knees supported. Table lock released when tension applied — mobile segment glides distally. Dosage variables: position, angle, static vs. intermittent, tension amount, duration.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Home Traction &amp; Inversion</div>
+        <p>Cervical: over-door traction devices available for home use — patient controls tension via weight of bag filled with water. Technique must be taught clinically first. <strong>Inversion therapy:</strong> gravity-facilitated lumbar traction using inversion table — does not require clinical setting. Contraindicated in same conditions as mechanical traction. Cannot be sole intervention. No high-quality evidence of superiority to mechanical traction.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Contraindications for Traction</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Acute cervical trauma</strong>, including whiplash-associated disorders</li>
+        <li><strong>Osteoporosis or osteopenia</strong> — tensile forces risk fracture</li>
+        <li><strong>Steroid use</strong> or other medications that compromise bone integrity</li>
+        <li><strong>Rheumatoid arthritis</strong> — atlantoaxial instability risk; also ankylosing spondylitis</li>
+        <li><strong>Joint hypermobility/instability</strong> — distraction worsens instability</li>
+        <li><strong>Pregnancy</strong></li>
+        <li><strong>Prior surgical stabilization</strong> or decompression at the level being treated</li>
+        <li><strong>Spinal implants or prosthetic discs</strong></li>
+        <li><strong>Non-mechanical pain</strong> — traction only appropriate for mechanical spinal pain syndromes</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Precautions &amp; Clinical Reasoning</div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Precautions</div>
+        <ul style="color:var(--text);font-size:13.5px;padding-left:16px;line-height:1.8;">
+          <li><strong>Claustrophobia</strong> — harness application may trigger anxiety</li>
+          <li><strong>COPD / respiratory disorders</strong> — lumbar harness uncomfortable; supine position may compromise breathing</li>
+          <li><strong>Severe kyphosis or protracted scapulae</strong> — positioning requires modification</li>
+          <li>Elderly patients — monitor hot packs more closely (impaired heat dissipation)</li>
+        </ul>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">When Is Traction Appropriate?</div>
+        <p>Traction is a second-line or complementary intervention. For patients who have not responded to manual therapy and exercise, or for whom traction complements an ongoing multimodal plan. Cannot be a sole intervention. Patient and practitioner must communicate about expectations. Peripheral symptom changes (radiating pain, numbness, tingling) during traction require immediate attention and possible cessation. Sound clinical reasoning based on individual patient factors — not a protocol.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== COMPRESSION / IPC ====== -->
+<div class="tab-panel" id="tab-compression">
+<div class="container">
+
+  <div class="section-title">Compression &amp; Intermittent Pneumatic Compression (IPC)</div>
+  <div class="section-sub">Compression elevates interstitial pressure above venous and lymphatic pressure — directing counterpressure against fluid outflow from compromised vessels, reducing accumulation in the interstitial space. IPC (intermittent pneumatic compression) applies this principle mechanically via a sleeve and pump. Critical rule: <strong>early mobilization is always the most important VTE prevention strategy</strong> — IPC is adjunctive, not a substitute for getting patients moving.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Mechanism &amp; Indications</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">How IPC Works</div>
+        <p>Mechanical pump + sleeve = delivers rhythmic compression. Compression elevates interstitial fluid pressure above venous/lymphatic pressure → fluid moves from interstitial space back into vessels → drainage. Forward propulsion of blood flow accelerated up to 200% peak velocity → prevents venous stasis → clears valve sinuses. Arterial capillary pressure ~30 mmHg → IPC pressure above 30 mmHg assists arteriovenous pressure gradient → encourages edema absorption.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Edema — Most Common Indication</div>
+        <p>Edema occurs when abnormal fluid collects in interstitial space (increased vascular permeability, lymphatic blockage, venous obstruction, inflammation, reduced plasma proteins, electrolyte imbalances, dependent limb position). Consequences: joint pain, limited ROM, increased metabolic demand of ambulation, infection susceptibility if lymph system impaired. <strong>Critical rule: always determine the cause of edema before treating it.</strong> Thorough history + careful examination before IPC. <strong>Acute edema following trauma: do NOT treat with IPC</strong> — may increase bleeding. Always rule out DVT before applying IPC.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">DVT / VTE Prevention (Post-THR, TKR)</div>
+        <p>Orthopedic surgery significantly increases VTE risk. IPC used post-THR and TKR to prevent DVT. <strong>Most important VTE prevention: early mobilization</strong> — getting patients moving as soon as hemodynamically stable, even in the ICU, is more effective than any passive intervention. IPC is adjunctive. Both strategies should be used simultaneously.</p>
+      </div>
+      <div class="bl-strip purple" style="margin-bottom:8px;">
+        <div class="bl-label">Peripheral Artery Disease (PAD)</div>
+        <p>PAD affects 12–14% of the general population → intermittent claudication, low functional capacity, risk of critical limb ischemia and limb loss. Sequential IPC from distal to proximal → empties capacitance vessels → expels blood proximally → increases arteriovenous pressure gradient → augments arterial inflow. PAD exercise Rx (ACSM): weight-bearing aerobic exercise 3–5 days/week + resistive exercise 2 days/week.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Venous Stasis Ulcers &amp; Lymphedema</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Venous Stasis Ulcers</div>
+        <p>Cause: venous hypertension from valvular incompetence and/or vein obstruction. Risks: prolonged immobility, obesity, calf muscle pump dysfunction, pregnancy. IPC mimics the gastrocnemius/soleus muscle pump. Sleeve fills → collapses superficial venous system → forces blood into deep system → subcutaneous pressure increase prevents leaking of blood, fibrin, and protein from skin capillaries. Monitor effectiveness: serial wound measurements (depth, width, diameter), wound tracing, photography. Electrical stimulation also used for venous stasis ulcers.</p>
+      </div>
+      <div class="bl-strip red" style="margin-bottom:8px;">
+        <div class="bl-label">Lymphedema — Critical Safety Rule</div>
+        <p>Lymphedema can worsen with ANY trauma to the involved limb. <strong>When treating lymphedema with IPC: all healthcare providers must AVOID assessing blood pressure, performing vein puncture, or arterial puncture on any limb at risk for or with known lymphedema.</strong> Facilities use limb ID bracelets to alert all providers. Violation of this rule risks acute lymphedema exacerbation. 10% of women with gynecological cancer develop LE lymphedema.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">IPC Contraindications</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li>Acute DVT in involved limb — risk of embolization</li>
+          <li>Acute inflammation (thrombophlebitis, cellulitis, infected wound)</li>
+          <li>Acute fracture in treated limb</li>
+          <li>Congestive heart failure (fluid shifts may not be tolerated)</li>
+          <li>Arterial insufficiency — may worsen ischemia</li>
+          <li>Acute trauma edema — may increase bleeding</li>
+          <li>Skin breakdown or gangrene in the area</li>
+          <li>Pulmonary edema</li>
+        </ul>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Documentation for IPC</div>
+        <p>Vital signs before/during/after · Circumferential measurements before and after · Area treated · Wound size/description if present · Patient position · Inflation pressure (mmHg) · On:off ratio · Total treatment time · Response to treatment</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- ====== ELECTROTHERAPY ====== -->
+<div class="tab-panel" id="tab-estim">
+<div class="container">
+
+  <div class="section-title">Electrotherapy — Foundations of Clinical Electrotherapy</div>
+  <div class="section-sub">Electrotherapy uses electrical current to depolarize peripheral nerves — this is the fundamental mechanism underlying all clinical electrical stimulation. Whether the goal is pain modulation (TENS), muscle activation (NMES/FES), or drug delivery (iontophoresis), the effect traces back to one principle: charge moving through a conductor. Understanding the physics makes the clinical applications intuitive.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Electrical Fundamentals — The Physics</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Charge — The Foundation</div>
+        <p>Charge is measured in <strong>coulombs (C)</strong>. Obtained by addition or removal of electrons. Net gain of electrons = negative charge. Net loss of electrons = positive charge. An atom or molecule with gained or lost electrons = <strong>ion</strong>. Process = <strong>ionization</strong>. Bottom line: it's all about electrons.</p>
+        <div style="background:var(--bg3);border-radius:var(--radius2);padding:10px;margin-top:8px;">
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">4 Fundamental Properties of Electrical Charge</p>
+          <ol style="color:var(--text);font-size:13px;padding-left:18px;line-height:1.8;">
+            <li>There are two types of charge — positive and negative</li>
+            <li>Like charges repel; opposite charges attract</li>
+            <li>Charge is neither created nor destroyed</li>
+            <li>Charge can be transferred from one object to another</li>
+          </ol>
+        </div>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">Polarity — Cathode &amp; Anode</div>
+        <p><strong>Cathode:</strong> electrode with net negativity (excess electrons). <strong>Anode:</strong> electrode with net positivity (deficiency of electrons). In biological systems (neurons): cathode = region of cell membrane with excess electrons (inside at rest, resting membrane potential −70mV). Clinical relevance: electrode polarity determines direction of ion movement — critical for iontophoresis drug delivery.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Voltage, Current &amp; Ohm's Law</div>
+        <p><strong>Voltage:</strong> driving force that moves electrons (potential energy of electric field). Greater separation of charges = greater voltage. In body: electrochemical gradient across cell membrane (Na⁺ concentrated outside, Cl⁻ concentrated inside) creates voltage → depolarization becomes possible. <strong>Current:</strong> movement of ions/electrons through a conductor in response to voltage. <strong>Ohm's Law: I = V/R</strong> — current is directly proportional to voltage and inversely proportional to resistance.</p>
+      </div>
+      <div class="bl-strip purple" style="margin-bottom:8px;">
+        <div class="bl-label">Conductors vs. Insulators — Clinically Critical</div>
+        <p><strong>Conductors</strong> (ions/electrons move freely): metals, water, and in the body — <strong>muscle, nerve, body fluid</strong>. <strong>Insulators</strong> (charged particles don't move freely): rubber, plastic, and in the body — <strong>myelin, fat, skin, fascia, ligament, callus, bone, tendon, scar</strong>. <strong>Myelin is an insulator</strong> — lipid-rich sheath around axons enables rapid signal transmission. When myelin is damaged (MS, demyelinating neuropathy): insulation is compromised → slowed conduction velocity. This is why demyelinating conditions affect nerve conduction speed.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Clinical Applications of Electrotherapy</div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">TENS — Transcutaneous Electrical Nerve Stimulation</div>
+        <p>Primary goal: <strong>pain modulation</strong>. Mechanism: Gate Control Theory — TENS at high frequency stimulates large-diameter myelinated <strong>A-beta fibers</strong> → "gate" closes in the dorsal horn → reduces perception of pain carried by A-delta and C fibers. One of the most widely recognized applications of electrotherapy. Also: low-frequency TENS may trigger endorphin release. Evidence is inconsistent — studies claiming non-effectiveness tend to be methodologically flawed (poor electrode placement, inadequate parameters, no titration). Parameters matter: frequency, pulse width, intensity, electrode placement are all critical.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:8px;">
+        <div class="bl-label">NMES &amp; FES — Neuromuscular Electrical Stimulation</div>
+        <p><strong>NMES</strong> directly increases total number of motor units recruited AND duration those motor units are activated. Used to: restore or improve muscle use during functional activities. <strong>FES (Functional Electrical Stimulation)</strong> is NMES applied during a functional task — e.g., FES-assisted gait or upper extremity reaching. Clinical uses: muscle atrophy prevention/reversal, activation of muscles with volitional recruitment deficits, neuromuscular re-education post-stroke or post-surgical, preventing disuse atrophy, whiplash patients (to turn off overactive muscles by fatiguing them). E-stim can directly depolarize peripheral nerves to recruit motor units that the patient cannot voluntarily contract.</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:8px;">
+        <div class="bl-label">Iontophoresis — Transdermal Drug Delivery</div>
+        <p>Uses DC (direct current) electrical current to <strong>facilitate delivery of specific drugs and ions through the skin</strong>. Principle: like charges repel — negatively charged drug placed at cathode is driven into tissue (repelled by cathode); positively charged drug placed at anode is driven in (repelled by anode). Clinical applications: reduce tissue inflammation · decrease local pain · reduce calcium deposits (calcific tendinitis) · reduce scar tissue restrictions. Common drugs: dexamethasone (anti-inflammatory, negative charge → cathode), lidocaine (anesthetic, positive → anode), acetic acid (calcium deposits). No needles — painless drug delivery directly to target tissue.</p>
+      </div>
+      <div class="bl-strip green" style="margin-bottom:8px;">
+        <div class="bl-label">Other Electrotherapy Applications</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li><strong>EMG Biofeedback:</strong> surface EMG electrodes measure motor unit activity → provide real-time visual/auditory feedback → facilitates volitional muscle activation or relaxation</li>
+          <li><strong>Wound healing:</strong> electrical stimulation promotes wound healing, reduces edema, increases local blood flow</li>
+          <li><strong>Edema reduction:</strong> high-voltage pulsed current (HVPC) used for post-traumatic edema</li>
+          <li><strong>Muscle inhibition:</strong> electrical stimulation to turn off overactive muscles (spasticity, guarding, whiplash-related hypertonicity)</li>
+        </ul>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Electrotherapy Contraindications</div>
+        <ul style="color:var(--text);font-size:13px;padding-left:16px;line-height:1.8;">
+          <li>Cardiac pacemaker or implantable defibrillator (ICD)</li>
+          <li>Over the carotid sinus (risk of cardiac reflex)</li>
+          <li>Pregnancy — over abdomen or lumbar spine</li>
+          <li>Active malignancy in treatment area</li>
+          <li>Active bleeding / hemorrhagic conditions</li>
+          <li>Impaired sensation — patient cannot report discomfort</li>
+          <li>Over the eyes or head (many applications)</li>
+          <li>Epilepsy (transcranial applications)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Resistance to Current Flow — Tissue Hierarchy</div>
+    <div class="grid2">
+      <div>
+        <p style="font-size:13px;color:var(--text2);margin-bottom:8px;">Understanding which tissues resist current flow is essential for electrode placement, understanding why current takes certain paths through the body, and why some modalities affect specific tissue layers more than others.</p>
+        <table class="data-table" style="margin:0;font-size:12.5px;">
+          <thead><tr><th>Tissue</th><th>Resistance</th><th>Clinical Implication</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Nerve</strong></td><td class="ok">Very low (conductor)</td><td>Directly depolarized by e-stim — primary clinical target</td></tr>
+            <tr><td><strong>Muscle</strong></td><td class="ok">Low (conductor)</td><td>Current flows readily — NMES recruits motor units effectively</td></tr>
+            <tr><td><strong>Body fluid</strong></td><td class="ok">Low (conductor)</td><td>Edematous tissue may conduct current better</td></tr>
+            <tr><td><strong>Skin (dry)</strong></td><td class="warn">Moderate-high</td><td>Electrode gel / wet interface reduces resistance; callus = very high resistance</td></tr>
+            <tr><td><strong>Fat</strong></td><td class="warn">High</td><td>Reduces effectiveness; adipose tissue diverts current from target</td></tr>
+            <tr><td><strong>Myelin</strong></td><td class="bad">Insulator</td><td>When damaged → slowed conduction; NMES bypasses need for intact myelin to activate muscle</td></tr>
+            <tr><td><strong>Bone</strong></td><td class="bad">Very high</td><td>Current avoids bone → follows paths through conducting soft tissue</td></tr>
+            <tr><td><strong>Scar / tendon / ligament</strong></td><td class="bad">High</td><td>Dense collagen = poor conductor; current takes alternate paths</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="bl-strip" style="margin-bottom:8px;">
+          <div class="bl-label">Why This Matters Clinically</div>
+          <p>Current follows the path of least resistance. Electrodes placed over high-resistance tissue (thick callus, dense scar) may not effectively deliver current to target. Wet interface (electrode gel, wet cloth) dramatically reduces skin resistance → increases current delivery. Between two electrodes, current travels through tissues in the shortest, lowest-resistance path. If bone lies between electrodes, current routes around it through muscle and nerve — this is why NMES is effective at recruiting deep muscles even when electrodes are superficial.</p>
+        </div>
+        <div class="bl-strip gold">
+          <div class="bl-label">The Fundamental Mechanism of All E-Stim</div>
+          <p>Regardless of which electrotherapy modality is used, the fundamental goal is the <strong>depolarization or activation of peripheral nerves</strong>. TENS depolarizes A-beta sensory fibers → pain gate closure. NMES depolarizes motor axons → muscle contraction. Iontophoresis uses current to move ions through tissue without nerve depolarization as the goal, but the electrical principles are the same. Understanding this hierarchy makes clinical decisions about parameter selection logical rather than memorized.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+
+  <div class="section-title">Review Cards</div>
+  <div class="section-sub">Tap any card to flip it. Covers all 9 modality systems: framework, cryotherapy, thermotherapy, ultrasound, electromagnetic, hydrotherapy, traction, compression/IPC, and electrotherapy.</div>
+
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 4 stages of sensation a patient experiences during cold application? And what skin temperature produces local analgesia?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>4 stages in order:</strong> (1) Intense cold → (2) Burning sensation → (3) Aching → (4) Numbness (analgesia). Educating patients about this sequence prevents them from stopping treatment prematurely. Temperature and time thresholds: skin temp of <strong>56.5°F (13.6°C)</strong> = local analgesia. <strong>50°F (10°C)</strong> = 33% reduction in nerve conduction velocity. Extreme cold (&lt;50°F) can block conduction entirely. Nerve fiber sensitivity order: A-delta (small myelinated) affected first by cold → C fibers (unmyelinated) affected last. Clinically: cold preferentially blocks A-delta pain signals first, which is why it provides analgesia without complete sensory block at moderate temperatures.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is Cold-Induced Vasodilation (CIVD)? When does it occur and what causes it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Also called the <strong>Lewis Hunting Reaction</strong> (discovered by Lewis, 1930). When tissue temperature drops <strong>below 50°F (10°C)</strong> for a sustained period, the initial vasoconstriction gives way to vasodilation. Mechanism: cold temperatures cause release of <strong>neurotransmitter substance H</strong> (similar to histamine) → arteriolar vasodilation → warm blood enters area → skin temp rises above 50°F → vasoconstriction resumes → cyclical pattern of vasodilation/vasoconstriction. Located where there are AV anastomoses — primarily distal digits (fingers, toes). Clinical purpose: prevents frostbite in extremities during prolonged cold exposure. Found in ice bath experiments: finger skin temp cyclically increased and decreased. Clinically: patients who've had their hands in ice baths experience this cyclical warmth — not a sign to stop treatment.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the therapeutic temperature range for heat, and what are the 4 contraindications to thermotherapy?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Therapeutic effects of heat occur between <strong>104°F and 113°F (40°C–45°C)</strong>. Below 104°F = subtherapeutic (mild warmth without significant physiological change). Above 113°F = tissue damage risk. The 4 core contraindications: (1) <strong>Lack of sensation</strong> at affected area — cannot report overheating → burn risk; (2) <strong>Vascular disease</strong> at affected area — impaired heat dissipation; (3) <strong>Areas of active hemorrhage</strong> — heat increases blood flow and vasodilation; (4) <strong>Areas with cancer/malignancy</strong> — risk of stimulating tumor growth or metastasis. Also: acute inflammation (heat aggravates), infection, where heat rubs were recently applied, unreliable patients (language barriers, impaired cognition, inability to consent).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Ultrasound frequency and depth: which frequency goes deeper, and what is the biggest clinical application mistake?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Depth is inversely proportional to frequency.</strong> <strong>1 MHz:</strong> penetrates deeper (up to 5 cm) — use for deep structures (hip joint, large muscle bellies). <strong>3 MHz (3.3 MHz):</strong> more superficial (1–2 cm) — use for superficial structures (hand tendons, superficial ligaments, CTS). Dense connective tissue (tendons, ligaments) absorbs US better than muscle or fat — US heats tendons faster than muscle. <strong>Biggest clinical mistake: applying US over too large an area.</strong> US must be applied over an area <strong>2–4× the ERA (Effective Radiating Area)</strong> of the sound head. Too large = inadequate dose. Also: keep sound head <strong>perpendicular (90°) to skin</strong> — angled application reduces effectiveness and creates hot spots. BNR ≤ 3 minimizes hot spots. 5–10 min sessions, 2–3×/week.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Diathermy: capacitive vs. inductive method — which tissue does each heat more?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Capacitive (electric field) method:</strong> body part placed between two electrodes; oscillating current flows through body tissues; greatest heating in <strong>high-resistance tissues (skin and subcutaneous fat)</strong> — because fat and skin resist current flow, generating more heat there. <strong>Inductive (magnetic field) method:</strong> inductive drum creates oscillating magnetic field → induces eddy currents in tissues; eddy currents flow through low-impedance/high-conductivity pathways → greatest heating in <strong>skeletal muscle and blood</strong>; less heating of fat and skin. <strong>Clinical rule:</strong> choose inductive when you need to heat deep muscle. Choose capacitive when superficial heating is acceptable. Inductive SWD is best choice for large joints (knee, shoulder) and large muscles (hamstrings). Two key diathermy advantages over US: greater depth + larger treatment area. Treat 15–30 min. Remove ALL metal before treatment.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Buoyancy in hydrotherapy: what percentage of body weight is borne at each immersion depth?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Archimedes' principle: buoyant force equals weight of fluid displaced. <strong>Neck-deep immersion: ~10% body weight</strong> borne on LE. <strong>Xiphoid process: ~33% body weight</strong> borne. <strong>ASIS (hip level): ~50% body weight</strong> borne. Exercising with buoyancy = assisted (buoyancy helps you move). Exercising against buoyancy = resisted (moving downward against buoyant force = drag + buoyancy). Doubling velocity = quadruples drag force. If patient stops pushing due to pain, resistance drops instantly — protective safety property. Heart rate monitoring during aquatic exercise is unreliable — use RPE. Always use dive reflex precautions: enter slowly, wet face and hands first. Bladder empty before pool. Medications that cause drowsiness (muscle relaxers) require close monitoring.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Traction: what is the cardinal rule, and what are 5 absolute contraindications?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Cardinal rule: traction should NEVER cause or increase symptoms.</strong> A modest stretching/pulling sensation near the spine is acceptable and expected — it is not a sign to stop. If peripheral symptoms (distal radiating pain, numbness, tingling) worsen during traction → stop immediately. Always start conservative for initial session. Traction is second-line — manual therapy and exercise have stronger evidence and should be considered first. <strong>5 absolute contraindications:</strong> (1) Acute cervical trauma/whiplash; (2) Osteoporosis or osteopenia; (3) Rheumatoid arthritis or ankylosing spondylitis (connective tissue destruction + RA atlantoaxial instability); (4) Joint hypermobility/instability; (5) Prior surgical stabilization or spinal implants/prosthetic discs. Also: pregnancy, steroid use compromising bone integrity, non-mechanical pain. Precautions: claustrophobia, COPD (harness uncomfortable, supine breathing difficulty).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">IPC: why is early mobilization more important than IPC for VTE prevention, and when should IPC NOT be used for edema?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Early mobilization is always the most important VTE prevention strategy.</strong> Mounting evidence shows that mobilization as soon as hemodynamically stable — even ICU patients — prevents VTE and improves clinical outcomes more effectively than any passive intervention. IPC is adjunctive, not a substitute for getting patients moving. Both should be used simultaneously when indicated. <strong>Do NOT use IPC for acute trauma edema</strong> — may increase bleeding. Rationale: acute trauma = disrupted vessels still bleeding; compression increases pressure gradient → forces more blood out of damaged vessels. Wait until the acute bleeding phase has resolved. Always determine the cause of edema before treating: DVT must be ruled out — applying IPC over a DVT risks embolization. Lymphedema rule: NEVER assess BP or perform vein/arterial puncture on a limb with known or at-risk lymphedema — use limb ID bracelet system.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Gate control theory: which nerve fibers carry pain, which carry the inhibitory signal, and how does TENS exploit this?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Pain is carried by: <strong>small myelinated A-delta fibers</strong> (sharp, acute pain) and <strong>unmyelinated C fibers</strong> (dull, chronic, burning pain). Inhibitory signal: <strong>large myelinated A-beta fibers</strong> (touch, pressure, vibration). Gate control: A-beta input → activates interneurons in dorsal horn → inhibits transmission of A-delta and C fiber pain signals → perceived pain decreases ("gate closes"). <strong>TENS exploits this:</strong> high-frequency TENS (conventional TENS: 80–100 Hz, narrow pulse width) → selectively stimulates large A-beta sensory fibers → pain gate closes. E-stim specifically targets large afferent nerve fibers. Also: US, cold, heat, and diathermy modulate noxious input through related mechanisms. Low-frequency TENS (acupuncture-like TENS: 1–4 Hz) → triggers endorphin release (different mechanism from gate control). Parameters must be set correctly — wrong parameters = no therapeutic effect.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">NMES vs. TENS vs. Iontophoresis — what is the target, mechanism, and primary clinical use of each?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>TENS (Transcutaneous Electrical Nerve Stimulation):</strong> Target = A-beta sensory fibers. Mechanism = gate control (high freq) or endorphin release (low freq). Primary use = pain modulation. No muscle contraction required or intended. <strong>NMES (Neuromuscular Electrical Stimulation):</strong> Target = motor axons. Mechanism = depolarization of motor nerves → muscle contraction → recruits motor units patient cannot voluntarily activate. Increases total MU recruited AND duration of activation. Primary use = muscle activation deficits (post-stroke, post-surgery, atrophy). FES = NMES applied during functional task. <strong>Iontophoresis:</strong> Target = ions/drug molecules. Mechanism = DC current drives charged ions through skin using polarity (like charges repel — negatively charged drug at cathode driven into tissue). No nerve depolarization as goal. Primary use = transdermal drug delivery (dexamethasone for inflammation, lidocaine for anesthesia, acetic acid for calcific deposits). Bypasses needle → painless, targeted tissue delivery.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Laser therapy: what are chromophores, and why does every patient receiving laser need eye protection?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Chromophores</strong> are photosensitive molecules within cell membranes and organelles that absorb specific wavelengths of light energy. The absorbed light energy drives photobiostimulation — nonthermal cellular effects. <strong>Mitochondrial cytochromes</strong> absorb 700–1200 nm (infrared range). <strong>Myoglobin and hemoglobin</strong> absorb 400–700 nm (visible light range). Mitochondrial stimulation → increased ATP synthesis + cellular repair + pro-collagen mRNA production. Infrared laser also → increased beta-endorphin, decreased PGE2 (inflammatory mediator), decreased bradykinin and kallikrein (pain mediators). <strong>Eye protection reason:</strong> laser produces a coherent, collimated, monochromatic beam of high-intensity light. If directed into the eye, even briefly, it can cause <strong>permanent retinal damage</strong>. Class 3b lasers (LLLT ≤500 mW) require protective eyewear for both patient AND clinician — FDA requirement. Class 4 (HILT &gt;500 mW) = higher risk, additional safety protocols. This is non-negotiable and applies to every treatment.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">PLWS vs. whirlpool for wound care — why is PLWS preferred and what 3 advantages does it have?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">PLWS (Pulsed Lavage With Suction) is now the standard of care for wound irrigation and debridement, largely replacing whirlpool for wound care. <strong>3 key advantages over whirlpool:</strong> (1) <strong>Decreased risk of tissue damage</strong> — controlled pulsating pressurized stream is more targeted and less traumatic than agitation; (2) <strong>No cross-contamination risk</strong> — disposable components, isolated wound environment vs. shared whirlpool tank with infection risk; (3) <strong>Limb in non-dependent position</strong> — whirlpool requires immersing the limb dependently → promotes edema; PLWS allows treatment with limb elevated → reduces edema risk. Whirlpool is still appropriate for MSK conditions (sprains, contractures, post-surgical in healed wounds, OA, RA) — just not for open wounds. PLWS documentation: wound characteristics, irrigation pressure (psi), patient response, wound response (bleeding, debridement, exudate), duration.</div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

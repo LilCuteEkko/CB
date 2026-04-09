@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Neck Module — Clinicians Blueprint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="themes.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="bg-layer"><div class="bg-grid"></div><div class="bg-g1"></div><div class="bg-g2"></div></div>
+<div style="position:fixed;top:0;left:0;right:0;z-index:200;height:52px;display:flex;align-items:center;padding:0 1.5rem;background:var(--nav-bg);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);">
+  <a href="index.html" style="display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--font-m);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='rgba(93,207,207,0.9)'" onmouseout="this.style.color='var(--text3)'">← Home</a>
+  <div style="flex:1;text-align:center;font-family:var(--font-d);font-size:0.95rem;font-weight:600;color:var(--text2);">Clinicians Blueprint</div>
+  <div style="display:flex;gap:0.375rem;flex-wrap:wrap;">
+    <a href="CB_KneeModule_v2.html">Knee</a>
+  <a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+    <a href="CB_HipModule_v2.html">Hip</a>
+    <a href="CB_HeadModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Head</a>
+    <a href="CB_ShoulderModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Shoulder</a>
+    <a href="CB_ElbowModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Elbow</a>
+    <a href="CB_WristHandModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Wrist</a>
+    <a href="CB_NeckModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Neck</a>
+    <a href="CB_BackModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Back</a>
+  </div>
+</div>
+<div style="height:52px;"></div>
+
+<div class="shell">
+<div class="mod-header">
+  <button class="mod-back" onclick="window.history.back()">← Library</button>
+  <div class="mod-center">
+    <div class="mod-eyebrow">Module 4 · Spine</div>
+    <h1 class="mod-title">Cervical Spine & <em>Neck</em></h1>
+  </div>
+  <span class="mod-badge">Free Module</span>
+</div>
+
+<div class="tab-row">
+  <button class="tab-pill active" onclick="switchTab('surface',this)">📍 Surface</button>
+  <button class="tab-pill" onclick="switchTab('fascia',this)">🧱 Fascia</button>
+  <button class="tab-pill" onclick="switchTab('muscles',this)">💪 Muscles</button>
+  <button class="tab-pill" onclick="switchTab('triangles',this)">△ Triangles</button>
+  <button class="tab-pill" onclick="switchTab('nerves',this)">⚡ Nerves</button>
+  <button class="tab-pill" onclick="switchTab('circulation',this)">🩸 Circulation</button>
+  <button class="tab-pill" onclick="switchTab('viscera',this)">🫁 Viscera</button>
+  <button class="tab-pill" onclick="switchTab('lymph',this)">🔵 Lymphatics</button>
+  <button class="tab-pill" onclick="switchTab('review',this)">📝 Review</button>
+</div>
+
+<!-- ══ SURFACE ANATOMY ══ -->
+<div id="tab-surface" class="tab-content active">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Palpable Midline Structures</div><div class="card-header-sub">Anterior Neck — Inferior to Superior</div></div>
+        <div class="card-body">
+          <div style="display:flex;flex-direction:column;gap:0.625rem;" id="surface-midline"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Palpation Tips</div></div>
+        <div class="card-body">
+          <div class="bullet"><span class="dot">•</span>Always palpate with <strong style="color:var(--text)">gentle pressure</strong> on midline structures — carotid pulse is accessible but avoid sustained bilateral compression (baroreceptor stimulation → bradycardia)</div>
+          <div class="bullet"><span class="dot">•</span>Hyoid bone moves freely — it is the <strong style="color:var(--text)">only bone in the body with no direct articulation</strong> with another bone, suspended entirely by muscles and ligaments</div>
+          <div class="bullet"><span class="dot">•</span>Ask patient to swallow — laryngeal structures will move superiorly under your fingers, confirming location</div>
+          <div class="bullet"><span class="dot">•</span>Transverse process of C1: <strong style="color:var(--text)">just inferior to mastoid process</strong> — widest cervical transverse process, palpable in thin patients</div>
+          <div class="bullet"><span class="dot">•</span>Subclavian artery pulse: palpable in <strong style="color:var(--text)">supraclavicular fossa</strong> (pressure point used historically for hemorrhage control)</div>
+          <div class="clinical-note">
+          <div class="clinical-note-lbl">Contraindication Zones</div>
+          <div class="clinical-note-text cn-short">Carotid triangle region is a contraindication zone for electrotherapy modalities (ultrasound, TENS, etc.).</div>
+          <div class="cn-more">The carotid sinus at the bifurcation of the CCA is a baroreceptor — stimulation can cause reflex bradycardia and hypotension. Cervical lymph nodes are also located throughout this region — palpate systematically and note size, tenderness, and mobility.</div>
+          <button class="cn-toggle" onclick="toggleCN(this)">+ Show more</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Lymph Node Locations</div><div class="card-header-sub">Clinically Relevant Palpation Sites</div></div>
+        <div class="card-body">
+          <div id="lymph-nodes-surface"></div>
+          <div class="warn-note" style="margin-top:0.875rem;">
+            <div class="warn-note-lbl">Red Flags in Cervical Lymph Nodes</div>
+            <div class="warn-note-text">Hard, non-tender, non-mobile nodes that don't resolve in 4–6 weeks = possible malignancy (lymphoma, metastatic disease). Tender, mobile nodes = reactive (infection most common). Supraclavicular nodes (Virchow's node on left) that are palpable = particularly concerning for thoracic/abdominal malignancy.</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Vertebral Level Landmarks</div></div>
+        <div class="card-body">
+          <table class="data-table">
+            <thead><tr><th>Level</th><th>Palpable Landmark</th><th>Clinical Note</th></tr></thead>
+            <tbody>
+              <tr><td class="tag tag-teal" style="font-size:0.78rem;">C1</td><td>TP just inferior to mastoid process</td><td>Widest TP in cervical spine</td></tr>
+              <tr><td class="tag tag-teal" style="font-size:0.78rem;">C3</td><td>Hyoid bone</td><td>Gently palpate — no bony articulation</td></tr>
+              <tr><td class="tag tag-teal" style="font-size:0.78rem;">C4–C5</td><td>Thyroid cartilage (Adam's apple)</td><td>Laryngeal prominence, thyroid notch</td></tr>
+              <tr><td class="tag tag-teal" style="font-size:0.78rem;">C5–C6</td><td>Cricoid cartilage</td><td>Only complete tracheal ring; larynx→trachea border</td></tr>
+              <tr><td class="tag tag-teal" style="font-size:0.78rem;">C6</td><td>First tracheal ring</td><td>Inferior to cricoid</td></tr>
+              <tr><td class="tag tag-teal" style="font-size:0.78rem;">C7</td><td>Vertebra prominens (most prominent SP)</td><td>Reference level for counting vertebrae</td></tr>
+              <tr><td class="tag tag-teal" style="font-size:0.78rem;">T1</td><td>Jugular (suprasternal) notch</td><td>Depression between SCM sternal heads</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FASCIA ══ -->
+<div id="tab-fascia" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Cervical Fascia</div><div class="card-header-sub">Superficial & Deep Layers</div></div>
+        <div class="card-body" id="fascia-content"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Carotid Sheath</div><div class="card-header-sub">Contents & Clinical Importance</div></div>
+        <div class="card-body">
+          <div style="font-size:0.95rem;color:var(--text2);line-height:1.7;margin-bottom:0.875rem;">The carotid sheath is a condensation of all three deep cervical fascia layers that runs from the base of the skull to the root of the neck. It is a closed fascial tube running lateral to the pharynx and esophagus.</div>
+          <div class="sec-label">Contents</div>
+          <div style="display:flex;flex-direction:column;gap:0.4rem;margin-bottom:0.875rem;">
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Common carotid artery (CCA)</strong> — medial position</div>
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Internal carotid artery (ICA)</strong> — superior to CCA bifurcation</div>
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Internal jugular vein (IJV)</strong> — lateral position, largest venous structure in neck</div>
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Vagus nerve (CN X)</strong> — between and posterior to artery and vein</div>
+            <div class="bullet"><span class="dot">•</span>Lymph nodes, sympathetic nerve fibers, carotid sinus nerve</div>
+          </div>
+          <div class="clinical-note">
+          <div class="clinical-note-lbl">Retropharyngeal Space</div>
+          <div class="clinical-note-text cn-short">Between the buccopharyngeal fascia of the pharynx and the prevertebral fascia. A potential space that can accumulate pus or blood.</div>
+          <div class="cn-more">MVA trauma or infection can cause retropharyngeal swelling → dysphagia (difficulty swallowing) or airway compromise. On lateral cervical X-ray: soft tissue shadow >7mm at C2 = abnormal.</div>
+          <button class="cn-toggle" onclick="toggleCN(this)">+ Show more</button>
+        </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Fascia Clinical Relevance</div></div>
+        <div class="card-body">
+          <div class="bullet"><span class="dot">•</span>The investing fascia forms a <strong style="color:var(--text)">"Four Corners" investment</strong> of SCM and trapezius — connects the two deep muscles of the posterior triangle</div>
+          <div class="bullet"><span class="dot">•</span>Pretracheal fascia creates the anterior visceral compartment — thyroid, larynx, trachea all move together during swallowing</div>
+          <div class="bullet"><span class="dot">•</span>Prevertebral fascia extends into the axilla as the <strong style="color:var(--text)">axillary sheath</strong>, enclosing the brachial plexus and axillary vessels</div>
+          <div class="bullet"><span class="dot">•</span>Thoracic outlet syndrome: scalene triangle (between anterior and middle scalenes) is enclosed by prevertebral fascia — fascial tightness can contribute to TOS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MUSCLES ══ -->
+<div id="tab-muscles" class="tab-content">
+  <div class="chip-nav" id="muscle-cat-nav">
+    <button class="chip-btn active" onclick="selectMuscleGroup('superficial',this)">Superficial</button>
+    <button class="chip-btn" onclick="selectMuscleGroup('infrahyoid',this)">Infrahyoid</button>
+    <button class="chip-btn" onclick="selectMuscleGroup('suprahyoid',this)">Suprahyoid</button>
+    <button class="chip-btn" onclick="selectMuscleGroup('scalenes',this)">Scalenes</button>
+    <button class="chip-btn" onclick="selectMuscleGroup('prevertebral',this)">Prevertebral</button>
+    <button class="chip-btn" onclick="selectMuscleGroup('suboccipital',this)">Suboccipital</button>
+  </div>
+  <div id="muscle-content"></div>
+</div>
+
+<!-- ══ TRIANGLES ══ -->
+<div id="tab-triangles" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Posterior Triangle</div><div class="card-header-sub">SCM · Trapezius · Clavicle</div></div>
+        <div class="card-body">
+          <div class="sec-label">Boundaries</div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:0.5rem 1rem;margin-bottom:1rem;font-size:0.95rem;">
+            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Anterior</span><span style="color:var(--text2);">Posterior border of SCM</span>
+            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Posterior</span><span style="color:var(--text2);">Anterior border of Trapezius</span>
+            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Inferior</span><span style="color:var(--text2);">Superior border of Clavicle</span>
+          </div>
+          <div class="sec-label">Contents</div>
+          <div style="display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1rem;">
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">EJV (External Jugular Vein)</strong> — descends superficially through triangle</div>
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Brachial plexus trunks</strong> — emerge between anterior and middle scalenes</div>
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">CN XI (Spinal accessory nerve)</strong> — crosses triangle to reach trapezius</div>
+            <div class="bullet"><span class="dot">•</span>Cutaneous branches of cervical plexus (lesser occipital, greater auricular, transverse cervical, supraclavicular)</div>
+            <div class="bullet"><span class="dot">•</span>Transverse cervical artery, subclavian artery (supraclavicular fossa), suprascapular artery</div>
+            <div class="bullet"><span class="dot">•</span>Inferior belly of omohyoid (divides triangle into 2 subdivisions)</div>
+            <div class="bullet"><span class="dot">•</span>Floor: medial scalene, posterior scalene, levator scapulae, splenius capitis</div>
+            <div class="bullet"><span class="dot">•</span>Cervical and supraclavicular lymph nodes</div>
+          </div>
+          <div class="sec-label">Subdivisions</div>
+          <div style="display:flex;flex-direction:column;gap:0.4rem;">
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Occipital triangle</strong> — superior, above omohyoid; larger portion</div>
+            <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Supraclavicular (subclavian) triangle</strong> — inferior, below omohyoid; contains subclavian artery pressure point</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Anterior Triangle</div><div class="card-header-sub">SCM · Midline · Mandible</div></div>
+        <div class="card-body">
+          <div class="sec-label">Boundaries</div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:0.5rem 1rem;margin-bottom:1rem;font-size:0.95rem;">
+            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Lateral</span><span style="color:var(--text2);">Anterior border of SCM</span>
+            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Medial</span><span style="color:var(--text2);">Midline of neck</span>
+            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Superior</span><span style="color:var(--text2);">Inferior border of Mandible</span>
+          </div>
+          <div class="sec-label">Four Subdivisions</div>
+          <div style="display:flex;flex-direction:column;gap:0.625rem;" id="ant-triangle-content"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Clinical Relevance</div></div>
+        <div class="card-body">
+          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Modality contraindication:</strong> carotid triangle region — US, TENS, IFC over carotid sinus can trigger baroreceptor reflex (hypotension, syncope)</div>
+          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Carotid endarterectomy</strong> — surgical access via anterior triangle to remove atherosclerotic plaque from ICA; post-op patients may have CN XII (hypoglossal) neuropraxia → tongue weakness</div>
+          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">CN XI injury</strong> in posterior triangle — during lymph node biopsy; causes trapezius palsy (shoulder drop, winging, limited ABD above 90°)</div>
+          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Carotid pulse:</strong> reliably palpated at carotid triangle — between medial SCM border and larynx at level of thyroid cartilage</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NERVES ══ -->
+<div id="tab-nerves" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Cervical Plexus</div><div class="card-header-sub">C1–C4 · Ventral Primary Rami</div></div>
+        <div class="card-body">
+          <div class="sec-label">Sensory Branches</div>
+          <div id="cervical-plexus-sensory" style="margin-bottom:1rem;"></div>
+          <div class="sec-label">Motor Branches</div>
+          <div id="cervical-plexus-motor"></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Brachial Plexus — Cervical Origin</div></div>
+        <div class="card-body">
+          <div style="font-size:0.95rem;color:var(--text2);line-height:1.7;margin-bottom:0.875rem;">The brachial plexus (C5–T1) exits the neck between the <strong style="color:var(--text)">anterior and middle scalene muscles</strong> as three trunks (superior, middle, inferior).</div>
+          <div class="sec-label">Key Branches in Cervical Region</div>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;" id="bp-cervical"></div>
+          <div class="warn-note" style="margin-top:0.875rem;">
+            <div class="warn-note-lbl">TOS — Thoracic Outlet Syndrome</div>
+            <div class="warn-note-text">Compression of brachial plexus trunks and/or subclavian vessels in the scalene triangle (neurogenic TOS is most common). Symptoms: arm pain, numbness, weakness in C8-T1 distribution (ulnar nerve territory). Tests: Roos test (EAST), Adson's, costoclavicular maneuver. Scalene muscle hypertension and cervical rib are common causes.</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Cranial Nerves in the Neck</div></div>
+        <div class="card-body">
+          <table class="data-table">
+            <thead><tr><th>CN</th><th>Name</th><th>Function in Neck</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag tag-gold">CN X</span></td><td>Vagus</td><td>Descends in carotid sheath. Supplies pharynx, larynx (all intrinsic muscles via recurrent laryngeal, except one). Parasympathetic to thoracic/abdominal viscera.</td></tr>
+              <tr><td><span class="tag tag-gold">CN XI</span></td><td>Spinal Accessory</td><td>Exits jugular foramen → posterior triangle → supplies SCM and trapezius. Injury causes trapezius palsy (shoulder drop, winging).</td></tr>
+              <tr><td><span class="tag tag-gold">CN XII</span></td><td>Hypoglossal</td><td>Loops through submandibular triangle. Motor to all intrinsic tongue muscles. Injury: tongue deviates TOWARD lesion side.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CIRCULATION ══ -->
+<div id="tab-circulation" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Arterial Supply</div><div class="card-header-sub">Asymmetric Origin — Right vs Left</div></div>
+        <div class="card-body" id="arterial-content"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Venous Drainage</div></div>
+        <div class="card-body" id="venous-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Clinical — VBI</div><div class="card-header-sub">Vertebrobasilar Insufficiency</div></div>
+        <div class="card-body">
+          <div style="font-size:0.95rem;color:var(--text2);line-height:1.7;margin-bottom:0.625rem;">The vertebral arteries ascend through the transverse foramina of C6 to C1, then form a large loop before entering the foramen magnum. Inside the cranium they join to form the <strong style="color:var(--text)">basilar artery</strong>, supplying the brainstem, cerebellum, and posterior cerebral cortex (via Circle of Willis).</div>
+          <div class="warn-note">
+            <div class="warn-note-lbl">VBI Red Flags (5 D's + 3 N's)</div>
+            <div class="warn-note-text">Dizziness, Diplopia (double vision), Dysarthria, Dysphagia, Drop attacks, Nausea, Nystagmus, Numbness (face/extremity). Any of these with cervical manipulation or sustained end-range cervical rotation = possible VBI. Screen before cervical manipulation. Canadian Cervical Spine Rule applies.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ VISCERA ══ -->
+<div id="tab-viscera" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;" id="viscera-left"></div>
+    <div style="display:flex;flex-direction:column;gap:1rem;" id="viscera-right"></div>
+  </div>
+</div>
+
+<!-- ══ LYMPHATICS ══ -->
+<div id="tab-lymph" class="tab-content">
+  <div class="two-col">
+    <div class="card">
+      <div class="card-header"><div class="card-header-title">Cervical Lymphatic System</div><div class="card-header-sub">Superficial & Deep Nodes</div></div>
+      <div class="card-body">
+        <div style="font-size:0.95rem;color:var(--text2);line-height:1.7;margin-bottom:1rem;">Lymph nodes are distributed throughout the neck in both superficial and deep groups. <strong style="color:var(--text)">Superficial cervical nodes</strong> drain superficial structures and eventually drain into deep cervical nodes. <strong style="color:var(--text)">Deep cervical nodes</strong> follow the IJV, located deep to the SCM.</div>
+        <div class="sec-label">Drainage Pathway</div>
+        <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;font-size:0.95rem;color:var(--text2);">
+          <span style="padding:0.25rem 0.625rem;background:var(--surface);border-radius:5px;">Superficial nodes</span>
+          <span style="color:var(--teal-light);">→</span>
+          <span style="padding:0.25rem 0.625rem;background:var(--surface);border-radius:5px;">Deep cervical nodes (along IJV)</span>
+          <span style="color:var(--teal-light);">→</span>
+          <span style="padding:0.25rem 0.625rem;background:var(--surface);border-radius:5px;">Brachiocephalic veins</span>
+        </div>
+        <div class="sec-label">Terminal Drainage</div>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;">
+          <div style="background:var(--surface);border-radius:6px;padding:0.625rem 0.875rem;">
+            <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.2rem;">Left Side — Thoracic Duct</div>
+            <div style="font-size:0.9rem;color:var(--text2);">Drains into venous system at bifurcation of left IJV and left subclavian vein → left brachiocephalic vein. Drains the majority of the body (left side + below diaphragm).</div>
+          </div>
+          <div style="background:var(--surface);border-radius:6px;padding:0.625rem 0.875rem;">
+            <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.2rem;">Right Side — Right Lymphatic Duct</div>
+            <div style="font-size:0.9rem;color:var(--text2);">Drains into right IJV and subclavian junction → right brachiocephalic vein. Drains right upper body only.</div>
+          </div>
+        </div>
+        <div class="warn-note" style="margin-top:0.875rem;">
+          <div class="warn-note-lbl">Virchow's Node (Left Supraclavicular)</div>
+          <div class="warn-note-text">A palpable left supraclavicular node (Virchow's node / Troisier's sign) is strongly associated with abdominal/thoracic malignancy (gastric cancer most classic). The thoracic duct terminates on the left — cancer cells from GI tract can metastasize via thoracic duct to this node. Always palpate the supraclavicular fossae bilaterally.</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Lymph Node Assessment</div></div>
+        <div class="card-body">
+          <div class="sec-label">Normal Characteristics</div>
+          <div style="display:flex;flex-direction:column;gap:0.3rem;margin-bottom:1rem;">
+            <div class="bullet"><span class="dot">•</span>Soft, mobile, non-tender</div>
+            <div class="bullet"><span class="dot">•</span>Smaller than 1 cm in most regions (up to 1.5 cm submandibular)</div>
+            <div class="bullet"><span class="dot">•</span>May be palpable in thin patients without pathology</div>
+          </div>
+          <div class="sec-label">Reactive Nodes (Infection)</div>
+          <div style="display:flex;flex-direction:column;gap:0.3rem;margin-bottom:1rem;">
+            <div class="bullet"><span class="dot">•</span>Tender, soft, mobile</div>
+            <div class="bullet"><span class="dot">•</span>Enlarged but resolve with treatment</div>
+            <div class="bullet"><span class="dot">•</span>Warm if superficial cellulitis</div>
+          </div>
+          <div class="sec-label">Malignant Nodes</div>
+          <div style="display:flex;flex-direction:column;gap:0.3rem;">
+            <div class="bullet"><span class="warn">⚠</span>Hard, non-tender, non-mobile ("fixed")</div>
+            <div class="bullet"><span class="warn">⚠</span>Do not resolve over 4–6 weeks</div>
+            <div class="bullet"><span class="warn">⚠</span>May be matted together</div>
+            <div class="bullet"><span class="warn">⚠</span>Palpable in supraclavicular fossa = URGENT referral</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ REVIEW ══ -->
+<div id="tab-review" class="tab-content">
+  <div class="two-col">
+    <div class="card">
+      <div class="card-header"><div class="card-header-title">Review Questions</div><div class="card-header-sub">Clinical Reasoning · Click to Reveal</div></div>
+      <div class="card-body" id="neck-review-list"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">High-Yield Callouts</div></div>
+        <div class="card-body">
+          <div style="display:flex;flex-direction:column;gap:0.625rem;">
+            <div style="padding:0.625rem 0.875rem;background:var(--red-pale);border:1px solid rgba(248,113,113,0.15);border-radius:6px;">
+              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem;">Red Flags</div>
+              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">VBI (5 D's + 3 N's) · Fixed hard lymph node → immediate referral · Retropharyngeal swelling → airway risk · CN XI injury in posterior triangle → trapezius palsy</div>
+            </div>
+            <div style="padding:0.625rem 0.875rem;background:var(--amber-pale);border:1px solid rgba(251,191,36,0.15);border-radius:6px;">
+              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem;">Contraindications</div>
+              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">Carotid triangle = no electrotherapy modalities · Bilateral carotid pressure = reflex bradycardia risk · Pre-manipulation VBI screening mandatory</div>
+            </div>
+            <div style="padding:0.625rem 0.875rem;background:var(--teal-pale);border:1px solid rgba(56,178,178,0.15);border-radius:6px;">
+              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--teal);margin-bottom:0.25rem;">Key Facts</div>
+              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">Hyoid = only bone with no direct articulation · BP exits between anterior+middle scalenes · Recurrent laryngeal nerve lesion = vocal cord paralysis · ICA has NO branches in neck · Left CCA from aorta directly; right from brachiocephalic trunk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><!-- /shell -->
+
+<script>
+// ══════════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════════
+
+const SURFACE_MIDLINE = [
+  { name: 'Hyoid Bone', level: 'C3', how: 'Palpate superior to thyroid cartilage. Gently compress from anterior — it will move. Also moves with swallowing.', clinical: 'Only bone in body with NO articulation — suspended entirely by muscles. Suprahyoid muscles above, infrahyoid below. Fracture: rare, associated with strangulation; forensic significance.' },
+  { name: 'Thyroid Cartilage', level: 'C4–C5', how: 'Palpate the laryngeal prominence (Adam\'s apple) centrally. The thyroid notch is the superior V-shaped notch. Hyaline cartilage — only anterior 2/3 visible, open posteriorly.', clinical: 'Largest laryngeal cartilage. Surrounds and protects vocal cords. Palpate gently — external laryngeal nerve (branch of superior laryngeal) runs near the inferior horn and can be injured in thyroid surgery.' },
+  { name: 'Cricothyroid Ligament', level: 'C5–C6', how: 'Soft tissue space between the inferior border of the thyroid cartilage and the superior cricoid cartilage. A small depression palpable in the midline.', clinical: 'Site of emergency cricothyrotomy (needle or surgical) for airway obstruction above the larynx. The cricothyroid artery crosses the superior portion — incise inferior to avoid it.' },
+  { name: 'Cricoid Cartilage', level: 'C5–C6', how: 'Just inferior to the thyroid cartilage. The first complete ring you can feel — wider posteriorly (signet ring shaped). Apply gentle pressure to confirm circumferential ring.', clinical: 'Only complete cartilaginous ring of the airway — if occluded, no air passes. Sellick\'s maneuver: compress cricoid posteriorly to occlude esophagus during intubation (prevents regurgitation). Border between larynx and trachea.' },
+  { name: 'First Tracheal Ring', level: 'C6', how: 'Just inferior to the cricoid. The trachea descends toward the jugular notch. Tracheal rings (C-shaped cartilage) are palpable as ridges.', clinical: 'Tracheal deviation = tension pneumothorax (contralateral), mass lesion, or thyroid enlargement. Always assess tracheal position in trauma and respiratory assessment.' },
+  { name: 'Thyroid Gland', level: 'C5–T1', how: 'Deep to infrahyoid muscles, lateral to trachea. Both lobes palpable lateral to trachea. Isthmus anterior to 2nd-3rd tracheal rings. Ask patient to swallow — thyroid rises with larynx.', clinical: 'Enlargement (goiter) may compress trachea or esophagus. Thyroid nodules: most benign but assess for malignancy (hard, fixed, dysphagia). Rising with swallowing distinguishes thyroid mass from other neck masses.' },
+  { name: 'Jugular (Suprasternal) Notch', level: 'T1', how: 'Depression at the superior border of the sternum between the two SCM sternal heads. Easily visible and palpable.', clinical: 'Jugular venous pressure (JVP) assessment: elevated JVP (visible jugular vein pulsation >3cm above sternal angle) = elevated right heart pressure. Lymph nodes near notch = concern.' },
+];
+
+const LYMPH_NODES_SURFACE = [
+  { name: 'Occipital', location: 'Along base of occiput (EOP region)' },
+  { name: 'Pre/Post-Auricular', location: 'Anterior and posterior to the ear (tragus/mastoid)' },
+  { name: 'Tonsillar (Jugulodigastric)', location: 'Posterior to angle of mandible, anterior to proximal SCM — drains tonsils' },
+  { name: 'Submandibular', location: 'Submandibular triangle — drains oral cavity, lip, nose' },
+  { name: 'Submental', location: 'Submental triangle (midline, below chin) — drains central lower lip, chin, tongue tip' },
+  { name: 'Superficial Cervical', location: 'Along external jugular vein, superficial to SCM' },
+  { name: 'Deep Cervical', location: 'Along IJV, deep to SCM — difficult to palpate; hook SCM laterally' },
+  { name: 'Posterior Cervical', location: 'Posterior triangle, along accessory nerve chain' },
+  { name: 'Supraclavicular', location: 'Supraclavicular fossa — Virchow\'s node on left (thoracic/abdominal malignancy risk)' },
+];
+
+const FASCIA_LAYERS = [
+  { name: 'Superficial Cervical Fascia', color: 'teal', desc: 'Thin layer of subcutaneous connective tissue lying between the skin and the deep cervical fascia. Contains the platysma muscle, cutaneous nerves, superficial veins (external jugular), and superficial lymph nodes.' },
+  { name: 'Investing (Superficial Layer of Deep) Fascia', color: 'gold', desc: 'Most superficial of the deep cervical fascia. Splits to invest both the SCM and trapezius muscles — creating "Four Corners" of fascial investment. Forms the roof of the posterior and anterior triangles. Splits again to invest the parotid and submandibular glands.' },
+  { name: 'Pretracheal Fascia', color: 'gold', desc: 'Two portions: (1) Muscular layer — invests the infrahyoid strap muscles. (2) Visceral layer — invests the larynx, trachea, and thyroid gland. The posterior portion blends with the carotid sheath. Creates the anterior visceral compartment — all structures within it move together during swallowing.' },
+  { name: 'Prevertebral Fascia', color: 'amber', desc: 'Encloses the vertebral column and its associated muscles (scalenes, deep muscles of the back) anteriorly, laterally, and posteriorly. Extends laterally into the axilla as the axillary sheath, enclosing the brachial plexus and axillary vessels. Forms the posterior wall of the retropharyngeal space.' },
+  { name: 'Carotid Sheath', color: 'red', desc: 'A condensation of all three deep fascial layers surrounding the carotid vessels, IJV, and vagus nerve. Extends from the base of the skull to the root of the neck. Contents: CCA, ICA, IJV, CN X (vagus), deep cervical lymph nodes.' },
+];
+
+const MUSCLES = {
+  superficial: [
+    { name: 'Platysma', origin: 'Fascia over pectoralis major and deltoid muscles', insertion: 'Inferior border of mandible and skin of the lower face', nerve: 'CN VII (facial nerve — cervical branch)', roots: 'CN VII', action: 'Tenses skin of neck; depresses angles of mouth; weak mandible depressor', clinical: 'Very thin, broad sheet muscle lying just beneath the skin. Tenses the neck skin — visible in effort/pain. Platysmal bands (vertical neck bands) prominent with aging/weight loss. Platysma can be used as landmark for surgical depth: if you see platysma, you\'re in the correct layer.' },
+    { name: 'Sternocleidomastoid (SCM)', origin: 'Two heads: Sternal head — anterior surface of manubrium. Clavicular head — medial 1/3 of clavicle', insertion: 'Mastoid process of temporal bone (lateral surface) and lateral 1/2 of superior nuchal line of occipital bone', nerve: 'CN XI (Spinal accessory nerve) — motor. C2-C3 — proprioception/sensation', roots: 'CN XI + C2-C3', action: 'Unilateral: ipsilateral lateral flexion + contralateral rotation. Bilateral: flexes neck (forward flexion of head on trunk)', clinical: 'Torticollis: SCM shortening/spasm → head tilted to ipsilateral side, face rotated contralateral. Congenital muscular torticollis: fibrotic SCM in neonates. SCM is key landmark dividing neck into anterior and posterior triangles. Trigger points in SCM refer pain to head (temporal, frontal, face, ear, vertex). Adverse postural adaptation in forward head posture.' },
+  ],
+  infrahyoid: [
+    { name: 'Sternohyoid', origin: 'Posterior surface of manubrium and medial clavicle', insertion: 'Body of hyoid', nerve: 'Ansa cervicalis (C1-C2)', roots: 'C1, C2', action: 'Depresses hyoid after it has been elevated during swallowing', clinical: 'Most superficial infrahyoid muscle. All infrahyoid muscles depress the hyoid. Innervated by ansa cervicalis — nerve loop formed by superior root (C1-2) and inferior root (C2-3). Damaged in anterior cervical spine surgery (ACDF).' },
+    { name: 'Sternothyroid', origin: 'Posterior surface of manubrium of sternum (inferior to sternohyoid origin)', insertion: 'Oblique line of thyroid cartilage', nerve: 'Ansa cervicalis (C1-C2)', roots: 'C1, C2', action: 'Depresses the thyroid cartilage (and larynx)', clinical: 'Deeper than sternohyoid. Important surgically for thyroid and parathyroid access. Creates fascial layer over thyroid gland.' },
+    { name: 'Thyrohyoid', origin: 'Oblique line of thyroid cartilage', insertion: 'Body and greater horn of hyoid', nerve: 'C1 via CN XII (hypoglossal nerve — carries C1 fibers)', roots: 'C1', action: 'Depresses hyoid and elevates thyroid cartilage (when hyoid fixed)', clinical: 'The ONE infrahyoid muscle NOT innervated by ansa cervicalis — C1 fibers hitchhike along CN XII. Clinically important: if patient has ansa cervicalis palsy, thyrohyoid is SPARED.' },
+    { name: 'Omohyoid', origin: 'Inferior belly: superior border of scapula near suprascapular notch. Superior belly: intermediate tendon.', insertion: 'Inferior belly ends at intermediate tendon. Superior belly: body of hyoid.', nerve: 'Ansa cervicalis (C1-C2)', roots: 'C1, C2', action: 'Depresses, retracts, and stabilizes the hyoid. Intermediate tendon held by fascial sling to clavicle.', clinical: 'Two bellies connected by intermediate tendon — unique anatomy. The inferior belly crosses the posterior triangle, dividing it into occipital and supraclavicular triangles. Fascial sling prevents lateral displacement during swallowing.' },
+  ],
+  suprahyoid: [
+    { name: 'Mylohyoid', origin: 'Mylohyoid line of mandible (internal surface)', insertion: 'Median raphe and body of hyoid', nerve: 'Mylohyoid nerve (branch of V3 — mandibular division of CN V)', roots: 'CN V3', action: 'Elevates hyoid and floor of mouth; elevates tongue during swallowing and speech', clinical: 'Forms the muscular floor of the mouth (oral diaphragm). Important in dental procedures. Sublingual abscess can spread inferior to mylohyoid into the neck (Ludwig\'s angina — life-threatening cellulitis of floor of mouth).' },
+    { name: 'Geniohyoid', origin: 'Inferior mental spine (genial tubercle) of mandible', insertion: 'Body of hyoid', nerve: 'C1 fibers via CN XII (hypoglossal nerve)', roots: 'C1', action: 'Pulls hyoid anterosuperiorly, widens pharynx during deglutition; protrudes lower jaw', clinical: 'Lies superior to mylohyoid. Both geniohyoid and thyrohyoid receive C1 via CN XII — helps explain why CN XII lesions can affect swallowing (hypoglossal nerve carries these motor fibers).' },
+    { name: 'Stylohyoid', origin: 'Styloid process of temporal bone (posterior surface)', insertion: 'Body of hyoid (lateral aspect)', nerve: 'CN VII (facial nerve — cervical branch)', roots: 'CN VII', action: 'Elevates and retracts hyoid (elongates floor of mouth)', clinical: 'The tendon of stylohyoid is split by the digastric intermediate tendon — unique anatomy. Eagle syndrome: elongated styloid process compresses stylohyoid structures → throat pain, dysphagia.' },
+    { name: 'Digastric', origin: 'Anterior belly: digastric fossa of mandible (internal surface). Posterior belly: mastoid notch (mastoid process of temporal bone).', insertion: 'Intermediate tendon to body and greater horn of hyoid via fibrous sling', nerve: 'Anterior belly: mylohyoid nerve (CN V3). Posterior belly: facial nerve (CN VII)', roots: 'CN V3 + CN VII', action: 'Depresses mandible (opens mouth), elevates hyoid; stabilizes hyoid during swallowing', clinical: 'Two bellies with DIFFERENT nerve supplies — useful for localizing nerve injuries. Dual innervation reflects embryological origin from different branchial arches. The fibrous sling to the hyoid prevents excessive superior movement of the digastric tendon.' },
+  ],
+  scalenes: [
+    { name: 'Anterior Scalene', origin: 'Anterior tubercles of transverse processes C3-C6', insertion: '1st rib (scalene tubercle — anterior)', nerve: 'VPR (ventral primary rami) of lower cervical nerves C5-C6', roots: 'C5–C6', action: 'From above: elevates 1st rib (accessory inspiratory muscle). From below: flexes cervical spine; rotates head to opposite side. Ipsilateral lateral flexion.', clinical: 'The anterior scalene forms the anterior wall of the scalene triangle through which the brachial plexus and subclavian artery pass. Hypertrophy or spasm = TOS. Phrenic nerve descends along its anterior surface. Scalene trigger points refer pain to upper trapezius, arm, and hand (may mimic carpal tunnel or C6-C7 radiculopathy).' },
+    { name: 'Middle Scalene', origin: 'Posterior tubercles of transverse processes C2-C7', insertion: 'Superior surface of 1st rib (posterior to subclavian groove)', nerve: 'VPR of cervical nerves C3-C8', roots: 'C3–C8', action: 'Same as anterior scalene: elevates 1st rib, lateral flexion, contralateral rotation', clinical: 'Largest of the three scalenes. The dorsal scapular nerve (innervates rhomboids and levator scapulae) pierces through the belly of middle scalene. The long thoracic nerve (serratus anterior) also pierces through middle scalene. Entrapment of these nerves within middle scalene = cause of referred scapular pain and serratus weakness.' },
+    { name: 'Posterior Scalene', origin: 'Posterior tubercles of transverse processes C4-C6', insertion: 'Outer surface of 2nd rib (posterior)', nerve: 'VPR of cervical nerves C6-C8', roots: 'C6–C8', action: 'Elevates 2nd rib; lateral flexion of cervical spine; contralateral rotation', clinical: 'Smallest scalene. The scalene triangle is bounded by: anterior scalene (anteriorly), middle scalene (posteriorly), and 1st rib (inferiorly). Brachial plexus trunks and subclavian artery pass through this triangle — critical anatomy for understanding TOS.' },
+  ],
+  prevertebral: [
+    { name: 'Longus Colli (Cervicis)', origin: 'Three parts: vertical portion (T1-T3 → C2-C4 bodies), superior oblique (C3-C5 TP → anterior atlas tubercle), inferior oblique (T1-T3 bodies → C5-C6 TP)', insertion: 'See origin — three-part muscle with complex anatomy', nerve: 'VPR of cervical nerves C2-C6', roots: 'C2–C6', action: 'Flexes and rotates cervical spine; bilateral — pure cervical flexion; most important deep neck flexor', clinical: 'Key target in cervical stabilization exercises — "deep neck flexor" rehabilitation. Weakness associated with forward head posture, cervicogenic headache, and post-whiplash dysfunction. DNF training: chin tuck (craniocervical flexion) selectively activates longus colli. Pre-vertebral soft tissue swelling on lateral X-ray at C2-C6 = possible longus colli disruption (traumatic hematoma).' },
+    { name: 'Longus Capitis', origin: 'Anterior tubercles of transverse processes C3-C6', insertion: 'Basilar part of occipital bone (inferior surface)', nerve: 'VPR of cervical nerves C1-C3', roots: 'C1–C3', action: 'Flexes head on neck (craniocervical flexion); slight rotation', clinical: 'Works with longus colli to produce craniocervical flexion. Important in whiplash rehabilitation — often inhibited post-MVA. Chin tuck test and craniocervical flexion test (CCFT) assess this muscle group.' },
+    { name: 'Rectus Capitis Anterior', origin: 'Lateral mass of atlas (C1)', insertion: 'Base of skull anterior to occipital condyle', nerve: 'VPR of C1-C2', roots: 'C1–C2', action: 'Flexes head at atlanto-occipital joint', clinical: 'Short prevertebral muscle — acts as stabilizer of atlanto-occipital joint during head flexion. Rarely isolated clinically but contributes to upper cervical stability.' },
+    { name: 'Rectus Capitis Lateralis', origin: 'Transverse process of atlas (C1)', insertion: 'Jugular process of occipital bone', nerve: 'VPR of C1-C2', roots: 'C1–C2', action: 'Lateral flexion of head at atlanto-occipital joint', clinical: 'Deep stabilizer of the atlanto-occipital joint. Weakness or inhibition in upper cervical instability conditions (Down syndrome, rheumatoid arthritis with odontoid erosion).' },
+  ],
+  suboccipital: [
+    { name: 'Rectus Capitis Posterior Major', origin: 'Spinous process of C2 (axis)', insertion: 'Lateral portion of inferior nuchal line (occipital bone)', nerve: 'Suboccipital nerve (DPR of C1)', roots: 'C1 DPR', action: 'Extends the head; ipsilateral rotation of head', clinical: 'One of four suboccipital muscles forming the suboccipital triangle. Rich in proprioceptors — thought to have a role in gaze stabilization and head position sense. Suboccipital muscle hypertonicity contributes to cervicogenic headache. Suboccipital release techniques target this group.' },
+    { name: 'Rectus Capitis Posterior Minor', origin: 'Posterior tubercle of C1 (atlas)', insertion: 'Medial portion of inferior nuchal line (occipital bone)', nerve: 'Suboccipital nerve (DPR of C1)', roots: 'C1 DPR', action: 'Extends the head; minor ipsilateral rotation', clinical: 'Unique: has a connective tissue bridge to the posterior dura mater. Postulated role in dural tension — proposed mechanism for suboccipital tension headaches and dizziness. Does NOT form a border of the suboccipital triangle.' },
+    { name: 'Obliquus Capitis Inferior', origin: 'Spinous process of C2 (axis)', insertion: 'Transverse process of C1 (atlas)', nerve: 'Suboccipital nerve (DPR of C1)', roots: 'C1 DPR', action: 'Rotates atlas (and head) to ipsilateral side — pure rotation at C1-C2', clinical: 'The ONLY suboccipital muscle that does NOT attach to the occiput. Forms the inferior border of the suboccipital triangle. Largest suboccipital muscle.' },
+    { name: 'Obliquus Capitis Superior', origin: 'Transverse process of C1 (atlas)', insertion: 'Occipital bone (above inferior nuchal line)', nerve: 'Suboccipital nerve (DPR of C1)', roots: 'C1 DPR', action: 'Extends the head; ipsilateral lateral flexion; ipsilateral rotation', clinical: 'Forms the lateral border of the suboccipital triangle. With the inferior oblique, creates the "scissor" arrangement around the vertebral artery loop. The suboccipital triangle is floored by the posterior arch of atlas and posterior atlanto-occipital membrane, and roofed by semispinalis capitis.' },
+  ],
+};
+
+const ANT_TRIANGLES = [
+  { name: 'Submandibular Triangle (Digastric Triangle)', borders: 'Anterior and posterior bellies of digastric, inferior border of mandible', contents: 'Submandibular salivary gland and duct, submandibular lymph nodes, CN XII (hypoglossal nerve), facial artery and vein, lingual nerve (V3)' },
+  { name: 'Carotid Triangle', borders: 'Superior belly of omohyoid, posterior belly of digastric, anterior border of SCM', contents: 'CCA bifurcation (ICA + ECA), IJV, CN X (vagus), CN XI (accessory), CN XII (hypoglossal), superior root of ansa cervicalis, branches of cervical plexus, thyroid/larynx/pharynx' },
+  { name: 'Muscular Triangle', borders: 'Superior belly of omohyoid, anterior border of SCM, midline of neck', contents: 'Infrahyoid strap muscles (sternohyoid, sternothyroid, thyrohyoid), thyroid and parathyroid glands' },
+  { name: 'Submental Triangle', borders: 'Right and left anterior bellies of digastric, hyoid bone (all unpaired triangle)', contents: 'Submental lymph nodes, small veins forming anterior jugular vein' },
+];
+
+const CERVICAL_PLEXUS_SENSORY = [
+  { nerve: 'Lesser Occipital Nerve', roots: 'C2', path: 'Ascends posterior to SCM, posterior to ear', supplies: 'Posterior skull and scalp (behind ear)' },
+  { nerve: 'Greater Auricular Nerve', roots: 'C2-C3', path: 'Ascends anterior to SCM, anterior to ear — wraps around SCM', supplies: 'Anterior to ear, angle of jaw, lower face. Most commonly encountered superficial cervical nerve.' },
+  { nerve: 'Transverse Cervical Nerve', roots: 'C2-C3', path: 'Crosses SCM horizontally (posterior to anterior) — "Erb\'s point" on posterior SCM', supplies: 'Skin of anterior triangle of neck' },
+  { nerve: 'Supraclavicular Nerve', roots: 'C3-C4', path: 'Descends posterior to SCM, divides into 3 branches', supplies: 'Skin over lower neck, shoulder, upper anterior chest (clavicular region)' },
+];
+
+const CERVICAL_PLEXUS_MOTOR = [
+  { nerve: 'Phrenic Nerve', roots: 'C3-C4-C5', path: 'Descends along anterior surface of anterior scalene (within prevertebral fascia) → passes between SCM and anterior scalene → enters thorax → supplies diaphragm', clinical: 'C3-4-5 keeps the diaphragm alive. SCI at or above C4 = ventilator dependent. Phrenic nerve block/irritation (tumors, hiccups). Referred pain from diaphragm to ipsilateral shoulder (C4 dermatome) — liver/gallbladder pathology = right shoulder pain.' },
+  { nerve: 'Ansa Cervicalis', roots: 'C1-C2-C3', path: 'Loop formed by superior root (C1-2) and inferior root (C2-3). Lies on or within carotid sheath.', clinical: 'Innervates all infrahyoid muscles EXCEPT thyrohyoid (C1 via CN XII). Commonly used in reinnervation procedures (hypoglossal-facial anastomosis for facial palsy).' },
+];
+
+const BP_CERVICAL = [
+  { name: 'Dorsal Scapular Nerve', roots: 'C5', exits: 'Pierces through belly of middle scalene', supplies: 'Rhomboid major, rhomboid minor, levator scapulae', clinical: 'Entrapment in middle scalene → medial scapular aching, rhomboid weakness. Often misdiagnosed as thoracic spine pain.' },
+  { name: 'Long Thoracic Nerve', roots: 'C5-C6-C7', exits: 'Pierces through or posterior to middle scalene', supplies: 'Serratus anterior', clinical: 'Long course + superficial position → vulnerability to traction, compression, direct trauma. Palsy → scapular winging (medial border lifts). Associated with prolonged shoulder abduction (surgery), backpack compression, or direct trauma.' },
+  { name: 'Phrenic Nerve (from cervical plexus, travels with BP)', roots: 'C3-C4-C5', exits: 'Anterior surface of anterior scalene', supplies: 'Diaphragm', clinical: 'Accessory phrenic nerve (C5 branch from nerve to subclavius) present in 30-75% — travels with or medial to main phrenic. Critical for thoracic surgeons.' },
+];
+
+const ARTERIAL_CONTENT = {
+  asymmetry: 'The arterial supply to the neck is ASYMMETRIC: Left CCA and left subclavian artery arise DIRECTLY from the aortic arch. On the right, the brachiocephalic trunk (innominate artery) arises first from the aortic arch, then bifurcates into the right CCA and right subclavian artery.',
+  cca: { branches: ['Internal carotid artery (ICA) — ascends to brain via carotid canal; NO branches in the neck; joins Circle of Willis; carotid sinus (baroreceptor) at its origin', 'External carotid artery (ECA) — 8 branches: Superior thyroid, Lingual, Facial, Ascending pharyngeal, Occipital, Posterior auricular, Maxillary, Superficial temporal. Terminates in parotid gland.'] },
+  subclavian: ['Vertebral artery — enters transverse foramen at C6, ascends C6→C1, forms large loop at C1→foramen magnum, joins R+L to form basilar artery; supplies brainstem/cerebellum/posterior cortex', 'Thyrocervical trunk — branches: inferior thyroid a., transverse cervical a., suprascapular a.', 'Internal thoracic artery — descends posterior to costal cartilages', 'Costocervical trunk — deep cervical a. (ascends) + superior intercostals a. (descends)'],
+};
+
+const VENOUS_CONTENT = [
+  { name: 'Anterior Jugular Vein', desc: 'Descends along anterior neck, eventually passes deep to SCM. Drains into external jugular vein (or sometimes directly to subclavian).' },
+  { name: 'External Jugular Vein (EJV)', desc: 'Formed posterior to angle of mandible by junction of posterior auricular vein and posterior division of retromandibular vein. Superficial to SCM. Drains into subclavian vein. Visible when elevated venous pressure or Valsalva.' },
+  { name: 'Internal Jugular Vein (IJV)', desc: 'Largest cervical vein. Begins at jugular foramen (drains sigmoid sinus from brain). Descends within carotid sheath, deep to SCM. Joins subclavian vein → brachiocephalic vein. IJV pulsation (JVP) — assessed in right heart failure evaluation.' },
+  { name: 'Brachiocephalic Vein', desc: 'Formed by junction of IJV + subclavian vein (at clavicle level). Left brachiocephalic vein is longer (crosses midline). R + L merge → Superior vena cava → right atrium.' },
+];
+
+const VISCERA_DATA = [
+  { name: 'Thyroid Gland', icon: '🦋', left: true, color: 'teal', anatomy: '2 lobes connected by isthmus. Lobes anterolateral to trachea and larynx. Isthmus anterior to 2nd-3rd tracheal rings. Deep to infrahyoid muscles. Highly vascular — superior thyroid artery (from ECA) and inferior thyroid artery (from thyrocervical trunk).', function: 'Secretes T3 (triiodothyronine) and T4 (thyroxine) — regulate metabolism, growth, temperature, sympathetic activity. Also secretes calcitonin (reduces serum calcium, minor role).', clinical: 'Hypothyroidism: fatigue, weight gain, cold intolerance, constipation, depression. Hyperthyroidism: weight loss, heat intolerance, tachycardia, exophthalmos (Graves\'). Thyroid surgery risk: recurrent laryngeal nerve (voice), parathyroid glands (calcium). Thyroid rising with swallowing = key exam finding.' },
+  { name: 'Parathyroid Glands', icon: '🔴', left: true, color: 'amber', anatomy: 'Four small glands (4 mm each) located on posterior surface of each thyroid lobe (2 superior, 2 inferior). Total of 4 glands, sometimes more (variant anatomy — up to 12 reported).', function: 'Secretes parathyroid hormone (PTH). Critical role in calcium and phosphate homeostasis. PTH ↑ serum calcium (↑ bone resorption, ↑ renal Ca reabsorption, ↑ GI absorption via vitamin D activation).', clinical: 'Accidental removal during thyroidectomy = hypocalcemia (tetany, Chvostek\'s sign, Trousseau\'s sign). Hyperparathyroidism: hypercalcemia → "bones, stones, groans, moans" (bone pain, kidney stones, GI symptoms, neuropsychiatric). Surgeons must carefully identify and preserve all 4 glands.' },
+  { name: 'Pharynx', icon: '🌀', left: false, color: 'purple', anatomy: '3 sections: Nasopharynx (above soft palate, behind nasal cavity), Oropharynx (soft palate to tip of epiglottis), Laryngopharynx (epiglottis to cricoid — both food and air pass here). Two muscle layers: outer circular (constrictors) and inner longitudinal.', function: 'Dual function: conduits food to esophagus AND air to larynx. Swallowing: 3 phases (oral, pharyngeal, esophageal). Epiglottis closes laryngeal inlet during pharyngeal phase — prevents aspiration.', clinical: 'Innervation: CN X (vagus) via pharyngeal plexus — dysphagia with vagal palsy. Pharyngeal constrictors have Killian\'s dehiscence (Zenker\'s diverticulum forms here). Head/neck cancer: oropharyngeal SCC often HPV-related. Dysphagia assessment critical in neurological patients.' },
+  { name: 'Larynx', icon: '🗣', left: false, color: 'teal', anatomy: 'Connects pharynx to trachea. Cartilages: thyroid (largest, hyaline), cricoid (only complete ring, hyaline), epiglottis (elastic), arytenoids (paired, control vocal cord tension), corniculate, cuneiform. Intrinsic muscles control vocal cord tension and airway diameter.', function: 'Voice production via vibration of vocal cords. Airway protection during swallowing (epiglottis closes). Cough reflex.', clinical: 'Innervation: CN X — Superior laryngeal nerve (internal: sensory above cords; external: motor to cricothyroid). Recurrent laryngeal nerve → all intrinsic laryngeal muscles EXCEPT cricothyroid. Recurrent laryngeal nerve injury (thyroid surgery, mediastinal tumors) = vocal cord paralysis → hoarseness, aspiration, respiratory distress. Left recurrent laryngeal loops under aortic arch — longer, more vulnerable (Pancoast tumor, aortic aneurysm).' },
+  { name: 'Trachea', icon: '🫁', left: false, color: 'green', anatomy: 'Begins at inferior cricoid cartilage (C6 level). Descends through neck and superior mediastinum. Bifurcates at sternal angle (T4-T5) into right and left primary bronchi (carina). C-shaped cartilaginous rings (incomplete posteriorly — posterior wall = trachealis muscle).', function: 'Conducts air to lungs. Mucociliary clearance.', clinical: 'Tracheal deviation: away from tension pneumothorax; toward mediastinal shift/atelectasis. Intubation: right bronchus shorter and more vertically oriented — inadvertent right mainstem intubation common. Tracheostomy: typically performed at 2nd-3rd tracheal ring.' },
+  { name: 'Esophagus', icon: '🌿', left: false, color: 'gold', anatomy: 'Muscular tube beginning at laryngopharynx (C6 level, inferior to cricoid). Descends through superior then posterior mediastinum. Pierces diaphragm at esophageal hiatus (T10). Musculature: upper 1/3 = striated (voluntary), middle 1/3 = mixed, lower 1/3 = smooth (involuntary).', function: 'Peristaltic transport of food from pharynx to stomach. Upper esophageal sphincter (cricopharyngeus) and lower esophageal sphincter.', clinical: 'Cervical esophagus: posterior to trachea and larynx. Retropharyngeal swelling compresses esophagus → dysphagia. Zenker\'s diverticulum at Killian\'s dehiscence. GERD: LES dysfunction. Barrett\'s esophagus (premalignant). Dysphagia assessment: critical in stroke, SCI, Parkinson\'s.' },
+];
+
+const NECK_REVIEW = [
+  { q: 'A patient presents with torticollis — head tilted to the left, face rotated to the right. Which muscle is most likely shortened/spastic, and what nerve innervates it?', a: 'The LEFT sternocleidomastoid (SCM) is shortened/spastic. The SCM causes ipsilateral lateral flexion (tilts head to same side) and contralateral rotation (rotates face away). Innervated by CN XI (Spinal accessory nerve) — motor, and C2-C3 for proprioception.' },
+  { q: 'During a thyroidectomy, the recurrent laryngeal nerve is inadvertently cut on the left side. What are the expected deficits?', a: 'The recurrent laryngeal nerve (RLN) innervates ALL intrinsic laryngeal muscles except cricothyroid. Left RLN loops under the aortic arch — it is longer and more vulnerable. Unilateral RLN injury: hoarseness, weak/breathy voice, potential aspiration. The remaining cricothyroid (supplied by external laryngeal nerve) can partially compensate. Bilateral injury = respiratory emergency (both cords paralyze in adducted position → airway obstruction).' },
+  { q: 'Which infrahyoid muscle is NOT innervated by the ansa cervicalis, and what does innervate it?', a: 'The Thyrohyoid muscle is NOT innervated by the ansa cervicalis. It is innervated by C1 fibers that hitchhike along CN XII (hypoglossal nerve). All other infrahyoid muscles (sternohyoid, sternothyroid, omohyoid) are supplied by the ansa cervicalis (C1-C3).' },
+  { q: 'A surgeon performing a lymph node biopsy in the posterior cervical triangle damages a nerve crossing the triangle. The patient develops shoulder drop and inability to ABduct the arm above 90°. What nerve was injured?', a: 'CN XI (Spinal accessory nerve) was injured. It crosses the posterior triangle superficially to reach the trapezius. Injury causes trapezius palsy: shoulder depression/droop, inability to fully elevate the arm (trapezius assists with scapular upward rotation above 90° of abduction), scapular winging (different character than serratus winging).' },
+  { q: 'Describe the asymmetry in origin of the common carotid arteries. What is the clinical implication?', a: 'Left CCA arises DIRECTLY from the aortic arch. Right CCA arises from the brachiocephalic trunk (innominate artery) which is the first branch of the aortic arch. Clinical implication: left-sided aortic arch pathology (aneurysm, dissection) directly affects the left CCA, whereas right-sided pathology affects the brachiocephalic trunk (potentially both right CCA and right subclavian). The left recurrent laryngeal nerve loops under the aortic arch — aortic pathology/tumors can cause hoarseness.' },
+  { q: 'What are the contents of the carotid sheath, and why is it a clinical contraindication zone for electrotherapy?', a: 'Contents: Common carotid artery, Internal carotid artery, Internal jugular vein, Vagus nerve (CN X), deep cervical lymph nodes. Contraindication: The carotid sinus is a baroreceptor located at the bifurcation of the CCA. Electrotherapy (US, TENS, IFC) over this area can stimulate the carotid sinus → reflex bradycardia and hypotension (vasovagal response) → syncope. Also: IJV is large and compressible; vagus nerve stimulation could affect cardiac rate.' },
+  { q: 'What is the clinical significance of a palpable left supraclavicular lymph node?', a: 'A palpable left supraclavicular node (Virchow\'s node / Troisier\'s sign) is a clinical red flag for abdominal or thoracic malignancy, most classically gastric cancer. The thoracic duct drains into the venous system on the left side — cancer cells from the GI tract, liver, or lung can metastasize via the thoracic duct to this node. Any palpable supraclavicular node in an adult requires urgent investigation and referral.' },
+];
+
+// ══════════════════════════════════════════════════
+// RENDER FUNCTIONS
+// ══════════════════════════════════════════════════
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function renderSurface() {
+  const el = document.getElementById('surface-midline');
+  if (!el) return;
+  el.innerHTML = SURFACE_MIDLINE.map(s => `
+    <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;border-left:3px solid var(--teal);">
+      <div style="display:flex;align-items:center;gap:0.625rem;margin-bottom:0.375rem;flex-wrap:wrap;">
+        <span style="font-size:0.95rem;font-weight:600;color:var(--text);">${s.name}</span>
+        <span class="tag tag-teal">${s.level}</span>
+      </div>
+      <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;margin-bottom:0.35rem;">${s.how}</div>
+      <div style="font-size:0.875rem;color:var(--gold);line-height:1.6;font-style:italic;">${s.clinical}</div>
+    </div>`).join('');
+
+  const lEl = document.getElementById('lymph-nodes-surface');
+  if (lEl) lEl.innerHTML = LYMPH_NODES_SURFACE.map(n => `
+    <div style="display:flex;gap:0.75rem;padding:0.4rem 0;border-bottom:1px solid var(--border);">
+      <div style="font-size:0.875rem;font-weight:600;color:var(--text);min-width:160px;">${n.name}</div>
+      <div style="font-size:0.875rem;color:var(--text2);">${n.location}</div>
+    </div>`).join('');
+}
+
+function renderFascia() {
+  const el = document.getElementById('fascia-content');
+  if (!el) return;
+  const colorMap = { teal: 'var(--teal)', gold: 'var(--gold)', amber: 'var(--amber)', red: 'var(--red)' };
+  el.innerHTML = FASCIA_LAYERS.map(f => `
+    <div style="background:var(--surface);border-radius:8px;padding:0.875rem 1rem;margin-bottom:0.625rem;border-left:3px solid ${colorMap[f.color]};">
+      <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.375rem;">${f.name}</div>
+      <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">${f.desc}</div>
+    </div>`).join('');
+}
+
+function selectMuscleGroup(group, btn) {
+  document.querySelectorAll('#muscle-cat-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const muscles = MUSCLES[group] || [];
+  const el = document.getElementById('muscle-content');
+  el.innerHTML = `<div class="muscle-accordion-list" style="animation:fadeUp 0.25s ease;">
+    ${muscles.map(m => {
+      const clinParts = m.clinical.split(/(?<=[.!?])\s+(?=[A-Z])/);
+      const clinShort = clinParts.slice(0,2).join(' ');
+      const clinMore = clinParts.slice(2).join(' ');
+      return `
+      <div class="ma-item" onclick="toggleMA(this)">
+        <div class="ma-header">
+          <div class="ma-name">${m.name}</div>
+          <div class="ma-tags">
+            <span class="tag tag-gold" style="font-size:0.65rem;">${m.roots}</span>
+          </div>
+          <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="ma-body">
+          <div class="oina-grid">
+            <span class="oina-key">Origin</span><span class="oina-val">${m.origin}</span>
+            <span class="oina-key">Insertion</span><span class="oina-val">${m.insertion}</span>
+            <span class="oina-key">Nerve</span><span class="oina-val">${m.nerve}</span>
+            <span class="oina-key">Action</span><span class="oina-val">${m.action}</span>
+          </div>
+          <div class="clinical-note-v2">
+            <div class="cn2-row"><span class="cn2-icon">💡</span>
+              <div class="cn2-content">
+                <div class="cn2-lbl">Clinical Note</div>
+                <div class="cn2-short">${clinShort}</div>
+                ${clinMore ? `<div class="cn2-more">${clinMore}</div><button class="cn2-toggle" onclick="event.stopPropagation();toggleCN(this)">+ Show more</button>` : ''}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
+
+function renderTriangles() {
+  const el = document.getElementById('ant-triangle-content');
+  if (!el) return;
+  const colors = ['teal', 'gold', 'amber', 'purple'];
+  const colorMap = { teal: 'var(--teal)', gold: 'var(--gold)', amber: 'var(--amber)', purple: 'var(--purple)' };
+  el.innerHTML = ANT_TRIANGLES.map((t, i) => `
+    <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;border-left:3px solid ${colorMap[colors[i]]};">
+      <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.375rem;">${t.name}</div>
+      <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.3rem;"><strong style="color:var(--text2);">Borders: </strong>${t.borders}</div>
+      <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;"><strong>Contents: </strong>${t.contents}</div>
+    </div>`).join('');
+}
+
+function renderNerves() {
+  const sEl = document.getElementById('cervical-plexus-sensory');
+  if (sEl) sEl.innerHTML = CERVICAL_PLEXUS_SENSORY.map(n => `
+    <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.2rem;flex-wrap:wrap;">
+        <span style="font-size:0.9rem;font-weight:600;color:var(--text);">${n.nerve}</span>
+        <span class="tag tag-gold">${n.roots}</span>
+      </div>
+      <div style="font-size:0.875rem;color:var(--text2);line-height:1.6;margin-bottom:0.15rem;">${n.path}</div>
+      <div style="font-size:0.875rem;color:var(--teal-light);font-style:italic;">${n.supplies}</div>
+    </div>`).join('');
+
+  const mEl = document.getElementById('cervical-plexus-motor');
+  if (mEl) mEl.innerHTML = CERVICAL_PLEXUS_MOTOR.map(n => `
+    <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.25rem;flex-wrap:wrap;">
+        <span style="font-size:0.9rem;font-weight:600;color:var(--text);">${n.nerve}</span>
+        <span class="tag tag-gold">${n.roots}</span>
+      </div>
+      <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.2rem;">${n.path}</div>
+      <div class="clinical-note" style="margin-top:0.5rem;"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${n.clinical}</div></div>
+    </div>`).join('');
+
+  const bEl = document.getElementById('bp-cervical');
+  if (bEl) bEl.innerHTML = BP_CERVICAL.map(n => `
+    <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;border-left:3px solid var(--amber);">
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.25rem;flex-wrap:wrap;">
+        <span style="font-size:0.9rem;font-weight:600;color:var(--text);">${n.name}</span>
+        <span class="tag tag-gold">${n.roots}</span>
+      </div>
+      <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.2rem;"><strong style="color:var(--text2);">Exits: </strong>${n.exits}</div>
+      <div style="font-size:0.82rem;color:var(--text2);margin-bottom:0.3rem;"><strong>Supplies: </strong>${n.supplies}</div>
+      <div style="font-size:0.875rem;color:var(--gold);font-style:italic;line-height:1.6;">${n.clinical}</div>
+    </div>`).join('');
+}
+
+function renderCirculation() {
+  const el = document.getElementById('arterial-content');
+  if (!el) return;
+  el.innerHTML = `
+    <div class="warn-note" style="margin-bottom:0.875rem;">
+      <div class="warn-note-lbl">Asymmetric Origin</div>
+      <div class="warn-note-text">${ARTERIAL_CONTENT.asymmetry}</div>
+    </div>
+    <div class="sec-label">Common Carotid Artery</div>
+    <div style="font-size:0.9rem;color:var(--text2);line-height:1.7;margin-bottom:0.5rem;">Bifurcates at superior thyroid cartilage (C3-C4) into:</div>
+    ${ARTERIAL_CONTENT.cca.branches.map(b => `<div class="bullet"><span class="dot">•</span>${b}</div>`).join('')}
+    <div class="sec-label" style="margin-top:0.875rem;">Subclavian Artery Branches</div>
+    ${ARTERIAL_CONTENT.subclavian.map(b => `<div class="bullet"><span class="dot">•</span>${b}</div>`).join('')}`;
+
+  const vEl = document.getElementById('venous-content');
+  if (vEl) vEl.innerHTML = VENOUS_CONTENT.map(v => `
+    <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
+      <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.2rem;">${v.name}</div>
+      <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${v.desc}</div>
+    </div>`).join('');
+}
+
+function renderViscera() {
+  const left = VISCERA_DATA.filter(v => v.left);
+  const right = VISCERA_DATA.filter(v => !v.left);
+  const colorMap = { teal:'var(--teal)', amber:'var(--amber)', purple:'var(--purple)', green:'var(--green)', gold:'var(--gold)' };
+  const makeCard = v => `
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-title">${v.icon} ${v.name}</div>
+      </div>
+      <div class="card-body" style="border-left:3px solid ${colorMap[v.color]};margin-left:-1.125rem;padding-left:1.125rem;">
+        <div class="sec-label">Anatomy</div>
+        <div style="font-size:0.9rem;color:var(--text2);line-height:1.7;margin-bottom:0.75rem;">${v.anatomy}</div>
+        <div class="sec-label">Function</div>
+        <div style="font-size:0.9rem;color:var(--text2);line-height:1.7;margin-bottom:0.75rem;">${v.function}</div>
+        <div class="clinical-note"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${v.clinical}</div></div>
+      </div>
+    </div>`;
+  document.getElementById('viscera-left').innerHTML = left.map(makeCard).join('');
+  document.getElementById('viscera-right').innerHTML = right.map(makeCard).join('');
+}
+
+function renderReview() {
+  const el = document.getElementById('neck-review-list');
+  if (!el) return;
+  el.innerHTML = NECK_REVIEW.map((q, i) => `
+    <div class="rv-card" onclick="toggleRV(this)">
+      <div class="rv-q">
+        <span class="rv-num">Q${i + 1}</span>
+        <span class="rv-qtext">${q.q}</span>
+        <svg class="rv-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="rv-a"><div class="rv-a-inner">${q.a}</div></div>
+    </div>`).join('');
+}
+
+// INIT
+renderSurface();
+renderFascia();
+renderTriangles();
+renderNerves();
+renderCirculation();
+renderViscera();
+renderReview();
+selectMuscleGroup('superficial', document.querySelector('#muscle-cat-nav .chip-btn'));
+
+// ── EXPAND/COLLAPSE HELPER ──
+function toggleExpand(trigger) {
+  const body = trigger.nextElementSibling;
+  const open = trigger.classList.toggle('open');
+  if (body && body.classList.contains('expand-body')) {
+    body.classList.toggle('open', open);
+  }
+}
+
+function toggleMuscleCard(header) {
+  const body = header.nextElementSibling;
+  const open = body.classList.toggle('open');
+  header.parentElement.style.borderColor = open ? 'rgba(56,178,178,0.25)' : '';
+}
+
+function toggleRV(card) {
+  const was = card.classList.contains('open');
+  document.querySelectorAll('.rv-card').forEach(c => c.classList.remove('open'));
+  if (!was) card.classList.add('open');
+}
+
+</script>
+
+<script>
+// ── Shared UX helpers ──
+function toggleAccordion(el) {
+  const item = el.closest('.accordion');
+  const isOpen = item.classList.contains('open');
+  // Close siblings in same container
+  const siblings = item.parentElement.querySelectorAll('.accordion');
+  siblings.forEach(s => s.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+function toggleMA(el) {
+  const item = el.closest('.ma-item');
+  const isOpen = item.classList.contains('open');
+  const siblings = item.parentElement.querySelectorAll('.ma-item');
+  siblings.forEach(s => s.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+function toggleCN(btn) {
+  const note = btn.closest('.clinical-note-v2, .clinical-note');
+  const more = note.querySelector('.cn2-more, .cn-more');
+  const isShown = more && more.style.display === 'block';
+  if (more) more.style.display = isShown ? 'none' : 'block';
+  btn.textContent = isShown ? '+ Show more' : '− Show less';
+}
+function toggleReviewV2(card) {
+  const was = card.classList.contains('open');
+  document.querySelectorAll('.review-card-v2').forEach(c => c.classList.remove('open'));
+  if (!was) card.classList.add('open');
+}
+// Legacy support
+function toggleReview(card) {
+  const was = card.classList.contains('open');
+  document.querySelectorAll('.review-card').forEach(c => c.classList.remove('open'));
+  if (!was) card.classList.add('open');
+}
+</script>
+
+<script>
+// ── Upgrade review cards to v2 visual ──
+(function upgradeReviewCards() {
+  setTimeout(() => {
+    document.querySelectorAll('.review-card').forEach(card => {
+      // Skip already upgraded
+      if (card.dataset.upgraded) return;
+      card.dataset.upgraded = '1';
+      card.classList.add('review-card-v2');
+      
+      const qEl = card.querySelector('.review-q');
+      const numEl = card.querySelector('.review-num');
+      const qTextEl = card.querySelector('.review-q-text');
+      const aEl = card.querySelector('.review-a');
+      const aTextEl = card.querySelector('.review-a-text');
+      
+      if (!qEl || !numEl || !qTextEl) return;
+      
+      // Upgrade number to circle
+      numEl.classList.add('review-num-v2');
+      numEl.classList.remove('review-num');
+      qTextEl.classList.add('review-q-text-v2');
+      qTextEl.classList.remove('review-q-text');
+      
+      if (aEl && aTextEl) {
+        aEl.classList.add('review-a-v2');
+        const inner = document.createElement('div');
+        inner.className = 'review-a-inner';
+        inner.innerHTML = `<div class="review-a-label">Answer</div><div class="review-a-text-v2">${aTextEl.textContent}</div>`;
+        aEl.innerHTML = '';
+        aEl.appendChild(inner);
+      }
+      
+      // Re-wire click
+      card.onclick = () => toggleReviewV2(card);
+    });
+  }, 200);
+})();
+</script>
+</body>
+</html>

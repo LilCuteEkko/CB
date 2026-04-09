@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; TMJ</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">MSK Spine &middot; TMJ</div>
+  <h1>TMJ <span>&#8212; Temporomandibular Joint &amp; Headache DDx</span></h1>
+  <p>Comprehensive TMJ reference covering articular disc anatomy, TMJ biomechanics, deviation vs deflection, disc displacement with and without reduction, TMD causes and treatment, and headache differential diagnosis.</p>
+  <div class="hero-badges">
+    <span class="badge gold">TMJ Anatomy &amp; Kinematics</span>
+    <span class="badge red">DDWR vs DDWOR</span>
+    <span class="badge purple">Headache DDx</span>
+  </div>
+</div>
+
+<div class="tab-panel active" id="tab-tmj">
+<div class="container">
+  <div class="section-title">Temporomandibular Joint (TMJ)</div>
+  <div class="section-sub">People use the TMJ ~600 times per day. TMD is a MSK condition resulting in craniofacial pain, activity limitation, and disability. Symptoms include decreased jaw mobility, pain, clicking, headaches, ear pain, neck pain, and tinnitus. Always screen TMJ in cervical evaluations.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>TMJ Anatomy &amp; Biomechanics</h4>
+      <div class="ma-tags"><span class="ma-tag gold">3rd class lever</span><span class="ma-tag">2 knuckles = functional, 3 = normal</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Articular Disc</div>
+        <p>Biconcave, viscoelastic (collagen + GAGs + elastic). Three bands: anterior (pes meniscus), intermediate (pars gracilis &#8212; most WB, avascular, aneural), posterior (pars posterior). Functions: joint congruence, stability/mobility, &#8595; friction, &#8595; biomechanical stress, separates superior and inferior joints. <strong>Bilaminar retrodiscal pad:</strong> Superior lamina (elastic &#8212; allows anterior translation during depression, helps reposition disc), inferior lamina (inelastic &#8212; tethers disc).</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">TMJ Kinematics</div>
+        <p><strong>Depression:</strong> 40&#8211;50mm. 2 knuckles = functional AROM, 3 knuckles = normal AROM. Two phases: rolling at inferior joint &#8594; then anterior glide (lateral pterygoid is the main muscle for pulling and eccentrics during closing). <strong>Protrusion/Retrusion:</strong> Upper TM joint only, no rotation. Lower teeth should surpass upper, 6&#8211;9mm. <strong>Lateral Excursion:</strong> 8&#8211;11mm. Ipsilateral condyle spins posteriorly. Contralateral condyle translates anterior + medial + slightly inferior.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Dysfunction Patterns</div>
+        <p><strong>Deviation (S-curve):</strong> During depression, jaw moves away from midline then returns to midline by end of movement. <strong>Deflection (C-curve):</strong> Jaw moves away from midline and stays there. Causes: hypomobility, asymmetry. <strong>Ipsilateral pain = muscular. Contralateral pain = joint.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>TMD &#8212; Disc Displacement &amp; Internal Derangement</h4>
+      <div class="ma-tags"><span class="ma-tag purple">DDWR = click</span><span class="ma-tag red">DDWOR = block</span><span class="ma-tag gold">OA/RA causes</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">TMD Causes &amp; Symptoms</div>
+        <p>OA/RA (pain, stiffness, warmth, edema), trauma, loss of posterior teeth (OA), disc dislocation, involuntary guarding of muscles of mastication. Symptoms: &#8595; jaw mobility, pain, joint clicking, headaches, ear pain, neck pain, tinnitus, pain of intraoral structures.</p>
+      </div>
+      <div class="grid2">
+        <div class="bl-strip purple">
+          <div class="bl-label">Disc Displacement WITH Reduction (DDWR)</div>
+          <p>Reciprocal click &#8212; disc is anterior, clicks back into place during opening. Posterior click when closing (disc displaces anterior again). <strong>Click = reduction.</strong></p>
+        </div>
+        <div class="bl-strip red">
+          <div class="bl-label">Disc Displacement WITHOUT Reduction (DDWOR)</div>
+          <p>Disc stays anterior the entire time. More limited motion. <strong>Block = no reduction.</strong> More significant functional limitation.</p>
+        </div>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Conservative Treatment</div>
+        <p>Tissue mobilization. Postural education. Therapeutic exercise. Joint manipulation (TMJ, cervical, thoracic). Intraoral application. Cortisone injection. Capsulitis &#8594; capsular fibrosis if untreated.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Headache DDx &#8212; Primary vs Secondary</h4>
+      <div class="ma-tags"><span class="ma-tag red">Migraine = 4-72 hrs, unilateral</span><span class="ma-tag gold">Tension = bilateral band</span><span class="ma-tag purple">CGH = cervical origin</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Type</th><th>Characteristics</th><th>Key Features</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">Migraine (Primary)</td><td>Neurological + vascular (cortical spreading). Pulsing. 4&#8211;72 hours. Unilateral pain</td><td>Photophobia/phonophobia. Visual/auditory aura. Limited activity &#8212; exercise makes it worse. Possible mouth tingling</td></tr>
+          <tr><td class="hi">Tension (Primary)</td><td>Bilateral constant pressure &#8212; not really throbbing</td><td>"Tight band around head." Most common type</td></tr>
+          <tr><td class="warn">Cluster (Primary)</td><td>Trigeminal neuralgia involvement</td><td>Severe, periorbital, unilateral. Brief episodes</td></tr>
+          <tr><td class="hi">Cervicogenic (Secondary)</td><td>From upper cervical dysfunction</td><td>Known trigger (posture). Unilateral with cervical ROM restriction. See CGH referral patterns above</td></tr>
+          <tr><td class="hi">TMD-related (Secondary)</td><td>Referral from TMJ dysfunction</td><td>Pain with chewing, talking. Ear pain. Check jaw position relative to C-spine</td></tr>
+          <tr><td class="hi">Central/Peripheral Neuralgic</td><td>Nerve distribution &#8212; irritation, compression, tension</td><td>Neuropathic pain along nerve pathway. Chemical inflammation problem</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== SPECIAL TESTS TAB ==================== -->
+
+
+<div class="chip-label">Review Cards</div>
+<div class="container">
+  <div class="section-title">Review Cards &#8212; TMJ</div>
+  <div class="section-sub">Tap any card to flip. High-yield clinical pearls.</div>
+  <div class="rc2-grid">
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What distinguishes DDWR from DDWOR in the TMJ?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Disc Displacement WITH Reduction (DDWR):</strong> The disc is anteriorly displaced at rest, but during opening it "reduces" (clicks back into place). This produces a <strong>reciprocal click</strong> &#8212; click on opening (reduction) and click on closing (re-displacement). The patient has relatively normal ROM. <strong>Disc Displacement WITHOUT Reduction (DDWOR):</strong> The disc stays anterior the entire time &#8212; it never reduces. This produces a <strong>block</strong> &#8212; more limited motion, no click. More significant functional limitation. Key clinical distinction: <strong>click = with reduction. Block/limited ROM = without reduction.</strong></p></div>
+    </div>
+  </div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  var panel = document.getElementById('tab-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — PT Education Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+<style>
+/* Theme variables come from theme.css — these are index-specific overrides */
+:root {
+  --accent: var(--teal);
+  --accent2: var(--teal2);
+  --accent-soft: var(--accent-soft);
+  --accent-mid: var(--accent-mid);
+  --warm: #c4956a;
+  --warm-soft: rgba(196,149,106,.08);
+  --navy: #1e2d3d;
+  --navy-soft: rgba(30,45,61,.05);
+  --red-soft: var(--red-soft);
+  --purple-soft: var(--purple-soft);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.06), 0 1px 3px rgba(0,0,0,.04);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,.08);
+  --transition: .2s cubic-bezier(.4,0,.2,1);
+}
+/* Dark/pink overrides for index-specific colors */
+[data-theme="dark"] { --warm: #e0b070; --warm-soft: rgba(224,176,112,.1); --navy: #8eafc4; --navy-soft: rgba(142,175,196,.08); }
+[data-theme="pink"] { --warm: #fbbf24; --warm-soft: rgba(251,191,36,.08); --navy: #c084fc; --navy-soft: rgba(192,132,252,.08); }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  transition: background .3s, color .3s;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== TOP NAV ===== */
+.topnav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--bg-nav, rgba(250,250,248,.92));
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 32px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+}
+.topnav-brand {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; color: var(--text);
+}
+.topnav-brand .mark {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-family: 'Newsreader', serif; font-weight: 600; font-size: 15px;
+}
+.topnav-brand span {
+  font-weight: 600; font-size: 15px; letter-spacing: -.3px;
+}
+.topnav-links {
+  display: flex; gap: 4px; align-items: center;
+}
+.topnav-links a {
+  color: var(--text2); text-decoration: none; font-size: 13px; font-weight: 500;
+  padding: 6px 12px; border-radius: 6px; transition: var(--transition);
+}
+.topnav-links a:hover { background: var(--bg3); color: var(--text); }
+.topnav-links a.active { background: var(--accent-soft); color: var(--accent); }
+.search-box {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 12px; font-size: 13px; color: var(--text3);
+  cursor: pointer; transition: var(--transition);
+}
+.search-box:hover { border-color: var(--border2); }
+.search-box kbd {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1px 5px; font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--text3);
+}
+
+/* ===== HERO ===== */
+.hero {
+  max-width: 840px; margin: 0 auto; padding: 72px 32px 48px; text-align: center;
+}
+.hero h1 {
+  font-family: 'Newsreader', serif; font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 500; line-height: 1.15; letter-spacing: -.02em;
+  color: var(--text); margin-bottom: 16px;
+}
+.hero h1 em {
+  font-style: italic; color: var(--accent);
+}
+.hero p {
+  font-size: 17px; color: var(--text2); max-width: 580px;
+  margin: 0 auto 32px; line-height: 1.65; font-weight: 300;
+}
+  display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;
+}
+  text-align: center;
+}
+  font-family: 'Newsreader', serif; font-size: 28px; font-weight: 600;
+  color: var(--accent); line-height: 1;
+}
+  font-size: 12px; color: var(--text3); text-transform: uppercase;
+  letter-spacing: .08em; margin-top: 4px; font-weight: 500;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  max-width: 1200px; margin: 0 auto;
+  border-top: 1px solid var(--border); 
+}
+
+/* ===== CATEGORY SECTIONS ===== */
+.content { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+
+.category {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border);
+}
+.category:last-child { border-bottom: none; }
+
+.cat-header {
+  display: flex; align-items: baseline; gap: 16px;
+  margin-bottom: 8px;
+}
+.cat-icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0; position: relative; top: 2px;
+}
+.cat-icon.green { background: var(--accent-soft); color: var(--teal, var(--accent)); }
+.cat-icon.warm { background: var(--warm-soft); color: var(--warm); }
+.cat-icon.navy { background: var(--navy-soft); color: var(--navy); }
+.cat-icon.red { background: var(--red-soft); color: var(--red); }
+.cat-icon.purple { background: var(--purple-soft); color: var(--purple); }
+
+.cat-title {
+  font-family: 'Newsreader', serif; font-size: 1.5rem;
+  font-weight: 500; color: var(--text); letter-spacing: -.01em;
+}
+.cat-count {
+  font-size: 12px; color: var(--text3); font-family: 'JetBrains Mono', monospace;
+  background: var(--bg3); padding: 2px 8px; border-radius: 10px;
+}
+.cat-desc {
+  color: var(--text2); font-size: 14px; margin-bottom: 24px;
+  padding-left: 52px; max-width: 700px; font-weight: 300;
+}
+
+/* ===== MODULE CARDS ===== */
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  padding-left: 52px;
+}
+@media (max-width: 600px) {
+  .module-grid { padding-left: 0; }
+  .cat-desc { padding-left: 0; }
+}
+
+.module-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text);
+  transition: var(--transition);
+  display: flex; flex-direction: column; gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.module-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md, 0 4px 16px rgba(0,0,0,.06));
+  transform: translateY(-2px);
+}
+.module-card:hover .mc-arrow { opacity: 1; transform: translateX(0); }
+
+.mc-tag {
+  font-size: 11px; font-family: 'JetBrains Mono', monospace;
+  color: var(--text3); text-transform: uppercase; letter-spacing: .06em;
+  font-weight: 500;
+}
+.mc-title {
+  font-family: 'Newsreader', serif; font-size: 1.15rem;
+  font-weight: 500; line-height: 1.3; letter-spacing: -.01em;
+}
+.mc-desc {
+  font-size: 13px; color: var(--text2); line-height: 1.5;
+  font-weight: 300;
+}
+.mc-meta {
+  display: flex; gap: 8px; align-items: center; margin-top: auto; padding-top: 4px;
+}
+.mc-chip {
+  font-size: 11px; font-family: 'JetBrains Mono', monospace;
+  background: var(--bg3); color: var(--text3); padding: 2px 8px;
+  border-radius: 4px;
+}
+.mc-arrow {
+  position: absolute; top: 20px; right: 20px;
+  color: var(--accent); font-size: 16px;
+  opacity: 0; transform: translateX(-4px);
+  transition: var(--transition);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  max-width: 1200px; margin: 0 auto;
+  padding: 48px 32px;
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 16px;
+}
+.footer-brand {
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-brand .mark {
+  width: 24px; height: 24px; border-radius: 6px;
+  background: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-family: 'Newsreader', serif; font-weight: 600; font-size: 11px;
+}
+.footer-brand span { font-size: 13px; color: var(--text2); font-weight: 500; }
+.footer-right { font-size: 12px; color: var(--text3); }
+
+/* ===== SEARCH MODAL ===== */
+.search-overlay {
+  display: none; position: fixed; inset: 0; z-index: 200;
+  background: rgba(0,0,0,.3); backdrop-filter: blur(4px);
+  align-items: flex-start; justify-content: center; padding-top: 120px;
+}
+.search-overlay.open { display: flex; }
+.search-modal {
+  background: var(--bg2); border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  width: 560px; max-width: 90vw; overflow: hidden;
+}
+.search-input-wrap {
+  display: flex; align-items: center; gap: 10px;
+  padding: 16px 20px; border-bottom: 1px solid var(--border);
+}
+.search-input-wrap svg { color: var(--text3); flex-shrink: 0; }
+.search-input {
+  flex: 1; border: none; outline: none; font-size: 16px;
+  font-family: 'Outfit', sans-serif; background: none; color: var(--text);
+}
+.search-input::placeholder { color: var(--text3); }
+.search-results { max-height: 400px; overflow-y: auto; padding: 8px; }
+.search-result {
+  display: block; padding: 12px 14px; border-radius: 8px;
+  text-decoration: none; color: var(--text); transition: var(--transition);
+}
+.search-result:hover { background: var(--accent-soft); }
+.search-result .sr-cat { font-size: 11px; color: var(--accent); font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .05em; }
+.search-result .sr-title { font-size: 14px; font-weight: 500; }
+.search-result .sr-desc { font-size: 12px; color: var(--text2); }
+.search-empty { padding: 32px 20px; text-align: center; color: var(--text3); font-size: 14px; }
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate { animation: fadeUp .5s cubic-bezier(.4,0,.2,1) both; }
+.d1 { animation-delay: .05s; }
+.d2 { animation-delay: .1s; }
+.d3 { animation-delay: .15s; }
+.d4 { animation-delay: .2s; }
+.d5 { animation-delay: .25s; }
+.d6 { animation-delay: .3s; }
+
+@media (max-width: 768px) {
+  .topnav { padding: 0 16px; }
+  .topnav-links { display: none; }
+  .hero { padding: 48px 20px 32px; }
+  .content { padding: 0 16px; }
+  .cat-header { gap: 10px; }
+  .cat-title { font-size: 1.25rem; }
+  .footer { padding: 32px 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="topnav">
+  <a href="index.html" class="topnav-brand">
+    <div class="mark">CB</div>
+    <span>Clinicians Blueprint</span>
+  </a>
+  <div class="topnav-links">
+    <a href="#foundations" class="active">Modules</a>
+  </div>
+  <div class="search-box" onclick="openSearch()">
+    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="5"/><line x1="10" y1="10" x2="13" y2="13"/></svg>
+    Search...
+    <kbd>/</kbd>
+  </div>
+  <div class="theme-toggle" style="display:flex;gap:2px;background:var(--bg3);border-radius:8px;padding:2px;border:1px solid var(--border);margin-left:8px;">
+    <button class="theme-btn" data-theme="light" title="Light" style="border:none;background:none;cursor:pointer;width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text3);transition:background .2s;">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark" style="border:none;background:none;cursor:pointer;width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text3);transition:background .2s;">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink" style="border:none;background:none;cursor:pointer;width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text3);transition:background .2s;">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+
+<!-- ===== HERO ===== -->
+<div class="hero animate">
+  <h1>The clinical reference<br>built <em>for how you learn</em></h1>
+  <p>32 in-depth modules organized by body system. Built from real PT lecture notes, study guides, and clinical cases — not a textbook summary.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ===== BODY SYSTEM CATEGORIES ===== -->
+<div class="content">
+
+<!-- FOUNDATIONS -->
+<div class="category animate d1" id="foundations">
+  <div class="cat-header">
+    <div class="cat-icon green">&#9670;</div>
+    <h2 class="cat-title">Foundations</h2>
+    <span class="cat-count">6 modules</span>
+  </div>
+  <p class="cat-desc">Core clinical science that everything else builds on — pathophysiology, pharmacology, research methods, clinical exam skills, and health promotion.</p>
+  <div class="module-grid">
+    <a href="CB_ClinicalFoundations.html" class="module-card">
+      <span class="mc-tag">Foundations</span>
+      <div class="mc-title">Clinical Foundations</div>
+      <div class="mc-desc">Vitals, patient interview, documentation, ICF model, clinical reasoning framework</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_Pathophysiology.html" class="module-card">
+      <span class="mc-tag">Foundations</span>
+      <div class="mc-title">Pathophysiology</div>
+      <div class="mc-desc">Cellular injury, inflammation, healing cascade, tissue repair, systemic pathology</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_Pharmacology.html" class="module-card">
+      <span class="mc-tag">Foundations</span>
+      <div class="mc-title">Pharmacology</div>
+      <div class="mc-desc">Drug classes, mechanisms, side effects, PT implications across all major systems</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_ResearchMethods.html" class="module-card">
+      <span class="mc-tag">Foundations</span>
+      <div class="mc-title">Research Methods</div>
+      <div class="mc-desc">Study design, statistics, EBP, critical appraisal, systematic reviews</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_HealthPromotion.html" class="module-card">
+      <span class="mc-tag">Foundations</span>
+      <div class="mc-title">Health Promotion</div>
+      <div class="mc-desc">Wellness, prevention, nutrition, exercise prescription, behavior change</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_MedicalConditions.html" class="module-card">
+      <span class="mc-tag">Foundations</span>
+      <div class="mc-title">Medical Conditions</div>
+      <div class="mc-desc">Systemic conditions, comorbidities, red flags, and PT implications</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+  </div>
+</div>
+
+<!-- MSK UPPER EXTREMITY -->
+<div class="category animate d2">
+  <div class="cat-header">
+    <div class="cat-icon warm">&#9671;</div>
+    <h2 class="cat-title">MSK — Upper Extremity</h2>
+    <span class="cat-count">6 modules</span>
+  </div>
+  <p class="cat-desc">Head to hand — shoulder complex, elbow, wrist, plus head, neck, and trunk. Full pathology, special tests, and treatment protocols.</p>
+  <div class="module-grid">
+    <a href="CB_ShoulderModule.html" class="module-card">
+      <span class="mc-tag">Upper Extremity</span>
+      <div class="mc-title">Shoulder Complex</div>
+      <div class="mc-desc">GH, AC, SC joints. RTC pathology, instability, labral tears, impingement, post-op protocols</div>
+      <div class="mc-meta"></div>
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_ElbowModule.html" class="module-card">
+      <span class="mc-tag">Upper Extremity</span>
+      <div class="mc-title">Elbow</div>
+      <div class="mc-desc">Epicondylitis, fractures, instability, nerve entrapments, post-op</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_WristHandModule.html" class="module-card">
+      <span class="mc-tag">Upper Extremity</span>
+      <div class="mc-title">Wrist &amp; Hand</div>
+      <div class="mc-desc">Carpal tunnel, De Quervain's, fractures, tendon injuries, splinting</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_HeadModule.html" class="module-card">
+      <span class="mc-tag">Upper Extremity</span>
+      <div class="mc-title">Head</div>
+      <div class="mc-desc">Headache DDx, TMJ screening, cranial nerve involvement, concussion screening</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_NeckModule.html" class="module-card">
+      <span class="mc-tag">Upper Extremity</span>
+      <div class="mc-title">Neck</div>
+      <div class="mc-desc">Cervical radiculopathy, WAD, TOS, upper cervical instability, VBI</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_AbdomenThoraxModule.html" class="module-card">
+      <span class="mc-tag">Upper Extremity</span>
+      <div class="mc-title">Abdomen &amp; Thorax</div>
+      <div class="mc-desc">Core stability, diastasis recti, thoracic mobility, visceral referral</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+  </div>
+</div>
+
+<!-- MSK LOWER EXTREMITY -->
+<div class="category animate d3">
+  <div class="cat-header">
+    <div class="cat-icon warm">&#9671;</div>
+    <h2 class="cat-title">MSK — Lower Extremity</h2>
+    <span class="cat-count">4 modules</span>
+  </div>
+  <p class="cat-desc">Hip through foot — joint pathology, surgical protocols, special tests, and rehab progressions for every major LE condition.</p>
+  <div class="module-grid">
+    <a href="CB_HipModule_v2.html" class="module-card">
+      <span class="mc-tag">Lower Extremity</span>
+      <div class="mc-title">Hip</div>
+      <div class="mc-desc">FAI, labral tears, OA, THA protocols, hip fractures, bursitis, snapping hip</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_KneeModule_v2.html" class="module-card">
+      <span class="mc-tag">Lower Extremity</span>
+      <div class="mc-title">Knee</div>
+      <div class="mc-desc">ACL/PCL/meniscus, TKA protocols, patellofemoral, OA, ligament reconstruction</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_AnkleFootModule.html" class="module-card">
+      <span class="mc-tag">Lower Extremity</span>
+      <div class="mc-title">Ankle &amp; Foot</div>
+      <div class="mc-desc">Sprains, Achilles, plantar fasciitis, fractures, orthotics, return to sport</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_BackModule.html" class="module-card">
+      <span class="mc-tag">Lower Extremity</span>
+      <div class="mc-title">Back (MSK)</div>
+      <div class="mc-desc">Lumbar pathology, disc herniation, stenosis, SI joint, muscle dysfunction</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+  </div>
+</div>
+
+<!-- SPINE -->
+<div class="category animate d4">
+  <div class="cat-header">
+    <div class="cat-icon navy">&#9674;</div>
+    <h2 class="cat-title">Spine</h2>
+    <span class="cat-count">5 modules</span>
+  </div>
+  <p class="cat-desc">Region-by-region spine reference — red flags, radiculopathy, spondyloarthropathies, disc cascade, special tests, and CPRs.</p>
+  <div class="module-grid">
+    <a href="CB_SpineLumbar.html" class="module-card">
+      <span class="mc-tag">Spine</span>
+      <div class="mc-title">Lumbar Spine</div>
+      <div class="mc-desc">Red flags, McKenzie, stenosis, spondylolisthesis, disc pathology, radiculopathy by root level</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_SpineCervical.html" class="module-card">
+      <span class="mc-tag">Spine</span>
+      <div class="mc-title">Cervical Spine</div>
+      <div class="mc-desc">Myelopathy, WAD, cervicogenic HA, radiculopathy CPR, brachial plexus, TOS</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_SpineThoracic.html" class="module-card">
+      <span class="mc-tag">Spine</span>
+      <div class="mc-title">Thoracic Spine</div>
+      <div class="mc-desc">Rib dysfunction, Scheuermann's, T4 syndrome, postural dysfunction, PNE</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_SpineSIJ.html" class="module-card">
+      <span class="mc-tag">Spine</span>
+      <div class="mc-title">SIJ &amp; Pelvis</div>
+      <div class="mc-desc">Laslett's cluster, Fryette's laws, pelvic girdle pain, athletic pubalgia</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_SpineTMJ.html" class="module-card">
+      <span class="mc-tag">Spine</span>
+      <div class="mc-title">TMJ</div>
+      <div class="mc-desc">Disc displacement, DDWR vs DDWOR, headache DDx, TMD management</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+  </div>
+</div>
+
+<!-- NEUROSCIENCE & NEURO REHAB -->
+<div class="category animate d5">
+  <div class="cat-header">
+    <div class="cat-icon purple">&#9702;</div>
+    <h2 class="cat-title">Neuroscience &amp; Neuro Rehab</h2>
+    <span class="cat-count">4 modules</span>
+  </div>
+  <p class="cat-desc">From neuroanatomy to neuro rehab — brain structure, motor control theory, and clinical neurorehabilitation for PD, vestibular, and concussion.</p>
+  <div class="module-grid">
+    <a href="CB_BrainModule.html" class="module-card">
+      <span class="mc-tag">Neuroscience</span>
+      <div class="mc-title">Brain Module</div>
+      <div class="mc-desc">Lobes, cortical function, blood supply, cranial nerves, brain lesion localization</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_Neuroanatomy.html" class="module-card">
+      <span class="mc-tag">Neuroscience</span>
+      <div class="mc-title">Neuroanatomy</div>
+      <div class="mc-desc">Spinal cord, tracts, brainstem, cerebellum, basal ganglia, thalamus</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_MotorControl.html" class="module-card">
+      <span class="mc-tag">Neuroscience</span>
+      <div class="mc-title">Motor Control</div>
+      <div class="mc-desc">Motor learning theory, postural control, balance systems, gait analysis</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_NeuroRehab.html" class="module-card">
+      <span class="mc-tag">Neuro Rehab</span>
+      <div class="mc-title">Neuro Rehabilitation</div>
+      <div class="mc-desc">Plasticity, neuro exam, Parkinson's, vestibular rehab, concussion — 10 tabs of in-depth content</div>
+      <div class="mc-meta"><span class="mc-chip">10 tabs</span></div>
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+  </div>
+</div>
+
+<!-- CARDIOPULMONARY & SYSTEMS -->
+<div class="category animate d5">
+  <div class="cat-header">
+    <div class="cat-icon red">&#9829;</div>
+    <h2 class="cat-title">Cardiopulmonary &amp; Systems</h2>
+    <span class="cat-count">4 modules</span>
+  </div>
+  <p class="cat-desc">Cardiopulmonary pathology and rehab, integumentary, and diagnostic imaging — the systems-based content PTs need across all settings.</p>
+  <div class="module-grid">
+    <a href="CB_Cardiopulmonary.html" class="module-card">
+      <span class="mc-tag">Systems</span>
+      <div class="mc-title">Cardiopulmonary</div>
+      <div class="mc-desc">O&#8322; transport, ECG, heart failure, cardiac rehab, ventilation, labs &amp; pharm</div>
+      <div class="mc-meta"><span class="mc-chip">10 tabs</span></div>
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_Integumentary.html" class="module-card">
+      <span class="mc-tag">Systems</span>
+      <div class="mc-title">Integumentary</div>
+      <div class="mc-desc">Wound healing, pressure injuries, burns, dressings, debridement, skin grafts</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_Imaging.html" class="module-card">
+      <span class="mc-tag">Diagnostics</span>
+      <div class="mc-title">Imaging &amp; Diagnostics</div>
+      <div class="mc-desc">X-ray fundamentals, fracture description, chest X-ray, MRI, ultrasound, clinical decision rules</div>
+      <div class="mc-meta"><span class="mc-chip">12 review cards</span></div>
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_PhysicalAgents.html" class="module-card">
+      <span class="mc-tag">Systems</span>
+      <div class="mc-title">Physical Agents</div>
+      <div class="mc-desc">Thermal, electrical, mechanical modalities — indications, contraindications, dosing</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+  </div>
+</div>
+
+<!-- FUNCTIONAL & SPECIAL TOPICS -->
+<div class="category animate d6">
+  <div class="cat-header">
+    <div class="cat-icon green">&#9650;</div>
+    <h2 class="cat-title">Functional &amp; Special Topics</h2>
+    <span class="cat-count">3 modules</span>
+  </div>
+  <p class="cat-desc">Therapeutic exercise principles, gait and assistive devices, wheelchair prescription and ADA — the applied clinical skills.</p>
+  <div class="module-grid">
+    <a href="CB_TherEx.html" class="module-card">
+      <span class="mc-tag">Functional</span>
+      <div class="mc-title">Therapeutic Exercise</div>
+      <div class="mc-desc">Exercise prescription, ROM, strengthening, flexibility, functional training principles</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_GaitAD.html" class="module-card">
+      <span class="mc-tag">Functional</span>
+      <div class="mc-title">Gait &amp; Assistive Devices</div>
+      <div class="mc-desc">Normal gait cycle, deviations, AD fitting, weight-bearing levels, stair training</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+    <a href="CB_WheelchairADA.html" class="module-card">
+      <span class="mc-tag">Functional</span>
+      <div class="mc-title">Wheelchair &amp; ADA</div>
+      <div class="mc-desc">Wheelchair prescription, seating, positioning, pressure relief, ADA compliance</div>
+      
+      <span class="mc-arrow">&#8594;</span>
+    </a>
+  </div>
+</div>
+
+</div><!-- end content -->
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <div class="footer-brand">
+    <div class="mark">CB</div>
+    <span>Clinicians Blueprint</span>
+  </div>
+  <div class="footer-right">Built from real lecture notes &middot; Not a textbook summary</div>
+</div>
+
+<!-- ===== SEARCH MODAL ===== -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
+  <div class="search-modal">
+    <div class="search-input-wrap">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="5.5"/><line x1="11" y1="11" x2="15" y2="15"/></svg>
+      <input class="search-input" id="searchInput" type="text" placeholder="Search all modules..." oninput="filterModules(this.value)" autocomplete="off">
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<script>
+// Module data for search
+const modules = [
+  {cat:"Foundations",title:"Clinical Foundations",desc:"Vitals, patient interview, documentation, ICF model",href:"CB_ClinicalFoundations.html"},
+  {cat:"Foundations",title:"Pathophysiology",desc:"Cellular injury, inflammation, healing cascade, tissue repair",href:"CB_Pathophysiology.html"},
+  {cat:"Foundations",title:"Pharmacology",desc:"Drug classes, mechanisms, side effects, PT implications",href:"CB_Pharmacology.html"},
+  {cat:"Foundations",title:"Research Methods",desc:"Study design, statistics, EBP, critical appraisal",href:"CB_ResearchMethods.html"},
+  {cat:"Foundations",title:"Health Promotion",desc:"Wellness, prevention, nutrition, exercise prescription",href:"CB_HealthPromotion.html"},
+  {cat:"Foundations",title:"Medical Conditions",desc:"Systemic conditions, comorbidities, red flags",href:"CB_MedicalConditions.html"},
+  {cat:"Upper Extremity",title:"Shoulder Complex",desc:"RTC, instability, labral tears, impingement, GH joint",href:"CB_ShoulderModule.html"},
+  {cat:"Upper Extremity",title:"Elbow",desc:"Epicondylitis, fractures, instability, nerve entrapments",href:"CB_ElbowModule.html"},
+  {cat:"Upper Extremity",title:"Wrist & Hand",desc:"Carpal tunnel, De Quervain's, fractures, tendon injuries",href:"CB_WristHandModule.html"},
+  {cat:"Upper Extremity",title:"Head",desc:"Headache DDx, TMJ screening, cranial nerves",href:"CB_HeadModule.html"},
+  {cat:"Upper Extremity",title:"Neck",desc:"Cervical radiculopathy, WAD, TOS, upper cervical instability",href:"CB_NeckModule.html"},
+  {cat:"Upper Extremity",title:"Abdomen & Thorax",desc:"Core stability, diastasis recti, thoracic mobility",href:"CB_AbdomenThoraxModule.html"},
+  {cat:"Lower Extremity",title:"Hip",desc:"FAI, labral tears, OA, THA protocols, fractures",href:"CB_HipModule_v2.html"},
+  {cat:"Lower Extremity",title:"Knee",desc:"ACL/PCL/meniscus, TKA, patellofemoral, ligament rehab",href:"CB_KneeModule_v2.html"},
+  {cat:"Lower Extremity",title:"Ankle & Foot",desc:"Sprains, Achilles, plantar fasciitis, fractures, orthotics",href:"CB_AnkleFootModule.html"},
+  {cat:"Lower Extremity",title:"Back (MSK)",desc:"Lumbar pathology, disc herniation, stenosis, SI joint",href:"CB_BackModule.html"},
+  {cat:"Spine",title:"Lumbar Spine",desc:"Red flags, McKenzie, stenosis, spondylolisthesis, radiculopathy",href:"CB_SpineLumbar.html"},
+  {cat:"Spine",title:"Cervical Spine",desc:"Myelopathy, WAD, cervicogenic HA, radiculopathy CPR",href:"CB_SpineCervical.html"},
+  {cat:"Spine",title:"Thoracic Spine",desc:"Rib dysfunction, Scheuermann's, T4 syndrome, PNE",href:"CB_SpineThoracic.html"},
+  {cat:"Spine",title:"SIJ & Pelvis",desc:"Laslett's cluster, Fryette's laws, pelvic girdle pain",href:"CB_SpineSIJ.html"},
+  {cat:"Spine",title:"TMJ",desc:"Disc displacement, DDWR/DDWOR, headache DDx",href:"CB_SpineTMJ.html"},
+  {cat:"Neuroscience",title:"Brain Module",desc:"Lobes, cortical function, blood supply, cranial nerves",href:"CB_BrainModule.html"},
+  {cat:"Neuroscience",title:"Neuroanatomy",desc:"Spinal cord, tracts, brainstem, cerebellum, basal ganglia",href:"CB_Neuroanatomy.html"},
+  {cat:"Neuroscience",title:"Motor Control",desc:"Motor learning, postural control, balance systems, gait",href:"CB_MotorControl.html"},
+  {cat:"Neuro Rehab",title:"Neuro Rehabilitation",desc:"Plasticity, neuro exam, Parkinson's, vestibular, concussion",href:"CB_NeuroRehab.html"},
+  {cat:"Systems",title:"Cardiopulmonary",desc:"O2 transport, ECG, heart failure, cardiac rehab, ventilation",href:"CB_Cardiopulmonary.html"},
+  {cat:"Systems",title:"Integumentary",desc:"Wound healing, pressure injuries, burns, dressings",href:"CB_Integumentary.html"},
+  {cat:"Diagnostics",title:"Imaging & Diagnostics",desc:"X-ray, fractures, chest X-ray, MRI, ultrasound",href:"CB_Imaging.html"},
+  {cat:"Systems",title:"Physical Agents",desc:"Thermal, electrical, mechanical modalities, dosing",href:"CB_PhysicalAgents.html"},
+  {cat:"Functional",title:"Therapeutic Exercise",desc:"Exercise prescription, ROM, strengthening, flexibility",href:"CB_TherEx.html"},
+  {cat:"Functional",title:"Gait & Assistive Devices",desc:"Normal gait, deviations, AD fitting, stair training",href:"CB_GaitAD.html"},
+  {cat:"Functional",title:"Wheelchair & ADA",desc:"Wheelchair prescription, seating, positioning, ADA",href:"CB_WheelchairADA.html"},
+];
+
+function openSearch() {
+  document.getElementById('searchOverlay').classList.add('open');
+  setTimeout(() => document.getElementById('searchInput').focus(), 100);
+  filterModules('');
+}
+function closeSearch() {
+  document.getElementById('searchOverlay').classList.remove('open');
+  document.getElementById('searchInput').value = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && !e.ctrlKey && !e.metaKey && document.activeElement.tagName !== 'INPUT') {
+    e.preventDefault(); openSearch();
+  }
+  if (e.key === 'Escape') closeSearch();
+});
+
+function filterModules(q) {
+  const container = document.getElementById('searchResults');
+  const lower = q.toLowerCase();
+  const matches = q ? modules.filter(m =>
+    m.title.toLowerCase().includes(lower) ||
+    m.desc.toLowerCase().includes(lower) ||
+    m.cat.toLowerCase().includes(lower)
+  ) : modules;
+  
+  if (matches.length === 0) {
+    container.innerHTML = '<div class="search-empty">No modules found</div>';
+    return;
+  }
+  container.innerHTML = matches.map(m => `
+    <a href="${m.href}" class="search-result">
+      <div class="sr-cat">${m.cat}</div>
+      <div class="sr-title">${m.title}</div>
+      <div class="sr-desc">${m.desc}</div>
+    </a>
+  `).join('');
+}
+</script>
+<script src="themes.js"></script>
+</body>
+</html>

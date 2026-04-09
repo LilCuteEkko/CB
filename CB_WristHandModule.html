@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — Wrist &amp; Hand</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link active">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+
+<div class="hero">
+  <div class="hero-tag">MSK Upper Extremity &middot; Wrist &amp; Hand Complex</div>
+  <h1>Wrist <span>&amp; Hand</span></h1>
+  <p>Examination framework, special tests with Spec/Sen data, differential diagnoses (arthritis, tendinopathies, nerve entrapment), fractures, CRPS stages and treatment, and clinical case reasoning.</p>
+  <div class="hero-badges">
+    <span class="badge">Special Tests</span>
+    <span class="badge gold">Arthritis &amp; OA</span>
+    <span class="badge purple">Tendinopathies</span>
+    <span class="badge red">Nerve Entrapment</span>
+    <span class="badge orange">Fractures</span>
+    <span class="badge red">CRPS</span>
+    <span class="badge green">Clinical Cases</span>
+  </div>
+</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('anatomy',this)">Anatomy &amp; Exam</button>
+  <button onclick="showTab('special',this)">Special Tests</button>
+  <button onclick="showTab('diag1',this)">Diagnoses — Joints &amp; Soft Tissue</button>
+  <button onclick="showTab('diag2',this)">Diagnoses — Tendons &amp; Nerves</button>
+  <button onclick="showTab('fractures',this)">Fractures &amp; CRPS</button>
+  <button onclick="showTab('cases',this)">Clinical Cases</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+
+<!-- ====== ANATOMY & EXAMINATION ====== -->
+<div class="tab-panel active" id="tab-anatomy">
+<div class="container">
+
+  <div class="section-title">Wrist &amp; Hand — Anatomy &amp; Clinical Examination</div>
+  <div class="section-sub">The wrist and hand contain more pain receptors per area than any other region in the body. A systematic examination is critical — not every test is done every visit. Use clinical reasoning to select what is relevant to the presentation.</div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title">Key Anatomy — Wrist Complex</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Radius &amp; Ulna</strong> — distal radius is primary load-bearer (80%); ulna articulates via TFCC</li>
+        <li><strong>DRUJ</strong> — distal radioulnar joint; TFCC is the primary stabilizer</li>
+        <li><strong>TFCC (Triangular Fibrocartilage Complex)</strong> — stabilizes DRUJ; cushions ulnar carpus; attaches ulna to triquetrum; commonly injured with fall on outstretched hand</li>
+        <li><strong>Proximal carpal row</strong> — scaphoid, lunate, triquetrum, pisiform</li>
+        <li><strong>Distal carpal row</strong> — trapezium, trapezoid, capitate, hamate</li>
+        <li><strong>Scapholunate ligament</strong> — most important intercarpal ligament; disruption = instability; Watson test assesses this</li>
+        <li><strong>6 Dorsal extensor compartments</strong> — numbered lateral to medial; 1st (APL+EPB) = DeQuervain's target</li>
+        <li><strong>Carpal tunnel</strong> — floor: carpal bones; roof: transverse carpal ligament; contents: 9 flexor tendons + median nerve</li>
+        <li><strong>Guyon's Canal</strong> — ulnar nerve and artery; between pisiform and hamate hook</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Wrist Quadrants — DDx by Location</div>
+      <div class="grid2" style="gap:8px;">
+        <div class="bl-strip" style="margin:0;">
+          <div class="bl-label">Radial</div>
+          <p>1st CMC OA · DeQuervain's · Intersection syndrome · Scaphoid fracture · Scapholunate instability · Thumb UCL sprain · Radial styloid fracture</p>
+        </div>
+        <div class="bl-strip gold" style="margin:0;">
+          <div class="bl-label">Ulnar</div>
+          <p>TFCC tear · DRUJ instability · Ulnar impaction syndrome · Hamate fracture · Guyon's canal · ECU tendinopathy · Triangular fibrocartilage injury</p>
+        </div>
+        <div class="bl-strip purple" style="margin:0;">
+          <div class="bl-label">Dorsal</div>
+          <p>Ganglion cyst (most common) · Extensor tendon injuries · Intersection syndrome (proximal) · Carpal boss · DISI/VISI instability</p>
+        </div>
+        <div class="bl-strip red" style="margin:0;">
+          <div class="bl-label">Volar</div>
+          <p>Carpal tunnel syndrome · Flexor tendon injuries · Ganglion cyst · Volar ganglion · Volar wrist pain with DRUJ instability</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Clinical Examination Framework</div>
+
+  <div class="grid3" style="margin-bottom:14px;">
+    <div class="card">
+      <div class="card-title">Systems Review</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Vascular</strong> — Allen's test (radial + ulnar artery patency), capillary refill, skin color</li>
+        <li><strong>Neurological</strong> — screen for double-crush syndrome; proximal causes always considered</li>
+        <li><strong>Psychological</strong> — pain catastrophizing, fear-avoidance, CRPS risk factors</li>
+        <li><strong>MSK</strong> — global UE assessment; cervical screen when nerve symptoms present</li>
+      </ul>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">Pain Density Note</div>
+        <p>The hand has more pain receptors per surface area than any other body region. Pain perception and interpretation must account for this — hand pain is not always proportional to structural injury.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Direct Examination</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Peripheral joint screen</strong> — assess each joint systematically</li>
+        <li><strong>Palpation</strong> — bony landmarks, tendons, joint lines, pulses</li>
+        <li><strong>Mobility</strong> — can they use the ROM they have? Functional ROM assessment</li>
+        <li><strong>ROM with overpressure</strong> — wrist flex/ext, RD/UD, forearm pronation/supination, digit MCP/PIP/DIP</li>
+        <li><strong>Provocative testing</strong> — select based on hypothesized diagnosis</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:8px;">
+        <div class="bl-label">Clinical Principle</div>
+        <p>Don't do every test every visit — do what is appropriate to the clinical presentation. Test selection should follow from your working hypothesis, not from habit.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Strength &amp; Neurosensory Testing</div>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);text-transform:uppercase;margin-bottom:6px;">Strength</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.7;margin-bottom:8px;">
+        <li><strong>Grip</strong> — Jamar dynamometer; 5 positions; compare bilaterally</li>
+        <li><strong>Lateral pinch</strong> — key pinch; thumb IP adductor pollicis</li>
+        <li><strong>2-point (pencil-off-ground)</strong> — index + thumb; tripod refinement</li>
+        <li><strong>3-point (index, long, thumb)</strong> — tripod pinch</li>
+      </ul>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Neurological</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.7;">
+        <li><strong>Monofilament testing</strong> — threshold test of nerve sensitivity; used for peripheral nerve injuries and post-surgical nerve recovery</li>
+        <li><strong>2-point discrimination</strong> — tests nerve's ability to distinguish between 2 points; acute measure of nerve function; normal = &lt;6mm moving, &lt;10mm static</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Outcome Measures — Wrist &amp; Hand</div>
+    <div class="grid4">
+      <div>
+        <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--teal);margin-bottom:4px;">DASH / QuickDASH</p>
+        <p style="font-size:13px;color:var(--text2);">Disabilities of the Arm, Shoulder, and Hand. UE function. MCID=8, MDC=13. Full spectrum UE.</p>
+      </div>
+      <div>
+        <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--gold);margin-bottom:4px;">PRWE</p>
+        <p style="font-size:13px;color:var(--text2);">Patient-Rated Wrist Evaluation. Wrist-specific. Combines pain (0–50) + function (0–50) = 0–100 total.</p>
+      </div>
+      <div>
+        <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--purple2);margin-bottom:4px;">FOTO / UEFI</p>
+        <p style="font-size:13px;color:var(--text2);">Focus On Therapeutic Outcomes / Upper Extremity Functional Index. Functional outcome tracking tools.</p>
+      </div>
+      <div>
+        <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--green);margin-bottom:4px;">Grasp Patterns</p>
+        <p style="font-size:13px;color:var(--text2);">Cylindrical, spherical, hook, diagonal, lateral pinch, tip pinch. Functional grasp assessment for return to work/sport.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== SPECIAL TESTS ====== -->
+<div class="tab-panel" id="tab-special">
+<div class="container">
+
+  <div class="section-title">Wrist &amp; Hand Special Tests</div>
+  <div class="section-sub">13 special tests organized by region and pathology. Sensitivity (how good at ruling out), Specificity (how good at ruling in), and +LR/–LR where available. Always pair tests with clinical context — no single test is diagnostic alone.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Carpal Tunnel / Median Nerve Tests</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Tinel's Sign at the Wrist <span class="stat-pill stat-sen">Sen 64%</span><span class="stat-pill stat-spec">Spec 99%</span></h4>
+      <div class="ma-tags"><span class="ma-tag">Median nerve</span><span class="ma-tag gold">Very high specificity</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Patient seated, wrist resting on a table or hard surface</li>
+          <li>Therapist taps over the <strong>carpal tunnel</strong> at the wrist/palm junction (transverse carpal ligament)</li>
+          <li><strong>(+)</strong> = tingling or paresthesia <em>distal</em> to the point of pressure following the median nerve distribution (thumb, index, middle, radial ring finger)</li>
+        </ul>
+        <div class="bl-strip gold">
+          <div class="bl-label">Clinical Interpretation</div>
+          <p>Spec 99% = very high; a positive Tinel's at the wrist strongly rules IN carpal tunnel syndrome. Sen 64% = moderate; a negative Tinel's does NOT rule out CTS. Use with Phalen's and Durkan's for a cluster approach. (Szabo reference)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Phalen's Test <span class="stat-pill stat-sen">Sen 77%</span><span class="stat-pill stat-spec">Spec 40%</span></h4>
+      <div class="ma-tags"><span class="ma-tag">Median nerve / CTS</span><span class="ma-tag gold">Good sensitivity</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Patient sits with shoulders relaxed, <strong>backs of hands facing each other</strong></li>
+          <li>Patient flexes wrists maximally by pushing wrists together — holds for <strong>1 minute</strong> or until symptoms reproduced</li>
+          <li><strong>(+)</strong> = tingling in the median nerve distribution of the hand</li>
+        </ul>
+        <div class="bl-strip">
+          <div class="bl-label">Clinical Note</div>
+          <p>High sensitivity (77%) makes Phalen's useful for ruling OUT CTS — a negative test makes CTS less likely. Low specificity (40%) means many false positives. Combine with Tinel's and Durkan's for better diagnostic accuracy. Provocative via wrist flexion increasing carpal tunnel pressure on median nerve.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Durkan's Test (Carpal Compression Test) <span class="stat-pill stat-sen">Sen 90%</span><span class="stat-pill stat-spec">Spec 92%</span></h4>
+      <div class="ma-tags"><span class="ma-tag green">Best CTS test — high Sen + Spec</span><span class="ma-tag">Median nerve</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Therapist places <strong>direct pressure over the carpal tunnel</strong> (transverse carpal ligament)</li>
+          <li>Hold up to <strong>30 seconds</strong></li>
+          <li><strong>(+)</strong> = reproduction of wrist/forearm symptoms and numbness/tingling in median nerve distribution</li>
+        </ul>
+        <div class="bl-strip green">
+          <div class="bl-label">Best Single CTS Test</div>
+          <p>With Sen 90% AND Spec 92%, Durkan's is the most diagnostically accurate single test for carpal tunnel syndrome. Directly compresses the median nerve through the carpal tunnel. If you can do only one CTS test, this is it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Radial Wrist / DeQuervain's Tests</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Finkelstein's Test <span class="stat-pill stat-sen">Sen 81%</span><span class="stat-pill stat-spec">Spec 50%</span></h4>
+      <div class="ma-tags"><span class="ma-tag">DeQuervain's / 1st dorsal compartment</span><span class="ma-tag gold">Classic but less specific than WHAT</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Patient places <strong>thumb inside palm</strong> and closes fingers over it (fist around thumb)</li>
+          <li>PT stabilizes distal forearm; ulnar deviates patient's hand</li>
+          <li><strong>(+)</strong> = pain over APL and EPB tendons (1st dorsal compartment)</li>
+          <li><strong>Must reproduce patient's symptoms</strong> to be truly positive — non-specific pain in this position is common in normal subjects</li>
+        </ul>
+        <div class="bl-strip gold">
+          <div class="bl-label">Alexander / WHAT Test Preferred</div>
+          <p>The WHAT Test (see below) is preferred over Finkelstein's — it has higher sensitivity (99%) and is easier to perform. Finkelstein's produces pain in many normal wrists due to the stretch position, leading to false positives (Spec only 50%).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>WHAT Test — Wrist Hyperflexion &amp; Abduction of Thumb <span class="stat-pill stat-sen">Sen 99%</span><span class="stat-pill stat-spec">Spec 29%</span></h4>
+      <div class="ma-tags"><span class="ma-tag green">Preferred over Finkelstein's</span><span class="ma-tag">1st dorsal compartment</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Therapist asks patient to make <strong>full wrist flexion</strong> with the <strong>thumb in full extension and abduction</strong></li>
+          <li>Therapist gradually provides <strong>resistance to abduction of the thumb</strong></li>
+          <li><strong>(+)</strong> = replication of symptoms along radial wrist/forearm, OR patient unable to counter the applied force</li>
+        </ul>
+        <div class="bl-strip green">
+          <div class="bl-label">Why WHAT Test is Preferred</div>
+          <p>Sen 99% — near-perfect sensitivity means a negative WHAT test almost completely rules out 1st dorsal compartment involvement. Easier to perform than Finkelstein's with more consistent results. Low Spec (29%) still means many false positives, but the high sensitivity is the primary clinical value. Use to screen; confirm with clinical presentation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Thumb &amp; CMC Joint Tests</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>CMC Grind Test</h4>
+      <div class="ma-tags"><span class="ma-tag gold">1st CMC osteoarthritis</span><span class="ma-tag">Axial compression + rotation</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Therapist stabilizes the <strong>trapezium</strong> proximal to the 1st metacarpal with one hand</li>
+          <li>Other hand grasps the 1st metacarpal</li>
+          <li>Apply <strong>axial compressive force with combined rotation</strong> (circles)</li>
+          <li><strong>(+)</strong> = reproduction of patient's pain; also positive if <strong>crepitus</strong> noted (indicates arthrosis and synovitis)</li>
+        </ul>
+        <div class="bl-strip gold">
+          <div class="bl-label">Clinical Context</div>
+          <p>Assessment of 1st CMC OA is often visual first — look for "shoulder sign" (subluxation of CMC joint creating visible prominence at base of thumb). The grind test confirms joint involvement. Combine with Lever Test for full assessment. 1 lb of pinch = 12 lbs of force at the CMC joint — explains why the CMC is the dominant OA site in the hand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lever Test (CMC Mobility Test) <span class="stat-pill stat-sen">Sen 82%</span><span class="stat-pill stat-spec">Spec 81%</span></h4>
+      <div class="ma-tags"><span class="ma-tag gold">1st CMC joint</span><span class="ma-tag">Radial/ulnar + dorsal/volar glide</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Therapist grabs the <strong>1st metacarpal just distal to the CMC joint</strong></li>
+          <li>Attempts to glide the joint in <strong>radial/ulnar and dorsal/volar directions</strong> (back and forth)</li>
+          <li><strong>(+)</strong> = reproduction of patient's symptoms</li>
+        </ul>
+        <div class="bl-strip">
+          <div class="bl-label">Complementary to Grind Test</div>
+          <p>Both Sen 82% and Spec 81% are balanced — useful for both ruling in and ruling out 1st CMC pathology. Use grind test + lever test together for comprehensive CMC assessment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Thumb UCL Stress Test (Valgus Stress MCP) <span class="stat-pill stat-sen">Sen 94%</span><span class="stat-pill stat-spec">Spec 46%</span></h4>
+      <div class="ma-tags"><span class="ma-tag red">Gamekeeper's/Skier's Thumb</span><span class="ma-tag">Thumb MCP UCL</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Therapist stabilizes patient's hand; positions thumb into extension</li>
+          <li>Apply a <strong>valgus stress to the MCP joint</strong> while maintaining extension</li>
+          <li><strong>(+)</strong> = valgus movement greater than <strong>30–35°</strong> (compared to contralateral side)</li>
+        </ul>
+        <div class="bl-strip red">
+          <div class="bl-label">Stener Lesion</div>
+          <p>A Stener lesion occurs when the UCL tears and the adductor pollicis aponeurosis interposes between the torn ligament ends — preventing healing. Requires surgical repair. Suspect if valgus laxity &gt;35° or complete instability. High sensitivity (94%) means a negative test largely rules out significant UCL tear.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Froment's Sign</h4>
+      <div class="ma-tags"><span class="ma-tag purple">Ulnar nerve</span><span class="ma-tag">Adductor pollicis weakness</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Ask patient to grasp a piece of paper between thumb and index finger in a <strong>key grip</strong></li>
+          <li>Therapist attempts to pull the paper away</li>
+          <li><strong>(+)</strong> = paper slips out, OR patient flexes the thumb IP joint to compensate</li>
+          <li>IP flexion = substitution of FPL for the weak adductor pollicis (which is ulnar nerve innervated)</li>
+        </ul>
+        <div class="bl-strip purple">
+          <div class="bl-label">Ulnar Nerve — Adductor Pollicis</div>
+          <p>Adductor pollicis (ulnar nerve) is needed for key pinch force. Weakness = inability to hold paper → patient compensates by flexing FPL (median nerve). The IP flexion sign indicates ulnar nerve weakness, NOT median nerve. Seen in cubital tunnel syndrome and Guyon's canal compression.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Carpal Instability &amp; TFCC Tests</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Watson Test — Scaphoid Shift Maneuver <span class="stat-pill stat-sen">Sen 69%</span><span class="stat-pill stat-spec">Spec 68%</span></h4>
+      <div class="ma-tags"><span class="ma-tag gold">Scapholunate instability</span><span class="ma-tag">Clunk = positive</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Patient: elbow on tabletop at 90° flexion; forearm slightly pronated; wrist starts in <strong>ulnar deviation</strong></li>
+          <li>Therapist locates the <strong>scaphoid tubercle</strong> with thumb (volar wrist, radial side)</li>
+          <li>Other hand stabilizes metacarpals; moves wrist into <strong>radial deviation and slight flexion</strong></li>
+          <li>Maintain pressure on the scaphoid tubercle throughout the movement</li>
+          <li><strong>(+)</strong> = <strong>"clunk"</strong> (scaphoid subluxes) + pain at the radial side of the wrist</li>
+        </ul>
+        <div class="bl-strip">
+          <div class="bl-label">Scapholunate Instability</div>
+          <p>When the scapholunate ligament is torn, moving the wrist from ulnar to radial deviation causes the scaphoid to sublux dorsally (clunk). The thumb pressure blocks this movement — release of pressure with movement = shift. Balanced Sen/Spec (69/68) — moderate accuracy. Clinical presentation + XR (widened SL space &gt;3mm on AP view = "Terry Thomas sign") confirms diagnosis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Ulnar Impaction Test (TFCC Axial Load Test)</h4>
+      <div class="ma-tags"><span class="ma-tag gold">TFCC / ulnar-sided wrist pain</span><span class="ma-tag">4th + 5th metacarpal load</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Patient seated, elbow on table at 90°; wrist in <strong>slight ulnar deviation</strong>; digits in gentle composite fist</li>
+          <li>Therapist loads the <strong>ulnar side of wrist with direct pressure through the 4th and 5th metacarpals</strong></li>
+          <li><strong>(+)</strong> = replication of pain symptoms at ulnar side of wrist</li>
+        </ul>
+        <div class="bl-strip gold">
+          <div class="bl-label">TFCC Context</div>
+          <p>Tests the articulation between the ulnar carpus (triquetrum) and the TFCC. Ulnar impaction syndrome = excessive ulnar loading → TFCC degeneration. Common in patients with relative ulnar positive variance (longer ulna than radius). Golfer's "top of backswing" injury pattern = TFCC load mechanism.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>TFCC Piano Key Test <span class="stat-pill stat-sen">Sen 59%</span><span class="stat-pill stat-spec">Spec 96%</span></h4>
+      <div class="ma-tags"><span class="ma-tag gold">DRUJ stability</span><span class="ma-tag">Very high specificity</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Therapist stabilizes the hand and radius</li>
+          <li>Press down on the <strong>ulnar head like pressing a piano key</strong></li>
+          <li><strong>(+)</strong> = replication of ulnar-sided wrist pain</li>
+        </ul>
+        <div class="bl-strip gold">
+          <div class="bl-label">DRUJ / TFCC Static Stability</div>
+          <p>Tests static stability of DRUJ and TFCC. Very high Spec (96%) — a positive Piano Key strongly rules IN DRUJ/TFCC pathology. Moderate Sen (59%) — negative test does not rule out. Pair with Ulnar Impaction test for comprehensive TFCC evaluation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>TFCC Press Test <span class="stat-pill stat-sen">Sen 100%</span><span class="stat-pill stat-spec">Spec N/A</span></h4>
+      <div class="ma-tags"><span class="ma-tag green">Perfect sensitivity</span><span class="ma-tag">TFCC compressive tolerance</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+          <li>Patient attempts to <strong>push their body weight up from a chair</strong> using their hands on the armrests</li>
+          <li>Creates axial and ulnar-related compressive force through the wrist</li>
+          <li><strong>(+)</strong> = replication of ulnar-sided wrist pain</li>
+        </ul>
+        <div class="bl-strip green">
+          <div class="bl-label">Sensitivity 100%</div>
+          <p>A negative Press Test virtually rules OUT significant TFCC pathology — a patient who can push up without wrist pain is unlikely to have a clinically significant TFCC tear. No specificity data available — positive test does not confirm TFCC (any ulnar-sided structure could be provoked). Use as a screening tool; confirm with Piano Key Test and imaging (MRI arthrogram is gold standard for TFCC).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Complete Special Test Reference Table</div>
+  <div style="overflow-x:auto;">
+  <table class="data-table">
+    <thead><tr><th>Test</th><th>Structure/Diagnosis</th><th>Sen</th><th>Spec</th><th>Technique Summary</th><th>Positive Sign</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Durkan's (Carpal Compression)</strong></td><td>CTS / Median nerve</td><td class="ok">90%</td><td class="ok">92%</td><td>Direct pressure over carpal tunnel, 30 seconds</td><td>Median distribution NTB</td></tr>
+      <tr><td><strong>Thumb UCL Stress</strong></td><td>Thumb MCP UCL (Gamekeeper's)</td><td class="ok">94%</td><td>46%</td><td>Valgus stress at MCP in extension</td><td>&gt;30–35° valgus laxity</td></tr>
+      <tr><td><strong>WHAT Test</strong></td><td>1st dorsal compartment (DeQuervain's)</td><td class="ok">99%</td><td>29%</td><td>Wrist flex + thumb ext/ABD, resist thumb ABD</td><td>Radial wrist/forearm symptoms</td></tr>
+      <tr><td><strong>Lever Test</strong></td><td>1st CMC OA</td><td class="ok">82%</td><td class="ok">81%</td><td>Radial/ulnar + dorsal/volar glide of 1st MC</td><td>CMC joint pain</td></tr>
+      <tr><td><strong>Phalen's</strong></td><td>CTS / Median nerve</td><td class="ok">77%</td><td>40%</td><td>Max wrist flexion bilateral, 1 minute</td><td>Median distribution NTB</td></tr>
+      <tr><td><strong>TFCC Piano Key</strong></td><td>DRUJ / TFCC static stability</td><td>59%</td><td class="ok">96%</td><td>Depress ulnar head like piano key</td><td>Ulnar wrist pain</td></tr>
+      <tr><td><strong>Watson (Scaphoid Shift)</strong></td><td>Scapholunate ligament</td><td>69%</td><td>68%</td><td>UD→RD with thumb pressure on scaphoid tubercle</td><td>Clunk + radial wrist pain</td></tr>
+      <tr><td><strong>Finkelstein's</strong></td><td>1st dorsal compartment (DeQuervain's)</td><td class="ok">81%</td><td>50%</td><td>Thumb in palm fist, ulnar deviate wrist</td><td>APL/EPB pain (patient's symptoms)</td></tr>
+      <tr><td><strong>Tinel's at Wrist</strong></td><td>CTS / Median nerve</td><td>64%</td><td class="ok">99%</td><td>Tap over carpal tunnel</td><td>Distal median distribution tingling</td></tr>
+      <tr><td><strong>TFCC Press Test</strong></td><td>TFCC compressive tolerance</td><td class="ok">100%</td><td>N/A</td><td>Push up from chair using hand on armrest</td><td>Ulnar wrist pain</td></tr>
+      <tr><td><strong>CMC Grind Test</strong></td><td>1st CMC OA</td><td>—</td><td>—</td><td>Axial compression + rotation of 1st MC on trapezium</td><td>Pain or crepitus at CMC</td></tr>
+      <tr><td><strong>Ulnar Impaction Test</strong></td><td>TFCC / Ulnar impaction</td><td>—</td><td>—</td><td>Axial load through 4th+5th MC in ulnar deviation</td><td>Ulnar wrist pain</td></tr>
+      <tr><td><strong>Froment's Sign</strong></td><td>Ulnar nerve / adductor pollicis</td><td>—</td><td>—</td><td>Key pinch paper pull test</td><td>IP flexion or paper slips = ulnar weakness</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== DIAGNOSES PART 1 ====== -->
+<div class="tab-panel" id="tab-diag1">
+<div class="container">
+
+  <div class="section-title">Diagnoses — Joints &amp; Soft Tissue</div>
+  <div class="section-sub">Rheumatoid Arthritis, Osteoarthritis, Dupuytren's Contracture, Ganglion Cyst, and Thumb UCL Sprain. Each condition includes pathomechanics, clinical presentation, key deformities, and treatment framework.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Rheumatoid Arthritis (RA)</h4>
+      <div class="ma-tags"><span class="ma-tag red">Autoimmune</span><span class="ma-tag">Ulnar drift</span><span class="ma-tag gold">Boutonnière / Swan neck</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Pathomechanics</div>
+            <p>Autoimmune attack on synovial fluid → protein thickening → inflammation + loss of ROM → cartilage loss, joint space narrowing, capsular instability → unstable joints. In the hand: ligament attenuation on the radial side → <strong>ulnar drift at MCPs</strong> + <strong>radial drift at wrist</strong>. Osteophytes roughen extensor tendons → <strong>Von Jackson rupture</strong> (terminal extension loss — surgery only fix).</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Boutonnière Deformity</div>
+            <p><strong>Mechanism:</strong> Central slip rupture → lateral bands migrate <em>volarly</em>. <strong>Result:</strong> PIP flexion + DIP hyperextension. <strong>Treatment:</strong> Splint PIP in extension (DIP free to move). If untreated → progressive deformity requiring surgery.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Swan Neck Deformity</div>
+            <p><strong>Less common.</strong> Lateral bands migrate <em>dorsally</em>. <strong>Result:</strong> PIP hyperextension + DIP flexion. Caused by joint space collapse or acute trauma. Causes functional loss in gripping. Surgery or splinting.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Synovitis → Ulnar Drift Progression</div>
+            <p>Synovitis → attenuation of sagittal band (first indicator of impending drift). If untreated → MCP ulnar drift. Screen for sagittal band integrity early. Conservative: anti-ulnar drift splint (wraps around palm, pulls back to neutral). Night: resting hand splint in neutral position.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Treatment Framework</div>
+            <p><strong>Edema control</strong> + thermal modalities. <strong>Mobility:</strong> light AROM to maintain joint lubrication — NOT aggressive PROM or grip strength. Water aerobics. <strong>Splinting:</strong> anti-ulnar drift + nighttime resting hand splint. <strong>Joint protection:</strong> modify tasks, tools, or stop provoking activities. <strong>Medical:</strong> medications (DMARDs, biologics); joint replacement (age-dependent); IP joint fusion into functional position.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Functional Implications</div>
+            <p>Loss of grasp patterns (cylindrical, spherical, hook, diagonal). Pain-limited use. Weakness from both disease + guarding. Task + environment modifications are cornerstones of PT management for RA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Osteoarthritis (OA) — 1st CMC &amp; Digital Joints</h4>
+      <div class="ma-tags"><span class="ma-tag gold">1st CMC dominant site</span><span class="ma-tag">1 lb = 12 lbs at joint</span><span class="ma-tag">Heberden's / Bouchard's</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Pathomechanics — Why 1st CMC?</div>
+            <p><strong>1 lb of pinch force = 12 lbs at the 1st CMC joint</strong> (biomechanical amplification). Repetitive overuse + hypermobility predisposition → cartilage wear → joint collapse. <strong>"Shoulder sign/subluxation"</strong> — as cartilage erodes, the CMC joint shifts and creates a visible prominence at the base of the thumb. STT (scaphotrapezialtrapezoid) arthritis is less common.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Heberden's vs. Bouchard's Nodules</div>
+            <p><strong>Heberden's:</strong> DIP joints — osteophytes + pain → DIP deviation. <strong>Bouchard's:</strong> PIP joints — similar presentation. Both from repeated microtrauma + inflammation → osteophyte formation → deviation. Treatment: compression splint + DIP splint + heat education.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Assessment</div>
+            <p>Visual first — look for shoulder sign. <strong>CMC Grind Test</strong> (axial + rotational compression; + = pain or crepitus). <strong>Lever Test</strong> (joint gliding; Sen 82%/Spec 81%). Functional losses: decreased pinch and grip strength, dropping objects.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Treatment — CMC</div>
+            <p><strong>CMC stabilization exercises</strong> — reapproximate CMC joint, improve soft tissue stability (Harkins theatre cup technique). <strong>Joint protection</strong> (same principles as RA). <strong>Splinting:</strong> CMC short opponens — stabilizes 1st CMC externally. <strong>Surgery:</strong> LRTI (Ligament Reconstruction Tendon Interposition) or Suspensionplasty (hammock-type fix). Post-op: extensive rehab; light ROM; progressive strengthening.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Dupuytren's Contracture</h4>
+      <div class="ma-tags"><span class="ma-tag red">Conservative not effective</span><span class="ma-tag gold">Surgery at &gt;30°</span><span class="ma-tag">MCP &gt; PIP &gt; DIP</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Pathomechanics</div>
+            <p><strong>Palmar fasciitis.</strong> Active cellular process with nodule development in palmar and digit fascia following longitudinal tension lines. Results in <strong>flexion contractures</strong>: MCP &gt; PIP &gt; DIP (MCP most commonly affected). Rings and little fingers most often involved. Genetic predisposition; more common in Nordic descent.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Conservative Treatment Is NOT Effective</div>
+            <p>Unlike most musculoskeletal conditions, conservative treatment (stretching, splinting, PT alone) does NOT effectively treat Dupuytren's — the pathological fascia does not respond to these interventions. Surgery is the primary treatment once contracture is functionally limiting.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Surgical Options (&gt;30° Contracture)</div>
+            <p><strong>Xiaflex (Collagenase injection)</strong> — enzymatic fasciotomy; dissolves cord; outpatient; relatively quick recovery. <strong>Needle Aponeurotomy</strong> — percutaneous cord disruption with needle; feel the pop of gradual release; less recovery. <strong>Open Release</strong> — surgical excision of diseased fascia; most complete but most recovery.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Post-Op Treatment</div>
+            <p>Wound care → full-time splinting → night splinting. Stretching + functional grasp work to reduce scar adhesions. <strong>ROM before grip strength</strong> — maintain motion first, then build strength. Manual therapy for scar management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Ganglion Cyst</h4>
+      <div class="ma-tags"><span class="ma-tag">Most common soft tissue tumor</span><span class="ma-tag gold">Scaphoid most common site</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Pathology</div>
+            <p>Thin-walled cyst containing <strong>mucoid hyaluronic acid</strong>. Occur spontaneously. <strong>Most common soft tissue tumor in the hand.</strong> Scaphoid dorsal or volar is the most common site. Common in waiters, servers, and those with repetitive wrist use.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Conservative Management</div>
+            <p>Compression + conservative spinning may mobilize fluid. Aspiration (drainage) = effective for short term but the cyst sac remains → high recurrence. 4 weeks of compression post-aspiration. Observation is reasonable if asymptomatic.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Surgical Excision Timeline</div>
+            <div class="timeline-row">
+              <div class="timeline-cell"><div class="tc-label">2 wks</div><div class="tc-val">Wean splint, light ROM HEP</div></div>
+              <div class="timeline-cell"><div class="tc-label">2–4 wks</div><div class="tc-val">AROM → light strengthening</div></div>
+              <div class="timeline-cell"><div class="tc-label">4 wks</div><div class="tc-val">D/C splint, full strengthening</div></div>
+              <div class="timeline-cell"><div class="tc-label">4–6 wks</div><div class="tc-val">Return to normal activity</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Thumb UCL Sprain (Gamekeeper's / Skier's Thumb)</h4>
+      <div class="ma-tags"><span class="ma-tag red">Grade 3 → surgery</span><span class="ma-tag gold">Stener lesion risk</span><span class="ma-tag">Ulnar MCP pain</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Mechanism &amp; Grading</div>
+            <p>Mechanism: chronic repetitive (gamekeepers — chickens) or acute (fall with thumb abducted — skiers). Pain at <strong>ulnar side of thumb MCP joint</strong>. UCL stress test: &gt;30–35° valgus = UCL tear. Grade 1–2: partial tear with intact end-feel. Grade 3: complete rupture with no endpoint → surgical.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Stener Lesion — Must Rule Out</div>
+            <p>Complete UCL rupture where the adductor pollicis aponeurosis interposes between the torn ends — prevents healing without surgery. If laxity &gt;35° or complete instability → imaging + surgical referral required. Stener lesion cannot heal conservatively.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Conservative (Grade 1–2)</div>
+            <p>Splinting: immobilize MCP joint only (NOT IP — keep free). Duration: 6 weeks. At 6 weeks: light AROM. At 8+ weeks: light strengthening + stability exercises to MCP.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Post-Op (Grade 3 / Stener Lesion)</div>
+            <div class="timeline-row">
+              <div class="timeline-cell"><div class="tc-label">0–3/4 wks</div><div class="tc-val">Hand-based thumb spica (full time)</div></div>
+              <div class="timeline-cell"><div class="tc-label">3/4–6 wks</div><div class="tc-val">Wean to d/c splint</div></div>
+              <div class="timeline-cell"><div class="tc-label">4 wks</div><div class="tc-val">Light AROM begins</div></div>
+              <div class="timeline-cell"><div class="tc-label">8 wks</div><div class="tc-val">Light strengthening</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== DIAGNOSES PART 2 ====== -->
+<div class="tab-panel" id="tab-diag2">
+<div class="container">
+
+  <div class="section-title">Diagnoses — Tendons &amp; Nerve Entrapment</div>
+  <div class="section-sub">Tendinopathies, tendon ruptures, flexor/extensor tendon zones, and the four common nerve entrapment syndromes. Tendinitis is a misnomer — the correct terms are tendinosis or tenosynovitis depending on the structure involved.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:16px;">
+    <div class="bl-label">Terminology — Why It Matters</div>
+    <p><strong>Tendinitis:</strong> "there is an absence of acute inflammatory cells in the load-bearing regions of tendons" — the tendon is NOT actually inflamed. Term should be abandoned. <strong>Tendinosis:</strong> degeneration of tendon collagen from chronic overuse — Type I collagen (mature) → Type III (immature). <strong>Tenosynovitis:</strong> inflammation of the synovial sheath surrounding the tendon (specific locations, e.g., 1st dorsal compartment, A1 pulley). Treatment differs: tendinosis = load to stimulate collagen remodeling; tenosynovitis = reduce synovial inflammation first.</p>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>DeQuervain's Tenosynovitis</h4>
+      <div class="ma-tags"><span class="ma-tag gold">1st dorsal compartment</span><span class="ma-tag">APL + EPB</span><span class="ma-tag red">New mothers common</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Pathology &amp; Presentation</div>
+            <p>Inflammation of the <strong>1st dorsal extensor compartment</strong> (APL + EPB tendons). Pain with: ulnar deviation, thumb flexion stretch, resisted thumb extension + radial deviation. Tenderness over the 1st dorsal compartment (radial wrist, anatomic snuffbox).</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">DDx: Intersection Syndrome</div>
+            <p>Intersection syndrome involves ECRB and ECRL crossing the 1st compartment — pain is <strong>more proximal</strong> (dorsal forearm, ~4–6 cm proximal to radial styloid) vs. DeQ's pain directly at the styloid. Different location = different structure, different treatment target.</p>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">WHAT Test Preferred Over Finkelstein's</div>
+            <p>WHAT Test (Sen 99%) is preferred because it is easier to perform and has higher sensitivity for the 1st dorsal compartment. Finkelstein's Spec is only 50% — many false positives from the wrist stretch position alone.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Treatment Timeline</div>
+            <div class="timeline-row">
+              <div class="timeline-cell"><div class="tc-label">Acute</div><div class="tc-val">Rest + Splinting (thumb spica)</div></div>
+              <div class="timeline-cell"><div class="tc-label">2 wks</div><div class="tc-val">Light AROM + STM (circulation)</div></div>
+              <div class="timeline-cell"><div class="tc-label">3–4 wks</div><div class="tc-val">Light dynamic AROM + tendon loading (collagen maturation)</div></div>
+              <div class="timeline-cell"><div class="tc-label">6 wks</div><div class="tc-val">Light strengthening out of splint</div></div>
+            </div>
+          </div>
+          <div class="bl-strip">
+            <div class="bl-label">Intersection Syndrome Treatment</div>
+            <p>Early rest + custom orthosis immobilizing wrist extension. 2 weeks: light AROM + STM. 3–4 weeks: light tendon loading. 6 weeks: light strengthening. Same timeline as DeQ's but different splint position (wrist extension vs. thumb immobilization).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Trigger Finger (Flexor Tenosynovitis)</h4>
+      <div class="ma-tags"><span class="ma-tag gold">A1 pulley</span><span class="ma-tag">3-tier treatment</span><span class="ma-tag red">Thumbs are stubborn</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Pathology &amp; Presentation</div>
+            <p>Inflammation of flexor tendon sheath at the <strong>A1 pulley</strong>, located at the volar MCP joint. The tendon nodule catches on the pulley creating a "trigger." Progression: (1) Point tenderness volar MCP only; (2) Limited ROM + catching; (3) Locking — finger stuck in flexion or extension requiring passive assist; (4) Fixed flexion contracture.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Three-Tier Treatment</div>
+            <p><strong>Tier 1 (Conservative):</strong> Immobilize 1 joint of finger (PIP is easiest) + anti-inflammatory modalities + light mobility to 2–3 finger joints WITHOUT composite flexion. Trial 4 weeks. <strong>Tier 2 (Injection):</strong> Corticosteroid injection into tendon sheath to reduce inflammation. Start here for thumbs (stubborn). 4 weeks to assess response. <strong>Tier 3 (Surgery):</strong> Release of A1 pulley. Must release complete pulley — incomplete release = recurrence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Flexor &amp; Extensor Tendon Zones</h4>
+      <div class="ma-tags"><span class="ma-tag red">Zone 2 flexor = most complex</span><span class="ma-tag gold">5 flexor / 7 extensor zones</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Flexor Tendon Zones (5 zones)</div>
+            <p>Slow healing due to <strong>poor blood supply</strong>. Protocols vary by surgical technique and patient factors. Common principles across zones: <strong>Dorsal blocking orthosis for 6 weeks</strong>. PROM into flexion, AROM ONLY into blocked extension. <strong>Zone 2 ("no man's land")</strong> = most complicated — within the flexor sheath, tendon ends may not heal well without meticulous surgical repair. Require early protected motion protocols.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Jersey Finger (Zone 1 Avulsion)</div>
+            <p>FDP avulsion off distal phalanx — unable to flex DIP. Treat with flexor tendon protocol + full dorsal blocking orthosis for 6 weeks. Critical: if not splinted, the tendon can <strong>retract into the forearm</strong>. Surgery required. Common mechanism: grabbing another player's jersey.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Extensor Tendon Zones (7 zones)</div>
+            <p><strong>7 zones</strong> (odd numbers located on joints). Broader, flat tendons with better blood supply than flexors. Extensor mechanism + <strong>juncturae tendinae</strong> (cross-links between extensor tendons) aid in splinting effect. Protocol varies by zone of injury.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Mallet Finger (Zone 1–2)</div>
+            <p>Rupture of terminal extensor tendon or bony avulsion off P3. Common "jammed finger" (sports). Visible DIP droop — patient cannot actively extend DIP. <strong>Treatment:</strong> DIP extension splint at 10–15° of hyperextension. Wear <strong>ALL times for 6 weeks</strong> — ONE missed night = restart the 6-week clock. KT tape supplement. Surgical pinning if compliance is in question. After 6 weeks: therapy to remobilize DIP.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">Nerve Entrapment Syndromes</div>
+  <div class="section-sub" style="margin-bottom:14px;">Always screen the full neurological chain — double-crush syndrome (proximal + distal compression simultaneously) must be ruled out. EMG is useful but not infallible. Provocative testing is key to localization.</div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card" style="border-left:3px solid var(--teal);">
+      <div class="card-title" style="color:var(--teal2);">Carpal Tunnel Syndrome (Median Nerve)</div>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text3);margin-bottom:6px;">Wrist-based median nerve compression</p>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Causes</div>
+        <p>Distal radius fracture · Inflammatory increase (pregnancy is classic) · Repetitive cumulative trauma (wrist-based: typing, assembly work)</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Presentation</div>
+        <p>Volar wrist pain · Thumb strength loss (thenar weakness) · Tingling/numbness: thumb, index, middle, radial ring finger · Nocturnal symptoms (classic — sleeping position) · Muscle weakness → thenar wasting</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Best Tests</div>
+        <p>Durkan's (Sen 90%/Spec 92%) &gt; Phalen's (Sen 77%) &gt; Tinel's at wrist (Spec 99%)</p>
+      </div>
+    </div>
+    <div class="card" style="border-left:3px solid var(--purple);">
+      <div class="card-title" style="color:var(--purple2);">Cubital Tunnel Syndrome (Ulnar Nerve — Elbow)</div>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text3);margin-bottom:6px;">Elbow-based ulnar nerve compression</p>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Causes</div>
+        <p>Elbow fracture or acute injury · Inflammatory (pregnancy) · Repetitive elbow compression or sustained flexion — drivers keeping elbow on window ledge</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Presentation</div>
+        <p>Elbow + ulnar forearm/hand pain · Tingling/numbness: ring finger + little finger + medial forearm · Intrinsic muscle weakness → wasting (ulnar nerve innervates interossei, hypothenar)</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Key Signs</div>
+        <p>+ Tinel's at cubital tunnel · + Froment's Sign (adductor pollicis weakness) · Intrinsic wasting (first dorsal webspace, hypothenar)</p>
+      </div>
+    </div>
+    <div class="card" style="border-left:3px solid var(--purple);">
+      <div class="card-title" style="color:var(--purple2);">Guyon's Canal (Ulnar Nerve — Wrist)</div>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text3);margin-bottom:6px;">Wrist-based ulnar nerve compression</p>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Causes</div>
+        <p>Hamate fracture (hook of hamate) · Inflammatory · Repetitive compression: computer use, <strong>"cyclist's hand" / biker's hand</strong> (ulnar base of hand on handlebars)</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Presentation — Distinct from Cubital Tunnel</div>
+        <p>Pain to <strong>ulnar side of hand ONLY</strong> (no elbow or forearm symptoms — this differentiates from cubital tunnel) · Tingling/numbness: ring + little finger · Intrinsic weakness → wasting</p>
+      </div>
+    </div>
+    <div class="card" style="border-left:3px solid var(--gold);">
+      <div class="card-title" style="color:var(--gold2);">Radial Tunnel / Pronator Syndrome (Radial Nerve)</div>
+      <p style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--text3);margin-bottom:6px;">Radial nerve or PIN compression</p>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Causes</div>
+        <p>Mid-shaft radius fracture · Repetitive pronation + loaded wrist extension · Superficial radial nerve (sensory) vs. PIN (motor branch)</p>
+      </div>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Presentation</div>
+        <p>Weakness of grip or wrist extension · May present as <strong>wrist drop</strong> ("Saturday night palsy" — prolonged compression in sleeping position with arm over chair) · Finger extensors weak</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Clinical Note</div>
+        <p>Radial tunnel syndrome (sensory only: dorsal hand tingling) vs. PIN injury (motor: no wrist/finger extension). Distinguish by whether motor loss is present. Both far less common than median or ulnar entrapment at wrist/elbow.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Nerve Entrapment — Universal Treatment Framework</div>
+    <div class="grid2">
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Reduce compression/inflammation</strong> — activity modification, ergonomic assessment, positioning education</li>
+        <li><strong>Soft tissue mobilization</strong> — adjacent muscles, fascia, neural interfaces</li>
+        <li><strong>Custom splinting</strong> — stabilize and offload the compressed nerve (e.g., wrist splint for CTS in neutral; elbow pad + avoid sustained flexion for cubital tunnel)</li>
+        <li><strong>Nerve glides / flossing</strong> — neural mobilization: slider technique (moves nerve through surrounding tissue) vs. tensioner (tensions the nerve); start with slider for irritable presentations</li>
+        <li><strong>Sensory nerve re-education</strong> — for established sensory deficits: monofilament grading, texture discrimination, two-point discrimination training</li>
+        <li><strong>Healthy motion</strong> — short arc, symptom-free ROM to improve tissue mobility and circulation around nerve</li>
+      </ul>
+      <div>
+        <div class="bl-strip red">
+          <div class="bl-label">Double-Crush Syndrome</div>
+          <p>Proximal compression (e.g., cervical radiculopathy at C6) + distal compression (e.g., carpal tunnel) simultaneously. The proximal lesion sensitizes the nerve, making it more vulnerable to distal compression. Always perform a full cervical and proximal UE screen when peripheral nerve symptoms are present. Treating only the distal site will have incomplete results if a proximal source is missed.</p>
+        </div>
+        <div class="bl-strip gold" style="margin-top:6px;">
+          <div class="bl-label">EMG / NCS Utility</div>
+          <p>EMG + nerve conduction studies are helpful for confirming the level of nerve involvement and quantifying severity. However, EMG is NOT infallible — clinical presentation can precede EMG changes, and false negatives occur early in nerve compression. Do not rely on EMG alone; integrate with provocative testing and clinical presentation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== FRACTURES & CRPS ====== -->
+<div class="tab-panel" id="tab-fractures">
+<div class="container">
+
+  <div class="section-title">Fractures, Dislocations &amp; CRPS</div>
+  <div class="section-sub">Wrist and hand fractures are among the most functionally impactful injuries. Small bones, dense sensory innervation, and complex biomechanics make proper treatment and rehabilitation critical. CRPS is a potential complication following any of these injuries and requires early recognition.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Distal Radius Fracture (DRF)</h4>
+      <div class="ma-tags"><span class="ma-tag red">Mobilize fingers day 3–5</span><span class="ma-tag gold">Colles vs. Smith's</span><span class="ma-tag">ORIF wk 2 / Closed wk 6</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Fracture Types</div>
+            <p><strong>Colles fracture:</strong> dorsal displacement (most common). <strong>Smith's fracture:</strong> volar displacement. Classification types 1–5. May be comminuted, intraarticular, or displaced. Does NOT have direct correlation to flexion vs. extension lag in recovery.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">&#9888; MOBILIZE FINGERS AT DAY 3–5</div>
+            <p>This is critical and often neglected. Finger stiffness develops rapidly with immobilization. Full digit flexion/extension must be started at day 3–5 regardless of whether the wrist is casted. One size does NOT fit all with off-the-shelf splints — custom fabrication is preferred.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Wrist Mobility Timeline</div>
+            <div class="timeline-row">
+              <div class="timeline-cell"><div class="tc-label">Day 3–5</div><div class="tc-val">Finger AROM starts</div></div>
+              <div class="timeline-cell"><div class="tc-label">ORIF Wk 2</div><div class="tc-val">Wrist light AROM begins</div></div>
+              <div class="timeline-cell"><div class="tc-label">Closed Wk 6</div><div class="tc-val">AROM when callus confirmed</div></div>
+              <div class="timeline-cell"><div class="tc-label">Wk 6–8</div><div class="tc-val">Strengthening (method-dependent)</div></div>
+            </div>
+          </div>
+          <div class="bl-strip">
+            <div class="bl-label">Key Treatment Principles</div>
+            <p>AROM first → PROM after stable and cleared → joint mobs only when fracture is stable. STM + scar management early to prevent adhesions. PROM before fracture stability risks displacement. Monitor for CRPS (burning pain, trophic changes, asymmetric swelling).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Scaphoid Fracture</h4>
+      <div class="ma-tags"><span class="ma-tag red">12 wks immobilization</span><span class="ma-tag red">AVN risk</span><span class="ma-tag gold">Retrograde blood supply</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Why Scaphoid is High-Risk</div>
+            <p>Blood supply enters the scaphoid <strong>distally</strong> (retrograde flow). The <strong>waist</strong> (narrowest point) is the most common fracture site — and it is most proximal to the blood supply entry. Fracture at the waist interrupts retrograde flow → <strong>avascular necrosis (AVN)</strong> of the proximal pole. Prone to nonunion. X-ray may be normal initially — if clinical suspicion is high (anatomic snuffbox tenderness), treat as fracture until MRI confirms.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">SNAC Wrist</div>
+            <p>Scaphoid Nonunion Advanced Collapse — if nonunion progresses, surrounding carpal bones collapse into the scaphoid space. Leads to: Proximal Row Carpectomy (remove proximal row), Wrist Arthrodesis (fusion), or 4-corner fusion (significant permanent ROM loss).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Treatment Timeline</div>
+            <div class="timeline-row">
+              <div class="timeline-cell"><div class="tc-label">Day 3–5</div><div class="tc-val">Finger AROM</div></div>
+              <div class="timeline-cell"><div class="tc-label">Closed: 12 wks</div><div class="tc-val">ZERO loading during immobilization</div></div>
+              <div class="timeline-cell"><div class="tc-label">ORIF: Wk 2</div><div class="tc-val">Dart thrower's motion begins</div></div>
+              <div class="timeline-cell"><div class="tc-label">Wk 16</div><div class="tc-val">Strengthening (AROM ≥80%)</div></div>
+            </div>
+          </div>
+          <div class="bl-strip gold">
+            <div class="bl-label">Dart Thrower's Motion</div>
+            <p>Wrist motion that minimizes scaphoid-lunate movement: <strong>wrist flexion paired with ulnar deviation</strong> (throwing motion down) + <strong>extension paired with radial deviation</strong> (cocking up). Used post-ORIF to allow functional wrist motion while protecting the scaphoid. Much less carpal motion than pure flexion/extension.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Metacarpal &amp; Phalangeal Fractures</h4>
+      <div class="ma-tags"><span class="ma-tag">Boxer's fracture = 5th MC neck</span><span class="ma-tag gold">14/27 hand bones are phalanges</span><span class="ma-tag red">Edema spreads to whole digit</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Metacarpal Fractures</div>
+            <p>Acute trauma most common. CMC dislocations may occur simultaneously. <strong>Custom splinting:</strong> 4 weeks (ORIF) or 6+ weeks (closed). Immobilize MCP; also immobilize wrist if shaft or base fracture. <strong>Boxer's fracture:</strong> 5th metacarpal neck specifically. Progress: A/AAROM → PROM → joint mobs when healed → progressive UE strengthening.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Phalangeal Fractures — Key Concept</div>
+            <p>14 of 27 hand bones are phalanges = most common fracture site. <strong>You cannot send edema to just one phalanx</strong> — the entire digit and neighboring digits are affected. Expect associated stiffness, edema, and pain in the rest of the digit and adjacent digits. Even small fractures can have significant mobility impact.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Tufts Fracture (Distal Phalanx Tip)</div>
+            <p>Crush injury to fingertip (sports, door). Commonly injures nail bed. Treatment: protect during healing → mobilize after fracture is stable/set. Nail bed repair if significant injury. Monitor for subungual hematoma.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Volar Lip Fracture (PIP/DIP Volar Plate)</div>
+            <p>Small fracture to volar aspect of PIP or DIP. Affects volar plate. Creates scarring, adhesions, and <strong>long-term stiffness</strong>. Common to NOT regain full range. <strong>Mobilize early (after stable) and often</strong> — adhesion prevention is the primary goal. Aggressive early mobilization within stability constraints is the key to outcome.</p>
+          </div>
+          <div class="bl-strip">
+            <div class="bl-label">PIP Dislocation</div>
+            <p><strong>Do NOT reduce in the field</strong> — can cause rupture of other structures if done incorrectly. Volar dislocation → EDC damaged → splint in extension (3°). Dorsal dislocation → volar plate damaged → splint in flexion. Therapy = protected mobility throughout ROM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title" style="font-size:1.2rem;">CRPS — Complex Regional Pain Syndrome</div>
+
+  <div class="bl-strip red" style="margin-bottom:16px;">
+    <div class="bl-label">Two Types</div>
+    <p><strong>CRPS Type I (RSD — Reflex Sympathetic Dystrophy):</strong> No direct nerve injury. Pain is triggered by another noxious painful event (e.g., DRF, surgery, immobilization). Most common. <strong>CRPS Type II (Causalgia):</strong> Direct partial or full nerve injury to a named nerve or major branch. Pain types: <strong>Allodynia</strong> (non-noxious stimulus → pain perception); <strong>Hyperalgesia</strong> (noxious stimulus → excessive pain); <strong>Hyperpathia</strong> (excessive pain perception that perseverates abnormally long). Suspect CRPS in any patient with disproportionate pain, trophic changes, or burning quality post-injury or post-immobilization.</p>
+  </div>
+
+  <div class="grid3" style="margin-bottom:14px;">
+    <div class="card" style="border-left:3px solid var(--red);">
+      <div class="card-title" style="color:var(--red);">Stage 1: Acute Inflammatory</div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text3);margin-bottom:8px;">10 days — 3 months (most reversible)</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Flushed, warm, dry skin</li>
+        <li>Diffuse and severe pain</li>
+        <li>Brawny edema</li>
+        <li>Hair growth (early)</li>
+        <li>Late stage: limb becomes <strong>cold, sweaty, brawny</strong></li>
+      </ul>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">Clinical Pearl</div>
+        <p>Can be reversed relatively easily if caught early. Early recognition and aggressive (but gentle) treatment is critical. Do NOT miss this stage — Stage 2 and 3 are much harder to reverse.</p>
+      </div>
+    </div>
+    <div class="card" style="border-left:3px solid var(--orange);">
+      <div class="card-title" style="color:var(--orange);">Stage 2: Dystrophic</div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text3);margin-bottom:8px;">3 — 6 months</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Constricted blood vessels</li>
+        <li>Waxy appearance of skin</li>
+        <li>Pain becomes <strong>burning and throbbing</strong></li>
+        <li><strong>Grooved nails</strong> (longitudinal) — classic finding</li>
+        <li>Muscle wasting progresses</li>
+        <li>Joint stiffness worsens</li>
+        <li>Black hair growth</li>
+      </ul>
+    </div>
+    <div class="card" style="border-left:3px solid var(--purple);">
+      <div class="card-title" style="color:var(--purple2);">Stage 3: Atrophic</div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text3);margin-bottom:8px;">6 months+ (largely irreversible)</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Irreversible damage to muscles and joints</li>
+        <li>Bone weakening (osteopenia)</li>
+        <li>Ankylosis of joints</li>
+        <li>Pain <em>lessens</em> paradoxically</li>
+        <li>Skin cools further → may appear cyanotic</li>
+        <li>Limb becomes non-functional</li>
+      </ul>
+      <div class="bl-strip purple" style="margin-top:8px;">
+        <div class="bl-label">Prognosis</div>
+        <p>Hard to reverse at Stage 3. Prevention through early diagnosis (Stage 1) and aggressive management is the only effective strategy against Stage 3 outcomes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">CRPS Treatment</div>
+      <div class="bl-strip" style="margin-bottom:6px;">
+        <div class="bl-label">Team Approach Required</div>
+        <p>Therapy + Pain Management (physician, nurse) + Medical (nerve blocks, medications). CRPS is beyond PT scope alone — multidisciplinary care is essential.</p>
+      </div>
+      <div class="bl-strip gold" style="margin-bottom:6px;">
+        <div class="bl-label">Graded Motor Imagery (GMI)</div>
+        <p>Changes the sympathetic nervous system response via cortical reorganization. Three sequential stages: <strong>(1) Laterality recognition</strong> — identify right vs. left hand from images; <strong>(2) Motor imagery</strong> — mentally simulate writing your name, moving the limb; <strong>(3) Mirror box therapy</strong> — use mirror to reflect unaffected limb; brain perceives movement of the affected limb → can break pain cycle. Must be done in sequence.</p>
+      </div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Weight bearing + proprioceptive input</strong> — normalize sensory input to the affected limb; desensitization progression</li>
+        <li><strong>Gentle AROM</strong> — symptom-free ROM; never force</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">&#9888; CRPS — What NOT To Do</div>
+      <div class="bl-strip red" style="margin-bottom:6px;">
+        <div class="bl-label">Do NOT Do Aggressive PROM</div>
+        <p>Spiking pain with aggressive PROM = <strong>downward spiral</strong>. Each pain spike further sensitizes the sympathetic nervous system, worsening the CRPS cycle. Pain flares during treatment set back weeks of progress. Always work within symptom-free ROM — even if that is minimal.</p>
+      </div>
+      <div class="bl-strip red" style="margin-bottom:6px;">
+        <div class="bl-label">Clinical Indicators — Suspect CRPS</div>
+        <p>Disproportionate pain (out of proportion to injury severity) · Burning quality · Allodynia (pain with light touch) · Skin color or temperature changes · Grooved nails · Hair growth asymmetry · Severe limb guarding or avoidance · Pain not improving as expected post-injury or post-immobilization</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">CRPS Post-DRF — Common Scenario</div>
+        <p>After distal radius fracture + cast removal: burning sensation + discoloration + hair growth + grooved nails + severe ROM loss = CRPS Stage 1–2. Do NOT use traditional aggressive post-fracture mobilization protocols. Gentle, desensitization-first approach required.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== CLINICAL CASES ====== -->
+<div class="tab-panel" id="tab-cases">
+<div class="container">
+
+  <div class="section-title">Clinical Case Studies — Wrist &amp; Hand DDx</div>
+  <div class="section-sub">Apply LOCIDAA + SINSS + quadrant-based DDx reasoning to each case. For each: differential diagnoses, provocative tests, expected findings, problem list, and treatment approach.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:16px;">
+    <div class="bl-label">Wrist DDx Clinical Reasoning Sequence</div>
+    <p>Identify quadrant (radial/ulnar/dorsal/volar) → SINSS classification → Generate DDx → Select targeted provocative tests → Identify key impairments → Select treatment approach matched to stage (acute: protect + gentle ROM; subacute: tendon loading + AROM; chronic: progressive strengthening + joint mobs).</p>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Case 1 — 65 y/o female pharmacist, radial wrist pain</h4>
+      <div class="ma-tags"><span class="ma-tag gold">1st CMC OA</span><span class="ma-tag">Jar opening / heavy grip provocation</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation</div>
+            <p>65yo female pharmacist. Radial wrist pain. Worse opening jars or carrying heavy/large items in hand. Pharmacist career = years of repetitive pill bottle opening (ulnar deviation + thumb grip).</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Top 3 DDx</div>
+            <p><strong>1. 1st CMC Osteoarthritis</strong> — age + career + radial wrist + jar/heavy grip provocation = classic. 1 lb pinch = 12 lbs at CMC. Look for shoulder sign. <strong>2. DeQuervain's Tenosynovitis</strong> — radial wrist + thumb involvement; test with WHAT Test / Finkelstein's. <strong>3. Carpal Tunnel Syndrome</strong> — age + pharmacist occupation; test with Durkan's / Phalen's.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Key Tests &amp; Expected Findings</div>
+            <p>CMC Grind Test (+ = pain + crepitus) · Lever Test (Sen 82%/Spec 81%) · WHAT Test (DeQ screen) · Durkan's (CTS screen) · Grip dynamometer (compare bilateral) · Lateral pinch test (likely reduced — adductor pollicis CMC force loading).</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Treatment (If 1st CMC OA)</div>
+            <p>CMC stabilization exercises · Joint protection education (modify jar-opening technique, adaptive equipment) · CMC short opponens splint · If symptomatic flare: thermal modalities + rest. Address workplace ergonomics. If conservative fails after 3–6 months: LRTI or Suspensionplasty referral.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Case 2 — 26 y/o male, FOOSH from mountain biking, radial wrist pain</h4>
+      <div class="ma-tags"><span class="ma-tag red">Scaphoid / Scapholunate instability</span><span class="ma-tag">65% grip strength</span><span class="ma-tag gold">XR negative</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation</div>
+            <p>26yo male, FOOSH from mountain bike fall. Radial wrist + thumb pain. XR negative. Painful AROM with 20% ROM loss vs. contralateral. 65% grip strength deficit. Radial-sided wrist pain post-FOOSH with negative XR = scaphoid fracture until proven otherwise.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">&#9888; XR Negative ≠ No Scaphoid Fracture</div>
+            <p>Scaphoid fractures can be XR-negative for up to 2 weeks. If anatomic snuffbox tenderness + FOOSH mechanism + radial wrist pain → treat as scaphoid fracture until MRI confirms. MRI is gold standard for early scaphoid fracture diagnosis. Missing a scaphoid fracture = risk of nonunion and AVN.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Top DDx</div>
+            <p><strong>1. Scaphoid fracture (occult)</strong> — FOOSH, radial pain, anatomic snuffbox tenderness expected. Refer for MRI. <strong>2. Scapholunate ligament injury</strong> — FOOSH mechanism, radial pain, grip weakness. Watson Test. <strong>3. Radial styloid fracture</strong> — may not show on plain XR if non-displaced. <strong>4. Thumb UCL sprain</strong> — FOOSH with thumb involvement.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Tests &amp; Treatment</div>
+            <p>Watson Test (scapholunate stability) · Anatomic snuffbox palpation (scaphoid tenderness) · Thumb UCL stress test · Grip dynamometry. If scaphoid suspected: immobilize + MRI referral. If SL instability: MRI arthrogram + orthopedic referral. DO NOT mobilize aggressively until fracture confirmed negative.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Case 3 — 18 y/o linebacker, long finger DIP droop after tackle</h4>
+      <div class="ma-tags"><span class="ma-tag red">Mallet Finger</span><span class="ma-tag gold">DIP extension splint 6 wks</span><span class="ma-tag">DIP -20/30°</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation</div>
+            <p>18yo male football linebacker. Sharp pain in long finger after tackle. DIP AROM = -20/30° (significant extension lag). Palpation pain + moderate edema at DIP + distal phalanx.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Diagnosis: Mallet Finger (Zone 1–2 Extensor)</div>
+            <p>Terminal extensor tendon rupture or bony avulsion off P3. Classic mechanism: forced DIP flexion during tackle (ball hits fingertip, forces DIP into flexion while extensor is active). DIP -20° extension lag = cannot fully extend DIP actively. XR to rule out bony avulsion (if avulsion &gt;30% joint surface → surgical).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Critical POC — Splinting Protocol</div>
+            <p>DIP extension splint at <strong>10–15° of DIP hyperextension</strong> (stack splint or custom). <strong>Must be worn AT ALL TIMES for 6 weeks</strong>. One missed night = restart the 6-week clock. Supplement with KT tape. PIP and MCP left free to move (only DIP splinted). Surgical pinning if compliance is in question (athlete, younger patient).</p>
+          </div>
+          <div class="bl-strip">
+            <div class="bl-label">After 6 Weeks</div>
+            <p>Gradual DIP remobilization — gentle AROM out of splint. Progress to wean splint during day first, then discontinue at night. Monitor for extensor lag — if &gt;10° lag, return to splinting. Return to sport with buddy-taping or protective splint for several more weeks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Case 4 — 54 y/o golfer, ulnar wrist pain at top of backswing</h4>
+      <div class="ma-tags"><span class="ma-tag gold">TFCC injury</span><span class="ma-tag">Grip 35 vs 70 lbs</span><span class="ma-tag red">Ulnar deviation provocation</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation</div>
+            <p>54yo golfer. Sharp pain at ulnar wrist at top of backswing. Constant pain exacerbated by heavy gripping. Active ulnar deviation → pain. Grip: 35 lbs involved vs. 70 lbs uninvolved (50% deficit). The "top of backswing" = ulnar deviation + DRUJ loading = TFCC mechanism.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Top DDx</div>
+            <p><strong>1. TFCC tear</strong> — ulnar deviation + axial load mechanism (backswing), ulnar pain, grip loss, DRUJ involvement. <strong>2. ECU tendinopathy</strong> — ulnar dorsal pain with ulnar deviation + grip. <strong>3. Ulnar impaction syndrome</strong> — repetitive ulnar load. <strong>4. DRUJ instability</strong> — if TFCC is the primary stabilizer and it's compromised.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Provocative Tests</div>
+            <p><strong>TFCC Press Test</strong> (Sen 100% — if negative, TFCC very unlikely) · <strong>TFCC Piano Key Test</strong> (Spec 96% — if positive, strongly rules in) · <strong>Ulnar Impaction Test</strong> (axial load through 4th+5th MC in ulnar deviation) · DRUJ stability testing (PA stress of distal ulna vs. radius). MRI arthrogram is gold standard for TFCC tears.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Return to Golf — Functional Milestones</div>
+            <p>Grip strength ≥80% symmetry · Pain-free wrist ROM full arc · TFCC Press Test negative · Pain-free DRUJ stress test · Gradual return: chipping → iron play (shorter backswing) → full swing last. Wrist support brace during transition period.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Case 5 — 43 y/o female, post-DRF, cast off 2 days ago, burning sensation</h4>
+      <div class="ma-tags"><span class="ma-tag red">CRPS Stage 1</span><span class="ma-tag red">Do NOT aggressive PROM</span><span class="ma-tag">Trophic changes present</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation — Classic CRPS Flags</div>
+            <p>Post-DRF, cast off 2 days. <strong>Burning sensation</strong> (not typical post-cast pain). <strong>Discoloration</strong> (right vs. left). <strong>Hair growth</strong> asymmetry (dorsal right hand). <strong>Grooved nails</strong> (longitudinal). Pain 6/10 rest, 9/10 with AROM. Severe ROM limitations all planes. These trophic changes + burning pain = <strong>CRPS Stage 1–2</strong>.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Precautions — Critical</div>
+            <p>Do NOT use traditional aggressive post-fracture ROM protocols. <strong>No aggressive PROM</strong> — pain spikes = sympathetic nervous system sensitization = CRPS downward spiral. Gentle, desensitization-first approach. Team referral: pain management physician + PT + occupational therapy. Nerve blocks may be indicated.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Treatment Approach (Stage 1)</div>
+            <p>Edema management (light compression, elevation). Desensitization program (light touch → texture → weight-bearing progression — go slowly, below pain threshold). Gentle AROM only within symptom-free range. Graded Motor Imagery (laterality → motor imagery → mirror box). Weight-bearing progression (place hand flat on table → light weight through hand). Do NOT force ROM.</p>
+          </div>
+          <div class="bl-strip">
+            <div class="bl-label">Progress Indicators</div>
+            <p>Reduction in burning quality · Improved skin color/temperature symmetry · Decreased allodynia (can tolerate light touch) · Improved sleep quality · Gradual ROM gains (even small gains = positive direction) · Nail and hair growth normalizing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Case 6 — 34 y/o new mother, radial wrist + thumb pain (2 months post-partum)</h4>
+      <div class="ma-tags"><span class="ma-tag gold">DeQuervain's</span><span class="ma-tag">Post-partum classic</span><span class="ma-tag">Grip 48 vs 55 lbs</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation</div>
+            <p>34yo new mother, 2 months post-partum. Radial wrist + thumb pain. Pain with wrist RD/UD and thumb opposition/ABD. Minimal edema radial wrist. Grip: 48 lbs (R, dominant) vs. 55 lbs (L). Lateral pinch: 5 lbs (R, pain) vs. 12 lbs (L). Post-partum DeQuervain's is a well-recognized syndrome — repetitive infant lifting with extended thumb/radial deviation loads APL and EPB.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Top DDx</div>
+            <p><strong>1. DeQuervain's Tenosynovitis</strong> — post-partum + radial wrist + thumb opposition pain + edema 1st dorsal compartment. WHAT Test (Sen 99%). <strong>2. 1st CMC OA</strong> — less likely at 34yo without prior trauma. <strong>3. CTS</strong> — morning hand paresthesias mentioned (this version) → note median distribution screen.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Tests</div>
+            <p>WHAT Test (preferred, Sen 99%) · Finkelstein's (Sen 81%) · CMC Grind + Lever (rule out CMC OA) · Durkan's + Phalen's (CTS screen if paresthesias present) · Lateral pinch dynamometry</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Treatment</div>
+            <p><strong>Thumb spica splint</strong> (immobilize 1st compartment, wrist neutral). Education: baby-lifting modification (wrist neutral, use both hands, cradle vs. scoop). 2 wks: light AROM + STM. 3–4 wks: tendon loading. 6 wks: light strengthening. Corticosteroid injection if inadequate response (safe if breastfeeding at appropriate timing — discuss with OB). Note: breastfeeding itself (via hormonal laxity) may predispose to tendon sheath irritation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Case 7 — 42 y/o male, ring + little finger paresthesias, night pain, 1st dorsal webspace atrophy</h4>
+      <div class="ma-tags"><span class="ma-tag purple">Cubital Tunnel Syndrome</span><span class="ma-tag">Intrinsic 4/5</span><span class="ma-tag red">Atrophy = advanced</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation</div>
+            <p>42yo male. Paresthesias right ring + little fingers (ulnar distribution). Greater at night (wakes him). Weakness with pen-writing + key turning (intrinsic + adductor pollicis). Minimal atrophy in 1st dorsal webspace (first dorsal interosseous — ulnar nerve). Interossei MMT 4/5 right vs. 5/5 left. <strong>+ Tinel's at cubital tunnel.</strong></p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Ulnar Nerve — Cubital Tunnel</div>
+            <p>Atrophy of 1st dorsal webspace = significant ulnar nerve involvement. This is NOT early-stage — atrophy indicates chronic or severe compression. At this point, neurological recovery takes months even with intervention. EMG/NCS to quantify severity. Orthopedic referral for surgical decompression assessment.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Further Tests &amp; Treatment</div>
+            <p><strong>Tests:</strong> Froment's Sign (adductor pollicis weakness) · Full MMT interossei, hypothenar, FDP ring/little · 2-point discrimination ring + little finger · Elbow flexion provocation test (sustained elbow flexion reproduces cubital symptoms). <strong>Treatment:</strong> Elbow pad (protect cubital tunnel from compression) · Avoid sustained elbow flexion (no elbow on window, padding at desk) · Ulnar nerve glides · If conservative fails → surgical decompression (anterior transposition or in-situ decompression). Sensory re-education.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+
+  <div class="section-title">Review Cards</div>
+  <div class="section-sub">Tap to flip. Covers special tests with Spec/Sen, diagnoses, CRPS stages, fracture management, and clinical case reasoning.</div>
+
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Best single test for carpal tunnel syndrome — technique and Spec/Sen.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Durkan's Test (Carpal Compression)</strong> — Sen 90%, Spec 92%. Direct pressure over the carpal tunnel for up to 30 seconds. Positive = median distribution NTB. Best combined Sen + Spec of any single CTS test. Compare: Phalen's (Sen 77%/Spec 40% — good for ruling out), Tinel's at wrist (Sen 64%/Spec 99% — if positive, strongly rules in CTS).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">WHAT Test vs. Finkelstein's — which is preferred and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>WHAT Test is preferred.</strong> WHAT (Wrist Hyperflexion Abduction of Thumb): wrist in full flexion + thumb in full extension/abduction → resist thumb abduction. Sen 99% — near-perfect sensitivity; negative test almost rules out 1st dorsal compartment involvement. Finkelstein's: Sen 81%/Spec 50% — lower sensitivity AND low specificity (many false positives from wrist stretch position alone). WHAT is easier to perform and more clinically informative.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Boutonnière vs. Swan Neck — mechanism and splinting approach for each.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Boutonnière:</strong> Central slip rupture → lateral bands migrate VOLARLY → PIP flexion + DIP hyperextension. Splint: PIP in extension (DIP free). <strong>Swan Neck:</strong> Lateral bands migrate DORSALLY → PIP hyperextension + DIP flexion (less common). Caused by joint space collapse or lateral band migration. Both seen in RA. Boutonnière is more common and clinically significant. Both require surgery or splinting for severe cases.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why is the 1st CMC the dominant OA site in the hand?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>1 lb of pinch force = 12 lbs at the 1st CMC joint</strong> — biomechanical amplification due to the lever arm mechanics of the thumb. Combined with the saddle joint's inherent mobility and repetitive loading throughout life → cartilage wear → OA. "Shoulder sign" = CMC subluxation visible at base of thumb as cartilage erodes. Assess: CMC Grind Test (axial + rotation) + Lever Test (Sen 82%/Spec 81%). Treatment: short opponens splint → CMC stabilization exercises → LRTI or Suspensionplasty.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Mallet finger — what is the critical splinting rule?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">DIP extension splint at 10–15° of hyperextension. <strong>Must be worn at ALL TIMES for 6 weeks.</strong> One missed night = restart the 6-week clock from day 1. Rationale: the terminal extensor tendon reapproximates to the distal phalanx — any DIP flexion while healing disrupts the reapproximation and breaks the tendon contact. Only the DIP is splinted; PIP and MCP remain free. KT tape supplement. Surgical pinning if compliance is in question.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">CRPS — three stages, key distinguishing features, and the most important treatment rule.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Stage 1 (Acute, 10d–3 months):</strong> flushed/warm/dry, severe diffuse pain, edema, hair growth → then cold/sweaty/brawny. <strong>Stage 2 (Dystrophic, 3–6 mo):</strong> constricted vessels, waxy skin, burning/throbbing, grooved nails (longitudinal), muscle wasting, black hair. <strong>Stage 3 (Atrophic, 6+ mo):</strong> irreversible damage, ankylosis, pain lessens, cyanotic, non-functional. <strong>Most critical rule: Do NOT do aggressive PROM</strong> — spiking pain = sympathetic sensitization = downward spiral. Treatment: GMI (laterality → motor imagery → mirror box) + desensitization + gentle AROM within symptom-free range.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Scaphoid fracture — why is it high-risk and when can strengthening begin?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Blood supply enters the scaphoid <strong>distally (retrograde)</strong>. The waist (narrowest point, most common fracture site) is proximal to the blood supply entry → fracture disrupts flow → AVN of proximal pole. XR may be normal for 2 weeks — if snuffbox tenderness + FOOSH, treat as fracture until MRI confirms. <strong>12 weeks immobilization + zero loading</strong> for closed management. ORIF: begin dart thrower's motion at week 2. <strong>Strengthening: only when AROM ≥80%, approximately week 16.</strong> SNAC wrist = nonunion → carpectomy or fusion (significant ROM loss).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Trigger finger — three-tier treatment and when to start at each tier.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Tier 1 (Conservative):</strong> Immobilize 1 finger joint (PIP easiest) + anti-inflammatory modalities + light mobility to 2–3 joints without composite flexion. Trial 4 weeks. <strong>Tier 2 (Injection):</strong> Corticosteroid injection into A1 pulley sheath to reduce inflammation. Start here for thumbs (stubborn; conservative often fails). Assess at 4 weeks. <strong>Tier 3 (Surgery):</strong> Surgical release of the A1 pulley. Must release the complete pulley — incomplete = recurrence. Not a guaranteed fix in one procedure.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Distinguish carpal tunnel (median) vs. cubital tunnel (ulnar) vs. Guyon's canal (ulnar) by presentation.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Carpal Tunnel (median, wrist):</strong> thumb/index/middle/radial ring NTB; nocturnal symptoms; thenar weakness/wasting; Durkan's, Phalen's, Tinel's at wrist. <strong>Cubital Tunnel (ulnar, elbow):</strong> ring + little finger + medial forearm NTB; elbow/forearm pain; intrinsic wasting; Tinel's at cubital tunnel; Froment's sign; sustained elbow flexion provokes. <strong>Guyon's Canal (ulnar, wrist):</strong> ulnar hand pain ONLY (no elbow/forearm — key distinguisher from cubital); ring + little NTB; intrinsic wasting; hamate fracture or cyclist's hand compression. Same nerve, different level.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">TFCC tests — which has the highest sensitivity and which has the highest specificity?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Highest sensitivity: TFCC Press Test (Sen 100%)</strong> — patient pushes body weight up from chair; negative test virtually rules OUT significant TFCC pathology. <strong>Highest specificity: TFCC Piano Key Test (Spec 96%)</strong> — depress ulnar head like piano key; positive test strongly rules IN DRUJ/TFCC pathology. Pair both for comprehensive TFCC evaluation: Press Test to screen (if negative, TFCC unlikely), Piano Key to confirm (if positive, TFCC highly likely). MRI arthrogram is gold standard for definitive diagnosis.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Graded Motor Imagery — three stages and when is it used?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Used for <strong>CRPS</strong> — changes sympathetic nervous system response via cortical reorganization. Must be done in sequence: <strong>(1) Laterality recognition</strong> — patient identifies right vs. left hand images (normalizes cortical representation of the limb). <strong>(2) Motor imagery</strong> — mentally simulate writing name, moving affected limb without actually moving it. <strong>(3) Mirror box</strong> — reflect unaffected limb; brain perceives movement in affected limb → can break the pain cycle. Progressing stages too fast before the prior stage is comfortable will fail. Evidence level: moderate for CRPS Type I.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Distal radius fracture — what must happen at day 3–5 and what is the mobility progression?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Day 3–5: MOBILIZE FINGERS</strong> — full digit flexion/extension must begin regardless of cast/splint status. Finger stiffness develops rapidly; this is a critical intervention. Wrist mobility: ORIF → wrist AROM at week 2; Closed management → AROM when callus confirmed at week 6. Progression: AROM → PROM (after stable + cleared) → joint mobs (only when fracture stable) → strengthening at week 6–8. STM + scar management early for adhesion prevention. Monitor for CRPS (burning, trophic changes).</div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

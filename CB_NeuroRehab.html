@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; Neuro Rehab</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link active">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">Neuro Rehab &middot; Plasticity &middot; Neuro Exam &middot; Basal Ganglia &middot; Vestibular &middot; Concussion</div>
+  <h1>Neuro Rehab <span>&#8212; Fundamentals of Neurorehabilitation</span></h1>
+  <p>Comprehensive neurorehabilitation reference for PTs covering neural plasticity (10 principles), the limbic system HOME mnemonic, motor learning theory (ASAP &amp; OPTIMAL), the complete 6-part neurologic examination (mental status, cranial nerves I-XII, motor exam with UMN/LMN distinction, reflexes, coordination &amp; gait patterns, sensory pathways), basal ganglia disorders with in-depth Parkinson's disease management (staging, medications, on-off phenomenon, exercise evidence from 12+ systematic reviews), vestibular rehabilitation (anatomy, BPPV maneuvers, 4-category treatment framework, outcome measures), concussion phenotypes and return-to-play protocols, and treatment strategies for progressive neurological diseases.</p>
+  <div class="hero-badges">
+    <span class="badge gold">Neural Plasticity &amp; Motor Learning</span>
+    <span class="badge red">Complete Neuro Exam</span>
+    <span class="badge purple">Parkinson's &amp; Basal Ganglia</span>
+    <span class="badge green">Vestibular Rehab &amp; BPPV</span>
+    <span class="badge orange">Concussion Phenotypes</span>
+    <span class="badge">Outcome Measures &amp; Evidence</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('plasticity',this)">Plasticity &amp; Limbic</button>
+  <button onclick="showTab('neuroexam1',this)">Mental Status &amp; CN</button>
+  <button onclick="showTab('neuroexam2',this)">Motor, Reflexes &amp; Sensory</button>
+  <button onclick="showTab('bg',this)">Basal Ganglia</button>
+  <button onclick="showTab('pd',this)">Parkinson's Disease</button>
+  <button onclick="showTab('vestibular',this)">Vestibular Anatomy</button>
+  <button onclick="showTab('vesttreat',this)">Vestibular Treatment</button>
+  <button onclick="showTab('concussion',this)">Concussion</button>
+  <button onclick="showTab('treatment',this)">Treatment Strategies</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ===== PLASTICITY & LIMBIC TAB ===== -->
+<div class="tab-panel active" id="tab-plasticity">
+<div class="container">
+  <div class="section-title">Neural Plasticity &amp; The Limbic System</div>
+  <div class="section-sub">Rehabilitation IS the process of maximizing learning. Neural plasticity is the mechanism by which the brain encodes experience, learns new behaviors, and by which a damaged brain relearns lost behavior in response to rehabilitation. Without understanding these principles, you are doing exercises &#8212; not neurorehabilitation.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>10 Principles of Experience-Dependent Plasticity (Kleim &amp; Jones)</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Use it or lose it</span><span class="ma-tag red">Intensity matters</span><span class="ma-tag purple">First 3 months critical</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>#</th><th>Principle</th><th>Research Basis</th><th>Clinical Implication</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">1</td><td><strong>Use It or Lose It</strong></td><td>Kittens deprived of light = decreased neurons in visual cortex</td><td>Failure to drive specific brain functions leads to functional degradation. Neural pathways not engaged degrade over time</td></tr>
+          <tr><td class="hi">2</td><td><strong>Use It and Improve It</strong></td><td>Monkeys performing fine digit movements = increased digit representation in motor cortex</td><td>Engaging in training behaviors enhances both function AND structure of neural networks</td></tr>
+          <tr><td class="hi">3</td><td><strong>Specificity</strong></td><td>Motor skill acquisition associated with changes in gene expression, dendritic growth, synapse addition in motor cortex AND cerebellum</td><td>The nature of the training dictates the nature of plasticity. Unilateral reach/grasp training causes dendritic growth in contralateral motor cortex with only subtle ipsilateral effects</td></tr>
+          <tr><td class="hi">4</td><td><strong>Repetition Matters</strong></td><td>Rats showed increases in synaptic strength, synapse number, and map reorganization after several days despite early behavioral gains</td><td>Repetition induces lasting neural changes. Early behavioral improvement does NOT mean neural changes are complete &#8212; continue practicing</td></tr>
+          <tr><td class="warn">5</td><td><strong>Intensity Matters</strong></td><td>Low-intensity stimulation induces long-term depression (LTD &#8212; weakening). Higher intensity induces long-term potentiation (LTP &#8212; strengthening)</td><td><strong>Stronger load = stronger neuroplasticity.</strong> Like overload training &#8212; the system adapts to the demand placed upon it. Sub-threshold stimulation can actually WEAKEN connections</td></tr>
+          <tr><td class="bad">6</td><td><strong>Time Matters</strong></td><td>5-week rehab initiated 5 days post-infarct was MORE effective in improving function and promoting cortical dendritic growth than the SAME regimen initiated 30 days post</td><td><strong>First 3 months is critical window</strong> for developing good movement patterns. Early intervention significantly outperforms delayed intervention with identical protocols</td></tr>
+          <tr><td class="hi">7</td><td><strong>Salience Matters</strong></td><td>Humans on tone discrimination had reduced auditory cortex activity when given acetylcholine antagonist. Stimulating ventral tegmental area (reward circuit) was extremely effective in promoting rehab reaching tasks</td><td>The brain must weigh the importance of an experience to encode it. <strong>Make it relevant to the patient.</strong> Reward circuits drive learning &#8212; this is why motivation is not optional, it's neurobiological</td></tr>
+          <tr><td class="hi">8</td><td><strong>Age Matters</strong></td><td>Ischemic injury in young rats triggers neurogenesis. This response is greatly reduced in aged rats</td><td>Younger = better/faster plasticity. Cognitive decline may reflect progressive failure of plasticity processes in compensating for age-related impairments</td></tr>
+          <tr><td class="hi">9</td><td><strong>Transference</strong></td><td>Training on fine digit movement increases corticospinal excitability and expands hand muscle representation in motor cortex</td><td>Plasticity in one circuit can promote plasticity elsewhere. STS practice transfers to bed transfer ability. Cross-education effects exist</td></tr>
+          <tr><td class="warn">10</td><td><strong>Interference</strong></td><td>Stimulation applied outside of training may disrupt memory consolidation and produce plasticity not shaped by behavioral signals</td><td>Plasticity within a circuit can impede NEW plasticity within that same circuit. Working on one thing may hinder others. Random stimulation without purpose can be detrimental</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Neuroanatomical Changes with Plasticity</div>
+        <p>Decreases, increases, and shifts in brain activation to facilitate behavioral improvement. Reallocation of hemispheric resources (L/R dominance changes). Recruitment of additional brain regions. Strengthening of anatomical structures (increased white-matter density). Increased coherence in neural pathways &#8212; <strong>"Neurons that fire together, wire together."</strong> Example: Occipital lobe in a blind person activating when hearing sounds (cross-modal plasticity).</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">What Plasticity Requires in Therapy</div>
+        <p>(1) Great repetition of practice. (2) A strong desire by the patient to gain functional ability (compelled to learn). (3) The potential for the CNS to change. (4) <strong>A therapist who knows how to intentionally drive the nervous system.</strong> Cortical reorganization is dependent on goal-directed, task-specific practice &#8212; not mere repetition of movements. Motor cortex reorganization was NOT a consequence of spontaneous recovery in the absence of training. <strong>Knowledge does not mean understanding &#8212; you must be able to apply these principles.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>The Limbic System in Rehabilitation &#8212; HOME Mnemonic</h4>
+      <div class="ma-tags"><span class="ma-tag gold">H = Homeostasis</span><span class="ma-tag purple">O = Olfaction (bypasses thalamus)</span><span class="ma-tag red">M = Motivation = #1 force</span><span class="ma-tag green">E = Emotion &#8594; tone</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Letter</th><th>Structure</th><th>Function</th><th>Clinical Implications</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">H</td><td>Hypothalamus</td><td>Homeostasis: thirst, hunger, temp regulation, autonomic/immune function</td><td>Leads to sympathetic fight-or-flight response. <strong>PTs must be careful with overstimulation</strong> &#8212; pushing too hard can trigger survival mode where learning is impossible</td></tr>
+          <tr><td class="hi">O</td><td>Olfactory Cortex</td><td>Olfaction: <strong>Only sense that does NOT relay through thalamus</strong> &#8212; synapses directly with cortex</td><td>Smells trigger memories, emotions, associations. Can calm (lavender) or arouse (eucalyptus). <strong>Can produce changes in muscle tone.</strong> Strong effect on alertness and drive</td></tr>
+          <tr><td class="warn">M</td><td>Hippocampus</td><td>Memory &amp; Motivation: attention, retrieval, declarative memory, desire to learn</td><td><strong>"Most powerful force in rehabilitation is motivation."</strong> Without motivation, the brain will NOT orient itself to the problem and learn. Patient may not improve at all or use only compensations. Drives cortical structures to develop motor programs. <strong>"YOU have to drive someone's motivation to learn."</strong></td></tr>
+          <tr><td class="hi">E</td><td>Amygdala</td><td>Emotion: feelings, attitude, self-concept, body image, social skills, spirituality</td><td><strong>Positive emotions = decrease tone. Negative emotions = increase tone.</strong> Music has huge clinical implications &#8212; choose appropriately for population. Beliefs about spirituality and self-worth directly impact recovery</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip purple">
+        <div class="bl-label">5 Levels of Limbic Function</div>
+        <p><strong>Level 1 &#8212; State of Alertness:</strong> Brainstem reticular activating system &#8594; thalamus &#8594; limbic &#8594; cerebral cortex. Information moving to and from these structures. <strong>Level 2 &#8212; Subconscious Drives &amp; Innate Instincts:</strong> Survival-oriented drives. <strong>If a person is functioning in survival mode, they will NOT be able to learn.</strong> Dealing with the emotions of fear first will enable better therapy outcomes. <strong>Level 3 &#8212; Abstract Conceptualization:</strong> Somatosensory and motor cortices work together to develop motor programs. Motor program development is abstract thinking until it becomes concrete with action. <strong>Level 4 &#8212; Social Expression:</strong> Limbic closely tied to frontal lobe. A brain insult at ANY level results in expression on ALL levels. <strong>Level 5 &#8212; The Unexplained:</strong> People who believe they will get better often do, and those who don't, don't. Conscious intent for health drives hypothalamic and autoimmune function. "Mind, Body, Spirit." A patient's beliefs, what they say, how they identify themselves, makes a difference in how they progress.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Critical Limbic Takeaway</div>
+        <p><strong>If limbic decides NOT to act, motor response will be ABSENT.</strong> Limbic connects with cerebellum, basal ganglia, frontal lobe, and brainstem motor generators. Limbic drives behavior through willingness to participate and forms the belief that the outcome will lead to some quality of life that has been lost. Intuition: humans bring to consciousness about 10% of incoming information, but the brain uses 100% of input subconsciously. The non-conscious decision-making capacity IS intuition.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Motor Learning Theory &#8212; ASAP, OPTIMAL &amp; Treatment Roles</h4>
+      <div class="ma-tags"><span class="ma-tag green">ASAP = 3 elements</span><span class="ma-tag gold">Positive FB &gt; negative FB</span><span class="ma-tag purple">CIMT = constraint good limb</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip green">
+        <div class="bl-label">Accelerated Skill Acquisition Program (ASAP) &#8212; Winstein</div>
+        <p>A hybrid of task-specific and skill-based/impairment-mitigating training with embedded patient-centered motivational enhancements. <strong>3 essential elements:</strong> (1) <strong>Skill acquisition</strong> &#8212; targeted task-specific training is the single most important approach. (2) <strong>Impairment mitigation</strong> &#8212; addressing underlying deficits. (3) <strong>Motivational enhancements</strong> &#8212; patient-centered behavioral change strategies. <strong>"Practice is more than mere repetition &#8212; it is repetition with a purpose."</strong> (Cross). The therapist acts as a facilitator-instructor providing instructions, guidance, feedback about errors, suggestions for modifications, and encouragement. Patients are engaged in repeated attempts to produce motor behaviors beyond their present capabilities &#8212; learning to use the damaged motor system in a NEW way to accomplish environmental goals.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">OPTIMAL Theory of Motor Learning</div>
+        <p>Optimizing Performance Through Intrinsic Motivation and Attention for Learning. <strong>Key findings:</strong> (1) <strong>Positive feedback:</strong> Providing learners with feedback after "good" trials (vs poor trials) results in more effective learning. (2) <strong>Social comparative feedback:</strong> False positive feedback ("you're performing better than average") enhances motor learning MORE than negative or even neutral feedback. (3) Expectations carry personal histories forward in time &#8212; they are NOT motivationally neutral. They anticipate rewarding properties of significance. Practice-related techniques like drills and frequent feedback can have a performance-enhancing effect BUT some practice-related interventions may slow progress (such as randomly ordered tasks &#8212; which can be beneficial for generalization but slows initial acquisition).</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Therapist Roles &amp; Treatment Strategies</div>
+        <p><strong>Compensation (Internal Support):</strong> Patient uses different internal strategies to accomplish tasks. <strong>Substitution (External Support):</strong> Teaching patient to use a different sensory system or muscle group, using assistive devices. <strong>Functional Training:</strong> Where neuro rehab is focused. Select procedures using patient's strengths. Avoid activities too difficult that elicit abnormal movement patterns. "Shrink" the environment to allow normal motor programs to run. <strong>Impairment Training:</strong> Correcting sub-system impairment during activity. <strong>Augmented Feedback:</strong> External cues (verbal, visual, kinesthetic) and perimeter control over motor programs. OK initially but patient MUST eventually learn tasks without cues &#8212; otherwise you create dependence, not learning. <strong>CIMT:</strong> Constrains good limb and forces use of stroke-affected limb. Drives neuroplasticity through intensive task-specific practice. Sometimes you address several aspects at once &#8212; knowing what you are doing and WHY enables you to reproduce results.</p>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">Core Neuro Outcome Measures</div>
+        <p><strong>Berg Balance Scale (BBS):</strong> 56 pts. Sitting/standing, static/dynamic balance. PD: &#8804;45 = recommend AD; &#8804;42 = higher fall risk. <strong>Functional Gait Assessment (FGA):</strong> Modified 8-item DGI with improved reliability, reduced ceiling effect. Deviation from midline, speed changes, positional effects. <strong>Activities-Specific Balance Confidence (ABC):</strong> Self-report. PD &lt;69% = predictive of recurrent falls. Vestibular &lt;67%. <strong>10-Meter Walk Test:</strong> Gait speed (m/s) &#8212; a vital sign for neuro patients. <strong>6-Minute Walk Test:</strong> Walking endurance and aerobic capacity. <strong>5&#215; Sit-to-Stand:</strong> Functional LE strength and transfer strategies. <strong>MoCA:</strong> Cognitive screening &#8212; if impaired, may need SLP referral. <strong>MMSE:</strong> Mental status screening. Practice these as outcome measures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== MENTAL STATUS & CRANIAL NERVES TAB ===== -->
+<div class="tab-panel" id="tab-neuroexam1">
+<div class="container">
+  <div class="section-title">Neurologic Exam Part 1 &#8212; Mental Status &amp; Cranial Nerves</div>
+  <div class="section-sub">The neuro exam tests function. Each part should titrate the patient's level of function from easiest to most difficult. Record what the patient can AND cannot do &#8212; this allows comparison over time. The neuro exam has 6 subdivisions: Mental Status, Cranial Nerves, Motor Exam, Reflexes, Coordination &amp; Gait, Sensory Exam. CN abnormalities with any other neurologic symptom strongly suggests brainstem dysfunction.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Mental Status Examination &#8212; Full Protocol</h4>
+      <div class="ma-tags"><span class="ma-tag red">NEVER write just "A&amp;Ox3"</span><span class="ma-tag gold">Gerstmann's = L parietal</span><span class="ma-tag purple">Hemineglect = R parietal</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Component</th><th>How to Test</th><th>What is Being Tested</th><th>Abnormal Findings</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Level of Alertness &amp; Attention</td><td>Spell W-O-R-L-D forward then backward. Digit span (normal: &#8805;6 forward, &#8805;4 backward). Name months forward then backward (backward takes up to 2&#215; longer normally)</td><td>Brainstem reticular formation. Bilateral thalamic or cerebral hemisphere lesions. Toxic/metabolic factors</td><td>Cannot sustain focus on simple tasks. Impaired digit span. Significant delay in backward tasks</td></tr>
+          <tr><td class="warn">Orientation</td><td>Full name, location (be specific &#8212; "where in Goodyear?"), date (expect today's date but note if pt uses resources), situation. <strong>Document EXACT responses</strong></td><td>Recent and longer-term memory. Influenced by alertness, attention, language</td><td><strong>Example correct documentation:</strong> Name: "Harry Smith." Location: "Hospital" but doesn't know which one. Date: "1942" and doesn't know month/date/season. <strong>NEVER write "pt was A&amp;Ox2"</strong> &#8212; this is ambiguous and prevents tracking changes</td></tr>
+          <tr><td class="hi">Memory</td><td><strong>Recent:</strong> Recall 3 items or brief story after 3&#8211;5 min delay. Verify registration first by immediate repeat. Use timer. Provide distractions during delay. <strong>Remote:</strong> Historical or verifiable personal events</td><td>Limbic memory structures (medial temporal lobes, medial diencephalon). Difficulty with 3&#8211;5 min recall = limbic problem</td><td><strong>Anterograde amnesia:</strong> Can't remember NEW facts/events after lesion onset. <strong>Retrograde amnesia:</strong> Impaired memory of events BEFORE lesion onset, with relative sparing of earlier memories. Both usually coexist</td></tr>
+          <tr><td class="hi">Language</td><td><strong>Spontaneous speech:</strong> Fluency, phrase length, paraphasic errors (substituted words/syllables), neologisms (invented words), grammar errors. <strong>Comprehension:</strong> "Mike was shot by John &#8212; is John dead?" <strong>Naming:</strong> Easy (pen, watch) to difficult (belt buckle, stethoscope). <strong>Repetition:</strong> "No ifs, ands, or buts." <strong>Reading</strong> and <strong>writing</strong></td><td>Dominant (usually L) frontal lobe including Broca's area (area 44 &amp; 45); L temporal/parietal including Wernicke's area; subcortical structures (thalamus, caudate); nondominant hemisphere</td><td><strong>Broca's aphasia:</strong> Cannot produce fluent speech or repeat, comprehension relatively preserved. <strong>Wernicke's:</strong> Fluent but meaningless speech, impaired comprehension. <strong>Global:</strong> Both production and comprehension impaired</td></tr>
+          <tr><td class="hi">Gerstmann's Syndrome</td><td>Calculations (simple math). R-L confusion. Finger agnosia (name/identify each digit). Agraphia (write name and sentence). Quick screen: "Touch your right ear with your left thumb"</td><td>All 4 impaired together (out of proportion to other deficits) = <strong>dominant (usually L) parietal lobe</strong></td><td>Individual components are poorly localizing alone &#8212; it's the combination of all 4 that's diagnostic</td></tr>
+          <tr><td class="hi">Apraxia</td><td>"Pretend to comb your hair." "Pretend to strike a match and blow it out." <strong>Ideomotor apraxia:</strong> Can't follow motor command when asked, BUT hand them the actual comb and they CAN do the task</td><td>Higher-order motor planning deficit. NOT due to primary motor deficit or language impairment. Commonly in dominant hemisphere language areas</td><td>Awkward movements that only minimally resemble those requested despite intact comprehension and motor exam. Can affect mouth/face or whole body (walking, turning)</td></tr>
+          <tr><td class="warn">Neglect &amp; Constructions</td><td><strong>Anosognosia:</strong> "Is anything wrong with you right now?" (pt with acute stroke may be perplexed about why they're in hospital). Line bisection. Clock drawing. <strong>Extinction:</strong> Double simultaneous stimulation &#8212; pt detects stimulus on affected side alone but not when both sides stimulated simultaneously</td><td><strong>Hemineglect most common with R (nondominant) parietal lesions</strong> &#8594; pt neglects L side. Also seen in R frontal, R thalamic/BG lesions, rarely R midbrain. <strong>Sensory neglect:</strong> Ignores stimuli despite intact sensation. <strong>Motor neglect:</strong> Normal strength but doesn't move affected limb unless attention strongly directed</td><td>Construction tasks (drawing, block manipulation) abnormal from neglect or visuospatial impairments. L parietal lesions cause much milder neglect of R side</td></tr>
+          <tr><td class="hi">Frontal Lobe Function</td><td><strong>Sequencing:</strong> Luria manual sequencing (fist, palm, side &#8212; repeat rapidly). Alternating pattern drawing. <strong>Go-No-Go:</strong> Move finger for 1 tap, still for 2 taps. <strong>Frontal release signs:</strong> Grasp reflex (pathological in adults, normal in infants). <strong>Myerson's sign:</strong> Continued blinking with repeated glabellar tapping (normal: extinguishes after few blinks)</td><td>Frontal lobes. Perseveration = inability to switch actions. Motor impersistence = only briefly sustains action. <strong>Myerson's sign most common in neurodegenerative movement disorders (PD)</strong></td><td>Perseveration, impersistence, grasp reflex, abulia (very slow responses), personality/judgment changes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cranial Nerve Examination &#8212; Complete CN I through XII</h4>
+      <div class="ma-tags"><span class="ma-tag red">CN abn + any other sx = brainstem</span><span class="ma-tag gold">CN VII: UMN spares forehead</span><span class="ma-tag purple">CN VIII: unilateral loss = peripheral</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>CN</th><th>Function</th><th>Test</th><th>What is Being Tested</th><th>Key Clinical Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">I &#8212; Olfactory</td><td>Smell</td><td>Coffee or soap, each nostril separately. NOT noxious odors (activate CN V instead)</td><td>Nasal obstruction, olfactory nerve damage at cribriform plate, intracranial lesions of olfactory bulbs</td><td>Often not tested unless subfrontal pathology suspected (tumor). Olfactory loss can be early PD sign</td></tr>
+          <tr><td class="hi">II &#8212; Optic</td><td>Vision</td><td><strong>Visual acuity:</strong> Eye chart, each eye separately. <strong>Color vision:</strong> Red desaturation test (cover each eye, compare redness &#8212; dullness = optic nerve asymmetry as in optic neuritis/MS). <strong>Visual fields:</strong> Finger wiggle or count in each quadrant. <strong>Visual extinction:</strong> Fingers both sides simultaneously (form of hemineglect). <strong>Pupils:</strong> Direct response, consensual response, accommodation. <strong>Swinging flashlight test</strong> for afferent pupillary defect (affected pupil dilates instead of constricting)</td><td>Damage anywhere from eye to visual cortex. <strong>Lesions BEFORE optic chiasm = one eye deficit. Lesions BEHIND chiasm (optic tract, thalamus, visual cortex) = bilateral field deficits similar for both eyes.</strong> Light-near dissociation = accommodation spared but pupillary light response impaired (pretectal lesion)</td><td>Visual extinction = hemineglect, usually from contralateral parietal lesion. Papilledema on ophthalmoscopy = increased ICP</td></tr>
+          <tr><td class="hi">III, IV, VI</td><td>Eye movements</td><td><strong>Smooth pursuit:</strong> Follow object through full H &amp; V range. <strong>Convergence:</strong> Fixate on object moving toward nose (central damage = start seeing double). <strong>Saccades:</strong> "Look at my finger... thumb... finger..." <strong>OKN:</strong> Moving striped strip &#8212; normal = alternating slow pursuit + quick saccadic refixation (nystagmus). Pause at extreme top and bottom positions</td><td>Individual muscles, specific CNs (III/IV/VI), brainstem nuclei, higher-order cortical/brainstem centers controlling eye movements</td><td><strong>Dysconjugate gaze = diplopia.</strong> Spontaneous nystagmus = toxic/metabolic (drug OD, alcohol) OR peripheral/central vestibular dysfunction. OKN very useful for detecting subtle saccadic or pursuit asymmetries. Ptosis = CN III</td></tr>
+          <tr><td class="hi">V &#8212; Trigeminal</td><td>Facial sensation + Mastication</td><td>Cotton wisp + sharp object to all 3 branches (ophthalmic V1, maxillary V2, mandibular V3). <strong>Tactile extinction</strong> (double simultaneous). <strong>Corneal reflex</strong> (cotton wisp to cornea &#8212; involves CN V afferent + CN VII efferent). <strong>Jaw clench:</strong> Palpate masseters. <strong>Jaw jerk reflex:</strong> Tap jaw with mouth slightly open</td><td>Trigeminal nerve, trigeminal sensory nuclei in brainstem, ascending pathways to thalamus/somatosensory cortex. Extinction = R parietal</td><td><strong>Prominent jaw jerk = abnormal &#8212; sign of UMN hyperreflexia</strong> of pathways projecting to trigeminal motor nucleus. Both afferent AND efferent of jaw jerk are mediated by CN V</td></tr>
+          <tr><td class="warn">VII &#8212; Facial</td><td>Facial expression + Taste (anterior &#8542; tongue)</td><td>Look for asymmetry at rest AND with spontaneous expressions. Smile, puff cheeks, clench eyes tight, wrinkle brow. Taste with sweet/sour/salty/bitter on lateral tongue</td><td>UMN pathways from motor cortex, LMN from facial nerve nucleus, NMJ, face muscles</td><td><strong>CRITICAL DISTINCTION: UMN lesion (stroke) = contralateral face weakness SPARING the forehead</strong> (upper face has bilateral UMN innervation). <strong>LMN lesion (Bell's palsy) = entire ipsilateral face INCLUDING forehead.</strong> Old photos help detect subtle changes</td></tr>
+          <tr><td class="hi">VIII &#8212; Vestibulocochlear</td><td>Hearing + Vestibular</td><td><strong>Hearing:</strong> Finger rub or whisper outside each ear. Tuning fork: Rinne (air vs bone conduction) and Weber (lateralization). <strong>Vestibular:</strong> Dix-Hallpike (BPPV), VOR testing, gait observation</td><td>Acoustic/mechanical elements of ear, cochlea, CN VIII. After entering brainstem, hearing pathways cross at multiple levels and ascend bilaterally</td><td><strong>Clinically significant UNILATERAL hearing loss = invariably PERIPHERAL</strong> (not central, because central pathways are bilateral). Vestibular testing needed for vertigo patients, gaze limitation patients, and coma patients</td></tr>
+          <tr><td class="hi">IX, X</td><td>Swallowing, gag, speech</td><td>Palate elevation ("Aah" &#8212; symmetrical?). Gag reflex (only if suspected brainstem pathology, impaired consciousness, or dysphagia). Speech: Ka-Ka, Go-Go, Pa-Pa</td><td>CN IX, CN X, NMJ, pharyngeal muscles</td><td>Test only when indicated. Impaired palate elevation suggests CN IX or X lesion</td></tr>
+          <tr><td class="hi">XI &#8212; Accessory</td><td>SCM + Trapezius</td><td>Shrug shoulders, turn head both directions, raise head from bed flexing forward against resistance</td><td>Accessory spinal nerve (CN XI) &#8212; muscles, NMJ, LMN</td><td><strong>UMN lesion = contralateral trapezius weakness, relative SPARING of SCM.</strong> When SCM weakness present with UMN = weakness of head turning AWAY from lesion side</td></tr>
+          <tr><td class="hi">XII &#8212; Hypoglossal</td><td>Tongue</td><td>Observe tongue at rest on floor of mouth for atrophy/fasciculations. Stick tongue out &#8212; note if deviates. Push forcefully against inside of each cheek</td><td>Tongue muscles, NMJ, LMN of hypoglossal nerve, UMN from motor cortex</td><td><strong>Fasciculations + atrophy = LMN signs.</strong> Tongue deviates TOWARD the weak side. Motor cortex lesion = contralateral tongue weakness</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Critical CN Rule for PTs</div>
+        <p>Perhaps more than any other part of the neuro exam, <strong>cranial nerve testing can raise "red flags"</strong> that suggest specific neurologic dysfunction rather than a systemic disorder. Many medical conditions cause lethargy, unsteadiness, headaches, or dizziness. However, ANY of these symptoms <strong>together with cranial nerve abnormalities strongly suggests brainstem dysfunction</strong> as the cause. CN testing IS NOT the same as CNS testing &#8212; functionally CN is part of the peripheral nervous system, but structurally it's part of the CNS.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== MOTOR, REFLEXES & SENSORY TAB ===== -->
+<div class="tab-panel" id="tab-neuroexam2">
+<div class="container">
+  <div class="section-title">Neurologic Exam Part 2 &#8212; Motor, Reflexes, Coordination &amp; Sensory</div>
+  <div class="section-sub">The motor exam distinguishes UMN from LMN lesions &#8212; this is one of the most critical clinical skills in neuro rehab. Reflexes, coordination, and sensory testing further localize lesions and guide treatment planning. Patterns of weakness, tone changes, and reflex abnormalities point to specific levels of the nervous system.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Motor Exam &#8212; Observation Through Strength Testing</h4>
+      <div class="ma-tags"><span class="ma-tag red">UMN: hyperreflexia, spasticity, Babinski</span><span class="ma-tag gold">LMN: atrophy, fasciculations, hyporeflexia</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">UMN vs LMN &#8212; The Fundamental Distinction</div>
+        <p><strong>Upper Motor Neuron Signs:</strong> Weakness, hyperreflexia (3&#8211;5+), increased tone (spasticity &#8212; velocity-dependent), (+) Babinski (upgoing toe + fanning), clonus, (+) Hoffmann's sign, slow/awkward fine finger movements or toe tapping without weakness. <strong>IMPORTANT:</strong> Acute UMN lesions often show initial flaccid paralysis with decreased tone and decreased reflexes. Hyperreflexia and spasticity develop over hours to weeks. <strong>Lower Motor Neuron Signs:</strong> Weakness, atrophy, fasciculations (spontaneous quivering), hyporeflexia (0&#8211;1+), decreased tone. Best muscles to look for fasciculations: intrinsic hand muscles, shoulder girdle, thigh.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Step</th><th>What to Do</th><th>What You're Looking For</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">1. Observation</td><td>Observe for twitches, tremors, involuntary movements, paucity of movement, posture</td><td>Involuntary movements and tremors = BG or cerebellar lesions. Tremors can occasionally occur with peripheral nerve lesions</td></tr>
+          <tr><td class="hi">2. Inspection</td><td>Inspect individual muscles for wasting, hypertrophy, fasciculations</td><td>Wasting + fasciculations = LMN. Look at intrinsic hand muscles, shoulder girdle, thigh</td></tr>
+          <tr><td class="hi">3. Palpation</td><td>Palpate muscles for tenderness (if myositis suspected)</td><td>Muscle tenderness in inflammatory myopathy</td></tr>
+          <tr><td class="warn">4. Tone Testing</td><td>Ask pt to relax. Passively move each limb at several joints. Feel for resistance</td><td><strong>Spasticity = velocity-dependent resistance</strong> (faster passive movement = more resistance) &#8212; UMN. <strong>Rigidity = constant resistance in both directions, NOT velocity-dependent</strong> &#8212; BG (PD). <strong>Cogwheel = ratchety resistance.</strong> <strong>Lead pipe = smooth constant resistance.</strong> Slow/awkward fine movements without weakness can indicate subtle corticospinal, cerebellar, OR BG abnormality</td></tr>
+          <tr><td class="hi">5. Functional Testing</td><td><strong>Drift test:</strong> Hold up both arms (or legs) with eyes closed &#8212; does one drift? <strong>Fine movements:</strong> Rapid finger tapping, rapid pronation-supination ("light bulb"), rapid foot tapping</td><td>Drift = subtle weakness or proprioceptive deficit. Fine movement impairment helps detect subtle corticospinal pathology</td></tr>
+          <tr><td class="hi">6. Strength</td><td>MMT 0&#8211;5 scale. Test each group paired with contralateral immediately for asymmetry detection. Compare proximal vs distal</td><td><strong>Proximal weakness = myopathy.</strong> <strong>Distal weakness = neuropathy.</strong> Pattern helps localize to cortex, cord, root, nerve, NMJ, or muscle. 4-/5, 4/5, 4+/5 subdivisions useful for tracking change</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Muscle Strength Scale</div>
+        <p><strong>0/5:</strong> No contraction. <strong>1/5:</strong> Muscle flicker, no movement. <strong>2/5:</strong> Movement possible but NOT against gravity (test in horizontal plane). <strong>3/5:</strong> Movement against gravity, NOT against resistance. <strong>4/5:</strong> Movement against some resistance (subdivide 4&#8211;/4/4+). <strong>5/5:</strong> Normal strength. Anatomical knowledge of which nerves, roots, and brain areas control each muscle should guide the exam.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Reflexes &#8212; DTRs, Babinski &amp; Special Reflexes</h4>
+      <div class="ma-tags"><span class="ma-tag red">Babinski = ALWAYS abnormal in adults</span><span class="ma-tag gold">Hoffmann's = UMN finger flexors</span><span class="ma-tag purple">Myerson's = PD/neurodegeneration</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Deep Tendon Reflex Scale</div>
+        <p><strong>0:</strong> Absent. <strong>1+:</strong> Trace, or seen only with reinforcement (Jendrassik maneuver). <strong>2+:</strong> Normal. <strong>3+:</strong> Brisk. <strong>4+:</strong> Nonsustained clonus. <strong>5+:</strong> Sustained clonus. Reflexes 1+, 2+, 3+ are normal UNLESS asymmetrical or dramatic arm-leg difference. 0, 4+, 5+ are usually abnormal. Always compare each reflex immediately with contralateral counterpart. <strong>Spreading of reflexes</strong> to other muscles not being tested and <strong>crossed adduction</strong> of opposite leg = hyperreflexia signs.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Reflex</th><th>How to Test</th><th>Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">DTRs (Biceps, Triceps, Brachioradialis, Patellar, Achilles)</td><td>Stretch muscle/tendon with reflex hammer. Limbs relaxed and symmetrical. Reinforce if absent by having pt contract muscles elsewhere</td><td>&#8595; = LMN, muscle, sensory neuron, NMJ, or acute UMN lesion. &#8593; = UMN lesion. Also influenced by age, thyroid, electrolytes, anxiety</td></tr>
+          <tr><td class="bad">Babinski Sign (Plantar Response)</td><td>Scrape sole from heel &#8594; small toe &#8594; arc medially to big toe. Normal = downgoing toes</td><td><strong>Upgoing big toe + fanning = ALWAYS abnormal in adults</strong> (normal in infants &lt;1 yr). UMN lesion anywhere along corticospinal tract. If toes downgoing on one side and "silent" (no movement) on other &#8212; silent side is considered abnormal</td></tr>
+          <tr><td class="warn">Hoffmann's Sign</td><td>Hold middle finger loosely, flick fingernail downward causing finger to rebound into extension</td><td>Positive = thumb flexes and adducts. Indicates heightened finger flexor reflexes &#8212; UMN sign</td></tr>
+          <tr><td class="hi">Clonus</td><td>Quickly dorsiflex ankle and hold. Count repetitive beats</td><td>Repetitive vibratory contraction. &#8805;3&#8211;4 beats = abnormal. Sustained clonus = significant UMN lesion</td></tr>
+          <tr><td class="hi">Myerson's Sign (Glabellar)</td><td>Tap repeatedly between eyes, ask pt to keep eyes open</td><td>Normal: blinks a few times then extinguishes. Abnormal: continued blinking with each tap. <strong>Most common in PD and other neurodegenerative movement disorders</strong></td></tr>
+          <tr><td class="hi">Frontal Release Signs</td><td>Grasp, snout, root, suck reflexes</td><td>Pathological in adults (normal in infants). <strong>Re-emergence suggests frontal lobe pathology</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Special Reflexes for Spinal Cord Localization</div>
+        <p><strong>Abdominal cutaneous reflexes:</strong> Scrape abdominal skin above and below umbilicus &#8212; observe muscle contraction. Absent = spinal cord lesion at that level. <strong>Cremasteric reflex (males):</strong> Scrape upper inner thigh &#8212; observe testicular ascent. <strong>Bulbocavernosus reflex:</strong> Contraction of rectal sphincter with glans pressure or Foley traction. <strong>Anal wink:</strong> Rectal sphincter contraction to perianal sharp stimulus. These help localize spinal cord injury severity and level.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Coordination &amp; Gait &#8212; Cerebellar &amp; Gait Pattern Localization</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Appendicular ataxia = cerebellar hemispheres</span><span class="ma-tag purple">Truncal ataxia = cerebellar vermis</span><span class="ma-tag red">Romberg = proprioceptive/vestibular</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Coordination Tests</div>
+        <p><strong>Finger-nose-finger:</strong> Best with examiner's finger at extreme of patient's reach and occasionally moved suddenly. <strong>Heel-shin test:</strong> Touch heel to opposite knee, drag straight down shin &#8212; ALWAYS do supine to eliminate gravity. <strong>Rapid alternating movements:</strong> Wipe palm alternately with palm and dorsum of other hand. <strong>Dysdiadochokinesia</strong> = abnormal alternating movements. <strong>Ataxia</strong> = medium-to-large amplitude involuntary movements with irregular oscillatory quality interfering with smooth trajectory. <strong>Past pointing</strong> = overshoot on target-oriented movements. <strong>Dysmetria</strong> can be tested with eye movements OR finger-to-nose.</p>
+      </div>
+      <div class="grid2">
+        <div class="bl-strip gold">
+          <div class="bl-label">Appendicular Ataxia</div>
+          <p>Affects extremity movements. Caused by <strong>cerebellar hemisphere</strong> lesions and associated pathways. Abnormal finger-nose-finger, heel-shin, rapid alternating movements.</p>
+        </div>
+        <div class="bl-strip purple">
+          <div class="bl-label">Truncal Ataxia</div>
+          <p>Affects proximal musculature and gait stability. Caused by <strong>cerebellar vermis (midline)</strong> lesions. Wide-based, unsteady gait. Worse with tandem gait (heel-to-toe). These patients have particular difficulty keeping feet close together.</p>
+        </div>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Romberg Test</div>
+        <p>Stand with feet together, then close eyes (stay close to guard). <strong>3 sensory systems provide balance input:</strong> Vision, proprioception, vestibular. If mild proprioceptive or vestibular lesion, patient compensates with eyes open but becomes unstable with eyes closed (visual input removed). <strong>Severe proprioceptive/vestibular lesion or midline cerebellar lesion:</strong> Unstable even with eyes OPEN. Note: instability can also occur with UMN, LMN, or BG lesions &#8212; test these separately.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Gait Pattern</th><th>Characteristics</th><th>Localization</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Festinating</td><td>Short shuffling steps, increasing speed, forward BOS, freezing with transitions, decreased heel strike, turning very difficult</td><td><strong>Parkinson's disease</strong> (BG)</td></tr>
+          <tr><td class="hi">Circumduction</td><td>Abnormal arced trajectory in medial-lateral direction during swing</td><td><strong>UMN lesion</strong> (e.g., stroke with spastic hemiplegia)</td></tr>
+          <tr><td class="hi">Steppage</td><td>High knee lift to clear dropped foot</td><td><strong>Foot drop</strong> (peroneal nerve palsy, L4&#8211;L5 radiculopathy)</td></tr>
+          <tr><td class="hi">Wide-based, unsteady</td><td>Feet spread apart, lurching, difficulty with tandem</td><td><strong>Cerebellar vermis</strong> (truncal ataxia)</td></tr>
+          <tr><td class="hi">Spastic scissors</td><td>Stiff legs, adducted thighs, legs may cross</td><td><strong>Bilateral UMN</strong> (spinal cord lesion)</td></tr>
+          <tr><td class="hi">Waddling</td><td>Trunk shifts side to side with each step</td><td><strong>Proximal muscle weakness</strong> (hip abductor weakness, myopathy, spondylolisthesis)</td></tr>
+          <tr><td class="hi">Gait apraxia</td><td>Can perform all gait movements when lying down but cannot walk when standing</td><td><strong>Frontal disorders or normal pressure hydrocephalus (NPH)</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Gait Observation Checklist</div>
+        <p>Note: stance width, posture, stability, step height, leg trajectory (circumduction?), leg stiffness and knee bending, arm swing (decreased in PD), tendency to fall/swerve in specific direction, rate and speed, difficulty initiating or stopping, involuntary movements brought out by walking. Turns should be observed closely. Time the patient walking a fixed distance, count steps, count steps to turn around. Record ability to rise from chair with/without assistance. <strong>Forced gait testing:</strong> Walk on heels, toes, insides/outsides of feet; hop on one leg; walk up stairs &#8212; to bring out subtle abnormalities.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Sensory Exam &#8212; Primary &amp; Cortical Sensation</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Position/vibration = posterior columns (cross in medulla)</span><span class="ma-tag red">Pain/temp = anterolateral (cross in cord)</span><span class="ma-tag purple">Cortical sensation = contralateral sensory cortex</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Primary Sensation Testing</div>
+        <p><strong>Light touch:</strong> Cotton-tipped swab or light finger touch. <strong>Pain:</strong> Alternate randomly between sharp and dull end of safety pin (new pin for each patient). <strong>Temperature:</strong> Cool tuning fork. <strong>Vibration:</strong> Vibrating tuning fork (128 Hz) on ball of great toe or fingers &#8212; report when vibration stops. Do NOT place on bone (conducts to distant sites). <strong>Joint position sense:</strong> Move finger or toe up/down, patient reports direction. Hold digit by sides to prevent tactile clues. Move very slightly (normal individuals detect barely perceptible movements). <strong>Two-point discrimination:</strong> Calipers or bent paper clip, record minimal separation in mm.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Sensory Pathway Anatomy &#8212; Critical for Localization</div>
+        <p><strong>Posterior column pathway:</strong> Position sense, vibration, fine touch, two-point discrimination. Ascends ipsilaterally in posterior columns &#8594; <strong>CROSSES in the medulla</strong> &#8594; thalamus &#8594; somatosensory cortex. <strong>Anterolateral pathway (spinothalamic):</strong> Pain, temperature, crude touch. <strong>CROSSES shortly after entering the spinal cord</strong> &#8594; ascends contralaterally &#8594; thalamus &#8594; cortex. <strong>This means:</strong> A RIGHT-sided spinal cord lesion causes ipsilateral loss of position/vibration BUT contralateral loss of pain/temperature (Brown-S&#233;quard pattern).</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Cortical Sensation</div>
+        <p><strong>Graphesthesia:</strong> Trace letters/numbers on palm or fingertip with eyes closed &#8212; patient identifies them. <strong>Stereognosis:</strong> Identify objects by touch with eyes closed, one hand at a time. <strong>Tactile extinction:</strong> Double simultaneous stimulation. These CANNOT reliably be tested unless primary sensation is intact bilaterally. <strong>Intact primary sensation + impaired cortical sensation = contralateral sensory cortex lesion.</strong> Note that severe cortical lesions can also impair primary sensation. Always look for a <strong>sensory level</strong> (sudden change corresponding to a spinal segment) &#8212; may indicate spinal cord lesion requiring emergency intervention.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== BASAL GANGLIA TAB ===== -->
+<div class="tab-panel" id="tab-bg">
+<div class="container">
+  <div class="section-title">Basal Ganglia Disorders</div>
+  <div class="section-sub">The basal ganglia are critical for movement initiation, automatic movement, postural adjustments, and perceptual/cognitive functions. Dysfunction produces either hypokinetic disorders (PD &#8212; too little movement) or hyperkinetic disorders (HD &#8212; too much movement). Key BG functions: movement and posture, automatic movement, movement initiation and preparation, postural adjustments, perceptual and cognitive functions.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Degenerative CNS Diseases &#8212; Comprehensive Comparison</h4>
+      <div class="ma-tags"><span class="ma-tag red">PD = hypokinetic (SN)</span><span class="ma-tag gold">HD = hyperkinetic (striatum)</span><span class="ma-tag purple">ALS = combined UMN + LMN</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Disease</th><th>Pathology</th><th>Age/Demographics</th><th>Key Features</th><th>Prognosis</th></tr></thead>
+        <tbody>
+          <tr><td class="warn">Parkinson's Disease</td><td>Dopaminergic neuron degeneration in <strong>substantia nigra</strong>. Loss of dopamine disrupts direct/indirect BG pathways</td><td>Later stage of life (avg 60s). M &gt; F slightly. Risk factors: pesticide exposure (&#8593;50%), agent orange, head trauma. Smoking may reduce risk</td><td>TRAP: Tremor (resting 4&#8211;6 Hz), Rigidity (cogwheel/lead pipe), Akinesia/Bradykinesia, Postural instability. Festinating gait, freezing, flat affect. Depression, cognitive decline, autonomic dysfunction</td><td>Progressive but variable. PT can enhance/delay symptoms. Exercise slows progression</td></tr>
+          <tr><td class="bad">Huntington's Disease</td><td><strong>Striatum</strong> degeneration. Autosomal dominant (genetic test available). Hyperkinetic disorder</td><td>30&#8211;50 yo onset</td><td><strong>Chorea</strong> (involuntary rapid irregular dance-like movements), personality changes, progressive cognitive decline (dementia). Treatment: possibly co-contraction exercises for neck and spine stability</td><td>Fatal. Progressive cognitive and motor decline. 15&#8211;20 year disease course</td></tr>
+          <tr><td class="hi">Wilson's Disease</td><td>Copper buildup in body affecting <strong>GPe</strong> (globus pallidus external) and liver</td><td>Young adults</td><td>BG dysfunction + liver disease. Kayser-Fleischer rings in eyes. Tremor, rigidity, dysarthria</td><td>Treatable with chelation therapy if caught early</td></tr>
+          <tr><td class="hi">Dystonia</td><td>Sustained involuntary muscle contractions</td><td>Variable</td><td><strong>Generalized:</strong> Whole body, childhood onset. <strong>Focal:</strong> Specific region &#8212; cervical dystonia (torticollis) most common. Abnormal sustained posturing. Writer's cramp</td><td>Variable. Focal types may respond to botulinum toxin</td></tr>
+          <tr><td class="bad">ALS</td><td><strong>Combined UMN + LMN</strong> motor neuron death. Both corticospinal tract AND anterior horn cells affected</td><td>40&#8211;70 yo. M &gt; F. 10% familial</td><td>Progressive weakness: fasciculations + atrophy (LMN) PLUS hyperreflexia + spasticity (UMN). <strong>Sensation INTACT. Cognition usually intact.</strong> Bulbar onset: dysarthria, dysphagia. Limb onset: asymmetric distal weakness</td><td><strong>Fatal.</strong> Average survival 2&#8211;5 years from diagnosis. PT focus: maintain function as long as possible, respiratory support, QOL</td></tr>
+          <tr><td class="warn">Multiple Sclerosis</td><td>CNS demyelination (attacks myelin sheath). Autoimmune</td><td>20&#8211;40 yo onset. F &gt; M (2&#8211;3:1)</td><td><strong>Relapsing-remitting most common.</strong> Fatigue is #1 complaint. Heat sensitivity (Uhthoff's phenomenon). Optic neuritis (red desaturation test), weakness, spasticity, ataxia, B&amp;B dysfunction, cognitive changes. Lhermitte's sign (electric shock with neck flexion)</td><td>Variable. Some mild, some severe. PT: energy conservation, cooling strategies, exercise during remission, avoid overheating</td></tr>
+          <tr><td class="hi">Friedreich's Ataxia</td><td><strong>Cerebellar</strong> and spinal cord degeneration</td><td>Usually childhood onset (before 25)</td><td>Progressive ataxia (gait and limb). Cardiomyopathy (leading cause of death). Scoliosis common. Dysarthria. Loss of DTRs (posterior column involvement)</td><td>Progressive. Most need wheelchair by late teens/20s. Life expectancy &#8595; due to cardiac involvement</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip purple">
+        <div class="bl-label">Key Movement Disorder Terminology</div>
+        <p><strong>Hypokinetic:</strong> Too little movement (PD). <strong>Hyperkinetic:</strong> Too much movement (HD). <strong>Spasticity:</strong> Velocity-dependent resistance to passive stretch (UMN &#8212; chronic lesion). <strong>Rigidity:</strong> Resistance in BOTH directions, NOT velocity-dependent (BG). <strong>Cogwheel rigidity:</strong> Ratchety resistance (PD). <strong>Lead pipe rigidity:</strong> Smooth constant resistance through full range (PD). <strong>Athetosis:</strong> Slow writhing movements. <strong>Chorea:</strong> Rapid irregular involuntary movements (HD). <strong>Akinesia:</strong> Lack of movement initiation. <strong>Bradykinesia:</strong> Slowness of movement. <strong>Resting tremor:</strong> Present at rest, decreases with intentional movement (PD). <strong>Intention tremor:</strong> Appears with goal-directed movement, absent at rest (cerebellar). <strong>Tardive dyskinesia:</strong> Involuntary repetitive movements (face/tongue) from long-term antipsychotic use or dopamine medication.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== PARKINSON'S DISEASE TAB ===== -->
+<div class="tab-panel" id="tab-pd">
+<div class="container">
+  <div class="section-title">Parkinson's Disease &#8212; In-Depth Management</div>
+  <div class="section-sub">PD is the condition PTs in neuro rehab will see most frequently. Understanding staging, medication timing, the on-off phenomenon, and the extensive exercise evidence base is essential. PT can enhance or delay symptoms, increase strength, improve coordination and balance &#8212; but cannot cure the disease or stop progression.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>PD Cardinal Signs, Non-Motor Symptoms &amp; Staging</h4>
+      <div class="ma-tags"><span class="ma-tag red">TRAP</span><span class="ma-tag gold">Hoehn &amp; Yahr 1-5</span><span class="ma-tag purple">UPDRS = gold standard</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Cardinal Motor Signs &#8212; TRAP</div>
+        <p><strong>Tremor:</strong> Resting, 4&#8211;6 Hz, "pill-rolling." Bilateral UE (one side typically more pronounced &#8212; contralateral brain more affected). Decreases with intentional movement. <strong>Rigidity:</strong> Cogwheel (ratchety) or lead pipe (constant in both directions). NOT velocity-dependent (vs spasticity). <strong>Akinesia/Bradykinesia:</strong> Difficulty initiating movement, pathological pausing with active motion. <strong>Flat affect</strong> &#8212; difficulty making facial expressions AND difficulty interpreting YOUR expressions if cognition declining. <strong>Postural Instability:</strong> Flexed posture (kyphotic &#8594; decreased lung compliance &#8594; restrictive pulmonary pattern), forward BOS, retropulsion, high fall risk. Berg &#8804;45 = recommend AD.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Gait Analysis in PD</div>
+        <p><strong>Festinating gait:</strong> Short shuffling steps with progressively increasing speed (forward AND backward festination). Decreased step length, increased step speed. Forward BOS. <strong>Freezing</strong> with transitional movements and threshold changes (visual-perceptive impairments noted &#8212; changes in surface, doorways, crowded spaces). Decreased heel strike. <strong>Turning is extremely difficult</strong> &#8212; be there to guard patient during TUG. Backward walking (retrogait) may be terrifying due to fear of falling. Patients may lean on shopping cart or walker for forward stability.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Non-Motor Symptoms &#8212; Often Overlooked</div>
+        <p><strong>Depression:</strong> Very high prevalence &#8212; assess in every PD patient. <strong>Cognitive decline:</strong> Difficulty with decision-making and planning (frontal lobe). PD dementia with prolonged disease. MoCA for screening &#8212; may need SLP referral. <strong>Autonomic dysfunction:</strong> Orthostatic hypotension (very common &#8212; always check BP seated AND standing), constipation, urinary urgency. Patients may avoid water intake to reduce bathroom trips &#8594; worsens dehydration &#8594; worsens orthostatic hypotension. <strong>Sleep disturbances.</strong> <strong>Olfactory dysfunction</strong> (can be early sign). <strong>Dysphagia</strong> (SLP referral). <strong>Respiratory:</strong> Kyphotic posture &#8594; decreased lung compliance &#8594; restrictive pattern. Bradykinesia can affect autonomic functions including digestion.</p>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">Medications &amp; the On-Off Phenomenon</div>
+        <p><strong>Carbidopa/Levodopa:</strong> Dopamine supplement. Carbidopa helps levodopa cross the blood-brain barrier to reach the BG (especially the substantia nigra). Typical dosing: 8AM, 4PM, 12AM. <strong>On-Off Phenomenon:</strong> Medication effects fluctuate &#8212; "on" periods (medication working, improved movement) vs "off" periods (medication wearing off, symptoms return). <strong>SCHEDULE THERAPY DURING "ON" PERIODS</strong> (typically 1&#8211;2 hours after dose). <strong>Tardive Dyskinesia:</strong> Involuntary facial/body movements &#8212; can occur immediately after dose (wife reports "funny facial movements after morning dose"). <strong>Artane (Trihexyphenidyl):</strong> Anticholinergic sometimes added to help with tremor. <strong>PD Diagnosis:</strong> Rule out everything else, then give levodopa &#8212; if patient responds well, confirms PD.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Hoehn &amp; Yahr Staging</div>
+        <p><strong>Stage 1:</strong> Unilateral involvement only. <strong>Stage 2:</strong> Bilateral involvement without impairment of balance. <strong>Stage 3:</strong> Bilateral involvement with mild-moderate disability and impaired postural reflexes &#8212; physically independent. <strong>Stage 4:</strong> Severe disability, still able to walk and stand without assistance. <strong>Stage 5:</strong> Wheelchair-bound or bedridden unless aided. <strong>UPDRS (Unified PD Rating Scale):</strong> Gold standard assessment &#8212; subscales for cognition, speech, functional movement, motor (Motor III most used by PTs), and ADLs.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>PD Case Study &#8212; Hector Pilache (59 yo, carpenter)</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Berg 38/56 = high fall risk</span><span class="ma-tag red">Orthostatic hypotension</span><span class="ma-tag purple">Agent orange exposure</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Case Presentation</div>
+        <p>59 yo male, former carpenter, diagnosed 3 years ago. Chief complaint: difficulty moving around house, fear of falling, difficulty grooming. PMH: obesity, ETOH abuse, 1 pack/day smoking (quit 1 year ago), Vietnam vet + agent orange contact. Ambulating with straight cane (coordination OK but balance unstable for cane). Lightheadedness upon standing. Wife reports difficulty with decisions/planning and "funny facial movements" after morning dose. On Carbidopa/Levodopa (8AM, 4PM, 12AM). Physician considering adding Artane.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Exam Findings</div>
+        <p><strong>Vitals:</strong> Pulse 80, BP Seated 130/86, <strong>BP Standing 105/80</strong> (&#8805;20 mmHg systolic drop = orthostatic hypotension), RR 16. <strong>Mental Status:</strong> A&amp;Ox4, recent memory intact, but <strong>ability to remain focused on simple tasks is impaired.</strong> <strong>Motor:</strong> Flexed posture (&#8593; fall risk), <strong>resting tremor 5 Hz bilateral UE (L &gt; R)</strong> &#8594; right brain more affected (need to know if R or L hand dominant). Pathological pausing with active motion. ROM/MMT within functional limits BUT <strong>cogwheel L UE, lead pipe R UE.</strong> CN normal except flat affect (bradykinesia affecting facial expression). <strong>Reflexes:</strong> Normal. <strong>Coordination/Gait:</strong> Festinating forward and backward, &#8595; step length, &#8593; step speed, forward BOS, freezing with transitional movements, &#8595; heel strike. <strong>Berg 38/56</strong> = high fall risk (recommend AD if &#8804;45). Modified Ashworth: rigidity noted in both directions. Sensory: intact.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Key Clinical Reasoning</div>
+        <p><strong>Bilateral UE tremor = more progressed disease.</strong> L &gt; R tremor suggests right brain more affected &#8212; need to know hand dominance. Keep an eye on impaired simple task focus but no need for SLP/OT yet. Elevated flexed posture (elderly tend to have this, but PD makes it worse) = increased fall risk. Agent orange exposure is a known PD risk factor (herbicide/pesticide exposure &#8593; PD risk &gt;50%). <strong>Orthostatic hypotension management:</strong> Education (stay hydrated &#8212; patients avoid water to reduce bathroom trips, which worsens it), pause when transitioning, let nervous system adjust, practice STS. <strong>Schedule therapy during medication "on" periods (1&#8211;2 hours after 8AM dose).</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>PD Exercise Evidence &#8212; 12+ Systematic Reviews</h4>
+      <div class="ma-tags"><span class="ma-tag green">High-cadence cycling = UPDRS improvement</span><span class="ma-tag gold">Dance (tango) = balance &#8593;</span><span class="ma-tag purple">Aquatic &gt; land for balance &amp; QOL</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Intervention</th><th>Key Finding</th><th>Dose/Details</th></tr></thead>
+        <tbody>
+          <tr><td class="ok">Exercise on QOL (Chen 2020)</td><td>QOL improves with exercise vs no-exercise. Significantly improves mobility, ADLs, social support</td><td>Effective types: aerobic, martial arts, dance. Longer interventions = better effect (min 12 weeks). Anaerobic alone or combined had insignificant effect</td></tr>
+          <tr><td class="ok">Treadmill Training (Luna 2020)</td><td>Improves gait outcomes in elderly PD pts (&gt;60 yo)</td><td>With or without weight support, &gt;20 min, 2&#8211;3&#215;/week with progressive load increase, &#8805;6 weeks</td></tr>
+          <tr><td class="warn">High-Cadence Dynamic Cycling (Ridgel 2015, 2019)</td><td><strong>UPDRS Motor III significantly improved</strong> (UE, LE, rigidity scores all improved). TUG improved. 3 dynamic cycling sessions had MORE impact than 1 month of bodyweight treadmill training</td><td>Dynamic = 75&#8211;85 RPM (vs static = patient-determined). RPE lower than HIT but improvements similar. 6 bouts of 30-min cycling improves motor function with sustained improvements. <strong>Focus on timing and speed to promote changes in motor circuitry</strong></td></tr>
+          <tr><td class="ok">High-Force Eccentric Resistance (Dibble 2006)</td><td>12-week program produced muscle hypertrophy, increased strength, improved mobility in mild-mod PD</td><td>Eccentric exercise &gt; standard care for: muscle volume (quads), 6MWT distance, stair ascent. Leg pain subsided within first 2 weeks. RPE progressed weeks 1&#8211;4 then stabilized</td></tr>
+          <tr><td class="ok">LSVT BIG (Millage 2017)</td><td>Improvement in at least &#190; primary measures after program. QOL improved. Results maintained at 3-month mark</td><td>"Recalibrates" how PD patients perceive movements. 16 sessions &#215; 1 hour, 4&#215;/week &#215; 4 weeks. Then community classes. Adherence generally declined after program &#8212; prescribe ongoing programs</td></tr>
+          <tr><td class="ok">Dance (Carapellotti 2020)</td><td>4/6 studies showed decreased motor symptom severity (tango, Qi, Sardinian folk). Tango improvements &gt; self-directed exercise for Mini-BESTest (balance)</td><td>Longer interventions (12+ months) show results more often. No conclusion on best dance type. Dance may not be more effective than other exercise forms but has unique social benefits. Partner dances: both with and without partner show improvement</td></tr>
+          <tr><td class="ok">Tai Chi (Kedzior 2019)</td><td>Consistently improved balance &gt; no intervention AND other interventions. Can decrease UPDRS Motor III</td><td>May be promising but need more research. Unclear true effectiveness due to study limitations</td></tr>
+          <tr><td class="ok">Non-Contact Boxing (Humphrey 2020)</td><td>Valuable for building positive relationships. Participants reported physical, cognitive, AND emotional benefits &#8594; improved interaction with society</td><td>Qualitative study &#8212; social engagement through boxing may improve QOL. <strong>Refer PD patients to social activities</strong></td></tr>
+          <tr><td class="warn">Aquatic Exercise (Cugusi 2019)</td><td><strong>Aquatic &gt; land for BBS scores, falls efficacy, QOL (PDQ-39), and pain severity.</strong> Aquatic = land for UPDRS Motor III, TUG, and ABC</td><td>Aquatic therapy is an option for PD patients &#8212; particularly good for balance, fear of falling, and QOL</td></tr>
+          <tr><td class="ok">Home-Based Exercise (Flynn 2019)</td><td>Home-based = center-based for balance and QOL improvement. Home-based &gt; no intervention for balance, gait speed, and QOL immediately after intervention</td><td><strong>Prescribe HIGH-DOSE programs.</strong> Minimally supervised &gt; fully supervised. Home-based better than no intervention for QOL beyond intervention period. Want minimally supervised rather than fully supervised</td></tr>
+          <tr><td class="ok">Mind-Body Exercise (Kwok 2016)</td><td>Mind-body &gt; control for UPDRS III, Berg, TUG, 6MWT. Best: yoga, Tai Chi/Qigong</td><td>Prescribe at least moderate dose: 60 min, 2&#215;/week. May improve QOL and mental state but need more research</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip green">
+        <div class="bl-label">PD Exercise Summary for Clinical Practice</div>
+        <p><strong>What works:</strong> Aerobic exercise (cycling, treadmill, dance), high-intensity resistance training (eccentric especially), balance training (tai chi, aquatic), LSVT BIG, mind-body exercises, non-contact boxing for social engagement. <strong>Key dosing:</strong> Minimum 12 weeks, &#8805;2&#8211;3&#215;/week, progressive overload. High-cadence cycling (75&#8211;85 RPM) is particularly promising for motor circuitry changes. <strong>Clinical pearls:</strong> Longer interventions = better. Home-based is as good as center-based if prescribed at high dose. Aquatic &gt; land for balance and QOL. Social activities matter for psychosocial wellbeing. Always prescribe ongoing programs &#8212; adherence declines after structured programs end.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>PD Examination &amp; Intervention Planning</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Subjective priorities</span><span class="ma-tag red">Objective testing</span><span class="ma-tag green">Intervention framework</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip gold">
+        <div class="bl-label">Subjective Priorities</div>
+        <p>Goals? A&amp;O (do MoCA &#8212; may need SLP). Environment/home setup (stairs, rugs, lighting). Is patient managing alcohol and smoking? PLOF. How does patient feel about current AD/gait? Medication compliance and timing? Transportation to/from clinic? Caregiver burden? Depression screening?</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Objective Testing</div>
+        <p>Vitals (BP seated AND standing for orthostatic hypotension). Gait analysis (see what they can do first). Functional tasks. mCTSIB for balance screen. TUG (be there to guard &#8212; turning is extremely difficult). MSK (strength &#8212; especially quads, ROM). UPDRS Motor III. Berg Balance. FGA. ABC scale. Modified Ashworth for rigidity. CN exam (especially flat affect). <strong>Cognitive screening is essential &#8212; frontal lobe involvement affects planning, sequencing, and executive function.</strong></p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Intervention Framework</div>
+        <p><strong>Balance &amp; Fall Prevention:</strong> Multidirectional reaching, perturbation training, tandem stance, SLS, reactive stepping. Address freezing with visual cues (lines on floor, laser pointer on walker), auditory cues (metronome). <strong>Gait Training:</strong> Large-amplitude movements (LSVT BIG principles), external cues, treadmill training, high-cadence cycling. <strong>Strength:</strong> High-intensity resistance (eccentric emphasis), functional strengthening (STS, step-ups). <strong>Flexibility:</strong> Address kyphotic posture, hip flexor tightness, trunk rotation. <strong>Aerobic Conditioning:</strong> Cycling, treadmill, dance, aquatic. <strong>Orthostatic Hypotension:</strong> Education (hydrate, pause, ankle pumps before standing), practice graded transitions. <strong>Psychosocial:</strong> Depression screening, group exercise referrals (boxing, dance, tai chi), caregiver education and support.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">What PT Can and Cannot Do for Progressive Disease</div>
+        <p><strong>PT CAN:</strong> Enhance or delay symptoms, increase strength/coordination/balance, improve gait quality and endurance, reduce fall risk, provide education, improve QOL, address psychosocial factors, prescribe exercise programs, manage orthostatic hypotension, train compensatory strategies, improve respiratory function through postural correction. <strong>PT CANNOT:</strong> Cure the disease, stop progression, replace dopamine (PD), rebuild myelin (MS), regenerate motor neurons (ALS). <strong>The goal: maximize function at every stage and maintain it as long as possible. Effects of exercise on psychological AND physical symptoms are positive for progressive diseases.</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== VESTIBULAR ANATOMY TAB ===== -->
+<div class="tab-panel" id="tab-vestibular">
+<div class="container">
+  <div class="section-title">Vestibular Anatomy &amp; Diagnoses</div>
+  <div class="section-sub">&gt;15 million people per year develop dizziness. Prevalence increases with age. &gt;70% who have dizziness will NOT resolve within 2 weeks. 63% have recurrence beyond 3 months. The vestibular system uniquely identifies self-motion as different from environmental motion &#8212; it cannot be tricked like the visual system. Although working, you typically only notice your vestibular system when it fails.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Peripheral Vestibular Anatomy &#8212; SCCs &amp; Otolith Organs</h4>
+      <div class="ma-tags"><span class="ma-tag gold">SCCs = angular/rotational</span><span class="ma-tag purple">Otoliths = linear &amp; gravity</span><span class="ma-tag red">Push-pull dynamic</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Semicircular Canals (SCCs)</div>
+        <p>3 canals arranged orthogonally (at right angles) in each temporal bone: <strong>Horizontal, Posterior (Inferior), Anterior (Superior).</strong> Respond to <strong>angular (rotational) acceleration.</strong> Each SCC has a contralateral coplanar mate. Filled with <strong>endolymph</strong> that moves freely in response to angular head rotation. At the end of each canal is the <strong>ampulla</strong> containing the <strong>cupula</strong> (gelatinous barrier with sensory hair cells). <strong>Kinocilia</strong> = mechanosensing cilia for movement detection. <strong>Stereocilia</strong> = mechanosensing organelles seated in the <strong>crista ampullaris</strong> (sensory organ of angular rotation). <strong>Deflection of stereocilia TOWARD kinocilia = excitation (depolarization). AWAY from kinocilia = inhibition (hyperpolarization).</strong></p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Push-Pull Dynamic</div>
+        <p>Each SCC responds best to motion in its own plane with coplanar pairs exhibiting a <strong>"push-pull" dynamic.</strong> Example: As head turns RIGHT, hair cells in the RIGHT horizontal SCC are <strong>excited</strong> while hair cells in the LEFT horizontal SCC are <strong>inhibited.</strong> This bilateral difference in firing rate is how the brain detects direction and speed of head rotation. <strong>Vestibular afferents fire at 50&#8211;100 spikes per second at rest (tonic firing rate with no motion).</strong></p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Otolith Organs</div>
+        <p><strong>Saccule and Utricle</strong> make up the otolith organs. Respond to <strong>linear acceleration, static head tilt, and gravity.</strong> Sensory hair cells project into a gelatinous material with embedded crystals called <strong>otoconia.</strong> Motion toward = excitation, away = inhibition. <strong>Utricle:</strong> Senses horizontal linear acceleration and lateral head tilt. <strong>Saccule:</strong> Senses vertical linear acceleration and forward head tilt. Activated during: elevator rides, airplane takeoff, rising from chair. Do NOT respond to constant velocity. <strong>When otoconia are displaced INTO the semicircular canals = BPPV.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>3 Balance Systems &amp; Central Vestibular Connections</h4>
+      <div class="ma-tags"><span class="ma-tag gold">70% visual-dominant</span><span class="ma-tag purple">Vestibular &#8594; autonomic (BP)</span><span class="ma-tag">Cerebellum calibrates VOR</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>System</th><th>Function</th><th>Clinical Relevance</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Somatosensory</td><td>Uses external static references (wall, floor) to interpret body movement. Proprioceptors in joints, muscles, skin</td><td>Maintaining postural balance by making musculoskeletal framework aware of spatial/mechanical status</td></tr>
+          <tr><td class="hi">Visual</td><td><strong>Focal (central):</strong> Object recognition/motion perception. <strong>Ambient (peripheral):</strong> Sensitive to movement, spatial orientation</td><td><strong>70% of people are visual-dominant</strong> for balance. Taking away vision makes balance worse. Visual system CAN be tricked by the environment (unlike vestibular)</td></tr>
+          <tr><td class="hi">Vestibular</td><td>Determines head/body position in space. Interacts with proprioceptive system. Distinguishes active vs passive head movements</td><td><strong>Cannot be tricked by environment.</strong> When vestibular fails, patient relies on vision and somatosensory (which can be fooled)</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip purple">
+        <div class="bl-label">Central Vestibular System Functions</div>
+        <p>Brainstem processes provide primary control of vestibular reflexes. Extensive connections between vestibular nuclei and: reticular formation, thalamus, cerebellum. <strong>VOR (Vestibulo-Ocular Reflex):</strong> Stabilizes images on retina during head movements &#8212; cerebellar connections maintain VOR calibration. <strong>Vestibular connections with autonomic NS contribute to cardiovascular function (blood pressure)</strong> &#8212; this is why vestibular disorders can cause orthostatic symptoms. Connections with vestibular cortex, thalamus, and reticular formation enable conscious awareness of body position and discrimination between self-movement vs environmental movement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Nystagmus, Common Diagnoses &amp; Peripheral vs Central</h4>
+      <div class="ma-tags"><span class="ma-tag red">Peripheral = position-dependent, fixation suppresses</span><span class="ma-tag gold">Central = NOT position-dependent</span><span class="ma-tag purple">BPPV = otoconia displaced</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Nystagmus</div>
+        <p><strong>Primary diagnostic indicator</strong> for identifying peripheral and central vestibular lesions. Occurs after acute unilateral insult due to asymmetry between functioning and reduced/absent systems. Has <strong>slow component</strong> (toward lesion) and <strong>fast component</strong> (away from lesion &#8212; this is the direction we NAME the nystagmus). <strong>Vestibular nystagmus CAN be suppressed with visual fixation in light</strong> &#8212; if it can't be suppressed, suspect central lesion. <strong>Geotropic nystagmus:</strong> Beats toward the ground. <strong>Ageotropic nystagmus:</strong> Beats away from the ground.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Diagnosis</th><th>Mechanism</th><th>Key Features</th><th>PT Approach</th></tr></thead>
+        <tbody>
+          <tr><td class="warn">BPPV</td><td>Otoconia displaced into SCC</td><td>Position-dependent vertigo, brief episodes. Dix-Hallpike (posterior canal), Supine Roll (horizontal canal). <strong>Most common vestibular disorder. Peripheral = easy to fix</strong></td><td>Repositioning maneuvers (Epley, Semont, BBQ Roll). Hindered by: poor ROM, hesitation into positions, anti-dizziness meds (need driver to PT)</td></tr>
+          <tr><td class="hi">UVH (Unilateral Vestibular Hypofunction)</td><td>One peripheral system impaired</td><td>Most commonly: vestibular neuritis or labyrinthitis (viral/bacterial infection). Also: aging, medication toxicity, blood clots, tumors, brain injury</td><td>Adaptation exercises (gaze stability). Habituation if continual dizziness</td></tr>
+          <tr><td class="hi">BVL (Bilateral Vestibular Loss)</td><td>Both inner ears affected</td><td>Imbalance while walking. <strong>Oscillopsia</strong> ("jumping/bouncing" vision) &#8212; inner ears can't communicate with brain and eyes</td><td>Substitution strategies. Strengthening other balance systems. AD may be needed</td></tr>
+          <tr><td class="hi">Meniere's Disease</td><td>Unknown cause (thought viral). Endolymph changes</td><td>Vertigo, dizziness, ringing in ear (tinnitus), hearing loss</td><td>Medical management primary. PT for balance</td></tr>
+          <tr><td class="hi">Cervicogenic Dizziness</td><td>C-spine dysfunction</td><td>Dizziness accompanied by headaches from cervical dysfunction. Neck pain + dizziness does NOT necessarily mean neck is the source</td><td>Address cervical impairments. Sensorimotor training. Always rule out peripheral/central vestibular and VBI first</td></tr>
+          <tr><td class="hi">Concussion</td><td>Functional brain injury</td><td>No definitive test &#8212; concluded through symptoms and MOI</td><td>See Concussion tab</td></tr>
+          <tr><td class="hi">Orthostatic Hypotension</td><td>BP drop with position change</td><td>&#8805;20 mmHg systolic OR &#8805;10 mmHg diastolic</td><td>Education, hydration, graded position changes</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip purple">
+        <div class="bl-label">Peripheral vs Central &#8212; Critical Distinction</div>
+        <p><strong>Peripheral:</strong> Movement/position dependent. Nystagmus suppressed with visual fixation. Obstructive (something physical causing obstruction &#8212; BPPV is classic). Easier to treat &#8212; repositioning, adaptation. <strong>Central:</strong> NOT position dependent. Nystagmus NOT suppressed with fixation. Timing deficit (push-pull relationship disrupted). Above level of vestibular nuclei &#8212; lateropulsion, head tilt, visual perceptual difficulties. Harder to treat &#8212; use substitution strategies. <strong>Ask questions about central &#8212; not really changed by position.</strong></p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Retina Slip</div>
+        <p><strong>Retina slip</strong> = motion of the visual image on the surface of the retina. Slip across large portions of retina is the stimulus for optokinetic eye movements and the stimulus that produces adaptation of the optokinetic system. When VOR is impaired, retina slip increases during head movements &#8594; blurry vision &#8594; this is what adaptation exercises (X1/X2 viewing) address.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== VESTIBULAR TREATMENT TAB ===== -->
+<div class="tab-panel" id="tab-vesttreat">
+<div class="container">
+  <div class="section-title">Vestibular Treatment &#8212; 4 Categories</div>
+  <div class="section-sub">Vestibular rehabilitation uses 4 treatment categories: Repositioning (for BPPV), Adaptation (strengthen VOR), Habituation (reduce dizziness response), and Substitution (strengthen alternative systems). Treatment selection depends on diagnosis and whether the lesion is peripheral or central.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Repositioning Maneuvers &#8212; Step-by-Step Techniques</h4>
+      <div class="ma-tags"><span class="ma-tag green">Epley = posterior/anterior SCC</span><span class="ma-tag gold">Semont = posterior SCC</span><span class="ma-tag purple">BBQ Roll = horizontal SCC</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Maneuver</th><th>For Which Canal</th><th>Step-by-Step Technique</th></tr></thead>
+        <tbody>
+          <tr><td class="ok">Epley (Canalith Repositioning)</td><td>Anterior and Posterior SCC BPPV</td><td>Patient sitting &#8594; turn head 45&#176; toward affected ear &#8594; quickly lie back (head hanging, affected ear down) &#8594; hold &#8594; rotate head 90&#176; to opposite side &#8594; hold &#8594; roll body to face down &#8594; hold &#8594; sit up. Goal: guide otoconia out of SCC back to utricle</td></tr>
+          <tr><td class="ok">Semont (Liberatory)</td><td>Posterior SCC BPPV</td><td>Patient sitting, <strong>head rotated 45&#176; AWAY from affected side.</strong> Quickly move into side-lying TOWARD affected side (side they're looking away from) &#8594; hold 1 minute (or until symptoms arise). Quickly move through sitting to side-lying on OPPOSITE side &#8594; hold 1 minute. Return to sitting. <strong>Patient's eyes MUST remain open.</strong> Head/body position must be maintained for entire duration</td></tr>
+          <tr><td class="ok">BBQ Roll</td><td>Lateral/Horizontal SCC BPPV</td><td>Patient supine &#8594; roll toward unaffected side 90&#176; &#8594; hold &#8594; continue rolling in same direction (face down) &#8594; hold &#8594; continue rolling (affected ear up) &#8594; hold &#8594; return to supine. Sequential 90&#176; rolls like a BBQ spit</td></tr>
+          <tr><td class="ok">Casani</td><td>Lateral/Horizontal SCC BPPV</td><td>Alternative to BBQ roll for horizontal canal</td></tr>
+          <tr><td class="ok">Brandt-Daroff</td><td>Posterior SCC BPPV (HEP)</td><td>Sitting &#8594; quickly lie on one side &#8594; hold 30 sec &#8594; sit up &#8594; quickly lie on other side &#8594; hold 30 sec. <strong>Good for HEP.</strong> 5&#8211;10 repetitions, 2&#8211;3&#215;/day</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Tumarkin's Otolithic Crisis</div>
+        <p><strong>Drop attacks that are vestibular in origin.</strong> Sudden, unexpected falls without loss of consciousness. Caused by sudden abnormal stimulation of the otolith organs. Dangerous because patient has no warning. Important DDx for unexplained falls in elderly.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Adaptation, Habituation &amp; Substitution &#8212; Progressions</h4>
+      <div class="ma-tags"><span class="ma-tag gold">X1 viewing = head moves, target stable</span><span class="ma-tag purple">Habituation = last resort</span><span class="ma-tag red">Substitution = central lesions</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip gold">
+        <div class="bl-label">Adaptation &#8212; Strengthen VOR</div>
+        <p>Goal: bring the weak side UP to the good side as much as possible. Strengthen or rebalance the VOR and push-pull relationship. <strong>X1 Viewing:</strong> Move head horizontally and vertically as quickly as possible while maintaining gaze on a stable target (hold thumbs in front). <strong>If target becomes blurry, patient MUST slow down</strong> (indicates VOR is not keeping up). <strong>X2 Viewing:</strong> Patient quickly turns head H or V while the target moves in the OPPOSITE direction. <strong>Eye-then-Head:</strong> Eyes move to new target first, then head follows. <strong>Progression parameters (easier &#8594; harder):</strong> Plain background &#8594; busy background. Target far away &#8594; closer. Larger target &#8594; smaller. Slow head speed &#8594; faster. Firm surface &#8594; foam surface. Seated &#8594; standing &#8594; walking.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Habituation &#8212; Reduce Dizziness Response</div>
+        <p>Warranted when patient with UVH has continual complaints of dizziness AND doesn't fit other treatment categories. <strong>Habituation = last resort when other categories don't fit.</strong> Defined as reduction in response to a repeatedly performed movement. <strong>Use MSQ (Motion Sensitivity Quotient)</strong> to identify provoking positions. Literally put patient in position that elicits mild-to-moderate response and <strong>have them hold that position for 30 seconds or until abolition of symptoms.</strong> <strong>HEP: 3&#8211;5 repetitions for each position, 2&#8211;3&#215;/day.</strong> Dose matters &#8212; needs consistent daily exposure.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Substitution &#8212; Alternative Systems</div>
+        <p>Used when vestibular system CANNOT be fixed (central lesions, bilateral vestibular loss). <strong>Utilizing alternative methods or senses to make up for the deficits.</strong> Strengthen different systems to compensate. May include AD use. <strong>Examples:</strong> Balance exercises with eyes closed and walking toward object (challenges proprioception, forces patient off visual system). Walking on foam surface (challenges vestibular, forces reliance on other systems). Gaze stability exercises. <strong>Visual system is dominant (70%)</strong> &#8212; taking away vision forces reliance on somatosensory and vestibular, which is the therapeutic goal when those systems need strengthening.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Vestibular Outcome Measures &amp; Clinical Pearls</h4>
+      <div class="ma-tags"><span class="ma-tag green">DHI, DVA, ABC, MSQ</span><span class="ma-tag gold">Use MSQ for all balance tests</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Measure</th><th>What It Assesses</th><th>Key Details</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">DHI (Dizziness Handicap Inventory)</td><td>Patient perception of disequilibrium</td><td>Good test-retest reliability. Self-report</td></tr>
+          <tr><td class="hi">DVA (Dynamic Visual Acuity)</td><td>Functional VOR for horizontal SCC</td><td>Tests ability to read eye chart during head movement vs stationary. &gt;2 line drop = abnormal</td></tr>
+          <tr><td class="hi">ABC (Activities-Specific Balance Confidence)</td><td>Subjective balance confidence</td><td><strong>PD &lt;69% = predictive of recurrent falls. Vestibular &lt;67% = significant.</strong> Patient rates confidence in performing activities without losing balance</td></tr>
+          <tr><td class="hi">MSQ (Motion Sensitivity Quotient)</td><td>Identifies which positions cause most dizziness</td><td>Can help give insight to affected canal. <strong>Use this for guiding habituation treatment.</strong> Use for all gait and balance testing</td></tr>
+          <tr><td class="hi">FGA (Functional Gait Assessment)</td><td>Postural stability during walking tasks</td><td>More info than DGI &#8212; more specific for deviation from midline, speed, positional effects</td></tr>
+          <tr><td class="hi">Fukuda Step Test</td><td>Asymmetry in vestibular function</td><td>March in place with eyes closed 50 steps. Rotation &gt;30&#176; toward one side suggests ipsilateral vestibular hypofunction</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Clinical Pearls</div>
+        <p><strong>Peripheral vestibular disorders are easy to fix</strong> &#8212; repositioning maneuvers can resolve BPPV in 1&#8211;3 sessions. <strong>BPPV hindered by:</strong> Lack of cervical ROM (can't get into positions), patient hesitation, anti-dizziness medications (patient needs someone to drive them to PT). <strong>Always ask about central symptoms</strong> &#8212; not really changed by position. <strong>Medications for dizziness:</strong> Antihistamines (meclizine/Antivert &#8212; motion sickness), benzodiazepines (diazepam/Valium for inner ear disorders), diuretics (remove inner ear fluid), corticosteroids (decrease vertigo frequency). <strong>Second impact syndrome</strong> = follow-up concussion before previous one healed &#8212; can be catastrophic. <strong>Morning is practice, afternoon is assessment.</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== CONCUSSION TAB ===== -->
+<div class="tab-panel" id="tab-concussion">
+<div class="container">
+  <div class="section-title">Concussion Management</div>
+  <div class="section-sub">1.6&#8211;3.8 million sport-related TBIs annually. Concussion is a FUNCTIONAL (not structural) brain injury &#8212; it alters how the brain functions but not the anatomy. MRI/CT show physical abnormalities, not functional ones. 80&#8211;90% recover in 7&#8211;10 days. Those requiring &gt;10 days have delayed recovery. Only 47.3% of concussed athletes reported the event (McCrea, 2004). Reasons: didn't think serious enough (66%), didn't want to leave game (41%), didn't know it was a concussion (36%).</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Pathophysiology &amp; 6 Clinical Phenotypes</h4>
+      <div class="ma-tags"><span class="ma-tag red">Functional not structural</span><span class="ma-tag gold">6 phenotypes = matched treatment</span><span class="ma-tag purple">Process not protocol</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Pathophysiology</div>
+        <p>Complex pathophysiological brain injury from traumatic biomechanical forces. Direct blow to head or elsewhere on body. Results in rapid neurological impairment. <strong>Neurometabolic changes from mitochondrial dysfunction</strong> &#8212; NOT structural damage to brain tissue. Recovers spontaneously. May or may not involve LOC. More common in game vs practice. <strong>Concussion potentially affects:</strong> Cognition, reaction time, visual/verbal processing, behavior, emotions, sensory processing (vision AND vestibular), motor functions (coordination, balance), sleep.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">6 Clinical Phenotypes (Collins et al &#8212; TEAM Approach)</div>
+        <p>Concussion is a <strong>heterogeneous injury with variable presentations.</strong> About PROCESS not PROTOCOL &#8212; patients need to be treated differently based on their specific problems. Pre-existing risk factors predispose to certain phenotypes.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Phenotype</th><th>Characteristics</th><th>PT Interventions</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Vestibular</td><td>Dizziness with movement, discomfort in busy environments</td><td>Vestibular rehab: habituation (motion sensitivity), adaptation (gaze stability), BPPV repositioning if indicated. Balance training (surface orientation). Graded exercise</td></tr>
+          <tr><td class="hi">Post-Trauma Migraine</td><td>Deficits in visual/verbal memory on ImPACT. HA on waking or nausea. Secondary: vestibular often co-occurs</td><td>Sleep hygiene, activity/school modification, relaxation strategies/meditation apps, referral for medication</td></tr>
+          <tr><td class="hi">Ocular</td><td>Blurred vision, difficulty reading, HA with visual activity, deficits in reaction time/visual memory, past vision therapy. Secondary: cognitive fatigue often co-occurs</td><td>Oculomotor control exercises. Head-eye coordination. Convergence training</td></tr>
+          <tr><td class="hi">Anxiety/Mood</td><td>Worry, rumination, limited social interaction, in psychotherapy currently. ImPACT testing "all over the place." Most common profile alongside migraine</td><td><strong>Aerobic exercise</strong> (critical &#8212; international guidelines recommend rest but we need to PUSH patients with anxiety). CBT referrals. Activity modifications. Habituation/exposure. Nature of rest recommendations is antithetical to treating anxiety</td></tr>
+          <tr><td class="hi">Cognitive/Fatigue</td><td>Memory problems, fatigue, low-grade HA, difficulty with sleep. <strong>These patients often play through the injury and return without telling anyone</strong></td><td>Referral to SLP/OT for organization and memory. School modifications. Graded exercise to improve physical endurance &#8594; translates to improved MENTAL endurance</td></tr>
+          <tr><td class="hi">Cervical</td><td>Neck pain, cervicogenic headache, cervical dysfunction</td><td>Head-eye coordination exercises. Craniocervical flexion retraining (longus capitis/colli endurance). Cervical proprioception relocation exercises. Postural/scapular strength. <strong>Clear TMJ &#8212; parafunctional habits could be feeding neck pain and HA.</strong> Sleeping position/school posture</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Co-Occurrence of Phenotypes</div>
+        <p>These profiles often DON'T occur in isolation. <strong>Concussion is a moving target.</strong> Common co-occurrences: Ocular &#8594; secondary cognitive fatigue. Migraine &#8594; secondary vestibular. Vestibular &#8594; secondary migraine (<strong>push too hard = migraine, don't push enough = anxiety</strong>). Anxiety &#8594; secondary migraine. Pre-existing risk factors: history of strabismus &#8594; more prone to ocular symptoms, h/o learning disability &#8594; more cognitive issues, h/o migraine or anxiety &#8594; more likely after injury.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Assessment Tools &amp; Second Impact Syndrome</h4>
+      <div class="ma-tags"><span class="ma-tag red">Second impact = can be fatal</span><span class="ma-tag gold">SCAT3 = sideline</span><span class="ma-tag purple">ImPACT = neurocognitive baseline</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Tool</th><th>Setting</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">SCAT3 (Sport Concussion Assessment Tool)</td><td>Sideline/on-field</td><td>Standardized assessment for sport-related concussion. Symptom evaluation, cognitive screening, balance examination</td></tr>
+          <tr><td class="hi">MACE (Military Acute Concussion Evaluation)</td><td>Frontline (military)</td><td>Patient history + SAC. Used within 12 hours of injury &#8212; after this time, accuracy decreases. Equivalent to SCAT3 for sport</td></tr>
+          <tr><td class="hi">ANAM (Automated Neuropsychological Assessment Metrics)</td><td>Pre-deployment (military)</td><td>Required by DoD for ALL service members within 12 months of deployment. Neurocognitive baseline for return-to-duty decisions. 36 stations throughout Iraq/Afghanistan</td></tr>
+          <tr><td class="hi">ImPACT</td><td>Pre-season (sport)</td><td>Neurocognitive baseline testing. Used like ANAM in sports. Compares post-concussion performance to baseline</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Second Impact Syndrome &#8212; Why RTP Protocols are Non-Negotiable</div>
+        <p>A second concussion BEFORE the previous one has healed. <strong>Can be catastrophic or fatal</strong> due to loss of cerebrovascular autoregulation &#8594; massive cerebral edema. This is why return-to-play/return-to-duty protocols exist and are non-negotiable. <strong>100% of rugby players who received RTP guidance failed to comply with 3-week stand-down regulation</strong> (Hollis, 2011). &gt;25% of hockey players thought it was OK to play with concussion if "careful" (Cusimano, 2009). Education is critical.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Blast Injuries &#8212; Military TBI</div>
+        <p>Over 2.5 million US troops deployed to OEF/OIF/OND (2001&#8211;2013). &gt;1/3 deployed more than once. Estimated 320,000 sustained at least a concussion during deployment. 25&#8211;40% have psychological and neurological injuries. Prevalence of concussion: 4.2&#8211;23%. Symptoms overlap significantly with PTSD &#8212; headaches, cognitive dysfunction, attention difficulties, impaired balance (all have poor diagnostic specificity). Potential for bias: under-reporting in theater (to remain on duty), over-reporting post-deployment (for secondary gain). Concussion and PTSD frequently co-occur in this population.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">When is PT Recommended for Concussion?</div>
+        <p>Patients with physical symptoms at 10 days post-concussion may benefit from PT. Sports medicine physicians should consider <strong>individually prescribed progressive PT intervention</strong> (manual techniques, vestibular rehab, oculomotor training, neuromotor retraining) as preferred treatments MUCH EARLIER than once a patient becomes chronic. <strong>Early PT intervention for dizziness after sport-related concussion is feasible and beneficial</strong> (Reneker et al., 2017). PT has specific expertise in assessment and treatment of persistent headache, dizziness, poor balance, and neck pain post-concussion.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== TREATMENT STRATEGIES TAB ===== -->
+<div class="tab-panel" id="tab-treatment">
+<div class="container">
+  <div class="section-title">Neuro Rehab Treatment Strategies</div>
+  <div class="section-sub">Neuro rehab follows a continuum from acute care through inpatient rehab to outpatient and home-based therapy. 3&#8211;6 months is when the most progress is seen. Selection of strategies should use the patient's strengths, avoid activities that elicit abnormal movement patterns, and "shrink" the environment to allow normal motor programs to run.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Progressive Disease Treatment Framework &amp; Continuum of Care</h4>
+      <div class="ma-tags"><span class="ma-tag gold">3-6 months = most progress</span><span class="ma-tag green">CIMT for stroke</span><span class="ma-tag red">Shrink the environment</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Continuum of Care</div>
+        <p><strong>Acute Care:</strong> Medical stabilization, early mobilization, prevent complications. <strong>Inpatient Rehabilitation:</strong> Intensive therapy (3+ hours/day), functional recovery, transition planning. <strong>Outpatient:</strong> Patient has progressed to where they can easily leave home. Receive fine-tuning to maximize functional potential. Gradually decreasing frequency with increasing emphasis on independent HEP. May be used throughout life in periods of change or functional decline. <strong>Home-Based:</strong> Independent program with periodic skilled check-ins. <strong>How many reps to drive neuroplasticity? A LOT.</strong></p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Key Treatment Principles</div>
+        <p><strong>CIMT (Constraint-Induced Movement Therapy):</strong> Constrains good limb, forces use of stroke-affected limb. Drives neuroplasticity through intensive task-specific practice. <strong>First 3 months post-injury is THE critical window</strong> for developing good movement patterns. <strong>3&#8211;6 months is when most progress is seen.</strong> Overload principle applies &#8212; stronger load = stronger neuroplasticity effect. Shrink the environment to allow normal motor programs to run (reduce distractors, simplify space). Then gradually expand the environment as function improves.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Augmented Feedback Progression</div>
+        <p>Patient initially needs external cues (verbal, visual, kinesthetic &#8212; moment to moment feedback) and perimeter control over the motor program. <strong>This is OK initially</strong> &#8212; cues help the patient participate and learn the movement. <strong>BUT the patient MUST eventually learn tasks without cues.</strong> If you never remove the cues, you create dependence, not learning. Example: using therapist's hands to enhance normalized movement patterns during gait &#8212; hands are augmented feedback. Gradually reduce until patient can perform independently. Think of it like training wheels &#8212; essential early, detrimental if never removed.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Prevention Framework for Progressive Disease</div>
+        <p><strong>Primary prevention (general health):</strong> Exercise programs, cardiovascular health, nutrition, smoking cessation, alcohol reduction. <strong>Secondary prevention (decrease duration of illness):</strong> Early detection, early intervention, medication compliance, aggressive early rehabilitation. <strong>Tertiary prevention (limit degree of disability):</strong> Compensatory strategies, adaptive equipment, fall prevention, caregiver education, home modifications, community resources. <strong>Normal aging:</strong> Gait slows, compensated balance patterns used, decreased muscle tone. <strong>Disease:</strong> Symptoms FORCE patient to utilize compensations that older people normally use &#8212; but earlier and more severely.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== REVIEW TAB ===== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; Neuro Rehab</div>
+  <div class="section-sub">Tap any card to flip. High-yield neuro rehab pearls across all modules.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 10 principles of experience-dependent plasticity and which 3 matter most clinically?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Kleim &amp; Jones: (1) Use it or lose it, (2) Use it and improve it, (3) Specificity, (4) Repetition matters, (5) Intensity matters, (6) Time matters, (7) Salience matters, (8) Age matters, (9) Transference, (10) Interference. <strong>The 3 most clinically impactful:</strong> (5) <strong>Intensity</strong> &#8212; stronger load = stronger plasticity. Low-intensity stim can actually WEAKEN connections (LTD). (6) <strong>Time</strong> &#8212; first 3 months is critical; 5-week rehab started at day 5 post-infarct outperforms the SAME regimen started at day 30. (7) <strong>Salience</strong> &#8212; the task must be relevant and meaningful. Reward circuits (ventral tegmental area) drive learning. Without motivation, the brain will not orient itself. <strong>"Practice is repetition with a purpose."</strong></div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How do you distinguish UMN from LMN lesions, and what is the key CN VII distinction?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>UMN:</strong> Weakness, hyperreflexia (3&#8211;5+), spasticity (velocity-dependent), (+) Babinski (upgoing toe &#8212; ALWAYS abnormal in adults), (+) Hoffmann's, clonus. IMPORTANT: acute UMN may initially show flaccidity before hyperreflexia develops. <strong>LMN:</strong> Weakness, atrophy, fasciculations, hyporeflexia (0&#8211;1+), decreased tone. <strong>CN VII key distinction:</strong> UMN lesion (stroke) = contralateral face weakness SPARING the forehead (bilateral UMN innervation to upper face). LMN lesion (Bell's palsy) = entire ipsilateral face INCLUDING forehead. <strong>Brown-S&#233;quard:</strong> Ipsilateral loss of position/vibration (posterior columns cross in medulla) + contralateral loss of pain/temperature (anterolateral crosses in cord).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the HOME mnemonic and why does it matter for every neuro patient?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>H</strong>omeostasis (hypothalamus &#8212; fight-or-flight, overstimulation shuts down learning). <strong>O</strong>lfaction (only sense bypassing thalamus &#8212; lavender calms, eucalyptus arouses, smells change tone). <strong>M</strong>emory/Motivation (hippocampus &#8212; <strong>"Most powerful force in rehabilitation is motivation."</strong> Without it, brain won't orient to the problem). <strong>E</strong>motion (amygdala &#8212; positive emotions decrease tone, negative increase tone, music is therapeutic). <strong>Why it matters:</strong> If limbic decides NOT to act, motor response will be ABSENT. Limbic connects with cerebellum, BG, frontal lobe, and brainstem. A patient in survival mode CANNOT learn. A patient's beliefs about recovery directly influence outcomes. A therapist who drives motivation drives neuroplasticity.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the TRAP signs of PD, and how does medication timing affect therapy?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>TRAP:</strong> <strong>T</strong>remor (resting, 4&#8211;6 Hz, pill-rolling, bilateral with one side worse = contralateral brain more affected). <strong>R</strong>igidity (cogwheel = ratchety; lead pipe = constant. Both directions, NOT velocity-dependent unlike spasticity). <strong>A</strong>kinesia/Bradykinesia (difficulty initiating movement, flat affect &#8212; also difficulty reading YOUR expressions). <strong>P</strong>ostural instability (flexed posture &#8594; restrictive pulm pattern, forward BOS, retropulsion). <strong>Medication:</strong> Carbidopa/levodopa creates on-off phenomenon. Schedule therapy 1&#8211;2 hours after dose (during "on" period). Tardive dyskinesia may occur immediately after dose. Berg &#8804;45 = AD. ALWAYS check BP seated AND standing for orthostatic hypotension (&#8805;20 mmHg systolic drop). Patients avoid water to reduce bathroom trips &#8594; worsens dehydration &#8594; worsens orthostatic hypotension.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 4 categories of vestibular treatment and when do you use each?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>1. Repositioning:</strong> For BPPV (otoconia in canals). Epley (posterior/anterior), Semont (posterior &#8212; head 45&#176; AWAY from affected, rapidly to affected side), BBQ Roll (horizontal), Brandt-Daroff (HEP). Can resolve in 1&#8211;3 sessions. <strong>2. Adaptation:</strong> Strengthen VOR. X1 viewing (head moves, target stable &#8212; slow down if blurry). X2 viewing (head and target opposite). Progress: speed, background complexity, target size/distance, surface (firm &#8594; foam). <strong>3. Habituation:</strong> For UVH with continual dizziness. LAST RESORT. MSQ identifies provoking positions. Hold 30 sec, 3&#8211;5 reps, 2&#8211;3&#215;/day. <strong>4. Substitution:</strong> When vestibular can't be fixed (central, bilateral loss). Strengthen other systems. Eyes-closed walking (proprioception), foam surfaces, AD. <strong>Peripheral = easy to fix. Central = substitution.</strong></div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 6 concussion phenotypes and why is "process not protocol" the approach?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>6 phenotypes:</strong> (1) <strong>Vestibular</strong> &#8212; dizziness with movement, busy environments. (2) <strong>Migraine</strong> &#8212; HA on waking, nausea, visual/verbal memory deficits. (3) <strong>Ocular</strong> &#8212; blurred vision, difficulty reading, HA with visual tasks. (4) <strong>Anxiety/Mood</strong> &#8212; worry, rumination, limited social interaction. (5) <strong>Cognitive/Fatigue</strong> &#8212; memory problems, often patients who played through injury. (6) <strong>Cervical</strong> &#8212; neck pain, cervicogenic HA (clear TMJ!). <strong>Process not protocol</strong> because concussion is heterogeneous &#8212; same injury, different presentations. Phenotypes frequently co-occur (vestibular &#8594; migraine, ocular &#8594; cognitive fatigue). Pre-existing risks predispose to specific profiles. <strong>Push too hard on vestibular = migraine. Don't push enough = anxiety.</strong> Concussion is a moving target.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What exercise evidence supports PT intervention for Parkinson's disease?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>High-cadence cycling (75&#8211;85 RPM):</strong> UPDRS Motor III significantly improved. 3 sessions had more impact than 1 month of bodyweight treadmill. Focus on timing/speed for motor circuitry changes. <strong>High-force eccentric resistance:</strong> 12 weeks produced muscle hypertrophy, &#8593; strength, &#8593; 6MWT in mild-mod PD. <strong>Dance (especially tango):</strong> &#8595; motor symptom severity, &#8593; balance (Mini-BESTest) &gt; self-directed exercise. <strong>Aquatic therapy:</strong> &gt; land for BBS, falls efficacy, QOL, pain. <strong>Tai Chi:</strong> Consistently improved balance &gt; no intervention AND other interventions. <strong>LSVT BIG:</strong> "Recalibrates" movement perception. <strong>Home-based = center-based</strong> if prescribed at high dose. <strong>Key:</strong> Minimum 12 weeks, &#8805;2&#8211;3&#215;/week, progressive overload. Aerobic, martial arts, dance most effective for QOL. Prescribe ongoing programs &#8212; adherence declines after structured programs end.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 7 common gait patterns and their neurologic localization?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>1. Festinating:</strong> Short shuffling steps, &#8593; speed, forward BOS, freezing, &#8595; heel strike = <strong>PD (basal ganglia).</strong> <strong>2. Circumduction:</strong> Arced lateral trajectory during swing = <strong>UMN (spastic hemiplegia from stroke).</strong> <strong>3. Steppage:</strong> High knee lift to clear dropped foot = <strong>foot drop (peroneal nerve/L4&#8211;L5).</strong> <strong>4. Wide-based unsteady:</strong> Feet spread, lurching, difficulty with tandem = <strong>cerebellar vermis (truncal ataxia).</strong> <strong>5. Spastic scissors:</strong> Stiff adducted thighs, legs may cross = <strong>bilateral UMN (spinal cord).</strong> <strong>6. Waddling:</strong> Trunk shifts with each step = <strong>proximal weakness (hip abductors, myopathy).</strong> <strong>7. Gait apraxia:</strong> Can do all movements lying down but can't walk standing = <strong>frontal disorders or normal pressure hydrocephalus.</strong></div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.chip-nav button').forEach(function(b){b.classList.remove('active');});
+  var panel = document.getElementById('tab-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; Imaging &amp; Diagnostics</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link">
+    <div class="mark">CB</div>
+    <span class="brand-text">Clinicians Blueprint</span>
+  </a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_ElbowModule.html" class="nav-link">Elbow</a>
+  <a href="CB_WristHandModule.html" class="nav-link">Wrist</a>
+  <a href="CB_HipModule_v2.html" class="nav-link">Hip</a>
+  <a href="CB_KneeModule_v2.html" class="nav-link">Knee</a>
+  <a href="CB_AnkleFootModule.html" class="nav-link">Ankle</a>
+  <a href="CB_SpineLumbar.html" class="nav-link">Lumbar</a>
+  <a href="CB_SpineCervical.html" class="nav-link">Cervical</a>
+  <a href="CB_SpineThoracic.html" class="nav-link">Thoracic</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_Imaging.html" class="nav-link active">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">Imaging &amp; Diagnostics &middot; X-ray &middot; MRI &middot; Ultrasound</div>
+  <h1>Imaging &amp; Diagnostics <span>&#8212; MSK Radiology for PTs</span></h1>
+  <p>Comprehensive imaging reference for PTs covering X-ray fundamentals, fracture description, chest radiography (ABCDEFGH), region-specific radiology, MRI interpretation, diagnostic ultrasound, Salter-Harris classification, and clinical decision rules for imaging referral.</p>
+  <div class="hero-badges">
+    <span class="badge gold">X-ray Fundamentals</span>
+    <span class="badge red">Fracture Description</span>
+    <span class="badge">Chest Radiography</span>
+    <span class="badge purple">Regional MSK Imaging</span>
+    <span class="badge green">MRI &amp; Ultrasound</span>
+    <span class="badge orange">Clinical Decision Rules</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('basics',this)">X-ray Basics</button>
+  <button onclick="showTab('chest',this)">Chest X-ray</button>
+  <button onclick="showTab('le',this)">LE Imaging</button>
+  <button onclick="showTab('ue',this)">UE &amp; Spine</button>
+  <button onclick="showTab('advanced',this)">MRI &amp; Ultrasound</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ===== X-RAY BASICS ===== -->
+<div class="tab-panel active" id="tab-basics">
+<div class="container">
+  <div class="section-title">X-ray Fundamentals &amp; Fracture Description</div>
+  <div class="section-sub">PTs must understand imaging to interpret reports, communicate with physicians, identify red flags, and make appropriate referrals. Understanding what images show directly influences clinical decision-making, treatment planning, and patient safety.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>How X-rays Work &#8212; Production &amp; Tissue Density</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Radiopaque = white = bone</span><span class="ma-tag">Radiolucent = dark = air</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">X-ray Production</div>
+        <p>X-rays are produced within a tube after a beam of electrons is heated. Emitted through a collimator and projected onto the object. <strong>Attenuation:</strong> Reduction in X-ray photons as beam passes through patient (scattering or photoelectric absorption). Remnant beam projected onto image receptor and processed.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Key Terms</div>
+        <p><strong>Radiopaque:</strong> Not easily penetrated &#8594; appears <strong>WHITE</strong> (bone, metal). <strong>Radiodense:</strong> Structures that block significant X-rays (metal implants = most radiodense). <strong>Radiolucent:</strong> Easily penetrated, low attenuation &#8594; appears <strong>DARK/BLACK</strong> (air, gas).</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Density Spectrum (White to Black)</div>
+        <p><strong>Metal</strong> (whitest) &gt; <strong>Bone</strong> &gt; <strong>Soft Tissue/Fluid</strong> &gt; <strong>Fat</strong> &gt; <strong>Air</strong> (blackest). Denser structure = more X-rays blocked = whiter on film.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Projections</div>
+        <p><strong>AP:</strong> Beam enters front, exits back. <strong>PA:</strong> Beam enters back, exits front (preferred for chest &#8212; heart closer to film, less magnification). <strong>Lateral:</strong> Side view. <strong>Oblique:</strong> Angled view. Most joints need minimum 2 views (AP + lateral).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Fracture Description &#8212; The 5-Point System</h4>
+      <div class="ma-tags"><span class="ma-tag red">WHERE &#8594; JOINT &#8594; TYPE &#8594; OPEN &#8594; DISPLACEMENT</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Element</th><th>What to Identify</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">1. WHERE</td><td>Which bone, location on bone, which side</td><td>"Left midshaft humerus"</td></tr>
+          <tr><td class="hi">2. INTRA/EXTRA-ARTICULAR</td><td>Does fracture line enter the joint?</td><td>Intra-articular = worse prognosis (joint surface disruption)</td></tr>
+          <tr><td class="hi">3. TYPE</td><td>Pattern of fracture line</td><td>Transverse, oblique, spiral, comminuted, avulsion, buckle, greenstick, stress</td></tr>
+          <tr><td class="hi">4. OPEN/CLOSED</td><td>Laceration associated?</td><td>Open = bone communicates with external environment &#8594; infection risk</td></tr>
+          <tr><td class="hi">5. DISPLACEMENT/ANGULATION</td><td>Alignment of fragments. <strong>Distal relative to proximal</strong></td><td>Varus/valgus, apex volar/dorsal, translation</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Fracture Types Defined</div>
+        <p><strong>Transverse:</strong> Horizontal, perpendicular to shaft. <strong>Oblique:</strong> Angled ~45&#176;. <strong>Spiral:</strong> Wraps around bone (rotation). <strong>Comminuted:</strong> &#8805;3 fragments. <strong>Avulsion:</strong> Chip pulled off by tendon/ligament. <strong>Buckle (Torus):</strong> Cortex indentation (children). <strong>Greenstick:</strong> One cortex breaks, other bends (children). <strong>Stress:</strong> Repetitive loading &#8212; may not be visible on X-ray initially (<strong>edema on MRI is the early sign</strong>).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Salter-Harris Classification &#8212; Growth Plate Fractures</h4>
+      <div class="ma-tags"><span class="ma-tag red">SALTR mnemonic</span><span class="ma-tag gold">Type II = 75% (most common)</span><span class="ma-tag purple">Type V = worst prognosis</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Type</th><th>Mnemonic</th><th>Description</th><th>Prognosis</th></tr></thead>
+        <tbody>
+          <tr><td class="ok">I</td><td><strong>S</strong>lip</td><td>Through growth plate only. Often not visible on X-ray</td><td class="ok">Good</td></tr>
+          <tr><td class="ok">II</td><td><strong>A</strong>bove</td><td>Through physis into metaphysis. <strong>Most common (~75%)</strong></td><td class="ok">Good</td></tr>
+          <tr><td class="warn">III</td><td><strong>L</strong>ower</td><td>Through physis into epiphysis (intra-articular)</td><td class="warn">May affect growth + joint</td></tr>
+          <tr><td class="bad">IV</td><td><strong>T</strong>hrough all</td><td>Metaphysis + physis + epiphysis</td><td class="bad">High risk growth arrest</td></tr>
+          <tr><td class="bad">V</td><td><strong>R</strong>ammed</td><td>Compression/crush of growth plate. May look normal on X-ray</td><td class="bad">Worst &#8212; growth arrest likely</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip green">
+        <div class="bl-label">Clinical Pearl</div>
+        <p><strong>Always X-ray the other side for comparison</strong> in pediatric patients. Growth plates can be mistaken for fractures and vice versa. Type V is often diagnosed retrospectively when growth arrest becomes apparent.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Clinical Decision Rules for Imaging Referral</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Ottawa Rules</span><span class="ma-tag red">Canadian C-Spine</span><span class="ma-tag purple">Compression Fx CPR</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Rule</th><th>When to Image</th><th>Key Criteria</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Ottawa Ankle</td><td>Ankle X-ray after trauma</td><td>Bony tenderness at posterior edge/tip of either malleolus (distal 6 cm), OR inability to WB immediately + 4 steps</td></tr>
+          <tr><td class="hi">Ottawa Foot</td><td>Foot X-ray after trauma</td><td>Bony tenderness at base of 5th MT or navicular, OR inability to WB</td></tr>
+          <tr><td class="hi">Ottawa Knee</td><td>Knee X-ray after trauma</td><td>Age &#8805;55, isolated patella tenderness, fibular head tenderness, can't flex to 90&#176;, can't WB 4 steps</td></tr>
+          <tr><td class="hi">Canadian C-Spine</td><td>C-spine imaging after trauma</td><td>High-risk (age &#8805;65, dangerous mechanism, paresthesias), can't actively rotate neck 45&#176; each way</td></tr>
+          <tr><td class="hi">Compression Fx CPR</td><td>T-spine imaging</td><td>Female + Age &gt;70 + Trauma + Corticosteroid use. &#190; = 100% specificity</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip purple">
+        <div class="bl-label">Rule of 2s for X-rays</div>
+        <p><strong>2 views</strong> (minimum AP + lateral). <strong>2 joints</strong> (above and below). <strong>2 times</strong> (compare to prior imaging). <strong>2 sides</strong> (compare contralateral in pediatrics).</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== CHEST X-RAY ===== -->
+<div class="tab-panel" id="tab-chest">
+<div class="container">
+  <div class="section-title">Chest Radiography &#8212; ABCDEFGH Approach</div>
+  <div class="section-sub">PTs in acute care, ICU, and SNF encounter chest X-rays frequently. The systematic ABCDEFGH approach ensures you don't miss critical findings. Ideal study: PA + lateral views.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Systematic Chest X-ray &#8212; ABCDEFGH</h4>
+      <div class="ma-tags"><span class="ma-tag gold">A-H systematic</span><span class="ma-tag red">C/T ratio &gt;0.5 = cardiomegaly</span><span class="ma-tag purple">Flat diaphragm = COPD</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Letter</th><th>Check</th><th>Normal</th><th>Abnormal</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">A &#8212; Airway</td><td>Trachea position</td><td>Midline</td><td><strong>Deviation TOWARD</strong> collapse (atelectasis) or <strong>AWAY from</strong> mass/tension pneumothorax</td></tr>
+          <tr><td class="hi">B &#8212; Bones</td><td>All visible bones</td><td>Intact cortices</td><td>Fractures (ribs, clavicle, spine), scoliosis, lytic/blastic lesions (metastases)</td></tr>
+          <tr><td class="hi">C &#8212; Cardiac</td><td>Heart size</td><td>C/T ratio &#8804;0.5</td><td><strong>&gt;0.5 = cardiomegaly.</strong> CABG/sternal wires, pacemaker leads</td></tr>
+          <tr><td class="hi">D &#8212; Diaphragm</td><td>Shape/position</td><td>Dome-shaped, R slightly higher</td><td><strong>Flat = COPD/hyperinflation.</strong> Elevated = phrenic nerve palsy</td></tr>
+          <tr><td class="hi">E &#8212; Effusions</td><td>Costophrenic angles</td><td>Sharp, pointed</td><td><strong>Blunted = pleural effusion.</strong> Bilateral = CHF. Unilateral = infection/malignancy</td></tr>
+          <tr><td class="hi">F &#8212; Fields</td><td>Lung parenchyma</td><td>Clear bilateral markings</td><td>Consolidation (pneumonia), ground-glass (COVID/ARDS), TB (bilateral upper lobes)</td></tr>
+          <tr><td class="hi">G &#8212; Gastric Bubble</td><td>Air under diaphragm</td><td>Small bubble under L diaphragm</td><td><strong>Free air NOT in stomach = perforated viscus = surgical emergency</strong></td></tr>
+          <tr><td class="hi">H &#8212; Hardware</td><td>Lines, tubes, devices</td><td>Properly positioned</td><td>Central lines, chest tubes, ET tubes, NG tubes, pacemaker leads, LVAD. Check positioning</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">PT-Relevant Findings</div>
+        <p><strong>Pneumonia:</strong> Bottom corners &#8212; pointed angles = no pneumonia; blunted/opacified = possible. <strong>COPD:</strong> Hyperinflated lungs + flat diaphragm. <strong>Cardiomegaly:</strong> Heart &gt;half thorax = CHF. <strong>Pneumothorax:</strong> Absent lung markings at periphery. All directly affect treatment intensity, positioning, and exercise prescription.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== LE IMAGING ===== -->
+<div class="tab-panel" id="tab-le">
+<div class="container">
+  <div class="section-title">Lower Extremity Imaging</div>
+  <div class="section-sub">Region-specific imaging knowledge helps PTs understand surgical reports, set realistic rehab timelines, and identify findings that change treatment.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Foot &amp; Ankle Imaging</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Jones Fx = cast 4 + boot 4 wks</span><span class="ma-tag red">Stress Fx = MRI first</span><span class="ma-tag purple">Growth plate &#8800; Jones</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Imaging</th><th>Management &amp; Timeline</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Metatarsal Fracture</td><td>Fracture line through shaft</td><td>Boot or hard-soled shoe, WBAT. Heals ~8 weeks</td></tr>
+          <tr><td class="warn">Jones Fracture (5th MT base)</td><td><strong>Perpendicular</strong> fracture at 5th MT base</td><td>Cast 4 wks &#8594; boot 4 wks. Poor blood supply &#8594; higher non-union risk</td></tr>
+          <tr><td class="hi">Growth Plate Irritation</td><td>Line <strong>parallel</strong> to shaft (vs perpendicular for Jones)</td><td>Conservative. Takes months to heal</td></tr>
+          <tr><td class="warn">Stress Fracture</td><td><strong>Often negative on initial X-ray.</strong> Edema on MRI = early sign</td><td>Modified WB. May need 6&#8211;8 weeks. Repeat imaging if suspicion high</td></tr>
+          <tr><td class="hi">Iselin Disease</td><td>Growth plate inflammation at 5th MT base</td><td>Pediatric apophysitis. Conservative</td></tr>
+          <tr><td class="warn">Lisfranc Injury</td><td>Widening between 1st&#8211;2nd MT bases. Fleck sign. <strong>Commonly missed</strong></td><td>Unstable = surgical fixation</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Key: Growth Plate vs Jones on 5th MT</div>
+        <p>Growth plate line runs <strong>parallel</strong> to shaft. Jones fracture runs <strong>perpendicular</strong>. Jones = poor blood supply + higher complications. Growth plate = self-limiting.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Knee Imaging &#8212; Chronic &amp; Traumatic</h4>
+      <div class="ma-tags"><span class="ma-tag red">5 causes of acute effusion</span><span class="ma-tag gold">Segond Fx = ACL</span><span class="ma-tag purple">Patella Fx: vertical = WBAT</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Only 5 Causes of Acute Traumatic Knee Effusion (within 24 hrs)</div>
+        <p><strong>(1) ACL/PCL tear. (2) Meniscus tear. (3) Fracture. (4) Patella subluxation/dislocation. (5) Bone bruise.</strong> Massive rapid effusion ("grapefruit") = ACL until proven otherwise.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Imaging &amp; Exam</th><th>Management</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Osgood-Schlatter</td><td>Fragmentation at tibial tuberosity on lateral view</td><td>Aggressive hamstring stretches. &#177; patella strap. Be realistic about course</td></tr>
+          <tr><td class="hi">Sinding-Larsen-Johansson</td><td>Irregularity at inferior pole of patella</td><td>Similar to OSD. Slightly younger patients, less complicated course</td></tr>
+          <tr><td class="hi">PFS</td><td>Usually normal X-ray. Sunrise may show lateral tilt</td><td>Hip + glute strengthening. &#177; foot orthotic. <strong>4&#8211;6 weeks minimum.</strong> Dedicated PT essential</td></tr>
+          <tr><td class="warn">OCD</td><td>Lucency on tunnel view. MRI confirms articular surface</td><td><strong>Effusion without trauma = consider OCD.</strong> Restrict sports 3 months. PT after 6 wks pain-free</td></tr>
+          <tr><td class="hi">Knee OA</td><td>Joint space narrowing, osteophytes, subchondral sclerosis</td><td>Severity on X-ray does NOT always correlate with symptoms</td></tr>
+          <tr><td class="warn">Patella Dislocation</td><td>Always get sunrise view. MRI bone bruise: medial patella + lateral femoral condyle</td><td>Brace &#8594; early PT (quad isometrics, SLR) &#8594; RTP 4&#8211;6 wks. MOI: noncontact, LE IR, knee valgus</td></tr>
+          <tr><td class="bad">Segond Fracture</td><td>Small avulsion off lateral tibial plateau</td><td><strong>Highly associated with ACL tear</strong> &#8594; get MRI</td></tr>
+          <tr><td class="warn">Proximal Tibia Fx</td><td><strong>May not show on X-ray if non-displaced &#8594; consider MRI</strong></td><td>NWB &#8594; WBAT over 4 wks. PT after immobilization. RTP 8&#8211;12 wks</td></tr>
+          <tr><td class="hi">Patella Fracture</td><td>Vertical vs horizontal. DDx bipartite patella in kids</td><td><strong>Vertical = WBAT, RTP 6 wks. Horizontal = NWB, RTP 10&#8211;12 wks</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip">
+        <div class="bl-label">Common Sense Treatment Plan (Sports Medicine Approach)</div>
+        <p>This approach applies to most chronic knee conditions: (1) Decrease inciting activities &#8212; "if it hurts, don't do it." (2) Encourage appropriate dosing of anti-inflammatories and pain meds (dosing based on weight). (3) ICE. (4) If indicated, <strong>least restrictive orthosis</strong> (more is not better). (5) PT and gradual progression back to full activity. (6) Participation with pain-free ambulation and minimal pain with activity &#8212; typically less than pain level of 3.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Chronic Knee Conditions &#8212; Often Missed on Imaging</div>
+        <p><strong>Patella Tendinopathy:</strong> More common in teenagers+ (growth plate closed). Pain with running and jumping. NOT associated with traumatic event (tendon tear is rare in adolescents). Palpate ENTIRE patella tendon, not just central. Differentiate from fat pad impingement. If &gt;3 months of symptoms, need different approach: eccentric training, Graston, dry needling, US-guided needle tenotomy for refractory cases.</p>
+        <p><strong>ITB Friction Syndrome:</strong> Lateral knee pain with running or dance. Gradual onset, can't pinpoint location. Pain over femoral condyle, crossing joint, or Gerdy's tubercle. Figure-4 position may help pinpoint. May have <strong>false (+) McMurray's</strong> &#8212; if McMurray's is positive, make sure the story makes sense. In younger patients, there really isn't much pathology laterally for chronic pain. Snapping ITB = popping with no pain.</p>
+        <p><strong>Medial Plica Syndrome:</strong> Thin vascularized intraarticular synovial fold over medial knee. Present in everyone but more prominent in some. Dynamically controlled by quads (more common with poor quad tone). Dull ache increasing with activity, proximal to joint line. Stairs, squatting, bending give significant pain. May report "locking." Exam: patient relaxed, palpate space between medial condyle and patella &#8212; ribbon-like structure rolled against condyle. <strong>Key: pain is PROXIMAL to joint line</strong> (vs meniscus which is AT joint line).</p>
+        <p><strong>Pes Anserine Bursitis:</strong> Attaches close to tibial tuberosity &#8212; distinguish on exam. Consider resisted SLR in external rotation to elicit pain from sartorius.</p>
+        <p><strong>Fat Pad Impingement:</strong> Typically from hyperextension injury (gymnasts, skateboarding). <strong>Localized swelling BELOW patella with NO effusion.</strong> Palpation medially and laterally to patella + hyperextension helps diagnosis.</p>
+        <p><strong>Multipartite Patella:</strong> Can predispose to avulsion injury. Patient may be sprinting and feel a pop. Treat with rest, WBAT, should improve in 4 weeks. <strong>Tip: You can always X-ray the other side for comparison.</strong></p>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">Traumatic Knee History &#8212; Don't Rush to Touch the Knee</div>
+        <p>History is EXTREMELY important in acute knee injury. <strong>Ask these questions BEFORE examining:</strong> (1) Contact vs noncontact mechanism? (2) Did you hear or feel a pop? (3) What were the exact circumstances? (4) Did you feel your kneecap move out of place? (5) Did it swell immediately (like a grapefruit)? <strong>Tibial tuberosity fracture:</strong> Running with hard stop or jump from height, acute onset, pop felt, pain directly at tibial tuberosity, swelling, fear of knee extension against resistance. Management: knee immobilizer or locked hinged brace, crutches &#8594; WBAT over 4 weeks, PT after immobilization. <strong>Tip:</strong> Swelling pattern can be more diffuse than OSD.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Evidence: Patella Dislocation &#8212; Conservative Often Wins</div>
+        <p><strong>Palmu et al (JBJS 2008):</strong> 74 acute patella dislocations in patients &lt;16 yo. Nonoperative: 75% good/excellent subjective outcome. Operative: 66%. Recurrent dislocation: 71% nonop vs 67% op. <strong>Nikku et al (Acta Orthop 2005):</strong> 127 primary dislocations (mean age 20), 5+ year follow-up. Nonoperative: 81% good/excellent. Operative: 67%. Recurrent dislocation: 39% nonop vs 31% op. <strong>Bottom line: Operative treatment of primary dislocation does NOT improve medium-term outcome.</strong> Conservative management with early PT is the standard approach.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">MRI Indications for Knee</div>
+        <p>History/exam not consistent with diagnosis. Fracture or osteochondral fragment on X-ray. Chronic traumatic patella dislocation. Failure of conservative treatment. Mechanical symptoms. Pre-surgical planning.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Knee MRI Anatomy</div>
+        <p><strong>Sagittal:</strong> ACL (taut dark band), PCL, menisci (dark triangles &#8212; white line through = tear). <strong>Coronal:</strong> MCL, LCL, meniscal body. <strong>Axial:</strong> Patellofemoral joint, effusion. <strong>Bone bruise patterns:</strong> Medial patella + lateral femoral condyle = patella dislocation. Posterior tibia + central femur = pivot shift (ACL mechanism). Effusion = bright on T2.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Tips from Sports Medicine</div>
+        <p><strong>Meniscus:</strong> "Modified" McMurray's most accurate. Don't chase the click &#8212; it's rare to elicit one consistent with meniscal tear. MCL, LCL, ITB, fat pad all can have joint line tenderness. <strong>ACL:</strong> Lachman done properly is most accurate. External rotation of hip helps patient relax. Support knee with towel roll. If patient contracting muscles = not a valid test.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hip &amp; Pelvis Imaging</h4>
+      <div class="ma-tags"><span class="ma-tag gold">FAI = 20% of population</span><span class="ma-tag red">SCFE = frog-leg lateral essential</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Imaging</th><th>Clinical Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">FAI</td><td>Cam (bump on head-neck junction) or pincer (over-coverage) on AP pelvis</td><td>~20% of general population. Only ~25% with FAI have pain. "C-sign." Anterior groin pain with hip flexion. MRI for labral assessment</td></tr>
+          <tr><td class="bad">SCFE</td><td><strong>Frog-leg lateral essential</strong> &#8212; AP may look normal. Ice cream falling off cone. Klein's line doesn't intersect head</td><td>Adolescents 11&#8211;14, overweight. <strong>Surgical emergency &#8212; fixation ASAP to prevent AVN</strong></td></tr>
+          <tr><td class="hi">Hip OA</td><td>Superior joint space narrowing, osteophytes, subchondral sclerosis/cysts</td><td>WB AP pelvis for comparison. Severity &#8800; symptoms</td></tr>
+          <tr><td class="hi">AVN</td><td>Crescent sign on X-ray. MRI much more sensitive early</td><td>Risk: steroids, alcohol, sickle cell, trauma</td></tr>
+          <tr><td class="hi">Snapping Hip</td><td>Dynamic US can confirm. X-ray usually normal</td><td>Internal (iliopsoas over anterior hip) vs external (ITB over GT)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== UE & SPINE IMAGING ===== -->
+<div class="tab-panel" id="tab-ue">
+<div class="container">
+  <div class="section-title">Upper Extremity &amp; Spine Imaging</div>
+  <div class="section-sub">Shoulder and elbow imaging is essential for post-surgical and trauma patients. Spine imaging helps PTs understand fracture stability, spondylolysis, and disc pathology in the context of treatment planning.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Shoulder Imaging</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Rockwood = AC joint types I-VI</span><span class="ma-tag red">Calcific tendinitis = dense white</span><span class="ma-tag purple">MR arthrogram = labral gold standard</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Standard Views</div>
+        <p><strong>AP:</strong> GH joint space, AC joint, tuberosities, acromion. <strong>Axillary/Y-view:</strong> Dislocation direction. <strong>MRI:</strong> RTC tears (supraspinatus most common), labral tears (SLAP, Bankart), biceps. <strong>MR Arthrogram:</strong> Dye injected &#8212; best for labral tears.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Imaging</th><th>PT Relevance</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">AC Separation</td><td>Rockwood I&#8211;VI. Widened AC space, elevated clavicle</td><td>I&#8211;II = conservative (sling 1&#8211;2 wks &#8594; PT). III = controversial. IV&#8211;VI = surgical</td></tr>
+          <tr><td class="hi">Calcific Tendinitis</td><td>Dense white calcium deposit in RTC on X-ray</td><td>Very painful acutely (resorptive phase). US-guided aspiration/needling. PT for ROM after acute phase</td></tr>
+          <tr><td class="hi">RTC Tear</td><td>MRI: discontinuity of tendon (bright T2 signal in normally dark tendon)</td><td>Partial may heal conservatively. Full-thickness &#8212; surgery depends on size, activity, age</td></tr>
+          <tr><td class="hi">Labral Tear</td><td>MR arthrogram = gold standard</td><td>Bankart = anterior-inferior (dislocation). SLAP = superior. Repair vs debridement = different rehab</td></tr>
+          <tr><td class="hi">GH Dislocation</td><td>AP shows head position. Axillary confirms direction</td><td>Hill-Sachs (posterolateral humeral head compression) + Bankart (glenoid rim fracture)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Elbow Imaging</h4>
+      <div class="ma-tags"><span class="ma-tag red">Fat pad sign = occult fracture</span><span class="ma-tag gold">Monteggia = ulna Fx + radial head dislocation</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Fat Pad Sign &#8212; Critical for PTs</div>
+        <p>On lateral elbow X-ray, displaced fat pads (anterior "sail sign" or posterior) indicate intra-articular effusion from an occult fracture. <strong>Posterior fat pad is ALWAYS abnormal</strong> &#8212; treat as fracture even if no line is seen. Immobilize and follow up.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Imaging</th><th>Management</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Radial Head Fx</td><td>May be subtle. Fat pad sign may be only clue. Mason I&#8211;IV</td><td>Type I: sling, early ROM. II: possible ORIF. III (comminuted): excision/replacement</td></tr>
+          <tr><td class="warn">Monteggia Fx</td><td><strong>Proximal ulna Fx + radial head dislocation.</strong> Always check both</td><td>Surgical. If you see ulna Fx &#8594; ALWAYS check radial head (and vice versa)</td></tr>
+          <tr><td class="hi">Nursemaid's Elbow</td><td><strong>X-ray typically normal.</strong> Clinical diagnosis based on mechanism (traction on extended pronated arm in young child)</td><td>Reduction maneuver (supination + flexion or hyperpronation). No X-ray needed if classic presentation. If reduction doesn't work, consider occult fracture and get films</td></tr>
+          <tr><td class="hi">Supracondylar Fx (Pediatric)</td><td>Most common elbow fracture in children. Posterior fat pad sign. May see anterior humeral line disruption</td><td>Flexion-type (rare) vs extension-type (common &#8212; FOOSH). Check neurovascular status (anterior interosseous nerve &#8212; can't make OK sign). Volkmann's contracture risk with missed compartment syndrome</td></tr>
+          <tr><td class="hi">Lateral Epicondylitis</td><td>Usually clinical diagnosis. X-ray typically normal. MRI/US may show common extensor tendon degeneration (tendinosis, not tendinitis)</td><td>Conservative first: eccentric exercise, counterforce brace. &gt;3 months refractory: US-guided PRP injection or needle tenotomy. <strong>Graston and dry needling effective adjuncts</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Spine Imaging</h4>
+      <div class="ma-tags"><span class="ma-tag red">Scotty dog = spondylolysis</span><span class="ma-tag gold">Burst Fx = posterior wall</span><span class="ma-tag purple">20-30% asymptomatic = abnormal MRI</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Imaging</th><th>PT Relevance</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Spondylolysis</td><td><strong>"Scotty dog" with collar</strong> on oblique X-ray. MRI shows pars edema early</td><td>Young athletes. Edema only = acute stress reaction. Visible defect = chronic</td></tr>
+          <tr><td class="hi">Spondylolisthesis</td><td>Lateral X-ray: anterior slippage. Graded I&#8211;V by % slip</td><td>I&#8211;II = conservative. III+ = surgical referral. Flexion/extension views = instability</td></tr>
+          <tr><td class="warn">Compression Fx</td><td>Anterior wedging, &#8595; vertebral height. Most common T9&#8211;T11, TL junction</td><td>Dowager's hump = multiple compression Fx. Osteoporotic vs traumatic</td></tr>
+          <tr><td class="bad">Burst Fx</td><td>Vertebral body Fx with <strong>posterior wall involvement</strong> &#8594; fragments into canal</td><td>More neurologic deficits than wedge Fx. Careful neuro screening</td></tr>
+          <tr><td class="hi">Disc Herniation</td><td><strong>NOT visible on X-ray.</strong> MRI required. T2 shows disc compressing nerve/cord</td><td><strong>20&#8211;30% of asymptomatic people have abnormal MRI</strong> &#8212; always correlate with clinical presentation</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip orange">
+        <div class="bl-label">Spine Imaging Additional Findings</div>
+        <p><strong>Flexion/Extension views:</strong> Used to assess spinal instability &#8212; dynamic views show abnormal translation between segments. Essential for spondylolisthesis assessment and post-surgical evaluation. <strong>Open-mouth (odontoid) view:</strong> Specifically to view the dens &#8212; used to assess for odontoid fractures, Jefferson fracture (lateral mass overhang), and atlantoaxial instability (RA, Down syndrome). <strong>Oblique views:</strong> Show neural foramina and the "Scotty dog" (pars articularis). <strong>CT vs MRI for spine:</strong> CT is better for bony detail (fracture lines, facet morphology, 3D reconstruction for surgical planning). MRI is better for soft tissue (disc, cord, nerve roots, ligaments, edema). <strong>Red flags requiring immediate spine imaging:</strong> Cauda equina symptoms, progressive neurological deficit, suspected spinal cord compression, trauma with neurological signs.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Critical Imaging Pearl</div>
+        <p><strong>Never treat the image.</strong> 20&#8211;30% of asymptomatic people have abnormal spinal imaging findings (disc bulges, herniations, degenerative changes). A disc bulge in someone with no radicular signs, negative neural tension tests, and full pain-free ROM is an incidental finding &#8212; not a diagnosis. Telling a pain-free patient they have a "herniated disc" risks unnecessary fear, catastrophizing, decreased activity, and chronic pain behavior. <strong>Always correlate imaging with clinical presentation.</strong> The image shows anatomy, not pain. This is central to the biopsychosocial model and PNE.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== MRI & US ===== -->
+<div class="tab-panel" id="tab-advanced">
+<div class="container">
+  <div class="section-title">MRI &amp; Diagnostic Ultrasound</div>
+  <div class="section-sub">MRI is the gold standard for soft tissue evaluation. Diagnostic ultrasound is increasingly used for real-time, dynamic assessment. PTs should understand what these modalities show, their advantages, limitations, and how findings change treatment.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>MRI Fundamentals &#8212; T1 vs T2</h4>
+      <div class="ma-tags"><span class="ma-tag gold">T1 = anatomy (fat bright)</span><span class="ma-tag purple">T2 = pathology (fluid bright)</span><span class="ma-tag red">STIR = bone marrow edema</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip gold">
+        <div class="bl-label">T1 vs T2 &#8212; The Key Distinction</div>
+        <p><strong>T1 (aNaTomy):</strong> Fat = bright/white. Fluid = dark. Best for normal structures, bone marrow, fat planes. <strong>T2 (fLUid/paTHology):</strong> Fluid = bright/white. Edema, inflammation, tears, effusions all "light up." <strong>STIR:</strong> Fat-suppressed T2 &#8212; edema stands out maximally. Best for stress fractures and bone bruises.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">MRI Planes</div>
+        <p><strong>Sagittal:</strong> Side view. Best for ACL, PCL, spine disc herniations. <strong>Coronal:</strong> Front view. Best for MCL, LCL, meniscal body, hip labrum. <strong>Axial:</strong> Top-down cross-section. Best for patellofemoral joint, spinal canal stenosis.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">What MRI Shows That X-ray Cannot</div>
+        <p>Soft tissue injuries (ligament/tendon/meniscal tears), bone marrow edema (stress Fx before cortical break), disc herniations, labral tears, cartilage defects, bone bruises, tumors, infections, nerve root compression.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Diagnostic Ultrasound for PTs</h4>
+      <div class="ma-tags"><span class="ma-tag green">Real-time + dynamic</span><span class="ma-tag gold">No radiation</span><span class="ma-tag">Portable</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip green">
+        <div class="bl-label">Probe Selection</div>
+        <p><strong>Linear (higher freq):</strong> Superficial &#8212; knee, shoulder, Achilles. <strong>Curvilinear (lower freq):</strong> Deeper &#8212; hip, gluteal. <strong>Planes:</strong> Transverse = short axis. Sagittal = long axis.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Tissue</th><th>Appearance</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Muscle</td><td>Hypoechoic (dark) + hyperechoic strands</td><td>Dark fascicles with bright perimysium lines</td></tr>
+          <tr><td class="hi">Tendon</td><td>Hyperechoic (bright) fibrillar</td><td>Bright parallel lines (long axis), bright dots (short axis). Tendinopathy = loss of pattern, hypoechoic areas</td></tr>
+          <tr><td class="hi">Nerve</td><td>"Honeycomb"</td><td>Hypoechoic spots in hyperechoic background</td></tr>
+          <tr><td class="hi">Fluid</td><td>Anechoic (black)</td><td>Completely dark. Responds to pressure (dynamic). Baker's cyst, effusion</td></tr>
+          <tr><td class="hi">Bone</td><td>Hyperechoic (very bright)</td><td>Bright surface + acoustic shadow deep (nothing visible below bone)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Imaging Modality Comparison</h4>
+      <div class="ma-tags"><span class="ma-tag red">X-ray = bone first</span><span class="ma-tag gold">MRI = soft tissue gold standard</span><span class="ma-tag green">US = dynamic/real-time</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Modality</th><th>Best For</th><th>Limitations</th><th>Radiation?</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">X-ray</td><td>Fractures, dislocations, OA, alignment, hardware</td><td>Can't see soft tissue, early stress Fx, disc herniations</td><td class="bad">Yes</td></tr>
+          <tr><td class="hi">MRI</td><td>Soft tissue, bone marrow edema, tumors, nerve compression</td><td>Expensive, slow, claustrophobia, metal contraindication, over-diagnosis</td><td class="ok">No</td></tr>
+          <tr><td class="hi">CT</td><td>Complex fractures (3D), surgical planning, cortical bone detail</td><td>High radiation, poor soft tissue vs MRI</td><td class="bad">Yes (higher)</td></tr>
+          <tr><td class="hi">Ultrasound</td><td>Superficial soft tissue, dynamic assessment, guided procedures</td><td>Operator-dependent, limited by depth, can't see through bone</td><td class="ok">No</td></tr>
+          <tr><td class="hi">Bone Scan</td><td>Stress Fx, metastases, infection, AVN</td><td>Non-specific ("hot spots"), radiation</td><td class="bad">Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== REVIEW ===== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; Imaging &amp; Diagnostics</div>
+  <div class="section-sub">Tap any card to flip. High-yield imaging pearls for clinical practice.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What does radiopaque vs radiolucent mean, and what is the density spectrum?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Radiopaque</strong> = blocks X-rays = <strong>WHITE</strong> (bone, metal). <strong>Radiolucent</strong> = lets X-rays through = <strong>DARK/BLACK</strong> (air). Spectrum white to black: <strong>Metal > Bone > Soft Tissue/Fluid > Fat > Air.</strong> Denser = more attenuation = whiter. Fractures show as disruptions in the white cortical line. Pneumothorax = absent lung markings (too much black where there should be lung).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the 5-point fracture description system?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>1. WHERE:</strong> Bone, location, side. <strong>2. INTRA/EXTRA-ARTICULAR:</strong> Does it enter the joint? Intra = worse. <strong>3. TYPE:</strong> Transverse, oblique, spiral, comminuted, avulsion, buckle, greenstick, stress. <strong>4. OPEN/CLOSED:</strong> Skin laceration? Open = infection risk. <strong>5. DISPLACEMENT/ANGULATION:</strong> Distal relative to proximal. This system ensures complete, consistent communication with physicians.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the ABCDEFGH approach to chest X-ray?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>A</strong>irway (trachea midline? deviation = mass or pneumothorax). <strong>B</strong>ones (fractures, scoliosis, metastases). <strong>C</strong>ardiac (ratio &#8804;0.5; >0.5 = cardiomegaly). <strong>D</strong>iaphragm (dome = normal; flat = COPD). <strong>E</strong>ffusions (sharp costophrenic angles = normal; blunted = effusion). <strong>F</strong>ields (consolidation, ground-glass, TB). <strong>G</strong>astric bubble (free air not in stomach = perforated viscus = emergency). <strong>H</strong>ardware (check all device positions).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the only 5 causes of acute traumatic knee effusion?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">If the knee swells within 24 hours of trauma: <strong>(1) ACL/PCL. (2) Meniscus. (3) Fracture. (4) Patella subluxation/dislocation. (5) Bone bruise.</strong> Nothing else causes immediate traumatic effusion. Massive rapid swelling = ACL until proven otherwise. Segond fracture (lateral tibial avulsion) = highly associated with ACL tear. Bone bruise pattern on MRI: medial patella + lateral femoral condyle = patella dislocation. Posterior tibia + central femur = ACL pivot shift mechanism.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How do T1 and T2 MRI differ and when does each matter?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>T1 = aNaTomy:</strong> Fat bright, fluid dark. See normal structures. <strong>T2 = fLUid/paTHology:</strong> Fluid bright. Edema, tears, effusions all light up &#8212; this is where you see pathology. <strong>STIR:</strong> Fat-suppressed T2, edema stands out maximally. Best for stress fractures and bone bruises. Bright signal in normally dark meniscus on T2 = tear. Bright bone marrow on STIR = bone bruise/stress reaction.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the Salter-Harris classification and why is Type V dangerous?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>SALTR:</strong> <strong>S</strong>lip (I: physis only). <strong>A</strong>bove (II: metaphysis, ~75% most common). <strong>L</strong>ower (III: epiphysis, intra-articular). <strong>T</strong>hrough all (IV: all three layers). <strong>R</strong>ammed (V: crush). Type V = worst prognosis because growth plate cells are destroyed. X-ray may look NORMAL initially. Diagnosis often retrospective when growth arrest appears. Always X-ray contralateral side in pediatric patients for comparison.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Why should PTs never "treat the image" in spine patients?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>20&#8211;30% of asymptomatic people have abnormal spinal imaging.</strong> Telling a pain-free patient about a "herniated disc" risks: unnecessary fear/catastrophizing, decreased activity, unnecessary surgical consultation, chronic pain behavior. Always correlate imaging with clinical presentation. A disc bulge + no radicular signs + negative neural tests + full ROM = incidental finding, not diagnosis. The image shows anatomy, not pain. This is central to biopsychosocial care and PNE.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the "common sense treatment plan" for chronic knee conditions, and when does it change?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">The sports medicine "common sense" approach: (1) Decrease inciting activities &#8212; "if it hurts, don't do it." (2) Appropriate dosing of anti-inflammatories/pain meds (weight-based). (3) ICE. (4) Least restrictive orthosis if indicated (more is NOT better). (5) PT and gradual progression back to full activity. (6) Participate with pain-free ambulation and minimal pain (typically &lt;3/10). <strong>When it changes:</strong> Patella tendinopathy &gt;3 months of symptoms = need different approach (eccentric training, Graston, dry needling, US-guided tenotomy). OCD = restrict sports 3 months, PT after 6 weeks pain-free. PFS = be VERY clear patient needs dedicated PT, 4&#8211;6 weeks minimum for meaningful improvement. Hip &amp; gluteal strengthening is KEY for PFS, not just quad work.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How do you differentiate medial plica syndrome from meniscus tear on exam?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Medial plica:</strong> Pain is PROXIMAL to joint line (between medial condyle and patella). Dull ache increasing with activity, worse with stairs/squatting/bending. May report "locking." Palpate with patient relaxed &#8212; ribbon-like structure rolled against femoral condyle. More common with poor quad tone. <strong>Meniscus tear:</strong> Pain is AT the joint line. McMurray's may be positive (but it's not very specific &#8212; MCL, LCL, ITB, fat pad can all have joint line tenderness). <strong>Don't chase the click</strong> &#8212; it's rare to elicit one consistent with meniscus. Also distinguish from: pes anserine (pain near tibial tuberosity, resisted SLR in ER reproduces), fat pad impingement (hyperextension injury, swelling BELOW patella with NO effusion), and ITB syndrome (lateral pain, gradual onset, may have false (+) McMurray's).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What evidence supports conservative vs operative management for primary patella dislocation?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Two landmark studies show <strong>operative treatment does NOT improve outcomes:</strong> Palmu (JBJS 2008): 74 dislocations in patients &lt;16 yo. Nonoperative: 75% good/excellent. Operative: 66%. Recurrent dislocation: 71% nonop vs 67% op &#8212; essentially equal. Nikku (Acta Orthop 2005): 127 primary dislocations, 5+ year follow-up. Nonoperative: 81% good/excellent. Operative: 67%. <strong>Conservative management with early PT is the standard.</strong> Protocol: patella stabilizing brace &#8594; early PT (quad isometrics, SLR) &#8594; progress out of brace &#8594; walking &#8594; running &#8594; sport-specific. RTP typically 4&#8211;6 weeks. Always get sunrise X-ray. MRI only if: exam inconsistent with dislocation, fracture/osteochondral fragment on film, chronic or recurrent, failure of conservative, mechanical symptoms, or pre-surgical planning. Most common mechanism: noncontact, LE internal rotation, knee valgus on planted foot.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What does tendinopathy look like on ultrasound vs normal tendon?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Normal tendon on US:</strong> Tightly packed hyperechoic (bright) lines in long axis representing fibrils. In short axis (transverse): multiple bright dots in a tightly packed bundle. Overall appearance is organized, bright, and uniform. <strong>Tendinopathy findings:</strong> (1) Loss of normal fibrillar pattern &#8212; organized bright lines become disrupted. (2) Hypoechoic (dark) areas within the normally bright tendon = degeneration. (3) Tendon thickening (compare to contralateral). (4) Neovascularization on Doppler = increased blood flow in normally avascular tendon. (5) Calcifications = hyperechoic foci with acoustic shadowing. <strong>Clinical pearl:</strong> "Tendinitis" is being replaced by "tendinosis/tendinopathy" because histology shows chronic tendon pain involves degeneration (collagen disorganization, ground substance changes), NOT active inflammation. This changes treatment &#8212; anti-inflammatories may be less useful than eccentric loading, which stimulates collagen remodeling.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What does the posterior fat pad sign on a lateral elbow X-ray mean?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">A <strong>posterior fat pad sign is ALWAYS abnormal.</strong> On lateral elbow X-ray, the posterior fat pad is normally hidden within the olecranon fossa. When it becomes visible (displaced by intra-articular effusion), it indicates an occult fracture &#8212; even if no fracture line is seen on the X-ray. The anterior fat pad may show a "sail sign" (elevated and triangular). If you see a posterior fat pad sign: <strong>treat as fracture, immobilize, and arrange follow-up imaging.</strong> This is one of the most commonly tested imaging concepts for PTs.</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.chip-nav button').forEach(function(b){b.classList.remove('active');});
+  var panel = document.getElementById('tab-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

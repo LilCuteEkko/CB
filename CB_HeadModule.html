@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Head Module — Clinicians Blueprint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="themes.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="bg-layer"><div class="bg-grid"></div><div class="bg-g1"></div><div class="bg-g2"></div></div>
+
+<!-- NAV -->
+<div style="position:fixed;top:0;left:0;right:0;z-index:200;height:52px;display:flex;align-items:center;padding:0 1.5rem;background:var(--nav-bg);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);">
+  <a href="index.html" style="display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--font-m);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='rgba(93,207,207,0.9)'" onmouseout="this.style.color='var(--text3)'">← Home</a>
+  <div style="flex:1;text-align:center;font-family:var(--font-d);font-size:0.95rem;font-weight:600;color:var(--text2);">Clinicians Blueprint</div>
+  <div style="display:flex;gap:0.375rem;flex-wrap:wrap;">
+    <a href="CB_KneeModule_v2.html">Knee</a>
+  <a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+    <a href="CB_HipModule_v2.html">Hip</a>
+    <a href="CB_NeckModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Neck</a>
+    <a href="CB_BackModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Back</a>
+    <a href="CB_ShoulderModule.html" style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border);transition:all 0.2s;" onmouseover="this.style.color='var(--teal-light)';this.style.borderColor='rgba(56,178,178,0.3)'" onmouseout="this.style.color='var(--text3)';this.style.borderColor='var(--border)'">Shoulder</a>
+  </div>
+</div>
+<div style="height:52px;"></div>
+
+<div class="shell">
+<div class="mod-header">
+  <button class="mod-back" onclick="window.history.back()">← Library</button>
+  <div class="mod-center">
+    <div class="mod-eyebrow">Module 7 · Head & Face</div>
+    <h1 class="mod-title">Head, Skull & <em>Cranial Anatomy</em></h1>
+  </div>
+  <span class="mod-badge">Free Module</span>
+</div>
+
+<div class="tab-row">
+  <button class="tab-pill active" onclick="switchTab('skull',this)">🦴 Skull</button>
+  <button class="tab-pill" onclick="switchTab('foramina',this)">🔵 Foramina</button>
+  <button class="tab-pill" onclick="switchTab('face',this)">😮 Face & Muscles</button>
+  <button class="tab-pill" onclick="switchTab('cranialnerves',this)">⚡ Cranial Nerves</button>
+  <button class="tab-pill" onclick="switchTab('eyes',this)">👁️ Eyes & Orbits</button>
+  <button class="tab-pill" onclick="switchTab('ear',this)">👂 Ear</button>
+  <button class="tab-pill" onclick="switchTab('oral',this)">🗣️ Oral & Nose</button>
+  <button class="tab-pill" onclick="switchTab('brain',this)">🧠 Brain & Meninges</button>
+  <button class="tab-pill" onclick="switchTab('tmj',this)">🦷 TMJ</button>
+  <button class="tab-pill" onclick="switchTab('review',this)">📝 Review</button>
+</div>
+
+<!-- ══ SKULL ══ -->
+<div id="tab-skull" class="tab-content active">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Neurocranium</div><div class="card-header-sub">8 Bones — Calvaria + Cranial Base</div></div>
+        <div class="card-body" id="neurocranium-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Facial Skeleton</div><div class="card-header-sub">14 Bones — Mouth, Nose, Orbits</div></div>
+        <div class="card-body" id="facial-content"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Cranial Sutures & Junctions</div></div>
+        <div class="card-body" id="sutures-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">External Skull Landmarks</div><div class="card-header-sub">Temporal & Occipital Bone</div></div>
+        <div class="card-body" id="landmarks-content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FORAMINA ══ -->
+<div id="tab-foramina" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Cranial Foramina — Superior View</div><div class="card-header-sub">By Fossa · Foramen → CN/Structure</div></div>
+        <div class="card-body" id="foramina-table"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Inferior View Foramina</div><div class="card-header-sub">External Skull Base</div></div>
+        <div class="card-body" id="foramina-inferior"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Quick Matching Key</div><div class="card-header-sub">CN → Foramen Memory Aid</div></div>
+        <div class="card-body" id="foramina-key"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FACE & MUSCLES ══ -->
+<div id="tab-face" class="tab-content">
+  <div class="chip-nav" id="face-nav">
+    <button class="chip-btn active" onclick="selectFace('expression',this)">Facial Expression</button>
+    <button class="chip-btn" onclick="selectFace('bellspalsy',this)">Bell's Palsy</button>
+    <button class="chip-btn" onclick="selectFace('vasculature',this)">Vasculature</button>
+  </div>
+  <div id="face-content"></div>
+</div>
+
+<!-- ══ CRANIAL NERVES ══ -->
+<div id="tab-cranialnerves" class="tab-content">
+  <div class="chip-nav" id="cn-nav">
+    <button class="chip-btn active" onclick="selectCN('cn5',this)">CN V — Trigeminal</button>
+    <button class="chip-btn" onclick="selectCN('cn7',this)">CN VII — Facial</button>
+    <button class="chip-btn" onclick="selectCN('cn9',this)">CN IX — Glossopharyngeal</button>
+    <button class="chip-btn" onclick="selectCN('cn12',this)">CN XII — Hypoglossal</button>
+    <button class="chip-btn" onclick="selectCN('tests',this)">Clinical Tests</button>
+  </div>
+  <div id="cn-content"></div>
+</div>
+
+<!-- ══ EYES & ORBITS ══ -->
+<div id="tab-eyes" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Orbit</div><div class="card-header-sub">7 Bones · 3 Foramina</div></div>
+        <div class="card-body" id="orbit-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Eyeball Layers</div><div class="card-header-sub">Outer · Middle · Inner</div></div>
+        <div class="card-body" id="eyeball-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Light Pathway</div></div>
+        <div class="card-body">
+          <div class="light-path" id="light-path"></div>
+          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-top:0.5rem;" id="lens-notes"></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Extraocular Muscles</div><div class="card-header-sub">CN III · IV · VI</div></div>
+        <div class="card-body" id="eom-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Lacrimal Apparatus</div></div>
+        <div class="card-body" id="lacrimal-content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EAR ══ -->
+<div id="tab-ear" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Ear Anatomy</div><div class="card-header-sub">External · Middle · Inner</div></div>
+        <div class="card-body" id="ear-anatomy"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Weber's & Rinne's Tests</div><div class="card-header-sub">Conduction vs Sensorineural Hearing Loss</div></div>
+        <div class="card-body" id="ear-tests"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">CN 8 Clinical Pearls</div></div>
+        <div class="card-body">
+          <div class="bullet"><span class="dot">•</span>CN 8 (vestibulocochlear) has two divisions: <strong style="color:var(--text)">Cochlear</strong> (hearing) and <strong style="color:var(--text)">Vestibular</strong> (balance)</div>
+          <div class="bullet"><span class="dot">•</span>Sensorineural hearing loss from CN 8 damage = acoustic neuroma (vestibular schwannoma) is most common</div>
+          <div class="bullet"><span class="dot">•</span>Conduction loss: external or middle ear problem (wax, effusion, ossicle damage)</div>
+          <div class="bullet"><span class="dot">•</span>Eustachian tube dysfunction: pressure equalization failure → middle ear effusion (common in young children, ear infections)</div>
+          <div class="warn-note" style="margin-top:0.875rem;">
+            <div class="warn-note-lbl">Vestibular — PT Relevance</div>
+            <div class="warn-note-text">BPPV (benign paroxysmal positional vertigo) = calcium carbonate crystals (otoconia) from utricle into semicircular canals. Most common cause of vertigo — treated with Epley maneuver. Dix-Hallpike test identifies affected canal. Posterior SCC most commonly affected. PT has excellent evidence for BPPV treatment.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ORAL & NOSE ══ -->
+<div id="tab-oral" class="tab-content">
+  <div class="chip-nav" id="oral-nav">
+    <button class="chip-btn active" onclick="selectOral('oralcavity',this)">Oral Cavity</button>
+    <button class="chip-btn" onclick="selectOral('tongue',this)">Tongue</button>
+    <button class="chip-btn" onclick="selectOral('salivary',this)">Salivary Glands</button>
+    <button class="chip-btn" onclick="selectOral('nose',this)">Nose & Sinuses</button>
+  </div>
+  <div id="oral-content"></div>
+</div>
+
+<!-- ══ BRAIN & MENINGES ══ -->
+<div id="tab-brain" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">External Skull Layers</div><div class="card-header-sub">SCALP — 5 Layers</div></div>
+        <div class="card-body" id="scalp-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Cranial Meninges</div><div class="card-header-sub">Dura · Arachnoid · Pia — 3 Layers + 3 Spaces</div></div>
+        <div class="card-body" id="meninges-content"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Cerebrovascular Anatomy</div><div class="card-header-sub">Circle of Willis · Arterial Supply · Venous Drainage</div></div>
+        <div class="card-body" id="cva-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Brain Overview</div><div class="card-header-sub">Cerebrum · Brainstem · Cerebellum</div></div>
+        <div class="card-body" id="brain-overview"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ TMJ ══ -->
+<div id="tab-tmj" class="tab-content">
+  <div class="two-col">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Mandible Landmarks</div></div>
+        <div class="card-body" id="mandible-content"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">TMJ Structure</div><div class="card-header-sub">Temporal + Disc + Mandible</div></div>
+        <div class="card-body" id="tmj-structure"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">TMJ Motion & Pathology</div></div>
+        <div class="card-body" id="tmj-motion"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-header-title">Muscles of Mastication</div><div class="card-header-sub">All — CN V (V3 Mandibular)</div></div>
+      <div class="card-body" id="mastication-content"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ REVIEW ══ -->
+<div id="tab-review" class="tab-content">
+  <div class="two-col">
+    <div class="card">
+      <div class="card-header"><div class="card-header-title">Review Questions</div><div class="card-header-sub">Clinical Reasoning — Click to Reveal</div></div>
+      <div class="card-body" id="head-review"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">High-Yield Clinical Callouts</div></div>
+        <div class="card-body">
+          <div style="display:flex;flex-direction:column;gap:0.625rem;">
+            <div style="padding:0.625rem 0.875rem;background:var(--red-pale);border:1px solid rgba(248,113,113,0.15);border-radius:6px;">
+              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem;">Red Flags</div>
+              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">"Worst headache of my life" = subarachnoid hemorrhage (ruptured berry aneurysm) · Fixed dilated pupil = uncal herniation (CN3 compression) · Uvula deviation = CN9 lesion · Tongue deviation = CN12 lesion · Battle's sign (mastoid bruising) + periorbital bruising = basilar skull fracture</div>
+            </div>
+            <div style="padding:0.625rem 0.875rem;background:var(--amber-pale);border:1px solid rgba(251,191,36,0.15);border-radius:6px;">
+              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem;">Peripheral vs Central CN7 Palsy</div>
+              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">Peripheral (Bell's Palsy): forehead INVOLVED (ipsilateral eyebrow cannot raise, eye cannot close) — all 5 branches affected. Central (stroke): forehead SPARED (bilateral cortical representation) — only lower face droops. This distinction localizes the lesion clinically without imaging.</div>
+            </div>
+            <div style="padding:0.625rem 0.875rem;background:var(--teal-pale);border:1px solid rgba(56,178,178,0.15);border-radius:6px;">
+              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--teal);margin-bottom:0.25rem;">Key Clinical Rules</div>
+              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">Uvula deviates to STRONG side (CN9 lesion) · Tongue deviates to WEAK side (CN12 lesion) · Pterion = thinnest skull = middle meningeal artery below = epidural hematoma risk · BPPV = PT treats with Epley maneuver · Parotid = CN7 relationship (surgery/tumor → facial palsy risk)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><!-- /shell -->
+
+<script>
+// ══════════════════════════════════════════════════
+// SHARED HELPERS
+// ══════════════════════════════════════════════════
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+function toggleMA(el) {
+  const item = el.closest('.ma-item');
+  const isOpen = item.classList.contains('open');
+  const siblings = item.parentElement.querySelectorAll('.ma-item');
+  siblings.forEach(s => s.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+function toggleCN2(btn) {
+  const note = btn.closest('.clinical-note-v2, .clinical-note');
+  const more = note.querySelector('.cn2-more');
+  const isShown = more && more.style.display === 'block';
+  if (more) more.style.display = isShown ? 'none' : 'block';
+  btn.textContent = isShown ? '+ Show more' : '− Show less';
+}
+function toggleReview(card) {
+  const was = card.classList.contains('open');
+  document.querySelectorAll('.review-card-v2').forEach(c => c.classList.remove('open'));
+  if (!was) card.classList.add('open');
+}
+const CHEVRON_SVG = `<svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>`;
+
+// ══════════════════════════════════════════════════
+// SKULL DATA
+// ══════════════════════════════════════════════════
+const NEUROCRANIUM = [
+  { name: 'Frontal Bone', parts: 'Calvaria (forehead). Contains frontal sinus. Forms most of orbital roof. Coronal suture joins frontal + parietal.', clinical: 'Frontal sinus fractures from trauma (especially MVA) — watch for CSF rhinorrhea (clear fluid from nose). Sinus infections can spread intracranially through thin orbital roof.' },
+  { name: 'Parietal Bones (×2)', parts: 'Form superior and lateral skull walls. Connected by sagittal suture. Lambdoid suture = parietal + occipital. Squamous suture = parietal + temporal.', clinical: 'Parietal region = watershed zone between MCA and ACA territories. Parietal lobe functions: sensory processing, spatial awareness. Superior sagittal sinus runs in the midline — tearing causes subdural/subarachnoid bleeding.' },
+  { name: 'Occipital Bone', parts: 'Contains foramen magnum (brainstem exits). External occipital protuberance (EOP), superior/inferior nuchal lines (muscle attachments), occipital condyles (C0-C1 joint).', clinical: 'Occipital condyle fractures from axial compression (diving). Foramen magnum herniation (tonsillar herniation) is the end-stage of increased ICP — compresses medulla → death. EOP = palpable posterior skull landmark.' },
+  { name: 'Temporal Bones (×2)', parts: '4 parts: Squamous (lateral wall), Petrous (houses inner ear, CN7+8 travel here), Mastoid (air cells, mastoid process for SCM/digastric), Tympanic (external acoustic meatus, tympanic plate). Contains carotid canal, stylomastoid foramen, internal acoustic meatus.', clinical: 'Mastoiditis: ear infection spreads to mastoid air cells (posterior auricular swelling + tenderness). Petrous fractures from lateral head trauma → CN7/8 deficits + hemotympanum. Temporal bone is where CN7 runs its long intrapetrous course.' },
+  { name: 'Sphenoid Bone', parts: '"Bat-shaped" — greater wings (lateral skull floor), lesser wings (orbital roof), body with sella turcica (pituitary gland sits here), pterygoid plates (lateral and medial for muscle attachments). Contains optic canal, superior orbital fissure, foramen rotundum, ovale, spinosum.', clinical: 'Sella turcica enlargement on X-ray → pituitary adenoma (visual field defects: bitemporal hemianopia from optic chiasm compression). Pterion (sphenoid + frontal + temporal + parietal junction) = thinnest point of skull — middle meningeal artery lies directly below.' },
+  { name: 'Ethmoid Bone', parts: 'Cribriform plate (horizontal — CN1 olfactory rootlets pass through), crista galli (dural attachment point, raised midline process), superior + middle nasal conchae (turbinates), perpendicular plate (contributes to nasal septum).', clinical: 'Cribriform plate fractures (most common in high-velocity frontal impacts) → CSF rhinorrhea (glucose in "nasal discharge" confirms CSF) + anosmia (CN1 shear). Ethmoid sinuses drain into superior and middle meatus — ethmoid sinusitis presents with periorbital pain/pressure.' },
+];
+
+const FACIAL_BONES = [
+  { name: 'Mandible', note: 'Only movable skull bone. Condylar process articulates with temporal bone (TMJ). Body, ramus, angle, coronoid process, mental foramen (mental nerve = V3 branch).' },
+  { name: 'Maxilla (×2)', note: 'Forms upper jaw, floor of orbit, and anterior hard palate (palatine process). Contains maxillary sinus. Infraorbital foramen (V2 branch).' },
+  { name: 'Zygomatic (×2)', note: 'Cheekbone. Forms lateral orbital wall. Zygomatic arch = zygomatic + temporal bones.' },
+  { name: 'Palatine (×2)', note: 'Forms posterior hard palate and small portion of orbital floor. Completes the roof of the nasal cavity.' },
+  { name: 'Nasal (×2)', note: 'Bridge of the nose. Nasion = junction of nasal bones with frontal bone.' },
+  { name: 'Lacrimal (×2)', note: 'Medial orbital wall. Contains lacrimal groove for nasolacrimal duct.' },
+  { name: 'Vomer', note: 'Midline nasal septum (inferior + posterior). Joins with perpendicular plate of ethmoid superiorly.' },
+  { name: 'Inferior Nasal Conchae (×2)', note: 'Separate bones (unlike superior/middle conchae which are ethmoid). Create turbulence for air filtration.' },
+];
+
+const SUTURES = [
+  { name: 'Coronal Suture', bones: 'Frontal + Parietal', note: 'Runs coronally (ear to ear). Premature closure (craniosynostosis) causes skull deformity.' },
+  { name: 'Sagittal Suture', bones: 'R/L Parietal bones', note: 'Runs midline AP. Superior sagittal venous sinus runs in its inner groove.' },
+  { name: 'Lambdoid Suture', bones: 'Occipital + Parietal', note: 'Lambda-shaped (λ). Posterior suture. Joins with sagittal at Lambda junction.' },
+  { name: 'Squamous Suture', bones: 'Parietal + Temporal', note: 'Lateral. Overlapping (scale-like) rather than interlocked.' },
+];
+
+const JUNCTIONS = [
+  { name: 'Bregma', location: 'Coronal + Sagittal suture junction', bones: 'Frontal + Parietal × 2', clinical: 'Anterior fontanelle in infants — normally closes by 18-24 months. Bulging fontanelle = increased ICP.' },
+  { name: 'Lambda (λ)', location: 'Lambdoid + Sagittal junction', bones: 'Occipital + Parietal × 2', clinical: 'Posterior fontanelle in infants — closes by 2-3 months.' },
+  { name: 'Pterion ★', location: 'H-shaped junction (4 bones)', bones: 'Frontal + Temporal + Parietal + Sphenoid', clinical: 'THINNEST point of the skull. Middle meningeal artery runs directly below. Trauma here (lateral blow to temporal region) → epidural hematoma. "Talk and die" — lucid interval then rapid deterioration. Surgical emergency.' },
+];
+
+const LANDMARKS = [
+  { name: 'Temporal Bone', items: ['Zygomatic process — forms lateral zygomatic arch with zygomatic bone', 'External acoustic meatus — opening for sound conduction', 'Mastoid process — posterior bony prominence behind ear; SCM and digastric attachment', 'Mastoid notch (groove) — attachment for digastric posterior belly', 'Styloid process — long sharp process; stylohyoid, styloglossus, stylopharyngeus attachment'] },
+  { name: 'Occipital Bone', items: ['External occipital protuberance (EOP/inion) — most prominent posterior midline bump; palpable landmark', 'Superior nuchal line — trapezius, SCM, occipitalis attachment', 'Inferior nuchal line — semispinalis capitis, rectus capitis attachment', 'Occipital condyles — articulate with C1 (atlas) to form atlanto-occipital joint'] },
+];
+
+// ══════════════════════════════════════════════════
+// FORAMINA DATA
+// ══════════════════════════════════════════════════
+const FORAMINA_SUPERIOR = [
+  { fossa: 'Anterior', name: 'Cribriform Foramina', contents: 'CN 1 — Olfactory nerve rootlets (smell)', cn: 'CN 1', location: 'Cribriform plate of ethmoid', clinical: 'Fracture → anosmia (loss of smell) + CSF rhinorrhea. Patient may not notice anosmia themselves — ask specifically about smell.' },
+  { fossa: 'Middle', name: 'Optic Canal', contents: 'CN 2 — Optic nerve + Ophthalmic artery (branch of ICA)', cn: 'CN 2', location: 'Lesser wing of sphenoid', clinical: 'Optic canal fracture from orbital trauma → CN2 compression → visual loss. Optic neuritis from MS can occur along this nerve.' },
+  { fossa: 'Middle', name: 'Superior Orbital Fissure', contents: 'CN 3 (oculomotor), CN 4 (trochlear), CN 6 (abducens), V1 (ophthalmic branch of CN5)', cn: 'CN 3, 4, 6 + V1', location: 'Between greater and lesser wings of sphenoid', clinical: '"Superior orbital fissure syndrome": all contents affected → complete ophthalmoplegia + ptosis + forehead/eye numbness. Cavernous sinus thrombosis affects same nerves.' },
+  { fossa: 'Middle', name: 'Foramen Rotundum', contents: 'V2 — Maxillary nerve (CN5 branch)', cn: 'V2 (CN 5)', location: 'Greater wing of sphenoid', clinical: 'V2 exits here → enters pterygopalatine fossa → becomes infraorbital nerve. Mid-face numbness = V2 lesion at foramen rotundum or more distally. Trigeminal neuralgia most common in V2 territory.' },
+  { fossa: 'Middle', name: 'Foramen Ovale', contents: 'V3 — Mandibular nerve (CN5 branch) — ONLY division with motor function', cn: 'V3 (CN 5)', location: 'Greater wing of sphenoid', clinical: 'V3 carries both sensory (lower face/jaw) and motor (muscles of mastication). Lesion here → masseter weakness (jaw deviates to WEAK side on protrusion) + lower face numbness.' },
+  { fossa: 'Middle', name: 'Foramen Spinosum', contents: 'Middle meningeal artery (branch of maxillary artery from ECA)', cn: 'Middle Meningeal A.', location: 'Greater wing of sphenoid (posterolateral)', clinical: 'EPIDURAL HEMATOMA: arterial bleed from middle meningeal artery rupture (often from pterion trauma). Classic "lucid interval" then rapid LOC. Lens-shaped (biconvex) on CT. Does NOT cross suture lines. Neurosurgical emergency.' },
+  { fossa: 'Middle', name: 'Foramen Lacerum', contents: 'Mostly filled with fibrocartilage. ICA passes OVER it (not through). Greater petrosal nerve passes through.', cn: 'Transit zone / ICA', location: 'Junction of petrous temporal, occipital, sphenoid', clinical: 'Not a true transit foramen — fibrocartilage fills it. The internal carotid artery passes over this foramen. Clinically significant as a weak point near carotid.' },
+  { fossa: 'Posterior', name: 'Internal Acoustic Meatus', contents: 'CN 7 (facial nerve) + CN 8 (vestibulocochlear)', cn: 'CN 7 + CN 8', location: 'Petrous part of temporal bone', clinical: 'Acoustic neuroma (vestibular schwannoma) grows here → compresses CN8 first (unilateral hearing loss, tinnitus, vertigo) then CN7 (facial weakness). Ramsay Hunt syndrome: VZV reactivation → CN7 palsy + painful vesicles in ear.' },
+  { fossa: 'Posterior', name: 'Jugular Foramen', contents: 'CN 9 (glossopharyngeal), CN 10 (vagus), CN 11 (spinal accessory) + Internal jugular vein (sigmoid sinus exit)', cn: 'CN 9, 10, 11', location: 'Junction of petrous temporal + occipital', clinical: '"Jugular foramen syndrome" (Vernet syndrome): all three affected → dysphagia (CN9), hoarseness (CN10), trapezius/SCM weakness (CN11). Glomus jugulare tumor classic cause. IJV exits here — important for central line and neurosurgical procedures.' },
+  { fossa: 'Posterior', name: 'Hypoglossal Canal', contents: 'CN 12 — Hypoglossal nerve (tongue muscles)', cn: 'CN 12', location: 'Occipital bone (medial to occipital condyles)', clinical: 'CN12 lesion → tongue deviates to WEAK side (genioglossus pushes tongue away from the functioning side). Hypoglossal canal meningioma or skull base metastasis.' },
+  { fossa: 'Posterior', name: 'Foramen Magnum', contents: 'Medulla oblongata, Spinal roots of CN 11 (accessory — enter skull to exit jugular foramen), Vertebral arteries, Anterior/posterior spinal arteries', cn: 'Medulla + CN 11 roots', location: 'Occipital bone — largest foramen', clinical: 'Tonsillar herniation through foramen magnum = terminal event of unchecked ICP (Cushing\'s triad: bradycardia, hypertension, irregular breathing). Chiari malformation: cerebellar tonsils herniate chronically → headache, syrinx, cervical myelopathy.' },
+];
+
+const FORAMINA_INFERIOR = [
+  { name: 'Foramen Ovale', contents: 'V3 (mandibular nerve)', note: 'Visible from below as well as superior view' },
+  { name: 'Carotid Canal', contents: 'Internal carotid artery (ICA)', note: 'Petrous temporal bone — ICA ascends to cranial cavity here' },
+  { name: 'Jugular Foramen (Fossa)', contents: 'CN 9, 10, 11 + Sigmoid sinus → IJV', note: 'Between petrous temporal + occipital' },
+  { name: 'Stylomastoid Foramen', contents: 'CN 7 (facial nerve exits skull here)', note: 'Between styloid and mastoid processes. CN7 exits here → enters parotid gland → divides into 5 branches.' },
+  { name: 'Foramen Magnum', contents: 'Medulla, CN11 roots, vertebral arteries', note: 'Also visible from inferior view' },
+];
+
+// ══════════════════════════════════════════════════
+// FACE DATA
+// ══════════════════════════════════════════════════
+const EXPRESSION_MUSCLES = [
+  { name: 'Occipitofrontalis', action: 'Elevates eyebrows; wrinkles forehead (frontal belly). Moves scalp posteriorly (occipital belly).', note: 'Two bellies connected by epicranial aponeurosis (galea aponeurotica). The galea allows scalp to move over skull — loose connective tissue layer beneath it is the "danger zone" (infection can spread widely).', n: 'CN VII — temporal branch (frontal) + posterior auricular (occipital)' },
+  { name: 'Orbicularis Oculi', action: 'Closes eyelids. Palpebral part: gentle closure. Orbital part: forceful closure (squinting, winking).', note: 'Critical for Bell\'s Palsy assessment — inability to close eye (lagophthalmos) → corneal exposure → ulceration → blindness. Tape eye shut if corneal reflex absent.', n: 'CN VII — zygomatic + temporal branches' },
+  { name: 'Nasalis', action: 'Compressor part: narrows nostrils. Dilator part: flares nostrils.', note: 'Assesses nasal airway patency. Flaring during respiratory distress = accessory muscle of inspiration.', n: 'CN VII — buccal branch' },
+  { name: 'Levator Labii Superioris', action: 'Elevates upper lip; flares nostril.', note: 'Part of the lip elevator group. Along with zygomaticus, produces a natural smile.', n: 'CN VII — zygomatic + buccal branches' },
+  { name: 'Zygomaticus Major', action: 'Pulls angle of mouth superolaterally — produces a SMILE.', note: '"The smiling muscle." Zygomaticus major pulls corner of mouth toward the zygomatic arch. An absent or asymmetric smile is an early sign of facial nerve weakness.', n: 'CN VII — zygomatic + buccal branches' },
+  { name: 'Orbicularis Oris', action: 'Compresses and protrudes lips ("purses the lips"). Whistling, kissing, sucking through a straw.', note: 'Bell\'s palsy: incomplete lip closure → drooling. Food and liquid fall from corner of mouth on affected side.', n: 'CN VII — buccal + mandibular branches' },
+  { name: 'Mentalis', action: 'Elevates and protrudes the lower lip (the "pouting" muscle). Wrinkles the skin of the chin.', note: 'Tests mandibular branch of CN7. Weakened → lower lip droops on affected side in peripheral CN7 palsy.', n: 'CN VII — mandibular branch' },
+  { name: 'Buccinator', action: 'Compresses cheeks; holds food between teeth during chewing. Works with tongue to keep food on occlusal surfaces.', note: 'Deep muscle of cheek (not superficial). Parotid duct passes through it. Important for chewing coordination — weakness = food pouches in cheek on affected side (hallmark of CN7 lower facial palsy).', n: 'CN VII — buccal branch' },
+];
+
+const BELLS_PALSY = {
+  peripheral: {
+    cause: 'Lesion distal to the facial nucleus or its fibers (CN7 nerve itself). Idiopathic (Bell\'s Palsy), Ramsay Hunt syndrome (VZV), parotid tumor/surgery, trauma.',
+    findings: ['Complete unilateral facial palsy — FOREHEAD INVOLVED (cannot raise eyebrow on affected side)', 'Cannot close eye (risk of corneal exposure/ulceration — medical emergency if not managed)', 'Drooping of mouth corner; drooling', 'Loss of nasolabial fold on affected side', 'May have ipsilateral taste loss (anterior 2/3 of tongue via chorda tympani)', 'May have ipsilateral hyperacusis (stapedius branch of CN7 affected)'],
+    clinical: 'Bell\'s Palsy treatment: oral corticosteroids (prednisolone) within 72 hours — best evidence. Antivirals (acyclovir) if Ramsay Hunt suspected. Eye care: artificial tears, lubricant ointment at night, eye patch or taping to prevent corneal damage. PT: facial muscle retraining exercises, electrical stimulation (controversial). >95% recover with treatment if Bell\'s Palsy.',
+    mnemo: 'Peripheral = forehead PARALYZED. Both sides of cortex usually supply forehead — so if the nerve itself is affected, ALL branches fail including temporal (forehead).'
+  },
+  central: {
+    cause: 'Lesion in the brain ABOVE the facial nucleus (contralateral upper motor neuron — stroke, tumor, MS).',
+    findings: ['FOREHEAD SPARED (bilateral cortical representation of forehead)', 'Only LOWER face affected on CONTRALATERAL side (droop without forehead involvement)', 'Subtle loss of nasolabial fold; slightly impaired smile', 'Other neurological signs usually present (arm/leg weakness, aphasia, etc.)'],
+    clinical: 'Central CN7 palsy = stroke until proven otherwise. Activate stroke protocol. The forehead is bilaterally represented because it is an evolutionarily important movement (surprise/attention signals) — one cortex failing leaves forehead movement intact from the other side.',
+    mnemo: 'Central = forehead SPARED. Think: "Central spares the crown." The crown of the face (forehead) is doubly represented.'
+  },
+};
+
+// ══════════════════════════════════════════════════
+// CRANIAL NERVE DATA
+// ══════════════════════════════════════════════════
+const CN5_DATA = {
+  overview: 'The largest cranial nerve. Purely sensory to face (3 divisions) + motor to muscles of mastication (V3 only). The 3 divisions exit through 3 different foramina: V1 → Superior Orbital Fissure, V2 → Foramen Rotundum, V3 → Foramen Ovale.',
+  divisions: [
+    {
+      name: 'V1 — Ophthalmic Nerve',
+      exit: 'Superior Orbital Fissure',
+      region: 'Forehead, scalp (above eyes), upper eyelid, nose (bridge and tip), cornea/conjunctiva',
+      branches: ['Nasociliary nerve (cornea, medial eye structures)', 'Lacrimal nerve (lacrimal gland, lateral upper eyelid)', 'Frontal nerve → Supraorbital + Supratrochlear (forehead, scalp)', 'Infratrochlear nerve (medial eyelid)'],
+      test: 'Light touch above the eyes (forehead/lateral orbital region)',
+      clinical: 'V1 carries the corneal (blink) reflex — afferent limb (CN5 V1). CN7 = efferent (blinks). Absent corneal reflex with CN7 intact = V1 sensory deficit.'
+    },
+    {
+      name: 'V2 — Maxillary Nerve',
+      exit: 'Foramen Rotundum → pterygopalatine fossa → infraorbital canal → infraorbital foramen',
+      region: 'Mid-face: below eye + above upper lip, lateral nose, upper teeth, maxillary sinus, palate',
+      branches: ['Infraorbital nerve (below orbit, cheek, upper lip, upper teeth)', 'Zygomaticofacial nerve (cheek prominence)', 'Zygomaticotemporal nerve (temporal region lateral eye)'],
+      test: 'Light touch on the cheek (mid-face between eye and upper lip)',
+      clinical: 'Trigeminal neuralgia (tic douloureux) most commonly affects V2 — severe electrical pain in mid-face triggered by touch, chewing, talking. V2 territory tooth pain from maxillary sinusitis (sinus floor = root of upper molars).'
+    },
+    {
+      name: 'V3 — Mandibular Nerve',
+      exit: 'Foramen Ovale',
+      region: 'Lower face: chin, jaw, lower teeth, anterior 2/3 tongue (general sensation — NOT taste), ear region, TMJ',
+      branches: ['Mental nerve (chin, lower lip — exits mental foramen)', 'Buccal nerve (cheek mucosa)', 'Auriculotemporal nerve (anterior ear, TMJ, temporal scalp)', 'Lingual nerve (anterior 2/3 tongue — carried with chorda tympani from CN7)', 'Inferior alveolar nerve → mandibular teeth → mental nerve'],
+      test: 'Light touch on lower jaw/chin region',
+      clinical: 'V3 is the ONLY division with a MOTOR component: supplies muscles of mastication (temporalis, masseter, pterygoids) + mylohyoid + anterior digastric. Mandibular nerve block (V3 at foramen ovale) = dental anesthesia. Jaw deviates to WEAK side on protrusion (lateral pterygoid weakness).'
+    },
+  ],
+};
+
+const CN7_DATA = {
+  overview: 'CN 7 (Facial nerve) = motor to ALL muscles of facial expression (and platysma, stylohyoid, posterior digastric). Also carries taste from anterior 2/3 tongue (via chorda tympani) + parasympathetic to lacrimal, submandibular, sublingual glands.',
+  path: 'Exits brainstem at cerebellopontine angle → enters internal acoustic meatus with CN8 → traverses petrous temporal bone → exits via stylomastoid foramen → passes through PAROTID GLAND → divides into 5 terminal branches.',
+  branches: [
+    { name: 'Temporal', region: 'Frontalis, orbicularis oculi, corrugator supercilii', test: 'Raise eyebrows; wrinkle forehead' },
+    { name: 'Zygomatic', region: 'Orbicularis oculi (inferior), zygomaticus', test: 'Close eyes; smile (upper)' },
+    { name: 'Buccal', region: 'Zygomaticus major, orbicularis oris, buccinator, nasalis, levator labii', test: 'Smile; puff cheeks; show teeth' },
+    { name: 'Mandibular', region: 'Depressor labii inferioris, depressor anguli oris, mentalis', test: 'Depress lower lip; "eee" grimace' },
+    { name: 'Cervical', region: 'Platysma', test: 'Tense skin of neck; pull down corner of mouth' },
+  ],
+  clinical: 'CN7 course through the parotid gland: parotid surgery or parotid tumors can compress/damage CN7 → ipsilateral facial palsy. Parotid duct (Stenson\'s duct) passes through masseter and buccinator, opening near upper molars. Mumps: viral parotitis → can spread to testes/ovaries (sterility risk).',
+};
+
+const CLINICAL_TESTS = [
+  { test: 'CN 5 — Light Touch (3 Zones)', how: 'Lightly touch V1 (forehead), V2 (cheek), V3 (chin) bilaterally. Patient reports sensation or not. Compare sides.', positive: 'Absent sensation in one zone = loss in that division\'s territory. Indicates lesion at CN5 branch, foramen, or brainstem level.', normal: 'Equal sensation bilaterally in all 3 zones.' },
+  { test: 'CN 5 Motor — Masseter', how: 'Palpate angle of jaw bilaterally. Ask patient to bite down hard ("clench your teeth"). Feel masseter contract under fingertips.', positive: 'Absent or asymmetric contraction = V3 motor lesion. Jaw deviation to WEAK side on protrusion (lateral pterygoid).', normal: 'Firm bilateral masseter contraction palpable.' },
+  { test: 'CN 7 — Facial Expression', how: 'Ask: raise eyebrows, squeeze eyes shut, puff cheeks, show teeth, smile. Observe for asymmetry or weakness.', positive: 'Peripheral: ALL ipsilateral muscles affected including forehead. Central: only lower face contralateral — forehead spared.', normal: 'Symmetric, full-strength facial movements bilaterally.' },
+  { test: 'CN 8 — Hearing Screen', how: 'Rub fingers near one ear while occluding the other. Patient reports hearing. Whisper numbers 2 inches from ear.', positive: 'Cannot hear whisper on affected side = possible CN8 or conduction problem.', normal: 'Hears whisper bilaterally.' },
+  { test: 'CN 9 — Uvula (Gag)', how: 'Patient says "Ahhh" and opens mouth. Observe uvula position and soft palate elevation.', positive: 'Uvula deviates to STRONG side (away from lesion). Weak soft palate on CN9 lesion side.', normal: 'Uvula rises symmetrically in midline.' },
+  { test: 'CN 12 — Tongue Protrusion', how: 'Ask patient to stick tongue straight out. Observe for deviation.', positive: 'Tongue deviates to WEAK side (genioglossus pushes tongue away from functioning side — so the weak side "loses" and the tongue falls toward it).', normal: 'Tongue protrudes symmetrically in midline.' },
+  { test: 'CN 2 + CN 3 — Pupillary Light Reflex', how: 'Shine light in one eye. Both pupils should constrict (direct + consensual). Then swing light between eyes (swinging flashlight test).', positive: 'APD (afferent pupillary defect) / Marcus Gunn pupil: light in affected eye → LESS constriction bilaterally than light in normal eye → relative dilation when swung from normal to affected eye. = CN2 lesion.', normal: 'Equal, brisk, bilateral pupillary constriction to light in either eye.' },
+  { test: 'CN 3 + CN 4 + CN 6 — Extraocular Movements (H-Pattern)', how: 'Ask patient to follow finger in H-shape. Testing: horizontal (CN6 = lateral rectus), up/down (CN3 = SR/IR), down+in (CN4 = SO), and all other positions (CN3).', positive: 'CN6 palsy: eye cannot abduct (turns medially at rest). CN4 palsy: diplopia with downward gaze (can\'t look down+in) — patient tilts head to compensate. CN3 palsy: ptosis + eye down and out + dilated pupil.', normal: 'Full, conjugate eye movements in all positions without diplopia or nystagmus.' },
+];
+
+// ══════════════════════════════════════════════════
+// EYES DATA
+// ══════════════════════════════════════════════════
+const ORBIT_DATA = {
+  margins: 'Frontal (superior orbital rim), Maxillary (inferior + medial), Zygomatic (lateral rim)',
+  walls: '7 bones total: Frontal (roof), Maxilla (floor + medial), Zygomatic (lateral), Sphenoid (posterior + lateral), Ethmoid (medial — very thin "paper plate"), Lacrimal (medial), Palatine (small posterior floor portion)',
+  foramina: [
+    { f: 'Optic Canal', c: 'CN 2 (optic nerve) + Ophthalmic artery (branch of ICA)' },
+    { f: 'Superior Orbital Fissure', c: 'CN 3, 4, 6 + V1 (ophthalmic of CN5)' },
+    { f: 'Inferior Orbital Fissure', c: 'V2 (maxillary of CN5) — communicates with pterygopalatine fossa' },
+  ],
+  clinical: 'Orbital blowout fracture: direct impact forces air/fluid into orbit → orbital contents herniate through thin orbital floor (ethmoid or maxillary bone) → infraorbital nerve anesthesia (V2) + diplopia (inferior rectus entrapment) + enophthalmos (eye appears sunken). Orbital cellulitis from ethmoid sinusitis — medial ethmoid wall ("lamina papyracea") is extremely thin.',
+};
+
+const EYEBALL_LAYERS = [
+  {
+    name: 'Outer Layer (Fibrous)',
+    color: 'teal',
+    parts: [
+      { n: 'Sclera', d: '"White of the eye." Covers posterior 5/6 of eyeball. Tough fibrous coat. Optic nerve exits posteriorly. Extraocular muscles insert here.' },
+      { n: 'Cornea', d: 'Covers anterior 1/6. Transparent. Allows light into eye. Avascular — nourished by aqueous humor + oxygen from air. Most refractive power of the eye (~70%). Highly sensitive (CN5 V1 — corneal reflex).' },
+    ],
+  },
+  {
+    name: 'Middle Layer (Uveal Tract / Vascular)',
+    color: 'gold',
+    parts: [
+      { n: 'Choroid', d: 'Dark, pigmented, highly vascular layer between sclera and retina. Absorbs scattered light; nourishes outer retina. Choroidal detachment from trauma.' },
+      { n: 'Ciliary Body', d: 'Connects choroid to iris. Ciliary processes secrete AQUEOUS HUMOR → fills anterior + posterior chambers → drains via Canal of Schlemm → back to venous system. Ciliary muscle controls lens shape (accommodation). Impaired drainage → increased IOP → GLAUCOMA → retinal damage → blindness.' },
+      { n: 'Iris', d: 'Colored diaphragm around pupil. Sphincter pupillae (parasympathetic — CN3) constricts pupil. Dilator pupillae (sympathetic) dilates pupil. Pupillary light reflex: CN2 (afferent) + CN3 (efferent).' },
+    ],
+  },
+  {
+    name: 'Inner Layer (Neural)',
+    color: 'purple',
+    parts: [
+      { n: 'Retina', d: 'Neural tissue converting light to signals. Contains photoreceptors (rods = low light, cones = color/acuity). Optic disc = "blind spot" (no photoreceptors — where optic nerve exits). Macula lutea (lateral to disc) — central vision. Fovea centralis (center of macula) = highest acuity.' },
+    ],
+  },
+];
+
+const EOM_DATA = [
+  { cn: 'CN III (Oculomotor)', muscles: [
+    { m: 'Superior Rectus', t: 'Elevation of the eye', test: 'Look UP' },
+    { m: 'Inferior Rectus', t: 'Depression of the eye', test: 'Look DOWN' },
+    { m: 'Medial Rectus', t: 'Adduction (eye turns nasally)', test: 'Look MEDIALLY (nose)' },
+    { m: 'Inferior Oblique', t: 'Elevation when eye is adducted; extorsion', test: 'Look UP and IN' },
+    { m: 'Levator Palpebrae Superioris', t: 'Raises upper eyelid', test: 'Eyelid elevation — ptosis if damaged' },
+  ], color: 'teal', clinical: 'CN3 palsy: ptosis (LPS) + eye deviated DOWN and OUT (unopposed CN4+CN6) + DILATED pupil (parasympathetic fibers run on outside of CN3 — compressed first by aneurysm or herniation). "Down and out with a blown pupil" = CN3 compression until proven otherwise.' },
+  { cn: 'CN IV (Trochlear)', muscles: [
+    { m: 'Superior Oblique', t: 'Depression when eye is adducted; intorsion. Trochlea (pulley) redirects its force.', test: 'Look DOWN and IN (reading position)' },
+  ], color: 'gold', clinical: 'CN4 palsy: diplopia worse going DOWN stairs or reading. Patient tilts head to CONTRALATERAL side (compensatory head tilt). Longest intracranial course of any CN — most vulnerable to trauma. CN4 is the only CN to exit the DORSAL brainstem.' },
+  { cn: 'CN VI (Abducens)', muscles: [
+    { m: 'Lateral Rectus', t: 'Abduction of the eye (looks laterally away from nose)', test: 'Look LATERALLY (away from nose)' },
+  ], color: 'amber', clinical: 'CN6 palsy: eye cannot abduct → "esotropia" (medial deviation at rest). MOST COMMON extraocular muscle palsy. Long intracranial course with a sharp bend over the petrous ridge — vulnerable to increased ICP (CN6 "false localizing sign").' },
+];
+
+// ══════════════════════════════════════════════════
+// EAR DATA
+// ══════════════════════════════════════════════════
+const EAR_ANATOMY = [
+  { region: 'External Ear', color: 'teal', items: [
+    { n: 'Auricle Landmarks', d: 'Helix (outer rim), antihelix, tragus (anterior), concha (bowl), lobule (earlobe). Pinna directs sound into canal.' },
+    { n: 'External Acoustic Meatus', d: 'Canal from pinna to tympanic membrane. Outer third cartilaginous (pulls pinna up-back in adults to straighten canal for otoscopy). Inner 2/3 bony (temporal bone).' },
+    { n: 'Tympanic Membrane', d: 'Boundary between external and middle ear. Cone-shaped, vibrates with sound. Otoscopy: cone of light (anterior-inferior), handle of malleus visible. Bulging = acute otitis media. Perforation = conductive hearing loss.' },
+  ]},
+  { region: 'Middle Ear', color: 'gold', items: [
+    { n: 'Malleus (Hammer)', d: 'Attached to tympanic membrane. Transfers vibration to incus.' },
+    { n: 'Incus (Anvil)', d: 'Bridges malleus to stapes. Longest process susceptible to avascular necrosis.' },
+    { n: 'Stapes (Stirrup)', d: 'Footplate attaches to oval window of cochlea. Smallest bone in the body. Otosclerosis: abnormal stapes fixation → conductive hearing loss (surgically treated).' },
+    { n: 'Eustachian Tube', d: 'Connects middle ear to nasopharynx. Equalizes air pressure in middle ear. Normally closed, opens during swallowing/yawning. Dysfunction → serous otitis media (fluid behind TM = "glue ear"). Children: more horizontal → more prone to infection.' },
+  ]},
+  { region: 'Inner Ear (Bony Labyrinth)', color: 'purple', items: [
+    { n: 'Vestibule', d: 'Central chamber containing utricle and saccule. Utricle + saccule have otoliths (calcium carbonate crystals) = detect LINEAR acceleration and head position relative to gravity.' },
+    { n: 'Semicircular Canals (×3)', d: 'Anterior, posterior, lateral. Detect ROTATIONAL acceleration. Each canal is in a different plane. BPPV: displaced otoconia enter canals (usually posterior) → false sense of rotation with head movement.' },
+    { n: 'Cochlea', d: 'Snail-shaped, 2.5 turns. Contains organ of Corti (hair cells) — transduces mechanical vibration to electrical signals. CN8 cochlear division carries auditory information. High-frequency sounds detected at base; low-frequency at apex.' },
+  ]},
+];
+
+const WEBER_RINNE = {
+  weber: {
+    how: 'Place vibrating tuning fork on vertex (top of head). Ask patient which ear hears it louder (or "the same").',
+    results: [
+      { result: 'Louder in BLOCKED ear', meaning: 'Conductive hearing loss on that side. Bone-conducted sound goes to the blocked ear because background noise cannot enter → sensation seems louder.' },
+      { result: 'Louder in NORMAL ear', meaning: 'Sensorineural hearing loss on the quiet side. The good ear picks up the vibration better because its neural apparatus is intact.' },
+      { result: 'Equal bilaterally (midline)', meaning: 'Normal OR symmetric bilateral loss.' },
+    ],
+  },
+  rinne: {
+    how: 'Place vibrating tuning fork on mastoid process. When patient can no longer hear it, immediately move tuning fork to 1-2 cm from external auditory meatus.',
+    results: [
+      { result: 'Air conduction > Bone conduction (positive Rinne)', meaning: 'NORMAL. Air normally conducts sound better than bone through the ossicles.' },
+      { result: 'Bone conduction > Air conduction (negative Rinne)', meaning: 'CONDUCTIVE hearing loss on that side. Air pathway (external + middle ear) is impaired, bone bypasses the blockage.' },
+    ],
+    clinical: 'A negative Rinne confirms conductive loss (suggested by Weber lateralizing to the "bad" ear). Combined interpretation: Weber lateralizes to bad ear + negative Rinne on bad ear = confirmed CONDUCTIVE loss. Weber lateralizes to good ear + negative Rinne on bad ear... actually would be mixed. Sensorineural: Weber to good ear, positive Rinne on bad ear (still air > bone, but both are reduced).',
+  },
+};
+
+// ══════════════════════════════════════════════════
+// ORAL & NOSE DATA
+// ══════════════════════════════════════════════════
+const ORAL_DATA = {
+  oralcavity: {
+    roof: [
+      { n: 'Hard Palate', d: 'Anterior 5/6 of palate. Formed by palatine processes of maxilla + horizontal plates of palatine bones.' },
+      { n: 'Soft Palate', d: 'Posterior 1/6. Muscle-based. Moves posteriorly/superiorly during swallowing and speaking to close off the nasopharynx. Contains the uvula at its midline posterior tip.' },
+      { n: 'Uvula', d: 'Midline process of soft palate. "Say Ahhhh" — uvula elevates. CN9 (glossopharyngeal) lesion: uvula deviates to STRONG side. Peritonsillar abscess: uvula deviated by mass effect.' },
+    ],
+    floor: 'Tongue + mylohyoid muscle + geniohyoid muscle',
+    tonsils: [
+      { n: 'Palatoglossal arch', d: 'Anterior arch (palatoglossus muscle)' },
+      { n: 'Palatine tonsil', d: 'Lymphatic tissue BETWEEN the two arches. Tonsillitis = red, enlarged tonsils. Peritonsillar abscess = unilateral swelling pushing tonsil + uvula to opposite side.' },
+      { n: 'Palatopharyngeal arch', d: 'Posterior arch (palatopharyngeus muscle)' },
+    ],
+  },
+  tongue: {
+    divisions: [
+      { n: 'Anterior 2/3', d: 'Taste buds on lingual papillae (fungiform, filiform, circumvallate). Circumvallate papillae form a V-shape marking anterior/posterior boundary.' },
+      { n: 'Posterior 1/3', d: 'Lingual tonsils (lymphatic tissue). Contains taste buds for bitter.' },
+    ],
+    muscles: [
+      { m: 'Genioglossus', action: 'Protrudes and depresses tongue', n: 'CN XII (hypoglossal)', clinical: 'Lesion → tongue deviates to WEAK side on protrusion. The functioning genioglossus pushes the tongue across midline toward the damaged side.' },
+    ],
+    undersurface: ['Lingual frenulum (midline fold connecting tongue to floor of mouth)', 'Openings of submandibular (Wharton\'s) ducts on either side of frenulum'],
+    innervation: 'Sensation anterior 2/3: lingual nerve (V3 branch, joined by chorda tympani for taste). Posterior 1/3: CN9 (both general sensation + taste). ALL intrinsic tongue muscles: CN12 (hypoglossal).',
+  },
+  salivary: [
+    { name: 'Parotid Gland', size: 'Largest', location: 'Retromandibular space (preauricular region)', duct: 'Stenson\'s duct — passes through masseter + buccinator, opens near upper 2nd molar', clinical: 'CN7 passes through parotid. Parotid tumor or surgery → facial palsy risk. Mumps = viral parotitis (paramyxovirus) — now rare with MMR vaccine; can spread to ovaries/testes (sterility). Parotid calculi obstruct duct → mealtime pain + swelling.' },
+    { name: 'Submandibular Gland', size: 'Second largest', location: 'Submandibular triangle (below mandible)', duct: 'Wharton\'s duct — empties just lateral to lingual frenulum', clinical: 'Most common site of salivary calculi (stones). Bimanual palpation (finger in mouth + hand under chin) to assess. Sublingual calculus palpable on floor of mouth.' },
+    { name: 'Sublingual Gland', size: 'Smallest', location: 'Floor of mouth between mandible and genioglossus muscle', duct: 'Multiple small ducts (ducts of Rivinus) opening into floor of mouth', clinical: 'Ranula: retention cyst from obstructed sublingual duct → bluish, fluctuant floor-of-mouth swelling. Surgical excision of gland usually required.' },
+  ],
+  nose: {
+    cavity_walls: [
+      { w: 'Roof', s: 'Cribriform plate of ethmoid (CN1 olfactory rootlets pass through)' },
+      { w: 'Floor', s: 'Palatine process of maxilla + horizontal plate of palatine bone' },
+      { w: 'Medial Wall (Septum)', s: 'Perpendicular plate of ethmoid + vomer + septal cartilage' },
+      { w: 'Lateral Wall', s: 'Superior + middle conchae (ethmoid) + inferior nasal conchae (separate bone) — create turbulence for air filtering/warming/humidifying' },
+    ],
+    regions: [
+      { r: 'Vestibule', d: 'Immediately posterior to nares. Contains nasal hairs (vibrissae) filtering large particles.' },
+      { r: 'Respiratory Region (lower 2/3)', d: 'Warms, moistens, filters air. Pseudostratified ciliated epithelium with goblet cells.' },
+      { r: 'Olfactory Region (upper 1/3)', d: 'Innervated by olfactory nerve rootlets (CN1). Conveys sense of smell to olfactory bulb.' },
+    ],
+    sinuses: [
+      { name: 'Maxillary Sinus', location: 'In maxilla (below orbits, above upper teeth)', drain: 'Middle nasal meatus', clinical: 'MOST COMMON sinus to become infected. Roots of upper molars may project into sinus — infection can spread to teeth (and vice versa). Symptoms: facial pressure below eye, upper tooth pain, mucopurulent drainage. Maxillary sinus carcinoma: presents late (similar to sinusitis).' },
+      { name: 'Ethmoid Sinuses', location: 'Between nasal cavity and orbit (ethmoid bone)', drain: 'Superior + middle nasal meatus', clinical: 'Ethmoid sinusitis: periorbital/retro-orbital pain. The thin medial orbital wall (lamina papyracea) is at risk — orbital cellulitis can develop as complication.' },
+      { name: 'Frontal Sinus', location: 'Frontal bone above orbits', drain: 'Middle nasal meatus (via frontonasal duct)', clinical: 'Frontal sinusitis: headache above eyes, worse in morning (pooling). Fractures of anterior skull involve frontal sinus → CSF leak risk.' },
+      { name: 'Sphenoid Sinus', location: 'In sphenoid body (deepest, most posterior)', drain: 'Sphenoethmoidal recess (posterior nasal cavity)', clinical: 'Pituitary tumors relate anatomically. Sphenoid sinusitis: vertex headache, "behind the eyes." Trans-sphenoidal pituitary surgery passes through nasal cavity → sphenoid sinus → sella turcica.' },
+    ],
+  },
+};
+
+// ══════════════════════════════════════════════════
+// BRAIN & MENINGES DATA
+// ══════════════════════════════════════════════════
+const SCALP_LAYERS = [
+  { abbr: 'S', name: 'Skin', note: 'Thick, dense. Hair follicles, sweat glands. Highly vascular.' },
+  { abbr: 'C', name: 'Close connective tissue', note: 'Dense subcutaneous fat. Vessels and nerves run here. Scalp lacerations bleed profusely because vessels are anchored open and cannot constrict.' },
+  { abbr: 'A', name: 'Aponeurosis (Galea aponeurotica)', note: 'Epicranial aponeurosis — connects frontalis (frontal) to occipitalis (occipital). Fibromuscular layer. Lacerations must be sutured here for wound to close properly.' },
+  { abbr: 'L', name: 'Loose connective tissue', note: '"Danger zone" — potential space where infection can spread rapidly from ear to ear around the skull. Emissary veins run through here connecting scalp to dural sinuses — infection can enter intracranially.' },
+  { abbr: 'P', name: 'Pericranium', note: 'Periosteum of skull. Firmly attached. Subperiosteal hematoma (cephalohematoma in newborns) is LIMITED by suture lines (pericranium cannot cross sutures).' },
+];
+
+const MENINGES = [
+  { name: 'Dura Mater', color: 'amber', desc: '"Tough mother." Outermost, thickest layer. Two layers: outer periosteal (lines inside of skull) and inner meningeal. The two layers separate to form DURAL SINUSES (where venous blood drains into internal jugular veins). Major dural folds: Falx cerebri (between hemispheres), Tentorium cerebelli (between cerebrum and cerebellum), Falx cerebelli.' },
+  { name: 'Arachnoid', color: 'teal', desc: '"Spider mother." Middle, avascular layer. Fine connective tissue trabeculae cross the subarachnoid space anchoring the arachnoid to the pia. Arachnoid villi project into dural sinuses — CSF is REABSORBED here.' },
+  { name: 'Pia Mater', color: 'gold', desc: '"Gentle mother." Innermost layer, directly adheres to brain surface, follows every sulcus and gyrus. Highly vascular. Blood vessels to brain first pierce the pia. Pial arteries = cortical arteries.' },
+];
+
+const MENINGEAL_SPACES = [
+  { name: 'Epidural Space', type: 'Potential space — between dura and skull', bleed: 'EPIDURAL HEMATOMA: arterial bleed (middle meningeal artery rupture at pterion). Biconvex shape on CT. Does NOT cross suture lines. Lucid interval (brief unconsciousness → awake → rapid deterioration). Neurosurgical emergency — craniotomy within hours.', color: 'red' },
+  { name: 'Subdural Space', type: 'Potential space — between dura and arachnoid', bleed: 'SUBDURAL HEMATOMA: venous bleed (bridging veins tear as they cross from cortical surface to dural sinuses). Crescent shape on CT (follows brain contour). DOES cross suture lines. Acute (high-energy trauma), subacute (days-weeks), or chronic (elderly, alcoholics — minor trauma, may not recall). Chronic SDH may be isodense on CT — look for midline shift.', color: 'amber' },
+  { name: 'Subarachnoid Space', type: '"Real" space — between arachnoid and pia. Contains CSF.', bleed: 'SUBARACHNOID HEMORRHAGE (SAH): "worst headache of my life" — thunderclap onset. Berry (saccular) aneurysm rupture at Circle of Willis branch points most common cause. CT shows blood in sulci/cisterns (white = blood). LP: xanthochromia (yellow CSF) if CT negative but clinical suspicion high. Communicating hydrocephalus if CSF drainage blocked.', color: 'purple' },
+];
+
+const COW_DATA = {
+  arteries: [
+    { name: 'Internal Carotid Arteries (×2)', path: 'Enter via carotid canal → over foramen lacerum → circle of Willis. Terminal branches: anterior cerebral artery (ACA) + middle cerebral artery (MCA). Also gives off ophthalmic artery.', territory: 'Anterior 2/3 of cerebral hemispheres. ACA: medial surface (leg/foot motor/sensory). MCA: lateral surface (arm/face motor/sensory + language dominant hemisphere).' },
+    { name: 'Vertebral Arteries (×2)', path: 'Enter via foramen magnum → R+L join to form basilar artery → divides into posterior cerebral arteries (PCA).', territory: 'Posterior fossa (brainstem, cerebellum), posterior cerebral cortex (vision — occipital lobe). VBI = vertebrobasilar insufficiency.' },
+    { name: 'Anterior Communicating Artery', path: 'Connects R+L anterior cerebral arteries at midline. Most common site of aneurysm.', territory: 'Collateral pathway.' },
+    { name: 'Posterior Communicating Arteries (×2)', path: 'Connect ICA to PCA on each side. Second most common aneurysm site.', territory: 'Collateral pathway. CN3 palsy from PComm aneurysm (compresses outside of CN3 first).' },
+  ],
+  veins: 'Venous blood drains from cortex into DURAL SINUSES (between dura layers): Superior sagittal sinus (midline, along falx), Inferior sagittal sinus, Transverse sinus (occipital), Sigmoid sinus → empties into INTERNAL JUGULAR VEIN. Cavernous sinus (lateral to pituitary) — contains CN3,4,6,V1,V2 and ICA — cavernous sinus thrombosis spreads from face infections (danger triangle).',
+};
+
+// ══════════════════════════════════════════════════
+// TMJ DATA
+// ══════════════════════════════════════════════════
+const TMJ_DATA = {
+  mandible_landmarks: [
+    { name: 'Body', note: 'Horizontal part bearing the lower teeth' },
+    { name: 'Angle', note: 'Junction of body and ramus. Rounded corner palpable below ear' },
+    { name: 'Ramus', note: 'Vertical plate of mandible. Medial surface = medial pterygoid insertion' },
+    { name: 'Coronoid Process', note: 'Anterior superior process of ramus — temporalis inserts here' },
+    { name: 'Condylar Process', note: 'Posterior superior process — articular head (condyle) + neck. Head articulates with mandibular fossa of temporal bone (TMJ).' },
+    { name: 'Mental Protuberance', note: 'The "chin" — uniquely human.' },
+    { name: 'Mental Foramen', note: 'Below 2nd premolar. Mental nerve exits here (V3 branch — chin + lower lip sensation).' },
+    { name: 'Mandibular Foramen', note: 'Medial ramus surface. Inferior alveolar nerve enters — dental block injected near here.' },
+    { name: 'Mylohyoid Line', note: 'Internal oblique ridge — mylohyoid muscle origin (floor of mouth).' },
+  ],
+  structure: {
+    components: [
+      { c: 'Mandibular Condyle (head)', d: 'Ovoid articular surface of condylar process. Slightly convex anteroposteriorly.' },
+      { c: 'Articular Disc', d: 'Biconcave fibrocartilaginous disc that DIVIDES the joint into upper (temporomandibular) and lower (mandibulodiscal) compartments. Superior head of lateral pterygoid inserts into the disc — controls disc position.' },
+      { c: 'Mandibular Fossa', d: 'Concave depression of temporal bone that receives the condyle.' },
+      { c: 'Articular Tubercle (Eminence)', d: 'Anterior ridge of mandibular fossa. Condyle must translate over this during full mouth opening.' },
+      { c: 'Joint Capsule', d: 'Loose capsule allowing significant movement. Reinforced by lateral (temporomandibular) ligament. Also: stylomandibular and sphenomandibular ligaments (accessory).' },
+    ],
+    motion: [
+      { m: 'Rotation (hinging)', d: 'Occurs in lower compartment (mandibulodiscal). First ~20-25mm of mouth opening.' },
+      { m: 'Translation (gliding)', d: 'Occurs in upper compartment (temporomandibular). Condyle AND disc move forward over articular eminence. Necessary for full mouth opening (>40mm).' },
+    ],
+  },
+  mastication: [
+    {
+      name: 'Temporalis',
+      origin: 'Temporal fossa and temporal fascia',
+      insertion: 'Coronoid process and anterior ramus of mandible',
+      nerve: 'Deep temporal nerves (anterior + posterior) from V3',
+      action: 'ELEVATES mandible (closes jaw) — primary jaw closer. Posterior fibers RETRACT mandible.',
+      clinical: 'Palpate over temporal region. Temporal headache = temporalis trigger points or temporalis tendinitis. Temporal wasting in malnutrition/cachexia — visible hollow over temporal fossa.'
+    },
+    {
+      name: 'Masseter',
+      origin: 'Inferior border and medial surface of zygomatic arch',
+      insertion: 'Lateral surface of ramus and coronoid process',
+      nerve: 'Masseteric nerve (V3)',
+      action: 'ELEVATES mandible (closes jaw — most powerful elevator). Can PROTRUDE mandible.',
+      clinical: 'Masseter hypertrophy from bruxism (teeth grinding) → square jaw appearance. Palpate at angle of jaw and ask patient to bite. Masseter trigger points → tooth pain, jaw pain, tinnitus. Trismus (lockjaw) from masseter spasm — peritonsillar abscess, tetanus, TMJ trauma.'
+    },
+    {
+      name: 'Medial Pterygoid',
+      origin: 'Medial surface of lateral pterygoid plate of sphenoid, palatine bone, pterygoid fossa',
+      insertion: 'Medial surface of mandibular ramus',
+      nerve: 'Medial pterygoid nerve (V3)',
+      action: 'Bilateral: ELEVATES mandible. Can PROTRUDE jaw (with lateral pterygoid). Unilateral: LATERAL DEVIATION of jaw to OPPOSITE side (grinding motion for chewing).',
+      clinical: 'Works with masseter as a "sling" around the mandible (masseter lateral + medial pterygoid medial). Medial pterygoid trigger points → pain inside mouth, difficulty opening wide.'
+    },
+    {
+      name: 'Lateral Pterygoid (AKA Sphenomeniscus)',
+      origin: 'Superior head: infratemporal surface of greater wing of sphenoid. Inferior head: lateral surface of lateral pterygoid plate.',
+      insertion: 'Superior head: capsule and articular DISC of TMJ (controls disc). Inferior head: neck of condyle.',
+      nerve: 'Lateral pterygoid nerve (V3)',
+      action: 'PROTRACTS mandible (opens mouth — pulls condyle + disc anteriorly). Active in lateral (grinding) and chewing movements.',
+      clinical: 'The ONLY jaw muscle that OPENS the mouth (depresses mandible). Bilateral: protracts and opens. Unilateral: deviates jaw to OPPOSITE side. TMJ clicking: disc position controlled by lateral pterygoid — superior head dysfunction can cause anterior disc displacement with reduction (clicking) or without reduction (closed lock). Hyperactive lateral pterygoid contributes to TMD.'
+    },
+  ],
+  pathology: [
+    { type: 'TMJ Clicking', desc: 'Anterior disc displacement WITH reduction. The disc slips anteriorly on closure and reduces (clicks back into place) on opening. Click on OPENING + CLOSING. Condyle must "bump over" displaced disc edge on opening.', mgmt: 'Stabilization splint, physical therapy (jaw mobilization, muscle relaxation), NSAIDs, habit modification.' },
+    { type: 'TMJ Locking', desc: 'Anterior disc displacement WITHOUT reduction. Disc remains anterior — condyle cannot fully translate over articular eminence. Limited mouth opening (<35mm). No click — disc has stayed stuck.', mgmt: 'Manual repositioning attempts (if acute), arthrocentesis, arthroscopy, or open surgery in refractory cases.' },
+    { type: 'Subluxation (Open Lock)', desc: 'Condyle translates too FAR anteriorly (beyond articular eminence) and cannot return — jaw "locks open." Extreme mouth opening or yawning. Must reduce manually.', mgmt: 'Manual reduction (push down/posteriorly on molars while stabilizing head). Prevention: limit jaw opening.' },
+  ],
+};
+
+// ══════════════════════════════════════════════════
+// REVIEW DATA
+// ══════════════════════════════════════════════════
+const HEAD_REVIEW = [
+  { q: 'A patient is struck on the left temple. Shortly after, they have a lucid interval then rapidly lose consciousness. CT shows a biconvex hyperdense collection that does not cross suture lines. What is the diagnosis, and which artery is typically responsible?', a: 'EPIDURAL HEMATOMA — a neurosurgical emergency. The biconvex (lens-shaped) appearance and lack of suture crossing distinguishes it from a subdural hematoma. The pterion (junction of frontal, temporal, parietal, sphenoid bones) is the thinnest point of the skull, and the MIDDLE MENINGEAL ARTERY runs directly beneath it. Blunt trauma here ruptures this artery. The lucid interval followed by rapid deterioration is the classic "talk and die" presentation. Treatment: urgent craniotomy and hematoma evacuation.' },
+  { q: 'A patient presents with a left CN7 palsy. You observe they cannot raise the LEFT eyebrow, cannot close the left eye, and the left corner of the mouth droops. What type of palsy is this and where is the lesion? How would a central CN7 palsy differ?', a: 'This is a PERIPHERAL CN7 palsy (Bell\'s Palsy or similar) — the forehead is INVOLVED (cannot raise eyebrow). This indicates the lesion is distal to the facial nucleus or in the nerve itself, affecting all 5 branches. A CENTRAL CN7 palsy (from stroke involving upper motor neuron pathways) would SPARE the forehead because the forehead has bilateral cortical representation — one functioning hemisphere can still raise the forehead. In central palsy, only the CONTRALATERAL lower face droops. The immediate clinical priority in peripheral palsy: protect the cornea (eye cannot close → corneal exposure → ulceration → blindness).' },
+  { q: 'A patient cannot abduct the left eye (esotropia at rest). Which CN is affected, and why is this nerve sometimes a "false localizing sign" in increased ICP?', a: 'CN 6 (Abducens nerve) is affected — it innervates only the lateral rectus (abduction). The left lateral rectus cannot fire, so the medial rectus pulls the eye medially = esotropia. CN 6 is considered a false localizing sign in increased ICP because it has the longest intracranial course and makes a sharp bend over the petrous ridge of the temporal bone. Increased ICP can stretch CN6 against the petrous bone anywhere along its course, producing CN6 palsy even when the underlying pathology is distant from the sixth nerve nucleus (e.g., cerebellar tumor, diffuse cerebral edema). A CN6 palsy alone does NOT localize to the brainstem — always look for other signs.' },
+  { q: 'During a "say Ahhhh" examination, the uvula deviates to the RIGHT. Which CN is likely injured, and on which SIDE is the lesion?', a: 'CN 9 (glossopharyngeal nerve) is responsible for soft palate elevation and the gag reflex. When CN9 is damaged on the LEFT side, the LEFT soft palate cannot elevate properly, and the intact RIGHT side pulls the uvula to the RIGHT (the strong side). Rule: UVULA DEVIATES TO THE STRONG/FUNCTIONING SIDE — meaning the lesion is on the OPPOSITE (left) side. This is the opposite of tongue deviation: the tongue deviates to the WEAK side. Peritonsillar abscess can also displace the uvula — but it is the mass effect pushing it, not a neurological lesion.' },
+  { q: 'Describe the pathway of aqueous humor from production to drainage. What happens when drainage is impaired?', a: 'Aqueous humor is produced by the CILIARY BODY (ciliary processes secrete it into the posterior chamber). It flows from the posterior chamber → through the pupil → into the anterior chamber → drains via the CANAL OF SCHLEMM (trabecular meshwork at the iridocorneal angle) → into the venous system. When drainage is impaired (narrow angle, trabecular blockage), intraocular pressure (IOP) rises above normal (>21 mmHg) → GLAUCOMA. Chronically elevated IOP compresses the optic nerve at the optic disc → progressive peripheral vision loss (tunnel vision) → blindness. Glaucoma is insidious — often painless until advanced. Acute angle-closure glaucoma: sudden IOP spike → severe eye pain, halos around lights, nausea, fixed mid-dilated pupil — emergency.' },
+  { q: 'Explain the weber\'s test results for a patient with right-sided conductive hearing loss.', a: 'Weber\'s test: place vibrating tuning fork on vertex of head. The patient reports hearing it LOUDER in the RIGHT ear (the side with conductive hearing loss). Reasoning: conductive loss means the external/middle ear pathway is impaired on the right. Bone-conducted sound bypasses this blockage and reaches the right cochlea directly — and because the right ear is not receiving environmental noise through the impaired canal, the bone-conducted tuning fork signal is not masked by background noise and seems relatively louder. Rinne\'s test would then show bone > air (negative Rinne) on the right, confirming conductive loss. Compare: sensorineural loss would cause Weber to lateralize to the GOOD ear (left), because the left cochlea/nerve is more intact.' },
+  { q: 'A patient has limited mouth opening (25mm) and the jaw deviates to the right on opening. There is no click. What is the likely TMJ diagnosis, and which muscle\'s dysfunction is most likely responsible?', a: 'This presentation is consistent with ANTERIOR DISC DISPLACEMENT WITHOUT REDUCTION (closed lock) on the RIGHT TMJ. The disc is stuck anteriorly on the right → the condyle cannot fully translate over the articular eminence → limited opening. The jaw deviates TOWARD the affected (right) side because the blocked right condyle cannot translate as far forward as the left. The LATERAL PTERYGOID (specifically the superior head, which inserts into the disc) is the muscle most responsible for maintaining disc position. Hyperactivity, spasm, or incoordination of the lateral pterygoid can cause anterior disc displacement. Without reduction = no click (disc stays stuck rather than snapping back).' },
+];
+
+// ══════════════════════════════════════════════════
+// RENDER FUNCTIONS
+// ══════════════════════════════════════════════════
+
+function renderSkull() {
+  // Neurocranium
+  const nc = document.getElementById('neurocranium-content');
+  if (nc) {
+    nc.innerHTML = '<div class="muscle-accordion-list">' + NEUROCRANIUM.map(b => `
+      <div class="ma-item" onclick="toggleMA(this)">
+        <div class="ma-header"><div class="ma-name">${b.name}</div>${CHEVRON_SVG}</div>
+        <div class="ma-body">
+          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.5rem;">${b.parts}</div>
+          <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical</div><div class="cn2-short">${b.clinical}</div></div></div></div>
+        </div>
+      </div>`).join('') + '</div>';
+  }
+
+  // Facial skeleton
+  const fc = document.getElementById('facial-content');
+  if (fc) {
+    fc.innerHTML = FACIAL_BONES.map(b => `
+      <div style="padding:0.4rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${b.name}</div>
+        <div style="font-size:0.875rem;color:var(--text2);">${b.note}</div>
+      </div>`).join('');
+  }
+
+  // Sutures
+  const sc = document.getElementById('sutures-content');
+  if (sc) {
+    sc.innerHTML = `<div class="sec-label">Sutures</div>` + SUTURES.map(s => `
+      <div style="padding:0.4rem 0;border-bottom:1px solid var(--border);">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.1rem;">
+          <span style="font-size:0.9rem;font-weight:600;color:var(--text);">${s.name}</span>
+          <span class="tag tag-grey" style="font-size:0.6rem;">${s.bones}</span>
+        </div>
+        <div style="font-size:0.875rem;color:var(--text2);">${s.note}</div>
+      </div>`).join('') +
+      `<div class="sec-label" style="margin-top:1rem;">Suture Junctions</div>` +
+      JUNCTIONS.map(j => `
+        <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid ${j.name === 'Pterion ★' ? 'var(--red)' : 'var(--teal)'};">
+          <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.2rem;">${j.name}</div>
+          <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.2rem;"><strong style="color:var(--text2);">Bones: </strong>${j.bones}</div>
+          <div style="font-size:0.875rem;color:var(--text2);">${j.clinical}</div>
+        </div>`).join('');
+  }
+
+  // Landmarks
+  const lc = document.getElementById('landmarks-content');
+  if (lc) {
+    lc.innerHTML = LANDMARKS.map(l => `
+      <div style="margin-bottom:1rem;">
+        <div class="sec-label">${l.name}</div>
+        ${l.items.map(i => `<div class="bullet"><span class="dot">•</span>${i}</div>`).join('')}
+      </div>`).join('');
+  }
+}
+
+function renderForamina() {
+  const ft = document.getElementById('foramina-table');
+  if (ft) {
+    const fossaColors = { Anterior:'var(--teal)', Middle:'var(--gold)', Posterior:'var(--purple)' };
+    let currentFossa = '';
+    ft.innerHTML = '<div class="muscle-accordion-list">' +
+      FORAMINA_SUPERIOR.map(f => {
+        let fosHeader = '';
+        if (f.fossa !== currentFossa) {
+          currentFossa = f.fossa;
+          fosHeader = `<div style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:${fossaColors[f.fossa]};padding:0.5rem 0.875rem;background:var(--surface);margin-top:0.5rem;">${f.fossa} Cranial Fossa</div>`;
+        }
+        return fosHeader + `
+        <div class="ma-item" onclick="toggleMA(this)">
+          <div class="ma-header">
+            <div style="flex:1;">
+              <div class="ma-name">${f.name}</div>
+              <div style="font-size:0.78rem;color:var(--teal-light);margin-top:0.1rem;">${f.cn}</div>
+            </div>
+            ${CHEVRON_SVG}
+          </div>
+          <div class="ma-body">
+            <div class="bottom-line"><span class="bottom-line-icon">🔵</span><span class="bottom-line-text">${f.contents}</span></div>
+            <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.5rem;"><strong style="color:var(--text2);">Location: </strong>${f.location}</div>
+            <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical</div>
+            <div class="cn2-short">${f.clinical.substring(0,160)}${f.clinical.length>160?'...':''}</div>
+            ${f.clinical.length>160 ? `<div class="cn2-more">${f.clinical}</div><button class="cn2-toggle" onclick="event.stopPropagation();toggleCN2(this)">+ Show more</button>` : ''}
+            </div></div></div>
+          </div>
+        </div>`;
+      }).join('') + '</div>';
+  }
+
+  const fi = document.getElementById('foramina-inferior');
+  if (fi) {
+    fi.innerHTML = FORAMINA_INFERIOR.map(f => `
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${f.name}</div>
+        <div style="font-size:0.875rem;color:var(--teal-light);margin-bottom:0.15rem;">${f.contents}</div>
+        <div style="font-size:0.82rem;color:var(--text3);">${f.note}</div>
+      </div>`).join('');
+  }
+
+  const fk = document.getElementById('foramina-key');
+  if (fk) {
+    const keys = [
+      { cn: 'CN 1', foramen: 'Cribriform foramina', fossa: 'Anterior' },
+      { cn: 'CN 2', foramen: 'Optic canal', fossa: 'Middle' },
+      { cn: 'CN 3, 4, 6 + V1', foramen: 'Superior orbital fissure', fossa: 'Middle' },
+      { cn: 'V2 (CN5)', foramen: 'Foramen rotundum', fossa: 'Middle' },
+      { cn: 'V3 (CN5)', foramen: 'Foramen ovale', fossa: 'Middle' },
+      { cn: 'Middle meningeal A.', foramen: 'Foramen spinosum', fossa: 'Middle' },
+      { cn: 'CN 7 + 8', foramen: 'Internal acoustic meatus', fossa: 'Posterior' },
+      { cn: 'CN 9, 10, 11 + IJV', foramen: 'Jugular foramen', fossa: 'Posterior' },
+      { cn: 'CN 12', foramen: 'Hypoglossal canal', fossa: 'Posterior' },
+      { cn: 'Medulla + CN11 roots', foramen: 'Foramen magnum', fossa: 'Posterior' },
+      { cn: 'CN 7 (exit)', foramen: 'Stylomastoid foramen', fossa: 'Inferior view' },
+      { cn: 'ICA', foramen: 'Carotid canal', fossa: 'Inferior view' },
+    ];
+    fk.innerHTML = `<table class="clean-table">
+      <thead><tr><th>CN / Structure</th><th>Foramen</th><th>Fossa</th></tr></thead>
+      <tbody>${keys.map(k => `<tr>
+        <td><strong style="color:var(--teal-light);">${k.cn}</strong></td>
+        <td style="font-size:0.875rem;">${k.foramen}</td>
+        <td style="font-size:0.78rem;color:var(--text3);">${k.fossa}</td>
+      </tr>`).join('')}</tbody>
+    </table>`;
+  }
+}
+
+let currentFace = 'expression';
+function selectFace(section, btn) {
+  currentFace = section;
+  document.querySelectorAll('#face-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderFaceContent();
+}
+function renderFaceContent() {
+  const el = document.getElementById('face-content');
+  if (!el) return;
+
+  if (currentFace === 'expression') {
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div>
+        <div class="bottom-line" style="margin-bottom:1rem;"><span class="bottom-line-icon">⚡</span><span class="bottom-line-text">ALL muscles of facial expression are innervated by CN VII (Facial nerve). The muscles of MASTICATION are innervated by CN V (Trigeminal — V3).</span></div>
+        <div class="muscle-accordion-list">
+          ${EXPRESSION_MUSCLES.map(m => `
+            <div class="ma-item" onclick="toggleMA(this)">
+              <div class="ma-header">
+                <div style="flex:1;"><div class="ma-name">${m.name}</div><div style="font-size:0.75rem;color:var(--text3);">${m.n}</div></div>
+                ${CHEVRON_SVG}
+              </div>
+              <div class="ma-body">
+                <div style="font-size:0.9rem;font-weight:500;color:var(--text);margin-bottom:0.375rem;">${m.action}</div>
+                <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical</div><div class="cn2-short">${m.note}</div></div></div></div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">CN VII Branches</div><div class="card-header-sub">5 Terminal Branches Through Parotid</div></div>
+        <div class="card-body">
+          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.875rem;">CN7 exits the skull via the <strong style="color:var(--text)">stylomastoid foramen</strong>, then enters the parotid gland where it divides:</div>
+          ${CN7_DATA.branches.map(b => `
+            <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
+              <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${b.name} Branch</div>
+              <div style="font-size:0.82rem;color:var(--teal-light);margin-bottom:0.15rem;">${b.region}</div>
+              <div style="font-size:0.82rem;color:var(--text3);">Test: ${b.test}</div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  else if (currentFace === 'bellspalsy') {
+    const bp = BELLS_PALSY;
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div class="card" style="border-left:4px solid var(--red);">
+        <div class="card-header"><div class="card-header-title">Peripheral CN7 Palsy (Bell's Palsy)</div></div>
+        <div class="card-body">
+          <div class="bottom-line"><span class="bottom-line-icon">⚡</span><span class="bottom-line-text">${bp.peripheral.mnemo}</span></div>
+          <div class="sec-label">Causes</div>
+          <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.875rem;">${bp.peripheral.cause}</div>
+          <div class="sec-label">Clinical Findings</div>
+          ${bp.peripheral.findings.map(f => `<div class="bullet"><span class="dot">•</span>${f}</div>`).join('')}
+          <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Treatment</div>
+          <div class="clinical-note-text">${bp.peripheral.clinical}</div></div>
+        </div>
+      </div>
+      <div class="card" style="border-left:4px solid var(--amber);">
+        <div class="card-header"><div class="card-header-title">Central CN7 Palsy (Stroke / UMN)</div></div>
+        <div class="card-body">
+          <div class="bottom-line"><span class="bottom-line-icon">🧠</span><span class="bottom-line-text">${bp.central.mnemo}</span></div>
+          <div class="sec-label">Causes</div>
+          <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.875rem;">${bp.central.cause}</div>
+          <div class="sec-label">Clinical Findings</div>
+          ${bp.central.findings.map(f => `<div class="bullet"><span class="dot">•</span>${f}</div>`).join('')}
+          <div class="warn-note" style="margin-top:0.875rem;"><div class="warn-note-lbl">Clinical Urgency</div><div class="warn-note-text">${bp.central.clinical}</div></div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  else if (currentFace === 'vasculature') {
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">External Carotid Artery (ECA)</div><div class="card-header-sub">Primary Face/Scalp Supply — 8 Branches</div></div>
+        <div class="card-body">
+          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.875rem;">The ECA supplies the face, scalp, and external skull. Three major branches to the face:</div>
+          <div class="chunk" style="border-left:3px solid var(--teal);"><div class="chunk-title">Facial Artery</div><div class="chunk-body">Winds around inferior border of mandible (palpable pulse). Supplies face from chin to nose. Anastomoses with ophthalmic artery branches superiorly — clinically important: ICA-ECA anastomosis.</div></div>
+          <div class="chunk" style="border-left:3px solid var(--gold);"><div class="chunk-title">Maxillary Artery</div><div class="chunk-body">Deep supply to mid-face, teeth, nasal cavity, and skull. Gives off middle meningeal artery (enters foramen spinosum). Infraorbital artery supplies cheek.</div></div>
+          <div class="chunk" style="border-left:3px solid var(--purple);"><div class="chunk-title">Superficial Temporal Artery</div><div class="chunk-body">Palpable pulse at temporal region (just anterior to ear). Terminal branch of ECA, branches with facial nerve in parotid region. Site of temporal artery biopsy for giant cell (temporal) arteritis.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">Internal Carotid Artery (ICA)</div><div class="card-header-sub">Forehead Region + Brain Supply</div></div>
+        <div class="card-body">
+          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.875rem;">The ICA supplies the brain via the Circle of Willis. Its <strong style="color:var(--text)">ophthalmic artery</strong> branch exits the orbit and provides a crucial anastomosis with the ECA:</div>
+          <div class="chunk"><div class="chunk-title">Supraorbital Artery</div><div class="chunk-body">Branch of ophthalmic artery. Supplies forehead above eye. Anastomoses with superficial temporal (ECA) — provides collateral if ICA occludes.</div></div>
+          <div class="chunk"><div class="chunk-title">Supratrochlear Artery</div><div class="chunk-body">Branch of ophthalmic artery. Medial forehead. Same anastomosis principle. ECA-ICA anastomosis via these vessels = important collateral circulation.</div></div>
+          <div class="warn-note"><div class="warn-note-lbl">Danger Triangle of Face</div><div class="warn-note-text">Area from corners of mouth to nasal bridge. Facial veins communicate with cavernous sinus via ophthalmic veins (no valves). Infection in this zone (furuncle, folliculitis) can spread to cavernous sinus → cavernous sinus thrombosis → septic meningitis. Do not squeeze pimples in this zone.</div></div>
+        </div>
+      </div>
+    </div>`;
+  }
+}
+
+let currentCN = 'cn5';
+function selectCN(cn, btn) {
+  currentCN = cn;
+  document.querySelectorAll('#cn-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderCNContent();
+}
+function renderCNContent() {
+  const el = document.getElementById('cn-content');
+  if (!el) return;
+
+  if (currentCN === 'cn5') {
+    const d = CN5_DATA;
+    el.innerHTML = `<div style="animation:fadeUp 0.25s ease;">
+      <div class="bottom-line" style="margin-bottom:1rem;"><span class="bottom-line-icon">🎯</span><span class="bottom-line-text">${d.overview}</span></div>
+      <div class="three-col">
+        ${d.divisions.map((div, i) => {
+          const colors = ['var(--teal)', 'var(--gold)', 'var(--purple)'];
+          return `<div class="card" style="border-left:4px solid ${colors[i]};">
+            <div class="card-header"><div class="card-header-title">${div.name}</div><div class="card-header-sub">Exit: ${div.exit.split('→')[0].trim()}</div></div>
+            <div class="card-body">
+              <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.5rem;"><strong style="color:var(--text2);">Region: </strong>${div.region}</div>
+              <div class="sec-label">Key Branches</div>
+              ${div.branches.map(b => `<div class="bullet"><span class="dot">•</span><span style="font-size:0.875rem;">${b}</span></div>`).join('')}
+              <div style="background:var(--surface);border-radius:6px;padding:0.5rem 0.625rem;margin-top:0.5rem;font-size:0.82rem;"><strong style="color:var(--text2);">Clinical test: </strong><span style="color:var(--teal-light);">${div.test}</span></div>
+              <div class="clinical-note" style="margin-top:0.5rem;"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${div.clinical}</div></div>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+
+  else if (currentCN === 'cn7') {
+    const d = CN7_DATA;
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">CN VII — Facial Nerve</div><div class="card-header-sub">Motor · Taste · Parasympathetic</div></div>
+        <div class="card-body">
+          <div class="bottom-line" style="margin-bottom:0.875rem;"><span class="bottom-line-icon">🛤️</span><span class="bottom-line-text">${d.path}</span></div>
+          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${d.overview}</div>
+          <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${d.clinical}</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">5 Terminal Branches</div><div class="card-header-sub">All Motor to Facial Muscles</div></div>
+        <div class="card-body">
+          ${d.branches.map(b => `
+            <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
+              <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${b.name}</div>
+              <div style="font-size:0.82rem;color:var(--teal-light);margin-bottom:0.15rem;">${b.region}</div>
+              <div style="font-size:0.78rem;color:var(--text3);">Test: ${b.test}</div>
+            </div>`).join('')}
+          <div class="mnemonic-badge" style="margin-top:0.875rem;display:flex;align-items:center;gap:0.5rem;padding:0.5rem 0.875rem;background:var(--gold-pale);border:1px solid rgba(212,168,80,0.25);border-radius:8px;">
+            <span style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);">Mnemonic</span>
+            <span style="font-family:var(--font-d);font-size:1.1rem;font-weight:600;color:var(--text);">To Zanzibar By Motor Car</span>
+          </div>
+          <div style="font-size:0.8rem;color:var(--text3);margin-top:0.3rem;">Temporal · Zygomatic · Buccal · Mandibular · Cervical</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  else if (currentCN === 'cn9') {
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">CN IX — Glossopharyngeal Nerve</div></div>
+        <div class="card-body">
+          <div class="bottom-line"><span class="bottom-line-icon">🎯</span><span class="bottom-line-text">CN9 = motor to stylopharyngeus + sensory to posterior 1/3 tongue (taste + general) + pharynx + carotid sinus/body + middle ear. Also parasympathetic to parotid gland.</span></div>
+          <div class="sec-label">Key Functions</div>
+          <div class="bullet"><span class="dot">•</span>Sensory: posterior 1/3 tongue (taste + touch), oropharynx, middle ear (Jacobson's nerve)</div>
+          <div class="bullet"><span class="dot">•</span>Motor: stylopharyngeus (elevates pharynx during swallowing)</div>
+          <div class="bullet"><span class="dot">•</span>Autonomic: carotid sinus (baroreceptor) + carotid body (chemoreceptor)</div>
+          <div class="bullet"><span class="dot">•</span>Parasympathetic: parotid gland via lesser petrosal nerve → otic ganglion</div>
+          <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Clinical Pearl</div>
+          <div class="clinical-note-text">Uvula deviation: CN9 lesion on one side → soft palate droops → uvula pulls to STRONG side. "Say Ahhhh" — observe direction of uvula elevation. Glossopharyngeal neuralgia: severe paroxysmal pain in posterior tongue, tonsil, and ear — triggered by swallowing. Rare but disabling.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-header-title">CN XII — Hypoglossal Nerve</div></div>
+        <div class="card-body">
+          <div class="bottom-line"><span class="bottom-line-icon">🎯</span><span class="bottom-line-text">CN12 = MOTOR to ALL intrinsic tongue muscles + genioglossus (the main tongue protrusion muscle). Exits via hypoglossal canal. Purely motor.</span></div>
+          <div class="sec-label">Key Function</div>
+          <div class="bullet"><span class="dot">•</span>Genioglossus: protrudes tongue (deviates it toward opposite side)</div>
+          <div class="bullet"><span class="dot">•</span>All other intrinsic tongue muscles: shape changes during speech/swallowing</div>
+          <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Clinical Pearl</div>
+          <div class="clinical-note-text">Tongue deviates to the WEAK side on protrusion. If right CN12 is damaged → right genioglossus cannot push right side → left side pushes harder → tongue deviates RIGHT (toward weak side). In ALS: tongue fasciculations + atrophy = CN12 bulbar involvement. Hypoglossal canal metastasis (skull base mets) can cause progressive tongue weakness/atrophy.</div></div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  else if (currentCN === 'cn12') {
+    // Redirect to show cn9 which includes cn12
+    selectCN('cn9', document.querySelector('#cn-nav .chip-btn:nth-child(3)'));
+  }
+
+  else if (currentCN === 'tests') {
+    el.innerHTML = `<div style="animation:fadeUp 0.25s ease;">
+      <div class="bottom-line" style="margin-bottom:1rem;"><span class="bottom-line-icon">🏥</span><span class="bottom-line-text">Clinical neurological exam of the head — all tests performed during routine head/neck assessment and in neurological screening.</span></div>
+      <div class="muscle-accordion-list">
+        ${CLINICAL_TESTS.map(t => `
+          <div class="ma-item" onclick="toggleMA(this)">
+            <div class="ma-header"><div class="ma-name">${t.test}</div>${CHEVRON_SVG}</div>
+            <div class="ma-body">
+              <div class="chunk" style="border-left:3px solid var(--teal);margin-bottom:0.5rem;"><div class="chunk-title">🤲 How to Perform</div><div class="chunk-body">${t.how}</div></div>
+              <div class="chunk" style="border-left:3px solid var(--green);margin-bottom:0.5rem;"><div class="chunk-title">✅ Normal Result</div><div class="chunk-body">${t.normal}</div></div>
+              <div class="chunk" style="border-left:3px solid var(--red);"><div class="chunk-title">⚠️ Positive / Abnormal</div><div class="chunk-body">${t.positive}</div></div>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+  }
+}
+
+function renderEyes() {
+  // Orbit
+  const oc = document.getElementById('orbit-content');
+  if (oc) {
+    const d = ORBIT_DATA;
+    oc.innerHTML = `
+      <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.5rem;"><strong style="color:var(--text2);">Margins: </strong>${d.margins}</div>
+      <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.75rem;"><strong style="color:var(--text2);">Walls (7 bones): </strong>${d.walls}</div>
+      <div class="sec-label">Foramina</div>
+      ${d.foramina.map(f => `
+        <div style="padding:0.4rem 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:0.875rem;font-weight:600;color:var(--text);">${f.f}</div>
+          <div style="font-size:0.82rem;color:var(--teal-light);">${f.c}</div>
+        </div>`).join('')}
+      <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${d.clinical}</div></div>`;
+  }
+
+  // Eyeball
+  const eb = document.getElementById('eyeball-content');
+  if (eb) {
+    const cmap = { teal:'var(--teal)', gold:'var(--gold)', purple:'var(--purple)' };
+    eb.innerHTML = EYEBALL_LAYERS.map(l => `
+      <div style="margin-bottom:0.875rem;">
+        <div class="sec-label">${l.name}</div>
+        ${l.parts.map(p => `
+          <div style="background:var(--surface);border-radius:8px;padding:0.625rem 0.875rem;margin-bottom:0.375rem;border-left:3px solid ${cmap[l.color]};">
+            <div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.2rem;">${p.n}</div>
+            <div style="font-size:0.82rem;color:var(--text2);line-height:1.65;">${p.d}</div>
+          </div>`).join('')}
+      </div>`).join('');
+  }
+
+  // Light pathway
+  const lp = document.getElementById('light-path');
+  if (lp) {
+    const steps = ['External light', 'Cornea', 'Aqueous humor', 'Lens', 'Vitreous body', 'Retina'];
+    lp.innerHTML = steps.map((s, i) => `<span class="lp-step">${s}</span>${i < steps.length-1 ? '<span class="lp-arrow">→</span>' : ''}`).join('');
+  }
+  const ln = document.getElementById('lens-notes');
+  if (ln) {
+    ln.innerHTML = `<strong style="color:var(--text);">Lens accommodation:</strong> Ciliary muscle contracts → zonular fibers relax → lens increases convexity → focuses near objects. <strong style="color:var(--text);">Distant focus:</strong> ciliary muscle relaxes → zonular fibers pull lens flat → lens decreases convexity. <span style="color:var(--amber);">Cataracts:</span> opacity in lens → blurred/poor vision → surgical lens replacement.`;
+  }
+
+  // Extraocular muscles
+  const eom = document.getElementById('eom-content');
+  if (eom) {
+    const cmap = { teal:'var(--teal)', gold:'var(--gold)', amber:'var(--amber)' };
+    eom.innerHTML = EOM_DATA.map(cn => `
+      <div style="margin-bottom:1rem;">
+        <div class="sec-label">${cn.cn}</div>
+        <table class="clean-table" style="margin-bottom:0.5rem;">
+          <thead><tr><th>Muscle</th><th>Action</th><th>Test</th></tr></thead>
+          <tbody>${cn.muscles.map(m => `<tr>
+            <td><strong style="color:var(--text);">${m.m}</strong></td>
+            <td style="font-size:0.82rem;">${m.t}</td>
+            <td style="font-size:0.78rem;color:var(--teal-light);">${m.test}</td>
+          </tr>`).join('')}</tbody>
+        </table>
+        <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical</div><div class="cn2-short">${cn.clinical}</div></div></div></div>
+      </div>`).join('');
+  }
+
+  // Lacrimal
+  const lc = document.getElementById('lacrimal-content');
+  if (lc) {
+    const steps = [
+      { n: 'Lacrimal Gland', d: 'Produces tears (superolateral orbit). Innervated by CN7 (via greater petrosal nerve → pterygopalatine ganglion → lacrimal nerve).' },
+      { n: 'Upper Orbit → Cornea', d: 'Tears enter eye in upper orbit and circulate across the cornea (spreading with each blink).' },
+      { n: 'Lacrimal Lake', d: 'Tears collect in medial angle of eye (lacrimal lake).' },
+      { n: 'Lacrimal Punctum', d: 'Upper and lower puncta (medial eyelid margins) — entry points into lacrimal drainage system.' },
+      { n: 'Lacrimal Canaliculi', d: 'Small "tunnels" carrying tears from puncta toward lacrimal sac.' },
+      { n: 'Lacrimal Sac → Nasolacrimal Duct', d: 'Tears drain to nasolacrimal duct, which empties into the inferior meatus of the nasal cavity.' },
+    ];
+    lc.innerHTML = steps.map((s, i) => `
+      <div style="display:flex;gap:0.625rem;padding:0.4rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-family:var(--font-d);font-size:1.1rem;font-weight:600;color:var(--teal-light);min-width:1.5rem;line-height:1;">${i+1}</div>
+        <div><div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.1rem;">${s.n}</div><div style="font-size:0.82rem;color:var(--text2);">${s.d}</div></div>
+      </div>`).join('') + `<div style="font-size:0.82rem;color:var(--gold);margin-top:0.5rem;font-style:italic;">Why a stuffy nose makes you cry: nasolacrimal duct drains INTO the nose — congestion backs up tear drainage → overflow.</div>`;
+  }
+}
+
+function renderEar() {
+  const ea = document.getElementById('ear-anatomy');
+  if (ea) {
+    const cmap = { teal:'var(--teal)', gold:'var(--gold)', purple:'var(--purple)' };
+    ea.innerHTML = EAR_ANATOMY.map(r => `
+      <div style="margin-bottom:1rem;">
+        <div class="sec-label">${r.region}</div>
+        ${r.items.map(i => `
+          <div style="background:var(--surface);border-radius:8px;padding:0.625rem 0.875rem;margin-bottom:0.375rem;border-left:3px solid ${cmap[r.color]};">
+            <div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${i.n}</div>
+            <div style="font-size:0.82rem;color:var(--text2);line-height:1.65;">${i.d}</div>
+          </div>`).join('')}
+      </div>`).join('');
+  }
+
+  const et = document.getElementById('ear-tests');
+  if (et) {
+    const w = WEBER_RINNE;
+    et.innerHTML = `
+      <div class="sec-label">Weber's Test</div>
+      <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.625rem;">${w.weber.how}</div>
+      ${w.weber.results.map(r => `
+        <div style="padding:0.4rem 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:0.875rem;font-weight:600;color:var(--teal-light);margin-bottom:0.1rem;">${r.result}</div>
+          <div style="font-size:0.82rem;color:var(--text2);">${r.meaning}</div>
+        </div>`).join('')}
+      <div class="sec-label" style="margin-top:0.875rem;">Rinne's Test</div>
+      <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.625rem;">${w.rinne.how}</div>
+      ${w.rinne.results.map(r => `
+        <div style="padding:0.4rem 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:0.875rem;font-weight:600;color:var(--teal-light);margin-bottom:0.1rem;">${r.result}</div>
+          <div style="font-size:0.82rem;color:var(--text2);">${r.meaning}</div>
+        </div>`).join('')}
+      <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Clinical Integration</div><div class="clinical-note-text">${w.rinne.clinical}</div></div>`;
+  }
+}
+
+let currentOral = 'oralcavity';
+function selectOral(section, btn) {
+  currentOral = section;
+  document.querySelectorAll('#oral-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderOralContent();
+}
+function renderOralContent() {
+  const el = document.getElementById('oral-content');
+  if (!el) return;
+  const d = ORAL_DATA;
+
+  if (currentOral === 'oralcavity') {
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div class="card"><div class="card-header"><div class="card-header-title">Oral Cavity</div><div class="card-header-sub">Hard/Soft Palate · Uvula</div></div><div class="card-body">
+        <div class="sec-label">Roof</div>
+        ${d.oralcavity.roof.map(r => `<div style="background:var(--surface);border-radius:8px;padding:0.625rem;margin-bottom:0.375rem;border-left:3px solid var(--teal);"><div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${r.n}</div><div style="font-size:0.82rem;color:var(--text2);">${r.d}</div></div>`).join('')}
+        <div class="sec-label" style="margin-top:0.75rem;">Floor</div>
+        <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.75rem;">${d.oralcavity.floor}</div>
+        <div class="sec-label">Arches & Tonsils</div>
+        ${d.oralcavity.tonsils.map(t => `<div style="padding:0.375rem 0;border-bottom:1px solid var(--border);"><div style="font-size:0.875rem;font-weight:600;color:var(--text);">${t.n}</div><div style="font-size:0.82rem;color:var(--text2);">${t.d}</div></div>`).join('')}
+      </div></div>
+      <div class="card"><div class="card-header"><div class="card-header-title">Clinical Tests — Oral</div></div><div class="card-body">
+        <div class="chunk" style="border-left:3px solid var(--gold);margin-bottom:0.5rem;"><div class="chunk-title">CN9 Test: "Say Ahhhh"</div><div class="chunk-body">Observe uvula rise. Uvula deviates to STRONG side (away from lesion). Peritonsillar abscess: mass effect pushes uvula to OPPOSITE side from abscess.</div></div>
+        <div class="chunk" style="border-left:3px solid var(--teal);margin-bottom:0.5rem;"><div class="chunk-title">CN12 Test: Tongue Protrusion</div><div class="chunk-body">Ask patient to stick tongue out. Deviates to WEAK side (genioglossus weakness). Compare bulk and look for fasciculations (ALS).</div></div>
+        <div class="chunk" style="border-left:3px solid var(--purple);"><div class="chunk-title">Palate Elevation Assessment</div><div class="chunk-body">Both sides should elevate symmetrically. Asymmetric elevation = CN10 (vagus) involvement (pharyngeal branch). Combined CN9+CN10 lesion = dysphagia + hoarseness + loss of gag reflex.</div></div>
+      </div></div>
+    </div>`;
+  }
+
+  else if (currentOral === 'tongue') {
+    const t = d.tongue;
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div class="card"><div class="card-header"><div class="card-header-title">Tongue Anatomy</div><div class="card-header-sub">Anterior 2/3 vs Posterior 1/3</div></div><div class="card-body">
+        ${t.divisions.map(div => `<div style="background:var(--surface);border-radius:8px;padding:0.75rem;margin-bottom:0.5rem;border-left:3px solid var(--teal);"><div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${div.n}</div><div style="font-size:0.875rem;color:var(--text2);">${div.d}</div></div>`).join('')}
+        <div class="sec-label" style="margin-top:0.875rem;">Undersurface Structures</div>
+        ${t.undersurface.map(u => `<div class="bullet"><span class="dot">•</span>${u}</div>`).join('')}
+        <div style="margin-top:0.875rem;padding:0.75rem;background:var(--surface);border-radius:8px;">
+          <div class="sec-label">Tongue Innervation</div>
+          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${t.innervation}</div>
+        </div>
+      </div></div>
+      <div class="card"><div class="card-header"><div class="card-header-title">Genioglossus</div><div class="card-header-sub">Primary Tongue Protrusion Muscle</div></div><div class="card-body">
+        ${t.muscles.map(m => `
+          <div class="oina-grid">
+            <span class="oina-key">Action</span><span class="oina-val">${m.action}</span>
+            <span class="oina-key">Nerve</span><span class="oina-val">${m.n}</span>
+          </div>
+          <div class="clinical-note"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${m.clinical}</div></div>`).join('')}
+        <div class="warn-note" style="margin-top:0.875rem;"><div class="warn-note-lbl">Airway Significance</div><div class="warn-note-text">Loss of genioglossus tone in unconscious patients → tongue falls posteriorly → upper airway obstruction. This is why the jaw thrust and head-tilt chin-lift maneuvers work — they displace the genioglossus anteriorly to open the airway. Obstructive sleep apnea: genioglossus and pharyngeal muscles relax → repeated airway collapse during sleep.</div></div>
+      </div></div>
+    </div>`;
+  }
+
+  else if (currentOral === 'salivary') {
+    el.innerHTML = `<div class="three-col" style="animation:fadeUp 0.25s ease;">
+      ${d.salivary.map((g, i) => {
+        const colors = ['var(--teal)', 'var(--gold)', 'var(--purple)'];
+        return `<div class="card" style="border-left:4px solid ${colors[i]};">
+          <div class="card-header"><div class="card-header-title">${g.name}</div><div class="card-header-sub">${g.size}</div></div>
+          <div class="card-body">
+            <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.25rem;"><strong style="color:var(--text2);">Location: </strong>${g.location}</div>
+            <div style="font-size:0.82rem;color:var(--teal-light);margin-bottom:0.5rem;"><strong style="color:var(--text2);">Duct: </strong>${g.duct}</div>
+            <div class="clinical-note"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${g.clinical}</div></div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`;
+  }
+
+  else if (currentOral === 'nose') {
+    const n = d.nose;
+    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
+      <div class="card"><div class="card-header"><div class="card-header-title">Nasal Cavity</div><div class="card-header-sub">Walls · Regions</div></div><div class="card-body">
+        <div class="sec-label">Cavity Walls</div>
+        ${n.cavity_walls.map(w => `<div style="padding:0.4rem 0;border-bottom:1px solid var(--border);"><div style="font-size:0.875rem;font-weight:600;color:var(--text);">${w.w}</div><div style="font-size:0.82rem;color:var(--text2);">${w.s}</div></div>`).join('')}
+        <div class="sec-label" style="margin-top:0.875rem;">3 Functional Regions</div>
+        ${n.regions.map(r => `<div style="background:var(--surface);border-radius:8px;padding:0.625rem;margin-bottom:0.375rem;"><div style="font-size:0.875rem;font-weight:600;color:var(--text);">${r.r}</div><div style="font-size:0.82rem;color:var(--text2);">${r.d}</div></div>`).join('')}
+      </div></div>
+      <div class="card"><div class="card-header"><div class="card-header-title">Paranasal Sinuses</div><div class="card-header-sub">4 Pairs · Drain into Nasal Cavity</div></div><div class="card-body">
+        <div class="muscle-accordion-list">
+          ${n.sinuses.map(s => `
+            <div class="ma-item" onclick="toggleMA(this)">
+              <div class="ma-header">
+                <div style="flex:1;"><div class="ma-name">${s.name}</div><div style="font-size:0.75rem;color:var(--text3);">Drains → ${s.drain}</div></div>
+                ${CHEVRON_SVG}
+              </div>
+              <div class="ma-body">
+                <div style="font-size:0.82rem;color:var(--text2);margin-bottom:0.375rem;">${s.location}</div>
+                <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical</div><div class="cn2-short">${s.clinical}</div></div></div></div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div></div>
+    </div>`;
+  }
+}
+
+function renderBrain() {
+  const sc = document.getElementById('scalp-content');
+  if (sc) {
+    sc.innerHTML = `<div class="mnemonic-badge" style="display:flex;align-items:center;gap:0.5rem;padding:0.5rem 0.875rem;background:var(--gold-pale);border:1px solid rgba(212,168,80,0.25);border-radius:8px;margin-bottom:0.875rem;">
+      <span style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);">Mnemonic</span>
+      <span style="font-family:var(--font-d);font-size:1.2rem;font-weight:600;color:var(--text);">SCALP</span>
+    </div>` +
+    SCALP_LAYERS.map(l => `
+      <div style="display:flex;gap:0.625rem;padding:0.5rem 0;border-bottom:1px solid var(--border);">
+        <div style="width:28px;height:28px;border-radius:6px;background:var(--teal-pale);border:1px solid rgba(56,178,178,0.2);display:flex;align-items:center;justify-content:center;font-family:var(--font-m);font-size:0.85rem;font-weight:700;color:var(--teal-light);flex-shrink:0;">${l.abbr}</div>
+        <div><div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.1rem;">${l.name}</div><div style="font-size:0.82rem;color:var(--text2);">${l.note}</div></div>
+      </div>`).join('');
+  }
+
+  const mc = document.getElementById('meninges-content');
+  if (mc) {
+    const cmap = { amber:'var(--amber)', teal:'var(--teal)', gold:'var(--gold)' };
+    mc.innerHTML = `<div class="sec-label">3 Meningeal Layers</div>` +
+    MENINGES.map(m => `
+      <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid ${cmap[m.color]};">
+        <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${m.name}</div>
+        <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${m.desc}</div>
+      </div>`).join('') +
+    `<div class="sec-label" style="margin-top:0.875rem;">3 Potential Spaces & Hemorrhage Types</div>` +
+    MENINGEAL_SPACES.map(s => `
+      <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid ${s.color === 'red' ? 'var(--red)' : s.color === 'amber' ? 'var(--amber)' : 'var(--purple)'};">
+        <div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${s.name}</div>
+        <div style="font-size:0.78rem;color:var(--text3);margin-bottom:0.3rem;">${s.type}</div>
+        <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${s.bleed}</div>
+      </div>`).join('');
+  }
+
+  const cv = document.getElementById('cva-content');
+  if (cv) {
+    cv.innerHTML = `<div class="sec-label">Arterial Supply — Circle of Willis</div>` +
+    COW_DATA.arteries.map(a => `
+      <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid var(--teal);">
+        <div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${a.name}</div>
+        <div style="font-size:0.82rem;color:var(--text2);margin-bottom:0.2rem;">${a.path}</div>
+        <div style="font-size:0.82rem;color:var(--teal-light);">${a.territory}</div>
+      </div>`).join('') +
+    `<div class="sec-label" style="margin-top:0.875rem;">Venous Drainage</div>
+    <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${COW_DATA.veins}</div>`;
+  }
+
+  const bo = document.getElementById('brain-overview');
+  if (bo) {
+    const parts = [
+      { n: 'Cerebrum', d: 'Telencephalon: R/L cerebral hemispheres with 4 lobes each (frontal, parietal, temporal, occipital). Also insular, limbic, basal ganglia. Diencephalon: thalamus (relay station), hypothalamus (autonomic/endocrine), epithalamus.' },
+      { n: 'Brainstem', d: 'Midbrain (CN 3, 4), Pons (CN 5, 6, 7, 8), Medulla oblongata (CN 9-12). Exits foramen magnum. Contains vital centers (cardiac, respiratory, vasomotor).' },
+      { n: 'Cerebellum', d: 'Posterior fossa. Coordination, balance, and motor learning. Supplied by posterior circulation (PICA, AICA, SCA). Cerebellar strokes: ipsilateral ataxia, nystagmus, intention tremor.' },
+    ];
+    bo.innerHTML = parts.map(p => `
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.15rem;">${p.n}</div>
+        <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${p.d}</div>
+      </div>`).join('');
+  }
+}
+
+function renderTMJ() {
+  const mc = document.getElementById('mandible-content');
+  if (mc) {
+    mc.innerHTML = TMJ_DATA.mandible_landmarks.map(l => `
+      <div style="padding:0.35rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-size:0.875rem;font-weight:600;color:var(--text);">${l.name}</div>
+        <div style="font-size:0.82rem;color:var(--text2);">${l.note}</div>
+      </div>`).join('');
+  }
+
+  const ts = document.getElementById('tmj-structure');
+  if (ts) {
+    ts.innerHTML = `<div class="sec-label">Joint Components</div>` +
+    TMJ_DATA.structure.components.map(c => `
+      <div style="padding:0.375rem 0;border-bottom:1px solid var(--border);">
+        <div style="font-size:0.875rem;font-weight:600;color:var(--text);">${c.c}</div>
+        <div style="font-size:0.82rem;color:var(--text2);">${c.d}</div>
+      </div>`).join('') +
+    `<div class="sec-label" style="margin-top:0.875rem;">Motion</div>` +
+    TMJ_DATA.structure.motion.map(m => `
+      <div style="background:var(--surface);border-radius:8px;padding:0.625rem;margin-bottom:0.375rem;border-left:3px solid var(--teal);">
+        <div style="font-size:0.875rem;font-weight:600;color:var(--text);">${m.m}</div>
+        <div style="font-size:0.82rem;color:var(--text2);">${m.d}</div>
+      </div>`).join('');
+  }
+
+  const tm = document.getElementById('tmj-motion');
+  if (tm) {
+    const pc = { 'TMJ Clicking':'var(--amber)', 'TMJ Locking':'var(--red)', 'Subluxation (Open Lock)':'var(--purple)' };
+    tm.innerHTML = TMJ_DATA.pathology.map(p => `
+      <div style="background:var(--surface);border-radius:8px;padding:0.75rem;margin-bottom:0.5rem;border-left:3px solid ${pc[p.type] || 'var(--teal)'};">
+        <div style="font-size:0.875rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${p.type}</div>
+        <div style="font-size:0.82rem;color:var(--text2);line-height:1.65;margin-bottom:0.25rem;">${p.desc}</div>
+        <div style="font-size:0.78rem;color:var(--teal-light);">${p.mgmt}</div>
+      </div>`).join('');
+  }
+
+  const mast = document.getElementById('mastication-content');
+  if (mast) {
+    mast.innerHTML = `<div class="bottom-line" style="margin-bottom:0.875rem;"><span class="bottom-line-icon">⚡</span><span class="bottom-line-text">All 4 muscles of mastication are innervated by CN V3 (Mandibular nerve). Only V3 has a motor component.</span></div>
+    <div class="muscle-accordion-list">
+      ${TMJ_DATA.mastication.map(m => `
+        <div class="ma-item" onclick="toggleMA(this)">
+          <div class="ma-header">
+            <div style="flex:1;"><div class="ma-name">${m.name}</div><div style="font-size:0.72rem;color:var(--text3);">${m.nerve}</div></div>
+            ${CHEVRON_SVG}
+          </div>
+          <div class="ma-body">
+            <div class="oina-grid">
+              <span class="oina-key">Origin</span><span class="oina-val">${m.origin}</span>
+              <span class="oina-key">Insertion</span><span class="oina-val">${m.insertion}</span>
+              <span class="oina-key">Action</span><span class="oina-val">${m.action}</span>
+            </div>
+            <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical</div>
+            <div class="cn2-short">${m.clinical.substring(0,160)}${m.clinical.length>160?'...':''}</div>
+            ${m.clinical.length>160 ? `<div class="cn2-more">${m.clinical}</div><button class="cn2-toggle" onclick="event.stopPropagation();toggleCN2(this)">+ Show more</button>` : ''}
+            </div></div></div>
+          </div>
+        </div>`).join('')}
+    </div>`;
+  }
+}
+
+function renderReview() {
+  const el = document.getElementById('head-review');
+  if (!el) return;
+  el.innerHTML = HEAD_REVIEW.map((q, i) => `
+    <div class="review-card-v2" onclick="toggleReview(this)">
+      <div class="review-q-v2">
+        <div class="review-num-v2">${i+1}</div>
+        <div class="review-q-text-v2">${q.q}</div>
+        <svg style="color:var(--text3);flex-shrink:0;transition:transform 0.2s;margin-top:0.2rem;" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="review-a-v2">
+        <div class="review-a-inner">
+          <div class="review-a-label">Answer</div>
+          <div class="review-a-text-v2">${q.a}</div>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+// ── INIT ──
+renderSkull();
+renderForamina();
+renderFaceContent();
+renderCNContent();
+renderEyes();
+renderEar();
+renderOralContent();
+renderBrain();
+renderTMJ();
+renderReview();
+</script>
+</body>
+</html>
