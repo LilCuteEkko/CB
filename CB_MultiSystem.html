@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clinicians Blueprint &#8212; Multi-System Management</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
@@ -49,6 +49,8 @@
   <button onclick="showTab('surgery',this)">Surgical &amp; Transplant</button>
   <button onclick="showTab('emergency',this)">Emergency Care</button>
   <button onclick="showTab('discharge',this)">Discharge &amp; Bariatric</button>
+  <button onclick="showTab('reasoning',this)">Clinical Reasoning</button>
+  <button onclick="showTab('cases',this)">Complex Cases</button>
   <button onclick="showTab('review',this)">Review</button>
 </div>
 
@@ -369,7 +371,44 @@
 </div>
 </div>
 
+
+<div class="tab-panel" id="tab-reasoning">
+<div class="container">
+  <div class="section-title">Clinical Reasoning &#8212; ICF Framework &amp; Hemodynamic Monitoring</div>
+  <div class="section-sub">Multi-system patients require structured clinical reasoning. The ICF model provides 7 key questions for every clinical decision.</div>
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>ICF Decision-Making &amp; Hemodynamic Monitoring</h4><div class="ma-tags"><span class="ma-tag red">MAP &lt;60 = inadequate</span><span class="ma-tag gold">PCA = 6min lockout</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>#</th><th>Clinical Question</th><th>Application</th></tr></thead><tbody>
+      <tr><td class="hi">1</td><td>Who needs treatment and why?</td><td>Prioritize impairments by severity, safety, patient goals</td></tr>
+      <tr><td class="hi">2</td><td>Expected outcomes?</td><td>Realistic goals based on diagnosis, prognosis, comorbidities</td></tr>
+      <tr><td class="hi">3</td><td>How to measure?</td><td>Valid outcome measures. <strong>Never "pt tol well" or "cont POC"</strong></td></tr>
+      <tr><td class="hi">4</td><td>Interventions/visits?</td><td>Match to impairment. Include education</td></tr>
+      <tr><td class="hi">5</td><td>Include patient?</td><td>Shared decisions. Eye contact. Explain rationale</td></tr>
+      <tr><td class="hi">6</td><td>Evaluate success?</td><td>Track outcomes vs goals. Justify services</td></tr>
+      <tr><td class="hi">7</td><td>Referrals?</td><td>OT, speech, social work, psych as needed</td></tr>
+    </tbody></table>
+    <div class="bl-strip red"><div class="bl-label">Hemodynamic Monitoring</div><p><strong>MAP</strong> = (SBP + 2xDBP) / 3. Normal 70-100. MAP &lt;60 = organs not perfusing. Arterial line = continuous monitoring. <strong>PCA pump:</strong> 6-min lockout, 30sec-1min effect. <strong>Airway clearance:</strong> 3 sec inhale, pursed lip exhale. Huffing = "fog a mirror." Stop before pain. Walker = "don't lift, push." Pain reframing = "moving helps muscle pump, pain will lessen." Sitting = "builds core and lungs, prevents pneumonia." Sling off lying down. Adjust equipment BEFORE patient arrives.</p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-cases">
+<div class="container">
+  <div class="section-title">Complex Multi-System Case Studies</div>
+  <div class="section-sub">Anticipate limitations, identify needed info, subjective questions, prioritize exam, develop plan.</div>
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Case 1: Diabetic with ESRD, Infection &amp; Debridement</h4><div class="ma-tags"><span class="ma-tag red">Dialysis 3x/wk</span><span class="ma-tag gold">Hgb/Hct trends</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip"><div class="bl-label">Key Points</div><p><strong>Impairments:</strong> WBAT L leg (pain), poor healing (DM), dialysis fatigue, anemia, obesity. <strong>Chart:</strong> WB status, A&amp;O, vitals/labs, BG/A1C, Hgb/Hct, WBC, sensation, meds. <strong>Exam:</strong> Vitals, skin (heels/sacrum), sensation, bed mobility, transfers, education (DVT, infection, AD), balance, strength, AROM, ambulation. Measures: Functional Reach, TUG.</p></div>
+  </div></div>
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Case 2: Post-Thoracotomy Lung Cancer</h4><div class="ma-tags"><span class="ma-tag red">Chest excursion = major impairment</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip"><div class="bl-label">Key Points</div><p>50yo F, Stage I NSCLC, R upper lobe segmentectomy. PMH: A-fib, 30-pack year smoking. Priority: airway clearance. Diaphragmatic breathing, pursed lip, huffing. Stop before pain. RPE/dyspnea scales with pictures. Progress: breathing, bed mobility, EOB, transfers, ambulation.</p></div>
+  </div></div>
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Case 3: Polytrauma MVA &#8212; Concussion + Fractures + AC Sep</h4><div class="ma-tags"><span class="ma-tag red">NWB R ankle</span><span class="ma-tag gold">Rhabdomyolysis risk</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip"><div class="bl-label">Key Points</div><p>Multiple fractures, concussion, R AC separation (sling WBAT), ORIF R ankle (NWB). PMH: bipolar. <strong>Concussion:</strong> Acknowledge, don't overshare, adjust environment. <strong>Rhabdomyolysis:</strong> Dark/cola urine from MSK trauma. Labs: Hgb/Hct (lowered), glucose (elevated), INR (DVT). Plan: Mod A x2 EOB, glute squeezes, hip AAROM, weight shifts. Progress to pre-gait with FWW. D/C to subacute. Refer OT.</p></div>
+  </div></div>
+</div>
+</div>
+
 <script src="themes.js"></script>
+<script src="premium.js"></script>
 <script>
 function showTab(id, btn) {
   document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
@@ -703,6 +742,7 @@ function flipCard(card) {
 </div>
 
 <script src="themes.js"></script>
+<script src="premium.js"></script>
 <script>
 function showTab(id, btn) {
   document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});

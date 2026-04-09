@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; Advanced Orthopedic Interventions</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+  <a href="CB_SpineCervical.html" class="nav-link">C-Spine</a>
+  <a href="CB_ShoulderModule.html" class="nav-link">Shoulder</a>
+  <a href="CB_SportsInjury.html" class="nav-link">Sports</a>
+  <a href="CB_AdvancedOrtho.html" class="nav-link active">Adv Ortho</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">Manipulation &middot; Clinical Reasoning &middot; Overhead Athlete &middot; Dry Needling &middot; Running Analysis &middot; Pregnancy</div>
+  <h1>Advanced Orthopedic Interventions <span>&#8212; Beyond the Basics</span></h1>
+  <p>Advanced clinical techniques and reasoning for the practicing PT &#8212; spinal manipulation (cervical arterial dysfunction screening, HVLAT, ligament testing), clinical reasoning patterns (expert vs novice, reflection-in-action), overhead athlete management (5 pillars of RTP, GIRD, humeral retrotorsion, plyometrics), dry needling (indications, contraindications, technique), running gait analysis (the 4 S&#8217;s framework), and pregnancy/postpartum care (trimester physiology, exercise guidelines, pelvic floor).</p>
+  <div class="hero-badges">
+    <span class="badge red">Spinal Manipulation</span>
+    <span class="badge gold">Clinical Reasoning</span>
+    <span class="badge purple">Overhead Athlete</span>
+    <span class="badge green">Dry Needling</span>
+    <span class="badge orange">Running Analysis</span>
+    <span class="badge">Pregnancy &amp; Postpartum</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('manip',this)">Manipulation</button>
+  <button onclick="showTab('reasoning',this)">Clinical Reasoning</button>
+  <button onclick="showTab('overhead',this)">Overhead Athlete</button>
+  <button onclick="showTab('needling',this)">Dry Needling</button>
+  <button onclick="showTab('running',this)">Running Analysis</button>
+  <button onclick="showTab('pregnancy',this)">Pregnancy &amp; Postpartum</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ===== TAB 1: MANIPULATION ===== -->
+<div class="tab-panel active" id="tab-manip">
+<div class="container">
+  <div class="section-title">Spinal Manipulation &#8212; Screening, Technique &amp; Safety</div>
+  <div class="section-sub">The most reported adverse event from cervical manipulation is cerebrovascular accident from vertebrobasilar insufficiency (VBI). Red flag presentations mimic neuromusculoskeletal cervicocranial syndromes &#8212; invariably, the two conditions coexist. Manual therapists MUST include cervical arterial dysfunction screening in daily clinical decision-making.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Cervical Arterial Dysfunction &#8212; Screening &amp; Recommendations</h4><div class="ma-tags"><span class="ma-tag red">VBI = most reported adverse event</span><span class="ma-tag gold">Acute onset HA "unlike any other" = conservative tx</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip red"><div class="bl-label">8 Key Recommendations for Cervical Manipulation Safety</div><p><strong>(1)</strong> Develop a high index of suspicion for cervical vascular pathology, particularly after cervical trauma. Chronic pain and psychological issues are big factors. <strong>(2)</strong> Neck pain and headache may be precursors to posterior circulation ischemia. <strong>(3)</strong> Expand theory to encompass the WHOLE cervical vascular system, including carotid arteries (not just vertebral). <strong>(4)</strong> Include hemodynamic principles and their relationship to movement anatomy and biomechanics. <strong>(5)</strong> Awareness that current objective tests have limitations &#8212; reliance on testing alone is NOT enough. <strong>(6)</strong> Enhance subjective/objective exam by including vascular risk factors (HTN) and procedures (cranial nerve exam, simple eye exam). <strong>(7)</strong> For acute onset headache &#8220;unlike any other,&#8221; use conservative techniques in early stages. <strong>(8)</strong> Where frank arterial injury is suspected, immediate triage to emergency center with report of any treatment methods undertaken.</p></div>
+    <table class="data-table"><thead><tr><th>Screening Component</th><th>What to Assess</th><th>Red Flags</th></tr></thead><tbody>
+      <tr><td class="hi">Blood Pressure</td><td>Baseline BP before any cervical intervention</td><td>Uncontrolled HTN is a vascular risk factor for cervical arterial dysfunction</td></tr>
+      <tr><td class="hi">Cranial Nerves 9&#8211;12</td><td><strong>CN 9/10 (Glossopharyngeal/Vagus):</strong> Gag reflex, swallowing, phonation. <strong>CN 11 (Accessory):</strong> Shrug shoulders, SCM strength (tested during myotome exam). <strong>CN 12 (Hypoglossal):</strong> Stick out tongue, observe for deviation</td><td>Any new cranial nerve deficit suggests vascular or central pathology. CN 9&#8211;12 exit near vertebral arteries and brainstem</td></tr>
+      <tr><td class="hi">Cervical Rotation</td><td>Active rotation &#8212; note if &lt;45&#176; bilaterally. Apply Canadian C-Spine Rules if mechanism/concern</td><td>Restricted rotation with mechanism = potential fracture/instability. C1&#8211;C2 = dens fracture risk</td></tr>
+      <tr><td class="hi">Ligament Integrity</td><td><strong>Anterior Shear Test:</strong> Transverse ligament integrity (prevents anterior translation of C1 on C2). <strong>Alar Ligament Test:</strong> Limits rotation and lateral flexion at C0&#8211;C2. <strong>Spurling&#8217;s Test:</strong> Cervical radiculopathy</td><td>Positive anterior shear = transverse ligament insufficiency = <strong>absolute contraindication to manipulation.</strong> Positive alar = instability at craniocervical junction</td></tr>
+      <tr><td class="hi">Neurological Screen</td><td>Myotomes, dermatomes, reflexes (biceps C5&#8211;6, brachioradialis C5&#8211;6, triceps C7)</td><td>New or progressive neurological deficit = DO NOT manipulate. Refer for imaging</td></tr>
+      <tr><td class="hi">Musculoskeletal</td><td>Prone PAs (posterior-anterior glides). Mechanical diagnosis/symptom cluster. Quadrant test</td><td>Reproduction of radicular symptoms. Central spinal cord signs</td></tr>
+    </tbody></table>
+    <div class="bl-strip gold"><div class="bl-label">HVLAT Manipulation &#8212; Mechanisms</div><p><strong>Biomechanical:</strong> Addresses mechanical spine pain through joint mobilization/cavitation. <strong>Hypoalgesic:</strong> Central mediated responses &#8212; manipulation activates descending pain inhibitory pathways. <strong>Neurophysiologic:</strong> Muscle relaxation of paravertebral muscles, increased pain and pressure thresholds, increased muscle activation post-manipulation. <strong>Comprehensive PMH/subjective questioning is required</strong> to determine any contraindications or need for imaging BEFORE manipulation.</p></div>
+  </div></div>
+</div>
+</div>
+
+<!-- ===== TAB 2: CLINICAL REASONING ===== -->
+<div class="tab-panel" id="tab-reasoning">
+<div class="container">
+  <div class="section-title">Clinical Reasoning &#8212; Expert vs Novice Patterns</div>
+  <div class="section-sub">Clinical decision-making is the process of PT interaction with the patient that helps structure meaning, goals, and health management strategies based on clinical data, patient choice, professional judgment, and knowledge. Three premises: (1) thought leading to action requires deliberation within a specific context, (2) the nature of thought is tied to prior experiences, (3) prior experiences provide the framework for developing action plans.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Types of Reflection &amp; Expert vs Novice Traits</h4><div class="ma-tags"><span class="ma-tag gold">Reflection-in-action = during treatment</span><span class="ma-tag purple">Experts empower, novices rely on technique</span><span class="ma-tag red">Dunning-Kruger effect</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Reflection Type</th><th>Definition</th><th>Who Uses It</th></tr></thead><tbody>
+      <tr><td class="hi">Knowledge-in-Action</td><td>Knowledge or skills used within a given context &#8212; your baseline clinical toolkit</td><td>Both novice and expert</td></tr>
+      <tr><td class="warn">Reflection-in-Action</td><td>Ongoing metacognition about what is occurring DURING patient-therapist interaction. Informs process of experimentation in real time</td><td><strong>Experienced clinicians.</strong> Distinguished experts from novices. Allows real-time adjustment of treatment</td></tr>
+      <tr><td class="hi">Reflection-on-Action</td><td>Looking back on what occurred AFTER the session. Results in broadened or revised clinical decision-making framework</td><td>Both, but experienced clinicians do so with greater frequency and depth</td></tr>
+    </tbody></table>
+    <div class="bl-strip purple"><div class="bl-label">Expert vs Novice Clinician Traits</div><p><strong>Expert PT demonstrates:</strong> Efficient forward-reasoning (hypothesis &#8594; test &#8594; confirm/refute). Balance of analytical problem-solving WITH narrative reasoning focused on the patient as individual. Ongoing collaborative reasoning WITH the patient. <strong>Emphasis on empowering, engaging, and educating the patient</strong> rather than relying on own skills/techniques. Greater use of reflection-in-action and self-assessment during interactions. <strong>Novice clinician:</strong> Relies more on techniques than patient empowerment. Less frequent reflection-on-action. Limited reflection-in-action. More likely to miss the patient-as-a-person in favor of the diagnosis. <strong>Key finding:</strong> Participants who gave greater attention to patient education and empowerment also demonstrated greater use of reflection-in-action.</p></div>
+    <div class="bl-strip red"><div class="bl-label">Dunning-Kruger Effect &amp; Treatment Paradigm</div><p><strong>Dunning-Kruger:</strong> Cognitive bias where people with limited knowledge greatly overestimate their own knowledge relative to objective criteria. <strong>Be aware of this in yourself and in students.</strong> <strong>Treatment paradigm:</strong> (1) Eval/re-eval. (2) Manual therapy. (3) Test/retest. (4) Motor control/re-education. (5) Functional movement/activation. (6) Main impairment focus. <strong>Every treatment should follow this cycle:</strong> intervene &#8594; measure the effect &#8594; adjust. Don&#8217;t just &#8220;do techniques&#8221; &#8212; reason through the WHY at every step.</p></div>
+  </div></div>
+</div>
+</div>
+
+<!-- ===== TAB 3: OVERHEAD ATHLETE ===== -->
+<div class="tab-panel" id="tab-overhead">
+<div class="container">
+  <div class="section-title">Overhead Athlete &#8212; 5 Pillars, GIRD &amp; Plyometrics</div>
+  <div class="section-sub">Overhead athletes require specialized evaluation and treatment. The exam includes ROM (total arc, GIRD, GERG, cross-body, lat flexibility, horizontal abduction), strength (RIMS, dynamometer, prone T endurance), motor control (scapular assessment), video analysis of mechanics, and structured return-to-sport through 5 progressive pillars.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>5 Pillars of Return to Sport for OH Athletes</h4><div class="ma-tags"><span class="ma-tag green">Pillar 1 = pain modulation first</span><span class="ma-tag gold">Pillar 5 = throwing mechanics</span><span class="ma-tag purple">Each pillar builds on the last</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Pillar</th><th>Focus</th><th>Interventions</th></tr></thead><tbody>
+      <tr><td class="hi">1. Pain Modulation / Tissue Healing</td><td>Patient education (healing time, expectations, safety). Manual therapy. Joint mobilizations. Modalities. Gentle movement (PROM/AAROM)</td><td>Set realistic expectations. Educate on timeline. Address fear/avoidance. Control inflammation and pain before progressing</td></tr>
+      <tr><td class="hi">2. ROM &#8212; Return to Normal</td><td>OH athletes have unique ROM (more hypermobile). <strong>Measure:</strong> Total arc of motion (IR + ER at 90&#176; hor abd), GIRD, GERG, cross-body mobility, lat flexibility, horizontal abduction mobility</td><td>Posterior capsule stretching (sleeper stretch, cross-body). Pec minor stretching. Lat stretching. <strong>Humeral retrotorsion:</strong> reason OH athletes have bias for ER &#8212; helps throw harder/faster. More retrotorsion = more ER, less IR. This is STRUCTURAL, not a flexibility deficit</td></tr>
+      <tr><td class="hi">3. Strength</td><td><strong>RIMS:</strong> ER at 0&#176;, IR at 0&#176;, scaption, IR at 90&#176;, ER at 90&#176;, prone T/Y. Dynamometer/grip. <strong>Prone T Endurance Test:</strong> Load = 2% of bodyweight, arm perpendicular to floor, horizontally abduct to 90&#176; with 1 sec hold, goal = 30 reps</td><td>Scapular stabilization (mid/low trap focus). Rotator cuff progressive resistance. Eccentric control training for ER and lower trap. Core and LE strengthening</td></tr>
+      <tr><td class="hi">4. Motor Control</td><td>Combination of strength through different degrees of ROM. <strong>Scapular assessment:</strong> Look for dyskinesis. Scapular control and endurance are critical</td><td>Neuromuscular control drills. Rhythmic stabilization. PNF patterns. Perturbation training. Dynamic stabilization in functional positions</td></tr>
+      <tr><td class="warn">5. Return to Sport</td><td><strong>Throwing mechanics analysis:</strong> Balance point, stride length, foot plant, hip position, trunk rotation, shoulder position, glove side elbow, follow-through</td><td>Interval throwing program. Progressive increase in distance, velocity, and volume. Video analysis for mechanical flaws. Sport-specific drills. Plyometric training</td></tr>
+    </tbody></table>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Common OH Athlete Diagnoses &amp; Plyometric Principles</h4><div class="ma-tags"><span class="ma-tag red">Internal impingement = late cocking pain</span><span class="ma-tag gold">SAID principle = specificity</span><span class="ma-tag purple">Amortization = shorter is better</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Diagnosis</th><th>Mechanism</th><th>Key Treatment Focus</th></tr></thead><tbody>
+      <tr><td class="warn">Posterosuperior Glenoid Impingement (Internal)</td><td>Common in OH athletes. Excessive horizontal abduction &#8594; strain on anterior capsule &#8594; impinges posterior RTC. <strong>Pain during late cocking and early acceleration</strong> due to anterior shoulder laxity</td><td>Improve dynamic stabilization. Restore posterior RTC flexibility. <strong>Scapular muscles need extra focus &#8212; mid/low trap especially</strong></td></tr>
+      <tr><td class="hi">Subacromial Impingement</td><td>Primary SI is rare in young athletes. More common with pre-existing hyperlaxity or loss of dynamic stability</td><td>Scapular stabilization. Pec minor stretching. Low trap strengthening (helps with scapular posterior tilt). Injections for pain/inflammation</td></tr>
+      <tr><td class="hi">Posterior RTC Tendinitis</td><td>Must differentiate from internal impingement. <strong>Pain with ball release/deceleration phase</strong> (vs late cocking for internal impingement)</td><td>Weakness of infraspinatus, lower trap, middle trap. Tightness of ER (teres minor, infraspinatus). Eccentric control training for ER and lower trap</td></tr>
+      <tr><td class="hi">Acquired Microinstability</td><td>Anterior capsule undergoes repetitive tensile stress during late cocking/early acceleration &#8594; collagen stretches &#8594; anterior laxity &#8594; excess anterior/inferior translation &#8594; RTC impinges on posterosuperior glenoid rim</td><td>Post-surgical: restricted PROM allowed, NO overaggressive stretching. No excessive ER, elevation, or extension. Restore motion, strength, and neuromuscular control</td></tr>
+      <tr><td class="hi">SLAP (Type 2 in OH Athletes)</td><td>Biceps tendon detached from glenoid rim with peel-back lesion. Conservative treatment often unsuccessful for Type 2 and 4</td><td>Post-surgical: shoulder immobilizer for sleep, sling during day for 4 weeks. ROM under 90&#176; elevation. IR and ER done PASSIVELY. Protect repaired labrum forces</td></tr>
+    </tbody></table>
+    <div class="bl-strip gold"><div class="bl-label">Plyometric Exercise &#8212; 3 Phases (Davies 2015)</div><p>SAID principle (Specific Adaptation to Imposed Demands) &#8594; periodization in terminal rehab phases. <strong>Phase 1 &#8212; Eccentric Pre-stretch:</strong> Pre-loads/pre-stretches the muscle spindle and non-contractile tissue. Stimulates neurophysiological-biomechanical response &#8594; enhanced resultant concentric contraction. More energy stored during eccentric = more powerful concentric. <strong>Phase 2 &#8212; Amortization (Time to Rebound):</strong> Time from cessation of eccentric to onset of concentric. <strong>Shorter = better</strong> (energy stored and used more efficiently). Primary goal of plyometric training = decrease amortization time. <strong>Phase 3 &#8212; Concentric Shortening:</strong> Power production and performance phase. The payoff.</p></div>
+    <div class="bl-strip"><div class="bl-label">GIRD Classification Disagreement</div><p>GIRD, TRROM (total range of rotational motion), and humeral torsion-based classifications of shoulder risk in throwing athletes <strong>are NOT in agreement and should NOT be used interchangeably.</strong> Only 1.9% of athletes were classified as &#8220;at-risk&#8221; by all 3 approaches. GIRD vs TRROM: poor agreement (Kappa = &#8211;0.142). Use multiple measures rather than relying on any single classification system.</p></div>
+  </div></div>
+</div>
+</div>
+
+<!-- ===== TAB 4: DRY NEEDLING ===== -->
+<div class="tab-panel" id="tab-needling">
+<div class="container">
+  <div class="section-title">Dry Needling &#8212; Indications, Contraindications &amp; Technique</div>
+  <div class="section-sub">Dry needling targets myofascial trigger points (MTrPs) where nociceptive receptors are affected. Creates micro-trauma to stimulate natural tissue healing. Low to moderate evidence for long-term effects. Limited research overall. <strong>Should always be used in combination with other treatments &#8212; patient education with exercises should be the priority.</strong></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Indications, Contraindications, Precautions &amp; Technique</h4><div class="ma-tags"><span class="ma-tag red">Fear of needles = contraindication</span><span class="ma-tag gold">Stinging = hitting cutaneous fibers</span><span class="ma-tag green">3 visits to see change</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="grid2">
+      <div class="bl-strip red"><div class="bl-label">Contraindications</div><p>Fear of needles (belonephobia). Bleeding disorders. Cognitive disorder / language barrier / inability to consent. Lymphedema. Diabetes. Neuropathy. Immunocompromised patients.</p></div>
+      <div class="bl-strip gold"><div class="bl-label">Precautions (Proceed with Caution)</div><p>Cancer. History of fainting or syncope. Skin rash or dermatologic conditions. Children. <strong>Pregnant patients</strong> (especially first trimester). Anxiety. Anticoagulant use.</p></div>
+    </div>
+    <table class="data-table"><thead><tr><th>Aspect</th><th>Details</th></tr></thead><tbody>
+      <tr><td class="hi">Indications</td><td>Myofascial trigger points (MTrPs). Muscle strains. Tendinitis. <strong>Objective findings:</strong> Hypertonicity, decreased ROM, neurogenic pain</td></tr>
+      <tr><td class="hi">Techniques</td><td>Different needle lengths for different depths. <strong>Twisting:</strong> Rotation of needle in tissue. <strong>Pistoning:</strong> In-and-out technique to elicit local twitch response. <strong>E-stim:</strong> Electrical stimulation through needles for enhanced effect</td></tr>
+      <tr><td class="warn">If Stinging Occurs</td><td><strong>Remove the needle immediately.</strong> Find another area near the original site. Stinging = hitting cutaneous nerve fibers. Redirect, don&#8217;t push through</td></tr>
+      <tr><td class="hi">Frequency</td><td>Within 3 visits, you should see meaningful change. If not &#8594; switch approach. Tissue healing hierarchy (fastest to slowest): Muscle &#8594; Tendon &#8594; Ligament &#8594; Nerve. <strong>Tendon vascularity is low compared to muscle &#8212; expect slower response</strong></td></tr>
+      <tr><td class="hi">Evidence</td><td>Low to moderate evidence for long-term effects. Creates micro-trauma and stimulates natural healing. May stimulate natural analgesic pathways. <strong>Always combine with patient education and therapeutic exercise &#8212; needling alone is insufficient</strong></td></tr>
+    </tbody></table>
+  </div></div>
+</div>
+</div>
+
+<!-- ===== TAB 5: RUNNING ANALYSIS ===== -->
+<div class="tab-panel" id="tab-running">
+<div class="container">
+  <div class="section-title">Running Gait Analysis &#8212; The 4 S&#8217;s Framework</div>
+  <div class="section-sub">Always watch a runner actually run. 25.9% of runners reported at least one run-related injury in 8 weeks (Buist 2008). Males more prone. No previous running experience = most important risk factor. Younger age in males associated with injury risk. The 4 S&#8217;s provide a simple, systematic framework for conducting a running analysis.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>The 4 S&#8217;s &#8212; Sound, Strike, Step Rate &amp; Speed</h4><div class="ma-tags"><span class="ma-tag gold">Loud = overstriking</span><span class="ma-tag purple">&#8593; 5% cadence = &#8595; 20% knee load</span><span class="ma-tag red">&lt;7 m/s = ankle PF reign supreme</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>S</th><th>What to Assess</th><th>Clinical Implications</th></tr></thead><tbody>
+      <tr><td class="hi">1. Sound</td><td>Does runner land quietly or sound like they&#8217;re putting a hole through the treadmill? Asymmetry between feet? Does sound change shod vs unshod? Different shoe types?</td><td><strong>Loud noise = overstriking.</strong> Cue: &#8220;Quiet your feet.&#8221; Helpful if goal is to reduce vGRF. This may increase ankle and knee joint excursions. If landing sound increases: vGRF increases, decreased ankle excursion, increased hip excursion</td></tr>
+      <tr><td class="hi">2. Strike</td><td>Heel strike, midfoot (&#8220;flat-footed&#8221;), or forefoot? Symmetrical? Pattern changes over course of run?</td><td><strong>Forefoot strike helps with:</strong> Tibial stress syndromes, anterior compartment syndrome, anterior knee pain. <strong>Caution with FF strike if:</strong> Hx of calf complex or metatarsal injury. <strong>Heel/rearfoot strike helps with:</strong> Achilles tendinopathy, hx of calf strain. FFS results in greater plantarflexion and less negative knee power (absorption)</td></tr>
+      <tr><td class="warn">3. Step Rate (Cadence)</td><td>Increasing steps reduces magnitude of each loading cycle despite increasing total cycles. Benefits only occur WITH reduction in stride length</td><td><strong>&#8593; 5% cadence at constant velocity:</strong> Reduces shock absorption at knee by up to 20%. <strong>&#8593; 10% cadence:</strong> Reduces peak hip adduction angle, hip adduction and IR moments. <strong>Increasing cadence regardless of strike:</strong> Decreases Achilles stress. <strong>Decreasing stride length via step rate:</strong> Wider step width, decreased contralateral pelvic drop, decreased peak hip adduction, decreased peak ankle eversion, decreased peak ITB strain and strain rate</td></tr>
+      <tr><td class="hi">4. Speed (Velocity)</td><td><strong>Classification:</strong> Jogging = 4.5 mph. Slow running = 7.8 mph. Medium = 11 mph. Fast = 15 mph. Sprinting = 17.9 mph</td><td>To run faster: push ground harder OR push more frequently. <strong>At speeds &lt;7 m/s: ankle plantarflexors reign supreme.</strong> At faster speeds: energy source is more proximal (hip extensors/flexors). This explains why sprinters need hip/glute power while distance runners need calf endurance</td></tr>
+    </tbody></table>
+    <div class="bl-strip green"><div class="bl-label">Clinical Application</div><p><strong>Load management:</strong> Increase 10% per week of volume. Try utilizing 2 pairs of shoes (foam decreases after certain mileage threshold, becomes more moldable). <strong>Wolf&#8217;s Law applies:</strong> Bone adapts to loading demands. Skeletal immaturity in younger males contributes to higher RRI risk. Women have wider pelvis &#8594; higher Q-angle &#8594; different loading patterns. <strong>More flexible shoe is generally better</strong> for most runners unless specific stability needs exist.</p></div>
+  </div></div>
+</div>
+</div>
+
+<!-- ===== TAB 6: PREGNANCY & POSTPARTUM ===== -->
+<div class="tab-panel" id="tab-pregnancy">
+<div class="container">
+  <div class="section-title">Pregnancy &amp; Postpartum &#8212; Exercise, Physiology &amp; Pelvic Floor</div>
+  <div class="section-sub">Pregnancy creates significant physiological changes that directly affect PT assessment and treatment. Blood volume increases 50% (mostly in first trimester). Joint laxity changes from relaxin and progesterone. Ventilation needs increase. Community support decreases risk of postpartum depression.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Trimester Physiology, Exercise Guidelines &amp; Precautions</h4><div class="ma-tags"><span class="ma-tag red">&gt;85-90% HR = blood shunts to mother</span><span class="ma-tag gold">Sweet spot = 60-65% HR</span><span class="ma-tag purple">Supine after 28 weeks = IVC compression</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Change</th><th>Details</th><th>PT Implications</th></tr></thead><tbody>
+      <tr><td class="hi">Cardiovascular</td><td>Blood volume increases 50%, mostly in first trimester. Cardiac output increases. Resting HR increases</td><td><strong>&gt;85&#8211;90% HR max: blood shunts to mother instead of baby.</strong> Sweet spot = 60&#8211;65% HR max. Check vitals EVERY visit. Utilize RPE rather than strict HR targets</td></tr>
+      <tr><td class="hi">Joint Laxity</td><td><strong>Relaxin:</strong> Highest in FIRST trimester, returns to normal after. <strong>Progesterone:</strong> Stays elevated throughout entire pregnancy</td><td>Increased joint laxity &#8594; higher risk of injury. Caution with end-range stretching. Avoid ballistic movements. Support joints during exercise. Be aware that laxity persists postpartum</td></tr>
+      <tr><td class="hi">Respiratory</td><td>Increased ventilation needs due to increased blood volume and metabolic demands. Diaphragm displaced superiorly by growing uterus</td><td>Increased need for breathing compared to pre-pregnant ranges. May feel SOB even at rest in later trimesters. Modify exercise intensity accordingly</td></tr>
+      <tr><td class="warn">Renal</td><td>Kidney function increases. Increased bodily fluids. <strong>Left sidelying increases GFR</strong> (more urine output)</td><td>Frequent bathroom breaks during treatment. Edema management. Monitor for preeclampsia (HTN + proteinuria + edema)</td></tr>
+      <tr><td class="bad">Positional Precautions</td><td><strong>After 28 weeks: avoid supine.</strong> Supine hypotensive syndrome &#8212; uterus compresses IVC &#8594; decreased venous return &#8594; decreased cardiac output &#8594; hypotension, dizziness, nausea</td><td>Use left sidelying, semi-reclined, or seated positions. Wedge under right hip if brief supine is needed. Modify all exercises to avoid flat supine after 28 weeks</td></tr>
+    </tbody></table>
+    <div class="bl-strip purple"><div class="bl-label">Edinburgh Postnatal Depression Scale &amp; Labor Stages</div><p><strong>PPD risk factors:</strong> Women with anxiety and depression have higher chance. C-section also higher risk for PPD. Community support is important to decrease risk. <strong>Edinburgh scale</strong> = screening tool for postnatal depression. <strong>Gravidity</strong> = how many times pregnant. <strong>Parity</strong> = how many deliveries. <strong>Delivery types:</strong> Vaginal, C-section, forceps (still vaginal), vacuum-assisted. Pitocin = medication to help if no progression. Episiotomy = surgical cut at vaginal opening during childbirth. <strong>4 stages of labor:</strong> Stage 1 = contractions. Stage 2 = active pushing (increased tear risk if prolonged). Stage 3 = delivery of placenta. Stage 4 = mom and baby recovery.</p></div>
+  </div></div>
+</div>
+</div>
+
+<!-- ===== TAB 7: REVIEW ===== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; Advanced Orthopedic Interventions</div>
+  <div class="section-sub">Tap any card to reveal the answer.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Before performing cervical manipulation, what is the minimum screening you must perform and why?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Minimum screening:</strong> (1) Blood pressure (HTN = vascular risk factor). (2) Cranial nerves 9&#8211;12 (CN 9/10: gag reflex, swallowing, phonation. CN 11: shrug/SCM. CN 12: tongue protrusion/deviation). (3) Cervical rotation (&#60;45&#176; + mechanism = apply C-Spine Rules). (4) Ligament integrity (anterior shear test for transverse lig, alar lig test). (5) Neurological screen (myotomes, dermatomes, reflexes). (6) Spurling&#8217;s/quadrant test. <strong>Why:</strong> The most reported adverse event from cervical manipulation is cerebrovascular accident from VBI. Red flag presentations mimic MSK cervicocranial syndromes. Reliance on objective testing ALONE is not enough &#8212; must also include vascular risk factors in subjective and eye exam. For acute onset headache &#8220;unlike any other&#8221; &#8594; conservative techniques only. Positive anterior shear = absolute contraindication.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">17-year-old pitcher with medial elbow pain during arm acceleration and cocking. DDx and exam approach?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>High DDx:</strong> UCL sprain (medial pain during acceleration/cocking in a pitcher is classic). <strong>Moderate:</strong> Flexor-pronator mass strain (similar location, different mechanism). <strong>Low:</strong> Cubital tunnel syndrome, thoracic outlet. <strong>Eliminate:</strong> OA (too young), little league elbow (medial epicondylar apophysitis &#8212; he had this before, different presentation now). <strong>Exam:</strong> RIMS and ROM of elbow AND shoulder AND wrist (elbow problem can be a shoulder or wrist problem). Moving valgus stress test for UCL. Assess total arc of motion and GIRD at shoulder. Check thoracic mobility. <strong>Key history:</strong> He plays on 1 travel team year-round, wants college recruitment, hasn&#8217;t worked out since pain started (fear avoidance). Fastball hurts most (highest valgus stress). <strong>Important:</strong> Up-the-chain and down-the-chain assessment is essential &#8212; the elbow is often the victim, not the culprit.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What are the 3 phases of plyometric exercise and why is the amortization phase the most important to train?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Phase 1 &#8212; Eccentric Pre-stretch:</strong> Pre-loads the muscle spindle and non-contractile tissue. Stimulates neurophysiological-biomechanical response that enhances the concentric contraction. More energy stored during eccentric = more powerful output. <strong>Phase 2 &#8212; Amortization (Time to Rebound):</strong> Time from end of eccentric to start of concentric. <strong>This is the most important phase to train because shorter amortization = more efficient use of stored elastic energy.</strong> If amortization is too long, stored energy dissipates as heat and the plyometric benefit is lost. <strong>Phase 3 &#8212; Concentric Shortening:</strong> Power production phase. The payoff. <strong>SAID principle:</strong> Specific Adaptation to Imposed Demands &#8212; plyometric training must be sport-specific. Terminal phase of rehab should include periodization programs that incorporate plyometrics to bridge the gap between clinical rehab and sport performance.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Runner with anterior knee pain. Using the 4 S&#8217;s framework, what would you assess and what interventions would you consider?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Sound:</strong> Is the runner loud? Overstriking increases vGRF &#8594; cue &#8220;quiet your feet&#8221; to reduce impact loading. <strong>Strike:</strong> Heel striker? Forefoot strike may help with anterior knee pain by reducing knee loading. Caution if hx of calf/metatarsal injury. <strong>Step Rate:</strong> Increasing cadence by 5% at constant velocity reduces knee shock absorption by up to 20%. Increasing by 10% reduces peak hip adduction and IR moments. Decreasing stride length decreases contralateral pelvic drop, hip adduction, ankle eversion, and ITB strain. <strong>Speed:</strong> At speeds &#60;7 m/s, ankle PF reign supreme &#8212; at faster speeds, proximal power matters more. <strong>Interventions:</strong> Increase cadence 5&#8211;10% (metronome), consider forefoot strike transition (gradual), hip/glute strengthening (addresses proximal weakness contributing to knee valgus), load management (10% weekly volume increase), consider 2 pairs of shoes.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Pregnant patient at 30 weeks wants to continue exercising. What are your guidelines and precautions?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Exercise guidelines:</strong> Sweet spot = 60&#8211;65% HR max. Do NOT exceed 85&#8211;90% HR max (blood shunts to mother instead of baby). Use RPE rather than strict HR targets. Check vitals EVERY visit. <strong>Positional precaution:</strong> At 30 weeks she is past the 28-week threshold &#8212; <strong>NO SUPINE positioning.</strong> Supine hypotensive syndrome: uterus compresses IVC &#8594; decreased venous return &#8594; hypotension, dizziness, nausea. Use left sidelying, semi-reclined, or seated. Wedge under right hip if brief supine needed. <strong>Joint laxity:</strong> Relaxin was highest in first trimester (now returned to normal), but progesterone stays elevated throughout &#8594; still increased laxity. Avoid end-range stretching and ballistic movements. <strong>Respiratory:</strong> Increased ventilation needs, may feel SOB even at rest. Modify intensity. <strong>Screen for:</strong> Preeclampsia (HTN + proteinuria + edema), gestational diabetes, diastasis recti. <strong>PPD risk:</strong> Anxiety/depression history and C-section increase risk. Community support is protective.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What distinguishes an expert clinician from a novice, and what is the Dunning-Kruger effect?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Expert traits:</strong> Efficient forward-reasoning (hypothesis &#8594; test &#8594; confirm/refute). Balances analytical problem-solving WITH narrative reasoning (seeing the patient as a person). Ongoing collaborative reasoning WITH the patient. <strong>Emphasizes empowering, engaging, and educating</strong> rather than relying on techniques. Uses reflection-in-action (real-time metacognition during treatment) AND reflection-on-action (post-session review) with greater frequency. <strong>Novice traits:</strong> Relies more on technique than patient empowerment. Limited reflection-in-action. Less frequent reflection-on-action. Tends to focus on diagnosis over the patient-as-individual. <strong>Key finding:</strong> PTs who focused more on patient education also demonstrated more reflection-in-action. <strong>Dunning-Kruger effect:</strong> Cognitive bias where people with limited knowledge GREATLY overestimate their competence relative to objective criteria. <strong>Clinical relevance:</strong> New grads may feel more confident than warranted. Self-awareness and humility are essential. The treatment paradigm (eval &#8594; MT &#8594; test/retest &#8594; motor control &#8594; functional movement) provides structure to combat overconfidence.</div></div>
+
+  </div>
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script src="premium.js"></script>
+<script>
+function showTab(id,btn){document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});document.querySelectorAll('.chip-nav button').forEach(function(b){b.classList.remove('active')});var panel=document.getElementById('tab-'+id);if(panel)panel.classList.add('active');if(btn)btn.classList.add('active');window.scrollTo({top:document.querySelector('.chip-nav').offsetTop-10,behavior:'smooth'})}
+function toggleMA(header){var body=header.nextElementSibling;var chevron=header.querySelector('.ma-chevron');var isOpen=body.classList.contains('open');body.classList.toggle('open',!isOpen);chevron.style.transform=isOpen?'':'rotate(180deg)'}
+function flipCard(card){card.querySelector('.rc2-a').classList.toggle('open')}
+</script>
+</body>
+</html>

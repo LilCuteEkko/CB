@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; Pediatrics</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro</a>
+  <a href="CB_NeuroClinMgt.html" class="nav-link">Neuro Clin</a>
+  <a href="CB_MultiSystem.html" class="nav-link">Multi-Sys</a>
+  <a href="CB_OrthoticsProsthetics.html" class="nav-link">O&amp;P</a>
+  <a href="CB_Pediatrics.html" class="nav-link active">Peds</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">Development &middot; Reflexes &middot; NICU &middot; CP &middot; Spina Bifida &middot; TBI &middot; Cancer &middot; Schools &middot; Assistive Tech</div>
+  <h1>Pediatrics <span>&#8212; Management of the Pediatric &amp; Adolescent Patient</span></h1>
+  <p>The complete pediatric PT reference &#8212; from prenatal development and primitive reflexes through NICU care, cerebral palsy (GMFCS classification), spina bifida, pediatric TBI, childhood cancer, early intervention (IDEA Part C), school-based practice (504/IEP), assistive technology, and transition to adulthood. Organized as a learning pathway: master normal development first, then learn to recognize deviations.</p>
+  <div class="hero-badges">
+    <span class="badge green">Normal Development</span>
+    <span class="badge gold">Reflexes &amp; Milestones</span>
+    <span class="badge purple">NICU</span>
+    <span class="badge red">Cerebral Palsy</span>
+    <span class="badge orange">Spina Bifida</span>
+    <span class="badge">Schools &amp; EI</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('dev',this)">Development</button>
+  <button onclick="showTab('reflexes',this)">Reflexes &amp; Milestones</button>
+  <button onclick="showTab('exam',this)">Peds Examination</button>
+  <button onclick="showTab('nicu',this)">NICU</button>
+  <button onclick="showTab('cp',this)">Cerebral Palsy</button>
+  <button onclick="showTab('spina',this)">Spina Bifida</button>
+  <button onclick="showTab('conditions',this)">TBI, Cancer &amp; More</button>
+  <button onclick="showTab('ei',this)">EI &amp; Schools</button>
+  <button onclick="showTab('at',this)">Assisttic Tech &amp; Transition</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<div class="tab-panel active" id="tab-dev">
+<div class="container">
+  <div class="section-title">Child Development &#8212; Prenatal Through Adolescence</div>
+  <div class="section-sub">5 domains of development: Motor (gross and fine), Cognitive, Language, Social-Emotional, and Self-Help. Development follows predictable patterns: cephalo-caudal, reflex before cortical, proximal before distal, medial before lateral, gross before refined, extensor antigravity before flexor antigravity. Dynamic Systems Theory: development emerges from interaction of neuromuscular, musculoskeletal, cognitive, perception, and environment/opportunity.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Prenatal Development &#8212; 3 Trimesters</h4><div class="ma-tags"><span class="ma-tag gold">Nervous system = first to start, last to finish</span><span class="ma-tag red">TORCH infections</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Trimester</th><th>Weeks</th><th>Key Events</th></tr></thead><tbody>
+      <tr><td class="hi">1st</td><td>1&#8211;12</td><td>Germinal period (2 wks), embryonic period (3&#8211;8 wks &#8212; all major organ systems established), fetal period (9 wks &#8594; term). <strong>Nervous system is FIRST to start developing but LAST to finish.</strong> Nutrition is critical. TORCH infections (Toxoplasmosis, Other, Rubella, CMV, HIV, Herpes, Syphilis) can cause devastating damage</td></tr>
+      <tr><td class="hi">2nd</td><td>13&#8211;26</td><td>Baby grows to proportion. Week 20: baby begins to move. Suck and swallow reflex develops</td></tr>
+      <tr><td class="hi">3rd</td><td>27&#8211;40</td><td>Body weight triples, length doubles. Extra body fat &#8594; temperature regulation. Weeks 36&#8211;37: lungs ready for outside function. Continues developing after birth for years. Premature babies have breathing and temp regulation issues</td></tr>
+    </tbody></table>
+    <div class="bl-strip"><div class="bl-label">Birthing &amp; Age Correction</div><p><strong>Gestation = 40 weeks.</strong> Chronological age (CA) = normal age. <strong>Corrected chronological age (CCA)</strong> = subtract premature time from actual age. <strong>Meconium staining:</strong> Baby in uterus too long &#8594; defecates, stains body, feces can be ingested or breathed in. Labor: delivery of baby, then delivery of placenta.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Motor Development &#8212; Prone, Supine, Sitting, Standing Progressions</h4><div class="ma-tags"><span class="ma-tag green">Prone = chest off floor predicts sitting</span><span class="ma-tag gold">Sitting before 24mo = predicts walking</span><span class="ma-tag purple">Independent stance 10-12mo</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Progression</th><th>Key Milestones</th><th>Clinical Significance</th></tr></thead><tbody>
+      <tr><td class="hi">Prone</td><td>Newborn: physiologic flexion, WB on chest/face. Head control develops (earliest antigravity). POE &#8594; prone on hands. 5mo: pivots prone with UE in high guard</td><td><strong>Moving chest off floor = predictor of future sitting.</strong> Serratus anterior supports trunk by protracting shoulder girdle. POE encourages supination/pronation</td></tr>
+      <tr><td class="hi">Supine</td><td>Asymmetry period (ATNR). Symmetry period (hands to midline, crosses midline &#8594; rotation). Antigravity: cervical flexors + abdominals + hip flexors bring limbs to visual field &#8594; body image</td><td>Holding head in midline in supine = significant motor skill. Feet-to-mouth = APT/PPT work and stability development</td></tr>
+      <tr><td class="hi">Rolling</td><td>0&#8211;6mo: non-segmental (log roll). 5&#8211;6mo: segmental rolling begins. Prone &#8594; supine before supine &#8594; prone. Side-prop develops (lateral trunk flexion, obliques)</td><td>Non-segmental = neck righting reaction. Segmental = body righting reaction. Important for transition skills</td></tr>
+      <tr><td class="hi">Sitting</td><td>Propped with UE support (can't reach). 4mo: supported sit with head control. 5&#8211;9mo: independent ring sitting &#8594; half ring &#8594; long sit &#8594; short sit</td><td><strong>Sitting before 24 months = predictor for walking.</strong> Protective reactions: 6&#8211;7mo anterior, 7&#8211;9mo lateral, 8&#8211;9mo posterior</td></tr>
+      <tr><td class="hi">Standing</td><td>Reflexive stepping goes away at 2mo (leg weight). 5mo: partial WB if supported. Pull to stand 7&#8211;12mo. Independent stance/cruising 10&#8211;12mo. Walking 12&#8211;18mo</td><td>First stance: LE abd, flex, ER, knee flex, foot pronation, wide BOS, UE guarded. Fat pads on feet until 24mo. Equilibrium in standing not until 21mo</td></tr>
+    </tbody></table>
+    <div class="bl-strip gold"><div class="bl-label">Hand Development Timeline</div><p><strong>0&#8211;3mo:</strong> Hands primarily closed, reflexive grasp, swiping. <strong>4mo:</strong> Ulnar gross grasp, reaching under visual control, binocular coordination. <strong>5mo:</strong> Raking, squeeze grasp, ulnar-palmar. <strong>6mo:</strong> Radial palmar grasp, thumb/finger dissociation (70% of normal hand function). <strong>7&#8211;8mo:</strong> Lateral pincer. <strong>9&#8211;10mo:</strong> Pokes with index, inferior pincer. <strong>11&#8211;12mo:</strong> Controlled release, superior pincer (pad-to-pad &#8594; tip-to-tip). <strong>12mo:</strong> Eats with fingers, drinks from cup. <strong>2yo:</strong> Spoon. <strong>3yo:</strong> Fork. <strong>7yo:</strong> Knife.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Toddler Through Adolescence &#8212; 1 to 18 Years</h4><div class="ma-tags"><span class="ma-tag purple">True running at 3-4</span><span class="ma-tag gold">Reading at 6, learning from reading at 9</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Age</th><th>Motor</th><th>Cognitive/Social</th></tr></thead><tbody>
+      <tr><td class="hi">1&#8211;3 (Toddler)</td><td>Classified as toddler when steps taken. Bowel/bladder management 18&#8211;24mo. Climbs steps, throws, runs</td><td>Solitary play (2yo). Parallel play (3yo). Emerging cognitive: identifies body parts, cause/effect. 50 words at 2yo. Speech understood at 3yo</td></tr>
+      <tr><td class="hi">3&#8211;6 (Young Child)</td><td>True running 3&#8211;4yo. Skips at 5yo. 2-wheel bike at 5yo. Hops in patterns at 6yo</td><td>Symbolic/pre-logic thought. Cooperative play. Increased mastery. Sensorimotor &#8594; pre-operational stage (Piaget)</td></tr>
+      <tr><td class="hi">6&#8211;12 (School Age)</td><td>Growth spurts 3&#8211;6x/year. Jumping jack at 7yo. Throw/catch at 10yo. Adult manipulation at 12yo</td><td>Reading at 6, learning from reading at 9. Logical thinking. Concrete operational stage. Perform ADLs</td></tr>
+      <tr><td class="hi">12+ (Adolescent)</td><td>Girls mature 17&#8211;18, boys 18&#8211;21. Growth spurts. Sports specialization risks</td><td>Menarche avg 10yo, spermarche avg 13yo. Same-sex peer time. Girls = sharing friendships, boys = activities/competition</td></tr>
+    </tbody></table>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-reflexes">
+<div class="container">
+  <div class="section-title">Primitive Reflexes, Reactions &amp; Developmental Milestones</div>
+  <div class="section-sub">Primitive reflexes are reflex actions originating in the CNS exhibited by normal infants but not neurologically intact adults. Majority are seen in the first 6 months and integrated by 6 months. Pathological reflexes = reappearance of primitive reflexes following brain injury. Central pattern generator theory helps explain why these reflexes exist.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Primitive Reflexes &amp; Integration Timeline</h4><div class="ma-tags"><span class="ma-tag red">ATNR = strong asymmetry period</span><span class="ma-tag gold">Most integrated by 6mo</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Reflex</th><th>Stimulus</th><th>Response</th><th>Present</th><th>Integrates</th></tr></thead><tbody>
+      <tr><td class="hi">Rooting</td><td>Stroke cheek toward ear</td><td>Head turns, mouth opens toward stimulus</td><td>Birth</td><td>3&#8211;6 months</td></tr>
+      <tr><td class="hi">Suck-Swallow</td><td>Object in mouth/on tongue</td><td>A-P tongue movement, rhythmic sucking (3:1 suck:swallow ratio)</td><td>Birth</td><td>2&#8211;5 months</td></tr>
+      <tr><td class="hi">Palmar Grasp</td><td>Pressure on palm</td><td>Finger flexion, gripping</td><td>Birth</td><td>4&#8211;6 months</td></tr>
+      <tr><td class="hi">Plantar Grasp</td><td>Pressure on ball of foot</td><td>Toe flexion</td><td>Birth</td><td>9&#8211;10 months</td></tr>
+      <tr><td class="warn">ATNR (Asymmetric Tonic Neck)</td><td>Head rotation to one side</td><td>"Fencer" position &#8212; arm/leg extend on face side, flex on skull side</td><td>Birth</td><td>4&#8211;6 months</td></tr>
+      <tr><td class="hi">STNR (Symmetric Tonic Neck)</td><td>Neck flexion/extension</td><td>Flexion: UE flex, LE extend. Extension: UE extend, LE flex</td><td>4&#8211;6 months</td><td>8&#8211;12 months</td></tr>
+      <tr><td class="hi">Moro</td><td>Sudden head drop or loud noise</td><td>Arms abduct/extend then adduct/flex (startle + embrace)</td><td>Birth</td><td>4&#8211;6 months</td></tr>
+      <tr><td class="hi">Positive Support</td><td>Bouncing on balls of feet</td><td>Stiffening of legs to support body weight</td><td>Birth</td><td>1&#8211;2 months</td></tr>
+      <tr><td class="hi">Stepping/Walking</td><td>Held upright, feet on surface</td><td>Alternating stepping movements. Goes away at 2mo due to leg weight</td><td>Birth</td><td>2 months</td></tr>
+      <tr><td class="hi">Galant (Trunk Incurvation)</td><td>Stroke along paravertebral area</td><td>Lateral trunk flexion toward stimulated side</td><td>Birth</td><td>2 months</td></tr>
+    </tbody></table>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Righting, Protective &amp; Equilibrium Reactions</h4><div class="ma-tags"><span class="ma-tag green">Equilibrium in standing = 21mo (exception)</span><span class="ma-tag gold">Protective: anterior first, posterior last</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Reaction Type</th><th>Timeline</th><th>Significance</th></tr></thead><tbody>
+      <tr><td class="hi">Righting Reactions</td><td>6&#8211;12 months evident</td><td>Head-on-body, body-on-body, optical righting. Allow rotational skills and assumption of developmental positions. Neck righting &#8594; body righting</td></tr>
+      <tr><td class="hi">Protective Extension</td><td>6&#8211;7mo anterior (FOOSH). 7&#8211;9mo lateral. 8&#8211;9mo posterior</td><td>Develops in sequence: anterior &#8594; lateral &#8594; posterior. Gives confidence for child to move. Tests: sudden displacement of COM</td></tr>
+      <tr><td class="warn">Equilibrium Reactions</td><td>Develop ~1&#8211;2 months AFTER child learns the position. Prone 6mo, supine 7mo, sitting 8mo, <strong>standing 21mo (exception to the rule)</strong></td><td>Develop as a form of protection. Involve whole-body responses to restore balance. More sophisticated than protective extension</td></tr>
+    </tbody></table>
+    <div class="bl-strip"><div class="bl-label">Feeding Milestones</div><p><strong>0&#8211;4mo:</strong> 16&#8211;20oz/24hr (milk only). <strong>5&#8211;6mo:</strong> 18&#8211;32oz (add cereal, fruit, vegetables). <strong>9&#8211;12mo:</strong> 24&#8211;32oz (add solid foods). <strong>6mo:</strong> Holds bottle. <strong>12&#8211;18mo:</strong> Eats with hands, drinks from cup. <strong>Head circumference = chest circumference for first year.</strong> Birth weight doubles by 5mo, triples by 12mo.</p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-exam">
+<div class="container">
+  <div class="section-title">Pediatric Examination &#8212; Unique Considerations</div>
+  <div class="section-sub">Key questions for peds: Any challenges through pregnancy? How many weeks? Weight? Feeding (breast or bottle, trouble latching)? For older kids: social, vision, hearing, discomfort with movement, school performance. FLACC pain scale for non-verbal children. Wong-Baker Faces for verbal children. MMT not valid until 5 years old.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Systems Review, Pain Scales &amp; Standardized Tests</h4><div class="ma-tags"><span class="ma-tag gold">FLACC = 6mo-5yo</span><span class="ma-tag purple">Wong-Baker = 5-13yo</span><span class="ma-tag red">Bottom-up = person-centered</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Pain Scale</th><th>Ages</th><th>Description</th></tr></thead><tbody>
+      <tr><td class="hi">FLACC</td><td>6 months &#8211; 5 years</td><td>Face, Leg, Activity, Cry, Consolability. Scored 0&#8211;2 each (0 = no discomfort, 2 = most). For non-verbal children</td></tr>
+      <tr><td class="hi">Wong-Baker Faces</td><td>5&#8211;13 years</td><td>Child picks face matching their pain. Common peds pain measure</td></tr>
+      <tr><td class="hi">VAS / Numeric (0&#8211;10)</td><td>&gt;13 years</td><td>Self-reporting. Requires cognitive ability to determine scaling</td></tr>
+    </tbody></table>
+    <div class="bl-strip"><div class="bl-label">Key Examination Considerations</div><p><strong>Prone exam:</strong> Physiologic flexion, suck-swallow reflex, calming, lack of irritation (GERD typically when supine), quality of head/neck movement, UE position, WB on upper trunk/face. <strong>Pull-to-sit:</strong> Check head lag quality (requires co-contraction of trunk flexors/extensors). <strong>Prone suspension:</strong> Head and hip position to horizontal ("superman"). Insight on extension-based postural muscles. <strong>Functional strength tests:</strong> Touch back of head, touch low back, supination, opposition, supine-to-stance transition, sit-to-stand, step up 6 inches. <strong>Assessment approach:</strong> Top-down = traditional but ignores child's needs. <strong>Bottom-up = identifies needs in collaboration with family (person-driven, people-centered, encouraging self-management).</strong></p></div>
+    <div class="bl-strip gold"><div class="bl-label">Standardized Tests in Peds</div><p><strong>Norm-referenced:</strong> Compared to a group of children. Diagnostic (how child differs from group). Evaluates at one point in time. <strong>Criterion-referenced:</strong> Tests mastery of skill in one child. Can be correlated to intervention. <strong>Common tests:</strong> AIMS (0&#8211;18mo), INFANIB (1&#8211;18mo), Denver Screen (1wk&#8211;6yr), TIMP (34wk gestation&#8211;4mo post-term), WeeFIM, SFA (School Function Assessment), GAS (Goal Attainment Scaling). <strong>Rotational profile:</strong> Foot progression angle, hip rotation (femoral torsion), thigh-foot angle (TFA &#8212; positive = out-toeing, negative = in-toeing). In-toeing is common during second year. Shoe modifications are INEFFECTIVE for in-toeing correction.</p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-nicu">
+<div class="container">
+  <div class="section-title">NICU &#8212; Levels, Complications &amp; PT Role</div>
+  <div class="section-sub">NICU provides education on handling and positioning, promotes development and midline orientation. Level I = standard nursery. Level II = intermediate (some PT). Level III = highly specialized (teaching hospitals). Level IV = ECMO-capable. Premature infants lack physiologic flexion, have decreased muscle fibers, low tone, increased soft tissue laxity, and are sensitive to sounds and light.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Birth Weight, Gestational Age &amp; Complications of Prematurity</h4><div class="ma-tags"><span class="ma-tag red">PVL = CP, spastic diplegia</span><span class="ma-tag gold">IVH = most common preemie lesion</span><span class="ma-tag purple">22 weeks = lower limit of survivability</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Classification</th><th>Weight / Age</th><th>Key Concerns</th></tr></thead><tbody>
+      <tr><td class="hi">Average BW</td><td>5&#8211;9 lbs (2500&#8211;4000g)</td><td>Normal</td></tr>
+      <tr><td class="warn">Low BW</td><td>3&#8211;5 lbs (1500&#8211;2500g)</td><td>Monitoring needed</td></tr>
+      <tr><td class="bad">Very Low BW</td><td>1.5&#8211;3 lbs (1000&#8211;1500g)</td><td>High risk for complications</td></tr>
+      <tr><td class="bad">Extremely Low BW</td><td>&lt;1.5 lbs (&lt;1000g)</td><td>Very high risk. Multiple comorbidities expected</td></tr>
+    </tbody></table>
+    <table class="data-table"><thead><tr><th>Complication</th><th>Type</th><th>Key Features</th></tr></thead><tbody>
+      <tr><td class="warn">RDS (Respiratory Distress Syndrome)</td><td>Pulmonary</td><td>Immature lungs lack surfactant (prevents atelectasis). S/S: cyanosis, grunting, nasal flaring, sternal retraction</td></tr>
+      <tr><td class="hi">BPD (Bronchopulmonary Dysplasia)</td><td>Pulmonary</td><td>Chronic lung disease from prolonged O&#8322; and mechanical ventilation. Alveoli scar down or collapse from irritation</td></tr>
+      <tr><td class="bad">PVL (Periventricular Leukomalacia)</td><td>Neurologic</td><td>Necrosis of white matter lateral to lateral ventricles. <strong>Frequently associated with CP, spastic diplegia.</strong> More common &lt;32 weeks</td></tr>
+      <tr><td class="bad">IVH (Intraventricular Hemorrhage)</td><td>Neurologic</td><td><strong>Most common lesion in preemies.</strong> Bleed into germinal matrix. Due to hypoxia or altered CBF. Graded I (mild) to IV (severe). Seen &lt;32wk and &lt;1500g</td></tr>
+      <tr><td class="hi">NEC (Necrotizing Enterocolitis)</td><td>GI</td><td>Acute inflammatory bowel disease &#8594; necrosis. Stage I (suspected) &#8594; Stage III (critically ill). Higher risk with enteral feedings. Lower BW = higher mortality</td></tr>
+      <tr><td class="hi">ROP (Retinopathy of Prematurity)</td><td>Visual</td><td>Exclusive to premature infants. Ischemia of retinal blood vessels &#8594; detachment. Associated with O&#8322; use. Causes visual impairment</td></tr>
+    </tbody></table>
+    <div class="bl-strip red"><div class="bl-label">Congenital Cardiac Anomalies</div><p><strong>Acyanotic (pink, oxygenated blood mixes):</strong> ASD (most common CHD &#8212; hole between atria), VSD (hole between ventricles &#8594; pulmonary HTN), Coarctation of aorta. <strong>Cyanotic (blue, blood skips lungs):</strong> Tetralogy of Fallot (most common cyanotic &#8212; VSD + pulmonary stenosis + overriding aorta + RV hypertrophy), Transposition of Great Arteries (fatal without surgery in first days). PDA = communication between aorta and pulmonary artery doesn't close (RUBELLA). <strong>If infant has feeding problems &#8594; think heart issue.</strong></p></div>
+    <div class="bl-strip green"><div class="bl-label">PT in the NICU</div><p><strong>Goals:</strong> Maintain life. Promote maturation/development (hold infant, skin-to-skin). Promote healing environment (calming, reduce noxious stimuli, protect sleep). Streamline interventions for sufficient rest. <strong>Assessment:</strong> APGAR (0&#8211;10, predictor of support/mortality), observation of posturing/position, behavioral states (deep sleep &#8594; light sleep &#8594; drowsy &#8594; quiet alert &#8594; active alert &#8594; crying), sensory systems (tactile, vestibular, gustation, hearing, vision). <strong>Signs of stress:</strong> Physiologic (HR, RR, O&#8322; sat changes, apnea) and behavioral (trunk/leg extension, finger splaying, gaze aversion). <strong>Tone tests:</strong> Heel-to-ear (closer = lower tone = more premature), popliteal angle (&gt;90&#176; = low tone), scarf sign (past shoulder/midline = more hypotonic).</p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-cp">
+<div class="container">
+  <div class="section-title">Cerebral Palsy &#8212; Classification, GMFCS &amp; Management</div>
+  <div class="section-sub">CP is the most common movement disorder in children. Medical diagnosis with significant history: prematurity, genetic predisposition (prepartum), HIE (peripartum), hypoxia (neonatal), IVH, PVL. It is a non-progressive brain injury that results in progressive musculoskeletal impairment. Muscle weakness in CP results from loss of muscle mass, reduced contractile material, actin/myosin dysfunction, and overstretched sarcomeres that cannot produce force.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>CP Types &amp; GMFCS Levels I&#8211;V</h4><div class="ma-tags"><span class="ma-tag red">Spastic = most common (cortex)</span><span class="ma-tag gold">GMFCS I = walks without limitations</span><span class="ma-tag purple">Dyskinetic = basal ganglia</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Type</th><th>Brain Area</th><th>Presentation</th></tr></thead><tbody>
+      <tr><td class="bad">Spastic (MOST COMMON)</td><td>Cortex</td><td>Monoplegia (rare), hemiplegia, diplegia, triplegia, quadriplegia (4 limbs), tetraplegia (includes trunk/head). Velocity-dependent resistance</td></tr>
+      <tr><td class="warn">Dyskinetic</td><td>Basal Ganglia</td><td>Dystonic, athetoid. Constant involuntary movement. Arm either fully flexed or extended. Fluctuating tone</td></tr>
+      <tr><td class="hi">Ataxic</td><td>Cerebellum</td><td>Cerebellar signs: dysmetria, intention tremor, balance deficits</td></tr>
+      <tr><td class="hi">Hypotonic</td><td>Genetics / extrapyramidal (reticulospinal)</td><td>Low tone. Often mixed with axial hypotonia and appendicular spasticity</td></tr>
+    </tbody></table>
+    <table class="data-table"><thead><tr><th>GMFCS Level</th><th>Function</th><th>Mobility</th></tr></thead><tbody>
+      <tr><td class="ok">I</td><td>Walks without limitations</td><td>Independent community ambulation. May have difficulty with advanced motor skills</td></tr>
+      <tr><td class="hi">II</td><td>Walks with limitations</td><td>Issues with long distances/running. Requires railing for steps</td></tr>
+      <tr><td class="warn">III</td><td>Walks with assistive device</td><td>Walker inside, wheelchair outside</td></tr>
+      <tr><td class="warn">IV</td><td>Uses power mobility</td><td>Limited manual WC use. Needs assistance. Self-mobility with limitations</td></tr>
+      <tr><td class="bad">V</td><td>Dependent</td><td>May use power mobility (rare). Significant postural control and extremity impairments</td></tr>
+    </tbody></table>
+    <div class="bl-strip gold"><div class="bl-label">Comorbidities &amp; Movement Analysis</div><p><strong>Comorbidities:</strong> Sensation/sensory processing, visual-perception, communication/oral motor, behavior/emotions, intellectual impairment, hip subluxation/dislocation risk. <strong>Movement analysis questions:</strong> What moves first? Is it typical/expected? Is it controlled? Is there rapid movement? What is the prime mover? What stabilizes proximally? What joint(s) moving and how? What is impairing the movement? Is there laxity? Patella alta? <strong>Spasticity management:</strong> Orthotics, electrical stim, stretching/strengthening agonist + antagonist, biofeedback, prolonged stretch, tendon pressure. <strong>Medical:</strong> Botox (inhibits ACh release), Baclofen (oral or intrathecal pump), nerve blocks, selective dorsal rhizotomy, diazepam.</p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-spina">
+<div class="container">
+  <div class="section-title">Spina Bifida &#8212; Types, Levels &amp; Functional Outcomes</div>
+  <div class="section-sub">Second most common birth defect. Caused by lack of maternal folic acid leading to failure of neural tube to close (normally closes at 26 weeks gestation). 85% survive to adulthood. Greater than 90% survival with early treatment (back closure within 72 hours, shunt for hydrocephalus). If ambulation not present by 9 years, it is unlikely to occur.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Types, Hydrocephalus &amp; Arnold-Chiari Malformation</h4><div class="ma-tags"><span class="ma-tag red">90% have hydrocephalus</span><span class="ma-tag gold">VP shunt preferred</span><span class="ma-tag purple">Latex allergy common</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="grid2">
+      <div class="bl-strip red"><div class="bl-label">Myelomeningocele (Aperta)</div><p>Most severe. Dorsal opening with meninges AND spinal cord involved. Severe neurologic deficits correlating with level. Cervical = death before birth. Thoracic = poorest neurologic presentation. Associated with hydrocephalus, scoliosis, osteoporosis, sensory deficits, cognitive/language dysfunction, latex allergy. High maternal serum alpha-fetoprotein &#8594; diagnosis in utero.</p></div>
+      <div class="bl-strip"><div class="bl-label">Spina Bifida Occulta</div><p>Hidden lesion. Incomplete fusion of posterior vertebral arch. Usually no neurologic deficits. Often discovered incidentally on imaging. Much milder than myelomeningocele.</p></div>
+    </div>
+    <div class="bl-strip gold"><div class="bl-label">Hydrocephalus &amp; Arnold-Chiari Malformation</div><p><strong>90% of spina bifida patients also have hydrocephalus.</strong> Arnold-Chiari: prolapse of medulla and cerebellum through foramen magnum &#8594; obstructed 4th ventricle. <strong>VP (ventriculoperitoneal) shunt is preferred treatment.</strong> VA (ventriculoatrial) shunt = CSF to right atrium. <strong>Shunt malfunction signs:</strong> Irritability, projectile vomiting, blurred/double vision. <strong>Tethered cord:</strong> Rapidly progressive scoliosis, hypertonus in LEs, gait pattern changes, urologic function changes, discomfort in back. Requires surgery. <strong>2/3 of shunted children have normal intelligence; 1/3 have mild cognitive impairment.</strong></p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Functional Outcomes &amp; Orthotics by Level</h4><div class="ma-tags"><span class="ma-tag green">Walking by 7 = good prognostic indicator</span><span class="ma-tag red">Below L3 + IQ &#8805;80 = independent self-care</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip"><div class="bl-label">Orthotics by Level</div><p><strong>Thoracic/High Lumbar:</strong> A-frame, swivel standers, HKAFOs, RGOs (lateral weight shift causes unweighted leg to swing forward), rolling walkers, forearm/axillary crutches (swing-through gait). Wheelchair sports toward adolescence. <strong>Low Lumbar:</strong> AFOs, KAFOs, forearm crutches, walkers. <strong>Sacral:</strong> AFOs may be sufficient. Most adults use wheelchair as primary mobility. <strong>Key facts:</strong> Child's ability to walk outdoors and use wheelchair by 7 = good prognostic indicator. If ambulation NOT present by 9 years, unlikely to occur. All children show decreased ambulation around 12 years. Below L3 + IQ &#8805;80 + no LE contractures + normal quad strength = strongly associated with independence in self-care.</p></div>
+    <div class="bl-strip purple"><div class="bl-label">Young Adult Issues</div><p>Obesity, incontinence, recurrent UTIs (most common morbidity), chronic decubiti, joint pain, HTN, neurologic deterioration, depression. Social integration, vocational issues, sexual counseling. <strong>Transition planning must start early (~14yo).</strong></p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-conditions">
+<div class="container">
+  <div class="section-title">Pediatric TBI, Childhood Cancer, Burns &amp; Other Conditions</div>
+  <div class="section-sub">TBI is the leading cause of death and permanent disability in children. Higher in children &lt;4 years and 15&#8211;19 years. Children's brains are more plastic &#8594; greater recovery potential. Childhood cancer survival rates now exceed 80%.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Pediatric TBI &#8212; Causes, GCS &amp; Rancho</h4><div class="ma-tags"><span class="ma-tag red">NAT = non-accidental trauma (abuse)</span><span class="ma-tag gold">LOC &lt;1 day = good outcome</span><span class="ma-tag purple">Pediatric Rancho = I-V scale</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip red"><div class="bl-label">Causes by Age</div><p><strong>Infant:</strong> Abuse (Non-Accidental Trauma/NAT), falls. <strong>Preschool:</strong> Falls, MVAs. <strong>School-age:</strong> MVAs, sports/recreation. <strong>Adolescent:</strong> Sports/recreation, GSW, MVA. <strong>Consequences:</strong> &lt;5yo = more language issues. 5&#8211;21yo = more emotional issues. <strong>Most recovery in first 2 months, can continue for first 2 years.</strong> ICP: in infancy &#8594; bulging fontanels. &gt;5yo &#8594; contents forced through foramen magnum. <strong>Heterotopic ossification:</strong> Mature lamellar bone in soft tissue. Risk: age &gt;11, longer coma. At elbow, shoulder, hip, knee. Signs: decreased ROM, pain, swelling, erythema, warmth.</p></div>
+    <div class="bl-strip"><div class="bl-label">Coma Stimulation</div><p>Structure is important when children emerge from coma. Agitation common &#8594; confusion follows. Sensory input through vestibular, visual, tactile, auditory, olfactory. Use items of importance to child. <strong>Schedule: 15 minutes at a time, 8&#8211;10 times per day.</strong></p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Childhood Cancer, Burns, Legg-Calv&#233;-Perthes &amp; SCFE</h4><div class="ma-tags"><span class="ma-tag gold">Leukemia = most prevalent in kids</span><span class="ma-tag red">Osteosarcoma = adolescent bone tumor</span><span class="ma-tag purple">Burns: family environment = #1 predictor</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Condition</th><th>Key Features</th><th>PT Implications</th></tr></thead><tbody>
+      <tr><td class="warn">Leukemia (ALL/AML)</td><td>Most prevalent cancer in children. ALL: 90% survival. AML: 70% survival, bone marrow transplant</td><td>Exercise guidelines by labs: No exercise (Hct &lt;25%, Hgb &lt;8, plt &lt;20K). Light (Hct 25&#8211;30%, Hgb 8&#8211;10, plt 20&#8211;60K). Resistance OK (Hct &gt;30%, Hgb &gt;10, plt &gt;60K). No exercise within 2hr of treatment</td></tr>
+      <tr><td class="hi">CNS Tumors</td><td>Most common solid organ tumor. Posterior fossa most common location. Astrocytoma, medulloblastoma, brainstem glioma, ependymoma</td><td>Symptoms depend on location/size. Surgery, radiation, chemo. Address vincristine side effects (foot-drop, weakness)</td></tr>
+      <tr><td class="hi">Osteosarcoma</td><td>Most common bone tumor in adolescents. Distal femur, proximal tibia, proximal humerus. Night pain</td><td>Chemo, limb-sparing surgery, amputation, or rotationplasty. Early detection vital. Lung metastasis = poorer prognosis</td></tr>
+      <tr><td class="hi">Legg-Calv&#233;-Perthes</td><td>AVN of femoral head. Boys 4&#8211;10. Painless limp. 80% unilateral. 4 phases: necrosis &#8594; fragmentation &#8594; revascularization &#8594; healed</td><td>&lt;6yo: good outcomes. &gt;8yo: usually need surgery. PWB with crutches (axillary &#8805;6yo, walker younger). Contain femoral head in acetabulum. Stretching + hip extensor/abductor strengthening. Aquatic therapy</td></tr>
+      <tr><td class="hi">SCFE</td><td>Femoral head slips from femoral neck. Associated with puberty, overweight, males, African Americans. 22% bilateral</td><td>Pain in groin/medial thigh/knee. ER noted with hip flexion. Limited flexion, abduction, IR. Strengthening LE + core, AD for NWB, aquatic therapy</td></tr>
+      <tr><td class="warn">Burns</td><td>Common cause of death &lt;4yo. 8% of burned children admitted = abuse. Rule of 9s for BSA. Background, procedural, breakthrough, post-surgical pain. Pruritus impairs participation</td><td>ROM, splinting, scar management, pressure garments, mobility. <strong>Family environment = most important predictor of outcomes.</strong> Younger age at injury = better. Signs of abuse: non-splash, linear demarcation, symmetrical shapes, buttocks/hands/feet</td></tr>
+    </tbody></table>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-ei">
+<div class="container">
+  <div class="section-title">Early Intervention &amp; School-Based Practice</div>
+  <div class="section-sub">IDEA (Individuals with Disabilities Education Act): Part C = infants/toddlers (0&#8211;3 years, IFSP). Part B = school-age (3&#8211;21 years, IEP). Section 504 = accommodations without special education. Family-centered care empowers the family to participate fully. Culture must be respected. "Longer treatment is not better &#8212; BETTER treatment is better."</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>IDEA Part C (Early Intervention) &amp; IFSP</h4><div class="ma-tags"><span class="ma-tag green">0-3 years</span><span class="ma-tag gold">IFSP = family-friendly language</span><span class="ma-tag purple">Primary setting = home</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip green"><div class="bl-label">IDEA Part C &#8212; Early Intervention</div><p>Federal grant program for infants/toddlers 0&#8211;35 months. <strong>Eligibility:</strong> Diagnosis of significant developmental delay, established condition (e.g., Down syndrome), or significant risk of delay if services not provided. <strong>Goals:</strong> Enhance development, maximize independence potential, decrease likelihood of delay, decrease future educational costs, help families acquire tools. <strong>Service environment:</strong> Primarily the HOME. Also typical community settings (daycare, playgroups, parks). <strong>Activity-based instruction:</strong> Observe child &#8594; identify current interests &#8594; work on functional skills within natural routines.</p></div>
+    <div class="bl-strip gold"><div class="bl-label">IFSP (Individualized Family Service Plan)</div><p>Written in <strong>family-friendly language.</strong> Addresses family's concerns, priorities, and resources. Multidisciplinary. Outcomes address child's development AND family's ability to promote development &#8212; must be meaningful to the family AND measurable. <strong>Must include transition plan</strong> (from EI to daycare, preschool, Part B, or community). Transition should begin before preschool. EI can be extended if allowed by state. Evaluated at least annually.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>School-Based Practice &#8212; IEP, 504 &amp; Service Delivery</h4><div class="ma-tags"><span class="ma-tag red">IEP = special education</span><span class="ma-tag gold">504 = accommodations, no formalized testing</span><span class="ma-tag purple">3 I's: Impairment, Intervention, Individual</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="grid2">
+      <div class="bl-strip red"><div class="bl-label">IEP (Individualized Education Program)</div><p>Under IDEA Part B. For students eligible for special education. PT evaluates to determine eligibility or gathers info on already-eligible student. <strong>Should NOT establish discipline-specific goals</strong> &#8212; should describe student's ability to function in school environment and participate in educational program. Requires formalized testing.</p></div>
+      <div class="bl-strip gold"><div class="bl-label">Section 504 Plan</div><p>Under Rehabilitation Act. Disability = mental or physical impairment limiting a major life activity (walking, self-care, working, etc.). <strong>No formalized testing mandated.</strong> Does NOT reduce academic expectations &#8212; provides necessary modifications for equal access. No federal mandate on specific content. 504 Coordinator assists school compliance.</p></div>
+    </div>
+    <div class="bl-strip"><div class="bl-label">Service Delivery Models</div><p><strong>3 I's:</strong> Impairment, Intervention, Individual (participant + supporters). <strong>Direct service:</strong> Skilled PT provides treatment. <strong>Indirect service:</strong> PT checks in periodically, others deliver service. <strong>Integrated approach:</strong> Teachers, support staff, home programs carry out strategies. <strong>Transition planning:</strong> At 14: start discussing post-graduation plan. At 16: plan completed through age 21. Options: postsecondary education, vocational training, employment/assisted employment. PT involved in pre-job training, workplace accessibility, community mobility, energy conservation for ADLs.</p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-at">
+<div class="container">
+  <div class="section-title">Assistive Technology, Orthotics &amp; Transition to Adulthood</div>
+  <div class="section-sub">Mobility impairment is the #1 reason for AT use. Equipment should not substitute for treatment but should facilitate function. Common factor with children = growth &#8212; equipment must be reassessed frequently. The goal of AT is to promote development, independence, social competence, and safety.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Pediatric Orthotics &amp; Assistive Technology</h4><div class="ma-tags"><span class="ma-tag gold">SMO = arch + calcaneus support</span><span class="ma-tag purple">Standers = 1-2x/day, 30-60min</span><span class="ma-tag red">Clear lapboards for body image</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Device</th><th>Purpose</th><th>Key Considerations</th></tr></thead><tbody>
+      <tr><td class="hi">Cranial Remolding Orthosis</td><td>Plagiocephaly (diagonal asymmetry), brachycephaly (occipital flattening), scaphocephaly (elongated A-P)</td><td>Ages 3&#8211;18 months. Worn 23 hr/day for 3&#8211;5 months</td></tr>
+      <tr><td class="hi">SMO (Supramalleolar)</td><td>Supports calcaneus and provides arch support</td><td>For mild ankle instability. Athletic support orthosis for active/sports children</td></tr>
+      <tr><td class="hi">Night Stretching Splint</td><td>Stretches gastroc-soleus complex</td><td>Worn at night &#8805;6 hours. Worn until child is done growing</td></tr>
+      <tr><td class="hi">Solid AFO / Articulating AFO / GRAFO</td><td>Controls PF, promotes knee control, toe clearance</td><td>SAFO prevents PF + DF. Articulating allows DF. GRAFO encourages knee extension. Toe walker = solid AFO (likely poor knee stability)</td></tr>
+      <tr><td class="hi">Standers (Prone/Supine)</td><td>Hands-free upright standing. LE WB. Some are mobile</td><td><strong>Prescription: 1&#8211;2x/day, 30&#8211;60 min, 5 days/week.</strong> Prone = UE free. Supine = no UE WB, for poor head/neck control. Progress: stand-pivot &#8594; stand-step transfers</td></tr>
+      <tr><td class="hi">Gait Trainers</td><td><strong>Mobility devices, NOT training devices.</strong> Rifton allows lateral weight shift to step</td><td>Most do NOT allow lateral weight shift. Posterior walker promotes more erect posture (extended shoulders)</td></tr>
+      <tr><td class="hi">Wheelchairs</td><td>Dependent, manual, or power base</td><td>Seats: planar (fixed/flat), contoured, custom molded (expensive, for older children done growing). <strong>Clear Lucite lapboard preferred</strong> &#8212; allows child to see own legs (positive body image) and others to see whole child (positive interactions)</td></tr>
+    </tbody></table>
+    <div class="bl-strip red"><div class="bl-label">Precautions with AT</div><p>Static positioning restricts learning of active postural transitions. Poor planning &#8594; equipment that fails to meet needs. <strong>Caregivers must be taught correct donning, doffing, and use</strong> (color coding, numbering straps, teach multiple caregivers). Balance between support and function. Inspect equipment frequently. Equipment should facilitate function, not substitute for treatment. Establish realistic goals including capability, cost, accessibility, and transportation.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Transition to Adulthood &amp; Federal Laws</h4><div class="ma-tags"><span class="ma-tag green">ADA 1990 = 4 titles</span><span class="ma-tag gold">Transition conversation at 14</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip green"><div class="bl-label">ADA (Americans with Disabilities Act 1990)</div><p><strong>Title I:</strong> Equal opportunity employment (employers &gt;15 employees, reasonable accommodations). <strong>Title II:</strong> State/local government accessibility (architectural standards, paratransit). <strong>Title III:</strong> Public accommodations (restaurants, stores, theaters, doctor's offices &#8212; nondiscrimination, architectural standards, reasonable modifications). <strong>Title IV:</strong> Communications (TRS 24/7, closed captions).</p></div>
+    <div class="bl-strip"><div class="bl-label">Living &amp; Work Options</div><p><strong>Living:</strong> Home with parents (usually first choice), independent living (philosophy of self-determination, may include in-home assistance), assisted living (services but not SNF level, maximizes choice/dignity/autonomy), residential/ICF (group home &#8212; 24hr supervision, health-related care). <strong>Work:</strong> Competitive (full/part-time, competitive wages, only needs help finding job), supportive (Rehab Act 1986 &#8212; competitive work with ongoing support), sheltered (self-contained site, subcontracted tasks). <strong>Vocational Rehabilitation:</strong> Services for people with disabilities to acquire/maintain gainful employment.</p></div>
+  </div></div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; Pediatrics</div>
+  <div class="section-sub">Tap any card to reveal the answer.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Infant born at 28 weeks, now 4 months old. What is the corrected age, and what complications should you screen for?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Corrected age = 4 months minus 3 months premature = approximately 1 month corrected.</strong> Born at 28 weeks (12 weeks early = 3 months). Use corrected age for developmental expectations until age 2. <strong>Screen for:</strong> PVL (periventricular leukomalacia &#8212; associated with CP, spastic diplegia, common &lt;32wk), IVH (most common preemie lesion, graded I-IV), RDS (lack surfactant), BPD (from prolonged O&#8322;/ventilation), NEC (bowel necrosis from enteral feeds), ROP (retinal ischemia). <strong>Assessment:</strong> Heel-to-ear (closer = lower tone), popliteal angle (&gt;90&#176; = low tone), scarf sign. Less physiologic flexion expected. Observe behavioral states and signs of stress. Use AIMS or TIMP for standardized testing.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Child with CP, GMFCS Level III. What does this mean functionally, and what orthotics/equipment are appropriate?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>GMFCS III = walks with assistive device.</strong> Walker inside, wheelchair for outside/community. <strong>Equipment:</strong> Walker (posterior promotes more erect posture), AFOs (solid or articulating depending on spasticity and need for DF), wheelchair for community distances. Stander prescription: 1-2x/day, 30-60min, 5 days/week. <strong>Spasticity management:</strong> Botox (inhibits ACh), oral or intrathecal baclofen, orthotics, stretching agonist + antagonist, prolonged stretch. <strong>Comorbidities to screen:</strong> Vision/perception, communication/oral motor, behavior/emotions, intellectual impairment, hip surveillance (subluxation/dislocation risk). <strong>Movement analysis:</strong> What moves first, is it typical, what stabilizes proximally, what is impairing the movement. <strong>Muscle weakness mechanism:</strong> Overstretched sarcomeres can't produce force &#8212; not just weakness but structural contractile dysfunction.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Child with spina bifida at L3 level. What is the functional prognosis, and what are the key associated conditions?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>L3 level:</strong> Quad function present (key for ambulation). Below L3 + IQ &#8805;80 + no LE contractures + normal quad strength = strongly associated with independent self-care. <strong>Ambulation:</strong> AFOs with forearm crutches likely. Walking outdoors by 7 = good prognostic indicator. If not ambulating by 9, unlikely to occur. All children show decreased ambulation around 12. Most adults use wheelchair primarily. <strong>Associated conditions:</strong> Hydrocephalus (90% &#8212; VP shunt preferred, watch for malfunction: irritability, projectile vomiting, blurred vision), Arnold-Chiari malformation, tethered cord (progressive scoliosis, hypertonus, gait changes, urologic changes &#8594; requires surgery), latex allergy, bowel/bladder dysfunction (catheterization independence expected by 5yo). <strong>Young adult issues:</strong> Obesity, recurrent UTIs (most common morbidity), chronic decubiti, depression. Transition planning starts at 14.</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">A child can roll segmentally, sit independently in ring sitting, and has anterior protective reactions but no lateral protective reactions. Approximately how old?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Approximately 6&#8211;7 months.</strong> Segmental rolling begins at 5&#8211;6 months (body righting reaction, not neck righting). Independent ring sitting = 5&#8211;9 months (ring provides larger BOS). Anterior protective reactions develop at 6&#8211;7 months. Lateral protective reactions develop at 7&#8211;9 months (this child doesn't have them yet). <strong>What to expect next:</strong> Lateral protective reactions (7&#8211;9mo), posterior protective reactions (8&#8211;9mo), pull-to-stand (7&#8211;12mo), creeping on hands/knees (8&#8211;12mo), equilibrium reactions in sitting (8mo). <strong>Equilibrium reaction timeline:</strong> Prone 6mo, supine 7mo, sitting 8mo, standing 21mo (exception to the 1&#8211;2 month rule). <strong>Hand development:</strong> At 6&#8211;7mo expect radial palmar grasp and beginning of lateral pincer (7&#8211;8mo).</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What's the difference between an IFSP and an IEP, and when does each apply?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>IFSP (Individualized Family Service Plan):</strong> IDEA Part C. Ages 0&#8211;3 years (can extend in some states). Written in family-friendly language. Addresses family's concerns, priorities, and resources. Service primarily in the HOME and natural environments. Must include transition plan. <strong>IEP (Individualized Education Program):</strong> IDEA Part B. Ages 3&#8211;21 years. For students eligible for special education. PT should NOT establish discipline-specific goals &#8212; should describe student's ability to function in school and participate in educational program. Requires formalized testing. <strong>Section 504 Plan:</strong> NOT special education &#8212; provides accommodations. No formalized testing mandated. Does NOT reduce academic expectations. No federal mandate on specific content. <strong>Service delivery (3 I's):</strong> Direct (PT provides skilled service), indirect (PT checks in, others deliver), integrated (teachers/staff carry out strategies). "Longer treatment is not better &#8212; BETTER treatment is better."</div></div>
+
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Child with leukemia &#8212; labs show Hct 27%, Hgb 9, platelets 45,000. Can you exercise them?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>LIGHT EXERCISE ONLY.</strong> Guidelines: <strong>No exercise:</strong> Hct &lt;25%, Hgb &lt;8, platelets &lt;20,000. <strong>Light exercise:</strong> Hct 25&#8211;30%, Hgb 8&#8211;10, platelets 20,000&#8211;60,000 (THIS PATIENT). <strong>Can use resistance:</strong> Hct &gt;30%, Hgb &gt;10, platelets &gt;60,000. <strong>Additional rules:</strong> No exercise within 2 hours of treatment. Check blood counts BEFORE PT. Vincristine side effects include foot-drop and weakness (from peripheral neuropathy). Depression is common. Interventions: therapeutic exercise to maintain strength, ROM, pain management, endurance. <strong>Leukemia types:</strong> ALL = proliferates quickly, 90% survival. AML = slower, 70% survival, needs bone marrow transplant. <strong>Most prevalent cancer in children.</strong> Survival rates now exceed 80% overall for childhood cancers.</div></div>
+
+  </div>
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script src="premium.js"></script>
+<script>
+function showTab(id,btn){document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});document.querySelectorAll('.chip-nav button').forEach(function(b){b.classList.remove('active')});var panel=document.getElementById('tab-'+id);if(panel)panel.classList.add('active');if(btn)btn.classList.add('active');window.scrollTo({top:document.querySelector('.chip-nav').offsetTop-10,behavior:'smooth'})}
+function toggleMA(header){var body=header.nextElementSibling;var chevron=header.querySelector('.ma-chevron');var isOpen=body.classList.contains('open');body.classList.toggle('open',!isOpen);chevron.style.transform=isOpen?'':'rotate(180deg)'}
+function flipCard(card){card.querySelector('.rc2-a').classList.toggle('open')}
+</script>
+</body>
+</html>
