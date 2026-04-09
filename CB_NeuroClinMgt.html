@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; Neuro Clinical Management</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+  <a href="CB_ClinicalFoundations.html" class="nav-link">Foundations</a>
+  <a href="CB_NeuroRehab.html" class="nav-link">Neuro Rehab</a>
+  <a href="CB_MultiSystem.html" class="nav-link">Multi-Sys</a>
+  <a href="CB_NeuroClinMgt.html" class="nav-link active">Neuro Clin</a>
+  <a href="CB_Cardiopulmonary.html" class="nav-link">Cardio</a>
+  <a href="CB_Imaging.html" class="nav-link">Imaging</a>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+<div class="chroma-line"></div>
+<div class="hero">
+  <div class="hero-tag">Stroke &middot; Brain Tumors &middot; Cerebellar &middot; SCI &middot; HIV/AIDS &middot; MS &middot; ALS &middot; TBI</div>
+  <h1>Neurological Clinical Management <span>&#8212; Advanced Neuro PT</span></h1>
+  <p>The clinical application course &#8212; taking neuroanatomy and applying it to real patient management. Covers stroke (arterial territories, hemisphere lateralization, tPA), brain tumors (glioma classification, Karnofsky scale), cerebellar disorders (ataxia, dysmetria, PT interventions), SCI (ASIA classification, functional levels, autonomic dysreflexia), HIV/AIDS (stages, neurologic involvement), MS (4 subtypes, fatigue management), ALS (UMN+LMN, therapeutic window), PNF treatment techniques, TBI (GCS, Rancho levels), and differential diagnosis across all neuro conditions.</p>
+  <div class="hero-badges">
+    <span class="badge red">Stroke &amp; Vascular</span>
+    <span class="badge gold">Brain Tumors</span>
+    <span class="badge purple">Cerebellar Disorders</span>
+    <span class="badge green">SCI &amp; ASIA</span>
+    <span class="badge orange">MS &amp; ALS</span>
+    <span class="badge">Treatment Techniques</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('stroke',this)">Stroke / CVA</button>
+  <button onclick="showTab('tumor',this)">Brain Tumors</button>
+  <button onclick="showTab('cerebellar',this)">Cerebellar</button>
+  <button onclick="showTab('sci',this)">SCI</button>
+  <button onclick="showTab('hiv',this)">HIV/AIDS</button>
+  <button onclick="showTab('ms',this)">MS</button>
+  <button onclick="showTab('als',this)">ALS</button>
+  <button onclick="showTab('treatment',this)">Treatment Techniques</button>
+  <button onclick="showTab('tbi',this)">TBI &amp; DDx</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ===== TAB 1: STROKE / CVA ===== -->
+<div class="tab-panel active" id="tab-stroke">
+<div class="container">
+  <div class="section-title">Stroke / CVA &#8212; Cerebrovascular Accident</div>
+  <div class="section-sub">Stroke is the sudden loss of neurological function caused by interruption of blood flow to the brain. 800k people per year experience stroke. 80% are ischemic. Hemorrhagic strokes are more deadly. To be classified as a stroke, neurological deficits must persist for at least 24 hours. Motor deficits are characterized by hemiplegia (paralysis) or hemiparesis (weakness), typically contralateral to the lesion.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Epidemiology, Risk Factors &amp; FAST</h4><div class="ma-tags"><span class="ma-tag red">A-fib = 5x risk</span><span class="ma-tag gold">FAST = Face, Arm, Speech, Time</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip red"><div class="bl-label">Risk Factors</div><p><strong>Modifiable:</strong> Overweight, sedentary life, binge drinking, DM, smoking, HTN (&#8805;140/90 = 2x lifetime risk), high cholesterol, cardiovascular diseases. <strong>Non-modifiable:</strong> Genetics, age, sex, Asian ethnicity. <strong>A-Fib:</strong> 5x increased risk for stroke. Irregular and often rapid heart rhythm. <strong>Atherosclerosis:</strong> Plaque (lipids, fibrin, calcium) narrows vessels &#8594; interrupts blood flow. <strong>Polycythemia:</strong> Increased circulating RBCs &#8212; primary (genetic, JAK2 mutation) vs secondary (another cause). <strong>Demographics:</strong> Women have lower rates until &gt;85. African Americans have 2x risk vs whites. Higher in Mexicans, Native Americans/Alaskans.</p></div>
+    <div class="bl-strip gold"><div class="bl-label">FAST &amp; "Brain Attack"</div><p><strong>F</strong> = Facial drooping. <strong>A</strong> = Arm weakness. <strong>S</strong> = Speech issues. <strong>T</strong> = Time (call 911). "Brain attack" is a marketing term to incite emergency reaction &#8212; like "heart attack" for cardiac events. Fear-provoking phrase designed to help people recognize the urgency.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Pathophysiology &#8212; Ischemic vs Hemorrhagic, Penumbra &amp; tPA</h4><div class="ma-tags"><span class="ma-tag red">80% ischemic</span><span class="ma-tag gold">Penumbra = recoverable tissue</span><span class="ma-tag purple">tPA window critical</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Type</th><th>Frequency</th><th>Mechanism</th><th>Key Features</th></tr></thead><tbody>
+      <tr><td class="warn">Ischemic &#8212; Thrombotic</td><td rowspan="2">80%</td><td>Thrombus (blood clot) develops IN the arteries supplying the brain. Local occlusion</td><td>Seen in older persons with high cholesterol, atherosclerosis, DM. Gradual onset possible</td></tr>
+      <tr><td class="warn">Ischemic &#8212; Embolic</td><td>Embolus (material from a distant site) blocks or impairs blood flow</td><td>Often from A-fib, carotid stenosis, or cardiac valve disease. Sudden onset. Can fragment and cause multiple infarcts</td></tr>
+      <tr><td class="bad">Hemorrhagic &#8212; Intracerebral</td><td rowspan="4">20%</td><td>Ruptured blood vessel causes bleeding INSIDE the brain</td><td>More deadly. Variety of focal deficits, changes in consciousness. Common in HTN</td></tr>
+      <tr><td class="bad">Hemorrhagic &#8212; Subarachnoid</td><td>Bleeding in space surrounding brain, usually from ruptured aneurysm</td><td>Sudden severe "thunderclap" headache. Blood builds up, increases ICP. Highly vascular subarachnoid space</td></tr>
+      <tr><td class="bad">Subdural</td><td>Bleeding between brain and dura mater from severe head injury</td><td>Often from trauma. Shear forces cause axonal damage. Can be acute or chronic</td></tr>
+      <tr><td class="hi">Lacunar</td><td>Small vessel occlusion deep in brain (BG, thalamus, pons)</td><td>Small infarcts but can cause significant deficits. Pure motor hemiparesis common</td></tr>
+    </tbody></table>
+    <div class="grid2">
+      <div class="bl-strip red"><div class="bl-label">Ischemic Penumbra vs Umbra</div><p><strong>Umbra:</strong> Actual tissue that has DIED due to lack of oxygen. Irreversible. <strong>Penumbra:</strong> The area that was without oxygen but WILL eventually recover. This is the salvageable tissue &#8212; the target of acute stroke treatment. <strong>Goal of emergency treatment = save the penumbra.</strong></p></div>
+      <div class="bl-strip gold"><div class="bl-label">tPA (Tissue Plasminogen Activator)</div><p>Thrombolytic that dissolves clots. <strong>Only for ischemic strokes</strong> &#8212; contraindicated in hemorrhagic (would worsen bleeding). Time window is critical. Standard window: within 3&#8211;4.5 hours of symptom onset. This is why "Time" in FAST is critical &#8212; every minute of delay = more penumbra becomes umbra.</p></div>
+    </div>
+    <div class="bl-strip"><div class="bl-label">TIA vs Stroke</div><p><strong>TIA (Transient Ischemic Attack):</strong> Temporary neurological dysfunction that resolves within 24 hours &#8212; "warning stroke." <strong>RIND (Reversible Ischemic Neurological Deficit):</strong> Resolves within 72 hours. <strong>Stroke:</strong> Deficits persist &gt;24 hours. <strong>AVM (Arteriovenous Malformation):</strong> Tangled blood vessels bypassing normal tissue &#8212; usually congenital, can rupture causing hemorrhagic stroke.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Arterial Territories &#8212; MCA, ACA, PCA &amp; Basilar</h4><div class="ma-tags"><span class="ma-tag red">L MCA = most common stroke</span><span class="ma-tag gold">PCA = occipital/visual</span><span class="ma-tag purple">Basilar occlusion = life-threatening</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Artery</th><th>Supplies</th><th>Deficits When Occluded</th></tr></thead><tbody>
+      <tr><td class="bad">MCA (Middle Cerebral)</td><td>Lateral cerebral cortex. Continues from internal carotid into lateral sulcus. <strong>Most common stroke location</strong> &#8212; anatomically direct line from aorta/heart</td><td><strong>Contralateral hemiparesis/hemiplegia</strong> (face and arm &gt; leg). Hemisensory loss. If dominant hemi: Broca's and/or Wernicke's aphasia. If non-dominant: neglect, anosognosia. Homonymous hemianopsia</td></tr>
+      <tr><td class="hi">ACA (Anterior Cerebral)</td><td>Frontal, prefrontal, and supplementary motor cortex. Parts of primary motor and sensory cortex (medial surface &#8212; LE representation). <strong>ACA infarcts are rare</strong> due to collateral circulation from anterior communicating artery</td><td>Contralateral LE weakness &gt; UE. Personality changes (frontal lobe). Urinary incontinence. Impaired judgment. Abulia (lack of will/initiative)</td></tr>
+      <tr><td class="hi">PCA (Posterior Cerebral)</td><td>Occipital lobe, part of posterior brain. Pair of arteries from distal basilar artery</td><td>Contralateral homonymous hemianopsia (visual field loss). If bilateral: cortical blindness. Memory deficits (temporal lobe involvement). Alexia without agraphia (can write but can't read what they wrote)</td></tr>
+      <tr><td class="warn">Basilar Artery</td><td>Brainstem, cerebellum (via SCA, AICA, PICA)</td><td><strong>Life-threatening.</strong> Early thrombolytic treatment is only promising option. Conventional treatment: 40% fatality, 65% of survivors remain dependent. Locked-in syndrome possible. Younger &lt;60 with minor stroke have better outcomes</td></tr>
+    </tbody></table>
+    <div class="bl-strip"><div class="bl-label">Circle of Willis</div><p>Anastomotic ring connecting the internal carotid and vertebral arterial systems. Provides collateral circulation &#8212; if one vessel is occluded, blood can potentially reach the affected area through alternative routes. <strong>Key components:</strong> Anterior communicating artery (connects L and R ACA), posterior communicating arteries (connect ICA to PCA). Anatomic variations are common and affect collateral capacity.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Hemisphere Lateralization &#8212; Left vs Right Brain Deficits</h4><div class="ma-tags"><span class="ma-tag red">L damage = unmotivated</span><span class="ma-tag gold">R damage = impulsive, "go nuts"</span><span class="ma-tag purple">95% RH have speech in L hemi</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <table class="data-table"><thead><tr><th>Function</th><th>Left (Dominant) Hemisphere</th><th>Right (Non-Dominant) Hemisphere</th></tr></thead><tbody>
+      <tr><td class="hi">Language</td><td><strong>Hearing/understanding words:</strong> Primary auditory &#8594; Wernicke's area. <strong>Speech production:</strong> Primary motor &#8594; Broca's area. <strong>Repetition:</strong> Wernicke's &#8594; Broca's transfer</td><td>Related language processing through corpus callosum. <strong>Tone of voice, sarcasm, emotionally appropriate communication.</strong> Prosody (emotion conveyed by voice)</td></tr>
+      <tr><td class="hi">Motor Control</td><td>Complex motor tasks coordinating BOTH limbs. Step-by-step formulation and execution. <strong>Praxis</strong> (skilled motor formulation)</td><td>Visuospatial organization and analysis. Localization of movement and visual objects in space</td></tr>
+      <tr><td class="hi">Cognitive</td><td>Arithmetic, sequential, analytical skills. Musical: sequential/analytical in trained musicians. Sense of direction: following written directions in sequence</td><td>Manipulation of geometric figures. Puzzle assembly (part/whole relationships). Completing missing patterns. Form, distance, space relationships. Musical: recognition of melody. Spatial orientation</td></tr>
+      <tr><td class="warn">Behavioral</td><td><strong>L damage &#8594; unmotivated, hard to start, inhibited.</strong> Aware of deficits but slow to initiate</td><td><strong>R damage &#8594; impulsive, quick, "go nuts."</strong> Disinhibition. May not recognize deficits (anosognosia). Abstract thinking impaired</td></tr>
+      <tr><td class="hi">Sensory</td><td>Visual words recognized faster in R visual field. Spoken words recalled better from R ear (dichotic listening)</td><td>Faces recognized faster in L visual field. Environmental/non-verbal sounds (dog barking), melodies</td></tr>
+      <tr><td class="warn">Damage Effects</td><td>Aphasia (Broca's and/or Wernicke's). R hemiparesis. R sensory loss. Difficulty processing verbal cues/commands. <strong>Aware but limited</strong></td><td>L unilateral neglect. L hemiparesis. L sensory loss. Agnosia. Body image/scheme disturbances. Difficulty processing visual cues. <strong>Impulsive and unaware</strong></td></tr>
+    </tbody></table>
+    <div class="bl-strip purple"><div class="bl-label">Handedness &amp; Dominance</div><p>90% of people are right-handed (since prehistoric times). <strong>95% of RH have speech in L hemisphere.</strong> 70% of LH show the same pattern. Of the remaining 30%: 50% have R hemi control, 50% bilateral control. 15% with R hemi dominance = "crossed dominance." <strong>Familial sinistrality</strong> (LH in immediate family): language disturbances after brain lesion occur with similar frequency as RH. <strong>No familial sinistrality:</strong> Language disturbances are almost non-existent. <strong>Disinhibition vs Inhibition:</strong> The intact hemisphere becomes disinhibited (more dominant) when the other is damaged. This explains the behavioral presentations &#8212; R damage amplifies L hemisphere characteristics and vice versa.</p></div>
+    <div class="bl-strip gold"><div class="bl-label">Subluxed Shoulder Post-Stroke</div><p><strong>Sulcus sign (2-finger sign):</strong> Traction applied inferiorly on relaxed arm &#8212; depression below acromion indicates glenohumeral instability. <strong>Treatment depends on neuromotor control:</strong> Closed-chain exercises to approximate the shoulder joint &#8212; retraction, depression, work toward midline. Target traps, rhomboids, levator scapulae. Strengthen in closed chain before open chain.</p></div>
+  </div></div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Stroke Evidence &amp; Recovery</h4><div class="ma-tags"><span class="ma-tag green">High-intensity task-specific = strong evidence</span><span class="ma-tag gold">Aerobic training = CV health</span><span class="ma-chevron">&#9660;</span></div></div><div class="ma-body">
+    <div class="bl-strip green"><div class="bl-label">Strong Evidence for PT Post-Stroke</div><p><strong>Higher dose of practice is better</strong> (strong evidence). Intensive, high-repetitive, task-oriented and task-specific training is favored in ALL phases post-stroke. Walking training at moderate-to-high intensities or VR-based training improves walking speed/distance in patients &gt;6 months post-CNS injury (strong evidence). <strong>Aerobic exercise in subacute stroke:</strong> Recumbent stepper 3x/week for 8 weeks &#8594; significant improvements in FMD (endothelial function), resting SBP, and 6MWT. Beneficial for cardiovascular health, reducing cardiac risk, and improving physical performance. <strong>Weak evidence:</strong> Strength training, circuit training, cycling at moderate-high intensities, VR-based balance training may improve walking. <strong>Should NOT be performed:</strong> Body weight-supported treadmill training, robotic-assisted training, or sitting/standing balance training without VR &#8212; for improving walking speed/distance.</p></div>
+  </div></div>
+</div>
+</div>
+
+<!-- TABS 2-10 WILL BE BUILT IN NEXT SESSION -->
+<!-- This file currently has Tab 1 (Stroke) complete -->
+<!-- Remaining: Brain Tumors, Cerebellar, SCI, HIV/AIDS, MS, ALS, Treatment Techniques, TBI & DDx, Review -->
+
+<div class="tab-panel" id="tab-tumor"><div class="container"><div class="section-title">Brain Tumors &#8212; Coming in next session</div><div class="section-sub">This tab will cover primary vs metastatic tumors, glioma classification (astrocytoma grades 1-4, oligodendroglioma, ependymoma, medulloblastoma), tumor location to deficit mapping, Karnofsky scale, imaging, and PT intervention considerations.</div></div></div>
+<div class="tab-panel" id="tab-cerebellar"><div class="container"><div class="section-title">Cerebellar Disorders &#8212; Coming in next session</div></div></div>
+<div class="tab-panel" id="tab-sci"><div class="container"><div class="section-title">Spinal Cord Injury &#8212; Coming in next session</div></div></div>
+<div class="tab-panel" id="tab-hiv"><div class="container"><div class="section-title">HIV/AIDS &amp; Infections &#8212; Coming in next session</div></div></div>
+<div class="tab-panel" id="tab-ms"><div class="container"><div class="section-title">Multiple Sclerosis &#8212; Coming in next session</div></div></div>
+<div class="tab-panel" id="tab-als"><div class="container"><div class="section-title">ALS &#8212; Coming in next session</div></div></div>
+<div class="tab-panel" id="tab-treatment"><div class="container"><div class="section-title">Treatment Techniques &#8212; Coming in next session</div></div></div>
+<div class="tab-panel" id="tab-tbi"><div class="container"><div class="section-title">TBI &amp; Differential Diagnosis &#8212; Coming in next session</div></div></div>
+<div class="tab-panel" id="tab-review"><div class="container"><div class="section-title">Review Cards &#8212; Coming in next session</div></div></div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.chip-nav button').forEach(function(b){b.classList.remove('active');});
+  var panel = document.getElementById('tab-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) { card.querySelector('.rc2-a').classList.toggle('open'); }
+</script>
+</body>
+</html>
