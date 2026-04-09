@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; MSK Lower Extremity</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090f1a;--bg2:#0d1520;--bg3:#111d2b;--teal:#38b2b2;--teal2:#5dcfcf;--gold:#d4a850;--gold2:#e8c070;--purple:#a78bfa;--purple2:#c4b5fd;--text:#e8edf5;--text2:#a8b8cc;--text3:#6b7e94;--border:#1a2a3a;--border2:#243447;--red:#f87171;--green:#4ade80;--orange:#fb923c;--radius:10px;--radius2:6px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Manrope',sans-serif;font-size:15px;line-height:1.65;}
+.site-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.site-nav a{color:var(--text2);text-decoration:none;font-size:12px;font-family:'IBM Plex Mono',monospace;padding:4px 10px;border:1px solid var(--border2);border-radius:20px;transition:all .2s;}
+.site-nav a:hover,.site-nav a.active{color:var(--teal2);border-color:var(--teal);background:rgba(56,178,178,.08);}
+.site-nav .logo{color:var(--gold);font-family:'Source Serif 4',serif;font-size:18px;font-weight:700;margin-right:8px;}
+.hero{background:linear-gradient(135deg,#0a0e1f 0%,#090f1a 60%,#0d1520 100%);padding:48px 32px 36px;border-bottom:1px solid var(--border);}
+.hero-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.hero h1{font-family:'Source Serif 4',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.15;margin-bottom:12px;}
+.hero h1 span{color:var(--teal2);}
+.hero p{color:var(--text2);max-width:760px;font-size:15px;line-height:1.7;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+.badge{background:rgba(56,178,178,.1);border:1px solid rgba(56,178,178,.2);color:var(--teal2);font-size:11px;font-family:'IBM Plex Mono',monospace;padding:4px 12px;border-radius:20px;}
+.badge.gold{background:rgba(212,168,80,.1);border-color:rgba(212,168,80,.2);color:var(--gold2);}
+.badge.purple{background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.2);color:var(--purple2);}
+.badge.red{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.2);color:var(--red);}
+.badge.green{background:rgba(74,222,128,.1);border-color:rgba(74,222,128,.2);color:var(--green);}
+.badge.orange{background:rgba(251,146,60,.1);border-color:rgba(251,146,60,.2);color:var(--orange);}
+.chip-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 24px;display:flex;flex-wrap:wrap;gap:4px;overflow-x:auto;}
+.chip-nav button{background:none;border:none;color:var(--text3);font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;padding:14px 16px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;}
+.chip-nav button:hover{color:var(--text);}
+.chip-nav button.active{color:var(--teal2);border-bottom-color:var(--teal);}
+.container{max-width:1100px;margin:0 auto;padding:32px 24px;}
+.tab-panel{display:none;}.tab-panel.active{display:block;}
+.section-title{font-family:'Source Serif 4',serif;font-size:1.5rem;font-weight:700;color:var(--teal2);margin-bottom:6px;}
+.section-sub{color:var(--text2);font-size:13.5px;margin-bottom:24px;line-height:1.6;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px;}
+.card-title{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr;}}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr;}}
+.ma-item{border:1px solid var(--border2);border-radius:var(--radius2);margin-bottom:8px;overflow:hidden;}
+.ma-header{background:var(--bg3);padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s;}
+.ma-header:hover{background:#162030;}
+.ma-header h4{font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;color:var(--text);}
+.ma-tags{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+.ma-tag{font-size:10px;font-family:'IBM Plex Mono',monospace;padding:2px 7px;border-radius:10px;background:rgba(56,178,178,.1);color:var(--teal2);border:1px solid rgba(56,178,178,.2);}
+.ma-tag.gold{background:rgba(212,168,80,.1);color:var(--gold2);border-color:rgba(212,168,80,.2);}
+.ma-tag.purple{background:rgba(167,139,250,.1);color:var(--purple2);border-color:rgba(167,139,250,.2);}
+.ma-tag.red{background:rgba(248,113,113,.1);color:var(--red);border-color:rgba(248,113,113,.2);}
+.ma-tag.green{background:rgba(74,222,128,.1);color:var(--green);border-color:rgba(74,222,128,.2);}
+.ma-tag.orange{background:rgba(251,146,60,.1);color:var(--orange);border-color:rgba(251,146,60,.2);}
+.ma-chevron{color:var(--text3);transition:transform .25s;font-size:12px;flex-shrink:0;}
+.ma-body{display:none;padding:14px 16px;background:var(--bg2);border-top:1px solid var(--border);}
+.ma-body.open{display:block;}
+.bl-strip{background:rgba(56,178,178,.06);border:1px solid rgba(56,178,178,.15);border-left:3px solid var(--teal);border-radius:var(--radius2);padding:12px 16px;margin:10px 0;}
+.bl-strip .bl-label{font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.bl-strip p,.bl-strip ul,.bl-strip ol{font-size:13.5px;color:var(--text);}
+.bl-strip ul,.bl-strip ol{padding-left:18px;line-height:1.8;}
+.bl-strip.gold{background:rgba(212,168,80,.06);border-color:rgba(212,168,80,.15);border-left-color:var(--gold);}.bl-strip.gold .bl-label{color:var(--gold);}
+.bl-strip.purple{background:rgba(167,139,250,.06);border-color:rgba(167,139,250,.15);border-left-color:var(--purple);}.bl-strip.purple .bl-label{color:var(--purple2);}
+.bl-strip.red{background:rgba(248,113,113,.06);border-color:rgba(248,113,113,.15);border-left-color:var(--red);}.bl-strip.red .bl-label{color:var(--red);}
+.bl-strip.green{background:rgba(74,222,128,.06);border-color:rgba(74,222,128,.15);border-left-color:var(--green);}.bl-strip.green .bl-label{color:var(--green);}
+.bl-strip.orange{background:rgba(251,146,60,.06);border-color:rgba(251,146,60,.15);border-left-color:var(--orange);}.bl-strip.orange .bl-label{color:var(--orange);}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0;}
+.data-table th{background:var(--bg3);color:var(--teal2);font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;text-align:left;border-bottom:2px solid var(--border2);}
+.data-table td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.data-table tr:hover td{background:rgba(255,255,255,.02);}
+.data-table td strong{color:var(--text);}
+.data-table .hi{color:var(--teal2);font-weight:600;}.data-table .bad{color:var(--red);}.data-table .ok{color:var(--green);}.data-table .warn{color:var(--gold);}
+.rc2-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:14px 0;}
+.rc2{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:18px;cursor:pointer;position:relative;}
+.rc2:hover{box-shadow:0 4px 16px rgba(0,0,0,.3);}
+.rc2 .rc2-q{font-size:14px;font-weight:500;color:var(--text);line-height:1.5;padding-right:40px;}
+.rc2 .rc2-flip{position:absolute;top:12px;right:12px;font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--teal);opacity:.7;}
+.rc2 .rc2-a{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:13px;color:var(--text2);line-height:1.6;}
+.rc2 .rc2-a.open{display:block;}
+.rc2 .rc2-a strong{color:var(--teal2);}
+.postop-table{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0;}
+.postop-table th{background:var(--bg3);color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:2px solid var(--border2);}
+.postop-table td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;font-size:12.5px;}
+.postop-table td strong{color:var(--text);}
+
+
+/* section dividers inside merged tabs */
+.chip-label{font-family:'Source Serif 4',serif;font-size:1.25rem;font-weight:700;color:var(--gold2);padding:24px 24px 4px;border-top:1px solid var(--border2);margin-top:8px;}
+.chip-label:first-child{border-top:none;margin-top:0;}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <span class="logo">CB</span>
+  <a href="index.html">Home</a>
+  <a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+  <a href="CB_TherEx.html">Ther Ex</a>
+  <a href="CB_PhysicalAgents.html">Physical Agents</a>
+  <a href="CB_ResearchMethods.html">Research</a>
+  <a href="CB_Pathophysiology.html">Pathophysiology</a>
+  <a href="CB_MedicalConditions.html">Medical Conditions</a>
+  <a href="CB_BrainModule.html">Brain Module</a>
+  <a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+  <a href="CB_MotorControl.html">Motor Control</a>
+  <a href="CB_Pharmacology.html">Pharmacology</a>
+  <a href="CB_HealthPromotion.html">Health Promotion</a>
+  <a href="CB_MSKLowerExtremity.html" class="active">MSK Lower Extremity</a>
+  <a href="CB_Integumentary.html">Integumentary</a>
+</nav>
+<div class="hero">
+  <div class="hero-tag">MSK Lower Extremity &middot; Hip &middot; Knee &middot; Ankle &amp; Foot</div>
+  <h1>MSK Lower Extremity <span>&#8212; Hip, Knee, Ankle &amp; Foot</span></h1>
+  <p>Comprehensive MSK Lower Extremity reference covering anatomy, clinical examination, pathology, special tests with diagnostic accuracy, and post-operative rehabilitation for hip, knee, and ankle. Built from the full lecture series, PDFs, and clinical lab notes.</p>
+  <div class="hero-badges">
+    <span class="badge gold">Hip Anatomy &amp; Pathologies</span>
+    <span class="badge">Knee Ligaments &amp; Meniscus</span>
+    <span class="badge red">Ankle &amp; Foot Complex</span>
+    <span class="badge purple">Special Tests + Accuracy</span>
+    <span class="badge green">Post-Op THA &middot; TKA &middot; ACL &middot; Ankle</span>
+    <span class="badge orange">Capsular vs Noncapsular Patterns</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('hip',this)">🦵 Hip</button>
+  <button onclick="showTab('knee',this)">🦴 Knee</button>
+  <button onclick="showTab('ankle',this)">🦶 Ankle &amp; Foot</button>
+  <button onclick="showTab('review',this)">◼ Review</button>
+</div>
+<!-- HIP TAB -->
+<div class="tab-panel active" id="tab-hip">
+<div class="chip-label">Anatomy &amp; Kinesiology</div>
+<div class="container">
+  <div class="section-title">Hip Anatomy &amp; Kinesiology</div>
+  <div class="section-sub">The hip is a ball-and-socket joint built for both stability and mobility &#8212; more stable than the shoulder due to deep acetabular coverage, thick capsule, and strong ligaments. The coxofemoral joint transmits 1.8&#8211;3.8&#215; body weight during normal gait; any force &gt;3&#215; BW raises risk of early degeneration. Hip dysfunction has downstream effects on gait, posture, and the entire kinetic chain.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Nerves of the Hip Region</h4>
+      <div class="ma-tags"><span class="ma-tag">PED = Peroneal Everts Dorsiflexes</span><span class="ma-tag gold">TIP = Tibial Inverts Plantarflexes</span><span class="ma-tag purple">FEMoral = Flex thigh, Extend Medial leg</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div style="overflow-x:auto;">
+      <table class="data-table">
+        <thead><tr><th>Nerve</th><th>Origin</th><th>Injury Mechanism</th><th>Sensory Distribution</th><th>Motor</th><th>Mnemonic</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Iliohypogastric</td><td>T12&#8211;L2</td><td>Abdominal surgery</td><td>Suprapubic region</td><td>Transverse abdomen</td><td>"Abdomin-ILL surgery damages the ILL-io"</td></tr>
+          <tr><td class="hi">Genitofemoral</td><td>L1&#8211;2</td><td>Laparoscopic surgery</td><td>Scrotum / labia</td><td>Cremaster</td><td>"Genital-femoral Nerve"</td></tr>
+          <tr><td class="hi">Lateral Femoral Cutaneous</td><td>L2&#8211;3</td><td>Tight clothes, obesity</td><td>Anterior/lateral thigh</td><td>None (purely sensory)</td><td>"LFC = Lazy Fat Clothing"</td></tr>
+          <tr><td class="hi">Obturator</td><td>L2&#8211;4</td><td>Pelvic surgery</td><td>Medial thigh</td><td>Adductors, obturator ext.</td><td>"Obturator damaged by the Operator"</td></tr>
+          <tr><td class="hi">Femoral</td><td>L2&#8211;4</td><td>Pelvic fracture</td><td>Anterior thigh, medial leg</td><td>Quads, iliopsoas, pectineus, sartorius</td><td>"FEMoral = Flexors of thigh, Extension of Medial leg"</td></tr>
+          <tr><td class="hi">Sciatic</td><td>L4&#8211;S3</td><td>Disc herniation, piriformis syndrome</td><td>All leg/foot except medial (saphenous)</td><td>Hamstrings, adductor magnus</td><td>All LE sensory except saphenous</td></tr>
+          <tr><td class="hi">Common Peroneal</td><td>L4&#8211;S2</td><td>Fibular neck injury</td><td>Dorsum of foot</td><td>Dorsiflexors, evertors</td><td>"PED = Peroneal Everts Dorsiflexes"</td></tr>
+          <tr><td class="hi">Tibial</td><td>L4&#8211;S3</td><td>Baker cyst, tarsal tunnel</td><td>Plantar surface</td><td>PF, invertors, foot flexors</td><td>"TIP = Tibial Inverts Plantarflexes"</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hip Muscles &#8212; Action Groups</h4>
+      <div class="ma-tags"><span class="ma-tag">Glute Med = deltoid of hip</span><span class="ma-tag gold">Glute Max = most powerful extensor</span><span class="ma-tag purple">No primary IR muscle exists</span><span class="ma-tag red">Iliopsoas = most powerful flexor</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Flexors</div>
+            <p><strong>Prime:</strong> Iliopsoas (most powerful), Sartorius, TFL, Rectus femoris, Pectineus, Adductor longus. <strong>Assist:</strong> Adductor brevis, Gracilis, Gluteus minimus (anterior fibers). <strong>Key:</strong> TFL anteromedial fibers active during running/sprinting &#8212; overactivation leads to compressive bursa/tendinopathies at greater trochanter and proximal lateral tibia.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Extensors</div>
+            <p><strong>Prime:</strong> Gluteus maximus (most powerful, most active in hip flexion position), Semitendinosus, Semimembranosus, Biceps femoris (long head), Adductor magnus (posterior head). <strong>Assist:</strong> Gluteus medius (posterior fibers). Glute max is active with trunk extension, lateral sway control, and bipedal locomotion &#8212; greatest activity during sprinting.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Abductors</div>
+            <p><strong>Prime:</strong> Gluteus medius (<strong>deltoid of the hip</strong> &#8212; primary dynamic stabilizer, active ~60% of gait cycle, decelerates hip adduction), Gluteus minimus, TFL. <strong>Assist:</strong> Sartorius, Rectus femoris, Piriformis.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Adductors</div>
+            <p><strong>Prime:</strong> Adductor magnus (both heads), Adductor longus, Adductor brevis, Gracilis, Pectineus. <strong>Assist:</strong> Biceps femoris (long head), Gluteus maximus (posterior fibers). Adductor longus and magnus are the most common muscles involved in groin-region pain. Test adductor strength at 0&#176; (gracilis), 45&#176; (longus/brevis), 90&#176; (pectineus).</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">External Rotators</div>
+            <p><strong>Prime:</strong> Gluteus maximus, Gemelli inferior &amp; superior, Obturator internus, Quadratus femoris, Piriformis (at &lt;60&#176; hip flexion). <strong>Assist:</strong> Gluteus medius posterior fibers (ER in ext, IR in flexion), Biceps femoris, Sartorius, Obturator externus. Short ER muscles function like the rotator cuff &#8212; compressing the hip joint for stability.</p>
+          </div>
+          <div class="bl-strip orange" style="margin-bottom:8px;">
+            <div class="bl-label">Internal Rotators &#8212; No Primary Muscle</div>
+            <p><strong>NO muscle has IR as its primary function.</strong> Secondary IR: anterior gluteus medius, gluteus minimus, TFL, adductor longus/brevis, pectineus, posterior head of adductor magnus. Semimembranosus, semitendinosus, gracilis, piriformis (at 90&#176; flexion) assist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hip Ligaments &amp; Bursae</h4>
+      <div class="ma-tags"><span class="ma-tag">Iliofemoral (Y lig) = strongest in body</span><span class="ma-tag gold">Ischiofemoral = most commonly injured</span><span class="ma-tag purple">Ligamentum teres &#8594; deep posterior hip pain</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Iliofemoral Ligament (Y Ligament)</div>
+            <p>Strongest ligament in the body. Reinforces anterior hip capsule. AIIS to intertrochanteric line. <strong>Function:</strong> limits hip extension and ER; prevents anterior translation; maintains upright posture, reducing need for hip extensor contraction in balanced stance. Hip adduction tightens its superior portion. Taut in extension.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Pubofemoral Ligament</div>
+            <p>Obturator crest to intertrochanteric line. <strong>Function:</strong> tightens in extension AND ER; reinforces medial capsule; prevents over-abduction. Works with iliofemoral to limit extension.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Ischiofemoral Ligament &#8212; Most Commonly Injured</div>
+            <p>Posterior capsule thickening, winds posteriorly. <strong>Function:</strong> tightens IR in flexion AND extension; tightens with adduction of flexed hip. Most commonly injured hip ligament. Posterior surgical approach to THA can disrupt this &#8212; careful repair reduces posterior dislocation risk.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Ligamentum Teres (Capitis Femoris)</div>
+            <p>Acetabular notch to fovea capitis. Prevents subluxation when hip is ER in flexion or IR in extension. Tightens with adduction, flexion, and ER. <strong>Injury sign: deep posterior hip pain with hip flexion activities.</strong> Blood supply (internal iliac artery) passes through &#8212; injury disrupts vascularity &#8594; risk of AVN. Tears lead to microinstability &#8594; labral and cartilage damage.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Bursae</div>
+            <p><strong>Iliopsoas bursa:</strong> Largest (up to 7&#215;4 cm), present in 98% of adults. Deep to iliopsoas tendon between inguinal ligament and hip capsule. Inflamed with overuse, OA, RA, infection.<br><strong>Trochanteric bursae:</strong> Subgluteus medius (superoposterior GT) and subgluteus maximus (between GT and gluteus maximus/ITB).<br><strong>Ischiogluteal bursa:</strong> Between ischium and gluteus maximus. "Weaver's Bottom" &#8212; compressed by sitting on hard surfaces.</p>
+          </div>
+          <div class="bl-strip green">
+            <div class="bl-label">Femoral Triangle &#8212; VAN (Medial &#8594; Lateral)</div>
+            <p><strong>Borders:</strong> Superior = inguinal ligament; Medial = adductor longus; Lateral = sartorius. <strong>Contents (medial &#8594; lateral):</strong> Femoral Vein, Femoral Artery, Femoral Nerve (VAN). Use caution palpating here or applying soft tissue techniques.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Osteology, Load, &amp; Angles of Inclination</h4>
+      <div class="ma-tags"><span class="ma-tag">Coxa Vara &lt;125&#176; = fracture risk</span><span class="ma-tag gold">Coxa Valga &gt;125&#176; = dislocation risk</span><span class="ma-tag red">&gt;3&#215; BW = early degeneration</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Angle of Inclination</div>
+            <p><strong>Normal adult:</strong> 125&#8211;139&#176;. <strong>Coxa Vara (&lt;125&#176;):</strong> decreased limb length, increased load on femoral neck &#8594; predisposes to fracture. <strong>Coxa Valga (&gt;125&#176;):</strong> increased limb length, decreased stability &#8594; predisposes to dislocation/subluxation. <strong>Ward triangle:</strong> area of weakness in femoral neck trabecular system &#8212; common osteoporotic fracture site.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Hip Joint Loading</div>
+            <p>Coxofemoral joint peak forces during gait: <strong>1.8&#8211;3.8&#215; body weight.</strong> Forces &gt;3&#215; BW increase risk of early degeneration &#8212; driven by higher body mass and impact loading (running, jumping). Any force &gt;3&#215; BW &#8594; focus on mechanical weight acceptance. Femoral anteversion increases load more than retroversion.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Arthrokinematics (OKC)</div>
+            <p>OKC: convex femoral head moves on concave acetabulum &#8594; femoral head glides <strong>opposite</strong> to distal femur motion (rule of convex on concave). Anatomical flexion = parasagittal plane = Flex + Abd + IR. Extension = Ext + Add + ER. Abduction = Extension + ER of femoral head. Adduction = Flexion + ER.</p>
+          </div>
+          <div class="bl-strip">
+            <div class="bl-label">Key Osteological Avulsion Sites</div>
+            <p><strong>ASIS:</strong> Sartorius &#8212; avulsion in adolescent runners. <strong>Pubic tubercle:</strong> Rectus abdominis, adductor brevis/longus &#8212; tendinopathy site, groin pain referral. <strong>Ischial tuberosity:</strong> Hamstring origin &#8212; avulsion in athletes, longer healing; hamstring syndrome = sciatic N compression mimicking hamstring strain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hip Assessment Framework &#8212; Subjective, Lumbar Screen, SIJ Screen</h4>
+      <div class="ma-tags"><span class="ma-tag">Location drives DDx</span><span class="ma-tag gold">Laslett cluster = 3+ for SIJ</span><span class="ma-tag purple">IR + Flexion first to go</span><span class="ma-tag red">Night pain = red flag</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Location-Based DDx</div>
+            <ul style="font-size:13px;">
+              <li><strong>Groin pain:</strong> Ask MOI (hockey, ballet, gymnastics). OA, labral, lumbar referral, inguinal hernia, adductor strain, iliopsoas, gynecological/vascular</li>
+              <li><strong>Posterior/buttock:</strong> Rule out SIJ, gluteal bursitis, hamstring syndrome, lumbar spine, labrum, posterior pubic symphysis</li>
+              <li><strong>Posterolateral:</strong> Trochanteric bursitis, gluteal insertional tendinopathy (Trendelenburg gait), THA component loosening</li>
+              <li><strong>Groin pain with sitting:</strong> Ant/superior acetabular labral compromise &#8212; posterior/inferior glide helps</li>
+              <li><strong>Posterior pain with sitting:</strong> Ischial bursitis, hamstring syndrome, LB spine</li>
+              <li><strong>Night-only pain:</strong> Red flag &#8212; rule out tumor (osteoid osteoma common in long bones)</li>
+            </ul>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Age-Based Clinical Considerations</div>
+            <ul style="font-size:13px;">
+              <li>Boys 4&#8211;10: LCPD (painful limp, painless initially)</li>
+              <li>Males &lt;6: Transient synovitis (most common sudden hip pain)</li>
+              <li>Adolescent 11&#8211;14: SCFE (especially overweight boys, ER gait)</li>
+              <li>Young athletic female: Stress fracture (female triad risk &#8212; disordered eating, amenorrhea, osteoporosis)</li>
+              <li>35&#8211;50: Labral lesions (wear &amp; tear, catching/clicking)</li>
+              <li>&gt;40 males: Labral cysts, sacral pathologies, stress fractures</li>
+              <li>&gt;45: OA (groin + knee pain; hip pain often presents first as knee pain)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Lumbar Screening (Clear the Spine)</div>
+            <p><strong>Subjective:</strong> Dermatomal/myotomal distribution; achy/shooting/stabbing; must clear piriformis syndrome; sensation changes. <strong>Objective:</strong> AROM functionally; lumbosacral roots via dural testing (SLR, SLRD &#8212; good sensitivity and specificity). Bilateral knee pain &#8594; think lumbar referral.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">SIJ Screening &#8212; Laslett Cluster</div>
+            <p><strong>Subjective clues:</strong> unilateral pain, feeling of being stuck on one side, one-finger sign (PSIS), postpartum instability. <strong>Laslett cluster &#8212; 3 or more = highly likely SIJ:</strong> Dorsolateral provocation, Thigh Thrust, Gaenslen, Ventromedial provocation, Sacral Thrust. <strong>ASLR:</strong> perform SLR without assistance then with innominate stabilization &#8212; if pain changes, high probability of SIJ dysfunction.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Motion Restrictions</div>
+            <p><strong>First motions to diminish in OA and labral issues: Flexion and IR.</strong> Capsular pattern: IR &gt; Flexion &gt; Extension (most limited = IR). Hard end-feels indicate OA or coxarthrosis. Significant motor function loss &#8594; consider subluxation, stress fracture, nerve injury &#8212; may need imaging. Foot drop + atrophy = refer out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Pathologies &#8212; Capsular, Noncapsular &amp; Intra-articular</div>
+<div class="container">
+  <div class="section-title">Hip Pathologies &#8212; Capsular, Noncapsular &amp; Intra-articular</div>
+  <div class="section-sub">Hip pathologies are organized by pattern of limitation. <strong>Capsular pattern</strong> (arthritis, synovitis): IR &gt; Flexion most limited. <strong>Noncapsular pattern</strong> (SCFE, AVN, loose body): any pattern other than capsular. <strong>Intra-articular</strong> (labral tear, FAI): common report is groin pain with mechanical symptoms.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Capsular Pattern &#8212; Osteoarthritis &amp; Synovitis</h4>
+      <div class="ma-tags"><span class="ma-tag">IR &gt; Flex most limited</span><span class="ma-tag gold">OA CPR: 3 of 5</span><span class="ma-tag red">Knee pain 10 yrs before hip pain</span><span class="ma-tag purple">&gt;45 y/o, overweight</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Hip OA Background</div>
+            <p>28 million Americans estimated to have OA (2011). Generally &gt;50 years, overweight. Post-traumatic OA presents 10 years later. <strong>Pain at hip often presents first as knee pain.</strong> X-ray: joint space narrowing + marginal spurring. Conservative: cane, NSAIDs, exercise + weight loss (aquatics), acupuncture, PRP. Movement is critical &#8212; avoid immobility.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Traumatic Arthritis</div>
+            <p>Age &gt;20. Repetitive hyperextension + rotation from work or sports (kickers, soccer, horse riders). <strong>Pain:</strong> groin or anterior thigh with sitting, walking, ascending stairs. <strong>Objective:</strong> PROM limited in capsular pattern.</p>
+          </div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Coxarthrosis &#8212; "Frozen Shoulder of the Hip"</div>
+            <p>Disorder of articular cartilage/bone balance &#8212; slow progressive course. <strong>Primary:</strong> genetic, older, female more common and more severe. <strong>Secondary:</strong> underlying pathology (instability, dysplasia, intra-articular fractures). Progression: pain with WB &#8594; constant pain at rest &#8594; pain subsides but movement limited (capsular pattern). <strong>Treatment:</strong> manual therapy, joint mobilization, ther ex for function (not pain), neuromuscular re-education + HEP.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">OA Clinical Prediction Rule &#8212; 3 of 5</div>
+            <ol style="font-size:13px;padding-left:18px;line-height:2;">
+              <li>Squatting is an aggravating factor</li>
+              <li>Active hip flexion causes <strong>lateral</strong> hip pain</li>
+              <li>Scour test with adduction causes lateral hip pain or groin pain (catching may occur)</li>
+              <li>Active hip extension causes pain</li>
+              <li>Passive IR &lt;25&#176;</li>
+            </ol>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">OA PT Treatment Protocol</div>
+            <p><strong>Mobilization/manipulation:</strong> ventral + lateral + caudal directed force at femur. <strong>Traction (long-axis):</strong> applied perpendicular; contraindicated with joint instability, degenerative bone disorders, anticoagulant therapy. <strong>Soft tissue:</strong> adductors typically hypertonic (wanting stability), abductors weaker. <strong>NMR:</strong> functional mobility focus &#8212; use UE reaching in decompressed mode to activate hip muscles during WB activities.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Transient Synovitis</div>
+            <p><strong>Males under age 6 &#8212; most common cause of sudden hip pain and limp.</strong> Viral, autoimmune, or microtrauma origin; 40% have preceding illness. Limited IR (capsular pattern). Antalgic gait. Imaging may be normal. Lasts 2&#8211;3 weeks; typically full recovery. Differentiate from sciatica. In some cases progresses to juvenile arthritis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Noncapsular Pattern &#8212; AVN, SCFE, LCPD</h4>
+      <div class="ma-tags"><span class="ma-tag">SCFE: boys 11&#8211;14, ER gait, internal fixation ASAP</span><span class="ma-tag gold">LCPD: boys 4&#8211;10, painless limp</span><span class="ma-tag red">AVN: CT/MRI, core decompression</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Avascular Necrosis (AVN) of Femoral Head</div>
+            <p>Disruption of blood supply to proximal femur (circumflex arteries). <strong>Adult causes:</strong> fracture, dislocation, surgery, alcohol, steroids, radiation. <strong>Presentation:</strong> gradual groin pain, possible hip movement limits, crepitation and gluteal pain with increased severity. <strong>Dx: CT scan or MRI</strong> (X-ray late to show changes). <strong>Treatment:</strong> Early = nonsurgical (stem cells, magnetics). Surgical = core decompression or osteotomy (PWB 3&#8211;6 months, AROM to tolerance). End-stage = THA (cemented shows most improvement in pain and function).</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">SCFE &#8212; Slipped Capital Femoral Epiphysis</div>
+            <p><strong>Background:</strong> femoral head slips posteriorly off femoral neck at growth plate. Adolescents 11&#8211;14; more common in boys; overweight (80&#8211;100th percentile); diabetes; cancer treatments. <strong>Presentation:</strong> hip/medial thigh/knee pain; antalgic gait; <strong>tends to walk with ER foot</strong>; positive log roll sign and SL raise against resistance; pain with IR relieved with ER. Radiograph: femoral head displaced posteriorly and inferiorly. <strong>Internal fixation ASAP &#8212; goal is to prevent AVN.</strong></p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Legg-Calv&#233;-Perthes Disease (LCPD)</div>
+            <p>Femoral head blood supply disrupted &#8594; AVN &#8594; collapse and flattening. Blood supply returns over months; bone replacement takes 2&#8211;3 years. <strong>Boys 4&#8211;10, unilateral.</strong> <strong>Presentation:</strong> painless limp (comes and goes), hip stiffness (flex/IR/abd), constant thigh/groin pain, limb length discrepancy, upper thigh atrophy. X-ray/MRI: small femoral epiphysis; sclerosis and flattening if chronic. <strong>Conservative:</strong> short bed rest, limited WB, possible casting, PT for strength and soft tissue. Surgery only if conservative fails. <strong>Prognosis:</strong> good if &lt;6 years; high deformity/arthritis risk if &gt;6 years.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Trauma &amp; Fractures &#8212; Red Flags</div>
+            <ul style="font-size:13px;">
+              <li><strong>Fall &#8594; think fracture first:</strong> inability to bear weight = femoral hip fracture until proven otherwise</li>
+              <li><strong>Stress fractures:</strong> pelvic rami and femoral neck most common; X-ray only 10% sensitive early &#8212; bone scan better</li>
+              <li><strong>High risk:</strong> female triad, amenorrhea, low aerobic fitness, smoking, steroid use</li>
+              <li><strong>Myositis ossificans:</strong> bone forms inside muscle from blunt trauma &#8212; ask about mechanism and time since injury</li>
+              <li><strong>Hip pointer:</strong> contusion to iliac crest &#8212; lasts a long time; treat with soft tissue + ROM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Intra-articular &#8212; Labral Tears, FAI, Loose Bodies</h4>
+      <div class="ma-tags"><span class="ma-tag">Common report: groin pain</span><span class="ma-tag gold">FAI: CAM + Pincer (mixed most common)</span><span class="ma-tag red">Labral MRA: 90% SN, 100% SP</span><span class="ma-tag purple">+FADIR + FABER</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Labral Tears</div>
+            <p><strong>Background:</strong> degenerative or repetitive (torsion/twisting, LCPD hx, dysplasia). Ages 35&#8211;50. Anterior labrum: greatest force in hip flexion + adduction. <strong>Presentation:</strong> anterolateral/anterosuperior groin pain; catching/locking/clicking in 50%; dull pain with intermittent sharp pain in IR/ER; prolonged sitting; antalgic or Trendelenburg gait. <strong>Exam:</strong> +FADIR, +FABER; loss/apprehension of IR; catching (mechanical symptoms). <strong>Imaging:</strong> MRA 90% SN, 100% SP. <strong>Conservative PT:</strong> glute max stabilization, quadriceps/hamstring co-contraction, myofascial work (adductor insertion, glute med insertion, piriformis, ITB), MWM for capsular restriction, weak hip abductors in CKC. Goal: full ROM with rotation in full WB at velocity.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Loose Bodies</div>
+            <p>Ossified or non-ossified fragments (osteochondral, chondral, fibrous, foreign). Usually secondary to other processes or trauma. <strong>Presentation:</strong> hx of dislocation or low-energy trauma; popping/catching/clicking/giving way; sudden leg pain "twinges" when WB; possible stiffness; springy end feel during passive extension. <strong>Imaging:</strong> X-ray, MRI with contrast, MRA. <strong>Surgery:</strong> arthroscopic removal &#8212; gold standard.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Femoroacetabular Impingement (FAI)</div>
+            <p><strong>Types (Ganz):</strong> <strong>CAM</strong> &#8212; bony abnormality of femoral head (blocky, non-spherical); young male athletes; impingement in flex + ADD + IR. <strong>Pincer</strong> &#8212; increased acetabular rim coverage; middle-aged women in athletics. <strong>Mixed:</strong> most common. Associated with labral and chondral damage; significant cause of hip OA. <strong>Cardinal sign:</strong> sharp anterior hip pain with deep flexion, deep squat, IR, or abduction. "C sign." <strong>Objective:</strong> limited IR &lt;20&#176; at 90&#176; flexion; +FADIR, +FABER. Common in hockey, dancers, soccer, football. <strong>Conservative PT:</strong> discontinue sport temporarily; joint mobs (create joint space); dry needling; hip abductor strengthening; CARS exercises; banded squats for valgus collapse control. <strong>Surgical:</strong> arthroscopic osteoplasty; 93% return rate (Philippon 2008).</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Hip Microinstability</div>
+            <p>Shallow acetabulum, excessive femoral anteversion, Ehlers-Danlos/Marfan/Down syndrome. Repetitive hip rotation + axial loading in dancers, ballet, martial arts, tennis, baseball. <strong>Presentation:</strong> "loosey-goosey" feeling, apprehension at end range; no motion loss but excessive motion (especially IR + ER); insidious anterior/groin pain. <strong>Treatment:</strong> core + global hip strengthening, biomechanical analysis; avoid repeated subluxations. <strong>Surgical:</strong> arthroscopic capsulorrhaphy if conservative fails.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Extra-articular Pathologies</div>
+<div class="container">
+  <div class="section-title">Extra-articular Hip Pathologies</div>
+  <div class="section-sub">Extra-articular pathologies involve tendons, bursae, muscles, and nerves surrounding the hip joint &#8212; not the joint surface itself. They are often overlooked when a patient presents with "hip pain." Snapping hip, bursitis, adductor/hamstring strains, piriformis syndrome, and stress fractures all require distinct examination and management approaches.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Coxa Saltans &#8212; Snapping Hip Syndrome</h4>
+      <div class="ma-tags"><span class="ma-tag">Internal: iliopsoas over iliopectineal prominence</span><span class="ma-tag gold">External: ITB over greater trochanter</span><span class="ma-tag">Ballet dancers, runners</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Mechanisms of Snapping</div>
+            <ul style="font-size:13px;">
+              <li><strong>Internal (anterior):</strong> Iliopsoas tendon snapping over iliopectineal prominence or lesser tubercle &#8212; most common cause of groin pain in runners</li>
+              <li><strong>External (lateral):</strong> IT band snapping over greater trochanter &#8212; trochanteric bursitis</li>
+              <li>Iliofemoral ligament over femoral head</li>
+              <li>Long head biceps femoris over ischial tuberosity</li>
+            </ul>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Internal Snapping Hip (Iliopsoas Tendinitis)</div>
+            <p>Pain or discomfort with internal snapping = indication of iliopsoas tendinitis. More common in ballet dancers (often not painful). Ask if activities were ramped up when pain started &#8212; overuse pattern. Chronic degeneration &#8594; tendinopathy (chronic pain + mental pain component). <strong>Presentation:</strong> anterior groin pain moving from hip extension to flexion; popping/clicking/catching; can be associated with LBP (hip flexors tied to pelvic and lumbar position).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">ITB/Greater Trochanteric Bursitis &amp; External Snapping</div>
+            <p>Thickened ITB or glute max tendon snapping over greater trochanter = irritation and friction. <strong>Primary cause:</strong> increased hip adduction + knee IR. <strong>Presentation:</strong> pain over greater trochanter radiating down lateral thigh; painful with sleeping and direct pressure; <strong>stair climbing often painful</strong>; +Trendelenburg; associated hip abductor weakness; snapping with sidelying hip moved from flex to ext and IR to ER. More common in middle-aged women; growing prevalence in young runners. Diabetes, OA, and thyroid issues = increased risk. <strong>Treatment:</strong> STM + hold/relax stretching (ITB, rectus femoris, iliopsoas); manual + self-MFR to ITB; hip abductor strengthening in SLS; gait training; dry needling + KT tape (star pattern); address pronated foot or poor mechanical control.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Gluteus Medius/Minimus Injury &amp; Piriformis Syndrome</h4>
+      <div class="ma-tags"><span class="ma-tag">Gmed/Gmin = rotator cuff of the hip</span><span class="ma-tag gold">Phase 1&#8594;2&#8594;3 progression</span><span class="ma-tag red">Piriformis: sciatic N compression</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Gluteus Medius/Minimus Injury</div>
+            <p>Gmed and Gmin = "rotator cuff of the hip." More common in women; recently active. Triggered by falls, prolonged single-leg WB, overuse, sports. <strong>Presentation:</strong> dull lateral hip/groin/buttock pain; focal tenderness at insertion; leg length discrepancy; weak hip abduction; pain with PROM/MMT of ER at 90&#176; hip flexion; +pain with SLS &gt;30 seconds. Tears &#8594; constant pain that feels better in therapy but doesn't improve overall. <strong>Intervention &#8212; 3 Phases:</strong> Phase 1: protection, low-load exercises, minimize dynamic influence, NO hip abd strength training yet. Phase 2: standing sagittal plane focus, static &#8594; dynamic, add planes one at a time. Phase 3: dynamic multiplanar with reaction, stress length-tension (posterolateral lunge).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Piriformis Syndrome</div>
+            <p><strong>Background:</strong> compression of sciatic nerve as it exits pelvis under piriformis muscle. Pain in sciatic distribution. <strong>Three contributing conditions:</strong> (A) myofascial referred pain from trigger points in piriformis (most common); (B) adjacent muscle/nerve/vascular entrapment at greater sciatic foramen (12%); (C) SIJ dysfunction altering piriformis position. <strong>Presentation:</strong> chronic buttock pain, numbness, paresthesia; pain with sitting, squatting, standing, bowel movements, and dyspareunia in women; tenderness over sciatic notch; exacerbated by active hip ER; pain may lessen with lying down or bending knee. <strong>Tests:</strong> +Pace, +Freiberg, +Lasegue, +log roll, +FAIR test. <strong>DDx from radiculopathy:</strong> sciatic N entrapment pain increases with IR during SLR; lumbosacral radiculopathy doesn't change with hip rotation; sciatic N entrapment spares gluteal muscles (radiculopathy causes palpable atrophy).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Adductor Strain, Hamstring Strain &amp; Stress Fractures</h4>
+      <div class="ma-tags"><span class="ma-tag">Adductor longus/magnus most affected</span><span class="ma-tag gold">Grade 1&#8211;2&#8211;3 grading</span><span class="ma-tag red">Stress Fx: bone scan &gt; X-ray early</span><span class="ma-tag purple">Female triad risk</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Adductor Strain</div>
+            <p>MOI: forced push-off or kick in frontal plane, repetitive kicking, overuse during fatigue. Hockey, skating, soccer, rugby. Adductor longus and magnus most frequent. <strong>Testing by position:</strong> 0&#176; = gracilis; 45&#176; = adductor longus/brevis; 90&#176; + adduction = pectineus. <strong>Grades:</strong> 1 = pain, minimal strength loss; 2 = compromised strength, no complete loss; 3 = complete disruption + complete function loss. <strong>Predisposing factors:</strong> adductor weakness, adductor-abductor imbalance, restricted hip ROM. <strong>Treatment:</strong> non-surgical; collagen deposition management; return to sport with full strength/ROM; address adductor-abductor-abdominal imbalance.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Hamstring Strains</div>
+            <p>Biceps femoris most commonly involved (short sprint). <strong>MOI:</strong> short sprint, jump/kick, fall or collision. Increased anterior pelvic tilt (tight hip flexors or restricted anterior capsule) &#8594; increased hamstring tension &#8594; higher strain risk. <strong>Hamstring syndrome:</strong> mimics hamstring strain but is actually sciatic N compression at ischial tuberosity. Biceps femoris may be contributing.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Stress Fractures</div>
+            <p><strong>Two types:</strong> Fatigue fracture (normal bone + abnormal stress &#8212; runners) and Insufficiency fracture (normal stress + abnormal bone &#8212; osteoporosis). <strong>Most common sites:</strong> pelvic rami, femoral neck. <strong>Risk factors:</strong> female triad, amenorrhea, low aerobic fitness, smoking, steroid use, nutritional compromise. <strong>Exam:</strong> diffuse radiating groin/hip pain; +fulcrum test; X-ray only 10% sensitive early &#8212; bone scan is better. Night pain, inability to absorb shock during gait. <strong>Treatment:</strong> Tension-sided = surgical pinning to prevent AVN. Compression-sided = 6&#8211;8 weeks limited WB, PT for weakness/myofascial/neuromotor imbalances, cross-training (aquatics).</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Iliopsoas Strain</div>
+            <p>MOI: forced extension while hip is actively flexed. <strong>Presentation:</strong> pain with acceleration and high-stepping; RIMS &#8212; increased pain with resisted hip flexion, adduction, and ER. Recovery can be lengthy; reaggravation common.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Special Tests</div>
+<div class="container">
+  <div class="section-title">Hip Special Tests with Diagnostic Accuracy</div>
+  <div class="section-sub">Special tests at the hip are organized by clinical purpose. No single test is definitive &#8212; combine with subjective history and functional screening. FADIR has high sensitivity (rule out); valgus stress and specific cluster tests have higher specificity. Always test bilaterally and note quality vs. quantity of response.</div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Intra-articular Tests (Labral, FAI, OA)</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">FADIR Test</td><td>Supine</td><td>PT passively flexes, adducts, and internally rotates hip at 90&#176; flexion</td><td>Pain reproduced in groin</td><td>Labral tear / FAI</td><td class="warn">SN:.99 / SP:.25</td></tr>
+        <tr><td class="hi">FABER Test (Patrick)</td><td>Supine</td><td>Foot of involved side on opposite knee (figure 4). Overpressure on flexed knee + opposite ASIS</td><td>Anterior/groin pain = intra-articular (OA, labrum, FAI, loose bodies); Posterior pain = SIJ or posterior labral</td><td>Hip pathology (OA, labrum, FAI); SIJ</td><td class="warn">SI: SN:.77 SP:1.0; OA: SN:.53 SP:.71; FAI/Impingement: SN:.81 SP:.25</td></tr>
+        <tr><td class="hi">Hip Scour Test</td><td>Supine</td><td>Flex + adduct hip to resistance; move through abduction in 2 full arcs. Repeat with long-axis compression</td><td>Replication of symptoms (OA/DJD); catching = labral/FAI</td><td>OA, labral tear, FAI</td><td class="bad">SN:.50 / SP:.29</td></tr>
+        <tr><td class="hi">Active SLR (Stinchfield)</td><td>Supine</td><td>Patient lifts leg to 20 cm above table; PT resists with downward force distal to knee</td><td>Recreation of complaint = intra-articular pain</td><td>Intra-articular pain</td><td>SN:.56</td></tr>
+        <tr><td class="hi">Anterior Labral Tear (Fitzgerald Ant.)</td><td>Supine</td><td>Full hip flex + ER + full abduction &#8594; extend hip combined with IR + adduction</td><td>Reproduction of symptoms &#177; click</td><td>Anterior labral tear</td><td class="ok">SN:.96</td></tr>
+        <tr><td class="hi">Posterior Labral Tear (Fitzgerald Post.)</td><td>Supine</td><td>Full hip flex + adduction + IR &#8594; extend hip with combined abduction + ER</td><td>Reproduction of symptoms &#177; click</td><td>Posterior labral tear</td><td class="ok">SN:.96</td></tr>
+        <tr><td class="hi">Log Roll Test</td><td>Supine</td><td>Leg passively rolled into full IR and ER in neutral hip position</td><td>Increased ER = iliofemoral ligament laxity; clicking = labral tear</td><td>Ligament laxity, labral tear</td><td>Unknown</td></tr>
+        <tr><td class="hi">Snapping Hip Test</td><td>Supine</td><td>Patient actively flexes hip and ER, then extends hip</td><td>Snapping sounds &#177; pain</td><td>Iliopsoas tendinitis / coxa saltans</td><td>Unknown</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Muscular Length &amp; Tendinopathy Tests</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">Thomas Test</td><td>Supine</td><td>Patient holds one knee to chest; other leg lies flat. Stabilize pelvis under lumbar spine</td><td>Thigh rises off table</td><td>Hip flexion contracture (iliopsoas)</td><td>&#8212;</td></tr>
+        <tr><td class="hi">Modified Thomas Test</td><td>Supine (knees 4" over edge)</td><td>Thomas position + extend knee: if hip extends further = tight rectus femoris; if hip abducts = ITB tightness; knee &lt;90&#176; = tight rectus femoris</td><td>Thigh rises + knee response guides structure</td><td>Rectus femoris vs. hip flexor vs. ITB tightness</td><td>&#8212;</td></tr>
+        <tr><td class="hi">Ober's Test</td><td>Sidelying (involved side up)</td><td>Abduct leg, flex knee 90&#176;, extend hip, slowly release while stabilizing pelvis</td><td>Thigh remains abducted when released</td><td>ITB/fascia lata tightness</td><td>&#8212;</td></tr>
+        <tr><td class="hi">Ely Test</td><td>Prone</td><td>Flex knee; attempt to bring heel to ipsilateral buttock</td><td>Pelvis rotates anteriorly with hip flexion</td><td>Tight rectus femoris</td><td>&#8212;</td></tr>
+        <tr><td class="hi">Trendelenburg Test</td><td>Standing</td><td>Stand behind; observe PSIS; patient stands on one leg</td><td>Opposite pelvis drops</td><td>Weak/non-functioning gluteus medius on stance leg</td><td class="ok">SN:.77 / SP:.72 gluteal tendinopathy</td></tr>
+        <tr><td class="hi">Resisted External Derotation Test</td><td>Supine</td><td>Flex hip to 90&#176; + ER; resist as patient derotates LE back to neutral</td><td>Reproduction of symptoms along greater trochanter</td><td>Gluteus medius tendinopathy / GTPS</td><td class="ok">SN:.88 / SP:.97</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Neurodynamic &amp; SIJ Tests</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">FAIR Test (Piriformis)</td><td>Sidelying</td><td>Top hip flexed 60&#176;, knee flexed; PT stabilizes hip, applies downward pressure to knee</td><td>Pain near piriformis/sciatic nerve intersection</td><td>Piriformis syndrome</td><td class="ok">SN:.88 / SP:.83</td></tr>
+        <tr><td class="hi">SLR (Laseque)</td><td>Supine</td><td>Passive hip flexion with knee extended; sensitize with ankle DF, hip ADD, hip IR</td><td>Radicular pain &lt;30&#176; = disc herniation/root pathology; &lt;70&#176; = also indicates nerve root involvement</td><td>Disc herniation, nerve root irritation</td><td>SN:.91 / SP:.26</td></tr>
+        <tr><td class="hi">Crossed SLR</td><td>Supine</td><td>Same as SLR on unaffected leg; if radicular pain produced on affected side</td><td>Radicular symptoms on opposite (affected) side</td><td>Posterolateral disc herniation</td><td>SN:.29 / SP:.88</td></tr>
+        <tr><td class="hi">Slump Test</td><td>Sitting slumped, arms behind back</td><td>Patient extends affected leg + DF foot; neck flexion adds tension</td><td>Pain in sciatic distribution (posterior buttock/thigh/calf)</td><td>Neurological irritation</td><td>&#8212;</td></tr>
+        <tr><td class="hi">Craig Test</td><td>Prone, knee flexed 90&#176;</td><td>IR/ER femur while palpating greater trochanter for maximum lateral prominence; measure angle with goniometer</td><td>Normal torsion = 8&#8211;15&#176; anteversion; &gt;average = anteversion; &lt;average = retroversion</td><td>Femoral torsion assessment</td><td>Unknown</td></tr>
+        <tr><td class="hi">True Leg Length</td><td>Supine</td><td>ASIS (or navel) to medial malleolus; &lt;1 cm difference = normal</td><td>&gt;1 cm difference = abnormal; use flexed knees to determine femur vs. tibia source</td><td>True limb length discrepancy</td><td>&#8212;</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Laslett Cluster for SIJ &#8212; Sensitivity/Specificity by Number of Positives</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>Number of Positive Tests</th><th>Sensitivity</th><th>Specificity</th><th>Interpretation</th></tr></thead>
+      <tbody>
+        <tr><td>1+</td><td class="ok">1.00</td><td>.44</td><td>Rules OUT SIJ (very sensitive) &#8212; if all 5 negative, SIJ very unlikely</td></tr>
+        <tr><td>2+</td><td>.93</td><td>.66</td><td>Moderate support for SIJ</td></tr>
+        <tr><td class="hi">3+</td><td>.94</td><td class="ok">.78</td><td><strong>Highly likely SIJ &#8212; clinical threshold for treatment</strong></td></tr>
+        <tr><td>4+</td><td>.60</td><td>.81</td><td>Even more specific for SIJ</td></tr>
+        <tr><td>5 (all positive)</td><td>.27</td><td>.88</td><td>Very specific but insensitive &#8212; don't require all 5</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="bl-strip" style="margin-top:10px;">
+      <div class="bl-label">The 5 Laslett Tests</div>
+      <p>SI Distraction &#8226; SI Compression &#8226; Thigh Thrust &#8226; Gaenslen's &#8226; Sacral Thrust (Spring). FABER is often added as a 6th. <strong>Thigh Thrust:</strong> supine; flex hip 90&#176;, adduct slightly; apply force through long axis of femur creating A-P shear on SIJ. <strong>Distraction:</strong> supine; cross-armed pressure to ASIS gapping the SIJ. <strong>Sacral Spring:</strong> prone; vigorous downward pressure on sacrum at S3 (up to 6 times).</p>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Post-Operative</div>
+<div class="container">
+  <div class="section-title">Hip Post-Operative Rehabilitation</div>
+  <div class="section-sub">Post-op hip management varies by procedure. Know the surgical approach, what structures were cut, and what the precautions are before touching the patient. Goals: restore nearly-normal anatomy and biomechanics, decrease long-term pain, improve long-term function, promote long-term joint health.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Hip Arthroscopy &#8212; Labral Repair, Osteoplasty, Microfracture</h4>
+      <div class="ma-tags"><span class="ma-tag">Patient selection is KEY</span><span class="ma-tag gold">ROM restricted 90&#176; flex, 30&#176; ER/ABD</span><span class="ma-tag red">Hip flexor tendinopathy = common complication</span><span class="ma-tag purple">Phase 1&#8594;2&#8594;3 criteria-based</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip" style="margin-bottom:10px;">
+        <div class="bl-label">Good Candidates for Hip Arthroscopy</div>
+        <p>Physical and radiographic evidence of pathology. Absence of significant soft tissue pain. History of trauma or previous surgery. Active with adequate global strength. Realistic expectations. History of compliance. Wide age range: 18&#8211;50 years.</p>
+      </div>
+      <div style="overflow-x:auto;">
+      <table class="postop-table">
+        <thead><tr><th>Procedure</th><th>WB Status</th><th>Flexion ROM</th><th>ER Limit</th><th>ABD Limit</th><th>EXT Limit</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Labral Repair</strong></td><td>TTWB &#215;3&#8211;4 weeks</td><td>0&#8211;90&#176;</td><td>&lt;30&#176;</td><td>&lt;30&#176;</td><td>&#8212;</td></tr>
+          <tr><td><strong>Microfracture</strong> (stimulate cell growth)</td><td>NWB &#215;0&#8211;6 weeks</td><td>0&#8211;90&#176;</td><td>&lt;30&#176;</td><td>&lt;30&#176;</td><td>&#8212;</td></tr>
+          <tr><td><strong>Osteoplasty</strong> (reshape bony lesion)</td><td>PWB &#215;0&#8211;4 weeks</td><td>0&#8211;90&#176;</td><td>&lt;30&#176;</td><td>&lt;30&#176;</td><td>&#8212;</td></tr>
+          <tr><td><strong>Capsular Repair</strong></td><td>TTWB &#215;3&#8211;4 weeks</td><td>0&#8211;90&#176;</td><td>0&#176;</td><td>&#8212;</td><td>0&#176;</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="grid2" style="margin-top:12px;">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Phase 1 &#8212; Criteria for Progression</div>
+            <ul style="font-size:13px;">
+              <li>Minimal palpable swelling</li>
+              <li>Full weight bearing</li>
+              <li>ROM &gt;75% of uninvolved side</li>
+              <li>Pain &lt;3/10 on VAS</li>
+              <li>Pain 0/10 with all Phase 1 exercises</li>
+              <li>Normal muscle activation patterns without compensation</li>
+            </ul>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Phase 2 (Weeks 5&#8211;8)</div>
+            <p>Normalize gait. Restore full ROM. Improve neuromuscular control. Fix muscle imbalances. Improve proprioception. Start functional exercises. <strong>Keys:</strong> Glute med/max retraining, psoas retraining, pelvic stability and lumbopelvic rhythm. <strong>Criteria:</strong> pain-free symmetrical gait; full ROM; no inflammation; normal muscle activation; SL balance 1 min neutral pelvis; hip flexion &gt;60% uninvolved; other planes &gt;70%.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Phase 3 &#8212; Return to Sport</div>
+            <p>Restore strength and endurance. Optimize neuromuscular control, balance, proprioception. Restore CV endurance. <strong>Keys:</strong> criteria-based progressions for running and plyo. Good lumbopelvic control with all movements. <strong>Return-to-Sport Timeline:</strong> Desk work 2&#8211;3 mo; Golf chip/putt 3&#8211;4 mo; Running 4 mo; Manual labor 4&#8211;6 mo; Cutting/pivoting 5&#8211;6 mo.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Common Complication: Hip Flexor Tendinopathy</div>
+            <p>Avoid contractures and overactivation of hip flexors early. <strong>Avoid long lever arm exercises:</strong> straight leg raises, prone planks &#8212; can spike inflammation. Early ROM is beneficial for joint nutrition. Use upright bike, manual circumduction, and passive movements early. Educate patient to avoid sleeping in recliner for prolonged periods.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Total Hip Arthroplasty (THA) &#8212; Approaches, Precautions &amp; Rehab</h4>
+      <div class="ma-tags"><span class="ma-tag">Posterior: dislocation risk</span><span class="ma-tag gold">Anterior: spares ER muscles</span><span class="ma-tag red">Precautions &#215;3 months</span><span class="ma-tag purple">Walker &#8594; cane &#8594; no device</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Indications &amp; Population</div>
+            <p>Age typically &gt;60. Indications: OA, RA, AVN (Gaucher disease), femoral fracture, juvenile idiopathic arthritis. Consists of: metal femoral stem + polyethylene acetabular component + acrylic bone cement. Father of modern THA: Sir John Charnley (1960s).</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Posterior (Posterolateral) Approach</div>
+            <p>Interval between gluteus maximus and medius. Capsule and short external rotators released &#8212; protect sciatic nerve, superior gluteal nerve and artery. Spares gluteus medius, minimus, and vastus lateralis. <strong>Dislocation more common with this approach</strong> &#8212; posterior precautions apply. Careful capsular/ER tendon repair reduces posterior dislocation risk.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Anterior Approach</div>
+            <p>Interval between gluteus medius and TFL. Vastus lateralis, gluteus medius, and rectus femoris reflected back. <strong>Spares the short external rotators.</strong> No posterior dislocation risk. Different precautions than posterior approach.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Posterior THA Precautions (&#215;3 months)</div>
+            <ul style="font-size:13px;">
+              <li>No hip flexion &gt;90&#176;</li>
+              <li>No hip adduction past midline</li>
+              <li>No IR of operated hip</li>
+              <li>Avoid combined motions based on approach</li>
+              <li><strong>Clinical pearl:</strong> posterior approach avoids what it cuts &#8212; ER muscles/capsule. Precautions protect the repair.</li>
+            </ul>
+          </div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">THA Rehab Framework</div>
+            <p><strong>Progression:</strong> Walker &#8594; Cane &#8594; No device. Goal = premorbid level or better. Continuum: Acute PT &#8594; SNF or Home Health &#8594; Outpatient. <strong>Focus:</strong> maximize lumbopelvic control; gait mechanics; transfer safety; stair/curb training; patient-specific functional goals. Full recovery: 1&#8211;2 years. Return to gym: 12 weeks; golf: 4&#8211;6 months; higher impact: surgeon-dependent.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">THA Complications</div>
+            <ul style="font-size:13px;">
+              <li><strong>DVT</strong> &#8212; Wells criteria; common post major joint surgery</li>
+              <li><strong>Infection</strong> &#8212; signs: warmth, redness, wound drainage, fever</li>
+              <li><strong>Dislocation</strong> &#8212; rare; more common with posterior approach; higher risk with comorbidities</li>
+              <li><strong>Instability</strong> &#8212; persistent pain, mechanical symptoms, poorly controlled swelling, failure to progress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Proximal Femur ORIF &#8212; Hip Fracture</h4>
+      <div class="ma-tags"><span class="ma-tag">Decreases life expectancy 1.8 years</span><span class="ma-tag gold">TTWB 6&#8211;12 weeks</span><span class="ma-tag red">Nonunion = common complication</span><span class="ma-tag purple">Elderly: fall prevention primary</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Types &amp; Population</div>
+            <p><strong>Elderly:</strong> typically fall or twist; women &gt; men; contributing factors: poor balance, osteoporosis, poor nutrition, impaired vision, deconditioning, neurological diseases. <strong>Young populations:</strong> high velocity/high impact trauma. <strong>Types:</strong> femoral neck, intertrochanteric, subtrochanteric fractures &#8212; each has different surgical fixation approach (screws, nails, rods, plates).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">ORIF Rehabilitation</div>
+            <p>WB typically restricted 6&#8211;12 weeks (TTWB 10#, 50#, or 50% WB &#8212; case-dependent). PT setting: similar to THA &#8212; may benefit from inpatient rehab, SNF, or home health before outpatient. <strong>Focus:</strong> maximize lumbopelvic control; functional mobility; gait mechanics; transfer safety; stair and curb training; fall prevention. Complication: nonunion &#8212; persistent pain/swelling at fracture site, low WB tolerance, failure to progress on imaging. Can lead to change in living arrangements and early mortality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- KNEE TAB -->
+<div class="tab-panel" id="tab-knee">
+<div class="chip-label">Anatomy &amp; Clinical Evaluation</div>
+<div class="container">
+  <div class="section-title">Knee Anatomy &amp; Clinical Evaluation</div>
+  <div class="section-sub">The knee is inherently unstable &#8212; support comes from ligaments, muscles, and menisci. Multiple articulating surfaces (tibiofemoral + patellofemoral) each have distinct pathologies. VMO is the first quad to atrophy and the last to rehab. Bilateral knee pain &#8594; think lumbar spine referral first.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Meniscus Anatomy &amp; Function</h4>
+      <div class="ma-tags"><span class="ma-tag">Medial = larger, thicker, less mobile</span><span class="ma-tag gold">Red zone (outer 10&#8211;30%) = healing potential</span><span class="ma-tag red">Inner 65&#8211;75% avascular</span><span class="ma-tag purple">Chondral + meniscal = &#188; of all knee pain</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Blood Supply Zones &#8212; Critical for Treatment Decisions</div>
+            <p><strong>Red zone (outer 10&#8211;30%):</strong> vascularized &#8212; can heal with suturing. <strong>White zone (inner 65&#8211;75%):</strong> avascular &#8212; nourished by synovial fluid via diffusion and mechanical pumping &#8212; poor healing potential. Tears in white zone = partial meniscectomy. Tears in red zone = repair preferred (especially in younger patients). Medial meniscus more common for degenerative pathologies.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Functions of Meniscus</div>
+            <ul style="font-size:13px;">
+              <li>Load transmission (distributes forces across tibial plateau)</li>
+              <li>Shock absorption</li>
+              <li>Joint lubrication and nutrition</li>
+              <li>Secondary mechanical stability</li>
+              <li>Limit hyperextension</li>
+              <li>Proprioceptive input (similar to labrum at hip)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Medial vs. Lateral Meniscus</div>
+            <p><strong>Medial:</strong> larger, thicker, <strong>less mobile</strong>; wider posteriorly; ACL and PCL blend into its horns; more commonly torn in degenerative populations (wear and tear). <strong>Lateral:</strong> <strong>more mobile</strong>; both horns attached to tibia; attaches via ligaments of Humphrey (anterior MFL) and Wrisberg (posterior MFL); tears less common but from twisting motions. Bucket handle tear = surgical emergency (locked knee).</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">MOI &#8594; Structure Injured</div>
+            <ul style="font-size:13px;">
+              <li><strong>Valgus force:</strong> Medial meniscus, MCL, epiphyseal plate, patellar dislocation</li>
+              <li><strong>Valgus + rotation:</strong> ACL, posteromedial capsule</li>
+              <li><strong>Varus force (+rotation):</strong> LCL, PL capsule, PCL</li>
+              <li><strong>Hyperextension:</strong> ACL + medial meniscal tears; buckling/giving way</li>
+              <li><strong>Flexion + posterior force:</strong> PCL (dashboard injury)</li>
+              <li><strong>Twisting (foot planted):</strong> ACL if tibia moves forward; meniscus with compression + rotation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Ligament Anatomy &#8212; ACL, PCL, MCL, LCL</h4>
+      <div class="ma-tags"><span class="ma-tag">ACL: primary restraint ant. translation + IR tibia</span><span class="ma-tag gold">PCL: thicker than ACL, more tensile strength</span><span class="ma-tag red">MCL: good blood supply, heals well</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">ACL &#8212; Anterior Cruciate Ligament</div>
+            <p>Primary restraint to anterior tibial translation and IR tibia. Secondary restraint to varus/valgus stress. Two bundles: <strong>Anteromedial (AM)</strong> &#8212; max tension at 30&#8211;60&#176; flexion, limits anterior translation throughout ROM; <strong>Posterolateral (PL)</strong> &#8212; max tension in full extension, lax at 60&#8211;90&#176; (allows tibial rotation). Tensile strength stronger than MCL/LCL but <strong>weaker than PCL</strong>. Poor blood supply &#8212; does not heal well.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">PCL &#8212; Posterior Cruciate Ligament</div>
+            <p>Primary restraint to posterior tibial translation and IR tibia. Secondary restraint to varus/valgus. <strong>Thicker than ACL</strong> &#8212; handles more tensile strength. More taut in flexion overall. Two bundles: Anterolateral bundle = taut in flexion; Posteromedial bundle = taut in extension. Attaches posteriorly to posterior horns of both menisci. Innervated by posterior articular nerve (proprioceptive mechanoreceptors).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">MCL &#8212; Medial Collateral Ligament</div>
+            <p>Primary restraint to valgus stress and ER tibia. Secondary restraint to anterior/posterior translation. <strong>Good blood supply &#8212; heals well</strong> (sometimes intentionally left untreated). Two bands: <strong>Superficial</strong> (thick, fan-like; first to be injured from valgus force; covers medial genicular artery and nerve; anterior fibers taut in flexion, posterior fibers taut in extension) + <strong>Deep</strong> (blends with medial meniscus &#8212; explains medial meniscus involvement with MCL injuries). More common than LCL. Associated with medial meniscus and ACL injuries in higher grade sprains.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">LCL &#8212; Lateral Collateral Ligament</div>
+            <p>Primary restraint to varus stress and ER tibia. Secondary restraint to anterior/posterior translation. Runs from lateral femoral condyle to head of fibula. Forms part of arcuate ligament complex. Less commonly injured than MCL. Part of posterolateral corner (PLC) complex &#8212; rarely isolated; major factor in failed ACL surgeries when not addressed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Knee Muscles, Fat Pads &amp; Patella</h4>
+      <div class="ma-tags"><span class="ma-tag">VMO: first atrophy, last to rehab</span><span class="ma-tag gold">Quads: decelerators preventing knee buckle</span><span class="ma-tag purple">3 ant. fat pads; Hoffa's = infrapatellar</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Quadriceps</div>
+            <p><strong>VMO (Vastus Medialis Oblique):</strong> least active in full extension; active throughout entire extension for patellar tracking (medially realigning patella); weakest of quad group; <strong>first to atrophy, last to rehab.</strong> All quads extend the knee when foot is on ground; primary function as decelerators &#8212; preventing knee from buckling at foot strike. Extensor lag = trauma to patella or ligaments causing quad inhibition.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Knee Flexors (Muscle + Nerve + Root)</div>
+            <ul style="font-size:13px;">
+              <li>Biceps femoris &#8212; Sciatic &#8212; L5, S1&#8211;2</li>
+              <li>Semimembranosus &#8212; Sciatic &#8212; L5, S1&#8211;2</li>
+              <li>Semitendinosus &#8212; Sciatic &#8212; L5, S1&#8211;2</li>
+              <li>Gracilis &#8212; Obturator &#8212; L2&#8211;3</li>
+              <li>Sartorius &#8212; Femoral &#8212; L2&#8211;3</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Fat Pads of the Anterior Knee</div>
+            <p><strong>Quadriceps fat pad</strong> (superior). <strong>Prefemoral fat pad</strong>. <strong>Infrapatellar fat pad (Hoffa's)</strong> &#8212; largest, most clinically relevant. Functions: synovial fluid secretion, joint stability, neurovascular supply, occupies dead space. Often becomes fibrotic post-arthroscopy due to portal locations. With arthritic changes &#8212; fat pad becomes stiff.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Key Subjective Flags for Knee</div>
+            <ul style="font-size:13px;">
+              <li><strong>Giving way/instability</strong> = ligamentous or arthritic damage</li>
+              <li><strong>Locking/clicking</strong> = loose bodies, cartilage, meniscus (posterior/popliteal fossa pain)</li>
+              <li><strong>Bilateral knee pain</strong> = lumbar spine referral, femoral/saphenous nerve entrapment</li>
+              <li><strong>Significant swelling within 1&#8211;2 hrs post-injury</strong> = hemarthrosis, suspect ACL</li>
+              <li><strong>Lack of terminal extension</strong> is common in many knee pathologies &#8212; OA, post-trauma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Pathologies</div>
+<div class="container">
+  <div class="section-title">Knee Pathologies &#8212; Anterior Pain, Ligament, Meniscal, OA</div>
+  <div class="section-sub">Knee pathologies organized by anatomical region. Anterior knee pain has a broad DDx &#8212; use the combination of palpation, provocation testing, and functional screening. ACL does not heal on its own. Meniscal surgery is indicated only for bucket-handle tears with locking. Quad strength is the single most important impairment to address in almost every knee condition.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Anterior Knee Pain DDx &#8212; Complete List</h4>
+      <div class="ma-tags"><span class="ma-tag">PFPS = diagnosis of exclusion</span><span class="ma-tag gold">Patellar tendinopathy = jumper's knee</span><span class="ma-tag red">Osgood-Schlatter = self-limiting in youth</span><span class="ma-tag purple">Fat pad = rule out patellar tendon first</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Full DDx: Anterior Knee Pain</div>
+            <p>PFPS (Runners Knee) &#8226; Osteoarthritis &#8226; Chondromalacia Patella &#8226; Patellar Tendinopathy (Jumper's Knee) &#8226; Patellar Bursitis &#8226; Plica Syndrome &#8226; Osgood Schlatter's Apophysitis &#8226; Sinding Larsen Johansson's Apophysitis &#8226; Hoffa's Fat Pad Impingement &#8226; Femoral Nerve Entrapment &#8226; Saphenous Nerve Entrapment &#8226; L3/L4 Radiculopathy</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">PFPS &#8212; Patellofemoral Pain Syndrome</div>
+            <p>Catch-all diagnosis of exclusion. Also called: chondromalacia patella, patellar arthralgia, runners knee. Women 2:1 vs men. <strong>Risk factors:</strong> decreased quad flexibility, decreased knee extension strength, diminished quad explosive strength, hypermobile patella. <strong>Best diagnostic combo:</strong> pain with squatting + palpation of medial/lateral patellar borders + isometric quad resistance at 90&#176;. <strong>Treatment (individualized):</strong> hip abductors/glutes; hip mobility; quad strength (&#x2116;1); foot posture/orthotics; taping (short-term); motor control.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Chondromalacia Patella</div>
+            <p>Irritation/softening of posterior patellar cartilage. Teenagers/young adults/females. <strong>Signs:</strong> grinding/noisy knee; pain descending stairs/squatting; often asymptomatic (not a direct PT diagnosis to write). Look for muscle imbalances increasing PFJ compression. Pain with compression along the joint.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Patellar Tendinopathy (Jumper's Knee)</div>
+            <p>Actual tendon issue &#8212; not PFPS. Males 15&#8211;30, jumping sports. <strong>Signs:</strong> pain at inferior pole of patella on patellar tendon; pain with resisted extension; "movie theater sign" (pain with prolonged sitting); worse with energy storage exercises (depth jump). <strong>Treatment:</strong> blend eccentric + isometric + isotonic loading; address jumping/landing biomechanics; identify training change that initiated symptoms.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Apophysitis &#8212; Youth</div>
+            <p><strong>Osgood Schlatter's:</strong> Males 10&#8211;15, jumping/cutting/squatting sports, growth spurts. Tibial tuberosity pain + bony protuberance + quad weakness. Self-limiting &#8212; symptom modulation, modify activities. <strong>Sinding-Larsen-Johansson:</strong> Males adolescent, similar demographics. Inferior pole pain (like patellar tendinopathy location). Quad weakness/tightness + recent growth spurt.</p>
+          </div>
+          <div class="bl-strip orange" style="margin-bottom:8px;">
+            <div class="bl-label">Plica Syndrome</div>
+            <p>Remnant of embryonic tissue &#8212; up to 50% of people have it asymptomatically. Medial plica most commonly symptomatic (1st&#8211;3rd decade). <strong>Signs:</strong> anterior/anteromedial knee pain; clicking/popping/locking when pinched; palpable painful string along medial parapatellar area; giving way. Diagnose by ruling out other pathologies + arthroscopic finding. Treatment: ITB tightness, quad weakness stretching (quads, hamstrings, gastroc).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Ligamentous Injuries &#8212; MCL, LCL, PCL, ACL, PLC</h4>
+      <div class="ma-tags"><span class="ma-tag">ACL: hemarthrosis 1&#8211;2 hrs, audible pop</span><span class="ma-tag gold">PCL: posterior sag, minimal swelling</span><span class="ma-tag red">MCL/LCL: good healing, respect tissue</span><span class="ma-tag purple">PLC: rarely isolated, failed ACL risk</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">MCL &amp; LCL Sprains</div>
+            <p><strong>MCL:</strong> valgus &#177; rotation; more common; often with medial meniscus and ACL. MCL has good blood supply &#8212; can intentionally be left torn during surgery. Treat: avoid valgus stress and tibial rotational stress; ROM + swelling + strength + neuromotor re-education. <strong>LCL:</strong> varus stress; less concomitant damage. Same impairment-based treatment principles. Avoid varus stress and tibial rotational stress.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">PCL Sprain</div>
+            <p>30% of ligamentous injuries. Dashboard injury or posterior-directed force. <strong>Signs:</strong> audible pop; minimal swelling; minimal pain with extension; loss of flexion ROM (10&#8211;20&#176;, pain &gt;90&#176;); posterior knee pain (aggravated by kneeling); possible anterior pain. MRI = gold standard. <strong>Grade 1&#8211;2:</strong> favorable outcomes conservative &#8212; quad strengthening (reduces posterior tibial translation), ROM, return to sport 2&#8211;6 weeks (90%). <strong>Grade 3:</strong> avoid isolated hamstring exercises &#215;6&#8211;8 weeks (increases PCL stress); CKC environment; co-contraction; return to sport 3 months even without surgery.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">ACL Sprain</div>
+            <p>Non-contact deceleration most common. Tibial IR on ER femur; valgus + hyperextension with contact. <strong>Female risk factors:</strong> landing patterns, quad dominance/hamstring imbalance, hormonal factors, hip anatomy. <strong>Signs:</strong> <strong>audible pop</strong>; significant hemarthrosis (1&#8211;2 hrs); feelings of instability; decreased extension ROM. Associated medial meniscus tears are common. <strong>Acute treatment:</strong> ROM ASAP; CKC strengthening (quads, gastroc-soleus, hamstrings); avoid OKC knee ext &gt;30&#176; and deep knee flexion &gt;90&#176; early. <strong>Copers criteria</strong> (return without surgery): isolated ACL, full pain-free ROM, no effusion, &gt;70% MVIC quads bilaterally, &gt;80% on SL hop battery, &#8804;1 giving-way episode.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">PLC Sprain (Posterolateral Corner)</div>
+            <p>Rarely isolated &#8212; varus on flexed knee, posterolateral force, hyperextension. Major factor in failed ACL reconstructions (must address before or with ACL surgery). <strong>Signs:</strong> instability especially in full extension; difficulty squatting/stepping; flexion resisted exercises limited (deep flexion and posterior glide avoided). Treatment: symptom modulation at area + global hip and knee stability focus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Meniscal Pathology, Knee OA &amp; Chondral Pathology</h4>
+      <div class="ma-tags"><span class="ma-tag">Meniscal cluster: JLT + catching + extreme flex</span><span class="ma-tag gold">OA: quad weakness = major risk factor</span><span class="ma-tag red">Chondral: poor blood supply, graded exposure</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Meniscal Pathology</div>
+            <p>Most common cause of mechanical knee symptoms. <strong>MOI:</strong> twisting/changing direction WB; contact with planted LE; degeneration (older, medial). <strong>Signs:</strong> <strong>popping, clicking, locking</strong>; <strong>joint line tenderness</strong> (due to capsular strain from tear); swelling; decreased ROM (especially end-range flexion pain); Meniscus Composite Score: JLT + extreme flex/ext + popping/clicking/catching. <strong>Types:</strong> Longitudinal (bucket handle &#8594; surgery), horizontal, radial, flap (parrot beak). <strong>Surgery only for bucket-handle tear</strong> with locking.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Knee OA</div>
+            <p>Most common disability in US. <strong>Risk factors:</strong> physically demanding job, female, obesity, previous knee trauma/meniscus injury, quad weakness. <strong>Tibiofemoral presentation:</strong> swelling (Baker's cyst, bursal, fat pad), warmth, pain with WB, decreased knee extension, muscle weakness, joint deformity. <strong>Patellofemoral presentation:</strong> stiffness, crepitus, same signs. <strong>Mild/moderate treatment:</strong> education (over 45, changes are common), strengthening, motor control/proprioception, assisted devices, weight management, manual therapy. <strong>Severe OA:</strong> lubrication injections, unloading braces, TKA. Pre-op strength linked to post-op function.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Chondral Pathology</div>
+            <p><strong>Younger pt:</strong> acute trauma. <strong>Older pt:</strong> degenerative. Risk: ligamentous instability, overweight. <strong>Signs:</strong> dull ache/deep joint pain; pain with WB (descending stairs, squatting); changes in gait/screw home mechanism. <strong>Treatment:</strong> poor conservative evidence; protection of joint surfaces through strengthening and graded loading exposure. <strong>Surgical options:</strong> debridement, ACI, OATS, microfracture surgery.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Patellofemoral Instability</div>
+            <p>Dislocation/subluxation of patella relative to femoral trochlea. Lateral most common. Prior episode = <strong>7&#215; more likely to recur.</strong> <strong>Risk factors:</strong> young females (increased laxity, genu valgum, increased Q angle); small/high-riding patella (patella alta); shallow trochlear groove; VMO/VL imbalance; generalized laxity. <strong>Exam:</strong> TTP at medial retinaculum and distal patellar pole; instability identified through history of repeated events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Special Tests</div>
+<div class="container">
+  <div class="section-title">Knee Special Tests with Diagnostic Accuracy</div>
+  <div class="section-sub">Lachman's is the gold standard for ACL (highest SN + SP). Posterior drawer has excellent accuracy for PCL. McMurray has high specificity for lateral meniscus. Ottawa Knee Rules are used to decide if X-ray is needed post-trauma &#8212; highly sensitive rule-out tool.</div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Ligament Tests</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">Lachman's Test</td><td>Supine, 30&#176; flex</td><td>Stabilize femur; pull tibia anteriorly quickly</td><td>Soft/mushy end feel = ACL tear. Exclude PCL injury (gives false positive)</td><td>ACL rupture</td><td class="ok">SN:.85 / SP:.94</td></tr>
+        <tr><td class="hi">Anterior Drawer</td><td>Supine, hip 45&#176;, knee 90&#176;</td><td>Pull tibia anteriorly with thumbs on joint line</td><td>Excessive anterior translation</td><td>ACL tear</td><td>Acute: SN:.49 SP:.58; Chronic: SN:.92 SP:.91</td></tr>
+        <tr><td class="hi">Posterior Drawer</td><td>Supine, hip 45&#176;, knee 90&#176;</td><td>Push tibia posteriorly</td><td>Excessive posterior translation</td><td>PCL tear</td><td class="ok">SN:.90 / SP:.99</td></tr>
+        <tr><td class="hi">Posterior Sag Sign (Godfrey's)</td><td>Supine, knees 90&#176;</td><td>Observe tibia from lateral view</td><td>Tibia sags posteriorly</td><td>PCL tear</td><td class="ok">SN:.78 / SP:1.00</td></tr>
+        <tr><td class="hi">Valgus Stress Test</td><td>Full ext, then 30&#176; flex</td><td>Apply valgus force to knee</td><td>Laxity or pain</td><td>MCL injury</td><td class="ok">SN:.91 / SP:.49</td></tr>
+        <tr><td class="hi">Varus Stress Test</td><td>Full ext, then 30&#176; flex</td><td>Apply varus force to knee</td><td>Laxity or pain</td><td>LCL injury</td><td class="bad">SN:.25 / SP: Unknown</td></tr>
+        <tr><td class="hi">Lateral Pivot Shift</td><td>Supine</td><td>IR tibia + valgus stress, move into flexion</td><td>Tibia "reduces" (clunk) at ~20&#176; = ACL</td><td>ACL tear + anterolateral instability</td><td>SN:.24 / SP:.98</td></tr>
+        <tr><td class="hi">Dial Test (Prone ER)</td><td>Prone</td><td>ER tibia at 30&#176; and 90&#176; knee flex</td><td>&gt;10&#176; more ER vs. opposite side</td><td>PLC involvement</td><td>Unknown</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <div class="card-title">Meniscal &amp; Patellofemoral Tests</div>
+    <div style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">McMurray's Test</td><td>Supine</td><td>Knee fully flexed; extend knee while IR tibia (tests lateral meniscus) or ER tibia (tests medial meniscus)</td><td>Click accompanied by pain</td><td>Meniscal tear</td><td>Medial: SN:.50 SP:.77; Lateral: SN:.21 SP:.94</td></tr>
+        <tr><td class="hi">Bounce Home Test</td><td>Supine</td><td>PT gently lets knee fully extend; assesses end feel</td><td>Rubbery block preventing full ext or pain at end range</td><td>Meniscal pathology; hard end feel = loose bodies</td><td>Unknown</td></tr>
+        <tr><td class="hi">Apley's Compression/Distraction</td><td>Prone, 90&#176; flex</td><td>Medial/lateral rotation with compression then distraction</td><td>Compression = meniscal tear; Distraction = capsule/ligament</td><td>Meniscal vs. ligamentous</td><td>Unknown</td></tr>
+        <tr><td class="hi">Thessaly Test</td><td>Standing (PT holds hands)</td><td>Patient rotates body IR/ER &#215;3 at 5&#176; and 20&#176; flexion</td><td>Replication of symptoms</td><td>Meniscal tear</td><td>SN:.64 / SP:.53 &#8212; send MRI to double check</td></tr>
+        <tr><td class="hi">Clarke's/Zohler Test</td><td>Supine</td><td>PT presses patella distally with hand on superior border; patient contracts quads</td><td>Reproduction of pain</td><td>Patellofemoral disorder (feels very uncomfortable for pt)</td><td>Unknown</td></tr>
+        <tr><td class="hi">Fairbank's Apprehension Test</td><td>Supine, 30&#176; flex</td><td>PT pushes patella laterally as far as possible</td><td>Pt extends knee or apprehension &#8212; scared of movement</td><td>Patellar dislocation tendency / PFPS</td><td>Unknown</td></tr>
+        <tr><td class="hi">McConnell Test</td><td>Supine</td><td>PT tests knee ext strength at 30&#176;, 60&#176;, 90&#176;</td><td>Pain + diminished strength</td><td>Patellofemoral alignment issues</td><td>Unknown</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Ottawa Knee Rules &#8212; When to X-Ray</div>
+    <div class="bl-strip red" style="margin-top:8px;">
+      <div class="bl-label">X-Ray Indicated if ANY of the Following Present After Knee Trauma</div>
+      <ul>
+        <li><strong>Most common trigger: Inability to bear weight immediately after injury AND for 4 steps during initial evaluation</strong></li>
+        <li>Bony tenderness at fibular head</li>
+        <li>Bony tenderness at tibial tuberosity (isolated)</li>
+        <li>Failure to flex knee to 90&#176;</li>
+        <li>Patient age &gt;55</li>
+      </ul>
+    </div>
+    <div class="bl-strip gold" style="margin-top:8px;">
+      <div class="bl-label">Functional Outcome Tests for Return to Sport</div>
+      <p><strong>SL hop tests (80&#8211;85% contralateral LE = normal):</strong> Single hop for distance &#8226; Triple hop for distance &#8226; Timed 6m hop &#8226; Crossover triple hop for distance. These are your criteria-based return-to-sport benchmarks, especially post-ACL reconstruction.</p>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Post-Operative</div>
+<div class="container">
+  <div class="section-title">Knee Post-Operative Rehabilitation</div>
+  <div class="section-sub">Arthrogenic Muscle Inhibition (AMI) is the enemy. Even 20&#8211;30 mL of joint fluid produces quadriceps activation failure. Gaining full knee extension in the first 2 weeks is essential &#8212; extension loss of 3&#8211;5&#176; vs. contralateral increases OA risk. Extension always before flexion post-op.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>General Considerations &#8212; AMI, Extension Priority, Anterior Interval</h4>
+      <div class="ma-tags"><span class="ma-tag">AMI: 20&#8211;30 mL effusion = quad failure</span><span class="ma-tag gold">Full extension FIRST</span><span class="ma-tag red">-5&#176; extension = normal hyperextension; loss matters</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Arthrogenic Muscle Inhibition (AMI)</div>
+            <p>Ongoing inhibition of musculature surrounding a joint &#8212; a protective reflex mechanism. Even experimental knee effusions with just 20&#8211;30 mL saline produce quadriceps activation failure. <strong>Cycle:</strong> joint injury &#8594; AMI &#8594; muscle weakness &#8594; muscle atrophy &#8594; immobilization &#8594; perpetuates AMI. <strong>Treatment:</strong> NMES to quads (Russian protocol: 2&#215;/day, biphasic 50 pps, 250&#956;s pulse duration, 10s on:10s off); cryotherapy (disinhibitory); compression + elevation; patient education.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Extension Priority Rule</div>
+            <p>Normal knee extension = approximately +5&#176; hyperextension. <strong>A patient who "lacks 5&#176; from neutral" actually has 10&#176; of terminal extension loss.</strong> Loss of 3&#8211;5&#176; extension vs. contralateral = increased OA risk. &gt;5&#176; extension loss = more dramatic OA development. Post-op position of comfort is 10&#8211;20&#176; flexion &#8212; if maintained, patient stiffens in this position. Hamstrings and posterior capsule become tight. Anterior interval becomes fibrotic (Hoffa's syndrome).</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Anterior Interval (Patellofemoral Complex)</div>
+            <p>Infrapatellar area comprised of patellofemoral complex, bursa, and infrapatellar fat pad. Often becomes fibrotic following arthroscopy due to location of medial and lateral portals. <strong>Patellofemoral joint mobilizations are crucial</strong> to maintain proper gliding, decrease pain, and improve function. Assess patellar mobility (superior/inferior and medial/lateral) at every post-op knee session.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">OKC vs. CKC Exercise Selection &#8212; ACL Stress</div>
+            <ul style="font-size:13px;">
+              <li><strong>Greatest ACL stress: OKC 10&#8211;50&#176; flexion</strong> (peaks 10&#8211;30&#176;)</li>
+              <li>Avoid OKC knee extension &gt;30&#176; early in ACL rehab</li>
+              <li>CKC: deep knee flexion &gt;90&#176; also increases ACL load &#8212; avoid early</li>
+              <li>Load changes with exercise technique (quad dominant squat = more ACL stress)</li>
+              <li>No differences in final laxity, pain, and function between OKC and CKC at end of rehab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Meniscus Rehab &#8212; Partial Meniscectomy vs. Meniscus Repair</h4>
+      <div class="ma-tags"><span class="ma-tag">Meniscectomy: WBAT; 4&#8211;8 weeks</span><span class="ma-tag gold">Repair: NWB 4&#8211;6 wks; no flexion &gt;90&#176;; 4&#8211;6 months</span><span class="ma-tag red">Repair = longer timeline, poor blood supply</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Partial Meniscectomy</div>
+            <p>For non-reparable tears (usually white zone). Wide range of patient population. <strong>Rehab:</strong> WBAT; no loaded deep knee flexion; ROM guidelines; address AMI; normalize gait early; gradually progress strength. <strong>Timeline:</strong> 4&#8211;8 weeks rehab course. <strong>Complication:</strong> 3&#215; increased risk of knee OA at 14-year follow up, especially with meniscal involvement.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Meniscus Repair</div>
+            <p>Suturing torn pieces together arthroscopically. Red zone tears only (blood supply needed for healing). Younger, active population. <strong>Rehab (longer &#8212; 4&#8211;6 months):</strong> Poor blood supply = increased healing time. Hinged knee brace. <strong>WB: NWB 4&#8211;6 weeks</strong> (surgeon-dependent); WB with brace locked in extension initially. <strong>No flexion &gt;90&#176; for 4&#8211;6 weeks.</strong> Priority: full terminal knee extension, quad neuro re-education, then flexion within precautions. Failure of repair = mechanical symptoms, inability to regain ROM, persistent pain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>ACL Reconstruction &#8212; Graft Choices, Ligamentization &amp; 4-Phase Protocol</h4>
+      <div class="ma-tags"><span class="ma-tag">Graft weakest at 12 weeks</span><span class="ma-tag gold">Pre-op ROM &amp; strength predict post-op success</span><span class="ma-tag red">15% re-tear if RTP &lt;7 months</span><span class="ma-tag purple">FWB typically within first 2 weeks</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Graft Options</div>
+            <ul style="font-size:13px;">
+              <li>Bone-Patellar-Bone autograft</li>
+              <li>Hamstring autograft</li>
+              <li>Quadriceps tendon autograft</li>
+              <li>Allograft (cadaver tibialis anterior or Achilles tendon)</li>
+            </ul>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Ligamentization Process</div>
+            <p>Graft fixation sites require time for incorporation into surrounding bone. Initial weakening + revascularization process. Graft must mature via "ligamentization." <strong>Graft is WEAKEST at 12 weeks.</strong> Tensile properties increase with time &#8212; this is why criteria-based (not time-based) progressions are essential.</p>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Outcomes &amp; Re-injury Risk</div>
+            <ul style="font-size:13px;">
+              <li>6&#8211;25% re-injury rate overall</li>
+              <li><strong>15% re-tear if RTP within 7 months</strong></li>
+              <li>Athletes &lt;20 = 6&#215; greater re-injury risk</li>
+              <li>Cutting/pivoting sports = 3.9&#215; re-injury; 5&#215; contralateral injury</li>
+              <li>33% attempted sport at pre-injury level at 1 year; 64% at 5 years</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">ACL Rehab &#8212; 4-Phase Protocol</div>
+            <p><strong>Phase 1 (ROM &amp; Pain Control):</strong> Full passive + active knee extension; &#8805;120&#176; passive flexion; quad activation isometrically; no SLR lag; edema control; symmetrical gait; low/no pain. <strong>Phase 2 (Endurance &amp; Motor Control):</strong> No pain/instability; full symmetrical AROM; CKC strength/endurance/motor control (sagittal first, then frontal); CV fitness + muscular endurance. <strong>Phase 3 (Hypertrophy &amp; Proprioception):</strong> Maximize strength all 3 planes; SL eccentric strength; dynamic pelvic/trunk stability; hamstring strengthening; return to jogging progression; early plyometrics (sagittal first). <strong>Phase 4 (Plyometrics &amp; RTP):</strong> Multiplanar plyometric power; dynamic balance; multiplanar agility; speed; CV endurance. 80&#8211;85% contralateral limb on SL hop battery = benchmark.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Total Knee Arthroplasty (TKA) &#8212; Rehab, ROM Goals &amp; Complications</h4>
+      <div class="ma-tags"><span class="ma-tag">2 weeks: approaching 90&#176;</span><span class="ma-tag gold">6 weeks: approaching 120&#176;</span><span class="ma-tag red">Stiffness: &lt;75&#176; flex + 15&#176; ext lag = MUA</span><span class="ma-tag purple">91&#8211;96% prosthesis survival at 15 years</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Indications &amp; Population</div>
+            <p>Age &gt;55, women &gt; men. Indications: severe pain/stiffness limiting function; moderate-severe pain at rest; chronic knee inflammation not improving with rest/medications; deformity; failure of conservative treatment. Goal: resurfacing joint surfaces for pain relief.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">TKA ROM Goals</div>
+            <ul style="font-size:13px;">
+              <li>Start ROM ASAP &#8212; extension AND flexion</li>
+              <li><strong>2 weeks post-op: approaching 90&#176;</strong></li>
+              <li><strong>6 weeks post-op: approaching 120&#176;</strong></li>
+              <li>Address barriers routinely: pain, swelling, fear avoidance</li>
+              <li>Pre-op ROM linked to post-op ROM &#8212; prehab matters</li>
+            </ul>
+          </div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Outcomes</div>
+            <p>Full recovery 1&#8211;2 years. 91&#8211;96% prosthesis survival at 15-year follow-up. QoL improves significantly. Factors associated with worse QoL post-op: BMI, advanced age, comorbidities, chronic pain. <strong>Exercise programming is KEY.</strong></p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">TKA Rehabilitation Focus</div>
+            <p>WB goal: premorbid level or better. Walker &#8594; Cane &#8594; No device. <strong>Quad strength:</strong> consider NMES &#8212; directly linked to faster gait speeds, faster stair negotiation, higher outcome measure scores. Functional goals: gait mechanics, transfer safety, stair/curb training. First 2 weeks in clinic 5 days/week to prevent stiffness.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">TKA Complication: Post-Op Stiffness</div>
+            <p>Defined as: <strong>flexion &lt;75&#176; AND 15&#176; lack of extension.</strong> If developing: PT ROM is the early emphasis &#8212; 5 days/week for first 2 weeks. If PT fails: <strong>Manipulation Under Anesthesia (MUA)</strong>. Other complications: DVT (Wells criteria), infection, implant issues (persistent pain, mechanical symptoms, failure to progress or sudden regression), chronic pain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ANKLE TAB -->
+<div class="tab-panel" id="tab-ankle">
+<div class="chip-label">Anatomy</div>
+<div class="container">
+  <div class="section-title">Ankle &amp; Foot Anatomy</div>
+  <div class="section-sub">The foot and ankle complex is the foundation of the kinetic chain. Triplanar motion (supination and pronation from tibial IR/ER) is translated into sagittal plane motion during ambulation. Ankle DF restriction has cascading effects all the way to the lumbar spine. Ligament strength ranking lateral ankle (weakest to strongest): ATFL &lt; PTFL &lt; CFL &lt; Deltoid complex.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lateral Ligaments &#8212; ATFL, CFL, PTFL</h4>
+      <div class="ma-tags"><span class="ma-tag">ATFL: most commonly injured in inversion sprain</span><span class="ma-tag gold">ATFL taut with PF + inversion</span><span class="ma-tag red">CFL: extra-articular, spans talocrural + subtalar</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">ATFL &#8212; Anterior Talofibular Ligament</div>
+            <p>Primary function: resist anterior displacement of talus relative to ankle mortise; talocrural IR; plantarflexion. <strong>Most commonly injured in inversion sprain</strong> &#8212; weakest of the lateral ligaments (lowest maximal load to failure) but highest strain to failure. First ligament torn in an inversion injury in PF position. Accessory functions: resists anterior talar displacement from mortise + IR of talus within mortise.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">CFL &#8212; Calcaneofibular Ligament</div>
+            <p>Extra-articular structure covered by peroneal tendons. Spans both talocrural AND subtalar joints (different axes of rotation). Larger and stronger than ATFL. Resists ankle inversion and calcaneal adduction throughout full ROM. Taut in DF; most taut resisting varus when in plantigrade position. If ankle is in neutral, CFL may be injured with ATFL or alone. CFL injury = more profound functional effect than isolated ATFL.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">PTFL &#8212; Posterior Talofibular Ligament</div>
+            <p>Intracapsular but extrasynovial. Runs from posterior medial fibula to lateral tubercle of talus. Resists posterior movement of talus. Rarely injured in typical ankle sprain before CFL and ATFL. Movements that injure PTFL: extreme DF + foot ER + limb IR. More commonly involved in <strong>syndesmotic (high ankle) sprains.</strong> In DF: PTFL maximally stressed, CFL taut, ATFL loose. In PF: ATFL taut, CFL and PTFL become loose.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Medial Ligament &#8212; Deltoid Complex</div>
+            <p><strong>Strongest ligament in foot/ankle.</strong> 6 bands total forming a triangular shape (deltoid). Typically injured with eversion ankle sprains. Four main fibers: <strong>Tibionavicular</strong> (resists lateral translation and ER of talus), <strong>Posterior tibiotalar</strong> (resists DF, lateral translation, ER), <strong>Tibiocalcaneal</strong> (resists abduction; tibiocalcaneal ligament is usually first ruptured with eversion injury), <strong>Anterior tibiotalar</strong> (strong deep fiber; resists abduction in PF and eversion &#8212; injury often associated with avulsion fracture).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Syndesmosis, Foot Arches &amp; Postural Assessment</h4>
+      <div class="ma-tags"><span class="ma-tag">High ankle sprain = DF + tibial ER + planted foot</span><span class="ma-tag gold">Pes planus = pronated; Pes cavus = supinated</span><span class="ma-tag purple">Windlass mechanism = plantar fascia stiffens at push-off</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Distal Tib-Fib (Syndesmosis) &#8212; High Ankle Sprain</div>
+            <p>AITFL + PITFL + interosseous membrane. Separation of distal tib-fib joint from rotation of talus in ankle mortise. <strong>MOI:</strong> excessive DF + tibial ER + planted foot (closed chain). <strong>Signs:</strong> deep global ankle pain; pain with ER of foot (talus widening the joint); pain exceeds amount of swelling; TTP over anterior distal tib-fib; +ER stress test and squeeze test; typically less swelling than lateral ankle sprain. Always rule out fractures and lateral ankle sprain. ORIF if diastasis present.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Foot Posture &#8212; Pes Planus vs. Pes Cavus</div>
+            <p><strong>Pes Planus (pronated/"flat feet"):</strong> talus PF; places stress on medial/plantar structures; can lead to flexible foot during push-off; causes: gastroc-soleus tightness, post. tibialis dysfunction (decreased eccentric foot control). <strong>Pes Cavus (supinated/"high arch"):</strong> much less common; rigid/stiff foot; prevents normal pronation during stance &#8212; decreased shock absorption. <strong>Ottawa Ankle Rules:</strong> if bony tenderness at distal 6 cm fibula/lat. malleolus, medial malleolus, base of 5th metatarsal, or navicular &#8212; X-ray needed. Also: inability to bear weight immediately after injury AND for 4 steps at initial evaluation.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Foot Arches &#8212; Three Types</div>
+            <p><strong>Medial longitudinal arch:</strong> highest; calcaneus-talus-navicular-3 cuneiforms-1st 3 metatarsals; creates space for plantar soft tissues with elastic properties. Support: tibialis anterior/posterior, fibularis longus, flexor digitorum longus, FHL, intrinsics, plantar ligaments, plantar aponeurosis. <strong>Lateral longitudinal arch:</strong> flatter, makes more ground contact; calcaneus-cuboid-4th/5th metatarsals. <strong>Transverse arch:</strong> coronal plane; metatarsal bases-cuboid-3 cuneiforms; fibularis longus and tibialis posterior maintain it.</p>
+          </div>
+          <div class="bl-strip">
+            <div class="bl-label">Windlass Mechanism</div>
+            <p>During terminal stance and push-off, toe extension tightens the plantar fascia (like a windlass tightening a rope) &#8212; raising the medial arch and supinating the foot for rigid propulsion. The plantar fascia should be rigid during push-off. When the fascia is degenerated or inflamed, this mechanism is impaired &#8212; relevant in plantar fasciitis treatment (1st MTP extension stretches plantar fascia). Assess with windlass test at the medial calcaneal tuberosity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Pathologies</div>
+<div class="container">
+  <div class="section-title">Ankle &amp; Foot Pathologies</div>
+  <div class="section-sub">Ankle and foot pathologies are organized by anatomical location. Plantar fasciitis is the most common foot condition. 85% of ankle sprains are lateral (ATFL). Achilles tendinopathy: eccentric loading is the cornerstone of treatment. Ottawa Ankle Rules determine X-ray need. Always check if the ankle is the cause of proximal kinetic chain dysfunction.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Plantar Fasciitis / Fasciosis &#8212; Plantar Heel Pain</h4>
+      <div class="ma-tags"><span class="ma-tag">Most common foot condition</span><span class="ma-tag gold">Pain with first steps; improves with warmup</span><span class="ma-tag red">MHP not ice</span><span class="ma-tag purple">20&#8211;34 y/o runners + 75+ sedentary</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Background &amp; Risk Factors</div>
+            <p><strong>Fasciosis</strong> = degenerated, non-inflamed phase; <strong>Fasciitis</strong> = inflammatory phase. Degenerative irritation at insertion (medial calcaneal tuberosity). Structures: plantar fascia inflammation + increased thickness + altered heel fat pad + microtears. <strong>Risk factors:</strong> pes planus/cavus, limited ankle DF, high BMI (non-athletes), tight hamstrings/posterior chain, running, prolonged WB at work, underuse-to-overuse pattern. <strong>Demographics:</strong> 20&#8211;34 y/o and 75+; F &gt; M runners; soccer, running, gymnastics, dance; jobs with prolonged standing.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Presentation (Classic)</div>
+            <ul style="font-size:13px;">
+              <li><strong>Extreme pain with first steps in morning</strong> (cold, contracted stiff fascia; improves with warming up)</li>
+              <li>Plantar medial heel pain (medial calcaneal tuberosity)</li>
+              <li>More pain while barefoot; pain with prolonged sitting</li>
+              <li>Recent increase in WB activity (new job, training change)</li>
+              <li>TTP at proximal insertion; fascia feels like a hard string</li>
+              <li>Limited AROM/PROM talocrural DF (often bilateral)</li>
+              <li>Posterior chain tightness (Achilles + soleus)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Treatment Protocol</div>
+            <p><strong>Conservative PT is #1 treatment.</strong> <strong>Manual therapy:</strong> improve DF ROM; STM/MFR to plantar fascia and posterior chain; joint mobs (improve DF and 1st MTP extension); deep friction massage (tool-assisted). <strong>Exercise:</strong> posterior chain flexibility (gastroc/soleus &#8212; downward dogs!); foot intrinsic strengthening (towel curls, marble pickups, toe taps); hip and core NM. <strong>Modalities:</strong> <strong>MHP (moist heat) not ice</strong>; KT application. <strong>Orthotics + night splints.</strong> <strong>Other conservative:</strong> corticosteroid or PRP injections; immobilization. <strong>Surgery (fasciotomy):</strong> release of proximal medial insertion &#8212; complication: flattening of longitudinal arch (global instability).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lateral Ankle Sprain &#8212; Grades, 4-Phase Rehab &amp; Functional Instability</h4>
+      <div class="ma-tags"><span class="ma-tag">85% of sprains = lateral</span><span class="ma-tag gold">ATFL most commonly injured</span><span class="ma-tag red">Grade 1: &lt;2 wks; Grade 3: &gt;6 wks</span><span class="ma-tag purple">Proprioception = main focus for FAI</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Grading</div>
+            <ul style="font-size:13px;">
+              <li><strong>Grade 1:</strong> Minimal to no swelling; tenderness to ATFL; return to sport &lt;2 weeks</li>
+              <li><strong>Grade 2:</strong> Local swelling; diffuse lateral ankle tenderness; return to sport 2&#8211;6 weeks</li>
+              <li><strong>Grade 3:</strong> Diffuse pain, swelling, bruising; return to sport &gt;6 weeks. Grade III with mortise widening = ORIF</li>
+            </ul>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">4-Phase Rehab</div>
+            <ol style="font-size:13px;padding-left:18px;line-height:1.9;">
+              <li><strong>Active inflammatory:</strong> Pain + edema control (STM, lymphatic drainage, KT); PROM/AROM; external support for WB; monitor gait &#8212; equal stance phase = external support no longer needed</li>
+              <li><strong>Fibroblastic repair:</strong> PWB &#8594; FWB; supported balance + proprioceptive training; joint mobs and MWM (improve DF, proprioception, WB tolerance)</li>
+              <li><strong>Remodeling:</strong> Unilateral balance training; UE and LE reaches; dynamic proprioceptive training</li>
+              <li><strong>Maturation:</strong> Jogging &#8594; running; sport-specific training; train MOI direction (proprioception in multiple planes)</li>
+            </ol>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip purple" style="margin-bottom:8px;">
+            <div class="bl-label">Functional Ankle Instability (FAI)</div>
+            <p>Feeling of ankle instability due to proprioceptive and neuromuscular deficits from multiple ankle sprains. Damages afferent structures (capsules, ligaments, mechanoreceptors). <strong>Signs:</strong> giving way; decreased peroneal strength; difficulty on uneven surfaces; decreased balance (SEBT); inverted heel at heel strike. <strong>Conservative treatment:</strong> proprioceptive training main focus (4-week balance program reduces self-reported instability and improves joint position sense); NM re-education; stable &#8594; unstable surfaces and static &#8594; dynamic; wobble board, BAPS, Airex, Dynadisc, BOSU; progress to cognitive tasks with balance.</p>
+          </div>
+          <div class="bl-strip red">
+            <div class="bl-label">Peroneal Tendinopathy</div>
+            <p>Overuse + repeated inversion sprains. Pes cavus posture more common. Young ice skaters, dancers, runners. <strong>Signs:</strong> pain behind and distal to lateral malleolus; pain with resisted eversion; instability with toe walking. <strong>Treatment:</strong> identify training errors; proprioceptive training; MFR (tool-assisted); KT; cupping; orthotics for foot posture; joint mobs (address subtalar hypomobility, improve pronation/calcaneal eversion); normalize ankle ROM and strength. <strong>Surgery:</strong> peroneal tendoscopy; repair if longitudinal tear; retinaculum repair if tendon subluxation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Achilles Tendinopathy &#8212; Noninsertional &amp; Insertional; Achilles Rupture</h4>
+      <div class="ma-tags"><span class="ma-tag">4&#8211;6 cm proximal to insertion = noninsertional</span><span class="ma-tag gold">Eccentric loading = #1 treatment</span><span class="ma-tag red">Rupture: Thompson test positive</span><span class="ma-tag purple">Insertional: poorer prognosis</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Noninsertional Achilles Tendinopathy (Most Common)</div>
+            <p>4&#8211;6 cm proximal to Achilles insertion &#8212; relatively avascular zone. Tendinosis (intratendinous degeneration without inflammation from repetitive microtrauma or aging) or peritendinitis (inflammation of peritendon from overuse). Demographics: 30&#8211;50 years old. <strong>Risk factors:</strong> decreased DF ROM; decreased PF strength; hyperpronated foot; pes cavus/planus; comorbidities (diabetes, HTN, obesity); long-distance runners; training errors. <strong>Presentation:</strong> intermittent stiffness + pain with exercise; post ankle stiffness decreasing as exercise continues; TTP of Achilles; thickening; decreased DF ROM (lack of 20&#176; DF in knee ext = shortened gastroc; lack of 30&#176; in knee flex = shortened soleus). <strong>Treatment:</strong> eccentric PF strengthening (&#x2116;1 for both types &#8212; 3&#215;15, 180 reps/day for 12 weeks per Dutton); MFR anterior chain (not posterior); lower level laser; DF mobility training; foot orthosis; KT/IDN/cupping.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Insertional Achilles Tendinopathy</div>
+            <p>Pain more distal (bone-tendon junction). Associated with Haglund's deformity and retrocalcaneal bursitis. Older recreational athletes; obese; poorer prognosis than noninsertional. <strong>Presentation:</strong> morning ankle stiffness; posterior heel pain; swelling that increases with activity (pain continues with activity &#8212; unlike noninsertional); TTP at bone-tendon interface; limited DF ROM.</p>
+          </div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Achilles Tendon Rupture</div>
+            <p><strong>MOI:</strong> pushing off forefoot while extending knee; sudden aggressive DF with full WB; landing on PF foot. <strong>Findings:</strong> sudden calf pain; <strong>audible snap;</strong> swelling of calf; <strong>palpable defect ("hatchet strike");</strong> <strong>positive Thompson squeeze test</strong> (squeeze calf in prone &#8212; no PF = positive = complete rupture). Males:females = 3:1. Surgery (open repair) = most common.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">Haglund's Deformity &amp; Retrocalcaneal Bursitis</div>
+            <p><strong>Haglund's ("pump bump"):</strong> bony prominence of posterior superior calcaneal tuberosity (2&#8211;3 cm). Risk: poorly fitted shoes, cavus foot, genetic predisposition, decreased gastroc length. Conservative: soft heel counter, increase shoe size, Achilles stretch and strengthening, joint mobs for DF. <strong>Retrocalcaneal bursitis:</strong> inflamed bursa anterior to Achilles tendon + superior to insertion. Treat: open-backed shoes, heel lifts, MFR to posterior chain (gastroc/soleus, plantar fascia, hamstrings, ITB), improve DF ROM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Additional Ankle/Foot Pathologies &#8212; Impingement, Tibialis Posterior, Sever's</h4>
+      <div class="ma-tags"><span class="ma-tag">Anterior impingement: decreased post. talar glide</span><span class="ma-tag gold">Post. tib. tendinopathy: 4 stages to rupture</span><span class="ma-tag red">Sever's: boys 8&#8211;13, self-limiting</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Anterior Ankle Impingement</div>
+            <p>Mechanical obstruction from osteophytes &#8212; secondary to talocrural hypomobility (decreased posterior talar glide). Gymnasts, soccer players, long-distance runners, ballet dancers; jobs with repeated squatting/lunging. <strong>Presentation:</strong> pinching in anterior talocrural joint line with squatting, lunging, descending stairs; pain aggravated by forced DF; ankle stiffness/blocking with DF; limited DF; +anterior impingement test (lunge keeping heel on floor = pain). <strong>Conservative:</strong> posterior talocrural joint mobs; MWM into DF; ankle distractions; MFR posterior compartment; <strong>lots of downward dogs!;</strong> strengthen dorsiflexors. <strong>Surgery:</strong> partial synovectomy; excision of osteophytes.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Tibialis Posterior Tendinopathy &#8212; 4 Stages</div>
+            <p>Progressive loss of medial longitudinal arch height (acquired flatfoot). <strong>Stage 1:</strong> medial ankle/foot ache worse with WB; tibialis posterior weakness; mild swelling; pain with resisted inversion. <strong>Stage 2:</strong> medial + lateral hindfoot pain; calcaneal valgus and forefoot abduction (toe-out, more in WB); tibialis posterior elongation; reduced inversion. <strong>Stage 3:</strong> uncorrectable rigidity of rearfoot + forefoot; OA in subtalar joint and transverse tarsal joints. <strong>Stage 4:</strong> complete rupture; navicular subluxed inferiorly; unable to produce toe-off in terminal stance. Observe WB foot posture &#8212; flat foot or pronated is common. Cause: poor eccentric control of posterior tibialis.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Sever's Disease &#8212; Calcaneal Apophysitis</div>
+            <p>Traction apophysitis at Achilles insertion on calcaneus. Self-limiting disease. <strong>As bone grows, gastroc has trouble keeping up &#8594; increased traction on apophysis.</strong> Boys 8&#8211;13, often bilateral. Growth spurt athletes. MOI: overuse with repetitive gastroc loading + growth spurt complications. <strong>Presentation:</strong> intermittent or continuous heel pain; pain with WB; <strong>increased pain with first steps in morning that does NOT get better after warming up</strong> (distinguishes from plantar fasciitis). <strong>Treatment:</strong> gastroc-soleus stretching; heel cups/wedges (decrease Achilles tension); avoid barefoot walking short-term; wear cushioned shoes; NSAID.</p>
+          </div>
+          <div class="bl-strip purple">
+            <div class="bl-label">High Ankle Sprain Rehab Phases</div>
+            <ul style="font-size:13px;">
+              <li><strong>Acute:</strong> Rigid brace + pain relief; manual interventions for edema</li>
+              <li><strong>Subacute:</strong> Light strengthening + balance (without symptoms); 6+ weeks for return to sport; criteria: complete SL hop 15&#215; without pain and good form</li>
+              <li><strong>Advanced:</strong> Sport-specific training; SL broad jump, vertical jump, 10 crossover hops at 80% contralateral side</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chip-label">Post-Operative</div>
+<div class="container">
+  <div class="section-title">Ankle Post-Operative Rehabilitation</div>
+  <div class="section-sub">Post-op ankle rehab depends heavily on what was repaired. Achilles repair: avoid passive DF beyond 0&#176; for first 4 weeks (can overstretch the repair &#8212; difficult to regain PF strength). Lateral ligament reconstruction: avoid passive inversion stress to the repair. ORIF: immobilization until bony healing confirmed, then aggressive ROM and strengthening.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Achilles Tendon Repair</h4>
+      <div class="ma-tags"><span class="ma-tag">NWB 0&#8211;6 weeks; CAM boot wk 4&#8211;6</span><span class="ma-tag gold">Avoid passive DF beyond 0&#176; first 4&#8211;8 wks</span><span class="ma-tag red">Low re-rupture rate: 1.4&#8211;2.8%</span><span class="ma-tag purple">Return to sport: 16+ weeks</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Surgical Procedure</div>
+            <p>Open repair most common. Longitudinal incision proximal to heel. Evacuate wound, re-approximate tendon, suture together. Males:females 3:1 for Achilles rupture.</p>
+          </div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">WB &amp; ROM Progression</div>
+            <ul style="font-size:13px;">
+              <li><strong>0&#8211;6 weeks:</strong> NWB (splint/cast/CAM boot)</li>
+              <li><strong>Week 4&#8211;6:</strong> WBAT in CAM boot + heel wedges (remove one wedge per week)</li>
+              <li><strong>Week 8+:</strong> WBAT in CAM boot without wedges &#8594; WBAT in tennis shoe</li>
+              <li><strong>ROM first 4&#8211;8 wks: AVOID passive DF beyond 0&#176;</strong></li>
+              <li>Resisted AROM into PF = allowed early</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;">
+            <div class="bl-label">Key Complication: PF Strength Deficit</div>
+            <p>Can be hard to regain. <strong>Over-stretching the repair &#8594; inability to achieve full strength or power.</strong> This is why passive DF beyond neutral is avoided in early phases &#8212; healing tissue must be protected from excessive tensile loads. Stay on top of wound inspection. RSD/CRPS or chronic pain are possible complications. <strong>Return to work/sport:</strong> Sedentary work 2&#8211;6 weeks; Manual labor/sport 16+ weeks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lateral Ligament Reconstruction (Brostr&#246;m / Brostr&#246;m-Gould)</h4>
+      <div class="ma-tags"><span class="ma-tag">NWB initially &#215;6 wks; splint &#8594; cast &#8594; CAM boot</span><span class="ma-tag gold">Avoid passive inversion stress</span><span class="ma-tag red">Train proprioception in MOI direction</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Procedure Types</div>
+            <p><strong>Brostr&#246;m:</strong> direct repair of ATFL and CFL with sutures. <strong>Brostr&#246;m-Gould:</strong> repair ATFL + CFL + reinforce CFL with extensor retinaculum. <strong>Graft:</strong> hamstring graft most common for ligamentous replacement when direct repair not possible. Population: younger females; indoor/court sports; Grade III ankle sprain with radiographic instability; failed conservative treatment; symptomatic functional instability.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Rehabilitation</div>
+            <p>Typically seen 4&#8211;6 weeks post-op. <strong>WB:</strong> Initially NWB within first 6 weeks (surgeon-dependent); splint &#8594; cast &#8594; CAM boot; progress to WBAT in CAM boot, NWB outside of boot. <strong>ROM: AVOID PASSIVE INVERSION STRESS to the repair.</strong> Late rehab goals: train proprioception in multiple planes; remember the patient's MOI &#8212; need to prepare ankle for the forces that caused injury. Return to sedentary work: 2&#8211;6 weeks. Return to manual labor/sport: 3&#8211;6 months.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Ankle ORIF &#8212; Danis Weber Classification &amp; Rehab</h4>
+      <div class="ma-tags"><span class="ma-tag">Type A: below syndesmosis</span><span class="ma-tag gold">Type B: trans-syndesmotic (partial/total rupture)</span><span class="ma-tag red">Type C: above syndesmosis</span><span class="ma-tag purple">WB depends on fracture type + comorbidities</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;">
+            <div class="bl-label">Danis Weber Classification</div>
+            <p><strong>Type A:</strong> fracture below syndesmosis &#8212; most stable. <strong>Type B:</strong> fracture at the level of the syndesmosis &#8212; partial or total syndesmotic rupture &#8212; most common. <strong>Type C:</strong> fracture above the syndesmosis &#8212; typically with full syndesmotic disruption &#8212; least stable. Surgical procedure: fixate bone with hardware (screws, plates, nails); potential ligament reconstruction. Appropriate for anyone &#8212; no age restriction.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bl-strip gold" style="margin-bottom:8px;">
+            <div class="bl-label">Rehab Framework</div>
+            <p>Immobilization via splint, cast, or CAM boot. WB status depends on fracture type, concomitant injuries, and comorbidities. With isolated ORIF, typically no ROM limitations &#8212; but ankle is typically stiff and swollen. Progress: PROM &#8594; AAROM &#8594; AROM &#8594; closed chain strengthening. Gait training. MFR to improve gastroc/soleus extensibility (critical following immobilization). Posterior talocrural glides to increase DF. MWM into DF. Restore subtalar joint mobility (calcaneal inversion/eversion; supination/pronation). Complications: DVT, infection, hardware failure, RSD/CRPS, chronic pain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- REVIEW TAB -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; MSK Lower Extremity</div>
+  <div class="section-sub">Tap any card to flip. Covers key clinical pearls across hip, knee, and ankle &#8212; high-yield for clinical exams and practice.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the hip capsular pattern, and what is the OA Clinical Prediction Rule?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Capsular pattern:</strong> IR &gt; Flexion &gt; Extension (IR is most limited). Most limited = IR. <strong>OA CPR &#8212; 3 of 5:</strong> (1) squatting aggravates; (2) active hip flexion causes lateral hip pain; (3) scour test with adduction causes lateral hip/groin pain (±catching); (4) active hip extension causes pain; (5) passive IR &lt;25&#176;. These three things drive OA treatment: mobilization with ventral+lateral+caudal force at femur, long-axis traction, and soft tissue (hypertonic adductors, weak abductors).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the THA posterior approach precautions, and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Posterior approach cuts:</strong> capsule and short external rotators (released to gain access). Protect sciatic nerve and superior gluteal nerve/artery. <strong>Precautions &#215;3 months:</strong> No hip flexion &gt;90&#176;; no hip adduction past midline; no IR of operated hip. Reason: these combined motions recreate the position that would dislocate the hip posteriorly &#8212; through the cut posterior capsule/ER tendons before healing is complete. Careful repair of posterior capsule and ER tendons significantly reduces dislocation risk. Anterior approach spares short ER muscles &#8212; different precautions (no posterior dislocation risk).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the hip arthroscopy post-op ROM and WB restrictions by procedure?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>All procedures:</strong> Flexion restricted to 0&#8211;90&#176;. <strong>Labral repair:</strong> TTWB &#215;3&#8211;4 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Microfracture:</strong> NWB &#215;0&#8211;6 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Osteoplasty:</strong> PWB &#215;0&#8211;4 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Capsular repair (most restrictive):</strong> TTWB &#215;3&#8211;4 weeks; ER = 0&#176;; Extension = 0&#176;. <strong>Critical:</strong> Avoid long lever arm exercises early (SLR, prone planks) &#8212; can spike inflammation via hip flexor overactivation. Hip flexor tendinopathy is the most common post-arthroscopy complication.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">SCFE vs. LCPD &#8212; demographics, presentation, and clinical distinguishing features?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>SCFE (Slipped Capital Femoral Epiphysis):</strong> Adolescents 11&#8211;14, more common in boys, overweight (80&#8211;100th percentile), diabetes, cancer treatment. Femoral head slips posteriorly off femoral neck. Presentation: hip/medial thigh/knee pain; <strong>tends to walk with ER foot</strong>; pain with IR relieved with ER; positive log roll and SL raise against resistance; antalgic gait. Treatment: internal fixation ASAP to prevent AVN. <strong>LCPD (Legg-Calv&#233;-Perthes):</strong> Boys 4&#8211;10, unilateral. Blood supply disrupted &#8594; AVN &#8594; femoral head flattens. Presentation: <strong>painless limp</strong> (comes and goes); hip stiffness (flex/IR/abd); constant thigh/groin pain; limb length discrepancy; upper thigh atrophy. Prognosis: good if &lt;6 yo; high deformity/arthritis risk if &gt;6 yo.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What structures are involved in the "unhappy triad" and what MOI causes it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">The unhappy triad (O'Donoghue's triad) = <strong>ACL + MCL + medial meniscus.</strong> MOI: <strong>valgus force with rotation</strong> at the knee &#8212; the same mechanism that damages all three structures simultaneously. This is why higher-grade MCL sprains have common concomitant damage to ACL and medial meniscus. The MCL has stronger attachment to the joint capsule (which commonly gets involved) and a deep band that blends with the medial meniscus &#8212; explaining the meniscal involvement. Important: the MCL has good blood supply and can sometimes be left untreated during surgery because it heals well on its own.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Lachman's vs. Anterior Drawer for ACL &#8212; which is more accurate and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Lachman's (30&#176; knee flexion):</strong> SN:.85 / SP:.94. More accurate. At 30&#176; flexion, the posterolateral ACL bundle is taut &#8212; maximum tension for testing anterior translation. Hamstrings are minimally activated at 30&#176;, so they don't splint the joint and hide the laxity. <strong>Anterior Drawer (90&#176; flexion):</strong> Acute: SN:.49 SP:.58; Chronic: SN:.92 SP:.91. Acute injuries: hamstrings and posterior capsule splint the tibia at 90&#176; &#8212; masking laxity. The PL bundle is lax at 90&#176;. Also: must exclude PCL injury first &#8212; posterior tibial sag at 90&#176; gives a false-positive anterior drawer. Lachman's is THE test to perform for suspected ACL injury.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is AMI and why is gaining full knee extension within 2 weeks so critical post-op?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>AMI (Arthrogenic Muscle Inhibition):</strong> ongoing inhibition of musculature surrounding a joint as a protective mechanism. Even 20&#8211;30 mL of saline (about 1 oz) in the knee produces quadriceps activation failure. Cycle: injury &#8594; AMI &#8594; weakness &#8594; atrophy &#8594; immobilization &#8594; perpetuates AMI. <strong>Why early extension matters:</strong> Post-op position of comfort is 10&#8211;20&#176; knee flexion. If maintained, the patient stiffens there: hamstrings + posterior capsule tighten; anterior interval becomes fibrotic (Hoffa's syndrome); decreased quad strength &#8594; decreased terminal knee extension &#8594; increased fall risk. Extension loss of 3&#8211;5&#176; vs. contralateral = increased OA risk. &gt;5&#176; loss = more dramatic OA. Normal knee extension = +5&#176; hyperextension &#8212; lacking 5&#176; from neutral = 10&#176; total loss.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What differentiates noninsertional from insertional Achilles tendinopathy clinically?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Noninsertional (most common):</strong> 4&#8211;6 cm proximal to insertion &#8212; relatively avascular zone. Demographics: 30&#8211;50 y/o; active long-distance runners; better prognosis. Stiffness and pain at start of activity that IMPROVES as exercise continues (tendinosis pattern). TTP at mid-substance Achilles. Pain eases after warm-up. Decreased DF (20&#176; with knee extended = gastroc; 30&#176; with knee flexed = soleus). <strong>Insertional:</strong> Pain at bone-tendon junction (distal). Associated with Haglund's deformity and retrocalcaneal bursitis. Older, less active recreational athletes; obese; <strong>poorer prognosis.</strong> Swelling increases with activity AND pain continues with activity (doesn't ease with warm-up). <strong>Treatment for both:</strong> eccentric PF strengthening = #1 (3&#215;15, bodyweight first, 180 reps/day for 12 weeks per Dutton).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the Ottawa Ankle Rule and what are the X-ray indications?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Ottawa Ankle Rules:</strong> Clinical decision tool to determine if X-ray is needed following ankle trauma. Only ONE criterion needs to be present. <strong>X-ray indicated with bony tenderness at:</strong> distal 6 cm of posterior edge of fibula or tip of lateral malleolus; distal 6 cm of posterior edge of tibia or tip of medial malleolus; base of 5th metatarsal; navicular. <strong>Most common trigger: inability to bear weight immediately after injury AND for 4 steps at initial evaluation.</strong> Sensitivity of Ottawa Ankle Rules: 77%. Compare to Bernese Ankle Rules (sensitivity 55%) &#8212; OAR is more sensitive (better rule-out). Use OAR in inversion/ankle trauma; use clinical judgment for fracture suspicion even with negative rules if concerned.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the ACL graft weakness timeline and the criteria for return to sport?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Ligamentization:</strong> After surgery, graft undergoes revascularization + maturation. <strong>GRAFT IS WEAKEST AT 12 WEEKS.</strong> Tensile properties increase with time &#8212; this is why time-based progressions are replaced by criteria-based progressions. <strong>Functional RTS criteria (Phase 4):</strong> Plyometric power in multiple planes; dynamic balance; multiplanar agility; speed; CV endurance. <strong>SL hop tests: 80&#8211;85% of contralateral LE = normal.</strong> Tests: single hop for distance, triple hop for distance, timed 6m hop, crossover triple hop. <strong>Re-injury stats:</strong> 15% re-tear if RTP within 7 months; athletes &lt;20 = 6&#215; re-injury risk; cutting/pivoting sports = 3.9&#215; re-injury; 64% returned to prior level at 5 years.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the FADIR test, what does it indicate, and what's its diagnostic accuracy?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>FADIR (Flexion, ADduction, Internal Rotation):</strong> Patient supine; PT passively flexes hip to 90&#176;, adducts, and internally rotates. <strong>Positive:</strong> pain reproduced in the groin. <strong>Indicates:</strong> labral tear or femoroacetabular impingement (FAI). <strong>Diagnostic accuracy:</strong> SN:.99 / SP:.25. Interpretation: very high sensitivity (excellent rule-OUT test &#8212; if negative, labral/FAI very unlikely), but very low specificity (positive result alone is not diagnostic &#8212; many people without labral tears will be positive). Must combine with other tests (FABER, scour, Fitzgerald anterior/posterior) and clinical history. In FAI: also expect limited IR &lt;20&#176; at 90&#176; flexion and possible C-sign (patient cups hand over lateral hip/waist area to describe pain location).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the McMurray test technique differences for medial vs. lateral meniscus?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>McMurray's Test:</strong> Patient supine with knee fully flexed. PT extends knee while simultaneously rotating tibia. Positive = click accompanied by pain. <strong>Medial meniscus testing:</strong> ER tibia (external rotation of foot) while extending knee &#8212; loads and stresses the medial meniscus. <strong>Lateral meniscus testing:</strong> IR tibia (internal rotation) while extending knee &#8212; loads the lateral meniscus. Mnemonic: turn tibia lateral = test medial; turn tibia medial = test lateral. <strong>Accuracy:</strong> Medial: SN:.50 SP:.77; Lateral: SN:.21 SP:.94. Lateral meniscus testing has very high specificity &#8212; if positive, likely lateral meniscal tear. If patient has extreme flexion pain AND end-range extension pain AND popping/clicking/catching &#8212; add Bounce Home Test and Apley's to the meniscal cluster.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the TKA post-op stiffness definition, and what is the escalating treatment?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Post-op TKA stiffness defined as:</strong> Flexion &lt;75&#176; AND 15&#176; lack of extension (note: both must be present). <strong>Treatment escalation:</strong> First line = intensive PT (in clinic 5 days/week for first 2 weeks post-op; ROM is the early emphasis). If PT fails = <strong>Manipulation Under Anesthesia (MUA)</strong> &#8212; surgeon manually breaks the scar tissue under anesthesia, then immediate aggressive ROM PT follows. <strong>Prevention through monitoring:</strong> 2-week goal = approaching 90&#176;; 6-week goal = approaching 120&#176;. Address barriers routinely: pain, swelling, and fear avoidance. Pre-op ROM linked to post-op ROM &#8212; prehabilitation strengthening and ROM work before surgery directly predicts functional outcomes. Pre-op strength is also linked to post-op function &#8212; another reason prehab matters.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the Laslett Cluster for SIJ, and at what threshold do you treat?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Laslett Cluster (5 tests):</strong> SI Distraction, SI Compression, Thigh Thrust, Gaenslen's, Sacral Spring Test. FABER often added as 6th. <strong>Clinical threshold: 3 or more positive tests = highly likely SIJ &#8212; treat accordingly.</strong> Sensitivity/specificity at each threshold: 1+ = SN:1.00 (rules out perfectly if all negative); 3+ = SN:.94 SP:.78 (best clinical balance); 5+ = SN:.27 SP:.88 (very specific, too insensitive to require all 5). <strong>Subjective clues for SIJ:</strong> unilateral pain; feeling of being stuck on one side; one-finger pointing to PSIS; postpartum instability. <strong>ASLR:</strong> if pain changes when you provide innominate stability, high probability of SIJ dysfunction.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What distinguishes plantar fasciitis morning pain from Sever's disease morning pain?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Plantar fasciitis:</strong> Extreme pain with FIRST STEPS in the morning that <strong>IMPROVES with warming up</strong> (cold, contracted fascia loosens as blood flow increases). Pain returns after long periods of sitting. Age: 20&#8211;34 runners AND 75+ sedentary. TTP at medial calcaneal tuberosity (plantar surface). Limited ankle DF. Posterior chain tightness. <strong>Sever's Disease (calcaneal apophysitis):</strong> Boys 8&#8211;13, growth spurts. Heel pain with WB. Increased pain first steps in morning that <strong>does NOT improve with warming up</strong> &#8212; activity makes it worse. TTP at posterior heel (calcaneal tuberosity &#8212; Achilles insertion). Often bilateral. Gastroc unable to keep up with bone growth &#8212; increased traction on apophysis. Self-limiting. Treatment: gastroc-soleus stretching, heel cups, cushioned shoes, avoid barefoot walking.</div>
+    </div>
+
+    
+</div>
+</div>
+</div>
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  var panel = document.getElementById('tab-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

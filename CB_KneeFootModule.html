@@ -1,0 +1,2746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — Knee, Foot &amp; Ankle</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#090f1a; --bg2:#0d1520; --bg3:#111d2b;
+  --teal:#38b2b2; --teal2:#5dcfcf;
+  --gold:#d4a850; --gold2:#e8c070;
+  --purple:#a78bfa; --purple2:#c4b5fd;
+  --text:#e8edf5; --text2:#a8b8cc; --text3:#6b7e94;
+  --border:#1a2a3a; --border2:#243447;
+  --red:#f87171; --green:#4ade80; --orange:#fb923c;
+  --radius:10px; --radius2:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Manrope',sans-serif;font-size:15px;line-height:1.65;}
+
+.site-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.site-nav a{color:var(--text2);text-decoration:none;font-size:12px;font-family:'IBM Plex Mono',monospace;padding:4px 10px;border:1px solid var(--border2);border-radius:20px;transition:all .2s;}
+.site-nav a:hover,.site-nav a.active{color:var(--teal2);border-color:var(--teal);background:rgba(56,178,178,.08);}
+.site-nav .logo{color:var(--gold);font-family:'Source Serif 4',serif;font-size:18px;font-weight:700;margin-right:8px;}
+
+.hero{background:linear-gradient(135deg,#0d1a2a 0%,#091420 60%,#0d1520 100%);padding:48px 32px 36px;border-bottom:1px solid var(--border);}
+.hero-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.hero h1{font-family:'Source Serif 4',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--text);line-height:1.15;margin-bottom:12px;}
+.hero h1 span{color:var(--teal2);}
+.hero p{color:var(--text2);max-width:680px;font-size:15px;line-height:1.7;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+.badge{background:rgba(56,178,178,.1);border:1px solid rgba(56,178,178,.2);color:var(--teal2);font-size:11px;font-family:'IBM Plex Mono',monospace;padding:4px 12px;border-radius:20px;}
+.badge.gold{background:rgba(212,168,80,.1);border-color:rgba(212,168,80,.2);color:var(--gold2);}
+.badge.purple{background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.2);color:var(--purple2);}
+
+.chip-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 24px;display:flex;flex-wrap:wrap;gap:4px;overflow-x:auto;}
+.chip-nav button{background:none;border:none;color:var(--text3);font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;padding:14px 16px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;}
+.chip-nav button:hover{color:var(--text);}
+.chip-nav button.active{color:var(--teal2);border-bottom-color:var(--teal);}
+
+.container{max-width:1100px;margin:0 auto;padding:32px 24px;}
+.tab-panel{display:none;}.tab-panel.active{display:block;}
+
+.section-title{font-family:'Source Serif 4',serif;font-size:1.5rem;font-weight:700;color:var(--teal2);margin-bottom:6px;}
+.section-sub{color:var(--text2);font-size:13.5px;margin-bottom:24px;line-height:1.6;}
+.divider{height:1px;background:var(--border2);margin:32px 0;}
+
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin-bottom:16px;}
+.card-title{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+@media(max-width:700px){.grid2,.grid3,.grid4{grid-template-columns:1fr;}}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr;}.grid4{grid-template-columns:1fr 1fr;}}
+
+.ma-item{border:1px solid var(--border2);border-radius:var(--radius2);margin-bottom:8px;overflow:hidden;}
+.ma-header{background:var(--bg3);padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s;}
+.ma-header:hover{background:#162030;}
+.ma-header h4{font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;color:var(--text);}
+.ma-header .ma-tags{display:flex;gap:6px;align-items:center;}
+.ma-tag{font-size:10px;font-family:'IBM Plex Mono',monospace;padding:2px 7px;border-radius:10px;background:rgba(56,178,178,.1);color:var(--teal2);border:1px solid rgba(56,178,178,.2);}
+.ma-tag.gold{background:rgba(212,168,80,.1);color:var(--gold2);border-color:rgba(212,168,80,.2);}
+.ma-tag.purple{background:rgba(167,139,250,.1);color:var(--purple2);border-color:rgba(167,139,250,.2);}
+.ma-chevron{color:var(--text3);transition:transform .25s;font-size:12px;}
+.ma-body{display:none;padding:14px 16px;background:var(--bg2);border-top:1px solid var(--border);}
+.ma-body.open{display:block;}
+.ma-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+@media(max-width:600px){.ma-grid{grid-template-columns:1fr 1fr;}}
+.ma-field label{font-size:11px;font-family:'IBM Plex Mono',monospace;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:3px;}
+.ma-field p{font-size:13.5px;color:var(--text);}
+.nerve-chip{display:inline-block;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.3);color:var(--purple2);font-size:11px;font-family:'IBM Plex Mono',monospace;padding:2px 8px;border-radius:10px;}
+
+.bl-strip{background:rgba(56,178,178,.06);border:1px solid rgba(56,178,178,.15);border-left:3px solid var(--teal);border-radius:var(--radius2);padding:12px 16px;margin:10px 0;}
+.bl-strip .bl-label{font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.bl-strip p{font-size:13.5px;color:var(--text);}
+.bl-strip.gold{background:rgba(212,168,80,.06);border-color:rgba(212,168,80,.15);border-left-color:var(--gold);}
+.bl-strip.gold .bl-label{color:var(--gold);}
+.bl-strip.purple{background:rgba(167,139,250,.06);border-color:rgba(167,139,250,.15);border-left-color:var(--purple);}
+.bl-strip.purple .bl-label{color:var(--purple2);}
+.bl-strip.red{background:rgba(248,113,113,.06);border-color:rgba(248,113,113,.15);border-left-color:var(--red);}
+.bl-strip.red .bl-label{color:var(--red);}
+.bl-strip.green{background:rgba(74,222,128,.06);border-color:rgba(74,222,128,.15);border-left-color:var(--green);}
+.bl-strip.green .bl-label{color:var(--green);}
+
+.data-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0;}
+.data-table th{background:var(--bg3);color:var(--teal2);font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left;border-bottom:2px solid var(--border2);}
+.data-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text2);}
+.data-table tr:hover td{background:rgba(255,255,255,.02);}
+.data-table td strong{color:var(--text);}
+.data-table .hi{color:var(--teal2);font-weight:600;}
+.data-table .warn{color:var(--gold);}
+.data-table .dim{color:var(--text3);}
+.data-table .bad{color:var(--red);}
+
+.cn2{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 16px;margin:10px 0;}
+.cn2-label{font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--purple2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.cn2-more{display:none;margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.cn2-more.open{display:block;}
+.cn2-toggle{background:none;border:none;color:var(--teal);font-size:12px;cursor:pointer;padding:4px 0;font-family:'IBM Plex Mono',monospace;}
+
+.oina-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0;}
+@media(max-width:600px){.oina-grid{grid-template-columns:1fr 1fr;}}
+.oina-cell{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:12px;text-align:center;}
+.oina-cell .oina-letter{font-family:'Source Serif 4',serif;font-size:1.6rem;font-weight:700;color:var(--teal2);line-height:1;}
+.oina-cell .oina-word{font-size:11px;color:var(--text3);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;margin-top:2px;margin-bottom:6px;}
+.oina-cell .oina-val{font-size:13px;color:var(--text);}
+
+.mnemonic-box{background:linear-gradient(135deg,rgba(212,168,80,.08),rgba(212,168,80,.03));border:1px solid rgba(212,168,80,.25);border-radius:var(--radius);padding:18px 20px;margin:14px 0;}
+.mnemonic-box .mn-title{font-size:11px;font-family:'IBM Plex Mono',monospace;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;}
+.mnemonic-box .mn-phrase{font-family:'Source Serif 4',serif;font-size:1.4rem;font-weight:700;color:var(--gold2);margin-bottom:8px;line-height:1.3;}
+.mnemonic-box .mn-expand{font-size:13.5px;color:var(--text2);line-height:1.6;}
+.mnemonic-box .mn-expand span{color:var(--gold);font-weight:600;}
+
+.rc2-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:14px 0;}
+.rc2{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:18px;cursor:pointer;transition:border-color .2s;position:relative;}
+.rc2:hover{box-shadow:0 4px 16px rgba(0,0,0,.3);}
+.rc2 .rc2-q{font-size:14px;font-weight:500;color:var(--text);line-height:1.5;padding-right:40px;}
+.rc2 .rc2-flip{position:absolute;top:12px;right:12px;font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--teal);opacity:.7;}
+.rc2 .rc2-a{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:13.5px;color:var(--text2);line-height:1.6;}
+.rc2 .rc2-a.open{display:block;}
+.rc2 .rc2-a strong{color:var(--teal2);}
+
+.ak-card{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 16px;margin-bottom:10px;}
+.ak-motion{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--teal);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
+.ak-detail{font-size:13.5px;color:var(--text2);}
+.ak-detail strong{color:var(--teal2);}
+
+.mob-card{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius2);padding:14px 16px;margin-bottom:8px;}
+.mob-direction{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--orange);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
+.mob-promotes{font-size:13px;color:var(--text);}
+.mob-promotes em{color:var(--teal2);font-style:normal;font-weight:600;}
+
+/* GAIT PHASE TIMELINE */
+.gait-timeline{display:flex;gap:0;margin:16px 0;border-radius:var(--radius);overflow:hidden;}
+.gait-phase{flex:1;padding:12px 8px;text-align:center;border-right:1px solid var(--bg);}
+.gait-phase:last-child{border-right:none;}
+.gait-phase .gp-name{font-size:10px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
+.gait-phase .gp-pct{font-size:11px;font-weight:600;}
+.gait-phase.stance{background:rgba(56,178,178,.1);}
+.gait-phase.stance .gp-name{color:var(--teal2);}
+.gait-phase.stance .gp-pct{color:var(--teal);}
+.gait-phase.swing{background:rgba(212,168,80,.08);}
+.gait-phase.swing .gp-name{color:var(--gold2);}
+.gait-phase.swing .gp-pct{color:var(--gold);}
+
+/* FPI SCORE VISUAL */
+.fpi-score-bar{display:flex;gap:2px;margin:12px 0;align-items:stretch;}
+.fpi-seg{flex:1;padding:10px 6px;text-align:center;border-radius:4px;font-size:11px;font-family:'IBM Plex Mono',monospace;}
+.fpi-seg.sup2{background:rgba(56,178,178,.25);color:var(--teal2);}
+.fpi-seg.sup1{background:rgba(56,178,178,.15);color:var(--teal2);}
+.fpi-seg.norm{background:rgba(74,222,128,.2);color:var(--green);}
+.fpi-seg.pro1{background:rgba(251,146,60,.15);color:var(--orange);}
+.fpi-seg.pro2{background:rgba(248,113,113,.2);color:var(--red);}
+
+/* POSTURE DEVIATION CARD */
+.pd-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px;}
+.pd-badge{display:inline-block;background:rgba(167,139,250,.15);border:1px solid rgba(167,139,250,.3);color:var(--purple2);font-size:10px;font-family:'IBM Plex Mono',monospace;padding:3px 10px;border-radius:12px;margin-bottom:10px;text-transform:uppercase;letter-spacing:1px;}
+.pd-card h3{font-family:'Source Serif 4',serif;font-size:1.2rem;color:var(--text);margin-bottom:12px;}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <span class="logo">CB</span>
+  <a href="index.html">Home</a>
+  <a href="CB_HeadModule.html">Head</a>
+  <a href="CB_NeckModule.html">Neck</a>
+  <a href="CB_BackModule.html">Back/Spine</a>
+  <a href="CB_ShoulderModule_v3.html">Shoulder</a>
+  <a href="CB_ElbowModule.html">Elbow</a>
+  <a href="CB_WristHandModule.html">Wrist/Hand</a>
+  <a href="CB_HipModule.html">Hip</a>
+  <a href="CB_KneeFootModule.html" class="active">Knee/Foot</a>
+  <a href="CB_MedicalConditions.html">Medical Conditions</a>
+  <a href="CB_Pathophysiology.html">Pathophysiology</a>
+  <a href="CB_TherEx.html">Ther Ex</a>
+  <a href="CB_PhysicalAgents.html">Physical Agents</a>
+  <a href="CB_ResearchMethods.html">Research Methods</a>
+  <a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+  <a href="CB_MotorControl.html">Motor Control</a>
+  <a href="CB_Pharmacology.html">Pharmacology</a>
+  <a href="CB_HealthPromotion.html">Health Promotion</a>
+  <a href="CB_MSKLowerExtremity.html">MSK Lower Extremity</a>
+  <a href="CB_Integumentary.html">Integumentary</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">Modules 10–12 · Lower Extremity</div>
+  <h1>Knee, Foot, <span>Ankle &amp; Gait</span></h1>
+  <p>Anatomy and kinesiology of the knee complex, ankle, and foot — including arthrokinematics, joint mobilization, foot posture assessment (FPI-6), gait analysis, and postural dysfunction.</p>
+  <div class="hero-badges">
+    <span class="badge">Tibiofemoral Joint</span>
+    <span class="badge">Patellofemoral Joint</span>
+    <span class="badge gold">Ankle &amp; Subtalar</span>
+    <span class="badge gold">FPI-6 Scoring</span>
+    <span class="badge purple">Gait Analysis</span>
+    <span class="badge purple">Postural Dysfunction</span>
+  </div>
+</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('knee-anatomy',this)">Knee Anatomy</button>
+  <button onclick="showTab('knee-arthro',this)">Knee Arthro &amp; Kines</button>
+  <button onclick="showTab('ankle-anatomy',this)">Ankle &amp; Foot Anatomy</button>
+  <button onclick="showTab('ankle-arthro',this)">Ankle Arthrokinematics</button>
+  <button onclick="showTab('foot-posture',this)">Foot Posture (FPI-6)</button>
+  <button onclick="showTab('mobs',this)">Joint Mobs</button>
+  <button onclick="showTab('gait',this)">Gait Analysis</button>
+  <button onclick="showTab('posture',this)">Postural Dysfunction</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ===================== KNEE ANATOMY ===================== -->
+<div class="tab-panel active" id="tab-knee-anatomy">
+<div class="container">
+
+  <div class="section-title">Knee Complex — Anatomy</div>
+  <div class="section-sub">The knee is one of the most injured joints in the body. Three articulations: <strong>tibiofemoral</strong> (medial + lateral), <strong>patellofemoral</strong>, and <strong>proximal tibiofibular</strong>. Hip and ankle dysfunction have profound downstream effects on the knee.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Tibiofemoral Joint Type</div>
+      <p style="color:var(--text2);font-size:13.5px;line-height:1.7;margin-bottom:8px;"><strong>Double condyloid joint</strong> — 3 degrees of angular motion:</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Flexion/Extension</strong> — sagittal plane, coronal axis</li>
+        <li><strong>Medial/Lateral (IR/ER) rotation</strong> — transverse plane, longitudinal axis</li>
+        <li><strong>Abduction/Adduction (varus/valgus)</strong> — frontal plane, AP axis</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Physiological Angulation</div>
+        <p>Normal: <strong>180–185°</strong> (slight valgus). <strong>Genu valgum</strong> (knock-knee) &gt;185°. <strong>Genu varum</strong> (bow-leg) &lt;175°.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Femur — Distal Detail</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Oblique angulation: medially and inferiorly from proximal to distal end</li>
+        <li><strong>Convex</strong> femoral condyles</li>
+        <li><strong>Medial femoral condyle</strong> — <em>larger</em> overall</li>
+        <li><strong>Lateral femoral condyle</strong> — shifted more <em>anteriorly</em> (key for patellar tracking)</li>
+        <li>Intercondylar notch — houses ACL and PCL</li>
+        <li>Patellar groove (trochlea) — guides patella</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:0;">
+    <div class="card">
+      <div class="card-title">Tibia — Proximal Detail</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Relatively flat tibial condyle surfaces — <strong>concave</strong> (with menisci)</li>
+        <li><strong>Medial plateau</strong> — longer in the anteroposterior direction</li>
+        <li><strong>7–10° posterior slope</strong> on tibial plateau — allows for knee flexion; clinically relevant in ACL reconstruction (angle affects graft tension)</li>
+        <li>Tibial tubercle — patellar tendon attachment</li>
+        <li>Gerdy's tubercle — IT band insertion (lateral)</li>
+        <li>Fibular head — LCL + biceps femoris attachment</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Patella</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Largest sesamoid bone in the body</li>
+        <li>Inverted triangular shape embedded in quadriceps tendon</li>
+        <li>One of the most <strong>incongruent</strong> joints in the body</li>
+        <li>Primary function: <strong>anatomical pulley</strong> for quadriceps — increases extensor moment arm ~30–50%</li>
+        <li><strong>Insall-Salvati Index</strong> = patellar tendon length ÷ patellar length; normal = <strong>1:1</strong></li>
+        <li><strong>Patella Alta</strong> — longer tendon (>1.2) → higher subluxation risk</li>
+        <li><strong>Patella Baja</strong> — shorter tendon (&lt;0.8) → increased PF compressive stress</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Menisci — Detailed</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Shape &amp; Arrangement</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Medial meniscus</strong> — larger, "C" shaped; less mobile (attached to MCL deep layer + capsule) → more injury prone</li>
+        <li><strong>Lateral meniscus</strong> — smaller, "O" shaped; more mobile; moves more with femur</li>
+        <li>Fibrocartilaginous; wedge shaped — <strong>thick peripherally</strong>, thin centrally</li>
+        <li>Axial load dispersed in a <strong>radial direction</strong> by wedge shape</li>
+        <li>Greater load transmitted through <strong>medial</strong> compartment</li>
+        <li>Can take <strong>50–70%</strong> of load imposed on knee</li>
+        <li>Compressive load: <strong>3–5× BW</strong> during gait and stair climbing</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Movement &amp; Injury Patterns</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Meniscus moves <strong>with the femur</strong> to maintain joint congruency during motion</li>
+        <li>Greater compressive forces at <strong>end-range motions</strong></li>
+        <li><strong>Posterior horn injury</strong> — at end-range flexion (squatting, deep knee flexion)</li>
+        <li><strong>Anterior horn injury</strong> — at hyperextension</li>
+        <li>Medial meniscus = secondary restraint to anterior tibial translation; becomes primary restraint after ACL tear</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Vascularity Zones — Healing Potential</div>
+        <p><strong>Red Zone</strong> (outer 25–33%): well vascularized → good healing potential. <strong>White Zone</strong> (inner/central): avascular, relies on synovial fluid diffusion → poor healing. First year of life = fully vascularized; WB onset reduces vascularity. After age 50: only periphery has blood supply.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Joint Capsule</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Structure &amp; Functional Role</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Thick fibrous <strong>outer layer</strong> + thin <strong>synovial membrane</strong> inner layer</li>
+        <li>Most congruent in full extension → ligaments taut (CPP)</li>
+        <li>In flexion → periarticular structures become lax → <strong>translation and rotation of tibia</strong> possible</li>
+        <li>Critical in restricting excessive joint motion</li>
+        <li>Strongly innervated by <strong>nociceptors</strong> (pain) and <strong>mechanoreceptors</strong> (position sense)</li>
+        <li>Mechanoreceptors initiate <strong>reflex-mediated muscular stabilization</strong> of the knee — loss of this = proprioceptive deficit post-injury</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Fibrous Layer — Regional Anatomy</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Anterior:</strong> Extensor retinaculum; deep to this = medial + lateral retinacula (patellar support); <strong>MPFL</strong> (medial patellofemoral ligament) = thickest and most clinically important patellar stabilizer</li>
+        <li><strong>Medial:</strong> Deep + superficial MCL; deep MCL connected to <strong>medial meniscus</strong></li>
+        <li><strong>Lateral:</strong> Reinforced by <strong>ITB</strong> + thick fascia superficially</li>
+        <li><strong>Posterior:</strong> <strong>Arcuate ligament</strong> (posterolateral) + <strong>posterior oblique ligament</strong> (posteromedial)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Ligaments — Detailed</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>ACL — Anterior Cruciate Ligament</h4>
+      <div class="ma-tags"><span class="ma-tag">Anterior tibial restraint</span><span class="ma-tag gold">High injury rate</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Posteromedial aspect of <strong>lateral femoral condyle</strong> (intercondylar notch)</p></div>
+        <div class="ma-field"><label>Insertion</label><p>Anteriorly on the <strong>medial tibial plateau</strong> (anterior intercondylar area)</p></div>
+        <div class="ma-field"><label>Primary Function</label><p>Restrict <strong>anterior translation</strong> of tibia on femur + limit <strong>hyperextension</strong></p></div>
+        <div class="ma-field"><label>Also Provides</label><p>Rotary stability during tibial ER/IR and valgus/varus moments</p></div>
+        <div class="ma-field"><label>Bundles</label><p>Anteromedial (taut in flexion) + Posterolateral (taut in extension)</p></div>
+        <div class="ma-field"><label>Clinical</label><p>Anterior drawer test (90° flex) + Lachman test (20–30° flex) + Pivot shift. ACL tear → medial meniscus becomes primary anterior restraint</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>PCL — Posterior Cruciate Ligament</h4>
+      <div class="ma-tags"><span class="ma-tag">Posterior tibial restraint</span><span class="ma-tag gold">Stronger than ACL</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Origin</label><p>Lateral aspect of <strong>medial femoral condyle</strong></p></div>
+        <div class="ma-field"><label>Insertion</label><p>Posterior tibial surface between posterior horns of menisci</p></div>
+        <div class="ma-field"><label>Primary Function</label><p>Restrict <strong>posterior translation</strong> of tibia on femur</p></div>
+        <div class="ma-field"><label>PCL Complex</label><p>PCL + <strong>meniscofemoral ligament</strong> combine as primary posterior restraint; meniscofemoral lig = secondary stabilizer alone</p></div>
+        <div class="ma-field"><label>Taut In</label><p>Knee <strong>flexion</strong></p></div>
+        <div class="ma-field"><label>Clinical</label><p>Posterior drawer test + posterior sag sign. Injury with direct posterior force to proximal tibia (dashboard injury)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>MCL — Medial Collateral Ligament</h4>
+      <div class="ma-tags"><span class="ma-tag">Valgus restraint</span><span class="ma-tag gold">Most commonly torn</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Layers</label><p><strong>Superficial MCL</strong> — primary valgus restraint, resists ER. <strong>Deep MCL</strong> — shorter; connected to <strong>medial meniscus</strong> (why medial meniscus tears with MCL)</p></div>
+        <div class="ma-field"><label>Primary Role</label><p>Restrain <strong>valgus stress</strong> at the knee</p></div>
+        <div class="ma-field"><label>Secondary Role</label><p>Prevent excessive <strong>ER and lateral tibial rotation</strong></p></div>
+        <div class="ma-field"><label>Taut/Lax</label><p>Taut in <strong>extension</strong>, lax in <strong>flexion</strong></p></div>
+        <div class="ma-field"><label>Blood Supply</label><p>Rich — heals well without surgery in isolated tears</p></div>
+        <div class="ma-field"><label>Clinical</label><p>Valgus stress test. "Unhappy triad" (O'Donoghue): ACL + MCL + medial meniscus — though now often lateral meniscus with ACL tears</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>LCL — Lateral Collateral Ligament &amp; IT Band</h4>
+      <div class="ma-tags"><span class="ma-tag">Varus restraint</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>LCL</label><p>Attaches to lateral femur → joins <strong>biceps femoris tendon</strong> on fibular head. Primary = restrain varus. Secondary = limit lateral rotation.</p></div>
+        <div class="ma-field"><label>IT Band</label><p>From TFL + glute max → <strong>Gerdy's tubercle</strong> (lateral tibia). NOT contractile — consistently taut regardless of hip/knee position. Portion attaches to patella via lateral patellofemoral ligament.</p></div>
+        <div class="ma-field"><label>ITB Syndrome</label><p><strong>Fat pad</strong> between ITB and femoral epicondyle becomes irritated at ~30° flexion. Repetitive flexion/extension (running, cycling). Lateral knee pain.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Knee Extensor &amp; Flexor Muscles</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Knee Extensors — Quadriceps</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Rectus Femoris</strong> — AIIS → patellar tendon; 2-joint (limits knee flex with hip extended)</li>
+        <li><strong>Vastus Medialis Obliquus (VMO)</strong> — last 15–20° extension; prevents lateral patellar tracking; fires first in flexion</li>
+        <li><strong>Vastus Intermedius</strong> — central; deep</li>
+        <li><strong>Vastus Lateralis</strong> — lateral; pulls patella laterally</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Passive Insufficiency</div>
+        <p>Rectus femoris limits knee flexion when hip is extended (2-joint passive insufficiency). Test: prone knee flexion ROM vs. supine.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Knee Flexors</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.8;">
+        <li><strong>Biceps Femoris</strong> — ER tibia in flexion</li>
+        <li><strong>Semimembranosus</strong> — IR tibia</li>
+        <li><strong>Semitendinosus</strong> — IR tibia; pes anserine</li>
+        <li><strong>Gracilis</strong> — ADD + IR tibia; pes anserine</li>
+        <li><strong>Sartorius</strong> — pes anserine</li>
+        <li><strong>Popliteus</strong> — unlocks knee; IR tibia (OKC) / ER femur (CKC)</li>
+        <li><strong>Gastrocnemius</strong> — weak flexor; primarily PF; 2-joint</li>
+      </ul>
+      <div class="mnemonic-box" style="margin-top:10px;">
+        <div class="mn-title">Pes Anserine ("Goose's Foot")</div>
+        <div class="mn-phrase">SGT FOT</div>
+        <div class="mn-expand"><span>S</span>artorius · <span>G</span>racilis · <span>S</span>emitendinosus → <span>F</span>emoral · <span>O</span>bturator · <span>T</span>ibial nerves</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== KNEE ARTHROKINEMATICS ===================== -->
+<div class="tab-panel" id="tab-knee-arthro">
+<div class="container">
+
+  <div class="section-title">Knee Arthrokinematics &amp; Kinematics</div>
+  <div class="section-sub">Concave tibial plateaus on convex femoral condyles (OKC). The tibiofemoral joint is not a pure hinge — motion includes roll, glide, and rotation (screw-home mechanism).</div>
+
+  <div class="oina-grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="oina-cell">
+      <div class="oina-letter">CPP</div>
+      <div class="oina-word">Closed Pack</div>
+      <div class="oina-val">Full extension + ER tibia</div>
+    </div>
+    <div class="oina-cell">
+      <div class="oina-letter">OPP</div>
+      <div class="oina-word">Open Pack</div>
+      <div class="oina-val">25° flexion</div>
+    </div>
+    <div class="oina-cell">
+      <div class="oina-letter">CP</div>
+      <div class="oina-word">Capsular Pattern</div>
+      <div class="oina-val">Flexion &gt; Extension</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Tibiofemoral Arthrokinematics</div>
+  <div class="bl-strip" style="margin-bottom:16px;">
+    <div class="bl-label">Surface Rule</div>
+    <p><strong>Tibiofemoral:</strong> Concave tibial plateaus receive the convex femoral condyles. OKC (tibia on femur) = concave on convex → roll and glide in <strong>SAME direction</strong>. CKC (femur on tibia) = convex on concave → roll and glide in <strong>OPPOSITE directions</strong>.</p>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Motion</th>
+        <th>OKC — Tibia on Femur (concave on convex)</th>
+        <th>CKC — Femur on Tibia (convex on concave)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Flexion</strong></td>
+        <td class="hi">Posterior Roll + Posterior Glide</td>
+        <td class="warn">Posterior Roll + Anterior Glide</td>
+      </tr>
+      <tr>
+        <td><strong>Extension</strong></td>
+        <td class="hi">Anterior Roll + Anterior Glide</td>
+        <td class="warn">Anterior Roll + Posterior Glide</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Screw-Home Mechanism</div>
+  <div class="bl-strip gold" style="margin-bottom:14px;">
+    <div class="bl-label">Why It Happens</div>
+    <p>The medial femoral condyle is larger than the lateral condyle. As the knee reaches terminal extension, the lateral condyle exhausts its articular surface first → the medial side continues rolling → tibial ER occurs automatically as a final "locking" event. This is <strong>passive</strong> — driven by bony geometry and ligamentous tension.</p>
+  </div>
+
+  <div class="grid2">
+    <div class="ak-card">
+      <div class="ak-motion">OKC — Terminal Extension</div>
+      <div class="ak-detail"><strong>Tibia externally rotates</strong> on femur (~10°). Begins at 30° but not visibly apparent until the final <strong>5° of terminal extension</strong>. Locks joint into CPP for standing.</div>
+    </div>
+    <div class="ak-card">
+      <div class="ak-motion">CKC — Terminal Extension</div>
+      <div class="ak-detail"><strong>Femur internally rotates</strong> on tibia at terminal extension. Same timing — begins ~30°, apparent at 5°.</div>
+    </div>
+    <div class="ak-card">
+      <div class="ak-motion">Unlocking — Popliteus</div>
+      <div class="ak-detail">To initiate flexion, <strong>popliteus IR tibia</strong> (OKC) or <strong>ER femur</strong> (CKC) to "unlock" the screwed-home position. The "key that unlocks the knee."</div>
+    </div>
+    <div class="ak-card">
+      <div class="ak-motion">Accessory Motion</div>
+      <div class="ak-detail">With knee in flexion: tibia can <strong>IR ~30°</strong> and <strong>ER ~40°</strong> relative to femur. This rotation is lost in full extension (CPP locks it).</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">ROM &amp; End Feels</div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Motion</th><th>Normal ROM</th><th>End Feel</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Extension</strong></td><td class="hi">0–10°</td><td>Firm</td><td>Genu recurvatum = hyperextension beyond 0°</td></tr>
+      <tr><td><strong>Flexion</strong></td><td class="hi">0–150° (135° functional)</td><td>Soft or Firm</td><td>Posterior tissue approximation; hamstring tension</td></tr>
+      <tr><td><strong>Internal Rotation (90° flex)</strong></td><td class="hi">~30°</td><td>Firm</td><td>ACL, MCL, posterior capsule. Lost at full extension (CPP).</td></tr>
+      <tr><td><strong>External Rotation (90° flex)</strong></td><td class="hi">~40°</td><td>Firm</td><td>PCL, LCL, IT band. Lost at full extension (CPP).</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Patellofemoral Joint — Detailed</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Patella Tracking</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Patella contact area changes throughout knee ROM due to incongruency:</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Full extension — patella sits <strong>above</strong> the trochlea (no contact)</li>
+        <li>Early flexion — patella enters trochlea; shifts <strong>medially</strong></li>
+        <li>Deeper flexion — patella stays medial or shifts slightly laterally</li>
+        <li>Contact area: smallest at low flexion, greatest at ~45–60°</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">PF Stress Mechanism</div>
+        <p>Quads pull patella <strong>superiorly</strong>; patellar tendon pulls it <strong>inferiorly</strong> → creates a <strong>posterior bowstring force</strong> on the femoral trochlea. This increases with knee flexion. Highest PF stress ≈ <strong>90° flexion</strong>.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Frontal Plane Stability</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Near full extension the patella is most at risk for instability:</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Patella sits on the <strong>shallow superior femoral sulcus</strong> in extension</li>
+        <li>Physiological valgus of femur + tibia → quadriceps and patellar tendon action lines <strong>don't coincide</strong></li>
+        <li>Net lateral pull on patella → medial soft tissue must counteract</li>
+        <li><strong>MPFL</strong> = most important medial stabilizer</li>
+      </ul>
+      <table class="data-table" style="margin-top:10px;">
+        <thead><tr><th>Direction</th><th>Key Stabilizers</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Superior</strong></td><td>Quadriceps (rectus femoris, VMO, VI, VL)</td></tr>
+          <tr><td><strong>Inferior</strong></td><td>Patellar tendon / ligament</td></tr>
+          <tr><td><strong>Medial</strong></td><td>MPFL, VMO, medial retinaculum</td></tr>
+          <tr><td><strong>Lateral</strong></td><td>VL, ITB, lateral retinaculum, lateral patellofemoral lig</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Q-Angle — Full Definition</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Measurement</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Two lines intersecting at the patellar midpoint:</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Line 1: <strong>ASIS → midpoint of patella</strong></li>
+        <li>Line 2: <strong>Tibial tuberosity → midpoint of patella</strong></li>
+        <li>Normal: <strong>~15–20°</strong> (males ~15°; females ~18°)</li>
+        <li>Increased Q-angle → increased PF subluxation risk</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Factors that Increase Q-Angle</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>↑ Femoral anteversion → femoral IR</li>
+        <li>Genu valgum (knock-knee)</li>
+        <li>Lateral tibial torsion</li>
+        <li>Lateralized tibial tuberosity</li>
+        <li>Foot pronation → tibial IR → functionally ↑ Q-angle</li>
+        <li>Wider pelvis (explains higher female prevalence of PFPS)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Functional Movement Assessment — Knee</div>
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title">Squat</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Initiation: hips or knees first?</li>
+        <li>Knee valgus collapse</li>
+        <li>Instability / shaking</li>
+        <li>Ankle DF restriction</li>
+        <li>Butt wink (posterior pelvic tilt)</li>
+        <li>Toe-in / toe-out</li>
+        <li>Weight shift (symmetric?)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Lunge (Anterior)</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Ipsilateral knee valgus/varus</li>
+        <li>Contralateral knee during landing</li>
+        <li>Ipsilateral ankle DF</li>
+        <li>Pelvic rotation / anterior tilt</li>
+        <li>Lumbar posture</li>
+        <li>Quality of weight acceptance</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Step-Up</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Knee valgus during loading</li>
+        <li>Trunk lean (weak glute med)</li>
+        <li>Hip Trendelenburg</li>
+        <li>Contralateral pelvic drop</li>
+        <li>Hyperextension at terminal</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cn2" style="margin-top:8px;">
+    <div class="cn2-label">Muscle Length Testing at the Knee</div>
+    <p style="font-size:13.5px;color:var(--text2);">Hamstring passive insufficiency: SLR position (hip flex + knee extended). Rectus Femoris passive insufficiency: prone knee flexion with hip extended (Ely's Test). Gastrocnemius: DF with knee extended vs. bent (isolates gastroc from soleus).</p>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== ANKLE & FOOT ANATOMY ===================== -->
+<div class="tab-panel" id="tab-ankle-anatomy">
+<div class="container">
+
+  <div class="section-title">Ankle &amp; Foot — Anatomy</div>
+  <div class="section-sub">The foot and ankle complex contains 26 bones, 33 joints, and over 100 muscles, tendons, and ligaments. It functions as a mobile adaptor at initial contact and a rigid lever at push-off.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:20px;">
+    <div class="bl-label">Three Functional Segments</div>
+    <p><strong>Rearfoot (posterior):</strong> Talus + Calcaneus · <strong>Midfoot (middle):</strong> Cuboid + Navicular + 3 Cuneiforms · <strong>Forefoot (anterior):</strong> Metatarsals + Phalanges</p>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Talocrural (Ankle) Joint</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Type:</strong> Synovial hinge joint</li>
+        <li><strong>Mortise:</strong> Distal tibia + medial malleolus (tibial) + lateral malleolus (fibular) → <em>concave</em></li>
+        <li><strong>Talus:</strong> <em>convex</em> dome; wedge-shaped (wider anteriorly)</li>
+        <li><strong>DoF:</strong> PF/DF only (sagittal plane, coronal axis)</li>
+        <li><strong>Oblique axis:</strong> 14° medial-to-lateral in transverse plane; 23° rotated from frontal plane</li>
+        <li><strong>Min 10° DF</strong> required for normal gait</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Wedge Shape of Talus — Clinical Impact</div>
+        <p>Wider anterior talus: during DF, talus "wedges" into mortise → separates tibia and fibula slightly → enhances bony stability. DF = most stable position.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Subtalar (Talocalcaneal) Joint</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Axis of motion:</strong> 42° inclination from transverse plane; 16° medially from AP axis → crosses all 3 planes</li>
+        <li><strong>DoF:</strong> Inversion/Eversion + Pronation/Supination (triplanar)</li>
+        <li><strong>Posterior facet:</strong> Concave talus on convex calcaneus</li>
+        <li><strong>Anterior/Middle:</strong> Convex talus on concave calcaneus</li>
+        <li><strong>Closed Pack:</strong> Full supination (inversion/PF)</li>
+        <li><strong>Open Pack:</strong> Inversion + PF</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:0;">
+    <div class="card">
+      <div class="card-title">Tibiofibular Joints</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Proximal TFJ:</strong> Plane synovial joint; <strong>convex tibial facet</strong> + <strong>concave fibular facet</strong> (most common pattern)</li>
+        <li><strong>Distal TFJ:</strong> Syndesmosis; convex fibular + concave tibial; fibroadipose tissue fills gap; stabilized by anterior/posterior tibiofibular ligaments + interosseous membrane</li>
+        <li>Fibula transmits &lt;10% WB forces but critical for mortise stability</li>
+        <li>During DF: fibula moves superiorly + posteriorly (distal) to accommodate wider talus</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Transverse Tarsal Joint (Chopart's Joint)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Talonavicular + Calcaneocuboid</strong> joints acting together</li>
+        <li>Talus + Calcaneus move together on Navicular + Cuboid</li>
+        <li><strong>Longitudinal axis:</strong> 15° from transverse, 9° medially → IV/EV predominate</li>
+        <li><strong>Oblique axis:</strong> 52° from transverse, 57° from sagittal → DF/PF + ABD/ADD predominate</li>
+        <li><strong>Closed Pack:</strong> Full supination</li>
+        <li><strong>Open Pack:</strong> Pronation</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Key Clinical Principle</div>
+        <p>Subtalar + Transverse Tarsal joints are mechanically linked. Supination of subtalar locks the TT joint → rigid lever for push-off. Pronation unlocks TT joint → flexible adapter for load absorption.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Ankle/Foot Motion Terminology</div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Motion</th><th>Plane</th><th>Axis</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>DF / PF</strong></td><td>Sagittal</td><td>Coronal</td><td>10° DF minimum for gait; 20° DF for stairs</td></tr>
+      <tr><td><strong>Inversion / Eversion</strong></td><td>Frontal</td><td>AP</td><td>Calcaneal IV: 20–30°; EV: 5–10°</td></tr>
+      <tr><td><strong>ABD / ADD</strong></td><td>Transverse</td><td>Vertical</td><td>Talar component in subtalar motion</td></tr>
+      <tr><td><strong>Supination (NWB)</strong></td><td>Triplanar</td><td>Subtalar axis</td><td>PF + Inversion + Adduction</td></tr>
+      <tr><td><strong>Pronation (NWB)</strong></td><td>Triplanar</td><td>Subtalar axis</td><td>DF + Eversion + Abduction</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip red" style="margin-top:4px;">
+    <div class="bl-label">Valgus vs. Varus — Definition</div>
+    <p><strong>Valgus</strong> = increased medial angle between two bones = angulation &gt;180° (knock-knee, calcaneal eversion). <strong>Varus</strong> = decreased medial angle = angulation &lt;180° (bow-leg, calcaneal inversion).</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Talus — Articular Facets</div>
+  <div class="section-sub" style="margin-bottom:14px;">The talus has no muscular attachments — it is entirely covered by articular cartilage or ligament. Three superior facets articulate with the mortise.</div>
+  <div class="grid3">
+    <div class="card" style="text-align:center;">
+      <div class="card-title">Trochlear / Superior Facet</div>
+      <p style="font-size:13px;color:var(--text2);">Convex. Central groove. <strong>Wider anteriorly</strong> (wedge shape) — during DF, wedges into mortise → spreads tibia/fibula → enhanced bony stability. DF = CPP.</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="card-title">Lateral / Fibular Facet</div>
+      <p style="font-size:13px;color:var(--text2);"><strong>Larger</strong> of the two malleolar facets. Articulates with lateral malleolus (fibula).</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="card-title">Medial / Tibial Facet</div>
+      <p style="font-size:13px;color:var(--text2);"><strong>Smaller</strong> of the malleolar facets. Articulates with medial malleolus (tibia).</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Ankle Ligaments</div>
+  <div class="section-sub" style="margin-bottom:14px;">The ankle capsule is fairly weak — ligamentous support is critical. The medial and lateral collateral ligaments are structurally and functionally asymmetric, which explains why inversion sprains vastly outnumber eversion sprains.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Medial Collateral — Deltoid Ligament</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Fan-shaped</strong> multi-band complex from medial malleolus</li>
+        <li><strong>Extremely strong</strong> — rarely torn in isolation</li>
+        <li>Checks <strong>eversion</strong> and <strong>pronation</strong></li>
+        <li>When eversion force is sufficient, medial malleolus avulses before deltoid tears</li>
+        <li>Deep layer: talotibial (taut in all positions)</li>
+        <li>Superficial layer: tibiocalcaneal, tibionavicular, posterior talotibial</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Spring Ligament (Plantar Calcaneonavicular)</div>
+        <p>Sustentaculum tali → inferior navicular. Continuous medially with deltoid. Critical passive stabilizer of the <strong>medial longitudinal arch</strong>. Bifurcate ligament connects it laterally. Spring lig laxity = arch collapse.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Lateral Collateral Ligament — 3 Bands</div>
+      <p style="font-size:13px;color:var(--text3);margin-bottom:8px;">Weaker than deltoid. Checks <strong>inversion</strong> and <strong>supination</strong>. Most commonly sprained ligament complex in the body.</p>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>ATFL (Anterior Talofibular)</strong> — fibula → anterior talus; taut in PF; <em>most commonly sprained</em> (grade I/II inversion sprains)</li>
+        <li><strong>CFL (Calcaneofibular)</strong> — fibula → calcaneus; taut in neutral/DF; spans talocrural + subtalar joints; grade II/III sprains</li>
+        <li><strong>PTFL (Posterior Talofibular)</strong> — fibula → posterior talus; taut in DF; strongest of the three; rarely torn except complete dislocation</li>
+      </ul>
+      <div class="bl-strip gold" style="margin-top:10px;">
+        <div class="bl-label">Superior Peroneal Retinaculum</div>
+        <p>Lies parallel to the CFL. Reinforces the CFL and holds peroneal tendons. Can avulse in severe inversion sprains → peroneal subluxation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Subtalar Joint — Ligaments &amp; Sinus Tarsi</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Cervical Ligament</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Strongest ligament</strong> of the subtalar joint. Lies anterior to the sinus tarsi. Joins neck of talus to neck of calcaneus. Primary restraint to subtalar inversion.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Interosseous Talocalcaneal Ligament</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Lies medially within the tarsal canal. Runs obliquely from talus to calcaneus. Works with cervical ligament to resist excessive subtalar motion.</p>
+    </div>
+  </div>
+
+  <div class="cn2">
+    <div class="cn2-label">Tarsal Canal &amp; Sinus Tarsi</div>
+    <p style="font-size:13.5px;color:var(--text2);">The tarsal canal runs between posterior and anterior/middle subtalar facets, dividing the joint into two separate capsular compartments. The large lateral opening is the <strong>sinus tarsi</strong> — located anterior to the fibular malleolus. Tenderness here = sinus tarsi syndrome, common after lateral ankle sprains. The posterior facet has its own capsule; the anterior/middle facets share a capsule with the talonavicular joint.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Transverse Tarsal Joint — Ligament Detail</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Talonavicular Joint</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>"Ball and socket" — convex head of talus into concavity of navicular + anterior/middle calcaneal facets</li>
+        <li><strong>Spring ligament</strong> (plantar calcaneonavicular) forms the floor of the socket</li>
+        <li><strong>Bifurcate ligament</strong> — Y-shaped; connects calcaneus to navicular (medial band) and cuboid (lateral band)</li>
+        <li>Shares joint capsule with anterior/middle subtalar facets</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Calcaneocuboid Joint</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Anterior calcaneus + posterior cuboid</li>
+        <li><strong>Reciprocal saddle-shaped</strong> joint surface — provides multi-directional mobility</li>
+        <li>Reinforced by: joint capsule, bifurcate ligament, dorsal CCL, <strong>short plantar ligament</strong>, <strong>long plantar ligament</strong></li>
+        <li>Supports transverse tarsal joint function and <strong>lateral longitudinal arch</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Distal Foot Joints</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title">Tarsometatarsal (TMT) Joints — Lisfranc</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Plane synovial joints between distal tarsals and metatarsal bases</li>
+        <li><strong>1st TMT:</strong> own independent joint capsule</li>
+        <li><strong>2nd–3rd:</strong> share joint capsule</li>
+        <li><strong>4th–5th:</strong> share joint capsule</li>
+        <li><strong>Deep Transverse Metatarsal Ligament:</strong> prevents excessive metatarsal head splaying</li>
+        <li>Ray axes diverge: 1st ray axis medial, 5th ray axis lateral</li>
+      </ul>
+      <div class="bl-strip red" style="margin-top:10px;">
+        <div class="bl-label">Lisfranc Injury</div>
+        <p>Disruption of 2nd TMT base (keystone of the arch) and Lisfranc ligament. Often missed on X-ray. Requires weight-bearing X-ray. High morbidity if untreated.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Metatarsophalangeal (MTP) Joints</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Condyloid, synovial joints</li>
+        <li><strong>2 DOF:</strong> flexion/extension (DF/PF) + ABD/ADD</li>
+        <li><strong>Convex:</strong> metatarsal head · <strong>Concave:</strong> base of proximal phalanx</li>
+        <li><strong>1st MTP:</strong> 2 sesamoid bones underneath; act as anatomic pulleys for FHL + intrinsics</li>
+        <li>Supported by: plantar plates, joint capsule, collateral ligaments</li>
+        <li>Need ~60° extension at 1st MTP for normal terminal stance push-off (windlass)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Interphalangeal (IP) Joints</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Synovial hinge joints</li>
+        <li><strong>1 DOF:</strong> flexion/extension only</li>
+        <li><strong>Great toe:</strong> 1 IP joint (proximal phalanx + distal phalanx)</li>
+        <li><strong>Toes 2–5:</strong> 2 IP joints each (PIP + DIP)</li>
+        <li>Structure essentially identical to hand IP joints</li>
+        <li>Claw toe = MTP extension + IP flexion; Hammer toe = PIP flexion; Mallet toe = DIP flexion</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Plantar Arches — Structure &amp; Function</div>
+  <div class="section-sub" style="margin-bottom:14px;">The foot has 3 arches that work together. Arthrology (joints + ligaments) provides the first level of passive stability; muscles and tendons provide dynamic support. The arches must be simultaneously mobile enough to absorb impact and rigid enough to transmit propulsive force.</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Medial Longitudinal Arch</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li><strong>Largest</strong> of the three arches</li>
+        <li><strong>Apex:</strong> head of talus</li>
+        <li>Spans calcaneus → talus → navicular → cuneiforms → 1st–3rd MT heads</li>
+        <li><strong>Passive support:</strong> spring ligament (primary), interosseous talocalcaneal ligament, deltoid ligament, plantar aponeurosis</li>
+        <li><strong>Dynamic support:</strong> tibialis posterior (most consistent), FHL, FDL, plantar intrinsics</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Lateral Longitudinal Arch</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Lower profile than medial arch</li>
+        <li>Spans calcaneus → cuboid → 4th–5th MT heads</li>
+        <li><strong>Passive support:</strong> long plantar ligament, short plantar ligament</li>
+        <li>More rigid — helps with ground contact stability</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--purple2);">Transverse Arch</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Runs across the width of the foot at two levels</li>
+        <li><strong>Apex at distal metatarsals:</strong> 2nd metatarsal (highest point)</li>
+        <li><strong>Apex at TMT joints:</strong> middle cuneiform</li>
+        <li>Maintained by deep transverse metatarsal ligament + peroneus longus (crosses to 1st MT base)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">Arch Function — Mobility</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Dampen impact</strong> of weightbearing forces</li>
+        <li><strong>Dampen rotational motions</strong> transmitted from the ground</li>
+        <li><strong>Adapt to surface changes</strong> — uneven terrain, slopes</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Arch Function — Stability</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Distribute weight</strong> through foot for proper WB mechanics</li>
+        <li><strong>Convert to rigid lever</strong> in terminal stance for push-off propulsion</li>
+        <li>Transition from mobile adaptor (pronation/loading) to rigid lever (supination/push-off) is essential for efficient gait</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cn2" style="margin-top:8px;">
+    <div class="cn2-label">Plantar Aponeurosis (Plantar Fascia) — Mechanism</div>
+    <p style="font-size:13.5px;color:var(--text2);">Runs the full length of the foot from calcaneal tuberosity to the bases of the proximal phalanges. Metatarsal heads act as pulleys. During <strong>MTP extension</strong> in terminal stance, tension on the plantar aponeurosis increases → heel and MTPs are drawn closer together → <strong>arch height increases</strong> → foot supinates → rigid lever for push-off. This is the <strong>windlass mechanism</strong>. Clinically: plantar fasciitis = degeneration/inflammation at calcaneal origin; hallux rigidus impairs windlass activation.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Pes Planus vs. Pes Cavus</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title" style="color:var(--orange);">Pes Planus (Flatfoot)</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Low/absent medial longitudinal arch. Calcaneus everted (valgus). Navicular dropped. Talar adduction + PF. Associated with overpronation, tibial IR, knee valgus. Can be flexible (corrects with toe raise) or rigid.</p>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Pes Cavus (High Arch)</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Excessively high medial arch. Calcaneus inverted (varus). Rigid foot — poor shock absorption. Associated with plantar fasciitis, stress fractures, lateral ankle instability. Often neurological in origin.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== ANKLE ARTHROKINEMATICS ===================== -->
+<div class="tab-panel" id="tab-ankle-arthro">
+<div class="container">
+
+  <div class="section-title">Ankle &amp; Foot Arthrokinematics</div>
+  <div class="section-sub">Each joint of the foot has specific surface rules. Know which surface is concave and which is convex to determine the roll-glide relationship — and how this changes OKC vs. CKC.</div>
+
+  <!-- TALOCRURAL -->
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Talocrural Joint</div>
+  <div class="bl-strip" style="margin-bottom:14px;">
+    <div class="bl-label">Surface Relationship</div>
+    <p>OKC: <strong>Convex talus</strong> on <strong>concave mortise</strong> → roll and glide OPPOSITE. CKC: <strong>Concave mortise</strong> on <strong>convex talus</strong> → roll and glide SAME.</p>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">OKC (Talus on Mortise — Convex on Concave)</div>
+      <div class="ak-card">
+        <div class="ak-motion">Dorsiflexion</div>
+        <div class="ak-detail"><strong>Anterior Roll / Posterior Glide</strong></div>
+      </div>
+      <div class="ak-card">
+        <div class="ak-motion">Plantarflexion</div>
+        <div class="ak-detail"><strong>Posterior Roll / Anterior Glide</strong></div>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">CKC (Mortise on Talus — Concave on Convex)</div>
+      <div class="ak-card">
+        <div class="ak-motion">Dorsiflexion (tibia advancing)</div>
+        <div class="ak-detail"><strong>Anterior Roll / Anterior Glide</strong></div>
+      </div>
+      <div class="ak-card">
+        <div class="ak-motion">Plantarflexion</div>
+        <div class="ak-detail"><strong>Posterior Roll / Posterior Glide</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cn2" style="margin-top:4px;">
+    <div class="cn2-label">Fibula Motion with Ankle</div>
+    <p style="font-size:13.5px;color:var(--text2);">Fibula moves <strong>inferior during PF</strong> and <strong>superior during DF</strong> (distal TFJ). Proximal TFJ mirrors this. If distal fibula is restricted posteriorly → limited DF. Proximal fibula mob indicated for DF restriction.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SUBTALAR -->
+  <div class="section-title" style="font-size:1.2rem;">Subtalar Joint</div>
+  <div class="bl-strip" style="margin-bottom:14px;">
+    <div class="bl-label">OKC Surface Rule</div>
+    <p><strong>Posterior facet:</strong> Convex calcaneus on concave talus → OKC calcaneus rolls/glides opposite. <strong>Anterior/middle:</strong> Concave calcaneus on convex talus → same direction.</p>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">OKC (Calcaneus Moving — Non-Weightbearing)</div>
+      <div class="ak-card">
+        <div class="ak-motion">Supination (IPAD)</div>
+        <div class="ak-detail">Calcaneal <strong>Inversion</strong> · <strong>Plantarflexion</strong> · <strong>ADduction</strong></div>
+      </div>
+      <div class="ak-card">
+        <div class="ak-motion">Pronation (EDAB)</div>
+        <div class="ak-detail">Calcaneal <strong>Eversion</strong> · <strong>Dorsiflexion</strong> · <strong>ABduction</strong></div>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">CKC (Talus Moving on Fixed Calcaneus)</div>
+      <div class="ak-card">
+        <div class="ak-motion">Supination (CKC)</div>
+        <div class="ak-detail">Calcaneal Inversion → Talar <strong>ABDuction + DF</strong> → Tibial <strong>ER</strong></div>
+      </div>
+      <div class="ak-card">
+        <div class="ak-motion">Pronation (CKC)</div>
+        <div class="ak-detail">Calcaneal Eversion → Talar <strong>ADDuction + PF</strong> → Tibial <strong>IR</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mnemonic-box" style="margin-top:10px;">
+    <div class="mn-title">Subtalar Motion Mnemonics</div>
+    <div class="mn-phrase">IPAD / EDAB</div>
+    <div class="mn-expand">OKC Supination = <span>I</span>nversion · <span>P</span>lantarflexion · <span>A</span>Dduction · (calcaneus) &nbsp;|&nbsp; OKC Pronation = <span>E</span>version · <span>D</span>orsiflexion · <span>AB</span>duction</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WHOLE CHAIN -->
+  <div class="section-title" style="font-size:1.2rem;">Closed Chain — Whole Foot &amp; Leg Coupled Motions</div>
+  <div class="section-sub" style="margin-bottom:14px;">In weightbearing, the subtalar and transverse tarsal joints are mechanically linked. Pronation/supination cascade through the entire limb.</div>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Structure</th><th>CKC Pronation</th><th>CKC Supination</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Tibia</strong></td><td class="warn">IR</td><td class="hi">ER</td></tr>
+      <tr><td><strong>Talus</strong></td><td class="warn">ADDuction + PF</td><td class="hi">ABDuction + DF</td></tr>
+      <tr><td><strong>Calcaneus</strong></td><td class="warn">Eversion (valgus)</td><td class="hi">Inversion (varus)</td></tr>
+      <tr><td><strong>Transverse Tarsal Jt</strong></td><td class="warn">Pronation (mobile/flexible)</td><td class="hi">Supination (locked/rigid)</td></tr>
+      <tr><td><strong>Tarsometatarsal (TMT)</strong></td><td class="warn">Supination Twist (1st/2nd PF; 4th/5th DF)</td><td class="hi">Pronation Twist (1st/2nd DF; 4th/5th PF)</td></tr>
+      <tr><td><strong>Knee effect</strong></td><td class="warn">↑ Tibial IR → valgus stress</td><td class="hi">↑ Tibial ER → varus tendency</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip gold" style="margin-top:4px;">
+    <div class="bl-label">Why We Care — Gait Context</div>
+    <p>IC → Midstance: foot <strong>pronates</strong> to absorb shock → tibia IR → knee valgus load. Terminal stance → Push-off: foot <strong>supinates</strong> → tibia ER → locked TT joint creates rigid lever for propulsion. If this sequence fails (e.g., overpronation), the entire kinetic chain is altered.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TMT WINDLASS -->
+  <div class="section-title" style="font-size:1.2rem;">Tarsometatarsal Joints — Ray Axes &amp; Kinetic Chain Twists</div>
+
+  <div class="section-sub" style="margin-bottom:14px;">Each ray has its own oblique axis, meaning DF/PF couples with inversion/eversion and ABD/ADD depending on which ray. This is the mechanical basis for the pronation and supination twists.</div>
+
+  <table class="data-table" style="margin-bottom:16px;">
+    <thead>
+      <tr><th>Ray</th><th>Axis Type</th><th>DF Couples With</th><th>PF Couples With</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1st Ray</strong></td>
+        <td>Oblique (medial)</td>
+        <td class="hi">Inversion + Adduction</td>
+        <td class="warn">Eversion + Abduction</td>
+      </tr>
+      <tr>
+        <td><strong>3rd Ray</strong></td>
+        <td>Near coronal axis</td>
+        <td class="hi">Pure DF only</td>
+        <td class="warn">Pure PF only</td>
+      </tr>
+      <tr>
+        <td><strong>5th Ray</strong></td>
+        <td>Oblique (lateral)</td>
+        <td class="hi">Eversion + Abduction</td>
+        <td class="warn">Inversion + Adduction</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="bl-strip" style="margin-bottom:12px;">
+    <div class="bl-label">Ray Definition</div>
+    <p><strong>Rays 1–3:</strong> metatarsal + associated cuneiform (functional unit). <strong>Rays 4–5:</strong> metatarsal alone. The crossed oblique axes of rays 1 and 5 allow the forefoot to twist and adapt to uneven terrain.</p>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title" style="color:var(--orange);">Supination Twist (during end-range pronation)</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Triggered by strong <strong>medial tibial rotation</strong> → end-range subtalar pronation → calcaneal EV + talar ADD/PF → forces navicular inferiorly → limits TT joint supination.</p>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li><strong>Rays 1–2:</strong> pushed into <strong>DF + IV</strong> by ground reaction force from below</li>
+        <li><strong>Rays 4–5:</strong> move into <strong>PF + IV</strong> to maintain ground contact</li>
+        <li>Result: forefoot twists — medial side rises, lateral side depresses</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Pronation Twist (during end-range supination)</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Triggered by strong <strong>lateral tibial rotation</strong> → end-range subtalar supination → calcaneal IV + talar ABD/DF → TT joint pulled into close-packed supination.</p>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li><strong>Rays 1–2:</strong> move into <strong>PF + EV</strong> to attempt ground contact</li>
+        <li><strong>Rays 4–5:</strong> pushed into <strong>DF + EV</strong> by ground reaction force</li>
+        <li>Result: forefoot twists opposite — lateral side rises, medial side depresses</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bl-strip purple" style="margin-bottom:14px;margin-top:12px;">
+    <div class="bl-label">Windlass Mechanism</div>
+    <p>Great toe extension (MTP extension in terminal stance) tightens the plantar fascia → raises the medial arch → supinates the foot → provides a rigid lever for push-off. Loss of great toe extension = impaired push-off, reduced propulsive force.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TT KINETIC CHAIN -->
+  <div class="section-title" style="font-size:1.2rem;">Transverse Tarsal Joint — Kinetic Chain Integration Scenarios</div>
+  <div class="section-sub" style="margin-bottom:14px;">The TT joint is <em>not</em> simply locked in supination or free in pronation — its behavior depends on both the subtalar position AND the demands of the task and terrain.</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">WB Pronation — 3 Scenarios</div>
+      <ul style="color:var(--text2);font-size:12.5px;padding-left:14px;line-height:1.8;">
+        <li><strong>Bilateral stance:</strong> medial tibial rotation + subtalar + TT pronation — TT relatively free to move</li>
+        <li><strong>Initial SLS:</strong> medial tibial rotation + subtalar pronation + TT <em>supination</em> (relative) to maintain forefoot contact with ground</li>
+        <li><strong>Uneven terrain (medial forefoot loaded):</strong> medial tibial rotation + subtalar pronation + <em>increased TT supination</em> to keep forefoot on ground</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">WB Supination — 3 Scenarios</div>
+      <ul style="color:var(--text2);font-size:12.5px;padding-left:14px;line-height:1.8;">
+        <li><strong>Level surface:</strong> lateral tibial rotation + subtalar supination + TT <em>relative pronation</em></li>
+        <li><strong>Uneven terrain / ↑ lateral rotation:</strong> subtalar supination → CPP + TT supination</li>
+        <li><strong>Maximum lateral rotation:</strong> maximal subtalar supination → maximal TT supination → full rigid lever</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--purple2);">Key Clinical Principle</div>
+      <p style="font-size:12.5px;color:var(--text2);line-height:1.7;">TT joint can pronate OR supinate depending on environmental need — not a fixed relationship. The subtalar/TT system is an adaptive mechanism that compensates for both rearfoot position AND terrain variation. Failure of this adaptation = compensation above (knee, hip) or below (metatarsal stress).</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- METATARSAL BREAK -->
+  <div class="section-title" style="font-size:1.2rem;">Metatarsal Break</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">What It Is</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">The <strong>hinge or "break" point</strong> of the foot — located at the metatarsal heads as they collectively move into extension during terminal stance. The heel rises and the body pivots over the metatarsal heads while toes remain weightbearing.</p>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;margin-top:8px;">
+        <li>Overall range during gait: <strong>36–65°</strong></li>
+        <li>1st MTP alone: approximately <strong>60–70°</strong></li>
+        <li>Motion occurs around an <strong>oblique axis</strong> (54–73° from sagittal plane)</li>
+        <li>Convex metatarsal heads move on concave phalangeal bases (CKC)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Clinical Significance</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Adequate metatarsal break extension is required for:</p>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Windlass mechanism activation (plantar fascia tensioning)</li>
+        <li>Normal gait push-off propulsion</li>
+        <li>Subtalar supination in terminal stance (rigid lever)</li>
+      </ul>
+      <div class="bl-strip red" style="margin-top:10px;">
+        <div class="bl-label">When It Fails</div>
+        <p>Hallux rigidus (1st MTP stiffness) → incomplete metatarsal break → foot pronates through push-off instead of supinating → loss of propulsion, compensatory limb ER, metatarsal stress fractures (transfer loading to 2nd–3rd MTs).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- MUSCULAR CONTRIBUTIONS -->
+  <div class="section-title" style="font-size:1.2rem;">Muscular Contributions — Ankle &amp; Foot</div>
+  <div class="section-sub" style="margin-bottom:14px;">No ankle/foot muscle acts on a single joint in isolation. Function is determined by the <strong>position of the muscle relative to the joint axes</strong> — talocrural (DF/PF) and subtalar (supination/pronation).</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Axis-Based Function Rule</div>
+      <table class="data-table" style="margin:0;">
+        <thead>
+          <tr><th>Position Relative to Axis</th><th>Moment Produced</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Anterior to talocrural axis</strong></td><td class="hi">Dorsiflexion</td></tr>
+          <tr><td><strong>Posterior to talocrural axis</strong></td><td class="warn">Plantarflexion</td></tr>
+          <tr><td><strong>Medial to subtalar axis</strong></td><td class="hi">Supination</td></tr>
+          <tr><td><strong>Lateral to subtalar axis</strong></td><td class="warn">Pronation</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">Arch Support Contributions</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Tibialis posterior</strong> — most consistent dynamic support of the <strong>medial longitudinal arch</strong>; passes medial to subtalar axis → supination moment; wraps around navicular</li>
+        <li><strong>Peroneus longus</strong> — supports the transverse arch; crosses to 1st MT base medially → stabilizes 1st ray in WB</li>
+        <li><strong>Plantar intrinsics</strong> — active in <em>quiet bilateral stance</em> and throughout gait; primary dynamic arch stabilizers when ligamentous structures are stressed</li>
+        <li><strong>FHL/FDL</strong> — arch support + toe flexion stabilization at push-off</li>
+      </ul>
+    </div>
+  </div>
+
+  <table class="data-table" style="margin-top:12px;">
+    <thead>
+      <tr><th>Muscle</th><th>Talocrural Effect</th><th>Subtalar Effect</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Triceps Surae (Gastroc + Soleus)</strong></td><td class="warn">PF (primary)</td><td class="warn">Supination</td><td>Largest PF force; Achilles tendon; gastroc = 2-joint</td></tr>
+      <tr><td><strong>Tibialis Posterior</strong></td><td class="warn">PF</td><td class="hi">Supination (strong)</td><td>Most important medial arch dynamic stabilizer</td></tr>
+      <tr><td><strong>FHL (Flexor Hallucis Longus)</strong></td><td class="warn">PF</td><td class="hi">Supination</td><td>"Tom Dick ANd Harry" — posterior medial; hallux stabilizer</td></tr>
+      <tr><td><strong>FDL (Flexor Digitorum Longus)</strong></td><td class="warn">PF</td><td class="hi">Supination</td><td>"Tom Dick ANd Harry" order</td></tr>
+      <tr><td><strong>Tibialis Anterior</strong></td><td class="hi">DF (primary)</td><td class="hi">Supination</td><td>Largest DF torque; swing phase foot clearance</td></tr>
+      <tr><td><strong>EHL (Extensor Hallucis Longus)</strong></td><td class="hi">DF</td><td class="hi">Supination (mild)</td><td>Great toe extension; hallux dorsiflexion</td></tr>
+      <tr><td><strong>EDL (Extensor Digitorum Longus)</strong></td><td class="hi">DF</td><td class="warn">Pronation (mild)</td><td>Digit extension; slightly lateral to subtalar axis</td></tr>
+      <tr><td><strong>Peroneus Longus &amp; Brevis</strong></td><td class="warn">PF</td><td class="warn">Pronation (primary)</td><td>Primary evertors; lateral ankle stabilizers; peroneus longus crosses to 1st MT base</td></tr>
+      <tr><td><strong>Peroneus Tertius</strong></td><td class="hi">DF</td><td class="warn">Pronation</td><td>Anterior compartment; lateral to both axes</td></tr>
+    </tbody>
+  </table>
+
+  <div class="cn2" style="margin-top:10px;">
+    <div class="cn2-label">Ankle Lab — Class Opener Integration</div>
+    <p style="font-size:13.5px;color:var(--text2);">Why does the foot pronate at IC → midstance? Calcaneus hits ground → eversion → subtalar pronation → unlocks TT joint → flexible adaptor absorbs GRF. Why does it supinate at terminal stance? Windlass mechanism + supinator muscles engage → locks TT joint → rigid lever for propulsion. Loss of DF (e.g., post-ORIF bimalleolar fracture) → early heel rise, compensatory pronation, kinetic chain dysfunction.</p>
+    <button class="cn2-toggle" onclick="toggleCN(this)">+ Manual intervention for limited DF</button>
+    <div class="cn2-more">
+      <p style="font-size:13.5px;color:var(--text2);"><strong>Limited DF causes:</strong> (1) Posterior talar glide restriction → mob posterior talocrural glide. (2) Posterior capsule tightness → Grade III–IV posterior glide in OPP (10° PF). (3) Distal fibula restriction → posterior fibula mob. If limited PF also present → consider proximal TFJ mob (posterior glide promotes DF) and distal TFJ mob.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- METATARSOPHALANGEAL -->
+  <div class="section-title" style="font-size:1.2rem;">Metatarsophalangeal Joint (MTP) Arthrokinematics</div>
+  <div class="grid2">
+    <div class="ak-card">
+      <div class="ak-motion">OKC (Phalanx on Metatarsal — Concave on Convex)</div>
+      <div class="ak-detail">Flexion: <strong>Plantar Roll + Plantar Glide</strong><br>Extension: <strong>Dorsal Roll + Dorsal Glide</strong></div>
+    </div>
+    <div class="ak-card">
+      <div class="ak-motion">CKC (Metatarsal on Phalanx — Convex on Concave)</div>
+      <div class="ak-detail">Flexion: <strong>Plantar Roll + Dorsal Glide</strong><br>Extension: <strong>Dorsal Roll + Plantar Glide</strong></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== FOOT POSTURE ===================== -->
+<div class="tab-panel" id="tab-foot-posture">
+<div class="container">
+
+  <div class="section-title">Foot Posture Index (FPI-6)</div>
+  <div class="section-sub">A validated clinical tool for quantifying foot posture. Patient stands in their comfortable relaxed stance for ~2 minutes. Six criteria scored from –2 to +2 each. Total score ranges from –12 to +12.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:20px;">
+    <div class="bl-label">Assessment Setup</div>
+    <p>Bilateral double limb support. Arms by sides. Looking straight ahead. Have patient march in place 3–4 steps first to find natural stance. Do NOT let patient look down — this alters foot position. Examiner must move around to view posterior aspect.</p>
+  </div>
+
+  <!-- Score Bar -->
+  <div style="margin-bottom:8px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;">Score Interpretation</div>
+  <div class="fpi-score-bar">
+    <div class="fpi-seg sup2">Highly<br>Supinated<br>-5 to -12</div>
+    <div class="fpi-seg sup1">Supinated<br>-1 to -4</div>
+    <div class="fpi-seg norm">Normal<br>0 to +5</div>
+    <div class="fpi-seg pro1">Pronated<br>+6 to +9</div>
+    <div class="fpi-seg pro2">Highly<br>Pronated<br>10+</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">6 Criteria — Scoring Guide</div>
+  <div class="section-sub" style="margin-bottom:14px;">Each item scored –2 (highly supinated) to 0 (neutral) to +2 (highly pronated). Maximum total = +12, Minimum = –12.</div>
+
+  <!-- REARFOOT -->
+  <div class="card-title" style="color:var(--teal2);font-size:13px;margin-bottom:10px;">REARFOOT (3 criteria)</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>1. Talar Head Palpation</h4>
+      <div class="ma-tags"><span class="ma-tag">Transverse Plane</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Score</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--teal2);">–2</strong></td><td>Talar head palpable on lateral side only; not on medial</td></tr>
+          <tr><td><strong style="color:var(--teal);">–1</strong></td><td>Talar head palpable on lateral side; slightly/palpable on medial</td></tr>
+          <tr><td><strong style="color:var(--green);">0</strong></td><td>Talar head equally palpable on lateral and medial side</td></tr>
+          <tr><td><strong style="color:var(--orange);">+1</strong></td><td>Talar head slightly palpable on lateral side; palpable on medial</td></tr>
+          <tr><td><strong style="color:var(--red);">+2</strong></td><td>Talar head not palpable on lateral side; palpable on medial only</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip" style="margin-top:8px;">
+        <div class="bl-label">Clinical Reasoning</div>
+        <p>In pronation, talus adducts + PF → head becomes more palpable on medial side. Supination → talus ABD → head more lateral. Key to distinguishing rearfoot position.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>2. Curves Above and Below the Lateral Malleolus</h4>
+      <div class="ma-tags"><span class="ma-tag">Frontal / Transverse</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Score</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--teal2);">–2</strong></td><td>Curve below malleolus either straight or convex</td></tr>
+          <tr><td><strong style="color:var(--teal);">–1</strong></td><td>Curve below malleolus concave, but flatter/more shallow than curve above</td></tr>
+          <tr><td><strong style="color:var(--green);">0</strong></td><td>Both infra and supra malleolar curves roughly equal</td></tr>
+          <tr><td><strong style="color:var(--orange);">+1</strong></td><td>Curve below malleolus more concave than curve above</td></tr>
+          <tr><td><strong style="color:var(--red);">+2</strong></td><td>Curve below malleolus markedly more concave than curve above</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>3. Calcaneal Inversion / Eversion</h4>
+      <div class="ma-tags"><span class="ma-tag">Frontal Plane</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Score</th><th>Calcaneal Position</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--teal2);">–2</strong></td><td>More than estimated 5° inverted (varus)</td></tr>
+          <tr><td><strong style="color:var(--teal);">–1</strong></td><td>Between vertical and estimated 5° inverted (varus)</td></tr>
+          <tr><td><strong style="color:var(--green);">0</strong></td><td>Vertical</td></tr>
+          <tr><td><strong style="color:var(--orange);">+1</strong></td><td>Between vertical and estimated 5° everted (valgus)</td></tr>
+          <tr><td><strong style="color:var(--red);">+2</strong></td><td>More than estimated 5° everted (valgus)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FOREFOOT -->
+  <div class="card-title" style="color:var(--gold2);font-size:13px;margin:16px 0 10px;">FOREFOOT (3 criteria)</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>4. Talonavicular Joint (TNJ) Congruence</h4>
+      <div class="ma-tags"><span class="ma-tag">Transverse Plane</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Score</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--teal2);">–2</strong></td><td>Area of TNJ markedly concave</td></tr>
+          <tr><td><strong style="color:var(--teal);">–1</strong></td><td>Area of TNJ slightly but definitely concave</td></tr>
+          <tr><td><strong style="color:var(--green);">0</strong></td><td>Area of TNJ flat</td></tr>
+          <tr><td><strong style="color:var(--orange);">+1</strong></td><td>Area of TNJ bulging slightly</td></tr>
+          <tr><td><strong style="color:var(--red);">+2</strong></td><td>Area of TNJ bulging markedly</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>5. Congruence of the Medial Longitudinal Arch</h4>
+      <div class="ma-tags"><span class="ma-tag">Sagittal Plane</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Score</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--teal2);">–2</strong></td><td>Arch high and acutely angled towards the posterior end of the medial arch</td></tr>
+          <tr><td><strong style="color:var(--teal);">–1</strong></td><td>Arch moderately high and slightly acute posteriorly</td></tr>
+          <tr><td><strong style="color:var(--green);">0</strong></td><td>Arch height normal and concentrically curved</td></tr>
+          <tr><td><strong style="color:var(--orange);">+1</strong></td><td>Arch lowered with some flattening in the central portion</td></tr>
+          <tr><td><strong style="color:var(--red);">+2</strong></td><td>Arch very low with severe flattening — arch making ground contact</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>6. Forefoot Abduction / Adduction on Rearfoot</h4>
+      <div class="ma-tags"><span class="ma-tag">Transverse Plane</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table" style="margin:0;">
+        <thead><tr><th>Score</th><th>Observation from Posterior</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--teal2);">–2</strong></td><td>No lateral toes visible; medial toes clearly visible</td></tr>
+          <tr><td><strong style="color:var(--teal);">–1</strong></td><td>Medial toes clearly more visible than lateral</td></tr>
+          <tr><td><strong style="color:var(--green);">0</strong></td><td>Medial and lateral toes equally visible</td></tr>
+          <tr><td><strong style="color:var(--orange);">+1</strong></td><td>Lateral toes clearly more visible than medial</td></tr>
+          <tr><td><strong style="color:var(--red);">+2</strong></td><td>No medial toes visible; lateral toes clearly visible</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold" style="margin-top:8px;">
+        <div class="bl-label">Why "Too Many Toes" Sign Matters</div>
+        <p>Lateral forefoot abduction in pronated foot = increased lateral toe visibility from posterior. This is the "too many toes sign" — positive when &gt;2 lateral toes visible. Associated with flatfoot, tibial ER, and posterior tibialis dysfunction.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Gait-Based Foot Assessment</div>
+  <div class="section-sub" style="margin-bottom:14px;">Beyond static FPI-6, observe dynamic foot behavior during gait and functional tasks.</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Calcaneal Position in Midstance</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">In single limb stance (midstance), observe calcaneus from posterior. Normal = slight eversion (~3–5°). Excessive eversion = overpronation. Inversion in midstance = rigid supinated foot. Check symmetry R vs. L — asymmetry suggests structural or neuromuscular etiology.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">MTP Extension at Terminal Stance</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Assess great toe extension during push-off. Requires ~60° MTP extension for normal gait. Decreased extension = impaired windlass mechanism → reduced propulsive force, shortened stride length, compensatory hip hiking. Etiology: hallux rigidus, plantar fascia tightness, 1st MTP capsule restriction.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== JOINT MOBS ===================== -->
+<div class="tab-panel" id="tab-mobs">
+<div class="container">
+
+  <div class="section-title">Joint Mobilizations — Knee, Ankle &amp; Foot</div>
+  <div class="section-sub">Mobilization direction chosen based on arthrokinematics of the restricted motion. Always start at appropriate grade based on pain vs. stiffness.</div>
+
+  <div class="bl-strip" style="margin-bottom:20px;">
+    <div class="bl-label">Grade Selection</div>
+    <p><strong>Grades I–II:</strong> Pain management (neurophysiological effect). <strong>Grades III–IV:</strong> Stiffness / ROM restriction (mechanical effect). Apply in open-packed position unless otherwise indicated.</p>
+  </div>
+
+  <div class="grid2">
+    <!-- KNEE MOBS -->
+    <div>
+      <div class="section-title" style="font-size:1.1rem;margin-bottom:12px;">Knee Mobilizations</div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Posterior Tibiofemoral Glide (Tibia posteriorly)</div>
+        <div class="mob-promotes">Promotes: <em>Flexion</em>. OKC: posterior tibia glide = posterior roll + posterior glide for flexion. Patient supine, knee near extension; stabilize femur, glide tibia posteriorly.</div>
+      </div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Anterior Tibiofemoral Glide (Tibia anteriorly)</div>
+        <div class="mob-promotes">Promotes: <em>Extension</em>. OKC extension = anterior roll + anterior glide. Patient prone; stabilize femur, glide tibia anteriorly.</div>
+      </div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Posterior Femoral Glide (Femur posteriorly on tibia)</div>
+        <div class="mob-promotes">Promotes: <em>Extension (CKC)</em>. Convex femur on concave tibia — for extension: anterior roll + posterior glide. Patient supine, knee slightly flexed; glide femur posteriorly.</div>
+      </div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Mobilization with Movement (MWM) — OKC</div>
+        <div class="mob-promotes">Promotes: <em>Flexion and/or pain-free ROM</em>. Sustained medial or lateral tibial glide while patient performs active movement. Targets rotational restriction.</div>
+      </div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Mobilization with Movement (MWM) — CKC</div>
+        <div class="mob-promotes">Promotes: <em>Functional squat/lunge ROM</em>. Sustained tibial glide with patient performing squat or lunge. Immediate feedback on CKC movement quality.</div>
+      </div>
+
+      <div style="margin-top:12px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">Patellofemoral Mobilizations</div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Superior / Inferior Patellar Glide</div>
+        <div class="mob-promotes">Superior glide: promotes <em>knee extension</em>. Inferior glide: promotes <em>knee flexion</em> (quad/patellar tendon mobility).</div>
+      </div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Medial / Lateral Patellar Glide</div>
+        <div class="mob-promotes">Medial glide: addresses <em>lateral retinaculum tightness / lateral tracking</em>. Lateral glide: addresses <em>medial tightness</em>. Medial glide more commonly needed in PFPS.</div>
+      </div>
+
+      <div class="mob-card">
+        <div class="mob-direction">Anterior Interval / Infrapatellar Fat Pad Mob</div>
+        <div class="mob-promotes">Promotes: <em>mobility of infrapatellar fat pad and patellar tendon</em>. Post-surgical especially — fat pad can become adherent post-ACLR. Passive PF with superior patellar lift.</div>
+      </div>
+    </div>
+
+    <!-- ANKLE/FOOT MOBS -->
+    <div>
+      <div class="section-title" style="font-size:1.1rem;margin-bottom:12px;">Ankle &amp; Foot Mobilizations</div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">Proximal Tibiofibular Joint</div>
+      <div class="mob-card">
+        <div class="mob-direction">Anterior Glide (Fibula anteriorly)</div>
+        <div class="mob-promotes">Promotes: <em>General mobility</em>. Fibula must glide anteriorly during PF and posteriorly during DF at distal end. Proximal mirrors distal.</div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin:10px 0 8px;">Distal Tibiofibular Joint</div>
+      <div class="mob-card">
+        <div class="mob-direction">Anterior Glide (Fibula anterior)</div>
+        <div class="mob-promotes">Promotes: <em>General mobility / DF</em>. Fibula moves posterior during DF at distal end — restriction limits DF.</div>
+      </div>
+      <div class="mob-card">
+        <div class="mob-direction">Posterior Glide (Fibula posterior)</div>
+        <div class="mob-promotes">Promotes: <em>General mobility / DF</em>. Fibula must move posteriorly (distally) during DF — posterior mob directly addresses DF restriction.</div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin:10px 0 8px;">Talocrural Joint</div>
+      <div class="mob-card">
+        <div class="mob-direction">Distraction</div>
+        <div class="mob-promotes">Promotes: <em>General mobility / pain control</em>. Grades I–II neurophysiological effect. Traction along long axis of tibia.</div>
+      </div>
+      <div class="mob-card">
+        <div class="mob-direction">Posterior Talar Glide</div>
+        <div class="mob-promotes">Promotes: <em>Dorsiflexion</em>. OKC DF = anterior roll + posterior glide. Restricted posterior glide = limited DF. Most common ankle mob for DF restriction. Patient supine, stabilize tibia, glide talus posteriorly.</div>
+      </div>
+      <div class="mob-card">
+        <div class="mob-direction">Anterior Talar Glide</div>
+        <div class="mob-promotes">Promotes: <em>Plantarflexion</em>. OKC PF = posterior roll + anterior glide.</div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin:10px 0 8px;">Subtalar Joint</div>
+      <div class="mob-card">
+        <div class="mob-direction">Distraction</div>
+        <div class="mob-promotes">Promotes: <em>General mobility / pain control</em>.</div>
+      </div>
+      <div class="mob-card">
+        <div class="mob-direction">Medial Calcaneal Glide</div>
+        <div class="mob-promotes">Promotes: <em>Eversion (Valgus) / Pronation</em>.</div>
+      </div>
+      <div class="mob-card">
+        <div class="mob-direction">Lateral Calcaneal Glide</div>
+        <div class="mob-promotes">Promotes: <em>Inversion (Varus) / Supination</em>.</div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;margin:10px 0 8px;">Metatarsophalangeal Joint</div>
+      <div class="mob-card">
+        <div class="mob-direction">Plantar Glide</div>
+        <div class="mob-promotes">Promotes: <em>MTP Flexion</em>.</div>
+      </div>
+      <div class="mob-card">
+        <div class="mob-direction">Dorsal Glide</div>
+        <div class="mob-promotes">Promotes: <em>MTP Extension</em> — critical for windlass mechanism and terminal stance push-off. Primary mob for hallux rigidus / limited great toe extension.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== GAIT ===================== -->
+<div class="tab-panel" id="tab-gait">
+<div class="container">
+
+  <div class="section-title">Gait Analysis</div>
+  <div class="section-sub">Gait assists with forward progression of movement while: (1) maintaining weight-bearing stability, (2) conserving energy, and (3) absorbing the shock of floor impact. Understanding each phase — including rockers, joint angles, and muscle activation types — enables systematic clinical hypothesis generation.</div>
+
+  <div class="divider" style="margin:16px 0;"></div>
+
+  <!-- ── TEMPORAL-SPATIAL DEFINITIONS ── -->
+  <div class="section-title" style="font-size:1.2rem;">Temporal-Spatial Definitions</div>
+  <div class="grid4" style="margin-bottom:20px;">
+    <div class="oina-cell">
+      <div class="oina-letter" style="font-size:1.1rem;">Stride</div>
+      <div class="oina-word">Stride Length</div>
+      <div class="oina-val">Heel strike to next ipsilateral heel strike (~1.4m). One full gait cycle.</div>
+    </div>
+    <div class="oina-cell">
+      <div class="oina-letter" style="font-size:1.1rem;">Step</div>
+      <div class="oina-word">Step Length</div>
+      <div class="oina-val">R heel to L heel (or vice versa). Asymmetry = pain, weakness, LLD.</div>
+    </div>
+    <div class="oina-cell">
+      <div class="oina-letter" style="font-size:1.1rem;">Cadence</div>
+      <div class="oina-word">Steps / Min</div>
+      <div class="oina-val">Normal ~110–120 steps/min. Count one side × 2.</div>
+    </div>
+    <div class="oina-cell">
+      <div class="oina-letter" style="font-size:1.1rem;">Velocity</div>
+      <div class="oina-word">Distance / Time</div>
+      <div class="oina-val">Normal ~1.2–1.4 m/s. Community threshold ≥0.8 m/s.</div>
+    </div>
+  </div>
+
+  <div class="bl-strip" style="margin-bottom:20px;">
+    <div class="bl-label">Step Duration vs. Stride Duration</div>
+    <p><strong>Step duration</strong> = time for one step (expressed in seconds/step). <strong>Stride duration</strong> = time for one full gait cycle. Asymmetry in step duration → pain avoidance or neuromuscular timing deficits. Stance ≈ 60% of gait cycle; Swing ≈ 40%. Double support at 0–10% (loading) and 50–60% (pre-swing).</p>
+  </div>
+
+  <!-- ── PHASE TIMELINE ── -->
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">Gait Cycle Phases</div>
+  <div class="gait-timeline">
+    <div class="gait-phase stance"><div class="gp-name">Initial Contact</div><div class="gp-pct">0%</div></div>
+    <div class="gait-phase stance"><div class="gp-name">Loading Response</div><div class="gp-pct">0–10%</div></div>
+    <div class="gait-phase stance"><div class="gp-name">Midstance</div><div class="gp-pct">10–30%</div></div>
+    <div class="gait-phase stance"><div class="gp-name">Terminal Stance</div><div class="gp-pct">30–50%</div></div>
+    <div class="gait-phase stance"><div class="gp-name">Pre-swing</div><div class="gp-pct">50–60%</div></div>
+    <div class="gait-phase swing"><div class="gp-name">Initial Swing</div><div class="gp-pct">60–70%</div></div>
+    <div class="gait-phase swing"><div class="gp-name">Mid Swing</div><div class="gp-pct">70–85%</div></div>
+    <div class="gait-phase swing"><div class="gp-name">Terminal Swing</div><div class="gp-pct">85–100%</div></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── THREE ROCKERS ── -->
+  <div class="section-title" style="font-size:1.2rem;">The Three Rockers</div>
+  <div class="section-sub" style="margin-bottom:14px;">The foot acts as a series of three rockers during stance phase — each one enabling forward progression over the planted foot. Loss of any rocker disrupts the entire chain.</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">1. Heel Rocker</div>
+      <p style="font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--text3);margin-bottom:6px;">IC → Loading Response</p>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Foot rotates around the <strong>heel/calcaneus</strong> as pivot point → forefoot lowers to the ground. Pretibials (tibialis anterior) <em>eccentrically</em> control the forefoot lowering to prevent foot slap.</p>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">If Lost</div>
+        <p>Tibialis anterior weakness → forefoot slap (audible), uncontrolled foot drop to floor.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">2. Ankle Rocker</div>
+      <p style="font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--text3);margin-bottom:6px;">Midstance</p>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Body progresses forward over a <strong>stable planted foot</strong>. Tibia advances over the foot (dorsiflexion). Gastrocnemius/soleus <em>eccentrically</em> control tibial advancement. Requires ≥10° DF.</p>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">If Lost</div>
+        <p>Limited DF → early heel rise, compensatory knee hyperextension, forward trunk lean, shortened step length.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--purple2);">3. Forefoot Rocker</div>
+      <p style="font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--text3);margin-bottom:6px;">Terminal Stance</p>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Body moves <strong>ahead of the stance limb</strong>; heel rises and weight transfers to forefoot/toes. Calf muscles eccentrically control ankle DF and allow heel rise. Contributes to <strong>contralateral step length</strong>.</p>
+      <div class="bl-strip red" style="margin-top:8px;">
+        <div class="bl-label">If Lost</div>
+        <p>Weak gastroc/soleus → no heel rise → reduced push-off → shortened contralateral step length.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── PER-PHASE DETAIL TABLE ── -->
+  <div class="section-title" style="font-size:1.2rem;">Per-Phase Detail: Angles, Muscles &amp; Critical Events</div>
+  <div class="section-sub" style="margin-bottom:12px;">E = Eccentric · C = Concentric · I = Isometric. Each phase has a defining critical event that drives clinical decision-making.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Initial Contact (IC)</h4>
+      <div class="ma-tags"><span class="ma-tag">0%</span><span class="ma-tag gold">No Rocker</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>5° forward · Abductors (I)</p></div>
+        <div class="ma-field"><label>Hip</label><p>20° Flexion · Extensors (E)</p></div>
+        <div class="ma-field"><label>Knee</label><p>5° Flexion · Quads (E)</p></div>
+        <div class="ma-field"><label>Ankle</label><p>0° · Pretibials (E) → going into PF eccentrically</p></div>
+        <div class="ma-field"><label>Rocker</label><p>None — moment of foot contact</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Heel contact; leg decelerating from swing; hip extensors + knee extensors loading isometrically to stabilize</p></div>
+      </div>
+      <div class="bl-strip" style="margin-top:8px;">
+        <div class="bl-label">TGM — Muscles Needed</div>
+        <p>Leg is finishing swing → must decelerate. <strong>Hip extensors (glute max + hamstrings)</strong> isometric to stabilize hip. <strong>Knee extensors (quads)</strong> concentric to prep for loading. <strong>Pretibials</strong> eccentric to control forefoot.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Loading Response (LR)</h4>
+      <div class="ma-tags"><span class="ma-tag">0–10%</span><span class="ma-tag gold">Heel Rocker</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>5° forward · Abductors (E)</p></div>
+        <div class="ma-field"><label>Hip</label><p>20° Flex · Extensors + Abductors (E)</p></div>
+        <div class="ma-field"><label>Knee</label><p>15° Flex · Quads (E) — controlled knee flexion</p></div>
+        <div class="ma-field"><label>Ankle</label><p>5° PF · Pretibials (E)</p></div>
+        <div class="ma-field"><label>Rocker</label><p>Heel rocker — foot pivots around heel; forefoot lowers to ground</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Hip stability; controlled knee flexion (shock absorption); controlled ankle PF</p></div>
+      </div>
+      <div class="bl-strip" style="margin-top:8px;">
+        <div class="bl-label">TGM — Foot Flat Phase</div>
+        <p>Pretibials eccentrically lower forefoot (prevent foot slap). Knee flexors (hamstrings) <em>concentrically</em> contracting in prep for midstance loading. First period of double limb support — weight rapidly transfers onto outstretched limb.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Midstance (MSt)</h4>
+      <div class="ma-tags"><span class="ma-tag">10–30%</span><span class="ma-tag gold">Ankle Rocker</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>0° · Abductors (E) preventing drop</p></div>
+        <div class="ma-field"><label>Hip</label><p>0° · Abductors (E); extensors transition E → passive</p></div>
+        <div class="ma-field"><label>Knee</label><p>5° Flex · Quads initially → then no muscle (passive extension)</p></div>
+        <div class="ma-field"><label>Ankle</label><p>5° DF · Gastroc (E) controlling tibial advance</p></div>
+        <div class="ma-field"><label>Rocker</label><p>Ankle rocker — tibia advances over stable foot</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Controlled tibial advancement; single limb support begins</p></div>
+      </div>
+      <div class="bl-strip" style="margin-top:8px;">
+        <div class="bl-label">TGM — Midstance Isometrics</div>
+        <p>Hip abductors (three gluteals) <em>isometrically</em> stabilize pelvis → prevent excessive adduction. Knee extensors (quads) isometric support. Plantar flexors isometric. Weight resting on limb = peak single limb loading.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Terminal Stance (TSt)</h4>
+      <div class="ma-tags"><span class="ma-tag">30–50%</span><span class="ma-tag gold">Forefoot Rocker</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>5° backward · IR · Abductors (E)</p></div>
+        <div class="ma-field"><label>Hip</label><p>20° Hyperextension · No muscle (passive tension)</p></div>
+        <div class="ma-field"><label>Knee</label><p>5° Flex · No muscle; hamstrings passively restrain</p></div>
+        <div class="ma-field"><label>Ankle</label><p>10° DF · Calf (E) controlling ankle DF</p></div>
+        <div class="ma-field"><label>Toes</label><p>30° MTP Extension (windlass activation)</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Controlled ankle DF with heel rise; trailing limb creates contralateral step length</p></div>
+      </div>
+      <div class="bl-strip" style="margin-top:8px;">
+        <div class="bl-label">TGM — Heel Off</div>
+        <p>Gastroc/soleus raise heel <em>concentrically</em>. Hip extensors (glute max/hamstrings) and knee extensors (quads) <em>concentrically</em> contracting as leg moves behind body — preparing for toe-off.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Pre-Swing (PSw)</h4>
+      <div class="ma-tags"><span class="ma-tag">50–60%</span><span class="ma-tag gold">2nd Double Support</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>5° backward · Adductors (E) — peak adductor forces</p></div>
+        <div class="ma-field"><label>Hip</label><p>10° Hyperext · Adductors? → Hip Flexion (C)</p></div>
+        <div class="ma-field"><label>Knee</label><p>40° Flex · No muscle — passive knee flexion</p></div>
+        <div class="ma-field"><label>Ankle</label><p>15° PF · No muscle — passive recoil</p></div>
+        <div class="ma-field"><label>Toes</label><p>60° MTP Extension</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Passive knee flexion to 40°; ankle PF; rapid weight transfer to contralateral limb</p></div>
+      </div>
+      <div class="bl-strip" style="margin-top:8px;">
+        <div class="bl-label">TGM — Toe Off</div>
+        <p>Further concentric: hip extensors + gastroc/soleus push off. Extensor digitorum/hallucis longus extends toes for traction. Hip flexors (iliopsoas, RF) begin eccentric gear-up to prevent limb swinging too far posteriorly.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Initial Swing (ISw)</h4>
+      <div class="ma-tags"><span class="ma-tag">60–70%</span><span class="ma-tag purple">Swing Begins</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>5° backward · N/A</p></div>
+        <div class="ma-field"><label>Hip</label><p>15° Flex · Flexors (C)</p></div>
+        <div class="ma-field"><label>Knee</label><p>60° Flex · Flexors (C)</p></div>
+        <div class="ma-field"><label>Ankle</label><p>5° PF · Pretibials (C) — beginning DF</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Hip flexion to 15°; knee flexion to 60° for foot clearance</p></div>
+        <div class="ma-field"><label>TGM</label><p>Hip extensors, knee flexors, dorsiflexors concentric → produce momentum, keep knee + ankle flexed</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Mid Swing (MSw)</h4>
+      <div class="ma-tags"><span class="ma-tag">70–85%</span><span class="ma-tag purple">Foot Clearance</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>0° · N/A</p></div>
+        <div class="ma-field"><label>Hip</label><p>25° Flex · Flexors (C) → Hamstrings (E)</p></div>
+        <div class="ma-field"><label>Knee</label><p>25° Flex · Flexors (C → E)</p></div>
+        <div class="ma-field"><label>Ankle</label><p>0° · Pretibials (C → Isometric)</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Further hip flexion to 25°; ankle reaches neutral (0°) — foot clears ground</p></div>
+        <div class="ma-field"><label>TGM</label><p>Hip extensors eccentrically steady the advancing thigh. All actions continue to ensure safe toe clearance.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Terminal Swing (TSw) / Terminal Contact</h4>
+      <div class="ma-tags"><span class="ma-tag">85–100%</span><span class="ma-tag purple">Preparing IC</span><span class="ma-chevron">▼</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="ma-grid">
+        <div class="ma-field"><label>Pelvis</label><p>5° forward · Abductors (E)</p></div>
+        <div class="ma-field"><label>Hip</label><p>20° Flex · Hamstrings (E) — braking</p></div>
+        <div class="ma-field"><label>Knee</label><p>5° Flex · Quads (C) → Knee extensors (E) braking</p></div>
+        <div class="ma-field"><label>Ankle</label><p>0° · Pretibials isometric</p></div>
+        <div class="ma-field"><label>Critical Event</label><p>Knee extends to near-neutral (≤5° flex); leg reaches out for step length</p></div>
+        <div class="ma-field"><label>TGM — Late Swing</label><p>Prep for heel strike: hip flexors (iliopsoas, RF) + knee extensors (quads) concentrically advance limb. Hip extensors + knee flexors isometrically engage to stabilize/brake at heel contact.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── REGIONAL GAIT EFFECTS ── -->
+  <div class="section-title" style="font-size:1.2rem;">Regional Effects on Gait</div>
+  <div class="section-sub" style="margin-bottom:14px;">Every region of the body influences gait. Use a <strong>stability vs. mobility bucket</strong> framework: mobility deficits reduce available motion; stability deficits alter load transfer and motor control. Observe systematically head-to-toe.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:16px;">
+    <div class="bl-label">Stability vs. Mobility Bucket Framework</div>
+    <p><strong>Mobility bucket (ROM deficit):</strong> lack of ROM → compensation above/below (e.g., limited DF → knee hyperextension or hip flexion compensation). <strong>Stability bucket (motor control/strength deficit):</strong> hanging on ligaments, altered load transfer, frontal plane deviations, audible contacts. Both produce compensatory gait patterns — identifying which bucket drives clinical intervention.</p>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Cervical Spine</h4>
+          <div class="ma-tags"><span class="ma-tag">Minimal gait effect</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;">FHP = cervical flexion — doesn't dramatically affect gait pattern itself. Gradual cervical lordosis loss = less mobile head. Cervical spine doesn't have a major mechanical gait role — vestibular and visual input matter more.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Thoracic Spine</h4>
+          <div class="ma-tags"><span class="ma-tag">Trunk rotation</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>↑ Kyphosis</strong> → ↓ trunk rotation → ↓ arm swing → less energy-efficient gait, more frontal plane compensation. <strong>↓ Thoracic curve</strong> → less shock absorption → louder/harder heel contact. <strong>Scoliosis</strong> → trunk lateral lean preference toward concave side, asymmetric step length.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Lumbar Spine</h4>
+          <div class="ma-tags"><span class="ma-tag">Hip extension link</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>↑ Lordosis</strong> → tight hip flexors → reduced hip extension in terminal stance → ↑ anterior shear forces at lumbar spine → compensatory anterior pelvic tilt and forward lean.<br><br><strong>↓ Lordosis (flat back)</strong> → posterior pelvic tilt → stiffer, less mobile spine → ↓ step length, reduced energy storage in passive structures.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Hip &amp; Pelvis</h4>
+          <div class="ma-tags"><span class="ma-tag">Frontal plane key</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Hip hike</strong> → compensation for shortened swing limb (LLD, foot drop, knee stiffness). <strong>IR vs ER posture</strong> → foot becomes toe-in or toe-out. <strong>Translations (sway back/chest forward)</strong> → altered CoM trajectory. <strong>Hip backward position</strong> → increased hip extension + IR. <strong>Genu valgum from abductor weakness</strong> → stability bucket, loading and midstance affected — audible heel contact, frontal plane deviations. <strong>Sway back</strong> → hanging on ligaments = stability bucket → forceful/uncontrolled weight acceptance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Knee</h4>
+          <div class="ma-tags"><span class="ma-tag">Valgus · Recurvatum</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Valgus</strong> — at loading response due to foot pronation. Pretibials may be weak (poor eccentric DF control); hip abductors weak (not keeping knee out); ankle DF restriction. <strong>Recurvatum</strong> — hanging on posterior capsule/ligaments; lack of stability; compensation for weak quads. Both are stability bucket presentations.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Ankle &amp; Foot</h4>
+          <div class="ma-tags"><span class="ma-tag">Pronation · Supination</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>↑ Pronation</strong> → ↓ effective DF; toes out; ↑ tibial IR → knee valgus; louder footfall. Less hip IR possible. <strong>↑ Supination</strong> → better arch height, better heel strike, rigid foot = less balance/adaptation. Less shock absorption.<br><br><strong>DF Screening tip:</strong> Place towel under heels during squat — if squat improves, DF limitation is driving the compensation. Test ankle DF actively.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Functional Squat Variations as Gait Diagnostics</h4>
+          <div class="ma-tags"><span class="ma-tag gold">Assessment Tool</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <table class="data-table" style="margin:0;">
+            <thead><tr><th>Variation</th><th>Tests</th><th>Interpretation</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Wide stance squat</strong></td><td>Hip mobility</td><td>↑ ER + ABD foot = more hip motion available. If improves = hip problem.</td></tr>
+              <tr><td><strong>Narrow stance squat</strong></td><td>Ankle DF</td><td>Reduces hip compensation → isolates DF demand.</td></tr>
+              <tr><td><strong>Overhead squat</strong></td><td>Core + T-spine ext + shoulder ROM</td><td>Extremities further from midline → ↑ core demand. Harder than front or goblet squat.</td></tr>
+              <tr><td><strong>Heel elevated</strong></td><td>DF restriction</td><td>If squat improves with heels raised → limited DF driving compensation.</td></tr>
+              <tr><td><strong>Anterior lunge</strong></td><td>DF + MTP ext + hip ext</td><td>Front foot WB: DF + great toe ext. Back foot: hip extension + knee flexion.</td></tr>
+              <tr><td><strong>Step down</strong></td><td>Frontal plane, abductors, core</td><td>Look for valgus collapse, trunk lean, frontal plane deviation, pronation/supination.</td></tr>
+              <tr><td><strong>Single limb stance</strong></td><td>Balance, frontal plane, motor control</td><td>Hike/drop, SB trunk, shakiness = motor control deficit. Static vs dynamic discordance = postural deviation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── TOP DEVIATIONS ── -->
+  <div class="section-title" style="font-size:1.2rem;">Top Gait Deviations by Region</div>
+  <div class="section-sub" style="margin-bottom:14px;">Cause → kinetic chain effect → long-term consequences. Identify which bucket (mobility vs. stability) drives each deviation.</div>
+
+  <div class="grid2">
+    <div>
+      <div class="card-title" style="color:var(--teal2);margin-bottom:10px;">Ankle, Foot &amp; Toes</div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Foot Drop / Insufficient DF (Swing)</h4>
+          <div class="ma-tags"><span class="ma-tag">Swing Phase</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Cause:</strong> Tibialis anterior weakness (deep peroneal N.), heel cord tightness. <strong>Compensation:</strong> Steppage gait (hip/knee hyperflexion), circumduction, trunk lean. <strong>Long-term:</strong> Knee/hip overload, trip/fall risk, energy inefficiency.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Decreased Push-Off / Absent Heel Rise</h4>
+          <div class="ma-tags"><span class="ma-tag">Terminal Stance</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Cause:</strong> Gastroc/soleus weakness, Achilles tendon dysfunction, PF restriction, limited great toe extension. <strong>Effect:</strong> Shortened contralateral step length, reduced gait speed, compensatory hip flexion to advance limb. <strong>Bucket:</strong> Mobility (limited PF) or stability (weak calf).</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Excessive Pronation / Calcaneal Eversion</h4>
+          <div class="ma-tags"><span class="ma-tag">Loading → Midstance</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Cause:</strong> Pes planus, tibialis posterior weakness, ligamentous laxity, limited subtalar inversion. <strong>Chain effect:</strong> Tibial IR → knee valgus → hip IR → patellar stress, medial knee stress, PFPS, tibial stress syndrome. Louder footfall = stability deficit.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Decreased Great Toe Extension (Push-Off)</h4>
+          <div class="ma-tags"><span class="ma-tag">Terminal Stance</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Cause:</strong> Hallux rigidus, plantar fascia tightness, 1st MTP capsule restriction. <strong>Effect:</strong> Windlass mechanism fails → no arch stiffening → reduced propulsive force → shortened stride, compensatory ER of entire limb to allow push-off through 2nd ray.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card-title" style="color:var(--gold2);margin-bottom:10px;">Hip, Pelvis &amp; Trunk</div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Trendelenburg Gait (Gluteus Medius Lurch)</h4>
+          <div class="ma-tags"><span class="ma-tag">Midstance</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Cause:</strong> Ipsilateral glute med weakness — stability bucket. <strong>Deviation:</strong> Contralateral pelvis drops OR trunk lurches toward stance limb (reduces abductor demand by shifting CoM). <strong>Long-term:</strong> Lateral hip overload, lumbar lateral flexion stress, ipsilateral knee valgus.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Hip Hiking (Circumduction)</h4>
+          <div class="ma-tags"><span class="ma-tag">Swing Phase</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Cause:</strong> LLD, foot drop, insufficient knee flexion, or hip flexor weakness. <strong>Effect:</strong> QL overuse, lateral trunk lean, ↑ energy cost. <strong>Bucket:</strong> Mobility (limited knee/ankle) or stability (weak hip flexors, poor limb advancement).</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Knee Hyperextension (Genu Recurvatum)</h4>
+          <div class="ma-tags"><span class="ma-tag">Stance Phase</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;"><strong>Cause:</strong> Quad weakness → extension thrust; PF contracture; anterior trunk lean. <strong>Bucket:</strong> Stability (hanging on posterior capsule/ligaments) or mobility (limited DF driving compensation). <strong>Effect:</strong> Posterior capsule stress, ACL stress, ankle PF compensation.</p>
+        </div>
+      </div>
+
+      <div class="ma-item">
+        <div class="ma-header" onclick="toggleMA(this)">
+          <h4>Antalgic Gait</h4>
+          <div class="ma-tags"><span class="ma-tag">All Phases</span><span class="ma-chevron">▼</span></div>
+        </div>
+        <div class="ma-body">
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.6;">Shortened stance phase on painful limb. Decreased step length on contralateral side. Decreased cadence. Trunk lean to reduce JRF. Can occur with any joint pathology. Analyze stance vs. swing time asymmetry for localization.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── CLINICAL ASSESSMENT TIPS ── -->
+  <div class="section-title" style="font-size:1.2rem;">Clinical Assessment Strategies</div>
+  <div class="section-sub" style="margin-bottom:14px;">Six practical strategies for effective gait assessment in the clinic. Use the 30-second postural snapshot first, then move to dynamic gait.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Tip 1 — Vantage Point</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Take your vantage point into consideration. In small spaces, start seated to match the patient's CoM height. Change positions as needed. Consider: <strong>anthropometrics, personality, Ankle / Knee / Pelvis / Spine / Scapulae / GH, and base of support</strong>.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Tip 2 — Postural Snapshot</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Use your <strong>30-second postural snapshot</strong> first (plumb line assessment, head-to-toe static) to establish baseline. Static deviations predict dynamic compensations — but static ≠ dynamic; both must be assessed.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Tip 3 — Speed Up to Exaggerate</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Have the patient <strong>speed up</strong> to exaggerate the gait cycle. Compensations that are subtle at normal speed become obvious at faster pace. Useful for confirming or ruling out a suspected deviation.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Tip 4 — Eyes Start at Pelvis</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Eyes should start at the <strong>pelvis</strong> and travel cranially or caudally based on excessive motion, lack of motion, or abnormalities. The pelvis is the hub — it reflects what's happening both above and below. Assess the entire chain.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Tip 5 — Orthopedic Hypothesis</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Make an <strong>orthopedic hypothesis</strong> from your observations. Do all your findings support the hypothesis? Are they related to each other? If not, reconsider. Gait deviations should tell a coherent story — bucket (stability/mobility), region, phase.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Tip 6 — Confirm or Negate</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;">Choose a <strong>straightforward movement test</strong> to confirm or negate your hypothesis. Single leg squat, step down, squat variation, or specific ROM/strength test. Use the test-retest framework — does your intervention immediately change the gait pattern?</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── CADENCE / SPEED ── -->
+  <div class="section-title" style="font-size:1.2rem;">Temporal-Spatial Measures in Practice</div>
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title">Cadence</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Steps per minute.</strong> Normal: ~110–120 steps/min. Count one side × 2. Decreased cadence = slow pathological gait or pain avoidance. Measure over 30ft walkway.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Walking Velocity</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Distance ÷ Time</strong> (m/s). Normal: ~1.2–1.4 m/s. Community ambulation threshold: ≥0.8 m/s. Powerful predictor of functional outcomes, hospitalization, and mortality in older adults.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Step Length Symmetry</div>
+      <p style="font-size:13.5px;color:var(--text2);line-height:1.7;"><strong>Step length</strong> = R→L heel distance. Measure both sides — <strong>asymmetry</strong> indicates pain, weakness, or limb length discrepancy. Paint-and-paper method: dip feet in paint, walk on paper, measure directly.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== POSTURAL DYSFUNCTION ===================== -->
+
+<!-- ===================== POSTURAL DYSFUNCTION ===================== -->
+<div class="tab-panel" id="tab-posture">
+<div class="container">
+
+  <div class="section-title">Postural Dysfunction &amp; Balance Control</div>
+  <div class="section-sub">Posture assessment integrates static alignment, dynamic movement analysis, and balance strategies. A 30-second clinical snapshot is the entry point — then you drill down systematically.</div>
+
+  <div class="divider" style="margin:16px 0;"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Postural Control — Foundations</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title">3 Goals of Postural Control (Standing)</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.9;">
+        <li><strong>Orientation</strong> — maintaining alignment of body segments relative to each other and gravity</li>
+        <li><strong>Stability</strong> — controlling the CoM within the base of support</li>
+        <li><strong>Function</strong> — enabling purposeful task performance while maintaining postural tone</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">4 Body Systems Required</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.9;">
+        <li><strong>Musculoskeletal</strong> — strength, ROM, structural alignment</li>
+        <li><strong>Sensory</strong> — visual, vestibular, somatosensory</li>
+        <li><strong>Neuromuscular</strong> — motor coordination, feedforward/feedback control</li>
+        <li><strong>Cognitive / CNS</strong> — attention, processing, adaptive responses</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Key Sensory Receptors</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.9;">
+        <li><strong>Mechanoreceptors</strong> — skin, joints (articular receptors), plantar foot pressure</li>
+        <li><strong>Muscle spindles</strong> — velocity of stretch, proprioception</li>
+        <li><strong>GTOs</strong> — tension sensing</li>
+        <li><strong>Vestibular apparatus</strong> — head position, angular acceleration</li>
+        <li><strong>Visual system</strong> — environmental reference frame</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Plumb Line — Static Postural Assessment</div>
+  <div class="section-sub" style="margin-bottom:14px;">Observe patient from anterior, lateral (both sides), and posterior. Allow 30-second minimum per view — first impression counts. Plumb line bisects body into equal halves. Lateral view landmarks are the most clinically useful for identifying sagittal plane deviations.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">Lateral View — Plumb Line Landmarks (Ideal)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:2.0;">
+        <li>Through the <strong>ear / mastoid process</strong></li>
+        <li>Just anterior to the <strong>shoulder joint</strong></li>
+        <li>Just posterior to the <strong>hip joint / greater trochanter</strong></li>
+        <li>Just posterior to the <strong>center of the knee</strong></li>
+        <li>Just anterior to the <strong>lateral malleolus</strong></li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Clinical Snap-Shot Questions</div>
+        <p>Is the line segmented (kyphosis/lordosis)? Is the head forward of the line? Is the pelvis anterior or posterior to the line? Are knees hyperextended?</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Full-Body Screen Checklist</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li><strong>Anthropometrics</strong> — ectomorph / endomorph / mesomorph (affects baseline tone and posture)</li>
+        <li><strong>Muscle tone</strong> — hypo or hypertonicity visible</li>
+        <li><strong>Head position</strong> — FHP, chin tuck or protrusion</li>
+        <li><strong>Spinal curves</strong> — increased/decreased kyphosis, lordosis, flat back</li>
+        <li><strong>Scapular position</strong> — elevation, protraction, anterior tipping</li>
+        <li><strong>UE posture</strong> — IR (medial humeral rotation = protracted scapula) vs. ER</li>
+        <li><strong>Core</strong> — abdominal tone, lumbopelvic activation</li>
+        <li><strong>Pelvic position</strong> — anterior tilt, posterior tilt, hip drop/obliquity</li>
+        <li><strong>LE posture</strong> — coxa vara/valga, genu varum/valgum, popliteal fossa</li>
+        <li><strong>Foot &amp; ankle</strong> — arch height, toe out/in, muscle activation visible</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Adam's Forward Bend Test</div>
+  <div class="cn2">
+    <div class="cn2-label">Scoliosis Screening</div>
+    <p style="font-size:13.5px;color:var(--text2);">Patient bends forward with feet together, knees straight, arms hanging. Examiner observes from posterior for <strong>rib hump</strong> or trunk asymmetry. A <strong>left rib hump</strong> indicates the <strong>right thoracic convexity</strong> — the vertebrae rotate toward the convex side, carrying the ribs posteriorly on that side.</p>
+    <button class="cn2-toggle" onclick="toggleCN(this)">+ Structural vs. Functional Scoliosis</button>
+    <div class="cn2-more">
+      <p style="font-size:13.5px;color:var(--text2);"><strong>Structural:</strong> Rib hump persists on forward bend. Vertebral rotation is fixed. Does NOT correct with lateral bending toward convexity or unloading. Requires Cobb angle measurement. PT role: manage symptoms, respiratory function, quality of life; surgical consult if Cobb &gt;40°.<br><br><strong>Functional:</strong> Curve corrects on forward bend or when cause is removed (e.g., leg length discrepancy, muscle spasm). No vertebral rotation. Rib hump absent or minimizes. PT can address the underlying cause directly.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Sitting Posture — Slouched vs. Erect</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title" style="color:var(--red);">Slouched (Sacral) Sitting</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Pelvis: posterior tilt; sitting on sacrum</li>
+        <li>Lumbar spine: <strong>kyphosis</strong> (reversal of normal lordosis)</li>
+        <li>Thoracic spine: increased kyphosis</li>
+        <li>Cervical: FHP + capital extension to maintain eye level</li>
+        <li>Short/tight: hamstrings, posterior capsule, upper abdominals</li>
+        <li>Weak/lengthened: hip flexors, lumbar extensors, deep cervical flexors</li>
+        <li>LE: hip IR, knee flexed — posterior capsule loading</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--green);">Erect Sitting</div>
+      <ul style="color:var(--text2);font-size:13px;padding-left:14px;line-height:1.8;">
+        <li>Pelvis: neutral to slight anterior tilt</li>
+        <li>Lumbar spine: maintained lordosis</li>
+        <li>Thoracic spine: neutral kyphosis</li>
+        <li>Cervical: neutral; ear over shoulder</li>
+        <li>Core musculature actively engaged</li>
+        <li>Requires active low back extensors + hip flexor length</li>
+      </ul>
+      <div class="bl-strip" style="margin-top:10px;">
+        <div class="bl-label">Clinical Relevance</div>
+        <p>Prolonged sacral sitting → posterior disc herniation risk, hip flexor shortening, glute inhibition. Address with ergonomic education and lumbar support.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Standing Postural Deviations — Comparison</div>
+  <div class="section-sub" style="margin-bottom:14px;">Four major sagittal plane postures — know tight/weak muscles and clinical implications for each.</div>
+
+  <div class="bl-strip gold" style="margin-bottom:20px;">
+    <div class="bl-label">Assessment Framework</div>
+    <p>For each postural deviation: (a) Name the dysfunction. (b) Identify muscles likely <strong>short/overactive</strong> in frontal, sagittal, transverse planes. (c) Identify muscles likely <strong>weak/elongated</strong>. (d) Hypothesize clinical implications.</p>
+  </div>
+
+  <div class="pd-card">
+    <div class="pd-badge">Deviation 1 · Sagittal Plane</div>
+    <h3>Forward Head Posture (FHP)</h3>
+    <div class="grid2">
+      <div>
+        <div class="bl-strip red">
+          <div class="bl-label">Short / Overactive (Tight)</div>
+          <p>Suboccipital extensors (rectus capitis posterior, obliquus capitis). Cervical extensors (semispinalis, splenius capitis/cervicis). SCM (lower fibers). Scalenes. Pectoralis minor (secondary thoracic contribution).</p>
+        </div>
+      </div>
+      <div>
+        <div class="bl-strip green">
+          <div class="bl-label">Weak / Elongated</div>
+          <p>Deep cervical flexors (longus colli, longus capitis). Capital flexors. Lower cervical extensors. Rhomboids / middle/lower trap (secondary if thoracic kyphosis present).</p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-strip purple" style="margin-top:8px;">
+      <div class="bl-label">Clinical Implications</div>
+      <p>For every inch of FHP, cervical load increases ~10 lbs. Narrows intervertebral foramen → nerve root compression risk. Alters TMJ mechanics. Associated with cervicogenic headache, shoulder impingement (altered scapular kinematics), thoracic outlet syndrome.</p>
+    </div>
+  </div>
+
+  <div class="pd-card">
+    <div class="pd-badge">Deviation 2 · Sagittal Plane</div>
+    <h3>Excessive Thoracic Kyphosis</h3>
+    <div class="grid2">
+      <div>
+        <div class="bl-strip red">
+          <div class="bl-label">Short / Overactive</div>
+          <p>Pectoralis minor (pulls coracoid anteriorly → anterior scapular tilt). Pectoralis major. Intercostals (anterior). Rectus abdominis (upper). SCM.</p>
+        </div>
+      </div>
+      <div>
+        <div class="bl-strip green">
+          <div class="bl-label">Weak / Elongated</div>
+          <p>Middle + lower trapezius. Rhomboids. Serratus anterior. Thoracic erector spinae. Rotator cuff (secondary — altered glenohumeral alignment).</p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-strip purple" style="margin-top:8px;">
+      <div class="bl-label">Clinical Implications</div>
+      <p>Reduced thoracic mobility → compensatory cervical and lumbar motion. Anterior scapular tilt → subacromial space narrowing → shoulder impingement syndrome. Reduced respiratory capacity. Often co-exists with FHP.</p>
+    </div>
+  </div>
+
+  <div class="pd-card">
+    <div class="pd-badge">Deviation 3 · Sagittal Plane</div>
+    <h3>Lumbar Hyperlordosis (Anterior Pelvic Tilt)</h3>
+    <div class="grid2">
+      <div>
+        <div class="bl-strip red">
+          <div class="bl-label">Short / Overactive</div>
+          <p>Hip flexors (iliopsoas, rectus femoris, TFL). Lumbar erector spinae (particularly iliocostalis). Thoracolumbar fascia. Quadratus lumborum.</p>
+        </div>
+      </div>
+      <div>
+        <div class="bl-strip green">
+          <div class="bl-label">Weak / Elongated</div>
+          <p>Gluteus maximus. Hamstrings. Abdominals (rectus abdominis, transverse abdominis, obliques). Deep stabilizers (multifidus).</p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-strip purple" style="margin-top:8px;">
+      <div class="bl-label">Clinical Implications</div>
+      <p>↑ Posterior element loading → facet joint compression → posterior element pain. Anterior pelvic tilt = hip flexors shorten → limited hip extension in gait → compensatory lumbar extension → chronic LBP. Also creates faulty movement patterns in squat/deadlift.</p>
+    </div>
+  </div>
+
+  <div class="pd-card">
+    <div class="pd-badge">Deviation 4 · Frontal + Transverse Plane</div>
+    <h3>Scoliosis</h3>
+    <div class="grid2">
+      <div>
+        <div class="bl-strip red">
+          <div class="bl-label">Concave Side — Short / Overactive</div>
+          <p>Ipsilateral (concave side) spinal extensors, quadratus lumborum, scalenes, intercostals. Ipsilateral hip abductors if pelvic obliquity present.</p>
+        </div>
+      </div>
+      <div>
+        <div class="bl-strip green">
+          <div class="bl-label">Convex Side — Weak / Elongated</div>
+          <p>Contralateral spinal extensors and lateral flexors. Contralateral hip abductors. Respiratory compromise if Cobb angle &gt;50°.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-strip purple" style="margin-top:8px;">
+      <div class="bl-label">Clinical Implications</div>
+      <p>Cobb angle: &lt;20° = observe, 20–40° = bracing considered, &gt;40° = surgical consult. PT role: trunk stabilization, respiratory management, pain management, functional mobility. Distinguish structural vs. functional scoliosis (functional corrects with forward bend or unloading).</p>
+    </div>
+  </div>
+
+  <div class="pd-card">
+    <div class="pd-badge">Deviation 5 · Sagittal Plane</div>
+    <h3>Swayback Posture</h3>
+    <div class="grid2">
+      <div>
+        <div class="bl-strip red">
+          <div class="bl-label">Short / Overactive</div>
+          <p>Hamstrings (pelvis posteriorly tilted). Posterior hip capsule. Upper abdominals (pulls thorax posteriorly). Internal obliques.</p>
+        </div>
+      </div>
+      <div>
+        <div class="bl-strip green">
+          <div class="bl-label">Weak / Elongated</div>
+          <p>Hip flexors (lengthened with posterior pelvic tilt). Lumbar erectors. Lower abdominals. Gluteus maximus (positioned passively shortened → weak in function).</p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-strip gold" style="margin-top:8px;">
+      <div class="bl-label">Distinguish from Lordosis</div>
+      <p>Swayback = posterior pelvic tilt + pelvis shifted anteriorly + trunk shifted posteriorly. vs. Lordosis = anterior pelvic tilt + increased lumbar curve. Both are sagittal plane deviations but opposite pelvic mechanics. Confused frequently in clinical assessment.</p>
+    </div>
+  </div>
+
+  <div class="pd-card">
+    <div class="pd-badge">Deviation 6 · Sagittal Plane</div>
+    <h3>Flat Back Posture</h3>
+    <div class="grid2">
+      <div>
+        <div class="bl-strip red">
+          <div class="bl-label">Short / Overactive</div>
+          <p>Hamstrings (draw pelvis into posterior tilt). Abdominals (rectus, lower obliques). Hip extensors. Posterior hip capsule.</p>
+        </div>
+      </div>
+      <div>
+        <div class="bl-strip green">
+          <div class="bl-label">Weak / Elongated</div>
+          <p>Hip flexors (lengthened). Lumbar erector spinae. Thoracic extensors. Multifidus. One-joint hip extensors may be shortened.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bl-strip purple" style="margin-top:8px;">
+      <div class="bl-label">Clinical Implications</div>
+      <p>Loss of lumbar lordosis = reduced shock absorption (spine functions as rigid column). Posterior pelvic tilt → posterior disc loading → posterior annular stress. Hamstring tightness perpetuates posterior pelvic tilt. Distinguish from swayback: flat back = reduced thoracic kyphosis too; swayback = increased thoracic kyphosis. Both have posterior pelvic tilt but different thoracic posture.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title" style="font-size:1.2rem;">Dynamic Postural Control — Balance Strategies</div>
+  <div class="section-sub" style="margin-bottom:14px;">The nervous system deploys three reactive strategies in response to perturbation — selected based on the speed and magnitude of the CoM displacement relative to the BoS. Both <strong>reactive</strong> (after perturbation) and <strong>anticipatory</strong> (before expected perturbation) postural adjustments exist.</div>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Ankle Strategy</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Used for <strong>small, slow perturbations</strong> on a firm surface. CoM is controlled by ankle muscle torque — gastrocnemius/soleus (forward sway) and tibialis anterior (backward sway). Whole body moves as an inverted pendulum. Requires adequate DF ROM and proprioception.</p>
+      <div class="bl-strip" style="margin-top:4px;">
+        <div class="bl-label">Muscles Active</div>
+        <p>Falling forward: <strong>gastrocnemius/soleus → hamstrings → paraspinals</strong> (distal to proximal). Falling backward: <strong>tibialis anterior → quadriceps → abdominals</strong>.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Hip Strategy</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Used for <strong>larger, faster perturbations</strong> or unstable/narrow surfaces. Hip flexors/extensors rapidly flex or extend the trunk to shift CoM back over BoS. Faster activation of proximal muscles.</p>
+      <div class="bl-strip gold" style="margin-top:4px;">
+        <div class="bl-label">When Hip Strategy Overrides Ankle</div>
+        <p>Narrow BoS, compliant/unstable surface (foam), large perturbation magnitude, elderly patients with impaired proprioception → ankle strategy insufficient → hip strategy activates.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--purple2);">Step / Reach Strategy</div>
+      <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:8px;">Used when CoM displacement exceeds BoS — a step or reach <strong>expands the BoS</strong> to regain stability. Last resort before fall. Requires rapid limb advancement and weight transfer.</p>
+      <div class="bl-strip purple" style="margin-top:4px;">
+        <div class="bl-label">Clinical Application</div>
+        <p>Impaired stepping strategy = high fall risk. Test with perturbation in SLS, narrow stance, while walking. Document if step is protective and well-placed vs. absent/misdirected.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:16px;">
+    <div class="card">
+      <div class="card-title">Reactive vs. Anticipatory Balance</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Reactive (feedback):</strong> Response occurs AFTER perturbation detected. Latency ~100–120ms. Dependent on sensory input quality. Assess with surprise perturbations.</li>
+        <li><strong>Anticipatory (feedforward):</strong> CNS pre-activates postural muscles BEFORE a voluntary movement to counteract predicted CoM displacement. Example: trunk stabilizes before rapid arm movement. Assess by observing pre-movement postural adjustments during functional tasks.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">Clinical Balance Assessment Points</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li>Perturbation positions: wide → narrow → tandem → single limb stance</li>
+        <li>Surface: firm → foam (removes ankle strategy input)</li>
+        <li>Vision: eyes open → eyes closed (Romberg)</li>
+        <li>Dual task: balance + cognitive load</li>
+        <li>Apply perturbations anteriorly, posteriorly, and laterally</li>
+        <li>Document which strategy used, quality, and latency</li>
+        <li>Note asymmetry between sides</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ===================== REVIEW ===================== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+
+  <div class="section-title">Review Cards</div>
+  <div class="section-sub">Tap to flip. Covers knee, ankle/foot, FPI-6, gait, and posture.</div>
+
+  <div class="mnemonic-box" style="margin-bottom:20px;">
+    <div class="mn-title">Key Mnemonics</div>
+    <div class="mn-phrase">SGT FOT · IPAD / EDAB · Tom Dick ANd Harry</div>
+    <div class="mn-expand">
+      <span>SGT FOT</span>: Sartorius/Gracilis/Semitendinosus (Femoral/Obturator/Tibial) — Pes Anserine &nbsp;|&nbsp;
+      <span>IPAD</span>: OKC Subtalar Supination (Inversion·Plantarflexion·ADduction) &nbsp;|&nbsp;
+      <span>EDAB</span>: OKC Subtalar Pronation (Eversion·Dorsiflexion·ABduction) &nbsp;|&nbsp;
+      <span>Tom Dick ANd Harry</span>: Tibialis Post · FDL · Artery · Nerve · FHL — posterior to medial malleolus
+    </div>
+  </div>
+
+  <div class="mnemonic-box" style="margin-bottom:20px;">
+    <div class="mn-title">DAB / PAD — Foot Interossei</div>
+    <div class="mn-phrase">DAB · PAD</div>
+    <div class="mn-expand"><span>D</span>orsal interossei = <span>AB</span>duct &nbsp;|&nbsp; <span>P</span>lantar interossei = <span>AD</span>duct</div>
+  </div>
+
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the screw-home mechanism and which muscle unlocks it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Terminal tibial ER</strong> (OKC) or <strong>femoral IR</strong> (CKC) as knee reaches full extension due to medial condyle asymmetry. Unlocked by <strong>popliteus</strong> (IR tibia / ER femur).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Knee OKC vs. CKC: which direction does the femur glide during CKC flexion?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">CKC flexion (femur on tibia): convex on concave → roll and glide <strong>OPPOSITE</strong>. <strong>Posterior roll / Anterior glide</strong> of femur.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What talocrural ROM is the minimum required for normal gait?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>10° DF</strong> minimum for normal gait. 20° needed for stair climbing. Limited DF → compensatory pronation, early heel rise, knee hyperextension.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">OKC talocrural DF arthrokinematics?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Convex talus on concave mortise → opposite. <strong>Anterior roll / Posterior glide</strong>. To mobilize for DF restriction: posterior talar glide.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 6 criteria of the FPI-6?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Rearfoot: <strong>(1)</strong> Talar head palpation · <strong>(2)</strong> Curves above/below lateral malleolus · <strong>(3)</strong> Calcaneal inversion/eversion. Forefoot: <strong>(4)</strong> TNJ congruence · <strong>(5)</strong> Medial arch height · <strong>(6)</strong> Forefoot ABD/ADD on rearfoot.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">FPI-6 reference values: what is normal, pronated, supinated?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Normal:</strong> 0 to +5. <strong>Pronated:</strong> +6 to +9. <strong>Highly pronated:</strong> 10+. <strong>Supinated:</strong> –1 to –4. <strong>Highly supinated:</strong> –5 to –12.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the windlass mechanism and why does it matter for gait?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Great toe MTP extension tightens plantar fascia → raises medial arch → supinates foot → creates rigid lever for push-off. Loss = impaired propulsion, shortened stride, compensatory limb ER at push-off.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">In CKC, what happens to the tibia when the subtalar joint pronates?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Subtalar pronation → calcaneal eversion → talar ADDuction + PF → <strong>tibial internal rotation</strong>. Cascades up chain: knee valgus, hip IR, patellar stress.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Gait: what percent of the cycle is stance and swing?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Stance ~60%</strong> · <strong>Swing ~40%</strong>. Double support occurs at 0–10% (loading) and 50–60% (pre-swing). Single support = each leg ~40% of cycle.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What causes a Trendelenburg gait and what is the compensatory strategy?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Ipsilateral <strong>glute med weakness</strong> → contralateral pelvic drop during stance. Compensation: trunk lateral lean toward stance side (<strong>gluteus medius lurch</strong>) → shifts CoM to reduce abductor demand.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the primary mobilization for limited ankle DF?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Posterior talar glide</strong> — addresses restricted posterior glide needed for DF (OKC: DF = anterior roll + posterior glide). Also consider distal fibula posterior mob if fibula is restricted.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Which muscles are tight vs. weak in lumbar hyperlordosis?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Tight:</strong> Hip flexors (iliopsoas, rectus femoris), lumbar erector spinae. <strong>Weak:</strong> Gluteus maximus, hamstrings, abdominals (rectus, transverse, obliques), multifidus.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the VMO and why is it clinically important?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Vastus Medialis Obliquus</strong> — medial pull on patella to prevent lateral tracking. Fires in last 15–20° of extension. VMO:VL imbalance → lateral patellar tracking → PFPS. Targeted in PFPS rehabilitation.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Distinguish swayback posture from lumbar lordosis.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Swayback:</strong> Posterior pelvic tilt + pelvis shifted anteriorly + trunk shifted posteriorly. Tight hamstrings. <strong>Lordosis:</strong> Anterior pelvic tilt + increased lumbar curve. Tight hip flexors. Opposite pelvic mechanics — don't confuse.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What gait compensation occurs with foot drop and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Tibialis anterior weakness → foot can't DF in swing → <strong>steppage gait</strong> (exaggerated hip/knee flexion to clear foot), <strong>circumduction</strong>, or <strong>hip hiking</strong>. All increase energy cost and fall risk.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How does excessive foot pronation affect the knee?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Subtalar pronation → tibial IR → <strong>knee valgus stress</strong> → increased lateral patellar pull + medial compartment loading → PFPS, MCL stress, medial meniscus loading. Foundation of "pronation-to-pain" kinetic chain cascade.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Name the 3 bands of the lateral collateral ligament and what each checks.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>ATFL</strong> — taut in PF; most commonly sprained. <strong>CFL</strong> — taut in neutral/DF; spans talocrural + subtalar. <strong>PTFL</strong> — taut in DF; strongest; rarely torn. All check inversion/supination.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What does the deltoid (medial collateral) ligament check and why is it rarely torn?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Checks <strong>eversion and pronation</strong>. Fan-shaped and extremely strong — when eversion force is sufficient, the <strong>medial malleolus avulses</strong> before the deltoid tears.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the spring ligament and why does it matter clinically?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Plantar calcaneonavicular ligament</strong> — sustentaculum tali → inferior navicular. Primary passive stabilizer of the <strong>medial longitudinal arch</strong>. Laxity → arch collapse (flatfoot). Continuous medially with deltoid ligament.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the sinus tarsi and what clinical condition is associated with it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Large lateral opening of the tarsal canal, located anterior to the fibular malleolus. <strong>Sinus tarsi syndrome</strong> — lateral hindfoot pain + instability, often after lateral ankle sprains. Contains cervical ligament and nerve endings.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 balance strategies in order of perturbation magnitude?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Ankle strategy</strong> (small/slow, firm surface) → <strong>Hip strategy</strong> (large/fast, narrow/unstable surface) → <strong>Step/Reach strategy</strong> (CoM outside BoS). Ankle uses distal-to-proximal muscle activation; hip uses proximal-to-distal.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Distinguish reactive from anticipatory postural control.</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Reactive:</strong> Response AFTER perturbation — feedback-based, ~100–120ms latency. <strong>Anticipatory:</strong> Pre-activation of postural muscles BEFORE voluntary movement — feedforward, predictive. Both required for functional balance. Elderly often lose anticipatory control first.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the lateral plumb line landmarks from head to foot?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Ear/mastoid → just anterior to <strong>shoulder joint</strong> → just posterior to <strong>hip/greater trochanter</strong> → just posterior to <strong>center of knee</strong> → just anterior to <strong>lateral malleolus</strong>.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Flat back vs. swayback — how do you distinguish them?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Both have <strong>posterior pelvic tilt</strong>. <strong>Flat back</strong>: reduced lumbar lordosis + reduced thoracic kyphosis; spine appears straight. <strong>Swayback</strong>: pelvis shifted anteriorly + thorax shifted posteriorly + increased thoracic kyphosis. Different thoracic postures distinguish them.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 degrees of angular motion at the tibiofemoral joint?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Flexion/Extension</strong> (sagittal, coronal axis) · <strong>IR/ER</strong> (transverse, longitudinal axis) · <strong>ABD/ADD/varus/valgus</strong> (frontal, AP axis). It's a double condyloid joint, not a simple hinge.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the tibial plateau posterior slope and why does it matter?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>7–10° posterior slope</strong> of tibial plateau — allows for knee flexion. Clinically relevant in ACL reconstruction: steeper slope → greater anterior tibial shear forces → influences graft tension and re-tear risk.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Meniscal zones — which heals and which doesn't, and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Red Zone</strong> (outer 25–33%) — vascularized → good healing potential. <strong>White Zone</strong> (central) — avascular, relies on synovial fluid diffusion → poor healing. After age 50 only periphery vascularized. Determines surgical repair vs. resection decision.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What makes the MCL deep layer clinically important?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Deep MCL is directly connected to the <strong>medial meniscus</strong>. A valgus stress that tears the MCL often simultaneously tears the medial meniscus. Also explains why medial meniscus is less mobile than lateral.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the IT band — is it contractile, and what causes ITB syndrome?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">IT band = thick fascia from TFL + glute max → Gerdy's tubercle. <strong>NOT contractile</strong> — consistently taut regardless of knee/hip position. ITB syndrome: <strong>fat pad between ITB and lateral femoral epicondyle</strong> becomes irritated at ~30° flexion with repetitive movement.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the Insall-Salvati index and what do alta/baja indicate?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Patellar tendon length ÷ patellar length. Normal = <strong>1:1</strong>. <strong>Patella Alta</strong> (&gt;1.2): longer tendon → patella sits high → higher subluxation risk (sits on shallow sulcus longer). <strong>Patella Baja</strong> (&lt;0.8): shorter tendon → increased PF compressive stress.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the MPFL and why is it the most important patellar stabilizer?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Medial PatelloFemoral Ligament</strong> — thickest, most clinically important structure resisting lateral patellar subluxation/dislocation. Part of the anterior joint capsule's medial retinaculum. MPFL rupture occurs in ~90% of first-time patellar dislocations.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">When is the screw-home mechanism visible and what drives it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Begins at ~30° but <strong>not visible until the final 5°</strong> of terminal extension. Driven by bony geometry: medial femoral condyle is larger → lateral condyle exhausts articular surface first → medial side continues → obligatory tibial ER (OKC) or femoral IR (CKC).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the physiological angulation of the knee and when is it pathological?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Normal: <strong>180–185°</strong> (slight valgus). <strong>Genu valgum</strong> (knock-knee) = &gt;185°. <strong>Genu varum</strong> (bow-leg) = &lt;175°. Genu valgum → ↑ Q-angle → lateral patellar pull → PFPS risk. Genu varum → ↑ medial compartment loading → medial OA.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 rockers of gait and which phase does each occur in?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Heel rocker</strong> (IC/LR) — pivot at calcaneus, forefoot lowers; pretibials eccentric. <strong>Ankle rocker</strong> (MSt) — tibia advances over foot; calf eccentric. <strong>Forefoot rocker</strong> (TSt) — heel rises, body moves ahead; calf eccentric + windlass activation.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 3 goals of gait?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>(1) Maintain weight-bearing stability</strong>, <strong>(2) Conserve energy</strong>, <strong>(3) Absorb shock of floor impact</strong>. Forward progression while accomplishing all three simultaneously.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the critical event at Loading Response and what muscles are key?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Critical event: hip stability + controlled knee flexion + controlled ankle PF.</strong> Quads (E) control knee flexion to 15°. Pretibials (E) control ankle PF. Hip abductors + extensors (E) stabilize pelvis. First period of double support.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the stability vs. mobility bucket framework in gait assessment?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Mobility bucket</strong> = ROM deficit → compensation above/below (e.g., limited DF → knee hyperextension). <strong>Stability bucket</strong> = motor control/strength deficit → hanging on ligaments, frontal plane deviations, audible contacts. Identifying which bucket drives the clinical intervention choice.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Where should your eyes start during gait assessment and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Start at the <strong>pelvis</strong> — the hub that reflects what's happening both above (spine/trunk) and below (hip/knee/ankle). Travel cranially or caudally based on excessive motion, lack of motion, or abnormalities. Pelvis tells the whole story.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What squat variation tests ankle DF most specifically and why?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Narrow stance squat</strong> — reduces hip compensation and isolates DF demand. Also: <strong>heel elevation test</strong> — if squat improves with heels raised, DF restriction is driving the compensation. Wide stance tests hip mobility instead.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">During midstance, what is the critical event and what muscle group provides it?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Critical event: controlled tibial advancement (ankle rocker).</strong> Gastroc/soleus eccentrically control tibial advance over foot. Hip abductors (3 gluteals) isometrically stabilize pelvis. Knee extensors isometric. Body progresses over single stable limb.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How does increased thoracic kyphosis affect gait?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">↑ Kyphosis → ↓ trunk rotation → ↓ arm swing → less energy-efficient gait. More frontal plane compensation needed. Less thoracic curve = less shock absorption = louder/harder heel contact. Scoliosis → lateral trunk lean preference, asymmetric step length.</div>
+    </div>
+
+
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Medial longitudinal</strong> (largest) — apex = talus. <strong>Lateral longitudinal</strong> — calcaneus to 4th–5th MT heads. <strong>Transverse</strong> — apex at distal MTs = 2nd metatarsal; apex at TMT = middle cuneiform.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Which muscle provides the most consistent dynamic support of the medial longitudinal arch?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Tibialis posterior</strong> — passes medial to the subtalar axis → supination moment; wraps around navicular. Also: plantar intrinsics active in quiet stance and gait.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">1st ray axis: what motions couple with DF and with PF?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Oblique medial axis. <strong>DF couples with IV + ADD</strong>. <strong>PF couples with EV + ABD</strong>. (5th ray is opposite: DF+EV+ABD; PF+IV+ADD. 3rd ray is near coronal: pure DF/PF only.)</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the metatarsal break and what are the ROM values?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">Hinge point at metatarsal heads during terminal stance as heel rises and toes remain WB. <strong>36–65°</strong> overall during gait; <strong>~60–70°</strong> at 1st MTP alone. Occurs around an oblique axis (~54–73°). Drives windlass mechanism.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">During initial single limb stance, what happens at the TT joint even though the subtalar is pronating?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">TT joint undergoes <strong>relative supination</strong> — to maintain forefoot contact with the ground despite subtalar pronation and medial tibial rotation. The TT does NOT simply follow the subtalar into pronation; it adapts to terrain demands independently.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Which muscles are lateral to the subtalar axis (pronators) vs. medial (supinators)?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Medial (supinators):</strong> tibialis anterior, tibialis posterior, FHL, FDL, triceps surae. <strong>Lateral (pronators):</strong> peroneus longus, peroneus brevis, peroneus tertius, EDL (mild). Position relative to subtalar axis determines the moment, not the muscle name alone.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What passive structures support the medial longitudinal arch?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Spring ligament</strong> (primary passive stabilizer) + interosseous talocalcaneal ligament + deltoid ligament + <strong>plantar aponeurosis</strong>. Dynamic: tibialis posterior, FHL, FDL, plantar intrinsics.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">Left rib hump on Adam's forward bend test — what does this indicate?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Right thoracic convexity</strong> (curve to the right). Vertebrae rotate toward the convex side, carrying the ribs posteriorly on the right — this pushes them up creating a hump on the right. A LEFT rib hump = LEFT-sided vertebral rotation = RIGHT convexity curve.</div>
+    </div>
+
+<!-- end rc2-grid -->
+
+</div><!-- end container -->
+</div><!-- end tab-panel review -->
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function toggleCN(btn) {
+  const more = btn.previousElementSibling;
+  const isOpen = more.classList.contains('open');
+  more.classList.toggle('open', !isOpen);
+  btn.textContent = isOpen ? btn.textContent.replace('− ', '+ ') : btn.textContent.replace('+ ', '− ');
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>

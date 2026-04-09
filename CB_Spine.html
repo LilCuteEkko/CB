@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; MSK Spine</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090f1a;--bg2:#0d1520;--bg3:#111d2b;--teal:#38b2b2;--teal2:#5dcfcf;--gold:#d4a850;--gold2:#e8c070;--purple:#a78bfa;--purple2:#c4b5fd;--text:#e8edf5;--text2:#a8b8cc;--text3:#6b7e94;--border:#1a2a3a;--border2:#243447;--red:#f87171;--green:#4ade80;--orange:#fb923c;--radius:10px;--radius2:6px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Manrope',sans-serif;font-size:15px;line-height:1.65;}
+.site-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.site-nav a{color:var(--text2);text-decoration:none;font-size:12px;font-family:'IBM Plex Mono',monospace;padding:4px 10px;border:1px solid var(--border2);border-radius:20px;transition:all .2s;}
+.site-nav a:hover,.site-nav a.active{color:var(--teal2);border-color:var(--teal);background:rgba(56,178,178,.08);}
+.site-nav .logo{color:var(--gold);font-family:'Source Serif 4',serif;font-size:18px;font-weight:700;margin-right:8px;}
+.hero{background:linear-gradient(135deg,#0a0e1f 0%,#090f1a 60%,#0d1520 100%);padding:48px 32px 36px;border-bottom:1px solid var(--border);}
+.hero-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--teal);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.hero h1{font-family:'Source Serif 4',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.15;margin-bottom:12px;}
+.hero h1 span{color:var(--teal2);}
+.hero p{color:var(--text2);max-width:760px;font-size:15px;line-height:1.7;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+.badge{background:rgba(56,178,178,.1);border:1px solid rgba(56,178,178,.2);color:var(--teal2);font-size:11px;font-family:'IBM Plex Mono',monospace;padding:4px 12px;border-radius:20px;}
+.badge.gold{background:rgba(212,168,80,.1);border-color:rgba(212,168,80,.2);color:var(--gold2);}
+.badge.purple{background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.2);color:var(--purple2);}
+.badge.red{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.2);color:var(--red);}
+.badge.green{background:rgba(74,222,128,.1);border-color:rgba(74,222,128,.2);color:var(--green);}
+.badge.orange{background:rgba(251,146,60,.1);border-color:rgba(251,146,60,.2);color:var(--orange);}
+.chip-nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 24px;display:flex;flex-wrap:wrap;gap:4px;overflow-x:auto;}
+.chip-nav button{background:none;border:none;color:var(--text3);font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;padding:14px 16px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;}
+.chip-nav button:hover{color:var(--text);}
+.chip-nav button.active{color:var(--teal2);border-bottom-color:var(--teal);}
+.container{max-width:1100px;margin:0 auto;padding:32px 24px;}
+.tab-panel{display:none;}.tab-panel.active{display:block;}
+.section-title{font-family:'Source Serif 4',serif;font-size:1.5rem;font-weight:700;color:var(--teal2);margin-bottom:6px;}
+.section-sub{color:var(--text2);font-size:13.5px;margin-bottom:24px;line-height:1.6;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px;}
+.card-title{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr;}}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr;}}
+.ma-item{border:1px solid var(--border2);border-radius:var(--radius2);margin-bottom:8px;overflow:hidden;}
+.ma-header{background:var(--bg3);padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s;}
+.ma-header:hover{background:#162030;}
+.ma-header h4{font-family:'Manrope',sans-serif;font-size:14px;font-weight:600;color:var(--text);}
+.ma-tags{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+.ma-tag{font-size:10px;font-family:'IBM Plex Mono',monospace;padding:2px 7px;border-radius:10px;background:rgba(56,178,178,.1);color:var(--teal2);border:1px solid rgba(56,178,178,.2);}
+.ma-tag.gold{background:rgba(212,168,80,.1);color:var(--gold2);border-color:rgba(212,168,80,.2);}
+.ma-tag.purple{background:rgba(167,139,250,.1);color:var(--purple2);border-color:rgba(167,139,250,.2);}
+.ma-tag.red{background:rgba(248,113,113,.1);color:var(--red);border-color:rgba(248,113,113,.2);}
+.ma-tag.green{background:rgba(74,222,128,.1);color:var(--green);border-color:rgba(74,222,128,.2);}
+.ma-tag.orange{background:rgba(251,146,60,.1);color:var(--orange);border-color:rgba(251,146,60,.2);}
+.ma-chevron{color:var(--text3);transition:transform .25s;font-size:12px;flex-shrink:0;}
+.ma-body{display:none;padding:14px 16px;background:var(--bg2);border-top:1px solid var(--border);}
+.ma-body.open{display:block;}
+.bl-strip{background:rgba(56,178,178,.06);border:1px solid rgba(56,178,178,.15);border-left:3px solid var(--teal);border-radius:var(--radius2);padding:12px 16px;margin:10px 0;}
+.bl-strip .bl-label{font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--teal);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.bl-strip p,.bl-strip ul,.bl-strip ol{font-size:13.5px;color:var(--text);}
+.bl-strip ul,.bl-strip ol{padding-left:18px;line-height:1.8;}
+.bl-strip.gold{background:rgba(212,168,80,.06);border-color:rgba(212,168,80,.15);border-left-color:var(--gold);}.bl-strip.gold .bl-label{color:var(--gold);}
+.bl-strip.purple{background:rgba(167,139,250,.06);border-color:rgba(167,139,250,.15);border-left-color:var(--purple);}.bl-strip.purple .bl-label{color:var(--purple2);}
+.bl-strip.red{background:rgba(248,113,113,.06);border-color:rgba(248,113,113,.15);border-left-color:var(--red);}.bl-strip.red .bl-label{color:var(--red);}
+.bl-strip.green{background:rgba(74,222,128,.06);border-color:rgba(74,222,128,.15);border-left-color:var(--green);}.bl-strip.green .bl-label{color:var(--green);}
+.bl-strip.orange{background:rgba(251,146,60,.06);border-color:rgba(251,146,60,.15);border-left-color:var(--orange);}.bl-strip.orange .bl-label{color:var(--orange);}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0;}
+.data-table th{background:var(--bg3);color:var(--teal2);font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;text-align:left;border-bottom:2px solid var(--border2);}
+.data-table td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.data-table tr:hover td{background:rgba(255,255,255,.02);}
+.data-table td strong{color:var(--text);}
+.data-table .hi{color:var(--teal2);font-weight:600;}.data-table .bad{color:var(--red);}.data-table .ok{color:var(--green);}.data-table .warn{color:var(--gold);}
+.rc2-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:14px 0;}
+.rc2{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);padding:18px;cursor:pointer;position:relative;}
+.rc2:hover{box-shadow:0 4px 16px rgba(0,0,0,.3);}
+.rc2 .rc2-q{font-size:14px;font-weight:500;color:var(--text);line-height:1.5;padding-right:40px;}
+.rc2 .rc2-flip{position:absolute;top:12px;right:12px;font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--teal);opacity:.7;}
+.rc2 .rc2-a{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:13px;color:var(--text2);line-height:1.6;}
+.rc2 .rc2-a.open{display:block;}
+.rc2 .rc2-a strong{color:var(--teal2);}
+.chip-label{font-family:'Source Serif 4',serif;font-size:1.25rem;font-weight:700;color:var(--gold2);padding:24px 24px 4px;border-top:1px solid var(--border2);margin-top:8px;}
+.chip-label:first-child{border-top:none;margin-top:0;}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <span class="logo">CB</span>
+  <a href="index.html">Home</a>
+  <a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+  <a href="CB_TherEx.html">Ther Ex</a>
+  <a href="CB_PhysicalAgents.html">Physical Agents</a>
+  <a href="CB_ResearchMethods.html">Research</a>
+  <a href="CB_Pathophysiology.html">Pathophysiology</a>
+  <a href="CB_MedicalConditions.html">Medical Conditions</a>
+  <a href="CB_BrainModule.html">Brain Module</a>
+  <a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+  <a href="CB_MotorControl.html">Motor Control</a>
+  <a href="CB_Pharmacology.html">Pharmacology</a>
+  <a href="CB_HealthPromotion.html">Health Promotion</a>
+  <a href="CB_HipModule_v2.html">Hip</a>
+  <a href="CB_KneeModule_v2.html">Knee</a>
+  <a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+  <a href="CB_Integumentary.html">Integumentary</a>
+  <a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+  <a href="CB_Spine.html" class="active">MSK Spine</a>
+</nav>
+<div class="hero">
+  <div class="hero-tag">MSK Spine &middot; Lumbar &middot; Cervical &middot; Thoracic &middot; SIJ &middot; TMJ</div>
+  <h1>MSK Spine <span>&#8212; Lumbar, Cervical, Thoracic, SIJ &amp; TMJ</span></h1>
+  <p>Comprehensive spine reference covering red flags, lumbar pathologies and radiculopathy, cervical DDx and myelopathy, thoracic dysfunction and rib pathology, SIJ examination, TMJ disorders, treatment-based classification, McKenzie approach, spondyloarthropathies, disc degeneration cascade, special tests with accuracy, CPRs, and post-operative protocols. Built from the full lecture series, study guides, and clinical lab notes.</p>
+  <div class="hero-badges">
+    <span class="badge red">Red Flags &amp; Screening</span>
+    <span class="badge gold">Lumbar Pathology &amp; Radiculopathy</span>
+    <span class="badge">Cervical DDx &amp; Myelopathy</span>
+    <span class="badge purple">Thoracic &amp; Rib Dysfunction</span>
+    <span class="badge green">SIJ &amp; Pelvic Girdle Pain</span>
+    <span class="badge orange">TMJ &amp; Special Tests</span>
+  </div>
+</div>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('redflags',this)">Red Flags</button>
+  <button onclick="showTab('lumbar',this)">Lumbar Spine</button>
+  <button onclick="showTab('lumbarpath',this)">Lumbar Pathology</button>
+  <button onclick="showTab('disc',this)">Disc &amp; Radiculopathy</button>
+  <button onclick="showTab('cervical',this)">Cervical Spine</button>
+  <button onclick="showTab('thoracic',this)">Thoracic &amp; Ribs</button>
+  <button onclick="showTab('sij',this)">SIJ &amp; Pelvis</button>
+  <button onclick="showTab('tmj',this)">TMJ</button>
+  <button onclick="showTab('special',this)">Special Tests</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ==================== RED FLAGS TAB ==================== -->
+<div class="tab-panel active" id="tab-redflags">
+<div class="container">
+  <div class="section-title">Red Flags &amp; Spine Screening</div>
+  <div class="section-sub">The spine is the most common site for serious pathology masquerading as MSK pain. Red flag screening must be completed before any classification or treatment approach. Every PT must know when to refer out immediately versus when to treat.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Spinal Red Flags &#8212; When to Refer Out</h4>
+      <div class="ma-tags"><span class="ma-tag red">Cauda Equina = Emergency</span><span class="ma-tag gold">Cancer = Night pain + weight loss</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Red Flag</th><th>Key Indicators</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">Cauda Equina Syndrome</td><td>Compression of lower spinal cord. <strong>Saddle anesthesia, B&amp;B dysfunction, bilateral LE weakness/numbness, sexual dysfunction.</strong> Can be permanent neurological deficit</td><td class="bad">EMERGENCY &#8212; immediate referral</td></tr>
+          <tr><td class="bad">Fracture</td><td>Local tenderness, MVA or trauma, fall from height. Stress fracture if spinal cord is close to being damaged. Sensory/motor deficit = suspect SCI</td><td class="bad">Refer for imaging</td></tr>
+          <tr><td class="bad">Cancer/Neoplasm</td><td><strong>Unrelenting night pain, weight loss, pain regardless of position change,</strong> looks unhealthy, "clothes don't fit." Lung/breast/prostate can metastasize to axial skeleton. Thoracic metastasis is common</td><td class="bad">Refer out immediately</td></tr>
+          <tr><td class="bad">Cervical Myelopathy</td><td>UMN signs: Babinski, Hoffmann, inverted supinator, <strong>ataxic gait, hyperreflexia (3-4+)</strong>, age &gt;45, B&amp;B changes, fine motor skill loss, bilateral symptoms, progressive. CPR: 3/5 tests = strong predictive value</td><td class="bad">Refer to specialist</td></tr>
+          <tr><td class="bad">VBI / Cervical Artery Dysfunction</td><td><strong>5 D's:</strong> Dizzy, Diplopia, Drop attacks, Dysphagia, Dysarthria. <strong>3 N's:</strong> Nystagmus, Nausea/vomiting, Neuro symptoms. <strong>1 A:</strong> Ataxia. Plus: severe headache, unilateral neck pain along traps</td><td class="bad">No cervical manipulation. Refer out</td></tr>
+          <tr><td class="bad">Cervical Instability</td><td>Ligamentous injury from fall/MVA, fear of movement, feels unstable, swallowing issues (lump in throat relieved by lying down), myelopathy signs. At-risk: RA, Down syndrome, Marfan</td><td class="bad">Ligamentous testing required before any manual therapy</td></tr>
+          <tr><td class="bad">AAA (Abdominal Aortic Aneurysm)</td><td>Medical emergency. Pulsatile abdominal mass, severe back/abdominal pain</td><td class="bad">Refer out immediately</td></tr>
+          <tr><td class="warn">Infection</td><td>Fever, nocturnal sweating, flu-like symptoms with stiffness (meningitis)</td><td class="warn">Refer to physician</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">CPR for Compression Fracture</div>
+        <p><strong>Female + Age &gt;70 + Trauma (fall/MVA) + Corticosteroid use.</strong> &#190; criteria = 100% specificity (+LR 218). If these fit, refer for imaging. Key populations: adolescents (backpack) and elderly females (osteoporosis). Fractures due to osteoporosis most common at T9&#8211;T11.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Inflammatory Back Pain Screening (Under 45 + Sx &gt;3 months)</div>
+        <p>All patients under 45 with symptoms &gt;3 months must be asked: (1) Back stiffness &gt;30 min? (2) Night pain awakening? (3) Alternating buttock pain? (4) Pain relieved by rest? <strong>2/4 = 70% SN, 81% SP. 3/4 = 33% SN, 100% SP</strong> for inflammatory back pain (ankylosing spondylitis, psoriatic SpA, reactive SpA).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Visceral Referral Patterns to Spine</h4>
+      <div class="ma-tags"><span class="ma-tag red">MI = diaphoresis + worse with exercise</span><span class="ma-tag gold">Gallbladder = R scapula</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Organ</th><th>Referral Pattern</th><th>Key Distinguishing Feature</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Heart (MI)</td><td>Chest, shoulder, neck, L arm, jaw. Female: scapular/neck pain, R arm, anxiety, overwhelming fatigue</td><td>Diaphoretic (sweating heavily), worse with exercise. Stable angina = predictable with exertion, relieved by rest/NTG</td></tr>
+          <tr><td class="hi">Pericarditis</td><td>Sharp chest pain &#8594; lateral neck/shoulders</td><td>Pain with L side lying. Relief with forward lean sitting</td></tr>
+          <tr><td class="hi">Lung (PE)</td><td>Chest, shoulder, upper abdomen</td><td>Dyspnea, SOB. Pleurisy = sharp pain with inspiration. Pneumothorax = trauma/coughing, &#8595; breath sounds, trachea shifts AWAY</td></tr>
+          <tr><td class="hi">Liver</td><td>R upper quadrant, refers to neck</td><td>Pain unaffected by activity or rest</td></tr>
+          <tr><td class="hi">Gallbladder</td><td>R upper quadrant, <strong>R scapula pain</strong></td><td>Worse with fatty meals. Unaffected by activity/rest</td></tr>
+          <tr><td class="hi">Kidney</td><td>Refers to T12, flank pain, TL junction</td><td>Sudden onset. Chills/fever, N/V, UTI-like symptoms. Pyelonephritis = recent UTI</td></tr>
+          <tr><td class="hi">Peptic Ulcer</td><td>R epigastrium</td><td>Symptoms relieved with food. Constipation, bleeding, tarry stools, coffee ground emesis</td></tr>
+          <tr><td class="hi">Pancreas</td><td>Anterior sternum, epigastric</td><td>Boring pain radiating to back</td></tr>
+          <tr><td class="hi">Pancoast Tumor</td><td>Mimics cervical radiculopathy</td><td>Lung cancer in upper lobes. Important DDx for arm pain</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip purple">
+        <div class="bl-label">Key Rule</div>
+        <p>If patient <strong>can't point to pain</strong> &#8212; think visceral. Visceral and vascular pain is poorly localized and achy. If pain is unaffected by position changes and doesn't respond to movement &#8212; it's likely not MSK.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>SINSS Framework &amp; Classification Approach</h4>
+      <div class="ma-tags"><span class="ma-tag gold">SINSS + LOCIDAA</span><span class="ma-tag">TBC 4 categories</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip gold">
+        <div class="bl-label">SINSS</div>
+        <p><strong>S</strong>everity (0&#8211;10 VAS, rate min/mod/severe). <strong>I</strong>rritability (how long to provoke? how long to relieve? reflects tissue stress tolerance). <strong>N</strong>ature (bone, muscle, ligament, joint, nerve). <strong>S</strong>tage (acute/subacute/chronic). <strong>S</strong>tability (improving, stable, worsening?).</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">LOCIDAA</div>
+        <p><strong>L</strong>ocation. <strong>O</strong>nset. <strong>C</strong>haracteristics. <strong>I</strong>ntensity. <strong>D</strong>uration. <strong>A</strong>ggravating factors. <strong>A</strong>lleviating factors. Plus: 24-hour behavior.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Treatment-Based Classification (TBC) &#8212; 4 Categories</div>
+        <p>De-emphasizes identifying specific anatomical lesions after red flag screening. <strong>1. Mobilization/Manipulation.</strong> <strong>2. Specific Exercise.</strong> <strong>3. Traction.</strong> <strong>4. Stabilization.</strong> Match intervention to classification, not to pathoanatomy.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Symptom Modulation Staging</div>
+        <p><strong>High SINSS / High pain:</strong> Manual therapy (careful), directional preference exercise, modalities (heat), Grade 1&#8211;2 mobs, manipulations if acute (&lt;30 days, no symptoms past knee). <strong>Mod SINSS:</strong> Sensorimotor exercises, stabilization, flexion exercises, mobility. <strong>Low SINSS:</strong> Strength/conditioning, sport/work-specific tasks, aerobic exercise, general fitness. Injury prevention phase.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== LUMBAR SPINE TAB ==================== -->
+<div class="tab-panel" id="tab-lumbar">
+<div class="container">
+  <div class="section-title">Lumbar Spine &#8212; Examination &amp; Patterns</div>
+  <div class="section-sub">LBP is the leading cause of activity limitation and work absence. 60&#8211;70% lifetime prevalence. Peaks at 5th&#8211;6th decade. Chronic LBP (&gt;3 months): if &gt;6 months, less than half return to work. 25&#8211;33% will still have LBP after 1 year. $100 million work days lost per year.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lumbar History &#8212; Pain Patterns &amp; Clinical Clues</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Leg &gt; back pain = nerve root</span><span class="ma-tag red">Dejerine's triad = disc</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Pain Location Clues</div>
+        <p><strong>Central back pain:</strong> Usually not unilateral (not SIJ or zyga joint). <strong>Bilateral pain:</strong> Rare to have central origin &#8212; exception is central IVD protrusion. <strong>Buttock pain as referral:</strong> Can be zyga joint inflammation. <strong>Groin pain:</strong> Common with high lumbar IVD herniation &#8212; dull ache, deep, hard to localize, some NBT. <strong>Leg pain:</strong> May indicate radiculopathy or pseudo-radiculopathy.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Dejerine's Triad</div>
+        <p>Abdominal activation, coughing, and sneezing (Valsalva maneuver) make symptoms worse. Three-part test for nerve compression. Increases CSF pressure. Seen in IVD pathology and sacroiliitis. If (+) &#8594; suspect disc involvement.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Palliative &amp; Provocative Factors</div>
+        <p><strong>Supine with knees flexed / side lying:</strong> &#8595; spinal column pressure, &#8595; nerve tension. Pts with neurocompressive disc herniation will NOT like this. <strong>Standing/extension:</strong> Less provoking for disc pathologies. <strong>Sitting/flexion:</strong> Less provoking for spinal stenosis &#8212; opens vertebrae. "Shopping cart sign" = leans forward to open canal.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Key Aggravation Patterns</div>
+        <p><strong>Flexion relief + walking aggravation:</strong> Zyga joint, spondylolisthesis, spinal stenosis. <strong>Sitting/stooping/lifting aggravation + recumbency relief + standing/walking OK:</strong> IVD lesion (protrusion or annular tear). <strong>Constant pain:</strong> Inflammatory process. <strong>Pain with movement:</strong> Mechanical cause. <strong>Morning stiffness:</strong> Inflammatory. <strong>Worse during evening:</strong> Mechanical symptoms.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Centralization &amp; Peripheralization</div>
+        <p><strong>Centralization:</strong> Progressive retreat of most distal symptoms back toward LB spine &#8212; GOOD sign, indicates reducible lesion. <strong>Peripheralization:</strong> Opposite &#8212; symptoms moving distally &#8212; BAD sign, lesion is increasing in size. Once a motion/position that reduces symptoms is identified, focus should be to encourage this motion or posture.</p>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">Age-Related DDx</div>
+        <p><strong>10&#8211;20 yo:</strong> Spondylolisthesis. <strong>15&#8211;40 yo:</strong> IVD and inflammatory conditions. <strong>45+:</strong> OA, spondylosis. <strong>65+:</strong> Cancer, stenosis, AAA, compression fracture. Back pain in a young child is NOT normal &#8212; think spondylolysis.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Observation &amp; Postural Assessment</h4>
+      <div class="ma-tags"><span class="ma-tag">Lateral pelvic shift = disc + sciatica</span><span class="ma-tag gold">Excessive lordosis = pelvic crossed</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Lateral Pelvic Shift</div>
+        <p>Common in pts with disc-related LBP and sciatica. <strong>Herniation LATERAL to nerve root:</strong> Deviation AWAY from side of irritated nerve (draws nerve root away from disc fragment). <strong>Herniation MEDIAL to nerve root:</strong> Deviation TOWARDS side of lesion (decompresses nerve root). Listing is protective &#8212; can also be from zyga joint irritation, spinal nerve irritation, spasm of QL or iliacus.</p>
+      </div>
+      <div class="grid2">
+        <div class="bl-strip gold">
+          <div class="bl-label">Excessive Lordosis Indicates</div>
+          <p>Pelvic crossed syndrome (erector spinae + iliopsoas shortened; abs + glute max weak). Shortened PLL, lengthened ALL. Spondylolisthesis. Anterior pelvic tilt (weak abs, shortened TFL/iliopsoas, lengthened hamstrings/glutes).</p>
+        </div>
+        <div class="bl-strip purple">
+          <div class="bl-label">Flat Back Indicates</div>
+          <p>Spinal stenosis or lateral recess stenosis. Lateral shifting. Posterior pelvic tilt. Short hamstrings. Disc protrusion. Weak hip flexors. Reversed lordosis (sway back) = thoracic kyphosis + posterior pelvic tilt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Directional Patterns of Instability &amp; Movement Impairment Syndromes</h4>
+      <div class="ma-tags"><span class="ma-tag red">Flexion pattern = most common</span><span class="ma-tag gold">Multidirectional = most debilitating</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Pattern</th><th>Presentation</th><th>Key Features</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Flexion (most common)</td><td>Central back pain aggravated with flexion, rotation, can't sustain semi-flexed positions</td><td>Loss of segmental lordosis at unstable level. Can't control neutral lordosis with squats, sit-to-stand. Can't perform abdominal hollowing</td></tr>
+          <tr><td class="hi">Extension</td><td>Central pain from extension-rotation movements. Can't sustain standing, OH activities, running</td><td>&#8593; segmental lordosis at unstable level. Hypertonicity at that level. Hinging at involved segment</td></tr>
+          <tr><td class="hi">Lateral Shift</td><td>Usually unidirectional. Unilateral LBP. Lateral shift more apparent standing on involved side</td><td>Loss of segmental lordosis + lateral shift. Sagittal motions reveal further shifts. Can't perform trunk raise (QL, erector spinae, multifidi activation)</td></tr>
+          <tr><td class="bad">Multidirectional</td><td>Most serious and debilitating. High pain and functional disability</td><td>WB normally painful. Spine locks with sustained positions in all planes. Can't perform abdominal hollowing</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Movement Impairment Syndromes</div>
+        <p>Result from imbalance of flexibility and strength. If anterior pelvic tilt aggravates &#8594; use exercises that promote posterior tilt (and vice versa). <strong>Flexion Syndrome (8&#8211;45 yo):</strong> LB flexion more flexible than hip flexion. Pain with lumbar flexion. Shortened glute max, hamstrings, rectus abdominis. <strong>Extension Syndrome (55+):</strong> LB extension more flexible than hip extension. Pain with positions &#8593; lordosis. Shortened hip flexors, paraspinals. Weak external obliques. <strong>Rotation Syndromes:</strong> Unilateral pain, &#8593; with rotation &#177; flexion &#177; extension. One segment rotating/translating more easily &#8594; associated with instability.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lumbar Myotome Testing by Root Level</h4>
+      <div class="ma-tags"><span class="ma-tag">L4 = 40% of disc lesions</span><span class="ma-tag gold">L1-L2 weakness = rule out cancer</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Root Level</th><th>Test Motion</th><th>Key Muscles</th><th>Clinical Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">L1&#8211;L2</td><td>Hip flexion</td><td>Iliopsoas</td><td>IVD at this level is rare. <strong>Rule out cancers.</strong> Pain may indicate Fx of transverse process or hip pathology</td></tr>
+          <tr><td class="hi">L3&#8211;L4</td><td>Single-leg squat or knee extension</td><td>Quads, hip extensors</td><td>Weakness is rare &#8212; suggests non-MSK disorder, especially if bilateral</td></tr>
+          <tr><td class="hi">L4</td><td>Heel walking</td><td>Dorsiflexors</td><td><strong>40% of IVD lesions</strong> affect this level. Equal % affects L5</td></tr>
+          <tr><td class="hi">L5</td><td>Great toe extension</td><td>EHL</td><td>Equally affected as L4</td></tr>
+          <tr><td class="hi">L5&#8211;S1</td><td>Hip extension or ankle eversion</td><td>Prone, knees at 70&#176;, apply resistance</td><td>Look for Trendelenburg (10 reps unilaterally)</td></tr>
+          <tr><td class="hi">S1&#8211;S2</td><td>Toe standing or resisted PF</td><td>Plantar flexors</td><td>Gastroc-soleus complex testing</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>McKenzie Approach &#8212; Postural, Dysfunction &amp; Derangement</h4>
+      <div class="ma-tags"><span class="ma-tag red">Rule out derangement first</span><span class="ma-tag gold">7 classes of derangement</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <p style="color:var(--text2);font-size:13.5px;margin-bottom:12px;">Theorized LBP from prolonged sitting in flexion, frequency of flexion, and lack of extension. Better results when exercises match directional preference. <strong>Rule out derangement before treating anything else.</strong></p>
+      <table class="data-table">
+        <thead><tr><th>Syndrome</th><th>Population</th><th>Characteristics</th><th>Intervention</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Postural</td><td>&#8804;30 yo, sedentary worker</td><td>Intermittent pain, some pain-free days. Pain with maintained postures only. No pain with movement. No deformity or loss of ROM. No provocative signs</td><td>Teach patient to avoid bad postures. Education-focused</td></tr>
+          <tr><td class="hi">Dysfunction</td><td>30+, poor posture, no exercise, or Hx of trauma</td><td>Intermittent pain, no time factor. Pain at end range. Pain with movement of shortened structures. Relief with unloading shortened tissue. Loss of function/movement. No deformity</td><td>Restore shortened tissue. Stretch in direction of movement loss. Strong enough for some pain. Peripheralization should NOT occur</td></tr>
+          <tr><td class="bad">Derangement</td><td>Any age</td><td><strong>Constant pain.</strong> Pain during day NOT at night. Aggravated by some movements, alleviated by others. Loss of movement and function. Deformity (kyphosis/scoliosis common)</td><td>Reduce derangement by altering NP/AF position. End-range loading for prolonged time. Anterior derangements = flexion strategies. Posterior derangements = extension strategies</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>CPRs for Lumbar Spine</h4>
+      <div class="ma-tags"><span class="ma-tag green">Manipulation CPR</span><span class="ma-tag gold">Stabilization CPR</span><span class="ma-tag purple">Inflammatory CPR</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div class="bl-strip green">
+          <div class="bl-label">CPR for Lumbar Manipulation</div>
+          <ul>
+            <li>LBP &lt;16 days (some sources say 30 days)</li>
+            <li>No symptoms distal to knee</li>
+            <li>&lt;19 on FABQ</li>
+            <li>&#8805;1 hypomobile segment in L/S</li>
+            <li>&#8805;1 hip with IR &gt;35&#176;</li>
+          </ul>
+        </div>
+        <div class="bl-strip gold">
+          <div class="bl-label">CPR for Lumbar Stabilization</div>
+          <ul>
+            <li>&lt;40 years old</li>
+            <li>SLR &#8805;91&#176;</li>
+            <li>Aberrant lumbar movement</li>
+            <li>(+) Prone instability test</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== LUMBAR PATHOLOGY TAB ==================== -->
+<div class="tab-panel" id="tab-lumbarpath">
+<div class="container">
+  <div class="section-title">Lumbar Pathologies</div>
+  <div class="section-sub">Lumbar pathologies range from soft tissue dysfunction to spondyloarthropathies. Understanding the spectrum from ligament sprains to spondylolisthesis to stenosis is critical for accurate classification and treatment.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Spondylosis, Spondylolysis &amp; Spondylolisthesis</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Spondylosis = OA/DJD</span><span class="ma-tag red">Spondylolysis = pars Fx</span><span class="ma-tag purple">Spondylolisthesis = slippage</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Definition</th><th>Population</th><th>Presentation</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Spondylosis (OA/DJD)</td><td>Wear and tear of spine. &#8595; disc hydration &#8594; more bony contact &#8594; inflammation &#8594; unhealthy new bone &#8594; &#8595; foraminal space</td><td>Women &gt; men, white &gt; black, high BMI, smoking, genetics</td><td>Pain/weakness/numbness in buttocks, legs, calves. Extension/rotation painful. Flexion feels better. <strong>"Shopping cart sign"</strong></td></tr>
+          <tr><td class="warn">Spondylolysis</td><td>Defect or fracture of pars articularis ("Scotty dog" fracture). Poor blood supply at pars = &#8593; stress Fx risk. Commonly L5-S1</td><td><strong>5&#8211;7 yo.</strong> Back pain in young child is NOT normal. Dancers, gymnasts, lifters, divers</td><td>Deep ache in LB, &#8593; pain with movement, tight hamstrings. Tied to hyperextension + rotation + loading</td></tr>
+          <tr><td class="bad">Spondylolisthesis</td><td>Pars fracture with anterior slippage. Graded 1&#8211;5 (<strong>Grade 3+ = surgery referral</strong>). Step-off deformity</td><td>Male &gt; female. Higher grades more common in girls. 10&#8211;15 yo most common. Weightlifters, gymnasts, football</td><td>LBP worse with exercise, better with rest. &#8593; lordosis (swayback). Pain with CPA. Hamstring tightness. Ask about B&amp;B. Can be bilateral. Waddle gait common</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip">
+        <div class="bl-label">Types of Spondylolisthesis</div>
+        <p><strong>Congenital:</strong> Dysplasia of L5/sacral arch. <strong>Isthmic:</strong> Pars defect including fracture or elongation (most common). <strong>Degenerative:</strong> Older adults, L4&#8211;L5 level. <strong>Traumatic:</strong> Acute fracture/dislocation of zyga joint (rare). <strong>Pathologic:</strong> Pathological cause weakening structures.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Ankylosing Spondylitis &amp; Spondyloarthropathies</h4>
+      <div class="ma-tags"><span class="ma-tag red">"Bamboo Spine"</span><span class="ma-tag gold">90% HLA-B27 positive</span><span class="ma-tag purple">Sacroiliitis first</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Ankylosing Spondylitis</div>
+        <p>Inflammatory arthritis of spine &#8212; "Bamboo Spine." Affects facets, tendons, ligaments. <strong>Enthesitis</strong> (inflammation at disc-vertebrae attachment) &#8594; bone erosion &#8594; new bone (calcification) at facets, costotransverse, costovertebral joints. AF can calcify, fusing segments. <strong>Sacroiliitis usually first to appear</strong> &#8594; SIJ fuses &#8594; progressive immobility &#8594; stress fractures &#8594; excessive kyphosis &#8594; may crowd internal organs. 90% are HLA-B27 positive. Men 3:1. Age of onset 15&#8211;40. Can affect eyes, knees, hips, ankles, shoulders. Chest expansion &lt;2.5 cm is pathologic (normal = 5 cm at nipple line).</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Other Spondyloarthropathies</div>
+        <p><strong>Psoriatic Arthritis:</strong> Small joints (hands/feet), "sausage digit," psoriasis skin rash. <strong>Reactive Arthritis:</strong> Joint inflammation from infection (intestinal, UTI). <strong>IBD-associated:</strong> Crohn's, UC &#8212; ask about B&amp;B, stress-related. <strong>Juvenile SpA:</strong> Childhood onset, enthesitis dominant.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Degenerative Spinal Stenosis &#8212; Central vs Lateral</h4>
+      <div class="ma-tags"><span class="ma-tag gold">65% = neurogenic claudication</span><span class="ma-tag green">Flexion opens canal</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div class="bl-strip">
+          <div class="bl-label">Central Stenosis</div>
+          <p>Narrowing of spinal canal around thecal sac (contains cauda equina). Can present symptoms similar to cauda equina. Causes: facet arthrosis, ligamentum flavum thickening/bulging, spondylolisthesis.</p>
+        </div>
+        <div class="bl-strip gold">
+          <div class="bl-label">Lateral Stenosis</div>
+          <p>Encroachment of spinal nerve in lateral recess. Causes: facet joint hypertrophy, loss of IVD height, IVD bulging, spondylolisthesis.</p>
+        </div>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Presentation</div>
+        <p>Long history of LBP. Unilateral or bilateral leg pain. <strong>65% present with neurogenic claudication</strong> (compression affecting LE innervation, affects gait). &#8595; LB lordosis. Aggravation with extension and side bend. <strong>Extension closes canal, flexion opens canal.</strong> Shortened hip flexors (iliopsoas, rectus femoris), lengthened hip extensors (glute max, hamstrings) &#8594; early recruitment of LB extensors &#8594; excessive LB extension &#8594; more stenotic compression.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Intervention</div>
+        <p>William flexion exercises. Manual therapy (thrust and non-thrust LB mobs/manips). Hip flexor, paraspinal, rectus femoris stretching. Glute and core strengthening/stabilization. Posterior pelvic tilt positioning.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Zyga Joint Dysfunction, Instability &amp; Soft Tissue</h4>
+      <div class="ma-tags"><span class="ma-tag">Zyga = unilateral LBP</span><span class="ma-tag gold">QL dysfunction = broad stiffness</span><span class="ma-tag red">Psoas = big LBP contributor</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Zygapophyseal Joint Dysfunction</div>
+        <p>Result of lesion to joint and pain-sensitive structures. Can result from hypomobility OR hypermobility/instability. <strong>Presentation:</strong> Unilateral LBP, aggravated with certain movements (flexion OR extension, especially end range). <strong>Extra-articular:</strong> &#8595; PPIVM, normal PPAIVM. <strong>Periarticular:</strong> Restriction in both, hard capsular end-feel. <strong>Pathomechanical:</strong> Restriction in both, abrupt slightly springy end-feel. Treatment: specific joint mobs, postural education, correct muscle imbalances, core stabilization.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Clinical Instability</div>
+        <p>Recurrent, constant, catching, or locking pain. Feeling of giving way. Aggravated by sustained sitting, prolonged standing, semi-flexed postures, forward bending, sudden movements, lifting, sneezing. Returning to upright from forward bend is key complaint. Posterior creases, fulcrum point, excessive AROM. Treatment: remove abnormal joint stress, &#8593; global musculature strength (core and trunk).</p>
+      </div>
+      <div class="grid2">
+        <div class="bl-strip gold">
+          <div class="bl-label">QL Dysfunction</div>
+          <p>Broad stiffness, very tight. &#8595; lateral side bend away from dysfunction. Referred pain to glutes. Treatment: put QL on stretch (sidelying, affected side up, glutes on stretch), dry needling, trigger point release.</p>
+        </div>
+        <div class="bl-strip purple">
+          <div class="bl-label">Psoas Syndrome</div>
+          <p>Big contributor to LBP that lasts. Anterior pelvic tilt, &#8593; lordosis, muscle spasms, forward flexed posture. Treatment: stretch (thunderdome, mod Thomas &#8212; not 2&#8211;3&#215;/day, too much stretch is bad), STM (likes firm pressure), MFR, KT tape.</p>
+        </div>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Thoracolumbar Fascia &amp; LBP</div>
+        <p>&#8593; thickness of TLF with LBP &gt;1 year. &#8595; shear plane motion by 20&#8211;50%. Fibrosis (fibroblasts don't turn off, continue laying down fibrin). Adhesion of LB muscles &#8594; poor movement patterns. Treatment: MFR on stretch, dynamic fascial stretching (TLF runs obliquely &#8212; L lats to R glute to R hammy and vice versa), yoga, postural/ergonomic education.</p>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">Lower Crossed Syndrome</div>
+        <p>Erector spinae and iliopsoas are tight. Abs and glutes are weak. Results in anterior pelvic tilt + &#8593; LB lordosis. Mirror image of upper crossed syndrome.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lumbar Ligaments</h4>
+      <div class="ma-tags"><span class="ma-tag">ALL = limits extension</span><span class="ma-tag gold">Lig. Flavum = strongest</span><span class="ma-tag red">PLL = prevents disc protrusion</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Ligament</th><th>Attachments</th><th>Function</th><th>Clinical Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">ALL</td><td>Base of skull to sacrum. Anterior vertebral body to front of AF</td><td>Limits excessive extension. Minor assistant limiting anterior translation</td><td>Primary spine stabilizer. Thins as you go up. Site for osteophytes. Innervated by gray rami communicantes</td></tr>
+          <tr><td class="hi">PLL</td><td>Base of skull to sacrum. Posterior vertebral body to back of AF</td><td>Limits excessive flexion. <strong>Important in preventing IVD protrusion</strong></td><td>Primary stabilizer. Does not attach to vertebral concavity (separated by fat pad). Innervated by sinuvertebral nerve. Becomes taut with traction</td></tr>
+          <tr><td class="hi">Ligamentum Flavum</td><td>Base of skull to pelvis. In front of and between laminae</td><td>Limits flexion. <strong>Protects spinal cord and nerves</strong></td><td><strong>Strongest spinal ligament.</strong> Innervated by medial branch of dorsal ramus</td></tr>
+          <tr><td class="hi">Supraspinous</td><td>Tips of spinous processes</td><td>Limits flexion</td><td>Most superficial &#8594; more prone to sprains. Well developed in upper LB</td></tr>
+          <tr><td class="hi">Interspinous</td><td>Between consecutive spinous processes (3 parts: ventral, middle, dorsal)</td><td>Limits separation of SP during flexion</td><td>Not continuous. Often disrupted with trauma &#8594; posterior column unstable. Rupture tends at middle part</td></tr>
+          <tr><td class="hi">Iliolumbar</td><td>L4&#8211;L5 to iliac crest</td><td>Supports L4&#8211;L5, gives stability to iliac crest</td><td>MOI: rotational movements. Pain at PSIS, lateral thigh (DDx trochanteric bursitis), groin (&#8594; APT), posterior LB</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== DISC & RADICULOPATHY TAB ==================== -->
+<div class="tab-panel" id="tab-disc">
+<div class="container">
+  <div class="section-title">Disc Pathology &amp; Radiculopathy</div>
+  <div class="section-sub">Disc degeneration is a normal aging process beginning around the 3rd decade. The nucleus pulposus starts to be replaced by fibrocartilage and dehydrates. Understanding the 3-stage degeneration cascade and compression by root level is essential for every PT.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Disc Degeneration Cascade &amp; Herniation Types</h4>
+      <div class="ma-tags"><span class="ma-tag">Stage 1 = annular tears</span><span class="ma-tag gold">Stage 2 = instability</span><span class="ma-tag red">Stage 3 = osteophytes</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">3 Stages of Disc Degeneration</div>
+        <p><strong>Stage 1 &#8212; Early Dysfunction:</strong> Outer annular tears, endplate separation, some cartilage destruction, facet inflammation. <strong>Stage 2 &#8212; Intermediate Instability:</strong> Loss of disc space and height, laxity of posterior joint capsule and AF. "Giving way and catching" through AROM. Abnormal movement patterns. <strong>Stage 3 &#8212; Final Stabilization:</strong> Osteophyte formation, stenosis, laying down extra tissue for stabilization, loss of disc material, radial tears of AF, fibrosis of posterior joint capsules.</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Type</th><th>Description</th><th>Symptoms</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Degeneration</td><td>Slight herniation of NP into AF. NP becoming fibrocartilaginous. Poor shock absorption</td><td>Gradual onset. Stiffness</td></tr>
+          <tr><td class="warn">Contained Protrusion</td><td>Disc bulges posteriorly WITHOUT rupture of AF</td><td>Dull pain (poorly localized). No LE symptoms. SLR and Slump usually negative. Can progress to extrusion</td></tr>
+          <tr><td class="bad">Extrusion</td><td>AF is perforated. Diskal material moves into epidural space but remains attached to disc</td><td>Radicular symptoms. (+) neural tension tests. Can progress to sequestration</td></tr>
+          <tr><td class="bad">Sequestration</td><td>Formation of free diskal fragments outside the disc</td><td>Severe radicular symptoms. Free fragments can migrate and compress nerve roots at different levels</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip red">
+        <div class="bl-label">Cord Compression Concerns</div>
+        <p>Extrusion and sequestration can put pressure on spinal cord &#8594; <strong>myelopathy (RED FLAG)</strong> with UMN symptoms and hyperreflexia (3&#8211;4+). Pressure on nerve roots distal to conus medullaris &#8594; <strong>cauda equina syndrome.</strong> Conus medullaris = tapered lower end of spinal cord at L1&#8211;L2.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lumbar Radiculopathy by Root Level</h4>
+      <div class="ma-tags"><span class="ma-tag red">L4 &amp; L5 = 80% of disc lesions</span><span class="ma-tag gold">Leg &gt; back pain = nerve root</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Root</th><th>Pain Distribution</th><th>Motor Weakness</th><th>Reflex Changes</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">High Lumbar (L1&#8211;L2)</td><td>Groin, anterior thigh. No posterior LE radiation. 1&#8211;11% of herniations</td><td>Relief with flexion, worsens with standing</td><td>PLL provides good protection at this level</td></tr>
+          <tr><td class="hi">L3</td><td>Mid lumbar, upper buttock, anterior thigh/knee, medial knee, above ankle</td><td>Slight weakness of iliopsoas and lower quads</td><td>&#8595; Patellar reflex</td></tr>
+          <tr><td class="warn">L4 (40% of disc lesions)</td><td>Iliac crest, inner buttock, outer thigh/leg, top of foot, big toe. (+) SLR. Lateral LB deviation</td><td>Weak dorsiflexion. Limited side bend</td><td>&#8595; Patellar, tibialis posterior, tibialis anterior</td></tr>
+          <tr><td class="warn">L5 (equally affected as L4)</td><td>SI area, lower buttock, lateral thigh/leg, inner 3 toes, medial sole. (+) SLR</td><td>Weak peroneals, EHL, hip abductors</td><td>&#8595; Achilles, peroneus, EHL</td></tr>
+          <tr><td class="hi">S1</td><td>Buttock, posterior thigh, posterior calf, lateral foot</td><td>Weak plantar flexors, hip extensors</td><td>&#8595; Achilles reflex</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">DDx for LE Symptoms (Not Disc)</div>
+        <p>Hip or SIJ pathology. Claudication (iliac/iliofemoral arteries). Spondylolisthesis. Muscle strain, fracture, or CA. Peripheral nerve injury. Diabetic amyotrophy (lumbosacral neuropathy &#8212; asymmetric painful muscle wasting of quads/adductors/hip flexors, poor glycemic control). <strong>Meralgia paresthetica:</strong> Entrapment of lateral femoral cutaneous nerve under inguinal ligament &#8212; lateral/anterior paresthesias, sensation only (NO motor or reflex), &#8593; symptoms with hip extension, relief with sitting.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Clinical Pearls</div>
+        <p>Pain worse in LE than LB = nerve root irritation. Pain worse in LB than LE = probably referred from spinal structure. 20&#8211;30% of asymptomatic people have abnormal imaging findings. Do not perform full spinal motions shortly after rising from bed (disc is most hydrated). Repetitive contact of spinous processes during max extension &#8594; periostitis ("kissing spine" / Baastrup's disease).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lumbar Post-Op &#8212; Fusion Approaches</h4>
+      <div class="ma-tags"><span class="ma-tag green">ALIF = anterior approach</span><span class="ma-tag gold">PLIF = posterior</span><span class="ma-tag purple">TLIF = unilateral</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Lumbar Fusion &#8212; Goal: Restore Anatomical Alignment</div>
+        <p><strong>ALIF (Anterior Lumbar Interbody Fusion):</strong> Through abdomen to remove disc and insert hardware. Avoids thoracolumbar musculature. L4&#8211;L5 is hardest (aortic/vena cava bifurcation). Faster approach, avoids thecal sac. Wire cage or bone graft placed. <strong>PLIF (Posterior):</strong> Traditional posterior approach through paraspinals. <strong>TLIF (Transforaminal):</strong> Unilateral approach &#8212; less tissue disruption than PLIF.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== CERVICAL SPINE TAB ==================== -->
+<div class="tab-panel" id="tab-cervical">
+<div class="container">
+  <div class="section-title">Cervical Spine</div>
+  <div class="section-sub">The cervical spine is inherently fragile and patients remember their neck injuries. 4th leading cause of days lost of life years. 30% US prevalence. Women more affected. People with both LBP and C-spine pain have worse prognosis. High roles conflict (balancing work/life), depressed mood, and perceived muscle tension are risk factors.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Neck Pain with Mobility Deficits &#8212; OA, Stenosis, Facet</h4>
+      <div class="ma-tags"><span class="ma-tag gold">C6 = most prevalence</span><span class="ma-tag">Extension most affected</span><span class="ma-tag purple">Facet = unilateral axial pain</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Condition</th><th>Presentation</th><th>Treatment</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Cervical OA/Spondylosis</td><td>4th&#8211;6th decade (85%), 65% over 45 yo. Stiffness in morning, ROM limited (extension most affected). Most prevalence around C6. High rates of spondylotic changes WITHOUT symptoms</td><td>Mobility of whole spine, especially cervical. Z joints + uncovertebral joints. Soft tissue of C/T spine, periscapular tissue</td></tr>
+          <tr><td class="hi">Cervical Stenosis</td><td>Most common &gt;55. Bilateral or unilateral. Extension limited. Radiating symptoms. Disc height &#8595;, osteophyte formation, lig. flavum hypertrophy. May progress to myelopathy if central</td><td>Unlikely for radiculopathy to be from disc in elderly (disc already degenerated) &#8212; more likely stenotic. Work T-spine and shoulder mobility</td></tr>
+          <tr><td class="hi">Facet Dysfunction</td><td>Unilateral axial pain, mechanical. Impingement of meniscoid or synovial fold. Acquired torticollis. Stiff/stuck/locking. Referred pain depends on levels affected. Extension + rotation = most stress on joint/capsule</td><td>Joint mobilization. If repetitive &#8594; stability may be compromised</td></tr>
+          <tr><td class="warn">Cervical Instability</td><td>Bilateral &gt; unilateral neck pain. Spasm/tightness in ROM. Feeling stuck. Continued facet flare-ups. Step deformities, segmental hinging. Most common C5&#8211;C6 &gt; C2&#8211;C3</td><td>Mobilize segments above and below (reduces stress). Scapular and cervical stabilization. Postural exercise</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>WAD, Cervicogenic Headache &amp; Radiculopathy</h4>
+      <div class="ma-tags"><span class="ma-tag red">WAD: 55% have Sx after 10+ years</span><span class="ma-tag gold">CGH: upper cervical dysfunction</span><span class="ma-tag purple">C7 = most involved radiculopathy</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Whiplash Associated Disorder (WAD)</div>
+        <p>Acceleration/deceleration injury. Soft tissue, ligamentous, bony, neuro injury. <strong>3 recovery pathways:</strong> (1) Quick recovery 2&#8211;3 months. (2) Moderate with lingering symptoms for years. (3) Poor recovery with significant disability. Things hindering recovery: pain catastrophizing, PTSD, high disability, cold hyperalgesia. <strong>55% still have symptoms after 10+ years.</strong> Treatment: education (remain active), mobility exercises, reduce cervical collar, return to activity, tolerable ROM, manual therapy &#8212; don't do too much as it may lead to chronic symptoms.</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Cervicogenic Headache</div>
+        <p>Stem from upper cervical dysfunction or suboccipital muscular dysfunction. Trigeminal nerve plays a role. Known trigger mechanism (posture, neck pain). Females 3rd decade+. Unilateral &gt; bilateral. &#8595; cervical ROM. Painful upper cervical manual palpation. &#8595; deep neck flexor strength. <strong>Referral patterns:</strong> C0&#8211;1 = occiput. C1&#8211;2 = "ram's horn." C2&#8211;3 = "halo." C3&#8211;4 = "rock behind eye." Treatment: C/T manips, soft tissue, deep neck flexor endurance, postural training.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Cervical Radiculopathy by Root Level</div>
+        <p><strong>C5:</strong> "Epaulet" distribution &#8212; superior shoulder to lateral mid-arm. Absence of painful shoulder ROM and impingement signs. <strong>C6:</strong> Neck &#8594; lateral biceps &#8594; lateral forearm &#8594; thumb/index finger (median). <strong>C7 (most involved):</strong> Posterior shoulder &#8594; scapula &#8594; triceps &#8594; posterior forearm &#8594; posterior fingers (radial). <strong>C8:</strong> Medial arm/forearm &#8594; medial hand &#8594; 4th&#8211;5th digit (ulnar). Difficulty with ADLs using hands.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">CPR for Cervical Radiculopathy</div>
+        <p><strong>(+) Spurling's + (+) Distraction + (+) ULTT median nerve + C/S rotation &lt;60&#176;.</strong> 3 positive tests: +LR 6.1. 4 positive tests: +LR 30.3.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Brachial Plexus Injuries</div>
+        <p>DDx vs. radiculopathy: is it from BP or nerve roots? MOI: traction (yanking on shoulder). <strong>Erb's (upper BP, C5&#8211;C6):</strong> &#8593; angle between neck and shoulder &#8594; "waiter's tip" posture. <strong>Klumpke's (lower BP, C8&#8211;T1):</strong> Upward pull of limb &#8594; "claw hand." <strong>Stingers/Burners:</strong> Common in football (poor tackle), head sidebends away from injured BP, UE radiating symptoms and NBT.</p>
+      </div>
+      <div class="bl-strip orange">
+        <div class="bl-label">TOS (Thoracic Outlet Syndrome)</div>
+        <p>Vascular vs. neurogenic vs. both. Compression at: (1) <strong>Scalenes</strong> (interscalene triangle &#8212; 0.2% have cervical rib at C7). (2) <strong>First rib</strong> (costoclavicular interval &#8212; clavicle depression or first rib elevation from scalene hypertonicity). (3) <strong>Pec minor</strong> (hyperabduction, hypertonicity, shoulder ABD+ER at 90&#176;). Vascular: changes in hand temp/color, non-dermatomal patterns, arm heaviness.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Upper Cervical Anatomy &amp; Craniovertebral Ligaments</h4>
+      <div class="ma-tags"><span class="ma-tag red">Alar = resist flexion + contralateral rotation</span><span class="ma-tag gold">Cruciform 2&#215; stronger than alar</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Ligament</th><th>Function</th><th>Clinical Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Alar</td><td>Dens to occipital condyles. Resist flexion, contralateral SB, contralateral O-A rotation</td><td>Insufficiency &#8594; &#8593; occipitoaxial instability</td></tr>
+          <tr><td class="hi">Cruciform (Transverse)</td><td>Counteracts anterior translation of atlas relative to axis. Limits flexion between C1&#8211;C2</td><td><strong>Twice as strong as alar.</strong> Excessive movement could result in dens compressing spinal cord, vertebral artery, or superior ganglion. Spontaneous tears are rare</td></tr>
+          <tr><td class="hi">Tectorial Membrane</td><td>Superior continuation of PLL. C2 body to anterior rim of foramen magnum</td><td>Most superficial of craniovertebral membranes</td></tr>
+          <tr><td class="hi">Apical</td><td>Apex of dens to anterior rim of foramen magnum</td><td>Moderate stabilizer against posterior translation of dens</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip">
+        <div class="bl-label">Key Joint Considerations</div>
+        <p><strong>O-A Joint:</strong> Facilitates flexion&#8211;extension (combined 15&#8211;20&#176;) but impedes other movements. Axial rotation forced = 8&#176;. Hypermobility if rotation &gt;8&#176;. <strong>A-A Joint:</strong> Large arch of rotation. Only AA and TL junction provide true spinal rotation. <strong>Upper Crossed Syndrome:</strong> Tight levator scap, upper traps, SCM, pecs. Weak deep neck flexors, lower scap stabilizers. Forward head, elevated/protracted shoulders, scap winging.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cervical Fractures</h4>
+      <div class="ma-tags"><span class="ma-tag red">Odontoid = 60% of C2 Fx</span><span class="ma-tag gold">Jefferson = axial loading C1</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Odontoid Fractures</div>
+        <p>60% of all axis fractures and 10&#8211;18% of all C-spine fractures. Most common C-spine fracture in people &gt;70. MOI: high-energy trauma (MVA), or falls/hyperextension in elderly. <strong>Type 1:</strong> Oblique avulsion from dens tip. <strong>Type 2:</strong> Through neck of odontoid. <strong>Type 3:</strong> Extends into body of C2 (15&#8211;40% of odontoid fractures).</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Jefferson Fracture</div>
+        <p>Lateral mass fracture of C1 and disruption of C1 ring. Results from <strong>axial loading on atlas.</strong> Generally minimal neurologic deficit and good prognosis. Type I: bilateral single-arch. Type II: concurrent anterior and posterior arch (classic 4-point break). Type III: lateral mass fracture extending into arch.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Transverse Ligament Injury</div>
+        <p><strong>Type 1:</strong> Disruption of ligament substance without osseous component &#8212; needs surgery. <strong>Type 2:</strong> Fracture/avulsion of tubercle on C1 lateral mass without ligament disruption &#8212; heals with orthosis.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== THORACIC & RIBS TAB ==================== -->
+<div class="tab-panel" id="tab-thoracic">
+<div class="container">
+  <div class="section-title">Thoracic Spine &amp; Rib Dysfunction</div>
+  <div class="section-sub">Most rigid region of spine. Important for load transfer between upper and lower body. Little research compared to C/S and L/S (15% of spine pain). Upper T-spine treated similar to cervical, lower T-spine similar to lumbar. High evidence for joint mobs and manips for mid-thoracic pain.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Thoracic Postural Dysfunction &amp; Kyphotic Deformities</h4>
+      <div class="ma-tags"><span class="ma-tag gold">Middle-aged, F &gt; M, office workers</span><span class="ma-tag red">Dowager's hump = compression Fx</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Postural Dysfunction</div>
+        <p>Very common. Hard to reproduce on exam &#8212; exacerbated by prolonged static postures. Worse with stress/fatigue. Middle-aged, F &gt; M, office workers, anyone who sits a lot. No true MOI &#8212; repetitive stress disorder. Complaints: interscapular, periscapular, upper traps, lev scap, midline T-spine, TL and CT junction. Stiffness. Worse with sustained positions and carrying heavy weights. &#8595; with rest. Objective: weak scapular muscles, poor scapulohumeral rhythm, poor T-spine mobility (extension and rotation).</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Deformity</th><th>Description</th><th>Cause</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">Dowager's Hump</td><td>Severely kyphotic upper posterior region</td><td>Multiple anterior wedge compression fractures. Usually postmenopausal osteoporosis or long-term corticosteroids</td></tr>
+          <tr><td class="warn">Hump Back</td><td>Localized, sharp posterior angulation</td><td>Anterior wedging of 1&#8211;2 vertebrae. Infection, fracture, or congenital anomaly</td></tr>
+          <tr><td class="hi">Round Back</td><td>&#8595; pelvic inclination + excessive kyphosis</td><td>Postural &#8212; &#8595; pelvic inclination refers to types of tilts</td></tr>
+          <tr><td class="hi">Flat Back</td><td>&#8595; pelvic inclination + &#8593; kyphosis + mobile T-spine</td><td>Postural &#8212; mobile thoracic compensating for pelvic position</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip purple">
+        <div class="bl-label">Janda's Upper Cross Syndrome</div>
+        <p>Tight and strong pecs, lats, upper traps. Weak/lengthened scapular musculature (rhomboids, lower traps) and cervical flexors. Poor OH mobility and posture. &#8593; stress through posterior chain. Inhibited scapular force couples.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Thoracic Disc, Zyga Joint &amp; Rib Dysfunction</h4>
+      <div class="ma-tags"><span class="ma-tag">T-disc = 0.25-0.75% of all herniations</span><span class="ma-tag gold">Rib 1 = most concerning</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Thoracic Disc Herniation</div>
+        <p>Constitutes only 0.25&#8211;0.75% of all disc herniations. Much more common in lower T-spine. Major cause = degenerative change. Rarely requires surgery. Disc height:body ratio = 1:5 (vs. cervical 2:5, lumbar 1:3). <strong>Herniations by level:</strong> T1&#8211;T2 = rare (rib protection), numbness/weakness hand, pain arm/medial forearm. T1 associated with Horner's disease. T2&#8211;T3 = rarest, refers to clavicle/spine of scapula. T3&#8211;T8 = symptoms at side/front of trunk. T6 compression can cause pain from base of neck to waist. T9&#8211;T11 = pain radiating to buttock (rule out lumbopelvic origin).</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Rib Dysfunction</div>
+        <p>Costovertebral joint may be involved in inflammatory or degenerative joint disease (ankylosing spondylitis). Inflammation causes localized pain 3&#8211;4 cm from midline. <strong>Pump handle:</strong> Ribs 2&#8211;7, sagittal plane motion. <strong>Bucket handle:</strong> Lower ribs 8&#8211;10, frontal plane motion. Floating ribs: 11&#8211;12. Rib dysfunctions: structural (true subluxation from trauma), torsional (twisting &#8594; held in IR/ER), respiratory (poor posture &#8594; restricted inspiration/expiration).</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Rib Fracture Considerations</div>
+        <p>10% of patients after blunt chest trauma have &#8805;1 rib fracture. Fractured ribs can lacerate pleura, lung, or abdominal organs &#8594; hemothorax, pneumothorax. Upper rib/clavicle fractures (3&#8211;15%) can cause brachial plexus or vascular injury. 1st rib fracture: injury to brachial plexus and subclavian A/V. <strong>Flail chest:</strong> 3+ rib segments fractured &#8594; paradoxical breathing (inspiration: ribs draw inward; expiration: ribs push outward).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Scheuermann's Disease, T4 Syndrome &amp; Scoliosis</h4>
+      <div class="ma-tags"><span class="ma-tag orange">Scheuermann's = self-limiting at puberty</span><span class="ma-tag purple">T4 syndrome = stocking-glove paresthesia</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip orange">
+        <div class="bl-label">Scheuermann's Disease</div>
+        <p>Defect in ring apophysis &#8594; anterior wedging from flexion overload. End plate can crack &#8594; disc material may bulge into vertebral body (Schmorl's node). Self-limiting past puberty. "Thoracic Kyphosis." Affects 10% of all people, M = F equally. Pubescent athletes. 20&#8211;30% also have scoliosis. Pain with T-spine extension and rotation. Treatment: stretching pecs, strengthening T-spine extensors and scapular adductors.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">T4 Syndrome (Can Be T2&#8211;T7)</div>
+        <p>No known cause &#8212; thought to be sympathetic reaction to hypomobility (resolves with manual therapy). Sympathetic trunks lie on or just lateral to costovertebral joint. Abnormal deformation with poor posture (forward head, rounded shoulders). Women &gt; men (3:1). Night symptoms common. <strong>Bilateral stocking-glove paresthesia</strong> &#8212; confused with carpal tunnel and cervical radiculopathy. Headaches, neck pain, UE pain. (+) Slump, (+) ULTT, hypomobile segments.</p>
+      </div>
+      <div class="bl-strip">
+        <div class="bl-label">Scoliosis</div>
+        <p>Progressive 3D deformity of spinal segments. <strong>Dextroscoliosis:</strong> Right-sided curve. <strong>Levoscoliosis:</strong> Left-sided curve &#8212; more severe, may damage internal organs and pulmonary function. May indicate neurological condition. Tietze Syndrome: inflammation of costosternal cartilage (2nd&#8211;3rd junction), gradual onset, worse with deep inspiration/coughing/sneezing, localized swelling.</p>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Pain Neuroscience Education (PNE) Key Takeaways</div>
+        <p>There is NOT always a direct link between tissue damage and pain level. Pain is produced by the brain after concluding body is in danger. Nociceptive fibers are danger signal fibers, NOT "pain fibers." CNS interprets signal magnitude. Changes can occur along the entire nervous system (ion channel upregulation, immune response, demyelination, dorsal horn interneuron death). Pain is a matrix &#8212; no single brain center. Repeated signaling creates "pain memory." <strong>Types:</strong> Nociceptive (proportionate, clear aggravating/alleviating), Peripheral Neurogenic (dermatomal, (+) limb tension), Central Sensitization (disproportionate, diffuse, high SINSS, psychosocial components). <strong>Motion is lotion.</strong> 6 miles of running = endorphins equivalent to morphine. Exercise-induced analgesic effect starts at 10 min aerobic.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== SIJ & PELVIS TAB ==================== -->
+<div class="tab-panel" id="tab-sij">
+<div class="container">
+  <div class="section-title">Sacroiliac Joint &amp; Pelvic Girdle Pain</div>
+  <div class="section-sub">Pelvic girdle pain (PGP) arises from pregnancy, trauma, arthritis, or OA. Diagnosis of PGP can only be reached after exclusion of lumbar causes. 50% of pregnant females complain of PGP. Must have 3 positive pelvic girdle tests for diagnosis.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>SIJ Anatomy &amp; Key Ligaments</h4>
+      <div class="ma-tags"><span class="ma-tag gold">SIJ transmits forces</span><span class="ma-tag">Sacrotuberous = stabilizes against nutation</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">SIJ Overview</div>
+        <p>Base at top (anterior), apex at bottom (more posterior). <strong>Transmits forces</strong> between spine and pelvis. Concave sacral base on convex L5. Hard to isolate SIJ pathologies &#8212; isolation occurs after ruling out hip and lower lumbar. <strong>Intercornual ligament:</strong> Connects sacral cornu to coccyx &#8212; small ligament but big source of pain (coccydynia).</p>
+      </div>
+      <table class="data-table">
+        <thead><tr><th>Ligament</th><th>Attachments</th><th>Function</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Dorsal SI (Long Dorsal)</td><td>PSIS to S3&#8211;S4. Attachments on TLF, multifidi, erector spinae</td><td>Shortens with counter-nutation (APT), lengthens with nutation (PPT)</td></tr>
+          <tr><td class="hi">Sacrotuberous</td><td>PSIS &amp; lateral sacral border to medial ischial tuberosity. Attachments to glute max &amp; piriformis</td><td><strong>Stabilizes against nutation</strong> (sacral flexion/PPT). When piriformis contracts &#8594; this ligament is taut</td></tr>
+          <tr><td class="hi">Sacrospinous</td><td>Ischial spine to lateral sacrum/coccyx</td><td>Opposes nutation of innominate during WB</td></tr>
+          <tr><td class="hi">Anterior SI</td><td>S3 to lateral preauricular sulcus</td><td>Weak and thin compared to posterior ligaments</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip gold">
+        <div class="bl-label">Key Muscles of SIJ Stability</div>
+        <p><strong>Transverse Abdominis:</strong> Deepest ab muscle, &#8595; SIJ laxity, approximates ilia anteriorly. <strong>Multifidus:</strong> Spinal stability, becomes inhibited and &#8595; in size with LBP/PGP. <strong>Piriformis:</strong> ER/ABD of femur (IR/ABD in 90&#176; hip flexion), stabilizes SIJ, associated with sciatic compression. <strong>Glute Max:</strong> Major stabilizer. <strong>Obturator Internus:</strong> Main trigger point of pain (good for release).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>SIJ Assessment &amp; Pelvic Girdle Conditions</h4>
+      <div class="ma-tags"><span class="ma-tag red">Laslett: 2/4 stress tests = SIJ</span><span class="ma-tag gold">Clear lumbar &amp; hip first</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red">
+        <div class="bl-label">Pain Provocation Tests (Laslett's Cluster)</div>
+        <p>Good sensitivity if 2 positives: <strong>Distraction, Thigh thrust, Compression, Sacral thrust (spring).</strong> If 2 tests recreate pain, no further tests needed. <strong>Diagnosis of PGP requires:</strong> Posterior pelvic pain provocation test (P4), FABER, palpation of long dorsal ligament, Gaenslen's test. Palpation of pubic symphysis + modified Trendelenburg. <strong>ASLR</strong> = functional pelvic test. <strong>Must have 3 positive pelvic girdle tests.</strong></p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">Fryette's Laws of Spinal Motion</div>
+        <p><strong>Law 1:</strong> In neutral position (facets not engaged), rotation is coupled to the OPPOSITE side of side-bending. <strong>Law 2:</strong> In extension or near full flexion (facets engaged), rotation and side-bending occur in the SAME direction. <strong>Law 3:</strong> If movement is introduced in any plane, ROM in the other two directions will be reduced.</p>
+      </div>
+      <div class="bl-strip purple">
+        <div class="bl-label">Pelvic Girdle Conditions</div>
+        <p><strong>Athletic Pubalgia (Sports Hernia):</strong> Pain along lower abdomen and proximal adductors. Shearing at pubic symphysis. Pain with resisted adduction, cough/sneeze. 3rd&#8211;4th decade, mostly men. 4 stages from unilateral to bilateral to ADL-limiting. <strong>Symphysis Pubis Dysfunction:</strong> Ligaments stretched (pregnancy hormones &#8212; progesterone, relaxin). Clicking, limited hip motion, antalgic gait. <strong>Coccydynia:</strong> Coccyx stuck in flexion. Trauma, pregnancy, obesity. Flexion &gt;25&#176; or extension &gt;20&#176; = instability.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== TMJ TAB ==================== -->
+<div class="tab-panel" id="tab-tmj">
+<div class="container">
+  <div class="section-title">Temporomandibular Joint (TMJ)</div>
+  <div class="section-sub">People use the TMJ ~600 times per day. TMD is a MSK condition resulting in craniofacial pain, activity limitation, and disability. Symptoms include decreased jaw mobility, pain, clicking, headaches, ear pain, neck pain, and tinnitus. Always screen TMJ in cervical evaluations.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>TMJ Anatomy &amp; Biomechanics</h4>
+      <div class="ma-tags"><span class="ma-tag gold">3rd class lever</span><span class="ma-tag">2 knuckles = functional, 3 = normal</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">Articular Disc</div>
+        <p>Biconcave, viscoelastic (collagen + GAGs + elastic). Three bands: anterior (pes meniscus), intermediate (pars gracilis &#8212; most WB, avascular, aneural), posterior (pars posterior). Functions: joint congruence, stability/mobility, &#8595; friction, &#8595; biomechanical stress, separates superior and inferior joints. <strong>Bilaminar retrodiscal pad:</strong> Superior lamina (elastic &#8212; allows anterior translation during depression, helps reposition disc), inferior lamina (inelastic &#8212; tethers disc).</p>
+      </div>
+      <div class="bl-strip gold">
+        <div class="bl-label">TMJ Kinematics</div>
+        <p><strong>Depression:</strong> 40&#8211;50mm. 2 knuckles = functional AROM, 3 knuckles = normal AROM. Two phases: rolling at inferior joint &#8594; then anterior glide (lateral pterygoid is the main muscle for pulling and eccentrics during closing). <strong>Protrusion/Retrusion:</strong> Upper TM joint only, no rotation. Lower teeth should surpass upper, 6&#8211;9mm. <strong>Lateral Excursion:</strong> 8&#8211;11mm. Ipsilateral condyle spins posteriorly. Contralateral condyle translates anterior + medial + slightly inferior.</p>
+      </div>
+      <div class="bl-strip red">
+        <div class="bl-label">Dysfunction Patterns</div>
+        <p><strong>Deviation (S-curve):</strong> During depression, jaw moves away from midline then returns to midline by end of movement. <strong>Deflection (C-curve):</strong> Jaw moves away from midline and stays there. Causes: hypomobility, asymmetry. <strong>Ipsilateral pain = muscular. Contralateral pain = joint.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>TMD &#8212; Disc Displacement &amp; Internal Derangement</h4>
+      <div class="ma-tags"><span class="ma-tag purple">DDWR = click</span><span class="ma-tag red">DDWOR = block</span><span class="ma-tag gold">OA/RA causes</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip">
+        <div class="bl-label">TMD Causes &amp; Symptoms</div>
+        <p>OA/RA (pain, stiffness, warmth, edema), trauma, loss of posterior teeth (OA), disc dislocation, involuntary guarding of muscles of mastication. Symptoms: &#8595; jaw mobility, pain, joint clicking, headaches, ear pain, neck pain, tinnitus, pain of intraoral structures.</p>
+      </div>
+      <div class="grid2">
+        <div class="bl-strip purple">
+          <div class="bl-label">Disc Displacement WITH Reduction (DDWR)</div>
+          <p>Reciprocal click &#8212; disc is anterior, clicks back into place during opening. Posterior click when closing (disc displaces anterior again). <strong>Click = reduction.</strong></p>
+        </div>
+        <div class="bl-strip red">
+          <div class="bl-label">Disc Displacement WITHOUT Reduction (DDWOR)</div>
+          <p>Disc stays anterior the entire time. More limited motion. <strong>Block = no reduction.</strong> More significant functional limitation.</p>
+        </div>
+      </div>
+      <div class="bl-strip green">
+        <div class="bl-label">Conservative Treatment</div>
+        <p>Tissue mobilization. Postural education. Therapeutic exercise. Joint manipulation (TMJ, cervical, thoracic). Intraoral application. Cortisone injection. Capsulitis &#8594; capsular fibrosis if untreated.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Headache DDx &#8212; Primary vs Secondary</h4>
+      <div class="ma-tags"><span class="ma-tag red">Migraine = 4-72 hrs, unilateral</span><span class="ma-tag gold">Tension = bilateral band</span><span class="ma-tag purple">CGH = cervical origin</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Type</th><th>Characteristics</th><th>Key Features</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">Migraine (Primary)</td><td>Neurological + vascular (cortical spreading). Pulsing. 4&#8211;72 hours. Unilateral pain</td><td>Photophobia/phonophobia. Visual/auditory aura. Limited activity &#8212; exercise makes it worse. Possible mouth tingling</td></tr>
+          <tr><td class="hi">Tension (Primary)</td><td>Bilateral constant pressure &#8212; not really throbbing</td><td>"Tight band around head." Most common type</td></tr>
+          <tr><td class="warn">Cluster (Primary)</td><td>Trigeminal neuralgia involvement</td><td>Severe, periorbital, unilateral. Brief episodes</td></tr>
+          <tr><td class="hi">Cervicogenic (Secondary)</td><td>From upper cervical dysfunction</td><td>Known trigger (posture). Unilateral with cervical ROM restriction. See CGH referral patterns above</td></tr>
+          <tr><td class="hi">TMD-related (Secondary)</td><td>Referral from TMJ dysfunction</td><td>Pain with chewing, talking. Ear pain. Check jaw position relative to C-spine</td></tr>
+          <tr><td class="hi">Central/Peripheral Neuralgic</td><td>Nerve distribution &#8212; irritation, compression, tension</td><td>Neuropathic pain along nerve pathway. Chemical inflammation problem</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== SPECIAL TESTS TAB ==================== -->
+<div class="tab-panel" id="tab-special">
+<div class="container">
+  <div class="section-title">Special Tests &#8212; Spine</div>
+  <div class="section-sub">Special tests are performed when there is some indication they would help arrive at a diagnosis. Always do vertebral artery testing before cervical manipulation. Cluster tests provide the strongest diagnostic accuracy.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lumbar &amp; SIJ Special Tests</h4>
+      <div class="ma-tags"><span class="ma-tag gold">SLR &lt;70&#176; = neuro/disc</span><span class="ma-tag red">Crossed SLR = medial disc</span><span class="ma-tag purple">Hoover = malingerer</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Test</th><th>Indication</th><th>Positive Sign</th><th>Clinical Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="hi">Straight Leg Raise</td><td>Neurological irritation, disc herniation, lumbar or SI issue</td><td><strong>&lt;70&#176;</strong> = neuro/disc (usually lateral protrusion). <strong>&gt;70&#176;</strong> = L-spine or SI joint pain. Pain NOT &#8593; with neck flexion = hamstring tightness or SIJ</td><td>Sensitize with: PIP (peroneal), TED (tibial), SID (sural). Bilateral SLR: &lt;70&#176; = SI, &gt;70&#176; = lumbar</td></tr>
+          <tr><td class="hi">Crossed SLR</td><td>Disc herniation medial to nerve root</td><td>Pain in contralateral (symptomatic) leg when asymptomatic leg is raised</td><td>Often with extruded disc fragment</td></tr>
+          <tr><td class="hi">Slump Test</td><td>Neurological irritation</td><td>Pain in sciatic distribution (posterior buttock, thigh, calf)</td><td>Sitting slumped, arms behind back, PT pressure through spine &#8594; active neck flexion &#8594; extend knee</td></tr>
+          <tr><td class="hi">Prone Knee Bend</td><td>L2&#8211;L3 nerve root lesion</td><td>Unilateral pain in lumbar region, buttock, posterior thigh</td><td>Anterior thigh pain may = tight quads or femoral nerve tension</td></tr>
+          <tr><td class="hi">Femoral Nerve Traction</td><td>Femoral nerve radiculopathy</td><td>Neurological pain in anterior thigh</td><td>Sidelying, affected side up. Extend knee &#8594; extend hip to 15&#176; &#8594; flex knee</td></tr>
+          <tr><td class="hi">Prone Instability Test</td><td>Lumbar instability, weak core stabilizers</td><td><strong>Decrease in pain with legs lifted off ground</strong> (core engages, stabilizes segment)</td><td>Part of stabilization CPR</td></tr>
+          <tr><td class="hi">Hoover Test</td><td>Malingering</td><td>Lack of pressure/effort in heel of opposite hand during SLR</td><td>Supine, heels in PT's palms. Instruct SLR &#8212; opposite leg should push into hand</td></tr>
+          <tr><td class="hi">Laslett's Cluster (SIJ)</td><td>SIJ pathology</td><td><strong>2 of 4 positive = SIJ involvement:</strong> Distraction, Thigh thrust, Compression, Sacral spring</td><td>Gaenslen's test often added. (+) stress test contraindicates passive mobs/manips for that joint</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cervicothoracic Special Tests</h4>
+      <div class="ma-tags"><span class="ma-tag red">VBI test before manipulation</span><span class="ma-tag gold">Radiculopathy cluster: 4/4 = +LR 30.3</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table">
+        <thead><tr><th>Test</th><th>Indication</th><th>Positive Sign</th></tr></thead>
+        <tbody>
+          <tr><td class="bad">Vertebral Artery Test</td><td>VBI, before cervical manipulation</td><td>5 D's, 3 N's, 1 A during sustained cervical extension + SB + rotation (10-sec holds). SN: 0%, SP: 67&#8211;90%. Seated first &#8594; supine if negative</td></tr>
+          <tr><td class="hi">Spurling's Test</td><td>Cervical radiculopathy/myelopathy</td><td>Replication of symptoms down arm with passive SB + axial compression. Part of radiculopathy cluster</td></tr>
+          <tr><td class="hi">Distraction Test</td><td>Cervical radiculopathy</td><td>Relief of symptoms during cervical distraction (supine). Part of radiculopathy cluster</td></tr>
+          <tr><td class="hi">ULTT A (Median Nerve)</td><td>Neural tension, cervical radiculopathy</td><td>Reproduction of symptoms along median nerve distribution. Part of radiculopathy cluster</td></tr>
+          <tr><td class="hi">Craniocervical Flexion Test</td><td>Deep neck flexor strength</td><td>Normal: &#8593; pressure to 26&#8211;30 mmHg, hold 10 sec without substitution. Abnormal: can't generate &#8805;6 mmHg increase or uses superficial neck muscles</td></tr>
+          <tr><td class="hi">Neck Flexor Endurance</td><td>Deep neck flexor endurance</td><td>Normal: &#8805;38.95 sec. Abnormal: &#8804;24.1 sec. Chin retracted, head ~1" above table. Stop when skin folds separate or head touches hand &gt;1 sec</td></tr>
+          <tr><td class="hi">Flexion Rotation Test</td><td>Cervicogenic headache, C1&#8211;C2 ROM</td><td>Loss of &#8805;10&#176; comparing sides. Patient flexes neck &#8594; PT rotates head</td></tr>
+          <tr><td class="hi">Cervical Rotation Lateral Flexion</td><td>First rib mobility</td><td>Flexion is limited compared to other side after rotating away from involved side</td></tr>
+          <tr><td class="hi">Bakody's Sign</td><td>Cervical radiculopathy C4&#8211;C6</td><td>Relief of pain when patient places hand on top of head (shoulder ABD)</td></tr>
+          <tr><td class="hi">Lhermitte's Sign</td><td>Meningeal inflammation, cord pathology</td><td>Electric shock sensation radiating down spine into limbs during neck flexion</td></tr>
+        </tbody>
+      </table>
+      <div class="bl-strip green">
+        <div class="bl-label">Cervical Myelopathy CPR (3/5 = Strong Predictive Value)</div>
+        <p>(1) Babinski sign. (2) Inverted supinator (normal = elbow flexion/wrist radial dev; abnormal = elbow extension or finger flexion). (3) Hoffmann sign. (4) Ataxic gait pattern. (5) Age &gt;45. Other presentations: non-myotomal weakness especially in LE flexors (hip flexors, DF), "clunkiness" walking, spasms in back/legs, LBP.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== REVIEW TAB ==================== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards &#8212; MSK Spine</div>
+  <div class="section-sub">Tap any card to flip. High-yield clinical pearls across lumbar, cervical, thoracic, SIJ, and TMJ topics.</div>
+  <div class="rc2-grid">
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the difference between centralization and peripheralization, and why does it matter clinically?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Centralization:</strong> Progressive retreat of the most distal symptoms back toward the LB spine &#8212; this is a GOOD prognostic sign and indicates a reducible lesion. <strong>Peripheralization:</strong> Symptoms moving distally &#8212; BAD sign, lesion is increasing in size. Once a motion/position that centralizes is identified, encourage that motion/posture. This is the foundation of the McKenzie approach: find the directional preference that centralizes symptoms and use it therapeutically. Derangement syndrome responds to this approach.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">How do you differentiate a lateral pelvic shift from a disc herniation lateral vs. medial to the nerve root?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Herniation LATERAL to nerve root:</strong> Patient deviates AWAY from the side of the irritated nerve root. This draws the nerve root away from the disc fragment. <strong>Herniation MEDIAL to nerve root:</strong> Patient deviates TOWARDS the side of the lesion. This decompresses the nerve root. The listing is a protective position. Can also be caused by zyga joint irritation, spinal nerve irritation, or QL/iliacus spasm. This is why observation of lateral shift direction combined with neural tension testing is critical for classification.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What distinguishes spondylosis, spondylolysis, and spondylolisthesis?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Spondylosis (OA/DJD):</strong> Wear and tear of spine. &#8595; disc hydration &#8594; bony contact &#8594; inflammation &#8594; osteophytes &#8594; &#8595; foraminal space. "Shopping cart sign." Extension/rotation painful, flexion relieves. <strong>Spondylolysis (pars Fx):</strong> Defect/fracture at pars articularis ("Scotty dog"). 5&#8211;7 yo. Back pain in young child is NOT normal. Hyperextension + rotation + loading. <strong>Spondylolisthesis (slippage):</strong> Pars fracture + anterior slippage. Graded 1&#8211;5 (&#8805;3 = surgery). Step-off deformity. 10&#8211;15 yo. &#8593; lordosis, waddle gait, ask about B&amp;B.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What are the 5 D's, 3 N's, and 1 A for VBI screening, and when must you test?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>5 D's:</strong> Dizzy, Diplopia (blurred vision), Drop attacks (loss of power/consciousness), Dysphagia (swallowing issues), Dysarthria (speech problems). <strong>3 N's:</strong> Nystagmus, Nausea/vomiting, Neuro symptoms. <strong>1 A:</strong> Ataxia (lack of muscle coordination). Plus severe headache. <strong>When to test:</strong> Before ANY cervical manipulation, when patient complains of any of these symptoms, and as part of normal cervical exam to assess irritability. Test seated first (10-sec holds in extension, rotation, combined) &#8594; progress to supine if negative. At-risk populations: RA, Down syndrome, Marfan syndrome.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the CPR for cervical radiculopathy and what are the likelihood ratios?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>4 tests:</strong> (1) Cervical rotation &lt;60&#176; to affected side. (2) (+) Spurling's (passive SB + axial compression reproduces arm symptoms). (3) (+) Distraction (relief with cervical distraction). (4) (+) ULTT A (median nerve tension). <strong>3 positive = +LR 6.1.</strong> <strong>4 positive = +LR 30.3</strong> (extremely high probability of cervical radiculopathy). Most common roots: C7 (most involved) &#8594; C6 &#8594; C5. Disc herniations are rare &lt;30 yo and uncommon in elderly (stenotic cause more likely).</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the SLR test interpretation at different angles?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Pain &lt;70&#176;:</strong> Neurological irritation or disc herniation (usually lateral disc protrusion). <strong>Pain &gt;70&#176;:</strong> L-spine or SI joint pain. <strong>Pain that does NOT increase with neck flexion:</strong> Hamstring tightness or SIJ. <strong>If &gt;70&#176;, repeat bilaterally:</strong> Pain &lt;70&#176; bilateral = SIJ. Pain &gt;70&#176; bilateral = lumbar. Sensitize by adding: ankle PIP (peroneal nerve), TED (tibial nerve), SID (sural nerve). <strong>Crossed SLR:</strong> Positive when raising the asymptomatic leg reproduces pain in the symptomatic leg &#8212; indicates disc herniation MEDIAL to the nerve root, often with extruded fragment.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the T4 syndrome and why is it confused with carpal tunnel?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>T4 syndrome</strong> (can be T2&#8211;T7) is thought to be a sympathetic reaction to a hypomobile thoracic segment &#8212; it resolves with manual therapy. Sympathetic trunks lie on/just lateral to costovertebral joints and can undergo abnormal deformation with poor posture (forward head, rounded shoulders). <strong>Women 3:1.</strong> Presents with: night symptoms, headaches, neck pain, UE pain, and crucially &#8212; <strong>bilateral stocking-glove paresthesia.</strong> This bilateral hand numbness is why it's confused with carpal tunnel or cervical radiculopathy. Key differentiators: (+) Slump, (+) ULTT, hypomobile T-spine segments, responds to thoracic mobilization.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is ankylosing spondylitis, and how does it present in the thoracic spine?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>"Bamboo Spine."</strong> Inflammatory arthritis affecting facets, tendons, ligaments. Enthesitis (inflammation at disc-vertebrae attachment) &#8594; bone erosion &#8594; calcification at facets, costotransverse, costovertebral joints &#8594; AF can calcify &#8594; segments fuse. <strong>Sacroiliitis usually first.</strong> 90% HLA-B27+. Men 3:1. Age 15&#8211;40. Key thoracic finding: <strong>chest expansion &lt;2.5 cm is pathologic</strong> (normal = 5 cm at nipple line). Stooped position. Morning stiffness &gt;30 min, improves with exercise, night pain, alternating buttock pain. Stress fractures where new bone forms &#8594; excessive kyphosis &#8594; may crowd organs.</div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What distinguishes DDWR from DDWOR in the TMJ?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a"><strong>Disc Displacement WITH Reduction (DDWR):</strong> The disc is anteriorly displaced at rest, but during opening it "reduces" (clicks back into place). This produces a <strong>reciprocal click</strong> &#8212; click on opening (reduction) and click on closing (re-displacement). The patient has relatively normal ROM. <strong>Disc Displacement WITHOUT Reduction (DDWOR):</strong> The disc stays anterior the entire time &#8212; it never reduces. This produces a <strong>block</strong> &#8212; more limited motion, no click. More significant functional limitation. Key clinical distinction: <strong>click = with reduction. Block/limited ROM = without reduction.</strong></p></div>
+    </div>
+
+    <div class="rc2" onclick="flipCard(this)">
+      <div class="rc2-q">What is the CPR for lumbar manipulation and what makes a patient a good candidate?</div>
+      <span class="rc2-flip">tap</span>
+      <div class="rc2-a">A patient is likely to benefit from lumbar manipulation if they meet these criteria: (1) <strong>LBP &lt;16 days</strong> (some sources say 30 days). (2) No symptoms distal to the knee. (3) FABQ score &lt;19 (low fear avoidance). (4) At least 1 hypomobile segment in the lumbar spine. (5) At least 1 hip with IR &gt;35&#176;. The more criteria met, the higher the likelihood of improvement. This CPR helps classify patients into the <strong>manipulation category</strong> of the Treatment-Based Classification system, which de-emphasizes specific pathoanatomy in favor of matching treatment approach to patient presentation.</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script src="themes.js"></script>
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  var panel = document.getElementById('tab-' + id);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
+}
+</script>
+</body>
+</html>
