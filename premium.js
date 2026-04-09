@@ -247,6 +247,17 @@
 
   /* ===== PUBLIC API ===== */
   window.CB_PREMIUM = {
+
+    setLayout: function(layout, btn){
+      document.body.setAttribute('data-layout', layout);
+      localStorage.setItem('cb-layout', layout);
+      document.querySelectorAll('.layout-btn').forEach(function(b){ b.classList.remove('active') });
+      if(btn) btn.classList.add('active');
+      // If switching to expanded, open all accordions
+      if(layout === 'expanded'){
+        document.querySelectorAll('.ma-body').forEach(function(b){ b.classList.add('open') });
+      }
+    },
     togglePanel: function(){
       var p=document.getElementById('cb-premium-panel');
       if(p){p.classList.toggle('open');if(p.classList.contains('open')){updatePanel();loadNoteForCurrentTab()}}
@@ -268,9 +279,39 @@
     }
   };
 
+
+  /* ===== LAYOUT TOGGLE ===== */
+  function injectLayoutToggle(){
+    // Only inject on module pages (not index)
+    if(!document.querySelector('.chip-nav')) return;
+    
+    var bar = document.createElement('div');
+    bar.className = 'layout-bar';
+    bar.innerHTML = '<span class="layout-bar-label">View</span>' +
+      '<div class="layout-btn active" onclick="CB_PREMIUM.setLayout('default',this)" title="Accordion">&#9776;</div>' +
+      '<div class="layout-btn" onclick="CB_PREMIUM.setLayout('cards',this)" title="Card flip">&#9638;</div>' +
+      '<div class="layout-btn" onclick="CB_PREMIUM.setLayout('expanded',this)" title="All expanded">&#9660;</div>' +
+      '<div class="layout-btn" onclick="CB_PREMIUM.setLayout('minimal',this)" title="Minimal">&#8212;</div>';
+    
+    var chipNav = document.querySelector('.chip-nav');
+    if(chipNav) chipNav.after(bar);
+    
+    // Restore saved layout
+    var savedLayout = localStorage.getItem('cb-layout') || 'default';
+    if(savedLayout !== 'default'){
+      document.body.setAttribute('data-layout', savedLayout);
+      var btns = bar.querySelectorAll('.layout-btn');
+      btns.forEach(function(b){ b.classList.remove('active') });
+      var layouts = ['default','cards','expanded','minimal'];
+      var idx = layouts.indexOf(savedLayout);
+      if(idx >= 0 && btns[idx]) btns[idx].classList.add('active');
+    }
+  }
+
   /* ===== INIT ===== */
   document.addEventListener('DOMContentLoaded',function(){
     injectCSS();
+    injectLayoutToggle();
     injectUI();
     setupNotes();
     trackVisit();
