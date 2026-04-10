@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint &#8212; Knee</title>
+<title>Clinicians Blueprint — Knee Complex</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+
 <nav class="site-nav">
   <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
   <div class="nav-cat ">
@@ -32,8 +33,8 @@
       <a href="CB_NeckModule.html" >Neck</a>
       <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
       <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" class="active">Knee</a>
+      <a href="CB_HipModule_v2.html" class="active">Hip</a>
+      <a href="CB_KneeModule_v2.html" >Knee</a>
       <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
       <a href="CB_BackModule.html" >Back</a>
     </div>
@@ -93,18 +94,30 @@
   </div>
 </nav>
 
+
 <div class="hero">
-  <div class="hero-tag">MSK Lower Extremity &middot; Knee</div>
-  <h1>Knee <span>&#8212; Anatomy, Pathology &amp; Post-Op</span></h1>
-  <p>Comprehensive knee reference covering ligament and meniscal anatomy, anterior knee DDx, special tests with diagnostic accuracy, AMI, and post-operative protocols for ACL and TKA.</p>
+  <div class="hero-tag">MSK Lower Extremity &middot; Knee Complex</div>
+  <h1>Knee <span>Complex</span></h1>
+  <p>Knee osteology, tibiofemoral and patellofemoral joint anatomy, cruciate and collateral ligaments, menisci, extensor mechanism, thigh compartment muscles with OINA, special tests with diagnostic accuracy (ACL, PCL, MCL, LCL, meniscal), anterior knee pain (PFPS, patellar tendinopathy), OA classification, and post-operative rehabilitation (ACLR, TKA, meniscectomy).</p>
   <div class="hero-badges">
-    <span class="badge gold">Anatomy &amp; Evaluation</span>
-    <span class="badge">Ligament &amp; Meniscal Pathologies</span>
+    <span class="badge">Osteology &amp; Joints</span>
+    <span class="badge gold">Ligaments &amp; Menisci</span>
     <span class="badge purple">Special Tests</span>
-    <span class="badge green">Post-Op ACL &amp; TKA</span>
+    <span class="badge red">Pathology</span>
+    <span class="badge green">Post-Op Rehab</span>
   </div>
 </div>
-<div class="chip-label">Anatomy &amp; Clinical Evaluation</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+  <button onclick="showTab('pathology',this)">Pathology</button>
+  <button onclick="showTab('special',this)">Special Tests</button>
+  <button onclick="showTab('postop',this)">Post-Op Rehab</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ====== ANATOMY ====== -->
+<div class="tab-panel active" id="tab-anatomy">
 <div class="container">
   <div class="section-title">Knee Anatomy &amp; Clinical Evaluation</div>
   <div class="section-sub">The knee is inherently unstable &#8212; support comes from ligaments, muscles, and menisci. Multiple articulating surfaces (tibiofemoral + patellofemoral) each have distinct pathologies. VMO is the first quad to atrophy and the last to rehab. Bilateral knee pain &#8594; think lumbar spine referral first.</div>
@@ -336,7 +349,10 @@
   </div>
 
 </div>
-<div class="chip-label">Pathologies</div>
+</div>
+
+<!-- ====== PATHOLOGY ====== -->
+<div class="tab-panel" id="tab-pathology">
 <div class="container">
   <div class="section-title">Knee Pathologies &#8212; Anterior Pain, Ligament, Meniscal, OA</div>
   <div class="section-sub">Knee pathologies organized by anatomical region. Anterior knee pain has a broad DDx &#8212; use the combination of palpation, provocation testing, and functional screening. ACL does not heal on its own. Meniscal surgery is indicated only for bucket-handle tears with locking. Quad strength is the single most important impairment to address in almost every knee condition.</div>
@@ -442,7 +458,10 @@
     </div>
   </div>
 </div>
-<div class="chip-label">Special Tests</div>
+</div>
+
+<!-- ====== SPECIAL TESTS ====== -->
+<div class="tab-panel" id="tab-special">
 <div class="container">
   <div class="section-title">Knee Special Tests with Diagnostic Accuracy</div>
   <div class="section-sub">Lachman's is the gold standard for ACL (highest SN + SP). Posterior drawer has excellent accuracy for PCL. McMurray has high specificity for lateral meniscus. Ottawa Knee Rules are used to decide if X-ray is needed post-trauma &#8212; highly sensitive rule-out tool.</div>
@@ -502,7 +521,10 @@
     </div>
   </div>
 </div>
-<div class="chip-label">Post-Operative</div>
+</div>
+
+<!-- ====== POST-OP ====== -->
+<div class="tab-panel" id="tab-postop">
 <div class="container">
   <div class="section-title">Knee Post-Operative Rehabilitation</div>
   <div class="section-sub">Arthrogenic Muscle Inhibition (AMI) is the enemy. Even 20&#8211;30 mL of joint fluid produces quadriceps activation failure. Gaining full knee extension in the first 2 weeks is essential &#8212; extension loss of 3&#8211;5&#176; vs. contralateral increases OA risk. Extension always before flexion post-op.</div>
@@ -650,8 +672,10 @@
     </div>
   </div>
 </div>
+</div>
 
-<div class="chip-label">Review Cards</div>
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
 <div class="container">
   <div class="section-title">Review Cards &#8212; Knee</div>
   <div class="section-sub">Tap any card to flip. High-yield clinical pearls for exams and practice.</div>
@@ -683,10 +707,18 @@
     </div>
   </div>
 </div>
+</div>
 
 <script src="themes.js"></script>
 <script src="premium.js"></script>
 <script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
 function toggleMA(header) {
   var body = header.nextElementSibling;
   var chevron = header.querySelector('.ma-chevron');

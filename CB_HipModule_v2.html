@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint &#8212; Hip</title>
+<title>Clinicians Blueprint — Hip Complex</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+
 <nav class="site-nav">
   <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
   <div class="nav-cat ">
@@ -93,18 +94,31 @@
   </div>
 </nav>
 
+
 <div class="hero">
-  <div class="hero-tag">MSK Lower Extremity &middot; Hip</div>
-  <h1>Hip <span>&#8212; Anatomy, Pathology &amp; Post-Op</span></h1>
-  <p>Comprehensive hip reference covering anatomy, kinesiology, capsular and noncapsular pathologies, special tests with diagnostic accuracy, and post-operative rehabilitation protocols.</p>
+  <div class="hero-tag">MSK Lower Extremity &middot; Hip Complex</div>
+  <h1>Hip <span>Complex</span></h1>
+  <p>Hip osteology, joint anatomy, capsule and ligaments, neurovascular supply, thigh compartment muscles with OINA, hip kinesiology, intra-articular and extra-articular pathologies (FAI, labral tears, OA, AVN, fractures, bursitis, piriformis syndrome), special tests with diagnostic accuracy, and post-operative rehabilitation.</p>
   <div class="hero-badges">
-    <span class="badge gold">Anatomy &amp; Kinesiology</span>
-    <span class="badge">Pathologies</span>
-    <span class="badge purple">Special Tests</span>
-    <span class="badge green">Post-Op</span>
+    <span class="badge">Osteology &amp; Joints</span>
+    <span class="badge gold">Muscles &amp; OINA</span>
+    <span class="badge purple">Neurovascular</span>
+    <span class="badge red">Pathology</span>
+    <span class="badge green">Special Tests</span>
   </div>
 </div>
-<div class="chip-label">Anatomy &amp; Kinesiology</div>
+
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+  <button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
+  <button onclick="showTab('pathology',this)">Pathology</button>
+  <button onclick="showTab('special',this)">Special Tests</button>
+  <button onclick="showTab('postop',this)">Post-Op Rehab</button>
+  <button onclick="showTab('review',this)">Review</button>
+</div>
+
+<!-- ====== ANATOMY ====== -->
+<div class="tab-panel active" id="tab-anatomy">
 <div class="container">
   <div class="section-title">Hip Anatomy &amp; Kinesiology</div>
   <div class="section-sub">The hip is a ball-and-socket joint built for both stability and mobility &#8212; more stable than the shoulder due to deep acetabular coverage, thick capsule, and strong ligaments. The coxofemoral joint transmits 1.8&#8211;3.8&#215; body weight during normal gait; any force &gt;3&#215; BW raises risk of early degeneration. Hip dysfunction has downstream effects on gait, posture, and the entire kinetic chain.</div>
@@ -460,7 +474,18 @@
     </div>
   </div>
 </div>
-<div class="chip-label">Pathologies &#8212; Capsular, Noncapsular &amp; Intra-articular</div>
+</div>
+
+<!-- ====== MUSCLES & OINA ====== -->
+<div class="tab-panel" id="tab-muscles">
+<div class="container">
+  <div class="section-title">Hip Muscles &mdash; Organized by Action</div>
+  <div class="section-sub">The hip has 22+ muscles crossing it. No muscle has internal rotation as its primary action &mdash; IR is always a secondary function. The gluteus medius is the &ldquo;deltoid of the hip&rdquo; and the most clinically important hip muscle.</div>
+</div>
+</div>
+
+<!-- ====== PATHOLOGY ====== -->
+<div class="tab-panel" id="tab-pathology">
 <div class="container">
   <div class="section-title">Hip Pathologies &#8212; Capsular, Noncapsular &amp; Intra-articular</div>
   <div class="section-sub">Hip pathologies are organized by pattern of limitation. <strong>Capsular pattern</strong> (arthritis, synovitis): IR &gt; Flexion most limited. <strong>Noncapsular pattern</strong> (SCFE, AVN, loose body): any pattern other than capsular. <strong>Intra-articular</strong> (labral tear, FAI): common report is groin pain with mechanical symptoms.</div>
@@ -578,7 +603,6 @@
     </div>
   </div>
 </div>
-<div class="chip-label">Extra-articular Pathologies</div>
 <div class="container">
   <div class="section-title">Extra-articular Hip Pathologies</div>
   <div class="section-sub">Extra-articular pathologies involve tendons, bursae, muscles, and nerves surrounding the hip joint &#8212; not the joint surface itself. They are often overlooked when a patient presents with "hip pain." Snapping hip, bursitis, adductor/hamstring strains, piriformis syndrome, and stress fractures all require distinct examination and management approaches.</div>
@@ -669,7 +693,10 @@
     </div>
   </div>
 </div>
-<div class="chip-label">Special Tests</div>
+</div>
+
+<!-- ====== SPECIAL TESTS ====== -->
+<div class="tab-panel" id="tab-special">
 <div class="container">
   <div class="section-title">Hip Special Tests with Diagnostic Accuracy</div>
   <div class="section-sub">Special tests at the hip are organized by clinical purpose. No single test is definitive &#8212; combine with subjective history and functional screening. FADIR has high sensitivity (rule out); valgus stress and specific cluster tests have higher specificity. Always test bilaterally and note quality vs. quantity of response.</div>
@@ -747,139 +774,40 @@
     </div>
   </div>
 </div>
-<div class="chip-label">Post-Operative</div>
+</div>
+
+<!-- ====== POST-OP ====== -->
+<div class="tab-panel" id="tab-postop">
 <div class="container">
   <div class="section-title">Hip Post-Operative Rehabilitation</div>
-  <div class="section-sub">Post-op hip management varies by procedure. Know the surgical approach, what structures were cut, and what the precautions are before touching the patient. Goals: restore nearly-normal anatomy and biomechanics, decrease long-term pain, improve long-term function, promote long-term joint health.</div>
+  <div class="section-sub">Key post-op protocols for THA, hip arthroscopy, and hip fracture ORIF.</div>
 
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Hip Arthroscopy &#8212; Labral Repair, Osteoplasty, Microfracture</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Total Hip Arthroplasty (THA) &mdash; Posterior Approach</h4><span class="ma-chevron">&#9660;</span></div>
     <div class="ma-body">
-      <div class="bl-strip" style="margin-bottom:10px;">
-        <div class="bl-label">Good Candidates for Hip Arthroscopy</div>
-        <p>Physical and radiographic evidence of pathology. Absence of significant soft tissue pain. History of trauma or previous surgery. Active with adequate global strength. Realistic expectations. History of compliance. Wide age range: 18&#8211;50 years.</p>
-      </div>
-      <div style="overflow-x:auto;">
-      <table class="postop-table">
-        <thead><tr><th>Procedure</th><th>WB Status</th><th>Flexion ROM</th><th>ER Limit</th><th>ABD Limit</th><th>EXT Limit</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Labral Repair</strong></td><td>TTWB &#215;3&#8211;4 weeks</td><td>0&#8211;90&#176;</td><td>&lt;30&#176;</td><td>&lt;30&#176;</td><td>&#8212;</td></tr>
-          <tr><td><strong>Microfracture</strong> (stimulate cell growth)</td><td>NWB &#215;0&#8211;6 weeks</td><td>0&#8211;90&#176;</td><td>&lt;30&#176;</td><td>&lt;30&#176;</td><td>&#8212;</td></tr>
-          <tr><td><strong>Osteoplasty</strong> (reshape bony lesion)</td><td>PWB &#215;0&#8211;4 weeks</td><td>0&#8211;90&#176;</td><td>&lt;30&#176;</td><td>&lt;30&#176;</td><td>&#8212;</td></tr>
-          <tr><td><strong>Capsular Repair</strong></td><td>TTWB &#215;3&#8211;4 weeks</td><td>0&#8211;90&#176;</td><td>0&#176;</td><td>&#8212;</td><td>0&#176;</td></tr>
-        </tbody>
-      </table>
-      </div>
-      <div class="grid2" style="margin-top:12px;">
-        <div>
-          <div class="bl-strip" style="margin-bottom:8px;">
-            <div class="bl-label">Phase 1 &#8212; Criteria for Progression</div>
-            <ul style="font-size:13px;">
-              <li>Minimal palpable swelling</li>
-              <li>Full weight bearing</li>
-              <li>ROM &gt;75% of uninvolved side</li>
-              <li>Pain &lt;3/10 on VAS</li>
-              <li>Pain 0/10 with all Phase 1 exercises</li>
-              <li>Normal muscle activation patterns without compensation</li>
-            </ul>
-          </div>
-          <div class="bl-strip gold" style="margin-bottom:8px;">
-            <div class="bl-label">Phase 2 (Weeks 5&#8211;8)</div>
-            <p>Normalize gait. Restore full ROM. Improve neuromuscular control. Fix muscle imbalances. Improve proprioception. Start functional exercises. <strong>Keys:</strong> Glute med/max retraining, psoas retraining, pelvic stability and lumbopelvic rhythm. <strong>Criteria:</strong> pain-free symmetrical gait; full ROM; no inflammation; normal muscle activation; SL balance 1 min neutral pelvis; hip flexion &gt;60% uninvolved; other planes &gt;70%.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip purple" style="margin-bottom:8px;">
-            <div class="bl-label">Phase 3 &#8212; Return to Sport</div>
-            <p>Restore strength and endurance. Optimize neuromuscular control, balance, proprioception. Restore CV endurance. <strong>Keys:</strong> criteria-based progressions for running and plyo. Good lumbopelvic control with all movements. <strong>Return-to-Sport Timeline:</strong> Desk work 2&#8211;3 mo; Golf chip/putt 3&#8211;4 mo; Running 4 mo; Manual labor 4&#8211;6 mo; Cutting/pivoting 5&#8211;6 mo.</p>
-          </div>
-          <div class="bl-strip red" style="margin-bottom:8px;">
-            <div class="bl-label">Common Complication: Hip Flexor Tendinopathy</div>
-            <p>Avoid contractures and overactivation of hip flexors early. <strong>Avoid long lever arm exercises:</strong> straight leg raises, prone planks &#8212; can spike inflammation. Early ROM is beneficial for joint nutrition. Use upright bike, manual circumduction, and passive movements early. Educate patient to avoid sleeping in recliner for prolonged periods.</p>
-          </div>
-        </div>
-      </div>
+      <div class="bl-strip red"><div class="bl-label">Posterior Precautions</div><p><strong>No hip flexion &gt;90&deg;. No adduction past midline. No internal rotation.</strong> Duration: 6&ndash;12 weeks (surgeon dependent). These precautions protect the posterior capsule repair. Anterior approach: fewer precautions (avoid ER + extension). Use elevated toilet seat, reacher, sock aide, long-handled shoe horn. Sleep with pillow between legs.</p></div>
+      <table class="data-table"><thead><tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th></tr></thead><tbody>
+        <tr><td class="hi">I &mdash; Acute</td><td>0&ndash;2 weeks</td><td>Protect repair, WBAT, independent transfers</td><td>Bed mobility training, sit-to-stand within precautions, gait training with walker &rarr; cane, ankle pumps, quad/glute sets, supine hip abduction</td></tr>
+        <tr><td class="warn">II &mdash; Strengthening</td><td>2&ndash;6 weeks</td><td>Normalize gait, progressive strengthening</td><td>Standing hip exercises (flexion, extension, abduction within precautions), mini-squats, step-ups, stationary bike (raised seat), balance training</td></tr>
+        <tr><td class="warn">III &mdash; Function</td><td>6&ndash;12 weeks</td><td>Precautions lifted, return to full activity</td><td>Progressive resistance, single-leg activities, stair training, community ambulation, sport-specific if appropriate. THA = no high-impact sports (running, jumping discouraged)</td></tr>
+      </tbody></table>
     </div>
   </div>
 
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Total Hip Arthroplasty (THA) &#8212; Approaches, Precautions &amp; Rehab</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Hip Arthroscopy (Labral Repair / FAI)</h4><span class="ma-chevron">&#9660;</span></div>
     <div class="ma-body">
-      <div class="grid2">
-        <div>
-          <div class="bl-strip" style="margin-bottom:8px;">
-            <div class="bl-label">Indications &amp; Population</div>
-            <p>Age typically &gt;60. Indications: OA, RA, AVN (Gaucher disease), femoral fracture, juvenile idiopathic arthritis. Consists of: metal femoral stem + polyethylene acetabular component + acrylic bone cement. Father of modern THA: Sir John Charnley (1960s).</p>
-          </div>
-          <div class="bl-strip gold" style="margin-bottom:8px;">
-            <div class="bl-label">Posterior (Posterolateral) Approach</div>
-            <p>Interval between gluteus maximus and medius. Capsule and short external rotators released &#8212; protect sciatic nerve, superior gluteal nerve and artery. Spares gluteus medius, minimus, and vastus lateralis. <strong>Dislocation more common with this approach</strong> &#8212; posterior precautions apply. Careful capsular/ER tendon repair reduces posterior dislocation risk.</p>
-          </div>
-          <div class="bl-strip" style="margin-bottom:8px;">
-            <div class="bl-label">Anterior Approach</div>
-            <p>Interval between gluteus medius and TFL. Vastus lateralis, gluteus medius, and rectus femoris reflected back. <strong>Spares the short external rotators.</strong> No posterior dislocation risk. Different precautions than posterior approach.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red" style="margin-bottom:8px;">
-            <div class="bl-label">Posterior THA Precautions (&#215;3 months)</div>
-            <ul style="font-size:13px;">
-              <li>No hip flexion &gt;90&#176;</li>
-              <li>No hip adduction past midline</li>
-              <li>No IR of operated hip</li>
-              <li>Avoid combined motions based on approach</li>
-              <li><strong>Clinical pearl:</strong> posterior approach avoids what it cuts &#8212; ER muscles/capsule. Precautions protect the repair.</li>
-            </ul>
-          </div>
-          <div class="bl-strip purple" style="margin-bottom:8px;">
-            <div class="bl-label">THA Rehab Framework</div>
-            <p><strong>Progression:</strong> Walker &#8594; Cane &#8594; No device. Goal = premorbid level or better. Continuum: Acute PT &#8594; SNF or Home Health &#8594; Outpatient. <strong>Focus:</strong> maximize lumbopelvic control; gait mechanics; transfer safety; stair/curb training; patient-specific functional goals. Full recovery: 1&#8211;2 years. Return to gym: 12 weeks; golf: 4&#8211;6 months; higher impact: surgeon-dependent.</p>
-          </div>
-          <div class="bl-strip" style="margin-bottom:8px;">
-            <div class="bl-label">THA Complications</div>
-            <ul style="font-size:13px;">
-              <li><strong>DVT</strong> &#8212; Wells criteria; common post major joint surgery</li>
-              <li><strong>Infection</strong> &#8212; signs: warmth, redness, wound drainage, fever</li>
-              <li><strong>Dislocation</strong> &#8212; rare; more common with posterior approach; higher risk with comorbidities</li>
-              <li><strong>Instability</strong> &#8212; persistent pain, mechanical symptoms, poorly controlled swelling, failure to progress</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Proximal Femur ORIF &#8212; Hip Fracture</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="grid2">
-        <div>
-          <div class="bl-strip" style="margin-bottom:8px;">
-            <div class="bl-label">Types &amp; Population</div>
-            <p><strong>Elderly:</strong> typically fall or twist; women &gt; men; contributing factors: poor balance, osteoporosis, poor nutrition, impaired vision, deconditioning, neurological diseases. <strong>Young populations:</strong> high velocity/high impact trauma. <strong>Types:</strong> femoral neck, intertrochanteric, subtrochanteric fractures &#8212; each has different surgical fixation approach (screws, nails, rods, plates).</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip gold" style="margin-bottom:8px;">
-            <div class="bl-label">ORIF Rehabilitation</div>
-            <p>WB typically restricted 6&#8211;12 weeks (TTWB 10#, 50#, or 50% WB &#8212; case-dependent). PT setting: similar to THA &#8212; may benefit from inpatient rehab, SNF, or home health before outpatient. <strong>Focus:</strong> maximize lumbopelvic control; functional mobility; gait mechanics; transfer safety; stair and curb training; fall prevention. Complication: nonunion &#8212; persistent pain/swelling at fracture site, low WB tolerance, failure to progress on imaging. Can lead to change in living arrangements and early mortality.</p>
-          </div>
-        </div>
-      </div>
+      <table class="data-table"><thead><tr><th>Phase</th><th>Timeline</th><th>Key Points</th></tr></thead><tbody>
+        <tr><td class="hi">I &mdash; Protection</td><td>0&ndash;2 weeks</td><td>WBAT or TTWB (surgeon specific). CPM if prescribed. Gentle PROM (avoid combined flex + IR + add = FADIR position). Ankle pumps, quad/glute sets</td></tr>
+        <tr><td class="hi">II &mdash; Early Motion</td><td>2&ndash;6 weeks</td><td>Restore ROM (avoid impingement positions). Stationary bike, pool. Progressive WB. Core activation</td></tr>
+        <tr><td class="warn">III &mdash; Strengthening</td><td>6&ndash;12 weeks</td><td>Progressive hip strengthening all planes. Glute med emphasis. Single-leg balance. Sport-specific foundations</td></tr>
+        <tr><td class="warn">IV &mdash; Return to Sport</td><td>3&ndash;6 months</td><td>Running progression, agility, plyometrics. Full return 4&ndash;6 months typical. Y-balance test + single-leg hop symmetry for clearance</td></tr>
+      </tbody></table>
     </div>
   </div>
 </div>
+</div>
 
-<div class="chip-label">Review Cards</div>
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
 <div class="container">
   <div class="section-title">Review Cards &#8212; Hip</div>
   <div class="section-sub">Tap any card to flip. High-yield clinical pearls for exams and practice.</div>
@@ -911,10 +839,18 @@
     </div>
   </div>
 </div>
+</div>
 
 <script src="themes.js"></script>
 <script src="premium.js"></script>
 <script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
+}
 function toggleMA(header) {
   var body = header.nextElementSibling;
   var chevron = header.querySelector('.ma-chevron');
