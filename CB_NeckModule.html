@@ -110,19 +110,20 @@
 </div>
 
 <div class="chip-nav">
-  <button class="active" onclick="showTab('surface',this)">📍 Surface</button>
-  <button class="" onclick="showTab('fascia',this)">🧱 Fascia</button>
-  <button class="" onclick="showTab('muscles',this)">💪 Muscles</button>
-  <button class="" onclick="showTab('triangles',this)">△ Triangles</button>
-  <button class="" onclick="showTab('nerves',this)">⚡ Nerves</button>
-  <button class="" onclick="showTab('circulation',this)">🩸 Circulation</button>
-  <button class="" onclick="showTab('viscera',this)">🫁 Viscera</button>
-  <button class="" onclick="showTab('lymph',this)">🔵 Lymphatics</button>
-  <button class="" onclick="showTab('review',this)">📝 Review</button>
+  <button class="active" onclick="showTab('surface',this)">Surface</button>
+  <button onclick="showTab('fascia',this)">Fascia</button>
+  <button onclick="showTab('muscles',this)">Muscles</button>
+  <button onclick="showTab('triangles',this)">Triangles</button>
+  <button onclick="showTab('nerves',this)">Nerves</button>
+  <button onclick="showTab('circulation',this)">Circulation</button>
+  <button onclick="showTab('viscera',this)">Viscera</button>
+  <button onclick="showTab('lymph',this)">Lymphatics</button>
+  <button onclick="showTab('review',this)">Review</button>
 </div>
 
 <!-- ══ SURFACE ANATOMY ══ -->
 <div id="tab-surface" class="tab-panel active">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -181,7 +182,10 @@
 </div>
 
 <!-- ══ FASCIA ══ -->
+</div>
+
 <div id="tab-fascia" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -224,20 +228,26 @@
 </div>
 
 <!-- ══ MUSCLES ══ -->
+</div>
+
 <div id="tab-muscles" class="tab-panel">
+<div class="container">
   <div class="chip-nav" id="muscle-cat-nav">
     <button class="active" onclick="selectMuscleGroup('superficial',this)">Superficial</button>
-    <button class="" onclick="selectMuscleGroup('infrahyoid',this)">Infrahyoid</button>
-    <button class="" onclick="selectMuscleGroup('suprahyoid',this)">Suprahyoid</button>
-    <button class="" onclick="selectMuscleGroup('scalenes',this)">Scalenes</button>
-    <button class="" onclick="selectMuscleGroup('prevertebral',this)">Prevertebral</button>
-    <button class="" onclick="selectMuscleGroup('suboccipital',this)">Suboccipital</button>
+    <button onclick="selectMuscleGroup('infrahyoid',this)">Infrahyoid</button>
+    <button onclick="selectMuscleGroup('suprahyoid',this)">Suprahyoid</button>
+    <button onclick="selectMuscleGroup('scalenes',this)">Scalenes</button>
+    <button onclick="selectMuscleGroup('prevertebral',this)">Prevertebral</button>
+    <button onclick="selectMuscleGroup('suboccipital',this)">Suboccipital</button>
   </div>
   <div id="muscle-content"></div>
 </div>
 
 <!-- ══ TRIANGLES ══ -->
+</div>
+
 <div id="tab-triangles" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -296,7 +306,10 @@
 </div>
 
 <!-- ══ NERVES ══ -->
+</div>
+
 <div id="tab-nerves" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -340,7 +353,10 @@
 </div>
 
 <!-- ══ CIRCULATION ══ -->
+</div>
+
 <div id="tab-circulation" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -368,7 +384,10 @@
 </div>
 
 <!-- ══ VISCERA ══ -->
+</div>
+
 <div id="tab-viscera" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;" id="viscera-left"></div>
     <div style="display:flex;flex-direction:column;gap:1rem;" id="viscera-right"></div>
@@ -376,7 +395,10 @@
 </div>
 
 <!-- ══ LYMPHATICS ══ -->
+</div>
+
 <div id="tab-lymph" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div class="card">
       <div class="card-header"><div class="card-header-title">Cervical Lymphatic System</div><div class="card-header-sub">Superficial & Deep Nodes</div></div>
@@ -437,7 +459,10 @@
 </div>
 
 <!-- ══ REVIEW ══ -->
+</div>
+
 <div id="tab-review" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div class="card">
       <div class="card-header"><div class="card-header-title">Review Questions</div><div class="card-header-sub">Clinical Reasoning · Click to Reveal</div></div>
@@ -466,8 +491,8 @@
     </div>
   </div>
 </div>
+</div>
 </div><!-- /shell -->
-
 <script>
 // ══════════════════════════════════════════════════
 // DATA

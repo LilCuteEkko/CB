@@ -113,19 +113,20 @@
 
 <div class="chip-nav">
   <button class="active" onclick="showTab('skull',this)">Skull</button>
-  <button class="" onclick="showTab('foramina',this)">Foramina</button>
-  <button class="" onclick="showTab('face',this)">Face & Muscles</button>
-  <button class="" onclick="showTab('cranialnerves',this)">Cranial Nerves</button>
-  <button class="" onclick="showTab('eyes',this)">Eyes & Orbits</button>
-  <button class="" onclick="showTab('ear',this)">Ear</button>
-  <button class="" onclick="showTab('oral',this)">Oral & Nose</button>
-  <button class="" onclick="showTab('brain',this)">Brain & Meninges</button>
-  <button class="" onclick="showTab('tmj',this)">TMJ</button>
-  <button class="" onclick="showTab('review',this)">Review</button>
+  <button onclick="showTab('foramina',this)">Foramina</button>
+  <button onclick="showTab('face',this)">Face & Muscles</button>
+  <button onclick="showTab('cranialnerves',this)">Cranial Nerves</button>
+  <button onclick="showTab('eyes',this)">Eyes & Orbits</button>
+  <button onclick="showTab('ear',this)">Ear</button>
+  <button onclick="showTab('oral',this)">Oral & Nose</button>
+  <button onclick="showTab('brain',this)">Brain & Meninges</button>
+  <button onclick="showTab('tmj',this)">TMJ</button>
+  <button onclick="showTab('review',this)">Review</button>
 </div>
 
 <!-- ══ SKULL ══ -->
 <div id="tab-skull" class="tab-panel active">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -151,7 +152,10 @@
 </div>
 
 <!-- ══ FORAMINA ══ -->
+</div><!-- /container -->
+
 <div id="tab-foramina" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -173,11 +177,14 @@
 </div>
 
 <!-- ══ FACE & MUSCLES ══ -->
+</div><!-- /container -->
+
 <div id="tab-face" class="tab-panel">
+<div class="container">
   <div class="chip-nav" id="face-nav">
     <button class="active" onclick="selectFace('expression',this)">Facial Expression</button>
-    <button class="" onclick="selectFace('bellspalsy',this)">Bell's Palsy</button>
-    <button class="" onclick="selectFace('vasculature',this)">Vasculature</button>
+    <button onclick="selectFace('bellspalsy',this)">Bell's Palsy</button>
+    <button onclick="selectFace('vasculature',this)">Vasculature</button>
   </div>
   <div id="face-content"></div>
 
@@ -223,19 +230,25 @@
 
 </div>
 <!-- ══ CRANIAL NERVES ══ -->
+</div><!-- /container -->
+
 <div id="tab-cranialnerves" class="tab-panel">
+<div class="container">
   <div class="chip-nav" id="cn-nav">
     <button class="active" onclick="selectCN('cn5',this)">CN V — Trigeminal</button>
-    <button class="" onclick="selectCN('cn7',this)">CN VII — Facial</button>
-    <button class="" onclick="selectCN('cn9',this)">CN IX — Glossopharyngeal</button>
-    <button class="" onclick="selectCN('cn12',this)">CN XII — Hypoglossal</button>
-    <button class="" onclick="selectCN('tests',this)">Clinical Tests</button>
+    <button onclick="selectCN('cn7',this)">CN VII — Facial</button>
+    <button onclick="selectCN('cn9',this)">CN IX — Glossopharyngeal</button>
+    <button onclick="selectCN('cn12',this)">CN XII — Hypoglossal</button>
+    <button onclick="selectCN('tests',this)">Clinical Tests</button>
   </div>
   <div id="cn-content"></div>
 </div>
 
 <!-- ══ EYES & ORBITS ══ -->
+</div><!-- /container -->
+
 <div id="tab-eyes" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -291,7 +304,10 @@
 
 </div>
 <!-- ══ EAR ══ -->
+</div><!-- /container -->
+
 <div id="tab-ear" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -322,12 +338,15 @@
 </div>
 
 <!-- ══ ORAL & NOSE ══ -->
+</div><!-- /container -->
+
 <div id="tab-oral" class="tab-panel">
+<div class="container">
   <div class="chip-nav" id="oral-nav">
     <button class="active" onclick="selectOral('oralcavity',this)">Oral Cavity</button>
-    <button class="" onclick="selectOral('tongue',this)">Tongue</button>
-    <button class="" onclick="selectOral('salivary',this)">Salivary Glands</button>
-    <button class="" onclick="selectOral('nose',this)">Nose & Sinuses</button>
+    <button onclick="selectOral('tongue',this)">Tongue</button>
+    <button onclick="selectOral('salivary',this)">Salivary Glands</button>
+    <button onclick="selectOral('nose',this)">Nose & Sinuses</button>
   </div>
   <div id="oral-content"></div>
 
@@ -376,7 +395,10 @@
 
 </div>
 <!-- ══ BRAIN & MENINGES ══ -->
+</div><!-- /container -->
+
 <div id="tab-brain" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -455,7 +477,10 @@
 
 </div>
 <!-- ══ TMJ ══ -->
+</div><!-- /container -->
+
 <div id="tab-tmj" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -515,7 +540,10 @@
 
 </div>
 <!-- ══ REVIEW ══ -->
+</div><!-- /container -->
+
 <div id="tab-review" class="tab-panel">
+<div class="container">
   <div class="two-col">
     <div class="card">
       <div class="card-header"><div class="card-header-title">Review Questions</div><div class="card-header-sub">Clinical Reasoning — Click to Reveal</div></div>
@@ -543,9 +571,9 @@
       </div>
     </div>
   </div>
+</div><!-- /container -->
 </div>
 </div><!-- /shell -->
-
 <script>
 // ══════════════════════════════════════════════════
 // SHARED HELPERS
