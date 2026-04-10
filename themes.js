@@ -16,25 +16,16 @@
       });
     });
 
-    // Scroll chroma bar
-    var chroma = document.querySelector('.chroma-line');
-    if(!chroma){
-      chroma = document.createElement('div');
-      chroma.className = 'chroma-line';
-      var nav = document.querySelector('.site-nav');
-      if(nav) nav.after(chroma);
-      else document.body.prepend(chroma);
-    }
+    // Chroma bar removed
 
-    // Scroll handler — chroma + color shift
+    // Scroll handler — color shift
     var hueShift = 0;
     window.addEventListener('scroll', function(){
       var scrollTop = document.documentElement.scrollTop;
       var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       var pct = scrollTop / (scrollHeight || 1);
 
-      // Chroma bar
-      if(chroma) chroma.style.transform = 'scaleX(' + Math.min(pct, 1) + ')';
+
 
       // Subtle hue shift on body — rotate 0 to 8 degrees as you scroll
       hueShift = pct * 8;
