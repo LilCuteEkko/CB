@@ -178,8 +178,48 @@
     <button class="chip-btn" onclick="selectFace('vasculature',this)">Vasculature</button>
   </div>
   <div id="face-content"></div>
-</div>
 
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Detailed Muscle Anatomy &#8212; Origin, Insertion, Nerve, Action (OINA)</h4>
+      <div class="ma-tags"><span class="ma-tag green">Facial expression = CN VII</span><span class="ma-tag gold">Mastication = CN V<sub>3</sub></span><span class="ma-tag purple">Extraocular = CN III, IV, VI</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Muscles of Facial Expression &#8212; CN VII (Facial Nerve)</div><p><strong>All muscles of facial expression</strong> are innervated by <strong>CN VII (facial nerve)</strong>. The nerve divides into 5 branches as it passes through the parotid gland: <strong>T</strong>emporal, <strong>Z</strong>ygomatic, <strong>B</strong>uccal, <strong>M</strong>andibular, <strong>C</strong>ervical. Mnemonic: &#8220;<strong>T</strong>o <strong>Z</strong>anzibar <strong>B</strong>y <strong>M</strong>otor <strong>C</strong>ar.&#8221; <strong>Clinical:</strong> CN VII injury/Bell&#8217;s palsy &#8594; paralysis of ipsilateral facial muscles.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Action</th><th>Nerve</th><th>Clinical Note</th></tr></thead><tbody>
+        <tr><td class="hi">Occipitofrontalis (frontal belly)</td><td>Elevates eyebrows; wrinkles forehead skin</td><td>CN VII &#8212; temporal branch</td><td>Connected to occipital belly by epicranial aponeurosis (galea aponeurotica)</td></tr>
+        <tr><td class="hi">Orbicularis Oculi</td><td><strong>Palpebral:</strong> gently closes eyelid (blinking). <strong>Orbital:</strong> tightly closes eyelids (squinting)</td><td>CN VII &#8212; temporal &amp; zygomatic</td><td>Tests CN VII function &#8212; &#8220;squeeze eyes shut&#8221;</td></tr>
+        <tr><td class="hi">Nasalis</td><td>Draws side of nose toward nasal septum (flaring)</td><td>CN VII &#8212; buccal branch</td><td></td></tr>
+        <tr><td class="hi">Levator Labii Superioris</td><td>Elevates upper lip; flares nostril</td><td>CN VII &#8212; buccal branch</td><td></td></tr>
+        <tr><td class="hi">Orbicularis Oris</td><td>Compresses and protrudes lips (purses lips)</td><td>CN VII &#8212; buccal &amp; mandibular</td><td>Tests &#8220;pucker/whistle&#8221;</td></tr>
+        <tr><td class="hi">Buccinator</td><td>Presses cheek against teeth; assists chewing</td><td>CN VII &#8212; buccal branch</td><td>Deep muscle of cheek; keeps food between teeth</td></tr>
+        <tr><td class="hi">Mentalis</td><td>Elevates and protrudes lower lip (pouting)</td><td>CN VII &#8212; mandibular branch</td><td></td></tr>
+        <tr><td class="hi">Platysma</td><td>Tenses skin of neck; depresses mandible</td><td>CN VII &#8212; cervical branch</td><td>Superficial neck muscle</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip gold"><div class="bl-label">Muscles of Mastication &#8212; CN V<sub>3</sub> (Mandibular Branch of Trigeminal)</div><p>All muscles of mastication are innervated by <strong>CN V<sub>3</sub></strong> (mandibular division of trigeminal nerve). These are the only muscles of the head/face NOT innervated by CN VII. <strong>Masseter</strong> and <strong>temporalis</strong> are the primary jaw closers.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Masseter</td><td>Zygomatic arch</td><td>Lateral surface of ramus and angle of mandible</td><td>CN V<sub>3</sub> (mandibular N)</td><td>Elevates mandible (closes jaw); superficial fibers also protract</td></tr>
+        <tr><td class="warn">Temporalis</td><td>Temporal fossa (floor and fascia)</td><td>Coronoid process and anterior ramus of mandible</td><td>CN V<sub>3</sub> (mandibular N)</td><td>Elevates mandible; posterior fibers retract mandible</td></tr>
+        <tr><td class="hi">Medial Pterygoid</td><td>Medial surface of lateral pterygoid plate; tuberosity of maxilla</td><td>Medial surface of ramus and angle of mandible</td><td>CN V<sub>3</sub> (mandibular N)</td><td>Elevates mandible; assists protraction and lateral deviation</td></tr>
+        <tr><td class="warn">Lateral Pterygoid</td><td><strong>Superior head:</strong> greater wing of sphenoid. <strong>Inferior head:</strong> lateral pterygoid plate</td><td>Neck of mandibular condyle; articular disc of TMJ</td><td>CN V<sub>3</sub> (mandibular N)</td><td><strong>Bilateral:</strong> protrudes mandible (opens jaw). <strong>Unilateral:</strong> lateral deviation to opposite side</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip purple"><div class="bl-label">Extraocular Muscles &#8212; CN III, IV, VI</div><p>Six muscles control eye movement. Mnemonic: <strong>LR<sub>6</sub>SO<sub>4</sub> &#8212; all others 3</strong>. Lateral rectus = CN VI (abducens). Superior oblique = CN IV (trochlear). All others = CN III (oculomotor). <strong>CN III also controls:</strong> levator palpebrae superioris (eyelid opening) + pupil constriction.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Action</th><th>Nerve</th><th>Test Direction</th></tr></thead><tbody>
+        <tr><td class="hi">Superior Rectus</td><td>Elevates, adducts, IR of eye</td><td>CN III (oculomotor)</td><td>Look up</td></tr>
+        <tr><td class="hi">Inferior Rectus</td><td>Depresses, adducts, ER of eye</td><td>CN III (oculomotor)</td><td>Look down</td></tr>
+        <tr><td class="hi">Medial Rectus</td><td>Adducts eye</td><td>CN III (oculomotor)</td><td>Look medially</td></tr>
+        <tr><td class="warn">Lateral Rectus</td><td>Abducts eye</td><td>CN VI (abducens)</td><td>Look laterally &#8212; &#8220;LR<sub>6</sub>&#8221;</td></tr>
+        <tr><td class="warn">Superior Oblique</td><td>Depresses, abducts, IR of eye</td><td>CN IV (trochlear)</td><td>Down &amp; in &#8212; &#8220;SO<sub>4</sub>&#8221;</td></tr>
+        <tr><td class="hi">Inferior Oblique</td><td>Elevates, abducts, ER of eye</td><td>CN III (oculomotor)</td><td>Up &amp; in</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip"><div class="bl-label">Tongue Muscle &#8212; CN XII</div><p><strong>Genioglossus</strong> is the primary tongue muscle, innervated by <strong>CN XII (hypoglossal)</strong>. Unilateral damage &#8594; tongue deviates toward the injured side. Test: ask patient to protrude tongue and observe for deviation.</p></div>
+    </div>
+  </div>
+
+</div>
 <!-- ══ CRANIAL NERVES ══ -->
 <div id="tab-cranialnerves" class="tab-content">
   <div class="chip-nav" id="cn-nav">
