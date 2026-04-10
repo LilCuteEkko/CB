@@ -101,10 +101,184 @@
   </div>
 </div>
 <div class="chip-nav">
-  <button class="active" onclick="showTab('cervical',this)">Cervical DDx</button>
+    <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+  <button onclick="showTab('cervical',this)">Cervical DDx</button>
   <button onclick="showTab('special',this)">Special Tests</button>
 </div>
-<div class="tab-panel active" id="tab-cervical">
+
+<div class="tab-panel active" id="tab-anatomy">
+<div class="container">
+
+  <div class="section-title">Cervical Spine &#8212; Comprehensive Anatomy</div>
+  <div class="section-sub">The cervical spine is the most mobile region of the vertebral column (1:3 disc-to-vertebral height ratio). It houses the vertebral arteries, the spinal cord at its widest, and the brachial plexus. Functionally divided into <strong>upper cervical (O&#8211;C2)</strong> and <strong>lower cervical (C3&#8211;C7)</strong>.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Osteology &#8212; Cervical Vertebrae</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Typical Cervical Vertebrae (C3&#8211;C7)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Body</strong> &#8212; small, wider side-to-side than AP. Uncinate processes on superior lateral edges (C3&#8211;C7) form <strong>uncovertebral joints (of Luschka)</strong> &#8212; prone to bone spur formation &#8594; foraminal stenosis</li>
+        <li><strong>Vertebral foramen</strong> &#8212; large, triangular (accommodates cervical cord enlargement)</li>
+        <li><strong>Transverse processes</strong> &#8212; contain <strong>transverse foramen</strong> for vertebral artery (C1&#8211;C6). C7 may have small/absent foramen</li>
+        <li><strong>Articular facets</strong> &#8212; superior facets face superoposterior; inferior facets face inferoanterior. Orientation &#8594; good rotation and lateral flexion</li>
+        <li><strong>Spinous processes</strong> &#8212; typically bifid (C3&#8211;C5). <strong>C7 = vertebra prominens</strong> (longest SP, easily palpated)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Atypical Vertebrae &#8212; Atlas (C1) &amp; Axis (C2)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Atlas (C1)</strong> &#8212; ring-shaped; NO body, NO spinous process. Anterior + posterior arches with tubercles. Wide transverse processes (palpate inferior to mastoid). Superior facets articulate with occipital condyles (flex/ext &#8212; nodding &#8220;yes&#8221;). Inferior facets articulate with C2 (rotation). Anterior arch has facet for <strong>dens</strong></li>
+        <li><strong>Axis (C2)</strong> &#8212; characterized by <strong>dens (odontoid process)</strong> projecting superiorly from body. Forms pivot for rotation. C1 + occiput rotate as unit on C2 (~50% of cervical rotation). Dens secured by <strong>transverse ligament</strong>, alar ligaments, and apical ligament</li>
+        <li><strong>Vertebral artery</strong> &#8212; enters transverse foramen at C6, ascends through C5&#8211;C1, makes sharp turns around C1 lateral mass, enters foramen magnum. Vulnerable during cervical rotation/extension &#8594; <strong>VBI (vertebrobasilar insufficiency)</strong> screening essential</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Craniovertebral Joints &amp; Ligaments</h4>
+      <div class="ma-tags"><span class="ma-tag">O&#8211;C1 = flex/ext (nodding)</span><span class="ma-tag gold">C1&#8211;C2 = ~50% cervical rotation</span><span class="ma-tag red">Alar ligs limit rotation; transverse lig secures dens</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip"><div class="bl-label">Atlanto-Occipital Joint (O&#8211;C1)</div>
+          <p>Synovial condyloid joint. Occipital condyles on superior facets of C1. <strong>Primary motion: flexion/extension</strong> (nodding). ~10&#8211;15&#176; flex, ~25&#176; ext. Anterior + posterior <strong>atlanto-occipital membranes</strong> connect C1 arches to occiput (stability).</p></div>
+          <div class="bl-strip gold" style="margin-top:8px"><div class="bl-label">Atlantoaxial Joints (C1&#8211;C2) &#8212; 3 Joints</div>
+          <p><strong>Median atlantoaxial:</strong> dens on anterior arch of C1 &#8212; pivot joint. Provides <strong>~50% of all cervical rotation</strong>. C1 and occiput rotate as a unit on C2. <strong>Lateral (R/L) facet joints:</strong> synovial plane joints &#8212; orientation allows gliding for rotation. Shape of facets causes C1 to &#8220;screw down&#8221; 2&#8211;3mm during rotation (head depresses slightly).</p></div>
+        </div>
+        <div>
+          <div class="bl-strip red"><div class="bl-label">Upper Cervical Ligaments</div>
+          <p><strong>Transverse ligament:</strong> extends between R/L lateral masses of C1 &#8212; holds dens against anterior arch. Part of <strong>cruciate (cruciform) ligament</strong> complex = transverse lig + superior/inferior longitudinal bands. This is the <strong>primary stabilizer of the dens</strong>.</p>
+          <p style="margin-top:6px"><strong>Alar ligaments:</strong> sides of dens &#8594; lateral margins of foramen magnum. <strong>Limit excessive rotation</strong>. Tested clinically with lateral flexion (should limit contralateral side-bending).</p>
+          <p style="margin-top:6px"><strong>Tectorial membrane:</strong> continuation of PLL from C2 to foramen magnum (posterior to cruciate lig).</p>
+          <p style="margin-top:6px"><strong>Apical ligament:</strong> apex of dens to foramen magnum.</p>
+          <p style="margin-top:6px"><strong>Clinical:</strong> Transverse ligament rupture (RA, trauma, Down syndrome) &#8594; atlantoaxial instability &#8594; cord compression risk. <strong>Sharp-Purser test</strong> and <strong>alar ligament test</strong> assess this. ADI (atlanto-dens interval) &gt;3mm in adults = instability.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Spinal Ligaments &#8212; Complete Reference</h4>
+      <div class="ma-tags"><span class="ma-tag green">ALL limits extension</span><span class="ma-tag gold">PLL limits flexion (narrows caudally)</span><span class="ma-tag purple">Lig flavum = high elastin</span><span class="ma-tag red">Nuchal lig = EOP to C7</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table"><thead><tr><th>Ligament</th><th>Attachments</th><th>Function</th><th>Clinical Note</th></tr></thead><tbody>
+        <tr><td class="warn">Anterior Longitudinal Lig (ALL)</td><td>Occiput (anterior to foramen magnum) &#8594; sacrum; along anterior vertebral bodies</td><td><strong>Limits extension</strong>; supports anterior annulus</td><td>Widest ligament. Gets wider as it descends. Only ligament that limits extension</td></tr>
+        <tr><td class="warn">Posterior Longitudinal Lig (PLL)</td><td>C2 &#8594; sacrum; within vertebral canal on posterior vertebral bodies</td><td><strong>Limits flexion</strong>; supports posterior annulus</td><td>Gets <strong>narrower</strong> as it descends &#8212; less support to lumbar discs &#8594; explains why posterolateral disc herniations are most common in lumbar region</td></tr>
+        <tr><td class="warn">Ligamentum Flavum</td><td>Connects laminae of adjacent vertebrae; forms posterior wall of vertebral canal</td><td>Allows flexion; elastic recoil assists return to neutral. High <strong>elastin</strong> content</td><td>Thickens as it descends C &#8594; L. Hypertrophy &#8594; <strong>spinal stenosis</strong> (narrows canal posteriorly). &#8220;Yellow ligament&#8221; (L. flavum = yellow)</td></tr>
+        <tr><td class="hi">Interspinous Ligaments</td><td>Between adjacent spinous processes (along length of SP)</td><td>Limit flexion; limit separation of SPs</td><td>Thin, membranous</td></tr>
+        <tr><td class="hi">Supraspinous Ligament</td><td>C7 &#8594; sacrum; along tips/apices of spinous processes</td><td>Limits flexion</td><td>Cord-like. Merges superiorly with nuchal ligament</td></tr>
+        <tr><td class="hi">Nuchal Ligament</td><td>EOP + posterior tubercle of C1 + SPs of C2&#8211;C7</td><td>Limits cervical flexion; septum between R/L posterior neck muscles</td><td>Continuation of supraspinous lig into cervical region. Palpable midline structure</td></tr>
+        <tr><td class="hi">Intertransverse Ligaments</td><td>Between adjacent transverse processes</td><td>Limit contralateral lateral flexion</td><td>Variable development</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cervical Muscles &#8212; OINA (Anterior &amp; Lateral)</h4>
+      <div class="ma-tags"><span class="ma-tag green">SCM = CN XI</span><span class="ma-tag gold">Scalenes = brachial plexus between ant/mid</span><span class="ma-tag purple">Deep neck flexors = cervical stability</span><span class="ma-tag red">Hyoid muscles = swallowing</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Superficial Neck Muscles</div></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Platysma</td><td>Fascia &amp; skin over pec major &amp; deltoid</td><td>Inferior border of mandible &amp; skin of lower face</td><td>CN VII (facial N &#8212; cervical branch)</td><td>Tenses neck skin; depresses mandible</td></tr>
+        <tr><td class="warn">Sternocleidomastoid (SCM)</td><td><strong>Sternal head:</strong> anterior manubrium. <strong>Clavicular head:</strong> medial 1/3 clavicle</td><td>Mastoid process; lateral superior nuchal line</td><td><strong>CN XI</strong> (spinal accessory N)</td><td><strong>Unilateral:</strong> ipsilateral LF + <strong>contralateral rotation</strong>. <strong>Bilateral:</strong> flexes neck. Clinical: torticollis, trigger points refer to head, adapts to forward head posture</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip gold"><div class="bl-label">Scalene Muscles</div><p><strong>Brachial plexus emerges between anterior and middle scalenes.</strong> Subclavian artery also passes here. Potential entrapment site &#8594; <strong>thoracic outlet syndrome (TOS)</strong>. Trigger points may refer to scapula/UE.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Scalenus Anterior</td><td>TPs of C3&#8211;C6</td><td>1st rib (scalene tubercle)</td><td>VPR of lower cervical nn.</td><td>From above: elevates 1st rib. From below: flexes C-spine &amp; rotates to opposite side</td></tr>
+        <tr><td class="hi">Scalenus Medius</td><td>TPs of C2&#8211;C7</td><td>Superior surface 1st rib (posterior to subclavian groove)</td><td>VPR of lower cervical nn.</td><td>Same as anterior. <strong>Dorsal scapular N and long thoracic N pierce through middle scalene</strong></td></tr>
+        <tr><td class="hi">Scalenus Posterior</td><td>TPs of C4&#8211;C6</td><td>Outer surface 2nd rib</td><td>VPR of lower cervical nn. (C6&#8211;C8)</td><td>Elevates 2nd rib; assists flex &amp; contralateral rotation</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip purple"><div class="bl-label">Deep Neck Flexors (Prevertebral Muscles)</div><p>Critical for <strong>cervical stabilization</strong>. Weakness/inhibition of deep neck flexors is implicated in neck dysfunction and pain. Clinical: craniocervical flexion test assesses endurance. All innervated by <strong>VPR of cervical nerves</strong>.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Longus Colli (Cervicis)</td><td>Vertebral bodies C5&#8211;T3; TPs C3&#8211;C5</td><td>Body C2&#8211;C4; TPs C5&#8211;C6; anterior tubercle of atlas</td><td>Flexes neck. Primary deep cervical stabilizer</td></tr>
+        <tr><td class="hi">Longus Capitis</td><td>Anterior tubercles TPs C3&#8211;C6</td><td>Base of skull (basilar part of occipital bone)</td><td>Flexes head</td></tr>
+        <tr><td class="hi">Rectus Capitis Anterior</td><td>Lateral mass of atlas</td><td>Base of skull anterior to occipital condyle</td><td>Flexes head</td></tr>
+        <tr><td class="hi">Rectus Capitis Lateralis</td><td>TP of atlas</td><td>Jugular process of occipital bone</td><td>Laterally flexes head</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip red"><div class="bl-label">Suprahyoid Muscles</div><p>Elevate the hyoid during swallowing (deglutition). The hyoid is the only bone with no bony articulations &#8212; suspended entirely by muscles.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Mylohyoid</td><td>Mylohyoid line of mandible</td><td>Raphe &amp; body of hyoid</td><td>Mylohyoid N (V3 branch)</td><td>Elevates hyoid &amp; tongue during speech/swallowing</td></tr>
+        <tr><td class="hi">Geniohyoid</td><td>Inferior mental spine of mandible</td><td>Body of hyoid</td><td>C1 via CN XII</td><td>Pulls hyoid anterosuperiorly (widens pharynx)</td></tr>
+        <tr><td class="hi">Stylohyoid</td><td>Styloid process of temporal bone</td><td>Body of hyoid</td><td>CN VII (cervical branch)</td><td>Elevates &amp; retracts hyoid</td></tr>
+        <tr><td class="hi">Digastric</td><td>Ant. belly: digastric fossa of mandible. Post. belly: mastoid notch</td><td>Intermediate tendon to hyoid</td><td>Ant: V3. Post: CN VII</td><td>Depresses mandible; elevates hyoid</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip"><div class="bl-label">Infrahyoid Muscles (&#8220;Strap Muscles&#8221;)</div><p>Depress the hyoid and larynx. Most innervated by <strong>ansa cervicalis (C1&#8211;C3)</strong>.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Sternohyoid</td><td>Posterior manubrium &amp; medial clavicle</td><td>Body of hyoid</td><td>Ansa cervicalis (C1, C2)</td><td>Depresses hyoid</td></tr>
+        <tr><td class="hi">Sternothyroid</td><td>Posterior manubrium</td><td>Oblique line of thyroid cartilage</td><td>Ansa cervicalis (C1, C2)</td><td>Depresses larynx (thyroid cartilage)</td></tr>
+        <tr><td class="hi">Thyrohyoid</td><td>Oblique line of thyroid cartilage</td><td>Body &amp; greater horn of hyoid</td><td>C1 via CN XII</td><td>Depresses hyoid; elevates thyroid cartilage</td></tr>
+        <tr><td class="hi">Omohyoid</td><td>Inferior belly: superior border of scapula. Superior belly: intermediate tendon</td><td>Body of hyoid</td><td>Ansa cervicalis (C1, C2)</td><td>Depresses, retracts &amp; stabilizes hyoid</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Suboccipital Muscles &amp; Triangle</h4>
+      <div class="ma-tags"><span class="ma-tag">All innervated by suboccipital N (DPR of C1)</span><span class="ma-tag gold">Triangle contains vertebral artery</span><span class="ma-tag red">All produce ipsilateral rotation</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Rectus Capitis Posterior Major</td><td>SP of C2 (axis)</td><td>Inferior nuchal line (lateral)</td><td>Extends head; ipsilateral rotation</td></tr>
+        <tr><td class="hi">Rectus Capitis Posterior Minor</td><td>Posterior tubercle of C1 (atlas)</td><td>Inferior nuchal line (medial)</td><td>Extends head; ipsilateral rotation</td></tr>
+        <tr><td class="hi">Obliquus Capitis Inferior</td><td>SP of C2 (axis)</td><td>TP of C1 (atlas)</td><td>Ipsilateral rotation (C1 on C2)</td></tr>
+        <tr><td class="hi">Obliquus Capitis Superior</td><td>TP of C1 (atlas)</td><td>Occipital bone above inferior nuchal line</td><td>Extends head; ipsilateral rotation</td></tr>
+      </tbody></table>
+      <div class="bl-strip gold"><div class="bl-label">Suboccipital Triangle</div><p><strong>Boundaries:</strong> Medial = rectus capitis posterior major. Lateral = obliquus capitis superior. Inferior = obliquus capitis inferior. <strong>Floor</strong> = posterior arch of atlas + posterior atlanto-occipital membrane. <strong>Roof</strong> = semispinalis capitis + longissimus capitis. <strong>Contents:</strong> vertebral artery (makes sharp turns here &#8212; vulnerable), suboccipital nerve (C1), blood vessels. <strong>Clinical:</strong> manual therapy to this region can affect vertebral artery flow &#8212; VBI screening mandatory before upper cervical manipulation.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cervical Plexus &amp; Triangles of the Neck</h4>
+      <div class="ma-tags"><span class="ma-tag green">Cervical plexus = C1&#8211;C4</span><span class="ma-tag purple">Phrenic N = C3&#8211;C5</span><span class="ma-tag red">Posterior triangle = brachial plexus exit</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip green"><div class="bl-label">Cervical Plexus (VPR C1&#8211;C4)</div>
+          <p><strong>Sensory branches:</strong> Lesser occipital N (C2) &#8212; posterior skull. Greater auricular N (C2&#8211;C3) &#8212; anterior ear. Transverse cervical N (C2&#8211;C3) &#8212; anterior triangle skin. Supraclavicular N (C3&#8211;C4) &#8212; shoulder region.</p>
+          <p style="margin-top:6px"><strong>Motor branches:</strong> <strong>Phrenic N (C3, C4, C5)</strong> &#8212; descends on anterior surface of anterior scalene &#8594; motor supply to diaphragm. &#8220;C3, 4, 5 keeps the diaphragm alive.&#8221; SCI above C3 &#8594; ventilator-dependent. <strong>Ansa cervicalis</strong> (C1&#8211;C3) &#8212; supplies infrahyoid muscles.</p></div>
+        </div>
+        <div>
+          <div class="bl-strip purple"><div class="bl-label">Triangles of the Neck</div>
+          <p><strong>Posterior triangle:</strong> Bordered by posterior SCM, anterior trapezius, superior clavicle. Contains: EJV, brachial plexus trunks, CN XI, subclavian artery, transverse cervical artery. Subdivided by omohyoid into occipital and supraclavicular triangles.</p>
+          <p style="margin-top:6px"><strong>Anterior triangle:</strong> Bordered by anterior SCM, midline, mandible. Contains: hyoid muscles, CCA/ECA/ICA, IJV, CN X/XI/XII, thyroid, larynx, pharynx. Four subdivisions: submandibular, carotid, muscular, submental.</p>
+          <p style="margin-top:6px"><strong>Carotid triangle:</strong> Most clinically important &#8212; contains CCA bifurcation, carotid sinus (baroreceptor) and carotid body (chemoreceptor). <strong>Clinical:</strong> modality contraindication zone (US, ESTIM near carotid).</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cervical Coupled Motion &amp; Biomechanics</h4>
+      <div class="ma-tags"><span class="ma-tag">Upper C: rotation causes 2&#8211;3mm depression</span><span class="ma-tag gold">Lower C: LF + rotation to SAME side</span><span class="ma-tag purple">Opposite coupling in lumbar</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Coupled Motion Patterns</div>
+      <p><strong>Upper cervical (C1&#8211;C2):</strong> As C1 rotates on C2, the facet shape causes C1 to &#8220;screw down&#8221; &#8212; head depresses 2&#8211;3mm during rotation. No true lateral flexion at this level.</p>
+      <p style="margin-top:6px"><strong>Lower cervical (C3&#8211;C7):</strong> Lateral flexion and rotation are <strong>coupled to the SAME side</strong> (ipsilateral). When you side-bend right, the vertebral body rotates right (SPs go left/contralateral). Rotation:LF ratio decreases from C3 (2:3) to C7 (1:7).</p>
+      <p style="margin-top:6px"><strong>Contrast with lumbar:</strong> In the lumbar spine, lateral flexion and rotation couple to <strong>OPPOSITE sides</strong> (contralateral). Vertebral body rotates contralateral to the side of LF (SPs go ipsilateral/concave side).</p>
+      <p style="margin-top:6px"><strong>Thoracic transition:</strong> Upper thoracic couples like cervical (ipsilateral); lower thoracic transitions to lumbar pattern (contralateral). The exact transition point varies by individual.</p></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<div class="tab-panel" id="tab-cervical">
 <div class="container">
   <div class="section-title">Cervical Spine</div>
   <div class="section-sub">The cervical spine is inherently fragile and patients remember their neck injuries. 4th leading cause of days lost of life years. 30% US prevalence. Women more affected. People with both LBP and C-spine pain have worse prognosis. High roles conflict (balancing work/life), depressed mood, and perceived muscle tension are risk factors.</div>

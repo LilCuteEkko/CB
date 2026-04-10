@@ -101,12 +101,136 @@
   </div>
 </div>
 <div class="chip-nav">
-  <button class="active" onclick="showTab('redflags',this)">Red Flags</button>
+    <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+  <button onclick="showTab('redflags',this)">Red Flags</button>
   <button onclick="showTab('lumbar',this)">Examination</button>
   <button onclick="showTab('lumbarpath',this)">Pathology</button>
   <button onclick="showTab('disc',this)">Disc &amp; Radiculopathy</button>
 </div>
-<div class="tab-panel active" id="tab-redflags">
+
+<div class="tab-panel active" id="tab-anatomy">
+<div class="container">
+
+  <div class="section-title">Lumbar Spine &#8212; Comprehensive Anatomy</div>
+  <div class="section-sub">The lumbar spine carries the most load and is the most common site of spinal pathology. Five large vertebrae with thick discs (1:3 disc:vertebral height ratio &#8212; same as cervical). Facet orientation favors <strong>flexion/extension</strong> as the cardinal plane of motion. Understanding disc anatomy, ligament function, and the relationship between facets, discs, and neural structures is fundamental to treating lumbar pathology.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Osteology &amp; Intervertebral Disc</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Lumbar Vertebrae</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Body</strong> &#8212; kidney-shaped; largest of all vertebrae (supports most body weight)</li>
+        <li><strong>Vertebral foramen</strong> &#8212; triangular; larger than thoracic, smaller than cervical</li>
+        <li><strong>Transverse processes</strong> &#8212; have <strong>accessory processes</strong> (tubercles at base of TP). In L5 shorter and stouter</li>
+        <li><strong>Articular facets</strong> &#8212; superior facets face posteromedially; inferior facets face anterolaterally. Orientation = sagittal plane &#8594; facilitates flex/ext, limits rotation. <strong>Mammillary processes</strong> on superior articular processes &#8212; attachment site for multifidi</li>
+        <li><strong>Spinous processes</strong> &#8212; sturdy, hatchet-shaped, project nearly horizontally (vs. thoracic which angle inferiorly)</li>
+        <li><strong>Pars interarticularis</strong> &#8212; region of lamina between superior and inferior facets. Site of <strong>spondylolysis</strong> (stress fracture) &#8594; may progress to <strong>spondylolisthesis</strong> (anterior slippage)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Intervertebral Disc (IVD)</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>~25% of total spine length.</strong> No disc between occiput&#8211;C1 or C1&#8211;C2</li>
+        <li><strong>Annulus fibrosus</strong> &#8212; concentric layers of obliquely-oriented collagen fibers. Alternating direction (cross-woven) provides tensile strength. Outer layers blend with ALL and PLL. <strong>Outer annulus is innervated</strong> &#8594; potential pain source (discogenic pain)</li>
+        <li><strong>Nucleus pulposus</strong> &#8212; proteoglycan-rich center that attracts water. Acts as hydraulic shock absorber. Gradual transition from annulus (no sharp boundary). With aging: decreased proteoglycan &#8594; decreased water content &#8594; decreased disc height</li>
+        <li><strong>Disc pathology:</strong> Annular fissures &#8594; discogenic pain. Protrusion/herniation &#8594; nerve root compression &#8594; radicular symptoms (dermatome + myotome patterns). <strong>Posterolateral herniation most common</strong> &#8212; PLL narrows caudally, less posterior support</li>
+        <li><strong>Cartilaginous endplates</strong> &#8212; hyaline cartilage on superior/inferior vertebral surfaces. Primary route for disc nutrition (diffusion). Disc is largely avascular</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Deep Back Muscles &#8212; OINA (Erector Spinae &amp; Transversospinalis)</h4>
+      <div class="ma-tags"><span class="ma-tag green">All intrinsic back muscles = DPR</span><span class="ma-tag gold">Erector spinae = chief extensors</span><span class="ma-tag purple">Transversospinalis = TP &#8594; SP (contralateral rotation)</span><span class="ma-tag red">Multifidus = key segmental stabilizer</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Organizational Framework</div><p>Back muscles are arranged in <strong>3 layers:</strong> Superficial (extrinsic &#8212; trap, lats, rhomboids, levator scap &#8212; covered in shoulder module), Intermediate (extrinsic &#8212; serratus posterior sup/inf), Deep (intrinsic &#8212; TRUE back muscles). All <strong>intrinsic</strong> back muscles are innervated by <strong>dorsal primary rami (DPR)</strong>. The deep layer is further divided into superficial (splenius), intermediate (erector spinae), and deep (transversospinalis) sub-layers.</p></div>
+
+      <div class="bl-strip gold"><div class="bl-label">Splenius Muscles (Superficial Deep Layer)</div><p>Fiber direction is <strong>superolateral</strong> (like a bandage wrapping the deeper muscles). Name from Greek <em>splenion</em> = bandage.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Splenius Capitis</td><td>Nuchal ligament + SPs C7&#8211;T4</td><td>Mastoid process + lateral superior nuchal line</td><td>DPR C2&#8211;C6</td><td>Bilateral: extends head/neck. Unilateral: <strong>ipsilateral</strong> LF + rotation</td></tr>
+        <tr><td class="hi">Splenius Cervicis</td><td>SPs T3&#8211;T6</td><td>Posterior tubercles TPs C1&#8211;C3</td><td>DPR C5&#8211;C7</td><td>Bilateral: extends head/neck. Unilateral: <strong>ipsilateral</strong> LF + rotation</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip"><div class="bl-label">Erector Spinae (Intermediate Deep Layer) &#8212; &#8220;Chief Extensors&#8221;</div><p>Three columns sharing a <strong>common origin</strong> from a broad tendon (posterior iliac crest, sacrum, lower lumbar/sacral SPs, supraspinous ligament). Mnemonic lateral &#8594; medial: <strong>I Love Spine</strong> (Iliocostalis, Longissimus, Spinalis). Each column divided into 3 sections (lumborum, thoracis, cervicis/capitis) named for their <strong>superior attachment</strong>.</p></div>
+      <table class="data-table"><thead><tr><th>Column</th><th>Position</th><th>Superior Attachments</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Iliocostalis (I)</td><td>Lateral</td><td><strong>Lumborum:</strong> angles of lower ribs. <strong>Thoracis:</strong> angles of upper ribs. <strong>Cervicis:</strong> TPs C4&#8211;C6</td><td>DPR of spinal nerves</td><td>Bilateral: extends vertebral column; eccentric control of flexion. Unilateral: lateral flexion</td></tr>
+        <tr><td class="warn">Longissimus (L)</td><td>Intermediate</td><td><strong>Thoracis:</strong> ribs + TPs. <strong>Cervicis:</strong> TPs upper cervical. <strong>Capitis:</strong> mastoid process</td><td>DPR of spinal nerves</td><td>Bilateral: extends vertebral column; eccentric control of flexion. Unilateral: lateral flexion</td></tr>
+        <tr><td class="hi">Spinalis (S)</td><td>Medial</td><td><strong>Thoracis:</strong> SPs upper thoracic. <strong>Cervicis:</strong> SPs upper cervical</td><td>DPR of spinal nerves</td><td>Bilateral: extends vertebral column. Smallest &amp; most variable column</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip purple"><div class="bl-label">Transversospinalis Group (Deep Layer)</div><p>All originate from <strong>transverse processes</strong> and insert into <strong>spinous processes</strong> (hence &#8220;transversospinalis&#8221;). Fiber direction is <strong>superomedial</strong>. These muscles cross different numbers of segments: semispinalis = 4&#8211;6, multifidus = 2&#8211;4, rotatores = 1&#8211;2. All produce <strong>contralateral rotation</strong> unilaterally.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Segments Spanned</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Semispinalis (thoracis, cervicis, capitis)</td><td>TPs C4&#8211;T12</td><td>Capitis: between nuchal lines. Cervicis/thoracis: SPs 4&#8211;6 levels above</td><td>4&#8211;6</td><td>Bilateral: extends head &amp; C/T spine. Unilateral: <strong>contralateral rotation</strong>. Stabilizes vertebrae</td></tr>
+        <tr><td class="warn">Multifidus</td><td>Sacrum, TPs T1&#8211;L5, APs C4&#8211;C7</td><td>SPs 2&#8211;4 levels above (mammillary processes)</td><td>2&#8211;4</td><td>Bilateral: extends spine. Unilateral: <strong>contralateral rotation</strong>. <strong>KEY segmental stabilizer</strong> &#8212; atrophies rapidly with LBP. Proprioceptive function. Target of lumbar stabilization programs</td></tr>
+        <tr><td class="hi">Rotatores (longi + brevi)</td><td>TPs of vertebral column</td><td>Long: SPs 2 levels above. Short: SPs 1 level above (lamina)</td><td>1&#8211;2</td><td>Bilateral: extend. Unilateral: <strong>contralateral rotation</strong>. Proprioceptive function. Best developed in thoracic region</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip red"><div class="bl-label">Minor Deep Intrinsics + Segmental Stabilizers</div></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Attachments</th><th>Action</th><th>Note</th></tr></thead><tbody>
+        <tr><td class="hi">Interspinales</td><td>Between adjacent SPs (R/L)</td><td>Extend vertebral column; assist rotation</td><td>Best developed in cervical &amp; lumbar</td></tr>
+        <tr><td class="hi">Intertransversarii</td><td>Between adjacent TPs</td><td>Lateral flexion</td><td>Present in cervical &amp; lumbar regions</td></tr>
+        <tr><td class="hi">Levatores Costarum (12 pairs)</td><td>TPs C7&#8211;T11 &#8594; ribs below</td><td>Elevate ribs (inspiration); assist LF</td><td>Thoracic only; analogous to intertransversarii</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Sacrum, Coccyx &amp; Lumbosacral Variations</h4>
+      <div class="ma-tags"><span class="ma-tag">5 fused vertebrae</span><span class="ma-tag gold">4 pairs of sacral foramina</span><span class="ma-tag red">Lumbarization / sacralization</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip"><div class="bl-label">Sacrum</div>
+          <p>Large triangular wedge-shaped bone of <strong>5 fused vertebrae</strong>. <strong>4 pairs of sacral foramina</strong> for dorsal and ventral nerve roots. Key landmarks: <strong>Promontory</strong> (anterior edge of S1 &#8212; the ledge), <strong>Ala</strong> (wings &#8212; superior lateral), <strong>Median sacral crest</strong> (fused SPs), <strong>Sacral hiatus</strong> (laminae of S5 fail to fuse &#8212; access for caudal epidural), <strong>Sacral cornua</strong> (horns from S5 pedicles), <strong>Sacral canal</strong> (contains cauda equina nerve roots), <strong>Apex</strong> (inferior tip), <strong>Base</strong> (superior S1). <strong>Lumbosacral angle</strong> between L5 body and sacral base.</p></div>
+        </div>
+        <div>
+          <div class="bl-strip gold"><div class="bl-label">Clinical Variations</div>
+          <p><strong>Sacralization of L5:</strong> L5 partially or fully fused to sacrum &#8212; may appear to have only 4 lumbar vertebrae. Can alter biomechanics at L4&#8211;L5. <strong>Lumbarization of S1:</strong> S1 partially separates from sacrum &#8212; appears to have 6 lumbar vertebrae. <strong>Spondylolysis:</strong> stress fracture of pars interarticularis (defect in lamina). MC at L5. &#8220;Scottie dog&#8221; sign on oblique X-ray. <strong>Spondylolisthesis:</strong> anterior slippage of one vertebra on another. Graded I&#8211;V (Meyerding). MC at L5 on S1. <strong>Spondylosis:</strong> general degenerative changes of the spine (OA of vertebral column).</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Spinal Cord, Nerve Roots &amp; Dermatomes</h4>
+      <div class="ma-tags"><span class="ma-tag green">Cord ends at L1&#8211;L2 (conus medullaris)</span><span class="ma-tag gold">Below L2 = cauda equina</span><span class="ma-tag purple">31 spinal nerve pairs</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip green"><div class="bl-label">Spinal Cord Organization</div>
+      <p>The spinal cord ends at <strong>L1&#8211;L2 level</strong> as the <strong>conus medullaris</strong>. Below this, the vertebral canal contains only nerve roots called the <strong>cauda equina</strong> (&#8220;horse's tail&#8221;). The cord is anchored inferiorly by the <strong>filum terminale</strong> to the coccyx.</p>
+      <p style="margin-top:6px"><strong>31 spinal nerve pairs:</strong> 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, 1 coccygeal. Each spinal nerve has a <strong>dorsal root</strong> (sensory) and <strong>ventral root</strong> (motor). Immediately after exiting the intervertebral foramen, the spinal nerve divides into <strong>DPR (dorsal primary ramus)</strong> &#8212; supplies posterior trunk muscles and skin, and <strong>VPR (ventral primary ramus)</strong> &#8212; supplies lateral/anterior trunk, limbs, and forms the plexuses.</p>
+      <p style="margin-top:6px"><strong>Key distinction:</strong> Cervical nerves exit <strong>above</strong> their numbered vertebra (C5 exits above C5). Exception: C8 exits below C7 (there are 8 cervical nerves but only 7 cervical vertebrae). From T1 down, nerves exit <strong>below</strong> their numbered vertebra.</p></div>
+
+      <div class="bl-strip red"><div class="bl-label">Cauda Equina vs. Conus Medullaris Syndrome</div>
+      <p><strong>Cauda equina syndrome (CES):</strong> Compression of nerve roots below L2. <strong>RED FLAG &#8212; surgical emergency.</strong> Signs: bilateral leg pain/weakness, saddle anesthesia, bowel/bladder dysfunction (retention &#8594; overflow incontinence), decreased rectal tone. LMN signs (flaccid, areflexic). <strong>Refer immediately.</strong></p>
+      <p style="margin-top:6px"><strong>Conus medullaris syndrome:</strong> Compression at cord termination (L1&#8211;L2). UMN + LMN mixed signs. Sudden onset, bilateral, symmetric. Saddle anesthesia + sphincter dysfunction but less pain than CES.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Lumbar Coupled Motion &amp; ROM Factors</h4>
+      <div class="ma-tags"><span class="ma-tag">LF + rotation to OPPOSITE sides</span><span class="ma-tag gold">Facets = sagittal &#8594; flex/ext dominant</span><span class="ma-tag purple">4 factors limit ROM</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Lumbar Coupled Motion</div>
+      <p>In the lumbar spine, lateral flexion and rotation couple to <strong>OPPOSITE sides (contralateral)</strong>. When you side-bend right, the vertebral body rotates <strong>left</strong> (SPs rotate to the right/ipsilateral/concave side). This is the <strong>opposite</strong> of cervical coupling.</p>
+      <p style="margin-top:6px"><strong>Cardinal motion:</strong> Flexion/extension &#8212; facilitated by sagittally-oriented facets. Rotation is significantly limited by facet orientation (only ~5&#176; total per segment).</p></div>
+      <div class="bl-strip gold"><div class="bl-label">Four Factors Limiting Spinal ROM</div>
+      <p>(1) <strong>IVD elasticity and compressibility</strong> &#8212; disc height and hydration status. (2) <strong>Facet joint orientation</strong> &#8212; cervical = rotation-friendly, lumbar = flex/ext-friendly. (3) <strong>Joint capsule tension</strong> of facet joints. (4) <strong>Ligament and muscle resistance</strong> &#8212; the ligament system provides passive restraint, muscles provide active restraint. <strong>Disc:vertebral height ratio</strong> is the key mobility predictor: cervical 1:3 (mobile), thoracic 1:6 (least mobile), lumbar 1:3 (mobile).</p></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<div class="tab-panel" id="tab-redflags">
 <div class="container">
   <div class="section-title">Red Flags &amp; Spine Screening</div>
   <div class="section-sub">The spine is the most common site for serious pathology masquerading as MSK pain. Red flag screening must be completed before any classification or treatment approach. Every PT must know when to refer out immediately versus when to treat.</div>
