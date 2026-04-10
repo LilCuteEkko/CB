@@ -331,9 +331,9 @@ body{transition:background .45s ease,color .35s ease,filter .8s ease}
 .nav-cat:hover>button{color:var(--accent);background:var(--soft)}
 .nav-cat:hover>button .nav-chev{transform:rotate(180deg);opacity:1}
 .nav-cat.has-active>button{color:var(--accent)}
-.nav-drop{display:none;position:absolute;top:calc(100% + 4px);left:50%;transform:translateX(-50%);min-width:220px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:8px;box-shadow:0 12px 40px rgba(0,0,0,.12);z-index:200}
+.nav-drop{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:220px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:8px;padding-top:12px;box-shadow:0 12px 40px rgba(0,0,0,.12);z-index:200}
 .nav-cat:hover>.nav-drop{display:block;animation:navDrop .25s ease}
-@keyframes navDrop{from{opacity:0;transform:translateX(-50%) translateY(-6px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes navDrop{from{opacity:0;transform:translateX(-50%) translateY(-4px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 .nav-drop a{display:block;padding:7px 12px;border-radius:8px;text-decoration:none;color:var(--text2);font-size:13px;font-weight:500;transition:all .2s}
 .nav-drop a:hover{background:var(--soft);color:var(--accent);transform:translateX(3px)}
 .nav-drop a.active{color:var(--accent);background:var(--soft);font-weight:700}
@@ -388,3 +388,6 @@ body{transition:background .45s ease,color .35s ease,filter .8s ease}
   @keyframes navDropMobile{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
   .layout-bar{padding:6px 16px}
 }
+
+/* Bridge hover gap between button and dropdown */
+.nav-cat::after{content:'';position:absolute;top:100%;left:0;right:0;height:12px;z-index:199}
