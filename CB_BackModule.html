@@ -85,6 +85,7 @@
       <a href="CB_GaitAD.html" >Gait &amp; AD</a>
       <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
       <a href="CB_ProfessionalDev.html" >Professional Dev</a>
+      <a href="CB_CareerGuide.html" >PT Career Guide</a>
     </div>
   </div>
   <div class="nav-spacer"></div>
@@ -109,23 +110,23 @@
   <span class="mod-badge">Free Module</span>
 </div>
 
-<div class="tab-row">
-  <button class="tab-pill active" onclick="switchTab('column',this)">🦴 Vertebral Column</button>
-  <button class="tab-pill" onclick="switchTab('vertebrae',this)">📋 Vertebrae</button>
-  <button class="tab-pill" onclick="switchTab('joints',this)">⚙️ Joints & Ligs</button>
-  <button class="tab-pill" onclick="switchTab('muscles',this)">💪 Muscles</button>
-  <button class="tab-pill" onclick="switchTab('suboccipital',this)">🔺 Suboccipital</button>
-  <button class="tab-pill" onclick="switchTab('kinesiology',this)">⚙️ Kinesiology</button>
-  <button class="tab-pill" onclick="switchTab('kinetics',this)">⚡ Kinetics</button>
-  <button class="tab-pill" onclick="switchTab('motion',this)">🔄 Motion & Coupling</button>
-  <button class="tab-pill" onclick="switchTab('sij',this)">🦴 Pelvis & SIJ</button>
-  <button class="tab-pill" onclick="switchTab('jointmob',this)">🤲 Joint Mob</button>
-  <button class="tab-pill" onclick="switchTab('clinical',this)">🩺 Clinical</button>
-  <button class="tab-pill" onclick="switchTab('review',this)">📝 Review</button>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('column',this)">🦴 Vertebral Column</button>
+  <button class="" onclick="showTab('vertebrae',this)">📋 Vertebrae</button>
+  <button class="" onclick="showTab('joints',this)">⚙️ Joints & Ligs</button>
+  <button class="" onclick="showTab('muscles',this)">💪 Muscles</button>
+  <button class="" onclick="showTab('suboccipital',this)">🔺 Suboccipital</button>
+  <button class="" onclick="showTab('kinesiology',this)">⚙️ Kinesiology</button>
+  <button class="" onclick="showTab('kinetics',this)">⚡ Kinetics</button>
+  <button class="" onclick="showTab('motion',this)">🔄 Motion & Coupling</button>
+  <button class="" onclick="showTab('sij',this)">🦴 Pelvis & SIJ</button>
+  <button class="" onclick="showTab('jointmob',this)">🤲 Joint Mob</button>
+  <button class="" onclick="showTab('clinical',this)">🩺 Clinical</button>
+  <button class="" onclick="showTab('review',this)">📝 Review</button>
 </div>
 
 <!-- ══ VERTEBRAL COLUMN ══ -->
-<div id="tab-column" class="tab-content active">
+<div id="tab-column" class="tab-panel active">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -213,21 +214,21 @@
 </div>
 
 <!-- ══ VERTEBRAE ══ -->
-<div id="tab-vertebrae" class="tab-content">
+<div id="tab-vertebrae" class="tab-panel">
   <div class="chip-nav" id="vert-nav">
-    <button class="chip-btn active" onclick="selectVert('typical',this)">Typical</button>
-    <button class="chip-btn" onclick="selectVert('cervical',this)">Cervical</button>
-    <button class="chip-btn" onclick="selectVert('atlas',this)">C1 — Atlas</button>
-    <button class="chip-btn" onclick="selectVert('axis',this)">C2 — Axis</button>
-    <button class="chip-btn" onclick="selectVert('thoracic',this)">Thoracic</button>
-    <button class="chip-btn" onclick="selectVert('lumbar',this)">Lumbar</button>
-    <button class="chip-btn" onclick="selectVert('sacrum',this)">Sacrum</button>
+    <button class="active" onclick="selectVert('typical',this)">Typical</button>
+    <button class="" onclick="selectVert('cervical',this)">Cervical</button>
+    <button class="" onclick="selectVert('atlas',this)">C1 — Atlas</button>
+    <button class="" onclick="selectVert('axis',this)">C2 — Axis</button>
+    <button class="" onclick="selectVert('thoracic',this)">Thoracic</button>
+    <button class="" onclick="selectVert('lumbar',this)">Lumbar</button>
+    <button class="" onclick="selectVert('sacrum',this)">Sacrum</button>
   </div>
   <div id="vert-content"></div>
 </div>
 
 <!-- ══ JOINTS & LIGAMENTS ══ -->
-<div id="tab-joints" class="tab-content">
+<div id="tab-joints" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -286,20 +287,20 @@
 </div>
 
 <!-- ══ MUSCLES ══ -->
-<div id="tab-muscles" class="tab-content">
+<div id="tab-muscles" class="tab-panel">
   <div class="chip-nav" id="back-muscle-nav">
-    <button class="chip-btn active" onclick="selectBackMuscle('superficial',this)">Superficial Extrinsic</button>
-    <button class="chip-btn" onclick="selectBackMuscle('intermediate',this)">Intermediate Extrinsic</button>
-    <button class="chip-btn" onclick="selectBackMuscle('splenius',this)">Splenius Group</button>
-    <button class="chip-btn" onclick="selectBackMuscle('erector',this)">Erector Spinae</button>
-    <button class="chip-btn" onclick="selectBackMuscle('transversospinalis',this)">Transversospinalis</button>
-    <button class="chip-btn" onclick="selectBackMuscle('minor',this)">Minor Deep Intrinsics</button>
+    <button class="active" onclick="selectBackMuscle('superficial',this)">Superficial Extrinsic</button>
+    <button class="" onclick="selectBackMuscle('intermediate',this)">Intermediate Extrinsic</button>
+    <button class="" onclick="selectBackMuscle('splenius',this)">Splenius Group</button>
+    <button class="" onclick="selectBackMuscle('erector',this)">Erector Spinae</button>
+    <button class="" onclick="selectBackMuscle('transversospinalis',this)">Transversospinalis</button>
+    <button class="" onclick="selectBackMuscle('minor',this)">Minor Deep Intrinsics</button>
   </div>
   <div id="back-muscle-content"></div>
 </div>
 
 <!-- ══ SUBOCCIPITAL ══ -->
-<div id="tab-suboccipital" class="tab-content">
+<div id="tab-suboccipital" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -346,7 +347,7 @@
 </div>
 
 <!-- ══ KINESIOLOGY ══ -->
-<div id="tab-kinesiology" class="tab-content">
+<div id="tab-kinesiology" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -376,7 +377,7 @@
 </div>
 
 <!-- ══ KINETICS ══ -->
-<div id="tab-kinetics" class="tab-content">
+<div id="tab-kinetics" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -402,30 +403,30 @@
 </div>
 
 <!-- ══ PELVIS & SIJ ══ -->
-<div id="tab-sij" class="tab-content">
+<div id="tab-sij" class="tab-panel">
   <div class="chip-nav" id="sij-nav">
-    <button class="chip-btn active" onclick="selectSIJ('anatomy',this)">Anatomy</button>
-    <button class="chip-btn" onclick="selectSIJ('kinematics',this)">Kinematics</button>
-    <button class="chip-btn" onclick="selectSIJ('stability',this)">Stability</button>
-    <button class="chip-btn" onclick="selectSIJ('palpation',this)">Palpation</button>
-    <button class="chip-btn" onclick="selectSIJ('biomech',this)">Biomech Review</button>
+    <button class="active" onclick="selectSIJ('anatomy',this)">Anatomy</button>
+    <button class="" onclick="selectSIJ('kinematics',this)">Kinematics</button>
+    <button class="" onclick="selectSIJ('stability',this)">Stability</button>
+    <button class="" onclick="selectSIJ('palpation',this)">Palpation</button>
+    <button class="" onclick="selectSIJ('biomech',this)">Biomech Review</button>
   </div>
   <div id="sij-content"></div>
 </div>
 
 <!-- ══ JOINT MOB ══ -->
-<div id="tab-jointmob" class="tab-content">
+<div id="tab-jointmob" class="tab-panel">
   <div class="chip-nav" id="jm-nav">
-    <button class="chip-btn active" onclick="selectJM('lumbar',this)">Lumbar</button>
-    <button class="chip-btn" onclick="selectJM('thoracic',this)">Thoracic</button>
-    <button class="chip-btn" onclick="selectJM('cervical',this)">Cervical</button>
+    <button class="active" onclick="selectJM('lumbar',this)">Lumbar</button>
+    <button class="" onclick="selectJM('thoracic',this)">Thoracic</button>
+    <button class="" onclick="selectJM('cervical',this)">Cervical</button>
   </div>
   <div id="jm-content"></div>
 </div>
 
 
 <!-- ══ MOTION & COUPLING ══ -->
-<div id="tab-motion" class="tab-content">
+<div id="tab-motion" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -469,12 +470,12 @@
 </div>
 
 <!-- ══ CLINICAL ══ -->
-<div id="tab-clinical" class="tab-content">
+<div id="tab-clinical" class="tab-panel">
   <div class="three-col" id="clinical-content"></div>
 </div>
 
 <!-- ══ REVIEW ══ -->
-<div id="tab-review" class="tab-content">
+<div id="tab-review" class="tab-panel">
   <div class="two-col">
     <div class="card">
       <div class="card-header"><div class="card-header-title">Review Questions</div><div class="card-header-sub">Click to Reveal</div></div>
@@ -509,9 +510,9 @@
 // ══════════════════════════════════════════════════
 // DATA
 // ══════════════════════════════════════════════════
-function switchTab(id, btn) {
-  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
 }
@@ -713,7 +714,7 @@ function renderCurvatures() {
 }
 
 function selectVert(type, btn) {
-  document.querySelectorAll('#vert-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#vert-nav button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   const data = VERTEBRAE_DATA[type];
   const el = document.getElementById('vert-content');
@@ -761,7 +762,7 @@ function renderCVJoints() {
 }
 
 function selectBackMuscle(group, btn) {
-  document.querySelectorAll('#back-muscle-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#back-muscle-nav button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   const muscles = BACK_MUSCLES[group] || [];
   const groupInfo = {
@@ -787,9 +788,7 @@ function selectBackMuscle(group, btn) {
         <div class="ma-item" onclick="toggleMA(this)">
           <div class="ma-header">
             <div class="ma-name">${m.name}</div>
-            <div class="ma-tags">
-              <span class="tag tag-gold" style="font-size:0.65rem;">${m.roots}</span>
-            </div>
+            <span class="ma-chevron">&#9660;</span>
             <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
           <div class="ma-body">
@@ -1284,7 +1283,7 @@ const SIJ_DATA = {
 let currentSIJ = 'anatomy';
 function selectSIJ(section, btn) {
   currentSIJ = section;
-  document.querySelectorAll('#sij-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#sij-nav button').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
   renderSIJContent();
 }
@@ -1448,7 +1447,7 @@ const SPINAL_JM = {
 let currentJM = 'lumbar';
 function selectJM(region, btn) {
   currentJM = region;
-  document.querySelectorAll('#jm-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#jm-nav button').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
   renderJMContent();
 }
@@ -1509,14 +1508,14 @@ renderSuboccipital();
 renderMotion();
 renderClinical();
 renderReview();
-selectVert('typical', document.querySelector('#vert-nav .chip-btn'));
-selectBackMuscle('superficial', document.querySelector('#back-muscle-nav .chip-btn'));
+selectVert('typical', document.querySelector('#vert-nav button'));
+selectBackMuscle('superficial', document.querySelector('#back-muscle-nav button'));
 renderKinesiology();
 renderKinetics();
 renderSIJ();
 renderJointMob();
-selectSIJ('anatomy', document.querySelector('#sij-nav .chip-btn'));
-selectJM('lumbar', document.querySelector('#jm-nav .chip-btn'));
+selectSIJ('anatomy', document.querySelector('#sij-nav button'));
+selectJM('lumbar', document.querySelector('#jm-nav button'));
 
 // ── EXPAND/COLLAPSE HELPER ──
 function toggleExpand(trigger) {

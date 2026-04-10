@@ -86,6 +86,7 @@
       <a href="CB_GaitAD.html" >Gait &amp; AD</a>
       <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
       <a href="CB_ProfessionalDev.html" >Professional Dev</a>
+      <a href="CB_CareerGuide.html" >PT Career Guide</a>
     </div>
   </div>
   <div class="nav-spacer"></div>
@@ -174,16 +175,16 @@
 <!-- ══ FACE & MUSCLES ══ -->
 <div id="tab-face" class="tab-panel">
   <div class="chip-nav" id="face-nav">
-    <button class="chip-btn active" onclick="selectFace('expression',this)">Facial Expression</button>
-    <button class="chip-btn" onclick="selectFace('bellspalsy',this)">Bell's Palsy</button>
-    <button class="chip-btn" onclick="selectFace('vasculature',this)">Vasculature</button>
+    <button class="active" onclick="selectFace('expression',this)">Facial Expression</button>
+    <button class="" onclick="selectFace('bellspalsy',this)">Bell's Palsy</button>
+    <button class="" onclick="selectFace('vasculature',this)">Vasculature</button>
   </div>
   <div id="face-content"></div>
 
   <div class="ma-item">
     <div class="ma-header" onclick="toggleMA(this)">
       <h4>Detailed Muscle Anatomy &#8212; Origin, Insertion, Nerve, Action (OINA)</h4>
-      <div class="ma-tags"><span class="ma-tag green">Facial expression = CN VII</span><span class="ma-tag gold">Mastication = CN V<sub>3</sub></span><span class="ma-tag purple">Extraocular = CN III, IV, VI</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <div class="bl-strip"><div class="bl-label">Muscles of Facial Expression &#8212; CN VII (Facial Nerve)</div><p><strong>All muscles of facial expression</strong> are innervated by <strong>CN VII (facial nerve)</strong>. The nerve divides into 5 branches as it passes through the parotid gland: <strong>T</strong>emporal, <strong>Z</strong>ygomatic, <strong>B</strong>uccal, <strong>M</strong>andibular, <strong>C</strong>ervical. Mnemonic: &#8220;<strong>T</strong>o <strong>Z</strong>anzibar <strong>B</strong>y <strong>M</strong>otor <strong>C</strong>ar.&#8221; <strong>Clinical:</strong> CN VII injury/Bell&#8217;s palsy &#8594; paralysis of ipsilateral facial muscles.</p></div>
@@ -224,11 +225,11 @@
 <!-- ══ CRANIAL NERVES ══ -->
 <div id="tab-cranialnerves" class="tab-panel">
   <div class="chip-nav" id="cn-nav">
-    <button class="chip-btn active" onclick="selectCN('cn5',this)">CN V — Trigeminal</button>
-    <button class="chip-btn" onclick="selectCN('cn7',this)">CN VII — Facial</button>
-    <button class="chip-btn" onclick="selectCN('cn9',this)">CN IX — Glossopharyngeal</button>
-    <button class="chip-btn" onclick="selectCN('cn12',this)">CN XII — Hypoglossal</button>
-    <button class="chip-btn" onclick="selectCN('tests',this)">Clinical Tests</button>
+    <button class="active" onclick="selectCN('cn5',this)">CN V — Trigeminal</button>
+    <button class="" onclick="selectCN('cn7',this)">CN VII — Facial</button>
+    <button class="" onclick="selectCN('cn9',this)">CN IX — Glossopharyngeal</button>
+    <button class="" onclick="selectCN('cn12',this)">CN XII — Hypoglossal</button>
+    <button class="" onclick="selectCN('tests',this)">Clinical Tests</button>
   </div>
   <div id="cn-content"></div>
 </div>
@@ -268,7 +269,7 @@
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>Eyeball Anatomy &#8212; Complete Layer-by-Layer Reference</h4>
-      <div class="ma-tags"><span class="ma-tag green">Outer = sclera + cornea</span><span class="ma-tag gold">Middle (vascular) = choroid + ciliary + iris</span><span class="ma-tag purple">Inner = retina</span><span class="ma-tag red">Glaucoma = drainage failure</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <table class="data-table"><thead><tr><th>Layer</th><th>Structure</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
@@ -323,17 +324,17 @@
 <!-- ══ ORAL & NOSE ══ -->
 <div id="tab-oral" class="tab-panel">
   <div class="chip-nav" id="oral-nav">
-    <button class="chip-btn active" onclick="selectOral('oralcavity',this)">Oral Cavity</button>
-    <button class="chip-btn" onclick="selectOral('tongue',this)">Tongue</button>
-    <button class="chip-btn" onclick="selectOral('salivary',this)">Salivary Glands</button>
-    <button class="chip-btn" onclick="selectOral('nose',this)">Nose & Sinuses</button>
+    <button class="active" onclick="selectOral('oralcavity',this)">Oral Cavity</button>
+    <button class="" onclick="selectOral('tongue',this)">Tongue</button>
+    <button class="" onclick="selectOral('salivary',this)">Salivary Glands</button>
+    <button class="" onclick="selectOral('nose',this)">Nose & Sinuses</button>
   </div>
   <div id="oral-content"></div>
 
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>Nasal Cavity &#8212; Boundaries, Regions &amp; Paranasal Sinuses</h4>
-      <div class="ma-tags"><span class="ma-tag green">3 regions: vestibule, respiratory, olfactory</span><span class="ma-tag gold">4 paranasal sinuses</span><span class="ma-tag red">Maxillary = MC sinusitis</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <div class="bl-strip"><div class="bl-label">Nasal Cavity Boundaries</div>
@@ -352,7 +353,7 @@
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>Oral Cavity &#8212; Tongue, Salivary Glands, Arches &amp; Tonsils</h4>
-      <div class="ma-tags"><span class="ma-tag green">Tongue: ant 2/3 taste = CN VII, post 1/3 = CN IX</span><span class="ma-tag gold">Motor to tongue = CN XII</span><span class="ma-tag purple">3 paired salivary glands</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <div class="bl-strip"><div class="bl-label">Oral Cavity Structure</div>
@@ -402,7 +403,7 @@
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>Cranial Meninges &amp; Hemorrhage Types &#8212; Detailed Reference</h4>
-      <div class="ma-tags"><span class="ma-tag green">3 layers: dura, arachnoid, pia</span><span class="ma-tag gold">3 spaces: epidural, subdural, subarachnoid</span><span class="ma-tag red">Each space = different hemorrhage type</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <table class="data-table"><thead><tr><th>Layer/Space</th><th>Description</th><th>Clinical Significance</th></tr></thead><tbody>
@@ -422,7 +423,7 @@
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>Cerebrovascular Anatomy &#8212; Circle of Willis &amp; Venous Sinuses</h4>
-      <div class="ma-tags"><span class="ma-tag green">ICA &#8594; anterior + middle cerebral</span><span class="ma-tag gold">Vertebral &#8594; basilar &#8594; posterior cerebral</span><span class="ma-tag purple">Circle of Willis = collateral circulation</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <div class="bl-strip green"><div class="bl-label">Internal Carotid Artery (ICA) Territory</div>
@@ -440,7 +441,7 @@
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>SCALP Layers &amp; Cranium</h4>
-      <div class="ma-tags"><span class="ma-tag">S-C-A-L-P = 5 layers</span><span class="ma-tag gold">Layer 3 (loose CT) = &#8220;danger zone&#8221;</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <div class="bl-strip"><div class="bl-label">SCALP Mnemonic &#8212; 5 Layers (Superficial &#8594; Deep)</div>
@@ -479,7 +480,7 @@
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>TMJ Anatomy &#8212; Detailed Joint Structure, Mandible &amp; Biomechanics</h4>
-      <div class="ma-tags"><span class="ma-tag green">Synovial modified hinge joint</span><span class="ma-tag gold">Articular disc divides into 2 compartments</span><span class="ma-tag purple">Mandible landmarks</span><span class="ma-tag red">Lateral pterygoid attaches to disc</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <div class="bl-strip"><div class="bl-label">TMJ Joint Structure</div>
@@ -498,7 +499,7 @@
   <div class="ma-item" onclick="toggleMA(this)">
     <div class="ma-header">
       <h4>Muscles of Mastication &#8212; Complete OINA with TMJ Biomechanics</h4>
-      <div class="ma-tags"><span class="ma-tag green">All = CN V<sub>3</sub></span><span class="ma-tag gold">Masseter + temporalis = jaw closers</span><span class="ma-tag red">Lateral pterygoid = jaw opener + disc attachment</span><span class="ma-chevron">&#9660;</span></div>
+      <span class="ma-chevron">&#9660;</span>
     </div>
     <div class="ma-body">
       <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th><th>Clinical</th></tr></thead><tbody>
@@ -1127,7 +1128,7 @@ function renderForamina() {
 let currentFace = 'expression';
 function selectFace(section, btn) {
   currentFace = section;
-  document.querySelectorAll('#face-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#face-nav button').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
   renderFaceContent();
 }
@@ -1224,7 +1225,7 @@ function renderFaceContent() {
 let currentCN = 'cn5';
 function selectCN(cn, btn) {
   currentCN = cn;
-  document.querySelectorAll('#cn-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#cn-nav button').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
   renderCNContent();
 }
@@ -1315,7 +1316,7 @@ function renderCNContent() {
 
   else if (currentCN === 'cn12') {
     // Redirect to show cn9 which includes cn12
-    selectCN('cn9', document.querySelector('#cn-nav .chip-btn:nth-child(3)'));
+    selectCN('cn9', document.querySelector('#cn-nav button:nth-child(3)'));
   }
 
   else if (currentCN === 'tests') {
@@ -1457,7 +1458,7 @@ function renderEar() {
 let currentOral = 'oralcavity';
 function selectOral(section, btn) {
   currentOral = section;
-  document.querySelectorAll('#oral-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#oral-nav button').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
   renderOralContent();
 }

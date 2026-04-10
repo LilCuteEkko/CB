@@ -84,6 +84,7 @@
       <a href="CB_GaitAD.html" >Gait &amp; AD</a>
       <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
       <a href="CB_ProfessionalDev.html" >Professional Dev</a>
+      <a href="CB_CareerGuide.html" >PT Career Guide</a>
     </div>
   </div>
   <div class="nav-spacer"></div>
@@ -108,20 +109,20 @@
   <span class="mod-badge">Free Module</span>
 </div>
 
-<div class="tab-row">
-  <button class="tab-pill active" onclick="switchTab('surface',this)">📍 Surface</button>
-  <button class="tab-pill" onclick="switchTab('fascia',this)">🧱 Fascia</button>
-  <button class="tab-pill" onclick="switchTab('muscles',this)">💪 Muscles</button>
-  <button class="tab-pill" onclick="switchTab('triangles',this)">△ Triangles</button>
-  <button class="tab-pill" onclick="switchTab('nerves',this)">⚡ Nerves</button>
-  <button class="tab-pill" onclick="switchTab('circulation',this)">🩸 Circulation</button>
-  <button class="tab-pill" onclick="switchTab('viscera',this)">🫁 Viscera</button>
-  <button class="tab-pill" onclick="switchTab('lymph',this)">🔵 Lymphatics</button>
-  <button class="tab-pill" onclick="switchTab('review',this)">📝 Review</button>
+<div class="chip-nav">
+  <button class="active" onclick="showTab('surface',this)">📍 Surface</button>
+  <button class="" onclick="showTab('fascia',this)">🧱 Fascia</button>
+  <button class="" onclick="showTab('muscles',this)">💪 Muscles</button>
+  <button class="" onclick="showTab('triangles',this)">△ Triangles</button>
+  <button class="" onclick="showTab('nerves',this)">⚡ Nerves</button>
+  <button class="" onclick="showTab('circulation',this)">🩸 Circulation</button>
+  <button class="" onclick="showTab('viscera',this)">🫁 Viscera</button>
+  <button class="" onclick="showTab('lymph',this)">🔵 Lymphatics</button>
+  <button class="" onclick="showTab('review',this)">📝 Review</button>
 </div>
 
 <!-- ══ SURFACE ANATOMY ══ -->
-<div id="tab-surface" class="tab-content active">
+<div id="tab-surface" class="tab-panel active">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -180,7 +181,7 @@
 </div>
 
 <!-- ══ FASCIA ══ -->
-<div id="tab-fascia" class="tab-content">
+<div id="tab-fascia" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -223,20 +224,20 @@
 </div>
 
 <!-- ══ MUSCLES ══ -->
-<div id="tab-muscles" class="tab-content">
+<div id="tab-muscles" class="tab-panel">
   <div class="chip-nav" id="muscle-cat-nav">
-    <button class="chip-btn active" onclick="selectMuscleGroup('superficial',this)">Superficial</button>
-    <button class="chip-btn" onclick="selectMuscleGroup('infrahyoid',this)">Infrahyoid</button>
-    <button class="chip-btn" onclick="selectMuscleGroup('suprahyoid',this)">Suprahyoid</button>
-    <button class="chip-btn" onclick="selectMuscleGroup('scalenes',this)">Scalenes</button>
-    <button class="chip-btn" onclick="selectMuscleGroup('prevertebral',this)">Prevertebral</button>
-    <button class="chip-btn" onclick="selectMuscleGroup('suboccipital',this)">Suboccipital</button>
+    <button class="active" onclick="selectMuscleGroup('superficial',this)">Superficial</button>
+    <button class="" onclick="selectMuscleGroup('infrahyoid',this)">Infrahyoid</button>
+    <button class="" onclick="selectMuscleGroup('suprahyoid',this)">Suprahyoid</button>
+    <button class="" onclick="selectMuscleGroup('scalenes',this)">Scalenes</button>
+    <button class="" onclick="selectMuscleGroup('prevertebral',this)">Prevertebral</button>
+    <button class="" onclick="selectMuscleGroup('suboccipital',this)">Suboccipital</button>
   </div>
   <div id="muscle-content"></div>
 </div>
 
 <!-- ══ TRIANGLES ══ -->
-<div id="tab-triangles" class="tab-content">
+<div id="tab-triangles" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -295,7 +296,7 @@
 </div>
 
 <!-- ══ NERVES ══ -->
-<div id="tab-nerves" class="tab-content">
+<div id="tab-nerves" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -339,7 +340,7 @@
 </div>
 
 <!-- ══ CIRCULATION ══ -->
-<div id="tab-circulation" class="tab-content">
+<div id="tab-circulation" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;">
       <div class="card">
@@ -367,7 +368,7 @@
 </div>
 
 <!-- ══ VISCERA ══ -->
-<div id="tab-viscera" class="tab-content">
+<div id="tab-viscera" class="tab-panel">
   <div class="two-col">
     <div style="display:flex;flex-direction:column;gap:1rem;" id="viscera-left"></div>
     <div style="display:flex;flex-direction:column;gap:1rem;" id="viscera-right"></div>
@@ -375,7 +376,7 @@
 </div>
 
 <!-- ══ LYMPHATICS ══ -->
-<div id="tab-lymph" class="tab-content">
+<div id="tab-lymph" class="tab-panel">
   <div class="two-col">
     <div class="card">
       <div class="card-header"><div class="card-header-title">Cervical Lymphatic System</div><div class="card-header-sub">Superficial & Deep Nodes</div></div>
@@ -436,7 +437,7 @@
 </div>
 
 <!-- ══ REVIEW ══ -->
-<div id="tab-review" class="tab-content">
+<div id="tab-review" class="tab-panel">
   <div class="two-col">
     <div class="card">
       <div class="card-header"><div class="card-header-title">Review Questions</div><div class="card-header-sub">Clinical Reasoning · Click to Reveal</div></div>
@@ -598,9 +599,9 @@ const NECK_REVIEW = [
 // ══════════════════════════════════════════════════
 // RENDER FUNCTIONS
 // ══════════════════════════════════════════════════
-function switchTab(id, btn) {
-  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
 }
@@ -638,7 +639,7 @@ function renderFascia() {
 }
 
 function selectMuscleGroup(group, btn) {
-  document.querySelectorAll('#muscle-cat-nav .chip-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#muscle-cat-nav button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   const muscles = MUSCLES[group] || [];
   const el = document.getElementById('muscle-content');
@@ -651,9 +652,7 @@ function selectMuscleGroup(group, btn) {
       <div class="ma-item" onclick="toggleMA(this)">
         <div class="ma-header">
           <div class="ma-name">${m.name}</div>
-          <div class="ma-tags">
-            <span class="tag tag-gold" style="font-size:0.65rem;">${m.roots}</span>
-          </div>
+          <span class="ma-chevron">&#9660;</span>
           <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="ma-body">
@@ -793,7 +792,7 @@ renderNerves();
 renderCirculation();
 renderViscera();
 renderReview();
-selectMuscleGroup('superficial', document.querySelector('#muscle-cat-nav .chip-btn'));
+selectMuscleGroup('superficial', document.querySelector('#muscle-cat-nav button'));
 
 // ── EXPAND/COLLAPSE HELPER ──
 function toggleExpand(trigger) {
