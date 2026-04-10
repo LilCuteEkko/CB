@@ -234,16 +234,16 @@
 <!-- HERO -->
 <div class="idx-hero">
   <h1>The clinical reference<br>built <em>for how you actually learn</em></h1>
-  <p class="sub">35 in-depth modules. Real lecture notes, not textbook summaries. Organized by body system so you can browse or deep-dive. Founded by Dr. David Luong, PT, DPT &amp; Dr. Diego Martinez, PT, DPT, AIB-VC.</p>
+  <p class="sub">40 in-depth modules. Real lecture notes, not textbook summaries. Organized by body system so you can browse or deep-dive. Founded by Dr. David Luong, PT, DPT &amp; Dr. Diego Martinez, PT, DPT, AIB-VC.</p>
   <div class="cta-row">
     <a href="#modules-section" class="cta-primary">Browse modules &#8594;</a>
     <div class="cta-ghost" onclick="openSearch()">Search all content</div>
   </div>
   <div class="stats-row reveal">
-    <div class="stat-item"><div class="stat-num">35</div><div class="stat-label">Modules</div></div>
+    <div class="stat-item"><div class="stat-num">40</div><div class="stat-label">Modules</div></div>
     <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Body Systems</div></div>
     <div class="stat-item"><div class="stat-num">80+</div><div class="stat-label">Review Cards</div></div>
-    <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Themes</div></div>
+    <div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">OINA Tables</div></div>
   </div>
 </div>
 
@@ -494,12 +494,14 @@
 </div>
 
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9650;</div><h2 class="cat-title">Functional &amp; Special Topics</h2><span class="cat-count">3</span></div>
-  <p class="cat-desc">Therapeutic exercise, gait and assistive devices, wheelchair prescription.</p>
+  <div class="cat-header"><div class="cat-icon">&#9650;</div><h2 class="cat-title">Functional &amp; Special Topics</h2><span class="cat-count">5</span></div>
+  <p class="cat-desc">Therapeutic exercise, gait and assistive devices, wheelchair prescription, professional development, and career planning.</p>
   <div class="module-grid">
     <a href="CB_TherEx.html" class="module-card"><span class="mc-tag">Functional</span><div class="mc-title">Therapeutic Exercise</div><div class="mc-desc">Exercise prescription, ROM, strengthening, flexibility</div><span class="mc-arrow">&#8594;</span></a>
     <a href="CB_GaitAD.html" class="module-card"><span class="mc-tag">Functional</span><div class="mc-title">Gait &amp; Assistive Devices</div><div class="mc-desc">Normal gait, deviations, AD fitting, stair training</div><span class="mc-arrow">&#8594;</span></a>
     <a href="CB_WheelchairADA.html" class="module-card"><span class="mc-tag">Functional</span><div class="mc-title">Wheelchair &amp; ADA</div><div class="mc-desc">Wheelchair prescription, seating, positioning</div><span class="mc-arrow">&#8594;</span></a>
+    <a href="CB_ProfessionalDev.html" class="module-card"><span class="mc-tag">Special</span><div class="mc-title">Professional Dev</div><div class="mc-desc">Evidence-based practice, continuing education, career growth</div><span class="mc-arrow">&#8594;</span></a>
+    <a href="CB_CareerGuide.html" class="module-card"><span class="mc-tag">Career</span><div class="mc-title">PT Career Guide</div><div class="mc-desc">Salary by state, practice settings, laws, PT Compact, career planning</div><span class="mc-arrow">&#8594;</span></a>
   </div>
 </div>
 </div>
@@ -515,7 +517,7 @@
   <div class="search-modal">
     <div class="search-input-wrap">
       <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6.5" cy="6.5" r="5"/><line x1="10" y1="10" x2="14" y2="14"/></svg>
-      <input class="search-input" id="searchInput" type="text" placeholder="Search all 35 modules..." oninput="filterModules(this.value)" autocomplete="off">
+      <input class="search-input" id="searchInput" type="text" placeholder="Search all 40 modules..." oninput="filterModules(this.value)" autocomplete="off">
     </div>
     <div class="search-results" id="searchResults"></div>
   </div>
@@ -573,6 +575,11 @@ var modules=[
   {cat:"Functional",title:"Gait & Assistive Devices",desc:"Normal gait, deviations, AD fitting, stair training",href:"CB_GaitAD.html"},
   {cat:"Functional",title:"Wheelchair & ADA",desc:"Wheelchair prescription, seating, positioning",href:"CB_WheelchairADA.html"},
   {cat:"Career",title:"PT Career Guide",desc:"Salary by state, practice settings, direct access laws, PT Compact, career planning",href:"CB_CareerGuide.html"},
+  {cat:"Special",title:"Sports Injury",desc:"Concussion, ACL return-to-sport, throwing injuries, overuse",href:"CB_SportsInjury.html"},
+  {cat:"Special",title:"Advanced Ortho",desc:"Manual therapy, joint mobilization, manipulation, clinical reasoning",href:"CB_AdvancedOrtho.html"},
+  {cat:"Special",title:"Orthotics & Prosthetics",desc:"Orthotic prescription, prosthetic components, gait training",href:"CB_OrthoticsProsthetics.html"},
+  {cat:"Special",title:"Pediatrics",desc:"Developmental milestones, cerebral palsy, Down syndrome, torticollis",href:"CB_Pediatrics.html"},
+  {cat:"Special",title:"Professional Dev",desc:"Evidence-based practice, continuing education, career growth",href:"CB_ProfessionalDev.html"},
 ];
 function openSearch(){document.getElementById('searchOverlay').classList.add('open');setTimeout(function(){document.getElementById('searchInput').focus()},100);filterModules('')}
 function closeSearch(){document.getElementById('searchOverlay').classList.remove('open');document.getElementById('searchInput').value=''}
