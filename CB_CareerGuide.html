@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint &#8212; PT Career Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+<style>
+.state-filter{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 20px}
+.state-filter select{font-family:'Manrope',sans-serif;font-size:13px;padding:8px 14px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:var(--text);cursor:pointer;outline:none;transition:all .2s}
+.state-filter select:focus{border-color:var(--accent)}
+.salary-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:16px;transition:all .3s}
+.salary-card:hover{border-color:var(--accent);box-shadow:var(--card-lift)}
+.salary-big{font-family:'Source Serif 4',serif;font-size:2.4rem;font-weight:700;color:var(--accent);line-height:1}
+.salary-label{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.salary-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:16px 0}
+.salary-mini{background:var(--bg3);border-radius:10px;padding:16px;text-align:center}
+.salary-mini .sm-num{font-family:'Source Serif 4',serif;font-size:1.4rem;font-weight:700;color:var(--text)}
+.salary-mini .sm-label{font-size:11px;color:var(--text3);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.setting-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:16px;transition:all .3s}
+.setting-card:hover{border-color:var(--accent)}
+.setting-title{font-family:'Source Serif 4',serif;font-size:1.2rem;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.setting-tag{font-size:10px;font-family:'IBM Plex Mono',monospace;background:var(--soft);color:var(--accent);padding:3px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px}
+.pro-con{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.pro-con-col h5{font-size:12px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.pro-con-col.pros h5{color:var(--green)}
+.pro-con-col.cons h5{color:var(--red)}
+.pro-con-col ul{list-style:none;padding:0;margin:0}
+.pro-con-col li{font-size:13.5px;color:var(--text2);padding:4px 0;line-height:1.5}
+.pro-con-col.pros li::before{content:'+ ';color:var(--green);font-weight:700}
+.pro-con-col.cons li::before{content:'- ';color:var(--red);font-weight:700}
+#stateDetail{display:none}
+#stateDetail.show{display:block}
+.law-badge{display:inline-block;font-size:11px;font-family:'IBM Plex Mono',monospace;padding:3px 10px;border-radius:6px;font-weight:600}
+.law-badge.unrestricted{background:rgba(var(--gr),.15);color:var(--green)}
+.law-badge.provisional{background:rgba(var(--yr),.15);color:var(--gold)}
+.law-badge.compact{background:rgba(var(--pr),.15);color:var(--purple)}
+@media(max-width:600px){.pro-con{grid-template-columns:1fr}.salary-row{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+  <div class="nav-cat">
+    <button>Foundations <span class="nav-chev">&#9660;</span></button>
+    <div class="nav-drop">
+      <a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+      <a href="CB_Pathophysiology.html">Pathophysiology</a>
+      <a href="CB_Pharmacology.html">Pharmacology</a>
+      <a href="CB_ResearchMethods.html">Research Methods</a>
+      <a href="CB_HealthPromotion.html">Health Promotion</a>
+      <a href="CB_MedicalConditions.html">Medical Conditions</a>
+    </div>
+  </div>
+  <div class="nav-cat">
+    <button>MSK <span class="nav-chev">&#9660;</span></button>
+    <div class="nav-drop">
+      <div class="nav-drop-label">Upper Extremity</div>
+      <a href="CB_ShoulderModule.html">Shoulder Complex</a>
+      <a href="CB_ElbowModule.html">Elbow</a>
+      <a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+      <a href="CB_HeadModule.html">Head</a>
+      <a href="CB_NeckModule.html">Neck</a>
+      <a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+      <div class="nav-drop-label">Lower Extremity</div>
+      <a href="CB_HipModule_v2.html">Hip</a>
+      <a href="CB_KneeModule_v2.html">Knee</a>
+      <a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+      <a href="CB_BackModule.html">Back</a>
+    </div>
+  </div>
+  <div class="nav-cat">
+    <button>Spine <span class="nav-chev">&#9660;</span></button>
+    <div class="nav-drop">
+      <a href="CB_SpineCervical.html">Cervical</a>
+      <a href="CB_SpineThoracic.html">Thoracic</a>
+      <a href="CB_SpineLumbar.html">Lumbar</a>
+      <a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+      <a href="CB_SpineTMJ.html">TMJ</a>
+    </div>
+  </div>
+  <div class="nav-cat">
+    <button>Neuro <span class="nav-chev">&#9660;</span></button>
+    <div class="nav-drop">
+      <a href="CB_BrainModule.html">Brain</a>
+      <a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+      <a href="CB_MotorControl.html">Motor Control</a>
+      <a href="CB_NeuroRehab.html">Neuro Rehab</a>
+      <a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+    </div>
+  </div>
+  <div class="nav-cat">
+    <button>Systems <span class="nav-chev">&#9660;</span></button>
+    <div class="nav-drop">
+      <a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+      <a href="CB_Integumentary.html">Integumentary</a>
+      <a href="CB_Imaging.html">Imaging</a>
+      <a href="CB_PhysicalAgents.html">Physical Agents</a>
+      <a href="CB_MultiSystem.html">Multi-System</a>
+    </div>
+  </div>
+  <div class="nav-cat has-active">
+    <button>Special <span class="nav-chev">&#9660;</span></button>
+    <div class="nav-drop">
+      <a href="CB_SportsInjury.html">Sports Injury</a>
+      <a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+      <a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+      <a href="CB_Pediatrics.html">Pediatrics</a>
+      <a href="CB_TherEx.html">Therapeutic Exercise</a>
+      <a href="CB_GaitAD.html">Gait &amp; AD</a>
+      <a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+      <a href="CB_ProfessionalDev.html">Professional Dev</a>
+      <a href="CB_CareerGuide.html" class="active">PT Career Guide</a>
+    </div>
+  </div>
+  <div class="nav-spacer"></div>
+  <div class="theme-toggle">
+    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">Professional Development &middot; Career Guide</div>
+  <h1>PT Career Guide <span>&#8212; Salary, Settings, Laws &amp; State Comparison</span></h1>
+  <p>Comprehensive career reference for physical therapists. Compare salaries by state adjusted for cost of living, understand every practice setting with honest pros/cons, review direct access laws, PT Compact status, and plan your career trajectory. Data sourced from BLS (May 2024), APTA, and state licensing boards.</p>
+  <div class="hero-badges">
+    <span class="badge gold">Salary by State</span>
+    <span class="badge">Practice Settings</span>
+    <span class="badge purple">State Laws</span>
+    <span class="badge green">Career Planning</span>
+  </div>
+</div>
+
+<!-- ====== SALARY BY STATE ====== -->
+<div class="chip-label">Salary &amp; Cost of Living by State</div>
+<div class="container">
+  <div class="section-title">PT Salary Explorer</div>
+  <div class="section-sub">National median PT salary is <strong>$101,020/year</strong> (~$48.50/hr) per BLS 2024 data. But raw salary is only half the story &#8212; think of it like comparing a patient's AROM without considering their functional goals. A $115K salary in San Francisco buys less than $85K in Tennessee. The <strong>COL-adjusted salary</strong> below gives you the real purchasing power.</div>
+
+  <div class="state-filter">
+    <select id="stateSelect" onchange="showState(this.value)">
+      <option value="">&#8212; Select a state &#8212;</option>
+    </select>
+  </div>
+
+  <!-- National Overview (shown by default) -->
+  <div id="nationalOverview">
+    <div class="salary-card">
+      <div class="salary-big">$101,020</div>
+      <div class="salary-label">National Median PT Salary (BLS 2024)</div>
+      <div class="salary-row">
+        <div class="salary-mini"><div class="sm-num">$83,470</div><div class="sm-label">25th Percentile</div></div>
+        <div class="salary-mini"><div class="sm-num">$101,020</div><div class="sm-label">Median</div></div>
+        <div class="salary-mini"><div class="sm-num">$117,190</div><div class="sm-label">75th Percentile</div></div>
+        <div class="salary-mini"><div class="sm-num">$48.50</div><div class="sm-label">Median Hourly</div></div>
+      </div>
+    </div>
+
+    <div class="ma-item">
+      <div class="ma-header" onclick="toggleMA(this)">
+        <h4>Top 10 Highest-Paying States (Raw Salary)</h4>
+        <div class="ma-tags"><span class="ma-tag gold">CA leads at ~$114K</span><span class="ma-tag">West &amp; Northeast dominate</span><span class="ma-chevron">&#9660;</span></div>
+      </div>
+      <div class="ma-body">
+        <table class="data-table"><thead><tr><th>#</th><th>State</th><th>Avg Salary</th><th>COL Index</th><th>COL-Adjusted</th><th>PT Compact</th></tr></thead><tbody>
+          <tr><td>1</td><td class="hi">California</td><td>$114,270</td><td>138.5</td><td>$82,500</td><td>No</td></tr>
+          <tr><td>2</td><td class="hi">Nevada</td><td>$111,460</td><td>104.2</td><td>$107,000</td><td>Yes</td></tr>
+          <tr><td>3</td><td class="hi">New Jersey</td><td>$108,410</td><td>115.2</td><td>$94,100</td><td>No</td></tr>
+          <tr><td>4</td><td class="hi">Connecticut</td><td>$106,780</td><td>112.8</td><td>$94,660</td><td>No</td></tr>
+          <tr><td>5</td><td class="hi">Alaska</td><td>$105,860</td><td>127.1</td><td>$83,290</td><td>Yes</td></tr>
+          <tr><td>6</td><td class="hi">Massachusetts</td><td>$105,050</td><td>135.0</td><td>$77,810</td><td>No</td></tr>
+          <tr><td>7</td><td class="hi">Washington</td><td>$104,880</td><td>113.2</td><td>$92,650</td><td>Yes</td></tr>
+          <tr><td>8</td><td class="hi">Rhode Island</td><td>$103,510</td><td>107.0</td><td>$96,740</td><td>No</td></tr>
+          <tr><td>9</td><td class="hi">Oregon</td><td>$102,840</td><td>113.1</td><td>$90,930</td><td>Yes</td></tr>
+          <tr><td>10</td><td class="warn">Arizona</td><td>$98,960</td><td>103.3</td><td>$95,800</td><td>Yes</td></tr>
+        </tbody></table>
+        <div class="bl-strip gold"><div class="bl-label">Key Insight</div><p>Nevada is the real winner when you adjust for cost of living &#8212; high salary ($111K) with moderate COL (104.2). California <em>looks</em> like the best on paper, but its COL of 138.5 eats your paycheck like Medicare eats your reimbursement. Arizona is underrated: $99K salary with 103 COL <em>plus</em> the highest projected PT job growth in the country (52% by 2030) and PT Compact membership.</p></div>
+      </div>
+    </div>
+
+    <div class="ma-item">
+      <div class="ma-header" onclick="toggleMA(this)">
+        <h4>Top 10 Best States After Cost-of-Living Adjustment</h4>
+        <div class="ma-tags"><span class="ma-tag green">Where your dollar goes furthest</span><span class="ma-tag purple">Midwest &amp; Mountain West shine</span><span class="ma-chevron">&#9660;</span></div>
+      </div>
+      <div class="ma-body">
+        <table class="data-table"><thead><tr><th>#</th><th>State</th><th>Avg Salary</th><th>COL Index</th><th>COL-Adjusted</th><th>Job Growth</th></tr></thead><tbody>
+          <tr><td>1</td><td class="warn">Nevada</td><td>$111,460</td><td>104.2</td><td>$107,000</td><td>High</td></tr>
+          <tr><td>2</td><td class="hi">Texas</td><td>$99,800</td><td>92.1</td><td>$108,360</td><td>High</td></tr>
+          <tr><td>3</td><td class="hi">Tennessee</td><td>$92,290</td><td>89.7</td><td>$102,890</td><td>Moderate</td></tr>
+          <tr><td>4</td><td class="hi">North Carolina</td><td>$93,780</td><td>95.0</td><td>$98,720</td><td>High</td></tr>
+          <tr><td>5</td><td class="hi">Utah</td><td>$94,810</td><td>98.7</td><td>$96,060</td><td>Very High</td></tr>
+          <tr><td>6</td><td class="warn">Arizona</td><td>$98,960</td><td>103.3</td><td>$95,800</td><td>Very High (52%)</td></tr>
+          <tr><td>7</td><td class="hi">Georgia</td><td>$91,520</td><td>93.4</td><td>$97,990</td><td>Moderate</td></tr>
+          <tr><td>8</td><td class="hi">Colorado</td><td>$98,570</td><td>105.1</td><td>$93,790</td><td>High</td></tr>
+          <tr><td>9</td><td class="hi">Ohio</td><td>$92,770</td><td>90.8</td><td>$102,170</td><td>Moderate</td></tr>
+          <tr><td>10</td><td class="hi">Missouri</td><td>$89,800</td><td>87.1</td><td>$103,100</td><td>Moderate</td></tr>
+        </tbody></table>
+        <div class="bl-strip green"><div class="bl-label">The Takeaway</div><p>Think of salary like blood pressure &#8212; you need context. A systolic of 140 means something different in a 25-year-old athlete vs. a 75-year-old with renal disease. Similarly, $90K in Missouri (COL 87) gives you more real spending power than $114K in California (COL 138). <strong>Texas, Tennessee, and Missouri</strong> are the hidden gems &#8212; lower raw salaries that stretch further, with growing PT demand.</p></div>
+      </div>
+    </div>
+
+    <div class="ma-item">
+      <div class="ma-header" onclick="toggleMA(this)">
+        <h4>Salary by Practice Setting (National Averages)</h4>
+        <div class="ma-tags"><span class="ma-tag gold">Outpatient pays most</span><span class="ma-tag">Home health is close</span><span class="ma-tag red">Total comp matters</span><span class="ma-chevron">&#9660;</span></div>
+      </div>
+      <div class="ma-body">
+        <table class="data-table"><thead><tr><th>Setting</th><th>Avg Annual Salary</th><th>Notes</th></tr></thead><tbody>
+          <tr><td class="warn">Outpatient Care Centers</td><td>$118,800</td><td>Highest raw salary; specialty clinics (sports, ortho) at the top</td></tr>
+          <tr><td class="hi">Home Health Care Services</td><td>$113,970</td><td>Per-visit pay can push higher; flexible schedule; high autonomy</td></tr>
+          <tr><td class="hi">Educational Support Services</td><td>$110,390</td><td>School-based PT; summers off; strong benefits</td></tr>
+          <tr><td class="hi">Individual &amp; Family Services</td><td>$108,100</td><td>Early intervention, developmental delays</td></tr>
+          <tr><td class="hi">Skilled Nursing Facilities (SNF)</td><td>$103,590</td><td>PDPM reimbursement model; productivity expectations ~85-90%</td></tr>
+          <tr><td class="hi">Hospitals (General)</td><td>$99,200</td><td>Acute care; best institutional benefits (pension, insurance, PTO)</td></tr>
+          <tr><td class="hi">Inpatient Rehabilitation</td><td>$97,500</td><td>IRF &#8212; 3 hrs/day therapy rule; complex patients</td></tr>
+          <tr><td class="hi">Travel PT (13-week contracts)</td><td>$95K&#8211;$130K+</td><td>Highest ceiling; housing/stipend included; no PTO/benefits</td></tr>
+        </tbody></table>
+        <div class="bl-strip red"><div class="bl-label">Don't Just Look at the Number</div><p>Travel PT and home health show the biggest raw numbers, but they're like comparing gross vs. net ROM &#8212; the real number is what you keep. Travel roles typically have <strong>no PTO, no employer-match 401K, no health insurance, and no job security</strong>. When you add benefits back in, a salaried outpatient or hospital role at $95K with full benefits often beats a travel contract at $115K. Always calculate <strong>total compensation</strong> = salary + employer health insurance contribution + retirement match + PTO value + CEU reimbursement.</p></div>
+      </div>
+    </div>
+
+    <div class="ma-item">
+      <div class="ma-header" onclick="toggleMA(this)">
+        <h4>Salary by Experience Level</h4>
+        <div class="ma-tags"><span class="ma-tag">New grad ~$68&#8211;82K</span><span class="ma-tag gold">Board cert bumps you up</span><span class="ma-chevron">&#9660;</span></div>
+      </div>
+      <div class="ma-body">
+        <table class="data-table"><thead><tr><th>Experience</th><th>Typical Range</th><th>Key Drivers</th></tr></thead><tbody>
+          <tr><td class="hi">New Grad (0&#8211;2 yrs)</td><td>$68,000 &#8211; $82,000</td><td>Setting matters most. Home health &amp; travel can push new grads over $90K. Outpatient ortho mills start lower (~$68K)</td></tr>
+          <tr><td class="hi">Mid-Career (3&#8211;7 yrs)</td><td>$80,000 &#8211; $95,000</td><td>Specialty certifications (OCS, SCS, NCS) push toward upper range. Caseload leadership helps</td></tr>
+          <tr><td class="hi">Senior (8+ yrs)</td><td>$95,000 &#8211; $110,000+</td><td>Director of Rehab, lead clinician, clinical education coordinator</td></tr>
+          <tr><td class="warn">Specialist / Director</td><td>$110,000 &#8211; $140,000+</td><td>Regional director, clinic owner, academic faculty, consulting</td></tr>
+        </tbody></table>
+        <div class="bl-strip"><div class="bl-label">The Hidden Variable</div><p>The biggest predictor of salary growth isn't just years &#8212; it's whether your employer has a <strong>structured advancement pathway</strong>. A clinic paying $72K with a defined 24-month track to $90K with clear milestones is a better financial bet than one paying $80K with no articulated path forward. Ask in interviews: <em>"What does the compensation progression look like at 1, 3, and 5 years?"</em> If they can't answer clearly, that's your answer.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- State Detail (shown when state selected) -->
+  <div id="stateDetail"></div>
+</div>
+
+<!-- ====== PRACTICE SETTINGS ====== -->
+<div class="chip-label">Practice Settings &#8212; In-Depth Guide</div>
+<div class="container">
+  <div class="section-title">Every PT Setting Explained</div>
+  <div class="section-sub">Choosing a practice setting is like choosing a joint mobilization grade &#8212; each one has its place depending on what you're trying to accomplish. There's no universally "best" setting, only the best fit for your clinical interests, lifestyle, and career goals. Here's an honest breakdown.</div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#127979; Outpatient Orthopedic Clinic <span class="setting-tag">Most Common</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> The bread and butter of PT. You treat patients with musculoskeletal conditions &#8212; post-surgical knees, frozen shoulders, low back pain, rotator cuff repairs. Patients come to you, get treated for 45&#8211;60 minutes, and go home. Think of it as the "primary care" of physical therapy. <strong>Typical caseload:</strong> 8&#8211;16 patients/day depending on model. <strong>Schedule:</strong> M-F, some evenings/Saturdays. <strong>Salary range:</strong> $75K&#8211;$110K depending on region and experience. Mill clinics (high-volume, 1-PT-to-3-patients) pay less; 1-on-1 specialty clinics pay more.</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Deepest MSK clinical reasoning development</li>
+        <li>See patients improve over weeks &#8212; satisfying continuity</li>
+        <li>Regular hours, predictable schedule</li>
+        <li>Specialization opportunities (sports, pelvic floor, hand therapy)</li>
+        <li>Most residency/fellowship programs are outpatient-based</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>"Mill" clinics push 2&#8211;3 patients simultaneously &#8212; burnout risk</li>
+        <li>New grad salaries can be low ($65&#8211;75K) at high-volume chains</li>
+        <li>Documentation after hours is common at busy clinics</li>
+        <li>Insurance reimbursement declining &#8212; pressure to see more patients</li>
+        <li>Repetitive diagnoses can feel monotonous after years</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#127963; Skilled Nursing Facility (SNF) <span class="setting-tag">Geriatric Focus</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> You're the movement expert for residents recovering from hip fractures, strokes, surgeries, deconditioning, and falls in a long-term care or sub-acute rehab facility. Governed by the <strong>PDPM (Patient-Driven Payment Model)</strong> reimbursement system under Medicare Part A. Think of it as the "ICU step-down" of rehab &#8212; patients are medically complex but your job is getting them functional enough to go home or to a lower level of care. <strong>Typical caseload:</strong> 6&#8211;10 patients/day (30&#8211;60 min each). <strong>Productivity expectations:</strong> 85&#8211;92%. <strong>Salary range:</strong> $85K&#8211;$110K.</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Medically complex patients &#8212; forces holistic clinical thinking</li>
+        <li>Strong job security (aging population = massive demand)</li>
+        <li>Often better new grad salary than outpatient</li>
+        <li>Autonomy &#8212; you're often the primary rehab decision-maker</li>
+        <li>No patient cancellations &#8212; they live there</li>
+        <li>Consistent M-F schedule in most facilities</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Productivity pressure can feel like a treadmill (85-92% expectation)</li>
+        <li>Documentation burden is heavy (MDS, progress notes, D/C planning)</li>
+        <li>Ethical tension &#8212; pressure to keep patients on caseload for revenue</li>
+        <li>Limited equipment compared to outpatient</li>
+        <li>Emotional toll &#8212; end-of-life patients, cognitive decline, family dynamics</li>
+        <li>Facility conditions vary widely &#8212; some buildings are rough</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#127973; Acute Care Hospital <span class="setting-tag">Fast-Paced</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> You're the first PT to see patients after major surgery, ICU stays, strokes, cardiac events, or trauma. Your primary job is early mobilization, fall risk assessment, and determining <strong>discharge disposition</strong> &#8212; can this patient go home, or do they need SNF/IRF/LTACH? Think of it as triage for function. You see patients for 15&#8211;30 minutes, sometimes just to get them sitting at the edge of bed. <strong>Typical caseload:</strong> 8&#8211;14 patients/day. <strong>Salary range:</strong> $85K&#8211;$105K + excellent benefits.</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Best institutional benefits in PT (pension, insurance, tuition reimbursement)</li>
+        <li>Incredible variety &#8212; ortho, neuro, cardiac, burns, trauma in one day</li>
+        <li>Develops strongest medical screening and red flag skills</li>
+        <li>Interdisciplinary collaboration with MDs, nurses, OT, SLP</li>
+        <li>Flexible scheduling options (weekends = differential pay)</li>
+        <li>No-show rate is zero &#8212; patients are admitted</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Short treatment sessions &#8212; limited time to build rapport</li>
+        <li>Rarely see long-term outcomes (patients discharge in days)</li>
+        <li>Physically demanding (lifting, transfers, fall risk management)</li>
+        <li>Weekend/holiday rotations are standard</li>
+        <li>Salary often lower than outpatient despite higher acuity</li>
+        <li>COVID/infectious disease exposure risk higher</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#127968; Home Health <span class="setting-tag">High Autonomy</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> You drive to patients' homes and treat them where they actually live. This is PT in the real world &#8212; navigating stairs with no handrails, thick carpet, pets, family dynamics, and whatever creative equipment you can fit in your car. Reimbursed per visit (Medicare Part A for homebound patients). Think of it as <strong>outpatient PT in the wild</strong>. <strong>Typical caseload:</strong> 5&#8211;8 visits/day. <strong>Salary range:</strong> $85K&#8211;$120K+ (per-visit model can be very lucrative).</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Highest autonomy &#8212; you're the captain of the ship</li>
+        <li>Top-tier pay, especially per-visit models</li>
+        <li>Flexible schedule &#8212; manage your own route</li>
+        <li>Treat patients in their actual environment (most functional setting)</li>
+        <li>No productivity clock &#8212; paid per completed visit</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Isolation &#8212; you work alone, no coworker interaction</li>
+        <li>Driving time is unpaid and wears on your car</li>
+        <li>Safety concerns in some neighborhoods/homes</li>
+        <li>Limited equipment &#8212; you bring what fits in a bag</li>
+        <li>Patient cancellations = lost income (per-visit model)</li>
+        <li>Documentation is heavy and done at night or between visits</li>
+        <li>No mentorship &#8212; terrible for new grads learning clinical skills</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#127937; Inpatient Rehabilitation Facility (IRF) <span class="setting-tag">Intensive Rehab</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> A dedicated rehabilitation hospital or unit where patients receive <strong>minimum 3 hours of therapy per day, 5 days/week</strong>. Patients are post-stroke, TBI, SCI, amputation, polytrauma, or major surgery who need intensive rehab but are medically stable. Think of it as the "boot camp" of rehab &#8212; you're pushing patients harder than acute care, for longer, with a multidisciplinary team. <strong>Salary range:</strong> $85K&#8211;$105K.</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Most time with patients &#8212; deep therapeutic relationships</li>
+        <li>See dramatic functional improvements over weeks</li>
+        <li>Strong team approach (PT/OT/SLP/nursing/MD round together)</li>
+        <li>Best setting to develop neuro rehab skills</li>
+        <li>Structured mentorship programs at many facilities</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Physically exhausting &#8212; 3-hour therapy days with heavy patients</li>
+        <li>Weekend rotations required (to meet the 3hr/5day rule)</li>
+        <li>Documentation for FIM/IRF-PAI is complex</li>
+        <li>Insurance denials and premature discharges are frustrating</li>
+        <li>Fewer positions available than outpatient or SNF</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#9992; Travel Physical Therapy <span class="setting-tag">Adventure + Pay</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> 13-week contracts at facilities nationwide that need temporary staffing. You're essentially a hired gun &#8212; show up, treat, and move on. Agencies handle placement, housing stipends, and licensure logistics. <strong>Pay:</strong> $1,800&#8211;$2,800+/week gross (varies wildly by location, setting, and urgency). Think of it as being a <strong>PT mercenary</strong> &#8212; high reward, high flexibility, but no roots. The PT Compact (30+ states) makes this dramatically easier now.</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Highest raw earning potential in PT</li>
+        <li>See the country &#8212; explore different cities, states, settings</li>
+        <li>Housing stipend is often tax-free (if you maintain a tax home)</li>
+        <li>Exposure to diverse clinical environments builds adaptability</li>
+        <li>PT Compact now covers 30+ states &#8212; easy multi-state practice</li>
+        <li>Can stack contracts to "try before you buy" a permanent move</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>No PTO, no employer 401K match, no employer health insurance</li>
+        <li>Job security = zero. Contract can end or not renew</li>
+        <li>Constantly adjusting to new EMRs, protocols, and coworkers</li>
+        <li>Tax complexity (stipends, tax homes, state taxes)</li>
+        <li>Isolation &#8212; you're the outsider at every facility</li>
+        <li>Not ideal for new grads &#8212; you're expected to hit the ground running</li>
+        <li>Housing quality varies &#8212; agency-provided housing can be rough</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#127891; Pediatric Physical Therapy <span class="setting-tag">Early Intervention</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> You work with infants, children, and adolescents with developmental delays, cerebral palsy, Down syndrome, torticollis, scoliosis, sports injuries, and genetic conditions. Settings include schools (IEP-based), outpatient peds clinics, early intervention programs (birth-3), and children's hospitals. <strong>Salary range:</strong> $75K&#8211;$100K (school-based often lower but with summers off).</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Emotionally rewarding &#8212; helping kids achieve milestones</li>
+        <li>Creative treatment &#8212; play-based interventions, games, fun</li>
+        <li>School-based positions get summers and holidays off</li>
+        <li>Strong job security (IDEA mandates school-based services)</li>
+        <li>Less physically demanding than adult acute/SNF</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Lower salary than most adult settings</li>
+        <li>Managing parents can be more challenging than managing patients</li>
+        <li>Progress can be very slow with severe developmental delays</li>
+        <li>Heavy paperwork for IEPs and early intervention documentation</li>
+        <li>Emotional toll with terminal/degenerative conditions in children</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#9889; Sports / Performance Physical Therapy <span class="setting-tag">Elite Athletes</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> Treating competitive and recreational athletes &#8212; ACL post-ops, throwing athletes, runners, CrossFit injuries, and return-to-sport programming. Can range from a sports-focused outpatient clinic to sideline coverage for a college or professional team. <strong>Salary range:</strong> $80K&#8211;$125K+ (pro sports team PTs can earn significantly more but positions are rare).</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Highly motivated patient population</li>
+        <li>Cutting-edge rehab (blood flow restriction, force plates, biomechanics)</li>
+        <li>Prestige and networking with sports teams/athletes</li>
+        <li>Board certification (SCS) significantly increases earning potential</li>
+        <li>Growing demand for performance-based PT beyond injury</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Extremely competitive &#8212; residency/fellowship often expected</li>
+        <li>Pro sports positions are rare and often low-paying initially</li>
+        <li>Evening/weekend hours for game coverage</li>
+        <li>Pressure from coaches, agents, and athletes to rush return-to-play</li>
+        <li>Requires ongoing investment in advanced certifications</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#128187; Telehealth / Virtual PT <span class="setting-tag">Growing Fast</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> Evaluating and treating patients via video &#8212; exercise instruction, pain education, movement screening, home program progression. Exploded during COVID and has stayed. Works best for chronic pain management, post-surgical follow-up, wellness, and patients in rural areas. The PT Compact makes multi-state telehealth much more feasible. <strong>Salary range:</strong> $70K&#8211;$100K (still maturing as a market).</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Work from anywhere (home, coffee shop, beach)</li>
+        <li>No commute, no overhead, no physical space needed</li>
+        <li>Scalable &#8212; can see patients across multiple states with PT Compact</li>
+        <li>Excellent for cash-based practice models</li>
+        <li>Lower burnout &#8212; no physical demands of manual therapy all day</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Can't perform manual therapy or hands-on assessment</li>
+        <li>Insurance reimbursement for telehealth PT is inconsistent</li>
+        <li>Patient engagement harder through a screen</li>
+        <li>Not suitable for all diagnoses (post-surgical, high acuity)</li>
+        <li>Licensing still complex in non-Compact states</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="setting-card">
+    <div class="setting-title">&#128176; Cash-Based / Private Practice <span class="setting-tag">Entrepreneurial</span></div>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7"><strong>What it is:</strong> You own your practice and patients pay out-of-pocket (no insurance). You set your rates ($150&#8211;$300+/session), your schedule, and your treatment approach with zero insurance interference. Think of it as going from being a staff PT to being the <strong>attending physician of your own clinic</strong>. Highest ceiling, highest risk. <strong>Earnings:</strong> wildly variable &#8212; $60K while building to $200K+ when established.</p>
+    <div class="pro-con">
+      <div class="pro-con-col pros"><h5>Pros</h5><ul>
+        <li>Complete clinical autonomy &#8212; treat how you want, for as long as needed</li>
+        <li>No insurance authorization, no denied claims, no visit caps</li>
+        <li>1-on-1 care model &#8212; premium experience for patients</li>
+        <li>Highest income ceiling in PT (clinic owners can earn $150K&#8211;$300K+)</li>
+        <li>Build equity in a business you can sell</li>
+      </ul></div>
+      <div class="pro-con-col cons"><h5>Cons</h5><ul>
+        <li>Business risk &#8212; overhead, marketing, payroll, liability insurance</li>
+        <li>No guaranteed income, especially first 1&#8211;2 years</li>
+        <li>Need business skills PT school doesn't teach (marketing, accounting, sales)</li>
+        <li>Patient base limited to those who can afford out-of-pocket PT</li>
+        <li>Solo practice = you do everything (treat, bill, clean, market)</li>
+      </ul></div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== STATE LAWS ====== -->
+<div class="chip-label">State Practice Laws &amp; Regulations</div>
+<div class="container">
+  <div class="section-title">PT Practice Laws by State</div>
+  <div class="section-sub">As of July 2025, <strong>all 50 states + DC + US Virgin Islands</strong> allow some form of direct access to physical therapy. That's a historic milestone after 50 years of advocacy. But "some form" is doing a lot of heavy lifting &#8212; like saying "all patients can ambulate" without mentioning that some need a FWW and contact guard assist. The details matter.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Direct Access &#8212; Unrestricted vs. Provisional</h4>
+      <div class="ma-tags"><span class="ma-tag green">21 states = unrestricted</span><span class="ma-tag gold">29 + DC = provisional</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip green"><div class="bl-label">Unrestricted Direct Access (~21 States)</div><p>PTs can evaluate <strong>and treat</strong> patients without any referral, time limit, or visit cap. If the condition is beyond PT scope, the PT must refer out. States include: <strong>Alaska, Arizona, Colorado, Hawaii, Idaho, Iowa, Kansas, Kentucky, Maryland, Montana, Nebraska, North Dakota, Oregon, South Dakota, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming</strong>. Arizona (your home state) is unrestricted &#8212; no referral needed, no time limit.</p></div>
+      <div class="bl-strip gold"><div class="bl-label">Provisional Direct Access (~29 States + DC)</div><p>Patients can see a PT without referral, but with <strong>restrictions</strong> that vary by state. Common restrictions include: time limits (typically 30 days), visit limits (e.g., 12 visits in California), requirement to obtain a physician POC after a threshold, workers' comp carve-outs, and condition-specific restrictions. Examples: <strong>California</strong> = 12 visits or 45 days, whichever comes first. <strong>Florida</strong> = 30 days or 8 visits. <strong>Texas</strong> = 30 days (expanded from 10 days in Sept 2025). <strong>Michigan</strong> = 10 visits within 21 days. <strong>New York</strong> = 10 visits or 30 days.</p></div>
+      <div class="bl-strip red"><div class="bl-label">Medicare Exception</div><p>Regardless of state law, <strong>Medicare allows direct access for evaluation</strong>, but once you determine therapy is medically necessary, you must: (1) send the POC to a physician/NPP within 30 days, and (2) obtain physician certification. As of January 2025, the physician signature requirement has been eliminated for <em>referred</em> patients, but direct access Medicare patients still need POC certification. This is the payer-level restriction that persists even in unrestricted states.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>PT Compact &#8212; Interstate Practice Simplified</h4>
+      <div class="ma-tags"><span class="ma-tag purple">30+ member states + DC</span><span class="ma-tag">Privileges issued in minutes</span><span class="ma-tag green">AZ is a member</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip purple"><div class="bl-label">What is the PT Compact?</div><p>An interstate agreement that lets eligible PTs and PTAs practice across state lines <strong>without getting a separate license in each state</strong>. Instead, you purchase a "compact privilege" through ptcompact.org. Think of it as TSA PreCheck for your PT license &#8212; same background check, faster access, one home base. As of 2026, <strong>30+ states + DC</strong> are members. Privileges are typically issued <strong>within minutes</strong> of purchase. Cost: $45 commission fee + state fee ($0&#8211;$150 depending on state).</p></div>
+      <div class="bl-strip"><div class="bl-label">Eligibility Requirements</div><p>&#x2022; Hold a current, valid PT or PTA license in your <strong>home state</strong><br>&#x2022; Your home state must be a Compact member and actively issuing privileges<br>&#x2022; The remote state must also be a Compact member<br>&#x2022; Meet home state CE requirements (no separate CE for remote states)<br>&#x2022; Complete jurisprudence requirements for the remote state<br>&#x2022; You practice under the <strong>scope of practice of the state where the patient is located</strong></p></div>
+      <div class="bl-strip gold"><div class="bl-label">Notable Non-Compact States (as of early 2026)</div><p><strong>California, New York, New Jersey, Massachusetts, Illinois, Pennsylvania</strong> (PA implemented July 2025), Michigan, Rhode Island &#8212; many of the largest states are still not members. If you plan to practice in these states, you'll need traditional licensure. Michigan, Massachusetts, and Rhode Island have introduced compact legislation but haven't passed it yet. This matters enormously for travel PTs and telehealth practitioners.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Scope of Practice Variations That Matter</h4>
+      <div class="ma-tags"><span class="ma-tag">Dry needling varies wildly</span><span class="ma-tag gold">PTA supervision rules changing</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Dry Needling</div><p>Not legal in all states. Some states (e.g., <strong>California, New York</strong>) do not allow PTs to perform dry needling. Others require specific continuing education hours (e.g., 54 hours in many states). Some states require certification through APTA or equivalent. Always verify with your state practice act before performing dry needling. <strong>Arizona:</strong> PTs can perform dry needling with appropriate training.</p></div>
+      <div class="bl-strip gold"><div class="bl-label">PTA Supervision (2026 Change)</div><p>In 2026, a major shift is happening: <strong>"direct" supervision is changing to "general" supervision</strong> for PTAs in outpatient private practices. This means PTs can oversee a larger caseload more efficiently, which can increase productivity-based bonuses. However, the PT remains responsible for all evaluations, re-evaluations, and discharge summaries. The PTA-to-PT ratio and specific supervision requirements still vary by state.</p></div>
+      <div class="bl-strip red"><div class="bl-label">Imaging Referral</div><p>Most states do <strong>not</strong> allow PTs to order diagnostic imaging (X-ray, MRI). A few states allow PTs to refer for imaging under specific circumstances. This is an active area of APTA advocacy. As a clinician, you should be proficient in clinical prediction rules and screening to determine when imaging referral to a physician is indicated.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== CAREER PLANNING ====== -->
+<div class="chip-label">Career Planning &amp; Trajectory</div>
+<div class="container">
+  <div class="section-title">Building Your PT Career</div>
+  <div class="section-sub">Your DPT is a license to practice &#8212; not a ceiling. The profession has more career paths than most new grads realize.</div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Board Certification &amp; Specialization &#8212; ROI Analysis</h4>
+      <div class="ma-tags"><span class="ma-tag gold">9 ABPTS specializations</span><span class="ma-tag">$5K&#8211;$15K salary bump</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <table class="data-table"><thead><tr><th>Certification</th><th>Abbreviation</th><th>Focus</th><th>Typical Salary Impact</th></tr></thead><tbody>
+        <tr><td class="warn">Orthopaedic (OCS)</td><td>OCS</td><td>MSK evaluation and treatment</td><td>+$5K&#8211;$15K; most recognized by employers</td></tr>
+        <tr><td class="hi">Sports (SCS)</td><td>SCS</td><td>Athletic injury, return-to-sport</td><td>+$5K&#8211;$12K; required for some sports medicine positions</td></tr>
+        <tr><td class="hi">Neurologic (NCS)</td><td>NCS</td><td>Stroke, TBI, SCI, neurodegenerative</td><td>+$5K&#8211;$10K; valued in IRF and neuro outpatient</td></tr>
+        <tr><td class="hi">Geriatric (GCS)</td><td>GCS</td><td>Aging, balance, falls, frailty</td><td>+$3K&#8211;$8K; valued in SNF and home health</td></tr>
+        <tr><td class="hi">Cardiovascular &amp; Pulmonary (CCS)</td><td>CCS</td><td>Cardiac/pulmonary rehab, ICU</td><td>+$5K&#8211;$10K; niche but high demand in acute</td></tr>
+        <tr><td class="hi">Pediatric (PCS)</td><td>PCS</td><td>Developmental, school-based, NICU</td><td>+$3K&#8211;$8K</td></tr>
+        <tr><td class="hi">Clinical Electrophysiology (ECS)</td><td>ECS</td><td>EMG/NCV, wound care</td><td>+$5K&#8211;$12K; most specialized/rare</td></tr>
+        <tr><td class="hi">Oncologic (ONC)</td><td>ONC</td><td>Cancer rehab, lymphedema</td><td>+$3K&#8211;$8K; growing field</td></tr>
+        <tr><td class="hi">Women's Health (WCS)</td><td>WCS</td><td>Pelvic floor, prenatal/postnatal</td><td>+$5K&#8211;$15K; extremely high demand, cash-pay friendly</td></tr>
+      </tbody></table>
+      <div class="bl-strip green"><div class="bl-label">Is It Worth It?</div><p>Board certification costs ~$2,000&#8211;$3,500 (exam + prep materials) and requires 2,000 hours of direct patient care in the specialty area. The financial ROI depends on your setting &#8212; an OCS in a hospital system may get a $5K bump, while the same OCS opening a cash-based ortho clinic could mean a $50K+ difference. Beyond salary, certification signals expertise to patients, referral sources, and employers. It's like having a fellowship on your CV &#8212; it opens doors that otherwise stay closed.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Non-Clinical Career Paths for PTs</h4>
+      <div class="ma-tags"><span class="ma-tag purple">Beyond the clinic</span><span class="ma-tag">$80K&#8211;$200K+</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip" style="margin-bottom:8px;"><div class="bl-label">Clinical Education / Academia</div><p>DPT faculty positions ($85K&#8211;$130K). Teach, research, and mentor. Typically requires PhD or residency/fellowship. Work-life balance can be excellent (summers, sabbaticals).</p></div>
+          <div class="bl-strip gold" style="margin-bottom:8px;"><div class="bl-label">Healthcare Administration</div><p>Rehab director, VP of rehab services, hospital administrator. PTs who understand both clinical and business sides are valuable. Salary: $100K&#8211;$180K+.</p></div>
+          <div class="bl-strip purple" style="margin-bottom:8px;"><div class="bl-label">Medical Device / Pharma</div><p>Clinical specialist, sales rep, or medical science liaison for companies like Stryker, DJO, or Bioventus. Salary: $90K&#8211;$160K + commission/bonuses. Your clinical credibility is the differentiator.</p></div>
+        </div>
+        <div>
+          <div class="bl-strip red" style="margin-bottom:8px;"><div class="bl-label">Health Tech / AI</div><p>Clinical product manager, UX researcher, or clinical AI consultant for companies building PT-related software. Tech companies desperately need clinicians who understand workflows. Salary: $100K&#8211;$200K+.</p></div>
+          <div class="bl-strip green" style="margin-bottom:8px;"><div class="bl-label">Utilization Review / Insurance</div><p>Reviewing therapy claims for medical necessity. Work from home, predictable hours. Salary: $80K&#8211;$110K. Less fulfilling clinically, but excellent work-life balance.</p></div>
+          <div class="bl-strip orange" style="margin-bottom:8px;"><div class="bl-label">Legal / Expert Witness</div><p>Medical-legal consulting, depositions, IMEs. Experienced PTs with specialty certifications can earn $150&#8211;$500/hr for expert witness work. Part-time supplement to clinical practice.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Student Loan Strategy for New Grads</h4>
+      <div class="ma-tags"><span class="ma-tag red">Avg DPT debt: $127K</span><span class="ma-tag gold">PSLF = 10-year forgiveness</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip red"><div class="bl-label">The Reality</div><p>The average DPT graduate carries <strong>~$127,000 in student loan debt</strong> (APTA 2023 data). With a starting salary of $68K&#8211;$82K, the debt-to-income ratio is concerning. This isn't a "grind harder" problem &#8212; it requires <strong>strategic repayment planning</strong> from day one.</p></div>
+      <div class="grid2">
+        <div>
+          <div class="bl-strip green"><div class="bl-label">PSLF (Public Service Loan Forgiveness)</div><p>If you work for a <strong>501(c)(3) nonprofit hospital, university, government agency, or qualifying nonprofit</strong>, you can have remaining federal loan balance forgiven after <strong>120 qualifying payments (10 years)</strong> on an income-driven repayment plan. Most hospitals, academic medical centers, and many SNFs qualify. This is the single most impactful financial decision a new PT can make &#8212; it can save $50K&#8211;$100K+ over the life of the loan.</p></div>
+        </div>
+        <div>
+          <div class="bl-strip gold"><div class="bl-label">Income-Driven Repayment (IDR)</div><p>SAVE, PAYE, REPAYE, and IBR plans cap payments at 10&#8211;20% of discretionary income. If pursuing PSLF, enroll in IDR immediately &#8212; lower payments = more forgiven. If <strong>not</strong> pursuing PSLF, consider whether aggressive payoff (standard/refinanced) saves more in interest than IDR forgiveness after 20&#8211;25 years. Run the numbers with studentaid.gov's repayment simulator.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="themes.js"></script>
+<script src="premium.js"></script>
+<script>
+function toggleMA(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.ma-chevron');
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+}
+
+// State salary data (BLS 2024 averages, COL from World Population Review 2024)
+var states = [
+  {n:"Alabama",s:88660,col:88.1,da:"Provisional",compact:"Yes",notes:"30 days/11 visits. DPT or 10+ yrs exp required. Lowest COL in top tier."},
+  {n:"Alaska",s:105860,col:127.1,da:"Unrestricted",compact:"Yes",notes:"No referral needed. High salary but very high COL. Rural demand."},
+  {n:"Arizona",s:98960,col:103.3,da:"Unrestricted",compact:"Yes",notes:"No referral needed. 52% projected job growth (highest nationally). Dry needling allowed."},
+  {n:"Arkansas",s:86150,col:86.0,da:"Provisional",compact:"Yes",notes:"30 days. Low COL makes purchasing power solid despite lowest raw salary."},
+  {n:"California",s:114270,col:138.5,da:"Provisional",compact:"No",notes:"12 visits or 45 days. Highest salary but highest COL. No PT Compact. No dry needling."},
+  {n:"Colorado",s:98570,col:105.1,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Growing market. Outdoor lifestyle attracts PTs."},
+  {n:"Connecticut",s:106780,col:112.8,da:"Provisional",compact:"No",notes:"Referral required for treatment >12 visits. High salary and COL."},
+  {n:"Delaware",s:98100,col:102.3,da:"Provisional",compact:"Yes",notes:"30 days then physician consult required."},
+  {n:"Florida",s:92870,col:102.8,da:"Provisional",compact:"Yes",notes:"30 days or 8 visits. No state income tax. Highest PT concentration in Homosassa Springs."},
+  {n:"Georgia",s:91520,col:93.4,da:"Provisional",compact:"Yes",notes:"Preventive care/wellness direct access. More restrictive for treatment."},
+  {n:"Hawaii",s:97890,col:192.9,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Extremely high COL dramatically reduces purchasing power."},
+  {n:"Idaho",s:91200,col:97.7,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Low COL. Growing state."},
+  {n:"Illinois",s:96890,col:93.4,da:"Provisional",compact:"No",notes:"Evaluation direct access; treatment requires referral after initial visit."},
+  {n:"Indiana",s:89450,col:90.5,da:"Provisional",compact:"Yes",notes:"Referral required if no improvement in 30 days."},
+  {n:"Iowa",s:88920,col:89.1,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Low COL gives good purchasing power."},
+  {n:"Kansas",s:89750,col:88.8,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Low COL."},
+  {n:"Kentucky",s:88340,col:92.2,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Moderate market."},
+  {n:"Louisiana",s:91780,col:91.1,da:"Provisional",compact:"Yes",notes:"30 days. Lower COL offsets lower salary."},
+  {n:"Maine",s:91720,col:113.3,da:"Provisional",compact:"No",notes:"30 days. Higher COL for a lower-paying state."},
+  {n:"Maryland",s:97840,col:112.4,da:"Unrestricted",compact:"No",notes:"First state to pass direct access (1979). No referral needed."},
+  {n:"Massachusetts",s:105050,col:135.0,da:"Provisional",compact:"No",notes:"Not yet Compact. Very high COL erodes high salary. Strong hospital systems."},
+  {n:"Michigan",s:93460,col:93.3,da:"Provisional",compact:"No",notes:"10 visits within 21 days. Compact legislation introduced but not passed."},
+  {n:"Minnesota",s:95870,col:99.6,da:"Provisional",compact:"Yes",notes:"90 days. Near-average COL makes this solid."},
+  {n:"Mississippi",s:87540,col:84.8,da:"Provisional",compact:"Yes",notes:"30 days. Lowest COL in nation &#8212; good adjusted purchasing power."},
+  {n:"Missouri",s:89800,col:87.1,da:"Provisional",compact:"Yes",notes:"30 days. Very low COL. Excellent purchasing power."},
+  {n:"Montana",s:90710,col:104.8,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Beautiful state, moderate COL."},
+  {n:"Nebraska",s:89060,col:92.0,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Low COL."},
+  {n:"Nevada",s:111460,col:104.2,da:"Provisional",compact:"Yes",notes:"30 days. Best salary-to-COL ratio in the country. No state income tax."},
+  {n:"New Hampshire",s:91580,col:112.6,da:"Provisional",compact:"Yes",notes:"30 days. No state income tax. High COL."},
+  {n:"New Jersey",s:108410,col:115.2,da:"Provisional",compact:"No",notes:"30 days. High salary and high COL. Not PT Compact."},
+  {n:"New Mexico",s:93250,col:95.8,da:"Provisional",compact:"Yes",notes:"30 days. Low COL makes this solid."},
+  {n:"New York",s:96870,col:126.5,da:"Provisional",compact:"No",notes:"10 visits or 30 days. Very high COL. Not PT Compact."},
+  {n:"North Carolina",s:93780,col:95.0,da:"Provisional",compact:"Yes",notes:"30 days. Growing market. Moderate COL."},
+  {n:"North Dakota",s:87530,col:93.5,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Low COL. Rural demand."},
+  {n:"Ohio",s:92770,col:90.8,da:"Provisional",compact:"Yes",notes:"30 days. Low COL. Great purchasing power."},
+  {n:"Oklahoma",s:89080,col:86.6,da:"Provisional",compact:"Yes",notes:"30 days. Very low COL."},
+  {n:"Oregon",s:102840,col:113.1,da:"Unrestricted",compact:"Yes",notes:"No referral needed. No sales tax. Higher COL."},
+  {n:"Pennsylvania",s:93380,col:101.7,da:"Provisional",compact:"Yes",notes:"PT Compact implemented July 2025. 30 days."},
+  {n:"Rhode Island",s:103510,col:107.0,da:"Provisional",compact:"No",notes:"Compact legislation introduced. Good salary."},
+  {n:"South Carolina",s:89700,col:93.4,da:"Provisional",compact:"Yes",notes:"30 days (expanded from 10 in 2025). Low COL."},
+  {n:"South Dakota",s:84870,col:93.2,da:"Unrestricted",compact:"Yes",notes:"No referral needed. No state income tax. Low COL."},
+  {n:"Tennessee",s:92290,col:89.7,da:"Provisional",compact:"Yes",notes:"30 days. No state income tax. Excellent purchasing power."},
+  {n:"Texas",s:99800,col:92.1,da:"Provisional",compact:"Yes",notes:"30 days (expanded from 10 in Sept 2025). No state income tax. Massive job market."},
+  {n:"Utah",s:94810,col:98.7,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Very high projected growth. Young, active population."},
+  {n:"Vermont",s:88130,col:113.3,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Higher COL for a lower-salary state."},
+  {n:"Virginia",s:94280,col:103.7,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Growing market around DC corridor."},
+  {n:"Washington",s:104880,col:113.2,da:"Unrestricted",compact:"Yes",notes:"No referral needed. No state income tax. Strong hospital systems. High COL."},
+  {n:"West Virginia",s:87620,col:87.6,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Very low COL. Rural demand."},
+  {n:"Wisconsin",s:92410,col:95.2,da:"Unrestricted",compact:"Yes",notes:"No referral needed. Moderate COL."},
+  {n:"Wyoming",s:85690,col:95.1,da:"Unrestricted",compact:"Yes",notes:"No referral needed. No state income tax. Low population."}
+];
+
+// Populate dropdown
+var sel = document.getElementById('stateSelect');
+states.forEach(function(st){
+  var o = document.createElement('option');
+  o.value = st.n;
+  o.textContent = st.n;
+  sel.appendChild(o);
+});
+
+function showState(name) {
+  var detail = document.getElementById('stateDetail');
+  var overview = document.getElementById('nationalOverview');
+  if (!name) {
+    detail.className = '';
+    detail.innerHTML = '';
+    overview.style.display = '';
+    return;
+  }
+  overview.style.display = 'none';
+  var st = states.find(function(s){return s.n === name});
+  if (!st) return;
+  var adj = Math.round(st.s / (st.col / 100));
+  var daBadge = st.da === 'Unrestricted'
+    ? '<span class="law-badge unrestricted">Unrestricted Direct Access</span>'
+    : '<span class="law-badge provisional">Provisional Direct Access</span>';
+  var compactBadge = st.compact === 'Yes'
+    ? '<span class="law-badge compact">PT Compact Member</span>'
+    : '<span class="law-badge provisional">Not PT Compact</span>';
+
+  detail.className = 'show';
+  detail.innerHTML = '<div class="salary-card">' +
+    '<div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">' +
+    '<div class="salary-big">$' + st.s.toLocaleString() + '</div>' +
+    daBadge + compactBadge + '</div>' +
+    '<div class="salary-label">' + st.n + ' &#8212; Average PT Salary (BLS 2024)</div>' +
+    '<div class="salary-row">' +
+    '<div class="salary-mini"><div class="sm-num">$' + adj.toLocaleString() + '</div><div class="sm-label">COL-Adjusted</div></div>' +
+    '<div class="salary-mini"><div class="sm-num">' + st.col + '</div><div class="sm-label">COL Index (100=avg)</div></div>' +
+    '<div class="salary-mini"><div class="sm-num">$' + Math.round(st.s/2080).toLocaleString() + '</div><div class="sm-label">Hourly (est.)</div></div>' +
+    '</div>' +
+    '<div class="bl-strip" style="margin-top:14px"><div class="bl-label">State Notes</div><p>' + st.notes + '</p></div>' +
+    '</div>' +
+    '<div style="text-align:center;margin-top:12px"><button onclick="showState(\'\')" style="background:var(--bg3);border:1px solid var(--border);padding:8px 20px;border-radius:8px;cursor:pointer;font-family:Manrope,sans-serif;font-size:13px;color:var(--text)">&#8592; Back to National Overview</button></div>';
+}
+</script>
+</body>
+</html>
