@@ -1,7 +1,18 @@
-// Clinicians Blueprint v4 — Enhanced Theme Engine
+// Clinicians Blueprint v5 — Enhanced Theme Engine + Font Controls
 (function(){
   var saved = localStorage.getItem('cb-theme') || 'light';
   document.documentElement.setAttribute('data-theme', saved);
+
+  // Font scale
+  var scale = parseFloat(localStorage.getItem('cb-font-scale') || '1');
+  document.documentElement.style.setProperty('--font-scale', scale);
+
+  // Font family
+  var fontPref = localStorage.getItem('cb-font-body') || 'Manrope';
+  if(fontPref !== 'Manrope') {
+    document.documentElement.style.setProperty('--font-body', fontPref + ', sans-serif');
+  }
+
   document.addEventListener('DOMContentLoaded', function(){
     // Theme toggle
     var btns = document.querySelectorAll('.theme-btn');
@@ -16,23 +27,60 @@
       });
     });
 
-    // Chroma bar removed
+    // Font controls — inject into nav
+    var nav = document.querySelector('.site-nav');
+    if(nav && !document.querySelector('.font-controls')){
+      var fc = document.createElement('div');
+      fc.className = 'font-controls';
+      fc.innerHTML = '<button class="font-sz-btn" data-dir="-1" title="Smaller text">A\u2212</button>' +
+        '<button class="font-sz-btn" data-dir="1" title="Larger text">A+</button>' +
+        '<select class="font-select" title="Font family">' +
+        '<option value="Manrope"' + (fontPref==='Manrope'?' selected':'') + '>Manrope</option>' +
+        '<option value="Inter"' + (fontPref==='Inter'?' selected':'') + '>Inter</option>' +
+        '<option value="Source Sans 3"' + (fontPref==='Source Sans 3'?' selected':'') + '>Source Sans</option>' +
+        '<option value="Georgia"' + (fontPref==='Georgia'?' selected':'') + '>Georgia</option>' +
+        '<option value="Atkinson Hyperlegible"' + (fontPref==='Atkinson Hyperlegible'?' selected':'') + '>Atkinson</option>' +
+        '</select>';
+      var themeToggle = nav.querySelector('.theme-toggle');
+      if(themeToggle) nav.insertBefore(fc, themeToggle);
+      else nav.appendChild(fc);
 
-    // Scroll handler — color shift
-    var hueShift = 0;
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap';
+      document.head.appendChild(link);
+    }
+
+    // Font size buttons
+    document.querySelectorAll('.font-sz-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var dir = parseInt(this.dataset.dir);
+        scale = Math.max(0.8, Math.min(1.4, scale + dir * 0.05));
+        document.documentElement.style.setProperty('--font-scale', scale);
+        localStorage.setItem('cb-font-scale', scale);
+      });
+    });
+
+    // Font family select
+    var fontSel = document.querySelector('.font-select');
+    if(fontSel){
+      fontSel.addEventListener('change', function(){
+        var f = this.value;
+        document.documentElement.style.setProperty('--font-body', f + ', sans-serif');
+        document.body.style.fontFamily = f + ', sans-serif';
+        localStorage.setItem('cb-font-body', f);
+      });
+    }
+
+    // Scroll hue shift
     window.addEventListener('scroll', function(){
       var scrollTop = document.documentElement.scrollTop;
       var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       var pct = scrollTop / (scrollHeight || 1);
-
-
-
-      // Subtle hue shift on body — rotate 0 to 8 degrees as you scroll
-      hueShift = pct * 8;
-      document.body.style.filter = 'hue-rotate(' + hueShift.toFixed(1) + 'deg)';
+      document.body.style.filter = 'hue-rotate(' + (pct * 8).toFixed(1) + 'deg)';
     }, {passive: true});
 
-    // Scroll reveal with stagger
+    // Scroll reveal
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(e){
         if(e.isIntersecting){
@@ -42,7 +90,6 @@
         }
       });
     }, {threshold: .06, rootMargin: '0px 0px -30px 0px'});
-
     document.querySelectorAll('.ma-item, .rc2, .bl-strip, .card, .feat-card, .review-card, .module-card, .compare-card').forEach(function(el, i){
       el.style.opacity = '0';
       el.style.transform = 'translateY(12px)';
@@ -50,9 +97,8 @@
       io.observe(el);
     });
 
-    // Parallax on hero orbs (if they exist on index)
-    var orb1 = document.querySelector('.orb1');
-    var orb2 = document.querySelector('.orb2');
+    // Index page orbs
+    var orb1 = document.querySelector('.orb1'), orb2 = document.querySelector('.orb2');
     if(orb1 || orb2){
       window.addEventListener('scroll', function(){
         var s = window.pageYOffset;
@@ -60,5 +106,20 @@
         if(orb2) orb2.style.transform = 'translate(-' + s*.06 + 'px,-' + s*.1 + 'px)';
       }, {passive: true});
     }
+
+    // Auto-wrap chip-nav + tab-panels into flex layout for sidebar mode
+    document.querySelectorAll('.chip-nav').forEach(function(cn){
+      if(cn.parentElement.classList.contains('tab-layout')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'tab-layout';
+      cn.parentElement.insertBefore(wrapper, cn);
+      wrapper.appendChild(cn);
+      var next = wrapper.nextElementSibling;
+      while(next && (next.classList.contains('tab-panel') || (next.id && next.id.startsWith('tab-')))){
+        var toMove = next;
+        next = next.nextElementSibling;
+        wrapper.appendChild(toMove);
+      }
+    });
   });
 })();
