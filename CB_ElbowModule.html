@@ -106,7 +106,8 @@
 </div>
 
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('tests',this)">Special Tests</button>
+    <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+  <button onclick="showTab('tests',this)">Special Tests</button>
   <button onclick="showTab('interventions',this)">Interventions &amp; EBP</button>
   <button onclick="showTab('tendinopathy',this)">Tendinopathy &amp; Plyometrics</button>
   <button onclick="showTab('diagnoses',this)">Diagnoses</button>
@@ -115,7 +116,251 @@
 </div>
 
 <!-- ====== SPECIAL TESTS ====== -->
-<div class="tab-panel active" id="tab-tests">
+
+<div class="tab-panel active" id="tab-anatomy">
+<div class="container">
+
+  <div class="section-title">Elbow, Forearm &amp; Arm &#8212; Comprehensive Anatomy</div>
+  <div class="section-sub">The elbow is a <strong>trochoginglymoid joint</strong> &#8212; a combined hinge + pivot. It's where the arm's power meets the forearm's precision. Three bones, three joints, two compartments, and five major nerves converge in a small space. Understanding this region means understanding how force gets from the shoulder to the fingertips.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Osteology &amp; Joints</div>
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--teal2);">Humerus &#8212; Distal Landmarks</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Trochlea</strong> &#8212; spool-shaped medial articular surface; articulates with trochlear notch of ulna (humeroulnar joint)</li>
+        <li><strong>Capitulum</strong> &#8212; rounded lateral articular surface; articulates with radial head (humeroradial joint)</li>
+        <li><strong>Medial epicondyle</strong> &#8212; common flexor tendon origin; ulnar nerve passes posterior to it</li>
+        <li><strong>Lateral epicondyle</strong> &#8212; common extensor tendon origin; lateral epicondylalgia = &#8220;tennis elbow&#8221;</li>
+        <li><strong>Lateral supracondylar ridge</strong> &#8212; brachioradialis &amp; ECRL attachment</li>
+        <li><strong>Olecranon fossa</strong> &#8212; posterior; receives olecranon in extension</li>
+        <li><strong>Coronoid fossa</strong> &#8212; anterior medial; receives coronoid in flexion</li>
+        <li><strong>Radial fossa</strong> &#8212; anterior lateral; receives radial head in flexion</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--gold2);">Radius &amp; Ulna</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Ulna</strong> &#8212; stabilizing bone of the forearm. <strong>Olecranon</strong> (triceps insertion), <strong>coronoid process</strong> (brachialis insertion), <strong>trochlear notch</strong> (articulates with trochlea), <strong>radial notch</strong> (proximal RU joint), <strong>ulnar styloid</strong> (distal; TFCC attachment)</li>
+        <li><strong>Radius</strong> &#8212; shorter than ulna, lateral. <strong>Radial head</strong> (articulates with capitulum + radial notch of ulna), <strong>radial neck</strong>, <strong>radial tuberosity</strong> (biceps tendon insertion), <strong>ulnar notch</strong> (distal RU joint), <strong>radial styloid</strong> (distal; brachioradialis inserts), <strong>dorsal tubercle</strong> (Lister's tubercle &#8212; EPL pulley)</li>
+        <li><strong>Interosseous membrane</strong> &#8212; fibrous sheet connecting radius and ulna; transmits force from hand &#8594; radius &#8594; across membrane &#8594; ulna &#8594; humerus. Divides forearm into anterior and posterior compartments</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--purple2);">Three Joints of the Elbow</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Humeroulnar</strong> &#8212; trochlea &#8594; trochlear notch. Hinge (uniaxial). Primary flexion/extension. Most stable elbow joint</li>
+        <li><strong>Humeroradial</strong> &#8212; capitulum &#8594; radial head. Allows flex/ext + pronation/supination</li>
+        <li><strong>Proximal radioulnar</strong> &#8212; radial head &#8594; radial notch of ulna. Pivot joint. <strong>Annular ligament</strong> stabilizes radial head but allows rotation for pronation/supination</li>
+        <li><strong>Distal radioulnar (DRUJ)</strong> &#8212; ulnar head &#8594; ulnar notch of radius. Radius rotates around ulna. <strong>TFCC</strong> stabilizes</li>
+        <li><strong>Carrying angle</strong> &#8212; angle between humeral shaft and forearm; ~5&#176; males, ~10&#8211;15&#176; females; increased in valgus, decreased in varus</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--red2);">Ligaments</div>
+      <ul style="color:var(--text2);font-size:13.5px;padding-left:18px;line-height:1.9;">
+        <li><strong>Ulnar (medial) collateral ligament (UCL/MCL)</strong> &#8212; medial epicondyle &#8594; coronoid + olecranon. <strong>Three bands:</strong> anterior (strongest, taut in extension &#8212; key in overhead athletes), posterior, oblique (transverse). Resists valgus stress. Most commonly injured in throwing athletes (&#8220;Tommy John&#8221;)</li>
+        <li><strong>Radial (lateral) collateral ligament (RCL/LCL)</strong> &#8212; lateral epicondyle &#8594; annular ligament. Resists varus stress. Less commonly injured</li>
+        <li><strong>Annular ligament</strong> &#8212; encircles radial head, attaches to ulna. Stabilizes proximal RU joint. <strong>Sacciform recess</strong> = synovial pouch between annular lig and radial head</li>
+        <li><strong>TFCC</strong> &#8212; triangular fibrocartilage complex at distal RU joint. Attaches distal radius to ulnar styloid. Acts as shock absorber, stabilizer, and pivot during pronation/supination</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Cubital Fossa &amp; Cubital Tunnel</h4>
+      <div class="ma-tags"><span class="ma-tag">Anterior elbow = cubital fossa</span><span class="ma-tag gold">Posterior medial = cubital tunnel</span><span class="ma-tag red">Median N in fossa, Ulnar N in tunnel</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip"><div class="bl-label">Cubital Fossa (Anterior Elbow)</div>
+          <p>Triangular hollow at the anterior elbow &#8212; the &#8220;antecubital space&#8221; where blood draws happen. Think of it as the Grand Central Station of the elbow &#8212; everything important passes through.</p>
+          <p style="margin-top:8px"><strong>Boundaries:</strong> Superior = line between epicondyles. Medial = pronator teres. Lateral = brachioradialis. Floor = brachialis + supinator. Roof = fascia reinforced by <strong>bicipital aponeurosis</strong> (protects underlying structures).</p>
+          <p style="margin-top:8px"><strong>Contents (lateral &#8594; medial):</strong> Biceps tendon, Brachial artery (divides into radial + ulnar arteries here), Median nerve. Mnemonic: <strong>TAN</strong> &#8212; Tendon, Artery, Nerve (lateral to medial).</p>
+          <p style="margin-top:8px">Also contains: median cubital vein (superficial, used for venipuncture), lateral/medial antebrachial cutaneous nerves.</p></div>
+        </div>
+        <div>
+          <div class="bl-strip gold"><div class="bl-label">Cubital Tunnel (Posterior Medial Elbow)</div>
+          <p>Passageway on the posterior-medial elbow between the olecranon and medial epicondyle, roofed by the tendinous arch of FCU. This is where the <strong>ulnar nerve</strong> lives &#8212; superficial and vulnerable.</p>
+          <p style="margin-top:8px"><strong>Contents:</strong> Ulnar nerve, ulnar recurrent artery.</p>
+          <p style="margin-top:8px"><strong>Clinical:</strong> Cubital tunnel syndrome = compression of ulnar nerve here &#8212; 2nd most common peripheral nerve entrapment after carpal tunnel. Symptoms: numbness/tingling in ring + little finger, grip weakness, hand intrinsic atrophy. The &#8220;funny bone&#8221; sensation = direct compression of ulnar nerve against medial epicondyle.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Arm Muscles &#8212; OINA (Anterior &amp; Posterior Compartments)</h4>
+      <div class="ma-tags"><span class="ma-tag green">Anterior = musculocutaneous N</span><span class="ma-tag purple">Posterior = radial N</span><span class="ma-tag red">Biceps = strongest supinator with resistance</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Anterior Compartment &#8212; Musculocutaneous Nerve (C5&#8211;C7)</div><p>Three flexor muscles. All innervated by the <strong>musculocutaneous nerve</strong>, which pierces coracobrachialis, runs between biceps and brachialis, then continues as the <strong>lateral cutaneous nerve of the forearm</strong> (lateral antebrachial cutaneous nerve).</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Coracobrachialis</td><td>Tip of coracoid process</td><td>Middle 1/3 of medial surface of humerus</td><td>Musculocutaneous N (C6, C7)</td><td>Flexion &amp; adduction of arm; resists GH dislocation. <strong>Musculocutaneous N pierces through it</strong></td></tr>
+        <tr><td class="warn">Biceps Brachii</td><td><strong>Short head:</strong> tip of coracoid process. <strong>Long head:</strong> supraglenoid tubercle</td><td>Radial tuberosity + fascia of forearm via <strong>bicipital aponeurosis</strong></td><td>Musculocutaneous N (C5, C6)</td><td>Supinates forearm (most powerful supinator with resistance); flexes elbow; short head assists shoulder flexion. Long head tendon in bicipital groove &#8594; <strong>tendinitis, subluxation, rupture</strong></td></tr>
+        <tr><td class="warn">Brachialis</td><td>Distal half of anterior surface of humerus</td><td>Coronoid process &amp; tuberosity of ulna</td><td>Musculocutaneous N (C5, C6)</td><td>Flexes elbow in ALL forearm positions (supinated, neutral, pronated). <strong>Primary elbow flexor</strong> &#8212; stronger than biceps. Rehab: active in all positions</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip purple"><div class="bl-label">Posterior Compartment &#8212; Radial Nerve (C7, C8)</div><p>Two extensor muscles. The <strong>radial nerve</strong> travels posteriorly around the humerus in the radial (spiral) groove with the deep artery of the arm. <strong>Clinical:</strong> mid-shaft humeral fracture can damage radial nerve &#8594; wrist drop (loss of extension).</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Triceps Brachii</td><td><strong>Long head:</strong> infraglenoid tubercle. <strong>Lateral head:</strong> posterior humerus superior to radial groove. <strong>Medial head:</strong> posterior humerus inferior to radial groove</td><td>Proximal olecranon process + fascia of forearm</td><td>Radial N (C7, C8)</td><td>Extends elbow in ALL positions. Long head: extends &amp; adducts shoulder; resists GH dislocation. <strong>SCI:</strong> C7&#8211;C8 level &#8212; triceps function makes huge ADL difference</td></tr>
+        <tr><td class="hi">Anconeus</td><td>Lateral epicondyle</td><td>Lateral surface of olecranon &amp; superior/posterior ulna</td><td>Radial N (C7, C8)</td><td>Assists elbow extension; may stabilize elbow during pronation/supination</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Forearm Muscles &#8212; Anteromedial Compartment OINA (Flexors &amp; Pronators)</h4>
+      <div class="ma-tags"><span class="ma-tag green">Superficial = median N (except FCU = ulnar)</span><span class="ma-tag gold">Deep = AIN of median N (except medial FDP = ulnar)</span><span class="ma-tag red">Common flexor tendon = medial epicondyle</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Superficial Layer &#8212; Common Flexor Tendon</div><p>All superficial flexors attach (at least partially) to the <strong>common flexor tendon at the medial epicondyle</strong>. All cross the elbow. Medial epicondylalgia (&#8220;golfer's elbow&#8221;) involves this common origin. Most are innervated by <strong>median nerve</strong> except FCU (ulnar nerve).</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Pronator Teres</td><td>Medial epicondyle (humeral head) + coronoid process (ulnar head)</td><td>Middle of lateral surface of radius</td><td>Median N (C6, C7)</td><td>Pronates forearm; flexes elbow. <strong>Median nerve passes between its two heads</strong>. Forms medial border of cubital fossa</td></tr>
+        <tr><td class="hi">Flexor Carpi Radialis (FCR)</td><td>Medial epicondyle</td><td>Base of 2nd metacarpal</td><td>Median N (C6, C7)</td><td>Flexion &amp; radial deviation of wrist. Radial artery lies just lateral to FCR at wrist. Median nerve just medial to FCR at wrist</td></tr>
+        <tr><td class="hi">Palmaris Longus</td><td>Medial epicondyle</td><td>Palmar aponeurosis &amp; distal half of flexor retinaculum</td><td>Median N (C7, C8)</td><td>Assists wrist flexion; tenses palmar aponeurosis. Absent in 10&#8211;20% of population. Landmark: median N is just lateral to PL at wrist</td></tr>
+        <tr><td class="warn">Flexor Carpi Ulnaris (FCU)</td><td><strong>Humeral head:</strong> medial epicondyle. <strong>Ulnar head:</strong> olecranon + posterior border of ulna</td><td>Pisiform &#8594; hook of hamate &#8594; base of 5th metacarpal</td><td><strong>Ulnar N (C8, T1)</strong></td><td>Flexion &amp; ulnar deviation of wrist. <strong>Only superficial flexor innervated by ulnar nerve.</strong> Ulnar nerve passes between its two heads (cubital tunnel entry). Ulnar nerve &amp; artery run just lateral to FCU at wrist</td></tr>
+        <tr><td class="warn">Flexor Digitorum Superficialis (FDS)</td><td><strong>Humeral head:</strong> medial epicondyle + UCL + coronoid. <strong>Radial head:</strong> superior half of anterior radius</td><td>Bodies of middle phalanges of digits 2&#8211;5 (splits around FDP tendon)</td><td>Median N (C7, C8, T1)</td><td>Flexes PIP joints; assists MCP flexion of digits 2&#8211;5. Largest superficial group muscle. Median N + ulnar artery pass between its two heads. <strong>4 tendons pass through carpal tunnel</strong></td></tr>
+      </tbody></table>
+
+      <div class="bl-strip gold"><div class="bl-label">Deep Layer</div><p>Three muscles deep to the superficial group. Innervated by the <strong>anterior interosseous nerve (AIN)</strong> &#8212; a pure motor branch of the median nerve &#8212; except the medial half of FDP which is innervated by the ulnar nerve. <strong>AIN syndrome</strong> = weakness of FPL, lateral FDP, and pronator quadratus without sensory loss (pure motor nerve).</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Flexor Digitorum Profundus (FDP)</td><td>Proximal 3/4 of medial &amp; anterior ulna + anterior interosseous membrane</td><td>Bases of distal phalanges of digits 2&#8211;5</td><td><strong>Lateral part:</strong> AIN of median N (C8, T1). <strong>Medial part:</strong> Ulnar N (C8, T1)</td><td>Flexes DIP joints of digits 2&#8211;5; assists MCP &amp; wrist flexion. &#8220;Curls the fingers&#8221; &#8212; makes a fist. <strong>Dual innervation</strong> = key DDx between median vs. ulnar injury. 4 tendons through carpal tunnel</td></tr>
+        <tr><td class="hi">Flexor Pollicis Longus (FPL)</td><td>Anterior surface of radius + adjacent interosseous membrane</td><td>Base of distal phalanx of thumb</td><td>AIN of median N (C8, T1)</td><td>Flexes IP joint of thumb; assists MCP flexion. MMT: stabilize proximal phalanx, flex distal against resistance. Tendon passes through carpal tunnel</td></tr>
+        <tr><td class="hi">Pronator Quadratus</td><td>Distal 1/4 of anterior ulna</td><td>Distal 1/4 of anterior radius</td><td>AIN of median N (C8, T1)</td><td>Pronates forearm; stabilizes DRUJ. Cannot be palpated. MMT: test with elbow flexed (shortens pronator teres to isolate PQ)</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Forearm Muscles &#8212; Posterolateral Compartment OINA (Extensors &amp; Supinators)</h4>
+      <div class="ma-tags"><span class="ma-tag purple">ALL innervated by radial nerve</span><span class="ma-tag gold">Common extensor tendon = lateral epicondyle</span><span class="ma-tag red">Brachioradialis is a flexor despite posterior location</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip purple"><div class="bl-label">Posterolateral Compartment &#8212; Radial Nerve (all muscles)</div><p>Every muscle in the posterolateral forearm is innervated by the <strong>radial nerve</strong> or its branches (deep branch / posterior interosseous nerve). Most extensors originate from the <strong>common extensor tendon at the lateral epicondyle</strong> &#8212; the site of lateral epicondylalgia. Note: brachioradialis is technically a <strong>flexor</strong> despite its posterior compartment location.</p></div>
+
+      <div class="bl-strip"><div class="bl-label">Mobile Wad &amp; Supinator</div><p>The &#8220;mobile wad&#8221; = brachioradialis + ECRL + ECRB. These three muscles form the lateral forearm bulk and are easily palpated.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Brachioradialis</td><td>Proximal 2/3 of lateral supracondylar ridge</td><td>Lateral surface of distal radius (near styloid)</td><td>Radial N (C5, C6)</td><td><strong>Flexes elbow</strong> (despite being in extensor compartment). Lateral border of cubital fossa. Strongest in neutral forearm position</td></tr>
+        <tr><td class="hi">Supinator</td><td>Lateral epicondyle + posterior border of ulna</td><td>Proximal 1/3 of radius (posterolateral &amp; anterior surface)</td><td>Radial N (C5, C6)</td><td>Supinates forearm. <strong>Deep branch of radial nerve pierces supinator</strong> &#8594; potential entrapment site (posterior interosseous nerve syndrome / radial tunnel syndrome)</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip gold"><div class="bl-label">Wrist Extensors</div></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Extensor Carpi Radialis Longus (ECRL)</td><td>Lateral supracondylar ridge</td><td>Base of 2nd metacarpal</td><td>Radial N (C6, C7, C8)</td><td>Extension &amp; radial deviation of wrist</td></tr>
+        <tr><td class="warn">Extensor Carpi Radialis Brevis (ECRB)</td><td>Lateral epicondyle (common extensor tendon)</td><td>Base of 3rd metacarpal</td><td>Radial N &#8594; deep branch (C6, C7, C8)</td><td>Extension &amp; radial deviation of wrist. <strong>Most commonly affected tendon in lateral epicondylalgia</strong></td></tr>
+        <tr><td class="hi">Extensor Carpi Ulnaris (ECU)</td><td>Lateral epicondyle + posterior border of ulna</td><td>Base of 5th metacarpal</td><td>Radial N &#8594; PIN (C6, C7, C8)</td><td>Extension &amp; ulnar deviation of wrist</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip"><div class="bl-label">Digit Extensors</div></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Extensor Digitorum (ED)</td><td>Lateral epicondyle</td><td>Extensor expansions of digits 2&#8211;5</td><td>Radial N &#8594; PIN (C6, C7, C8)</td><td>Extends digits 2&#8211;5 at MCP &amp; IP joints; assists wrist extension</td></tr>
+        <tr><td class="hi">Extensor Indicis (EI)</td><td>Posterior surface of ulna + interosseous membrane</td><td>Extensor expansion of 2nd digit</td><td>Radial N &#8594; PIN (C6, C7, C8)</td><td>Extends 2nd digit independently. Allows index finger extension when fist is closed</td></tr>
+        <tr><td class="hi">Extensor Digiti Minimi (EDM)</td><td>Lateral epicondyle</td><td>Extensor expansion of 5th digit</td><td>Radial N &#8594; PIN (C6, C7, C8)</td><td>Extends 5th digit independently</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip red"><div class="bl-label">Thumb Extensors &amp; Abductor</div><p>The tendons of APL + EPB form the <strong>lateral border</strong> and EPL forms the <strong>medial border</strong> of the <strong>anatomical snuffbox</strong>. The radial artery passes through the snuffbox &#8212; palpable here. Scaphoid fracture tenderness is assessed in the snuffbox floor.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">Abductor Pollicis Longus (APL)</td><td>Posterior surface of proximal ulna, interosseous membrane &amp; radius</td><td>Base of 1st metacarpal</td><td>Radial N &#8594; PIN (C6, C7, C8)</td><td>Abducts thumb; extends CMC joint. APL + EPB tendons = <strong>1st dorsal compartment</strong> (DeQuervain's target)</td></tr>
+        <tr><td class="hi">Extensor Pollicis Brevis (EPB)</td><td>Posterior radius + interosseous membrane</td><td>Base of proximal phalanx of thumb</td><td>Radial N &#8594; PIN (C6, C7, C8)</td><td>Extends MCP &amp; CMC joints of thumb. In 1st dorsal compartment with APL</td></tr>
+        <tr><td class="hi">Extensor Pollicis Longus (EPL)</td><td>Posterior surface of middle 1/3 of ulna + interosseous membrane</td><td>Base of distal phalanx of thumb</td><td>Radial N &#8594; PIN (C6, C7, C8)</td><td>Extends IP, MCP &amp; CMC joints of thumb. Tendon hooks around <strong>Lister's tubercle</strong> (dorsal tubercle of radius) &#8212; potential rupture site</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Nerve Pathways Through the Forearm &#8212; Complete Routes</h4>
+      <div class="ma-tags"><span class="ma-tag green">Median = carpal tunnel</span><span class="ma-tag gold">Ulnar = cubital tunnel &#8594; Guyon's canal</span><span class="ma-tag purple">Radial = spiral groove &#8594; supinator</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip green"><div class="bl-label">Median Nerve (C5&#8211;T1)</div>
+      <p><strong>Pathway:</strong> Enters cubital fossa with brachial artery (medial to biceps tendon) &#8594; passes between two heads of <strong>pronator teres</strong> (compression site #1) &#8594; gives off <strong>AIN</strong> (pure motor branch) &#8594; descends between FDS and FDP &#8594; at wrist: between FCR and palmaris longus &#8594; passes <strong>deep to flexor retinaculum through carpal tunnel</strong> (compression site #2) &#8594; gives off <strong>recurrent branch</strong> to thenar muscles &#8594; supplies lateral 2 lumbricals + palmar digits 1&#8211;3.5.</p>
+      <p style="margin-top:8px"><strong>No branches in the arm.</strong> In the forearm, it supplies: pronator teres, FCR, palmaris longus, FDS, and (via AIN) lateral FDP, FPL, pronator quadratus.</p>
+      <p style="margin-top:8px"><strong>Entrapment sites:</strong> (1) Between heads of pronator teres (pronator syndrome). (2) Under FDS fibrous arch (sublimis bridge). (3) Carpal tunnel (most common). <strong>AIN syndrome:</strong> weakness of FPL + lateral FDP + PQ without sensory loss.</p></div>
+
+      <div class="bl-strip gold"><div class="bl-label">Ulnar Nerve (C8&#8211;T1)</div>
+      <p><strong>Pathway:</strong> Travels medial to brachial artery in arm &#8594; mid-humerus: pierces medial intermuscular septum, descends posteriorly &#8594; passes <strong>posterior to medial epicondyle</strong> (superficial = &#8220;funny bone&#8221;, compression site #1: cubital tunnel) &#8594; enters forearm between two heads of <strong>FCU</strong> &#8594; descends between FCU and FDP &#8594; at wrist: passes <strong>superficial (anterior) to flexor retinaculum</strong> through <strong>Guyon's canal</strong> (compression site #2) &#8594; divides into superficial (sensory to medial 1.5 digits) + deep (motor to all intrinsics except lateral 2 lumbricals, thenar, and 1st dorsal interosseous) branches.</p>
+      <p style="margin-top:8px"><strong>No branches in arm or axilla.</strong> In forearm: supplies FCU and medial half of FDP only. In hand: supplies all intrinsics except LOAF (Lateral 2 lumbricals, Opponens pollicis, Abductor pollicis brevis, Flexor pollicis brevis).</p>
+      <p style="margin-top:8px"><strong>Clinical:</strong> Ulnar nerve is critical for fine motor / hand dexterity. Complete ulnar palsy = <strong>claw hand</strong> (hyperextension MCP + flexion IP of digits 4&#8211;5), loss of finger abduction/adduction, weakened grip.</p></div>
+
+      <div class="bl-strip purple"><div class="bl-label">Radial Nerve (C5&#8211;T1)</div>
+      <p><strong>Pathway:</strong> In arm: wraps posteriorly around humerus in <strong>radial (spiral) groove</strong> with deep brachial artery (vulnerable to mid-shaft humeral fracture) &#8594; pierces lateral intermuscular septum &#8594; descends between brachialis and brachioradialis &#8594; at cubital fossa: divides into <strong>deep branch</strong> and <strong>superficial branch</strong>.</p>
+      <p style="margin-top:8px"><strong>Deep branch:</strong> pierces <strong>supinator</strong> (compression site: radial tunnel / posterior interosseous nerve syndrome) &#8594; continues as <strong>PIN (posterior interosseous nerve)</strong> &#8594; supplies ALL posterior forearm muscles (extensors).</p>
+      <p style="margin-top:8px"><strong>Superficial branch:</strong> continues distally deep to brachioradialis &#8594; becomes cutaneous &#8594; supplies dorsolateral hand skin (except distal digits 1&#8211;3.5). <strong>Radial nerve supplies NO hand muscles.</strong></p>
+      <p style="margin-top:8px"><strong>Clinical:</strong> Radial nerve injury = <strong>wrist drop</strong> (loss of wrist/finger/thumb extension). &#8220;Saturday night palsy&#8221; = compression in radial groove from arm draped over chair while sleeping/intoxicated.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Brachial Plexus &#8212; Complete Organization</h4>
+      <div class="ma-tags"><span class="ma-tag">Roots &#8594; Trunks &#8594; Divisions &#8594; Cords &#8594; Branches</span><span class="ma-tag red">&#8220;Robert Taylor Drinks Cold Beer&#8221;</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Organization (Proximal &#8594; Distal)</div><p>Mnemonic: <strong>R</strong>obert <strong>T</strong>aylor <strong>D</strong>rinks <strong>C</strong>old <strong>B</strong>eer = Roots, Trunks, Divisions, Cords, Branches. Formed by ventral rami of <strong>C5&#8211;T1</strong>. Roots pass between anterior and middle scalene muscles.</p></div>
+      <table class="data-table"><thead><tr><th>Level</th><th>Components</th><th>Nerves Emerging</th><th>Muscles Supplied</th></tr></thead><tbody>
+        <tr><td class="hi">Roots (C5&#8211;T1)</td><td>Ventral rami C5, C6, C7, C8, T1</td><td>Dorsal scapular N (C5); Long thoracic N (C5, C6, C7)</td><td>Rhomboids + levator scapulae; Serratus anterior</td></tr>
+        <tr><td class="hi">Trunks</td><td><strong>Superior</strong> (C5&#8211;C6), <strong>Middle</strong> (C7), <strong>Inferior</strong> (C8&#8211;T1)</td><td>Nerve to subclavius; Suprascapular N</td><td>Subclavius; Supraspinatus + infraspinatus</td></tr>
+        <tr><td class="hi">Divisions</td><td>Each trunk &#8594; anterior + posterior division</td><td>None emerge here</td><td>&#8212;</td></tr>
+        <tr><td class="warn">Lateral Cord</td><td>Anterior divisions of superior + middle trunks</td><td>Lateral pectoral N; Musculocutaneous N; Median N (lateral contribution)</td><td>Pec major (clav head); Coracobrachialis, biceps, brachialis; Forearm flexors</td></tr>
+        <tr><td class="warn">Medial Cord</td><td>Anterior division of inferior trunk</td><td>Medial pectoral N; Medial brachial + antebrachial cutaneous N; Ulnar N; Median N (medial contribution)</td><td>Pec minor + major (sternocostal); Sensory only; FCU, medial FDP, hand intrinsics</td></tr>
+        <tr><td class="warn">Posterior Cord</td><td>Posterior divisions of all 3 trunks</td><td>Upper + Lower subscapular N; Thoracodorsal N; Axillary N; Radial N</td><td>Subscapularis + teres major; Latissimus dorsi; Deltoid + teres minor; Triceps + all extensors</td></tr>
+      </tbody></table>
+
+      <div class="bl-strip red"><div class="bl-label">Five Terminal Branches &#8212; Quick Reference</div><p><strong>Musculocutaneous (C5&#8211;C7):</strong> Anterior arm flexors &#8594; lateral forearm sensation. <strong>Axillary (C5&#8211;C6):</strong> Deltoid + teres minor &#8594; regimental badge sensation. <strong>Median (C5&#8211;T1):</strong> Most forearm flexors + thenar muscles + lateral 2 lumbricals &#8594; palmar digits 1&#8211;3.5. <strong>Ulnar (C8&#8211;T1):</strong> FCU + medial FDP + most hand intrinsics &#8594; palmar digits 4&#8211;5. <strong>Radial (C5&#8211;T1):</strong> ALL extensors + triceps &#8594; posterior arm/forearm/hand sensation. No hand muscles.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Blood Supply &#8212; Arm &amp; Forearm</h4>
+      <div class="ma-tags"><span class="ma-tag">Subclavian &#8594; Axillary &#8594; Brachial &#8594; Radial + Ulnar</span><span class="ma-tag gold">Brachial divides at cubital fossa</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Arterial Pathway</div>
+      <p><strong>Aorta &#8594; Subclavian artery</strong> (R: via brachiocephalic trunk; L: directly from aorta) &#8594; becomes <strong>Axillary artery</strong> at outer border of 1st rib &#8594; becomes <strong>Brachial artery</strong> at inferior border of teres major &#8594; gives off <strong>deep artery of arm</strong> (travels with radial nerve in spiral groove) &#8594; brachial artery divides in cubital fossa into <strong>Radial artery</strong> (lateral, palpable along brachioradialis) + <strong>Ulnar artery</strong> (medial, larger).</p>
+      <p style="margin-top:8px"><strong>Ulnar artery</strong> gives off <strong>common interosseous artery</strong> &#8594; divides into anterior + posterior interosseous arteries (supply deep forearm). Ulnar artery enters hand superficial to flexor retinaculum &#8594; forms <strong>superficial palmar arch</strong>.</p>
+      <p style="margin-top:8px"><strong>Radial artery</strong> descends deep to brachioradialis (pulse palpable along its length). At wrist: passes through <strong>anatomical snuffbox</strong> dorsally &#8594; forms <strong>deep palmar arch</strong>.</p>
+      <p style="margin-top:8px"><strong>Allen's test:</strong> Assesses patency of radial and ulnar arteries at the wrist. Compress both, patient opens/closes fist, release one at a time. Hand should pink up within 5&#8211;7 seconds if artery is patent.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item">
+    <div class="ma-header" onclick="toggleMA(this)">
+      <h4>Bursae, Carrying Angle &amp; Clinical Correlations</h4>
+      <div class="ma-tags"><span class="ma-tag">Olecranon bursitis</span><span class="ma-tag gold">Radial head &#8212; MC elbow fracture</span><span class="ma-chevron">&#9660;</span></div>
+    </div>
+    <div class="ma-body">
+      <div class="grid2">
+        <div>
+          <div class="bl-strip"><div class="bl-label">Bursae of the Elbow (12+)</div>
+          <p><strong>Subcutaneous olecranon bursa</strong> &#8212; between skin and olecranon. Most clinically relevant &#8212; <strong>olecranon bursitis</strong> (&#8220;student's elbow&#8221;) from prolonged pressure. Also: intratendinous olecranon bursa, subtendinous olecranon bursa, and multiple around the radial head and ligaments.</p></div>
+          <div class="bl-strip red"><div class="bl-label">Pronation / Supination Summary</div>
+          <p><strong>Pronation:</strong> Pronator teres (strongest) + pronator quadratus. <strong>Supination:</strong> Supinator (low resistance, slow movements) + biceps brachii (strongest when resistance applied, especially at 90&#176; flexion). In supination, the radius uncrosses from the ulna; in pronation, the radius crosses over the ulna.</p></div>
+        </div>
+        <div>
+          <div class="bl-strip gold"><div class="bl-label">Common Fractures</div>
+          <p><strong>Radial head fracture</strong> &#8212; most common elbow fracture in adults. FOOSH mechanism. Pain with pronation/supination. <strong>Olecranon fracture</strong> &#8212; direct trauma. Loss of triceps extension. <strong>Supracondylar fracture</strong> &#8212; most common elbow fracture in children. Can compromise brachial artery &#8594; Volkmann's ischemic contracture (forearm compartment syndrome). <strong>Monteggia fracture</strong> = proximal ulna fracture + radial head dislocation. <strong>Galeazzi fracture</strong> = distal radius fracture + DRUJ dislocation.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- ====== SPECIAL TESTS ====== -->
+<div class="tab-panel" id="tab-tests">
 <div class="container">
 <div class="section-title">Elbow &amp; Forearm — Examination &amp; Special Tests</div>
   <div class="section-sub">The elbow is the bridge between shoulder and wrist. Pathology is frequently driven by repetitive overuse (epicondylalgia), overhead sports demands (UCL injury), or compressive neuropathy. Always include a cervical spine screen — radiculopathy mimics nearly every elbow condition.</div>
