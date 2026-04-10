@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Back Module — Clinicians Blueprint</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-<script src="themes.js"></script>
-<script src="premium.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinicians Blueprint — Back &amp; Vertebral Column</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<div class="bg-layer"><div class="bg-grid"></div><div class="bg-g1"></div><div class="bg-g2"></div></div>
 
 <nav class="site-nav">
   <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
@@ -100,1523 +95,239 @@
 </nav>
 
 
-<div style="height:52px;"></div>
-
-<div class="shell">
-<div class="mod-header">
-  <button class="mod-back" onclick="window.history.back()">← Library</button>
-  <div class="mod-center">
-    <div class="mod-eyebrow">Module 5 · Spine</div>
-    <h1 class="mod-title">Back & <em>Vertebral Column</em></h1>
-  </div>
-  <span class="mod-badge">Free Module</span>
-</div>
-
-<div class="chip-nav">
-  <button class="active" onclick="showTab('column',this)">🦴 Vertebral Column</button>
-  <button class="" onclick="showTab('vertebrae',this)">📋 Vertebrae</button>
-  <button class="" onclick="showTab('joints',this)">⚙️ Joints & Ligs</button>
-  <button class="" onclick="showTab('muscles',this)">💪 Muscles</button>
-  <button class="" onclick="showTab('suboccipital',this)">🔺 Suboccipital</button>
-  <button class="" onclick="showTab('kinesiology',this)">⚙️ Kinesiology</button>
-  <button class="" onclick="showTab('kinetics',this)">⚡ Kinetics</button>
-  <button class="" onclick="showTab('motion',this)">🔄 Motion & Coupling</button>
-  <button class="" onclick="showTab('sij',this)">🦴 Pelvis & SIJ</button>
-  <button class="" onclick="showTab('jointmob',this)">🤲 Joint Mob</button>
-  <button class="" onclick="showTab('clinical',this)">🩺 Clinical</button>
-  <button class="" onclick="showTab('review',this)">📝 Review</button>
-</div>
-
-<!-- ══ VERTEBRAL COLUMN ══ -->
-<div id="tab-column" class="tab-panel active">
-  <div class="two-col">
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Overview</div><div class="card-header-sub">Structure & Composition</div></div>
-        <div class="card-body">
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.625rem;margin-bottom:1rem;">
-            <div style="background:var(--surface);border-radius:8px;padding:0.625rem 0.75rem;text-align:center;">
-              <div style="font-family:var(--font-d);font-size:2rem;font-weight:600;color:var(--teal-light);line-height:1;">33</div>
-              <div style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);margin-top:0.25rem;">Vertebrae</div>
-            </div>
-            <div style="background:var(--surface);border-radius:8px;padding:0.625rem 0.75rem;text-align:center;">
-              <div style="font-family:var(--font-d);font-size:2rem;font-weight:600;color:var(--teal-light);line-height:1;">¼</div>
-              <div style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);margin-top:0.25rem;">Disc Height</div>
-            </div>
-            <div style="background:var(--surface);border-radius:8px;padding:0.625rem 0.75rem;text-align:center;">
-              <div style="font-family:var(--font-d);font-size:2rem;font-weight:600;color:var(--teal-light);line-height:1;">10×</div>
-              <div style="font-family:var(--font-m);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);margin-top:0.25rem;">Shock Absorption</div>
-            </div>
-          </div>
-          <div class="sec-label">Regional Breakdown</div>
-          <table class="data-table" style="margin-bottom:0.875rem;">
-            <thead><tr><th>Region</th><th>Count</th><th>Status</th><th>Curve Type</th></tr></thead>
-            <tbody>
-              <tr><td>Cervical</td><td>7</td><td>Separate</td><td>Lordosis (2°)</td></tr>
-              <tr><td>Thoracic</td><td>12</td><td>Separate</td><td>Kyphosis (1°)</td></tr>
-              <tr><td>Lumbar</td><td>5</td><td>Separate</td><td>Lordosis (2°)</td></tr>
-              <tr><td>Sacral</td><td>5</td><td>Fused (sacrum)</td><td>Kyphosis (1°)</td></tr>
-              <tr><td>Coccygeal</td><td>4</td><td>Fused (coccyx)</td><td>Variable</td></tr>
-            </tbody>
-          </table>
-          <div class="sec-label">Functions</div>
-          <div class="bullet"><span class="dot">•</span>Protect spinal cord (cord ends at L1-L2 — cauda equina below)</div>
-          <div class="bullet"><span class="dot">•</span>Support weight of head and trunk (increases caudally)</div>
-          <div class="bullet"><span class="dot">•</span>Allow movement of rib cage via costovertebral joints</div>
-          <div class="bullet"><span class="dot">•</span>Critical role in posture and locomotion</div>
-          <div class="bullet"><span class="dot">•</span>Shock absorption — curved column absorbs 10x more than straight</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Spinal Curvatures</div><div class="card-header-sub">Primary · Secondary · Abnormal</div></div>
-        <div class="card-body" id="curvature-content"></div>
-      </div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Palpable Landmarks</div><div class="card-header-sub">Clinical Reference Points</div></div>
-        <div class="card-body">
-          <table class="data-table">
-            <thead><tr><th>Level</th><th>Landmark</th></tr></thead>
-            <tbody>
-              <tr><td><span class="tag tag-teal">C7</span></td><td>Vertebra prominens (most prominent SP in flexion)</td></tr>
-              <tr><td><span class="tag tag-teal">T3</span></td><td>Medial border of scapula (superior angle)</td></tr>
-              <tr><td><span class="tag tag-teal">T4-T5</span></td><td>Sternal angle (angle of Louis) — rib 2 articulates here</td></tr>
-              <tr><td><span class="tag tag-teal">T7-T9</span></td><td>Inferior angle of scapula</td></tr>
-              <tr><td><span class="tag tag-teal">T10</span></td><td>Xiphoid process</td></tr>
-              <tr><td><span class="tag tag-teal">L4</span></td><td>Iliac crest (PSIS)</td></tr>
-              <tr><td><span class="tag tag-teal">S2</span></td><td>Posterior superior iliac spine (PSIS) — sacral dimple</td></tr>
-              <tr><td><span class="tag tag-teal">L1-L2</span></td><td>Conus medullaris (spinal cord end)</td></tr>
-            </tbody>
-          </table>
-          <div class="clinical-note" style="margin-top:0.875rem;">
-            <div class="clinical-note-lbl">Counting Spinous Processes</div>
-            <div class="clinical-note-text">Start at C7 (vertebra prominens). In thoracic region: SPs are long and angled inferiorly — the palpable SP is 1-2 levels below the actual vertebral body. In lumbar region: SPs are horizontal — what you feel is the actual level. Lumbar puncture: L3-L4 or L4-L5 space (safely below conus medullaris).</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Thoracolumbar Fascia</div></div>
-        <div class="card-body">
-          <div style="font-size:0.95rem;color:var(--text2);line-height:1.7;margin-bottom:0.75rem;">A thick, multi-layered fascial envelope that invests the deep back muscles. Attaches to the spinous processes and transverse processes of the thoracic and lumbar regions, forming a posterior band of connective tissue.</div>
-          <div class="sec-label">Muscle Origins</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Latissimus dorsi</strong> — major extrinsic back muscle origin</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Transversus abdominis</strong> — wraps around laterally</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Internal oblique</strong> — attaches to posterior layer</div>
-          <div class="clinical-note">
-          <div class="clinical-note-lbl">Clinical Relevance</div>
-          <div class="clinical-note-text cn-short">The TLF plays a role in load transfer across the lumbopelvic region. Tension from lat, TrA, and internal oblique creates a posterior "tension band" — important in core stability.</div>
-          <div class="cn-more">TLF disruption (surgery, trauma) → loss of lumbar spine stiffness and stability. Theorized role in LBP via altered proprioception and load transfer.</div>
-          <button class="cn-toggle" onclick="toggleCN(this)">+ Show more</button>
-        </div>
-        </div>
-      </div>
-    </div>
+<div class="hero">
+  <div class="hero-tag">MSK Spine &middot; Back &amp; Vertebral Column</div>
+  <h1>Back &amp; <span>Vertebral Column</span></h1>
+  <p>Vertebral column structure, regional vertebral characteristics, spinal ligaments, intervertebral disc anatomy, back muscles with OINA (erector spinae, transversospinalis, deep stabilizers), suboccipital triangle, spinal kinesiology, coupled motion, SIJ anatomy, and clinical pathology (spondylosis, spondylolysis, spondylolisthesis, stenosis, disc herniation).</p>
+  <div class="hero-badges">
+    <span class="badge">Vertebral Column</span>
+    <span class="badge gold">Ligaments &amp; Discs</span>
+    <span class="badge purple">Muscles &amp; OINA</span>
+    <span class="badge">Kinesiology</span>
+    <span class="badge red">Clinical Pathology</span>
+    <span class="badge green">SIJ &amp; Pelvis</span>
   </div>
 </div>
 
-<!-- ══ VERTEBRAE ══ -->
-<div id="tab-vertebrae" class="tab-panel">
-  <div class="chip-nav" id="vert-nav">
-    <button class="active" onclick="selectVert('typical',this)">Typical</button>
-    <button class="" onclick="selectVert('cervical',this)">Cervical</button>
-    <button class="" onclick="selectVert('atlas',this)">C1 — Atlas</button>
-    <button class="" onclick="selectVert('axis',this)">C2 — Axis</button>
-    <button class="" onclick="selectVert('thoracic',this)">Thoracic</button>
-    <button class="" onclick="selectVert('lumbar',this)">Lumbar</button>
-    <button class="" onclick="selectVert('sacrum',this)">Sacrum</button>
-  </div>
-  <div id="vert-content"></div>
+<div class="chip-nav" id="chipNav">
+  <button class="active" onclick="showTab('column',this)">Vertebral Column</button>
+  <button onclick="showTab('vertebrae',this)">Regional Vertebrae</button>
+  <button onclick="showTab('joints',this)">Joints &amp; Ligaments</button>
+  <button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
+  <button onclick="showTab('kinesiology',this)">Kinesiology</button>
+  <button onclick="showTab('clinical',this)">Clinical Pathology</button>
+  <button onclick="showTab('review',this)">Review</button>
 </div>
 
-<!-- ══ JOINTS & LIGAMENTS ══ -->
-<div id="tab-joints" class="tab-panel">
-  <div class="two-col">
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Intervertebral Disc (IVD)</div><div class="card-header-sub">Annulus Fibrosus + Nucleus Pulposus</div></div>
-        <div class="card-body">
-          <div class="sec-label">Annulus Fibrosus</div>
-          <div class="bullet"><span class="dot">•</span>Concentric layers of collagen fibers (type I collagen predominant)</div>
-          <div class="bullet"><span class="dot">•</span>Fibers obliquely oriented — alternate directions layer by layer (<strong style="color:var(--text)">"crosswoven effect"</strong>)</div>
-          <div class="bullet"><span class="dot">•</span>Provides tensile strength — resists rotation, flexion, extension, and compression</div>
-          <div class="bullet"><span class="dot">•</span>Anchors to bone and cartilaginous endplates of vertebral bodies</div>
-          <div class="bullet"><span class="dot">•</span>Outer layers blend with ALL and PLL</div>
-          <div class="bullet"><span class="dot">•</span>Outer layers have <strong style="color:var(--text)">innervation</strong> (sinuvertebral nerve) — potential pain source</div>
-          <div class="sec-label" style="margin-top:0.875rem;">Nucleus Pulposus</div>
-          <div class="bullet"><span class="dot">•</span>Proteoglycans (aggrecan) attract and bind water — hydrophilic</div>
-          <div class="bullet"><span class="dot">•</span>Not a "jelly donut" — gradual transition from annulus at margins</div>
-          <div class="bullet"><span class="dot">•</span>Contains fine collagen fibers in loose, random arrangement</div>
-          <div class="bullet"><span class="dot">•</span>With aging: proteoglycan loss → decreased water content → disc height loss</div>
-          <div class="bullet"><span class="dot">•</span>Acts as a hydraulic cushion — distributes compressive loads radially</div>
-          <div class="clinical-note">
-            <div class="clinical-note-lbl">Disc Pathology</div>
-            <div class="clinical-note-text">Annular fissures = discogenic pain (even without herniation). Protrusion/herniation: nucleus material pushes through annular fibers → possible nerve root compression → radicular pain (myotomal weakness, dermatomal numbness). Most herniations: posterolateral (PLL is thinnest here). L4-L5 and L5-S1 most common levels. C5-C6 and C6-C7 most common in cervical spine. Degenerative disc disease: cascade of height loss → increased facet load → instability → osteophyte formation.</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Facet (Zygapophyseal) Joints</div></div>
-        <div class="card-body">
-          <div style="font-size:0.95rem;color:var(--text2);line-height:1.7;margin-bottom:0.875rem;">Plane synovial joints formed between the superior articular process of the lower vertebra and the inferior articular process of the upper vertebra. Surrounded by loose articular capsule. Permit gliding movement. Orientation varies by spinal region — critical determinant of motion direction.</div>
-          <div class="sec-label">Facet Orientation by Region</div>
-          <table class="data-table">
-            <thead><tr><th>Region</th><th>Superior Facet Faces</th><th>Inferior Facet Faces</th><th>Primary Motion Allowed</th></tr></thead>
-            <tbody>
-              <tr><td>Cervical</td><td>Superior + posterior</td><td>Inferior + anterior</td><td>All planes (esp. rotation)</td></tr>
-              <tr><td>Thoracic</td><td>Posterior + lateral</td><td>Anterior + medial</td><td>Rotation (ribs limit), LF</td></tr>
-              <tr><td>Lumbar</td><td>Posterior + medial</td><td>Anterior + lateral</td><td>Flexion/Extension (limits rotation)</td></tr>
-            </tbody>
-          </table>
-          <div class="clinical-note" style="margin-top:0.875rem;">
-            <div class="clinical-note-lbl">Clinical Relevance</div>
-            <div class="clinical-note-text">Innervated by dorsal primary rami (DPR) from the segment AND one level above AND below — explains why local anesthetic blocks of 2 medial branch nerves are needed to denervate one facet joint. Facet joint pain: unilateral back pain, worse with extension and rotation, may refer to buttock/thigh (not below knee). Medial branch block used diagnostically and therapeutically. Facet OA is extremely common — accounts for 15-45% of chronic LBP.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Spinal Ligaments</div><div class="card-header-sub">Stability & Motion Limiting</div></div>
-        <div class="card-body" id="ligament-content"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Craniovertebral Joints</div><div class="card-header-sub">Occiput · C1 · C2 — Upper Cervical Complex</div></div>
-        <div class="card-body" id="cv-joint-content"></div>
-      </div>
-    </div>
-  </div>
+<!-- ====== VERTEBRAL COLUMN ====== -->
+<div class="tab-panel active" id="tab-column">
+<div class="container">
+  <div class="section-title">Vertebral Column &mdash; Structure &amp; Curvatures</div>
+  <div class="section-sub">The vertebral column is the axial skeleton&rsquo;s central pillar: 33 vertebrae (7 cervical, 12 thoracic, 5 lumbar, 5 sacral fused, 4 coccygeal fused), 23 intervertebral discs, and 4 curvatures that balance load and absorb shock.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Spinal Curvatures</div>
+  <table class="data-table"><thead><tr><th>Curvature</th><th>Type</th><th>Development</th><th>Clinical</th></tr></thead><tbody>
+    <tr><td class="hi">Thoracic + Sacral</td><td><strong>Primary (kyphotic)</strong> &mdash; concave anteriorly</td><td>Present at birth. Original fetal &ldquo;C-curve&rdquo;</td><td>Excessive thoracic kyphosis: osteoporosis compression fractures, Scheuermann&rsquo;s disease</td></tr>
+    <tr><td class="hi">Cervical + Lumbar</td><td><strong>Secondary (lordotic)</strong> &mdash; concave posteriorly</td><td>Cervical: develops 3&ndash;4 months (head control). Lumbar: 12&ndash;18 months (standing/walking)</td><td>Excessive lordosis: postural habits, pregnancy, weak abdominals, hip flexor tightness</td></tr>
+    <tr><td class="warn">Scoliosis</td><td>Lateral deviation with rotational component</td><td>Named for convexity. Most commonly idiopathic in adolescents</td><td>Adam&rsquo;s forward bend test. Treatment depends on severity: observation, bracing, surgical</td></tr>
+  </tbody></table>
+
+  <div class="section-title" style="font-size:1.2rem;">Typical Vertebra &mdash; Components</div>
+  <table class="data-table"><thead><tr><th>Component</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
+    <tr><td class="hi">Vertebral Body</td><td>Anterior weight-bearing cylinder. Size increases from C3 to L5 (proportional to load). Cancellous core + cortical shell</td><td>Compression fractures most common at thoracolumbar junction (T12&ndash;L1)</td></tr>
+    <tr><td class="hi">Vertebral Arch</td><td>Posterior. Pedicles (connect body to arch) + Laminae (connect pedicles to spinous process). Encloses vertebral foramen</td><td>Spondylolysis = pars interarticularis fracture (between sup + inf articular processes)</td></tr>
+    <tr><td class="hi">Processes (7)</td><td>Spinous process (&times;1), Transverse processes (&times;2), Superior articular facets (&times;2), Inferior articular facets (&times;2)</td><td>Facet orientation determines available motion at each level</td></tr>
+    <tr><td class="hi">Vertebral Foramen</td><td>Space between body and arch housing spinal cord. Vertebral foramina stack = vertebral canal</td><td>Stenosis = narrowing of canal compressing cord/roots</td></tr>
+    <tr><td class="hi">Intervertebral Foramen (IVF)</td><td>Lateral opening between adjacent pedicles. Spinal nerve root exits here</td><td>Disc herniation, osteophytes, or facet hypertrophy can narrow IVF &rarr; radiculopathy</td></tr>
+  </tbody></table>
+
+  <div class="bl-strip"><div class="bl-label">Intervertebral Disc</div>
+  <p><strong>Annulus fibrosus:</strong> concentric rings of type I collagen (outer) and type II collagen (inner). Resists tension. Outer 1/3 innervated (sinuvertebral nerve) &mdash; disc tears here cause pain. <strong>Nucleus pulposus:</strong> gel-like center rich in proteoglycans (aggrecan attracts/binds water). Resists compression. Highest water content in the morning (disc imbibes fluid overnight), loses height during the day (creep). <strong>Cartilaginous endplates:</strong> hyaline cartilage on vertebral body surfaces. Primary route for disc nutrition (avascular disc depends on diffusion through endplates). Endplate damage = disc degeneration cascade. No disc between C0&ndash;C1 or C1&ndash;C2.</p></div>
+</div>
 </div>
 
-<!-- ══ MUSCLES ══ -->
-<div id="tab-muscles" class="tab-panel">
-  <div class="chip-nav" id="back-muscle-nav">
-    <button class="active" onclick="selectBackMuscle('superficial',this)">Superficial Extrinsic</button>
-    <button class="" onclick="selectBackMuscle('intermediate',this)">Intermediate Extrinsic</button>
-    <button class="" onclick="selectBackMuscle('splenius',this)">Splenius Group</button>
-    <button class="" onclick="selectBackMuscle('erector',this)">Erector Spinae</button>
-    <button class="" onclick="selectBackMuscle('transversospinalis',this)">Transversospinalis</button>
-    <button class="" onclick="selectBackMuscle('minor',this)">Minor Deep Intrinsics</button>
-  </div>
-  <div id="back-muscle-content"></div>
+<!-- ====== REGIONAL VERTEBRAE ====== -->
+<div class="tab-panel" id="tab-vertebrae">
+<div class="container">
+  <div class="section-title">Regional Vertebral Characteristics</div>
+  <div class="section-sub">Each region has distinct features that determine available motion and clinical presentation. Facet orientation is the single most important factor determining movement at each level.</div>
+
+  <table class="data-table"><thead><tr><th>Region</th><th>Key Features</th><th>Facet Orientation</th><th>Primary Motion</th><th>Clinical</th></tr></thead><tbody>
+    <tr><td class="warn">Cervical (C3&ndash;C7)</td><td>Smallest bodies. Bifid spinous processes (C3&ndash;C6). <strong>Transverse foramina</strong> (vertebral artery C6&rarr;C1). Uncinate processes (uncovertebral joints of Luschka)</td><td>~45&deg; between coronal and horizontal</td><td>Most mobile region. Flex/ext, rotation, lateral flexion all substantial</td><td>Vertebral artery enters at C6. Uncovertebral osteophytes &rarr; radiculopathy or vertebral artery compression</td></tr>
+    <tr><td class="hi">C1 (Atlas)</td><td>No body, no spinous process. Ring shape. Superior facets = concave (receive occipital condyles). Widest transverse processes of any cervical vertebra</td><td>Superior: concave, accept occipital condyles</td><td>&ldquo;Yes&rdquo; joint: primarily flex/ext (~15&deg;)</td><td>Jefferson fracture: axial compression (diving) &rarr; burst fracture of C1 ring</td></tr>
+    <tr><td class="hi">C2 (Axis)</td><td><strong>Dens (odontoid process)</strong> projects superiorly from body. Acts as pivot for C1 rotation. Strongest cervical vertebra</td><td>Superior: convex, articulate with C1</td><td>&ldquo;No&rdquo; joint: ~50% of total cervical rotation</td><td>Hangman&rsquo;s fracture: bilateral pars fracture of C2. Dens fracture: Type II most common + most unstable</td></tr>
+    <tr><td class="warn">Thoracic (T1&ndash;T12)</td><td>Heart-shaped bodies. Long, inferiorly-angled spinous processes. <strong>Costal facets</strong> on bodies + TPs for rib articulation. Most kyphotic region</td><td>~60&deg; from horizontal (nearly coronal/frontal plane)</td><td>Rotation is primary motion. Flex/ext limited by ribs and SP overlap</td><td>Most stable region (rib cage). Compression fractures common with osteoporosis. Disc herniations rare</td></tr>
+    <tr><td class="warn">Lumbar (L1&ndash;L5)</td><td>Largest bodies (most load). Short, thick SPs. <strong>Mammillary processes</strong> on superior articular processes (multifidus attachment). Pars interarticularis</td><td>~90&deg; from horizontal (sagittal plane)</td><td>Flex/ext dominant. Rotation very limited (facets block it)</td><td>MC disc herniation level: L4&ndash;L5 and L5&ndash;S1. Spondylolysis at pars. Spinal stenosis most symptomatic here</td></tr>
+    <tr><td class="hi">Sacrum</td><td>5 fused vertebrae. Triangular. Anterior/posterior sacral foramina (nerve root exit). Sacral canal, sacral hiatus, sacral cornua. Auricular surface (SI joint)</td><td>N/A (fused)</td><td>Nutation/counternutation at SIJ</td><td>Sacral fractures: insufficiency fractures in osteoporosis. Caudal epidural through sacral hiatus</td></tr>
+  </tbody></table>
+</div>
 </div>
 
-<!-- ══ SUBOCCIPITAL ══ -->
-<div id="tab-suboccipital" class="tab-panel">
-  <div class="two-col">
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Suboccipital Triangle</div><div class="card-header-sub">Upper Cervical — Deep</div></div>
-        <div class="card-body">
-          <div class="sec-label">Borders</div>
-          <div style="display:grid;grid-template-columns:auto 1fr;gap:0.5rem 1rem;margin-bottom:1rem;font-size:0.95rem;">
-            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Medial</span><span style="color:var(--text2);">Rectus capitis posterior <strong style="color:var(--text)">major</strong></span>
-            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Lateral</span><span style="color:var(--text2);">Obliquus capitis <strong style="color:var(--text)">superior</strong></span>
-            <span style="color:var(--text3);font-family:var(--font-m);font-size:0.7rem;text-transform:uppercase;">Inferior</span><span style="color:var(--text2);">Obliquus capitis <strong style="color:var(--text)">inferior</strong></span>
-          </div>
-          <div class="sec-label">Floor</div>
-          <div style="font-size:0.95rem;color:var(--text2);margin-bottom:0.875rem;">Posterior arch of the atlas (C1) and posterior atlanto-occipital membrane</div>
-          <div class="sec-label">Roof</div>
-          <div style="font-size:0.95rem;color:var(--text2);margin-bottom:0.875rem;">Semispinalis capitis and longissimus capitis</div>
-          <div class="sec-label">Contents</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Vertebral artery</strong> — forms a large loop as it passes from C1 transverse foramen to foramen magnum; extremely vulnerable to compression with upper cervical manipulation in rotation</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Suboccipital nerve (C1 DPR)</strong> — purely motor; innervates all four suboccipital muscles; no sensory distribution</div>
-          <div class="bullet"><span class="dot">•</span>Suboccipital venous plexus and anastomotic vessels</div>
-          <div class="warn-note">
-            <div class="warn-note-lbl">Vertebral Artery Caution</div>
-            <div class="warn-note-text">The vertebral artery forms a large "S-curve" loop in the suboccipital triangle between C1 and the foramen magnum. Sustained end-range cervical rotation compresses the contralateral vertebral artery here. This is the primary anatomical basis for pre-manipulation VBI screening. Upper cervical manipulation in patients with atherosclerosis, hypermobility, or RA (odontoid erosion) carries risk.</div>
-          </div>
-        </div>
-      </div>
+<!-- ====== JOINTS & LIGAMENTS ====== -->
+<div class="tab-panel" id="tab-joints">
+<div class="container">
+  <div class="section-title">Spinal Joints &amp; Ligaments</div>
+  <div class="section-sub">Each motion segment (2 adjacent vertebrae + disc + ligaments) has 3 joints: 1 disc (anterior) + 2 facets (posterior). The &ldquo;three-joint complex&rdquo; determines motion and stability at each level.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Spinal Ligaments</h4><span class="ma-chevron">&#9660;</span></div>
+    <div class="ma-body">
+      <table class="data-table"><thead><tr><th>Ligament</th><th>Attachment</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
+        <tr><td class="warn">ALL (Anterior Longitudinal)</td><td>Occiput to sacrum along ANTERIOR vertebral bodies</td><td>Limits extension. Reinforces anterior annulus</td><td>Damaged in hyperextension injuries. Widest at thoracic level</td></tr>
+        <tr><td class="warn">PLL (Posterior Longitudinal)</td><td>C2 to sacrum along POSTERIOR bodies WITHIN vertebral canal</td><td>Limits flexion. Reinforces posterior annulus</td><td>Narrows as it descends (hourglass) &mdash; thinnest at L4&ndash;L5 (explains posterolateral disc herniations). OPLL = canal stenosis</td></tr>
+        <tr><td class="hi">Ligamentum Flavum</td><td>Connects adjacent laminae</td><td>~80% elastin (highest of any ligament). Allows smooth flexion without buckling into canal</td><td>Thickens with age &rarr; major contributor to lumbar stenosis. Yellow color (flavum = yellow)</td></tr>
+        <tr><td class="hi">Interspinous</td><td>Between adjacent spinous processes</td><td>Limits flexion. Weakest spinal ligaments</td><td>First to fail in flexion-distraction injuries</td></tr>
+        <tr><td class="hi">Supraspinous</td><td>Tips of spinous processes C7 to sacrum</td><td>Limits flexion. Palpable midline taut band</td><td>Merges with nuchal ligament superiorly</td></tr>
+        <tr><td class="hi">Nuchal Ligament</td><td>EOP to C7 along cervical SP tips</td><td>Limits cervical flexion. Median septum separating R/L posterior muscles</td><td>Cervical homolog of supraspinous ligament</td></tr>
+        <tr><td class="hi">Intertransverse</td><td>Between transverse processes</td><td>Limits contralateral lateral flexion</td><td>More distinct in lumbar; rudimentary in cervical</td></tr>
+      </tbody></table>
     </div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Four Suboccipital Muscles</div><div class="card-header-sub">All innervated by Suboccipital Nerve (C1 DPR)</div></div>
-        <div class="card-body" id="suboccipital-muscles"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Clinical Applications</div></div>
-        <div class="card-body">
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Rectus capitis posterior minor</strong> has a connective tissue bridge to the <strong style="color:var(--text)">posterior dura</strong> — postulated mechanism for suboccipital pain causing dural tension and headache</div>
-          <div class="bullet"><span class="dot">•</span>Suboccipital muscles are <strong style="color:var(--text)">densest in muscle spindles</strong> in the body — critical proprioceptive role (gaze stabilization, cervicogenic dizziness)</div>
-          <div class="bullet"><span class="dot">•</span>Whiplash: suboccipital muscles are injured — explains cervicogenic headache and dizziness post-MVA</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Suboccipital release techniques:</strong> manual therapy targeting these muscles for cervicogenic headache — high-level evidence for cervicogenic headache treatment</div>
-          <div class="bullet"><span class="dot">•</span>Greater occipital nerve (C2 DPR) passes through/adjacent to semispinalis capitis — entrapment = occipital neuralgia</div>
-        </div>
-      </div>
+  </div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Craniovertebral (Upper Cervical) Joints &amp; Ligaments</h4><span class="ma-chevron">&#9660;</span></div>
+    <div class="ma-body">
+      <table class="data-table"><thead><tr><th>Joint/Ligament</th><th>Structure</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
+        <tr><td class="warn">C0&ndash;C1 (Atlanto-Occipital)</td><td>Occipital condyles on C1 superior facets. Biconvex</td><td>&ldquo;Yes&rdquo; joint: flex/ext ~15&deg;, lateral flexion ~8&deg;. Minimal rotation. No disc</td><td>AO membranes (anterior + posterior) connect C1 arches to foramen magnum</td></tr>
+        <tr><td class="warn">C1&ndash;C2 (Atlantoaxial) &mdash; 3 joints</td><td>Median: dens + anterior arch C1. Lateral (&times;2): C1/C2 facets</td><td>&ldquo;No&rdquo; joint: ~45&deg; rotation per side (50% of total cervical rotation). Minimal flex/ext</td><td>ADI &gt;3mm = instability. Sharp-Purser test</td></tr>
+        <tr><td class="hi">Transverse Ligament</td><td>Arches between lateral masses of C1, holds dens against anterior arch</td><td><strong>Most critical upper cervical ligament.</strong> Prevents anterior translation of C1 on C2</td><td>Rupture = life-threatening. RA erosion, Down syndrome (screen before sports). ADI monitoring</td></tr>
+        <tr><td class="hi">Alar Ligaments</td><td>Dens to occipital condyles (paired)</td><td>Limit rotation and lateral flexion of C0&ndash;C1&ndash;C2</td><td>Alar ligament stress test: lateral flexion of head with C2 stabilized</td></tr>
+        <tr><td class="hi">Tectorial Membrane</td><td>Continuation of PLL from C2 to occiput (inside canal)</td><td>Limits flexion of upper cervical spine</td><td>Covers the transverse ligament posteriorly</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Facet (Zygapophyseal) Joints</h4><span class="ma-chevron">&#9660;</span></div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Facet Joint Anatomy</div><p>Synovial plane joints between superior and inferior articular processes of adjacent vertebrae. Lined with hyaline cartilage, contain synovial fluid, enclosed in a joint capsule. <strong>Facet orientation determines available motion</strong> &mdash; this is the most important concept in spinal biomechanics. Facets are richly innervated by the <strong>medial branch of the dorsal ramus</strong> (2 levels: same level + one above) &mdash; target for facet blocks and radiofrequency ablation for facet-mediated pain. Capsular pattern: equal limitation of extension and lateral flexion in all directions.</p></div>
     </div>
   </div>
 </div>
+</div>
 
-<!-- ══ KINESIOLOGY ══ -->
-<div id="tab-kinesiology" class="tab-panel">
-  <div class="two-col">
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Facet Arthrokinematics</div><div class="card-header-sub">Universal Rules — All Regions (except Suboccipital)</div></div>
-        <div class="card-body" id="kin-facet-arthro"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Kinematics Table</div><div class="card-header-sub">Tilting · Gliding · Vertebral Foramen Changes</div></div>
-        <div class="card-body" id="kin-table"></div>
-      </div>
+<!-- ====== MUSCLES & OINA ====== -->
+<div class="tab-panel" id="tab-muscles">
+<div class="container">
+  <div class="section-title">Back Muscles &mdash; OINA Reference</div>
+  <div class="section-sub">Organized by layer and function. The erector spinae provide gross movement; the transversospinalis group provides segmental stabilization and fine-tuning. Multifidus is the most clinically important spinal muscle.</div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Erector Spinae &mdash; 3 Columns (&ldquo;I Love Spine&rdquo;)</h4><span class="ma-chevron">&#9660;</span></div>
+    <div class="ma-body">
+      <div class="bl-strip"><div class="bl-label">Mnemonic: I Love Spine (lateral &rarr; medial)</div><p><strong>I</strong>liocostalis (lateral) &rarr; <strong>L</strong>ongissimus (intermediate) &rarr; <strong>S</strong>pinalis (medial). All innervated by <strong>dorsal primary rami</strong>. Bilateral: extends spine. Unilateral: ipsilateral lateral flexion. The primary gross extensors of the vertebral column.</p></div>
+      <table class="data-table"><thead><tr><th>Column</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="warn">Iliocostalis (lateral)</td><td>Sacrum, iliac crest, spinous processes</td><td>Angles of ribs, cervical TPs</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Unilateral: ipsilateral lateral flexion</td></tr>
+        <tr><td class="warn">Longissimus (intermediate)</td><td>Sacrum, iliac crest, spinous + transverse processes</td><td>TPs of thoracic/cervical, mastoid process (capitis)</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Unilateral: ipsilateral lateral flexion + rotation</td></tr>
+        <tr><td class="hi">Spinalis (medial)</td><td>Spinous processes (lower)</td><td>Spinous processes (upper)</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Smallest column, often blends with semispinalis</td></tr>
+      </tbody></table>
     </div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Facet Orientation by Region</div><div class="card-header-sub">Angles · Planes · Preferred Motion</div></div>
-        <div class="card-body" id="kin-orientation"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Rule of 3's — Thoracic Spine</div><div class="card-header-sub">SP vs TP Level Relationships</div></div>
-        <div class="card-body" id="kin-rule3"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Lumbosacral Rhythm</div><div class="card-header-sub">Segmental vs En Bloc · Clinical Assessment</div></div>
-        <div class="card-body" id="kin-lsr"></div>
-      </div>
+  </div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Transversospinalis Group &mdash; Deep Stabilizers</h4><span class="ma-chevron">&#9660;</span></div>
+    <div class="ma-body">
+      <div class="bl-strip gold"><div class="bl-label">Key Concept</div><p>These muscles run from transverse processes to spinous processes (hence &ldquo;transversospinalis&rdquo;). They span fewer segments than erector spinae &mdash; providing <strong>segmental control and fine-tuning</strong>. All produce contralateral rotation and extension. All innervated by dorsal primary rami.</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Spans</th><th>Origin</th><th>Insertion</th><th>Action</th><th>Clinical</th></tr></thead><tbody>
+        <tr><td class="hi">Semispinalis</td><td>4&ndash;6 segments</td><td>TPs</td><td>SPs 4&ndash;6 levels above</td><td>Extends, contralateral rotation</td><td>Semispinalis capitis = largest posterior neck muscle. Covers suboccipital triangle</td></tr>
+        <tr><td class="warn">Multifidus</td><td>2&ndash;4 segments</td><td>Sacrum, TPs T1&ndash;L5, articular pillars C4&ndash;C7</td><td>SPs 2&ndash;4 levels above (mammillary processes in lumbar)</td><td>Bilateral: extension, segmental stabilization. Unilateral: contralateral rotation</td><td><strong>THE KEY SPINAL STABILIZER.</strong> Atrophies within DAYS of acute LBP and does NOT spontaneously recover. Must be specifically retrained. Poor feedforward activation in chronic LBP. Target with motor control exercises</td></tr>
+        <tr><td class="hi">Rotatores</td><td>1&ndash;2 segments</td><td>TPs</td><td>SPs 1&ndash;2 levels above</td><td>Contralateral rotation, proprioception</td><td>Best developed in thoracic region. Likely primarily proprioceptive rather than force-producing</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Deep Local Stabilizers &mdash; Core</h4><span class="ma-chevron">&#9660;</span></div>
+    <div class="ma-body">
+      <div class="bl-strip red"><div class="bl-label">The Core Stability System</div><p>True &ldquo;core&rdquo; stability comes from 4 structures working as a pressure canister: <strong>Transversus abdominis (TrA)</strong> &mdash; wraps like a corset, increases intra-abdominal pressure, fires feedforward in healthy individuals. <strong>Multifidus</strong> &mdash; posterior segmental stabilizer, atrophies rapidly with LBP. <strong>Pelvic floor muscles</strong> &mdash; bottom of the canister, co-activates with TrA. <strong>Diaphragm</strong> &mdash; top of the canister, must maintain respiratory function while stabilizing. Loss of feedforward activation of TrA and multifidus is the hallmark finding in chronic LBP patients.</p></div>
+    </div>
+  </div>
+
+  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Suboccipital Triangle</h4><span class="ma-chevron">&#9660;</span></div>
+    <div class="ma-body">
+      <div class="bl-strip purple"><div class="bl-label">Triangle Boundaries &amp; Contents</div><p><strong>Medial border:</strong> Rectus capitis posterior major. <strong>Lateral border:</strong> Obliquus capitis superior. <strong>Inferior border:</strong> Obliquus capitis inferior. <strong>Floor:</strong> posterior arch of atlas + posterior atlanto-occipital membrane. <strong>Roof:</strong> semispinalis capitis. <strong>Contents:</strong> vertebral artery (loop at C1) + suboccipital nerve (DPR C1). All 4 suboccipital muscles innervated by suboccipital nerve. Rich in proprioceptors &mdash; role in gaze stabilization and cervicogenic headache. Rectus capitis posterior minor has CT bridge to posterior dura (proposed mechanism for suboccipital tension headaches).</p></div>
+      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th></tr></thead><tbody>
+        <tr><td class="hi">RCP Major</td><td>SP of C2</td><td>Lateral inferior nuchal line</td><td>Extends head; ipsilateral rotation</td></tr>
+        <tr><td class="hi">RCP Minor</td><td>Post. tubercle C1</td><td>Medial inferior nuchal line</td><td>Extends head. NOT a triangle border</td></tr>
+        <tr><td class="hi">Obliquus Cap. Inferior</td><td>SP of C2</td><td>TP of C1</td><td>Pure C1&ndash;C2 rotation. Only one NOT attached to occiput. Largest</td></tr>
+        <tr><td class="hi">Obliquus Cap. Superior</td><td>TP of C1</td><td>Occipital bone above INL</td><td>Extends head; ipsilateral lateral flexion + rotation</td></tr>
+      </tbody></table>
     </div>
   </div>
 </div>
+</div>
 
-<!-- ══ KINETICS ══ -->
-<div id="tab-kinetics" class="tab-panel">
-  <div class="two-col">
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">5 Forces on the Vertebral Column</div></div>
-        <div class="card-body" id="kin-5forces"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Creep</div><div class="card-header-sub">Time-Dependent Deformation · Clinical Implications</div></div>
-        <div class="card-body" id="kin-creep"></div>
-      </div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Force Analysis</div><div class="card-header-sub">Bending · Torsion · Shear · Compression</div></div>
-        <div class="card-body" id="kin-forces-detail"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Lumbar Kinetics</div><div class="card-header-sub">Specific Sources of Compression & Shear</div></div>
-        <div class="card-body" id="kin-lumbar"></div>
-      </div>
-    </div>
+<!-- ====== KINESIOLOGY ====== -->
+<div class="tab-panel" id="tab-kinesiology">
+<div class="container">
+  <div class="section-title">Spinal Kinesiology &amp; Coupled Motion</div>
+  <div class="section-sub">Spinal motion is never pure &mdash; movements are always coupled. Understanding coupling patterns is essential for manual therapy and clinical reasoning.</div>
+
+  <div class="section-title" style="font-size:1.2rem;margin-top:0;">Available ROM by Region</div>
+  <table class="data-table"><thead><tr><th>Region</th><th>Flexion/Extension</th><th>Lateral Flexion</th><th>Rotation</th><th>Limiting Factors</th></tr></thead><tbody>
+    <tr><td class="warn">Cervical</td><td>~80&ndash;90&deg; flex, ~70&deg; ext</td><td>~35&ndash;45&deg; each side</td><td>~80&ndash;90&deg; each (50% at C1&ndash;C2)</td><td>Uncovertebral joints, facet orientation, ligaments</td></tr>
+    <tr><td class="hi">Thoracic</td><td>~30&ndash;40&deg; flex, ~20&ndash;25&deg; ext</td><td>~25&ndash;30&deg;</td><td>~30&ndash;35&deg;</td><td>Rib cage (most restrictive), long overlapping SPs, facet orientation</td></tr>
+    <tr><td class="warn">Lumbar</td><td>~50&ndash;60&deg; flex, ~15&ndash;20&deg; ext</td><td>~15&ndash;20&deg;</td><td>~5&ndash;7&deg; (very limited)</td><td>Sagittal facets block rotation. IVD and ligaments</td></tr>
+  </tbody></table>
+
+  <div class="section-title" style="font-size:1.2rem;">Coupled Motion</div>
+  <div class="bl-strip gold"><div class="bl-label">Fryette&rsquo;s Laws of Spinal Motion</div>
+  <p><strong>Law I (Neutral/Type I):</strong> When the spine is in neutral (no flexion or extension), sidebending and rotation occur to <strong>OPPOSITE</strong> sides. Group coupling &mdash; involves multiple segments. <strong>Law II (Non-neutral/Type II):</strong> When the spine is flexed or extended (non-neutral), sidebending and rotation occur to the <strong>SAME</strong> side. Single segment coupling. <strong>Law III:</strong> Motion introduced in one plane will reduce available motion in the other two planes. <strong>Clinical application:</strong> Type I dysfunctions are typically adaptive (compensation). Type II dysfunctions are typically traumatic (localized). These laws guide manual therapy assessment and treatment direction.</p></div>
+
+  <div class="bl-strip"><div class="bl-label">Lumbar Coupled Motion</div><p>In the lumbar spine, the coupling pattern is debated, but clinically: the lumbar facets (sagittal orientation) strongly limit rotation. During lateral flexion, the lumbar vertebrae tend to rotate to the <strong>opposite side</strong> in neutral (Type I) and to the <strong>same side</strong> in flexed/extended positions (Type II). The SIJ couples with lumbar motion &mdash; lateral flexion of the trunk creates SIJ torsion on the weight-bearing side.</p></div>
+</div>
+</div>
+
+<!-- ====== CLINICAL PATHOLOGY ====== -->
+<div class="tab-panel" id="tab-clinical">
+<div class="container">
+  <div class="section-title">Clinical Pathology</div>
+  <div class="section-sub">The most commonly tested spinal conditions. Know the mechanism, presentation, imaging findings, and management for each.</div>
+
+  <table class="data-table"><thead><tr><th>Condition</th><th>Pathology</th><th>Presentation</th><th>Management</th></tr></thead><tbody>
+    <tr><td class="warn">Spondylosis</td><td>Degenerative disc disease + osteophytes + facet OA. Normal aging cascade</td><td>Stiffness, progressive loss of motion. May develop radiculopathy from osteophyte compression of IVF. Cervical spondylotic myelopathy = MC cause of cord dysfunction in adults &gt;55</td><td>Conservative: NSAIDs, PT (mobility, stabilization). Surgical decompression if myelopathy</td></tr>
+    <tr><td class="hi">Spondylolysis</td><td>Stress fracture of <strong>pars interarticularis</strong>. Almost always L4 or L5. Found in ~6% of population</td><td>LBP worse with extension + axial loading. Young athletes (gymnasts, football linemen). Bilateral pars defects &rarr; spondylolisthesis</td><td>Activity modification, bracing, extension avoidance, PT. Surgery rare</td></tr>
+    <tr><td class="warn">Spondylolisthesis</td><td>Anterior slippage of one vertebra over the one below. MC at L4&ndash;L5 (degenerative) and L5&ndash;S1 (isthmic)</td><td>LBP, hamstring tightness, palpable &ldquo;step-off&rdquo; at SPs. Meyerding grading: I (&lt;25%), II (25&ndash;50%), III (50&ndash;75%), IV (75&ndash;100%), V (spondyloptosis)</td><td>Grade I&ndash;II: conservative (stabilization, bracing). Grade III+: typically surgical fusion. CES at any grade = surgery</td></tr>
+    <tr><td class="warn">Spinal Stenosis</td><td>Narrowing of vertebral canal or IVFs. Central stenosis (canal) or lateral stenosis (foraminal). Causes: disc bulge + facet hypertrophy + ligamentum flavum thickening</td><td><strong>Neurogenic claudication:</strong> bilateral LE pain/numbness with walking, relieved by sitting/flexion (opens canal). Distinguished from vascular claudication by: relief with flexion (not just rest), worse downhill (extension), &ldquo;shopping cart sign&rdquo; (leans forward)</td><td>PT: flexion-based exercises, cycling, aquatic therapy. Epidural injections. Surgical decompression (laminectomy) for severe cases</td></tr>
+    <tr><td class="hi">Disc Herniation</td><td>Nucleus pulposus extrudes through torn annulus. MC at L4&ndash;L5 and L5&ndash;S1. Posterolateral direction (PLL thinnest here + weaker posterolateral annulus)</td><td>Radiculopathy in dermatomal pattern. Positive SLR (L4&ndash;S1) or femoral nerve stretch (L2&ndash;L4). Worse with flexion, sitting, Valsalva. Better with extension (McKenzie)</td><td>90% resolve conservatively in 6&ndash;12 weeks. PT: McKenzie, motor control, nerve mobilization. Surgery (microdiscectomy) for failed conservative or CES</td></tr>
+    <tr><td class="hi">Cauda Equina Syndrome</td><td>Compression of cauda equina (nerve roots below L1&ndash;L2). MC cause: massive central disc herniation</td><td><strong>Red flag:</strong> saddle anesthesia (S2&ndash;S4), bowel/bladder dysfunction (retention or incontinence), bilateral LE weakness. LMN signs (flaccid, areflexic)</td><td><strong>SURGICAL EMERGENCY.</strong> Decompression within 24&ndash;48 hours for best outcomes. Delay = permanent neurologic deficit</td></tr>
+  </tbody></table>
+
+  <div class="bl-strip red"><div class="bl-label">Red Flags &mdash; Immediate Referral</div><p>Cauda equina signs (saddle anesthesia, bladder dysfunction) &bull; Progressive neurological deficit &bull; Bilateral neurological signs &bull; History of cancer with new spine pain (metastasis) &bull; Fever + spine pain (infection/abscess) &bull; Trauma + pain (fracture) &bull; Night pain unrelieved by rest (tumor) &bull; Weight loss + fatigue + spine pain &bull; Age &lt;20 or &gt;50 with new onset spine pain without clear mechanical cause</p></div>
+</div>
+</div>
+
+<!-- ====== REVIEW ====== -->
+<div class="tab-panel" id="tab-review">
+<div class="container">
+  <div class="section-title">Review Cards</div>
+  <div class="section-sub">Tap to reveal answers.</div>
+
+  <div class="rc2-grid">
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is the ligamentum flavum, and why does it contribute to spinal stenosis?</div><span class="rc2-flip">tap</span><div class="rc2-a">Connects adjacent laminae. <strong>~80% elastin</strong> (highest of any ligament) &mdash; allows smooth flexion without buckling into canal. With aging, it <strong>hypertrophies and fibroses</strong> (elastin replaced by collagen), thickening into the posterior canal, especially during extension. Major contributor to lumbar spinal stenosis.</div></div>
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Why do lumbar disc herniations occur posterolaterally?</div><span class="rc2-flip">tap</span><div class="rc2-a">The <strong>PLL narrows as it descends</strong> (hourglass shape) &mdash; thinnest and weakest at L4&ndash;L5. The posterolateral annulus is also thinner than the posterior midline. The combination of a weak PLL and thin annulus posterolaterally creates the path of least resistance for nucleus pulposus herniation.</div></div>
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Distinguish neurogenic claudication from vascular claudication.</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Neurogenic:</strong> bilateral LE pain with walking, relieved by <strong>flexion</strong> (sitting, leaning on cart &mdash; &ldquo;shopping cart sign&rdquo;), worse going downhill (extension), normal pulses. <strong>Vascular:</strong> calf cramping with walking, relieved by <strong>rest</strong> (standing still), worse uphill, diminished pulses, skin/nail changes.</div></div>
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is multifidus and why is it the most important spinal muscle clinically?</div><span class="rc2-flip">tap</span><div class="rc2-a">Deepest transversospinalis muscle. Segmental (spans 2&ndash;4 levels). <strong>Atrophies within DAYS of acute LBP and does NOT spontaneously recover</strong> even after pain resolves. Loss of feedforward activation is the hallmark of chronic LBP. Must be specifically retrained with motor control exercises. Inserts on mammillary processes in lumbar spine.</div></div>
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Patient has saddle anesthesia, urinary retention, and bilateral LE weakness. Diagnosis and action?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Cauda equina syndrome.</strong> MC cause: massive central disc herniation compressing nerve roots below L1&ndash;L2. <strong>SURGICAL EMERGENCY</strong> &mdash; decompression within 24&ndash;48 hours. LMN signs (flaccid, areflexic) because it&rsquo;s nerve roots, not cord. Delay = permanent neurologic deficit including bowel/bladder dysfunction.</div></div>
+    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Fryette&rsquo;s Law I vs Law II &mdash; when does sidebending and rotation go to the same vs opposite sides?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Law I (neutral):</strong> sidebend and rotation go to <strong>OPPOSITE</strong> sides. Group coupling, multiple segments. <strong>Law II (non-neutral / flexed or extended):</strong> sidebend and rotation go to the <strong>SAME</strong> side. Single segment. Law I = adaptive dysfunction. Law II = traumatic dysfunction.</div></div>
   </div>
 </div>
-
-<!-- ══ PELVIS & SIJ ══ -->
-<div id="tab-sij" class="tab-panel">
-  <div class="chip-nav" id="sij-nav">
-    <button class="active" onclick="selectSIJ('anatomy',this)">Anatomy</button>
-    <button class="" onclick="selectSIJ('kinematics',this)">Kinematics</button>
-    <button class="" onclick="selectSIJ('stability',this)">Stability</button>
-    <button class="" onclick="selectSIJ('palpation',this)">Palpation</button>
-    <button class="" onclick="selectSIJ('biomech',this)">Biomech Review</button>
-  </div>
-  <div id="sij-content"></div>
 </div>
 
-<!-- ══ JOINT MOB ══ -->
-<div id="tab-jointmob" class="tab-panel">
-  <div class="chip-nav" id="jm-nav">
-    <button class="active" onclick="selectJM('lumbar',this)">Lumbar</button>
-    <button class="" onclick="selectJM('thoracic',this)">Thoracic</button>
-    <button class="" onclick="selectJM('cervical',this)">Cervical</button>
-  </div>
-  <div id="jm-content"></div>
-</div>
-
-
-<!-- ══ MOTION & COUPLING ══ -->
-<div id="tab-motion" class="tab-panel">
-  <div class="two-col">
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Spinal Motion by Region</div><div class="card-header-sub">Disc Ratio · Dominant Motion · Limits</div></div>
-        <div class="card-body" id="motion-content"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">4 Limiters of ROM</div></div>
-        <div class="card-body">
-          <div style="display:flex;flex-direction:column;gap:0.625rem;">
-            <div style="background:var(--surface);border-radius:8px;padding:0.75rem;border-left:3px solid var(--teal);"><span style="font-family:var(--font-m);font-size:0.78rem;font-weight:600;color:var(--teal-light);">1.</span> <strong style="color:var(--text);">IVD elasticity and compressibility</strong> — disc height ratio determines mobility; C and L > T</div>
-            <div style="background:var(--surface);border-radius:8px;padding:0.75rem;border-left:3px solid var(--gold);"><span style="font-family:var(--font-m);font-size:0.78rem;font-weight:600;color:var(--gold);">2.</span> <strong style="color:var(--text);">Orientation of facet joints</strong> — lumbar facets guide flexion/extension; thoracic allow rotation</div>
-            <div style="background:var(--surface);border-radius:8px;padding:0.75rem;border-left:3px solid var(--amber);"><span style="font-family:var(--font-m);font-size:0.78rem;font-weight:600;color:var(--amber);">3.</span> <strong style="color:var(--text);">Tension of facet joint capsules</strong> — capsular tightness limits end-range motion; capsular pattern</div>
-            <div style="background:var(--surface);border-radius:8px;padding:0.75rem;border-left:3px solid var(--purple);"><span style="font-family:var(--font-m);font-size:0.78rem;font-weight:600;color:var(--purple);">4.</span> <strong style="color:var(--text);">Resistance of ligaments and musculature</strong> — passive (ligaments) and active (muscle) restraints</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Coupled Motion</div><div class="card-header-sub">Rules by Region — Critical for Clinical Assessment</div></div>
-        <div class="card-body" id="coupling-content"></div>
-      </div>
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">Upper Cervical Mechanics</div><div class="card-header-sub">O-C1-C2 — Special Rules</div></div>
-        <div class="card-body">
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">C0-C1 (Atlanto-occipital):</strong> Primary flex/ext (~15°). Minimal rotation. No disc. Superior facets of atlas are concave — "yes joint" nodding motion.</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">C1-C2 (Atlantoaxial):</strong> ~50% of total cervical rotation occurs here (~45° per side). Minimal flex/ext. The dens acts as pivot. As C1 rotates on C2, the facet shape causes <strong style="color:var(--text)">screw-down motion</strong> — head descends 2–3mm during rotation.</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Alar ligament:</strong> limits axial rotation at C1-C2. Sharp rotation force (MVA, manipulation) can tear alar ligaments → upper cervical instability.</div>
-          <div class="bullet"><span class="dot">•</span><strong style="color:var(--text)">Transverse ligament integrity:</strong> tested with Sharp-Purser test or alar ligament stress tests. Rheumatoid arthritis erodes the dens — ADI (atlanto-dens interval) >3mm adults = instability.</div>
-          <div class="clinical-note">
-          <div class="clinical-note-lbl">Upper Cervical Instability Red Flags</div>
-          <div class="clinical-note-text cn-short">5 D's and 3 N's for VBI. Additionally: Down syndrome (atlantoaxial instability), RA (odontoid erosion), Os odontoideum, Grisel's syndrome (post-pharyngeal infection torticollis).</div>
-          <div class="cn-more">Sharp-Purser test, alar ligament stress tests. Imaging: ADI >3mm on flexion X-ray, or >7mm in children = unstable.</div>
-          <button class="cn-toggle" onclick="toggleCN(this)">+ Show more</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ CLINICAL ══ -->
-<div id="tab-clinical" class="tab-panel">
-  <div class="three-col" id="clinical-content"></div>
-</div>
-
-<!-- ══ REVIEW ══ -->
-<div id="tab-review" class="tab-panel">
-  <div class="two-col">
-    <div class="card">
-      <div class="card-header"><div class="card-header-title">Review Questions</div><div class="card-header-sub">Click to Reveal</div></div>
-      <div class="card-body" id="back-review-list"></div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:1rem;">
-      <div class="card">
-        <div class="card-header"><div class="card-header-title">High-Yield Callouts</div></div>
-        <div class="card-body">
-          <div style="display:flex;flex-direction:column;gap:0.625rem;">
-            <div style="padding:0.625rem 0.875rem;background:var(--red-pale);border:1px solid rgba(248,113,113,0.15);border-radius:6px;">
-              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem;">Red Flags (LBP)</div>
-              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">Cancer hx + unexplained weight loss · Night pain/rest pain · Saddle anesthesia + bowel/bladder = cauda equina emergency · Fever + night sweats = infection · Age >50 or <20 + first episode · IV drug use</div>
-            </div>
-            <div style="padding:0.625rem 0.875rem;background:var(--amber-pale);border:1px solid rgba(251,191,36,0.15);border-radius:6px;">
-              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem;">Coupling Rules</div>
-              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">Cervical: LF + IPSILATERAL rotation (SPs rotate contralateral/convex). Lumbar: LF + CONTRALATERAL rotation (SPs rotate ipsilateral/concave). Thoracic: transitions between patterns — upper like cervical, lower like lumbar.</div>
-            </div>
-            <div style="padding:0.625rem 0.875rem;background:var(--teal-pale);border:1px solid rgba(56,178,178,0.15);border-radius:6px;">
-              <div style="font-family:var(--font-m);font-size:0.68rem;text-transform:uppercase;color:var(--teal);margin-bottom:0.25rem;">Key Facts</div>
-              <div style="font-size:0.9rem;color:var(--text2);line-height:1.65;">No disc between C0-C1 or C1-C2 · Spinal cord ends L1-L2 · Suboccipital nerve (C1) = motor only · Thoracolumbar fascia = origin for lat dorsi + TrA + IO · Multifidus inserts mamillary processes · Ligamentum flavum = high elastin (allows smooth flexion)</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div><!-- /shell -->
-
+<script src="themes.js"></script>
+<script src="premium.js"></script>
 <script>
-// ══════════════════════════════════════════════════
-// DATA
-// ══════════════════════════════════════════════════
 function showTab(id, btn) {
-  document.querySelectorAll('.tab-panel').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.chip-nav button').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
+  window.scrollTo({top: document.querySelector('.chip-nav').offsetTop - 10, behavior:'smooth'});
 }
-
-const CURVATURES = [
-  { name: 'Primary Curves', color: 'teal', content: 'Present at birth. Kyphotic (concave anteriorly). Thoracic and sacral regions. Represent the original fetal "C-curve."', dev: '' },
-  { name: 'Secondary Curves', color: 'gold', content: 'Develop postnatally. Lordotic (concave posteriorly). Cervical (develops when infant holds head up) and Lumbar (develops when infant begins to stand/walk).', dev: 'Cervical develops 3-4 months; Lumbar develops 12-18 months' },
-  { name: 'Kyphosis', color: 'red', content: 'Excessive thoracic kyphosis. Due to compression fractures (osteoporosis), postural habits (Scheuermann\'s disease in adolescents), pathology. Clinical: assess ability to actively extend thoracic spine.', dev: '' },
-  { name: 'Lordosis', color: 'amber', content: 'Excessive lumbar lordosis. Due to postural habits, pregnancy, weak abdominals, hip flexor tightness. Clinical: assess reversal of lumbar curve during trunk flexion — loss of reversal = reduced mobility/extensibility.', dev: '' },
-  { name: 'Scoliosis', color: 'purple', content: 'Lateral deviation with rotational component. Named for the convexity. School screenings (Adam\'s forward bend test). Progression and severity guide treatment: observation, bracing, or surgical intervention. Can cause symptomatic pain episodes.', dev: '' },
-  { name: 'Cervical Curve Reversal', color: 'gold', content: 'Loss of normal cervical lordosis (reversal or straightening). Due to postural habits (forward head), trauma (whiplash), muscle spasm. Seen on lateral cervical X-ray. Associated with posterior neck pain and cervicogenic headache.', dev: '' },
-];
-
-const VERTEBRAE_DATA = {
-  typical: {
-    title: 'Typical Vertebra — Landmarks',
-    intro: 'The basic structural unit of the vertebral column. All typical vertebrae share these fundamental components:',
-    landmarks: [
-      { name: 'Body', desc: 'Cylindrical anteroinferior portion. Increases in size caudally (T4 and below) to support increasing body weight. Bears compressive loads. Superior and inferior surfaces covered by hyaline cartilage endplates.' },
-      { name: 'Vertebral Arch (Pedicle + Lamina)', desc: 'Pedicles: two bony columns projecting posteriorly from the body. Laminae: flat plates projecting medially from pedicles to fuse in midline, forming the posterior vertebral arch. Together they form the vertebral foramen. Anomalies: spina bifida occulta (failure to fuse), meningocele (meninges protrude), meningomyelocele (cord + meninges protrude).' },
-      { name: 'Transverse Processes', desc: 'Project laterally from the junction of pedicles and laminae. Attachment and lever for spinal muscles. In thoracic region: have costal facets for rib articulation. In cervical region: have transverse foramina.' },
-      { name: 'Superior & Inferior Articular Processes', desc: 'Project from junction of pedicle and lamina. Form the zygapophyseal (facet) joints. Orientation varies by spinal region and determines the type of motion permitted.' },
-      { name: 'Spinous Process', desc: 'Projects posteriorly from junction of right and left laminae. Attachment point and lever arm for spinal muscles (erector spinae, multifidus, etc.). Bifid in typical cervical vertebrae. Long and inferiorly sloped in thoracic.' },
-      { name: 'Vertebral Notches', desc: 'Superior and inferior notches on the pedicles. Adjacent notches form the intervertebral foramina (IVF) through which spinal nerves exit.' },
-      { name: 'Vertebral Foramen', desc: 'Space formed by the body anteriorly and the vertebral arch posteriorly. Collectively these form the vertebral canal (spinal canal) containing the spinal cord and meninges.' },
-    ]
-  },
-  cervical: {
-    title: 'Cervical Vertebrae (C3–C7) — Typical Cervical',
-    intro: 'Smallest vertebrae. C3-C7 are typical; C1 and C2 are atypical. C7 is the "vertebra prominens."',
-    landmarks: [
-      { name: 'Body', desc: 'Small, wider side-to-side than anteroposterior. Uncinate processes project superolaterally from each side — form the uncovertebral joints (Luschka) with the beveled inferior surface of the vertebra above. Unique to C3-C7.' },
-      { name: 'Vertebral Foramen', desc: 'Triangular, LARGE — largest relative to body size. Accommodates the cervical enlargement of the spinal cord.' },
-      { name: 'Transverse Processes', desc: 'Have transverse foramina through which the vertebral artery ascends (C6 to C1). C7 may have small or absent transverse foramen. Short, with anterior and posterior tubercles — scalene muscles attach to anterior tubercles.' },
-      { name: 'Articular Processes', desc: 'Superior facets face superiorly and posteriorly. Inferior facets face inferiorly and anteriorly. Orientation ~45° — allows flexion, extension, rotation, and lateral flexion (most mobile region).' },
-      { name: 'Spinous Processes', desc: 'Typically bifid (forked) at C3-C5. C6 may be bifid or not. C7 (vertebra prominens) has a long, non-bifid process — most palpable in flexion.' },
-      { name: 'Uncovertebral Joints (Luschka)', desc: 'Formed by uncinate processes of C3-C7. Pseudojoints — may develop a synovial-like appearance with cartilage and fluid. Clinical: prone to osteophyte formation → can narrow IVF and compress nerve roots or narrow transverse foramen → compress vertebral artery.' },
-    ]
-  },
-  atlas: {
-    title: 'C1 — Atlas (Atypical)',
-    intro: 'Ring-shaped — no body, no spinous process. Articulates with the occiput above (flex/ext) and the axis below (rotation).',
-    landmarks: [
-      { name: 'Anterior Arch & Tubercle', desc: 'Anterior ring. On the posterior surface: facet that articulates with the dens (odontoid process) of C2. Anterior tubercle is the midline anterior bony projection.' },
-      { name: 'Posterior Arch & Tubercle', desc: 'Posterior ring. The posterior tubercle is the rudimentary spinous process. The vertebral artery forms a large loop along the superior surface of the posterior arch before entering the foramen magnum.' },
-      { name: 'Lateral Masses', desc: 'Two thick bony masses supporting the head. Each has a superior and inferior articular facet. Superior facets articulate with the occipital condyles — kidney-shaped, concave, face superomedially → flex/ext (nodding). Inferior facets articulate with C2 (circular, slightly concave) → rotation.' },
-      { name: 'Transverse Processes', desc: 'The widest in the cervical spine. Palpable just inferior to the mastoid process. The transverse ligament spans between the lateral masses — holds the dens against the anterior arch.' },
-      { name: 'Transverse Foramen', desc: 'Contains the vertebral artery on each side.' },
-    ]
-  },
-  axis: {
-    title: 'C2 — Axis (Atypical)',
-    intro: 'Characterized by the dens (odontoid process). Forms the "pivot" for head/C1 rotation — hence "axis."',
-    landmarks: [
-      { name: 'Dens (Odontoid Process)', desc: 'Projects superiorly from the body — represents the "stolen" body of C1. Articulates with the posterior surface of the anterior arch of C1 — pivot joint. Held in place by transverse ligament (posterior), alar ligaments (sides), apical ligament (apex). Dens fracture: very common after axial compression + flexion (diving, MVA). Type II (base) most unstable — surgical indication.' },
-      { name: 'Superior Articular Processes', desc: 'Large, flat facets face superolaterally. Articulate with C1 inferior facets — allow the large rotation motion at C1-C2. Note: these facets are ABOVE the pedicles (unique to C2).' },
-      { name: 'Inferior Articular Processes', desc: 'Same orientation as typical cervical vertebrae below.' },
-      { name: 'Transverse Foramen', desc: 'The vertebral artery passes through here on its way up from C3.' },
-      { name: 'Bifid Spinous Process', desc: 'C2 has a large bifid spinous process — palpable in the suboccipital region. Attachment for semispinalis capitis, obliquus capitis inferior, rectus capitis posterior major.' },
-    ]
-  },
-  thoracic: {
-    title: 'Thoracic Vertebrae (T1–T12)',
-    intro: 'Intermediate size. Distinguished by rib articulations (costal facets) and long, inferiorly sloped spinous processes.',
-    landmarks: [
-      { name: 'Body', desc: 'Heart-shaped. Costal demi-facets (superior and inferior) on each side of the body for rib head articulations. T1 has a complete superior facet + demi-facet inferiorly. T10-T12 transition toward lumbar characteristics.' },
-      { name: 'Vertebral Foramen', desc: 'Circular and smaller than cervical or lumbar — less space, so cord compression is more critical here.' },
-      { name: 'Transverse Processes', desc: 'Long, project posterolaterally. T1-T10 have transverse costal facets for articulation with the rib tubercle (costovertebral joint).' },
-      { name: 'Articular Processes', desc: 'Superior facets face posteriorly and slightly laterally. Inferior facets face anteriorly and slightly medially. Orientation allows rotation and lateral flexion, but ribs restrict actual motion.' },
-      { name: 'Spinous Processes', desc: 'Long, slender, extend inferiorly to the level of the segment below. This is why in the mid-thoracic region, what you palpate as the SP is actually the level BELOW the vertebral body it belongs to.' },
-    ]
-  },
-  lumbar: {
-    title: 'Lumbar Vertebrae (L1–L5)',
-    intro: 'Largest vertebrae. Designed for weight-bearing and flexion/extension. Relatively restricted rotation due to facet orientation.',
-    landmarks: [
-      { name: 'Body', desc: 'Kidney-shaped. Largest in the spinal column (L5 is largest). Bears the highest compressive loads.' },
-      { name: 'Vertebral Foramen', desc: 'Triangular. Larger than thoracic but smaller than cervical. Spinal cord has ended — only cauda equina (nerve roots) at this level.' },
-      { name: 'Transverse Processes', desc: 'Have accessory processes at their base. True lumbar TPs are actually homologous to ribs (costal elements). L3 has the longest transverse process.' },
-      { name: 'Articular Processes', desc: 'Superior facets face posteromedially. Inferior facets face anterolaterally. This interlocking "mortise-tenon" configuration RESISTS rotation — explains why lumbar rotation is ~5° per level. Mamillary process: tubercle on the posterior surface of each superior articular process — attachment for multifidus.' },
-      { name: 'Spinous Processes', desc: 'Sturdy, broad, "hatchet-shaped." Horizontal orientation — the SP you palpate IS the correct level (unlike thoracic). Large attachment surface for erector spinae and multifidus.' },
-      { name: 'Mamillary Process', desc: 'Tubercle on the posterior surface of each superior articular process. Attachment site for the multifidus muscle. Clinically: medial branch blocks are targeted to the mammillary processes for lumbar facet denervation.' },
-    ]
-  },
-  sacrum: {
-    title: 'Sacrum & Coccyx',
-    intro: 'Sacrum: large triangular wedge-shaped bone formed by 5 fused vertebrae. Provides posterior stability to the pelvis. Keystone of the pelvic ring.',
-    landmarks: [
-      { name: 'Promontory', desc: 'The prominent anterior edge/lip of S1 (superior surface). Radiologic landmark. Lumbosacral angle measured here. Obstetric measurements reference the promontory for pelvic inlet dimensions.' },
-      { name: 'Ala (Wings)', desc: 'Superior lateral portions of the sacrum (lateral masses). Articulate with the ilium at the SIJ. Site of sacral fractures in high-energy trauma.' },
-      { name: 'Median Sacral Crest', desc: 'Midline posterior prominence formed by fused spinous processes of S1-S4. Palpable in the gluteal cleft region.' },
-      { name: 'Sacral Hiatus', desc: 'Formed by failure of the laminae of S5 to fuse (normal variant). The posterior opening of the sacral canal. Used for caudal epidural steroid injections.' },
-      { name: 'Sacral Cornu (Horns)', desc: 'Formed by the inferior articular processes/pedicles of S5. Flank the sacral hiatus — used as landmarks for caudal epidural needle placement.' },
-      { name: 'Sacral Canal', desc: 'Continuation of the vertebral canal. Contains the cauda equina nerve roots (L2-Co), meninges (dura ends at S2 level), and filum terminale.' },
-      { name: 'Sacral Foramina', desc: '4 pairs (S1-S4) on both anterior (pelvic) and posterior surfaces. Ventral primary rami exit anteriorly (form lumbosacral plexus). Dorsal primary rami exit posteriorly (supply back muscles and skin).' },
-      { name: 'Coccyx', desc: 'Wedge-shaped bone of 4 fused vertebrae. Attachment for pelvic floor muscles (levator ani, coccygeus) and ligaments. Coccydynia: pain after fall/childbirth — assess coccyx mobility internally.' },
-    ]
-  },
-};
-
-const LIGAMENTS = [
-  { name: 'Anterior Longitudinal Ligament (ALL)', color: 'teal', desc: 'Runs from occiput (anterior to foramen magnum) to sacrum along the ANTERIOR surface of vertebral bodies and discs. Widest at the thoracic level. Function: limits extension; reinforces the anterior annulus fibrosus. Damaged in hyperextension injuries (whiplash extension phase).' },
-  { name: 'Posterior Longitudinal Ligament (PLL)', color: 'teal', desc: 'Runs along the posterior vertebral bodies WITHIN the vertebral canal (anterior to cord). Attaches C2 to sacrum. Narrows as it descends (hourglass shape) — relatively thin and weak at L4-L5 (explains posterolateral herniation predominance). Function: limits flexion; reinforces posterior annulus. OPLL (ossification of PLL) causes canal stenosis.' },
-  { name: 'Ligamentum Flavum', color: 'gold', desc: 'Connects adjacent laminae. High elastin content (~80% elastin, 20% collagen) — unique among spinal ligaments. Forms part of the posterior wall of the vertebral canal. Function: allows "smooth" flexion without buckling into the canal; elasticity helps restore neutral from flexion. Thickens with age → contributes to lumbar spinal stenosis. Yellow color from elastin (flavum = yellow in Latin).' },
-  { name: 'Interspinous Ligaments', color: 'amber', desc: 'Thin membranous ligaments connecting adjacent spinous processes — attach along inferior and superior edges. Limit flexion. Weakest spinal ligaments — first to fail in flexion distraction injuries.' },
-  { name: 'Supraspinous Ligament', color: 'amber', desc: 'Cord-like ligament connecting the apices (tips) of adjacent spinous processes. C7 to sacrum. Merges superiorly with the nuchal ligament. Limit flexion. Palpable as a midline taut band.' },
-  { name: 'Nuchal Ligament (Ligamentum Nuchae)', color: 'purple', desc: 'External occipital protuberance (EOP) to C7. Connects EOP, posterior tubercle of C1, and spinous processes of C2-C7. Acts as a median sagittal septum separating left and right posterior cervical muscles. Continuation/homolog of supraspinous ligament. Limits cervical flexion.' },
-  { name: 'Intertransverse Ligaments', color: 'grey', desc: 'Connect transverse processes between adjacent vertebrae. More distinct in lumbar, rudimentary in cervical. Limit lateral flexion to the opposite side.' },
-];
-
-const CV_JOINTS = [
-  { name: 'Atlanto-Occipital Joint (C0-C1)', borders: 'Occipital condyles (concave) + Superior facets of atlas (concave) — biconvex configuration', motion: 'Primary: Flexion/Extension (~15°). Lateral flexion (~8°). Minimal rotation.', ligaments: 'Anterior + posterior atlanto-occipital membranes connect arches of C1 to foramen magnum edges', clinical: '"Yes" joint (nodding). "Yes" movement activates C0-C1; rotation activates C1-C2. No disc between C0-C1.' },
-  { name: 'Atlantoaxial Joint (C1-C2) — 3 Articulations', borders: 'Median: dens + anterior arch of C1. Lateral (×2): C1 inferior facets + C2 superior facets', motion: '~45° of rotation per side (~50% of total cervical rotation). Head and C1 rotate as a unit on C2. Minimal flex/ext.', ligaments: 'Transverse ligament (most critical — holds dens against arch), Alar ligaments (limit rotation), Apical ligament, Tectorial membrane (PLL extension)', clinical: '"No" joint (shaking head). Alar ligament stress tests. Sharp-Purser test for transverse ligament integrity. ADI >3mm = instability.' },
-];
-
-const BACK_MUSCLES = {
-  superficial: [
-    { name: 'Trapezius', origin: 'Superior nuchal line, EOP, nuchal ligament, SPs of C7-T12', insertion: 'Lateral 1/3 clavicle, acromion, spine of scapula', nerve: 'CN XI (Spinal accessory) motor + C3-4 sensory', roots: 'CN XI', action: 'Elevation (upper), retraction (middle), depression (lower), upward rotation — all 3 together = pure retraction', clinical: 'THREE functional divisions: all acting together = retraction. Upper: elevation + upward rotation. Middle: retraction. Lower: depression + upward rotation. CN XI injury (posterior triangle) → trapezius palsy → shoulder drop, inability to fully elevate arm.' },
-    { name: 'Latissimus Dorsi', origin: 'SPs T7-sacrum, thoracolumbar fascia, posterior iliac crest, inferior 3-4 ribs, sometimes inferior scapula angle', insertion: 'Floor of bicipital groove (PLT mnemonic)', nerve: 'Thoracodorsal nerve (C6, C7, C8)', roots: 'C6–C8', action: 'Extends, adducts, medially rotates humerus; indirect downward rotation of scapula; assists with forced expiration and coughing', clinical: 'Largest muscle in the body by surface area. Origin from TLF — important in lumbopelvic load transfer. Used in latissimus dorsi transfer for breast reconstruction and shoulder tendon transfers. Weakness: compromises pulling and depression movements.' },
-    { name: 'Rhomboid Minor', origin: 'Inferior nuchal ligament, SPs of C7-T1', insertion: 'Medial border of scapula at root of scapular spine', nerve: 'Dorsal scapular nerve (C4-C5)', roots: 'C4–C5', action: 'Retracts, elevates, and downward rotates scapula', clinical: 'Works with rhomboid major. Weakness contributes to scapular protraction and winging. Dorsal scapular nerve exits through middle scalene — entrapment causes rhomboid weakness (medial scapular pain that worsens with arm abduction).' },
-    { name: 'Rhomboid Major', origin: 'SPs of T2-T5', insertion: 'Medial border of scapula inferior to scapular spine', nerve: 'Dorsal scapular nerve (C4-C5)', roots: 'C4–C5', action: 'Retracts, elevates, and downward rotates scapula', clinical: 'Together with minor: important antagonists to serratus anterior. Overactivity of rhomboids with serratus weakness = medial border winging pattern. In upper crossed syndrome: rhomboids + lower trap are inhibited; upper trap + pec minor are overactive.' },
-    { name: 'Levator Scapulae', origin: 'Posterior tubercles of TPs C1-C4', insertion: 'Medial border of scapula (superior angle to spine)', nerve: 'Dorsal scapular nerve (C3-C5) + direct branches C3-C4', roots: 'C3–C5', action: 'Elevates scapula; downward rotation of scapula (when scapula is fixed, ipsilateral cervical lateral flexion + rotation)', clinical: 'Common trigger point source — stiff neck, pain at superior scapular angle radiating to posterior neck. In overactive form: "angel wing" posture. Often overactive in upper crossed syndrome compensating for weak lower trapezius.' },
-  ],
-  intermediate: [
-    { name: 'Serratus Posterior Superior', origin: 'Ligamentum nuchae, SPs of C7-T3', insertion: 'Superior borders of ribs 2-4', nerve: 'Intercostal nerves T2-T5 (ventral primary rami)', roots: 'T2–T5 VPR', action: 'Elevates upper ribs — assists with inspiration', clinical: 'Thin respiratory accessory muscle. Clinical significance limited — more anatomically important as a landmark. Part of the intermediate extrinsic back layer (assists respiration).' },
-    { name: 'Serratus Posterior Inferior', origin: 'Thoracolumbar fascia, SPs of T11-L2', insertion: 'Inferior borders of ribs 8-12 (near their angles)', nerve: 'Ventral primary rami of T9-T12', roots: 'T9–T12 VPR', action: 'Pulls down lower ribs — may assist expiration or stabilize lower ribs against diaphragm pull', clinical: 'Thin respiratory accessory muscle. Clinical significance primarily as a landmark and in understanding thoracolumbar fascia anatomy.' },
-  ],
-  splenius: [
-    { name: 'Splenius Capitis', origin: 'Ligamentum nuchae, SPs of C7-T4', insertion: 'Mastoid process and lateral end of superior nuchal line', nerve: 'Dorsal primary rami of C2-C6', roots: 'C2–C6 DPR', action: 'Bilateral: extends neck and head. Unilateral: lateral flexion + IPSILATERAL rotation of head/neck (same side — remember "SP" for ipSilateral)', clinical: 'Most superficial of the deep intrinsic back muscles. "Bandage muscle" — covers the deeper vertical columns. The splenius muscles act to extend the head and unilaterally rotate it toward the same side. Hypertension in splenius capitis → cervicogenic headache and upper cervical pain. Trigger points refer to vertex and posterior head.' },
-    { name: 'Splenius Cervicis', origin: 'SPs of T3-T6', insertion: 'Posterior tubercles of TPs of C1-C3', nerve: 'Dorsal primary rami of C5-C7', roots: 'C5–C7 DPR', action: 'Bilateral: extends neck. Unilateral: lateral flexion + IPSILATERAL rotation of neck', clinical: 'Deeper than splenius capitis. Together they act as a "headrest" — extending the head against gravity and providing dynamic stability. Often involved in cervicogenic headache and occipital neuralgia syndromes.' },
-  ],
-  erector: [
-    { name: 'Iliocostalis (Lateral Column)', origin: 'Broad tendon from posterior iliac crest, sacrum, SPs of lower lumbar, supraspinous ligament', insertion: 'Angles of ribs and cervical transverse processes (3 sections: lumborum, thoracis, cervicis)', nerve: 'Dorsal primary rami of spinal nerves at each level', roots: 'DPR at each level', action: 'Bilateral: extends vertebral column (chief extensor), assists with flexion (eccentric). Unilateral: lateral flexion of vertebral column', clinical: 'LATERAL column of erector spinae. Together with longissimus and spinalis forms the "sacrospinalis" mass palpable on each side of the spine. Bilateral contraction is the primary mechanism for lifting. Unilateral weakness → lateral lean to opposite side. Erector spinae fatigue during sustained postures → LBP.' },
-    { name: 'Longissimus (Intermediate Column)', origin: 'Broad tendon from posterior iliac crest, sacrum, SPs of lower lumbar, supraspinous ligament', insertion: 'Ribs, transverse processes at superior levels, mastoid process (capitis) — 3 sections: thoracis, cervicis, capitis', nerve: 'Dorsal primary rami at each level', roots: 'DPR at each level', action: 'Bilateral: extends vertebral column; assists flexion eccentrically. Unilateral: lateral flexion', clinical: 'INTERMEDIATE column. Longissimus capitis inserts at the mastoid process — contributes to cervical extension and lateral flexion. Common site of erector spinae dysfunction in LBP. Part of the global stabilizer system.' },
-    { name: 'Spinalis (Medial Column)', origin: 'Broad common tendon (same as above)', insertion: 'Spinous processes at superior vertebral levels and base of skull (capitis) — 2 main sections: thoracis, cervicis', nerve: 'Dorsal primary rami', roots: 'DPR at each level', action: 'Bilateral: extends vertebral column. Unilateral: lateral flexion', clinical: 'MEDIAL column, runs closest to spinous processes. Least distinct of the three columns. Spinalis capitis often blends with semispinalis capitis. Less clinically significant in isolation than as part of the overall erector spinae system.' },
-  ],
-  transversospinalis: [
-    { name: 'Semispinalis (Capitis, Cervicis, Thoracis)', origin: 'TPs of C4-T12', insertion: 'Capitis: occipital bone (between superior and inferior nuchal lines). Cervicis + thoracis: SPs 4-6 vertebral levels above', nerve: 'Dorsal primary rami', roots: 'DPR at each level', action: 'Bilateral: extends head and vertebral column (cervical + thoracic). Unilateral: contralateral rotation (OPPOSITE side)', clinical: 'Largest of the transversospinalis group. Spans 4-6 levels — acts as a more global stabilizer than multifidus. Semispinalis capitis is the key muscle forming the ROOF of the suboccipital triangle. Trigger points in semispinalis capitis can entrap the greater occipital nerve (C2 DPR) → occipital neuralgia (pain radiating over the back of the head to the vertex).' },
-    { name: 'Multifidus', origin: 'Sacrum, TPs of T1-L5, articular pillars of C4-C7', insertion: 'SPs 2-4 vertebral levels superior to origin (mamillary processes in lumbar)', nerve: 'Dorsal primary rami', roots: 'DPR at each level', action: 'Bilateral: extends vertebral column; fine-tunes/stabilizes vertebral segments during movement. Unilateral: contralateral rotation', clinical: 'THE KEY SPINAL STABILIZER. Deepest and most important of transversospinalis. Segmental in nature — each fascicle spans only 2-4 levels. Inserts on mamillary processes (lumbar). Atrophies rapidly with acute LBP (within days) and does NOT spontaneously recover even after pain resolves. Lumbar multifidus rehabilitation is foundational in clinical practice. Poor activation precedes movement in chronic LBP patients (different from healthy controls — loss of feedforward activation). Target with specific motor control exercises (prone extension, quadruped).' },
-    { name: 'Rotatores (Long + Short)', origin: 'Transverse processes of vertebral column', insertion: 'Long: lamina/SP 2 levels above. Short: lamina/SP 1 level above', nerve: 'Dorsal primary rami', roots: 'DPR at each level', action: 'Bilateral: extend the column. Unilateral: contralateral rotation', clinical: 'Smallest and deepest of transversospinalis group. Rich in proprioceptive nerve endings — proposed role as "length transducers" monitoring vertebral position. More prominent in thoracic region. Clinical significance primarily as proprioceptors, not prime movers.' },
-  ],
-  minor: [
-    { name: 'Interspinales', origin: 'Between adjacent spinous processes (right and left pairs)', insertion: 'Same — paired intrinsic muscles', nerve: 'DPR of each level', roots: 'DPR segmental', action: 'Extend the vertebral column; may assist with fine-tuned rotation', clinical: 'Most developed in cervical and lumbar regions (prominent in cervical and lumbar — absent in mid-thoracic where erector spinae dominates). Segmental extension and stabilizers. More prominent than clinically appreciated — contribute to intervertebral stability during movement.' },
-    { name: 'Intertransversarii', origin: 'Between adjacent transverse processes', insertion: 'Same — lateral to medial', nerve: 'VPR (cervical, lumbar) and DPR', roots: 'Mixed', action: 'Lateral flexion of vertebral column to same side', clinical: 'Located in cervical and lumbar regions primarily (absent in thoracic). Like the interspinales, these small muscles are thought to be primarily proprioceptive rather than force-generating. They contain high densities of muscle spindles relative to their size.' },
-    { name: 'Levatores Costarum', origin: 'TPs of C7-T11', insertion: 'Superior surface of rib immediately below (short) or rib 2 below (long)', nerve: 'Lateral branches of DPR', roots: 'DPR at each level', action: 'Elevate ribs (assist inspiration); lateral flexion of vertebral column', clinical: 'Considered homologous to intertransversarii in the thoracic region (where true intertransversarii are absent). Short levatores span one level; long levatores span two. Assist with rib elevation during inspiration — secondary respiratory muscles.' },
-  ],
-};
-
-const SUBOCCIPITAL_MUSCLES = [
-  { name: 'Rectus Capitis Posterior Major', o: 'Spinous process of C2 (axis)', i: 'Lateral portion of inferior nuchal line', action: 'Extends head; ipsilateral rotation', triangle: 'Medial border' },
-  { name: 'Rectus Capitis Posterior Minor', o: 'Posterior tubercle of C1 (atlas)', i: 'Medial portion of inferior nuchal line', action: 'Extends head (minor rotation)', triangle: 'NOT a triangle border — lies medial to RCP major' },
-  { name: 'Obliquus Capitis Inferior', o: 'Spinous process of C2 (axis)', i: 'Transverse process of C1 (atlas)', action: 'Ipsilateral rotation of atlas (pure rotation at C1-C2) — the ONLY suboccipital muscle NOT attached to the occiput', triangle: 'Inferior border' },
-  { name: 'Obliquus Capitis Superior', o: 'Transverse process of C1 (atlas)', i: 'Occipital bone above inferior nuchal line', action: 'Extends head; ipsilateral lateral flexion; ipsilateral rotation', triangle: 'Lateral border' },
-];
-
-const MOTION_DATA = [
-  { region: 'Cervical (C0–C7)', ratio: '1:3', primary: 'All motions — most mobile region', rotation: 'Large (esp. C1-C2 ~45°)', flexext: 'Large', lf: 'Large', limit: 'Ligaments, muscle, facet orientation', note: '~50% of cervical rotation at C1-C2. Functionally divided: upper (C0-C2) and lower (C3-C7).' },
-  { region: 'Thoracic (T1–T12)', ratio: '1:6', primary: 'Rotation (facets) — but ribs LIMIT actual motion', rotation: 'Moderate (ribs restrict)', flexext: 'Limited', lf: 'Moderate', limit: 'Costovertebral joints, facet orientation, sternum', note: 'Most restricted region. Rib cage provides stability but limits mobility. Long angled SPs limit extension.' },
-  { region: 'Lumbar (L1–L5)', ratio: '1:3', primary: 'Flexion/Extension — cardinal motion', rotation: 'Very Limited (~5°/level)', flexext: 'Large (60° flex, 25° ext)', lf: 'Moderate', limit: 'Facet orientation (blocks rotation), ALL/PLL', note: 'Facet "mortise-tenon" blocks rotation. Disc height ratio helps mobility. L5-S1 is the most mobile lumbar segment.' },
-];
-
-const COUPLING_DATA = [
-  { region: 'Lower Cervical (C3-C7)', rule: 'Lateral flexion + IPSILATERAL rotation', detail: 'When you tilt your head to the right, the vertebral bodies rotate to the RIGHT (same side as tilt). Spinous processes rotate CONTRALATERAL (to the LEFT — toward convex side). Ratio: 2:3 at C3, decreasing to 1:7 at C7.', clinical: 'Manual therapy: side-bending positions are used to localize cervical manipulation. HVLA techniques use coupled motion to find the precise level.' },
-  { region: 'Thoracic', rule: 'Transitional — varies by level', detail: 'Upper thoracic tends to couple like cervical (ipsilateral). Lower thoracic tends to couple like lumbar (contralateral). Mid-thoracic is variable. Ribs complicate this relationship significantly.', clinical: 'Thoracic coupling rules are less clinically predictable than cervical or lumbar. Treat each thoracic segment empirically.' },
-  { region: 'Lumbar (L1-L5)', rule: 'Lateral flexion + CONTRALATERAL rotation', detail: 'When you tilt left, lumbar vertebral bodies rotate to the RIGHT (opposite side). Spinous processes rotate to the LEFT (ipsilateral/concave side). This is OPPOSITE to cervical coupling.', clinical: 'Scoliosis: a lumbar dextroscoliosis (convexity right) = vertebral bodies rotated LEFT. SPs deviate to the RIGHT (ipsilateral concave). Key for understanding scoliosis radiograph interpretation and manual therapy positioning.' },
-];
-
-const CLINICAL_DATA = [
-  { name: 'Spondylosis', color: 'teal', desc: 'Degenerative disease of the spine — includes disc degeneration, osteophyte formation, and facet OA. The normal aging cascade. Results in reduced IVF size, potential nerve root compression, and reduced overall mobility.', symptoms: 'Stiffness, progressive loss of motion, may develop radiculopathy with significant osteophytes compressing IVFs. Cervical spondylotic myelopathy is the most common cause of spinal cord dysfunction in adults >55.', mgmt: 'Conservative: NSAIDS, PT (mobility, stabilization), TENS. Surgical: decompression if myelopathy or radiculopathy fails conservative care.' },
-  { name: 'Spondylolysis', color: 'gold', desc: 'A defect (stress fracture) in the pars interarticularis — the narrow bridge between the superior and inferior articular processes of a vertebra. Almost always at L4 or L5. Found in ~6% of the population.', symptoms: 'Low back pain worse with extension and axial loading. Young athletes (gymnasts, football linemen, wrestlers). Bilateral pars defects at same level → spondylolisthesis.', mgmt: 'Conservative: activity modification, bracing (Boston brace), extension avoidance, PT. Surgical: rare — fusion for persistent instability.' },
-  { name: 'Spondylolisthesis', color: 'amber', desc: 'Anterior slippage of one vertebra over the one below. Most common at L4-L5 (degenerative) and L5-S1 (isthmic). Meyerding grading: I (<25%), II (25-50%), III (50-75%), IV (75-100%), V (spondyloptosis).', symptoms: 'LBP, hamstring tightness, wide-based gait (severe cases), radiculopathy (nerve root tethering). "Step-off" deformity palpable at spinous processes.', mgmt: 'Grade I-II: conservative (stabilization exercises, bracing). Grade III+: surgical fusion typically indicated. Cauda equina symptoms at any grade = surgery.' },
-  { name: 'Disc Herniation', color: 'red', desc: 'Nucleus pulposus material protrudes through the annulus fibrosus. Most common: L4-L5 (L5 nerve root) and L5-S1 (S1 nerve root) in lumbar; C5-C6 (C6 root) and C6-C7 (C7 root) in cervical. Posterolateral direction is most common (PLL is weakest here).', symptoms: 'Dermatomal pain (sharp/burning/electric), myotomal weakness, diminished reflexes. SLR positive in lumbar (>60° leg pain reproduction, not LBP). Spurling\'s test positive in cervical.', mgmt: '90% resolve with conservative care within 6-12 weeks. Red flags for surgery: progressive weakness, bowel/bladder dysfunction (cauda equina emergency).' },
-  { name: 'Lumbarization of S1', color: 'purple', desc: 'S1 is unfused and appears as an extra lumbar vertebra — giving the appearance of 6 lumbar vertebrae. The resulting L6 has abnormal disc and facet morphology.', symptoms: 'May be asymptomatic or associated with LBP. The transitional segment is susceptible to early degenerative changes due to abnormal mechanics.', mgmt: 'Treat symptoms, not the radiographic finding. Important to know when counting levels for injection or surgery.' },
-  { name: 'Sacralization of L5', color: 'purple', desc: 'L5 is fused (partially or completely) to the sacrum — giving the appearance of only 4 lumbar vertebrae. Bertolotti syndrome: unilateral sacralization creating an anomalous articulation between L5 TP and sacral ala.', symptoms: 'Associated with increased stress on L4-L5 (the level above) → higher incidence of L4-L5 disc disease. The fused side is stiff; the contralateral disc is stressed.', mgmt: 'Treat L4-L5 level symptoms. Injection into Bertolotti joint may provide relief. Surgical resection of anomalous process in refractory cases.' },
-];
-
-const BACK_REVIEW = [
-  { q: 'Describe the coupling motion of the lumbar spine. How does this differ from the cervical spine, and why is this clinically relevant?', a: 'Lumbar coupling: lateral flexion + CONTRALATERAL rotation (vertebral bodies rotate away from the side of lateral flexion; SPs rotate toward the concave/ipsilateral side). Cervical coupling: lateral flexion + IPSILATERAL rotation (vertebral bodies rotate toward the side of lateral flexion; SPs rotate to the contralateral/convex side). Clinical relevance: manual therapy positioning uses coupling rules to localize techniques. Scoliosis interpretation: a lumbar dextroscoliosis (convex right) has vertebral bodies rotated to the LEFT. Understanding coupling is essential for HVLA manipulation technique design.' },
-  { q: 'A patient\'s MRI shows a herniated nucleus pulposus at L4-L5. Which nerve root is most likely compressed, and what are the expected clinical findings?', a: 'At L4-L5, the disc herniation typically compresses the L5 nerve root (the traversing root, not the exiting L4 root which exits above this disc level). Expected findings: dermatomal paresthesia into the dorsum of the foot and big toe; myotomal weakness (great toe extension — EHL, ankle dorsiflexion); DTR: no classic L5 reflex (sometimes medial hamstring). Compare: L3-L4 disc = L4 root (anterior thigh/medial shin, knee extension weakness, diminished patellar reflex). L5-S1 disc = S1 root (lateral foot/sole, plantarflexion weakness, diminished Achilles reflex).' },
-  { q: 'Why does the multifidus not recover spontaneously after an episode of acute low back pain, and what is the clinical implication?', a: 'Following acute LBP, the multifidus undergoes rapid atrophy (within days) and fatty infiltration. This atrophy is segmental (at the symptomatic level) rather than diffuse. Crucially, even after pain resolves completely, the multifidus does NOT spontaneously recover in size or activation patterns without specific rehabilitation. In chronic LBP, multifidus shows altered feedforward activation (it activates AFTER limb movement instead of before). Clinical implication: pain relief alone is insufficient. Specific motor control rehabilitation targeting multifidus re-education is necessary to prevent recurrence. Prone exercises, quadruped, and transversus abdominis co-activation are key.' },
-  { q: 'What are the boundaries and contents of the suboccipital triangle? What is the clinical significance of the vertebral artery in this region?', a: 'Borders: Medial = rectus capitis posterior MAJOR. Lateral = obliquus capitis SUPERIOR. Inferior = obliquus capitis INFERIOR. Floor: posterior arch of C1 + posterior atlanto-occipital membrane. Roof: semispinalis capitis. Contents: Vertebral artery (forms a large loop), suboccipital nerve (C1 DPR — motor only), venous plexus. Clinical significance: the vertebral artery makes a large "S-curve" in this triangle between C1 and the foramen magnum. Sustained end-range cervical rotation compresses the contralateral vertebral artery here. This is the anatomical basis for pre-manipulation VBI screening. The suboccipital nerve is purely motor — C1 DPR — no sensory cutaneous distribution.' },
-  { q: 'Describe the ligamentum flavum — why does it have such high elastin content, and what happens when it thickens?', a: 'The ligamentum flavum connects adjacent laminae (~80% elastin, 20% collagen — highest elastin content of any ligament in the body). The high elastin content serves two purposes: (1) allows smooth flexion without folding into the vertebral canal (a collagen-only ligament would buckle), and (2) provides elastic recoil to assist restoration of neutral position from flexion. With aging, the ligamentum flavum hypertrophies and loses elasticity (fibrosis replaces elastin). This thickening bulges into the posterior vertebral canal — particularly during extension — and is a major contributor to lumbar spinal stenosis. The "yellow color" from elastin gives it its name (flavum = yellow).' },
-  { q: 'A patient with RA develops progressive hand clumsiness and ataxic gait. Lateral flexion cervical X-rays show an atlanto-dens interval (ADI) of 5mm. What structure has failed and what are the implications?', a: 'The transverse (cruciate) ligament has failed — it normally holds the dens (odontoid process) against the anterior arch of C1. Normal ADI: <3mm in adults, <5mm in children. ADI 5mm = significant transverse ligament insufficiency. RA erodes the dens and surrounding synovial tissue. The dens can then impinge on the spinal cord during flexion (posterior space for cord <14mm = critical). Progressive myelopathy (hand clumsiness = loss of fine motor, ataxic gait = cord dysfunction) in this context = surgical emergency. Sharp-Purser test positive. Absolute contraindication to cervical manipulation.' },
-];
-
-// ══════════════════════════════════════════════════
-// RENDER FUNCTIONS
-// ══════════════════════════════════════════════════
-function renderCurvatures() {
-  const el = document.getElementById('curvature-content');
-  if (!el) return;
-  const cm = { teal:'var(--teal)', gold:'var(--gold)', red:'var(--red)', amber:'var(--amber)', purple:'var(--purple)' };
-  el.innerHTML = CURVATURES.map(c => `
-    <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid ${cm[c.color]};">
-      <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${c.name}</div>
-      <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${c.content}</div>
-      ${c.dev ? `<div style="font-size:0.82rem;color:var(--text3);margin-top:0.25rem;font-style:italic;">${c.dev}</div>` : ''}
-    </div>`).join('');
-}
-
-function selectVert(type, btn) {
-  document.querySelectorAll('#vert-nav button').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  const data = VERTEBRAE_DATA[type];
-  const el = document.getElementById('vert-content');
-  el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
-    <div class="card" style="grid-column:1/-1;">
-      <div class="card-header"><div class="card-header-title">${data.title}</div></div>
-      <div class="card-body">
-        <div style="font-size:0.95rem;color:var(--text2);line-height:1.7;margin-bottom:1rem;">${data.intro}</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
-          ${data.landmarks.map(lm => `
-            <div style="background:var(--surface);border-radius:8px;padding:0.875rem 1rem;border-left:3px solid var(--teal);">
-              <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.375rem;">${lm.name}</div>
-              <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${lm.desc}</div>
-            </div>`).join('')}
-        </div>
-      </div>
-    </div>
-  </div>`;
-}
-
-function renderLigaments() {
-  const el = document.getElementById('ligament-content');
-  if (!el) return;
-  const cm = { teal:'var(--teal)', gold:'var(--gold)', amber:'var(--amber)', purple:'var(--purple)', grey:'var(--text3)' };
-  el.innerHTML = LIGAMENTS.map(l => `
-    <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-      <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.2rem;display:flex;align-items:center;gap:0.5rem;">
-        <span style="width:8px;height:8px;border-radius:50%;background:${cm[l.color]};flex-shrink:0;display:inline-block;"></span>${l.name}
-      </div>
-      <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${l.desc}</div>
-    </div>`).join('');
-}
-
-function renderCVJoints() {
-  const el = document.getElementById('cv-joint-content');
-  if (!el) return;
-  el.innerHTML = CV_JOINTS.map(j => `
-    <div style="background:var(--surface);border-radius:8px;padding:0.875rem 1rem;margin-bottom:0.625rem;">
-      <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.375rem;">${j.name}</div>
-      <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.25rem;"><strong style="color:var(--text2);">Surfaces: </strong>${j.borders}</div>
-      <div style="font-size:0.82rem;color:var(--teal-light);margin-bottom:0.25rem;"><strong style="color:var(--text2);">Motion: </strong>${j.motion}</div>
-      <div style="font-size:0.82rem;color:var(--text2);margin-bottom:0.375rem;"><strong>Ligaments: </strong>${j.ligaments}</div>
-      <div style="font-size:0.82rem;color:var(--gold);font-style:italic;">${j.clinical}</div>
-    </div>`).join('');
-}
-
-function selectBackMuscle(group, btn) {
-  document.querySelectorAll('#back-muscle-nav button').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  const muscles = BACK_MUSCLES[group] || [];
-  const groupInfo = {
-    superficial: 'Superficial Layer — EXTRINSIC | Control upper limb | VPR innervated',
-    intermediate: 'Intermediate Layer — EXTRINSIC | Assist respiration | VPR innervated',
-    splenius: 'Splenius Group — INTRINSIC Superficial | Cover like a bandage | DPR innervated',
-    erector: 'Erector Spinae — INTRINSIC Intermediate | 3 columns: Ilio · Longis · Spinalis | Chief extensors | DPR',
-    transversospinalis: 'Transversospinalis — INTRINSIC Deep | TP→SP | Contralateral rotators | Multifidus = key stabilizer | DPR',
-    minor: 'Minor Deep Intrinsics — Smallest, primarily proprioceptive | DPR innervated',
-  };
-  const el = document.getElementById('back-muscle-content');
-  el.innerHTML = `
-    <div class="bottom-line" style="margin-bottom:1rem;">
-      <span class="bottom-line-icon">📚</span>
-      <span class="bottom-line-text">${groupInfo[group] || ''}</span>
-    </div>
-    <div class="muscle-accordion-list" style="animation:fadeUp 0.25s ease;">
-      ${muscles.map(m => {
-        const clinParts = m.clinical.split(/(?<=[.!?])\s+(?=[A-Z])/);
-        const clinShort = clinParts.slice(0,2).join(' ');
-        const clinMore = clinParts.slice(2).join(' ');
-        return `
-        <div class="ma-item" onclick="toggleMA(this)">
-          <div class="ma-header">
-            <div class="ma-name">${m.name}</div>
-            <span class="ma-chevron">&#9660;</span>
-            <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="ma-body">
-            <div class="oina-grid">
-              <span class="oina-key">Origin</span><span class="oina-val">${m.origin}</span>
-              <span class="oina-key">Insertion</span><span class="oina-val">${m.insertion}</span>
-              <span class="oina-key">Nerve</span><span class="oina-val">${m.nerve}</span>
-              <span class="oina-key">Action</span><span class="oina-val">${m.action}</span>
-            </div>
-            <div class="clinical-note-v2">
-              <div class="cn2-row"><span class="cn2-icon">💡</span>
-                <div class="cn2-content">
-                  <div class="cn2-lbl">Clinical Note</div>
-                  <div class="cn2-short">${clinShort}</div>
-                  ${clinMore ? `<div class="cn2-more">${clinMore}</div><button class="cn2-toggle" onclick="event.stopPropagation();toggleCN(this)">+ Show more</button>` : ''}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>`;
-      }).join('')}
-    </div>`;
-}
-
-
-function renderSuboccipital() {
-  const el = document.getElementById('suboccipital-muscles');
-  if (!el) return;
-  el.innerHTML = SUBOCCIPITAL_MUSCLES.map(m => `
-    <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid var(--gold);">
-      <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.375rem;">${m.name}</div>
-      <div class="key-fact" style="margin-bottom:0.375rem;padding:0.4rem 0.625rem;">
-        <span class="key-fact-icon" style="font-size:0.9rem;">⚡</span>
-        <span class="key-fact-text" style="font-size:0.875rem;">${m.action}</span>
-      </div>
-      <div class="expand-trigger" onclick="toggleExpand(this)">
-        <span class="expand-trigger-lbl">Origin · Insertion · Triangle role</span>
-        <span class="expand-chevron">▼</span>
-      </div>
-      <div class="expand-body">
-        <div class="info-grid">
-          <span class="ig-lbl">Origin</span><span class="ig-val">${m.o}</span>
-          <span class="ig-lbl">Insertion</span><span class="ig-val">${m.i}</span>
-          <span class="ig-lbl">Triangle</span><span class="ig-val" style="color:var(--gold);">${m.triangle}</span>
-        </div>
-      </div>
-    </div>`).join('');
-}
-
-function renderMotion() {
-  const el = document.getElementById('motion-content');
-  if (!el) return;
-  el.innerHTML = MOTION_DATA.map(m => `
-    <div style="background:var(--surface);border-radius:8px;padding:0.875rem 1rem;margin-bottom:0.625rem;border-left:3px solid var(--teal);">
-      <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.375rem;">${m.region}</div>
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:0.3rem 0.75rem;font-size:0.875rem;margin-bottom:0.375rem;">
-        <span style="color:var(--text3);font-family:var(--font-m);font-size:0.65rem;text-transform:uppercase;">Disc Ratio</span><span style="color:var(--teal-light);font-weight:600;">${m.ratio}</span>
-        <span style="color:var(--text3);font-family:var(--font-m);font-size:0.65rem;text-transform:uppercase;">Primary</span><span style="color:var(--text2);">${m.primary}</span>
-        <span style="color:var(--text3);font-family:var(--font-m);font-size:0.65rem;text-transform:uppercase;">Limited by</span><span style="color:var(--text2);">${m.limit}</span>
-      </div>
-      <div style="font-size:0.82rem;color:var(--gold);font-style:italic;">${m.note}</div>
-    </div>`).join('');
-
-  const cEl = document.getElementById('coupling-content');
-  if (!cEl) return;
-  const colors = ['teal', 'amber', 'gold'];
-  const cm = { teal:'var(--teal)', amber:'var(--amber)', gold:'var(--gold)' };
-  cEl.innerHTML = COUPLING_DATA.map((c, i) => `
-    <div style="background:var(--surface);border-radius:8px;padding:0.875rem 1rem;margin-bottom:0.625rem;border-left:3px solid ${cm[colors[i]]};">
-      <div style="font-size:0.95rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${c.region}</div>
-      <div style="font-size:0.9rem;font-weight:600;color:${cm[colors[i]]};margin-bottom:0.375rem;">${c.rule}</div>
-      <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.375rem;">${c.detail}</div>
-      <div style="font-size:0.82rem;color:var(--teal-light);line-height:1.6;font-style:italic;">${c.clinical}</div>
-    </div>`).join('');
-}
-
-function renderClinical() {
-  const el = document.getElementById('clinical-content');
-  if (!el) return;
-  const cm = { teal:'var(--teal)', gold:'var(--gold)', amber:'var(--amber)', red:'var(--red)', purple:'var(--purple)' };
-  el.innerHTML = CLINICAL_DATA.map(c => `
-    <div class="card">
-      <div class="card-header" style="border-left:4px solid ${cm[c.color]};">
-        <div class="card-header-title">${c.name}</div>
-      </div>
-      <div class="card-body">
-        <!-- High-yield definition always visible -->
-        <div class="key-fact">
-          <span class="key-fact-icon">🔑</span>
-          <span class="key-fact-text">${c.desc.split(/(?<=[.!?])\s+(?=[A-Z])/)[0]}</span>
-        </div>
-        <!-- Presentation as tight callout -->
-        <div class="sl">Presentation</div>
-        <div style="font-size:0.875rem;color:var(--text2);line-height:1.6;">${c.symptoms}</div>
-        <!-- Management behind expand -->
-        <div class="expand-trigger" onclick="toggleExpand(this)">
-          <span class="expand-trigger-lbl">Management</span>
-          <span class="expand-chevron">▼</span>
-        </div>
-        <div class="expand-body">
-          <div style="font-size:0.875rem;color:var(--text2);line-height:1.6;">${c.mgmt}</div>
-        </div>
-      </div>
-    </div>`).join('');
-}
-
-function renderReview() {
-  const el = document.getElementById('back-review-list');
-  if (!el) return;
-  el.innerHTML = BACK_REVIEW.map((q, i) => `
-    <div class="rv-card" onclick="toggleRV(this)">
-      <div class="rv-q">
-        <span class="rv-num">Q${i + 1}</span>
-        <span class="rv-qtext">${q.q}</span>
-        <svg class="rv-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-      </div>
-      <div class="rv-a"><div class="rv-a-inner">${q.a}</div></div>
-    </div>`).join('');
-}
-
-
-// ══════════════════════════════════════════════════
-// KINESIOLOGY DATA + RENDER
-// ══════════════════════════════════════════════════
-const FACET_ARTHRO = [
-  { motion: 'Flexion', slide: 'Superior + Anterior bilaterally', foramen: 'Opens (widens)', label: 'Opening', color: 'green', note: 'Both facets glide upward and forward simultaneously. IVF opens — relieves nerve root pressure. This is why flexion often feels better in radiculopathy. Flexion-biased exercises (Williams) exploit this principle.' },
-  { motion: 'Extension', slide: 'Inferior + Posterior bilaterally', foramen: 'Closes (narrows)', label: 'Closing', color: 'red', note: 'Both facets glide downward and backward. IVF narrows — compresses nerve roots. Extension-biased movements (McKenzie) preferred for disc herniation (centralization) but worsen radiculopathy from foraminal stenosis.' },
-  { motion: 'SB Ipsilateral', slide: 'Downward slide (approximation)', foramen: 'Narrows ipsilaterally', label: 'Approximation', color: 'amber', note: 'Facet on the same side as side bend closes/approximates. Contralateral facet separates. Side bending DICTATES foraminal opening — the key clinical rule for manual therapy positioning.' },
-  { motion: 'SB Contralateral', slide: 'Upward slide (separation)', foramen: 'Opens contralaterally', label: 'Separation', color: 'green', note: 'Contralateral facet separates/opens. Used clinically to open the foramen and decompress nerve roots. Manual therapy: side bend AWAY from the painful side to open the IVF.' },
-  { motion: 'Rotation Ipsilateral', slide: 'Downward slide (separation)', foramen: 'Variable', label: 'Separation', color: 'teal', note: 'Ipsilateral facet separates during rotation to the same side. Contralateral facet approximates. Coupled with side bending — the direction of SB determines foraminal effect, not rotation alone.' },
-  { motion: 'Rotation Contralateral', slide: 'Upward slide (approximation)', foramen: 'Variable', label: 'Approximation', color: 'amber', note: '***Key rule: Side bending DICTATES foraminal opening, not rotation. Rotation follows the side bend in coupled motion. Always think about SB direction first when treating foraminal stenosis.' },
-];
-
-const KINEMATICS_TABLE = [
-  { action: 'Flexion', tilt: 'Anterior tilt of superior vertebra on inferior', glide: 'Superior + anterior glide of inferior facets', foramen: 'Opens (increases IVF size)', disc: 'Anterior compression; NP migrates posteriorly' },
-  { action: 'Extension', tilt: 'Posterior tilt of superior vertebra on inferior', glide: 'Inferior + posterior glide of inferior facets', foramen: 'Closes (decreases IVF size)', disc: 'Posterior compression; NP migrates anteriorly' },
-  { action: 'Lateral Flexion', tilt: 'Lateral tilt toward side of LF', glide: 'Ipsilateral: inferior (approximation); Contralateral: superior (separation)', foramen: 'Opens contralaterally; closes ipsilaterally', disc: 'Compresses ipsilateral disc; stretches contralateral annulus' },
-  { action: 'Rotation', tilt: 'Rotation around vertical axis — torsion', glide: 'Ipsilateral: inferior (separation); Contralateral: superior (approximation)', foramen: 'Variable based on coupling', disc: 'Torsion stresses annular fibers; highest disc stress of all motions' },
-];
-
-const FACET_ORIENTATION = [
-  {
-    region: 'Cervical (C2–C7)', angle: '45° from transverse plane; parallel to frontal plane', memory: 'BUM — Back Up Medial',
-    sup_facet: 'Superior/Posterior/Medially', inf_facet: 'Inferior/Anterior/Laterally',
-    preferred: 'All planes — most mobile region. Best rotation, flex/ext, and lateral flexion.',
-    coupling: 'Sidebend + IPSILATERAL rotation (SPs rotate to convex/contralateral side)',
-    clinical: 'The 45° intermediate angle allows all planes of motion. IVF opens with contralateral SB — side bend AWAY from pain to decompress. Cervical facets bear ~25% of compressive load. Uncovertebral joints (C3-C7) add guidance for motion and are prone to osteophyte formation narrowing the IVF.'
-  },
-  {
-    region: 'Thoracic (T1–T12)', angle: '60° from transverse plane; 20° from frontal plane', memory: 'BUL — Back Up Lateral',
-    sup_facet: 'Posterior/Superior/Laterally', inf_facet: 'Anterior/Inferior/Medially',
-    preferred: 'Rotation (facet orientation allows it; ribs restrict actual motion). Very limited flex/ext.',
-    coupling: 'T1-6: SB + IPSILATERAL rotation. T7-12: SB + CONTRALATERAL rotation (transitions to lumbar pattern)',
-    clinical: 'Most restricted region. Long inferiorly-angled SPs: palpated SP ≠ same-level vertebral body (Rule of 3s). T-spine mobilization has strong evidence for cervical pain, headaches, shoulder dysfunction — not just thoracic symptoms. Rib cage provides ~40% of thoracic stiffness.'
-  },
-  {
-    region: 'Lumbar (L1–L5)', angle: '90° from transverse plane; 45° from frontal plane', memory: 'BUM — Back Up Medial (biplanar)',
-    sup_facet: 'Posterior/Superior/Medially', inf_facet: 'Anterior/Inferior/Laterally',
-    preferred: 'Flexion/Extension — cardinal plane of lumbar spine. Only ~5° rotation per level.',
-    coupling: 'SB + CONTRALATERAL rotation (OPPOSITE to cervical — SPs rotate ipsilaterally/to concave side)',
-    clinical: 'Biplanar orientation: sagittal component drives flex/ext; frontal component locks rotation. The "mortise-tenon" interlocking blocks rotation — protects the disc from torsional injury. Orientation shifts at L5-S1 toward more frontal plane to resist the high anterior shear at the lumbosacral junction.'
-  },
-];
-
-const RULE_OF_3S = [
-  { levels: 'T1–T3', sp_direction: 'Posteriorly directed — minimal inferior angle', tp_relationship: 'TP at SAME level as palpated SP', palpation: 'What you feel = what you get (like lumbar spine)' },
-  { levels: 'T4–T6', sp_direction: 'More inferiorly directed', tp_relationship: 'TP halfway between adjacent SPs', palpation: 'Palpated SP is between levels above and below' },
-  { levels: 'T7–T9', sp_direction: 'Maximum inferior angle', tp_relationship: 'TP is 1 FULL level ABOVE palpated SP', palpation: 'Palpating T8 SP = T7 vertebral body and TP level' },
-  { levels: 'T10–T12', sp_direction: 'Rapid regression back toward horizontal', tp_relationship: 'Transitioning back toward T1 pattern at T12', palpation: 'T12 approaches L-spine pattern (SP at same level as body)' },
-];
-
-const LSR_DATA = {
-  definition: 'Lumbosacral rhythm is the coordinated motion between the lumbar spine and hip during forward bending and return. Neither should dominate — they work in sequence.',
-  phases: [
-    { name: 'Early Forward Bending (0–45°)', what: 'Lumbar flexes first. Lordosis reverses. Posterior structures elongate. Innominates anteriorly rotate.' },
-    { name: 'Late Forward Bending (45°–max)', what: 'Hip flexion takes over. Lumbar reaches end-range and becomes relatively fixed. Sacrum nutates then counternutates at end range.' },
-    { name: 'Return to Upright (reverse)', what: 'Hip extensors (gluteals + hamstrings) fire first to posteriorly rotate pelvis, then lumbar extensors restore lordosis.' },
-  ],
-  abnormal: [
-    { pattern: 'Movement En Bloc', meaning: 'Spine and hip move as one unit — no segmental motion visible. Suggests lumbar hypomobility, guarding, or pain avoidance.' },
-    { pattern: 'Excessive Hip Hinge', meaning: 'All motion from hip, no lumbar contribution. Tight lumbar extensors, pain-protective strategy, or lumbar fusion.' },
-    { pattern: 'Lateral Shift/Deviation', meaning: 'Trunk shifts laterally during bending — often seen with disc herniation causing antalgic lean away from painful side.' },
-    { pattern: 'Positive Trendelenburg', meaning: 'Pelvis drops on swing-leg side during single-leg stance = gluteus medius weakness on the STANDING leg side. Critical for gait analysis and SIJ loading assessment.' },
-  ],
-  clinical: 'Assess lumbosacral rhythm in every LBP evaluation — observe from posterior. Segmental mobility vs. en bloc movement tells you whether the problem is local restriction or global guarding. Single-leg stance (Trendelenburg) screen: hip drop ipsilaterally = positive = glute med weakness on the STANCE side. This is a critical gait stabilizer and affects SIJ loading during walking.',
-};
-
-function renderKinesiology() {
-  const fa = document.getElementById('kin-facet-arthro');
-  if (fa) {
-    const cmap = { green:'var(--green)', red:'var(--red)', amber:'var(--amber)', teal:'var(--teal)' };
-    fa.innerHTML = '<div class="muscle-accordion-list">' +
-      FACET_ARTHRO.map(f => `
-        <div class="ma-item" onclick="toggleMA(this)">
-          <div class="ma-header">
-            <div style="display:flex;align-items:center;gap:0.625rem;flex:1;">
-              <div style="width:8px;height:8px;border-radius:50%;background:${cmap[f.color]};flex-shrink:0;"></div>
-              <div class="ma-name">${f.motion}</div>
-              <span class="tag tag-grey" style="font-size:0.62rem;">${f.label}</span>
-            </div>
-            <div style="font-size:0.78rem;color:var(--text3);margin-right:0.5rem;max-width:180px;text-align:right;">${f.slide}</div>
-            <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="ma-body">
-            <div class="qref" style="margin-bottom:0.625rem;">
-              <div class="qref-item"><div class="qref-label">Slide Direction</div><div class="qref-value" style="font-size:0.78rem;color:var(--text2);">${f.slide}</div></div>
-              <div class="qref-item"><div class="qref-label">IVF Effect</div><div class="qref-value" style="font-size:0.78rem;color:${cmap[f.color]};">${f.foramen}</div></div>
-            </div>
-            <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical Note</div><div class="cn2-short">${f.note}</div></div></div></div>
-          </div>
-        </div>`).join('') + '</div>' +
-      `<div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Key Rule ★</div><div class="clinical-note-text"><strong>Side bending dictates foraminal opening</strong> — not rotation alone. To open the IVF and decompress a nerve root: side bend <em>away</em> from the painful side (contralateral SB = facet separation = foramen opens). This guides cervical and lumbar manual therapy positioning and patient positioning for pain relief.</div></div>`;
-  }
-
-  const kt = document.getElementById('kin-table');
-  if (kt) {
-    kt.innerHTML = `<div style="overflow-x:auto;"><table class="clean-table">
-      <thead><tr><th>Action</th><th>Tilting & Gliding</th><th>IVF Effect</th><th>Disc Behavior</th></tr></thead>
-      <tbody>${KINEMATICS_TABLE.map(r => `
-        <tr>
-          <td><strong style="color:var(--text);">${r.action}</strong></td>
-          <td style="font-size:0.82rem;">${r.tilt}<br><span style="color:var(--text3);font-size:0.78rem;">${r.glide}</span></td>
-          <td style="font-size:0.82rem;color:var(--teal-light);">${r.foramen}</td>
-          <td style="font-size:0.82rem;color:var(--gold);">${r.disc}</td>
-        </tr>`).join('')}
-      </tbody>
-    </table></div>`;
-  }
-
-  const fo = document.getElementById('kin-orientation');
-  if (fo) {
-    fo.innerHTML = FACET_ORIENTATION.map(o => `
-      <div class="chunk" style="border-left:3px solid var(--teal);margin-bottom:0.75rem;">
-        <div class="chunk-title">${o.region}</div>
-        <div class="qref" style="margin-bottom:0.5rem;">
-          <div class="qref-item"><div class="qref-label">Angle</div><div class="qref-value" style="font-size:0.72rem;color:var(--text2);">${o.angle}</div></div>
-          <div class="qref-item"><div class="qref-label">Memory</div><div class="qref-value" style="font-size:0.78rem;">${o.memory}</div></div>
-        </div>
-        <div style="font-size:0.82rem;color:var(--text2);margin-bottom:0.25rem;"><strong style="color:var(--text3);">Sup facet: </strong>${o.sup_facet} | <strong style="color:var(--text3);">Inf facet: </strong>${o.inf_facet}</div>
-        <div style="font-size:0.82rem;color:var(--teal-light);margin-bottom:0.25rem;"><strong style="color:var(--text2);">Preferred: </strong>${o.preferred}</div>
-        <div style="font-size:0.82rem;color:var(--amber);margin-bottom:0.375rem;"><strong style="color:var(--text2);">Coupling: </strong>${o.coupling}</div>
-        <div style="font-size:0.82rem;color:var(--text2);line-height:1.6;font-style:italic;">${o.clinical}</div>
-      </div>`).join('');
-  }
-
-  const r3 = document.getElementById('kin-rule3');
-  if (r3) {
-    r3.innerHTML = `<div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.875rem;">Because thoracic SPs are angled <strong style="color:var(--text)">inferiorly</strong>, the SP you palpate is NOT at the same level as the vertebral body. Use this to find the correct level for assessment and treatment.</div>
-    <table class="clean-table">
-      <thead><tr><th>Levels</th><th>SP Direction</th><th>TP Relationship to SP</th><th>Palpation Note</th></tr></thead>
-      <tbody>${RULE_OF_3S.map(r => `
-        <tr>
-          <td><strong style="color:var(--teal-light);">${r.levels}</strong></td>
-          <td style="font-size:0.82rem;">${r.sp_direction}</td>
-          <td style="font-size:0.82rem;color:var(--gold);">${r.tp_relationship}</td>
-          <td style="font-size:0.82rem;color:var(--text2);">${r.palpation}</td>
-        </tr>`).join('')}
-      </tbody>
-    </table>`;
-  }
-
-  const lsr = document.getElementById('kin-lsr');
-  if (lsr) {
-    lsr.innerHTML = `
-      <div class="bottom-line"><span class="bottom-line-icon">🎯</span><span class="bottom-line-text">${LSR_DATA.definition}</span></div>
-      <div class="sec-label">Phases of Forward Bending</div>
-      ${LSR_DATA.phases.map((p,i) => `
-        <div style="display:flex;gap:0.625rem;padding:0.4rem 0;border-bottom:1px solid var(--border);">
-          <div style="font-family:var(--font-d);font-size:1.2rem;font-weight:600;color:var(--teal-light);min-width:1.5rem;line-height:1;">${i+1}</div>
-          <div><div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.1rem;">${p.name}</div><div style="font-size:0.875rem;color:var(--text2);">${p.what}</div></div>
-        </div>`).join('')}
-      <div class="sec-label" style="margin-top:0.875rem;">Abnormal Patterns</div>
-      ${LSR_DATA.abnormal.map(a => `
-        <div style="padding:0.4rem 0;border-bottom:1px solid var(--border);">
-          <div style="font-size:0.875rem;font-weight:600;color:var(--amber);margin-bottom:0.1rem;">⚠️ ${a.pattern}</div>
-          <div style="font-size:0.875rem;color:var(--text2);">${a.meaning}</div>
-        </div>`).join('')}
-      <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Clinical Application</div><div class="clinical-note-text">${LSR_DATA.clinical}</div></div>`;
-  }
-}
-
-// ══════════════════════════════════════════════════
-// KINETICS DATA + RENDER
-// ══════════════════════════════════════════════════
-const FIVE_FORCES = [
-  {
-    name: 'Axial Compression', icon: '⬇️', color: 'teal',
-    short: 'Forces through the long axis — result of body weight + bilateral muscle contraction.',
-    def: 'Force acting through the LONG AXIS of the spine at right angles to the discs.',
-    sources: ['Superincumbent body weight (increases caudally — highest at L5-S1)', 'Bilateral erector spinae + multifidus muscle tension', 'External loads (carrying, lifting)', 'Intra-abdominal pressure changes'],
-    clinical: 'Axial compression stimulates bone remodeling (Wolff\'s Law) and disc hydration via pumping. Adequate loading is beneficial — too little (inactivity) leads to disc degeneration; too much (sustained static loading) leads to creep. Weight training after age 40 is evidence-based for bone density and disc resilience. L3 disc pressure: ~700N standing, ~1100N sitting, ~2300N forward flexion with load.'
-  },
-  {
-    name: 'Bending (Flex/Ext/LF)', icon: '↕️', color: 'gold',
-    short: 'Compression on one side + tension on the opposite — direction determines which.',
-    def: 'Combination of COMPRESSION (one side) and TENSION (opposite side) simultaneously.',
-    sources: ['Forward flexion: anterior elements compressed, posterior elements tensioned', 'Extension: posterior elements compressed (facet joint loading ↑), anterior tensioned', 'Lateral flexion: ipsilateral compression + contralateral tension across the disc'],
-    clinical: 'In sustained flexion (desk work, driving): ANTERIOR annulus + vertebral body are compressed; PLL, posterior annulus, ligamentum flavum, posterior muscles are under sustained tension → CREEP. This is the exact mechanism of the bank manager case study (prolonged sitting → PLL elongation → posterior disc migration). Extension loads facet joints → facet OA presents with extension-based axial pain.'
-  },
-  {
-    name: 'Torsion (Axial Rotation)', icon: '🔄', color: 'purple',
-    short: 'Twisting load — maximal stress on annular fibers; lumbar facets normally block this.',
-    def: 'Occurs with axial rotation — especially significant during COUPLED MOTIONS.',
-    sources: ['Axial rotation combined with lateral flexion (coupled motion)', 'Asymmetric reaching (forward flex + rotate = maximum disc stress)', 'The most common MOI for posterolateral disc herniation'],
-    clinical: 'Torsion creates shear stress on alternating annular fiber layers (only 50% can resist per direction). The lumbar facets NORMALLY resist rotation (~5°/level), protecting the disc. When the patient bends forward AND to the side, torsion + bending combine for maximum disc stress — the exact MOI of the case study patient. Classic presentation: herniation at L4-L5 after lifting + twisting with subsequent radiculopathy.'
-  },
-  {
-    name: 'Shear', icon: '↔️', color: 'red',
-    short: 'Horizontal sliding forces — highest at L5-S1; lordosis + GRF drive anterior shear.',
-    def: 'Forces acting at 90 DEGREES to the compressive forces — A-P and lateral directions.',
-    sources: ['Anterior shear: lordosis + body weight + ground reaction force (highest at L5-S1)', 'Lateral shear: asymmetric loading, scoliosis', 'Increased lordosis = increased lumbosacral angle = increased anterior shear'],
-    clinical: 'The lumbosacral junction experiences the HIGHEST anterior shear in the body — the lumbosacral angle determines magnitude. The iliolumbar ligament is the primary passive restraint to L5 anterior shear (explains why it was listed in the case study structures). Spondylolisthesis = chronic excessive shear + pars interarticularis stress fracture → anterior vertebral slip. Increased shear is the main reason L4-L5 and L5-S1 are highest-incidence levels for both spondylolisthesis and disc herniation.'
-  },
-  {
-    name: 'Tension (Distraction)', icon: '↑↓', color: 'amber',
-    short: 'Elongation/pulling forces — loads posterior ligaments in flexion; used therapeutically in traction.',
-    def: 'Pulling forces that elongate spinal structures — least common but clinically relevant.',
-    sources: ['End-range flexion stretching posterior ligaments (PLL, lig flavum, interspinous)', 'Therapeutic traction — controlled tensile force for decompression', 'Inversion therapy / dead hang exercises'],
-    clinical: 'Therapeutic traction uses controlled tension to increase IVF size, reduce disc pressure, and potentially allow herniated disc material to retract. Most effective in cervical spine (>30% body weight needed in lumbar). Spinal decompression tables apply distraction forces in varying positions. Tension is also the force that tears the posterior annulus — the first event in disc herniation (annular fissure from tension failure).'
-  },
-];
-
-const CREEP_DATA = {
-  definition: 'Creep is the time-dependent, progressive deformation of a viscoelastic material under a constant load. Because spinal discs, ligaments, and cartilage are viscoelastic — they deform MORE the longer the load is applied, even without increasing the force.',
-  mechanism: [
-    'Under sustained load, fluid is slowly expressed from the nucleus pulposus into surrounding tissues',
-    'The disc loses height and hydrostatic pressure decreases over time',
-    'PLL and posterior annulus elongate (plastic deformation) with prolonged flexion tension',
-    'This is why you are 1–2 cm SHORTER at the end of the day vs. the morning — disc fluid loss',
-    'Recovery occurs with unloading — fluid re-enters the disc when pressure is removed',
-  ],
-  clinical: [
-    { scenario: 'Prolonged Sitting (Sustained Flexion) — The Case Study Patient', consequence: 'PLL gets elongated and weakened over time. Disc is compressed anteriorly → NP gradually migrates posteriorly. Combined with posterior annular fatigue from sustained tension → posterior disc herniation. This is the exact mechanism behind the 28yo bank manager\'s L4-L5 herniation from prolonged desk work.' },
-    { scenario: 'PT Implication: Morning Vulnerability', consequence: 'Discs are maximally hydrated and turgid in the morning — maximum stiffness and highest IDP. High-load activities (heavy lifting, aggressive HVLA) should be avoided the first 30–60 minutes after waking. Evidence-based: advise patients to stretch gently, walk, then begin more vigorous activity.' },
-    { scenario: 'PT Implication: Movement Breaks', consequence: 'Brief position changes (standing every 30 minutes from sitting) allow disc rehydration and PLL stress recovery. Evidence: the 30-minute sit-break interval is clinically supported for disc health. This directly addresses the case study patient\'s 30-minute sitting tolerance.' },
-    { scenario: 'PT Implication: Loading Order', consequence: 'After sustained flexion loading (prolonged sitting, bending), there is a recovery period needed before end-range extension exercises are appropriate. Starting with gentle walking, then progressing to McKenzie extension exercises, allows disc repressurization before loading in extension.' },
-  ],
-};
-
-function renderKinetics() {
-  const el5 = document.getElementById('kin-5forces');
-  if (el5) {
-    const cmap = { teal:'var(--teal)', gold:'var(--gold)', purple:'var(--purple)', red:'var(--red)', amber:'var(--amber)' };
-    el5.innerHTML = '<div class="muscle-accordion-list">' +
-      FIVE_FORCES.map(f => `
-        <div class="ma-item" onclick="toggleMA(this)">
-          <div class="ma-header">
-            <div style="display:flex;align-items:center;gap:0.625rem;flex:1;">
-              <span style="font-size:1.1rem;">${f.icon}</span>
-              <div class="ma-name">${f.name}</div>
-            </div>
-            <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="ma-body">
-            <div class="bottom-line" style="margin-bottom:0.625rem;"><span class="bottom-line-icon">🎯</span><span class="bottom-line-text">${f.short}</span></div>
-            <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.5rem;">${f.def}</div>
-            <div class="sec-label">Sources</div>
-            ${f.sources.map(s => `<div class="bullet"><span class="dot">•</span>${s}</div>`).join('')}
-            <div class="clinical-note-v2" style="margin-top:0.625rem;"><div class="cn2-row"><span class="cn2-icon">💡</span><div class="cn2-content"><div class="cn2-lbl">Clinical</div><div class="cn2-short">${f.clinical.substring(0,160)}...</div><div class="cn2-more">${f.clinical}</div><button class="cn2-toggle" onclick="event.stopPropagation();toggleCN(this)">+ Show more</button></div></div></div>
-          </div>
-        </div>`).join('') + '</div>';
-  }
-
-  const creep = document.getElementById('kin-creep');
-  if (creep) {
-    creep.innerHTML = `
-      <div class="bottom-line"><span class="bottom-line-icon">⏱️</span><span class="bottom-line-text">${CREEP_DATA.definition}</span></div>
-      <div class="sec-label">Mechanism</div>
-      ${CREEP_DATA.mechanism.map(m => `<div class="bullet"><span class="dot">•</span>${m}</div>`).join('')}
-      <div class="sec-label" style="margin-top:0.875rem;">Clinical Implications</div>
-      ${CREEP_DATA.clinical.map(c => `
-        <div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid var(--amber);">
-          <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${c.scenario}</div>
-          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${c.consequence}</div>
-        </div>`).join('')}`;
-  }
-
-  const fd = document.getElementById('kin-forces-detail');
-  if (fd) {
-    fd.innerHTML = `
-      <div class="chunk" style="border-left:3px solid var(--teal);margin-bottom:0.625rem;">
-        <div class="chunk-title">Axial Compression + NP Interaction Pair</div>
-        <div class="chunk-body">The NP and annulus fibrosus function as an <strong>interaction pair</strong> under compression. Compression pressurizes the NP → NP pushes outward radially against the annulus → annulus acts in hoop tension to contain the NP → efficient load distribution in all directions (like a pressurized water balloon). With aging, NP loses proteoglycan content → less hydrostatic pressure → less efficient load distribution → annulus bears more direct stress.</div>
-      </div>
-      <div class="chunk" style="border-left:3px solid var(--gold);margin-bottom:0.625rem;">
-        <div class="chunk-title">Bending — Anterior vs Posterior Loading</div>
-        <div class="chunk-body">FLEXION: Anterior vertebral body = compression; posterior elements (PLL, posterior annulus, lig flavum, facet capsules, interspinous ligs) = tension. EXTENSION: Posterior elements = compression (facet joint loading increases significantly); anterior elements = tension. Sustained extension in patients with facet OA → pain via posterior element compression.</div>
-      </div>
-      <div class="chunk" style="border-left:3px solid var(--purple);margin-bottom:0.625rem;">
-        <div class="chunk-title">Torsion — Annular Fiber Stress</div>
-        <div class="chunk-body">The alternating oblique fiber directions of the annulus (~±30° to transverse plane) resist torsion — but only the fibers oriented AGAINST the direction of rotation can engage at one time (~50% of fibers). The lumbar facets prevent >5° rotation per level, protecting the disc. When facets fail (degeneration) or are bypassed (manipulation in wrong direction), disc torsional stress increases dramatically.</div>
-      </div>
-      <div class="chunk" style="border-left:3px solid var(--red);">
-        <div class="chunk-title">Shear — Lumbosacral Junction</div>
-        <div class="chunk-body">At L5-S1, the lumbosacral angle creates significant anterior shear. The <strong>iliolumbar ligament</strong> (L4-L5 TPs → iliac crest) is the primary passive restraint to L5 anterior shear. Injury to this ligament (the case study patient) directly increases L5-S1 shear instability. Increased lordosis → increased lumbosacral angle → increased shear → higher risk of spondylolisthesis.</div>
-      </div>`;
-  }
-
-  const lk = document.getElementById('kin-lumbar');
-  if (lk) {
-    lk.innerHTML = `
-      <div style="padding:0.625rem 0;border-bottom:1px solid var(--border);">
-        <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">Compression Sources in Lumbar Spine</div>
-        <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.25rem;"><strong>= Body weight + Bilateral erector spinae/multifidus tension</strong></div>
-        <div style="font-size:0.82rem;color:var(--teal-light);">L3 disc: ~700N standing · ~1100N sitting · ~2300N forward flex with load</div>
-        <div style="font-size:0.82rem;color:var(--gold);margin-top:0.25rem;">Sitting generates MORE disc pressure than standing — sitting adds hip flexors and trunk weight without the benefit of muscle unloading. This explains why the case study patient has equal sit/stand tolerance (30 min each).</div>
-      </div>
-      <div style="padding:0.625rem 0;">
-        <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">Shear Sources in Lumbar Spine</div>
-        <div style="font-size:0.875rem;color:var(--text2);margin-bottom:0.25rem;"><strong>= Lordosis + Body weight + Ground reaction force</strong></div>
-        <div style="font-size:0.82rem;color:var(--teal-light);">Anterior shear at L5: ~200N standing; increases with lordosis and load</div>
-        <div style="font-size:0.82rem;color:var(--gold);margin-top:0.25rem;">Iliolumbar ligament is primary passive restraint. Increased lordosis = increased shear. Spondylolisthesis is the end-stage result of chronic excessive shear + pars fracture.</div>
-      </div>`;
-  }
-}
-
-// ══════════════════════════════════════════════════
-// PELVIS & SIJ DATA + RENDER
-// ══════════════════════════════════════════════════
-const SIJ_DATA = {
-  anatomy: {
-    articulation: 'SIJ = S1-S3 sacral segments with ilium (innominate). Sacral surface is CONVEX; iliac surface is CONCAVE. Multi-planar, C-shaped or L-shaped curved configuration — unique to each individual. This irregular shape itself provides form closure stability.',
-    cartilage: 'Sacral side: thicker hyaline cartilage. Iliac side: thinner fibrocartilage. With aging, the fibrocartilage becomes rougher and more irregular → increased interlocking → reduced mobility (stiffening is normal and protective in the SIJ, unlike most joints).',
-    ligaments: [
-      { name: 'Iliolumbar Ligament ★', attach: 'L4-L5 transverse processes → iliac crest (anterior and posterior bands)', function: 'Resists anterior shear AND lateral translation of L5 on sacrum. Primary passive restraint to L5-S1 shear. Also limits flexion and lateral flexion of L5-S1. Most important lumbopelvic ligament clinically.', referral: 'Injured iliolumbar = pain referral to groin, anterior thigh, sometimes lateral calf. Mimics disc herniation. Tender to palpation just medial to PSIS at L4-L5 level.', clinical: true },
-      { name: 'Anterior Sacroiliac Ligament', attach: 'Anterior sacrum → anterior ilium', function: 'Limits posterior rotation of sacrum (counternutation). Weakest SI ligament — injured in high-energy trauma (MVA, falls from height).', referral: '', clinical: false },
-      { name: 'Long Dorsal Sacroiliac Ligament ★', attach: 'PSIS → S3-S4 lateral crest', function: 'Limits counternutation of sacrum. Palpable just inferior to PSIS. Becomes taut with PPT and sustained hip flexion.', referral: 'Tender just inferior to PSIS. Pain with PPT position and prolonged sitting. Commonly positive in SIJ dysfunction and pregnancy-related pelvic girdle pain.', clinical: true },
-      { name: 'Sacrospinous Ligament', attach: 'Lateral sacrum/coccyx → ischial spine', function: 'Prevents posterior tilting of sacrum. Creates greater and lesser sciatic foramina. Compression/shortening: piriformis syndrome + pudendal nerve entrapment.', referral: '', clinical: false },
-      { name: 'Sacrotuberous Ligament ★', attach: 'PSIS + lower sacrum/coccyx → ischial tuberosity', function: 'Major resistance to nutation. CONTINUOUS with biceps femoris long head tendon — hamstring tension directly influences sacral mechanics through this ligament. Critical for load transfer in gait.', referral: 'Referred pain to buttock/posterior thigh. Tight biceps femoris increases sacrotuberous tension → limits sacral nutation → altered SIJ mechanics in gait.', clinical: true },
-      { name: 'Interosseous Ligament', attach: 'Deep between sacrum and ilium — fills the posterior joint space', function: 'STRONGEST ligament in the human body. Provides majority of SIJ passive stability. Multiple strong bands in multiple planes. Key to form closure.', referral: '', clinical: false },
-    ],
-    pubic_symphysis: 'Joins innominates anteriorly. Fibrocartilaginous disc with hyaline cartilage surfaces. Three ligaments: superior pubic (superior shear), inferior pubic/arcuate (inferior separation), posterior. Muscular expansions converge here: TrA, rectus abdominis, internal oblique, adductor longus — making the pubic symphysis a force junction for core + LE forces. Disruption (osteitis pubis, athletic pubalgia) creates anterior pelvic pain with adductor/abdominal weakness.',
-  },
-  kinematics: {
-    innominate: [
-      { motion: 'Sagittal Plane — Anterior/Posterior Rotation', desc: 'Anterior rotation: ASIS moves forward/down, PSIS moves up. Posterior rotation: ASIS moves up/back, PSIS moves down. Most clinically relevant innominate motion. APT = bilateral anterior rotation. PPT = bilateral posterior rotation.' },
-      { motion: 'Frontal Plane — Flaring/Squeezing', desc: 'Innominate flares laterally (opens) or squeezes medially (closes). Contributes to pelvic width changes. Assessed with ASIS compression/distraction tests.' },
-      { motion: 'Transverse Plane — In-flare/Out-flare', desc: 'Rotation around a vertical axis. In-flare: ASIS moves medially. Out-flare: ASIS moves laterally. Less commonly assessed but relevant in asymmetric SIJ dysfunction. Assessed by comparing bilateral ASIS-to-umbilicus distances.' },
-    ],
-    sacrum: [
-      { motion: 'Nutation', desc: 'Sacral BASE moves ANTERIOR and INFERIOR; sacral APEX (coccyx) moves POSTERIOR. Tightens sacrotuberous and sacrospinous ligaments → compresses SIJ → most STABLE position. Occurs with lumbar extension, standing, weight-bearing. Sometimes called the "self-locking" mechanism of the SIJ.' },
-      { motion: 'Counternutation', desc: 'Sacral BASE moves POSTERIOR and SUPERIOR; sacral APEX moves ANTERIOR. Loosens sacrotuberous and sacrospinous ligaments → unlocks SIJ. Occurs with lumbar flexion, sitting, early forward bending. Less stable position — explains why prolonged sitting increases SIJ pain risk.' },
-      { motion: 'Sacral Torsion', desc: 'Rotation around an OBLIQUE AXIS (diagonal). Occurs normally during walking — as one leg swings forward, the sacrum rotates on a diagonal axis. Sacral torsions are named by the direction of rotation and the axis used: e.g., "L on L" = left rotation on left oblique axis. Assessed with standing flexion test, Stork test, and PSIS/ILA landmark asymmetry.' },
-    ],
-    table: [
-      { lumbar: 'Flexion', innominate: 'Anterior rotation', sacrum: 'Nutation → then counternutation at end range' },
-      { lumbar: 'Extension', innominate: 'Slight posterior rotation', sacrum: 'Nutation' },
-      { lumbar: 'Ipsilateral Rotation', innominate: 'Posterior rotation (ipsi); Anterior rotation (contra)', sacrum: 'Nutates ipsilaterally' },
-      { lumbar: 'Ipsilateral Side Bending', innominate: 'Anterior rotation (ipsi); Posterior rotation (contra)', sacrum: 'Side bends ipsilaterally; contralaterally on other side' },
-    ],
-  },
-  stability: {
-    form_closure: 'Form closure = inherent mechanical stability from ANATOMY alone, without any muscular force. The irregular, interlocking shape of the SIJ surfaces combined with the wedge shape of the sacrum between the two ilia provides passive stability. No external force needed. With aging, the joint surfaces become rougher and more interlocked — form closure increases (mobility decreases, stability increases). This is normal and protective.',
-    force_closure: 'Force closure = additional stability from MUSCLES and FASCIAL FORCES compressing the SIJ to maintain joint congruence. Required because form closure alone is insufficient for dynamic activities like walking, running, lifting.',
-    inner_unit: {
-      muscles: ['Transversus abdominis (TrA) — wraps around like a corset; increases intra-abdominal pressure; compresses SIJ via TLF tension; fires FEEDFORWARD in healthy individuals', 'Pelvic floor muscles (PFM) — the "bottom of the core"; co-activates with TrA; forms the inferior boundary of the pressure canister', 'Multifidus — inserts on mamillary processes; provides posterior SIJ compression; segmental stabilizer; atrophies rapidly with LBP and DOES NOT spontaneously recover'],
-      clinical: 'The inner unit fires FEEDFORWARD (before limb movement) in healthy individuals. In LBP and SIJ dysfunction, this feedforward activation is DELAYED — the stabilizers are inhibited by pain and disuse. Rehab priority: re-educate TrA (drawing-in), PFM (kegel + coordination), and multifidus (prone extension) to restore anticipatory activation BEFORE treating movement impairments.',
-    },
-    outer_unit: [
-      { name: 'Posterior Oblique System', muscles: 'Gluteus maximus (right) + contralateral latissimus dorsi (via TLF)', function: 'Load transfer across SIJ during gait. The primary diagonal sling for rotational stability in walking. This is why tight/inhibited glutes alter SIJ mechanics.' },
-      { name: 'Deep Longitudinal System', muscles: 'Erector spinae + biceps femoris long head + sacrotuberous ligament + thoracolumbar fascia', function: 'The longitudinal tension system. Biceps femoris DIRECTLY loads the sacrotuberous ligament → influences sacral nutation directly. Tight hamstrings = altered sacral mechanics via this system.' },
-      { name: 'Anterior Oblique System', muscles: 'Contralateral internal oblique + adductor longus (via anterior abdominal fascia)', function: 'Anterior pelvic stability. Important in high-speed activities and cutting movements. Disruption = groin pain in athletes.' },
-      { name: 'Lateral System', muscles: 'Gluteus medius + contralateral hip adductors', function: 'Frontal plane pelvic control during single-leg stance. Gluteus medius weakness = Trendelenburg sign = altered SIJ loading in gait.' },
-    ],
-    piriformis: 'Piriformis: O — anterior sacrum (S2-S4 anterior foramina), I — greater trochanter. Primarily an SIJ STABILIZER — directly spans the posterior SIJ and pulls it together. Actions change with hip position: ER + ABD when hip <60° flexion; IR + ABD when hip >90° flexion (position change reverses the muscle\'s effect). The sciatic nerve passes INFERIOR to piriformis in 85% of people — through the belly in 15% (piriformis syndrome). Piriformis spasm → SIJ compression + sciatic nerve irritation.',
-  },
-  palpation: {
-    bony: [
-      { name: 'ASIS (Anterior Superior Iliac Spine)', position: 'Supine', how: 'Most prominent anterior iliac landmark. Hook thumbs/fingers just medial to lateral pelvis and slide anteriorly — the sharp bony prominence. Bilateral comparison: asymmetric ASIS height = possible APT/PPT asymmetry or leg length discrepancy.' },
-      { name: 'PSIS (Posterior Superior Iliac Spine)', position: 'Prone or Standing', how: 'The "sacral dimple" — the posterior iliac prominence at S2 level. Place thumbs in the dimples and confirm bony contact. PSIS is the primary landmark for SIJ assessment — asymmetric PSIS height suggests sacral torsion or innominate rotation.' },
-      { name: 'Pubic Symphysis', position: 'Supine', how: 'Midline, superior to pubic area. Gentle pressure confirms the fibrocartilaginous junction. Tenderness + pain with single-leg stance = pubic symphysis dysfunction or athletic pubalgia (sports hernia).' },
-      { name: 'Iliac Crest', position: 'Standing or Sidelying', how: 'Palpate bilaterally at the "belt line." Should be LEVEL bilaterally. Asymmetry = possible LLD, scoliosis, or pelvic tilt. The highest point of the crest is at L4-L5 level — useful for identifying lumbar levels.' },
-      { name: 'Sacral Base, ILAs, Crest, Lateral Borders', position: 'Prone', how: 'Sacral base = upper sacrum at S1. ILAs (Inferior Lateral Angles) = lower corners of sacrum at S5. Sacral crest = midline posterior. Lateral borders = PSIS to ILA lines. PSIS/ILA asymmetry = sacral torsion. Long dorsal ligament just inferior to PSIS.' },
-      { name: 'Long Dorsal SIJ Ligament', position: 'Prone', how: 'Just inferior to PSIS, between PSIS and S3-S4 level. Firm pressure over this band. Tenderness = SIJ involvement. Becomes taut with PPT (patient can feel it with knees to chest).' },
-      { name: 'Sacrotuberous Ligament', position: 'Prone', how: 'From lower sacrum/PSIS to ischial tuberosity — a broad strap running through the gluteal region. Tenderness = SIJ dysfunction or hamstring-related sacral mechanics disorder.' },
-    ],
-    joint_play: [
-      { name: 'ASIS/PSIS Lateral Rocking (Posterior-Anterior Iliac Gapping)', how: 'Patient supine. Crossed-arm pressure on bilateral ASIS — medial force on one side simultaneously with the other. Gaps the posterior SIJ on the side receiving medial pressure.', positive: 'Reproduction of SI region pain confirms SIJ involvement. Note symmetry of motion.' },
-      { name: 'Sacral Thrust', how: 'Patient prone. Heel of hand on sacrum, PA force. Mobilizes sacrum anteriorly between the two ilia. Used diagnostically and therapeutically.', positive: 'Reproduction of sacral or SI pain. Positive in SIJ cluster testing.' },
-      { name: 'Sidelying SIJ Compression', how: 'Patient sidelying. Downward compression through the upper ilium toward the lower ilium (via greater trochanter or ASIS). Compresses the superior SIJ.', positive: 'Reproduction of SIJ pain. Part of the 5-test SIJ cluster — combined with thigh thrust, distraction, Gaenslen\'s, PSIS palpation.' },
-    ],
-    cluster: 'SIJ provocation cluster (van der Wurff et al.): ≥3 of 5 positive tests → strong diagnostic accuracy for SIJ as pain source. Tests: (1) Posterior SIJ palpation, (2) Thigh thrust, (3) Compression test, (4) Distraction test, (5) Gaenslen\'s test. A SINGLE positive test has poor specificity — always use the cluster for clinical decision-making. Sensitivity 85%, Specificity 79% with ≥3 positive.',
-  },
-  biomech: [
-    { lumbar: 'Flexion', innominate: 'Anterior rotation', sacrum: 'Nutation, then counternutation' },
-    { lumbar: 'Extension', innominate: 'Slight posterior rotation', sacrum: 'Nutation' },
-    { lumbar: 'Rotation (ipsilateral)', innominate: 'Posterior rotation (ipsi), Anterior rotation (contra)', sacrum: 'Nutates ipsilaterally' },
-    { lumbar: 'Side bending (ipsilateral)', innominate: 'Anterior rotation (ipsi), Posterior rotation (contra)', sacrum: 'Side bends ipsilaterally; contralaterally on other side' },
-  ],
-};
-
-let currentSIJ = 'anatomy';
-function selectSIJ(section, btn) {
-  currentSIJ = section;
-  document.querySelectorAll('#sij-nav button').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
-  renderSIJContent();
-}
-
-function renderSIJContent() {
-  const el = document.getElementById('sij-content');
-  if (!el) return;
-
-  if (currentSIJ === 'anatomy') {
-    const d = SIJ_DATA.anatomy;
-    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
-      <div style="display:flex;flex-direction:column;gap:1rem;">
-        <div class="card"><div class="card-header"><div class="card-header-title">SIJ Articulation</div></div><div class="card-body">
-          <div class="bottom-line"><span class="bottom-line-icon">🦴</span><span class="bottom-line-text">${d.articulation}</span></div>
-          <div class="sec-label">Cartilage</div><div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${d.cartilage}</div>
-        </div></div>
-        <div class="card"><div class="card-header"><div class="card-header-title">Pubic Symphysis</div></div><div class="card-body">
-          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${d.pubic_symphysis}</div>
-        </div></div>
-      </div>
-      <div class="card"><div class="card-header"><div class="card-header-title">SIJ Ligaments</div><div class="card-header-sub">6 Key Stabilizers — ★ = High Clinical Relevance</div></div><div class="card-body">
-        <div class="muscle-accordion-list">
-          ${d.ligaments.map(l => `
-            <div class="ma-item" onclick="toggleMA(this)">
-              <div class="ma-header">
-                <div class="ma-name">${l.name}</div>
-                <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              </div>
-              <div class="ma-body">
-                <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.25rem;"><strong style="color:var(--text2);">Attachment: </strong>${l.attach}</div>
-                <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:${l.referral?'0.375rem':'0'};">${l.function}</div>
-                ${l.referral ? `<div style="font-size:0.875rem;color:var(--gold);line-height:1.6;font-style:italic;">${l.referral}</div>` : ''}
-              </div>
-            </div>`).join('')}
-        </div>
-      </div></div>
-    </div>`;
-  }
-  else if (currentSIJ === 'kinematics') {
-    const k = SIJ_DATA.kinematics;
-    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
-      <div style="display:flex;flex-direction:column;gap:1rem;">
-        <div class="card"><div class="card-header"><div class="card-header-title">Innominate Motion</div><div class="card-header-sub">3 Planes</div></div><div class="card-body">
-          ${k.innominate.map(m => `<div style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <div style="font-size:0.9rem;font-weight:600;color:var(--teal-light);margin-bottom:0.2rem;">${m.motion}</div>
-            <div style="font-size:0.875rem;color:var(--text2);">${m.desc}</div>
-          </div>`).join('')}
-        </div></div>
-        <div class="card"><div class="card-header"><div class="card-header-title">Sacral Motion</div><div class="card-header-sub">Nutation · Counternutation · Torsion</div></div><div class="card-body">
-          ${k.sacrum.map(m => `<div style="background:var(--surface);border-radius:8px;padding:0.75rem 0.875rem;margin-bottom:0.5rem;border-left:3px solid var(--gold);">
-            <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${m.motion}</div>
-            <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${m.desc}</div>
-          </div>`).join('')}
-        </div></div>
-      </div>
-      <div class="card"><div class="card-header"><div class="card-header-title">Coupled Motion Review</div><div class="card-header-sub">Lumbar → Innominate → Sacral</div></div><div class="card-body">
-        <table class="clean-table"><thead><tr><th>Lumbar Motion</th><th>Innominate</th><th>Sacrum</th></tr></thead>
-        <tbody>${k.table.map(r => `<tr><td><strong style="color:var(--text);">${r.lumbar}</strong></td><td style="font-size:0.82rem;">${r.innominate}</td><td style="font-size:0.82rem;color:var(--teal-light);">${r.sacrum}</td></tr>`).join('')}</tbody>
-        </table>
-      </div></div>
-    </div>`;
-  }
-  else if (currentSIJ === 'stability') {
-    const s = SIJ_DATA.stability;
-    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
-      <div style="display:flex;flex-direction:column;gap:1rem;">
-        <div class="card"><div class="card-header"><div class="card-header-title">Form Closure</div><div class="card-header-sub">Stability from Anatomy Alone</div></div><div class="card-body">
-          <div class="bottom-line"><span class="bottom-line-icon">🏗️</span><span class="bottom-line-text">${s.form_closure}</span></div>
-        </div></div>
-        <div class="card"><div class="card-header"><div class="card-header-title">Force Closure</div><div class="card-header-sub">Muscle + Fascial Forces</div></div><div class="card-body">
-          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.875rem;">${s.force_closure}</div>
-          <div class="sec-label">Inner Muscle Unit (Local Stabilizers)</div>
-          ${s.inner_unit.muscles.map(m => `<div class="bullet"><span class="dot">•</span>${m}</div>`).join('')}
-          <div class="clinical-note" style="margin-top:0.875rem;"><div class="clinical-note-lbl">Clinical</div><div class="clinical-note-text">${s.inner_unit.clinical}</div></div>
-        </div></div>
-        <div class="card"><div class="card-header"><div class="card-header-title">Piriformis & SIJ</div></div><div class="card-body">
-          <div style="font-size:0.875rem;color:var(--text2);line-height:1.7;">${s.piriformis}</div>
-        </div></div>
-      </div>
-      <div class="card"><div class="card-header"><div class="card-header-title">Outer Muscle Unit</div><div class="card-header-sub">4 Force Closure Sling Systems</div></div><div class="card-body">
-        ${s.outer_unit.map(sys => `<div style="background:var(--surface);border-radius:8px;padding:0.875rem 1rem;margin-bottom:0.625rem;border-left:3px solid var(--teal);">
-          <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${sys.name}</div>
-          <div style="font-size:0.82rem;color:var(--teal-light);margin-bottom:0.25rem;font-style:italic;">${sys.muscles}</div>
-          <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${sys.function}</div>
-        </div>`).join('')}
-      </div></div>
-    </div>`;
-  }
-  else if (currentSIJ === 'palpation') {
-    const p = SIJ_DATA.palpation;
-    el.innerHTML = `<div class="two-col" style="animation:fadeUp 0.25s ease;">
-      <div class="card"><div class="card-header"><div class="card-header-title">Bony Landmark Palpation</div></div><div class="card-body">
-        <div class="muscle-accordion-list">
-          ${p.bony.map(b => `<div class="ma-item" onclick="toggleMA(this)">
-            <div class="ma-header">
-              <div class="ma-name">${b.name}</div>
-              <span class="tag tag-grey" style="font-size:0.6rem;">${b.position}</span>
-              <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-            <div class="ma-body"><div style="font-size:0.875rem;color:var(--text2);line-height:1.65;">${b.how}</div></div>
-          </div>`).join('')}
-        </div>
-      </div></div>
-      <div style="display:flex;flex-direction:column;gap:1rem;">
-        <div class="card"><div class="card-header"><div class="card-header-title">Joint Play Tests</div></div><div class="card-body">
-          ${p.joint_play.map(jp => `<div style="padding:0.625rem 0;border-bottom:1px solid var(--border);">
-            <div style="font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:0.25rem;">${jp.name}</div>
-            <div style="font-size:0.875rem;color:var(--text2);line-height:1.65;margin-bottom:0.25rem;">${jp.how}</div>
-            <div style="font-size:0.82rem;color:var(--gold);">✓ Positive: ${jp.positive}</div>
-          </div>`).join('')}
-        </div></div>
-        <div class="card"><div class="card-header"><div class="card-header-title">SIJ Provocation Cluster</div></div><div class="card-body">
-          <div class="clinical-note"><div class="clinical-note-lbl">Diagnostic Standard</div><div class="clinical-note-text">${p.cluster}</div></div>
-        </div></div>
-      </div>
-    </div>`;
-  }
-  else if (currentSIJ === 'biomech') {
-    el.innerHTML = `<div style="animation:fadeUp 0.25s ease;">
-      <div class="card"><div class="card-header"><div class="card-header-title">Biomechanical Review</div><div class="card-header-sub">Lumbar Motion → Innominate → Sacral Response</div></div><div class="card-body">
-        <table class="clean-table">
-          <thead><tr><th>Lumbar Motion</th><th>Innominate Motion</th><th>Sacral Motion</th></tr></thead>
-          <tbody>${SIJ_DATA.biomech.map(r => `<tr>
-            <td><strong style="color:var(--text);">${r.lumbar}</strong></td>
-            <td style="font-size:0.875rem;">${r.innominate}</td>
-            <td style="font-size:0.875rem;color:var(--teal-light);">${r.sacrum}</td>
-          </tr>`).join('')}</tbody>
-        </table>
-        <div class="clinical-note" style="margin-top:1rem;"><div class="clinical-note-lbl">Case Study Integration — 28yo Bank Manager</div>
-        <div class="clinical-note-text">MOI: Forward flexion + left rotation. During forward bending: innominates rotate anteriorly + sacrum nutates. Adding LEFT rotation creates torsional stress on the RIGHT posterolateral annulus (contralateral to rotation direction). Left-rotated + forward-flexed = maximum stress on: right L4 inferior facet, right L5 superior facet, iliolumbar ligament (resisting L5 anterior shear), zygapophyseal joint capsule, PLL (tensioned + elongated by flexion), and disc. Sustained sitting THEN added creep → progressive PLL elongation → posterior NP migration. Classic mechanism for the structures listed in Part A of the case study.</div></div>
-      </div></div>
-    </div>`;
-  }
-}
-
-function renderSIJ() {
-  renderSIJContent();
-}
-
-// ══════════════════════════════════════════════════
-// JOINT MOB DATA + RENDER
-// ══════════════════════════════════════════════════
-const SPINAL_JM = {
-  lumbar: [
-    { name: 'Central PA (Posterior-Anterior)', position: 'Patient prone. Therapist stands lateral. Thumbs on spinous process, fingers spread over paravertebral muscles. Therapist\'s body weight directly over the contact point.', technique: 'Apply PA oscillatory force through SP using body weight transfer — NOT just arm strength. Assess stiffness and pain response at each level by scanning L1-L5.', indications: 'Central or bilateral LBP without laterality. Hypomobility in flexion/extension. General pain modulation (Grade I-II). Segmental assessment of stiffness.', grades: 'Grade I-II: pain control in acute/irritable presentation. Grade III-IV: joint mobility in chronic/stiff presentation. Grade depends on pain vs. stiffness dominance.', arthrokin: 'PA force tilts the superior vertebra anteriorly on the inferior → anterior glide of bilateral facets → mimics extension motion at the segment. Facets close bilaterally. IVF narrows. Most effective for bilateral stiffness.', clinical: 'Most commonly used lumbar technique. Scan L1-L5 with fingertip pressure first to identify the most restricted/painful segment before applying therapeutic grades. "Stiffness without pain" = Grade III-IV. "Pain before resistance" = Grade I-II only, high irritability.' },
-    { name: 'Unilateral PA', position: 'Patient prone. Thumbs placed on the TRANSVERSE PROCESS of the target vertebra — unilateral, to the right or left of the SP (roughly 1.5-2 cm lateral to SP in lumbar).', technique: 'PA force applied through the TP. Creates both an extension AND a rotational component at the segment. Assess for asymmetric stiffness vs central PA.', indications: 'Unilateral LBP. Facet joint restriction with unilateral symptoms. Hypomobility in rotation. Radiculopathy: unilateral PA on the PAINFUL side closes ipsilateral facet + via coupling opens contralateral IVF.', grades: 'Grade III-IV for hypomobility. Grade I-II for pain modulation with unilateral symptoms.', arthrokin: 'Unilateral PA on right TP → right facet closes (inferior glide = approximation) → coupled with right rotation → left facet opens (superior glide = separation) → left IVF opens. Use to decompress CONTRALATERAL nerve root.', clinical: 'Unilateral PA direction matters clinically: PA on the PAINFUL side = diagnostic (reproduces symptoms). PA on the CONTRALATERAL side opens the painful side\'s IVF = potentially therapeutic for radiculopathy. Discuss with patient before applying — always explain the pressure may increase radicular symptoms briefly.' },
-  ],
-  thoracic: [
-    { name: 'Central PA', position: 'Patient prone. Thumbs on SP. Use Rule of 3\'s to identify correct body level. Thoracic SPs are longer with more lever arm — less force needed than lumbar.', technique: 'PA oscillation through the SP. The angled SP gives more mechanical advantage. Can also use pisiform contact for higher grades.', indications: 'Central thoracic pain. Thoracic kyphosis restriction. Hypomobility contributing to cervical pain, headaches, or shoulder dysfunction (strong evidence). Thoracic locked joint.', grades: 'Grade I-II: acute rib/T-spine pain. Grade III-IV: chronic stiffness, thoracic kyphosis, shoulder-related thoracic mobilization.', arthrokin: 'T-spine facets (60° from transverse) — PA produces more ROTATION than extension compared to lumbar. The frontal plane component of thoracic facets means PA creates lateral glide + rotation, not pure extension.', clinical: 'Thoracic mobilization/manipulation has strongest evidence for: cervical pain, cervicogenic headache, shoulder impingement. T4-T7 PA is a commonly used adjunct for shoulder patients — the T-spine hypomobility limits thoracic rotation needed for full shoulder elevation. Grade III-IV T4-T7 unilateral PA is supported by multiple RCTs for cervicogenic headache.' },
-    { name: 'Unilateral PA', position: 'Patient prone. Thumbs on the TRANSVERSE PROCESS. Use Rule of 3\'s — TP is at different level than SP depending on region (T7-T9: TP is 1 level above palpated SP).', technique: 'Unilateral PA through TP. Creates rotation + lateral flexion at the segment. Direction of coupling differs T1-6 vs T7-12.', indications: 'Unilateral thoracic pain. Rib hypomobility. Upper/mid back pain with restricted rotation. Shoulder and cervical referred pain from thoracic restriction.', grades: 'Grade I-IV based on irritability and stiffness assessment.', arthrokin: 'T1-6 coupling: unilateral PA creates ipsilateral LF + ipsilateral rotation. T7-12: creates ipsilateral LF + CONTRALATERAL rotation (transitions to lumbar pattern). Choose side based on desired coupling direction.', clinical: 'Rib dysfunction after deep breath or cough: assess costovertebral joint involvement. Unilateral PA at the correct TP level (using Rule of 3\'s) mobilizes the costovertebral joint as well as the zygapophyseal joint.' },
-    { name: 'Costal PA', position: 'Patient prone. Thumbs placed on the POSTERIOR RIB ANGLE — approximately 4-5 cm lateral to the SP, where the rib curves posteriorly. Find the bony rib and confirm lateral to paravertebral muscles.', technique: 'PA oscillation through the rib angle, mobilizing the costovertebral and costotransverse joints directly.', indications: 'Rib hypomobility. Pain with deep breathing, coughing, sneezing. Post-thoracotomy or post-fracture stiffness. "Frozen rib" from prolonged recumbency. Indication from JM handout: general mobility and pain control.', grades: 'Grade I-II: pain with breathing (breathing is forced self-mobilization — painful). Grade III-IV: rib stiffness reducing deep breathing capacity.', arthrokin: 'Rib head articulates with the vertebral body (costovertebral joint) AND the transverse process (costotransverse joint). PA on rib angle mobilizes rotation of the rib around its own axis. Upper ribs (1-6): primarily pump-handle motion (anterior-posterior rotation). Lower ribs (7-12): primarily bucket-handle motion (lateral expansion).', clinical: 'Most effective technique for rib pain that increases with breathing — frequently confused with pleuritis, pericarditis, or cardiac referral. After rule-out of serious pathology: costal PA at the correct level provides rapid relief. Identify rib level: count from rib 1 (highest, near clavicle) or from rib 12 (floating, at L1 level).' },
-  ],
-  cervical: [
-    { name: 'Central PA — Prone', position: 'Patient prone, forehead on hands. Thumbs on cervical SP (pad of thumbs, NOT tip — cervical SPs are small). For upper cervical: index/middle fingers on C1-C2 posterior arch. Begin at Grade I.', technique: 'Gentle PA oscillation through the SP. Cervical force is fingertip-only — NOT body weight as in lumbar. Always begin with Grade I to assess tissue response and screen for adverse reactions.', indications: 'Central neck pain. Bilateral cervical stiffness. Upper cervical headache. Post-whiplash hypomobility. Bilateral symptoms.', grades: 'Grade I-II: acute pain, irritable presentations. ALWAYS start at Grade I in cervical. Grade III-IV: chronic cervical stiffness ONLY after ruling out contraindications.', arthrokin: 'Cervical facets at 45° — PA produces extension movement + superior/anterior slide of bilateral facets. IVF closes bilaterally. Use carefully in foraminal stenosis (IVF narrows with extension).', clinical: 'ALWAYS screen before cervical mobilization: Sharp-Purser test (transverse ligament), alar ligament stress tests, VBI screen (5D\'s + 3N\'s). Contraindications: RA with C-spine involvement, Down syndrome, acute whiplash Grade 3+, positive VBI screen, upper cervical instability. The cervical spine requires the most pre-treatment screening of any region.' },
-    { name: 'Unilateral PA — Prone', position: 'Patient prone. Thumb placed on the ARTICULAR PILLAR (AP) — the lateral mass of the cervical vertebra, between SP (medial) and TP (lateral). Approximately 1-2 cm lateral to the midline SP.', technique: 'PA through the AP, one side at a time. Creates rotation toward the side of application via cervical coupling.', indications: 'Unilateral neck pain. Cervical radiculopathy: unilateral PA on the PAINFUL side, via coupling, opens the CONTRALATERAL IVF → may relieve ipsilateral root symptoms. Cervicogenic headache at C2-C3.', grades: 'Grade I-II for radiculopathy (careful). Grade III-IV for chronic unilateral hypomobility.', arthrokin: 'Cervical coupling = SB + IPSILATERAL rotation. Unilateral PA on right AP → right facet closes + right rotation → LEFT facet opens/separates → LEFT IVF opens. To open the RIGHT IVF: apply unilateral PA on LEFT AP.', clinical: 'AP palpation tip: locate SP (midline), then move 1-2 cm laterally until you palpate a firm rounded prominence — this is the articular pillar. Strong evidence for cervicogenic headache (unilateral C2-C3 AP) and cervical radiculopathy. Direction of AP contact matters: the coupling mechanics determine which IVF opens.' },
-    { name: 'Central PA — Supine (Chin Hold)', position: 'Patient supine, head at end of table. Therapist at head: one hand cradles occiput, other hand\'s fingers contact posterior cervical SPs from below (PA direction). Upper cervical: fingers at C1-C2. Lower cervical: fingers at C5-C7.', technique: 'Gentle fingertip PA oscillation through the SPs from below. Grade I-II primarily in supine (force control is more limited than prone).', indications: 'When prone is uncomfortable (GERD, pregnancy, elderly, upper cervical sensitivity). Acute presentations where prone tolerance is limited. Upper cervical hypomobility when seated or supine is preferred.', grades: 'Grade I-II primarily. Grade III possible at lower cervical levels.', arthrokin: 'Same as prone central PA — extension at segment with bilateral facet closing. The position provides more patient visibility for therapist to monitor facial pain response.', clinical: 'Supine position: allows continuous monitoring of patient face for pain response. Preferred for first treatment session with anxious patients, upper cervical hypermobility suspects, or post-whiplash presentations. Easier to monitor neurological signs during treatment.' },
-    { name: 'Unilateral PA — Supine', position: 'Patient supine. Fingers contact the AP from below — same landmark as prone unilateral PA but approached from anterior/inferior angle. Head supported by therapist.', technique: 'Unilateral AP contact from below, PA oscillation through the pillar.', indications: 'Same as prone unilateral PA. Patient comfort or tolerance preference. First session with anxious patients or in acute phase.', grades: 'Grade I-II for acute presentations primarily.', arthrokin: 'Same coupling as prone: AP contact → ipsilateral rotation → contralateral IVF opens.', clinical: 'Allows the therapist to monitor facial expression and patient response while applying technique. Useful for patients who cannot tolerate prone positioning. Advance to prone techniques as patient improves and tolerates treatment better.' },
-  ],
-};
-
-let currentJM = 'lumbar';
-function selectJM(region, btn) {
-  currentJM = region;
-  document.querySelectorAll('#jm-nav button').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
-  renderJMContent();
-}
-
-function renderJMContent() {
-  const el = document.getElementById('jm-content');
-  if (!el) return;
-  const techs = SPINAL_JM[currentJM] || [];
-  el.innerHTML = `<div class="muscle-accordion-list" style="animation:fadeUp 0.25s ease;">
-    ${techs.map(t => {
-      const clinShort = t.clinical.substring(0, 160);
-      const clinMore = t.clinical.length > 160 ? t.clinical : '';
-      return `<div class="ma-item" onclick="toggleMA(this)">
-        <div class="ma-header">
-          <div class="ma-name">${t.name}</div>
-          <svg class="ma-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-        </div>
-        <div class="ma-body">
-          <div class="chunk" style="border-left:3px solid var(--teal);margin-bottom:0.5rem;">
-            <div class="chunk-title">🧍 Patient Position</div>
-            <div class="chunk-body">${t.position}</div>
-          </div>
-          <div class="chunk" style="border-left:3px solid var(--gold);margin-bottom:0.5rem;">
-            <div class="chunk-title">🤲 Technique</div>
-            <div class="chunk-body">${t.technique}</div>
-          </div>
-          <div class="chunk" style="border-left:3px solid var(--green);margin-bottom:0.5rem;">
-            <div class="chunk-title">✅ Indications</div>
-            <div class="chunk-body">${t.indications}</div>
-          </div>
-          <div class="chunk" style="border-left:3px solid var(--purple);margin-bottom:0.5rem;">
-            <div class="chunk-title">⚙️ Arthrokinematics</div>
-            <div class="chunk-body">${t.arthrokin}</div>
-          </div>
-          <div style="font-size:0.82rem;color:var(--text3);margin-bottom:0.625rem;padding:0.375rem 0.625rem;background:var(--surface);border-radius:4px;"><strong style="color:var(--text2);">Grades: </strong>${t.grades}</div>
-          <div class="clinical-note-v2"><div class="cn2-row"><span class="cn2-icon">💡</span>
-            <div class="cn2-content">
-              <div class="cn2-lbl">Clinical Note</div>
-              <div class="cn2-short">${clinShort}${clinMore ? '...' : ''}</div>
-              ${clinMore ? `<div class="cn2-more">${clinMore}</div><button class="cn2-toggle" onclick="event.stopPropagation();toggleCN(this)">+ Show more</button>` : ''}
-            </div>
-          </div></div>
-        </div>
-      </div>`;
-    }).join('')}
-  </div>`;
-}
-
-function renderJointMob() {
-  renderJMContent();
-}
-
-// INIT
-renderCurvatures();
-renderLigaments();
-renderCVJoints();
-renderSuboccipital();
-renderMotion();
-renderClinical();
-renderReview();
-selectVert('typical', document.querySelector('#vert-nav button'));
-selectBackMuscle('superficial', document.querySelector('#back-muscle-nav button'));
-renderKinesiology();
-renderKinetics();
-renderSIJ();
-renderJointMob();
-selectSIJ('anatomy', document.querySelector('#sij-nav button'));
-selectJM('lumbar', document.querySelector('#jm-nav button'));
-
-// ── EXPAND/COLLAPSE HELPER ──
-function toggleExpand(trigger) {
-  const body = trigger.nextElementSibling;
-  const open = trigger.classList.toggle('open');
-  if (body && body.classList.contains('expand-body')) {
-    body.classList.toggle('open', open);
-  }
-}
-
-function toggleMuscleCard(header) {
+function toggleMA(header) {
   const body = header.nextElementSibling;
-  const open = body.classList.toggle('open');
-  header.parentElement.style.borderColor = open ? 'rgba(56,178,178,0.25)' : '';
+  const chevron = header.querySelector('.ma-chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
 }
-
-function toggleRV(card) {
-  const was = card.classList.contains('open');
-  document.querySelectorAll('.rv-card').forEach(c => c.classList.remove('open'));
-  if (!was) card.classList.add('open');
+function flipCard(card) {
+  card.querySelector('.rc2-a').classList.toggle('open');
 }
-
-</script>
-
-<script>
-// ── Shared UX helpers ──
-function toggleAccordion(el) {
-  const item = el.closest('.accordion');
-  const isOpen = item.classList.contains('open');
-  // Close siblings in same container
-  const siblings = item.parentElement.querySelectorAll('.accordion');
-  siblings.forEach(s => s.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-function toggleMA(el) {
-  const item = el.closest('.ma-item');
-  const isOpen = item.classList.contains('open');
-  const siblings = item.parentElement.querySelectorAll('.ma-item');
-  siblings.forEach(s => s.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-function toggleCN(btn) {
-  const note = btn.closest('.clinical-note-v2, .clinical-note');
-  const more = note.querySelector('.cn2-more, .cn-more');
-  const isShown = more && more.style.display === 'block';
-  if (more) more.style.display = isShown ? 'none' : 'block';
-  btn.textContent = isShown ? '+ Show more' : '− Show less';
-}
-function toggleReviewV2(card) {
-  const was = card.classList.contains('open');
-  document.querySelectorAll('.review-card-v2').forEach(c => c.classList.remove('open'));
-  if (!was) card.classList.add('open');
-}
-// Legacy support
-function toggleReview(card) {
-  const was = card.classList.contains('open');
-  document.querySelectorAll('.review-card').forEach(c => c.classList.remove('open'));
-  if (!was) card.classList.add('open');
-}
-</script>
-
-<script>
-// ── Upgrade review cards to v2 visual ──
-(function upgradeReviewCards() {
-  setTimeout(() => {
-    document.querySelectorAll('.review-card').forEach(card => {
-      // Skip already upgraded
-      if (card.dataset.upgraded) return;
-      card.dataset.upgraded = '1';
-      card.classList.add('review-card-v2');
-      
-      const qEl = card.querySelector('.review-q');
-      const numEl = card.querySelector('.review-num');
-      const qTextEl = card.querySelector('.review-q-text');
-      const aEl = card.querySelector('.review-a');
-      const aTextEl = card.querySelector('.review-a-text');
-      
-      if (!qEl || !numEl || !qTextEl) return;
-      
-      // Upgrade number to circle
-      numEl.classList.add('review-num-v2');
-      numEl.classList.remove('review-num');
-      qTextEl.classList.add('review-q-text-v2');
-      qTextEl.classList.remove('review-q-text');
-      
-      if (aEl && aTextEl) {
-        aEl.classList.add('review-a-v2');
-        const inner = document.createElement('div');
-        inner.className = 'review-a-inner';
-        inner.innerHTML = `<div class="review-a-label">Answer</div><div class="review-a-text-v2">${aTextEl.textContent}</div>`;
-        aEl.innerHTML = '';
-        aEl.appendChild(inner);
-      }
-      
-      // Re-wire click
-      card.onclick = () => toggleReviewV2(card);
-    });
-  }, 200);
-})();
 </script>
 </body>
 </html>
