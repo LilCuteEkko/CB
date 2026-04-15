@@ -149,7 +149,6 @@ ul,ol{padding-left:1.2em}
 
 /* Scale all text elements proportionally */
 .ma-header h4{font-size:calc(15px * var(--font-scale))}
-.bl-strip p,.bl-strip ul,.bl-strip ol{font-size:calc(14.5px * var(--font-scale))}
 .data-table{font-size:calc(13.5px * var(--font-scale));table-layout:auto;width:100%}
 .data-table th{font-size:calc(10.5px * var(--font-scale))}
 .data-table td,.data-table th{overflow-wrap:break-word;word-wrap:break-word;max-width:0}
@@ -166,7 +165,6 @@ li{font-size:calc(14px * var(--font-scale));line-height:1.7}
 .card{overflow:hidden;min-width:0}
 .container{overflow-x:hidden}
 .tab-panel{overflow-x:hidden}
-.bl-strip{overflow:hidden;min-width:0}
 
 /* Data table responsive */
 .data-table{overflow-x:auto;display:block;width:100%}
@@ -215,16 +213,6 @@ li{font-size:calc(14px * var(--font-scale));line-height:1.7}
 .ma-body{display:none;padding:18px 16px;background:var(--bg2);border-top:1px solid var(--border)}
 .ma-body.open{display:block;animation:revealBody .35s ease}
 @keyframes revealBody{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-.bl-strip{border-left:3px solid var(--border);padding:14px 18px;margin:12px 0;background:var(--bg2);border-radius:6px}
-.bl-strip:hover{border-left-color:var(--accent)}
-.bl-strip .bl-label{font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;font-weight:600}
-.bl-strip p,.bl-strip ul,.bl-strip ol{font-size:14.5px;color:var(--text);line-height:1.75}
-.bl-strip ul,.bl-strip ol{padding-left:16px}
-.bl-strip.gold{border-left-color:var(--gold);background:var(--bg2)}.bl-strip.gold .bl-label{color:var(--gold)}
-.bl-strip.purple{border-left-color:var(--purple);background:var(--bg2)}.bl-strip.purple .bl-label{color:var(--purple)}
-.bl-strip.red{border-left-color:var(--red);background:var(--bg2)}.bl-strip.red .bl-label{color:var(--red)}
-.bl-strip.green{border-left-color:var(--green);background:var(--bg2)}.bl-strip.green .bl-label{color:var(--green)}
-.bl-strip.orange{border-left-color:var(--orange);background:var(--bg2)}.bl-strip.orange .bl-label{color:var(--orange)}
 .data-table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
 .data-table th{background:var(--bg2);color:var(--text3);font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.8px;padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);font-weight:500}
 .data-table td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;transition:background .15s}
@@ -296,11 +284,6 @@ body{transition:background .45s ease,color .35s ease,filter .8s ease}
 .ma-body.open{display:block;animation:revealBody .4s cubic-bezier(.4,0,.2,1)}
 
 /* ENHANCED INFO STRIPS — glass morphism + animated border */
-.bl-strip{background:var(--soft);border:1px solid var(--mid);border-left:3.5px solid var(--accent);border-radius:12px;padding:16px 20px;margin:10px 0;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
-.bl-strip::after{content:'';position:absolute;top:0;right:0;width:100px;height:100%;background:linear-gradient(90deg,transparent,rgba(var(--ar),.03));pointer-events:none}
-.bl-strip:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(var(--ar),.08);border-left-width:5px}
-.bl-strip .bl-label{font-size:10.5px;font-family:'IBM Plex Mono',monospace;color:var(--accent);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:5px;font-weight:600}
-.bl-strip p,.bl-strip ul,.bl-strip ol{font-size:14.5px;color:var(--text);line-height:1.78}
 
 /* ENHANCED DATA TABLES — zebra + glow row */
 .data-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin:10px 0;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
@@ -452,8 +435,7 @@ body{transition:background .45s ease,color .35s ease,filter .8s ease}
 [data-layout="minimal"] .ma-header h4{font-size:14px}
 [data-layout="minimal"] .ma-body{padding:12px 4px;background:none}
 [data-layout="minimal"] .ma-tags{display:none}
-[data-layout="minimal"] .bl-strip{border-radius:6px;padding:10px 14px;margin:6px 0}
-[data-layout="minimal"] .data-table{font-size:12.5px}
+[data-layout="minimal"] [data-layout="minimal"] .data-table{font-size:12.5px}
 [data-layout="minimal"] .section-title{font-size:1.3rem}
 [data-layout="minimal"] .hero{padding:24px 24px 16px}
 [data-layout="minimal"] .hero p{display:none}
@@ -475,10 +457,6 @@ body{transition:background .45s ease,color .35s ease,filter .8s ease}
 /* ===== CONTENT FORMATTING FIXES ===== */
 
 /* Info strips — better paragraph spacing and readability */
-.bl-strip p{font-size:14.5px;line-height:1.85;color:var(--text)}
-.bl-strip p strong{color:var(--text);display:inline;font-weight:700}
-.bl-strip{padding:18px 22px;margin:12px 0}
-.bl-strip .bl-label{font-size:11px;margin-bottom:8px;letter-spacing:1.5px;padding-bottom:6px;border-bottom:1px solid var(--mid)}
 
 /* Data tables — better cell padding and readability */
 .data-table td{padding:12px 16px;line-height:1.7;font-size:14px}
@@ -642,3 +620,13 @@ body{transition:background .45s ease,color .35s ease,filter .8s ease}
 @media(max-width:700px){.two-col{grid-template-columns:1fr}}
 .tab-layout .two-col{grid-template-columns:1fr 1fr}
 @media(max-width:1100px){.tab-layout .two-col{grid-template-columns:1fr}}
+
+/* ===== BL-STRIP — Clean content blocks ===== */
+.bl-strip{border-left:3px solid var(--border);padding:8px 0 8px 16px;margin:16px 0}
+.bl-strip .bl-label{font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;font-weight:600}
+.bl-strip p{font-size:14.5px;color:var(--text2);line-height:1.75;margin:0}
+.bl-strip.gold{border-left-color:var(--gold)}.bl-strip.gold .bl-label{color:var(--gold)}
+.bl-strip.purple{border-left-color:var(--purple)}.bl-strip.purple .bl-label{color:var(--purple)}
+.bl-strip.red{border-left-color:var(--red)}.bl-strip.red .bl-label{color:var(--red)}
+.bl-strip.green{border-left-color:var(--green)}.bl-strip.green .bl-label{color:var(--green)}
+.bl-strip.orange{border-left-color:var(--orange)}.bl-strip.orange .bl-label{color:var(--orange)}
