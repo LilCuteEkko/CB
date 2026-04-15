@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clinicians Blueprint &#8212; Professional Development</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="theme.css?v=2">
 </head>
 <body>
 <nav class="site-nav">
@@ -232,8 +232,8 @@
 </div>
 </div>
 
-<script src="themes.js"></script>
-<script src="premium.js"></script>
+<script src="themes.js?v=2"></script>
+<script src="premium.js?v=2"></script>
 <script>
 function showTab(id,btn){document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});document.querySelectorAll('.chip-nav button').forEach(function(b){b.classList.remove('active')});var panel=document.getElementById('tab-'+id);if(panel)panel.classList.add('active');if(btn)btn.classList.add('active');window.scrollTo({top:document.querySelector('.chip-nav').offsetTop-10,behavior:'smooth'})}
 function toggleMA(header){var body=header.nextElementSibling;var chevron=header.querySelector('.ma-chevron');var isOpen=body.classList.contains('open');body.classList.toggle('open',!isOpen);chevron.style.transform=isOpen?'':'rotate(180deg)'}

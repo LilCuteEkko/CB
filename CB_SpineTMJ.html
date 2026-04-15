@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clinicians Blueprint — TMJ &amp; Headache DDx</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="theme.css?v=2">
 </head>
 <body>
 
@@ -112,13 +112,15 @@
   <button onclick="showTab('examples',this)">Clinical Examples</button>
   <button onclick="showTab('review',this)">Review</button>
 </div>
-</div>
+
 
 <!-- ====== TMJ ANATOMY ====== -->
+</div>
+
 <div class="tab-panel active" id="tab-anatomy">
 <div class="container">
-  <div class="section-title">TMJ Anatomy</div>
-  <div class="section-sub">The TMJ is a modified synovial hinge joint with translation. It is unique among joints: covered by <strong>fibrocartilage</strong> (not hyaline), divided into 2 compartments by an articular disc, and used ~2,000 times/day (talking, chewing, swallowing, yawning). 5&ndash;12% of the population has TMD requiring treatment; &gt;1/3 will experience at least one TMD sign/symptom in their lifetime.</div>
+  <div class="section-title">TMJ Anatomy
+  <div class="section-sub">The TMJ is a modified synovial hinge joint with translation. It is unique among joints: covered by <strong>fibrocartilage</strong> (not hyaline), divided into 2 compartments by an articular disc, and used ~2,000 times/day (talking, chewing, swallowing, yawning). 5&ndash;12% of the population has TMD requiring treatment; &gt;1/3 will experience at least one TMD sign/symptom in their lifetime.
 
   <table class="data-table"><thead><tr><th>Structure</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
     <tr><td class="warn">Mandibular Condyle</td><td>Convex articular surface on the condylar process of the mandible. Covered by fibrocartilage. Articulates within the mandibular fossa</td><td>Degenerative changes more common on condyle than temporal bone. Condylar fracture from direct blow to chin</td></tr>
@@ -130,11 +132,18 @@
     <tr><td class="hi">TMJ Ligaments</td><td><strong>Lateral (temporomandibular) ligament:</strong> strongest, limits posterior translation + lateral movement. <strong>Sphenomandibular:</strong> limits opening. <strong>Stylomandibular:</strong> limits protrusion</td><td>Lateral ligament is the primary restraint. Sprain from trauma or chronic hypermobility</td></tr>
   </tbody></table>
 
-  <div class="bl-strip"><div class="bl-label">Trigeminocervical Complex</div><p>The TMJ sits at the convergence of the <strong>trigeminal nerve (CN V)</strong> and upper cervical nerve roots (C1&ndash;C4) in the brainstem/upper spinal cord. Afferent input from the TMJ, face, teeth, dura, and cervical spine all converge on the same second-order neurons in the <strong>trigeminocervical nucleus</strong>. This explains why: TMD causes headache, neck pain causes facial pain, and cervicogenic headache mimics migraine. Sensitization at this convergence zone creates <strong>nociplastic pain</strong> (centrally mediated hyperalgesia and allodynia). Always screen the cervical spine in TMD patients and vice versa.</p></div>
+  <div class="bl-strip"><div class="bl-label">Trigeminocervical Complex<p>The TMJ sits at the convergence of the <strong>trigeminal nerve (CN V)</strong> and upper cervical nerve roots (C1&ndash;C4) in the brainstem/upper spinal cord. Afferent input from the TMJ, face, teeth, dura, and cervical spine all converge on the same second-order neurons in the <strong>trigeminocervical nucleus</strong>. This explains why: TMD causes headache, neck pain causes facial pain, and cervicogenic headache mimics migraine. Sensitization at this convergence zone creates <strong>nociplastic pain</strong> (centrally mediated hyperalgesia and allodynia). Always screen the cervical spine in TMD patients and vice versa.</p>
+
+
+
+<!-- ====== MUSCLES & PAIN REFERRAL ====== -->
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
-<!-- ====== MUSCLES & PAIN REFERRAL ====== -->
 <div class="tab-panel" id="tab-muscles">
 <div class="container">
   <div class="section-title">Muscles of Mastication &amp; Pain Referral Patterns</div>
@@ -157,7 +166,7 @@
   <div class="bl-strip red"><div class="bl-label">Clinical Rule</div><p><strong>Ipsilateral pain with jaw movement = muscular origin.</strong> The painful muscle is on the SAME side as the movement direction. <strong>Contralateral pain = joint origin.</strong> The painful joint is on the OPPOSITE side (being compressed/stretched). Example: pain on the right with right lateral excursion = right muscular. Pain on the LEFT with right lateral excursion = left TMJ articular.</p></div>
 </div>
 </div>
-</div>
+
 
 <!-- ====== KINEMATICS ====== -->
 <div class="tab-panel" id="tab-kinematics">
@@ -178,7 +187,7 @@
   <div class="bl-strip"><div class="bl-label">Arthrokinematics Summary</div><p><strong>Inferior compartment (discomandibular):</strong> rotation (spin) between condyle and disc.<br><strong>Superior compartment (discotemporal):</strong> translation (glide) between disc and temporal bone. The disc moves WITH the condyle during translation (pulled by lateral pterygoid attachment). Disc displacement = disc no longer moves synchronously with the condyle. Convex condyle on concave fossa: <strong>roll and glide occur in opposite directions</strong> (condyle rolls posteriorly while gliding anteriorly during opening).</p></div>
 </div>
 </div>
-</div>
+
 
 <!-- ====== TMD & DISC DISPLACEMENT ====== -->
 <div class="tab-panel" id="tab-pathology">
@@ -215,8 +224,8 @@
     </div>
   </div>
 </div>
-</div>
-</div>
+
+
 
 <!-- ====== TMD EXAMINATION ====== -->
 <div class="tab-panel" id="tab-exam">
@@ -237,7 +246,7 @@
   <div class="bl-strip purple"><div class="bl-label">DC/TMD Diagnostic Criteria (2014)</div><p>Standardized diagnostic system replacing the old RDC/TMD. <strong>Axis I:</strong> physical diagnosis (myalgia, arthralgia, disc displacement with/without reduction, degenerative joint disease, subluxation, headache attributed to TMD). <strong>Axis II:</strong> psychosocial assessment (pain catastrophizing, depression, anxiety, functional limitation). Both axes must be assessed &mdash; central sensitization and psychosocial factors are major contributors to chronicity in TMD.</p></div>
 </div>
 </div>
-</div>
+
 
 <!-- ====== HEADACHE DDx ====== -->
 <div class="tab-panel" id="tab-headache">
@@ -257,7 +266,7 @@
   <div class="bl-strip red"><div class="bl-label">Headache Red Flags &mdash; Refer Immediately</div><p><strong>&ldquo;SNOOP&rdquo;:</strong> <strong>S</strong>ystemic symptoms (fever, weight loss, cancer history).<br><strong>N</strong>eurological signs (confusion, seizures, focal deficits, papilledema).<br><strong>O</strong>nset sudden (&ldquo;thunderclap&rdquo; = worst headache ever = SAH until proven otherwise).<br><strong>O</strong>lder age (&gt;50 with new-onset headache = temporal arteritis, mass).<br><strong>P</strong>attern change (headache character fundamentally different from prior). Any of these = immediate medical referral before PT treatment.</p></div>
 </div>
 </div>
-</div>
+
 
 <!-- ====== PT MANAGEMENT ====== -->
 <div class="tab-panel" id="tab-management">
@@ -288,6 +297,8 @@
 <!-- ====== REVIEW ====== -->
 
 <!-- ====== CLINICAL EXAMPLES ====== -->
+</div>
+
 <div class="tab-panel" id="tab-examples">
 <div class="container">
   <div class="section-title">Clinical Examples</div>
@@ -297,6 +308,9 @@
 
   <div class="bl-strip green"><div class="bl-label">Clinical Example 2 — Headache Differential in Clinical Practice</div>
 
+</div>
+</div>
+</div>
 </div>
 
 <div class="tab-panel" id="tab-review">
@@ -313,9 +327,11 @@
     <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">List the SNOOP headache red flags?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>S</strong> = Systemic symptoms (fever, weight loss, cancer). <strong>N</strong> = Neurological signs (confusion, seizures, focal deficits). <strong>O</strong> = Onset sudden (&ldquo;thunderclap&rdquo; = SAH). <strong>O</strong> = Older age (&gt;50 new onset = temporal arteritis, mass). <strong>P</strong> = Pattern change. Any SNOOP = immediate medical referral before PT treatment.</div></div>
     <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is the resting jaw position you should teach every TMD patient in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Lips together, teeth APART, tongue resting on palate.</strong> This is the true resting position &mdash; teeth should not be in contact except during chewing and swallowing (~20 min/day). Teeth clenching = sustained masseter/temporalis contraction = fatigue, trigger points, disc loading. Teach as a habit &mdash; phone reminders (&ldquo;unclench&rdquo;) help.</div></div>
   </div>
+</div>
+</div>
 
-<script src="themes.js"></script>
-<script src="premium.js"></script>
+<script src="themes.js?v=2"></script>
+<script src="premium.js?v=2"></script>
 <script>
 function showTab(id, btn) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
