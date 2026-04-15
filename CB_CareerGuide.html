@@ -143,7 +143,7 @@
   <div class="section-title">PT Salary Explorer</div>
   <div class="section-sub">National median PT salary is <strong>$101,020/year</strong> (~$48.50/hr) per BLS 2024 data. But raw salary is only half the story &#8212; think of it like comparing a patient's AROM without considering their functional goals. A $115K salary in San Francisco buys less than $85K in Tennessee. The <strong>COL-adjusted salary</strong> below gives you the real purchasing power.</div>
 
-  <div class="state-filter">
+  <div>
     <select id="stateSelect" onchange="showState(this.value)">
       <option value="">&#8212; Select a state &#8212;</option>
     </select>
@@ -151,14 +151,14 @@
 
   <!-- National Overview (shown by default) -->
   <div id="nationalOverview">
-    <div class="salary-card">
-      <div class="salary-big">$101,020</div>
-      <div class="salary-label">National Median PT Salary (BLS 2024)</div>
-      <div class="salary-row">
-        <div class="salary-mini"><div class="sm-num">$83,470</div><div class="sm-label">25th Percentile</div></div>
-        <div class="salary-mini"><div class="sm-num">$101,020</div><div class="sm-label">Median</div></div>
-        <div class="salary-mini"><div class="sm-num">$117,190</div><div class="sm-label">75th Percentile</div></div>
-        <div class="salary-mini"><div class="sm-num">$48.50</div><div class="sm-label">Median Hourly</div></div>
+    <div class="bl-strip">
+      <div>$101,020</div>
+      <div>National Median PT Salary (BLS 2024)</div>
+      <div>
+        <div><div>$83,470</div><div>25th Percentile</div></div>
+        <div><div>$101,020</div><div>Median</div></div>
+        <div><div>$117,190</div><div>75th Percentile</div></div>
+        <div><div>$48.50</div><div>Median Hourly</div></div>
 
     <div class="ma-item">
       <div class="ma-header" onclick="toggleMA(this)">
@@ -251,110 +251,110 @@
   <div class="section-title">Every PT Setting Explained</div>
   <div class="section-sub">Choosing a practice setting is like choosing a joint mobilization grade &#8212; each one has its place depending on what you're trying to accomplish. There's no universally "best" setting, only the best fit for your clinical interests, lifestyle, and career goals. Here's an honest breakdown.</div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#127979; Outpatient Orthopedic Clinic <span class="setting-tag">Most Common</span></div>
+  <div class="bl-strip">
+    <div>&#127979; Outpatient Orthopedic Clinic <span>Most Common</span></div>
     <p><strong>What it is:</strong> The bread and butter of PT. You treat patients with musculoskeletal conditions &#8212; post-surgical knees, frozen shoulders, low back pain, rotator cuff repairs. Patients come to you, get treated for 45&#8211;60 minutes, and go home. Think of it as the "primary care" of physical therapy. <strong>Typical caseload:</strong> 8&#8211;16 patients/day depending on model. <strong>Schedule:</strong> M-F, some evenings/Saturdays. <strong>Salary range:</strong> $75K&#8211;$110K depending on region and experience. Mill clinics (high-volume, 1-PT-to-3-patients) pay less; 1-on-1 specialty clinics pay more.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Deepest MSK clinical reasoning development See patients improve over weeks &#8212; satisfying continuity Regular hours, predictable schedule Specialization opportunities (sports, pelvic floor, hand therapy) Most residency/fellowship programs are outpatient-based</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>"Mill" clinics push 2&#8211;3 patients simultaneously &#8212; burnout risk New grad salaries can be low ($65&#8211;75K) at high-volume chains Documentation after hours is common at busy clinics Insurance reimbursement declining &#8212; pressure to see more patients Repetitive diagnoses can feel monotonous after years</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#127963; Skilled Nursing Facility (SNF) <span class="setting-tag">Geriatric Focus</span></div>
+  <div class="bl-strip">
+    <div>&#127963; Skilled Nursing Facility (SNF) <span>Geriatric Focus</span></div>
     <p><strong>What it is:</strong> You're the movement expert for residents recovering from hip fractures, strokes, surgeries, deconditioning, and falls in a long-term care or sub-acute rehab facility. Governed by the <strong>PDPM (Patient-Driven Payment Model)</strong> reimbursement system under Medicare Part A. Think of it as the "ICU step-down" of rehab &#8212; patients are medically complex but your job is getting them functional enough to go home or to a lower level of care. <strong>Typical caseload:</strong> 6&#8211;10 patients/day (30&#8211;60 min each). <strong>Productivity expectations:</strong> 85&#8211;92%. <strong>Salary range:</strong> $85K&#8211;$110K.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Medically complex patients &#8212; forces holistic clinical thinking Strong job security (aging population = massive demand) Often better new grad salary than outpatient Autonomy &#8212; you're often the primary rehab decision-maker No patient cancellations &#8212; they live there Consistent M-F schedule in most facilities</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Productivity pressure can feel like a treadmill (85-92% expectation) Documentation burden is heavy (MDS, progress notes, D/C planning) Ethical tension &#8212; pressure to keep patients on caseload for revenue Limited equipment compared to outpatient Emotional toll &#8212; end-of-life patients, cognitive decline, family dynamics Facility conditions vary widely &#8212; some buildings are rough</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#127973; Acute Care Hospital <span class="setting-tag">Fast-Paced</span></div>
+  <div class="bl-strip">
+    <div>&#127973; Acute Care Hospital <span>Fast-Paced</span></div>
     <p><strong>What it is:</strong> You're the first PT to see patients after major surgery, ICU stays, strokes, cardiac events, or trauma. Your primary job is early mobilization, fall risk assessment, and determining <strong>discharge disposition</strong> &#8212; can this patient go home, or do they need SNF/IRF/LTACH? Think of it as triage for function. You see patients for 15&#8211;30 minutes, sometimes just to get them sitting at the edge of bed. <strong>Typical caseload:</strong> 8&#8211;14 patients/day. <strong>Salary range:</strong> $85K&#8211;$105K + excellent benefits.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Best institutional benefits in PT (pension, insurance, tuition reimbursement) Incredible variety &#8212; ortho, neuro, cardiac, burns, trauma in one day Develops strongest medical screening and red flag skills Interdisciplinary collaboration with MDs, nurses, OT, SLP Flexible scheduling options (weekends = differential pay) No-show rate is zero &#8212; patients are admitted</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Short treatment sessions &#8212; limited time to build rapport Rarely see long-term outcomes (patients discharge in days) Physically demanding (lifting, transfers, fall risk management) Weekend/holiday rotations are standard Salary often lower than outpatient despite higher acuity COVID/infectious disease exposure risk higher</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#127968; Home Health <span class="setting-tag">High Autonomy</span></div>
+  <div class="bl-strip">
+    <div>&#127968; Home Health <span>High Autonomy</span></div>
     <p><strong>What it is:</strong> You drive to patients' homes and treat them where they actually live. This is PT in the real world &#8212; navigating stairs with no handrails, thick carpet, pets, family dynamics, and whatever creative equipment you can fit in your car. Reimbursed per visit (Medicare Part A for homebound patients). Think of it as <strong>outpatient PT in the wild</strong>. <strong>Typical caseload:</strong> 5&#8211;8 visits/day. <strong>Salary range:</strong> $85K&#8211;$120K+ (per-visit model can be very lucrative).</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Highest autonomy &#8212; you're the captain of the ship Top-tier pay, especially per-visit models Flexible schedule &#8212; manage your own route Treat patients in their actual environment (most functional setting) No productivity clock &#8212; paid per completed visit</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Isolation &#8212; you work alone, no coworker interaction Driving time is unpaid and wears on your car Safety concerns in some neighborhoods/homes Limited equipment &#8212; you bring what fits in a bag Patient cancellations = lost income (per-visit model) Documentation is heavy and done at night or between visits No mentorship &#8212; terrible for new grads learning clinical skills</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#127937; Inpatient Rehabilitation Facility (IRF) <span class="setting-tag">Intensive Rehab</span></div>
+  <div class="bl-strip">
+    <div>&#127937; Inpatient Rehabilitation Facility (IRF) <span>Intensive Rehab</span></div>
     <p><strong>What it is:</strong> A dedicated rehabilitation hospital or unit where patients receive <strong>minimum 3 hours of therapy per day, 5 days/week</strong>. Patients are post-stroke, TBI, SCI, amputation, polytrauma, or major surgery who need intensive rehab but are medically stable. Think of it as the "boot camp" of rehab &#8212; you're pushing patients harder than acute care, for longer, with a multidisciplinary team. <strong>Salary range:</strong> $85K&#8211;$105K.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Most time with patients &#8212; deep therapeutic relationships See dramatic functional improvements over weeks Strong team approach (PT/OT/SLP/nursing/MD round together) Best setting to develop neuro rehab skills Structured mentorship programs at many facilities</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Physically exhausting &#8212; 3-hour therapy days with heavy patients Weekend rotations required (to meet the 3hr/5day rule) Documentation for FIM/IRF-PAI is complex Insurance denials and premature discharges are frustrating Fewer positions available than outpatient or SNF</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#9992; Travel Physical Therapy <span class="setting-tag">Adventure + Pay</span></div>
+  <div class="bl-strip">
+    <div>&#9992; Travel Physical Therapy <span>Adventure + Pay</span></div>
     <p><strong>What it is:</strong> 13-week contracts at facilities nationwide that need temporary staffing. You're essentially a hired gun &#8212; show up, treat, and move on. Agencies handle placement, housing stipends, and licensure logistics. <strong>Pay:</strong> $1,800&#8211;$2,800+/week gross (varies wildly by location, setting, and urgency). Think of it as being a <strong>PT mercenary</strong> &#8212; high reward, high flexibility, but no roots. The PT Compact (30+ states) makes this dramatically easier now.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Highest raw earning potential in PT See the country &#8212; explore different cities, states, settings Housing stipend is often tax-free (if you maintain a tax home) Exposure to diverse clinical environments builds adaptability PT Compact now covers 30+ states &#8212; easy multi-state practice Can stack contracts to "try before you buy" a permanent move</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>No PTO, no employer 401K match, no employer health insurance Job security = zero. Contract can end or not renew Constantly adjusting to new EMRs, protocols, and coworkers Tax complexity (stipends, tax homes, state taxes) Isolation &#8212; you're the outsider at every facility Not ideal for new grads &#8212; you're expected to hit the ground running Housing quality varies &#8212; agency-provided housing can be rough</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#127891; Pediatric Physical Therapy <span class="setting-tag">Early Intervention</span></div>
+  <div class="bl-strip">
+    <div>&#127891; Pediatric Physical Therapy <span>Early Intervention</span></div>
     <p><strong>What it is:</strong> You work with infants, children, and adolescents with developmental delays, cerebral palsy, Down syndrome, torticollis, scoliosis, sports injuries, and genetic conditions. Settings include schools (IEP-based), outpatient peds clinics, early intervention programs (birth-3), and children's hospitals. <strong>Salary range:</strong> $75K&#8211;$100K (school-based often lower but with summers off).</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Emotionally rewarding &#8212; helping kids achieve milestones Creative treatment &#8212; play-based interventions, games, fun School-based positions get summers and holidays off Strong job security (IDEA mandates school-based services) Less physically demanding than adult acute/SNF</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Lower salary than most adult settings Managing parents can be more challenging than managing patients Progress can be very slow with severe developmental delays Heavy paperwork for IEPs and early intervention documentation Emotional toll with terminal/degenerative conditions in children</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#9889; Sports / Performance Physical Therapy <span class="setting-tag">Elite Athletes</span></div>
+  <div class="bl-strip">
+    <div>&#9889; Sports / Performance Physical Therapy <span>Elite Athletes</span></div>
     <p><strong>What it is:</strong> Treating competitive and recreational athletes &#8212; ACL post-ops, throwing athletes, runners, CrossFit injuries, and return-to-sport programming. Can range from a sports-focused outpatient clinic to sideline coverage for a college or professional team. <strong>Salary range:</strong> $80K&#8211;$125K+ (pro sports team PTs can earn significantly more but positions are rare).</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Highly motivated patient population Cutting-edge rehab (blood flow restriction, force plates, biomechanics) Prestige and networking with sports teams/athletes Board certification (SCS) significantly increases earning potential Growing demand for performance-based PT beyond injury</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Extremely competitive &#8212; residency/fellowship often expected Pro sports positions are rare and often low-paying initially Evening/weekend hours for game coverage Pressure from coaches, agents, and athletes to rush return-to-play Requires ongoing investment in advanced certifications</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#128187; Telehealth / Virtual PT <span class="setting-tag">Growing Fast</span></div>
+  <div class="bl-strip">
+    <div>&#128187; Telehealth / Virtual PT <span>Growing Fast</span></div>
     <p><strong>What it is:</strong> Evaluating and treating patients via video &#8212; exercise instruction, pain education, movement screening, home program progression. Exploded during COVID and has stayed. Works best for chronic pain management, post-surgical follow-up, wellness, and patients in rural areas. The PT Compact makes multi-state telehealth much more feasible. <strong>Salary range:</strong> $70K&#8211;$100K (still maturing as a market).</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Work from anywhere (home, coffee shop, beach) No commute, no overhead, no physical space needed Scalable &#8212; can see patients across multiple states with PT Compact Excellent for cash-based practice models Lower burnout &#8212; no physical demands of manual therapy all day</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Can't perform manual therapy or hands-on assessment Insurance reimbursement for telehealth PT is inconsistent Patient engagement harder through a screen Not suitable for all diagnoses (post-surgical, high acuity) Licensing still complex in non-Compact states</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#128176; Cash-Based / Private Practice <span class="setting-tag">Entrepreneurial</span></div>
+  <div class="bl-strip">
+    <div>&#128176; Cash-Based / Private Practice <span>Entrepreneurial</span></div>
     <p><strong>What it is:</strong> You own your practice and patients pay out-of-pocket (no insurance). You set your rates ($150&#8211;$300+/session), your schedule, and your treatment approach with zero insurance interference. Think of it as going from being a staff PT to being the <strong>attending physician of your own clinic</strong>. Highest ceiling, highest risk. <strong>Earnings:</strong> wildly variable &#8212; $60K while building to $200K+ when established.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Complete clinical autonomy &#8212; treat how you want, for as long as needed No insurance authorization, no denied claims, no visit caps 1-on-1 care model &#8212; premium experience for patients Highest income ceiling in PT (clinic owners can earn $150K&#8211;$300K+) Build equity in a business you can sell</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Business risk &#8212; overhead, marketing, payroll, liability insurance No guaranteed income, especially first 1&#8211;2 years Need business skills PT school doesn't teach (marketing, accounting, sales) Patient base limited to those who can afford out-of-pocket PT Solo practice = you do everything (treat, bill, clean, market)</p></div>
     </div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#127482;&#127480; VA (Veterans Affairs) Physical Therapy <span class="setting-tag">Federal</span></div>
+  <div class="bl-strip">
+    <div>&#127482;&#127480; VA (Veterans Affairs) Physical Therapy <span>Federal</span></div>
     <p><strong>What it is:</strong> Federal employment with the Department of Veterans Affairs &mdash; the single largest employer of PTs in the US (3,100+ PTs, 670+ PTAs across 1,400+ facilities in all 50 states). You treat veterans across the full continuum: acute care, inpatient rehab, outpatient, polytrauma/TBI, amputee care, SCI, mental health integration, and telehealth. The VA operates on a <strong>mission-driven model</strong> &mdash; patient care over productivity units. <strong>Salary:</strong> ~$100K&ndash;$130K+ (GS pay scale, varies by locality). The real value is the <strong>total compensation package</strong> which is among the best in healthcare.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p><strong>Federal pension (FERS)</strong> &mdash; guaranteed retirement annuity for life (1% &times; high-3 avg salary &times; years of service) <strong>TSP</strong> (Thrift Savings Plan) &mdash; federal 401(k) with 5% employer match + automatic 1% = 6% free money <strong>EDRP</strong> (Education Debt Reduction Program) &mdash; up to $200,000 in tax-free student loan repayment over 5 years <strong>PSLF eligible</strong> &mdash; federal employment qualifies for Public Service Loan Forgiveness after 120 payments 1-hour evals, 30&ndash;45 min treatments &mdash; better patient ratios than private sector FEHB health insurance (continues into retirement), FEGLI life insurance 26 paid vacation days/year after 3 years + 13 sick days + 11 federal holidays = ~50 days off/year Direct access throughout VA system (recent legislation) Job security &mdash; extremely low turnover. Many PTs stay 20&ndash;40 years Research opportunities, residency programs, continuing education support Unique patient population: polytrauma, combat injuries, PTSD, amputees, SCI</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>Competitive entry &mdash; new grads rarely hired unless prior military service or HPSP scholarship recipient Bureaucratic &mdash; federal hiring process is slow (USAJobs, can take months) 8:00&ndash;5:00 rigid schedule at many facilities (less flexibility than private sector) May need to relocate for openings (positions don&rsquo;t turn over frequently) Complex patient comorbidities: PTSD, substance abuse, TBI, chronic pain &mdash; emotionally demanding GS pay scale may be lower base salary than private sector in some markets</p></div>
     </div>
     <div class="bl-strip green"><div class="bl-label">How to Get In</div><p><strong>Best path in:</strong> (1) <strong>HPSP Scholarship</strong> &mdash; VA pays remaining DPT tuition in exchange for service commitment. (2) <strong>VA clinical rotations</strong> during school. (3) <strong>Network</strong> &mdash; volunteer at VA, join APTA Federal Section, attend Wounded Warrior events. (4) <strong>Prior military service</strong> gives hiring preference (veterans&rsquo; preference points). Apply via <strong>USAJobs.gov</strong>. When you calculate total compensation (pension + TSP match + EDRP + health insurance + 50 days off), a VA PT earning $105K base often out-earns a private sector PT making $120K.</p></div>
   </div>
 
-  <div class="setting-card">
-    <div class="setting-title">&#129657; PACU / Perioperative PT (ERAS) <span class="setting-tag">Emerging Role</span></div>
+  <div class="bl-strip">
+    <div>&#129657; PACU / Perioperative PT (ERAS) <span>Emerging Role</span></div>
     <p><strong>What it is:</strong> Physical therapy in the Post-Anesthesia Care Unit (PACU) and perioperative setting as part of <strong>Enhanced Recovery After Surgery (ERAS)</strong> protocols. This is an emerging and growing role where the PT mobilizes patients <strong>within hours of surgery</strong> &mdash; sometimes in the PACU itself before transfer to the floor. Evidence shows early mobilization (within 24 hours) reduces complications, LOS, costs, and improves functional outcomes. The PT works alongside anesthesiologists, surgeons, and PACU nurses as part of the perioperative team. <strong>Salary:</strong> acute care hospital PT range ($90K&ndash;$115K); may include weekend/shift differentials.</p>
-    <div class="pro-con">
+    <div>
       <div class="pro-con-col pros"><h5>Pros</h5><p>Cutting-edge, evidence-based role &mdash; ERAS is transforming surgical recovery High-acuity, high-impact &mdash; your intervention directly reduces complications (DVT, pneumonia, ileus) Interdisciplinary collaboration with surgeons, anesthesiologists, and nursing Growing demand &mdash; ERAS adoption is expanding rapidly across surgical specialties You see measurable outcomes fast &mdash; patient walks same day, discharges sooner Strong evidence base: early mobilization reduces LOS by 1&ndash;3 days, complication rates by 30&ndash;50%</p></div>
       <div class="pro-con-col cons"><h5>Cons</h5><p>High-acuity patients &mdash; lines, drains, catheters, hemodynamic monitoring, fresh incisions Requires strong vital sign interpretation and acute care competency Must be comfortable with post-anesthesia patients (groggy, nauseous, hemodynamically labile) Not all hospitals have formalized PT-in-PACU programs yet Weekend/holiday coverage often required Emotionally intense &mdash; surgical complications, patient pain, rapid clinical decisions</p></div>
     </div>
@@ -564,15 +564,15 @@ function showState(name) {
     : '<span class="law-badge provisional">Not PT Compact</span>';
 
   detail.className = 'show';
-  detail.innerHTML = '<div class="salary-card">' +
+  detail.innerHTML = '<div class="bl-strip">' +
     '<div>' +
-    '<div class="salary-big">$' + st.s.toLocaleString() + '</div>' +
+    '<div>$' + st.s.toLocaleString() + '</div>' +
     daBadge + compactBadge + '</div>' +
-    '<div class="salary-label">' + st.n + ' &#8212; Average PT Salary (BLS 2024)</div>' +
-    '<div class="salary-row">' +
-    '<div class="salary-mini"><div class="sm-num">$' + adj.toLocaleString() + '</div><div class="sm-label">COL-Adjusted</div></div>' +
-    '<div class="salary-mini"><div class="sm-num">' + st.col + '</div><div class="sm-label">COL Index (100=avg)</div></div>' +
-    '<div class="salary-mini"><div class="sm-num">$' + Math.round(st.s/2080).toLocaleString() + '</div><div class="sm-label">Hourly (est.)</div></div>' +
+    '<div>' + st.n + ' &#8212; Average PT Salary (BLS 2024)</div>' +
+    '<div>' +
+    '<div><div>$' + adj.toLocaleString() + '</div><div>COL-Adjusted</div></div>' +
+    '<div><div>' + st.col + '</div><div>COL Index (100=avg)</div></div>' +
+    '<div><div>$' + Math.round(st.s/2080).toLocaleString() + '</div><div>Hourly (est.)</div></div>' +
     '</div>' +
     '<div class="bl-strip"><div class="bl-label">State Notes</div><p>' + st.notes + '</p></div>' +
     '</div>' +
