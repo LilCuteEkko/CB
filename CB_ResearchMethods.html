@@ -1,1004 +1,839 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Research Methods</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Research Methods</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat has-active">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" class="active">Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">Research Methods &middot; Evidence-Based Practice</div>
-  <h1>Research Methods <span>in Physical Therapy</span></h1>
-  <p>This is the one course DPT students dread most — and understand least until they're reading an article at 11pm before a case. EBP, study design, validity threats, sampling, statistics, measurement reliability, qualitative methods, and IRB ethics. Not optional knowledge: these are the tools that separate a clinician who uses evidence from one who uses tradition.</p>
+<div class="hero-tag">Research Methods &middot; Evidence-Based Practice</div>
+<h1>Research Methods <span>in Physical Therapy</span></h1>
+<p>This is the one course DPT students dread most — and understand least until they're reading an article at 11pm before a case. EBP, study design, validity threats, sampling, statistics, measurement reliability, qualitative methods, and IRB ethics. Not optional knowledge: these are the tools that separate a clinician who uses evidence from one who uses tradition.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('ebp',this)">EBP &amp; PICO</button>
-  <button onclick="showTab('evidence',this)">Hierarchy of Evidence</button>
-  <button onclick="showTab('design',this)">Study Design</button>
-  <button onclick="showTab('validity',this)">Design Validity</button>
-  <button onclick="showTab('sampling',this)">Sampling</button>
-  <button onclick="showTab('measurement',this)">Measurement</button>
-  <button onclick="showTab('stats',this)">Statistics</button>
-  <button onclick="showTab('qualitative',this)">Qualitative</button>
-  <button onclick="showTab('irb',this)">IRB &amp; Ethics</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('ebp',this)">EBP &amp; PICO</button>
+<button onclick="showTab('evidence',this)">Hierarchy of Evidence</button>
+<button onclick="showTab('design',this)">Study Design</button>
+<button onclick="showTab('validity',this)">Design Validity</button>
+<button onclick="showTab('sampling',this)">Sampling</button>
+<button onclick="showTab('measurement',this)">Measurement</button>
+<button onclick="showTab('stats',this)">Statistics</button>
+<button onclick="showTab('qualitative',this)">Qualitative</button>
+<button onclick="showTab('irb',this)">IRB &amp; Ethics</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== EBP & PICO ====== -->
 <div class="tab-panel active" id="tab-ebp">
 <div class="container">
-
-  <div class="section-title">Evidence-Based Practice &amp; the Clinical Question</div>
-  <div class="section-sub">EBP is not about blindly following research — it's a framework for integrating the best available evidence with your clinical expertise and your patient's values. Getting all three right simultaneously is what separates a reflective practitioner from someone who either ignores evidence or ignores the patient sitting in front of them.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Definition &amp; Why EBP Matters</div>
-      <div class="bl-strip">
-        <div class="bl-label">Sackett's Definition (Revised 2000)</div>
-        <p>EBP is the integration of <strong>clinical expertise</strong>, <strong>patient values and preferences</strong>, and the <strong>best available research evidence</strong> into the decision-making process for patient care. All three elements are equally important — remove one and you're no longer practicing EBP.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Why EBP Is Non-Negotiable — IOM Data</div>
-        <p>The Institute of Medicine documented: <strong>~33%</strong> of healthcare spending goes toward therapies that do NOT improve health.<br><strong>50%</strong> of healthcare practices are of unknown effectiveness.<br><strong>15%</strong> are potentially harmful or unlikely to be beneficial. The gap between "what we know" and "what we do" is not a minor issue — it costs lives and money.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">The Paradigm Shift</div>
-        <p><strong>Old paradigm (tradition-based):</strong> Tradition, authority, and anecdotal clinical experience are sufficient grounds for practice. "That's how it has always been done." "Dr. X told me." <strong>New paradigm (evidence-based):</strong> De-emphasize intuition, unsystematic observation, and common sense as sufficient grounds. Stress examination of evidence from patient-centered clinical research. Tradition is a starting hypothesis, not a conclusion.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Minimum EBP Skills for Entry-Level PT</div>
-        <p>Discriminate among levels of evidence (Sackett's hierarchy) Access literature using databases to answer clinical questions Read and critically analyze current literature Use current evidence, patient values, and personal experience in clinical decisions Prepare a written or verbal case report Share expertise in accessing evidence with colleagues</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">The 5 A's — Process of EBP</div>
-      <div>
-        <div>
-          <p>1 — ASK</p>
-          <p>Formulate a well-built clinical question from the patient case. Background (general knowledge) or foreground (specific PICO question).</p>
-        </div>
-        <div>
-          <p>2 — ACQUIRE</p>
-          <p>Search databases (PubMed, CINAHL, Cochrane, PEDro) for relevant literature. Use PICO terms + Boolean operators. Rarely satisfactory on the first try — iterate.</p>
-        </div>
-        <div>
-          <p>3 — APPRAISE</p>
-          <p>Critically evaluate evidence for validity, meaningfulness, and relevance to your patient. Three questions: Is the study valid? Are the results meaningful? Are the results relevant?</p>
-        </div>
-        <div>
-          <p>4 — APPLY</p>
-          <p>Integrate evidence with clinical expertise and patient values. How well does the evidence fit this specific patient? Make the clinical decision.</p>
-        </div>
-        <div>
-          <p>5 — ASSESS</p>
-          <p>Did the patient improve? Is additional evidence needed? Do new questions need to be answered? Close the loop — this feeds back into the next Ask.</p>
-        </div>
-
-  
-  <div class="section-title">Asking the Clinical Question — PICO Format</div>
-  <div class="section-sub">The foreground clinical question is the specific, answerable question that guides your literature search. PICO is the standard structure. A well-built PICO question is relevant, direct, and specific — not vague or unanswerable.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Background vs. Foreground Questions</div>
-      <div class="bl-strip">
-        <div class="bl-label">Background Questions — General Knowledge (Novice)</div>
-        <p>Ask for general knowledge about a condition. Answer what is, why, or how. Examples: "What is the pathology of Parkinson's disease?" "Is frozen shoulder common in patients with type 2 diabetes?" "How many people are affected by migraine headaches?" These are not PICO questions — they inform clinical context but don't guide specific treatment decisions.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Foreground Questions — Specific Knowledge (Expert) = PICO</div>
-        <p>Ask for specific knowledge to inform clinical decisions about patient management. Always in PICO format. These drive literature searches and guide intervention decisions. Examples: "In patients with type 2 diabetes who have adhesive capsulitis, is physical therapy more effective than corticosteroid injection for reducing shoulder disability and increasing ROM?"</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">PICO Components</div>
-      <table class="data-table">
-        <thead><tr><th>Letter</th><th>Component</th><th>Description</th><th>Example (frozen shoulder / T2DM)</th></tr></thead>
-        <tbody>
-          <tr><td class="hi"><strong>P</strong></td><td>Patient / Population / Problem</td><td>Who? What is the condition, demographic, key characteristics?</td><td>Type 2 diabetes, adhesive capsulitis, age 65, female</td></tr>
-          <tr><td class="hi"><strong>I</strong></td><td>Intervention</td><td>Main intervention, diagnostic test, or exposure of interest</td><td>Physical therapy (mobilization)</td></tr>
-          <tr><td class="warn"><strong>C</strong></td><td>Comparison <em>(optional)</em></td><td>Alternative treatment or no treatment — not always present</td><td>Corticosteroid injection</td></tr>
-          <tr><td class="hi"><strong>O</strong></td><td>Outcome</td><td>What are you trying to achieve? Be specific, not generic</td><td>Reduced shoulder disability, decreased pain, increased ROM</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip">
-        <div class="bl-label">Full PICO Question — Frozen Shoulder Example</div>
-        <p>"In a patient with type 2 diabetes who has adhesive capsulitis, is physical therapy more effective than a corticosteroid injection for reducing shoulder disability and pain and for increasing range of motion?"</p>
-      </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>4 Types of Clinical Questions — Which Design to Look For</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <table class="data-table">
-        <thead><tr><th>Question Type</th><th>Asking About</th><th>Best Study Design</th><th>PICO Example</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Diagnosis</strong></td><td>How accurate is this test for identifying a condition?</td><td>Cross-sectional study with blind comparison to gold standard</td><td>In patients with hip pain, is active hip flexion that reproduces lateral hip pain a valid predictor of hip osteoarthritis (compared to radiographic gold standard)?</td></tr>
-          <tr><td><strong>Therapy</strong></td><td>Is the treatment effective?</td><td>RCT (highest level); systematic review of RCTs</td><td>In patients with T2DM and adhesive capsulitis, is PT more effective than corticosteroid injection for reducing shoulder disability?</td></tr>
-          <tr><td><strong>Prognosis</strong></td><td>What is the likely clinical course over time?</td><td>Cohort study (prospective, longitudinal)</td><td>In patients with T2DM, how does an HbA1C of 7.5 influence disease progression over 5 years?</td></tr>
-          <tr><td><strong>Etiology</strong></td><td>What causes or contributes to a condition?</td><td>Cohort or case-control study</td><td>In community-dwelling older adults, does reduced grip strength increase the risk of future falls?</td></tr>
-          <tr><td><strong>Patient Experience</strong></td><td>What do patients think, feel, or prefer?</td><td>Qualitative study (interviews, focus groups)</td><td>In patients with T2DM, what factors contribute to non-adherence to exercise programs?</td></tr>
-        </tbody>
-      </table>
-
+<div class="section-title">Evidence-Based Practice &amp; the Clinical Question</div>
+<div class="section-sub">EBP is not about blindly following research — it's a framework for integrating the best available evidence with your clinical expertise and your patient's values. Getting all three right simultaneously is what separates a reflective practitioner from someone who either ignores evidence or ignores the patient sitting in front of them.</div>
+<div class="bl-strip">
+<div class="bl-label">Definition &amp; Why EBP Matters</div>
+<div class="bl-strip">
+<div class="bl-label">Sackett's Definition (Revised 2000)</div>
+<p>EBP is the integration of <strong>clinical expertise</strong>, <strong>patient values and preferences</strong>, and the <strong>best available research evidence</strong> into the decision-making process for patient care. All three elements are equally important — remove one and you're no longer practicing EBP.</p>
 </div>
-
-<!-- ====== HIERARCHY OF EVIDENCE ====== -->
+<div class="bl-strip red">
+<div class="bl-label">Why EBP Is Non-Negotiable — IOM Data</div>
+<p>The Institute of Medicine documented: <strong>~33%</strong> of healthcare spending goes toward therapies that do NOT improve health.<br><strong>50%</strong> of healthcare practices are of unknown effectiveness.<br><strong>15%</strong> are potentially harmful or unlikely to be beneficial. The gap between "what we know" and "what we do" is not a minor issue — it costs lives and money.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">The Paradigm Shift</div>
+<p><strong>Old paradigm (tradition-based):</strong> Tradition, authority, and anecdotal clinical experience are sufficient grounds for practice. "That's how it has always been done." "Dr. X told me." <strong>New paradigm (evidence-based):</strong> De-emphasize intuition, unsystematic observation, and common sense as sufficient grounds. Stress examination of evidence from patient-centered clinical research. Tradition is a starting hypothesis, not a conclusion.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Minimum EBP Skills for Entry-Level PT</div>
+<p>Discriminate among levels of evidence (Sackett's hierarchy) Access literature using databases to answer clinical questions Read and critically analyze current literature Use current evidence, patient values, and personal experience in clinical decisions Prepare a written or verbal case report Share expertise in accessing evidence with colleagues</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">The 5 A's — Process of EBP</div>
+<div>
+<div>
+<p>1 — ASK</p>
+<p>Formulate a well-built clinical question from the patient case. Background (general knowledge) or foreground (specific PICO question).</p>
+</div>
+<div>
+<p>2 — ACQUIRE</p>
+<p>Search databases (PubMed, CINAHL, Cochrane, PEDro) for relevant literature. Use PICO terms + Boolean operators. Rarely satisfactory on the first try — iterate.</p>
+</div>
+<div>
+<p>3 — APPRAISE</p>
+<p>Critically evaluate evidence for validity, meaningfulness, and relevance to your patient. Three questions: Is the study valid? Are the results meaningful? Are the results relevant?</p>
+</div>
+<div>
+<p>4 — APPLY</p>
+<p>Integrate evidence with clinical expertise and patient values. How well does the evidence fit this specific patient? Make the clinical decision.</p>
+</div>
+<div>
+<p>5 — ASSESS</p>
+<p>Did the patient improve? Is additional evidence needed? Do new questions need to be answered? Close the loop — this feeds back into the next Ask.</p>
+</div>
+<div class="section-title">Asking the Clinical Question — PICO Format</div>
+<div class="section-sub">The foreground clinical question is the specific, answerable question that guides your literature search. PICO is the standard structure. A well-built PICO question is relevant, direct, and specific — not vague or unanswerable.</div>
+<div class="bl-strip">
+<div class="bl-label">Background vs. Foreground Questions</div>
+<div class="bl-strip">
+<div class="bl-label">Background Questions — General Knowledge (Novice)</div>
+<p>Ask for general knowledge about a condition. Answer what is, why, or how. Examples: "What is the pathology of Parkinson's disease?" "Is frozen shoulder common in patients with type 2 diabetes?" "How many people are affected by migraine headaches?" These are not PICO questions — they inform clinical context but don't guide specific treatment decisions.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Foreground Questions — Specific Knowledge (Expert) = PICO</div>
+<p>Ask for specific knowledge to inform clinical decisions about patient management. Always in PICO format. These drive literature searches and guide intervention decisions. Examples: "In patients with type 2 diabetes who have adhesive capsulitis, is physical therapy more effective than corticosteroid injection for reducing shoulder disability and increasing ROM?"</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">PICO Components</div>
+<table class="data-table"><thead>
+<tr><th>Letter</th><th>Component</th><th>Description</th><th>Example (frozen shoulder / T2DM)</th></tr></thead><tbody>
+<tr><td class="hi"><strong>P</strong></td><td>Patient / Population / Problem</td><td>Who? What is the condition, demographic, key characteristics?</td><td>Type 2 diabetes, adhesive capsulitis, age 65, female</td></tr>
+<tr><td class="hi"><strong>I</strong></td><td>Intervention</td><td>Main intervention, diagnostic test, or exposure of interest</td><td>Physical therapy (mobilization)</td></tr>
+<tr><td class="warn"><strong>C</strong></td><td>Comparison <em>(optional)</em></td><td>Alternative treatment or no treatment — not always present</td><td>Corticosteroid injection</td></tr>
+<tr><td class="hi"><strong>O</strong></td><td>Outcome</td><td>What are you trying to achieve? Be specific, not generic</td><td>Reduced shoulder disability, decreased pain, increased ROM</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Full PICO Question — Frozen Shoulder Example</div>
+<p>"In a patient with type 2 diabetes who has adhesive capsulitis, is physical therapy more effective than a corticosteroid injection for reducing shoulder disability and pain and for increasing range of motion?"</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>4 Types of Clinical Questions — Which Design to Look For</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Question Type</th><th>Asking About</th><th>Best Study Design</th><th>PICO Example</th></tr></thead><tbody>
+<tr><td><strong>Diagnosis</strong></td><td>How accurate is this test for identifying a condition?</td><td>Cross-sectional study with blind comparison to gold standard</td><td>In patients with hip pain, is active hip flexion that reproduces lateral hip pain a valid predictor of hip osteoarthritis (compared to radiographic gold standard)?</td></tr>
+<tr><td><strong>Therapy</strong></td><td>Is the treatment effective?</td><td>RCT (highest level); systematic review of RCTs</td><td>In patients with T2DM and adhesive capsulitis, is PT more effective than corticosteroid injection for reducing shoulder disability?</td></tr>
+<tr><td><strong>Prognosis</strong></td><td>What is the likely clinical course over time?</td><td>Cohort study (prospective, longitudinal)</td><td>In patients with T2DM, how does an HbA1C of 7.5 influence disease progression over 5 years?</td></tr>
+<tr><td><strong>Etiology</strong></td><td>What causes or contributes to a condition?</td><td>Cohort or case-control study</td><td>In community-dwelling older adults, does reduced grip strength increase the risk of future falls?</td></tr>
+<tr><td><strong>Patient Experience</strong></td><td>What do patients think, feel, or prefer?</td><td>Qualitative study (interviews, focus groups)</td><td>In patients with T2DM, what factors contribute to non-adherence to exercise programs?</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-evidence">
 <div class="container">
-
-  <div class="section-title">Hierarchy of Evidence &amp; Literature Acquisition</div>
-  <div class="section-sub">Not all evidence is equal. The hierarchy of evidence ranks study designs by their ability to minimize bias and establish causal relationships. Higher levels = greater methodological rigor and trustworthiness. Lower levels ≠ useless — they generate hypotheses, describe phenomena, and are sometimes the only ethical option. Know where each design sits and why.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Evidence Pyramid — Highest to Lowest</div>
-      <div>
-        <div>Meta-Analysis &nbsp;|&nbsp; Statistical pooling of results across studies</div>
-        <div>Systematic Review &nbsp;|&nbsp; Structured synthesis of literature (all RCTs)</div>
-        <div>Randomized Controlled Trials (RCTs) &nbsp;|&nbsp; Gold standard for interventions</div>
-        <div>Cohort Studies &nbsp;|&nbsp; Follow groups over time, prospective or retrospective</div>
-        <div>Case-Control Studies &nbsp;|&nbsp; Compare cases vs. controls, retrospective</div>
-        <div>Case Series / Case Reports &nbsp;|&nbsp; Descriptive, no controls</div>
-        <div>Animal / Lab Studies &nbsp;|&nbsp; Basic science, not directly applicable</div>
-      <div class="bl-strip">
-        <div class="bl-label">Meta-Analysis vs. Systematic Review</div>
-        <p><strong>Systematic review:</strong> Assesses and summarizes studies (usually RCTs); combines results of articles that may use different outcome measures. <strong>Meta-analysis:</strong> Uses statistical methods to combine and pool the numerical results of studies that use the same outcome measure. Meta-analysis can only be done when studies are sufficiently homogeneous. A systematic review may or may not include a meta-analysis.</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">Literature Sources &amp; Databases</div>
-      <div class="bl-strip">
-        <div class="bl-label">Primary vs. Secondary Sources</div>
-        <p><strong>Primary sources:</strong> Reports provided directly by the investigator — original research articles in peer-reviewed journals, presentations at professional meetings, dissertations. These are what you are appraising in EBP. <strong>Secondary sources:</strong> Reviews of studies presented by someone other than the original author — review articles, textbooks. Useful for background knowledge but not for direct evidence appraisal.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Key Databases for PT Research</div>
-        <table>
-          <tr><td>Database</td><td>Best For</td></tr>
-          <tr><td>PubMed / MEDLINE</td><td>Biomedical and clinical research; free; pubmed.ncbi.nlm.nih.gov</td></tr>
-          <tr><td>CINAHL</td><td>Nursing &amp; Allied Health Literature — most PT-specific</td></tr>
-          <tr><td>Cochrane</td><td>Systematic reviews and meta-analyses — highest quality synthesis</td></tr>
-          <tr><td>PEDro</td><td>Physiotherapy Evidence Database — rates RCT quality using PEDro scale; pedro.org.au</td></tr>
-        </table>
-        <p>IMPORTANT: Google is NOT a synonym for research.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Grey Literature</div>
-        <p>Government documents, fact sheets, policy briefs, demographic statistics, preliminary data on new interventions not yet published. Useful for context and preliminary data but carries lower reliability than peer-reviewed journals.</p>
-      </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Boolean Operators — Controlling Your Search</div>
-    <div class="bl-strip">
-        <div class="bl-label">AND — Narrows the Search</div>
-        <p>Returns only results that contain BOTH terms. Use when you have two essential concepts that must both be present. Example: "Adhesive capsulitis AND physical therapy" → only articles covering both topics. Each additional AND term narrows results further.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">OR — Broadens the Search</div>
-        <p>Returns results that contain EITHER term. Use for synonyms or alternative terms. Example: "Physical therapy OR physiotherapy OR mobilization" → captures both American and British English spellings. The wildcard (*) is a shortcut: "mobili*ation" captures both spellings in one term.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">NOT — Excludes Terms</div>
-        <p>Excludes articles containing a specific term. Use with caution — can eliminate relevant articles. Example: "Shoulder pain NOT surgery" → removes articles primarily about surgical intervention. Searches rarely succeed on the first try — iterate using different combinations of operators and revised keywords.</p>
-      </div>
-
+<div class="section-title">Hierarchy of Evidence &amp; Literature Acquisition</div>
+<div class="section-sub">Not all evidence is equal. The hierarchy of evidence ranks study designs by their ability to minimize bias and establish causal relationships. Higher levels = greater methodological rigor and trustworthiness. Lower levels ≠ useless — they generate hypotheses, describe phenomena, and are sometimes the only ethical option. Know where each design sits and why.</div>
+<div class="bl-strip">
+<div class="bl-label">Evidence Pyramid — Highest to Lowest</div>
+<div>
+<div>Meta-Analysis &nbsp;|&nbsp; Statistical pooling of results across studies</div>
+<div>Systematic Review &nbsp;|&nbsp; Structured synthesis of literature (all RCTs)</div>
+<div>Randomized Controlled Trials (RCTs) &nbsp;|&nbsp; Gold standard for interventions</div>
+<div>Cohort Studies &nbsp;|&nbsp; Follow groups over time, prospective or retrospective</div>
+<div>Case-Control Studies &nbsp;|&nbsp; Compare cases vs. controls, retrospective</div>
+<div>Case Series / Case Reports &nbsp;|&nbsp; Descriptive, no controls</div>
+<div>Animal / Lab Studies &nbsp;|&nbsp; Basic science, not directly applicable</div>
+<div class="bl-strip">
+<div class="bl-label">Meta-Analysis vs. Systematic Review</div>
+<p><strong>Systematic review:</strong> Assesses and summarizes studies (usually RCTs); combines results of articles that may use different outcome measures. <strong>Meta-analysis:</strong> Uses statistical methods to combine and pool the numerical results of studies that use the same outcome measure. Meta-analysis can only be done when studies are sufficiently homogeneous. A systematic review may or may not include a meta-analysis.</p>
 </div>
-
-
-<!-- ====== STUDY DESIGN ====== -->
+<div class="bl-strip">
+<div class="bl-label">Literature Sources &amp; Databases</div>
+<div class="bl-strip">
+<div class="bl-label">Primary vs. Secondary Sources</div>
+<p><strong>Primary sources:</strong> Reports provided directly by the investigator — original research articles in peer-reviewed journals, presentations at professional meetings, dissertations. These are what you are appraising in EBP. <strong>Secondary sources:</strong> Reviews of studies presented by someone other than the original author — review articles, textbooks. Useful for background knowledge but not for direct evidence appraisal.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Key Databases for PT Research</div>
+<table>
+<tr><td>Database</td><td>Best For</td></tr>
+<tr><td>PubMed / MEDLINE</td><td>Biomedical and clinical research; free; pubmed.ncbi.nlm.nih.gov</td></tr>
+<tr><td>CINAHL</td><td>Nursing &amp; Allied Health Literature — most PT-specific</td></tr>
+<tr><td>Cochrane</td><td>Systematic reviews and meta-analyses — highest quality synthesis</td></tr>
+<tr><td>PEDro</td><td>Physiotherapy Evidence Database — rates RCT quality using PEDro scale; pedro.org.au</td></tr></table>
+<p>IMPORTANT: Google is NOT a synonym for research.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Grey Literature</div>
+<p>Government documents, fact sheets, policy briefs, demographic statistics, preliminary data on new interventions not yet published. Useful for context and preliminary data but carries lower reliability than peer-reviewed journals.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Boolean Operators — Controlling Your Search</div>
+<div class="bl-strip">
+<div class="bl-label">AND — Narrows the Search</div>
+<p>Returns only results that contain BOTH terms. Use when you have two essential concepts that must both be present. Example: "Adhesive capsulitis AND physical therapy" → only articles covering both topics. Each additional AND term narrows results further.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">OR — Broadens the Search</div>
+<p>Returns results that contain EITHER term. Use for synonyms or alternative terms. Example: "Physical therapy OR physiotherapy OR mobilization" → captures both American and British English spellings. The wildcard (*) is a shortcut: "mobili*ation" captures both spellings in one term.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">NOT — Excludes Terms</div>
+<p>Excludes articles containing a specific term. Use with caution — can eliminate relevant articles. Example: "Shoulder pain NOT surgery" → removes articles primarily about surgical intervention. Searches rarely succeed on the first try — iterate using different combinations of operators and revised keywords.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-design">
 <div class="container">
-
-  <div class="section-title">Study Design — The Research Taxonomy</div>
-  <div class="section-sub">Research can be categorized four different ways simultaneously — by approach, purpose, degree of control, and timing. Knowing how to classify a study tells you its strengths, its limitations, what claims it can and cannot make, and where it sits in the hierarchy of evidence. No single classification system tells the whole story — you need all four lenses.</div>
-
-  <div class="bl-strip">
-    <div class="bl-label">4 Ways to Classify Research</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Classification Axis</th><th>Category 1</th><th>Category 2</th><th>Key Distinction</th></tr></thead>
-      <tbody>
-        <tr><td><strong>By Approach</strong></td><td>Quantitative — numerical data, controlled conditions, objective reality</td><td>Qualitative — narrative data, naturalistic setting, subjective reality</td><td>Quantitative: how many? how effective? Qualitative: what is the experience?</td></tr>
-        <tr><td><strong>By Purpose</strong></td><td>Descriptive (document characteristics), Exploratory (find relationships)</td><td>Explanatory / Experimental (cause and effect)</td><td>Descriptive → no IV/DV. Exploratory → association. Explanatory → causation</td></tr>
-        <tr><td><strong>By Degree of Control</strong></td><td>Experimental — researcher manipulates IV</td><td>Non-experimental / Observational — no manipulation</td><td>Experimental designs establish causation. Non-experimental can only suggest it</td></tr>
-        <tr><td><strong>By Timing</strong></td><td>Prospective — data collected forward in real time</td><td>Retrospective — data collected backward from existing records</td><td>Retrospective: faster, cheaper, but relies on existing records (may be incomplete)</td></tr>
-      </tbody>
-    </table>
-
-  <div class="section-title">Experimental Designs — Establishing Cause and Effect</div>
-  <div class="section-sub">Experimental designs require manipulation of the independent variable. True experiments have BOTH random assignment AND a control group. Quasi-experiments lack one or both. The RCT is the gold standard for intervention research.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>True Experimental Designs — RCT &amp; Variations</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Pretest-Posttest Control Group Design (RCT)</div>
-            <p>Two or more independent groups randomly assigned. One IV with two or more levels (groups). Pre- and post-intervention measurements. Also called "parallel groups" design or "between-subjects" design. <strong>Scientific standard for investigating cause-and-effect relationships.</strong> Example: Fall prevention program (Tx1) vs. education program (Tx2), with random assignment to each group, measuring falls and muscle strength at baseline and post-intervention.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Posttest-Only Control Group Design</div>
-            <p>Same as pretest-posttest BUT no pretest administered. Used when pretest is impractical, contraindicated, or potentially reactive (pre-test could influence results). Example: number of days in hospital stay post-TKA where measuring the pretest would require surgery not yet done.</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Two-Factor (Two-Way) Designs</div>
-            <p>Incorporates two independent variables. Examines: (1) main effect of Factor A, (2) main effect of Factor B, (3) interaction effect between A and B. Often described as "# × # design" (e.g., 2 × 2 factorial). Common in rehabilitation research when studying an intervention + a moderating variable (e.g., type of stretch × knee position). Interaction effect = the effect of Factor A depends on the level of Factor B.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Repeated Measures Design (Within-Subjects)</div>
-            <p>Subjects are used as their own control. Same subjects measured under multiple conditions or time points. More statistically efficient (less variance, smaller sample needed). <strong>Disadvantages:</strong> practice effects (learning improves scores), carryover effects (one condition affects the next), order effects (sequence of conditions influences results). <strong>Solution:</strong> Counterbalancing (Latin Square design). Example: comparing 3 types of wrist splints on same patients.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Crossover Design</div>
-            <p>Participants randomized to a treatment sequence — either intervention→control OR control→intervention. Controls for order effects. Should only be used when patients' condition is stable. Must consider a <strong>washout period</strong> when treatment has cumulative or carryover effects (e.g., wait long enough that prior treatment effect has dissipated before administering next condition).</p>
-          </div>
-          <div class="bl-strip orange">
-            <div class="bl-label">Between-Group, Within-Group Mixed Design</div>
-            <p>Combines between-subjects (different groups) and within-subjects (repeated measures over time) factors. Most common design in rehabilitation research. Example: Pretest-posttest RCT where both timing (pre vs. post = within-subjects) AND group (Tx1 vs. Tx2 = between-subjects) are factors. Analyzed with mixed ANOVA. The "standard" PT research design.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Quasi-Experimental Designs — Lacks Randomization or Control Group</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip red">
-            <div class="bl-label">What Makes It "Quasi"?</div>
-            <p>Quasi-experimental designs are similar to true experiments EXCEPT they lack either: (1) random assignment, or (2) a comparison group, or (3) both. As a result, they are MORE likely to have threats to internal validity — you can't rule out alternative explanations as effectively. Still valuable when true experiments are unethical or impractical.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">One-Group Pretest-Posttest Design</div>
-            <p>All subjects receive the same treatment. No comparison group. The independent variable is TIME rather than a true intervention. Cannot determine whether observed change is due to the intervention or would have happened anyway (maturation, history, etc.). Generates hypotheses — cannot confirm causation. Also called "time series design."</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Nonequivalent Control Group Design</div>
-            <p>Used when a non-random control group is available for comparison. Groups are "intact" — defined by existing membership rather than random assignment. Example: comparing patients with age/gender-matched healthy controls; comparing two clinics that receive different treatments. Subject preferences and self-selection mean groups may differ at baseline in unmeasured ways. Threats include interaction of selection with history and maturation.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Non-Experimental (Observational) Designs</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Cohort Study ("Follow-Up Study")</div>
-            <p>A group of individuals followed over time. Subjects classified by <strong>exposure status</strong> at the start (exposed vs. not exposed). All have potential to develop the outcome. Association between exposure and outcome is assessed over time. Either prospective or retrospective. Best for common conditions. <strong>Challenges:</strong> misclassification of exposure, attrition, outcome may not occur in sufficient numbers (not good for rare conditions). Example: following people with and without smoking history to see who develops COPD.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Case-Control Study</div>
-            <p>Participants selected based on whether they already HAVE (cases) or DO NOT HAVE (controls) the target condition. Exposure status is then compared between groups — looking backward. Useful for studying <strong>rare conditions or conditions with long latency</strong> (e.g., knee OA developing slowly). <strong>Challenges:</strong> selection bias, recall bias (cases may remember exposures better than controls), confounding. Example: comparing sports participation history of people with and without knee OA.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Cross-Sectional Study</div>
-            <p>A "snapshot" of a population at a single point in time. Data for exposure AND outcome collected simultaneously. Can describe health status at a moment in time. <strong>Critical limitation:</strong> without a time sequence, it may not be possible to know whether the presumed cause truly preceded the outcome — "Which came first?" Example: measuring balance and fall history in a group of older adults at the same time.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Correlational Research</div>
-            <p>Examines relationships between two or more variables within one group. Establishes a mathematical relationship (correlation coefficient). Can predict scores on one variable from another (predictive correlational studies). Can be prospective or retrospective. <strong>Key rule: correlation does NOT imply causation.</strong> Example: relationship between grip strength and falls (both may actually be functions of a third variable — overall conditioning).</p>
-          </div>
-          <div class="bl-strip green">
-            <div class="bl-label">Case Reports &amp; Case Series</div>
-            <p>Detailed description of an individual's condition or response to treatment. Topics: unusual diagnosis, atypical management, innovative treatment, new clinical presentation. Format: introduction → case description (heavy emphasis on history, examination, evaluation, diagnosis, intervention, outcome assessment) → outcomes → discussion. <strong>Purposes:</strong> share clinical experience, illustrate EBP, generate hypotheses, test theory. <strong>Limitation:</strong> very limited external validity (n = 1 or few).</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Study Design — The Research Taxonomy</div>
+<div class="section-sub">Research can be categorized four different ways simultaneously — by approach, purpose, degree of control, and timing. Knowing how to classify a study tells you its strengths, its limitations, what claims it can and cannot make, and where it sits in the hierarchy of evidence. No single classification system tells the whole story — you need all four lenses.</div>
+<div class="bl-strip">
+<div class="bl-label">4 Ways to Classify Research</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Classification Axis</th><th>Category 1</th><th>Category 2</th><th>Key Distinction</th></tr></thead><tbody>
+<tr><td><strong>By Approach</strong></td><td>Quantitative — numerical data, controlled conditions, objective reality</td><td>Qualitative — narrative data, naturalistic setting, subjective reality</td><td>Quantitative: how many? how effective? Qualitative: what is the experience?</td></tr>
+<tr><td><strong>By Purpose</strong></td><td>Descriptive (document characteristics), Exploratory (find relationships)</td><td>Explanatory / Experimental (cause and effect)</td><td>Descriptive → no IV/DV. Exploratory → association. Explanatory → causation</td></tr>
+<tr><td><strong>By Degree of Control</strong></td><td>Experimental — researcher manipulates IV</td><td>Non-experimental / Observational — no manipulation</td><td>Experimental designs establish causation. Non-experimental can only suggest it</td></tr>
+<tr><td><strong>By Timing</strong></td><td>Prospective — data collected forward in real time</td><td>Retrospective — data collected backward from existing records</td><td>Retrospective: faster, cheaper, but relies on existing records (may be incomplete)</td></tr></tbody></table>
+<div class="section-title">Experimental Designs — Establishing Cause and Effect</div>
+<div class="section-sub">Experimental designs require manipulation of the independent variable. True experiments have BOTH random assignment AND a control group. Quasi-experiments lack one or both. The RCT is the gold standard for intervention research.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>True Experimental Designs — RCT &amp; Variations</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Pretest-Posttest Control Group Design (RCT)</div>
+<p>Two or more independent groups randomly assigned. One IV with two or more levels (groups). Pre- and post-intervention measurements. Also called "parallel groups" design or "between-subjects" design. <strong>Scientific standard for investigating cause-and-effect relationships.</strong> Example: Fall prevention program (Tx1) vs. education program (Tx2), with random assignment to each group, measuring falls and muscle strength at baseline and post-intervention.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Posttest-Only Control Group Design</div>
+<p>Same as pretest-posttest BUT no pretest administered. Used when pretest is impractical, contraindicated, or potentially reactive (pre-test could influence results). Example: number of days in hospital stay post-TKA where measuring the pretest would require surgery not yet done.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Two-Factor (Two-Way) Designs</div>
+<p>Incorporates two independent variables. Examines: (1) main effect of Factor A, (2) main effect of Factor B, (3) interaction effect between A and B. Often described as "# × # design" (e.g., 2 × 2 factorial). Common in rehabilitation research when studying an intervention + a moderating variable (e.g., type of stretch × knee position). Interaction effect = the effect of Factor A depends on the level of Factor B.</p>
 </div>
 </div>
-
-<!-- ====== DESIGN VALIDITY ====== -->
+<div>
+<div class="bl-strip">
+<div class="bl-label">Repeated Measures Design (Within-Subjects)</div>
+<p>Subjects are used as their own control. Same subjects measured under multiple conditions or time points. More statistically efficient (less variance, smaller sample needed). <strong>Disadvantages:</strong> practice effects (learning improves scores), carryover effects (one condition affects the next), order effects (sequence of conditions influences results). <strong>Solution:</strong> Counterbalancing (Latin Square design). Example: comparing 3 types of wrist splints on same patients.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Crossover Design</div>
+<p>Participants randomized to a treatment sequence — either intervention→control OR control→intervention. Controls for order effects. Should only be used when patients' condition is stable. Must consider a <strong>washout period</strong> when treatment has cumulative or carryover effects (e.g., wait long enough that prior treatment effect has dissipated before administering next condition).</p>
+</div>
+<div class="bl-strip orange">
+<div class="bl-label">Between-Group, Within-Group Mixed Design</div>
+<p>Combines between-subjects (different groups) and within-subjects (repeated measures over time) factors. Most common design in rehabilitation research. Example: Pretest-posttest RCT where both timing (pre vs. post = within-subjects) AND group (Tx1 vs. Tx2 = between-subjects) are factors. Analyzed with mixed ANOVA. The "standard" PT research design.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Quasi-Experimental Designs — Lacks Randomization or Control Group</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip red">
+<div class="bl-label">What Makes It "Quasi"?</div>
+<p>Quasi-experimental designs are similar to true experiments EXCEPT they lack either: (1) random assignment, or (2) a comparison group, or (3) both. As a result, they are MORE likely to have threats to internal validity — you can't rule out alternative explanations as effectively. Still valuable when true experiments are unethical or impractical.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">One-Group Pretest-Posttest Design</div>
+<p>All subjects receive the same treatment. No comparison group. The independent variable is TIME rather than a true intervention. Cannot determine whether observed change is due to the intervention or would have happened anyway (maturation, history, etc.). Generates hypotheses — cannot confirm causation. Also called "time series design."</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Nonequivalent Control Group Design</div>
+<p>Used when a non-random control group is available for comparison. Groups are "intact" — defined by existing membership rather than random assignment. Example: comparing patients with age/gender-matched healthy controls; comparing two clinics that receive different treatments. Subject preferences and self-selection mean groups may differ at baseline in unmeasured ways. Threats include interaction of selection with history and maturation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Non-Experimental (Observational) Designs</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Cohort Study ("Follow-Up Study")</div>
+<p>A group of individuals followed over time. Subjects classified by <strong>exposure status</strong> at the start (exposed vs. not exposed). All have potential to develop the outcome. Association between exposure and outcome is assessed over time. Either prospective or retrospective. Best for common conditions. <strong>Challenges:</strong> misclassification of exposure, attrition, outcome may not occur in sufficient numbers (not good for rare conditions). Example: following people with and without smoking history to see who develops COPD.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Case-Control Study</div>
+<p>Participants selected based on whether they already HAVE (cases) or DO NOT HAVE (controls) the target condition. Exposure status is then compared between groups — looking backward. Useful for studying <strong>rare conditions or conditions with long latency</strong> (e.g., knee OA developing slowly). <strong>Challenges:</strong> selection bias, recall bias (cases may remember exposures better than controls), confounding. Example: comparing sports participation history of people with and without knee OA.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Cross-Sectional Study</div>
+<p>A "snapshot" of a population at a single point in time. Data for exposure AND outcome collected simultaneously. Can describe health status at a moment in time. <strong>Critical limitation:</strong> without a time sequence, it may not be possible to know whether the presumed cause truly preceded the outcome — "Which came first?" Example: measuring balance and fall history in a group of older adults at the same time.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Correlational Research</div>
+<p>Examines relationships between two or more variables within one group. Establishes a mathematical relationship (correlation coefficient). Can predict scores on one variable from another (predictive correlational studies). Can be prospective or retrospective. <strong>Key rule: correlation does NOT imply causation.</strong> Example: relationship between grip strength and falls (both may actually be functions of a third variable — overall conditioning).</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Case Reports &amp; Case Series</div>
+<p>Detailed description of an individual's condition or response to treatment. Topics: unusual diagnosis, atypical management, innovative treatment, new clinical presentation. Format: introduction → case description (heavy emphasis on history, examination, evaluation, diagnosis, intervention, outcome assessment) → outcomes → discussion. <strong>Purposes:</strong> share clinical experience, illustrate EBP, generate hypotheses, test theory. <strong>Limitation:</strong> very limited external validity (n = 1 or few).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-validity">
 <div class="container">
-
-  <div class="section-title">Design Validity — The 4 Types of Research Validity</div>
-  <div class="section-sub">Validity is the truthfulness and accuracy of study results — can you believe the findings? A quick way to assess any study: "Can I identify a competing alternative explanation for these results?" Each of the four validity types addresses a different dimension of that question. They are hierarchical — statistical conclusion validity is the foundation everything else is built on.</div>
-
-  <div class="bl-strip">
-    <div class="bl-label">4 Types of Design Validity — Hierarchy</div>
-    <div>
-        <p>Foundation</p>
-        <p>Statistical Conclusion Validity</p>
-        <p>Were appropriate statistics used to assess the relationship between IV and DV?</p>
-      </div>
-      <div>
-        <p>Most Important for RCTs</p>
-        <p>Internal Validity</p>
-        <p>Did the treatment really cause the change? Or was it something else?</p>
-      </div>
-      <div>
-        <p>Meaning of Variables</p>
-        <p>Construct Validity</p>
-        <p>Do the IV and DV actually measure what they claim to measure?</p>
-      </div>
-      <div>
-        <p>Generalizability</p>
-        <p>External Validity</p>
-        <p>Can the results be generalized to outside the experimental setting?</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-title">Internal Validity Threats &amp; Safeguards</div>
-  <div class="section-sub">Internal validity is the extent to which the experimental treatment (IV) really caused the observed change in the outcome (DV). Threats are confounding factors that provide alternative explanations for results. Knowing each threat, its nature, and its safeguard is essential for appraising any intervention study.</div>
-
-  <div>
-  <table class="data-table">
-    <thead><tr><th>Threat</th><th>Nature of the Threat</th><th>Safeguard / Solution</th><th>Controlled by Random Assignment?</th></tr></thead>
-    <tbody>
-      <tr><td><strong>History</strong></td><td>Unanticipated events outside the study that influence the DV ("Life goes on"). E.g., participant also receives OT while enrolled in PT study.</td><td>Use control group + random assignment; plan study to avoid predictable events; statistical adjustment</td><td class="ok">Yes</td></tr>
-      <tr><td><strong>Maturation</strong></td><td>Natural changes in subjects over time — aging, growth, spontaneous recovery post-stroke, increasing familiarity with tasks (internal event)</td><td>Random assignment; randomize testing/treatment order; statistical adjustment</td><td class="ok">Yes</td></tr>
-      <tr><td><strong>Attrition (Drop-out)</strong></td><td>Loss of subjects causing reduced sample size and/or imbalanced groups. Differential dropout across groups (e.g., sicker patients drop from treatment group).</td><td>Replace lost subjects; ITT (intention-to-treat) analysis; re-examine data</td><td class="bad">NO — unique threat</td></tr>
-      <tr><td><strong>Testing</strong></td><td>Repeated testing makes subjects familiar with the test → improved scores not due to treatment (learning effect, cues from tester)</td><td>Eliminate multiple testing; use randomly selected experimental and control groups</td><td class="ok">Yes</td></tr>
-      <tr><td><strong>Instrumentation</strong></td><td>Problems with the measurement tool — inappropriate selection, instrument drift over time, rater inconsistency (related to measurement validity)</td><td>Select appropriate validated instrument; calibrate instrument; train raters; standardize protocols</td><td class="ok">Yes</td></tr>
-      <tr><td><strong>Regression to the Mean</strong></td><td>Subjects with extreme baseline scores tend to move toward the mean on retesting — not because of treatment, but due to statistical artifact</td><td>Trim outliers; take repeated baseline measures before intervention</td><td class="ok">Yes</td></tr>
-      <tr><td><strong>Selection (Assignment)</strong></td><td>Unequal baseline characteristics between groups that influence outcome — groups are different before treatment starts</td><td>Random assignment; adequate inclusion/exclusion criteria; ANCOVA statistical adjustment</td><td class="ok">Yes</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">ITT — Intention-to-Treat Analysis</div>
-      <div class="bl-strip red">
-        <div class="bl-label">What It Is and Why It Matters</div>
-        <p>Data are analyzed according to <strong>original random assignments</strong>, regardless of whether subjects actually received the treatment, dropped out, or were non-compliant. If someone was randomized to Tx1 but never received it — they are still analyzed in the Tx1 group. Addresses the attrition threat by preserving the balance created by randomization. <strong>Without ITT:</strong> analyzing only completers can bias results because those who complete treatment may differ systematically from those who don't.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Hawthorne Effect — A Construct Validity Threat</div>
-        <p>The effect of subjects' knowledge that they are part of a study on their performance. People behave differently when they know they're being observed or studied. Can lead to improvement that has nothing to do with the actual intervention. Minimize with blinding, naturalistic settings, or placebo controls. Classic example: Hawthorne factory workers increased productivity regardless of lighting conditions — simply because they were being watched.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">External, Construct &amp; Statistical Conclusion Validity</div>
-      <div class="bl-strip green">
-        <div class="bl-label">External Validity — Can We Generalize?</div>
-        <p>The extent to which results can be generalized beyond the experimental setting. <strong>3 threats:</strong> (1) Biased sample selection — only a narrowly defined subset was studied; (2) Setting differences — clinical environment differs from study environment; (3) Time — circumstances change (updated practice guidelines, changed patient populations). Ask: "Does this study's sample and setting resemble my patients and clinic?"</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">Construct Validity — Measuring What You Claim</div>
-        <p>Concerned with whether IV/DV are well-established and correctly labeled. Example: is "active ROM" a valid measure of "shoulder function"? Threats: operational definition problems, incomplete measurement, subgroup differences, inappropriate time frame, multiple treatment interactions (e.g., patient takes medication + receives the study intervention). When comparing a measure to what it claims to measure, if they don't match, findings are meaningless regardless of how statistically significant they are.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Statistical Conclusion Validity — Were Stats Used Correctly?</div>
-        <p>Appropriate use of statistical procedures to assess IV-DV relationship. Threats: low statistical power (underpowered study misses real effects); violated statistical assumptions; unreliable measurement (poor ICC means you're measuring noise); failure to use ITT analysis. This is the foundation — if statistical conclusion validity is violated, all other validity conclusions are suspect.</p>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Design Validity — The 4 Types of Research Validity</div>
+<div class="section-sub">Validity is the truthfulness and accuracy of study results — can you believe the findings? A quick way to assess any study: "Can I identify a competing alternative explanation for these results?" Each of the four validity types addresses a different dimension of that question. They are hierarchical — statistical conclusion validity is the foundation everything else is built on.</div>
+<div class="bl-strip">
+<div class="bl-label">4 Types of Design Validity — Hierarchy</div>
+<div>
+<p>Foundation</p>
+<p>Statistical Conclusion Validity</p>
+<p>Were appropriate statistics used to assess the relationship between IV and DV?</p>
+</div>
+<div>
+<p>Most Important for RCTs</p>
+<p>Internal Validity</p>
+<p>Did the treatment really cause the change? Or was it something else?</p>
+</div>
+<div>
+<p>Meaning of Variables</p>
+<p>Construct Validity</p>
+<p>Do the IV and DV actually measure what they claim to measure?</p>
+</div>
+<div>
+<p>Generalizability</p>
+<p>External Validity</p>
+<p>Can the results be generalized to outside the experimental setting?</p>
 </div>
 </div>
-
-
-<!-- ====== SAMPLING ====== -->
+</div>
+<div class="section-title">Internal Validity Threats &amp; Safeguards</div>
+<div class="section-sub">Internal validity is the extent to which the experimental treatment (IV) really caused the observed change in the outcome (DV). Threats are confounding factors that provide alternative explanations for results. Knowing each threat, its nature, and its safeguard is essential for appraising any intervention study.</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Threat</th><th>Nature of the Threat</th><th>Safeguard / Solution</th><th>Controlled by Random Assignment?</th></tr></thead><tbody>
+<tr><td><strong>History</strong></td><td>Unanticipated events outside the study that influence the DV ("Life goes on"). E.g., participant also receives OT while enrolled in PT study.</td><td>Use control group + random assignment; plan study to avoid predictable events; statistical adjustment</td><td class="ok">Yes</td></tr>
+<tr><td><strong>Maturation</strong></td><td>Natural changes in subjects over time — aging, growth, spontaneous recovery post-stroke, increasing familiarity with tasks (internal event)</td><td>Random assignment; randomize testing/treatment order; statistical adjustment</td><td class="ok">Yes</td></tr>
+<tr><td><strong>Attrition (Drop-out)</strong></td><td>Loss of subjects causing reduced sample size and/or imbalanced groups. Differential dropout across groups (e.g., sicker patients drop from treatment group).</td><td>Replace lost subjects; ITT (intention-to-treat) analysis; re-examine data</td><td class="bad">NO — unique threat</td></tr>
+<tr><td><strong>Testing</strong></td><td>Repeated testing makes subjects familiar with the test → improved scores not due to treatment (learning effect, cues from tester)</td><td>Eliminate multiple testing; use randomly selected experimental and control groups</td><td class="ok">Yes</td></tr>
+<tr><td><strong>Instrumentation</strong></td><td>Problems with the measurement tool — inappropriate selection, instrument drift over time, rater inconsistency (related to measurement validity)</td><td>Select appropriate validated instrument; calibrate instrument; train raters; standardize protocols</td><td class="ok">Yes</td></tr>
+<tr><td><strong>Regression to the Mean</strong></td><td>Subjects with extreme baseline scores tend to move toward the mean on retesting — not because of treatment, but due to statistical artifact</td><td>Trim outliers; take repeated baseline measures before intervention</td><td class="ok">Yes</td></tr>
+<tr><td><strong>Selection (Assignment)</strong></td><td>Unequal baseline characteristics between groups that influence outcome — groups are different before treatment starts</td><td>Random assignment; adequate inclusion/exclusion criteria; ANCOVA statistical adjustment</td><td class="ok">Yes</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">ITT — Intention-to-Treat Analysis</div>
+<div class="bl-strip red">
+<div class="bl-label">What It Is and Why It Matters</div>
+<p>Data are analyzed according to <strong>original random assignments</strong>, regardless of whether subjects actually received the treatment, dropped out, or were non-compliant. If someone was randomized to Tx1 but never received it — they are still analyzed in the Tx1 group. Addresses the attrition threat by preserving the balance created by randomization. <strong>Without ITT:</strong> analyzing only completers can bias results because those who complete treatment may differ systematically from those who don't.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Hawthorne Effect — A Construct Validity Threat</div>
+<p>The effect of subjects' knowledge that they are part of a study on their performance. People behave differently when they know they're being observed or studied. Can lead to improvement that has nothing to do with the actual intervention. Minimize with blinding, naturalistic settings, or placebo controls. Classic example: Hawthorne factory workers increased productivity regardless of lighting conditions — simply because they were being watched.</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">External, Construct &amp; Statistical Conclusion Validity</div>
+<div class="bl-strip green">
+<div class="bl-label">External Validity — Can We Generalize?</div>
+<p>The extent to which results can be generalized beyond the experimental setting. <strong>3 threats:</strong> (1) Biased sample selection — only a narrowly defined subset was studied; (2) Setting differences — clinical environment differs from study environment; (3) Time — circumstances change (updated practice guidelines, changed patient populations). Ask: "Does this study's sample and setting resemble my patients and clinic?"</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Construct Validity — Measuring What You Claim</div>
+<p>Concerned with whether IV/DV are well-established and correctly labeled. Example: is "active ROM" a valid measure of "shoulder function"? Threats: operational definition problems, incomplete measurement, subgroup differences, inappropriate time frame, multiple treatment interactions (e.g., patient takes medication + receives the study intervention). When comparing a measure to what it claims to measure, if they don't match, findings are meaningless regardless of how statistically significant they are.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Statistical Conclusion Validity — Were Stats Used Correctly?</div>
+<p>Appropriate use of statistical procedures to assess IV-DV relationship. Threats: low statistical power (underpowered study misses real effects); violated statistical assumptions; unreliable measurement (poor ICC means you're measuring noise); failure to use ITT analysis. This is the foundation — if statistical conclusion validity is violated, all other validity conclusions are suspect.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-sampling">
 <div class="container">
-
-  <div class="section-title">Sampling — Selecting &amp; Assigning Participants</div>
-  <div class="section-sub">Sampling is how you get from the population you care about to the people you can actually study. Most clinical research uses convenience samples — which is a compromise, not a failure. What matters is understanding the limitations of your sampling method and whether random assignment (a separate process from sampling) was used to create comparable groups.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Population → Sample — The Levels</div>
-      <div class="bl-strip">
-        <div class="bl-label">Target Population</div>
-        <p>The entire group to whom the study findings may be generalized. This is the group you ultimately want to say something about. Example: "all people in the world with frozen shoulder." Usually impossible to fully study — too large and dispersed.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Accessible Population</div>
-        <p>The subset of the target population who are realistically available to researchers — e.g., people with frozen shoulder in your local area or accessible through your medical records. More feasible, but may not fully represent the target population.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Sample</div>
-        <p>The sub-group of the accessible population actually recruited and studied. Serves as the reference group to estimate characteristics of and draw conclusions about the population. Sample size directly impacts statistical conclusion validity — larger samples are more representative.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Critical Distinction: Selection vs. Assignment</div>
-        <p><strong>Selection (recruitment):</strong> the process by which subjects are DRAWN from the population. <strong>Assignment (allocation):</strong> the process by which selected subjects are PLACED into groups within the study. Random selection ≠ random assignment. You can have a convenience sample (nonrandom selection) AND still randomly assign subjects to groups. This combination is extremely common — and valid — in clinical research.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Inclusion &amp; Exclusion Criteria</div>
-      <div class="bl-strip">
-        <div class="bl-label">Inclusion Criteria</div>
-        <p>Primary traits that make someone eligible to participate — characteristics of interest. Define the target population precisely. Example: "adults aged 18–65 with a diagnosis of adhesive capsulitis confirmed by imaging, with at least 3 months of symptoms."</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Exclusion Criteria</div>
-        <p>Factors that preclude someone from being a subject — ineligible. These are usually potential confounding variables that could interfere with interpretation. Example: "current corticosteroid injection, neurological disorder, prior shoulder surgery." Exclusion criteria control threats to internal validity by preventing confounders from contaminating the sample.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Blinding — Minimizing Observation Bias</div>
-        <p><strong>Single blind:</strong> participants are unaware of their group assignment.<br><strong>Double blind:</strong> both participants AND researchers are unaware of group assignment.<br><strong>Outcome assessor blinding:</strong> the person measuring outcomes does not know which group a subject is in. Important: investigators who deliver treatment and outcome assessors are NOT necessarily the same individuals — a study can be assessor-blinded even if the treating therapist cannot be blinded. PEDro scale specifically evaluates this.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Probability Sampling Methods</div>
-      <div class="bl-strip">
-        <div class="bl-label">1. Simple Random Sampling</div>
-        <p>Every member of the population has equal probability of selection (prize draw, random number table, computer generation). Unbiased (+). Equal chance for all (+). Can be time-consuming for large populations (−). Group size may be unequal (−).</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">2. Systematic Sampling</div>
-        <p>Select every "Nth" person from a list following a random start. Example: sampling 50 from 100 people = every 2nd person. Efficient alternative to simple random (−: may introduce system errors if list has a cyclical pattern).</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">3. Stratified Random Sampling</div>
-        <p>Used when certain subgroups must be represented in adequate proportions — divide population into strata (e.g., by sex, age, disease stage), then randomly sample within each stratum. Preserves proportional representation (+). Difficult to implement if stratification variables are unknown (−).</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">4. Cluster Sampling</div>
-        <p>Uses naturally occurring groups as the sampling unit. Multiple stages: Stage 1 = randomly select clusters (e.g., counties); Stage 2 = randomly select subunits within clusters (segments); Stage 3 = randomly select individuals within subunits. Used for large-scale epidemiological studies (e.g., NHANES). Practical for wide geographic areas (+). More sampling error than simple random (−).</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Nonprobability Sampling Methods</div>
-      <div class="bl-strip red">
-        <div class="bl-label">1. Convenience Sampling — Most Common in Clinical Research</div>
-        <p>Use available participants — college students, community volunteers, clinic patients responding to flyers. "Subjects were selected from the patient population at Hospital A between 2012–2016." Most clinical situations require this — patients are recruited as they become available, making true random selection impossible. <strong>This is a compromise, not a flaw</strong> — but it limits generalizability and must be acknowledged as a limitation.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">2. Purposive Sampling</div>
-        <p>Handpicking individuals with specific characteristics that are important for inclusion. Different from convenience sampling because researchers deliberately select subjects for their expertise or experience, not just availability. Common in qualitative studies where rich, informed participants are needed.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">3. Quota Sampling</div>
-        <p>Incorporates stratification but lacks randomization — the researcher determines how many subjects from each subgroup to include, then fills those quotas by convenience or purposive selection.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">4. Snowball Sampling</div>
-        <p>Used when the target population is difficult to find — participants recruit other participants through "word of mouth." Common for stigmatized conditions, rare diseases, or hidden populations. Creates a self-referral bias but may be the only practical method.</p>
-      </div>
-      <div class="bl-strip green">
-        <div class="bl-label">Random Assignment Methods</div>
-        <p><strong>Simple:</strong> coin toss, dice, computer — equal chance, easy, group size may be unequal.<br><strong>Block:</strong> ensures equal group sizes by predetermined block sizes.<br><strong>Systematic:</strong> count off group numbers from a list.<br><strong>Stratified/Matched:</strong> arrange into subgroups by key characteristics, then randomly assign within each subgroup — maximizes group balance on critical variables but time-consuming.</p>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Sampling — Selecting &amp; Assigning Participants</div>
+<div class="section-sub">Sampling is how you get from the population you care about to the people you can actually study. Most clinical research uses convenience samples — which is a compromise, not a failure. What matters is understanding the limitations of your sampling method and whether random assignment (a separate process from sampling) was used to create comparable groups.</div>
+<div class="bl-strip">
+<div class="bl-label">Population → Sample — The Levels</div>
+<div class="bl-strip">
+<div class="bl-label">Target Population</div>
+<p>The entire group to whom the study findings may be generalized. This is the group you ultimately want to say something about. Example: "all people in the world with frozen shoulder." Usually impossible to fully study — too large and dispersed.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Accessible Population</div>
+<p>The subset of the target population who are realistically available to researchers — e.g., people with frozen shoulder in your local area or accessible through your medical records. More feasible, but may not fully represent the target population.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Sample</div>
+<p>The sub-group of the accessible population actually recruited and studied. Serves as the reference group to estimate characteristics of and draw conclusions about the population. Sample size directly impacts statistical conclusion validity — larger samples are more representative.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Critical Distinction: Selection vs. Assignment</div>
+<p><strong>Selection (recruitment):</strong> the process by which subjects are DRAWN from the population. <strong>Assignment (allocation):</strong> the process by which selected subjects are PLACED into groups within the study. Random selection ≠ random assignment. You can have a convenience sample (nonrandom selection) AND still randomly assign subjects to groups. This combination is extremely common — and valid — in clinical research.</p>
 </div>
 </div>
-
-<!-- ====== MEASUREMENT ====== -->
+<div class="bl-strip">
+<div class="bl-label">Inclusion &amp; Exclusion Criteria</div>
+<div class="bl-strip">
+<div class="bl-label">Inclusion Criteria</div>
+<p>Primary traits that make someone eligible to participate — characteristics of interest. Define the target population precisely. Example: "adults aged 18–65 with a diagnosis of adhesive capsulitis confirmed by imaging, with at least 3 months of symptoms."</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Exclusion Criteria</div>
+<p>Factors that preclude someone from being a subject — ineligible. These are usually potential confounding variables that could interfere with interpretation. Example: "current corticosteroid injection, neurological disorder, prior shoulder surgery." Exclusion criteria control threats to internal validity by preventing confounders from contaminating the sample.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Blinding — Minimizing Observation Bias</div>
+<p><strong>Single blind:</strong> participants are unaware of their group assignment.<br><strong>Double blind:</strong> both participants AND researchers are unaware of group assignment.<br><strong>Outcome assessor blinding:</strong> the person measuring outcomes does not know which group a subject is in. Important: investigators who deliver treatment and outcome assessors are NOT necessarily the same individuals — a study can be assessor-blinded even if the treating therapist cannot be blinded. PEDro scale specifically evaluates this.</p>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Probability Sampling Methods</div>
+<div class="bl-strip">
+<div class="bl-label">1. Simple Random Sampling</div>
+<p>Every member of the population has equal probability of selection (prize draw, random number table, computer generation). Unbiased (+). Equal chance for all (+). Can be time-consuming for large populations (−). Group size may be unequal (−).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">2. Systematic Sampling</div>
+<p>Select every "Nth" person from a list following a random start. Example: sampling 50 from 100 people = every 2nd person. Efficient alternative to simple random (−: may introduce system errors if list has a cyclical pattern).</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">3. Stratified Random Sampling</div>
+<p>Used when certain subgroups must be represented in adequate proportions — divide population into strata (e.g., by sex, age, disease stage), then randomly sample within each stratum. Preserves proportional representation (+). Difficult to implement if stratification variables are unknown (−).</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">4. Cluster Sampling</div>
+<p>Uses naturally occurring groups as the sampling unit. Multiple stages: Stage 1 = randomly select clusters (e.g., counties); Stage 2 = randomly select subunits within clusters (segments); Stage 3 = randomly select individuals within subunits. Used for large-scale epidemiological studies (e.g., NHANES). Practical for wide geographic areas (+). More sampling error than simple random (−).</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Nonprobability Sampling Methods</div>
+<div class="bl-strip red">
+<div class="bl-label">1. Convenience Sampling — Most Common in Clinical Research</div>
+<p>Use available participants — college students, community volunteers, clinic patients responding to flyers. "Subjects were selected from the patient population at Hospital A between 2012–2016." Most clinical situations require this — patients are recruited as they become available, making true random selection impossible. <strong>This is a compromise, not a flaw</strong> — but it limits generalizability and must be acknowledged as a limitation.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">2. Purposive Sampling</div>
+<p>Handpicking individuals with specific characteristics that are important for inclusion. Different from convenience sampling because researchers deliberately select subjects for their expertise or experience, not just availability. Common in qualitative studies where rich, informed participants are needed.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">3. Quota Sampling</div>
+<p>Incorporates stratification but lacks randomization — the researcher determines how many subjects from each subgroup to include, then fills those quotas by convenience or purposive selection.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">4. Snowball Sampling</div>
+<p>Used when the target population is difficult to find — participants recruit other participants through "word of mouth." Common for stigmatized conditions, rare diseases, or hidden populations. Creates a self-referral bias but may be the only practical method.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Random Assignment Methods</div>
+<p><strong>Simple:</strong> coin toss, dice, computer — equal chance, easy, group size may be unequal.<br><strong>Block:</strong> ensures equal group sizes by predetermined block sizes.<br><strong>Systematic:</strong> count off group numbers from a list.<br><strong>Stratified/Matched:</strong> arrange into subgroups by key characteristics, then randomly assign within each subgroup — maximizes group balance on critical variables but time-consuming.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-measurement">
 <div class="container">
-
-  <div class="section-title">Principles of Measurement — Scales, Reliability &amp; Validity</div>
-  <div class="section-sub">There are virtually NO clinical decisions independent of some type of measurement. Choosing the wrong scale means using the wrong statistical test. Unreliable measurements make change scores meaningless. Invalid measures answer the wrong question entirely. These aren't abstract concepts — every outcome measure you use in clinic (MMT, ROM, Berg Balance, DASH) has a measurement scale, reliability coefficients, and validity evidence.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">4 Levels of Measurement — NOIR</div>
-      <table class="data-table">
-        <thead><tr><th>Scale</th><th>Properties</th><th>Examples</th><th>Stats Allowed</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Nominal</strong></td><td>Categories only; no order; numbers are labels, not quantities</td><td>Blood type, sex, diagnosis (yes/no), do you have pain (Y/N)</td><td>Mode, frequencies, chi-square; NO mean</td></tr>
-          <tr><td><strong>Ordinal</strong></td><td>Rank order; intervals between values are unknown and unequal</td><td>MMT (0–5), numerical pain rating scale (0–10), level of assistance (max→min→I)</td><td>Median, mode; nonparametric tests (Spearman, Mann-Whitney)</td></tr>
-          <tr><td><strong>Interval</strong></td><td>Equal intervals; rank order; NO true zero (zero is arbitrary)</td><td>Temperature in °F or °C, calendar year</td><td>Mean, SD; parametric tests; addition/subtraction only</td></tr>
-          <tr><td><strong>Ratio</strong></td><td>All real-number properties: order + equal intervals + TRUE zero (zero = complete absence)</td><td>Age, height, weight, ROM in degrees, muscle strength (lbs), time, blood pressure</td><td>All operations: mean, SD, multiplication, division; full parametric tests</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip red">
-        <div class="bl-label">Why the Level Matters Clinically</div>
-        <p>Statistical test selection is based on the level of measurement. Parametric tests (t-test, ANOVA) require interval or ratio data. Nonparametric tests (Mann-Whitney, Kruskal-Wallis, Spearman) are used with ordinal or nominal data. Using a parametric test on ordinal data (e.g., averaging MMT grades as if they were interval) may produce misleading results. The distinction is also critical for clinical interpretation — a change from 3/5 to 4/5 on MMT is not necessarily the same functional difference as a change from 4/5 to 5/5.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Reliability — Consistency of Measurement</div>
-      <div class="bl-strip">
-        <div class="bl-label">Core Concept — Observed Score Formula</div>
-        <p>Every observed score has two components: <strong>Observed score = True score ± Error.</strong> Systematic error = predictable, consistent over- or underestimate. Random error = no consistent bias, can occur in any direction. Sources of measurement error: (1) the rater performs the test improperly; (2) the instrument doesn't perform consistently; (3) the variable being measured is naturally inconsistent over time.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Types of Reliability &amp; Their Coefficients</div>
-        <table>
-          <tr><td>Type</td><td>What It Tests</td><td>Coefficient</td></tr>
-          <tr><td>Test-retest</td><td>Same instrument, same subject, different times</td><td>ICC or kappa</td></tr>
-          <tr><td>Intra-rater</td><td>One rater, same subject, multiple trials</td><td>ICC or kappa</td></tr>
-          <tr><td>Inter-rater</td><td>Two or more raters measuring same property</td><td>ICC or kappa</td></tr>
-          <tr><td>Alternate forms</td><td>Different versions of same questionnaire</td><td>Pearson correlation coefficient</td></tr>
-          <tr><td>Internal consistency</td><td>Items on a multi-item scale measuring same construct</td><td>Cronbach's alpha</td></tr>
-        </table>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">ICC vs. Kappa — When to Use Each</div>
-        <p><strong>ICC (Intraclass Correlation Coefficient):</strong> for continuous (interval/ratio) data. Reflects true variance as proportion of total variance. Values 0–1; higher = more reliable. <strong>Kappa coefficient:</strong> for categorical (nominal/ordinal) data. Corrects for chance agreement. Values 0–1; kappa can be artificially deflated when prevalence of a category is very low (known as "prevalence paradox").</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">MDC — Minimal Detectable Change</div>
-        <p>The amount of change in a score that exceeds measurement error — change BEYOND what might be due to noise alone. Calculated from the SEM (Standard Error of Measurement). <strong>Lower reliability (lower ICC) = larger MDC</strong> = you need to see a bigger change before you can confidently attribute it to real patient improvement. Also called: minimal detectable difference (MDD), smallest real difference. Clinical implication: if your outcome measure has poor reliability, you may not be able to detect real changes that occurred.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Measurement Validity — The 3 C's</div>
-    <div class="bl-strip">
-        <div class="bl-label">Content Validity</div>
-        <p>Does the instrument adequately sample the full universe of content defining the construct? All relevant aspects should be represented. No irrelevant items. Number of items per component should reflect that component's relative importance. Example: a fatigue scale should include items on physical fatigue, cognitive fatigue, and impact on daily activities — not just sleep. Typically established by expert panel review.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Criterion-Related Validity</div>
-        <p>Correspondence between a target test and a gold standard measure of the same construct. <strong>Concurrent validity:</strong> target test and gold standard measured at the same time (e.g., does gait speed correlate with gold-standard gait lab measures taken simultaneously?). <strong>Predictive validity:</strong> target test predicts a future gold standard (e.g., does TUG score predict future falls at 6 months?).</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">Construct Validity</div>
-        <p>Does the instrument measure the theoretical dimensions of an abstract construct? <strong>Convergent validity:</strong> the test correlates with other tests of closely related constructs (should be high). <strong>Divergent validity:</strong> the test is uncorrelated with tests of distinct, contrasting constructs (should be low). Example: a balance scale should correlate highly with gait stability (convergent) but should NOT correlate with shoulder strength (divergent) — because balance and shoulder strength are different constructs.</p>
-      </div>
-    </div>
-    <div class="bl-strip red">
-      <div class="bl-label">The Most Important Rule: Reliability vs. Validity</div>
-      <p><strong>A measurement can be RELIABLE without being VALID. But it CANNOT be valid if it is not reliable.</strong> Reliability is a necessary but not sufficient condition for validity. Analogy: a scale that always reads 5 lbs too heavy is reliable (consistent) but not valid (inaccurate). A scale with random errors is neither reliable nor valid. Only a scale that is both consistent AND accurate is reliable AND valid.</p>
-    </div>
-  </div>
-
+<div class="section-title">Principles of Measurement — Scales, Reliability &amp; Validity</div>
+<div class="section-sub">There are virtually NO clinical decisions independent of some type of measurement. Choosing the wrong scale means using the wrong statistical test. Unreliable measurements make change scores meaningless. Invalid measures answer the wrong question entirely. These aren't abstract concepts — every outcome measure you use in clinic (MMT, ROM, Berg Balance, DASH) has a measurement scale, reliability coefficients, and validity evidence.</div>
+<div class="bl-strip">
+<div class="bl-label">4 Levels of Measurement — NOIR</div>
+<table class="data-table"><thead>
+<tr><th>Scale</th><th>Properties</th><th>Examples</th><th>Stats Allowed</th></tr></thead><tbody>
+<tr><td><strong>Nominal</strong></td><td>Categories only; no order; numbers are labels, not quantities</td><td>Blood type, sex, diagnosis (yes/no), do you have pain (Y/N)</td><td>Mode, frequencies, chi-square; NO mean</td></tr>
+<tr><td><strong>Ordinal</strong></td><td>Rank order; intervals between values are unknown and unequal</td><td>MMT (0–5), numerical pain rating scale (0–10), level of assistance (max→min→I)</td><td>Median, mode; nonparametric tests (Spearman, Mann-Whitney)</td></tr>
+<tr><td><strong>Interval</strong></td><td>Equal intervals; rank order; NO true zero (zero is arbitrary)</td><td>Temperature in °F or °C, calendar year</td><td>Mean, SD; parametric tests; addition/subtraction only</td></tr>
+<tr><td><strong>Ratio</strong></td><td>All real-number properties: order + equal intervals + TRUE zero (zero = complete absence)</td><td>Age, height, weight, ROM in degrees, muscle strength (lbs), time, blood pressure</td><td>All operations: mean, SD, multiplication, division; full parametric tests</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Why the Level Matters Clinically</div>
+<p>Statistical test selection is based on the level of measurement. Parametric tests (t-test, ANOVA) require interval or ratio data. Nonparametric tests (Mann-Whitney, Kruskal-Wallis, Spearman) are used with ordinal or nominal data. Using a parametric test on ordinal data (e.g., averaging MMT grades as if they were interval) may produce misleading results. The distinction is also critical for clinical interpretation — a change from 3/5 to 4/5 on MMT is not necessarily the same functional difference as a change from 4/5 to 5/5.</p>
 </div>
 </div>
-
-
-<!-- ====== EBP & PICO ====== -->
+<div class="bl-strip">
+<div class="bl-label">Reliability — Consistency of Measurement</div>
+<div class="bl-strip">
+<div class="bl-label">Core Concept — Observed Score Formula</div>
+<p>Every observed score has two components: <strong>Observed score = True score ± Error.</strong> Systematic error = predictable, consistent over- or underestimate. Random error = no consistent bias, can occur in any direction. Sources of measurement error: (1) the rater performs the test improperly; (2) the instrument doesn't perform consistently; (3) the variable being measured is naturally inconsistent over time.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Types of Reliability &amp; Their Coefficients</div>
+<table>
+<tr><td>Type</td><td>What It Tests</td><td>Coefficient</td></tr>
+<tr><td>Test-retest</td><td>Same instrument, same subject, different times</td><td>ICC or kappa</td></tr>
+<tr><td>Intra-rater</td><td>One rater, same subject, multiple trials</td><td>ICC or kappa</td></tr>
+<tr><td>Inter-rater</td><td>Two or more raters measuring same property</td><td>ICC or kappa</td></tr>
+<tr><td>Alternate forms</td><td>Different versions of same questionnaire</td><td>Pearson correlation coefficient</td></tr>
+<tr><td>Internal consistency</td><td>Items on a multi-item scale measuring same construct</td><td>Cronbach's alpha</td></tr></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">ICC vs. Kappa — When to Use Each</div>
+<p><strong>ICC (Intraclass Correlation Coefficient):</strong> for continuous (interval/ratio) data. Reflects true variance as proportion of total variance. Values 0–1; higher = more reliable. <strong>Kappa coefficient:</strong> for categorical (nominal/ordinal) data. Corrects for chance agreement. Values 0–1; kappa can be artificially deflated when prevalence of a category is very low (known as "prevalence paradox").</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">MDC — Minimal Detectable Change</div>
+<p>The amount of change in a score that exceeds measurement error — change BEYOND what might be due to noise alone. Calculated from the SEM (Standard Error of Measurement). <strong>Lower reliability (lower ICC) = larger MDC</strong> = you need to see a bigger change before you can confidently attribute it to real patient improvement. Also called: minimal detectable difference (MDD), smallest real difference. Clinical implication: if your outcome measure has poor reliability, you may not be able to detect real changes that occurred.</p>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Measurement Validity — The 3 C's</div>
+<div class="bl-strip">
+<div class="bl-label">Content Validity</div>
+<p>Does the instrument adequately sample the full universe of content defining the construct? All relevant aspects should be represented. No irrelevant items. Number of items per component should reflect that component's relative importance. Example: a fatigue scale should include items on physical fatigue, cognitive fatigue, and impact on daily activities — not just sleep. Typically established by expert panel review.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Criterion-Related Validity</div>
+<p>Correspondence between a target test and a gold standard measure of the same construct. <strong>Concurrent validity:</strong> target test and gold standard measured at the same time (e.g., does gait speed correlate with gold-standard gait lab measures taken simultaneously?). <strong>Predictive validity:</strong> target test predicts a future gold standard (e.g., does TUG score predict future falls at 6 months?).</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Construct Validity</div>
+<p>Does the instrument measure the theoretical dimensions of an abstract construct? <strong>Convergent validity:</strong> the test correlates with other tests of closely related constructs (should be high). <strong>Divergent validity:</strong> the test is uncorrelated with tests of distinct, contrasting constructs (should be low). Example: a balance scale should correlate highly with gait stability (convergent) but should NOT correlate with shoulder strength (divergent) — because balance and shoulder strength are different constructs.</p>
+</div>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">The Most Important Rule: Reliability vs. Validity</div>
+<p><strong>A measurement can be RELIABLE without being VALID. But it CANNOT be valid if it is not reliable.</strong> Reliability is a necessary but not sufficient condition for validity. Analogy: a scale that always reads 5 lbs too heavy is reliable (consistent) but not valid (inaccurate). A scale with random errors is neither reliable nor valid. Only a scale that is both consistent AND accurate is reliable AND valid.</p>
+</div>
+</div>
 <div class="tab-panel" id="tab-stats">
 <div class="container">
-
-  <div class="section-title">Statistics — Descriptive, Inferential &amp; Hypothesis Testing</div>
-  <div class="section-sub">Statistics are the tools that convert raw data into interpretable findings. Descriptive statistics characterize what your data look like. Inferential statistics let you draw conclusions about the population from your sample. Understanding the difference between alpha (what you're willing to tolerate) and p-value (what you actually found) — and between statistical and clinical significance — is what separates a reader who understands a results section from one who just skims it.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Descriptive Statistics</div>
-      <div class="bl-strip">
-        <div class="bl-label">Measures of Central Tendency</div>
-        <p><strong>Mean</strong> (average): sum ÷ n. Sensitive to outliers — pulled toward extreme values. Best for symmetric (normal) distributions.<br><strong>Median:</strong> middle score when ranked. Resistant to outliers. Best for skewed distributions.<br><strong>Mode:</strong> most frequently occurring score. In skewed distributions, the median falls between the mean and mode — clinically, this means the mean over- or underestimates the typical patient.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Measures of Variability</div>
-        <p><strong>Range:</strong> minimum to maximum.<br><strong>Variance:</strong> average squared deviation from the mean (sum of squares / n-1).<br><strong>Standard deviation (SD):</strong> square root of variance — expressed in original units, interpretable. Two groups can have the same mean but very different SD — the one with smaller SD is more homogeneous (more predictable responses).</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">Normal Distribution — The 68/95/99 Rule</div>
-        <p>Bell-shaped (Gaussian) distribution. Predictable and constant properties: <strong>68%</strong> of scores within ±1 SD of mean.<br><strong>95%</strong> of scores within ±2 SD.<br><strong>99%</strong> of scores within ±3 SD. Foundation of parametric statistics — most inferential tests assume normally distributed data. If data are skewed, nonparametric tests are used instead.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Foundations of Inferential Statistics</div>
-      <div class="bl-strip">
-        <div class="bl-label">Alpha Level vs. p-Value — The Key Distinction</div>
-        <p><strong>Alpha (α) = level of significance:</strong> the amount of chance (Type I error risk) researchers are WILLING to tolerate before the study begins. Most commonly 0.05 (5% chance of false positive). Set a priori — before data analysis. <strong>p-value:</strong> the product of data analysis. The probability of finding an effect as big as the one observed WHEN THE NULL HYPOTHESIS IS TRUE. The key distinction: alpha is what you're willing to accept; p-value is what you actually found. If p &lt; α → reject null hypothesis.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Confidence Intervals (CI)</div>
-        <p>A range of values with specific boundaries that contains the true population parameter with a specified probability. Formula: <strong>CI = X̄ ± (z)(SEM)</strong>. For 95% CI: z = 1.96. Correct interpretation: "If we repeated this sampling 100 times, 95% of those intervals would contain the true population mean." NOT "there is a 95% probability this interval contains the true mean" (it either does or doesn't). Narrower CI = more precision. Wider CI = more uncertainty. CIs that include zero (for differences) or 1.0 (for ratios) = not statistically significant.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Null vs. Alternative Hypothesis</div>
-        <p><strong>Null hypothesis (H₀): μ₁ = μ₂</strong> — "There is no difference between groups." The default assumption researchers try to disprove. <strong>Alternative hypothesis (H₁): μ₁ ≠ μ₂</strong> — "There IS a difference." May be stated with or without direction (one-tailed vs. two-tailed). Goal: collect enough evidence to reject the null. We never "prove" H₁ — we only fail to reject H₀ or reject it based on probability.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Type I &amp; Type II Errors — The 2×2 Decision Matrix</div>
-      <div>
-      <table class="data-table">
-        <thead><tr><th></th><th>Reality: No Difference</th><th>Reality: There IS a Difference</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Your Decision: Found Difference</strong></td><td class="bad">TYPE I ERROR (α) — False Positive<br>Rejecting H₀ when it is actually true<br>"I found an effect that doesn't exist"</td><td class="ok">✓ CORRECT — True Positive<br>Correctly detecting a real effect</td></tr>
-          <tr><td><strong>Your Decision: No Difference</strong></td><td class="ok">✓ CORRECT — True Negative<br>Correctly failing to detect a non-existent effect</td><td class="bad">TYPE II ERROR (β) — False Negative<br>Failing to find a difference that is real<br>"I missed a real effect"</td></tr>
-        </tbody>
-      </table>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Statistical Power = 1 − β</div>
-        <p>Power = probability that a test will lead to rejection of H₀ when H₁ is actually true. The probability of detecting a real effect. Conventional minimum: power ≥ 0.80 (80%).<br><strong>PANE — 4 interdependent determinants of power:</strong> <strong>P</strong>ower (1-β) · <strong>A</strong>lpha level (lower α = lower power) · <strong>N</strong>umber of subjects (larger n = more power) · <strong>E</strong>ffect size (larger effect = easier to detect). Power analysis determines required sample size before conducting a study — this is a priori power analysis.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Effect Size — Strength of the Finding</div>
-        <p>Effect size = magnitude of difference between two means ÷ within-group variability. Tells you how BIG the effect is, independent of sample size. A p-value can be statistically significant with a tiny, clinically irrelevant effect if n is large enough.<br><strong>Cohen's guidelines:</strong> d = <strong>0.2</strong> = small · d = <strong>0.5</strong> = medium · d = <strong>0.8</strong> = large. Always report effect size alongside p-values. Clinical significance (MCID) is separate from statistical significance.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Statistical Tests — Choosing the Right Tool</div>
-      <div class="bl-strip">
-        <div class="bl-label">Parametric vs. Nonparametric — 3 Assumptions for Parametric</div>
-        <p>Parametric statistics require: (1) Samples randomly drawn from a normally distributed population; (2) Variances between samples are roughly equal (Levene's test for homogeneity of variance); (3) Data measured on interval or ratio scales. When these assumptions are violated, use nonparametric tests. Nonparametric tests are less powerful (require larger n to detect same effect) but don't require distributional assumptions.</p>
-      </div>
-      <div>
-      <table class="data-table">
-        <thead><tr><th>Design</th><th>Parametric</th><th>Nonparametric</th><th>What It Tests</th></tr></thead>
-        <tbody>
-          <tr><td>Two independent groups</td><td class="ok">Independent t-test</td><td>Mann-Whitney U</td><td>Between-subjects difference</td></tr>
-          <tr><td>Same subjects, 2 conditions</td><td class="ok">Paired t-test</td><td>Wilcoxon signed-rank</td><td>Within-subjects difference</td></tr>
-          <tr><td>3+ independent groups</td><td class="ok">One-way ANOVA (F ratio)</td><td>Kruskal-Wallis ANOVA</td><td>Multiple group comparison; F = between/within variance</td></tr>
-          <tr><td>3+ repeated measures</td><td class="ok">One-way repeated measures ANOVA</td><td>Friedman's ANOVA</td><td>Within-subjects over time</td></tr>
-          <tr><td>2 continuous variables</td><td class="ok">Pearson r</td><td>Spearman rs</td><td>Association/correlation</td></tr>
-        </tbody>
-      </table>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Why Multiple t-Tests Are Wrong</div>
-        <p>Comparing 3+ groups using multiple t-tests (A vs. B, B vs. C, A vs. C) inflates the Type I error rate above the chosen alpha. Each test has a 5% error chance — with 3 comparisons, cumulative Type I error approaches 14%. Solution: ANOVA tests all group differences simultaneously while controlling Type I error rate. Post-hoc tests (Tukey, Bonferroni) then identify which specific pairs differ.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Correlation Strength Guidelines</div>
-        <p>r ≤ 0.25 = little or no relationship · r = 0.25–0.50 = low to fair · r = 0.50–0.75 = moderate to good · r ≥ 0.75 = strong relationship. These are guidelines, NOT absolute cutoffs — interpretation is affected by sample size, measurement error, and types of variables. Correlation ≠ causation: a strong correlation between X and Y may be due to a third variable (Z) that influences both.</p>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Statistics — Descriptive, Inferential &amp; Hypothesis Testing</div>
+<div class="section-sub">Statistics are the tools that convert raw data into interpretable findings. Descriptive statistics characterize what your data look like. Inferential statistics let you draw conclusions about the population from your sample. Understanding the difference between alpha (what you're willing to tolerate) and p-value (what you actually found) — and between statistical and clinical significance — is what separates a reader who understands a results section from one who just skims it.</div>
+<div class="bl-strip">
+<div class="bl-label">Descriptive Statistics</div>
+<div class="bl-strip">
+<div class="bl-label">Measures of Central Tendency</div>
+<p><strong>Mean</strong> (average): sum ÷ n. Sensitive to outliers — pulled toward extreme values. Best for symmetric (normal) distributions.<br><strong>Median:</strong> middle score when ranked. Resistant to outliers. Best for skewed distributions.<br><strong>Mode:</strong> most frequently occurring score. In skewed distributions, the median falls between the mean and mode — clinically, this means the mean over- or underestimates the typical patient.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Measures of Variability</div>
+<p><strong>Range:</strong> minimum to maximum.<br><strong>Variance:</strong> average squared deviation from the mean (sum of squares / n-1).<br><strong>Standard deviation (SD):</strong> square root of variance — expressed in original units, interpretable. Two groups can have the same mean but very different SD — the one with smaller SD is more homogeneous (more predictable responses).</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Normal Distribution — The 68/95/99 Rule</div>
+<p>Bell-shaped (Gaussian) distribution. Predictable and constant properties: <strong>68%</strong> of scores within ±1 SD of mean.<br><strong>95%</strong> of scores within ±2 SD.<br><strong>99%</strong> of scores within ±3 SD. Foundation of parametric statistics — most inferential tests assume normally distributed data. If data are skewed, nonparametric tests are used instead.</p>
 </div>
 </div>
-
-<!-- ====== QUALITATIVE ====== -->
+<div class="bl-strip">
+<div class="bl-label">Foundations of Inferential Statistics</div>
+<div class="bl-strip">
+<div class="bl-label">Alpha Level vs. p-Value — The Key Distinction</div>
+<p><strong>Alpha (α) = level of significance:</strong> the amount of chance (Type I error risk) researchers are WILLING to tolerate before the study begins. Most commonly 0.05 (5% chance of false positive). Set a priori — before data analysis. <strong>p-value:</strong> the product of data analysis. The probability of finding an effect as big as the one observed WHEN THE NULL HYPOTHESIS IS TRUE. The key distinction: alpha is what you're willing to accept; p-value is what you actually found. If p &lt; α → reject null hypothesis.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Confidence Intervals (CI)</div>
+<p>A range of values with specific boundaries that contains the true population parameter with a specified probability. Formula: <strong>CI = X̄ ± (z)(SEM)</strong>. For 95% CI: z = 1.96. Correct interpretation: "If we repeated this sampling 100 times, 95% of those intervals would contain the true population mean." NOT "there is a 95% probability this interval contains the true mean" (it either does or doesn't). Narrower CI = more precision. Wider CI = more uncertainty. CIs that include zero (for differences) or 1.0 (for ratios) = not statistically significant.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Null vs. Alternative Hypothesis</div>
+<p><strong>Null hypothesis (H₀): μ₁ = μ₂</strong> — "There is no difference between groups." The default assumption researchers try to disprove. <strong>Alternative hypothesis (H₁): μ₁ ≠ μ₂</strong> — "There IS a difference." May be stated with or without direction (one-tailed vs. two-tailed). Goal: collect enough evidence to reject the null. We never "prove" H₁ — we only fail to reject H₀ or reject it based on probability.</p>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Type I &amp; Type II Errors — The 2×2 Decision Matrix</div>
+<div>
+<table class="data-table"><thead>
+<tr><th></th><th>Reality: No Difference</th><th>Reality: There IS a Difference</th></tr></thead><tbody>
+<tr><td><strong>Your Decision: Found Difference</strong></td><td class="bad">TYPE I ERROR (α) — False Positive<br>Rejecting H₀ when it is actually true<br>"I found an effect that doesn't exist"</td><td class="ok">✓ CORRECT — True Positive<br>Correctly detecting a real effect</td></tr>
+<tr><td><strong>Your Decision: No Difference</strong></td><td class="ok">✓ CORRECT — True Negative<br>Correctly failing to detect a non-existent effect</td><td class="bad">TYPE II ERROR (β) — False Negative<br>Failing to find a difference that is real<br>"I missed a real effect"</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Statistical Power = 1 − β</div>
+<p>Power = probability that a test will lead to rejection of H₀ when H₁ is actually true. The probability of detecting a real effect. Conventional minimum: power ≥ 0.80 (80%).<br><strong>PANE — 4 interdependent determinants of power:</strong><strong>P</strong>ower (1-β) · <strong>A</strong>lpha level (lower α = lower power) · <strong>N</strong>umber of subjects (larger n = more power) · <strong>E</strong>ffect size (larger effect = easier to detect). Power analysis determines required sample size before conducting a study — this is a priori power analysis.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Effect Size — Strength of the Finding</div>
+<p>Effect size = magnitude of difference between two means ÷ within-group variability. Tells you how BIG the effect is, independent of sample size. A p-value can be statistically significant with a tiny, clinically irrelevant effect if n is large enough.<br><strong>Cohen's guidelines:</strong> d = <strong>0.2</strong> = small · d = <strong>0.5</strong> = medium · d = <strong>0.8</strong> = large. Always report effect size alongside p-values. Clinical significance (MCID) is separate from statistical significance.</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Statistical Tests — Choosing the Right Tool</div>
+<div class="bl-strip">
+<div class="bl-label">Parametric vs. Nonparametric — 3 Assumptions for Parametric</div>
+<p>Parametric statistics require: (1) Samples randomly drawn from a normally distributed population; (2) Variances between samples are roughly equal (Levene's test for homogeneity of variance); (3) Data measured on interval or ratio scales. When these assumptions are violated, use nonparametric tests. Nonparametric tests are less powerful (require larger n to detect same effect) but don't require distributional assumptions.</p>
+</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Design</th><th>Parametric</th><th>Nonparametric</th><th>What It Tests</th></tr></thead><tbody>
+<tr><td>Two independent groups</td><td class="ok">Independent t-test</td><td>Mann-Whitney U</td><td>Between-subjects difference</td></tr>
+<tr><td>Same subjects, 2 conditions</td><td class="ok">Paired t-test</td><td>Wilcoxon signed-rank</td><td>Within-subjects difference</td></tr>
+<tr><td>3+ independent groups</td><td class="ok">One-way ANOVA (F ratio)</td><td>Kruskal-Wallis ANOVA</td><td>Multiple group comparison; F = between/within variance</td></tr>
+<tr><td>3+ repeated measures</td><td class="ok">One-way repeated measures ANOVA</td><td>Friedman's ANOVA</td><td>Within-subjects over time</td></tr>
+<tr><td>2 continuous variables</td><td class="ok">Pearson r</td><td>Spearman rs</td><td>Association/correlation</td></tr></tbody></table>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Why Multiple t-Tests Are Wrong</div>
+<p>Comparing 3+ groups using multiple t-tests (A vs. B, B vs. C, A vs. C) inflates the Type I error rate above the chosen alpha. Each test has a 5% error chance — with 3 comparisons, cumulative Type I error approaches 14%. Solution: ANOVA tests all group differences simultaneously while controlling Type I error rate. Post-hoc tests (Tukey, Bonferroni) then identify which specific pairs differ.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Correlation Strength Guidelines</div>
+<p>r ≤ 0.25 = little or no relationship · r = 0.25–0.50 = low to fair · r = 0.50–0.75 = moderate to good · r ≥ 0.75 = strong relationship. These are guidelines, NOT absolute cutoffs — interpretation is affected by sample size, measurement error, and types of variables. Correlation ≠ causation: a strong correlation between X and Y may be due to a third variable (Z) that influences both.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-qualitative">
 <div class="container">
-
-  <div class="section-title">Qualitative Research</div>
-  <div class="section-sub">When your research question is about human experience, patient perspective, clinical decision-making processes, or complex social phenomena — quantitative methods can't get there. Qualitative research answers the "why" and "how" where quantitative research answers "how many" and "how effective." Understanding when qualitative methods are appropriate and how to evaluate their quality is an entry-level PT competency.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">When Qualitative Research Is the Right Choice</div>
-      <div class="bl-strip">
-        <div class="bl-label">Appropriate Research Questions for Qualitative Methods</div>
-        <p>What factors influence patients' adherence to ACL rehabilitation programs? Why do older adults in retirement communities resist engaging in physical activity? What specific assessment methods do PTs select when examining balance deficits, and why? How does chronic pain affect patients' experience of daily living? What barriers do patients with T2DM report to medication and exercise adherence?</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">The Key Rule</div>
-        <p>Qualitative research should be considered when the goals are to investigate complex phenomena that are <strong>not readily measured</strong>, and to generate data to <strong>understand a problem within a social context.</strong> It is inductive (theory development) rather than deductive (theory testing). Not better or worse than quantitative — appropriate for different questions.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Quantitative vs. Qualitative — Paradigm Comparison</div>
-      <table class="data-table">
-        <thead><tr><th>Dimension</th><th>Quantitative</th><th>Qualitative</th></tr></thead>
-        <tbody>
-          <tr><td>Reality</td><td>Single objective reality</td><td>Multiple realities — several versions exist</td></tr>
-          <tr><td>Researcher-Subject</td><td>Independence of investigator and subject</td><td>Interdependence — inquiry leads to change</td></tr>
-          <tr><td>Setting</td><td>Controlled, standardized</td><td>Naturalistic (real life)</td></tr>
-          <tr><td>Goal</td><td>Generalize findings to other settings/times</td><td>Generalize to theory; understand phenomenon</td></tr>
-          <tr><td>Reasoning</td><td>Deductive (theory testing)</td><td>Inductive (theory development)</td></tr>
-          <tr><td>Sample</td><td>Random (probability)</td><td>Purposive / snowball</td></tr>
-          <tr><td>Data</td><td>Numerical (IVs, DVs, stats)</td><td>Language / words / narrative</td></tr>
-          <tr><td>Control</td><td>Maximized</td><td>Minimized</td></tr>
-          <tr><td>Analysis</td><td>Statistical (t-test, ANOVA, etc.)</td><td>Coding, content analysis, theme generation</td></tr>
-          <tr><td>Rigor criterion</td><td>Reliability &amp; validity</td><td>Trustworthiness (4 criteria)</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>3 Main Qualitative Designs</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip">
-          <div class="bl-label">Ethnography</div>
-          <p>Describes cultural characteristics and behaviors in a specific group. Participants are called "informants" rather than subjects. Researcher often acts as a participant observer — immersed in the culture. "Thick description" of context and behavior. Example: Studying the physical activity culture in a retirement community by observing and interviewing residents over months. Goal: understanding group norms, practices, and meanings from inside the culture.</p>
-        </div>
-        <div class="bl-strip gold">
-          <div class="bl-label">Grounded Theory</div>
-          <p>Theory is derived from (grounded in) the data. Individual responses contribute to understanding theoretical relationships that can explain behavior. Researcher does not begin with a hypothesis — theory emerges from systematic data analysis. Example: interviewing patients about their experience of chronic pain to develop a theory of how pain affects social functioning. Concurrent data collection and analysis until theoretical saturation.</p>
-        </div>
-        <div class="bl-strip purple">
-          <div class="bl-label">Phenomenology</div>
-          <p>Seeks to explain how events and circumstances influence perspectives and behaviors. Describes the lived experience of a phenomenon from the subjects' point of view. Bracketing: researcher tries to set aside prior assumptions to understand the phenomenon as participants experience it. Example: exploring the lived experience of receiving a spinal cord injury diagnosis. Goal: rich description of "what it is like" to have an experience.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Data Collection in Qualitative Research</div>
-      <div class="bl-strip">
-        <div class="bl-label">Observation</div>
-        <p><strong>Field observation:</strong> data from real-life situations without researcher participation. <strong>Participant observation:</strong> researcher actively participates in the setting while gathering observational data (characteristic of ethnography).</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Interviews</div>
-        <p><strong>Unstructured:</strong> open-ended questions; follows the participant's lead; deep, rich data.<br><strong>Structured:</strong> predetermined questions in fixed order.<br><strong>Semi-structured:</strong> core questions with flexibility to probe. Can be individual (1-on-1) or focus groups (small group discussion). Qualitative data is WORDS — transcripts are analyzed for patterns, codes, and themes.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Data Analysis — Coding &amp; Content Analysis</div>
-        <p>Data analysis is concurrent with data collection (not sequential). Coding: a process of labeling segments of text with descriptive codes to make sense of the data. Content analysis: generating themes or concepts from patterns across codes. Themes represent the most important patterns in the data and form the basis of findings.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Trustworthiness — Qualitative Rigor Criteria</div>
-      <table class="data-table">
-        <thead><tr><th>Criterion</th><th>Equivalent To</th><th>Meaning</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Credibility</strong></td><td>Internal validity</td><td>Believability; confidence in the "truth" of the findings</td></tr>
-          <tr><td><strong>Transferability</strong></td><td>External validity</td><td>Assessment of generalizability to other contexts</td></tr>
-          <tr><td><strong>Dependability</strong></td><td>Reliability</td><td>How stable the data are over time</td></tr>
-          <tr><td><strong>Confirmability</strong></td><td>Objectivity</td><td>Findings due to participants' experiences, not researcher's preferences</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip">
-        <div class="bl-label">7 Verification Techniques for Trustworthiness</div>
-        <p><strong>Triangulation:</strong> use more than one data source (interview + observation + documents)<br><strong>Negative case analysis:</strong> explicitly explain conflicting or contradictory data <strong>Member checking:</strong> confirm interpretation with participants and colleagues <strong>Thick description:</strong> provide rich narrative detail of context <strong>Purposive sampling:</strong> choose participants who are the best informants for the question <strong>Audit trail:</strong> document all decisions and decisions throughout the study process <strong>Reflexivity:</strong> researcher examines how their own beliefs may influence interpretation</p>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Qualitative Research</div>
+<div class="section-sub">When your research question is about human experience, patient perspective, clinical decision-making processes, or complex social phenomena — quantitative methods can't get there. Qualitative research answers the "why" and "how" where quantitative research answers "how many" and "how effective." Understanding when qualitative methods are appropriate and how to evaluate their quality is an entry-level PT competency.</div>
+<div class="bl-strip">
+<div class="bl-label">When Qualitative Research Is the Right Choice</div>
+<div class="bl-strip">
+<div class="bl-label">Appropriate Research Questions for Qualitative Methods</div>
+<p>What factors influence patients' adherence to ACL rehabilitation programs? Why do older adults in retirement communities resist engaging in physical activity? What specific assessment methods do PTs select when examining balance deficits, and why? How does chronic pain affect patients' experience of daily living? What barriers do patients with T2DM report to medication and exercise adherence?</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">The Key Rule</div>
+<p>Qualitative research should be considered when the goals are to investigate complex phenomena that are <strong>not readily measured</strong>, and to generate data to <strong>understand a problem within a social context.</strong> It is inductive (theory development) rather than deductive (theory testing). Not better or worse than quantitative — appropriate for different questions.</p>
 </div>
 </div>
-
-<!-- ====== IRB & ETHICS ====== -->
+<div class="bl-strip">
+<div class="bl-label">Quantitative vs. Qualitative — Paradigm Comparison</div>
+<table class="data-table"><thead>
+<tr><th>Dimension</th><th>Quantitative</th><th>Qualitative</th></tr></thead><tbody>
+<tr><td>Reality</td><td>Single objective reality</td><td>Multiple realities — several versions exist</td></tr>
+<tr><td>Researcher-Subject</td><td>Independence of investigator and subject</td><td>Interdependence — inquiry leads to change</td></tr>
+<tr><td>Setting</td><td>Controlled, standardized</td><td>Naturalistic (real life)</td></tr>
+<tr><td>Goal</td><td>Generalize findings to other settings/times</td><td>Generalize to theory; understand phenomenon</td></tr>
+<tr><td>Reasoning</td><td>Deductive (theory testing)</td><td>Inductive (theory development)</td></tr>
+<tr><td>Sample</td><td>Random (probability)</td><td>Purposive / snowball</td></tr>
+<tr><td>Data</td><td>Numerical (IVs, DVs, stats)</td><td>Language / words / narrative</td></tr>
+<tr><td>Control</td><td>Maximized</td><td>Minimized</td></tr>
+<tr><td>Analysis</td><td>Statistical (t-test, ANOVA, etc.)</td><td>Coding, content analysis, theme generation</td></tr>
+<tr><td>Rigor criterion</td><td>Reliability &amp; validity</td><td>Trustworthiness (4 criteria)</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>3 Main Qualitative Designs</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Ethnography</div>
+<p>Describes cultural characteristics and behaviors in a specific group. Participants are called "informants" rather than subjects. Researcher often acts as a participant observer — immersed in the culture. "Thick description" of context and behavior. Example: Studying the physical activity culture in a retirement community by observing and interviewing residents over months. Goal: understanding group norms, practices, and meanings from inside the culture.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Grounded Theory</div>
+<p>Theory is derived from (grounded in) the data. Individual responses contribute to understanding theoretical relationships that can explain behavior. Researcher does not begin with a hypothesis — theory emerges from systematic data analysis. Example: interviewing patients about their experience of chronic pain to develop a theory of how pain affects social functioning. Concurrent data collection and analysis until theoretical saturation.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Phenomenology</div>
+<p>Seeks to explain how events and circumstances influence perspectives and behaviors. Describes the lived experience of a phenomenon from the subjects' point of view. Bracketing: researcher tries to set aside prior assumptions to understand the phenomenon as participants experience it. Example: exploring the lived experience of receiving a spinal cord injury diagnosis. Goal: rich description of "what it is like" to have an experience.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Data Collection in Qualitative Research</div>
+<div class="bl-strip">
+<div class="bl-label">Observation</div>
+<p><strong>Field observation:</strong> data from real-life situations without researcher participation. <strong>Participant observation:</strong> researcher actively participates in the setting while gathering observational data (characteristic of ethnography).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Interviews</div>
+<p><strong>Unstructured:</strong> open-ended questions; follows the participant's lead; deep, rich data.<br><strong>Structured:</strong> predetermined questions in fixed order.<br><strong>Semi-structured:</strong> core questions with flexibility to probe. Can be individual (1-on-1) or focus groups (small group discussion). Qualitative data is WORDS — transcripts are analyzed for patterns, codes, and themes.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Data Analysis — Coding &amp; Content Analysis</div>
+<p>Data analysis is concurrent with data collection (not sequential). Coding: a process of labeling segments of text with descriptive codes to make sense of the data. Content analysis: generating themes or concepts from patterns across codes. Themes represent the most important patterns in the data and form the basis of findings.</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Trustworthiness — Qualitative Rigor Criteria</div>
+<table class="data-table"><thead>
+<tr><th>Criterion</th><th>Equivalent To</th><th>Meaning</th></tr></thead><tbody>
+<tr><td><strong>Credibility</strong></td><td>Internal validity</td><td>Believability; confidence in the "truth" of the findings</td></tr>
+<tr><td><strong>Transferability</strong></td><td>External validity</td><td>Assessment of generalizability to other contexts</td></tr>
+<tr><td><strong>Dependability</strong></td><td>Reliability</td><td>How stable the data are over time</td></tr>
+<tr><td><strong>Confirmability</strong></td><td>Objectivity</td><td>Findings due to participants' experiences, not researcher's preferences</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">7 Verification Techniques for Trustworthiness</div>
+<p><strong>Triangulation:</strong> use more than one data source (interview + observation + documents)<br><strong>Negative case analysis:</strong> explicitly explain conflicting or contradictory data <strong>Member checking:</strong> confirm interpretation with participants and colleagues <strong>Thick description:</strong> provide rich narrative detail of context <strong>Purposive sampling:</strong> choose participants who are the best informants for the question <strong>Audit trail:</strong> document all decisions and decisions throughout the study process <strong>Reflexivity:</strong> researcher examines how their own beliefs may influence interpretation</p>
+</div>
+</div>
 <div class="tab-panel" id="tab-irb">
 <div class="container">
-
-  <div class="section-title">IRB &amp; Research Ethics — Protecting Human Subjects</div>
-  <div class="section-sub">The history of research ethics is written in catastrophic abuses. The current protections — IRB review, informed consent, Belmont Report principles — exist because researchers harmed people without consent or with inadequate disclosure. Understanding why these rules exist, not just what they require, makes you a more ethical researcher and a more trustworthy clinician.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Historical Context — Why We Have These Protections</div>
-      <div class="bl-strip red">
-        <div class="bl-label">Tuskegee Syphilis Study (1932–1972)</div>
-        <p>The US Public Health Service enrolled 399 Black men with syphilis in Alabama without telling them they had the disease — calling it "bad blood." Even after penicillin became the known cure in 1947, treatment was withheld to continue observing disease progression. The study ran for 40 years. When exposed in 1972, it precipitated federal legislation requiring formal human subjects protections. This is the primary reason the current IRB system exists.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Nuremberg Code (1947)</div>
-        <p>Established after the Nuremberg Trials revealed Nazi physicians had conducted horrific experiments on prisoners without consent. The Code established 10 principles including: voluntary consent is absolutely essential; research must be conducted by scientifically qualified persons; risks must be justified by expected benefits.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Declaration of Helsinki (1964, updated multiple times)</div>
-        <p>World Medical Association guidelines for medical research involving human subjects. Established that therapeutic research (benefiting the subject) and non-therapeutic research (benefiting science) require different levels of justification. Foundation of international research ethics standards.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">The Belmont Report — 3 Core Principles</div>
-      <div class="bl-strip">
-        <div class="bl-label">1. Respect for Persons (Autonomy)</div>
-        <p>Individuals are autonomous agents capable of making their own decisions. Persons with diminished autonomy (children, prisoners, cognitively impaired) are entitled to additional protection. Operationalized through: <strong>informed consent</strong> — subjects must receive full disclosure of the study's purpose, procedures, risks, benefits, and their right to withdraw at any time without penalty.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">2. Beneficence</div>
-        <p>Do no harm (non-maleficence) + actively promote the well-being of subjects. Maximize benefits and minimize harms. Requires a systematic risk-benefit analysis for every proposed study. Researchers have an obligation to develop research that is scientifically sound — poorly designed research that cannot answer its question is unethical because it exposes subjects to risk without potential benefit.</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">3. Justice</div>
-        <p>Fair distribution of research benefits and burdens. Who bears the risks of research? Who benefits from its results? Historically, disadvantaged populations bore disproportionate research burdens (Tuskegee) while advantaged populations received the benefits. Justice requires equitable selection of subjects — not choosing vulnerable populations simply because they are easy to recruit or less likely to refuse.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Institutional Review Board (IRB)</div>
-      <div class="bl-strip">
-        <div class="bl-label">Purpose and Function</div>
-        <p>The IRB is an independent committee that reviews research proposals involving human subjects before the study begins. Reviews for: adequate protections for participants, sound ethical design, appropriate informed consent procedures, acceptable risk-benefit ratio. All research involving human subjects requires IRB review before recruitment or data collection begins. Exemptions exist for minimal-risk studies (e.g., surveys of normal populations).</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Informed Consent — Required Elements</div>
-        <p>Description of the study and its purposes Description of procedures (including which are experimental) Description of foreseeable risks and discomforts Description of potential benefits Disclosure of alternative procedures available Explanation of confidentiality protections For more than minimal risk: explanation of available compensation/treatment if injury occurs Contact information for questions Statement that participation is voluntary and withdrawal is without penalty</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Vulnerable Populations &amp; PT Research Ethics</div>
-      <div class="bl-strip">
-        <div class="bl-label">Populations Requiring Additional Protections</div>
-        <p><strong>Children:</strong> parental/guardian consent + child's assent (when appropriate)<br><strong>Prisoners:</strong> must ensure participation is truly voluntary (not coerced by institutional pressures)<br><strong>Cognitively impaired individuals:</strong> capacity assessment required; surrogate consent if needed <strong>Pregnant women:</strong> additional protections due to fetal exposure risks <strong>Students/employees:</strong> researcher has power over them — must ensure voluntariness</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Risk-Benefit Analysis</div>
-        <p>Risks must be minimized (only those necessary for valid scientific design). Risks must be reasonable in relation to anticipated benefits and importance of knowledge to be gained. Benefits include: direct benefit to subjects AND benefits to society from the knowledge generated. A study that cannot be adequately powered to answer its question should not be conducted — insufficient power means subjects are exposed to risk for no scientific benefit.</p>
-      </div>
-      <div class="bl-strip green">
-        <div class="bl-label">PT-Specific Research Ethics</div>
-        <p>As DPTs conducting or consuming research: use de-identified data when possible; never use patient records for research without IRB approval; document informed consent in the medical record; be aware that clinical assessment findings are different from research data collection. Publishing case reports requires patient consent. Student projects at clinical sites typically require IRB review. NIH certification on Human Subjects Protection is required for federally-funded research participation.</p>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">IRB &amp; Research Ethics — Protecting Human Subjects</div>
+<div class="section-sub">The history of research ethics is written in catastrophic abuses. The current protections — IRB review, informed consent, Belmont Report principles — exist because researchers harmed people without consent or with inadequate disclosure. Understanding why these rules exist, not just what they require, makes you a more ethical researcher and a more trustworthy clinician.</div>
+<div class="bl-strip">
+<div class="bl-label">Historical Context — Why We Have These Protections</div>
+<div class="bl-strip red">
+<div class="bl-label">Tuskegee Syphilis Study (1932–1972)</div>
+<p>The US Public Health Service enrolled 399 Black men with syphilis in Alabama without telling them they had the disease — calling it "bad blood." Even after penicillin became the known cure in 1947, treatment was withheld to continue observing disease progression. The study ran for 40 years. When exposed in 1972, it precipitated federal legislation requiring formal human subjects protections. This is the primary reason the current IRB system exists.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Nuremberg Code (1947)</div>
+<p>Established after the Nuremberg Trials revealed Nazi physicians had conducted horrific experiments on prisoners without consent. The Code established 10 principles including: voluntary consent is absolutely essential; research must be conducted by scientifically qualified persons; risks must be justified by expected benefits.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Declaration of Helsinki (1964, updated multiple times)</div>
+<p>World Medical Association guidelines for medical research involving human subjects. Established that therapeutic research (benefiting the subject) and non-therapeutic research (benefiting science) require different levels of justification. Foundation of international research ethics standards.</p>
 </div>
 </div>
-
-
-<!-- ====== REVIEW ====== -->
+<div class="bl-strip">
+<div class="bl-label">The Belmont Report — 3 Core Principles</div>
+<div class="bl-strip">
+<div class="bl-label">1. Respect for Persons (Autonomy)</div>
+<p>Individuals are autonomous agents capable of making their own decisions. Persons with diminished autonomy (children, prisoners, cognitively impaired) are entitled to additional protection. Operationalized through: <strong>informed consent</strong> — subjects must receive full disclosure of the study's purpose, procedures, risks, benefits, and their right to withdraw at any time without penalty.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">2. Beneficence</div>
+<p>Do no harm (non-maleficence) + actively promote the well-being of subjects. Maximize benefits and minimize harms. Requires a systematic risk-benefit analysis for every proposed study. Researchers have an obligation to develop research that is scientifically sound — poorly designed research that cannot answer its question is unethical because it exposes subjects to risk without potential benefit.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">3. Justice</div>
+<p>Fair distribution of research benefits and burdens. Who bears the risks of research? Who benefits from its results? Historically, disadvantaged populations bore disproportionate research burdens (Tuskegee) while advantaged populations received the benefits. Justice requires equitable selection of subjects — not choosing vulnerable populations simply because they are easy to recruit or less likely to refuse.</p>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Institutional Review Board (IRB)</div>
+<div class="bl-strip">
+<div class="bl-label">Purpose and Function</div>
+<p>The IRB is an independent committee that reviews research proposals involving human subjects before the study begins. Reviews for: adequate protections for participants, sound ethical design, appropriate informed consent procedures, acceptable risk-benefit ratio. All research involving human subjects requires IRB review before recruitment or data collection begins. Exemptions exist for minimal-risk studies (e.g., surveys of normal populations).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Informed Consent — Required Elements</div>
+<p>Description of the study and its purposes Description of procedures (including which are experimental) Description of foreseeable risks and discomforts Description of potential benefits Disclosure of alternative procedures available Explanation of confidentiality protections For more than minimal risk: explanation of available compensation/treatment if injury occurs Contact information for questions Statement that participation is voluntary and withdrawal is without penalty</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Vulnerable Populations &amp; PT Research Ethics</div>
+<div class="bl-strip">
+<div class="bl-label">Populations Requiring Additional Protections</div>
+<p><strong>Children:</strong> parental/guardian consent + child's assent (when appropriate)<br><strong>Prisoners:</strong> must ensure participation is truly voluntary (not coerced by institutional pressures)<br><strong>Cognitively impaired individuals:</strong> capacity assessment required; surrogate consent if needed <strong>Pregnant women:</strong> additional protections due to fetal exposure risks <strong>Students/employees:</strong> researcher has power over them — must ensure voluntariness</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Risk-Benefit Analysis</div>
+<p>Risks must be minimized (only those necessary for valid scientific design). Risks must be reasonable in relation to anticipated benefits and importance of knowledge to be gained. Benefits include: direct benefit to subjects AND benefits to society from the knowledge generated. A study that cannot be adequately powered to answer its question should not be conducted — insufficient power means subjects are exposed to risk for no scientific benefit.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">PT-Specific Research Ethics</div>
+<p>As DPTs conducting or consuming research: use de-identified data when possible; never use patient records for research without IRB approval; document informed consent in the medical record; be aware that clinical assessment findings are different from research data collection. Publishing case reports requires patient consent. Student projects at clinical sites typically require IRB review. NIH certification on Human Subjects Protection is required for federally-funded research participation.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap any card to flip. Covers all 9 modules: EBP, hierarchy of evidence, study design, design validity, sampling, measurement, statistics, qualitative research, and IRB.</div>
-
-  <div class="rc2-grid">
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Identify the 5 A's of EBP in order, and what does each involve?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>1. Ask</strong> — formulate a well-built clinical question in PICO format from the patient situation. <strong>2. Acquire</strong> — search appropriate databases (PubMed, PEDro, Cochrane); rarely satisfactory on first try; iterate. <strong>3. Appraise</strong> — critically evaluate for validity (is it true?), importance (do the results matter?), and applicability (does it fit my patient?). <strong>4. Apply</strong> — integrate evidence with clinical expertise and patient values. <strong>5. Assess</strong> — did the patient improve? Is additional evidence needed? Do new questions arise? Mnemonic: "Ask, Acquire, Appraise, Apply, Assess." EBP is a continuous cycle — not a one-time lookup. The three components: best evidence + clinical expertise + patient values. All three are equally important.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">PICO: what do the letters stand for, which component is optional, and what are the 4 types of clinical questions in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>P:</strong> Patient/Population/Problem · <strong>I:</strong> Intervention (or exposure/diagnostic test) · <strong>C:</strong> Comparison — <strong>OPTIONAL</strong> (not always available or relevant) · <strong>O:</strong> Outcome. <strong>4 types of clinical questions:</strong> (1) Diagnosis — cross-sectional or blind comparison to gold standard; (2) Therapy — is the treatment effective? RCT is the best design; (3) Prognosis — what is the likely clinical course over time? Cohort study; (4) Etiology — what causes the condition? Case-control or cohort. Background questions = general knowledge (novice); Foreground questions = specific clinical decision (expert), always in PICO format. Question must be relevant, direct, and specific — not "Is PT good for this patient?" but a precisely framed PICO.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Hierarchy of evidence: list from lowest to highest, and what differentiates a systematic review from a meta-analysis in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Lowest to highest:</strong> (1) Animal/lab studies → (2) Case series/case reports → (3) Case-control studies → (4) Cohort studies → (5) RCTs → (6) Systematic reviews → (7) Meta-analysis. <strong>Systematic review vs. meta-analysis:</strong> a systematic review assesses and summarizes studies — it COMBINES THE RESULTS of articles that may use different outcome measures. A meta-analysis combines the STATISTICS of results that use the same outcome measure — it produces a pooled quantitative estimate of effect size from multiple studies. Meta-analysis is a subset of systematic review that uses statistical pooling. Systematic review = synthesis; meta-analysis = statistical synthesis. Both are "synthesized evidence" and sit at the top of the hierarchy.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What makes a true experiment in this scenario? How does it differ from a quasi-experiment?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>True experiment requires BOTH:</strong> (1) Random assignment to groups AND (2) A control group. The RCT is the classic true experiment — gold standard for establishing a causal (cause-and-effect) relationship between the IV and DV. <strong>Quasi-experiment</strong> lacks either randomization OR a control group OR both. More likely to have threats to internal validity because without randomization, groups may differ at baseline in ways that explain the outcome. Examples of quasi-experimental designs: one-group pretest-posttest (no control group), nonequivalent control group design (no randomization — intact groups, self-selected). Key: "quasi" does not mean "bad" — sometimes randomization is impossible or unethical, and quasi-experimental evidence can still be valuable when experimental evidence is unavailable.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Name 5 threats to internal validity. In this case, Which one CANNOT be controlled by random assignment?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Internal validity threats: <strong>History</strong> (unanticipated external events affecting DV), <strong>Maturation</strong> (normal development or spontaneous recovery), <strong>Attrition</strong> (differential loss of subjects), <strong>Testing</strong> (pretest familiarity affecting posttest), <strong>Instrumentation</strong> (measurement tool problems), <strong>Regression to the mean</strong> (extreme baseline scores move toward average), <strong>Assignment</strong> (unequal group characteristics at baseline). <strong>ATTRITION cannot be controlled by random assignment</strong> — because it occurs differentially across groups after randomization. A subject who drops out of the harder treatment group creates imbalance regardless of how well groups were randomized at the start. Addressed by: <strong>Intention-to-Treat (ITT) analysis</strong> — analyze all originally randomized subjects, regardless of whether they completed treatment.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Random selection vs. In this case, random assignment — define both and explain which affects which type of validity.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Random selection (sampling):</strong> the process by which subjects are drawn or selected from the target/accessible population. Each member of the population has an equal probability of being chosen. Affects → <strong>External validity</strong> (generalizability — can findings be applied to the broader population?). <strong>Random assignment (allocation):</strong> the process by which selected subjects are placed into groups within the study. Each subject has an equal probability of being assigned to any group. Affects → <strong>Internal validity</strong> (were groups comparable at baseline? Can the treatment be credited for the outcome?). Critical point: you can combine convenience sampling (nonprobability — low external validity) with random assignment (high internal validity). This is exactly what most clinical rehabilitation research does. Random selection and random assignment are independent decisions.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">4 levels of measurement — name them, define each, and give a PT-specific example of each.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Nominal:</strong> categories with no quantitative order. Numbers are just labels. Examples: diagnosis, gender, presence/absence of pain (yes/no), blood type. <strong>Ordinal:</strong> rank order but intervals between values are unknown and unequal. Examples: MMT (0–5), numeric pain rating scale (0–10), level of assist (max/mod/min/SBA/independent). You know 4 is better than 3, but the difference between 3 and 4 is not the same as between 4 and 5. <strong>Interval:</strong> equal known intervals but no true zero. Examples: temperature in Fahrenheit or Celsius; calendar year. <strong>Ratio:</strong> equal intervals with an absolute zero. Examples: age, height, weight, ROM in degrees, gait velocity (m/s), 1-RM (lbs), step length (cm). <strong>Statistical rule:</strong> parametric tests require interval or ratio. Nonparametric for ordinal or nominal. Identifying the correct level is foundational to selecting the appropriate statistical test.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Reliability vs. In this case, validity — what is the critical rule, and what do ICC, Kappa, and Cronbach's alpha each measure?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>The rule:</strong> (1) A measurement can be reliable but NOT valid (consistently measuring the wrong thing). (2) A measurement CANNOT be valid if it is not reliable (inconsistent measurement cannot accurately represent anything). Reliability is necessary but not sufficient for validity. <strong>ICC (Intraclass Correlation Coefficient):</strong> used for test-retest, intra-rater, and inter-rater reliability of continuous (quantitative) data. Range 0–1; higher = more reliable. <strong>Kappa (Cohen's Kappa):</strong> used for inter-rater reliability of categorical (nominal or ordinal) data. Corrects for chance agreement. <strong>Cronbach's alpha:</strong> used for internal consistency — the extent to which items on a multi-item scale (questionnaire) are measuring the same construct. Also: MDC (Minimal Detectable Change) = the amount of change that exceeds measurement error; lower ICC → larger MDC → harder to detect real patient change.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Type I vs. In this case, Type II errors — define each, which variable controls each, and what is statistical power?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Type I Error (α, false positive):</strong> mistakenly finding a difference when there isn't one. Probability = alpha level (typically 0.05). Controlled by: setting a stringent alpha. Clinical cost: treating an ineffective intervention as effective. <strong>Type II Error (β, false negative):</strong> mistakenly finding no difference when one exists. Probability = β. Controlled by: adequate sample size. Clinical cost: abandoning effective treatments because the study was underpowered. <strong>Statistical Power (1–β):</strong> the probability that a test will correctly detect a real effect (reject H₀ when it is false). Standard = 0.80 (80% chance of detecting a real effect). <strong>PANE:</strong> Power · Alpha · N (sample size) · Effect size — know three, calculate the fourth. A priori power analysis before data collection determines required N. Studies with small samples frequently have insufficient power → Type II error.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Alpha level vs. In this case, p-value — what is the difference, and when do you reject the null hypothesis?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Alpha (α) level:</strong> the maximum probability of Type I error the researcher is WILLING to tolerate — specified BEFORE data analysis begins. Standard = 0.05. This is what the researcher sets. <strong>p-value:</strong> a product of the data analysis — the probability of observing an effect as large as the one found if the null hypothesis were actually true. This is what the study FINDS. <strong>Decision rule:</strong> if p ≤ α → reject H₀ → statistically significant result. If p &gt; α → fail to reject H₀ → not statistically significant (but this does NOT prove the null — it just means insufficient evidence to reject it). <strong>Critical distinction:</strong> p = 0.049 with α = 0.05 = statistically significant. p = 0.051 = not statistically significant. But the difference between 0.049 and 0.051 is clinically meaningless — this is why effect size and confidence intervals matter more than p-values alone.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">List the 3 Belmont Report principles, and what historical event directly led to the Belmont Report?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Tuskegee Syphilis Study (1932–1972):</strong> 399 African American men with syphilis were enrolled. Researchers observed natural history of untreated syphilis for 40 years — even after penicillin became available and was the established treatment. Men were never informed of their diagnosis or offered treatment. This scandal was exposed in 1972 and directly led to the National Research Act (1974) and the Belmont Report (1979). <strong>3 Belmont Principles:</strong> (1) <strong>Respect for persons (autonomy):</strong> informed consent, protection of vulnerable populations. (2) <strong>Beneficence:</strong> maximize benefits, minimize harm; risk-benefit analysis. (3) <strong>Justice:</strong> fair distribution of research burdens and benefits; do not exploit vulnerable populations for others' benefit. The IRB system operationalizes these three principles through protocol review, consent form review, and ongoing oversight of approved studies.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Qualitative vs. In this case, quantitative: which uses purposive sampling and why, and name the 4 trustworthiness criteria?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Qualitative research uses purposive sampling</strong> because the goal is information richness, not statistical representativeness. Unlike quantitative research where random sampling prevents bias by chance selection, qualitative researchers deliberately select participants who have the relevant experience, perspective, or knowledge to provide deep, detailed information on the topic. Random sampling would likely produce participants who know nothing about the phenomenon of interest. The sample is biased — by design. <strong>4 Trustworthiness Criteria (parallel to quantitative):</strong> (1) <strong>Credibility</strong> (= internal validity): believability; confidence in truth of findings. (2) <strong>Dependability</strong> (= reliability): stability of data over time. (3) <strong>Confirmability</strong> (= objectivity): findings due to participants' experience, not researcher's bias. (4) <strong>Transferability</strong> (= external validity): generalizability of findings. The 3 main qualitative designs: ethnography (culture), grounded theory (theory from data), phenomenology (lived experience).</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Cohort vs. In this case, case-control study: structure, best use, and key limitation of each.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Cohort study ("follow-up study"):</strong> subjects classified by EXPOSURE status at start → followed to see if OUTCOME develops. Can be prospective (follow forward) or retrospective (mine records). <strong>Best for:</strong> estimating incidence and relative risk of common conditions; examining multiple outcomes of one exposure. <strong>Key limitation:</strong> not appropriate for rare conditions (outcome may not occur in sufficient numbers); attrition; misclassification of exposure over long follow-up; expensive and time-consuming if prospective. <strong>Case-control study:</strong> subjects selected by OUTCOME status (cases have condition, controls don't) → look BACK to compare exposure history. <strong>Best for:</strong> rare conditions or those with long latency (e.g., knee OA, cancer). Works backward from outcome. <strong>Key limitations:</strong> recall bias (cases remember exposures better than controls), selection bias (how controls are chosen), cannot calculate incidence or relative risk (can only calculate odds ratio). Correlation: all these designs are observational — no manipulation, no randomization, cannot definitively establish causation.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is intention-to-treat (ITT) analysis and why is it essential in RCTs in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Intention-to-Treat (ITT) analysis:</strong> data are analyzed according to the ORIGINAL random assignment, regardless of the treatment subjects actually received — whether they dropped out, were non-compliant, received the wrong treatment, or crossed over to the other group. <strong>Why it's essential:</strong> (1) Preserves the integrity of randomization — the groups are still comparable at baseline even if some subjects changed groups. (2) Prevents selective exclusion bias — excluding dropouts (who are often the sickest, most side-effect prone, or least motivated subjects) can make ineffective treatments appear effective. (3) Addresses attrition as a threat to internal validity — attrition CANNOT be controlled by randomization alone, but ITT analysis can account for it. The alternative (per-protocol analysis) only analyzes subjects who completed the study — potentially very biased. ITT is required by most high-quality journals and is a key item on the PEDro scale.</div>
-    </div>
-
-  </div>
-
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap any card to flip. Covers all 9 modules: EBP, hierarchy of evidence, study design, design validity, sampling, measurement, statistics, qualitative research, and IRB.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Identify the 5 A's of EBP in order, and what does each involve?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>1. Ask</strong> — formulate a well-built clinical question in PICO format from the patient situation. <strong>2. Acquire</strong> — search appropriate databases (PubMed, PEDro, Cochrane); rarely satisfactory on first try; iterate. <strong>3. Appraise</strong> — critically evaluate for validity (is it true?), importance (do the results matter?), and applicability (does it fit my patient?). <strong>4. Apply</strong> — integrate evidence with clinical expertise and patient values. <strong>5. Assess</strong> — did the patient improve? Is additional evidence needed? Do new questions arise? Mnemonic: "Ask, Acquire, Appraise, Apply, Assess." EBP is a continuous cycle — not a one-time lookup. The three components: best evidence + clinical expertise + patient values. All three are equally important.</div>
 </div>
-
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">PICO: what do the letters stand for, which component is optional, and what are the 4 types of clinical questions in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>P:</strong> Patient/Population/Problem · <strong>I:</strong> Intervention (or exposure/diagnostic test) · <strong>C:</strong> Comparison — <strong>OPTIONAL</strong> (not always available or relevant) · <strong>O:</strong> Outcome. <strong>4 types of clinical questions:</strong> (1) Diagnosis — cross-sectional or blind comparison to gold standard; (2) Therapy — is the treatment effective? RCT is the best design; (3) Prognosis — what is the likely clinical course over time? Cohort study; (4) Etiology — what causes the condition? Case-control or cohort. Background questions = general knowledge (novice); Foreground questions = specific clinical decision (expert), always in PICO format. Question must be relevant, direct, and specific — not "Is PT good for this patient?" but a precisely framed PICO.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Hierarchy of evidence: list from lowest to highest, and what differentiates a systematic review from a meta-analysis in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Lowest to highest:</strong> (1) Animal/lab studies → (2) Case series/case reports → (3) Case-control studies → (4) Cohort studies → (5) RCTs → (6) Systematic reviews → (7) Meta-analysis. <strong>Systematic review vs. meta-analysis:</strong> a systematic review assesses and summarizes studies — it COMBINES THE RESULTS of articles that may use different outcome measures. A meta-analysis combines the STATISTICS of results that use the same outcome measure — it produces a pooled quantitative estimate of effect size from multiple studies. Meta-analysis is a subset of systematic review that uses statistical pooling. Systematic review = synthesis; meta-analysis = statistical synthesis. Both are "synthesized evidence" and sit at the top of the hierarchy.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What makes a true experiment in this scenario? How does it differ from a quasi-experiment?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>True experiment requires BOTH:</strong> (1) Random assignment to groups AND (2) A control group. The RCT is the classic true experiment — gold standard for establishing a causal (cause-and-effect) relationship between the IV and DV. <strong>Quasi-experiment</strong> lacks either randomization OR a control group OR both. More likely to have threats to internal validity because without randomization, groups may differ at baseline in ways that explain the outcome. Examples of quasi-experimental designs: one-group pretest-posttest (no control group), nonequivalent control group design (no randomization — intact groups, self-selected). Key: "quasi" does not mean "bad" — sometimes randomization is impossible or unethical, and quasi-experimental evidence can still be valuable when experimental evidence is unavailable.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Name 5 threats to internal validity. In this case, Which one CANNOT be controlled by random assignment?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Internal validity threats: <strong>History</strong> (unanticipated external events affecting DV), <strong>Maturation</strong> (normal development or spontaneous recovery), <strong>Attrition</strong> (differential loss of subjects), <strong>Testing</strong> (pretest familiarity affecting posttest), <strong>Instrumentation</strong> (measurement tool problems), <strong>Regression to the mean</strong> (extreme baseline scores move toward average), <strong>Assignment</strong> (unequal group characteristics at baseline). <strong>ATTRITION cannot be controlled by random assignment</strong> — because it occurs differentially across groups after randomization. A subject who drops out of the harder treatment group creates imbalance regardless of how well groups were randomized at the start. Addressed by: <strong>Intention-to-Treat (ITT) analysis</strong> — analyze all originally randomized subjects, regardless of whether they completed treatment.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Random selection vs. In this case, random assignment — define both and explain which affects which type of validity.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Random selection (sampling):</strong> the process by which subjects are drawn or selected from the target/accessible population. Each member of the population has an equal probability of being chosen. Affects → <strong>External validity</strong> (generalizability — can findings be applied to the broader population?). <strong>Random assignment (allocation):</strong> the process by which selected subjects are placed into groups within the study. Each subject has an equal probability of being assigned to any group. Affects → <strong>Internal validity</strong> (were groups comparable at baseline? Can the treatment be credited for the outcome?). Critical point: you can combine convenience sampling (nonprobability — low external validity) with random assignment (high internal validity). This is exactly what most clinical rehabilitation research does. Random selection and random assignment are independent decisions.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">4 levels of measurement — name them, define each, and give a PT-specific example of each.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Nominal:</strong> categories with no quantitative order. Numbers are just labels. Examples: diagnosis, gender, presence/absence of pain (yes/no), blood type. <strong>Ordinal:</strong> rank order but intervals between values are unknown and unequal. Examples: MMT (0–5), numeric pain rating scale (0–10), level of assist (max/mod/min/SBA/independent). You know 4 is better than 3, but the difference between 3 and 4 is not the same as between 4 and 5. <strong>Interval:</strong> equal known intervals but no true zero. Examples: temperature in Fahrenheit or Celsius; calendar year. <strong>Ratio:</strong> equal intervals with an absolute zero. Examples: age, height, weight, ROM in degrees, gait velocity (m/s), 1-RM (lbs), step length (cm). <strong>Statistical rule:</strong> parametric tests require interval or ratio. Nonparametric for ordinal or nominal. Identifying the correct level is foundational to selecting the appropriate statistical test.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Reliability vs. In this case, validity — what is the critical rule, and what do ICC, Kappa, and Cronbach's alpha each measure?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>The rule:</strong> (1) A measurement can be reliable but NOT valid (consistently measuring the wrong thing). (2) A measurement CANNOT be valid if it is not reliable (inconsistent measurement cannot accurately represent anything). Reliability is necessary but not sufficient for validity. <strong>ICC (Intraclass Correlation Coefficient):</strong> used for test-retest, intra-rater, and inter-rater reliability of continuous (quantitative) data. Range 0–1; higher = more reliable. <strong>Kappa (Cohen's Kappa):</strong> used for inter-rater reliability of categorical (nominal or ordinal) data. Corrects for chance agreement. <strong>Cronbach's alpha:</strong> used for internal consistency — the extent to which items on a multi-item scale (questionnaire) are measuring the same construct. Also: MDC (Minimal Detectable Change) = the amount of change that exceeds measurement error; lower ICC → larger MDC → harder to detect real patient change.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Type I vs. In this case, Type II errors — define each, which variable controls each, and what is statistical power?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Type I Error (α, false positive):</strong> mistakenly finding a difference when there isn't one. Probability = alpha level (typically 0.05). Controlled by: setting a stringent alpha. Clinical cost: treating an ineffective intervention as effective. <strong>Type II Error (β, false negative):</strong> mistakenly finding no difference when one exists. Probability = β. Controlled by: adequate sample size. Clinical cost: abandoning effective treatments because the study was underpowered. <strong>Statistical Power (1–β):</strong> the probability that a test will correctly detect a real effect (reject H₀ when it is false). Standard = 0.80 (80% chance of detecting a real effect). <strong>PANE:</strong> Power · Alpha · N (sample size) · Effect size — know three, calculate the fourth. A priori power analysis before data collection determines required N. Studies with small samples frequently have insufficient power → Type II error.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Alpha level vs. In this case, p-value — what is the difference, and when do you reject the null hypothesis?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Alpha (α) level:</strong> the maximum probability of Type I error the researcher is WILLING to tolerate — specified BEFORE data analysis begins. Standard = 0.05. This is what the researcher sets. <strong>p-value:</strong> a product of the data analysis — the probability of observing an effect as large as the one found if the null hypothesis were actually true. This is what the study FINDS. <strong>Decision rule:</strong> if p ≤ α → reject H₀ → statistically significant result. If p &gt; α → fail to reject H₀ → not statistically significant (but this does NOT prove the null — it just means insufficient evidence to reject it). <strong>Critical distinction:</strong> p = 0.049 with α = 0.05 = statistically significant. p = 0.051 = not statistically significant. But the difference between 0.049 and 0.051 is clinically meaningless — this is why effect size and confidence intervals matter more than p-values alone.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">List the 3 Belmont Report principles, and what historical event directly led to the Belmont Report?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Tuskegee Syphilis Study (1932–1972):</strong> 399 African American men with syphilis were enrolled. Researchers observed natural history of untreated syphilis for 40 years — even after penicillin became available and was the established treatment. Men were never informed of their diagnosis or offered treatment. This scandal was exposed in 1972 and directly led to the National Research Act (1974) and the Belmont Report (1979). <strong>3 Belmont Principles:</strong> (1) <strong>Respect for persons (autonomy):</strong> informed consent, protection of vulnerable populations. (2) <strong>Beneficence:</strong> maximize benefits, minimize harm; risk-benefit analysis. (3) <strong>Justice:</strong> fair distribution of research burdens and benefits; do not exploit vulnerable populations for others' benefit. The IRB system operationalizes these three principles through protocol review, consent form review, and ongoing oversight of approved studies.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Qualitative vs. In this case, quantitative: which uses purposive sampling and why, and name the 4 trustworthiness criteria?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Qualitative research uses purposive sampling</strong> because the goal is information richness, not statistical representativeness. Unlike quantitative research where random sampling prevents bias by chance selection, qualitative researchers deliberately select participants who have the relevant experience, perspective, or knowledge to provide deep, detailed information on the topic. Random sampling would likely produce participants who know nothing about the phenomenon of interest. The sample is biased — by design. <strong>4 Trustworthiness Criteria (parallel to quantitative):</strong> (1) <strong>Credibility</strong> (= internal validity): believability; confidence in truth of findings. (2) <strong>Dependability</strong> (= reliability): stability of data over time. (3) <strong>Confirmability</strong> (= objectivity): findings due to participants' experience, not researcher's bias. (4) <strong>Transferability</strong> (= external validity): generalizability of findings. The 3 main qualitative designs: ethnography (culture), grounded theory (theory from data), phenomenology (lived experience).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Cohort vs. In this case, case-control study: structure, best use, and key limitation of each.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Cohort study ("follow-up study"):</strong> subjects classified by EXPOSURE status at start → followed to see if OUTCOME develops. Can be prospective (follow forward) or retrospective (mine records). <strong>Best for:</strong> estimating incidence and relative risk of common conditions; examining multiple outcomes of one exposure. <strong>Key limitation:</strong> not appropriate for rare conditions (outcome may not occur in sufficient numbers); attrition; misclassification of exposure over long follow-up; expensive and time-consuming if prospective. <strong>Case-control study:</strong> subjects selected by OUTCOME status (cases have condition, controls don't) → look BACK to compare exposure history. <strong>Best for:</strong> rare conditions or those with long latency (e.g., knee OA, cancer). Works backward from outcome. <strong>Key limitations:</strong> recall bias (cases remember exposures better than controls), selection bias (how controls are chosen), cannot calculate incidence or relative risk (can only calculate odds ratio). Correlation: all these designs are observational — no manipulation, no randomization, cannot definitively establish causation.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is intention-to-treat (ITT) analysis and why is it essential in RCTs in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Intention-to-Treat (ITT) analysis:</strong> data are analyzed according to the ORIGINAL random assignment, regardless of the treatment subjects actually received — whether they dropped out, were non-compliant, received the wrong treatment, or crossed over to the other group. <strong>Why it's essential:</strong> (1) Preserves the integrity of randomization — the groups are still comparable at baseline even if some subjects changed groups. (2) Prevents selective exclusion bias — excluding dropouts (who are often the sickest, most side-effect prone, or least motivated subjects) can make ineffective treatments appear effective. (3) Addresses attrition as a threat to internal validity — attrition CANNOT be controlled by randomization alone, but ITT analysis can account for it. The alternative (per-protocol analysis) only analyzes subjects who completed the study — potentially very biased. ITT is required by most high-quality journals and is a key item on the PEDro scale.</div>
+</div>
+</div>
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -1019,6 +854,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

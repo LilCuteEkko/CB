@@ -1,310 +1,309 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Cervical Spine</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Cervical Spine</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" class="active">Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">MSK Spine &middot; Cervical Spine Clinical</div>
-  <h1>Cervical <span>Spine</span></h1>
-  <p>The cervical spine is the most mobile spinal region and the most vulnerable to instability. It houses the spinal cord, the vertebral arteries supplying the brainstem, and 8 nerve roots that control the upper extremities. Cervical dysfunction can produce neck pain, headaches, arm pain, dizziness, and even myelopathy. PTs must be able to differentiate radiculopathy from myelopathy, screen for vertebral artery insufficiency before manipulation, and apply evidence-based clinical prediction rules. This module covers anatomy, upper cervical screening, special tests with diagnostic accuracy, radiculopathy, myelopathy, cervicogenic headache, and treatment classification.</p>
+<div class="hero-tag">MSK Spine &middot; Cervical Spine Clinical</div>
+<h1>Cervical <span>Spine</span></h1>
+<p>The cervical spine is the most mobile spinal region and the most vulnerable to instability. It houses the spinal cord, the vertebral arteries supplying the brainstem, and 8 nerve roots that control the upper extremities. Cervical dysfunction can produce neck pain, headaches, arm pain, dizziness, and even myelopathy. PTs must be able to differentiate radiculopathy from myelopathy, screen for vertebral artery insufficiency before manipulation, and apply evidence-based clinical prediction rules. This module covers anatomy, upper cervical screening, special tests with diagnostic accuracy, radiculopathy, myelopathy, cervicogenic headache, and treatment classification.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
-  <button onclick="showTab('screening',this)">Upper C-Spine Screening</button>
-  <button onclick="showTab('special',this)">Special Tests</button>
-  <button onclick="showTab('radiculopathy',this)">Radiculopathy</button>
-  <button onclick="showTab('myelopathy',this)">Myelopathy</button>
-  <button onclick="showTab('headache',this)">Cervicogenic HA</button>
-  <button onclick="showTab('management',this)">Evidence-Based Mgmt</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+<button onclick="showTab('screening',this)">Upper C-Spine Screening</button>
+<button onclick="showTab('special',this)">Special Tests</button>
+<button onclick="showTab('radiculopathy',this)">Radiculopathy</button>
+<button onclick="showTab('myelopathy',this)">Myelopathy</button>
+<button onclick="showTab('headache',this)">Cervicogenic HA</button>
+<button onclick="showTab('management',this)">Evidence-Based Mgmt</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== ANATOMY ====== -->
 <div class="tab-panel active" id="tab-anatomy">
 <div class="container">
-  <div class="section-title">Cervical Spine Anatomy &mdash; Clinical Review</div>
-  <div class="section-sub">7 cervical vertebrae, 5 intervertebral discs (C2&ndash;C7), 8 nerve roots (C1&ndash;C8). The cervical spine is the most mobile spinal region and the most vulnerable to instability. C-spine nerve roots exit ABOVE their numbered vertebra (C6 root exits above C6 vertebra) &mdash; EXCEPT C8, which exits below C7.</div>
-
-  <table class="data-table"><thead><tr><th>Structure</th><th>Key Features</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="warn">C1 (Atlas)</td><td>No body, no SP. Ring-shaped. Largest transverse processes in c-spine. Superior facets concave (receive occipital condyles)</td><td>C0&ndash;C1 = &ldquo;yes&rdquo; joint (flex/ext ~15&deg;). Jefferson fracture = axial burst. No disc at C0&ndash;C1</td></tr>
-    <tr><td class="warn">C2 (Axis)</td><td>Dens (odontoid) projects superiorly. Strongest cervical vertebra. Largest SP in c-spine</td><td>C1&ndash;C2 = &ldquo;no&rdquo; joint (~50% total cervical rotation). Hangman&rsquo;s fracture = bilateral pars C2. Dens fracture Type II = MC + most unstable</td></tr>
-    <tr><td class="hi">C3&ndash;C7 (Typical)</td><td>Small bodies, bifid SPs (C3&ndash;C6), <strong>transverse foramina</strong> (vertebral artery C6&rarr;C1), uncinate processes (uncovertebral joints), C7 = vertebra prominens (longest SP)</td><td>MC disc herniation: C5&ndash;C6 and C6&ndash;C7. Facets ~45&deg; &rarr; good rotation + lateral flexion</td></tr>
-    <tr><td class="hi">Vertebral Artery</td><td>Enters transverse foramen at C6, ascends to C1, loops posteriorly around lateral mass of C1, enters foramen magnum</td><td><strong>VBI screening mandatory before cervical manipulation.</strong> Especially vulnerable at C1&ndash;C2 loop. 5 D&rsquo;s and 3 N&rsquo;s</td></tr>
-    <tr><td class="hi">Cervical Nerve Roots</td><td>8 roots for 7 vertebrae. C1&ndash;C7 exit ABOVE their vertebra. C8 exits below C7. Dorsal root = sensory, ventral root = motor</td><td>C6&ndash;C7 disc herniation typically compresses the <strong>C7 nerve root</strong> (root exits below the disc level). This is different from lumbar where L4&ndash;L5 disc compresses L5 root (root exits below)</td></tr>
-  </tbody></table>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Deep Neck Flexors &mdash; Cervical Stabilizers</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip purple"><div class="bl-label">Clinical Importance</div><p>Weakness/inhibition of deep neck flexors is the hallmark finding in cervical spine dysfunction. These muscles provide segmental stabilization &mdash; like multifidus in the lumbar spine. <strong>Longus colli</strong> is the primary deep cervical stabilizer. Loss of feedforward activation in neck pain. Craniocervical flexion test (CCFT) assesses deep neck flexor endurance &mdash; key outcome measure.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>O/I</th><th>Action</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">Longus Colli</td><td>Bodies C5&ndash;T3, TPs C3&ndash;C5 &rarr; body C2&ndash;C4, TPs C5&ndash;C6, anterior tubercle of atlas</td><td>Flexes cervical spine. Primary deep stabilizer</td><td>Inhibited in whiplash, chronic neck pain. Target with CCFT training</td></tr>
-        <tr><td class="hi">Longus Capitis</td><td>TPs C3&ndash;C6 &rarr; basilar part of occipital bone</td><td>Flexes head on neck (upper cervical flexion)</td><td>Works with longus colli for craniocervical flexion</td></tr>
-        <tr><td class="hi">Rectus Capitis Anterior</td><td>Lateral mass of C1 &rarr; basilar occiput</td><td>Flexes head at C0&ndash;C1</td><td>Small stabilizer of atlanto-occipital joint</td></tr>
-        <tr><td class="hi">Rectus Capitis Lateralis</td><td>TP of C1 &rarr; jugular process of occipital bone</td><td>Lateral flexes head at C0&ndash;C1</td><td>Stabilizes atlanto-occipital joint laterally</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="bl-strip gold"><div class="bl-label">Upper Crossed Syndrome (Janda)</div><p><strong>Tight:</strong> upper trapezius, levator scapulae, SCM, pectoralis major/minor, suboccipitals. <strong>Weak:</strong> deep neck flexors, lower trapezius, serratus anterior, rhomboids. Result: forward head posture, protracted/elevated shoulders, increased cervical lordosis + thoracic kyphosis. Contributes to cervicogenic headache, TOS, and impingement.</p></div>
+<div class="section-title">Cervical Spine Anatomy &mdash; Clinical Review</div>
+<div class="section-sub">7 cervical vertebrae, 5 intervertebral discs (C2&ndash;C7), 8 nerve roots (C1&ndash;C8). The cervical spine is the most mobile spinal region and the most vulnerable to instability. C-spine nerve roots exit ABOVE their numbered vertebra (C6 root exits above C6 vertebra) &mdash; EXCEPT C8, which exits below C7.</div>
+<table class="data-table"><thead>
+<tr><th>Structure</th><th>Key Features</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">C1 (Atlas)</td><td>No body, no SP. Ring-shaped. Largest transverse processes in c-spine. Superior facets concave (receive occipital condyles)</td><td>C0&ndash;C1 = &ldquo;yes&rdquo; joint (flex/ext ~15&deg;). Jefferson fracture = axial burst. No disc at C0&ndash;C1</td></tr>
+<tr><td class="warn">C2 (Axis)</td><td>Dens (odontoid) projects superiorly. Strongest cervical vertebra. Largest SP in c-spine</td><td>C1&ndash;C2 = &ldquo;no&rdquo; joint (~50% total cervical rotation). Hangman&rsquo;s fracture = bilateral pars C2. Dens fracture Type II = MC + most unstable</td></tr>
+<tr><td class="hi">C3&ndash;C7 (Typical)</td><td>Small bodies, bifid SPs (C3&ndash;C6), <strong>transverse foramina</strong> (vertebral artery C6&rarr;C1), uncinate processes (uncovertebral joints), C7 = vertebra prominens (longest SP)</td><td>MC disc herniation: C5&ndash;C6 and C6&ndash;C7. Facets ~45&deg; &rarr; good rotation + lateral flexion</td></tr>
+<tr><td class="hi">Vertebral Artery</td><td>Enters transverse foramen at C6, ascends to C1, loops posteriorly around lateral mass of C1, enters foramen magnum</td><td><strong>VBI screening mandatory before cervical manipulation.</strong> Especially vulnerable at C1&ndash;C2 loop. 5 D&rsquo;s and 3 N&rsquo;s</td></tr>
+<tr><td class="hi">Cervical Nerve Roots</td><td>8 roots for 7 vertebrae. C1&ndash;C7 exit ABOVE their vertebra. C8 exits below C7. Dorsal root = sensory, ventral root = motor</td><td>C6&ndash;C7 disc herniation typically compresses the <strong>C7 nerve root</strong> (root exits below the disc level). This is different from lumbar where L4&ndash;L5 disc compresses L5 root (root exits below)</td></tr></tbody></table>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Deep Neck Flexors &mdash; Cervical Stabilizers</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip purple">
+<div class="bl-label">Clinical Importance</div>
+<p>Weakness/inhibition of deep neck flexors is the hallmark finding in cervical spine dysfunction. These muscles provide segmental stabilization &mdash; like multifidus in the lumbar spine. <strong>Longus colli</strong> is the primary deep cervical stabilizer. Loss of feedforward activation in neck pain. Craniocervical flexion test (CCFT) assesses deep neck flexor endurance &mdash; key outcome measure.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>O/I</th><th>Action</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Longus Colli</td><td>Bodies C5&ndash;T3, TPs C3&ndash;C5 &rarr; body C2&ndash;C4, TPs C5&ndash;C6, anterior tubercle of atlas</td><td>Flexes cervical spine. Primary deep stabilizer</td><td>Inhibited in whiplash, chronic neck pain. Target with CCFT training</td></tr>
+<tr><td class="hi">Longus Capitis</td><td>TPs C3&ndash;C6 &rarr; basilar part of occipital bone</td><td>Flexes head on neck (upper cervical flexion)</td><td>Works with longus colli for craniocervical flexion</td></tr>
+<tr><td class="hi">Rectus Capitis Anterior</td><td>Lateral mass of C1 &rarr; basilar occiput</td><td>Flexes head at C0&ndash;C1</td><td>Small stabilizer of atlanto-occipital joint</td></tr>
+<tr><td class="hi">Rectus Capitis Lateralis</td><td>TP of C1 &rarr; jugular process of occipital bone</td><td>Lateral flexes head at C0&ndash;C1</td><td>Stabilizes atlanto-occipital joint laterally</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== UPPER CERVICAL SCREENING ====== -->
+<div class="bl-strip gold">
+<div class="bl-label">Upper Crossed Syndrome (Janda)</div>
+<p><strong>Tight:</strong> upper trapezius, levator scapulae, SCM, pectoralis major/minor, suboccipitals. <strong>Weak:</strong> deep neck flexors, lower trapezius, serratus anterior, rhomboids. Result: forward head posture, protracted/elevated shoulders, increased cervical lordosis + thoracic kyphosis. Contributes to cervicogenic headache, TOS, and impingement.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-screening">
 <div class="container">
-  <div class="section-title">Upper Cervical Spine Screening</div>
-  <div class="section-sub">Before ANY cervical manipulation, screen for upper cervical instability and VBI. These tests identify patients who should NOT receive high-velocity thrust techniques to the cervical spine.</div>
-
-  <table class="data-table"><thead><tr><th>Test</th><th>What It Tests</th><th>Positive Finding</th><th>Action If Positive</th></tr></thead><tbody>
-    <tr><td class="warn">Sharp-Purser Test</td><td>Transverse ligament integrity (C1&ndash;C2)</td><td>Patient seated, chin tucked. PT applies posterior force to forehead. Positive = <strong>excessive anterior glide of C1 on C2</strong> + &ldquo;clunk&rdquo; as atlas reduces. SN: 88%, SP: 98%</td><td><strong>NO cervical manipulation.</strong> Refer for imaging (flexion/extension lateral XR). ADI &gt;3mm = instability</td></tr>
-    <tr><td class="hi">Alar Ligament Stress Test</td><td>Alar ligament integrity (dens to occiput)</td><td>Patient seated. PT stabilizes C2 SP with thumb/finger. Laterally flex head. Positive = <strong>excessive lateral flexion</strong> (alar normally restricts contralateral sidebending)</td><td>NO upper cervical manipulation. Alar rupture = C0&ndash;C2 instability</td></tr>
-    <tr><td class="warn">Vertebral Artery (VBI) Test</td><td>Vertebral artery patency during cervical positioning</td><td>Sustained cervical extension + sidebending + rotation (10-sec holds). Seated first, then supine. Positive = <strong>5 D&rsquo;s:</strong> Dizziness, Diplopia, Dysarthria, Dysphagia, Drop attacks. <strong>3 N&rsquo;s:</strong> Nausea, Nystagmus, Numbness (facial). <strong>1 A:</strong> Ataxia</td><td><strong>DO NOT manipulate.</strong> If symptoms during test: return to neutral immediately. Refer to physician. NOTE: SN is low (0% in some studies) &mdash; a negative test does NOT guarantee VBI absence. Use clinical reasoning + patient history</td></tr>
-    <tr><td class="hi">Transverse Ligament Stress</td><td>Transverse ligament (anterior shear C1 on C2)</td><td>Patient supine, PT cradles occiput. Apply anterior (upward) force through C1. Positive = soft end-feel, lump in throat, nystagmus, lip paresthesia</td><td>NO cervical manipulation. Refer for imaging</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip red"><div class="bl-label">Canadian C-Spine Rules (Stiell, 2001)</div><p>Developed for trauma patients to determine if cervical XR is needed.<br><strong>High-risk factors</strong> (need XR): age &ge;65, dangerous mechanism (fall &gt;1m, axial load, MVA &gt;100 km/h, bicycle collision), paresthesias in extremities.<br><strong>Low-risk factors</strong> (allow ROM assessment): simple rear-end MVA, sitting in ED, ambulatory at any time, delayed onset neck pain, no midline tenderness. If low-risk: can patient actively rotate 45&deg; each direction? If yes &rarr; no XR needed.<br><strong>SN: 99.4%</strong> for clinically significant c-spine injury. Validated in &gt;8,000 patients.</p></div>
+<div class="section-title">Upper Cervical Spine Screening</div>
+<div class="section-sub">Before ANY cervical manipulation, screen for upper cervical instability and VBI. These tests identify patients who should NOT receive high-velocity thrust techniques to the cervical spine.</div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>What It Tests</th><th>Positive Finding</th><th>Action If Positive</th></tr></thead><tbody>
+<tr><td class="warn">Sharp-Purser Test</td><td>Transverse ligament integrity (C1&ndash;C2)</td><td>Patient seated, chin tucked. PT applies posterior force to forehead. Positive = <strong>excessive anterior glide of C1 on C2</strong> + &ldquo;clunk&rdquo; as atlas reduces. SN: 88%, SP: 98%</td><td><strong>NO cervical manipulation.</strong> Refer for imaging (flexion/extension lateral XR). ADI &gt;3mm = instability</td></tr>
+<tr><td class="hi">Alar Ligament Stress Test</td><td>Alar ligament integrity (dens to occiput)</td><td>Patient seated. PT stabilizes C2 SP with thumb/finger. Laterally flex head. Positive = <strong>excessive lateral flexion</strong> (alar normally restricts contralateral sidebending)</td><td>NO upper cervical manipulation. Alar rupture = C0&ndash;C2 instability</td></tr>
+<tr><td class="warn">Vertebral Artery (VBI) Test</td><td>Vertebral artery patency during cervical positioning</td><td>Sustained cervical extension + sidebending + rotation (10-sec holds). Seated first, then supine. Positive = <strong>5 D&rsquo;s:</strong> Dizziness, Diplopia, Dysarthria, Dysphagia, Drop attacks. <strong>3 N&rsquo;s:</strong> Nausea, Nystagmus, Numbness (facial). <strong>1 A:</strong> Ataxia</td><td><strong>DO NOT manipulate.</strong> If symptoms during test: return to neutral immediately. Refer to physician. NOTE: SN is low (0% in some studies) &mdash; a negative test does NOT guarantee VBI absence. Use clinical reasoning + patient history</td></tr>
+<tr><td class="hi">Transverse Ligament Stress</td><td>Transverse ligament (anterior shear C1 on C2)</td><td>Patient supine, PT cradles occiput. Apply anterior (upward) force through C1. Positive = soft end-feel, lump in throat, nystagmus, lip paresthesia</td><td>NO cervical manipulation. Refer for imaging</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Canadian C-Spine Rules (Stiell, 2001)</div>
+<p>Developed for trauma patients to determine if cervical XR is needed.<br><strong>High-risk factors</strong> (need XR): age &ge;65, dangerous mechanism (fall &gt;1m, axial load, MVA &gt;100 km/h, bicycle collision), paresthesias in extremities.<br><strong>Low-risk factors</strong> (allow ROM assessment): simple rear-end MVA, sitting in ED, ambulatory at any time, delayed onset neck pain, no midline tenderness. If low-risk: can patient actively rotate 45&deg; each direction? If yes &rarr; no XR needed.<br><strong>SN: 99.4%</strong> for clinically significant c-spine injury. Validated in &gt;8,000 patients.</p>
 </div>
 </div>
-
-<!-- ====== SPECIAL TESTS ====== -->
+</div>
 <div class="tab-panel" id="tab-special">
 <div class="container">
-  <div class="section-title">Cervical Special Tests &mdash; With Diagnostic Accuracy</div>
-  <div class="section-sub">No single test rules in or rules out cervical radiculopathy. Use clusters. The Wainner CPR (2003) is the gold standard diagnostic cluster. Individual tests listed with research-supported accuracy values.</div>
-
-  <table class="data-table"><thead><tr><th>Test</th><th>What It Tests</th><th>Technique</th><th>Positive Finding</th><th>Sensitivity</th><th>Specificity</th></tr></thead><tbody>
-    <tr><td class="warn">Spurling&rsquo;s (Foraminal Compression)</td><td>Cervical radiculopathy (foraminal stenosis)</td><td>Seated. Cervical extension + ipsilateral sidebending + axial compression through crown of head</td><td>Reproduction of radicular symptoms down the arm</td><td>50&ndash;77%</td><td><strong>92&ndash;100%</strong></td></tr>
-    <tr><td class="warn">Distraction Test</td><td>Cervical radiculopathy (foraminal decompression)</td><td>Supine. PT distracts cervical spine axially (lift head)</td><td><strong>Relief</strong> of arm/neck symptoms with distraction</td><td>40&ndash;50%</td><td><strong>90&ndash;100%</strong></td></tr>
-    <tr><td class="warn">ULTT-A (Upper Limb Tension Test &mdash; Median Nerve)</td><td>Neural mechanosensitivity, cervical radiculopathy</td><td>Supine. Shoulder depression &rarr; ABD &rarr; ER &rarr; forearm supination &rarr; wrist + finger extension &rarr; elbow extension. Sensitize with contralateral cervical sidebending</td><td>Reproduction of symptoms along neural pathway. OR &gt;10&deg; side-to-side difference in elbow extension. OR ipsilateral SB decreases / contralateral SB increases symptoms</td><td><strong>72&ndash;97%</strong></td><td>22&ndash;33%</td></tr>
-    <tr><td class="hi">Bakody&rsquo;s Sign (Shoulder Abduction)</td><td>Cervical radiculopathy (C4&ndash;C6 nerve root)</td><td>Patient places hand on top of head (shoulder ABD)</td><td><strong>Relief</strong> of radicular symptoms (opens IVF)</td><td>40&ndash;50%</td><td><strong>80&ndash;100%</strong></td></tr>
-    <tr><td class="hi">Lhermitte&rsquo;s Sign</td><td>Cervical myelopathy, meningeal irritation, MS, cord pathology</td><td>Seated. Passively flex cervical spine (chin to chest)</td><td><strong>Electric shock</strong> sensation radiating down spine into extremities</td><td>Variable</td><td>High (when present, strong indicator)</td></tr>
-    <tr><td class="hi">CCFT (Craniocervical Flexion Test)</td><td>Deep neck flexor strength/endurance</td><td>Supine, pressure biofeedback behind cervical spine. Patient performs chin tuck (nods head) to increase pressure. Target: increase 2 mmHg per stage (22&rarr;24&rarr;26&rarr;28&rarr;30 mmHg), hold 10 sec &times; 10 reps</td><td>Cannot generate &ge;6 mmHg increase, OR uses superficial muscles (SCM, anterior scalene) to substitute</td><td>&mdash;</td><td>&mdash;</td></tr>
-    <tr><td class="hi">Neck Flexor Endurance Test</td><td>Deep neck flexor endurance</td><td>Supine, chin retracted, head lifted ~1&rdquo; off table. Time until failure (skin folds at chin separate, or head contacts PT&rsquo;s hand &gt;1 sec)</td><td>Normal: &ge;39 sec. Abnormal: &le;24 sec. Patients with neck pain average ~24 sec vs ~39 sec healthy controls</td><td>&mdash;</td><td>&mdash;</td></tr>
-    <tr><td class="hi">Cervical Rotation Lateral Flexion</td><td>First rib mobility</td><td>Seated. Fully rotate cervical spine AWAY from tested side. Then laterally flex toward tested side</td><td>Limited lateral flexion compared to opposite side = elevated/restricted first rib</td><td>&mdash;</td><td>&mdash;</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip green"><div class="bl-label">Wainner&rsquo;s CPR for Cervical Radiculopathy (Wainner et al., 2003)</div>
-  <p><strong>4 criteria:</strong> (1) Positive ULTT-A (median nerve), (2) Involved-side cervical rotation &lt;60&deg;, (3) Positive distraction test, (4) Positive Spurling&rsquo;s test.<br><strong>3 of 4 positive: +LR 6.1</strong> (moderately shifts probability toward radiculopathy).<br><strong>4 of 4 positive: +LR 30.3</strong> (strongly rules in radiculopathy). This cluster is more accurate than any individual test. Reference standard: EMG + nerve conduction studies. Stage: derivation (Wainner 2003), case series validation (Waldrop 2006). Highly specific cluster &mdash; best used to <strong>rule IN</strong> radiculopathy.</p></div>
+<div class="section-title">Cervical Special Tests &mdash; With Diagnostic Accuracy</div>
+<div class="section-sub">No single test rules in or rules out cervical radiculopathy. Use clusters. The Wainner CPR (2003) is the gold standard diagnostic cluster. Individual tests listed with research-supported accuracy values.</div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>What It Tests</th><th>Technique</th><th>Positive Finding</th><th>Sensitivity</th><th>Specificity</th></tr></thead><tbody>
+<tr><td class="warn">Spurling&rsquo;s (Foraminal Compression)</td><td>Cervical radiculopathy (foraminal stenosis)</td><td>Seated. Cervical extension + ipsilateral sidebending + axial compression through crown of head</td><td>Reproduction of radicular symptoms down the arm</td><td>50&ndash;77%</td><td><strong>92&ndash;100%</strong></td></tr>
+<tr><td class="warn">Distraction Test</td><td>Cervical radiculopathy (foraminal decompression)</td><td>Supine. PT distracts cervical spine axially (lift head)</td><td><strong>Relief</strong> of arm/neck symptoms with distraction</td><td>40&ndash;50%</td><td><strong>90&ndash;100%</strong></td></tr>
+<tr><td class="warn">ULTT-A (Upper Limb Tension Test &mdash; Median Nerve)</td><td>Neural mechanosensitivity, cervical radiculopathy</td><td>Supine. Shoulder depression &rarr; ABD &rarr; ER &rarr; forearm supination &rarr; wrist + finger extension &rarr; elbow extension. Sensitize with contralateral cervical sidebending</td><td>Reproduction of symptoms along neural pathway. OR &gt;10&deg; side-to-side difference in elbow extension. OR ipsilateral SB decreases / contralateral SB increases symptoms</td><td><strong>72&ndash;97%</strong></td><td>22&ndash;33%</td></tr>
+<tr><td class="hi">Bakody&rsquo;s Sign (Shoulder Abduction)</td><td>Cervical radiculopathy (C4&ndash;C6 nerve root)</td><td>Patient places hand on top of head (shoulder ABD)</td><td><strong>Relief</strong> of radicular symptoms (opens IVF)</td><td>40&ndash;50%</td><td><strong>80&ndash;100%</strong></td></tr>
+<tr><td class="hi">Lhermitte&rsquo;s Sign</td><td>Cervical myelopathy, meningeal irritation, MS, cord pathology</td><td>Seated. Passively flex cervical spine (chin to chest)</td><td><strong>Electric shock</strong> sensation radiating down spine into extremities</td><td>Variable</td><td>High (when present, strong indicator)</td></tr>
+<tr><td class="hi">CCFT (Craniocervical Flexion Test)</td><td>Deep neck flexor strength/endurance</td><td>Supine, pressure biofeedback behind cervical spine. Patient performs chin tuck (nods head) to increase pressure. Target: increase 2 mmHg per stage (22&rarr;24&rarr;26&rarr;28&rarr;30 mmHg), hold 10 sec &times; 10 reps</td><td>Cannot generate &ge;6 mmHg increase, OR uses superficial muscles (SCM, anterior scalene) to substitute</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td class="hi">Neck Flexor Endurance Test</td><td>Deep neck flexor endurance</td><td>Supine, chin retracted, head lifted ~1&rdquo; off table. Time until failure (skin folds at chin separate, or head contacts PT&rsquo;s hand &gt;1 sec)</td><td>Normal: &ge;39 sec. Abnormal: &le;24 sec. Patients with neck pain average ~24 sec vs ~39 sec healthy controls</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td class="hi">Cervical Rotation Lateral Flexion</td><td>First rib mobility</td><td>Seated. Fully rotate cervical spine AWAY from tested side. Then laterally flex toward tested side</td><td>Limited lateral flexion compared to opposite side = elevated/restricted first rib</td><td>&mdash;</td><td>&mdash;</td></tr></tbody></table>
+<div class="bl-strip green">
+<div class="bl-label">Wainner&rsquo;s CPR for Cervical Radiculopathy (Wainner et al., 2003)</div>
+<p><strong>4 criteria:</strong> (1) Positive ULTT-A (median nerve), (2) Involved-side cervical rotation &lt;60&deg;, (3) Positive distraction test, (4) Positive Spurling&rsquo;s test.<br><strong>3 of 4 positive: +LR 6.1</strong> (moderately shifts probability toward radiculopathy).<br><strong>4 of 4 positive: +LR 30.3</strong> (strongly rules in radiculopathy). This cluster is more accurate than any individual test. Reference standard: EMG + nerve conduction studies. Stage: derivation (Wainner 2003), case series validation (Waldrop 2006). Highly specific cluster &mdash; best used to <strong>rule IN</strong> radiculopathy.</p>
 </div>
 </div>
-
-<!-- ====== RADICULOPATHY ====== -->
+</div>
 <div class="tab-panel" id="tab-radiculopathy">
 <div class="container">
-  <div class="section-title">Cervical Radiculopathy</div>
-  <div class="section-sub">Compression or irritation of a cervical nerve root. MC at C5&ndash;C6 and C6&ndash;C7 levels. Must differentiate from myelopathy, TOS, peripheral entrapment (CTS, cubital tunnel), and shoulder pathology.</div>
-
-  <table class="data-table"><thead><tr><th>Root</th><th>Disc Level</th><th>Dermatomal Pattern</th><th>Myotome (Weakness)</th><th>Reflex</th></tr></thead><tbody>
-    <tr><td class="hi">C5</td><td>C4&ndash;C5</td><td>Lateral arm (regimental badge area)</td><td>Deltoid, biceps (shoulder ABD, elbow flexion)</td><td>Biceps (C5&ndash;C6)</td></tr>
-    <tr><td class="warn">C6</td><td>C5&ndash;C6</td><td>Lateral forearm, thumb, index finger</td><td>Biceps, wrist extensors (ECRL/ECRB)</td><td>Brachioradialis (C5&ndash;C6)</td></tr>
-    <tr><td class="warn">C7</td><td>C6&ndash;C7 (MC)</td><td>Middle finger, posterior forearm</td><td>Triceps, wrist flexors, finger extensors</td><td>Triceps (C7&ndash;C8)</td></tr>
-    <tr><td class="hi">C8</td><td>C7&ndash;T1</td><td>Ring + little finger, medial forearm</td><td>Finger flexors (grip), hand intrinsics</td><td>None reliable</td></tr>
-    <tr><td class="hi">T1</td><td>T1&ndash;T2</td><td>Medial arm, medial elbow</td><td>Hand intrinsics (interossei, lumbricals)</td><td>None reliable</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip"><div class="bl-label">Presentation Pattern</div><p>Unilateral arm pain &gt; neck pain (arm pain dominant). Follows dermatomal distribution. Worse with cervical extension + ipsilateral sidebending (closes IVF). Better with distraction, contralateral sidebending, shoulder abduction (Bakody&rsquo;s). May have numbness, tingling, weakness in specific myotome/dermatome. <strong>Natural history:</strong> most resolve conservatively within 6&ndash;12 weeks. Surgical referral if: progressive neurological deficit, failure of 6&ndash;12 weeks conservative care, or myelopathy signs.</p></div>
-
-  <div class="bl-strip gold"><div class="bl-label">CPR for Cervical Traction (Raney et al., 2009)</div><p><strong>5 criteria predicting success with cervical traction + exercise:</strong> (1) Peripheralization with lower c-spine mobility testing, (2) Positive shoulder abduction test (Bakody&rsquo;s), (3) Age &ge;55, (4) Positive ULTT-A, (5) Positive neck distraction test. <strong>3 of 5 positive: +LR 4.81</strong> (pretest 44% &rarr; posttest 79% success probability). Stage: derivation. Suggests traction is most effective for nerve root compression with positive neural tension signs.</p></div>
+<div class="section-title">Cervical Radiculopathy</div>
+<div class="section-sub">Compression or irritation of a cervical nerve root. MC at C5&ndash;C6 and C6&ndash;C7 levels. Must differentiate from myelopathy, TOS, peripheral entrapment (CTS, cubital tunnel), and shoulder pathology.</div>
+<table class="data-table"><thead>
+<tr><th>Root</th><th>Disc Level</th><th>Dermatomal Pattern</th><th>Myotome (Weakness)</th><th>Reflex</th></tr></thead><tbody>
+<tr><td class="hi">C5</td><td>C4&ndash;C5</td><td>Lateral arm (regimental badge area)</td><td>Deltoid, biceps (shoulder ABD, elbow flexion)</td><td>Biceps (C5&ndash;C6)</td></tr>
+<tr><td class="warn">C6</td><td>C5&ndash;C6</td><td>Lateral forearm, thumb, index finger</td><td>Biceps, wrist extensors (ECRL/ECRB)</td><td>Brachioradialis (C5&ndash;C6)</td></tr>
+<tr><td class="warn">C7</td><td>C6&ndash;C7 (MC)</td><td>Middle finger, posterior forearm</td><td>Triceps, wrist flexors, finger extensors</td><td>Triceps (C7&ndash;C8)</td></tr>
+<tr><td class="hi">C8</td><td>C7&ndash;T1</td><td>Ring + little finger, medial forearm</td><td>Finger flexors (grip), hand intrinsics</td><td>None reliable</td></tr>
+<tr><td class="hi">T1</td><td>T1&ndash;T2</td><td>Medial arm, medial elbow</td><td>Hand intrinsics (interossei, lumbricals)</td><td>None reliable</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Presentation Pattern</div>
+<p>Unilateral arm pain &gt; neck pain (arm pain dominant). Follows dermatomal distribution. Worse with cervical extension + ipsilateral sidebending (closes IVF). Better with distraction, contralateral sidebending, shoulder abduction (Bakody&rsquo;s). May have numbness, tingling, weakness in specific myotome/dermatome. <strong>Natural history:</strong> most resolve conservatively within 6&ndash;12 weeks. Surgical referral if: progressive neurological deficit, failure of 6&ndash;12 weeks conservative care, or myelopathy signs.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">CPR for Cervical Traction (Raney et al., 2009)</div>
+<p><strong>5 criteria predicting success with cervical traction + exercise:</strong> (1) Peripheralization with lower c-spine mobility testing, (2) Positive shoulder abduction test (Bakody&rsquo;s), (3) Age &ge;55, (4) Positive ULTT-A, (5) Positive neck distraction test. <strong>3 of 5 positive: +LR 4.81</strong> (pretest 44% &rarr; posttest 79% success probability). Stage: derivation. Suggests traction is most effective for nerve root compression with positive neural tension signs.</p>
 </div>
 </div>
-
-<!-- ====== MYELOPATHY ====== -->
+</div>
 <div class="tab-panel" id="tab-myelopathy">
 <div class="container">
-  <div class="section-title">Cervical Myelopathy</div>
-  <div class="section-sub">Compression of the spinal cord itself (not just a nerve root). The most common cause of spinal cord dysfunction in adults &gt;55. This is a <strong>red flag</strong> &mdash; progressive myelopathy requires surgical referral. Do NOT manipulate a myelopathic cervical spine.</div>
-
-  <div class="bl-strip red"><div class="bl-label">Cervical Myelopathy CPR (Cook et al., 2010) &mdash; 3 of 5 = Strong Predictive Value</div>
-  <p>(1)<br><strong>Babinski sign</strong> (upgoing great toe with plantar stimulation). (2)<br><strong>Inverted supinator sign</strong> (tap brachioradialis &rarr; abnormal response: finger flexion or elbow extension instead of normal elbow flexion/wrist radial deviation). (3)<br><strong>Hoffmann&rsquo;s sign</strong> (flick middle finger distal phalanx &rarr; involuntary thumb/index flexion). (4)<br><strong>Ataxic gait</strong> (wide-based, shuffling, &ldquo;clunky&rdquo; walking). (5)<br><strong>Age &gt;45.</strong></p></div>
-
-  <table class="data-table"><thead><tr><th>Feature</th><th>Radiculopathy (Root)</th><th>Myelopathy (Cord)</th></tr></thead><tbody>
-    <tr><td class="hi">Lesion Level</td><td>Nerve root (LMN)</td><td>Spinal cord (UMN)</td></tr>
-    <tr><td class="hi">Distribution</td><td>Unilateral, follows dermatome/myotome</td><td>Often bilateral, non-dermatomal, LE &gt; UE</td></tr>
-    <tr><td class="hi">Weakness Pattern</td><td>Specific myotome (e.g. biceps, triceps)</td><td>Non-myotomal, especially LE flexors (hip flexors, ankle DF). Hand clumsiness</td></tr>
-    <tr><td class="hi">Reflexes</td><td>Decreased/absent at involved level (LMN)</td><td><strong>Hyperreflexia</strong> below lesion (UMN). Clonus. Babinski + Hoffmann +</td></tr>
-    <tr><td class="hi">Tone</td><td>Normal or decreased (flaccid)</td><td>Increased (spasticity) below lesion</td></tr>
-    <tr><td class="hi">Gait</td><td>Usually normal (unless severe)</td><td>Ataxic, wide-based, spastic. Falls</td></tr>
-    <tr><td class="hi">Bowel/Bladder</td><td>Not affected</td><td>May be affected (late finding = emergency)</td></tr>
-    <tr><td class="hi">Lhermitte&rsquo;s</td><td>Negative</td><td>May be positive (electric shock down spine with neck flexion)</td></tr>
-    <tr><td class="hi">Management</td><td>Conservative first (90% resolve 6&ndash;12 wks)</td><td><strong>Surgical referral.</strong> Progressive myelopathy = surgical decompression. PT: gentle ROM, postural education, NO manipulation</td></tr>
-  </tbody></table>
+<div class="section-title">Cervical Myelopathy</div>
+<div class="section-sub">Compression of the spinal cord itself (not just a nerve root). The most common cause of spinal cord dysfunction in adults &gt;55. This is a <strong>red flag</strong> &mdash; progressive myelopathy requires surgical referral. Do NOT manipulate a myelopathic cervical spine.</div>
+<div class="bl-strip red">
+<div class="bl-label">Cervical Myelopathy CPR (Cook et al., 2010) &mdash; 3 of 5 = Strong Predictive Value</div>
+<p>(1)<br><strong>Babinski sign</strong> (upgoing great toe with plantar stimulation). (2)<br><strong>Inverted supinator sign</strong> (tap brachioradialis &rarr; abnormal response: finger flexion or elbow extension instead of normal elbow flexion/wrist radial deviation). (3)<br><strong>Hoffmann&rsquo;s sign</strong> (flick middle finger distal phalanx &rarr; involuntary thumb/index flexion). (4)<br><strong>Ataxic gait</strong> (wide-based, shuffling, &ldquo;clunky&rdquo; walking). (5)<br><strong>Age &gt;45.</strong></p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Feature</th><th>Radiculopathy (Root)</th><th>Myelopathy (Cord)</th></tr></thead><tbody>
+<tr><td class="hi">Lesion Level</td><td>Nerve root (LMN)</td><td>Spinal cord (UMN)</td></tr>
+<tr><td class="hi">Distribution</td><td>Unilateral, follows dermatome/myotome</td><td>Often bilateral, non-dermatomal, LE &gt; UE</td></tr>
+<tr><td class="hi">Weakness Pattern</td><td>Specific myotome (e.g. biceps, triceps)</td><td>Non-myotomal, especially LE flexors (hip flexors, ankle DF). Hand clumsiness</td></tr>
+<tr><td class="hi">Reflexes</td><td>Decreased/absent at involved level (LMN)</td><td><strong>Hyperreflexia</strong> below lesion (UMN). Clonus. Babinski + Hoffmann +</td></tr>
+<tr><td class="hi">Tone</td><td>Normal or decreased (flaccid)</td><td>Increased (spasticity) below lesion</td></tr>
+<tr><td class="hi">Gait</td><td>Usually normal (unless severe)</td><td>Ataxic, wide-based, spastic. Falls</td></tr>
+<tr><td class="hi">Bowel/Bladder</td><td>Not affected</td><td>May be affected (late finding = emergency)</td></tr>
+<tr><td class="hi">Lhermitte&rsquo;s</td><td>Negative</td><td>May be positive (electric shock down spine with neck flexion)</td></tr>
+<tr><td class="hi">Management</td><td>Conservative first (90% resolve 6&ndash;12 wks)</td><td><strong>Surgical referral.</strong> Progressive myelopathy = surgical decompression. PT: gentle ROM, postural education, NO manipulation</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== CERVICOGENIC HEADACHE ====== -->
 <div class="tab-panel" id="tab-headache">
 <div class="container">
-  <div class="section-title">Cervicogenic Headache</div>
-  <div class="section-sub">Headache originating from cervical spine dysfunction (C0&ndash;C3). Often misdiagnosed as migraine or tension-type headache. One of the most treatable headache types with PT &mdash; strong evidence for manual therapy + exercise.</div>
-
-  <div class="bl-strip"><div class="bl-label">Diagnostic Criteria (Cervicogenic Headache International Study Group)</div>
-  <p>Unilateral headache (side-locked, does NOT shift sides). Provoked by neck movement or sustained postures. Decreased cervical ROM. Ipsilateral neck/shoulder/arm pain (non-radicular). No shifting to other side. Known trigger: posture, neck pain. Females &gt; males, 3rd decade+. Referral patterns: <strong>C0&ndash;C1 = occiput.</strong> <strong>C1&ndash;C2 = &ldquo;ram&rsquo;s horn&rdquo;</strong> (temporal wrap).<br><strong>C2&ndash;C3 = &ldquo;halo&rdquo;</strong> (forehead band).<br><strong>C3&ndash;C4 = &ldquo;rock behind eye.&rdquo;</strong></p></div>
-
-  <div class="bl-strip gold"><div class="bl-label">Flexion-Rotation Test (FRT) &mdash; Best Single Test</div><p>Patient fully flexes cervical spine (chin to chest), then PT passively rotates head. <strong>Normal: &ge;44&deg; rotation each side.</strong> Positive: loss of &ge;10&deg; compared to other side, or reproduction of headache. Tests C1&ndash;C2 rotation (flexion locks out lower segments, isolating C1&ndash;C2). <strong>SN: 90&ndash;91%. SP: 88&ndash;90%.</strong> Best diagnostic accuracy of any single test for cervicogenic headache (Ogince et al., 2007; Hall et al., 2010).</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Evidence-Based Treatment</div><p><strong>Strong evidence:</strong> cervical and thoracic thrust manipulation + deep neck flexor strengthening (Jull et al., 2002 &mdash; RCT, n=200). Combined manual therapy + exercise was superior to either alone.<br><strong>Cervical SNAGs</strong> (Mulligan) for C1&ndash;C2 rotation restriction.<br><strong>Suboccipital release.</strong> <strong>Postural correction</strong> (forward head/upper cross).<br><strong>CCFT training</strong> for deep neck flexor endurance. Treatment typically 6&ndash;8 sessions over 6 weeks. 72% of patients report significant improvement with combined approach.</p></div>
+<div class="section-title">Cervicogenic Headache</div>
+<div class="section-sub">Headache originating from cervical spine dysfunction (C0&ndash;C3). Often misdiagnosed as migraine or tension-type headache. One of the most treatable headache types with PT &mdash; strong evidence for manual therapy + exercise.</div>
+<div class="bl-strip">
+<div class="bl-label">Diagnostic Criteria (Cervicogenic Headache International Study Group)</div>
+<p>Unilateral headache (side-locked, does NOT shift sides). Provoked by neck movement or sustained postures. Decreased cervical ROM. Ipsilateral neck/shoulder/arm pain (non-radicular). No shifting to other side. Known trigger: posture, neck pain. Females &gt; males, 3rd decade+. Referral patterns: <strong>C0&ndash;C1 = occiput.</strong><strong>C1&ndash;C2 = &ldquo;ram&rsquo;s horn&rdquo;</strong> (temporal wrap).<br><strong>C2&ndash;C3 = &ldquo;halo&rdquo;</strong> (forehead band).<br><strong>C3&ndash;C4 = &ldquo;rock behind eye.&rdquo;</strong></p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Flexion-Rotation Test (FRT) &mdash; Best Single Test</div>
+<p>Patient fully flexes cervical spine (chin to chest), then PT passively rotates head. <strong>Normal: &ge;44&deg; rotation each side.</strong> Positive: loss of &ge;10&deg; compared to other side, or reproduction of headache. Tests C1&ndash;C2 rotation (flexion locks out lower segments, isolating C1&ndash;C2). <strong>SN: 90&ndash;91%. SP: 88&ndash;90%.</strong> Best diagnostic accuracy of any single test for cervicogenic headache (Ogince et al., 2007; Hall et al., 2010).</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Evidence-Based Treatment</div>
+<p><strong>Strong evidence:</strong> cervical and thoracic thrust manipulation + deep neck flexor strengthening (Jull et al., 2002 &mdash; RCT, n=200). Combined manual therapy + exercise was superior to either alone.<br><strong>Cervical SNAGs</strong> (Mulligan) for C1&ndash;C2 rotation restriction.<br><strong>Suboccipital release.</strong><strong>Postural correction</strong> (forward head/upper cross).<br><strong>CCFT training</strong> for deep neck flexor endurance. Treatment typically 6&ndash;8 sessions over 6 weeks. 72% of patients report significant improvement with combined approach.</p>
 </div>
 </div>
-
-<!-- ====== EVIDENCE-BASED MANAGEMENT ====== -->
+</div>
 <div class="tab-panel" id="tab-management">
 <div class="container">
-  <div class="section-title">Evidence-Based Management</div>
-  <div class="section-sub">Key clinical prediction rules and evidence summaries for cervical spine management. Know these for the NPTE and for clinical decision-making.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>CPR for Cervical Manipulation (Tseng et al., 2006)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Thoracic Manipulation for Neck Pain</div><p>Patients with mechanical neck pain who benefit most from thoracic manipulation: <strong>Symptom duration &lt;30 days, no symptoms distal to shoulder, looking up does NOT aggravate, FABQ-PA &lt;12, decreased upper thoracic kyphosis, cervical extension ROM &lt;30&deg;.</strong> Thoracic manipulation is safer than cervical manipulation (no vertebral artery risk) and has strong evidence for mechanical neck pain. Manipulation + exercise superior to exercise alone.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>McKenzie / MDT for Cervical Spine</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip gold"><div class="bl-label">Centralization &amp; Classification</div><p><strong>Centralization:</strong> repeated movements cause symptoms to move from peripheral (arm) toward midline (neck). Strong prognostic indicator &mdash; patients who centralize have significantly better outcomes.<br><strong>Peripheralization:</strong> symptoms move from midline to periphery. Poor prognostic sign.<br><strong>Derangement:</strong> MC classification. Symptoms change with repeated movements. Extension often centralizes, flexion often peripheralizes (but assess individually).<br><strong>Dysfunction:</strong> pain at end-range only, no change with repeated movements. Treated with stretching at end-range.<br><strong>Postural:</strong> symptoms with sustained positions only. Corrected with postural education.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Neck Pain Treatment-Based Classification</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Subgroup</th><th>Presentation</th><th>Primary Intervention</th></tr></thead><tbody>
-        <tr><td class="warn">Mobility</td><td>Acute/subacute. Limited ROM. No distal symptoms. Low FABQ. Short duration</td><td>Cervical/thoracic manipulation + ROM exercises</td></tr>
-        <tr><td class="hi">Centralization</td><td>Radicular symptoms that centralize with repeated movements</td><td>Directional preference exercises (McKenzie). Cervical traction if positive CPR</td></tr>
-        <tr><td class="hi">Exercise &amp; Conditioning</td><td>Chronic (&gt;3 months). Elevated fear-avoidance. Deconditioning. No centralization</td><td>Progressive exercise (endurance + strength). Pain neuroscience education. Graded exposure</td></tr>
-        <tr><td class="hi">Pain Control</td><td>Acute. High irritability. Unable to tolerate mechanical assessment</td><td>Gentle ROM. TENS/modalities for pain relief. Education. Cervical collar short-term only (&lt;72 hrs)</td></tr>
-        <tr><td class="warn">Headache</td><td>Cervicogenic headache criteria met</td><td>C1&ndash;C2 manipulation/mobilization + deep neck flexor training (Jull protocol)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
+<div class="section-title">Evidence-Based Management</div>
+<div class="section-sub">Key clinical prediction rules and evidence summaries for cervical spine management. Know these for the NPTE and for clinical decision-making.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>CPR for Cervical Manipulation (Tseng et al., 2006)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Thoracic Manipulation for Neck Pain</div>
+<p>Patients with mechanical neck pain who benefit most from thoracic manipulation: <strong>Symptom duration &lt;30 days, no symptoms distal to shoulder, looking up does NOT aggravate, FABQ-PA &lt;12, decreased upper thoracic kyphosis, cervical extension ROM &lt;30&deg;.</strong> Thoracic manipulation is safer than cervical manipulation (no vertebral artery risk) and has strong evidence for mechanical neck pain. Manipulation + exercise superior to exercise alone.</p>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>McKenzie / MDT for Cervical Spine</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip gold">
+<div class="bl-label">Centralization &amp; Classification</div>
+<p><strong>Centralization:</strong> repeated movements cause symptoms to move from peripheral (arm) toward midline (neck). Strong prognostic indicator &mdash; patients who centralize have significantly better outcomes.<br><strong>Peripheralization:</strong> symptoms move from midline to periphery. Poor prognostic sign.<br><strong>Derangement:</strong> MC classification. Symptoms change with repeated movements. Extension often centralizes, flexion often peripheralizes (but assess individually).<br><strong>Dysfunction:</strong> pain at end-range only, no change with repeated movements. Treated with stretching at end-range.<br><strong>Postural:</strong> symptoms with sustained positions only. Corrected with postural education.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Neck Pain Treatment-Based Classification</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Subgroup</th><th>Presentation</th><th>Primary Intervention</th></tr></thead><tbody>
+<tr><td class="warn">Mobility</td><td>Acute/subacute. Limited ROM. No distal symptoms. Low FABQ. Short duration</td><td>Cervical/thoracic manipulation + ROM exercises</td></tr>
+<tr><td class="hi">Centralization</td><td>Radicular symptoms that centralize with repeated movements</td><td>Directional preference exercises (McKenzie). Cervical traction if positive CPR</td></tr>
+<tr><td class="hi">Exercise &amp; Conditioning</td><td>Chronic (&gt;3 months). Elevated fear-avoidance. Deconditioning. No centralization</td><td>Progressive exercise (endurance + strength). Pain neuroscience education. Graded exposure</td></tr>
+<tr><td class="hi">Pain Control</td><td>Acute. High irritability. Unable to tolerate mechanical assessment</td><td>Gentle ROM. TENS/modalities for pain relief. Education. Cervical collar short-term only (&lt;72 hrs)</td></tr>
+<tr><td class="warn">Headache</td><td>Cervicogenic headache criteria met</td><td>C1&ndash;C2 manipulation/mobilization + deep neck flexor training (Jull protocol)</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 &mdash; Wainner&rsquo;s CPR</div><p>48-year-old with right C6 radiculopathy pattern. ULTT-A positive, cervical rotation 50&deg; (&lt;60&deg;), distraction positive, Spurling&rsquo;s positive. <strong>4/4 = +LR 30.3.</strong> No myelopathy signs. Treatment: cervical traction, thoracic manipulation, neural mobilization, deep neck flexor training.</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 &mdash; Myelopathy Red Flags</div><p>61-year-old with bilateral hand clumsiness, ataxic gait, Lhermitte&rsquo;s-type symptoms. Hoffmann&rsquo;s bilateral, Babinski right, hyperreflexia, wide-based gait. Myelopathy CPR 4/5. <strong>DO NOT manipulate. Urgent surgical referral.</strong></p></div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 &mdash; Wainner&rsquo;s CPR</div>
+<p>48-year-old with right C6 radiculopathy pattern. ULTT-A positive, cervical rotation 50&deg; (&lt;60&deg;), distraction positive, Spurling&rsquo;s positive. <strong>4/4 = +LR 30.3.</strong> No myelopathy signs. Treatment: cervical traction, thoracic manipulation, neural mobilization, deep neck flexor training.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 &mdash; Myelopathy Red Flags</div>
+<p>61-year-old with bilateral hand clumsiness, ataxic gait, Lhermitte&rsquo;s-type symptoms. Hoffmann&rsquo;s bilateral, Babinski right, hyperreflexia, wide-based gait. Myelopathy CPR 4/5. <strong>DO NOT manipulate. Urgent surgical referral.</strong></p>
 </div>
 </div>
-
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to reveal answers.</div>
-
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Identify the 4 components of Wainner&rsquo;s CPR for cervical radiculopathy?</div><span class="rc2-flip">tap</span><div class="rc2-a">(1) Positive ULTT-A (median nerve), (2) Cervical rotation &lt;60&deg; toward involved side, (3) Positive distraction test, (4) Positive Spurling&rsquo;s. <strong>3 of 4 positive: +LR 6.1. 4 of 4: +LR 30.3.</strong> Wainner et al., 2003. Reference standard: EMG/NCS.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">C6&ndash;C7 disc herniation. Which root is compressed? Name the deficits?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>C7 nerve root</strong> (exits below C6&ndash;C7 disc). Dermatomal: middle finger, posterior forearm. Myotome: <strong>triceps weakness</strong>, wrist flexors, finger extensors. Reflex: triceps diminished (C7&ndash;C8). MC cervical disc level involved.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Describe how to differentiate radiculopathy from myelopathy?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Radiculopathy (root/LMN):</strong> unilateral, dermatomal, hyporeflexia at level, specific myotome weakness. <strong>Myelopathy (cord/UMN):</strong> bilateral, non-dermatomal, <strong>hyperreflexia + Babinski + Hoffmann + clonus</strong>, ataxic gait, hand clumsiness, LE weakness &gt; UE. Myelopathy = surgical referral, NO manipulation.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Best single test for cervicogenic headache and what&rsquo;s the diagnostic accuracy in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Flexion-Rotation Test (FRT).</strong> Full cervical flexion (locks lower segments) then passive rotation. Tests C1&ndash;C2 rotation. Positive: &ge;10&deg; loss compared to other side or headache reproduction. <strong>SN: 90&ndash;91%, SP: 88&ndash;90%.</strong> Best accuracy of any single cervicogenic HA test.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">When should you NOT manipulate the cervical spine in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Positive VBI screening</strong> (5 D&rsquo;s, 3 N&rsquo;s, 1 A). <strong>Positive Sharp-Purser</strong> (transverse ligament instability, ADI &gt;3mm). <strong>Positive alar ligament test.</strong> Signs of <strong>myelopathy</strong> (UMN signs). <strong>RA with C-spine involvement</strong> (transverse ligament erosion). <strong>Down syndrome</strong> (atlantoaxial instability &mdash; screen before sports). Active infection, tumor, fracture.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is centralization and why is it clinically important in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Centralization:</strong> repeated movements cause symptoms to move from peripheral (arm/distal) toward midline (neck/central). It is the <strong>strongest prognostic indicator</strong> for good outcomes in spinal pain. Patients who centralize respond well to directional preference exercises (McKenzie). Peripheralization = poor prognostic sign.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Normal neck flexor endurance time vs abnormal in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Normal: &ge;39 seconds.</strong> Abnormal: &le;24 seconds. Supine chin-retracted head hold ~1&rdquo; above table. Patients with neck pain average ~24 sec vs ~39 sec in healthy controls. Correlates with deep neck flexor dysfunction, whiplash, and chronic neck pain.</div></div>
-  </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to reveal answers.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Identify the 4 components of Wainner&rsquo;s CPR for cervical radiculopathy?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">(1) Positive ULTT-A (median nerve), (2) Cervical rotation &lt;60&deg; toward involved side, (3) Positive distraction test, (4) Positive Spurling&rsquo;s. <strong>3 of 4 positive: +LR 6.1. 4 of 4: +LR 30.3.</strong> Wainner et al., 2003. Reference standard: EMG/NCS.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">C6&ndash;C7 disc herniation. Which root is compressed? Name the deficits?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>C7 nerve root</strong> (exits below C6&ndash;C7 disc). Dermatomal: middle finger, posterior forearm. Myotome: <strong>triceps weakness</strong>, wrist flexors, finger extensors. Reflex: triceps diminished (C7&ndash;C8). MC cervical disc level involved.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Describe how to differentiate radiculopathy from myelopathy?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Radiculopathy (root/LMN):</strong> unilateral, dermatomal, hyporeflexia at level, specific myotome weakness. <strong>Myelopathy (cord/UMN):</strong> bilateral, non-dermatomal, <strong>hyperreflexia + Babinski + Hoffmann + clonus</strong>, ataxic gait, hand clumsiness, LE weakness &gt; UE. Myelopathy = surgical referral, NO manipulation.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Best single test for cervicogenic headache and what&rsquo;s the diagnostic accuracy in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Flexion-Rotation Test (FRT).</strong> Full cervical flexion (locks lower segments) then passive rotation. Tests C1&ndash;C2 rotation. Positive: &ge;10&deg; loss compared to other side or headache reproduction. <strong>SN: 90&ndash;91%, SP: 88&ndash;90%.</strong> Best accuracy of any single cervicogenic HA test.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">When should you NOT manipulate the cervical spine in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Positive VBI screening</strong> (5 D&rsquo;s, 3 N&rsquo;s, 1 A). <strong>Positive Sharp-Purser</strong> (transverse ligament instability, ADI &gt;3mm). <strong>Positive alar ligament test.</strong> Signs of <strong>myelopathy</strong> (UMN signs). <strong>RA with C-spine involvement</strong> (transverse ligament erosion). <strong>Down syndrome</strong> (atlantoaxial instability &mdash; screen before sports). Active infection, tumor, fracture.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is centralization and why is it clinically important in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Centralization:</strong> repeated movements cause symptoms to move from peripheral (arm/distal) toward midline (neck/central). It is the <strong>strongest prognostic indicator</strong> for good outcomes in spinal pain. Patients who centralize respond well to directional preference exercises (McKenzie). Peripheralization = poor prognostic sign.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Normal neck flexor endurance time vs abnormal in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Normal: &ge;39 seconds.</strong> Abnormal: &le;24 seconds. Supine chin-retracted head hold ~1&rdquo; above table. Patients with neck pain average ~24 sec vs ~39 sec in healthy controls. Correlates with deep neck flexor dysfunction, whiplash, and chronic neck pain.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -325,6 +324,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

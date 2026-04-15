@@ -1,483 +1,678 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint &#8212; Neuro Clinical Management</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint &#8212; Neuro Clinical Management</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" class="active">Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
 <div class="hero">
-  <div class="hero-tag">Stroke &middot; Brain Tumors &middot; Cerebellar &middot; SCI &middot; HIV/AIDS &middot; MS &middot; ALS &middot; TBI</div>
-  <h1>Neurological Clinical Management <span>&#8212; Advanced Neuro PT</span></h1>
-  <p>The clinical application course &#8212; taking neuroanatomy and applying it to real patient management. Covers stroke (arterial territories, hemisphere lateralization, tPA), brain tumors (glioma classification, Karnofsky scale), cerebellar disorders (ataxia, dysmetria, PT interventions), SCI (ASIA classification, functional levels, autonomic dysreflexia), HIV/AIDS (stages, neurologic involvement), MS (4 subtypes, fatigue management), ALS (UMN+LMN, therapeutic window), PNF treatment techniques, TBI (GCS, Rancho levels), and differential diagnosis across all neuro conditions.</p>
+<div class="hero-tag">Stroke &middot; Brain Tumors &middot; Cerebellar &middot; SCI &middot; HIV/AIDS &middot; MS &middot; ALS &middot; TBI</div>
+<h1>Neurological Clinical Management <span>&#8212; Advanced Neuro PT</span></h1>
+<p>The clinical application course &#8212; taking neuroanatomy and applying it to real patient management. Covers stroke (arterial territories, hemisphere lateralization, tPA), brain tumors (glioma classification, Karnofsky scale), cerebellar disorders (ataxia, dysmetria, PT interventions), SCI (ASIA classification, functional levels, autonomic dysreflexia), HIV/AIDS (stages, neurologic involvement), MS (4 subtypes, fatigue management), ALS (UMN+LMN, therapeutic window), PNF treatment techniques, TBI (GCS, Rancho levels), and differential diagnosis across all neuro conditions.</p>
 </div>
 <div class="chip-nav">
-  <button class="active" onclick="showTab('stroke',this)">Stroke / CVA</button>
-  <button onclick="showTab('tumor',this)">Brain Tumors</button>
-  <button onclick="showTab('cerebellar',this)">Cerebellar</button>
-  <button onclick="showTab('sci',this)">SCI</button>
-  <button onclick="showTab('hiv',this)">HIV/AIDS</button>
-  <button onclick="showTab('ms',this)">MS</button>
-  <button onclick="showTab('als',this)">ALS</button>
-  <button onclick="showTab('treatment',this)">Treatment Techniques</button>
-  <button onclick="showTab('tbi',this)">TBI &amp; DDx</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('stroke',this)">Stroke / CVA</button>
+<button onclick="showTab('tumor',this)">Brain Tumors</button>
+<button onclick="showTab('cerebellar',this)">Cerebellar</button>
+<button onclick="showTab('sci',this)">SCI</button>
+<button onclick="showTab('hiv',this)">HIV/AIDS</button>
+<button onclick="showTab('ms',this)">MS</button>
+<button onclick="showTab('als',this)">ALS</button>
+<button onclick="showTab('treatment',this)">Treatment Techniques</button>
+<button onclick="showTab('tbi',this)">TBI &amp; DDx</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ===== TAB 1: STROKE / CVA ===== -->
 <div class="tab-panel active" id="tab-stroke">
 <div class="container">
-  <div class="section-title">Stroke / CVA &#8212; Cerebrovascular Accident</div>
-  <div class="section-sub">Stroke is the sudden loss of neurological function caused by interruption of blood flow to the brain. 800k people per year experience stroke. 80% are ischemic. Hemorrhagic strokes are more deadly. To be classified as a stroke, neurological deficits must persist for at least 24 hours. Motor deficits are characterized by hemiplegia (paralysis) or hemiparesis (weakness), typically contralateral to the lesion.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Epidemiology, Risk Factors &amp; FAST</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip red"><div class="bl-label">Risk Factors</div><p><strong>Modifiable:</strong> Overweight, sedentary life, binge drinking, DM, smoking, HTN (&#8805;140/90 = 2x lifetime risk), high cholesterol, cardiovascular diseases.<br><strong>Non-modifiable:</strong> Genetics, age, sex, Asian ethnicity.<br><strong>A-Fib:</strong> 5x increased risk for stroke. Irregular and often rapid heart rhythm.<br><strong>Atherosclerosis:</strong> Plaque (lipids, fibrin, calcium) narrows vessels &#8594; interrupts blood flow.<br><strong>Polycythemia:</strong> Increased circulating RBCs &#8212; primary (genetic, JAK2 mutation) vs secondary (another cause).<br><strong>Demographics:</strong> Women have lower rates until &gt;85. African Americans have 2x risk vs whites. Higher in Mexicans, Native Americans/Alaskans.</p></div>
-    <div class="bl-strip gold"><div class="bl-label">FAST &amp; "Brain Attack"</div><p><strong>F</strong> = Facial drooping.<br><strong>A</strong> = Arm weakness.<br><strong>S</strong> = Speech issues.<br><strong>T</strong> = Time (call 911). "Brain attack" is a marketing term to incite emergency reaction &#8212; like "heart attack" for cardiac events. Fear-provoking phrase designed to help people recognize the urgency.</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Pathophysiology &#8212; Ischemic vs Hemorrhagic, Penumbra &amp; tPA</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Type</th><th>Frequency</th><th>Mechanism</th><th>Key Features</th></tr></thead><tbody>
-      <tr><td class="warn">Ischemic &#8212; Thrombotic</td><td rowspan="2">80%</td><td>Thrombus (blood clot) develops IN the arteries supplying the brain. Local occlusion</td><td>Seen in older persons with high cholesterol, atherosclerosis, DM. Gradual onset possible</td></tr>
-      <tr><td class="warn">Ischemic &#8212; Embolic</td><td>Embolus (material from a distant site) blocks or impairs blood flow</td><td>Often from A-fib, carotid stenosis, or cardiac valve disease. Sudden onset. Can fragment and cause multiple infarcts</td></tr>
-      <tr><td class="bad">Hemorrhagic &#8212; Intracerebral</td><td rowspan="4">20%</td><td>Ruptured blood vessel causes bleeding INSIDE the brain</td><td>More deadly. Variety of focal deficits, changes in consciousness. Common in HTN</td></tr>
-      <tr><td class="bad">Hemorrhagic &#8212; Subarachnoid</td><td>Bleeding in space surrounding brain, usually from ruptured aneurysm</td><td>Sudden severe "thunderclap" headache. Blood builds up, increases ICP. Highly vascular subarachnoid space</td></tr>
-      <tr><td class="bad">Subdural</td><td>Bleeding between brain and dura mater from severe head injury</td><td>Often from trauma. Shear forces cause axonal damage. Can be acute or chronic</td></tr>
-      <tr><td class="hi">Lacunar</td><td>Small vessel occlusion deep in brain (BG, thalamus, pons)</td><td>Small infarcts but can cause significant deficits. Pure motor hemiparesis common</td></tr>
-    </tbody></table>
-    <div class="bl-strip red"><div class="bl-label">Ischemic Penumbra vs Umbra</div><p><strong>Umbra:</strong> Actual tissue that has DIED due to lack of oxygen. Irreversible.<br><strong>Penumbra:</strong> The area that was without oxygen but WILL eventually recover. This is the salvageable tissue &#8212; the target of acute stroke treatment.<br><strong>Goal of emergency treatment = save the penumbra.</strong></p></div>
-      <div class="bl-strip gold"><div class="bl-label">tPA (Tissue Plasminogen Activator)</div><p>Thrombolytic that dissolves clots. <strong>Only for ischemic strokes</strong> &#8212; contraindicated in hemorrhagic (would worsen bleeding). Time window is critical. Standard window: within 3&#8211;4.5 hours of symptom onset. This is why "Time" in FAST is critical &#8212; every minute of delay = more penumbra becomes umbra.</p></div>
-    <div class="bl-strip"><div class="bl-label">TIA vs Stroke</div><p><strong>TIA (Transient Ischemic Attack):</strong> Temporary neurological dysfunction that resolves within 24 hours &#8212; "warning stroke." <strong>RIND (Reversible Ischemic Neurological Deficit):</strong> Resolves within 72 hours.<br><strong>Stroke:</strong> Deficits persist &gt;24 hours.<br><strong>AVM (Arteriovenous Malformation):</strong> Tangled blood vessels bypassing normal tissue &#8212; usually congenital, can rupture causing hemorrhagic stroke.</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Arterial Territories &#8212; MCA, ACA, PCA &amp; Basilar</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Artery</th><th>Supplies</th><th>Deficits When Occluded</th></tr></thead><tbody>
-      <tr><td class="bad">MCA (Middle Cerebral)</td><td>Lateral cerebral cortex. Continues from internal carotid into lateral sulcus. <strong>Most common stroke location</strong> &#8212; anatomically direct line from aorta/heart</td><td><strong>Contralateral hemiparesis/hemiplegia</strong> (face and arm &gt; leg). Hemisensory loss. If dominant hemi: Broca's and/or Wernicke's aphasia. If non-dominant: neglect, anosognosia. Homonymous hemianopsia</td></tr>
-      <tr><td class="hi">ACA (Anterior Cerebral)</td><td>Frontal, prefrontal, and supplementary motor cortex. Parts of primary motor and sensory cortex (medial surface &#8212; LE representation). <strong>ACA infarcts are rare</strong> due to collateral circulation from anterior communicating artery</td><td>Contralateral LE weakness &gt; UE. Personality changes (frontal lobe). Urinary incontinence. Impaired judgment. Abulia (lack of will/initiative)</td></tr>
-      <tr><td class="hi">PCA (Posterior Cerebral)</td><td>Occipital lobe, part of posterior brain. Pair of arteries from distal basilar artery</td><td>Contralateral homonymous hemianopsia (visual field loss). If bilateral: cortical blindness. Memory deficits (temporal lobe involvement). Alexia without agraphia (can write but can't read what they wrote)</td></tr>
-      <tr><td class="warn">Basilar Artery</td><td>Brainstem, cerebellum (via SCA, AICA, PICA)</td><td><strong>Life-threatening.</strong> Early thrombolytic treatment is only promising option. Conventional treatment: 40% fatality, 65% of survivors remain dependent. Locked-in syndrome possible. Younger &lt;60 with minor stroke have better outcomes</td></tr>
-    </tbody></table>
-    <div class="bl-strip"><div class="bl-label">Circle of Willis</div><p>Anastomotic ring connecting the internal carotid and vertebral arterial systems. Provides collateral circulation &#8212; if one vessel is occluded, blood can potentially reach the affected area through alternative routes. <strong>Key components:</strong> Anterior communicating artery (connects L and R ACA), posterior communicating arteries (connect ICA to PCA). Anatomic variations are common and affect collateral capacity.</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Hemisphere Lateralization &#8212; Left vs Right Brain Deficits</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Function</th><th>Left (Dominant) Hemisphere</th><th>Right (Non-Dominant) Hemisphere</th></tr></thead><tbody>
-      <tr><td class="hi">Language</td><td><strong>Hearing/understanding words:</strong> Primary auditory &#8594; Wernicke's area. <strong>Speech production:</strong> Primary motor &#8594; Broca's area. <strong>Repetition:</strong> Wernicke's &#8594; Broca's transfer</td><td>Related language processing through corpus callosum. <strong>Tone of voice, sarcasm, emotionally appropriate communication.</strong> Prosody (emotion conveyed by voice)</td></tr>
-      <tr><td class="hi">Motor Control</td><td>Complex motor tasks coordinating BOTH limbs. Step-by-step formulation and execution. <strong>Praxis</strong> (skilled motor formulation)</td><td>Visuospatial organization and analysis. Localization of movement and visual objects in space</td></tr>
-      <tr><td class="hi">Cognitive</td><td>Arithmetic, sequential, analytical skills. Musical: sequential/analytical in trained musicians. Sense of direction: following written directions in sequence</td><td>Manipulation of geometric figures. Puzzle assembly (part/whole relationships). Completing missing patterns. Form, distance, space relationships. Musical: recognition of melody. Spatial orientation</td></tr>
-      <tr><td class="warn">Behavioral</td><td><strong>L damage &#8594; unmotivated, hard to start, inhibited.</strong> Aware of deficits but slow to initiate</td><td><strong>R damage &#8594; impulsive, quick, "go nuts."</strong> Disinhibition. May not recognize deficits (anosognosia). Abstract thinking impaired</td></tr>
-      <tr><td class="hi">Sensory</td><td>Visual words recognized faster in R visual field. Spoken words recalled better from R ear (dichotic listening)</td><td>Faces recognized faster in L visual field. Environmental/non-verbal sounds (dog barking), melodies</td></tr>
-      <tr><td class="warn">Damage Effects</td><td>Aphasia (Broca's and/or Wernicke's). R hemiparesis. R sensory loss. Difficulty processing verbal cues/commands. <strong>Aware but limited</strong></td><td>L unilateral neglect. L hemiparesis. L sensory loss. Agnosia. Body image/scheme disturbances. Difficulty processing visual cues. <strong>Impulsive and unaware</strong></td></tr>
-    </tbody></table>
-    <div class="bl-strip purple"><div class="bl-label">Handedness &amp; Dominance</div><p>90% of people are right-handed (since prehistoric times).<br><strong>95% of RH have speech in L hemisphere.</strong> 70% of LH show the same pattern. Of the remaining 30%: 50% have R hemi control, 50% bilateral control. 15% with R hemi dominance = "crossed dominance." <strong>Familial sinistrality</strong> (LH in immediate family): language disturbances after brain lesion occur with similar frequency as RH.<br><strong>No familial sinistrality:</strong> Language disturbances are almost non-existent.<br><strong>Disinhibition vs Inhibition:</strong> The intact hemisphere becomes disinhibited (more dominant) when the other is damaged. This explains the behavioral presentations &#8212; R damage amplifies L hemisphere characteristics and vice versa.</p></div>
-    <div class="bl-strip gold"><div class="bl-label">Subluxed Shoulder Post-Stroke</div><p><strong>Sulcus sign (2-finger sign):</strong> Traction applied inferiorly on relaxed arm &#8212; depression below acromion indicates glenohumeral instability. <strong>Treatment depends on neuromotor control:</strong> Closed-chain exercises to approximate the shoulder joint &#8212; retraction, depression, work toward midline. Target traps, rhomboids, levator scapulae. Strengthen in closed chain before open chain.</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Stroke Evidence &amp; Recovery</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip green"><div class="bl-label">Strong Evidence for PT Post-Stroke</div><p><strong>Higher dose of practice is better</strong> (strong evidence). Intensive, high-repetitive, task-oriented and task-specific training is favored in ALL phases post-stroke. Walking training at moderate-to-high intensities or VR-based training improves walking speed/distance in patients &gt;6 months post-CNS injury (strong evidence).<br><strong>Aerobic exercise in subacute stroke:</strong> Recumbent stepper 3x/week for 8 weeks &#8594; significant improvements in FMD (endothelial function), resting SBP, and 6MWT. Beneficial for cardiovascular health, reducing cardiac risk, and improving physical performance.<br><strong>Weak evidence:</strong> Strength training, circuit training, cycling at moderate-high intensities, VR-based balance training may improve walking.<br><strong>Should NOT be performed:</strong> Body weight-supported treadmill training, robotic-assisted training, or sitting/standing balance training without VR &#8212; for improving walking speed/distance.</p></div>
-  </div></div>
+<div class="section-title">Stroke / CVA &#8212; Cerebrovascular Accident</div>
+<div class="section-sub">Stroke is the sudden loss of neurological function caused by interruption of blood flow to the brain. 800k people per year experience stroke. 80% are ischemic. Hemorrhagic strokes are more deadly. To be classified as a stroke, neurological deficits must persist for at least 24 hours. Motor deficits are characterized by hemiplegia (paralysis) or hemiparesis (weakness), typically contralateral to the lesion.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Epidemiology, Risk Factors &amp; FAST</h4><span class="ma-chevron">&#9660;</span>
 </div>
-
-
-<!-- ===== TAB 2: BRAIN TUMORS ===== -->
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">Risk Factors</div>
+<p><strong>Modifiable:</strong> Overweight, sedentary life, binge drinking, DM, smoking, HTN (&#8805;140/90 = 2x lifetime risk), high cholesterol, cardiovascular diseases.<br><strong>Non-modifiable:</strong> Genetics, age, sex, Asian ethnicity.<br><strong>A-Fib:</strong> 5x increased risk for stroke. Irregular and often rapid heart rhythm.<br><strong>Atherosclerosis:</strong> Plaque (lipids, fibrin, calcium) narrows vessels &#8594; interrupts blood flow.<br><strong>Polycythemia:</strong> Increased circulating RBCs &#8212; primary (genetic, JAK2 mutation) vs secondary (another cause).<br><strong>Demographics:</strong> Women have lower rates until &gt;85. African Americans have 2x risk vs whites. Higher in Mexicans, Native Americans/Alaskans.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">FAST &amp; "Brain Attack"</div>
+<p><strong>F</strong> = Facial drooping.<br><strong>A</strong> = Arm weakness.<br><strong>S</strong> = Speech issues.<br><strong>T</strong> = Time (call 911). "Brain attack" is a marketing term to incite emergency reaction &#8212; like "heart attack" for cardiac events. Fear-provoking phrase designed to help people recognize the urgency.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Pathophysiology &#8212; Ischemic vs Hemorrhagic, Penumbra &amp; tPA</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Type</th><th>Frequency</th><th>Mechanism</th><th>Key Features</th></tr></thead><tbody>
+<tr><td class="warn">Ischemic &#8212; Thrombotic</td><td rowspan="2">80%</td><td>Thrombus (blood clot) develops IN the arteries supplying the brain. Local occlusion</td><td>Seen in older persons with high cholesterol, atherosclerosis, DM. Gradual onset possible</td></tr>
+<tr><td class="warn">Ischemic &#8212; Embolic</td><td>Embolus (material from a distant site) blocks or impairs blood flow</td><td>Often from A-fib, carotid stenosis, or cardiac valve disease. Sudden onset. Can fragment and cause multiple infarcts</td></tr>
+<tr><td class="bad">Hemorrhagic &#8212; Intracerebral</td><td rowspan="4">20%</td><td>Ruptured blood vessel causes bleeding INSIDE the brain</td><td>More deadly. Variety of focal deficits, changes in consciousness. Common in HTN</td></tr>
+<tr><td class="bad">Hemorrhagic &#8212; Subarachnoid</td><td>Bleeding in space surrounding brain, usually from ruptured aneurysm</td><td>Sudden severe "thunderclap" headache. Blood builds up, increases ICP. Highly vascular subarachnoid space</td></tr>
+<tr><td class="bad">Subdural</td><td>Bleeding between brain and dura mater from severe head injury</td><td>Often from trauma. Shear forces cause axonal damage. Can be acute or chronic</td></tr>
+<tr><td class="hi">Lacunar</td><td>Small vessel occlusion deep in brain (BG, thalamus, pons)</td><td>Small infarcts but can cause significant deficits. Pure motor hemiparesis common</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Ischemic Penumbra vs Umbra</div>
+<p><strong>Umbra:</strong> Actual tissue that has DIED due to lack of oxygen. Irreversible.<br><strong>Penumbra:</strong> The area that was without oxygen but WILL eventually recover. This is the salvageable tissue &#8212; the target of acute stroke treatment.<br><strong>Goal of emergency treatment = save the penumbra.</strong></p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">tPA (Tissue Plasminogen Activator)</div>
+<p>Thrombolytic that dissolves clots. <strong>Only for ischemic strokes</strong> &#8212; contraindicated in hemorrhagic (would worsen bleeding). Time window is critical. Standard window: within 3&#8211;4.5 hours of symptom onset. This is why "Time" in FAST is critical &#8212; every minute of delay = more penumbra becomes umbra.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">TIA vs Stroke</div>
+<p><strong>TIA (Transient Ischemic Attack):</strong> Temporary neurological dysfunction that resolves within 24 hours &#8212; "warning stroke." <strong>RIND (Reversible Ischemic Neurological Deficit):</strong> Resolves within 72 hours.<br><strong>Stroke:</strong> Deficits persist &gt;24 hours.<br><strong>AVM (Arteriovenous Malformation):</strong> Tangled blood vessels bypassing normal tissue &#8212; usually congenital, can rupture causing hemorrhagic stroke.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Arterial Territories &#8212; MCA, ACA, PCA &amp; Basilar</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Artery</th><th>Supplies</th><th>Deficits When Occluded</th></tr></thead><tbody>
+<tr><td class="bad">MCA (Middle Cerebral)</td><td>Lateral cerebral cortex. Continues from internal carotid into lateral sulcus. <strong>Most common stroke location</strong> &#8212; anatomically direct line from aorta/heart</td><td><strong>Contralateral hemiparesis/hemiplegia</strong> (face and arm &gt; leg). Hemisensory loss. If dominant hemi: Broca's and/or Wernicke's aphasia. If non-dominant: neglect, anosognosia. Homonymous hemianopsia</td></tr>
+<tr><td class="hi">ACA (Anterior Cerebral)</td><td>Frontal, prefrontal, and supplementary motor cortex. Parts of primary motor and sensory cortex (medial surface &#8212; LE representation). <strong>ACA infarcts are rare</strong> due to collateral circulation from anterior communicating artery</td><td>Contralateral LE weakness &gt; UE. Personality changes (frontal lobe). Urinary incontinence. Impaired judgment. Abulia (lack of will/initiative)</td></tr>
+<tr><td class="hi">PCA (Posterior Cerebral)</td><td>Occipital lobe, part of posterior brain. Pair of arteries from distal basilar artery</td><td>Contralateral homonymous hemianopsia (visual field loss). If bilateral: cortical blindness. Memory deficits (temporal lobe involvement). Alexia without agraphia (can write but can't read what they wrote)</td></tr>
+<tr><td class="warn">Basilar Artery</td><td>Brainstem, cerebellum (via SCA, AICA, PICA)</td><td><strong>Life-threatening.</strong> Early thrombolytic treatment is only promising option. Conventional treatment: 40% fatality, 65% of survivors remain dependent. Locked-in syndrome possible. Younger &lt;60 with minor stroke have better outcomes</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Circle of Willis</div>
+<p>Anastomotic ring connecting the internal carotid and vertebral arterial systems. Provides collateral circulation &#8212; if one vessel is occluded, blood can potentially reach the affected area through alternative routes. <strong>Key components:</strong> Anterior communicating artery (connects L and R ACA), posterior communicating arteries (connect ICA to PCA). Anatomic variations are common and affect collateral capacity.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Hemisphere Lateralization &#8212; Left vs Right Brain Deficits</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Function</th><th>Left (Dominant) Hemisphere</th><th>Right (Non-Dominant) Hemisphere</th></tr></thead><tbody>
+<tr><td class="hi">Language</td><td><strong>Hearing/understanding words:</strong> Primary auditory &#8594; Wernicke's area. <strong>Speech production:</strong> Primary motor &#8594; Broca's area. <strong>Repetition:</strong> Wernicke's &#8594; Broca's transfer</td><td>Related language processing through corpus callosum. <strong>Tone of voice, sarcasm, emotionally appropriate communication.</strong> Prosody (emotion conveyed by voice)</td></tr>
+<tr><td class="hi">Motor Control</td><td>Complex motor tasks coordinating BOTH limbs. Step-by-step formulation and execution. <strong>Praxis</strong> (skilled motor formulation)</td><td>Visuospatial organization and analysis. Localization of movement and visual objects in space</td></tr>
+<tr><td class="hi">Cognitive</td><td>Arithmetic, sequential, analytical skills. Musical: sequential/analytical in trained musicians. Sense of direction: following written directions in sequence</td><td>Manipulation of geometric figures. Puzzle assembly (part/whole relationships). Completing missing patterns. Form, distance, space relationships. Musical: recognition of melody. Spatial orientation</td></tr>
+<tr><td class="warn">Behavioral</td><td><strong>L damage &#8594; unmotivated, hard to start, inhibited.</strong> Aware of deficits but slow to initiate</td><td><strong>R damage &#8594; impulsive, quick, "go nuts."</strong> Disinhibition. May not recognize deficits (anosognosia). Abstract thinking impaired</td></tr>
+<tr><td class="hi">Sensory</td><td>Visual words recognized faster in R visual field. Spoken words recalled better from R ear (dichotic listening)</td><td>Faces recognized faster in L visual field. Environmental/non-verbal sounds (dog barking), melodies</td></tr>
+<tr><td class="warn">Damage Effects</td><td>Aphasia (Broca's and/or Wernicke's). R hemiparesis. R sensory loss. Difficulty processing verbal cues/commands. <strong>Aware but limited</strong></td><td>L unilateral neglect. L hemiparesis. L sensory loss. Agnosia. Body image/scheme disturbances. Difficulty processing visual cues. <strong>Impulsive and unaware</strong></td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Handedness &amp; Dominance</div>
+<p>90% of people are right-handed (since prehistoric times).<br><strong>95% of RH have speech in L hemisphere.</strong> 70% of LH show the same pattern. Of the remaining 30%: 50% have R hemi control, 50% bilateral control. 15% with R hemi dominance = "crossed dominance." <strong>Familial sinistrality</strong> (LH in immediate family): language disturbances after brain lesion occur with similar frequency as RH.<br><strong>No familial sinistrality:</strong> Language disturbances are almost non-existent.<br><strong>Disinhibition vs Inhibition:</strong> The intact hemisphere becomes disinhibited (more dominant) when the other is damaged. This explains the behavioral presentations &#8212; R damage amplifies L hemisphere characteristics and vice versa.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Subluxed Shoulder Post-Stroke</div>
+<p><strong>Sulcus sign (2-finger sign):</strong> Traction applied inferiorly on relaxed arm &#8212; depression below acromion indicates glenohumeral instability. <strong>Treatment depends on neuromotor control:</strong> Closed-chain exercises to approximate the shoulder joint &#8212; retraction, depression, work toward midline. Target traps, rhomboids, levator scapulae. Strengthen in closed chain before open chain.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Stroke Evidence &amp; Recovery</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Strong Evidence for PT Post-Stroke</div>
+<p><strong>Higher dose of practice is better</strong> (strong evidence). Intensive, high-repetitive, task-oriented and task-specific training is favored in ALL phases post-stroke. Walking training at moderate-to-high intensities or VR-based training improves walking speed/distance in patients &gt;6 months post-CNS injury (strong evidence).<br><strong>Aerobic exercise in subacute stroke:</strong> Recumbent stepper 3x/week for 8 weeks &#8594; significant improvements in FMD (endothelial function), resting SBP, and 6MWT. Beneficial for cardiovascular health, reducing cardiac risk, and improving physical performance.<br><strong>Weak evidence:</strong> Strength training, circuit training, cycling at moderate-high intensities, VR-based balance training may improve walking.<br><strong>Should NOT be performed:</strong> Body weight-supported treadmill training, robotic-assisted training, or sitting/standing balance training without VR &#8212; for improving walking speed/distance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-tumor">
 <div class="container">
-  <div class="section-title">Brain Tumors &#8212; Classification, Location &amp; PT Management</div>
-  <div class="section-sub">Clinical presentation of brain tumors mimics other CNS conditions &#8212; location of the tumor determines impairments, just like vascular lesions. Two distinct peaks: children 0&#8211;15 yo and adults in the 5th&#8211;7th decades. White Americans &gt; Black Americans, M &gt; F. Etiology unclear but associated with toxic/infectious chemical exposure, electromagnetic fields, and ionizing radiation.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Primary Brain Tumors &#8212; Glioma Classification</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip"><div class="bl-label">Primary vs Secondary (Metastatic)</div><p><strong>Primary tumors</strong> originate in the CNS.<br><strong>Gliomas</strong> arise from supportive tissues (glial cells), frequently in cerebral hemispheres. Can also occur in brainstem, optic canal, spinal cord, and cerebellum (especially in children).<br><strong>Secondary/Metastatic tumors</strong> spread from sites outside the brain (lung, breast, melanoma are common primaries).<br><strong>Key difference:</strong> Primary tumors arise IN the CNS; metastatic tumors spread TO the CNS.</p></div>
-    <table class="data-table"><thead><tr><th>Tumor Type</th><th>Origin</th><th>Demographics</th><th>Key Features</th><th>Prognosis</th></tr></thead><tbody>
-      <tr><td class="hi">Astrocytoma (most common)</td><td>Astrocytes (glial cells)</td><td>Adults: frontal lobe. Children: cerebellum. Onset 3rd&#8211;5th decade</td><td><strong>Grade 1:</strong> Pilocytic, well-differentiated, benign. <strong>Grade 2:</strong> Diffuse, low grade. <strong>Grade 3:</strong> Anaplastic, high grade, grows rapidly &#8594; progresses to Grade 4. <strong>Grade 4:</strong> Glioblastoma multiforme &#8212; highly malignant, deep in white matter, also found in brainstem/cerebellum/SC. More common in older adults, M &gt; F</td><td>Higher grade = poorer prognosis. Grade 4 = worst. Treatment: surgery, radiation, chemo depending on grade, location, age, and Karnofsky score</td></tr>
-      <tr><td class="hi">Oligodendroglioma</td><td>Oligodendrocytes</td><td>4th&#8211;6th decade, M &gt; F</td><td>Slow growing but progressive over years. <strong>Seizures may be the ONLY clinical manifestation.</strong></td><td>Dependent on age at diagnosis and tumor grade</td></tr>
-      <tr><td class="hi">Ependymoma</td><td>Ependymal cells (line ventricles and central canal)</td><td>Variable age</td><td>Grow in ventricles (4th most common). Less frequent in lateral and 3rd ventricle. <strong>Recur frequently.</strong> Treated: surgery &#8594; radiation &#8594; chemo</td><td>Depends on initial surgery. 5-year survival: 82%</td></tr>
-      <tr><td class="bad">Medulloblastoma</td><td>Primitive neuroectodermal cells (pluripotent stem cells)</td><td>More common in children (20% of all childhood brain tumors). Lateral hemispheres in young adults, vermis in kids</td><td>Located in posterior fossa. <strong>Grows into 4th ventricle &#8594; blocks CSF &#8594; hydrocephalus &#8594; increased ICP.</strong> <strong>ALWAYS malignant.</strong></td><td>5-year survival: 61%. Treatment: surgery + radiation + chemo</td></tr>
-      <tr><td class="hi">Meningioma</td><td>Meninges</td><td>Variable</td><td>Primary CNS tumor from meninges. Often benign but can compress brain tissue. Extra-axial (outside brain parenchyma)</td><td>Generally favorable with surgical resection</td></tr>
-      <tr><td class="hi">Schwannoma</td><td>Schwann cells (CN VIII most common)</td><td>Variable</td><td>Acoustic neuroma &#8212; equilibrium deficits, moderate hearing loss in one ear, dizziness. <strong>If pt has these symptoms: eval dizziness, initiate treatment, AND refer to primary doctor for further eval</strong></td><td>Usually benign. Surgical or radiosurgical management</td></tr>
-      <tr><td class="hi">Pituitary Adenoma</td><td>Pituitary gland</td><td>Variable</td><td>Can cause bitemporal hemianopsia (loss of temporal visual fields bilaterally) from pressure on optic chiasm. Hormonal dysfunction</td><td>Usually benign. Medical or surgical management</td></tr>
-    </tbody></table>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Tumor Location &#8594; Deficit Mapping</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Location</th><th>Expected Deficits</th><th>Key Clinical Note</th></tr></thead><tbody>
-      <tr><td class="hi">Frontal Lobe</td><td>Hemiparesis, seizures, aphasia, gait difficulties. Disinhibition, impaired judgment, weakness of legs</td><td>Motor function, action initiation, emotion interpretation, cognition/attention, motivation, memory</td></tr>
-      <tr><td class="hi">Parietal Lobe</td><td>Contralateral sensory loss and hemiparesis, homonymous visual deficits, neglect, agnosias, apraxias, visuospatial disorders</td><td>If dominant parietal: contralateral neglect and decreased awareness of impairments. Pt misjudging doorways, hitting L side = R parietal lesion</td></tr>
-      <tr><td class="hi">Occipital Lobe</td><td>Dysfunctional eye movements, homonymous hemianopsia. Visual seizures (lights, colors, geometric patterns &#8212; NOT common)</td><td>If parieto-occipital junction involved: visual agnosia and agraphia. L occipital tumor = R homonymous hemianopsia</td></tr>
-      <tr><td class="hi">Temporal Lobe</td><td>Anterior: may be clinically silent unless large. Lateral: auditory and perceptual changes, seizures</td><td>Long-term memory, cognitive integration, learning, emotions</td></tr>
-      <tr><td class="bad">Posterior Fossa / Cerebellum</td><td>Abnormal head posturing, balance deficits, nausea</td><td><strong>BIG CONCERN in children: tonsil herniation &#8212; can be fatal.</strong> Hydrocephalus from blocked CSF. Monitor ICP closely</td></tr>
-    </tbody></table>
-    <div class="bl-strip gold"><div class="bl-label">General Signs &amp; Symptoms (NOT Location-Specific)</div><p>Headache (presenting symptom in 30% of cases &#8212; gets worse as day goes on, pronounced with coughing or exercise, interrupts sleep, severe with recent onset, with nausea), seizures, altered mental status, papilledema (optic nerve swelling = increased ICP).</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Karnofsky Scale, Imaging &amp; PT Intervention</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip"><div class="bl-label">Karnofsky Performance Status Scale</div><p>Scale indicating the patient's condition and ability to carry on normal activity. 100% = normal, no complaints. <strong>90% = completes normal activity with minor symptoms.</strong> 80% = normal activity with effort. 70% = cares for self but unable to carry on normal activity. 60% = requires occasional assistance. 50% = requires considerable assistance. 40% = disabled. 30% = severely disabled. 20% = very sick. 10% = moribund. <strong>FIM (Functional Independence Measure)</strong> is useful during eval &#8212; provides a means of documenting response to therapy intervention.</p></div>
-    <div class="bl-strip green"><div class="bl-label">PT Intervention Considerations</div><p>Treatment must consider: the nature of the tumor, fluctuating neurological function, and likelihood for progressive decline.<br><strong>For metastatic tumor with mild hemiparesis and gait abnormalities (70 yo, not receiving tumor treatment):</strong> Optimize functional capabilities through durable medical equipment to promote safety and independence &#8212; NOT aggressive strengthening or neuroplasticity-focused rehab.<br><strong>For operable primary tumor:</strong> More aggressive rehab approach, functional recovery through neural plasticity principles.<br><strong>SNF patient with inoperable tumor showing long-term memory deficits, cognitive deficits, inability to transfer learning:</strong> Likely bilateral frontal or medial temporal involvement.</p></div>
-  </div></div>
+<div class="section-title">Brain Tumors &#8212; Classification, Location &amp; PT Management</div>
+<div class="section-sub">Clinical presentation of brain tumors mimics other CNS conditions &#8212; location of the tumor determines impairments, just like vascular lesions. Two distinct peaks: children 0&#8211;15 yo and adults in the 5th&#8211;7th decades. White Americans &gt; Black Americans, M &gt; F. Etiology unclear but associated with toxic/infectious chemical exposure, electromagnetic fields, and ionizing radiation.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Primary Brain Tumors &#8212; Glioma Classification</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Primary vs Secondary (Metastatic)</div>
+<p><strong>Primary tumors</strong> originate in the CNS.<br><strong>Gliomas</strong> arise from supportive tissues (glial cells), frequently in cerebral hemispheres. Can also occur in brainstem, optic canal, spinal cord, and cerebellum (especially in children).<br><strong>Secondary/Metastatic tumors</strong> spread from sites outside the brain (lung, breast, melanoma are common primaries).<br><strong>Key difference:</strong> Primary tumors arise IN the CNS; metastatic tumors spread TO the CNS.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Tumor Type</th><th>Origin</th><th>Demographics</th><th>Key Features</th><th>Prognosis</th></tr></thead><tbody>
+<tr><td class="hi">Astrocytoma (most common)</td><td>Astrocytes (glial cells)</td><td>Adults: frontal lobe. Children: cerebellum. Onset 3rd&#8211;5th decade</td><td><strong>Grade 1:</strong> Pilocytic, well-differentiated, benign. <strong>Grade 2:</strong> Diffuse, low grade. <strong>Grade 3:</strong> Anaplastic, high grade, grows rapidly &#8594; progresses to Grade 4. <strong>Grade 4:</strong> Glioblastoma multiforme &#8212; highly malignant, deep in white matter, also found in brainstem/cerebellum/SC. More common in older adults, M &gt; F</td><td>Higher grade = poorer prognosis. Grade 4 = worst. Treatment: surgery, radiation, chemo depending on grade, location, age, and Karnofsky score</td></tr>
+<tr><td class="hi">Oligodendroglioma</td><td>Oligodendrocytes</td><td>4th&#8211;6th decade, M &gt; F</td><td>Slow growing but progressive over years. <strong>Seizures may be the ONLY clinical manifestation.</strong></td><td>Dependent on age at diagnosis and tumor grade</td></tr>
+<tr><td class="hi">Ependymoma</td><td>Ependymal cells (line ventricles and central canal)</td><td>Variable age</td><td>Grow in ventricles (4th most common). Less frequent in lateral and 3rd ventricle. <strong>Recur frequently.</strong> Treated: surgery &#8594; radiation &#8594; chemo</td><td>Depends on initial surgery. 5-year survival: 82%</td></tr>
+<tr><td class="bad">Medulloblastoma</td><td>Primitive neuroectodermal cells (pluripotent stem cells)</td><td>More common in children (20% of all childhood brain tumors). Lateral hemispheres in young adults, vermis in kids</td><td>Located in posterior fossa. <strong>Grows into 4th ventricle &#8594; blocks CSF &#8594; hydrocephalus &#8594; increased ICP.</strong><strong>ALWAYS malignant.</strong></td><td>5-year survival: 61%. Treatment: surgery + radiation + chemo</td></tr>
+<tr><td class="hi">Meningioma</td><td>Meninges</td><td>Variable</td><td>Primary CNS tumor from meninges. Often benign but can compress brain tissue. Extra-axial (outside brain parenchyma)</td><td>Generally favorable with surgical resection</td></tr>
+<tr><td class="hi">Schwannoma</td><td>Schwann cells (CN VIII most common)</td><td>Variable</td><td>Acoustic neuroma &#8212; equilibrium deficits, moderate hearing loss in one ear, dizziness. <strong>If pt has these symptoms: eval dizziness, initiate treatment, AND refer to primary doctor for further eval</strong></td><td>Usually benign. Surgical or radiosurgical management</td></tr>
+<tr><td class="hi">Pituitary Adenoma</td><td>Pituitary gland</td><td>Variable</td><td>Can cause bitemporal hemianopsia (loss of temporal visual fields bilaterally) from pressure on optic chiasm. Hormonal dysfunction</td><td>Usually benign. Medical or surgical management</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ===== TAB 3: CEREBELLAR DISORDERS ===== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Tumor Location &#8594; Deficit Mapping</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Location</th><th>Expected Deficits</th><th>Key Clinical Note</th></tr></thead><tbody>
+<tr><td class="hi">Frontal Lobe</td><td>Hemiparesis, seizures, aphasia, gait difficulties. Disinhibition, impaired judgment, weakness of legs</td><td>Motor function, action initiation, emotion interpretation, cognition/attention, motivation, memory</td></tr>
+<tr><td class="hi">Parietal Lobe</td><td>Contralateral sensory loss and hemiparesis, homonymous visual deficits, neglect, agnosias, apraxias, visuospatial disorders</td><td>If dominant parietal: contralateral neglect and decreased awareness of impairments. Pt misjudging doorways, hitting L side = R parietal lesion</td></tr>
+<tr><td class="hi">Occipital Lobe</td><td>Dysfunctional eye movements, homonymous hemianopsia. Visual seizures (lights, colors, geometric patterns &#8212; NOT common)</td><td>If parieto-occipital junction involved: visual agnosia and agraphia. L occipital tumor = R homonymous hemianopsia</td></tr>
+<tr><td class="hi">Temporal Lobe</td><td>Anterior: may be clinically silent unless large. Lateral: auditory and perceptual changes, seizures</td><td>Long-term memory, cognitive integration, learning, emotions</td></tr>
+<tr><td class="bad">Posterior Fossa / Cerebellum</td><td>Abnormal head posturing, balance deficits, nausea</td><td><strong>BIG CONCERN in children: tonsil herniation &#8212; can be fatal.</strong> Hydrocephalus from blocked CSF. Monitor ICP closely</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">General Signs &amp; Symptoms (NOT Location-Specific)</div>
+<p>Headache (presenting symptom in 30% of cases &#8212; gets worse as day goes on, pronounced with coughing or exercise, interrupts sleep, severe with recent onset, with nausea), seizures, altered mental status, papilledema (optic nerve swelling = increased ICP).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Karnofsky Scale, Imaging &amp; PT Intervention</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Karnofsky Performance Status Scale</div>
+<p>Scale indicating the patient's condition and ability to carry on normal activity. 100% = normal, no complaints. <strong>90% = completes normal activity with minor symptoms.</strong> 80% = normal activity with effort. 70% = cares for self but unable to carry on normal activity. 60% = requires occasional assistance. 50% = requires considerable assistance. 40% = disabled. 30% = severely disabled. 20% = very sick. 10% = moribund. <strong>FIM (Functional Independence Measure)</strong> is useful during eval &#8212; provides a means of documenting response to therapy intervention.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">PT Intervention Considerations</div>
+<p>Treatment must consider: the nature of the tumor, fluctuating neurological function, and likelihood for progressive decline.<br><strong>For metastatic tumor with mild hemiparesis and gait abnormalities (70 yo, not receiving tumor treatment):</strong> Optimize functional capabilities through durable medical equipment to promote safety and independence &#8212; NOT aggressive strengthening or neuroplasticity-focused rehab.<br><strong>For operable primary tumor:</strong> More aggressive rehab approach, functional recovery through neural plasticity principles.<br><strong>SNF patient with inoperable tumor showing long-term memory deficits, cognitive deficits, inability to transfer learning:</strong> Likely bilateral frontal or medial temporal involvement.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-cerebellar">
 <div class="container">
-  <div class="section-title">Cerebellar Disorders &#8212; Pathways, Deficits &amp; PT Management</div>
-  <div class="section-sub">The cerebellum has IPSILATERAL control over the body (2 points of output decussation). Lesion = movement deficits on the SAME side of the body. Vital for motor learning, timing, anticipatory cues, and environmental adaptation. Without it, movements become conscious. The cerebellum compares what IS actually happening to the INTENT of higher-order motor commands.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Cerebellar Pathways &amp; Functional Zones</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip"><div class="bl-label">Afferent &amp; Efferent Pathways</div><p><strong>Afferent (input):</strong> Receives from cortex, sensory modalities, brainstem nuclei, spinal tracts. Major source: corticopontine fibers from frontal, temporal, parietal, and occipital lobes traveling in the internal capsule and cerebral peduncles. Spinocerebellar fibers provide info on limb movement and spinal cord interneuron activity &#8212; transmits unconscious info for rapid feedback allowing fine adjustments. <strong>Efferent (output):</strong> Projects to cerebrum and brainstem, exerting strong influence on movement. Outputs project to Ventrolateral nucleus of thalamus (VL) &#8594; motor cortex, premotor cortex, SMA, and parietal lobe to influence motor planning.</p></div>
-    <table class="data-table"><thead><tr><th>Zone</th><th>Controls</th><th>Lesion Effects</th></tr></thead><tbody>
-      <tr><td class="hi">Vestibulocerebellum (Flocculonodular)</td><td>VOR, gaze stabilization, posture</td><td>Vision does NOT improve balance (unlike other zones). VOR cancellation impaired</td></tr>
-      <tr><td class="hi">Spinocerebellum (Vermis)</td><td>Medial motor system &#8212; proximal trunk musculature BILATERALLY</td><td><strong>Truncal ataxia.</strong> Midline lesion = bilateral trunk involvement. Titubation (head/trunk tremor)</td></tr>
-      <tr><td class="hi">Spinocerebellum (Intermediate)</td><td>Lateral motor system &#8212; limb control</td><td><strong>Appendicular ataxia.</strong> Ipsilateral limb incoordination</td></tr>
-      <tr><td class="hi">Cerebrocerebellum (Lateral)</td><td>Motor planning, timing, sequencing. Mental rehearsal of movement</td><td>Dysmetria, intention tremor, dysdiadochokinesia. Loss of feedforward control</td></tr>
-    </tbody></table>
-    <div class="bl-strip gold"><div class="bl-label">What the Cerebellum Does &#8212; Why It Matters</div><p>Vital to <strong>motor learning</strong> &#8212; feedforward based on memory from previous motor and sensory outputs. Stored internal memory of limb dynamics helps generate motor commands for multi-joint movements. Provides precise temporal and spatial control. Ability to remember what has to happen spatially or temporally = activity-dependent plasticity = constant adaptive learning. <strong>Without it, movements become conscious</strong> &#8212; adaptive learning (walking on various surfaces) is lost, patients must use cognitive/conscious control.</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Cerebellar Arteries &amp; Common Deficits</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Artery</th><th>Supplies</th><th>Stroke Symptoms</th></tr></thead><tbody>
-      <tr><td class="hi">SCA (Superior)</td><td>Superior cerebellar peduncles, deep nuclei, superior vermis</td><td>Ipsilateral UE dysmetria, gait unsteadiness, dysarthric speech, nystagmus</td></tr>
-      <tr><td class="hi">AICA (Anterior Inferior)</td><td>Middle cerebellar peduncles, small portion of anterior cerebellum</td><td>Dysmetria, vestibular signs, facial sensory loss. <strong>Unilateral hearing loss possible</strong> (internal auditory artery arises from AICA)</td></tr>
-      <tr><td class="warn">PICA (Posterior Inferior)</td><td>Inferior half of cerebellum and vermis</td><td>Vertigo, unsteadiness, <strong>gait ataxia</strong>, nystagmus</td></tr>
-    </tbody></table>
-    <div class="bl-strip red"><div class="bl-label">Note</div><p>Infarcts most commonly in PICA and SCA territories. AICA and PICA also supply medulla and pons &#8212; can confound assessment. Ataxia can also be caused by lesions OUTSIDE cerebellum that involve cerebellar input pathways (e.g., pons or cerebellar peduncle lesion). Sensory ataxia from posterior column-medial lemniscus damage &#8594; loss of joint position sense &#8594; wide-based unsteady gait that IMPROVES with visual feedback (unlike cerebellar ataxia).</p></div>
-    <table class="data-table"><thead><tr><th>Deficit</th><th>Description</th><th>Testing</th></tr></thead><tbody>
-      <tr><td class="warn">Ataxia</td><td>"Lack of order." Uncoordinated, wavering movement. Disordered contraction of agonists/antagonists. Pattern: overshoot, overcorrect, overshoot. Trunk vs limb ataxia depends on vermis vs hemisphere</td><td>Gait observation &#8212; "drunken gait": uneven step length, wide BOS, absent rhythm, feet lifted too high, absent arm swing. Falls backward toward side of lesion</td></tr>
-      <tr><td class="warn">Dysmetria</td><td>Inability to properly scale movement distance. Hyper/hypometric. Impaired sequencing of agonists/antagonists. Only respond by feedback. Abnormally high grip force. Delayed initiation</td><td>Finger-to-nose test, heel-to-shin</td></tr>
-      <tr><td class="hi">Dysdiadochokinesia</td><td>Unable to perform rapid alternating movements. Slow concentrated movement, quickly loses ROM and rhythm. Unable to stop ongoing movements (hypermetria), reverse, or time muscles appropriately</td><td>Rapid alternating movements (pronation/supination)</td></tr>
-      <tr><td class="hi">Movement Decomposition</td><td>Inability to perform movement smoothly &#8212; performed in sequence of steps instead. Breakdown in executing movement as a whole</td><td>Heel-to-shin: heel slides off shin as it moves toward ankle</td></tr>
-      <tr><td class="hi">Kinetic/Intention Tremor</td><td>Hand oscillates during finger-to-nose or heel-to-shin (2&#8211;4 Hz). Intention tremor = specific form during visually guided movement toward target</td><td>Finger-to-nose, heel-to-shin observation</td></tr>
-      <tr><td class="hi">Postural Tremor</td><td>Seen when holding posture without support (3 Hz). Less common, disappears at rest</td><td>Sustained posture holding</td></tr>
-      <tr><td class="hi">Muscle Hypotonia</td><td>Linked to spinocerebellum: decreased excitation of vestibulospinal and reticulospinal pathways. Muscles feel less firm, limb feels heavy in PROM. DTRs normal in amplitude but decreased ability to stabilize limbs. Wide, flat footprints (shoes off)</td><td>Palpation, PROM assessment, footprint observation</td></tr>
-      <tr><td class="hi">Imbalance</td><td>Increased postural sway, excessive/diminished responses to disturbance. <strong>Titubation</strong> = tremor of head/trunk with midline lesions. Vestibulocerebellum: does NOT improve with vision. Anterior lobe: MAY improve with vision</td><td>Romberg (differentiates cerebellar from vestibular/proprioceptive), tandem gait. Loss of balance toward side of lesion</td></tr>
-      <tr><td class="hi">Oculomotor Deficits</td><td>Ocular dysmetria (over/undershoot during saccades). Resting nystagmus. Gaze-evoked nystagmus changes direction with gaze. Smooth pursuit becomes saccadic. Impaired VOR cancellation</td><td>Saccade testing, smooth pursuit, VOR cancellation. Can cause difficulty reading, coordinating limb movements, and worsen dynamic balance</td></tr>
-      <tr><td class="hi">Speech (Dysarthria)</td><td>Melodic quality and rhythm changed. Words/syllables pronounced slowly. Pauses inappropriately short or long. Attributed to coordination and timing of speech motor output</td><td>Listen for scanning speech pattern</td></tr>
-    </tbody></table>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Cerebellar PT Assessment &amp; Interventions</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip green"><div class="bl-label">PT Assessment</div><p>Neuro exam with emphasis on coordination and timing tasks. Assess functional tasks: bed mobility, transfers, elevation from variable surfaces, sitting/standing balance, gait in variable environments, ADLs (dressing, grooming, feeding). <strong>Note:</strong> If cerebellum AND cerebral cortex are both involved, cortical damage may mask some cerebellar symptoms.</p></div>
-    <div class="bl-strip gold"><div class="bl-label">PT Interventions &#8212; Emphasis Areas</div><p>Will require repetition and task sequencing. Difficulty with faster movements and more complex multi-joint tasks.<br><strong>Postural stability/core stabilization:</strong> Head and trunk control in various positions. Challenge with non-compliant and compliant surfaces. Rhythmic stabilization (stability &gt; strength). Push-pull with PT, joint approximation. Sitting on dynadisc/physioball.<br><strong>Sitting balance:</strong> Maintain trunk posture during UE activity or trunk rotation. Functional activities (supine to sit &#8212; optimal strategy for patient's lifestyle).<br><strong>Sit-to-stand:</strong> Practice correct sequence with emphasis on COG placement &#8212; ataxic individuals may lean too far forward or extend trunk too early (timing issues). High reps, increase verbal and visual feedback. Progress with unstable surfaces.<br><strong>Standing balance:</strong> May use biofeedback on force plate for COG control. Floor transfers.<br><strong>Ambulation:</strong> Give specific verbal feedback on step length, body rotation, trunk/accessory movements. Walking in tall kneeling (limits limb ataxia, strengthens trunk/hips). Stepping over objects/to targets (hurdles, agility ladder, lines on floor).<br><strong>AD selection:</strong> Bilateral platform walker as starting point (more contact points, trunk stabilization) &#8594; progress to FWW &#8594; no AD as trunk stability improves. Single cane has sequencing issues. Walking poles for reciprocal UE/LE coordination.</p></div>
-    <div class="bl-strip purple"><div class="bl-label">Weighting Controversy &amp; Priming</div><p><strong>Weights:</strong> Can temporarily decrease amplitude of tremor. However, research shows it can be detrimental since patients cannot adjust to different limb torques &#8212; can worsen hypermetria. Distal weights make this MORE difficult. Slows movements down.<br><strong>Alternative:</strong> Non-weighted external compression to improve gait while core/postural stabilization is still poor &#8212; watch for compensation with overuse.<br><strong>Priming (before functional tasks):</strong> PNF patterns, rhythmic stabilization, slow reverse hold of LEs prior to gait training. No therapeutic procedure will eliminate dysmetria, but priming the motor system can temporarily reduce amplitude. All tasks performed with visual focus and attention by the patient.</p></div>
-    <div class="bl-strip"><div class="bl-label">Progressive vs Non-Progressive</div><p><strong>Progressive (worsening):</strong> Spinocerebellar ataxia (later midlife, autosomal dominant, 30+ types, no pharmacological treatment). MS, neurodegenerative diseases. Need periodic PT over lifetime, family education, caregiver training, equipment needs.<br><strong>Non-progressive (stable):</strong> Stroke, TBI, alcoholism (anterior superior vermis atrophy). More potential for substantial recovery.<br><strong>Episodic Ataxia:</strong> Rare autosomal dominant. Periods of ataxic movement (minutes to hours) induced by stress/excitement. N/V, vertigo, HA, blurred vision, diplopia, tinnitus.<br><strong>Responds well to medication.</strong></p></div>
-  </div></div>
+<div class="section-title">Cerebellar Disorders &#8212; Pathways, Deficits &amp; PT Management</div>
+<div class="section-sub">The cerebellum has IPSILATERAL control over the body (2 points of output decussation). Lesion = movement deficits on the SAME side of the body. Vital for motor learning, timing, anticipatory cues, and environmental adaptation. Without it, movements become conscious. The cerebellum compares what IS actually happening to the INTENT of higher-order motor commands.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Cerebellar Pathways &amp; Functional Zones</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Afferent &amp; Efferent Pathways</div>
+<p><strong>Afferent (input):</strong> Receives from cortex, sensory modalities, brainstem nuclei, spinal tracts. Major source: corticopontine fibers from frontal, temporal, parietal, and occipital lobes traveling in the internal capsule and cerebral peduncles. Spinocerebellar fibers provide info on limb movement and spinal cord interneuron activity &#8212; transmits unconscious info for rapid feedback allowing fine adjustments. <strong>Efferent (output):</strong> Projects to cerebrum and brainstem, exerting strong influence on movement. Outputs project to Ventrolateral nucleus of thalamus (VL) &#8594; motor cortex, premotor cortex, SMA, and parietal lobe to influence motor planning.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Zone</th><th>Controls</th><th>Lesion Effects</th></tr></thead><tbody>
+<tr><td class="hi">Vestibulocerebellum (Flocculonodular)</td><td>VOR, gaze stabilization, posture</td><td>Vision does NOT improve balance (unlike other zones). VOR cancellation impaired</td></tr>
+<tr><td class="hi">Spinocerebellum (Vermis)</td><td>Medial motor system &#8212; proximal trunk musculature BILATERALLY</td><td><strong>Truncal ataxia.</strong> Midline lesion = bilateral trunk involvement. Titubation (head/trunk tremor)</td></tr>
+<tr><td class="hi">Spinocerebellum (Intermediate)</td><td>Lateral motor system &#8212; limb control</td><td><strong>Appendicular ataxia.</strong> Ipsilateral limb incoordination</td></tr>
+<tr><td class="hi">Cerebrocerebellum (Lateral)</td><td>Motor planning, timing, sequencing. Mental rehearsal of movement</td><td>Dysmetria, intention tremor, dysdiadochokinesia. Loss of feedforward control</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">What the Cerebellum Does &#8212; Why It Matters</div>
+<p>Vital to <strong>motor learning</strong> &#8212; feedforward based on memory from previous motor and sensory outputs. Stored internal memory of limb dynamics helps generate motor commands for multi-joint movements. Provides precise temporal and spatial control. Ability to remember what has to happen spatially or temporally = activity-dependent plasticity = constant adaptive learning. <strong>Without it, movements become conscious</strong> &#8212; adaptive learning (walking on various surfaces) is lost, patients must use cognitive/conscious control.</p>
 </div>
 </div>
-
-<!-- ===== TAB 4: SCI ===== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Cerebellar Arteries &amp; Common Deficits</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Artery</th><th>Supplies</th><th>Stroke Symptoms</th></tr></thead><tbody>
+<tr><td class="hi">SCA (Superior)</td><td>Superior cerebellar peduncles, deep nuclei, superior vermis</td><td>Ipsilateral UE dysmetria, gait unsteadiness, dysarthric speech, nystagmus</td></tr>
+<tr><td class="hi">AICA (Anterior Inferior)</td><td>Middle cerebellar peduncles, small portion of anterior cerebellum</td><td>Dysmetria, vestibular signs, facial sensory loss. <strong>Unilateral hearing loss possible</strong> (internal auditory artery arises from AICA)</td></tr>
+<tr><td class="warn">PICA (Posterior Inferior)</td><td>Inferior half of cerebellum and vermis</td><td>Vertigo, unsteadiness, <strong>gait ataxia</strong>, nystagmus</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Note</div>
+<p>Infarcts most commonly in PICA and SCA territories. AICA and PICA also supply medulla and pons &#8212; can confound assessment. Ataxia can also be caused by lesions OUTSIDE cerebellum that involve cerebellar input pathways (e.g., pons or cerebellar peduncle lesion). Sensory ataxia from posterior column-medial lemniscus damage &#8594; loss of joint position sense &#8594; wide-based unsteady gait that IMPROVES with visual feedback (unlike cerebellar ataxia).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Deficit</th><th>Description</th><th>Testing</th></tr></thead><tbody>
+<tr><td class="warn">Ataxia</td><td>"Lack of order." Uncoordinated, wavering movement. Disordered contraction of agonists/antagonists. Pattern: overshoot, overcorrect, overshoot. Trunk vs limb ataxia depends on vermis vs hemisphere</td><td>Gait observation &#8212; "drunken gait": uneven step length, wide BOS, absent rhythm, feet lifted too high, absent arm swing. Falls backward toward side of lesion</td></tr>
+<tr><td class="warn">Dysmetria</td><td>Inability to properly scale movement distance. Hyper/hypometric. Impaired sequencing of agonists/antagonists. Only respond by feedback. Abnormally high grip force. Delayed initiation</td><td>Finger-to-nose test, heel-to-shin</td></tr>
+<tr><td class="hi">Dysdiadochokinesia</td><td>Unable to perform rapid alternating movements. Slow concentrated movement, quickly loses ROM and rhythm. Unable to stop ongoing movements (hypermetria), reverse, or time muscles appropriately</td><td>Rapid alternating movements (pronation/supination)</td></tr>
+<tr><td class="hi">Movement Decomposition</td><td>Inability to perform movement smoothly &#8212; performed in sequence of steps instead. Breakdown in executing movement as a whole</td><td>Heel-to-shin: heel slides off shin as it moves toward ankle</td></tr>
+<tr><td class="hi">Kinetic/Intention Tremor</td><td>Hand oscillates during finger-to-nose or heel-to-shin (2&#8211;4 Hz). Intention tremor = specific form during visually guided movement toward target</td><td>Finger-to-nose, heel-to-shin observation</td></tr>
+<tr><td class="hi">Postural Tremor</td><td>Seen when holding posture without support (3 Hz). Less common, disappears at rest</td><td>Sustained posture holding</td></tr>
+<tr><td class="hi">Muscle Hypotonia</td><td>Linked to spinocerebellum: decreased excitation of vestibulospinal and reticulospinal pathways. Muscles feel less firm, limb feels heavy in PROM. DTRs normal in amplitude but decreased ability to stabilize limbs. Wide, flat footprints (shoes off)</td><td>Palpation, PROM assessment, footprint observation</td></tr>
+<tr><td class="hi">Imbalance</td><td>Increased postural sway, excessive/diminished responses to disturbance. <strong>Titubation</strong> = tremor of head/trunk with midline lesions. Vestibulocerebellum: does NOT improve with vision. Anterior lobe: MAY improve with vision</td><td>Romberg (differentiates cerebellar from vestibular/proprioceptive), tandem gait. Loss of balance toward side of lesion</td></tr>
+<tr><td class="hi">Oculomotor Deficits</td><td>Ocular dysmetria (over/undershoot during saccades). Resting nystagmus. Gaze-evoked nystagmus changes direction with gaze. Smooth pursuit becomes saccadic. Impaired VOR cancellation</td><td>Saccade testing, smooth pursuit, VOR cancellation. Can cause difficulty reading, coordinating limb movements, and worsen dynamic balance</td></tr>
+<tr><td class="hi">Speech (Dysarthria)</td><td>Melodic quality and rhythm changed. Words/syllables pronounced slowly. Pauses inappropriately short or long. Attributed to coordination and timing of speech motor output</td><td>Listen for scanning speech pattern</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Cerebellar PT Assessment &amp; Interventions</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">PT Assessment</div>
+<p>Neuro exam with emphasis on coordination and timing tasks. Assess functional tasks: bed mobility, transfers, elevation from variable surfaces, sitting/standing balance, gait in variable environments, ADLs (dressing, grooming, feeding). <strong>Note:</strong> If cerebellum AND cerebral cortex are both involved, cortical damage may mask some cerebellar symptoms.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">PT Interventions &#8212; Emphasis Areas</div>
+<p>Will require repetition and task sequencing. Difficulty with faster movements and more complex multi-joint tasks.<br><strong>Postural stability/core stabilization:</strong> Head and trunk control in various positions. Challenge with non-compliant and compliant surfaces. Rhythmic stabilization (stability &gt; strength). Push-pull with PT, joint approximation. Sitting on dynadisc/physioball.<br><strong>Sitting balance:</strong> Maintain trunk posture during UE activity or trunk rotation. Functional activities (supine to sit &#8212; optimal strategy for patient's lifestyle).<br><strong>Sit-to-stand:</strong> Practice correct sequence with emphasis on COG placement &#8212; ataxic individuals may lean too far forward or extend trunk too early (timing issues). High reps, increase verbal and visual feedback. Progress with unstable surfaces.<br><strong>Standing balance:</strong> May use biofeedback on force plate for COG control. Floor transfers.<br><strong>Ambulation:</strong> Give specific verbal feedback on step length, body rotation, trunk/accessory movements. Walking in tall kneeling (limits limb ataxia, strengthens trunk/hips). Stepping over objects/to targets (hurdles, agility ladder, lines on floor).<br><strong>AD selection:</strong> Bilateral platform walker as starting point (more contact points, trunk stabilization) &#8594; progress to FWW &#8594; no AD as trunk stability improves. Single cane has sequencing issues. Walking poles for reciprocal UE/LE coordination.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Weighting Controversy &amp; Priming</div>
+<p><strong>Weights:</strong> Can temporarily decrease amplitude of tremor. However, research shows it can be detrimental since patients cannot adjust to different limb torques &#8212; can worsen hypermetria. Distal weights make this MORE difficult. Slows movements down.<br><strong>Alternative:</strong> Non-weighted external compression to improve gait while core/postural stabilization is still poor &#8212; watch for compensation with overuse.<br><strong>Priming (before functional tasks):</strong> PNF patterns, rhythmic stabilization, slow reverse hold of LEs prior to gait training. No therapeutic procedure will eliminate dysmetria, but priming the motor system can temporarily reduce amplitude. All tasks performed with visual focus and attention by the patient.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Progressive vs Non-Progressive</div>
+<p><strong>Progressive (worsening):</strong> Spinocerebellar ataxia (later midlife, autosomal dominant, 30+ types, no pharmacological treatment). MS, neurodegenerative diseases. Need periodic PT over lifetime, family education, caregiver training, equipment needs.<br><strong>Non-progressive (stable):</strong> Stroke, TBI, alcoholism (anterior superior vermis atrophy). More potential for substantial recovery.<br><strong>Episodic Ataxia:</strong> Rare autosomal dominant. Periods of ataxic movement (minutes to hours) induced by stress/excitement. N/V, vertigo, HA, blurred vision, diplopia, tinnitus.<br><strong>Responds well to medication.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-sci">
 <div class="container">
-  <div class="section-title">Spinal Cord Injury &#8212; ASIA, Syndromes &amp; Functional Goals</div>
-  <div class="section-sub">SCI results in loss of motor and/or sensory function below the level of injury. The level and completeness of injury determine functional expectations. Upper motor neurons (UMNs) travel from the brain through the spinal cord; lower motor neurons (LMNs) exit between each vertebra and go to the body. Damage to the cord interrupts the "telephone cable" between the main office (brain) and individual offices (body parts).</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>ASIA Classification &amp; Complete vs Incomplete</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>ASIA Grade</th><th>Definition</th><th>Motor/Sensory</th></tr></thead><tbody>
-      <tr><td class="bad">A &#8212; Complete</td><td>No motor or sensory function preserved in sacral segments S4&#8211;S5</td><td>No function below level of injury including sacral sparing</td></tr>
-      <tr><td class="warn">B &#8212; Sensory Incomplete</td><td>Sensory but NOT motor function preserved below level, including sacral segments</td><td>Can feel below level but cannot move</td></tr>
-      <tr><td class="hi">C &#8212; Motor Incomplete</td><td>Motor function preserved below level, &gt;50% of key muscles below level have muscle grade &lt;3</td><td>Some movement but not against gravity</td></tr>
-      <tr><td class="ok">D &#8212; Motor Incomplete</td><td>Motor function preserved, &#8805;50% of key muscles below level have muscle grade &#8805;3</td><td>Antigravity strength in most key muscles</td></tr>
-      <tr><td class="ok">E &#8212; Normal</td><td>Motor and sensory function are normal</td><td>Full recovery (may still have pain, spasticity)</td></tr>
-    </tbody></table>
-    <div class="bl-strip"><div class="bl-label">ASIA Examination</div><p>Doctor performs <strong>pin prick test</strong> (sensory level) and <strong>key muscle group testing</strong> (motor level) at each dermatome/myotome level. The level of injury = most caudal level with intact motor and sensory function.<br><strong>SCIM (Spinal Cord Independence Measure):</strong> Outcome measure specific to SCI &#8212; assesses self-care, respiration/sphincter management, and mobility. Each injury is different &#8212; described by level and type (complete vs incomplete).</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>SCI Syndromes &#8212; Incomplete Patterns</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Syndrome</th><th>Mechanism</th><th>Deficits</th><th>Preserved</th></tr></thead><tbody>
-      <tr><td class="warn">Anterior Cord</td><td>Flexion injuries</td><td>Loss of motor function AND pain/temperature sensation below level of lesion</td><td>Proprioception and vibration (posterior columns intact)</td></tr>
-      <tr><td class="hi">Posterior Cord</td><td>Extension injuries (rare)</td><td>Loss of touch, vibration, proprioception, body positioning (posterior columns damaged)</td><td>Motor function and pain/temp sensation</td></tr>
-      <tr><td class="warn">Central Cord</td><td>Hyperextension injuries (most common incomplete)</td><td><strong>UE affected more than LE.</strong> Sensory less than motor impairments</td><td>LE function relatively preserved. Usually recover to ambulate</td></tr>
-      <tr><td class="hi">Brown-S&#233;quard</td><td>Hemisection of spinal cord (penetrating injury)</td><td><strong>Ipsilateral:</strong> weakness/paralysis AND proprioceptive deficits. <strong>Contralateral:</strong> loss of pain and temperature</td><td>Best prognosis of all incomplete syndromes</td></tr>
-    </tbody></table>
-    <div class="bl-strip"><div class="bl-label">Additional SCI Conditions</div><p><strong>Cauda Equina Syndrome:</strong> LMN lesion (roots, not cord). Variable pattern of weakness, sensory loss, areflexia.<br><strong>Conus Medullaris:</strong> Injury to terminal end of cord.<br><strong>Spina Bifida:</strong> Part of spinal cord and meninges exposed through gap in backbone. Often causes LE paralysis and sometimes mental impairments.</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Functional Levels, Autonomic Dysreflexia &amp; Psychosocial</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Level</th><th>Key Muscles</th><th>Functional Expectations</th></tr></thead><tbody>
-      <tr><td class="bad">C1&#8211;C3</td><td>Limited neck muscles</td><td>Ventilator dependent. Power wheelchair with head/chin/sip-puff control. Dependent for all ADLs</td></tr>
-      <tr><td class="warn">C4</td><td>Diaphragm, some traps</td><td>May wean from vent. Power WC. Dependent for most ADLs. Can use environmental control units</td></tr>
-      <tr><td class="hi">C5</td><td>Biceps, deltoids</td><td>Power or manual WC (on flat surfaces). Assisted feeding with adaptive equipment. Some self-care with setup</td></tr>
-      <tr><td class="hi">C6</td><td>Wrist extensors (tenodesis grip)</td><td>Modified independence with self-care using tenodesis. Manual WC. Can drive with hand controls. Transfers with sliding board</td></tr>
-      <tr><td class="hi">C7&#8211;C8</td><td>Triceps, finger flexors/extensors</td><td>Independent self-care. Manual WC. Independent transfers. Can live alone with modifications</td></tr>
-      <tr><td class="hi">T1&#8211;T9</td><td>Intercostals (progressive), trunk stability improving</td><td>Full UE function. Independent WC mobility. Independent ADLs. Community mobility in WC. Limited trunk control (higher levels)</td></tr>
-      <tr><td class="ok">T10&#8211;L1</td><td>Abdominals, hip flexors</td><td>Household ambulation with bilateral KAFOs and forearm crutches possible. WC still primary for community</td></tr>
-      <tr><td class="ok">L2&#8211;S1</td><td>Progressive LE strength</td><td>Community ambulation with AFOs and crutches/cane possible. May not need WC depending on level and completeness</td></tr>
-    </tbody></table>
-    <div class="bl-strip red"><div class="bl-label">Autonomic Dysreflexia &#8212; MEDICAL EMERGENCY</div><p>Occurs in SCI at <strong>T6 and above.</strong> Massive sympathetic response &#8212; widespread peripheral arterial vasoconstriction causing severe hypertension.<br><strong>S/S:</strong> HTN, bradycardia, diaphoresis (sweating), headache, blotchy/red skin, piloerection (goosebumps).<br><strong>Common triggers (noxious stimuli below lesion level):</strong> UTI or fecal impaction (#1 causes), pressure ulcers, tight straps/clothing on LE.<br><strong>Treatment:</strong> Sit or stand patient to lower BP (<strong>DO NOT lie them down</strong>). Relieve noxious stimuli immediately. Loosen tight clothing.<br><strong>Avoid increasing BP &#8212; risk of hemorrhagic stroke.</strong></p></div>
-    <div class="bl-strip gold"><div class="bl-label">Bladder, Bowel &amp; Sexual Function</div><p><strong>Bladder:</strong> Spastic bladder (UMN &#8212; uncontrollable contractions) vs flaccid bladder (LMN &#8212; overflow). Bladder dysfunction is most common presentation. Catheter management critical.<br><strong>Sexual function in males:</strong> Reflexive erection (PNS efferents S2&#8211;4), psychogenic erection (SNS efferents T11&#8211;L2). Emission from T10&#8211;L2. Ejaculation from S2&#8211;4 somatic efferents. Function depends on level and completeness.<br><strong>Skin care:</strong> Pressure relief every 15&#8211;30 minutes. Position changes. Inspect skin daily. Shear forces, moisture, nutrition all affect integrity.</p></div>
-    <div class="bl-strip purple"><div class="bl-label">Psychosocial &#8212; DABDA &amp; Community Reintegration</div><p><strong>DABDA grief stages:</strong> Denial, Anger, Bargaining, Depression, Acceptance. Plus anxiety.<br><strong>Coping with loss:</strong> Physical loss (dependence), physique changes (atrophy), perception changes (where am I in space), interaction with environment, financial security, social isolation.<br><strong>Behavior changes</strong> can be from: sensory deprivation, lack of time cues, sleep deprivation, pain, O&#8322; desaturation, psychoactive medication, anesthesia effects, head injury &#8212; <strong>figure out the actual problem before assuming it's part of the injury.</strong> <strong>Community reintegration:</strong> Teaching physical skills is NOT enough. Help with self-advocacy. Involve the whole family.<br><strong>NEVER imply patient is a second-class citizen.</strong> Independence not dependence. Positive atmosphere. Educational model not medical model. Hope and truth. Counseling, peer support, social support.</p></div>
-  </div></div>
+<div class="section-title">Spinal Cord Injury &#8212; ASIA, Syndromes &amp; Functional Goals</div>
+<div class="section-sub">SCI results in loss of motor and/or sensory function below the level of injury. The level and completeness of injury determine functional expectations. Upper motor neurons (UMNs) travel from the brain through the spinal cord; lower motor neurons (LMNs) exit between each vertebra and go to the body. Damage to the cord interrupts the "telephone cable" between the main office (brain) and individual offices (body parts).</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>ASIA Classification &amp; Complete vs Incomplete</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>ASIA Grade</th><th>Definition</th><th>Motor/Sensory</th></tr></thead><tbody>
+<tr><td class="bad">A &#8212; Complete</td><td>No motor or sensory function preserved in sacral segments S4&#8211;S5</td><td>No function below level of injury including sacral sparing</td></tr>
+<tr><td class="warn">B &#8212; Sensory Incomplete</td><td>Sensory but NOT motor function preserved below level, including sacral segments</td><td>Can feel below level but cannot move</td></tr>
+<tr><td class="hi">C &#8212; Motor Incomplete</td><td>Motor function preserved below level, &gt;50% of key muscles below level have muscle grade &lt;3</td><td>Some movement but not against gravity</td></tr>
+<tr><td class="ok">D &#8212; Motor Incomplete</td><td>Motor function preserved, &#8805;50% of key muscles below level have muscle grade &#8805;3</td><td>Antigravity strength in most key muscles</td></tr>
+<tr><td class="ok">E &#8212; Normal</td><td>Motor and sensory function are normal</td><td>Full recovery (may still have pain, spasticity)</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">ASIA Examination</div>
+<p>Doctor performs <strong>pin prick test</strong> (sensory level) and <strong>key muscle group testing</strong> (motor level) at each dermatome/myotome level. The level of injury = most caudal level with intact motor and sensory function.<br><strong>SCIM (Spinal Cord Independence Measure):</strong> Outcome measure specific to SCI &#8212; assesses self-care, respiration/sphincter management, and mobility. Each injury is different &#8212; described by level and type (complete vs incomplete).</p>
 </div>
 </div>
-
-<!-- ===== TAB 5: HIV/AIDS & INFECTIONS ===== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>SCI Syndromes &#8212; Incomplete Patterns</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Syndrome</th><th>Mechanism</th><th>Deficits</th><th>Preserved</th></tr></thead><tbody>
+<tr><td class="warn">Anterior Cord</td><td>Flexion injuries</td><td>Loss of motor function AND pain/temperature sensation below level of lesion</td><td>Proprioception and vibration (posterior columns intact)</td></tr>
+<tr><td class="hi">Posterior Cord</td><td>Extension injuries (rare)</td><td>Loss of touch, vibration, proprioception, body positioning (posterior columns damaged)</td><td>Motor function and pain/temp sensation</td></tr>
+<tr><td class="warn">Central Cord</td><td>Hyperextension injuries (most common incomplete)</td><td><strong>UE affected more than LE.</strong> Sensory less than motor impairments</td><td>LE function relatively preserved. Usually recover to ambulate</td></tr>
+<tr><td class="hi">Brown-S&#233;quard</td><td>Hemisection of spinal cord (penetrating injury)</td><td><strong>Ipsilateral:</strong> weakness/paralysis AND proprioceptive deficits. <strong>Contralateral:</strong> loss of pain and temperature</td><td>Best prognosis of all incomplete syndromes</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Additional SCI Conditions</div>
+<p><strong>Cauda Equina Syndrome:</strong> LMN lesion (roots, not cord). Variable pattern of weakness, sensory loss, areflexia.<br><strong>Conus Medullaris:</strong> Injury to terminal end of cord.<br><strong>Spina Bifida:</strong> Part of spinal cord and meninges exposed through gap in backbone. Often causes LE paralysis and sometimes mental impairments.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Functional Levels, Autonomic Dysreflexia &amp; Psychosocial</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Level</th><th>Key Muscles</th><th>Functional Expectations</th></tr></thead><tbody>
+<tr><td class="bad">C1&#8211;C3</td><td>Limited neck muscles</td><td>Ventilator dependent. Power wheelchair with head/chin/sip-puff control. Dependent for all ADLs</td></tr>
+<tr><td class="warn">C4</td><td>Diaphragm, some traps</td><td>May wean from vent. Power WC. Dependent for most ADLs. Can use environmental control units</td></tr>
+<tr><td class="hi">C5</td><td>Biceps, deltoids</td><td>Power or manual WC (on flat surfaces). Assisted feeding with adaptive equipment. Some self-care with setup</td></tr>
+<tr><td class="hi">C6</td><td>Wrist extensors (tenodesis grip)</td><td>Modified independence with self-care using tenodesis. Manual WC. Can drive with hand controls. Transfers with sliding board</td></tr>
+<tr><td class="hi">C7&#8211;C8</td><td>Triceps, finger flexors/extensors</td><td>Independent self-care. Manual WC. Independent transfers. Can live alone with modifications</td></tr>
+<tr><td class="hi">T1&#8211;T9</td><td>Intercostals (progressive), trunk stability improving</td><td>Full UE function. Independent WC mobility. Independent ADLs. Community mobility in WC. Limited trunk control (higher levels)</td></tr>
+<tr><td class="ok">T10&#8211;L1</td><td>Abdominals, hip flexors</td><td>Household ambulation with bilateral KAFOs and forearm crutches possible. WC still primary for community</td></tr>
+<tr><td class="ok">L2&#8211;S1</td><td>Progressive LE strength</td><td>Community ambulation with AFOs and crutches/cane possible. May not need WC depending on level and completeness</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Autonomic Dysreflexia &#8212; MEDICAL EMERGENCY</div>
+<p>Occurs in SCI at <strong>T6 and above.</strong> Massive sympathetic response &#8212; widespread peripheral arterial vasoconstriction causing severe hypertension.<br><strong>S/S:</strong> HTN, bradycardia, diaphoresis (sweating), headache, blotchy/red skin, piloerection (goosebumps).<br><strong>Common triggers (noxious stimuli below lesion level):</strong> UTI or fecal impaction (#1 causes), pressure ulcers, tight straps/clothing on LE.<br><strong>Treatment:</strong> Sit or stand patient to lower BP (<strong>DO NOT lie them down</strong>). Relieve noxious stimuli immediately. Loosen tight clothing.<br><strong>Avoid increasing BP &#8212; risk of hemorrhagic stroke.</strong></p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Bladder, Bowel &amp; Sexual Function</div>
+<p><strong>Bladder:</strong> Spastic bladder (UMN &#8212; uncontrollable contractions) vs flaccid bladder (LMN &#8212; overflow). Bladder dysfunction is most common presentation. Catheter management critical.<br><strong>Sexual function in males:</strong> Reflexive erection (PNS efferents S2&#8211;4), psychogenic erection (SNS efferents T11&#8211;L2). Emission from T10&#8211;L2. Ejaculation from S2&#8211;4 somatic efferents. Function depends on level and completeness.<br><strong>Skin care:</strong> Pressure relief every 15&#8211;30 minutes. Position changes. Inspect skin daily. Shear forces, moisture, nutrition all affect integrity.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Psychosocial &#8212; DABDA &amp; Community Reintegration</div>
+<p><strong>DABDA grief stages:</strong> Denial, Anger, Bargaining, Depression, Acceptance. Plus anxiety.<br><strong>Coping with loss:</strong> Physical loss (dependence), physique changes (atrophy), perception changes (where am I in space), interaction with environment, financial security, social isolation.<br><strong>Behavior changes</strong> can be from: sensory deprivation, lack of time cues, sleep deprivation, pain, O&#8322; desaturation, psychoactive medication, anesthesia effects, head injury &#8212; <strong>figure out the actual problem before assuming it's part of the injury.</strong><strong>Community reintegration:</strong> Teaching physical skills is NOT enough. Help with self-advocacy. Involve the whole family.<br><strong>NEVER imply patient is a second-class citizen.</strong> Independence not dependence. Positive atmosphere. Educational model not medical model. Hope and truth. Counseling, peer support, social support.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-hiv">
 <div class="container">
-  <div class="section-title">HIV/AIDS &amp; CNS Infections</div>
-  <div class="section-sub">HIV is the virus that causes AIDS. As viral load increases, CD4+ count decreases (inverse relationship). As immunity is compromised, patients develop AIDS-defining illnesses. Up to 70% of HIV patients have some form of neurological symptom. Progression from HIV to AIDS was linear prior to ART (antiretroviral therapy).</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Stages, Transmission &amp; ART</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Stage</th><th>Definition</th><th>CD4+ Count</th></tr></thead><tbody>
-      <tr><td class="hi">Stage 1 &#8212; HIV Infection</td><td>No AIDS-defining condition</td><td>&gt;500</td></tr>
-      <tr><td class="warn">Stage 2 &#8212; HIV Infection</td><td>No AIDS-defining condition</td><td>200&#8211;499</td></tr>
-      <tr><td class="bad">Stage 3 &#8212; AIDS</td><td><strong>CD4+ &lt;200 OR documentation of AIDS-defining condition</strong></td><td>&lt;200</td></tr>
-    </tbody></table>
-    <div class="bl-strip"><div class="bl-label">Transmission &amp; ART</div><p><strong>Transmission hierarchy:</strong> MSM (men who have sex with men) &gt; IDU (injection drug use) &gt; MSM + IDU &gt; Heterosexual &gt; Other (hemophilia, blood transfusion).<br><strong>ART (Antiretroviral Therapy):</strong> Viral load dependent. Changes to regimen due to resistance = salvage therapy. Doctor begins ART when CD4 &#8804;350.<br><strong>HIV wasting syndrome:</strong> &#8805;10% baseline body weight loss in 12 months or 5% in 6 months with chronic diarrhea or unexplained weakness/fever. Treatment: nutritional counseling, medications, resistance strength training. ART can compromise nutrition (side effects) and cause lipodystrophy.</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Neurologic Involvement &#8212; ANS, CNS &amp; PNS</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>System</th><th>Involvement</th><th>Clinical Manifestations</th></tr></thead><tbody>
-      <tr><td class="hi">ANS</td><td>Arrhythmias including resting tachycardia. Abnormal BP responses to isometric exercise and positional changes</td><td>Greatest ANS involvement = greater risk for dementia, myelopathy, and sensory peripheral neuropathy</td></tr>
-      <tr><td class="warn">CNS</td><td>HIV enters CNS during early stages. Infected monocytes cross BBB, infect macrophages and microglia. Lesions = sites for opportunistic infections</td><td><strong>Toxoplasmosis:</strong> Altered cognition, HA, focal neuro deficits, encephalitis, seizures. Meningitis, encephalitis &#8594; cognitive dysfunction. <strong>HANDS (HIV-Associated Neurocognitive Disorders):</strong> Dementia, amnesia, delirium</td></tr>
-      <tr><td class="warn">PNS</td><td>PNS disease reported in up to 50% of HIV patients</td><td><strong>Early/Middle:</strong> Distal Symmetrical Polyneuropathy (DSP) &#8212; distal LE pain, paresthesia, decreased temp sensitivity. <strong>Advanced:</strong> Decreased ankle/knee reflexes, diminished temp/vibration/proprioception. <strong>Muscular:</strong> Progressive weakness, leading to paralysis (resembles GBS). Demyelination/denervation from macrophage infiltration, ART drug toxicity, cytokine neurotoxicity, HIV protein toxicity, mitochondrial damage. Postural muscles affected &#8594; balance and gait disturbances</td></tr>
-    </tbody></table>
-    <div class="bl-strip green"><div class="bl-label">PT Implications for HIV/AIDS</div><p><strong>Wear gloves for inpatient</strong> (outpatient is up to you), mask for sure. Stress decreases CD4 counts. Exercise helps maintain immune function.<br><strong>Assessment:</strong> Balance (standing &#8212; Romberg, tandem), coordination (finger-to-nose, pronation/supination), 6MWT, strength (MMT), sensation, CN 10 (vagus), reflexes, hearing extinction, grip strength, mini-mental exam, short-term memory.<br><strong>Treatment priorities:</strong> ADL/functional, gait/balance, strength, coordination, aerobic conditioning.<br><strong>Education:</strong> Medication management, opportunistic infection awareness, motivation for independence. Consider speech/OT referral.<br><strong>Use it or lose it</strong> &#8212; neuroplasticity principles apply. Motivation matters. Start with gait belt, AD, parallel bars for stability. Progress walking forward/backward, over obstacles, treadmill with incline, medicine ball, push/pull sled, sit-to-stand.</p></div>
-  </div></div>
+<div class="section-title">HIV/AIDS &amp; CNS Infections</div>
+<div class="section-sub">HIV is the virus that causes AIDS. As viral load increases, CD4+ count decreases (inverse relationship). As immunity is compromised, patients develop AIDS-defining illnesses. Up to 70% of HIV patients have some form of neurological symptom. Progression from HIV to AIDS was linear prior to ART (antiretroviral therapy).</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Stages, Transmission &amp; ART</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Stage</th><th>Definition</th><th>CD4+ Count</th></tr></thead><tbody>
+<tr><td class="hi">Stage 1 &#8212; HIV Infection</td><td>No AIDS-defining condition</td><td>&gt;500</td></tr>
+<tr><td class="warn">Stage 2 &#8212; HIV Infection</td><td>No AIDS-defining condition</td><td>200&#8211;499</td></tr>
+<tr><td class="bad">Stage 3 &#8212; AIDS</td><td><strong>CD4+ &lt;200 OR documentation of AIDS-defining condition</strong></td><td>&lt;200</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Transmission &amp; ART</div>
+<p><strong>Transmission hierarchy:</strong> MSM (men who have sex with men) &gt; IDU (injection drug use) &gt; MSM + IDU &gt; Heterosexual &gt; Other (hemophilia, blood transfusion).<br><strong>ART (Antiretroviral Therapy):</strong> Viral load dependent. Changes to regimen due to resistance = salvage therapy. Doctor begins ART when CD4 &#8804;350.<br><strong>HIV wasting syndrome:</strong> &#8805;10% baseline body weight loss in 12 months or 5% in 6 months with chronic diarrhea or unexplained weakness/fever. Treatment: nutritional counseling, medications, resistance strength training. ART can compromise nutrition (side effects) and cause lipodystrophy.</p>
 </div>
 </div>
-
-<!-- ===== TAB 6: MS ===== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Neurologic Involvement &#8212; ANS, CNS &amp; PNS</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>System</th><th>Involvement</th><th>Clinical Manifestations</th></tr></thead><tbody>
+<tr><td class="hi">ANS</td><td>Arrhythmias including resting tachycardia. Abnormal BP responses to isometric exercise and positional changes</td><td>Greatest ANS involvement = greater risk for dementia, myelopathy, and sensory peripheral neuropathy</td></tr>
+<tr><td class="warn">CNS</td><td>HIV enters CNS during early stages. Infected monocytes cross BBB, infect macrophages and microglia. Lesions = sites for opportunistic infections</td><td><strong>Toxoplasmosis:</strong> Altered cognition, HA, focal neuro deficits, encephalitis, seizures. Meningitis, encephalitis &#8594; cognitive dysfunction. <strong>HANDS (HIV-Associated Neurocognitive Disorders):</strong> Dementia, amnesia, delirium</td></tr>
+<tr><td class="warn">PNS</td><td>PNS disease reported in up to 50% of HIV patients</td><td><strong>Early/Middle:</strong> Distal Symmetrical Polyneuropathy (DSP) &#8212; distal LE pain, paresthesia, decreased temp sensitivity. <strong>Advanced:</strong> Decreased ankle/knee reflexes, diminished temp/vibration/proprioception. <strong>Muscular:</strong> Progressive weakness, leading to paralysis (resembles GBS). Demyelination/denervation from macrophage infiltration, ART drug toxicity, cytokine neurotoxicity, HIV protein toxicity, mitochondrial damage. Postural muscles affected &#8594; balance and gait disturbances</td></tr></tbody></table>
+<div class="bl-strip green">
+<div class="bl-label">PT Implications for HIV/AIDS</div>
+<p><strong>Wear gloves for inpatient</strong> (outpatient is up to you), mask for sure. Stress decreases CD4 counts. Exercise helps maintain immune function.<br><strong>Assessment:</strong> Balance (standing &#8212; Romberg, tandem), coordination (finger-to-nose, pronation/supination), 6MWT, strength (MMT), sensation, CN 10 (vagus), reflexes, hearing extinction, grip strength, mini-mental exam, short-term memory.<br><strong>Treatment priorities:</strong> ADL/functional, gait/balance, strength, coordination, aerobic conditioning.<br><strong>Education:</strong> Medication management, opportunistic infection awareness, motivation for independence. Consider speech/OT referral.<br><strong>Use it or lose it</strong> &#8212; neuroplasticity principles apply. Motivation matters. Start with gait belt, AD, parallel bars for stability. Progress walking forward/backward, over obstacles, treadmill with incline, medicine ball, push/pull sled, sit-to-stand.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-ms">
 <div class="container">
-  <div class="section-title">Multiple Sclerosis &#8212; Subtypes, Symptoms &amp; Management</div>
-  <div class="section-sub">MS is an autoimmune disease where the immune response triggers activation of immune cells that cross the blood-brain barrier, producing cytotoxic effects within the CNS. Disruption of the myelin sheath slows neural transmission and causes nerves to fatigue rapidly. With severe disruption, conduction block occurs with resulting loss of function. MS attacks the myelin sheath of axons in the CNS (usually UMN presentation with spasticity).</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>MS Subtypes &#8212; 4 Clinical Courses</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Subtype</th><th>Course</th><th>Key Features</th></tr></thead><tbody>
-      <tr><td class="hi">RRMS (Relapsing-Remitting)</td><td>Relapses with full or partial recovery</td><td><strong>Most common form.</strong> Acute attacks (exacerbations) followed by recovery periods. Some patients have full recovery; others accumulate residual deficit after incomplete recovery</td></tr>
-      <tr><td class="warn">SPMS (Secondary-Progressive)</td><td>Progressive disability accumulation after initial relapsing course</td><td>May have occasional relapses and minor remissions. Develops from RRMS over time</td></tr>
-      <tr><td class="warn">PPMS (Primary-Progressive)</td><td>Progressive disability accumulation from onset</td><td>With or without temporary plateaus, minor remissions, and improvements. No clear relapses</td></tr>
-      <tr><td class="hi">PRMS (Progressive-Relapsing)</td><td>Progressive from onset WITH clear acute attacks</td><td>With or without full recovery from attacks. Rarest form</td></tr>
-    </tbody></table>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>MS Symptoms by System &amp; Uhthoff's Phenomenon</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>System</th><th>Symptoms</th></tr></thead><tbody>
-      <tr><td class="hi">Sensory</td><td>Hypoesthesia, numbness, paresthesias, pain (paroxysmal limb pain, dysesthesias), headache, optic/trigeminal neuritis, <strong>Lhermitte's sign</strong> (electric shock sensation down spine with neck flexion), hyperpathia, chronic neuropathic pain</td></tr>
-      <tr><td class="hi">Visual</td><td>Blurred/double vision (diplopia), diminished acuity/loss of vision, scotoma, nystagmus, lateral gaze palsy. <strong>Optic neuritis</strong> often an early presenting sign</td></tr>
-      <tr><td class="hi">Motor</td><td>Paresis/paralysis, <strong>spasticity</strong>, spasms, ataxia (incoordination, intention tremor, postural tremor), impaired balance and gait</td></tr>
-      <tr><td class="bad">Fatigue</td><td><strong>#1 complaint.</strong> Overwhelming tiredness, exhaustion, weakness combined with difficulty concentrating and mental dullness. NOT just physical &#8212; cognitive fatigue is significant</td></tr>
-      <tr><td class="hi">Coordination/Balance</td><td>Cerebellar symptoms: ataxia, postural/intention tremors, hypotonia, truncal weakness, dysmetria, dyssynergia, dysdiadochokinesia. Dizziness, disequilibrium, vertigo, nausea</td></tr>
-      <tr><td class="hi">Gait &amp; Mobility</td><td>Impaired by muscle weakness, fatigue, spasticity, impaired balance, impaired sensation, visual problems, ataxia</td></tr>
-      <tr><td class="hi">Speech/Swallowing</td><td>Dysarthria, diminished verbal fluency, dysphonia, dysphagia</td></tr>
-      <tr><td class="hi">Cognitive</td><td>Short-term memory deficits, difficulty multitasking, diminished attention/concentration, diminished executive functions, diminished information processing, diminished visuospatial abilities. <strong>71% experience depression</strong></td></tr>
-    </tbody></table>
-    <div class="bl-strip red"><div class="bl-label">Uhthoff's Phenomenon</div><p>Heat sensitivity &#8212; MS symptoms temporarily worsen with increased body temperature. Even a small rise (0.5&#176;C) can worsen symptoms. <strong>Exercise in cool environments.</strong> Use cooling strategies. Cold pool &gt; warm pool. Symptoms improve when temperature returns to normal. This is NOT a relapse &#8212; it's a temporary conduction block in demyelinated fibers.</p></div>
-    <div class="bl-strip gold"><div class="bl-label">MS vs Parkinson's</div><p><strong>MS:</strong> Myelin sheath of axons is attacked (usually UMN &#8594; spasticity). Relapsing-remitting pattern common. Exercise in COLD environments.<br><strong>PD:</strong> Substantia nigra dopamine neurons die (BG &#8594; rigidity). Patients are often more aware of their condition. No relapsing-remitting pattern &#8212; progressive.<br><strong>Key distinction:</strong> MS = spasticity (velocity-dependent). PD = rigidity (not velocity-dependent, cogwheel/lead pipe).</p></div>
-    <div class="bl-strip green"><div class="bl-label">MS Treatment Approach</div><p><strong>Acute care setting:</strong> DC safely to next level of care, maximize functional potential. <strong>MS-EDGE outcome measures</strong> recommended for standardized assessment. Treat based on current presentation (varies with relapses/remissions). Address fatigue management (energy conservation, pacing, rest breaks). Exercise during remission. Avoid overheating. Strength training within tolerance &#8212; do NOT push to fatigue (worsens symptoms). Balance and gait training. Fall prevention. Depression screening and referral. Long-term management with periodic reassessment.</p></div>
-  </div></div>
+<div class="section-title">Multiple Sclerosis &#8212; Subtypes, Symptoms &amp; Management</div>
+<div class="section-sub">MS is an autoimmune disease where the immune response triggers activation of immune cells that cross the blood-brain barrier, producing cytotoxic effects within the CNS. Disruption of the myelin sheath slows neural transmission and causes nerves to fatigue rapidly. With severe disruption, conduction block occurs with resulting loss of function. MS attacks the myelin sheath of axons in the CNS (usually UMN presentation with spasticity).</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>MS Subtypes &#8212; 4 Clinical Courses</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Subtype</th><th>Course</th><th>Key Features</th></tr></thead><tbody>
+<tr><td class="hi">RRMS (Relapsing-Remitting)</td><td>Relapses with full or partial recovery</td><td><strong>Most common form.</strong> Acute attacks (exacerbations) followed by recovery periods. Some patients have full recovery; others accumulate residual deficit after incomplete recovery</td></tr>
+<tr><td class="warn">SPMS (Secondary-Progressive)</td><td>Progressive disability accumulation after initial relapsing course</td><td>May have occasional relapses and minor remissions. Develops from RRMS over time</td></tr>
+<tr><td class="warn">PPMS (Primary-Progressive)</td><td>Progressive disability accumulation from onset</td><td>With or without temporary plateaus, minor remissions, and improvements. No clear relapses</td></tr>
+<tr><td class="hi">PRMS (Progressive-Relapsing)</td><td>Progressive from onset WITH clear acute attacks</td><td>With or without full recovery from attacks. Rarest form</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ===== TAB 7: ALS ===== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>MS Symptoms by System &amp; Uhthoff's Phenomenon</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>System</th><th>Symptoms</th></tr></thead><tbody>
+<tr><td class="hi">Sensory</td><td>Hypoesthesia, numbness, paresthesias, pain (paroxysmal limb pain, dysesthesias), headache, optic/trigeminal neuritis, <strong>Lhermitte's sign</strong> (electric shock sensation down spine with neck flexion), hyperpathia, chronic neuropathic pain</td></tr>
+<tr><td class="hi">Visual</td><td>Blurred/double vision (diplopia), diminished acuity/loss of vision, scotoma, nystagmus, lateral gaze palsy. <strong>Optic neuritis</strong> often an early presenting sign</td></tr>
+<tr><td class="hi">Motor</td><td>Paresis/paralysis, <strong>spasticity</strong>, spasms, ataxia (incoordination, intention tremor, postural tremor), impaired balance and gait</td></tr>
+<tr><td class="bad">Fatigue</td><td><strong>#1 complaint.</strong> Overwhelming tiredness, exhaustion, weakness combined with difficulty concentrating and mental dullness. NOT just physical &#8212; cognitive fatigue is significant</td></tr>
+<tr><td class="hi">Coordination/Balance</td><td>Cerebellar symptoms: ataxia, postural/intention tremors, hypotonia, truncal weakness, dysmetria, dyssynergia, dysdiadochokinesia. Dizziness, disequilibrium, vertigo, nausea</td></tr>
+<tr><td class="hi">Gait &amp; Mobility</td><td>Impaired by muscle weakness, fatigue, spasticity, impaired balance, impaired sensation, visual problems, ataxia</td></tr>
+<tr><td class="hi">Speech/Swallowing</td><td>Dysarthria, diminished verbal fluency, dysphonia, dysphagia</td></tr>
+<tr><td class="hi">Cognitive</td><td>Short-term memory deficits, difficulty multitasking, diminished attention/concentration, diminished executive functions, diminished information processing, diminished visuospatial abilities. <strong>71% experience depression</strong></td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Uhthoff's Phenomenon</div>
+<p>Heat sensitivity &#8212; MS symptoms temporarily worsen with increased body temperature. Even a small rise (0.5&#176;C) can worsen symptoms. <strong>Exercise in cool environments.</strong> Use cooling strategies. Cold pool &gt; warm pool. Symptoms improve when temperature returns to normal. This is NOT a relapse &#8212; it's a temporary conduction block in demyelinated fibers.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">MS vs Parkinson's</div>
+<p><strong>MS:</strong> Myelin sheath of axons is attacked (usually UMN &#8594; spasticity). Relapsing-remitting pattern common. Exercise in COLD environments.<br><strong>PD:</strong> Substantia nigra dopamine neurons die (BG &#8594; rigidity). Patients are often more aware of their condition. No relapsing-remitting pattern &#8212; progressive.<br><strong>Key distinction:</strong> MS = spasticity (velocity-dependent). PD = rigidity (not velocity-dependent, cogwheel/lead pipe).</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">MS Treatment Approach</div>
+<p><strong>Acute care setting:</strong> DC safely to next level of care, maximize functional potential. <strong>MS-EDGE outcome measures</strong> recommended for standardized assessment. Treat based on current presentation (varies with relapses/remissions). Address fatigue management (energy conservation, pacing, rest breaks). Exercise during remission. Avoid overheating. Strength training within tolerance &#8212; do NOT push to fatigue (worsens symptoms). Balance and gait training. Fall prevention. Depression screening and referral. Long-term management with periodic reassessment.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-als">
 <div class="container">
-  <div class="section-title">ALS &#8212; Amyotrophic Lateral Sclerosis</div>
-  <div class="section-sub">AKA Lou Gehrig's Disease. Combined UMN + LMN motor neuron death &#8212; both corticospinal tract AND anterior horn cells are affected. Sensation is INTACT. Cognition is usually intact. 30,000 individuals in the US have ALS; 15 are diagnosed each day. Average onset: mid-to-late 50s. More rapid decline compared to MS and PD. No definitive diagnostic test exists &#8212; diagnosis is made by ruling everything else out.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Etiology, Diagnosis &amp; Clinical Presentation</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip"><div class="bl-label">Etiology &amp; Risk Factors</div><p>No single mechanism &#8212; multiple/cumulative mechanisms.<br><strong>SOD (Superoxide dismutase) decrease:</strong> Loss of this enzyme &#8594; buildup of oxidized free radicals &#8594; neuron damage.<br><strong>Glutamate excess:</strong> Excitatory neurotransmitter &#8212; excess leads to cell death (excitotoxicity). Increased glutamate found in CSF, plasma, and postmortem tissue.<br><strong>Autoimmune reaction</strong> implicated in several studies.<br><strong>Risk factors:</strong> Disease-causing mutations (SOD1, alsin), male gender, family history, age.<br><strong>Possible factors:</strong> Neurotoxicant exposures, vigorous physical activity, trauma, diet, certain occupations.</p></div>
-    <div class="bl-strip red"><div class="bl-label">Diagnosis Requirements</div><p><strong>Diagnosis requires ALL of:</strong> (1) LMN signs by clinical, electrophysiological, or neuropathological exam. (2) UMN signs by clinical exam. (3) Progression within a region or to other regions. (4) Absence of other disease processes.<br><strong>Testing:</strong> Lab studies, EMG, NCV, muscle/nerve biopsies, neuroimaging &#8212; used to SUPPORT diagnosis (rule out other conditions). One genetic test exists (SOD1 mutation).<br><strong>DDx to rule out:</strong> Brainstem gliomas, central cord syndrome, CIDP, Lambert-Eaton, Lyme disease, MS, neurosarcoidosis, polymyositis, syringomyelia, primary lateral sclerosis, spinal muscular atrophy.</p></div>
-    <div class="bl-strip gold"><div class="bl-label">LMN Presentation</div><p>Most frequent presenting impairment: focal, asymmetrical muscle weakness beginning in LE, UE, or bulbar muscles. Bulbar dysfunction: dysarthria (speech rate and voice quality), dysphagia. Muscle atrophy, fasciculations, hyporeflexia, decreased tone. <strong>Bulbar onset:</strong> Dysarthria, dysphagia first &#8212; poorer prognosis. <strong>Limb onset:</strong> Asymmetric distal weakness first &#8212; slightly better prognosis.</p></div>
-      <div class="bl-strip purple"><div class="bl-label">UMN Presentation</div><p>Hyperreflexia, spasticity, pathological reflexes (Babinski, Hoffmann's), clonus. Slow/awkward fine movements. <strong>The COMBINATION of both UMN + LMN signs is what makes ALS unique</strong> &#8212; most other conditions show one or the other. Fasciculations + atrophy (LMN) PLUS hyperreflexia + spasticity (UMN) in the same patient = ALS until proven otherwise.</p></div>
-    </div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Strength Curve, Therapeutic Window &amp; PT Management</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip red"><div class="bl-label">Strength Curve &amp; Therapeutic Window</div><p>ALS patients exist on a declining strength curve. The <strong>therapeutic window is 35&#8211;80%</strong> of maximum (daily activities and mild training). Below 35% = too weak for meaningful exercise benefit. Above 80% = overwork damage risk &#8212; can accelerate motor neuron death. <strong>Exercise must stay within the therapeutic window.</strong> High-intensity/high-resistance exercise is contraindicated &#8212; overwork weakness is a real danger. Focus on moderate aerobic conditioning, gentle ROM, functional activities, and energy conservation.</p></div>
-    <div class="bl-strip green"><div class="bl-label">PT Management Priorities</div><p><strong>Early stage:</strong> Maintain function, moderate exercise, ROM, aerobic conditioning within therapeutic window. Core strengthening, functional activities the patient can do on their own.<br><strong>Middle stage:</strong> Compensatory strategies, assistive devices, energy conservation, fall prevention. Address respiratory decline (diaphragmatic breathing, assistive cough techniques).<br><strong>Late stage:</strong> Positioning, comfort, skin integrity, PROM, respiratory support, caregiver training.<br><strong>Respiratory failure is the #1 cause of death in ALS.</strong> Monitor FVC (forced vital capacity) &#8212; decline indicates respiratory muscle involvement. Equipment needs progress over time: cane &#8594; walker &#8594; WC &#8594; power WC &#8594; hospital bed &#8594; ventilator.<br><strong>Average survival: 2&#8211;5 years from diagnosis.</strong> PT focus: maintain function as long as possible, maximize QOL at every stage.</p></div>
-  </div></div>
+<div class="section-title">ALS &#8212; Amyotrophic Lateral Sclerosis</div>
+<div class="section-sub">AKA Lou Gehrig's Disease. Combined UMN + LMN motor neuron death &#8212; both corticospinal tract AND anterior horn cells are affected. Sensation is INTACT. Cognition is usually intact. 30,000 individuals in the US have ALS; 15 are diagnosed each day. Average onset: mid-to-late 50s. More rapid decline compared to MS and PD. No definitive diagnostic test exists &#8212; diagnosis is made by ruling everything else out.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Etiology, Diagnosis &amp; Clinical Presentation</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Etiology &amp; Risk Factors</div>
+<p>No single mechanism &#8212; multiple/cumulative mechanisms.<br><strong>SOD (Superoxide dismutase) decrease:</strong> Loss of this enzyme &#8594; buildup of oxidized free radicals &#8594; neuron damage.<br><strong>Glutamate excess:</strong> Excitatory neurotransmitter &#8212; excess leads to cell death (excitotoxicity). Increased glutamate found in CSF, plasma, and postmortem tissue.<br><strong>Autoimmune reaction</strong> implicated in several studies.<br><strong>Risk factors:</strong> Disease-causing mutations (SOD1, alsin), male gender, family history, age.<br><strong>Possible factors:</strong> Neurotoxicant exposures, vigorous physical activity, trauma, diet, certain occupations.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Diagnosis Requirements</div>
+<p><strong>Diagnosis requires ALL of:</strong> (1) LMN signs by clinical, electrophysiological, or neuropathological exam. (2) UMN signs by clinical exam. (3) Progression within a region or to other regions. (4) Absence of other disease processes.<br><strong>Testing:</strong> Lab studies, EMG, NCV, muscle/nerve biopsies, neuroimaging &#8212; used to SUPPORT diagnosis (rule out other conditions). One genetic test exists (SOD1 mutation).<br><strong>DDx to rule out:</strong> Brainstem gliomas, central cord syndrome, CIDP, Lambert-Eaton, Lyme disease, MS, neurosarcoidosis, polymyositis, syringomyelia, primary lateral sclerosis, spinal muscular atrophy.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">LMN Presentation</div>
+<p>Most frequent presenting impairment: focal, asymmetrical muscle weakness beginning in LE, UE, or bulbar muscles. Bulbar dysfunction: dysarthria (speech rate and voice quality), dysphagia. Muscle atrophy, fasciculations, hyporeflexia, decreased tone. <strong>Bulbar onset:</strong> Dysarthria, dysphagia first &#8212; poorer prognosis. <strong>Limb onset:</strong> Asymmetric distal weakness first &#8212; slightly better prognosis.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">UMN Presentation</div>
+<p>Hyperreflexia, spasticity, pathological reflexes (Babinski, Hoffmann's), clonus. Slow/awkward fine movements. <strong>The COMBINATION of both UMN + LMN signs is what makes ALS unique</strong> &#8212; most other conditions show one or the other. Fasciculations + atrophy (LMN) PLUS hyperreflexia + spasticity (UMN) in the same patient = ALS until proven otherwise.</p>
 </div>
 </div>
-
-<!-- ===== TAB 8: TREATMENT TECHNIQUES ===== -->
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Strength Curve, Therapeutic Window &amp; PT Management</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">Strength Curve &amp; Therapeutic Window</div>
+<p>ALS patients exist on a declining strength curve. The <strong>therapeutic window is 35&#8211;80%</strong> of maximum (daily activities and mild training). Below 35% = too weak for meaningful exercise benefit. Above 80% = overwork damage risk &#8212; can accelerate motor neuron death. <strong>Exercise must stay within the therapeutic window.</strong> High-intensity/high-resistance exercise is contraindicated &#8212; overwork weakness is a real danger. Focus on moderate aerobic conditioning, gentle ROM, functional activities, and energy conservation.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">PT Management Priorities</div>
+<p><strong>Early stage:</strong> Maintain function, moderate exercise, ROM, aerobic conditioning within therapeutic window. Core strengthening, functional activities the patient can do on their own.<br><strong>Middle stage:</strong> Compensatory strategies, assistive devices, energy conservation, fall prevention. Address respiratory decline (diaphragmatic breathing, assistive cough techniques).<br><strong>Late stage:</strong> Positioning, comfort, skin integrity, PROM, respiratory support, caregiver training.<br><strong>Respiratory failure is the #1 cause of death in ALS.</strong> Monitor FVC (forced vital capacity) &#8212; decline indicates respiratory muscle involvement. Equipment needs progress over time: cane &#8594; walker &#8594; WC &#8594; power WC &#8594; hospital bed &#8594; ventilator.<br><strong>Average survival: 2&#8211;5 years from diagnosis.</strong> PT focus: maintain function as long as possible, maximize QOL at every stage.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-treatment">
 <div class="container">
-  <div class="section-title">Neuro Treatment Techniques &#8212; PNF, NDT &amp; Motor Learning</div>
-  <div class="section-sub">These approaches form the toolbox for neuro PT. The key is knowing WHAT you are doing and WHY &#8212; matching the right technique to the patient's specific deficits. Treatment should encourage motor learning by assessing the patient's ability to participate and assisting when needed.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Treatment Frameworks &#8212; Brunnstrom, NDT, PNF, Rood, Motor Learning</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Framework</th><th>Approach</th><th>Key Concepts</th></tr></thead><tbody>
-      <tr><td class="hi">Brunnstrom</td><td>7 stages of motor recovery. <strong>Only applies to stroke</strong></td><td>Stages progress from flaccidity &#8594; synergy patterns &#8594; voluntary movement &#8594; near-normal function. Based on predictable recovery sequence post-CVA</td></tr>
-      <tr><td class="hi">NDT / Bobath</td><td>Neurodevelopmental treatment. Hierarchical = top-down, proximal to distal</td><td>Learn extension then flexion then head control then supported sitting then unsupported. Used for adults with hemiplegia and children with CP. Similar to motor control theory</td></tr>
-      <tr><td class="warn">PNF</td><td>Proprioceptive Neuromuscular Facilitation</td><td>Hold-relax, reciprocal inhibition. Techniques to facilitate and enhance coordinated muscle activity. Developmental postures and transitions. Synergistic patterns (D1/D2). Motor learning principles for skilled behavior. <strong>D1/D2 patterns for UE and LE</strong></td></tr>
-      <tr><td class="hi">Rood</td><td>Pressure and tactile stimulation</td><td>Uses sensory input (brushing, icing, tapping, joint compression) to facilitate or inhibit motor responses. Progresses through developmental sequence</td></tr>
-      <tr><td class="hi">Motor Learning</td><td>Task-specific practice, repetition, feedback</td><td>Repetition with purpose. Variable practice. Feedback scheduling (knowledge of results vs knowledge of performance). Whole vs part practice. Transfer of learning</td></tr>
-    </tbody></table>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>PNF Techniques &#8212; Rhythmic Initiation, Contract-Relax, Hold-Relax &amp; More</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Technique</th><th>Goal</th><th>How To Do It</th><th>Indications</th></tr></thead><tbody>
-      <tr><td class="hi">Rhythmic Initiation</td><td>Promote learning new movement, improve coordination, promote relaxation</td><td><strong>4 phases:</strong> (1) Passive: "Relax, let me move you." (2) Active-assisted: "Now help me move you." (3) AROM: "Now move on your own." (4) Resisted: "Now push." Progress through all 4</td><td>Inability to relax, hypertonicity (spasticity/rigidity), difficulty initiating movement, uncoordinated movement, motor planning deficits (apraxia/dyspraxia), aphasia</td></tr>
-      <tr><td class="warn">Contract-Relax</td><td>Improve ROM through facilitation, inhibition, strengthening, and relaxation</td><td>At point of ROM limitation: patient actively moves in pattern to limitation &#8594; strong contraction of range-restricting muscles (antagonists) held 5&#8211;8 sec (autogenic inhibition) &#8594; voluntary relaxation &#8594; active movement into new range (reciprocal inhibition). Repeat until no additional range gained. Follow with active movement in new range</td><td>Limitation in ROM. <strong>Contraindicated:</strong> Recent injury with inflammation/swelling, recent surgery</td></tr>
-      <tr><td class="warn">Hold-Relax</td><td>Improve ROM, especially with pain</td><td>Below pain level. Patient moves to end of pain-free ROM &#8594; strong isometric contraction of restricting muscles resisted &#8594; voluntary relaxation &#8594; passive movement into newly gained range. "Hold, don't let me move your leg"</td><td>Limitations in PROM especially with pain. Same contraindications as C-R</td></tr>
-      <tr><td class="hi">Replication (Hold-Relax-Active Motion)</td><td>Improve coordination and agonist control in shortened range, motor learning</td><td>Position in end range (shortened) &#8594; "Hold, don't let me move you" (isometric resisted) &#8594; relaxation &#8594; passive to lengthened range &#8594; "Now push back" (isotonic through range). Stretch and tracking resistance facilitate. Increase ROM each rep</td><td><strong>Marked weakness and inability to sustain contraction in shortened range</strong></td></tr>
-      <tr><td class="hi">Rhythmic Rotation</td><td>Promote relaxation and increased range in hypertonic muscles</td><td>Slow, repeated rotations of limb or body segment (passive or active). "Relax, let me move you back and forth." Continue until tension relaxes, then gently progress through increased range</td><td>Relaxation of hypertonia (spasticity, rigidity) combined with ROM of range-limiting muscle</td></tr>
-      <tr><td class="hi">Rhythmic Stabilization</td><td>Stability, isometric trunk control</td><td>One hand on posterior pelvis pushing forward, other on anterior contralateral upper trunk pulling backward. Resists isometric contraction of trunk flexors, extensors, and rotators. Alternate directions</td><td>Postural stability training. Core control. Weight shifting challenges</td></tr>
-      <tr><td class="hi">Resisted Gait Progression</td><td>Improve coordination and timing of lower trunk/pelvis during walking</td><td>Stretch, approximation, and light resistance applied manually to facilitate lower trunk/pelvic motion during walking. Resistance must be light enough to NOT disrupt momentum, coordination, or velocity. Can use elastic band. "On three, step forward with your right foot"</td><td>Impaired timing/control of lower trunk/pelvic segments during locomotion, impaired endurance</td></tr>
-    </tbody></table>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Transfers, Balance &amp; Pre-Gait Progressions</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip"><div class="bl-label">Transfer Types</div><p><strong>Lift-Off Transfer:</strong> For patients who cannot stand.<br><strong>Bobath Transfer:</strong> NDT-based facilitation of normal movement patterns during transfer.<br><strong>Squat Pivot:</strong> NWB on one leg.<br><strong>Standing Pivot:</strong> THA, TKA, TTWB, FWB.<br><strong>Sliding Board:</strong> SCI, bilateral NWB. Match transfer to WB status, strength, balance, and cognitive ability.</p></div>
-    <div class="bl-strip gold"><div class="bl-label">Sitting Balance Re-Establishment</div><p>Feet and knees close. Weight even hip to hip. Anterior pelvic tilt. Lumbar and thoracic extension. Head balanced on level shoulders. <strong>Early goal = re-establish control in sitting for function:</strong> AP upper body initiated movements, AP lower body initiated, lateral lower body, rotational movements. Progress to: dynamic reaching, weight shifting on unstable surfaces, dual-task challenges.</p></div>
-    <div class="bl-strip green"><div class="bl-label">Plantigrade Position</div><p>Stable posture with wide BOS and high COM. Progress: flat hand &#8594; fingertip support &#8594; bilateral &#8594; unilateral UE support &#8594; free stand. Symmetrical stance &#8594; step position. Alternative: hands on large unstable surface for increased challenge. Sideways to wall with shoulder abduction for unilateral WB. <strong>Motor control goal:</strong> Stability (static postural control). <strong>Functional skill:</strong> Patient maintains upright standing with UE support independently with minimal sway. This is a lead-up activity to standing without UE support.</p></div>
-    <div class="bl-strip purple"><div class="bl-label">Pre-Gait &amp; AD Selection</div><p><strong>Pre-gait:</strong> Bed mobility (supine to sit) &#8594; sitting transfers (bed to chair) &#8594; gait training &#8594; stairs.<br><strong>DF wrapping:</strong> For foot drop &#8212; normal DF is 10&#8211;15&#176;.<br><strong>Pusher Syndrome:</strong> Patient actively pushes toward hemiplegic side, resisting correction toward midline. Use visual feedback, weight shifting toward strong side, environmental cues.<br><strong>AD selection criteria for community independence:</strong> Community ambulation of &#8805;250 ft, can drive, NO balance issues.</p></div>
-  </div></div>
+<div class="section-title">Neuro Treatment Techniques &#8212; PNF, NDT &amp; Motor Learning</div>
+<div class="section-sub">These approaches form the toolbox for neuro PT. The key is knowing WHAT you are doing and WHY &#8212; matching the right technique to the patient's specific deficits. Treatment should encourage motor learning by assessing the patient's ability to participate and assisting when needed.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Treatment Frameworks &#8212; Brunnstrom, NDT, PNF, Rood, Motor Learning</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Framework</th><th>Approach</th><th>Key Concepts</th></tr></thead><tbody>
+<tr><td class="hi">Brunnstrom</td><td>7 stages of motor recovery. <strong>Only applies to stroke</strong></td><td>Stages progress from flaccidity &#8594; synergy patterns &#8594; voluntary movement &#8594; near-normal function. Based on predictable recovery sequence post-CVA</td></tr>
+<tr><td class="hi">NDT / Bobath</td><td>Neurodevelopmental treatment. Hierarchical = top-down, proximal to distal</td><td>Learn extension then flexion then head control then supported sitting then unsupported. Used for adults with hemiplegia and children with CP. Similar to motor control theory</td></tr>
+<tr><td class="warn">PNF</td><td>Proprioceptive Neuromuscular Facilitation</td><td>Hold-relax, reciprocal inhibition. Techniques to facilitate and enhance coordinated muscle activity. Developmental postures and transitions. Synergistic patterns (D1/D2). Motor learning principles for skilled behavior. <strong>D1/D2 patterns for UE and LE</strong></td></tr>
+<tr><td class="hi">Rood</td><td>Pressure and tactile stimulation</td><td>Uses sensory input (brushing, icing, tapping, joint compression) to facilitate or inhibit motor responses. Progresses through developmental sequence</td></tr>
+<tr><td class="hi">Motor Learning</td><td>Task-specific practice, repetition, feedback</td><td>Repetition with purpose. Variable practice. Feedback scheduling (knowledge of results vs knowledge of performance). Whole vs part practice. Transfer of learning</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ===== TAB 9: TBI & DDx ===== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>PNF Techniques &#8212; Rhythmic Initiation, Contract-Relax, Hold-Relax &amp; More</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Technique</th><th>Goal</th><th>How To Do It</th><th>Indications</th></tr></thead><tbody>
+<tr><td class="hi">Rhythmic Initiation</td><td>Promote learning new movement, improve coordination, promote relaxation</td><td><strong>4 phases:</strong> (1) Passive: "Relax, let me move you." (2) Active-assisted: "Now help me move you." (3) AROM: "Now move on your own." (4) Resisted: "Now push." Progress through all 4</td><td>Inability to relax, hypertonicity (spasticity/rigidity), difficulty initiating movement, uncoordinated movement, motor planning deficits (apraxia/dyspraxia), aphasia</td></tr>
+<tr><td class="warn">Contract-Relax</td><td>Improve ROM through facilitation, inhibition, strengthening, and relaxation</td><td>At point of ROM limitation: patient actively moves in pattern to limitation &#8594; strong contraction of range-restricting muscles (antagonists) held 5&#8211;8 sec (autogenic inhibition) &#8594; voluntary relaxation &#8594; active movement into new range (reciprocal inhibition). Repeat until no additional range gained. Follow with active movement in new range</td><td>Limitation in ROM. <strong>Contraindicated:</strong> Recent injury with inflammation/swelling, recent surgery</td></tr>
+<tr><td class="warn">Hold-Relax</td><td>Improve ROM, especially with pain</td><td>Below pain level. Patient moves to end of pain-free ROM &#8594; strong isometric contraction of restricting muscles resisted &#8594; voluntary relaxation &#8594; passive movement into newly gained range. "Hold, don't let me move your leg"</td><td>Limitations in PROM especially with pain. Same contraindications as C-R</td></tr>
+<tr><td class="hi">Replication (Hold-Relax-Active Motion)</td><td>Improve coordination and agonist control in shortened range, motor learning</td><td>Position in end range (shortened) &#8594; "Hold, don't let me move you" (isometric resisted) &#8594; relaxation &#8594; passive to lengthened range &#8594; "Now push back" (isotonic through range). Stretch and tracking resistance facilitate. Increase ROM each rep</td><td><strong>Marked weakness and inability to sustain contraction in shortened range</strong></td></tr>
+<tr><td class="hi">Rhythmic Rotation</td><td>Promote relaxation and increased range in hypertonic muscles</td><td>Slow, repeated rotations of limb or body segment (passive or active). "Relax, let me move you back and forth." Continue until tension relaxes, then gently progress through increased range</td><td>Relaxation of hypertonia (spasticity, rigidity) combined with ROM of range-limiting muscle</td></tr>
+<tr><td class="hi">Rhythmic Stabilization</td><td>Stability, isometric trunk control</td><td>One hand on posterior pelvis pushing forward, other on anterior contralateral upper trunk pulling backward. Resists isometric contraction of trunk flexors, extensors, and rotators. Alternate directions</td><td>Postural stability training. Core control. Weight shifting challenges</td></tr>
+<tr><td class="hi">Resisted Gait Progression</td><td>Improve coordination and timing of lower trunk/pelvis during walking</td><td>Stretch, approximation, and light resistance applied manually to facilitate lower trunk/pelvic motion during walking. Resistance must be light enough to NOT disrupt momentum, coordination, or velocity. Can use elastic band. "On three, step forward with your right foot"</td><td>Impaired timing/control of lower trunk/pelvic segments during locomotion, impaired endurance</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Transfers, Balance &amp; Pre-Gait Progressions</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Transfer Types</div>
+<p><strong>Lift-Off Transfer:</strong> For patients who cannot stand.<br><strong>Bobath Transfer:</strong> NDT-based facilitation of normal movement patterns during transfer.<br><strong>Squat Pivot:</strong> NWB on one leg.<br><strong>Standing Pivot:</strong> THA, TKA, TTWB, FWB.<br><strong>Sliding Board:</strong> SCI, bilateral NWB. Match transfer to WB status, strength, balance, and cognitive ability.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Sitting Balance Re-Establishment</div>
+<p>Feet and knees close. Weight even hip to hip. Anterior pelvic tilt. Lumbar and thoracic extension. Head balanced on level shoulders. <strong>Early goal = re-establish control in sitting for function:</strong> AP upper body initiated movements, AP lower body initiated, lateral lower body, rotational movements. Progress to: dynamic reaching, weight shifting on unstable surfaces, dual-task challenges.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Plantigrade Position</div>
+<p>Stable posture with wide BOS and high COM. Progress: flat hand &#8594; fingertip support &#8594; bilateral &#8594; unilateral UE support &#8594; free stand. Symmetrical stance &#8594; step position. Alternative: hands on large unstable surface for increased challenge. Sideways to wall with shoulder abduction for unilateral WB. <strong>Motor control goal:</strong> Stability (static postural control). <strong>Functional skill:</strong> Patient maintains upright standing with UE support independently with minimal sway. This is a lead-up activity to standing without UE support.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Pre-Gait &amp; AD Selection</div>
+<p><strong>Pre-gait:</strong> Bed mobility (supine to sit) &#8594; sitting transfers (bed to chair) &#8594; gait training &#8594; stairs.<br><strong>DF wrapping:</strong> For foot drop &#8212; normal DF is 10&#8211;15&#176;.<br><strong>Pusher Syndrome:</strong> Patient actively pushes toward hemiplegic side, resisting correction toward midline. Use visual feedback, weight shifting toward strong side, environmental cues.<br><strong>AD selection criteria for community independence:</strong> Community ambulation of &#8805;250 ft, can drive, NO balance issues.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-tbi">
 <div class="container">
-  <div class="section-title">TBI, Glasgow Coma Scale, Rancho Levels &amp; Differential Diagnosis</div>
-  <div class="section-sub">TBI is an alteration in brain function caused by an external force. Shear forces cause axonal damage. The subarachnoid space is highly vascular &#8212; could burst and blood can enter the brain. Monitoring ICP is critical: 0&#8211;10 is normal, &gt;20 is worrying, 25 is threshold. Knowing the anatomy involved will help you deliver effective treatment &#8212; monopolizing on strengths, building upon weaknesses.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Glasgow Coma Scale &amp; Rancho Los Amigos Levels</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <div class="bl-strip red"><div class="bl-label">Glasgow Coma Scale (GCS) &#8212; 3 to 15</div><p>Assesses <strong>Eye opening</strong> (1&#8211;4), <strong>Verbal response</strong> (1&#8211;5), <strong>Motor response</strong> (1&#8211;6). Higher = better.<br><strong>Severe:</strong> 3&#8211;8.<br><strong>Moderate:</strong> 9&#8211;12.<br><strong>Mild:</strong> 13&#8211;15. Agional breathing is very bad &#8212; patient is close to death.</p></div>
-    <table class="data-table"><thead><tr><th>Rancho Level</th><th>Description</th><th>PT Approach</th></tr></thead><tbody>
-      <tr><td class="bad">I</td><td>No response to pain, touch, sound, or sight</td><td>PROM, positioning, sensory stimulation, skin integrity, monitor vitals</td></tr>
-      <tr><td class="bad">II</td><td>Generalized reflex response to pain</td><td>Same as I. Monitor ICP &#8212; PROM creates excursion that could increase BP/HR</td></tr>
-      <tr><td class="warn">III</td><td>Localized response. Blinks to strong light, turns head toward/away from sound. Inconsistent response to commands</td><td>Begin simple commands. Assess motor control. Change HOB elevation to observe tolerance</td></tr>
-      <tr><td class="warn">IV</td><td><strong>Confused and agitated.</strong> Alert, performs motor activities but behavior is non-purposeful. Extremely short attention span</td><td><strong>Hard to work with.</strong> Observation and functional tasks. Do NOT expect carryover &#8212; could be a new experience every day. Code violet if patient is a threat</td></tr>
-      <tr><td class="hi">V</td><td>Confused, non-agitated. Gross attention to environment. Highly distractible. Inappropriate verbalization</td><td>Gradually raise HOB. Simple functional tasks with high structure. Reduce environmental stimuli</td></tr>
-      <tr><td class="hi">VI</td><td>Confused, appropriate. Inconsistent orientation to time and place. Consistently follows simple directions</td><td>Progress functional activities. Cognitive challenges. Begin community reintegration planning</td></tr>
-      <tr><td class="ok">VII</td><td>Automatic, appropriate. Skills noticeably deteriorated from premorbid levels</td><td>Structured task practice. Address specific functional deficits. Vocational/school reintegration</td></tr>
-      <tr><td class="ok">VIII</td><td>Purposeful, appropriate</td><td>Community reintegration. Complex functional tasks. Independent HEP</td></tr>
-    </tbody></table>
-    <div class="bl-strip gold"><div class="bl-label">TBI Evaluation Approach</div><p><strong>You walk in and see:</strong> Worried family, lots of tubes.<br><strong>Assess:</strong> A&amp;O (simple commands first), squeeze fingers (motor response), test CNs, skin integrity, PROM, Ashworth scale (rigid vs spastic), proprioceptive awareness, facial expressions (not tolerating movement &#8212; could recoil).<br><strong>Monitor:</strong> ICP (&#8805;17&#8211;18 = take a break, &#8805;20 = no therapy), BP, HR. Gradually elevate HOB (20&#176; to 45&#176;) to assess tolerance.<br><strong>Treatment:</strong> Family education (PROM, proprioception). EOB &#8212; even 30 seconds is meaningful. Basic position changes. NG tube (nasal gastric &#8212; nutrition). Foley catheter (urine drainage).</p></div>
-  </div></div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Neuro Differential Diagnosis &#8212; Location to Diagnosis</h4><span class="ma-chevron">&#9660;</span></div><div class="ma-body">
-    <table class="data-table"><thead><tr><th>Anatomical Level</th><th>Conditions</th><th>Key Distinguishing Features</th></tr></thead><tbody>
-      <tr><td class="hi">Cortex</td><td>Stroke (CVA), TBI</td><td>Stroke: sudden onset, vascular territory pattern. TBI: external force, diffuse or focal, Rancho levels</td></tr>
-      <tr><td class="hi">Basal Ganglia</td><td>Parkinson's, Huntington's, Focal Dystonia, Tourette's</td><td>PD: hypokinetic (rigidity, bradykinesia, resting tremor). HD: hyperkinetic (chorea). Dystonia: sustained involuntary contractions. Tourette's: tics</td></tr>
-      <tr><td class="hi">Cerebellum</td><td>Cerebellar ataxia, spinocerebellar ataxia</td><td>Ipsilateral deficits. Dysmetria, intention tremor, dysdiadochokinesia. "Drunken gait." Vision may not help (vestibulocerebellum)</td></tr>
-      <tr><td class="warn">Spinal Cord</td><td>SCI (complete vs incomplete syndromes), spina bifida</td><td>Complete vs incomplete (ASIA). Syndromes: anterior, posterior, central, Brown-S&#233;quard. Level determines function</td></tr>
-      <tr><td class="warn">Anterior Horn Cell</td><td><strong>ALS</strong></td><td><strong>Combined UMN + LMN</strong> = hallmark. Fasciculations + hyperreflexia in same patient. Sensation intact. Progressive, fatal</td></tr>
-      <tr><td class="hi">UMN (Demyelinating)</td><td><strong>MS</strong></td><td>Immune-mediated demyelination in CNS. Relapsing-remitting most common. Fatigue #1. Uhthoff's phenomenon. Lhermitte's sign. Spasticity (not rigidity)</td></tr>
-      <tr><td class="hi">Axonopathy (PNS)</td><td>GBS, diabetic polyneuropathy, alcoholic polyneuropathy</td><td><strong>GBS:</strong> Ascending LMN pattern, autoimmune post-infection (often post-viral). Acute onset, can cause respiratory failure. <strong>Diabetic/alcoholic neuropathy:</strong> Distal, symmetric, progressive</td></tr>
-      <tr><td class="hi">NMJ Disorders</td><td>Myasthenia Gravis, Botulism</td><td>MG: Fatigable weakness, improves with rest, ptosis/diplopia common. Botulism: Descending paralysis from toxin</td></tr>
-      <tr><td class="hi">Muscle Disorders</td><td>Duchenne's, Marfan's, Ehlers-Danlos</td><td>Duchenne's: Proximal weakness, Gowers' sign, pseudohypertrophy. X-linked recessive</td></tr>
-      <tr><td class="hi">CNS Infections</td><td>HIV/AIDS, Encephalitis, Hydrocephalus, Brain tumors</td><td>HIV: CD4 &lt;200 = AIDS, neurologic symptoms in 70%. Encephalitis: inflammation of brain. Hydrocephalus: CSF buildup &#8212; common triad: gait changes, incontinence, forgetfulness</td></tr>
-      <tr><td class="hi">Vestibular</td><td>BPPV, vestibular neuritis</td><td>BPPV: positional vertigo, nystagmus with Dix-Hallpike. See Neuro Rehab module for full vestibular content</td></tr>
-    </tbody></table>
-    <div class="bl-strip purple"><div class="bl-label">Discharge Continuum</div><p><strong>Acute Care &#8594; Inpatient Rehab:</strong> DC planning begins at admission. PT role: assess patient, determine next level of care, introduce interventions. Time is most important factor.<br><strong>Inpatient Rehab &#8594; Home:</strong> Must be medically stable, able to do 3 hours therapy/day, still require 24-hr nursing, need 2&#8211;3 disciplines, must have community DC plan.<br><strong>SNF:</strong> Doesn't meet IRF requirements or lacks resources for home. Slower rate of therapy.<br><strong>Home Health:</strong> Can go home but can't get to outpatient. MUST BE HOMEBOUND.<br><strong>Transitional Living:</strong> Community-based neurocognitive rehab. Real-world goals. Reorients to home/school/vocation.<br><strong>Outpatient:</strong> Can leave home, still needs therapy. Progresses to individualized home program. For independent home living: community ambulation &#8805;250 ft, can drive, NO balance issues.</p></div>
-  </div></div>
+<div class="section-title">TBI, Glasgow Coma Scale, Rancho Levels &amp; Differential Diagnosis</div>
+<div class="section-sub">TBI is an alteration in brain function caused by an external force. Shear forces cause axonal damage. The subarachnoid space is highly vascular &#8212; could burst and blood can enter the brain. Monitoring ICP is critical: 0&#8211;10 is normal, &gt;20 is worrying, 25 is threshold. Knowing the anatomy involved will help you deliver effective treatment &#8212; monopolizing on strengths, building upon weaknesses.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Glasgow Coma Scale &amp; Rancho Los Amigos Levels</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">Glasgow Coma Scale (GCS) &#8212; 3 to 15</div>
+<p>Assesses <strong>Eye opening</strong> (1&#8211;4), <strong>Verbal response</strong> (1&#8211;5), <strong>Motor response</strong> (1&#8211;6). Higher = better.<br><strong>Severe:</strong> 3&#8211;8.<br><strong>Moderate:</strong> 9&#8211;12.<br><strong>Mild:</strong> 13&#8211;15. Agional breathing is very bad &#8212; patient is close to death.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Rancho Level</th><th>Description</th><th>PT Approach</th></tr></thead><tbody>
+<tr><td class="bad">I</td><td>No response to pain, touch, sound, or sight</td><td>PROM, positioning, sensory stimulation, skin integrity, monitor vitals</td></tr>
+<tr><td class="bad">II</td><td>Generalized reflex response to pain</td><td>Same as I. Monitor ICP &#8212; PROM creates excursion that could increase BP/HR</td></tr>
+<tr><td class="warn">III</td><td>Localized response. Blinks to strong light, turns head toward/away from sound. Inconsistent response to commands</td><td>Begin simple commands. Assess motor control. Change HOB elevation to observe tolerance</td></tr>
+<tr><td class="warn">IV</td><td><strong>Confused and agitated.</strong> Alert, performs motor activities but behavior is non-purposeful. Extremely short attention span</td><td><strong>Hard to work with.</strong> Observation and functional tasks. Do NOT expect carryover &#8212; could be a new experience every day. Code violet if patient is a threat</td></tr>
+<tr><td class="hi">V</td><td>Confused, non-agitated. Gross attention to environment. Highly distractible. Inappropriate verbalization</td><td>Gradually raise HOB. Simple functional tasks with high structure. Reduce environmental stimuli</td></tr>
+<tr><td class="hi">VI</td><td>Confused, appropriate. Inconsistent orientation to time and place. Consistently follows simple directions</td><td>Progress functional activities. Cognitive challenges. Begin community reintegration planning</td></tr>
+<tr><td class="ok">VII</td><td>Automatic, appropriate. Skills noticeably deteriorated from premorbid levels</td><td>Structured task practice. Address specific functional deficits. Vocational/school reintegration</td></tr>
+<tr><td class="ok">VIII</td><td>Purposeful, appropriate</td><td>Community reintegration. Complex functional tasks. Independent HEP</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">TBI Evaluation Approach</div>
+<p><strong>You walk in and see:</strong> Worried family, lots of tubes.<br><strong>Assess:</strong> A&amp;O (simple commands first), squeeze fingers (motor response), test CNs, skin integrity, PROM, Ashworth scale (rigid vs spastic), proprioceptive awareness, facial expressions (not tolerating movement &#8212; could recoil).<br><strong>Monitor:</strong> ICP (&#8805;17&#8211;18 = take a break, &#8805;20 = no therapy), BP, HR. Gradually elevate HOB (20&#176; to 45&#176;) to assess tolerance.<br><strong>Treatment:</strong> Family education (PROM, proprioception). EOB &#8212; even 30 seconds is meaningful. Basic position changes. NG tube (nasal gastric &#8212; nutrition). Foley catheter (urine drainage).</p>
 </div>
 </div>
-
-<!-- ===== TAB 10: REVIEW ===== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Neuro Differential Diagnosis &#8212; Location to Diagnosis</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Anatomical Level</th><th>Conditions</th><th>Key Distinguishing Features</th></tr></thead><tbody>
+<tr><td class="hi">Cortex</td><td>Stroke (CVA), TBI</td><td>Stroke: sudden onset, vascular territory pattern. TBI: external force, diffuse or focal, Rancho levels</td></tr>
+<tr><td class="hi">Basal Ganglia</td><td>Parkinson's, Huntington's, Focal Dystonia, Tourette's</td><td>PD: hypokinetic (rigidity, bradykinesia, resting tremor). HD: hyperkinetic (chorea). Dystonia: sustained involuntary contractions. Tourette's: tics</td></tr>
+<tr><td class="hi">Cerebellum</td><td>Cerebellar ataxia, spinocerebellar ataxia</td><td>Ipsilateral deficits. Dysmetria, intention tremor, dysdiadochokinesia. "Drunken gait." Vision may not help (vestibulocerebellum)</td></tr>
+<tr><td class="warn">Spinal Cord</td><td>SCI (complete vs incomplete syndromes), spina bifida</td><td>Complete vs incomplete (ASIA). Syndromes: anterior, posterior, central, Brown-S&#233;quard. Level determines function</td></tr>
+<tr><td class="warn">Anterior Horn Cell</td><td><strong>ALS</strong></td><td><strong>Combined UMN + LMN</strong> = hallmark. Fasciculations + hyperreflexia in same patient. Sensation intact. Progressive, fatal</td></tr>
+<tr><td class="hi">UMN (Demyelinating)</td><td><strong>MS</strong></td><td>Immune-mediated demyelination in CNS. Relapsing-remitting most common. Fatigue #1. Uhthoff's phenomenon. Lhermitte's sign. Spasticity (not rigidity)</td></tr>
+<tr><td class="hi">Axonopathy (PNS)</td><td>GBS, diabetic polyneuropathy, alcoholic polyneuropathy</td><td><strong>GBS:</strong> Ascending LMN pattern, autoimmune post-infection (often post-viral). Acute onset, can cause respiratory failure. <strong>Diabetic/alcoholic neuropathy:</strong> Distal, symmetric, progressive</td></tr>
+<tr><td class="hi">NMJ Disorders</td><td>Myasthenia Gravis, Botulism</td><td>MG: Fatigable weakness, improves with rest, ptosis/diplopia common. Botulism: Descending paralysis from toxin</td></tr>
+<tr><td class="hi">Muscle Disorders</td><td>Duchenne's, Marfan's, Ehlers-Danlos</td><td>Duchenne's: Proximal weakness, Gowers' sign, pseudohypertrophy. X-linked recessive</td></tr>
+<tr><td class="hi">CNS Infections</td><td>HIV/AIDS, Encephalitis, Hydrocephalus, Brain tumors</td><td>HIV: CD4 &lt;200 = AIDS, neurologic symptoms in 70%. Encephalitis: inflammation of brain. Hydrocephalus: CSF buildup &#8212; common triad: gait changes, incontinence, forgetfulness</td></tr>
+<tr><td class="hi">Vestibular</td><td>BPPV, vestibular neuritis</td><td>BPPV: positional vertigo, nystagmus with Dix-Hallpike. See Neuro Rehab module for full vestibular content</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Discharge Continuum</div>
+<p><strong>Acute Care &#8594; Inpatient Rehab:</strong> DC planning begins at admission. PT role: assess patient, determine next level of care, introduce interventions. Time is most important factor.<br><strong>Inpatient Rehab &#8594; Home:</strong> Must be medically stable, able to do 3 hours therapy/day, still require 24-hr nursing, need 2&#8211;3 disciplines, must have community DC plan.<br><strong>SNF:</strong> Doesn't meet IRF requirements or lacks resources for home. Slower rate of therapy.<br><strong>Home Health:</strong> Can go home but can't get to outpatient. MUST BE HOMEBOUND.<br><strong>Transitional Living:</strong> Community-based neurocognitive rehab. Real-world goals. Reorients to home/school/vocation.<br><strong>Outpatient:</strong> Can leave home, still needs therapy. Progresses to individualized home program. For independent home living: community ambulation &#8805;250 ft, can drive, NO balance issues.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards &#8212; Neuro Clinical Management</div>
-  <div class="section-sub">Tap any card to reveal the answer.</div>
-  <div class="rc2-grid">
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Client has L MCA stroke. What deficits do you expect and why is L MCA the most common?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>L MCA is most common</strong> because of anatomically direct line from the aorta and heart. <strong>Expected deficits:</strong> R hemiparesis/hemiplegia (face and arm &gt; leg &#8212; MCA supplies lateral cortex where face/arm homunculus is represented). R hemisensory loss. Broca's aphasia (non-fluent speech production) and/or Wernicke's aphasia (fluent but meaningless speech, impaired comprehension) since L is dominant for language in 95% of RH people. R homonymous hemianopsia. Apraxia. <strong>Behavioral:</strong> L damage = unmotivated, hard to start, aware of deficits but limited. <strong>Subluxed shoulder:</strong> Check sulcus sign. Treat with closed-chain approximation exercises.</div></div>
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is the method to differentiate cerebellar ataxia from sensory ataxia?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Cerebellar ataxia:</strong> Ipsilateral deficits. "Drunken gait" &#8212; uneven step length, wide BOS, absent rhythm, feet lifted too high, absent arm swing. Falls toward side of lesion. Dysmetria, dysdiadochokinesia, intention tremor, oculomotor deficits. <strong>Vision does NOT help if vestibulocerebellum is involved.</strong> Romberg may be positive but vision won't compensate. <strong>Sensory ataxia:</strong> From posterior column&#8211;medial lemniscus damage. Loss of joint position sense. Wide-based unsteady gait that <strong>IMPROVES with visual feedback</strong> (positive Romberg &#8212; worse with eyes closed). No dysmetria or intention tremor. <strong>Key test:</strong> Does vision help? Yes = sensory ataxia. No = cerebellar. Also: ataxia from pons or cerebellar peduncle lesion can mimic cerebellar ataxia even if cerebellum itself is intact.</div></div>
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What makes ALS unique compared to other neuro conditions, and what is the therapeutic window in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>ALS is unique because it has BOTH UMN + LMN signs simultaneously.</strong> Fasciculations + atrophy (LMN) PLUS hyperreflexia + spasticity (UMN) in the same patient. Sensation is INTACT (unlike MS or SCI). Cognition is usually intact. No definitive diagnostic test &#8212; diagnosis by ruling everything else out. <strong>Therapeutic window: 35&#8211;80%</strong> of maximum. Below 35% = too weak to benefit. Above 80% = overwork damage risk, can accelerate motor neuron death. <strong>Never push ALS patients to fatigue.</strong> Focus on moderate activity, energy conservation, respiratory support. Bulbar onset (speech/swallowing first) has poorer prognosis than limb onset. Average survival: 2&#8211;5 years. Respiratory failure = #1 cause of death.</div></div>
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">T4 complete SCI patient develops sudden severe HTN and bradycardia. In this case, What is happening and what do you do?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Autonomic dysreflexia &#8212; MEDICAL EMERGENCY.</strong> Occurs in SCI at T6 and above (this patient is T4). Massive sympathetic response causing widespread vasoconstriction and severe HTN. <strong>S/S:</strong> HTN, bradycardia, diaphoresis, headache, blotchy/red skin, piloerection. <strong>Most common triggers:</strong> UTI, fecal impaction, pressure ulcers, tight clothing on LE. <strong>Immediate treatment:</strong> (1) SIT or STAND the patient &#8212; do NOT lie them down (lowers BP). (2) Relieve the noxious stimulus immediately (check catheter, loosen clothing, check for skin breakdown). (3) Monitor BP. <strong>Risk:</strong> Uncontrolled HTN can cause hemorrhagic stroke. This is why we never use tight clothing, always check catheters, and educate patients/caregivers about triggers.</div></div>
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Child with posterior fossa brain tumor has abnormal head posturing, balance deficits, and nausea. In this case, What's the biggest concern?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Tonsillar herniation &#8212; the child could die.</strong> Posterior fossa tumors (commonly medulloblastoma in children) grow into the 4th ventricle, blocking CSF flow &#8594; hydrocephalus &#8594; increased ICP. As ICP rises, the cerebellar tonsils can herniate through the foramen magnum, compressing the brainstem &#8594; respiratory arrest &#8594; death. <strong>Medulloblastoma:</strong> Always malignant. Arises from primitive neuroectodermal cells. 20% of all childhood brain tumors. 5-year survival 61%. <strong>General brain tumor signs:</strong> Headache (30%), seizures, altered mental status, papilledema. <strong>The nausea is concerning</strong> because it can indicate rising ICP. <strong>Not:</strong> vomiting risk, agitation, hitting a doorframe, or bathroom accident. The life-threatening concern is always herniation with posterior fossa tumors.</div></div>
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is Rhythmic Initiation and when do you use it in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Rhythmic Initiation (PNF technique):</strong> Goal is to promote learning of a new movement, improve intra/intermuscular coordination, promote relaxation and independent movement. <strong>4 phases:</strong> (1) Passive: "Relax, let me move you." (2) Active-assisted: "Now help me move you." (3) AROM: "Now move on your own." (4) Resisted: "Now push." <strong>Indications:</strong> Inability to relax, hypertonicity (spasticity AND rigidity), difficulty initiating movement, uncoordinated movement, motor planning or learning deficits (apraxia/dyspraxia), communication deficits (aphasia). <strong>Why aphasia?</strong> The 4-phase progression provides kinesthetic learning without relying heavily on verbal instructions &#8212; the patient FEELS the movement pattern before being asked to produce it. <strong>Key:</strong> This is for learning NEW movements. For ROM limitations, use Contract-Relax or Hold-Relax instead.</div></div>
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">MS patient asks about exercising. In this case, What do you tell them about heat, fatigue, and exercise type?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Uhthoff's phenomenon:</strong> MS symptoms temporarily worsen with ANY increase in body temperature &#8212; even 0.5&#176;C. This is NOT a relapse. It's a temporary conduction block in demyelinated fibers that resolves when temperature normalizes. <strong>Exercise guidelines:</strong> Cool environment (cold pool &gt; warm pool). Stay hydrated. Use cooling strategies (pre-cooling, cooling vest). <strong>Fatigue is the #1 complaint in MS</strong> &#8212; not just physical, also cognitive. Do NOT push to fatigue (worsens all symptoms). Energy conservation, pacing, rest breaks are essential. Exercise within tolerance: moderate aerobic, strength training at submaximal levels, balance training. <strong>Time it right:</strong> Exercise during remission, not relapse. Morning often better than afternoon. Short frequent sessions &gt; long sessions. <strong>MS vs PD reminder:</strong> MS = spasticity (velocity-dependent, UMN). PD = rigidity (not velocity-dependent, BG).</div></div>
-
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Identify the 4 incomplete SCI syndromes and which has the best prognosis?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Anterior Cord:</strong> Flexion injuries. Loss of motor function AND pain/temp below level. Proprioception/vibration PRESERVED (posterior columns intact). <strong>Central Cord:</strong> Hyperextension injuries (most common incomplete). UE affected MORE than LE. Sensory less than motor. Usually recover to ambulate. <strong>Posterior Cord:</strong> Rare. Loss of proprioception, vibration, touch. Motor and pain/temp preserved. <strong>Brown-S&#233;quard:</strong> Hemisection. Ipsilateral weakness/paralysis + proprioceptive loss. Contralateral pain/temp loss. <strong>BEST PROGNOSIS = Brown-S&#233;quard.</strong> <strong>Remember:</strong> Posterior columns cross in medulla (ipsilateral loss below lesion). Spinothalamic (pain/temp) crosses in cord (contralateral loss). This anatomy explains the split pattern in Brown-S&#233;quard. <strong>Also:</strong> Cauda equina = LMN pattern (roots, not cord). Conus medullaris = terminal cord.</div></div>
-
-  </div>
+<div class="section-title">Review Cards &#8212; Neuro Clinical Management</div>
+<div class="section-sub">Tap any card to reveal the answer.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Client has L MCA stroke. What deficits do you expect and why is L MCA the most common?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>L MCA is most common</strong> because of anatomically direct line from the aorta and heart. <strong>Expected deficits:</strong> R hemiparesis/hemiplegia (face and arm &gt; leg &#8212; MCA supplies lateral cortex where face/arm homunculus is represented). R hemisensory loss. Broca's aphasia (non-fluent speech production) and/or Wernicke's aphasia (fluent but meaningless speech, impaired comprehension) since L is dominant for language in 95% of RH people. R homonymous hemianopsia. Apraxia. <strong>Behavioral:</strong> L damage = unmotivated, hard to start, aware of deficits but limited. <strong>Subluxed shoulder:</strong> Check sulcus sign. Treat with closed-chain approximation exercises.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the method to differentiate cerebellar ataxia from sensory ataxia?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Cerebellar ataxia:</strong> Ipsilateral deficits. "Drunken gait" &#8212; uneven step length, wide BOS, absent rhythm, feet lifted too high, absent arm swing. Falls toward side of lesion. Dysmetria, dysdiadochokinesia, intention tremor, oculomotor deficits. <strong>Vision does NOT help if vestibulocerebellum is involved.</strong> Romberg may be positive but vision won't compensate. <strong>Sensory ataxia:</strong> From posterior column&#8211;medial lemniscus damage. Loss of joint position sense. Wide-based unsteady gait that <strong>IMPROVES with visual feedback</strong> (positive Romberg &#8212; worse with eyes closed). No dysmetria or intention tremor. <strong>Key test:</strong> Does vision help? Yes = sensory ataxia. No = cerebellar. Also: ataxia from pons or cerebellar peduncle lesion can mimic cerebellar ataxia even if cerebellum itself is intact.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What makes ALS unique compared to other neuro conditions, and what is the therapeutic window in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>ALS is unique because it has BOTH UMN + LMN signs simultaneously.</strong> Fasciculations + atrophy (LMN) PLUS hyperreflexia + spasticity (UMN) in the same patient. Sensation is INTACT (unlike MS or SCI). Cognition is usually intact. No definitive diagnostic test &#8212; diagnosis by ruling everything else out. <strong>Therapeutic window: 35&#8211;80%</strong> of maximum. Below 35% = too weak to benefit. Above 80% = overwork damage risk, can accelerate motor neuron death. <strong>Never push ALS patients to fatigue.</strong> Focus on moderate activity, energy conservation, respiratory support. Bulbar onset (speech/swallowing first) has poorer prognosis than limb onset. Average survival: 2&#8211;5 years. Respiratory failure = #1 cause of death.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">T4 complete SCI patient develops sudden severe HTN and bradycardia. In this case, What is happening and what do you do?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Autonomic dysreflexia &#8212; MEDICAL EMERGENCY.</strong> Occurs in SCI at T6 and above (this patient is T4). Massive sympathetic response causing widespread vasoconstriction and severe HTN. <strong>S/S:</strong> HTN, bradycardia, diaphoresis, headache, blotchy/red skin, piloerection. <strong>Most common triggers:</strong> UTI, fecal impaction, pressure ulcers, tight clothing on LE. <strong>Immediate treatment:</strong> (1) SIT or STAND the patient &#8212; do NOT lie them down (lowers BP). (2) Relieve the noxious stimulus immediately (check catheter, loosen clothing, check for skin breakdown). (3) Monitor BP. <strong>Risk:</strong> Uncontrolled HTN can cause hemorrhagic stroke. This is why we never use tight clothing, always check catheters, and educate patients/caregivers about triggers.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Child with posterior fossa brain tumor has abnormal head posturing, balance deficits, and nausea. In this case, What's the biggest concern?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Tonsillar herniation &#8212; the child could die.</strong> Posterior fossa tumors (commonly medulloblastoma in children) grow into the 4th ventricle, blocking CSF flow &#8594; hydrocephalus &#8594; increased ICP. As ICP rises, the cerebellar tonsils can herniate through the foramen magnum, compressing the brainstem &#8594; respiratory arrest &#8594; death. <strong>Medulloblastoma:</strong> Always malignant. Arises from primitive neuroectodermal cells. 20% of all childhood brain tumors. 5-year survival 61%. <strong>General brain tumor signs:</strong> Headache (30%), seizures, altered mental status, papilledema. <strong>The nausea is concerning</strong> because it can indicate rising ICP. <strong>Not:</strong> vomiting risk, agitation, hitting a doorframe, or bathroom accident. The life-threatening concern is always herniation with posterior fossa tumors.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is Rhythmic Initiation and when do you use it in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Rhythmic Initiation (PNF technique):</strong> Goal is to promote learning of a new movement, improve intra/intermuscular coordination, promote relaxation and independent movement. <strong>4 phases:</strong> (1) Passive: "Relax, let me move you." (2) Active-assisted: "Now help me move you." (3) AROM: "Now move on your own." (4) Resisted: "Now push." <strong>Indications:</strong> Inability to relax, hypertonicity (spasticity AND rigidity), difficulty initiating movement, uncoordinated movement, motor planning or learning deficits (apraxia/dyspraxia), communication deficits (aphasia). <strong>Why aphasia?</strong> The 4-phase progression provides kinesthetic learning without relying heavily on verbal instructions &#8212; the patient FEELS the movement pattern before being asked to produce it. <strong>Key:</strong> This is for learning NEW movements. For ROM limitations, use Contract-Relax or Hold-Relax instead.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">MS patient asks about exercising. In this case, What do you tell them about heat, fatigue, and exercise type?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Uhthoff's phenomenon:</strong> MS symptoms temporarily worsen with ANY increase in body temperature &#8212; even 0.5&#176;C. This is NOT a relapse. It's a temporary conduction block in demyelinated fibers that resolves when temperature normalizes. <strong>Exercise guidelines:</strong> Cool environment (cold pool &gt; warm pool). Stay hydrated. Use cooling strategies (pre-cooling, cooling vest). <strong>Fatigue is the #1 complaint in MS</strong> &#8212; not just physical, also cognitive. Do NOT push to fatigue (worsens all symptoms). Energy conservation, pacing, rest breaks are essential. Exercise within tolerance: moderate aerobic, strength training at submaximal levels, balance training. <strong>Time it right:</strong> Exercise during remission, not relapse. Morning often better than afternoon. Short frequent sessions &gt; long sessions. <strong>MS vs PD reminder:</strong> MS = spasticity (velocity-dependent, UMN). PD = rigidity (not velocity-dependent, BG).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Identify the 4 incomplete SCI syndromes and which has the best prognosis?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Anterior Cord:</strong> Flexion injuries. Loss of motor function AND pain/temp below level. Proprioception/vibration PRESERVED (posterior columns intact). <strong>Central Cord:</strong> Hyperextension injuries (most common incomplete). UE affected MORE than LE. Sensory less than motor. Usually recover to ambulate. <strong>Posterior Cord:</strong> Rare. Loss of proprioception, vibration, touch. Motor and pain/temp preserved. <strong>Brown-S&#233;quard:</strong> Hemisection. Ipsilateral weakness/paralysis + proprioceptive loss. Contralateral pain/temp loss. <strong>BEST PROGNOSIS = Brown-S&#233;quard.</strong><strong>Remember:</strong> Posterior columns cross in medulla (ipsilateral loss below lesion). Spinothalamic (pain/temp) crosses in cord (contralateral loss). This anatomy explains the split pattern in Brown-S&#233;quard. <strong>Also:</strong> Cauda equina = LMN pattern (roots, not cord). Conus medullaris = terminal cord.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -497,6 +692,4 @@ function toggleMA(header) {
   chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
 }
 function flipCard(card) { card.querySelector('.rc2-a').classList.toggle('open'); }
-</script>
-</body>
-</html>
+</script></body></html>

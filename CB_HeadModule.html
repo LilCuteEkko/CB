@@ -1,417 +1,479 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Head, Skull &amp; Cranial Anatomy</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Head, Skull &amp; Cranial Anatomy</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" class="active" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">MSK Head &amp; Face &middot; Cranial Anatomy</div>
-  <h1>Head, Skull &amp; <span>Cranial Anatomy</span></h1>
-  <p>The head houses the brain, the sensory organs (eyes, ears, nose, tongue), and the structures for breathing, eating, and speaking. The skull protects the brain with 22 interlocking bones while providing attachment for the muscles of facial expression (CN VII) and mastication (CN V3). For PTs, head anatomy is essential for understanding cervicogenic headaches, TMJ dysfunction, vestibular disorders, cranial nerve screening, and recognizing red flags (skull fractures, intracranial hemorrhage, meningitis). This module covers skull osteology, foramina, facial muscles, cranial nerves, eyes, ears, oral/nasal regions, brain/meninges, and TMJ.</p>
+<div class="hero-tag">MSK Head &amp; Face &middot; Cranial Anatomy</div>
+<h1>Head, Skull &amp; <span>Cranial Anatomy</span></h1>
+<p>The head houses the brain, the sensory organs (eyes, ears, nose, tongue), and the structures for breathing, eating, and speaking. The skull protects the brain with 22 interlocking bones while providing attachment for the muscles of facial expression (CN VII) and mastication (CN V3). For PTs, head anatomy is essential for understanding cervicogenic headaches, TMJ dysfunction, vestibular disorders, cranial nerve screening, and recognizing red flags (skull fractures, intracranial hemorrhage, meningitis). This module covers skull osteology, foramina, facial muscles, cranial nerves, eyes, ears, oral/nasal regions, brain/meninges, and TMJ.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('skull',this)">Skull</button>
-  <button onclick="showTab('foramina',this)">Foramina</button>
-  <button onclick="showTab('face',this)">Face &amp; Muscles</button>
-  <button onclick="showTab('eyes',this)">Eyes &amp; Orbits</button>
-  <button onclick="showTab('ear',this)">Ear</button>
-  <button onclick="showTab('oral',this)">Oral &amp; Nose</button>
-  <button onclick="showTab('brain',this)">Brain &amp; Meninges</button>
-  <button onclick="showTab('tmj',this)">TMJ</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('skull',this)">Skull</button>
+<button onclick="showTab('foramina',this)">Foramina</button>
+<button onclick="showTab('face',this)">Face &amp; Muscles</button>
+<button onclick="showTab('eyes',this)">Eyes &amp; Orbits</button>
+<button onclick="showTab('ear',this)">Ear</button>
+<button onclick="showTab('oral',this)">Oral &amp; Nose</button>
+<button onclick="showTab('brain',this)">Brain &amp; Meninges</button>
+<button onclick="showTab('tmj',this)">TMJ</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== SKULL ====== -->
 <div class="tab-panel active" id="tab-skull">
 <div class="container">
-  <div class="section-title">Skull Osteology</div>
-  <div class="section-sub">The skull consists of 22 bones: 8 neurocranium (calvaria + cranial base) and 14 facial skeleton. Know each bone, its parts, and clinical significance.</div>
-
-  <div class="section-title">Neurocranium &mdash; 8 Bones</div>
-  <table class="data-table"><thead><tr><th>Bone</th><th>Key Features</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="hi">Frontal</td><td>Calvaria (forehead). Contains frontal sinus. Forms most of orbital roof. Coronal suture joins frontal + parietal</td><td>Frontal sinus fractures from MVA &mdash; watch for CSF rhinorrhea</td></tr>
-    <tr><td class="hi">Parietal (&times;2)</td><td>Superior and lateral skull walls. Sagittal suture connects R/L. Lambdoid = parietal + occipital. Squamous = parietal + temporal</td><td>Watershed zone between MCA/ACA. Superior sagittal sinus runs midline</td></tr>
-    <tr><td class="hi">Occipital</td><td>Contains foramen magnum. EOP, superior/inferior nuchal lines, occipital condyles (C0&ndash;C1 joint)</td><td>Tonsillar herniation through foramen magnum = terminal event of increased ICP. Chiari malformation</td></tr>
-    <tr><td class="warn">Temporal (&times;2)</td><td>4 parts: squamous, petrous, mastoid, tympanic. Zygomatic process, external acoustic meatus, mastoid process, styloid process</td><td>Petrous part = densest bone in body (protects inner ear). Mastoid = SCM/digastric attachment</td></tr>
-    <tr><td class="warn">Sphenoid</td><td>Greater/lesser wings, body (with sinus), pterygoid processes, sella turcica (pituitary fossa)</td><td>Greater wing forms part of middle cranial fossa floor and orbit. Multiple foramina</td></tr>
-    <tr><td class="hi">Ethmoid</td><td>Cribriform plate (CN I passes through), crista galli, superior &amp; middle nasal conchae, perpendicular plate (nasal septum)</td><td>Cribriform fracture &rarr; anosmia + CSF rhinorrhea</td></tr>
-  </tbody></table>
-
-  <div class="section-title">Facial Skeleton &mdash; 14 Bones</div>
-  <table class="data-table"><thead><tr><th>Bone</th><th>Key Features</th></tr></thead><tbody>
-    <tr><td class="hi">Maxilla (&times;2)</td><td>Upper jaw. Palatine process forms anterior hard palate. Contains maxillary sinus (largest paranasal sinus). Infraorbital foramen (V2)</td></tr>
-    <tr><td class="hi">Mandible</td><td>Lower jaw. Body, ramus, angle, condylar process (TMJ), coronoid process (temporalis), mental foramen (V3), mandibular foramen (IAN block)</td></tr>
-    <tr><td class="hi">Zygomatic (&times;2)</td><td>Cheekbone. Forms lateral orbital wall. Zygomatic arch = zygomatic + temporal bones</td></tr>
-    <tr><td class="hi">Nasal (&times;2)</td><td>Bridge of nose. Nasion = junction of nasal bones + frontal bone</td></tr>
-    <tr><td class="hi">Palatine (&times;2)</td><td>Posterior hard palate (horizontal plate). Contributes to nasal cavity floor and orbital floor</td></tr>
-    <tr><td class="hi">Lacrimal (&times;2)</td><td>Medial orbital wall. Contains lacrimal groove for nasolacrimal duct</td></tr>
-    <tr><td class="hi">Vomer</td><td>Midline nasal septum (inferior + posterior). Joins perpendicular plate of ethmoid superiorly</td></tr>
-    <tr><td class="hi">Inferior Nasal Conchae (&times;2)</td><td>Separate bones (unlike superior/middle which are ethmoid). Create turbulence for air filtration</td></tr>
-  </tbody></table>
-
-  <div class="section-title">Cranial Sutures &amp; Junctions</div>
-  <table class="data-table"><thead><tr><th>Suture/Junction</th><th>Bones</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="hi">Coronal Suture</td><td>Frontal + Parietal</td><td>Runs coronally (ear to ear). Premature closure = craniosynostosis</td></tr>
-    <tr><td class="hi">Sagittal Suture</td><td>R/L Parietal</td><td>Midline AP. Superior sagittal venous sinus runs in inner groove</td></tr>
-    <tr><td class="hi">Lambdoid Suture</td><td>Occipital + Parietal</td><td>Lambda-shaped (&lambda;). Posterior suture</td></tr>
-    <tr><td class="hi">Squamous Suture</td><td>Parietal + Temporal</td><td>Lateral. Overlapping (scale-like)</td></tr>
-    <tr><td class="hi">Bregma</td><td>Coronal + Sagittal junction</td><td>Anterior fontanelle in infants &mdash; closes by 18&ndash;24 months. Bulging = increased ICP</td></tr>
-    <tr><td class="hi">Lambda</td><td>Lambdoid + Sagittal junction</td><td>Posterior fontanelle &mdash; closes by 2&ndash;3 months</td></tr>
-    <tr><td class="warn">Pterion &starf;</td><td>Frontal + Temporal + Parietal + Sphenoid</td><td><strong>THINNEST skull point.</strong> Middle meningeal artery below. Trauma &rarr; epidural hematoma. &ldquo;Talk and die&rdquo; lucid interval. Surgical emergency</td></tr>
-  </tbody></table>
+<div class="section-title">Skull Osteology</div>
+<div class="section-sub">The skull consists of 22 bones: 8 neurocranium (calvaria + cranial base) and 14 facial skeleton. Know each bone, its parts, and clinical significance.</div>
+<div class="section-title">Neurocranium &mdash; 8 Bones</div>
+<table class="data-table"><thead>
+<tr><th>Bone</th><th>Key Features</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Frontal</td><td>Calvaria (forehead). Contains frontal sinus. Forms most of orbital roof. Coronal suture joins frontal + parietal</td><td>Frontal sinus fractures from MVA &mdash; watch for CSF rhinorrhea</td></tr>
+<tr><td class="hi">Parietal (&times;2)</td><td>Superior and lateral skull walls. Sagittal suture connects R/L. Lambdoid = parietal + occipital. Squamous = parietal + temporal</td><td>Watershed zone between MCA/ACA. Superior sagittal sinus runs midline</td></tr>
+<tr><td class="hi">Occipital</td><td>Contains foramen magnum. EOP, superior/inferior nuchal lines, occipital condyles (C0&ndash;C1 joint)</td><td>Tonsillar herniation through foramen magnum = terminal event of increased ICP. Chiari malformation</td></tr>
+<tr><td class="warn">Temporal (&times;2)</td><td>4 parts: squamous, petrous, mastoid, tympanic. Zygomatic process, external acoustic meatus, mastoid process, styloid process</td><td>Petrous part = densest bone in body (protects inner ear). Mastoid = SCM/digastric attachment</td></tr>
+<tr><td class="warn">Sphenoid</td><td>Greater/lesser wings, body (with sinus), pterygoid processes, sella turcica (pituitary fossa)</td><td>Greater wing forms part of middle cranial fossa floor and orbit. Multiple foramina</td></tr>
+<tr><td class="hi">Ethmoid</td><td>Cribriform plate (CN I passes through), crista galli, superior &amp; middle nasal conchae, perpendicular plate (nasal septum)</td><td>Cribriform fracture &rarr; anosmia + CSF rhinorrhea</td></tr></tbody></table>
+<div class="section-title">Facial Skeleton &mdash; 14 Bones</div>
+<table class="data-table"><thead>
+<tr><th>Bone</th><th>Key Features</th></tr></thead><tbody>
+<tr><td class="hi">Maxilla (&times;2)</td><td>Upper jaw. Palatine process forms anterior hard palate. Contains maxillary sinus (largest paranasal sinus). Infraorbital foramen (V2)</td></tr>
+<tr><td class="hi">Mandible</td><td>Lower jaw. Body, ramus, angle, condylar process (TMJ), coronoid process (temporalis), mental foramen (V3), mandibular foramen (IAN block)</td></tr>
+<tr><td class="hi">Zygomatic (&times;2)</td><td>Cheekbone. Forms lateral orbital wall. Zygomatic arch = zygomatic + temporal bones</td></tr>
+<tr><td class="hi">Nasal (&times;2)</td><td>Bridge of nose. Nasion = junction of nasal bones + frontal bone</td></tr>
+<tr><td class="hi">Palatine (&times;2)</td><td>Posterior hard palate (horizontal plate). Contributes to nasal cavity floor and orbital floor</td></tr>
+<tr><td class="hi">Lacrimal (&times;2)</td><td>Medial orbital wall. Contains lacrimal groove for nasolacrimal duct</td></tr>
+<tr><td class="hi">Vomer</td><td>Midline nasal septum (inferior + posterior). Joins perpendicular plate of ethmoid superiorly</td></tr>
+<tr><td class="hi">Inferior Nasal Conchae (&times;2)</td><td>Separate bones (unlike superior/middle which are ethmoid). Create turbulence for air filtration</td></tr></tbody></table>
+<div class="section-title">Cranial Sutures &amp; Junctions</div>
+<table class="data-table"><thead>
+<tr><th>Suture/Junction</th><th>Bones</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Coronal Suture</td><td>Frontal + Parietal</td><td>Runs coronally (ear to ear). Premature closure = craniosynostosis</td></tr>
+<tr><td class="hi">Sagittal Suture</td><td>R/L Parietal</td><td>Midline AP. Superior sagittal venous sinus runs in inner groove</td></tr>
+<tr><td class="hi">Lambdoid Suture</td><td>Occipital + Parietal</td><td>Lambda-shaped (&lambda;). Posterior suture</td></tr>
+<tr><td class="hi">Squamous Suture</td><td>Parietal + Temporal</td><td>Lateral. Overlapping (scale-like)</td></tr>
+<tr><td class="hi">Bregma</td><td>Coronal + Sagittal junction</td><td>Anterior fontanelle in infants &mdash; closes by 18&ndash;24 months. Bulging = increased ICP</td></tr>
+<tr><td class="hi">Lambda</td><td>Lambdoid + Sagittal junction</td><td>Posterior fontanelle &mdash; closes by 2&ndash;3 months</td></tr>
+<tr><td class="warn">Pterion &starf;</td><td>Frontal + Temporal + Parietal + Sphenoid</td><td><strong>THINNEST skull point.</strong> Middle meningeal artery below. Trauma &rarr; epidural hematoma. &ldquo;Talk and die&rdquo; lucid interval. Surgical emergency</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== FORAMINA ====== -->
 <div class="tab-panel" id="tab-foramina">
 <div class="container">
-  <div class="section-title">Cranial Foramina</div>
-  <div class="section-sub">Each foramen transmits specific cranial nerves and vessels. This is the most tested anatomy topic &mdash; know every foramen, its contents, and the clinical consequence of damage.</div>
-
-  <table class="data-table"><thead><tr><th>Fossa</th><th>Foramen</th><th>Contents</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="hi">Anterior</td><td>Cribriform Foramina</td><td>CN I &mdash; Olfactory rootlets</td><td>Fracture &rarr; anosmia + CSF rhinorrhea</td></tr>
-    <tr><td class="warn">Middle</td><td>Optic Canal</td><td>CN II + Ophthalmic artery</td><td>Fracture &rarr; visual loss. Optic neuritis (MS)</td></tr>
-    <tr><td class="warn">Middle</td><td>Superior Orbital Fissure</td><td>CN III, IV, VI + V1 (ophthalmic)</td><td>SOF syndrome: complete ophthalmoplegia + ptosis + forehead numbness</td></tr>
-    <tr><td class="warn">Middle</td><td>Foramen Rotundum</td><td>V2 &mdash; Maxillary nerve</td><td>V2 &rarr; infraorbital nerve. Trigeminal neuralgia MC in V2</td></tr>
-    <tr><td class="warn">Middle</td><td>Foramen Ovale</td><td>V3 &mdash; Mandibular nerve (ONLY CN V division with motor)</td><td>V3 lesion &rarr; masseter weakness (jaw deviates to WEAK side) + lower face numbness</td></tr>
-    <tr><td class="warn">Middle</td><td>Foramen Spinosum</td><td>Middle meningeal artery</td><td><strong>EPIDURAL HEMATOMA:</strong> arterial bleed, lens/biconvex on CT, doesn&rsquo;t cross sutures, lucid interval. Emergency</td></tr>
-    <tr><td class="warn">Middle</td><td>Foramen Lacerum</td><td>Mostly fibrocartilage. ICA passes OVER (not through)</td><td>Not a true transit foramen</td></tr>
-    <tr><td class="hi">Posterior</td><td>Internal Acoustic Meatus</td><td>CN VII + CN VIII</td><td>Acoustic neuroma &rarr; CN VIII (hearing loss, tinnitus) then CN VII (facial weakness)</td></tr>
-    <tr><td class="hi">Posterior</td><td>Jugular Foramen</td><td>CN IX, X, XI + IJV (sigmoid sinus exit)</td><td>Vernet syndrome: dysphagia (IX), hoarseness (X), trap/SCM weakness (XI)</td></tr>
-    <tr><td class="hi">Posterior</td><td>Hypoglossal Canal</td><td>CN XII &mdash; Hypoglossal</td><td>Tongue deviates to WEAK side on protrusion</td></tr>
-    <tr><td class="warn">Posterior</td><td>Foramen Magnum</td><td>Medulla, spinal roots of CN XI, vertebral arteries</td><td>Tonsillar herniation = terminal event. Chiari malformation. Cushing&rsquo;s triad</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip">
-    <div class="bl-label">Inferior View Foramina</div>
-    <p><strong>Carotid canal:</strong> ICA enters skull.<br><strong>Stylomastoid foramen:</strong> CN VII exits skull &rarr; enters parotid &rarr; divides into 5 branches.<br><strong>Jugular foramen:</strong> also visible inferiorly (CN 9, 10, 11 + sigmoid sinus &rarr; IJV).</p>
-  </div>
+<div class="section-title">Cranial Foramina</div>
+<div class="section-sub">Each foramen transmits specific cranial nerves and vessels. This is the most tested anatomy topic &mdash; know every foramen, its contents, and the clinical consequence of damage.</div>
+<table class="data-table"><thead>
+<tr><th>Fossa</th><th>Foramen</th><th>Contents</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Anterior</td><td>Cribriform Foramina</td><td>CN I &mdash; Olfactory rootlets</td><td>Fracture &rarr; anosmia + CSF rhinorrhea</td></tr>
+<tr><td class="warn">Middle</td><td>Optic Canal</td><td>CN II + Ophthalmic artery</td><td>Fracture &rarr; visual loss. Optic neuritis (MS)</td></tr>
+<tr><td class="warn">Middle</td><td>Superior Orbital Fissure</td><td>CN III, IV, VI + V1 (ophthalmic)</td><td>SOF syndrome: complete ophthalmoplegia + ptosis + forehead numbness</td></tr>
+<tr><td class="warn">Middle</td><td>Foramen Rotundum</td><td>V2 &mdash; Maxillary nerve</td><td>V2 &rarr; infraorbital nerve. Trigeminal neuralgia MC in V2</td></tr>
+<tr><td class="warn">Middle</td><td>Foramen Ovale</td><td>V3 &mdash; Mandibular nerve (ONLY CN V division with motor)</td><td>V3 lesion &rarr; masseter weakness (jaw deviates to WEAK side) + lower face numbness</td></tr>
+<tr><td class="warn">Middle</td><td>Foramen Spinosum</td><td>Middle meningeal artery</td><td><strong>EPIDURAL HEMATOMA:</strong> arterial bleed, lens/biconvex on CT, doesn&rsquo;t cross sutures, lucid interval. Emergency</td></tr>
+<tr><td class="warn">Middle</td><td>Foramen Lacerum</td><td>Mostly fibrocartilage. ICA passes OVER (not through)</td><td>Not a true transit foramen</td></tr>
+<tr><td class="hi">Posterior</td><td>Internal Acoustic Meatus</td><td>CN VII + CN VIII</td><td>Acoustic neuroma &rarr; CN VIII (hearing loss, tinnitus) then CN VII (facial weakness)</td></tr>
+<tr><td class="hi">Posterior</td><td>Jugular Foramen</td><td>CN IX, X, XI + IJV (sigmoid sinus exit)</td><td>Vernet syndrome: dysphagia (IX), hoarseness (X), trap/SCM weakness (XI)</td></tr>
+<tr><td class="hi">Posterior</td><td>Hypoglossal Canal</td><td>CN XII &mdash; Hypoglossal</td><td>Tongue deviates to WEAK side on protrusion</td></tr>
+<tr><td class="warn">Posterior</td><td>Foramen Magnum</td><td>Medulla, spinal roots of CN XI, vertebral arteries</td><td>Tonsillar herniation = terminal event. Chiari malformation. Cushing&rsquo;s triad</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Inferior View Foramina</div>
+<p><strong>Carotid canal:</strong> ICA enters skull.<br><strong>Stylomastoid foramen:</strong> CN VII exits skull &rarr; enters parotid &rarr; divides into 5 branches.<br><strong>Jugular foramen:</strong> also visible inferiorly (CN 9, 10, 11 + sigmoid sinus &rarr; IJV).</p>
 </div>
 </div>
-
-<!-- ====== FACE & MUSCLES ====== -->
+</div>
 <div class="tab-panel" id="tab-face">
 <div class="container">
-  <div class="section-title">Facial Muscles &amp; Sensory Innervation</div>
-  <div class="section-sub">All muscles of facial expression = CN VII. All muscles of mastication = CN V3. All sensory from face = CN V (3 divisions). This is the foundation for Bell&rsquo;s palsy vs stroke differentiation.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Muscles of Facial Expression &mdash; CN VII</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">CN VII Branches</div><p>Divides into 5 branches through parotid gland: <strong>T</strong>emporal, <strong>Z</strong>ygomatic, <strong>B</strong>uccal, <strong>M</strong>andibular, <strong>C</strong>ervical. Mnemonic: &ldquo;To Zanzibar By Motor Car.&rdquo; Injury/Bell&rsquo;s palsy &rarr; ipsilateral facial paralysis.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Action</th><th>Nerve Branch</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="hi">Occipitofrontalis</td><td>Elevates eyebrows; wrinkles forehead</td><td>Temporal (frontal) + posterior auricular (occipital)</td><td>Two bellies connected by epicranial aponeurosis (galea)</td></tr>
-        <tr><td class="hi">Orbicularis Oculi</td><td>Palpebral: gentle close. Orbital: forceful close (squint)</td><td>Temporal + zygomatic</td><td>Bell&rsquo;s palsy: can&rsquo;t close eye (lagophthalmos) &rarr; corneal ulceration</td></tr>
-        <tr><td class="hi">Zygomaticus Major</td><td>Pulls mouth corner superolaterally &mdash; SMILE</td><td>Zygomatic + buccal</td><td>Absent/asymmetric smile = early CN VII sign</td></tr>
-        <tr><td class="hi">Orbicularis Oris</td><td>Purses lips (whistle, kiss)</td><td>Buccal + mandibular</td><td>Bell&rsquo;s: drooling, food falls from affected corner</td></tr>
-        <tr><td class="hi">Buccinator</td><td>Compresses cheeks; holds food between teeth</td><td>Buccal</td><td>Weakness = food pouches in cheek. Parotid duct pierces it</td></tr>
-        <tr><td class="hi">Mentalis</td><td>Protrudes lower lip (pouting)</td><td>Mandibular</td><td>Tests mandibular branch of CN VII</td></tr>
-        <tr><td class="hi">Platysma</td><td>Tenses neck skin; depresses mandible</td><td>Cervical</td><td>Superficial neck muscle</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Peripheral vs Central CN VII Palsy</div><p><strong>Peripheral (Bell&rsquo;s):</strong> forehead INVOLVED &mdash; entire ipsilateral face paralyzed (all 5 branches). <strong>Central (stroke):</strong> forehead SPARED &mdash; only lower face droops (bilateral cortical representation of forehead). This distinction localizes the lesion without imaging.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Muscles of Mastication &mdash; CN V3</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Masseter</td><td>Zygomatic arch</td><td>Lateral ramus + angle of mandible</td><td>CN V3 (masseteric N)</td><td>Elevates mandible (closes jaw). Strongest by bulk</td></tr>
-        <tr><td class="warn">Temporalis</td><td>Temporal fossa + fascia</td><td>Coronoid process + anterior ramus</td><td>CN V3 (deep temporal Ns)</td><td>Anterior: elevates. Posterior: retracts mandible</td></tr>
-        <tr><td class="hi">Medial Pterygoid</td><td>Lateral pterygoid plate + maxillary tuberosity</td><td>Medial ramus + angle</td><td>CN V3</td><td>Bilateral: elevates. Unilateral: lateral deviation to opposite side</td></tr>
-        <tr><td class="warn">Lateral Pterygoid</td><td>Superior: greater wing of sphenoid. Inferior: lateral pterygoid plate</td><td>Superior: TMJ disc + capsule. Inferior: condylar neck</td><td>CN V3</td><td>Bilateral: protracts/opens jaw. Unilateral: lateral deviation opposite. KEY muscle for TMJ dysfunction (attaches to disc)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Extraocular Muscles &mdash; CN III, IV, VI</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip purple"><div class="bl-label">LR6 SO4 &mdash; All Others 3</div><p>Lateral Rectus = CN VI (abducens). Superior Oblique = CN IV (trochlear). All others = CN III (oculomotor). CN III also: levator palpebrae + pupil constriction.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Action</th><th>Nerve</th><th>Test</th></tr></thead><tbody>
-        <tr><td class="hi">Superior Rectus</td><td>Elevates eye</td><td>CN III</td><td>Look up</td></tr>
-        <tr><td class="hi">Inferior Rectus</td><td>Depresses eye</td><td>CN III</td><td>Look down</td></tr>
-        <tr><td class="hi">Medial Rectus</td><td>Adducts eye</td><td>CN III</td><td>Look medially</td></tr>
-        <tr><td class="warn">Lateral Rectus</td><td>Abducts eye</td><td>CN VI</td><td>Look laterally (LR6)</td></tr>
-        <tr><td class="warn">Superior Oblique</td><td>Depresses + IR eye</td><td>CN IV</td><td>Down &amp; in (SO4)</td></tr>
-        <tr><td class="hi">Inferior Oblique</td><td>Elevates + ER eye</td><td>CN III</td><td>Up &amp; in</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>CN V &mdash; Trigeminal Nerve (Sensory Face)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Division</th><th>Foramen</th><th>Sensory Territory</th><th>Key Branches</th></tr></thead><tbody>
-        <tr><td class="hi">V1 (Ophthalmic)</td><td>Superior orbital fissure</td><td>Nose, eyes, skin above eyes, forehead, scalp to vertex</td><td>Supraorbital, supratrochlear, nasociliary, lacrimal, frontal</td></tr>
-        <tr><td class="hi">V2 (Maxillary)</td><td>Foramen rotundum</td><td>Mid-face (lateral + below eye, above lip), palate, sinuses, maxillary teeth</td><td>Infraorbital, zygomaticofacial, zygomaticotemporal</td></tr>
-        <tr><td class="warn">V3 (Mandibular)</td><td>Foramen ovale</td><td>Lower face, jaw, mandibular teeth, anterior 2/3 tongue (general sensation)</td><td>Buccal, auriculotemporal, mental nerve. <strong>ONLY division with motor</strong> (muscles of mastication)</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Trigeminal Neuralgia</div><p>Severe facial pain along sensory distribution of one CN V branch. MC = maxillary (V2) division. &ldquo;Tic douloureux&rdquo; &mdash; excruciating, electric-shock-like pain triggered by light touch, chewing, or cold wind.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Facial Vasculature</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Blood Supply to Face</div><p>Primary supply via <strong>ECA</strong> (external carotid artery): facial artery, maxillary artery, superficial temporal artery. Region above eyes via <strong>ICA</strong> (internal carotid): ophthalmic artery &rarr; supraorbital + supratrochlear arteries. The ECA/ICA anastomosis provides backup blood supply to brain if ICA occluded.</p></div>
-    </div>
-  </div>
+<div class="section-title">Facial Muscles &amp; Sensory Innervation</div>
+<div class="section-sub">All muscles of facial expression = CN VII. All muscles of mastication = CN V3. All sensory from face = CN V (3 divisions). This is the foundation for Bell&rsquo;s palsy vs stroke differentiation.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Muscles of Facial Expression &mdash; CN VII</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">CN VII Branches</div>
+<p>Divides into 5 branches through parotid gland: <strong>T</strong>emporal, <strong>Z</strong>ygomatic, <strong>B</strong>uccal, <strong>M</strong>andibular, <strong>C</strong>ervical. Mnemonic: &ldquo;To Zanzibar By Motor Car.&rdquo; Injury/Bell&rsquo;s palsy &rarr; ipsilateral facial paralysis.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Action</th><th>Nerve Branch</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Occipitofrontalis</td><td>Elevates eyebrows; wrinkles forehead</td><td>Temporal (frontal) + posterior auricular (occipital)</td><td>Two bellies connected by epicranial aponeurosis (galea)</td></tr>
+<tr><td class="hi">Orbicularis Oculi</td><td>Palpebral: gentle close. Orbital: forceful close (squint)</td><td>Temporal + zygomatic</td><td>Bell&rsquo;s palsy: can&rsquo;t close eye (lagophthalmos) &rarr; corneal ulceration</td></tr>
+<tr><td class="hi">Zygomaticus Major</td><td>Pulls mouth corner superolaterally &mdash; SMILE</td><td>Zygomatic + buccal</td><td>Absent/asymmetric smile = early CN VII sign</td></tr>
+<tr><td class="hi">Orbicularis Oris</td><td>Purses lips (whistle, kiss)</td><td>Buccal + mandibular</td><td>Bell&rsquo;s: drooling, food falls from affected corner</td></tr>
+<tr><td class="hi">Buccinator</td><td>Compresses cheeks; holds food between teeth</td><td>Buccal</td><td>Weakness = food pouches in cheek. Parotid duct pierces it</td></tr>
+<tr><td class="hi">Mentalis</td><td>Protrudes lower lip (pouting)</td><td>Mandibular</td><td>Tests mandibular branch of CN VII</td></tr>
+<tr><td class="hi">Platysma</td><td>Tenses neck skin; depresses mandible</td><td>Cervical</td><td>Superficial neck muscle</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Peripheral vs Central CN VII Palsy</div>
+<p><strong>Peripheral (Bell&rsquo;s):</strong> forehead INVOLVED &mdash; entire ipsilateral face paralyzed (all 5 branches). <strong>Central (stroke):</strong> forehead SPARED &mdash; only lower face droops (bilateral cortical representation of forehead). This distinction localizes the lesion without imaging.</p>
 </div>
 </div>
-
-<!-- ====== EYES & ORBITS ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Muscles of Mastication &mdash; CN V3</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Masseter</td><td>Zygomatic arch</td><td>Lateral ramus + angle of mandible</td><td>CN V3 (masseteric N)</td><td>Elevates mandible (closes jaw). Strongest by bulk</td></tr>
+<tr><td class="warn">Temporalis</td><td>Temporal fossa + fascia</td><td>Coronoid process + anterior ramus</td><td>CN V3 (deep temporal Ns)</td><td>Anterior: elevates. Posterior: retracts mandible</td></tr>
+<tr><td class="hi">Medial Pterygoid</td><td>Lateral pterygoid plate + maxillary tuberosity</td><td>Medial ramus + angle</td><td>CN V3</td><td>Bilateral: elevates. Unilateral: lateral deviation to opposite side</td></tr>
+<tr><td class="warn">Lateral Pterygoid</td><td>Superior: greater wing of sphenoid. Inferior: lateral pterygoid plate</td><td>Superior: TMJ disc + capsule. Inferior: condylar neck</td><td>CN V3</td><td>Bilateral: protracts/opens jaw. Unilateral: lateral deviation opposite. KEY muscle for TMJ dysfunction (attaches to disc)</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Extraocular Muscles &mdash; CN III, IV, VI</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip purple">
+<div class="bl-label">LR6 SO4 &mdash; All Others 3</div>
+<p>Lateral Rectus = CN VI (abducens). Superior Oblique = CN IV (trochlear). All others = CN III (oculomotor). CN III also: levator palpebrae + pupil constriction.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Action</th><th>Nerve</th><th>Test</th></tr></thead><tbody>
+<tr><td class="hi">Superior Rectus</td><td>Elevates eye</td><td>CN III</td><td>Look up</td></tr>
+<tr><td class="hi">Inferior Rectus</td><td>Depresses eye</td><td>CN III</td><td>Look down</td></tr>
+<tr><td class="hi">Medial Rectus</td><td>Adducts eye</td><td>CN III</td><td>Look medially</td></tr>
+<tr><td class="warn">Lateral Rectus</td><td>Abducts eye</td><td>CN VI</td><td>Look laterally (LR6)</td></tr>
+<tr><td class="warn">Superior Oblique</td><td>Depresses + IR eye</td><td>CN IV</td><td>Down &amp; in (SO4)</td></tr>
+<tr><td class="hi">Inferior Oblique</td><td>Elevates + ER eye</td><td>CN III</td><td>Up &amp; in</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>CN V &mdash; Trigeminal Nerve (Sensory Face)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Division</th><th>Foramen</th><th>Sensory Territory</th><th>Key Branches</th></tr></thead><tbody>
+<tr><td class="hi">V1 (Ophthalmic)</td><td>Superior orbital fissure</td><td>Nose, eyes, skin above eyes, forehead, scalp to vertex</td><td>Supraorbital, supratrochlear, nasociliary, lacrimal, frontal</td></tr>
+<tr><td class="hi">V2 (Maxillary)</td><td>Foramen rotundum</td><td>Mid-face (lateral + below eye, above lip), palate, sinuses, maxillary teeth</td><td>Infraorbital, zygomaticofacial, zygomaticotemporal</td></tr>
+<tr><td class="warn">V3 (Mandibular)</td><td>Foramen ovale</td><td>Lower face, jaw, mandibular teeth, anterior 2/3 tongue (general sensation)</td><td>Buccal, auriculotemporal, mental nerve. <strong>ONLY division with motor</strong> (muscles of mastication)</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Trigeminal Neuralgia</div>
+<p>Severe facial pain along sensory distribution of one CN V branch. MC = maxillary (V2) division. &ldquo;Tic douloureux&rdquo; &mdash; excruciating, electric-shock-like pain triggered by light touch, chewing, or cold wind.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Facial Vasculature</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Blood Supply to Face</div>
+<p>Primary supply via <strong>ECA</strong> (external carotid artery): facial artery, maxillary artery, superficial temporal artery. Region above eyes via <strong>ICA</strong> (internal carotid): ophthalmic artery &rarr; supraorbital + supratrochlear arteries. The ECA/ICA anastomosis provides backup blood supply to brain if ICA occluded.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-eyes">
 <div class="container">
-  <div class="section-title">Eyes &amp; Orbits</div>
-  <div class="section-sub">The orbit is formed by 7 bones with 3 major foramina. The eyeball has 3 layers (outer fibrous, middle vascular, inner neural). Aqueous humor drainage failure = glaucoma.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Orbit &mdash; Bones &amp; Foramina</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">7 Bones Form the Orbit</div><p>Frontal (roof), maxillary (floor), zygomatic (lateral), lacrimal (medial), ethmoid (medial), sphenoid (posterior), palatine (floor). Three key openings: <strong>Optic canal</strong> (CN II + ophthalmic artery), <strong>Superior orbital fissure</strong> (CN III, IV, VI, V1), <strong>Inferior orbital fissure</strong> (V2 &mdash; maxillary nerve).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Eyeball Layers</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Layer</th><th>Structure</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td rowspan="2" class="hi"><strong>Outer (Fibrous)</strong></td><td>Sclera</td><td>Posterior 5/6 &ldquo;white of eye&rdquo;. Structural rigidity</td><td>Scleritis may indicate RA</td></tr>
-        <tr><td>Cornea</td><td>Anterior 1/6. Transparent, avascular. Primary refractor</td><td>Corneal reflex: V1 afferent + VII efferent. Bell&rsquo;s &rarr; exposure risk</td></tr>
-        <tr><td rowspan="3" class="warn"><strong>Middle (Vascular)</strong></td><td>Choroid</td><td>Pigmented, absorbs scattered light. Nourishes outer retina</td><td>Choroidal melanoma = MC primary intraocular malignancy</td></tr>
-        <tr><td>Ciliary Body</td><td>Secretes aqueous humor. Ciliary muscle controls lens shape (accommodation)</td><td>Accommodation = CN III. Loss with age = presbyopia</td></tr>
-        <tr><td>Iris + Pupil</td><td>Sphincter pupillae (constricts, parasympathetic CN III). Dilator (sympathetic)</td><td>Pupillary light reflex: CN II + III. Horner&rsquo;s: miosis + ptosis + anhidrosis</td></tr>
-        <tr><td class="hi"><strong>Inner (Neural)</strong></td><td>Retina</td><td>Photoreceptors (rods/cones). Optic disc = blind spot. Fovea = highest acuity</td><td>Retinal detachment = curtain vision loss. Papilledema = increased ICP</td></tr>
-      </tbody></table>
-      <div class="bl-strip gold"><div class="bl-label">Chambers &amp; Glaucoma</div><p>Anterior chamber (cornea to iris) + posterior chamber (iris to lens). Aqueous humor: secreted by ciliary processes &rarr; posterior chamber &rarr; pupil &rarr; anterior chamber &rarr; drained via canal of Schlemm. <strong>Glaucoma:</strong> impaired drainage &rarr; increased IOP &rarr; retinal damage &rarr; blindness. Open-angle (chronic, MC) vs closed-angle (acute emergency). Light pathway: cornea &rarr; aqueous humor &rarr; lens &rarr; vitreous body &rarr; retina.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Lacrimal Apparatus</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">Tear Drainage Pathway</div><p>Lacrimal glands (superolateral orbit) &rarr; tears circulate across cornea &rarr; lacrimal lake (medial canthus) &rarr; lacrimal punctum &rarr; lacrimal canaliculi &rarr; lacrimal sac &rarr; nasolacrimal duct &rarr; inferior meatus of nose (why crying makes nose run).</p></div>
-    </div>
-  </div>
+<div class="section-title">Eyes &amp; Orbits</div>
+<div class="section-sub">The orbit is formed by 7 bones with 3 major foramina. The eyeball has 3 layers (outer fibrous, middle vascular, inner neural). Aqueous humor drainage failure = glaucoma.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Orbit &mdash; Bones &amp; Foramina</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">7 Bones Form the Orbit</div>
+<p>Frontal (roof), maxillary (floor), zygomatic (lateral), lacrimal (medial), ethmoid (medial), sphenoid (posterior), palatine (floor). Three key openings: <strong>Optic canal</strong> (CN II + ophthalmic artery), <strong>Superior orbital fissure</strong> (CN III, IV, VI, V1), <strong>Inferior orbital fissure</strong> (V2 &mdash; maxillary nerve).</p>
 </div>
 </div>
-
-<!-- ====== EAR ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Eyeball Layers</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Layer</th><th>Structure</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
+<tr><td rowspan="2" class="hi"><strong>Outer (Fibrous)</strong></td><td>Sclera</td><td>Posterior 5/6 &ldquo;white of eye&rdquo;. Structural rigidity</td><td>Scleritis may indicate RA</td></tr>
+<tr><td>Cornea</td><td>Anterior 1/6. Transparent, avascular. Primary refractor</td><td>Corneal reflex: V1 afferent + VII efferent. Bell&rsquo;s &rarr; exposure risk</td></tr>
+<tr><td rowspan="3" class="warn"><strong>Middle (Vascular)</strong></td><td>Choroid</td><td>Pigmented, absorbs scattered light. Nourishes outer retina</td><td>Choroidal melanoma = MC primary intraocular malignancy</td></tr>
+<tr><td>Ciliary Body</td><td>Secretes aqueous humor. Ciliary muscle controls lens shape (accommodation)</td><td>Accommodation = CN III. Loss with age = presbyopia</td></tr>
+<tr><td>Iris + Pupil</td><td>Sphincter pupillae (constricts, parasympathetic CN III). Dilator (sympathetic)</td><td>Pupillary light reflex: CN II + III. Horner&rsquo;s: miosis + ptosis + anhidrosis</td></tr>
+<tr><td class="hi"><strong>Inner (Neural)</strong></td><td>Retina</td><td>Photoreceptors (rods/cones). Optic disc = blind spot. Fovea = highest acuity</td><td>Retinal detachment = curtain vision loss. Papilledema = increased ICP</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Chambers &amp; Glaucoma</div>
+<p>Anterior chamber (cornea to iris) + posterior chamber (iris to lens). Aqueous humor: secreted by ciliary processes &rarr; posterior chamber &rarr; pupil &rarr; anterior chamber &rarr; drained via canal of Schlemm. <strong>Glaucoma:</strong> impaired drainage &rarr; increased IOP &rarr; retinal damage &rarr; blindness. Open-angle (chronic, MC) vs closed-angle (acute emergency). Light pathway: cornea &rarr; aqueous humor &rarr; lens &rarr; vitreous body &rarr; retina.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Lacrimal Apparatus</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Tear Drainage Pathway</div>
+<p>Lacrimal glands (superolateral orbit) &rarr; tears circulate across cornea &rarr; lacrimal lake (medial canthus) &rarr; lacrimal punctum &rarr; lacrimal canaliculi &rarr; lacrimal sac &rarr; nasolacrimal duct &rarr; inferior meatus of nose (why crying makes nose run).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-ear">
 <div class="container">
-  <div class="section-title">Ear Anatomy</div>
-  <div class="section-sub">External, middle, and inner ear. CN VIII (vestibulocochlear) has cochlear (hearing) and vestibular (balance) divisions.</div>
-
-  <table class="data-table"><thead><tr><th>Region</th><th>Structures</th><th>Function</th></tr></thead><tbody>
-    <tr><td class="hi">External Ear</td><td>Auricle (helix, antihelix, tragus, concha, lobule), external acoustic meatus, tympanic membrane</td><td>Collects and directs sound to tympanic membrane</td></tr>
-    <tr><td class="warn">Middle Ear</td><td>Tympanic cavity with 3 ossicles: malleus (hammer, attached to TM) &rarr; incus (anvil) &rarr; stapes (stirrup, attached to oval window). Auditory (eustachian) tube connects to nasopharynx</td><td>Amplifies and transmits sound vibration. Eustachian tube equalizes pressure</td></tr>
-    <tr><td class="hi">Inner Ear</td><td>Bony labyrinth: vestibule (utricle + saccule = linear acceleration), semicircular canals (rotation), cochlea (hearing)</td><td>Vestibular function (balance) + auditory function (sound transduction)</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip purple"><div class="bl-label">Weber &amp; Rinne Tests</div><p><strong>Weber:</strong> tuning fork on midline of head. Conduction loss = louder in blocked ear. Sensorineural = louder in normal ear. <strong>Rinne:</strong> fork on mastoid &rarr; when sound disappears, move to ear. Normal: air &gt; bone conduction. Conduction loss: bone &gt; air (patient can&rsquo;t hear fork at ear).</p></div>
-  <div class="bl-strip red"><div class="bl-label">BPPV &mdash; PT Relevance</div><p>Benign paroxysmal positional vertigo = otoconia (calcium crystals) from utricle displaced into semicircular canals. MC cause of vertigo. Posterior SCC most commonly affected. <strong>Dix-Hallpike</strong> test identifies affected canal. <strong>Epley maneuver</strong> = excellent evidence-based PT treatment.</p></div>
+<div class="section-title">Ear Anatomy</div>
+<div class="section-sub">External, middle, and inner ear. CN VIII (vestibulocochlear) has cochlear (hearing) and vestibular (balance) divisions.</div>
+<table class="data-table"><thead>
+<tr><th>Region</th><th>Structures</th><th>Function</th></tr></thead><tbody>
+<tr><td class="hi">External Ear</td><td>Auricle (helix, antihelix, tragus, concha, lobule), external acoustic meatus, tympanic membrane</td><td>Collects and directs sound to tympanic membrane</td></tr>
+<tr><td class="warn">Middle Ear</td><td>Tympanic cavity with 3 ossicles: malleus (hammer, attached to TM) &rarr; incus (anvil) &rarr; stapes (stirrup, attached to oval window). Auditory (eustachian) tube connects to nasopharynx</td><td>Amplifies and transmits sound vibration. Eustachian tube equalizes pressure</td></tr>
+<tr><td class="hi">Inner Ear</td><td>Bony labyrinth: vestibule (utricle + saccule = linear acceleration), semicircular canals (rotation), cochlea (hearing)</td><td>Vestibular function (balance) + auditory function (sound transduction)</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Weber &amp; Rinne Tests</div>
+<p><strong>Weber:</strong> tuning fork on midline of head. Conduction loss = louder in blocked ear. Sensorineural = louder in normal ear. <strong>Rinne:</strong> fork on mastoid &rarr; when sound disappears, move to ear. Normal: air &gt; bone conduction. Conduction loss: bone &gt; air (patient can&rsquo;t hear fork at ear).</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">BPPV &mdash; PT Relevance</div>
+<p>Benign paroxysmal positional vertigo = otoconia (calcium crystals) from utricle displaced into semicircular canals. MC cause of vertigo. Posterior SCC most commonly affected. <strong>Dix-Hallpike</strong> test identifies affected canal. <strong>Epley maneuver</strong> = excellent evidence-based PT treatment.</p>
 </div>
 </div>
-
-<!-- ====== ORAL & NOSE ====== -->
+</div>
 <div class="tab-panel" id="tab-oral">
 <div class="container">
-  <div class="section-title">Oral Cavity &amp; Nasal Region</div>
-  <div class="section-sub">The oral cavity, tongue, salivary glands, nasal cavity, and paranasal sinuses. Know tongue innervation (complex!) and sinus drainage patterns.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Nasal Cavity &amp; Paranasal Sinuses</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Boundaries</div><p><strong>Roof:</strong> cribriform plate (CN I). <strong>Floor:</strong> hard palate. <strong>Septum:</strong> perpendicular plate of ethmoid + vomer + septal cartilage. <strong>Lateral wall:</strong> 3 conchae creating turbulence.</p></div>
-      <div class="bl-strip gold"><div class="bl-label">3 Regions</div><p><strong>Vestibule:</strong> posterior to nostrils (vibrissae). <strong>Respiratory:</strong> lower 2/3 (warms, moistens air; Kiesselbach&rsquo;s plexus = MC nosebleed site). <strong>Olfactory:</strong> upper 1/3 (CN I).</p></div>
-      <table class="data-table"><thead><tr><th>Sinus</th><th>Location</th><th>Drains Into</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">Maxillary</td><td>Within maxilla (largest)</td><td>Middle meatus</td><td><strong>MC infected sinus.</strong> Drainage opening high &rarr; gravity works against it. Infection can spread to upper teeth</td></tr>
-        <tr><td class="hi">Frontal</td><td>Frontal bone</td><td>Middle meatus</td><td>Frontal sinusitis &rarr; forehead pain</td></tr>
-        <tr><td class="hi">Ethmoid</td><td>Between nasal cavity and orbit</td><td>Superior + middle meatus</td><td>Can cause orbital cellulitis via lamina papyracea</td></tr>
-        <tr><td class="hi">Sphenoid</td><td>Sphenoid body</td><td>Sphenoethmoidal recess</td><td>Deep &mdash; near optic nerve + cavernous sinus</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Oral Cavity, Tongue &amp; Salivary Glands</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Tongue Innervation</div><p><strong>General sensation anterior 2/3:</strong> V3 (lingual nerve).<br><strong>Taste anterior 2/3:</strong> CN VII (chorda tympani).<br><strong>General sensation + taste posterior 1/3:</strong> CN IX.<br><strong>Motor (all intrinsic + most extrinsic):</strong> CN XII. Genioglossus: largest extrinsic muscle. CN XII damage &rarr; tongue deviates to WEAK side.</p></div>
-      <table class="data-table"><thead><tr><th>Gland</th><th>Location</th><th>Duct</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">Parotid (largest)</td><td>Retromandibular</td><td>Stenson&rsquo;s &rarr; near upper 2nd molar</td><td><strong>CN VII passes through it</strong> &mdash; tumor/surgery &rarr; facial palsy. Mumps</td></tr>
-        <tr><td class="hi">Submandibular</td><td>Submandibular triangle</td><td>Wharton&rsquo;s &rarr; lateral to lingual frenulum</td><td>MC gland for sialolithiasis (duct runs uphill)</td></tr>
-        <tr><td class="hi">Sublingual (smallest)</td><td>Floor of mouth</td><td>Multiple small ducts</td><td>Ranula = cystic swelling from blocked duct</td></tr>
-      </tbody></table>
-      <div class="bl-strip purple"><div class="bl-label">Arches &amp; Tonsils</div><p>Palatoglossal arch (anterior) + palatopharyngeal arch (posterior). Palatine tonsils between arches. <strong>Waldeyer&rsquo;s ring:</strong> pharyngeal (adenoids) + palatine + lingual tonsils. &ldquo;Say Ahh&rdquo; tests CN IX + X. Uvula deviates to STRONG side (CN IX).</p></div>
-    </div>
-  </div>
+<div class="section-title">Oral Cavity &amp; Nasal Region</div>
+<div class="section-sub">The oral cavity, tongue, salivary glands, nasal cavity, and paranasal sinuses. Know tongue innervation (complex!) and sinus drainage patterns.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Nasal Cavity &amp; Paranasal Sinuses</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Boundaries</div>
+<p><strong>Roof:</strong> cribriform plate (CN I). <strong>Floor:</strong> hard palate. <strong>Septum:</strong> perpendicular plate of ethmoid + vomer + septal cartilage. <strong>Lateral wall:</strong> 3 conchae creating turbulence.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">3 Regions</div>
+<p><strong>Vestibule:</strong> posterior to nostrils (vibrissae). <strong>Respiratory:</strong> lower 2/3 (warms, moistens air; Kiesselbach&rsquo;s plexus = MC nosebleed site). <strong>Olfactory:</strong> upper 1/3 (CN I).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Sinus</th><th>Location</th><th>Drains Into</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Maxillary</td><td>Within maxilla (largest)</td><td>Middle meatus</td><td><strong>MC infected sinus.</strong> Drainage opening high &rarr; gravity works against it. Infection can spread to upper teeth</td></tr>
+<tr><td class="hi">Frontal</td><td>Frontal bone</td><td>Middle meatus</td><td>Frontal sinusitis &rarr; forehead pain</td></tr>
+<tr><td class="hi">Ethmoid</td><td>Between nasal cavity and orbit</td><td>Superior + middle meatus</td><td>Can cause orbital cellulitis via lamina papyracea</td></tr>
+<tr><td class="hi">Sphenoid</td><td>Sphenoid body</td><td>Sphenoethmoidal recess</td><td>Deep &mdash; near optic nerve + cavernous sinus</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== BRAIN & MENINGES ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Oral Cavity, Tongue &amp; Salivary Glands</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Tongue Innervation</div>
+<p><strong>General sensation anterior 2/3:</strong> V3 (lingual nerve).<br><strong>Taste anterior 2/3:</strong> CN VII (chorda tympani).<br><strong>General sensation + taste posterior 1/3:</strong> CN IX.<br><strong>Motor (all intrinsic + most extrinsic):</strong> CN XII. Genioglossus: largest extrinsic muscle. CN XII damage &rarr; tongue deviates to WEAK side.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Gland</th><th>Location</th><th>Duct</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Parotid (largest)</td><td>Retromandibular</td><td>Stenson&rsquo;s &rarr; near upper 2nd molar</td><td><strong>CN VII passes through it</strong> &mdash; tumor/surgery &rarr; facial palsy. Mumps</td></tr>
+<tr><td class="hi">Submandibular</td><td>Submandibular triangle</td><td>Wharton&rsquo;s &rarr; lateral to lingual frenulum</td><td>MC gland for sialolithiasis (duct runs uphill)</td></tr>
+<tr><td class="hi">Sublingual (smallest)</td><td>Floor of mouth</td><td>Multiple small ducts</td><td>Ranula = cystic swelling from blocked duct</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Arches &amp; Tonsils</div>
+<p>Palatoglossal arch (anterior) + palatopharyngeal arch (posterior). Palatine tonsils between arches. <strong>Waldeyer&rsquo;s ring:</strong> pharyngeal (adenoids) + palatine + lingual tonsils. &ldquo;Say Ahh&rdquo; tests CN IX + X. Uvula deviates to STRONG side (CN IX).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-brain">
 <div class="container">
-  <div class="section-title">Brain &amp; Meninges</div>
-  <div class="section-sub">SCALP layers, cranial meninges with hemorrhage types, Circle of Willis, and brain overview. The hemorrhage comparison table is the most clinically tested content.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>SCALP Layers &mdash; 5 Layers</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">SCALP Mnemonic</div><p><strong>S</strong> = Skin (thick, hair-bearing, bleeds profusely).<br><strong>C</strong> = Close subcutaneous tissue (vessels held open &rarr; profuse bleeding).<br><strong>A</strong> = Aponeurosis (galea aponeurotica &mdash; connects frontal + occipital bellies).<br><strong>L</strong> = Loose connective tissue (&ldquo;danger zone&rdquo; &mdash; infection spreads easily via emissary veins).<br><strong>P</strong> = Pericranium (periosteum, adherent to bone).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Meninges &amp; Hemorrhage Types</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Layer/Space</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">Dura Mater</td><td>Tough outer membrane. Periosteal + meningeal layers form venous sinuses. Folds: falx cerebri, tentorium cerebelli</td><td>Cavernous sinus thrombosis. Uncal herniation at tentorial notch (CN III &rarr; fixed dilated pupil)</td></tr>
-        <tr><td class="hi">Epidural Space</td><td>Potential space between skull and dura</td><td><strong>Epidural hematoma:</strong> middle meningeal artery. Biconvex/lens on CT. Doesn&rsquo;t cross sutures. Lucid interval. Emergency craniotomy</td></tr>
-        <tr><td class="hi">Arachnoid</td><td>Delicate, avascular. Arachnoid granulations reabsorb CSF into superior sagittal sinus</td><td>Blocked granulations &rarr; communicating hydrocephalus</td></tr>
-        <tr><td class="hi">Subdural Space</td><td>Potential space with bridging veins crossing to dural sinuses</td><td><strong>Subdural hematoma:</strong> venous (bridging veins). Crescent on CT. Crosses sutures. MC in elderly (brain atrophy stretches veins)</td></tr>
-        <tr><td class="hi">Pia Mater</td><td>Thin, vascular, adherent to brain surface</td><td>Carries penetrating vessels into brain tissue</td></tr>
-        <tr><td class="warn">Subarachnoid Space</td><td>Contains CSF. Extends to S2 (lumbar cistern for LP)</td><td><strong>SAH:</strong> berry aneurysm rupture at Circle of Willis. &ldquo;Worst headache of my life.&rdquo; Star sign on CT. Emergency</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Circle of Willis &amp; Cerebrovascular Anatomy</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">ICA Territory</div><p>ICA enters via carotid canal &rarr; ophthalmic artery (orbit, anastomosis with ECA) &rarr; ACA (medial surfaces, LE motor/sensory) + <strong>MCA</strong> (lateral hemispheres, face + UE, Broca&rsquo;s, Wernicke&rsquo;s). MCA = most common stroke territory.</p></div>
-      <div class="bl-strip gold"><div class="bl-label">Vertebrobasilar Territory</div><p>Vertebral arteries enter via foramen magnum &rarr; unite to form basilar artery &rarr; PCA (occipital/visual cortex). VBI: 5 D&rsquo;s (dizziness, diplopia, dysarthria, dysphagia, drop attacks). <strong>Must screen before cervical manipulation.</strong></p></div>
-      <div class="bl-strip purple"><div class="bl-label">Circle of Willis</div><p>Anterior communicating &rarr; R/L ACA &rarr; R/L ICA &rarr; R/L posterior communicating &rarr; R/L PCA (from basilar). Berry aneurysms MC at ACA/anterior communicating junction. Venous drainage: superior sagittal sinus &rarr; transverse &rarr; sigmoid &rarr; IJV via jugular foramen.</p></div>
-    </div>
-  </div>
+<div class="section-title">Brain &amp; Meninges</div>
+<div class="section-sub">SCALP layers, cranial meninges with hemorrhage types, Circle of Willis, and brain overview. The hemorrhage comparison table is the most clinically tested content.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>SCALP Layers &mdash; 5 Layers</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">SCALP Mnemonic</div>
+<p><strong>S</strong> = Skin (thick, hair-bearing, bleeds profusely).<br><strong>C</strong> = Close subcutaneous tissue (vessels held open &rarr; profuse bleeding).<br><strong>A</strong> = Aponeurosis (galea aponeurotica &mdash; connects frontal + occipital bellies).<br><strong>L</strong> = Loose connective tissue (&ldquo;danger zone&rdquo; &mdash; infection spreads easily via emissary veins).<br><strong>P</strong> = Pericranium (periosteum, adherent to bone).</p>
 </div>
 </div>
-
-<!-- ====== TMJ ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Meninges &amp; Hemorrhage Types</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Layer/Space</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Dura Mater</td><td>Tough outer membrane. Periosteal + meningeal layers form venous sinuses. Folds: falx cerebri, tentorium cerebelli</td><td>Cavernous sinus thrombosis. Uncal herniation at tentorial notch (CN III &rarr; fixed dilated pupil)</td></tr>
+<tr><td class="hi">Epidural Space</td><td>Potential space between skull and dura</td><td><strong>Epidural hematoma:</strong> middle meningeal artery. Biconvex/lens on CT. Doesn&rsquo;t cross sutures. Lucid interval. Emergency craniotomy</td></tr>
+<tr><td class="hi">Arachnoid</td><td>Delicate, avascular. Arachnoid granulations reabsorb CSF into superior sagittal sinus</td><td>Blocked granulations &rarr; communicating hydrocephalus</td></tr>
+<tr><td class="hi">Subdural Space</td><td>Potential space with bridging veins crossing to dural sinuses</td><td><strong>Subdural hematoma:</strong> venous (bridging veins). Crescent on CT. Crosses sutures. MC in elderly (brain atrophy stretches veins)</td></tr>
+<tr><td class="hi">Pia Mater</td><td>Thin, vascular, adherent to brain surface</td><td>Carries penetrating vessels into brain tissue</td></tr>
+<tr><td class="warn">Subarachnoid Space</td><td>Contains CSF. Extends to S2 (lumbar cistern for LP)</td><td><strong>SAH:</strong> berry aneurysm rupture at Circle of Willis. &ldquo;Worst headache of my life.&rdquo; Star sign on CT. Emergency</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Circle of Willis &amp; Cerebrovascular Anatomy</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">ICA Territory</div>
+<p>ICA enters via carotid canal &rarr; ophthalmic artery (orbit, anastomosis with ECA) &rarr; ACA (medial surfaces, LE motor/sensory) + <strong>MCA</strong> (lateral hemispheres, face + UE, Broca&rsquo;s, Wernicke&rsquo;s). MCA = most common stroke territory.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Vertebrobasilar Territory</div>
+<p>Vertebral arteries enter via foramen magnum &rarr; unite to form basilar artery &rarr; PCA (occipital/visual cortex). VBI: 5 D&rsquo;s (dizziness, diplopia, dysarthria, dysphagia, drop attacks). <strong>Must screen before cervical manipulation.</strong></p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Circle of Willis</div>
+<p>Anterior communicating &rarr; R/L ACA &rarr; R/L ICA &rarr; R/L posterior communicating &rarr; R/L PCA (from basilar). Berry aneurysms MC at ACA/anterior communicating junction. Venous drainage: superior sagittal sinus &rarr; transverse &rarr; sigmoid &rarr; IJV via jugular foramen.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-tmj">
 <div class="container">
-  <div class="section-title">Temporomandibular Joint (TMJ)</div>
-  <div class="section-sub">Modified hinge joint with rotation + translation. Articular disc divides into 2 compartments. Lateral pterygoid attachment to disc is key to understanding TMJ dysfunction.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>TMJ Joint Structure &amp; Biomechanics</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Joint Components</div><p>Head of mandibular condyle + mandibular fossa + articular tubercle of temporal bone. <strong>Articular disc</strong> divides joint into 2 compartments: upper (translation/gliding) and lower (rotation). Disc attached anteriorly to superior head of lateral pterygoid.</p></div>
-      <div class="bl-strip gold"><div class="bl-label">Biomechanics</div><p><strong>Opening:</strong> First 25mm = rotation (lower compartment). Beyond 25mm = translation (upper compartment, condyle + disc glide down eminence). Full opening = 40&ndash;50mm (3 finger-widths).<br><strong>Closing:</strong> reverse.<br><strong>Protrusion:</strong> bilateral lateral pterygoid.<br><strong>Retrusion:</strong> posterior temporalis + digastric.</p></div>
-      <div class="bl-strip red"><div class="bl-label">TMJ Pathology</div><p><strong>Disc displacement with reduction:</strong> click/pop (disc reduces during translation). <strong>Without reduction:</strong> locked jaw, limited opening &lt;25mm. Capsular pattern = limitation of opening.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Mandible Landmarks</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">External</div><p>Mental protuberance (chin), mental foramen (mental nerve V3), body, angle, ramus, coronoid process (temporalis), condylar process (TMJ head), mandibular notch.</p></div>
-      <div class="bl-strip gold"><div class="bl-label">Internal</div><p>Lingula (near mandibular foramen &mdash; IAN block target), mandibular foramen (V3 entry), mylohyoid line (mylohyoid origin), submandibular fossa.</p></div>
-    </div>
-  </div>
+<div class="section-title">Temporomandibular Joint (TMJ)</div>
+<div class="section-sub">Modified hinge joint with rotation + translation. Articular disc divides into 2 compartments. Lateral pterygoid attachment to disc is key to understanding TMJ dysfunction.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>TMJ Joint Structure &amp; Biomechanics</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Joint Components</div>
+<p>Head of mandibular condyle + mandibular fossa + articular tubercle of temporal bone. <strong>Articular disc</strong> divides joint into 2 compartments: upper (translation/gliding) and lower (rotation). Disc attached anteriorly to superior head of lateral pterygoid.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Biomechanics</div>
+<p><strong>Opening:</strong> First 25mm = rotation (lower compartment). Beyond 25mm = translation (upper compartment, condyle + disc glide down eminence). Full opening = 40&ndash;50mm (3 finger-widths).<br><strong>Closing:</strong> reverse.<br><strong>Protrusion:</strong> bilateral lateral pterygoid.<br><strong>Retrusion:</strong> posterior temporalis + digastric.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">TMJ Pathology</div>
+<p><strong>Disc displacement with reduction:</strong> click/pop (disc reduces during translation). <strong>Without reduction:</strong> locked jaw, limited opening &lt;25mm. Capsular pattern = limitation of opening.</p>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Mandible Landmarks</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">External</div>
+<p>Mental protuberance (chin), mental foramen (mental nerve V3), body, angle, ramus, coronoid process (temporalis), condylar process (TMJ head), mandibular notch.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Internal</div>
+<p>Lingula (near mandibular foramen &mdash; IAN block target), mandibular foramen (V3 entry), mylohyoid line (mylohyoid origin), submandibular fossa.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to reveal answers.</div>
-
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Individual hit in the temporal region (pterion). Lucid interval then rapid decline. What happened?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Epidural hematoma</strong> from middle meningeal artery rupture at pterion (thinnest skull point). Biconvex/lens on CT. Doesn&rsquo;t cross sutures. Emergency craniotomy.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Bell&rsquo;s palsy vs stroke &mdash; how do you differentiate in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Bell&rsquo;s (peripheral CN VII):</strong> forehead INVOLVED &mdash; entire ipsilateral face. <strong>Stroke (central):</strong> forehead SPARED &mdash; only lower face droops (bilateral cortical representation of forehead).</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Client can&rsquo;t close right eye, has drooling from right corner of mouth. CN VII or V?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>CN VII (facial)</strong> &mdash; motor to muscles of facial expression. Orbicularis oculi (eye closure) and orbicularis oris (lip closure) are both CN VII. CN V is sensory to face + motor to mastication only.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Tongue deviates left on protrusion. In this case, Which CN is damaged and on which side?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Left CN XII (hypoglossal)</strong> is damaged. Tongue deviates to the WEAK side. The functioning right genioglossus pushes the tongue toward the damaged left side.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">&ldquo;Worst headache of my life&rdquo; &mdash; what is it and where does it bleed in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Subarachnoid hemorrhage (SAH)</strong> from ruptured berry (saccular) aneurysm at Circle of Willis junction (MC at anterior communicating artery). Blood in subarachnoid space. Star sign on CT. Neurosurgical emergency.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Which foramen transmits CN V3 and why is it special in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Foramen ovale.</strong> V3 (mandibular) is the ONLY division of CN V with motor function &mdash; supplies muscles of mastication. Lesion &rarr; jaw deviates to WEAK side + lower face numbness.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">The patient with vertigo, nystagmus on Dix-Hallpike. Diagnosis and treatment?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>BPPV</strong> (benign paroxysmal positional vertigo). Otoconia displaced into posterior SCC (most common). Treat with <strong>Epley maneuver</strong> &mdash; excellent PT evidence. Repositions crystals back to utricle.</div></div>
-  </div>
-
-  <div class="bl-strip red">
-    <div class="bl-label">Red Flags &mdash; Head Region</div>
-    <p>&ldquo;Worst headache ever&rdquo; = SAH. Fixed dilated pupil = uncal herniation (CN III). Uvula deviation = CN IX. Tongue deviation = CN XII. Battle&rsquo;s sign + periorbital bruising = basilar skull fracture.</p>
-  </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to reveal answers.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Individual hit in the temporal region (pterion). Lucid interval then rapid decline. What happened?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Epidural hematoma</strong> from middle meningeal artery rupture at pterion (thinnest skull point). Biconvex/lens on CT. Doesn&rsquo;t cross sutures. Emergency craniotomy.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Bell&rsquo;s palsy vs stroke &mdash; how do you differentiate in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Bell&rsquo;s (peripheral CN VII):</strong> forehead INVOLVED &mdash; entire ipsilateral face. <strong>Stroke (central):</strong> forehead SPARED &mdash; only lower face droops (bilateral cortical representation of forehead).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Client can&rsquo;t close right eye, has drooling from right corner of mouth. CN VII or V?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>CN VII (facial)</strong> &mdash; motor to muscles of facial expression. Orbicularis oculi (eye closure) and orbicularis oris (lip closure) are both CN VII. CN V is sensory to face + motor to mastication only.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Tongue deviates left on protrusion. In this case, Which CN is damaged and on which side?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Left CN XII (hypoglossal)</strong> is damaged. Tongue deviates to the WEAK side. The functioning right genioglossus pushes the tongue toward the damaged left side.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">&ldquo;Worst headache of my life&rdquo; &mdash; what is it and where does it bleed in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Subarachnoid hemorrhage (SAH)</strong> from ruptured berry (saccular) aneurysm at Circle of Willis junction (MC at anterior communicating artery). Blood in subarachnoid space. Star sign on CT. Neurosurgical emergency.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Which foramen transmits CN V3 and why is it special in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Foramen ovale.</strong> V3 (mandibular) is the ONLY division of CN V with motor function &mdash; supplies muscles of mastication. Lesion &rarr; jaw deviates to WEAK side + lower face numbness.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">The patient with vertigo, nystagmus on Dix-Hallpike. Diagnosis and treatment?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>BPPV</strong> (benign paroxysmal positional vertigo). Otoconia displaced into posterior SCC (most common). Treat with <strong>Epley maneuver</strong> &mdash; excellent PT evidence. Repositions crystals back to utricle.</div>
 </div>
 </div>
-
+<div class="bl-strip red">
+<div class="bl-label">Red Flags &mdash; Head Region</div>
+<p>&ldquo;Worst headache ever&rdquo; = SAH. Fixed dilated pupil = uncal herniation (CN III). Uvula deviation = CN IX. Tongue deviation = CN XII. Battle&rsquo;s sign + periorbital bruising = basilar skull fracture.</p>
+</div>
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -432,6 +494,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

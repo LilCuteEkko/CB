@@ -1,645 +1,584 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Knee Complex</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Knee Complex</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" class="active">Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">MSK Lower Extremity &middot; Knee Complex</div>
-  <h1>Knee <span>Complex</span></h1>
-  <p>The knee is the largest and most complex joint in the body — yet it is inherently unstable. Bony congruence provides almost no stability; instead, the knee depends entirely on ligaments (ACL, PCL, MCL, LCL), menisci, and muscles (especially the quadriceps and hamstrings) to function. It must handle enormous forces during gait, stairs, and sport while transitioning between flexion and extension through a complex screw-home mechanism. Knee injuries are among the most common reasons patients seek PT.</p>
+<div class="hero-tag">MSK Lower Extremity &middot; Knee Complex</div>
+<h1>Knee <span>Complex</span></h1>
+<p>The knee is the largest and most complex joint in the body — yet it is inherently unstable. Bony congruence provides almost no stability; instead, the knee depends entirely on ligaments (ACL, PCL, MCL, LCL), menisci, and muscles (especially the quadriceps and hamstrings) to function. It must handle enormous forces during gait, stairs, and sport while transitioning between flexion and extension through a complex screw-home mechanism. Knee injuries are among the most common reasons patients seek PT.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
-  <button onclick="showTab('pathology',this)">Pathology</button>
-  <button onclick="showTab('special',this)">Special Tests</button>
-  <button onclick="showTab('postop',this)">Post-Op Rehab</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+<button onclick="showTab('pathology',this)">Pathology</button>
+<button onclick="showTab('special',this)">Special Tests</button>
+<button onclick="showTab('postop',this)">Post-Op Rehab</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== ANATOMY ====== -->
 <div class="tab-panel active" id="tab-anatomy">
 <div class="container">
-  <div class="section-title">Knee Anatomy &amp; Clinical Evaluation</div>
-  <div class="section-sub">The knee is inherently unstable &#8212; support comes from ligaments, muscles, and menisci. Multiple articulating surfaces (tibiofemoral + patellofemoral) each have distinct pathologies. VMO is the first quad to atrophy and the last to rehab. Bilateral knee pain &#8594; think lumbar spine referral first.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Meniscus Anatomy &amp; Function</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Blood Supply Zones &#8212; Critical for Treatment Decisions</div>
-            <p><strong>Red zone (outer 10&#8211;30%):</strong> vascularized &#8212; can heal with suturing. <strong>White zone (inner 65&#8211;75%):</strong> avascular &#8212; nourished by synovial fluid via diffusion and mechanical pumping &#8212; poor healing potential. Tears in white zone = partial meniscectomy. Tears in red zone = repair preferred (especially in younger patients). Medial meniscus more common for degenerative pathologies.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Functions of Meniscus</div>
-            <p>Load transmission (distributes forces across tibial plateau) Shock absorption Joint lubrication and nutrition Secondary mechanical stability Limit hyperextension Proprioceptive input (similar to labrum at hip)</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Medial vs. Lateral Meniscus</div>
-            <p><strong>Medial:</strong> larger, thicker, <strong>less mobile</strong>; wider posteriorly; ACL and PCL blend into its horns; more commonly torn in degenerative populations (wear and tear).<br><strong>Lateral:</strong> <strong>more mobile</strong>; both horns attached to tibia; attaches via ligaments of Humphrey (anterior MFL) and Wrisberg (posterior MFL); tears less common but from twisting motions. Bucket handle tear = surgical emergency (locked knee).</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">MOI &#8594; Structure Injured</div>
-            <p><strong>Valgus force:</strong> Medial meniscus, MCL, epiphyseal plate, patellar dislocation <strong>Valgus + rotation:</strong> ACL, posteromedial capsule <strong>Varus force (+rotation):</strong> LCL, PL capsule, PCL <strong>Hyperextension:</strong> ACL + medial meniscal tears; buckling/giving way <strong>Flexion + posterior force:</strong> PCL (dashboard injury)<br><strong>Twisting (foot planted):</strong> ACL if tibia moves forward; meniscus with compression + rotation</p>
-          </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Ligament Anatomy &#8212; ACL, PCL, MCL, LCL</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">ACL &#8212; Anterior Cruciate Ligament</div>
-            <p>Primary restraint to anterior tibial translation and IR tibia. Secondary restraint to varus/valgus stress. Two bundles: <strong>Anteromedial (AM)</strong> &#8212; max tension at 30&#8211;60&#176; flexion, limits anterior translation throughout ROM; <strong>Posterolateral (PL)</strong> &#8212; max tension in full extension, lax at 60&#8211;90&#176; (allows tibial rotation). Tensile strength stronger than MCL/LCL but <strong>weaker than PCL</strong>. Poor blood supply &#8212; does not heal well.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">PCL &#8212; Posterior Cruciate Ligament</div>
-            <p>Primary restraint to posterior tibial translation and IR tibia. Secondary restraint to varus/valgus. <strong>Thicker than ACL</strong> &#8212; handles more tensile strength. More taut in flexion overall. Two bundles: Anterolateral bundle = taut in flexion; Posteromedial bundle = taut in extension. Attaches posteriorly to posterior horns of both menisci. Innervated by posterior articular nerve (proprioceptive mechanoreceptors).</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip purple">
-            <div class="bl-label">MCL &#8212; Medial Collateral Ligament</div>
-            <p>Primary restraint to valgus stress and ER tibia. Secondary restraint to anterior/posterior translation.<br><strong>Good blood supply &#8212; heals well</strong> (sometimes intentionally left untreated). Two bands: <strong>Superficial</strong> (thick, fan-like; first to be injured from valgus force; covers medial genicular artery and nerve; anterior fibers taut in flexion, posterior fibers taut in extension) + <strong>Deep</strong> (blends with medial meniscus &#8212; explains medial meniscus involvement with MCL injuries). More common than LCL. Associated with medial meniscus and ACL injuries in higher grade sprains.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">LCL &#8212; Lateral Collateral Ligament</div>
-            <p>Primary restraint to varus stress and ER tibia. Secondary restraint to anterior/posterior translation. Runs from lateral femoral condyle to head of fibula. Forms part of arcuate ligament complex. Less commonly injured than MCL. Part of posterolateral corner (PLC) complex &#8212; rarely isolated; major factor in failed ACL surgeries when not addressed.</p>
-          </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Knee Muscles, Fat Pads &amp; Patella</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Quadriceps</div>
-            <p><strong>VMO (Vastus Medialis Oblique):</strong> least active in full extension; active throughout entire extension for patellar tracking (medially realigning patella); weakest of quad group; <strong>first to atrophy, last to rehab.</strong> All quads extend the knee when foot is on ground; primary function as decelerators &#8212; preventing knee from buckling at foot strike. Extensor lag = trauma to patella or ligaments causing quad inhibition.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Knee Flexors (Muscle + Nerve + Root)</div>
-            <p>Biceps femoris &#8212; Sciatic &#8212; L5, S1&#8211;2 Semimembranosus &#8212; Sciatic &#8212; L5, S1&#8211;2 Semitendinosus &#8212; Sciatic &#8212; L5, S1&#8211;2 Gracilis &#8212; Obturator &#8212; L2&#8211;3 Sartorius &#8212; Femoral &#8212; L2&#8211;3</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Fat Pads of the Anterior Knee</div>
-            <p><strong>Quadriceps fat pad</strong> (superior).<br><strong>Prefemoral fat pad</strong>.<br><strong>Infrapatellar fat pad (Hoffa's)</strong> &#8212; largest, most clinically relevant. Functions: synovial fluid secretion, joint stability, neurovascular supply, occupies dead space. Often becomes fibrotic post-arthroscopy due to portal locations. With arthritic changes &#8212; fat pad becomes stiff.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">Key Subjective Flags for Knee</div>
-            <p><strong>Giving way/instability</strong> = ligamentous or arthritic damage <strong>Locking/clicking</strong> = loose bodies, cartilage, meniscus (posterior/popliteal fossa pain)<br><strong>Bilateral knee pain</strong> = lumbar spine referral, femoral/saphenous nerve entrapment <strong>Significant swelling within 1&#8211;2 hrs post-injury</strong> = hemarthrosis, suspect ACL <strong>Lack of terminal extension</strong> is common in many knee pathologies &#8212; OA, post-trauma</p>
-          </div>
-
-  
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Knee Osteology &#8212; Femur, Tibia, Patella &amp; Fibula</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip"><div class="bl-label">Distal Femur</div>
-          <p><strong>Medial condyle</strong> (larger, more prominent; MCL attaches at medial epicondyle).<br><strong>Lateral condyle</strong> (LCL at lateral epicondyle).<br><strong>Intercondylar notch</strong> (ACL + PCL live here).<br><strong>Patellar groove (trochlea)</strong> = anterior surface between condyles where patella tracks.<br><strong>Adductor tubercle</strong> = superior to medial epicondyle (hamstring head of adductor magnus inserts).<br><strong>Medial &amp; lateral supracondylar lines</strong> = proximal extensions of condyles along shaft.</p></div>
-          <div class="bl-strip gold"><div class="bl-label">Patella &#8212; Largest Sesamoid Bone</div>
-          <p>Develops within the quadriceps tendon.<br><strong>Base</strong> (superior &#8212; quad tendon attaches), <strong>apex</strong> (inferior &#8212; patellar ligament attaches to tibial tuberosity). Posterior surface = articular cartilage (thickest in the body, up to 7mm). Functions: increases mechanical advantage of quads by 50% (increases moment arm), protects knee joint anteriorly.<br><strong>Patellofemoral joint:</strong> Patella tracks in trochlear groove. VMO prevents lateral tracking. Abnormal tracking &#8594; PFPS, chondromalacia.</p></div>
-        </div>
-        <div>
-          <div class="bl-strip purple"><div class="bl-label">Proximal Tibia &amp; Fibula</div>
-          <p><strong>Tibia:</strong> Medial + lateral condyles (tibial plateaus &#8212; where femoral condyles rest).<br><strong>Tibial tuberosity</strong> (patellar ligament inserts &#8212; Osgood-Schlatter's in adolescents).<br><strong>Intercondylar eminence</strong> (tibial spines &#8212; cruciate ligament attachment area).<br><strong>Anterior crest</strong> (&#8220;shin&#8221; &#8212; subcutaneous, vulnerable).<br><strong>Pes anserinus</strong> insertion site = anteromedial proximal tibia (SGT: Sartorius, Gracilis, semiTendinosus).</p>
-          <p><strong>Fibula:</strong> Head (biceps femoris inserts; LCL attaches; <strong>common peroneal nerve wraps around fibular neck</strong> &#8212; vulnerable to injury). Does NOT bear body weight. Connected to tibia by interosseous membrane + proximal/distal tibiofibular joints.</p>
-          <p><strong>Proximal tibiofibular joint:</strong> Plane-type synovial joint. Head of fibula + lateral tibial condyle. Slight movement during dorsiflexion/plantarflexion. Stabilized by anterior + posterior tibiofibular ligaments. Popliteus tendon passes between posterior ligament and joint. Common peroneal nerve crosses fibular neck just distal to this joint.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Knee Bursae, Blood Supply &amp; Popliteal Fossa</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip"><div class="bl-label">Major Bursae (12+)</div>
-          <p><strong>Communicating with joint cavity (*):</strong> Suprapatellar bursa* (largest &#8212; between suprapatellar fat pad and distal femur, deep to quads), popliteus bursa*, anserine bursa*, gastrocnemius bursa*.</p>
-          <p><strong>Non-communicating:</strong> Subcutaneous prepatellar bursa (&#8220;housemaid's knee&#8221; &#8212; kneeling), subcutaneous infrapatellar bursa (between skin and tibial tuberosity), deep infrapatellar bursa (between patellar lig and proximal tibia), semimembranosus bursa.</p>
-          <p><strong>Baker's cyst (popliteal cyst):</strong> posterior knee swelling from communication between joint cavity and gastrocnemius-semimembranosus bursa. Often secondary to meniscal tear or OA. Can rupture &#8594; mimics DVT (calf pain/swelling).</p></div>
-        </div>
-        <div>
-          <div class="bl-strip purple"><div class="bl-label">Popliteal Fossa (Diamond Behind Knee)</div>
-          <p><strong>Boundaries:</strong> Superolateral = biceps femoris. Superomedial = semimembranosus + semitendinosus. Inferolateral = lateral head of gastrocnemius + plantaris. Inferomedial = medial head of gastrocnemius. <strong>Floor:</strong> posterior femur, oblique popliteal ligament, popliteus.</p>
-          <p><strong>Contents (deep &#8594; superficial):</strong> Popliteal artery (deepest, against bone &#8212; vulnerable in posterior knee dislocation), popliteal vein, tibial nerve (most superficial of the 3), common peroneal nerve (along medial border of biceps femoris &#8594; wraps around fibular neck).</p></div>
-          <div class="bl-strip red"><div class="bl-label">Blood Supply</div>
-          <p>Femoral artery passes through adductor hiatus &#8594; becomes <strong>popliteal artery</strong> behind knee &#8594; gives off 5 <strong>genicular branches</strong> (superior medial/lateral, middle, inferior medial/lateral) forming <strong>genicular anastomosis</strong> around the knee &#8594; popliteal artery divides into <strong>anterior tibial artery</strong> (passes through interosseous membrane anteriorly) + <strong>posterior tibial artery</strong> (continues posteriorly &#8594; gives off fibular/peroneal artery). Middle genicular artery supplies cruciate ligaments, synovial membrane, and peripheral meniscal margins.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+<div class="section-title">Knee Anatomy &amp; Clinical Evaluation</div>
+<div class="section-sub">The knee is inherently unstable &#8212; support comes from ligaments, muscles, and menisci. Multiple articulating surfaces (tibiofemoral + patellofemoral) each have distinct pathologies. VMO is the first quad to atrophy and the last to rehab. Bilateral knee pain &#8594; think lumbar spine referral first.</div>
 <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Detailed Muscle Anatomy &#8212; Origin, Insertion, Nerve, Action (OINA)</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Muscles Crossing the Knee &#8212; Anterior (Quadriceps)</div><p>All four quadriceps muscles insert via the common quadriceps tendon into the patella, then via the patellar ligament to the tibial tuberosity. Innervated by <strong>femoral nerve (L2, L3, L4)</strong>. <strong>VMO</strong> is the critical distal oblique component that prevents lateral patellar tracking.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="hi">Rectus Femoris</td><td>Direct head: AIIS. Reflected head: ilium superior to acetabulum</td><td>Base of patella &#8594; patellar lig &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee; slightly flexes hip (only quad that crosses hip)</td></tr>
-        <tr><td class="hi">Vastus Lateralis</td><td>Greater trochanter and lateral lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
-        <tr><td class="hi">Vastus Intermedius</td><td>Anterior and lateral surfaces of femoral body</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
-        <tr><td class="warn">Vastus Medialis</td><td>Intertrochanteric line and medial lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee. <strong>VMO</strong> (oblique distal fibers) prevents lateral patellar tracking</td></tr>
-        <tr><td class="hi">Articularis Genu</td><td>Anterior surface of distal femur</td><td>Apex of synovial membrane of knee</td><td>Femoral N (L2, L3, L4)</td><td>Pulls suprapatellar bursa superiorly to prevent pinching during knee extension</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip gold"><div class="bl-label">Posterior &#8212; Hamstrings</div><p>All hamstrings originate from the <strong>ischial tuberosity</strong> (except short head of biceps femoris). Innervated by <strong>sciatic nerve</strong> (tibial division for medial hamstrings, common peroneal for short head biceps).<br><strong>Pes anserinus</strong> = Sartorius, Gracilis, semiTendinosus (SGT) &#8212; insert on superior medial tibia.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Biceps Femoris (long head)</td><td>Ischial tuberosity</td><td>Head of fibula (splits around LCL)</td><td>Tibial division of sciatic N (L5, S1, S2)</td><td>Extends hip; flexes &amp; ER knee</td></tr>
-        <tr><td class="hi">Biceps Femoris (short head)</td><td>Lateral lip of linea aspera and lateral supracondylar line</td><td>Head of fibula (with long head)</td><td>Common peroneal division of sciatic N (L5, S1, S2)</td><td>Flexes &amp; ER knee (does NOT cross hip)</td></tr>
-        <tr><td class="hi">Semitendinosus</td><td>Ischial tuberosity</td><td>Superior medial tibia (pes anserinus)</td><td>Tibial division of sciatic N (L5, S1, S2)</td><td>Extends hip; flexes &amp; IR knee. Common ACL graft donor</td></tr>
-        <tr><td class="hi">Semimembranosus</td><td>Ischial tuberosity</td><td>Posterior part of medial tibial condyle; oblique popliteal ligament</td><td>Tibial division of sciatic N (L5, S1, S2)</td><td>Extends hip; flexes &amp; IR knee</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip purple"><div class="bl-label">Popliteal Fossa Muscles</div><p>The popliteal fossa is a diamond-shaped space behind the knee. <strong>Popliteus</strong> is the key &#8220;unlocker&#8221; of the knee &#8212; it laterally rotates the femur on a fixed tibia (WB) to initiate flexion from full extension.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Popliteus</td><td>Lateral surface of lateral condyle of femur and lateral meniscus</td><td>Posterior surface of tibia superior to soleal line</td><td>Tibial N (L5, S1)</td><td>Weakly flexes knee &amp; <strong>unlocks</strong> it. OC: IR tibia on femur. CC: laterally rotates femur 5&#176; to allow knee to flex</td></tr>
-        <tr><td class="hi">Plantaris</td><td>Lateral supracondylar ridge of femur (superior to lateral head of gastroc)</td><td>Posterior calcaneus via Achilles tendon (medial side, deep to gastroc)</td><td>Tibial N (L5, S1)</td><td>Weakly assists gastroc in PF ankle and flexing knee. May be proprioceptive organ</td></tr>
-        <tr><td class="warn">Gastrocnemius</td><td>Lateral head: lateral femoral condyle. Medial head: popliteal surface superior to medial condyle</td><td>Posterior calcaneus via Achilles tendon</td><td>Tibial N (S1, S2)</td><td>PF foot; flexes knee. Crosses both knee and ankle</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip red"><div class="bl-label">Key Ligaments &amp; Structures</div><p><strong>MCL (tibial collateral):</strong> medial epicondyle &#8594; proximal medial tibia. Attaches to medial meniscus &#8212; torn MCL often damages meniscus.<br><strong>LCL (fibular collateral):</strong> lateral epicondyle &#8594; fibular head. NO attachment to lateral meniscus.<br><strong>ACL:</strong> medial wall of lateral femoral condyle &#8594; anterior medial tibial spine. Prevents anterior tibial translation + hyperextension.<br><strong>PCL:</strong> lateral wall of medial femoral condyle &#8594; posterior proximal tibia. Prevents posterior tibial glide. Stronger than ACL.<br><strong>Menisci:</strong> Medial = C-shaped, broader posterior, attached to MCL. Lateral = nearly circular, more mobile, not attached to LCL. Peripheral blood supply only.</p></div>
-    </div>
-  </div>
-
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Sciatic Nerve &amp; Branches &#8212; Knee to Foot</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Sciatic Nerve Division</div>
-      <p>The <strong>sciatic nerve (L4&#8211;S3)</strong> is the largest nerve in the body. It typically divides into <strong>tibial</strong> and <strong>common peroneal (fibular)</strong> divisions at the superior angle of the popliteal fossa (though in ~12% of people they separate in the gluteal region, sometimes with the common peroneal piercing through piriformis &#8594; piriformis syndrome).</p></div>
-
-      <table class="data-table"><thead><tr><th>Nerve</th><th>Root</th><th>Motor</th><th>Sensory</th><th>Injury Pattern</th></tr></thead><tbody>
-        <tr><td class="warn">Tibial Nerve</td><td>L4&#8211;S3</td><td>ALL posterior compartment (superficial + deep): gastrocnemius, soleus, plantaris, popliteus, FHL, FDL, tibialis posterior. In foot: medial + lateral plantar nerves supply all intrinsic plantar muscles</td><td>Knee joint (articular branches). Heel (medial calcaneal branch). Plantar foot via medial plantar N (medial 3.5 digits) + lateral plantar N (lateral 1.5 digits)</td><td>Complete tibial injury: loss of PF + toe flexion + foot inversion. Cannot stand on tiptoes. Tarsal tunnel syndrome = tibial N compression behind medial malleolus</td></tr>
-        <tr><td class="warn">Common Peroneal (Fibular) Nerve</td><td>L4&#8211;S2</td><td>NO direct motor innervation &#8212; it divides into deep and superficial branches immediately</td><td>Lateral knee (articular). Proximal posterolateral leg (lateral sural cutaneous N). Contributes to sural nerve formation</td><td><strong>Most commonly injured nerve in the LE.</strong> Wraps around <strong>fibular neck</strong> &#8212; superficial and vulnerable. Mechanism: fibular neck fracture, tight cast, habitual leg crossing, prolonged lateral knee compression. Injury = <strong>foot drop</strong> (loss of DF + eversion)</td></tr>
-        <tr><td class="hi">Deep Peroneal (Fibular) Nerve</td><td>L4, L5, S1</td><td>Anterior compartment: TA, EDL, EHL, peroneus tertius. Dorsum of foot: EDB</td><td>Skin between 1st and 2nd toe (dorsal web space). Ankle joint</td><td>Isolated deep peroneal injury = foot drop without eversion loss (lateral compartment still works). Anterior tarsal tunnel syndrome = compression under inferior extensor retinaculum</td></tr>
-        <tr><td class="hi">Superficial Peroneal (Fibular) Nerve</td><td>L5, S1, S2</td><td>Lateral compartment only: peroneus longus + peroneus brevis</td><td>Distal anterior leg (pierces fascia at distal 1/3). Dorsum of foot (most of dorsum except 1st web space and lateral border)</td><td>Isolated injury = loss of eversion only. DF preserved (deep peroneal intact). Stretch injury during ankle inversion sprains</td></tr>
-        <tr><td class="hi">Sural Nerve</td><td>S1, S2</td><td>None &#8212; purely sensory</td><td>Posterolateral leg + lateral foot + lateral 5th toe</td><td>Formed by medial sural cutaneous (from tibial) + communicating branch (from common peroneal). Often harvested for nerve grafting (expendable sensory nerve). Loss = numbness along lateral foot</td></tr>
-        <tr><td class="hi">Saphenous Nerve</td><td>L3, L4</td><td>None &#8212; purely sensory (branch of femoral nerve)</td><td>Medial leg + medial foot (to 1st MTP area)</td><td>Longest purely sensory nerve. Travels through adductor canal, emerges medially at knee. Saphenous nerve block for medial leg/ankle surgery. Injury during vein harvest for CABG</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip red"><div class="bl-label">&#8220;PED = Peroneal Everts &amp; Dorsiflexes&#8221; vs &#8220;TIP = Tibial Inverts &amp; Plantarflexes&#8221;</div>
-      <p>This is the most important lower extremity nerve mnemonic. <strong>Peroneal nerve damage = foot drop</strong> (can&#8217;t dorsiflex or evert &#8594; steppage gait, foot slaps during swing phase). <strong>Tibial nerve damage = can&#8217;t plantarflex or invert</strong> (can&#8217;t push off, can&#8217;t stand on tiptoes). Both together (complete sciatic injury) = complete paralysis below the knee except for knee flexion (hamstrings innervated proximal to division).</p></div>
-    </div>
-  </div>
-
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Meniscus Anatomy &amp; Function</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Blood Supply Zones &#8212; Critical for Treatment Decisions</div>
+<p><strong>Red zone (outer 10&#8211;30%):</strong> vascularized &#8212; can heal with suturing. <strong>White zone (inner 65&#8211;75%):</strong> avascular &#8212; nourished by synovial fluid via diffusion and mechanical pumping &#8212; poor healing potential. Tears in white zone = partial meniscectomy. Tears in red zone = repair preferred (especially in younger patients). Medial meniscus more common for degenerative pathologies.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Functions of Meniscus</div>
+<p>Load transmission (distributes forces across tibial plateau) Shock absorption Joint lubrication and nutrition Secondary mechanical stability Limit hyperextension Proprioceptive input (similar to labrum at hip)</p>
 </div>
 </div>
-
-<!-- ====== PATHOLOGY ====== -->
+<div>
+<div class="bl-strip">
+<div class="bl-label">Medial vs. Lateral Meniscus</div>
+<p><strong>Medial:</strong> larger, thicker, <strong>less mobile</strong>; wider posteriorly; ACL and PCL blend into its horns; more commonly torn in degenerative populations (wear and tear).<br><strong>Lateral:</strong><strong>more mobile</strong>; both horns attached to tibia; attaches via ligaments of Humphrey (anterior MFL) and Wrisberg (posterior MFL); tears less common but from twisting motions. Bucket handle tear = surgical emergency (locked knee).</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">MOI &#8594; Structure Injured</div>
+<p><strong>Valgus force:</strong> Medial meniscus, MCL, epiphyseal plate, patellar dislocation <strong>Valgus + rotation:</strong> ACL, posteromedial capsule <strong>Varus force (+rotation):</strong> LCL, PL capsule, PCL <strong>Hyperextension:</strong> ACL + medial meniscal tears; buckling/giving way <strong>Flexion + posterior force:</strong> PCL (dashboard injury)<br><strong>Twisting (foot planted):</strong> ACL if tibia moves forward; meniscus with compression + rotation</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Ligament Anatomy &#8212; ACL, PCL, MCL, LCL</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">ACL &#8212; Anterior Cruciate Ligament</div>
+<p>Primary restraint to anterior tibial translation and IR tibia. Secondary restraint to varus/valgus stress. Two bundles: <strong>Anteromedial (AM)</strong> &#8212; max tension at 30&#8211;60&#176; flexion, limits anterior translation throughout ROM; <strong>Posterolateral (PL)</strong> &#8212; max tension in full extension, lax at 60&#8211;90&#176; (allows tibial rotation). Tensile strength stronger than MCL/LCL but <strong>weaker than PCL</strong>. Poor blood supply &#8212; does not heal well.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">PCL &#8212; Posterior Cruciate Ligament</div>
+<p>Primary restraint to posterior tibial translation and IR tibia. Secondary restraint to varus/valgus. <strong>Thicker than ACL</strong> &#8212; handles more tensile strength. More taut in flexion overall. Two bundles: Anterolateral bundle = taut in flexion; Posteromedial bundle = taut in extension. Attaches posteriorly to posterior horns of both menisci. Innervated by posterior articular nerve (proprioceptive mechanoreceptors).</p>
+</div>
+</div>
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">MCL &#8212; Medial Collateral Ligament</div>
+<p>Primary restraint to valgus stress and ER tibia. Secondary restraint to anterior/posterior translation.<br><strong>Good blood supply &#8212; heals well</strong> (sometimes intentionally left untreated). Two bands: <strong>Superficial</strong> (thick, fan-like; first to be injured from valgus force; covers medial genicular artery and nerve; anterior fibers taut in flexion, posterior fibers taut in extension) + <strong>Deep</strong> (blends with medial meniscus &#8212; explains medial meniscus involvement with MCL injuries). More common than LCL. Associated with medial meniscus and ACL injuries in higher grade sprains.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">LCL &#8212; Lateral Collateral Ligament</div>
+<p>Primary restraint to varus stress and ER tibia. Secondary restraint to anterior/posterior translation. Runs from lateral femoral condyle to head of fibula. Forms part of arcuate ligament complex. Less commonly injured than MCL. Part of posterolateral corner (PLC) complex &#8212; rarely isolated; major factor in failed ACL surgeries when not addressed.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Knee Muscles, Fat Pads &amp; Patella</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Quadriceps</div>
+<p><strong>VMO (Vastus Medialis Oblique):</strong> least active in full extension; active throughout entire extension for patellar tracking (medially realigning patella); weakest of quad group; <strong>first to atrophy, last to rehab.</strong> All quads extend the knee when foot is on ground; primary function as decelerators &#8212; preventing knee from buckling at foot strike. Extensor lag = trauma to patella or ligaments causing quad inhibition.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Knee Flexors (Muscle + Nerve + Root)</div>
+<p>Biceps femoris &#8212; Sciatic &#8212; L5, S1&#8211;2 Semimembranosus &#8212; Sciatic &#8212; L5, S1&#8211;2 Semitendinosus &#8212; Sciatic &#8212; L5, S1&#8211;2 Gracilis &#8212; Obturator &#8212; L2&#8211;3 Sartorius &#8212; Femoral &#8212; L2&#8211;3</p>
+</div>
+</div>
+<div>
+<div class="bl-strip">
+<div class="bl-label">Fat Pads of the Anterior Knee</div>
+<p><strong>Quadriceps fat pad</strong> (superior).<br><strong>Prefemoral fat pad</strong>.<br><strong>Infrapatellar fat pad (Hoffa's)</strong> &#8212; largest, most clinically relevant. Functions: synovial fluid secretion, joint stability, neurovascular supply, occupies dead space. Often becomes fibrotic post-arthroscopy due to portal locations. With arthritic changes &#8212; fat pad becomes stiff.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Key Subjective Flags for Knee</div>
+<p><strong>Giving way/instability</strong> = ligamentous or arthritic damage <strong>Locking/clicking</strong> = loose bodies, cartilage, meniscus (posterior/popliteal fossa pain)<br><strong>Bilateral knee pain</strong> = lumbar spine referral, femoral/saphenous nerve entrapment <strong>Significant swelling within 1&#8211;2 hrs post-injury</strong> = hemarthrosis, suspect ACL <strong>Lack of terminal extension</strong> is common in many knee pathologies &#8212; OA, post-trauma</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Knee Osteology &#8212; Femur, Tibia, Patella &amp; Fibula</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Distal Femur</div>
+<p><strong>Medial condyle</strong> (larger, more prominent; MCL attaches at medial epicondyle).<br><strong>Lateral condyle</strong> (LCL at lateral epicondyle).<br><strong>Intercondylar notch</strong> (ACL + PCL live here).<br><strong>Patellar groove (trochlea)</strong> = anterior surface between condyles where patella tracks.<br><strong>Adductor tubercle</strong> = superior to medial epicondyle (hamstring head of adductor magnus inserts).<br><strong>Medial &amp; lateral supracondylar lines</strong> = proximal extensions of condyles along shaft.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Patella &#8212; Largest Sesamoid Bone</div>
+<p>Develops within the quadriceps tendon.<br><strong>Base</strong> (superior &#8212; quad tendon attaches), <strong>apex</strong> (inferior &#8212; patellar ligament attaches to tibial tuberosity). Posterior surface = articular cartilage (thickest in the body, up to 7mm). Functions: increases mechanical advantage of quads by 50% (increases moment arm), protects knee joint anteriorly.<br><strong>Patellofemoral joint:</strong> Patella tracks in trochlear groove. VMO prevents lateral tracking. Abnormal tracking &#8594; PFPS, chondromalacia.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Proximal Tibia &amp; Fibula</div>
+<p><strong>Tibia:</strong> Medial + lateral condyles (tibial plateaus &#8212; where femoral condyles rest).<br><strong>Tibial tuberosity</strong> (patellar ligament inserts &#8212; Osgood-Schlatter's in adolescents).<br><strong>Intercondylar eminence</strong> (tibial spines &#8212; cruciate ligament attachment area).<br><strong>Anterior crest</strong> (&#8220;shin&#8221; &#8212; subcutaneous, vulnerable).<br><strong>Pes anserinus</strong> insertion site = anteromedial proximal tibia (SGT: Sartorius, Gracilis, semiTendinosus).</p>
+<p><strong>Fibula:</strong> Head (biceps femoris inserts; LCL attaches; <strong>common peroneal nerve wraps around fibular neck</strong> &#8212; vulnerable to injury). Does NOT bear body weight. Connected to tibia by interosseous membrane + proximal/distal tibiofibular joints.</p>
+<p><strong>Proximal tibiofibular joint:</strong> Plane-type synovial joint. Head of fibula + lateral tibial condyle. Slight movement during dorsiflexion/plantarflexion. Stabilized by anterior + posterior tibiofibular ligaments. Popliteus tendon passes between posterior ligament and joint. Common peroneal nerve crosses fibular neck just distal to this joint.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Knee Bursae, Blood Supply &amp; Popliteal Fossa</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Major Bursae (12+)</div>
+<p><strong>Communicating with joint cavity (*):</strong> Suprapatellar bursa* (largest &#8212; between suprapatellar fat pad and distal femur, deep to quads), popliteus bursa*, anserine bursa*, gastrocnemius bursa*.</p>
+<p><strong>Non-communicating:</strong> Subcutaneous prepatellar bursa (&#8220;housemaid's knee&#8221; &#8212; kneeling), subcutaneous infrapatellar bursa (between skin and tibial tuberosity), deep infrapatellar bursa (between patellar lig and proximal tibia), semimembranosus bursa.</p>
+<p><strong>Baker's cyst (popliteal cyst):</strong> posterior knee swelling from communication between joint cavity and gastrocnemius-semimembranosus bursa. Often secondary to meniscal tear or OA. Can rupture &#8594; mimics DVT (calf pain/swelling).</p>
+</div>
+</div>
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Popliteal Fossa (Diamond Behind Knee)</div>
+<p><strong>Boundaries:</strong> Superolateral = biceps femoris. Superomedial = semimembranosus + semitendinosus. Inferolateral = lateral head of gastrocnemius + plantaris. Inferomedial = medial head of gastrocnemius. <strong>Floor:</strong> posterior femur, oblique popliteal ligament, popliteus.</p>
+<p><strong>Contents (deep &#8594; superficial):</strong> Popliteal artery (deepest, against bone &#8212; vulnerable in posterior knee dislocation), popliteal vein, tibial nerve (most superficial of the 3), common peroneal nerve (along medial border of biceps femoris &#8594; wraps around fibular neck).</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Blood Supply</div>
+<p>Femoral artery passes through adductor hiatus &#8594; becomes <strong>popliteal artery</strong> behind knee &#8594; gives off 5 <strong>genicular branches</strong> (superior medial/lateral, middle, inferior medial/lateral) forming <strong>genicular anastomosis</strong> around the knee &#8594; popliteal artery divides into <strong>anterior tibial artery</strong> (passes through interosseous membrane anteriorly) + <strong>posterior tibial artery</strong> (continues posteriorly &#8594; gives off fibular/peroneal artery). Middle genicular artery supplies cruciate ligaments, synovial membrane, and peripheral meniscal margins.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Detailed Muscle Anatomy &#8212; Origin, Insertion, Nerve, Action (OINA)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Muscles Crossing the Knee &#8212; Anterior (Quadriceps)</div>
+<p>All four quadriceps muscles insert via the common quadriceps tendon into the patella, then via the patellar ligament to the tibial tuberosity. Innervated by <strong>femoral nerve (L2, L3, L4)</strong>. <strong>VMO</strong> is the critical distal oblique component that prevents lateral patellar tracking.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="hi">Rectus Femoris</td><td>Direct head: AIIS. Reflected head: ilium superior to acetabulum</td><td>Base of patella &#8594; patellar lig &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee; slightly flexes hip (only quad that crosses hip)</td></tr>
+<tr><td class="hi">Vastus Lateralis</td><td>Greater trochanter and lateral lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
+<tr><td class="hi">Vastus Intermedius</td><td>Anterior and lateral surfaces of femoral body</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
+<tr><td class="warn">Vastus Medialis</td><td>Intertrochanteric line and medial lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee. <strong>VMO</strong> (oblique distal fibers) prevents lateral patellar tracking</td></tr>
+<tr><td class="hi">Articularis Genu</td><td>Anterior surface of distal femur</td><td>Apex of synovial membrane of knee</td><td>Femoral N (L2, L3, L4)</td><td>Pulls suprapatellar bursa superiorly to prevent pinching during knee extension</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Posterior &#8212; Hamstrings</div>
+<p>All hamstrings originate from the <strong>ischial tuberosity</strong> (except short head of biceps femoris). Innervated by <strong>sciatic nerve</strong> (tibial division for medial hamstrings, common peroneal for short head biceps).<br><strong>Pes anserinus</strong> = Sartorius, Gracilis, semiTendinosus (SGT) &#8212; insert on superior medial tibia.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Biceps Femoris (long head)</td><td>Ischial tuberosity</td><td>Head of fibula (splits around LCL)</td><td>Tibial division of sciatic N (L5, S1, S2)</td><td>Extends hip; flexes &amp; ER knee</td></tr>
+<tr><td class="hi">Biceps Femoris (short head)</td><td>Lateral lip of linea aspera and lateral supracondylar line</td><td>Head of fibula (with long head)</td><td>Common peroneal division of sciatic N (L5, S1, S2)</td><td>Flexes &amp; ER knee (does NOT cross hip)</td></tr>
+<tr><td class="hi">Semitendinosus</td><td>Ischial tuberosity</td><td>Superior medial tibia (pes anserinus)</td><td>Tibial division of sciatic N (L5, S1, S2)</td><td>Extends hip; flexes &amp; IR knee. Common ACL graft donor</td></tr>
+<tr><td class="hi">Semimembranosus</td><td>Ischial tuberosity</td><td>Posterior part of medial tibial condyle; oblique popliteal ligament</td><td>Tibial division of sciatic N (L5, S1, S2)</td><td>Extends hip; flexes &amp; IR knee</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Popliteal Fossa Muscles</div>
+<p>The popliteal fossa is a diamond-shaped space behind the knee. <strong>Popliteus</strong> is the key &#8220;unlocker&#8221; of the knee &#8212; it laterally rotates the femur on a fixed tibia (WB) to initiate flexion from full extension.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Popliteus</td><td>Lateral surface of lateral condyle of femur and lateral meniscus</td><td>Posterior surface of tibia superior to soleal line</td><td>Tibial N (L5, S1)</td><td>Weakly flexes knee &amp; <strong>unlocks</strong> it. OC: IR tibia on femur. CC: laterally rotates femur 5&#176; to allow knee to flex</td></tr>
+<tr><td class="hi">Plantaris</td><td>Lateral supracondylar ridge of femur (superior to lateral head of gastroc)</td><td>Posterior calcaneus via Achilles tendon (medial side, deep to gastroc)</td><td>Tibial N (L5, S1)</td><td>Weakly assists gastroc in PF ankle and flexing knee. May be proprioceptive organ</td></tr>
+<tr><td class="warn">Gastrocnemius</td><td>Lateral head: lateral femoral condyle. Medial head: popliteal surface superior to medial condyle</td><td>Posterior calcaneus via Achilles tendon</td><td>Tibial N (S1, S2)</td><td>PF foot; flexes knee. Crosses both knee and ankle</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Key Ligaments &amp; Structures</div>
+<p><strong>MCL (tibial collateral):</strong> medial epicondyle &#8594; proximal medial tibia. Attaches to medial meniscus &#8212; torn MCL often damages meniscus.<br><strong>LCL (fibular collateral):</strong> lateral epicondyle &#8594; fibular head. NO attachment to lateral meniscus.<br><strong>ACL:</strong> medial wall of lateral femoral condyle &#8594; anterior medial tibial spine. Prevents anterior tibial translation + hyperextension.<br><strong>PCL:</strong> lateral wall of medial femoral condyle &#8594; posterior proximal tibia. Prevents posterior tibial glide. Stronger than ACL.<br><strong>Menisci:</strong> Medial = C-shaped, broader posterior, attached to MCL. Lateral = nearly circular, more mobile, not attached to LCL. Peripheral blood supply only.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Sciatic Nerve &amp; Branches &#8212; Knee to Foot</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Sciatic Nerve Division</div>
+<p>The <strong>sciatic nerve (L4&#8211;S3)</strong> is the largest nerve in the body. It typically divides into <strong>tibial</strong> and <strong>common peroneal (fibular)</strong> divisions at the superior angle of the popliteal fossa (though in ~12% of people they separate in the gluteal region, sometimes with the common peroneal piercing through piriformis &#8594; piriformis syndrome).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Nerve</th><th>Root</th><th>Motor</th><th>Sensory</th><th>Injury Pattern</th></tr></thead><tbody>
+<tr><td class="warn">Tibial Nerve</td><td>L4&#8211;S3</td><td>ALL posterior compartment (superficial + deep): gastrocnemius, soleus, plantaris, popliteus, FHL, FDL, tibialis posterior. In foot: medial + lateral plantar nerves supply all intrinsic plantar muscles</td><td>Knee joint (articular branches). Heel (medial calcaneal branch). Plantar foot via medial plantar N (medial 3.5 digits) + lateral plantar N (lateral 1.5 digits)</td><td>Complete tibial injury: loss of PF + toe flexion + foot inversion. Cannot stand on tiptoes. Tarsal tunnel syndrome = tibial N compression behind medial malleolus</td></tr>
+<tr><td class="warn">Common Peroneal (Fibular) Nerve</td><td>L4&#8211;S2</td><td>NO direct motor innervation &#8212; it divides into deep and superficial branches immediately</td><td>Lateral knee (articular). Proximal posterolateral leg (lateral sural cutaneous N). Contributes to sural nerve formation</td><td><strong>Most commonly injured nerve in the LE.</strong> Wraps around <strong>fibular neck</strong> &#8212; superficial and vulnerable. Mechanism: fibular neck fracture, tight cast, habitual leg crossing, prolonged lateral knee compression. Injury = <strong>foot drop</strong> (loss of DF + eversion)</td></tr>
+<tr><td class="hi">Deep Peroneal (Fibular) Nerve</td><td>L4, L5, S1</td><td>Anterior compartment: TA, EDL, EHL, peroneus tertius. Dorsum of foot: EDB</td><td>Skin between 1st and 2nd toe (dorsal web space). Ankle joint</td><td>Isolated deep peroneal injury = foot drop without eversion loss (lateral compartment still works). Anterior tarsal tunnel syndrome = compression under inferior extensor retinaculum</td></tr>
+<tr><td class="hi">Superficial Peroneal (Fibular) Nerve</td><td>L5, S1, S2</td><td>Lateral compartment only: peroneus longus + peroneus brevis</td><td>Distal anterior leg (pierces fascia at distal 1/3). Dorsum of foot (most of dorsum except 1st web space and lateral border)</td><td>Isolated injury = loss of eversion only. DF preserved (deep peroneal intact). Stretch injury during ankle inversion sprains</td></tr>
+<tr><td class="hi">Sural Nerve</td><td>S1, S2</td><td>None &#8212; purely sensory</td><td>Posterolateral leg + lateral foot + lateral 5th toe</td><td>Formed by medial sural cutaneous (from tibial) + communicating branch (from common peroneal). Often harvested for nerve grafting (expendable sensory nerve). Loss = numbness along lateral foot</td></tr>
+<tr><td class="hi">Saphenous Nerve</td><td>L3, L4</td><td>None &#8212; purely sensory (branch of femoral nerve)</td><td>Medial leg + medial foot (to 1st MTP area)</td><td>Longest purely sensory nerve. Travels through adductor canal, emerges medially at knee. Saphenous nerve block for medial leg/ankle surgery. Injury during vein harvest for CABG</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">&#8220;PED = Peroneal Everts &amp; Dorsiflexes&#8221; vs &#8220;TIP = Tibial Inverts &amp; Plantarflexes&#8221;</div>
+<p>This is the most important lower extremity nerve mnemonic. <strong>Peroneal nerve damage = foot drop</strong> (can&#8217;t dorsiflex or evert &#8594; steppage gait, foot slaps during swing phase). <strong>Tibial nerve damage = can&#8217;t plantarflex or invert</strong> (can&#8217;t push off, can&#8217;t stand on tiptoes). Both together (complete sciatic injury) = complete paralysis below the knee except for knee flexion (hamstrings innervated proximal to division).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-pathology">
 <div class="container">
-  <div class="section-title">Knee Pathologies &#8212; Anterior Pain, Ligament, Meniscal, OA</div>
-  <div class="section-sub">Knee pathologies organized by anatomical region. Anterior knee pain has a broad DDx &#8212; use the combination of palpation, provocation testing, and functional screening. ACL does not heal on its own. Meniscal surgery is indicated only for bucket-handle tears with locking. Quad strength is the single most important impairment to address in almost every knee condition.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Anterior Knee Pain DDx &#8212; Complete List</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Full DDx: Anterior Knee Pain</div>
-            <p>PFPS (Runners Knee) &#8226; Osteoarthritis &#8226; Chondromalacia Patella &#8226; Patellar Tendinopathy (Jumper's Knee) &#8226; Patellar Bursitis &#8226; Plica Syndrome &#8226; Osgood Schlatter's Apophysitis &#8226; Sinding Larsen Johansson's Apophysitis &#8226; Hoffa's Fat Pad Impingement &#8226; Femoral Nerve Entrapment &#8226; Saphenous Nerve Entrapment &#8226; L3/L4 Radiculopathy</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">PFPS &#8212; Patellofemoral Pain Syndrome</div>
-            <p>Catch-all diagnosis of exclusion. Also called: chondromalacia patella, patellar arthralgia, runners knee. Women 2:1 vs men.<br><strong>Risk factors:</strong> decreased quad flexibility, decreased knee extension strength, diminished quad explosive strength, hypermobile patella.<br><strong>Best diagnostic combo:</strong> pain with squatting + palpation of medial/lateral patellar borders + isometric quad resistance at 90&#176;.<br><strong>Treatment (individualized):</strong> hip abductors/glutes; hip mobility; quad strength (&#x2116;1); foot posture/orthotics; taping (short-term); motor control.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Chondromalacia Patella</div>
-            <p>Irritation/softening of posterior patellar cartilage. Teenagers/young adults/females. <strong>Signs:</strong> grinding/noisy knee; pain descending stairs/squatting; often asymptomatic (not a direct PT diagnosis to write). Look for muscle imbalances increasing PFJ compression. Pain with compression along the joint.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Patellar Tendinopathy (Jumper's Knee)</div>
-            <p>Actual tendon issue &#8212; not PFPS. Males 15&#8211;30, jumping sports. <strong>Signs:</strong> pain at inferior pole of patella on patellar tendon; pain with resisted extension; "movie theater sign" (pain with prolonged sitting); worse with energy storage exercises (depth jump). <strong>Treatment:</strong> blend eccentric + isometric + isotonic loading; address jumping/landing biomechanics; identify training change that initiated symptoms.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Apophysitis &#8212; Youth</div>
-            <p><strong>Osgood Schlatter's:</strong> Males 10&#8211;15, jumping/cutting/squatting sports, growth spurts. Tibial tuberosity pain + bony protuberance + quad weakness. Self-limiting &#8212; symptom modulation, modify activities. <strong>Sinding-Larsen-Johansson:</strong> Males adolescent, similar demographics. Inferior pole pain (like patellar tendinopathy location). Quad weakness/tightness + recent growth spurt.</p>
-          </div>
-          <div class="bl-strip orange">
-            <div class="bl-label">Plica Syndrome</div>
-            <p>Remnant of embryonic tissue &#8212; up to 50% of people have it asymptomatically. Medial plica most commonly symptomatic (1st&#8211;3rd decade). <strong>Signs:</strong> anterior/anteromedial knee pain; clicking/popping/locking when pinched; palpable painful string along medial parapatellar area; giving way. Diagnose by ruling out other pathologies + arthroscopic finding. Treatment: ITB tightness, quad weakness stretching (quads, hamstrings, gastroc).</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Ligamentous Injuries &#8212; MCL, LCL, PCL, ACL, PLC</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">MCL &amp; LCL Sprains</div>
-            <p><strong>MCL:</strong> valgus &#177; rotation; more common; often with medial meniscus and ACL. MCL has good blood supply &#8212; can intentionally be left torn during surgery. Treat: avoid valgus stress and tibial rotational stress; ROM + swelling + strength + neuromotor re-education. <strong>LCL:</strong> varus stress; less concomitant damage. Same impairment-based treatment principles. Avoid varus stress and tibial rotational stress.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">PCL Sprain</div>
-            <p>30% of ligamentous injuries. Dashboard injury or posterior-directed force.<br><strong>Signs:</strong> audible pop; minimal swelling; minimal pain with extension; loss of flexion ROM (10&#8211;20&#176;, pain &gt;90&#176;); posterior knee pain (aggravated by kneeling); possible anterior pain. MRI = gold standard.<br><strong>Grade 1&#8211;2:</strong> favorable outcomes conservative &#8212; quad strengthening (reduces posterior tibial translation), ROM, return to sport 2&#8211;6 weeks (90%).<br><strong>Grade 3:</strong> avoid isolated hamstring exercises &#215;6&#8211;8 weeks (increases PCL stress); CKC environment; co-contraction; return to sport 3 months even without surgery.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">ACL Sprain</div>
-            <p>Non-contact deceleration most common. Tibial IR on ER femur; valgus + hyperextension with contact.<br><strong>Female risk factors:</strong> landing patterns, quad dominance/hamstring imbalance, hormonal factors, hip anatomy.<br><strong>Signs:</strong> <strong>audible pop</strong>; significant hemarthrosis (1&#8211;2 hrs); feelings of instability; decreased extension ROM. Associated medial meniscus tears are common.<br><strong>Acute treatment:</strong> ROM ASAP; CKC strengthening (quads, gastroc-soleus, hamstrings); avoid OKC knee ext &gt;30&#176; and deep knee flexion &gt;90&#176; early.<br><strong>Copers criteria</strong> (return without surgery): isolated ACL, full pain-free ROM, no effusion, &gt;70% MVIC quads bilaterally, &gt;80% on SL hop battery, &#8804;1 giving-way episode.</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">PLC Sprain (Posterolateral Corner)</div>
-            <p>Rarely isolated &#8212; varus on flexed knee, posterolateral force, hyperextension. Major factor in failed ACL reconstructions (must address before or with ACL surgery). <strong>Signs:</strong> instability especially in full extension; difficulty squatting/stepping; flexion resisted exercises limited (deep flexion and posterior glide avoided). Treatment: symptom modulation at area + global hip and knee stability focus.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Meniscal Pathology, Knee OA &amp; Chondral Pathology</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Meniscal Pathology</div>
-            <p>Most common cause of mechanical knee symptoms.<br><strong>MOI:</strong> twisting/changing direction WB; contact with planted LE; degeneration (older, medial).<br><strong>Signs:</strong> <strong>popping, clicking, locking</strong>; <strong>joint line tenderness</strong> (due to capsular strain from tear); swelling; decreased ROM (especially end-range flexion pain); Meniscus Composite Score: JLT + extreme flex/ext + popping/clicking/catching.<br><strong>Types:</strong> Longitudinal (bucket handle &#8594; surgery), horizontal, radial, flap (parrot beak).<br><strong>Surgery only for bucket-handle tear</strong> with locking.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Knee OA</div>
-            <p>Most common disability in US.<br><strong>Risk factors:</strong> physically demanding job, female, obesity, previous knee trauma/meniscus injury, quad weakness.<br><strong>Tibiofemoral presentation:</strong> swelling (Baker's cyst, bursal, fat pad), warmth, pain with WB, decreased knee extension, muscle weakness, joint deformity.<br><strong>Patellofemoral presentation:</strong> stiffness, crepitus, same signs.<br><strong>Mild/moderate treatment:</strong> education (over 45, changes are common), strengthening, motor control/proprioception, assisted devices, weight management, manual therapy.<br><strong>Severe OA:</strong> lubrication injections, unloading braces, TKA. Pre-op strength linked to post-op function.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Chondral Pathology</div>
-            <p><strong>Younger pt:</strong> acute trauma.<br><strong>Older pt:</strong> degenerative. Risk: ligamentous instability, overweight.<br><strong>Signs:</strong> dull ache/deep joint pain; pain with WB (descending stairs, squatting); changes in gait/screw home mechanism.<br><strong>Treatment:</strong> poor conservative evidence; protection of joint surfaces through strengthening and graded loading exposure.<br><strong>Surgical options:</strong> debridement, ACI, OATS, microfracture surgery.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">Patellofemoral Instability</div>
-            <p>Dislocation/subluxation of patella relative to femoral trochlea. Lateral most common. Prior episode = <strong>7&#215; more likely to recur.</strong> <strong>Risk factors:</strong> young females (increased laxity, genu valgum, increased Q angle); small/high-riding patella (patella alta); shallow trochlear groove; VMO/VL imbalance; generalized laxity.<br><strong>Exam:</strong> TTP at medial retinaculum and distal patellar pole; instability identified through history of repeated events.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Knee Pathologies &#8212; Anterior Pain, Ligament, Meniscal, OA</div>
+<div class="section-sub">Knee pathologies organized by anatomical region. Anterior knee pain has a broad DDx &#8212; use the combination of palpation, provocation testing, and functional screening. ACL does not heal on its own. Meniscal surgery is indicated only for bucket-handle tears with locking. Quad strength is the single most important impairment to address in almost every knee condition.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Anterior Knee Pain DDx &#8212; Complete List</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Full DDx: Anterior Knee Pain</div>
+<p>PFPS (Runners Knee) &#8226; Osteoarthritis &#8226; Chondromalacia Patella &#8226; Patellar Tendinopathy (Jumper's Knee) &#8226; Patellar Bursitis &#8226; Plica Syndrome &#8226; Osgood Schlatter's Apophysitis &#8226; Sinding Larsen Johansson's Apophysitis &#8226; Hoffa's Fat Pad Impingement &#8226; Femoral Nerve Entrapment &#8226; Saphenous Nerve Entrapment &#8226; L3/L4 Radiculopathy</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">PFPS &#8212; Patellofemoral Pain Syndrome</div>
+<p>Catch-all diagnosis of exclusion. Also called: chondromalacia patella, patellar arthralgia, runners knee. Women 2:1 vs men.<br><strong>Risk factors:</strong> decreased quad flexibility, decreased knee extension strength, diminished quad explosive strength, hypermobile patella.<br><strong>Best diagnostic combo:</strong> pain with squatting + palpation of medial/lateral patellar borders + isometric quad resistance at 90&#176;.<br><strong>Treatment (individualized):</strong> hip abductors/glutes; hip mobility; quad strength (&#x2116;1); foot posture/orthotics; taping (short-term); motor control.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Chondromalacia Patella</div>
+<p>Irritation/softening of posterior patellar cartilage. Teenagers/young adults/females. <strong>Signs:</strong> grinding/noisy knee; pain descending stairs/squatting; often asymptomatic (not a direct PT diagnosis to write). Look for muscle imbalances increasing PFJ compression. Pain with compression along the joint.</p>
 </div>
 </div>
-
-<!-- ====== SPECIAL TESTS ====== -->
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Patellar Tendinopathy (Jumper's Knee)</div>
+<p>Actual tendon issue &#8212; not PFPS. Males 15&#8211;30, jumping sports. <strong>Signs:</strong> pain at inferior pole of patella on patellar tendon; pain with resisted extension; "movie theater sign" (pain with prolonged sitting); worse with energy storage exercises (depth jump). <strong>Treatment:</strong> blend eccentric + isometric + isotonic loading; address jumping/landing biomechanics; identify training change that initiated symptoms.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Apophysitis &#8212; Youth</div>
+<p><strong>Osgood Schlatter's:</strong> Males 10&#8211;15, jumping/cutting/squatting sports, growth spurts. Tibial tuberosity pain + bony protuberance + quad weakness. Self-limiting &#8212; symptom modulation, modify activities. <strong>Sinding-Larsen-Johansson:</strong> Males adolescent, similar demographics. Inferior pole pain (like patellar tendinopathy location). Quad weakness/tightness + recent growth spurt.</p>
+</div>
+<div class="bl-strip orange">
+<div class="bl-label">Plica Syndrome</div>
+<p>Remnant of embryonic tissue &#8212; up to 50% of people have it asymptomatically. Medial plica most commonly symptomatic (1st&#8211;3rd decade). <strong>Signs:</strong> anterior/anteromedial knee pain; clicking/popping/locking when pinched; palpable painful string along medial parapatellar area; giving way. Diagnose by ruling out other pathologies + arthroscopic finding. Treatment: ITB tightness, quad weakness stretching (quads, hamstrings, gastroc).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Ligamentous Injuries &#8212; MCL, LCL, PCL, ACL, PLC</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">MCL &amp; LCL Sprains</div>
+<p><strong>MCL:</strong> valgus &#177; rotation; more common; often with medial meniscus and ACL. MCL has good blood supply &#8212; can intentionally be left torn during surgery. Treat: avoid valgus stress and tibial rotational stress; ROM + swelling + strength + neuromotor re-education. <strong>LCL:</strong> varus stress; less concomitant damage. Same impairment-based treatment principles. Avoid varus stress and tibial rotational stress.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">PCL Sprain</div>
+<p>30% of ligamentous injuries. Dashboard injury or posterior-directed force.<br><strong>Signs:</strong> audible pop; minimal swelling; minimal pain with extension; loss of flexion ROM (10&#8211;20&#176;, pain &gt;90&#176;); posterior knee pain (aggravated by kneeling); possible anterior pain. MRI = gold standard.<br><strong>Grade 1&#8211;2:</strong> favorable outcomes conservative &#8212; quad strengthening (reduces posterior tibial translation), ROM, return to sport 2&#8211;6 weeks (90%).<br><strong>Grade 3:</strong> avoid isolated hamstring exercises &#215;6&#8211;8 weeks (increases PCL stress); CKC environment; co-contraction; return to sport 3 months even without surgery.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">ACL Sprain</div>
+<p>Non-contact deceleration most common. Tibial IR on ER femur; valgus + hyperextension with contact.<br><strong>Female risk factors:</strong> landing patterns, quad dominance/hamstring imbalance, hormonal factors, hip anatomy.<br><strong>Signs:</strong><strong>audible pop</strong>; significant hemarthrosis (1&#8211;2 hrs); feelings of instability; decreased extension ROM. Associated medial meniscus tears are common.<br><strong>Acute treatment:</strong> ROM ASAP; CKC strengthening (quads, gastroc-soleus, hamstrings); avoid OKC knee ext &gt;30&#176; and deep knee flexion &gt;90&#176; early.<br><strong>Copers criteria</strong> (return without surgery): isolated ACL, full pain-free ROM, no effusion, &gt;70% MVIC quads bilaterally, &gt;80% on SL hop battery, &#8804;1 giving-way episode.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">PLC Sprain (Posterolateral Corner)</div>
+<p>Rarely isolated &#8212; varus on flexed knee, posterolateral force, hyperextension. Major factor in failed ACL reconstructions (must address before or with ACL surgery). <strong>Signs:</strong> instability especially in full extension; difficulty squatting/stepping; flexion resisted exercises limited (deep flexion and posterior glide avoided). Treatment: symptom modulation at area + global hip and knee stability focus.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Meniscal Pathology, Knee OA &amp; Chondral Pathology</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Meniscal Pathology</div>
+<p>Most common cause of mechanical knee symptoms.<br><strong>MOI:</strong> twisting/changing direction WB; contact with planted LE; degeneration (older, medial).<br><strong>Signs:</strong><strong>popping, clicking, locking</strong>; <strong>joint line tenderness</strong> (due to capsular strain from tear); swelling; decreased ROM (especially end-range flexion pain); Meniscus Composite Score: JLT + extreme flex/ext + popping/clicking/catching.<br><strong>Types:</strong> Longitudinal (bucket handle &#8594; surgery), horizontal, radial, flap (parrot beak).<br><strong>Surgery only for bucket-handle tear</strong> with locking.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Knee OA</div>
+<p>Most common disability in US.<br><strong>Risk factors:</strong> physically demanding job, female, obesity, previous knee trauma/meniscus injury, quad weakness.<br><strong>Tibiofemoral presentation:</strong> swelling (Baker's cyst, bursal, fat pad), warmth, pain with WB, decreased knee extension, muscle weakness, joint deformity.<br><strong>Patellofemoral presentation:</strong> stiffness, crepitus, same signs.<br><strong>Mild/moderate treatment:</strong> education (over 45, changes are common), strengthening, motor control/proprioception, assisted devices, weight management, manual therapy.<br><strong>Severe OA:</strong> lubrication injections, unloading braces, TKA. Pre-op strength linked to post-op function.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip">
+<div class="bl-label">Chondral Pathology</div>
+<p><strong>Younger pt:</strong> acute trauma.<br><strong>Older pt:</strong> degenerative. Risk: ligamentous instability, overweight.<br><strong>Signs:</strong> dull ache/deep joint pain; pain with WB (descending stairs, squatting); changes in gait/screw home mechanism.<br><strong>Treatment:</strong> poor conservative evidence; protection of joint surfaces through strengthening and graded loading exposure.<br><strong>Surgical options:</strong> debridement, ACI, OATS, microfracture surgery.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Patellofemoral Instability</div>
+<p>Dislocation/subluxation of patella relative to femoral trochlea. Lateral most common. Prior episode = <strong>7&#215; more likely to recur.</strong><strong>Risk factors:</strong> young females (increased laxity, genu valgum, increased Q angle); small/high-riding patella (patella alta); shallow trochlear groove; VMO/VL imbalance; generalized laxity.<br><strong>Exam:</strong> TTP at medial retinaculum and distal patellar pole; instability identified through history of repeated events.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-special">
 <div class="container">
-  <div class="section-title">Knee Special Tests with Diagnostic Accuracy</div>
-  <div class="section-sub">Lachman's is the gold standard for ACL (highest SN + SP). Posterior drawer has excellent accuracy for PCL. McMurray has high specificity for lateral meniscus. Ottawa Knee Rules are used to decide if X-ray is needed post-trauma &#8212; highly sensitive rule-out tool.</div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Ligament Tests</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
-      <tbody>
-        <tr><td class="hi">Lachman's Test</td><td>Supine, 30&#176; flex</td><td>Stabilize femur; pull tibia anteriorly quickly</td><td>Soft/mushy end feel = ACL tear. Exclude PCL injury (gives false positive)</td><td>ACL rupture</td><td class="ok">SN:.85 / SP:.94</td></tr>
-        <tr><td class="hi">Anterior Drawer</td><td>Supine, hip 45&#176;, knee 90&#176;</td><td>Pull tibia anteriorly with thumbs on joint line</td><td>Excessive anterior translation</td><td>ACL tear</td><td>Acute: SN:.49 SP:.58; Chronic: SN:.92 SP:.91</td></tr>
-        <tr><td class="hi">Posterior Drawer</td><td>Supine, hip 45&#176;, knee 90&#176;</td><td>Push tibia posteriorly</td><td>Excessive posterior translation</td><td>PCL tear</td><td class="ok">SN:.90 / SP:.99</td></tr>
-        <tr><td class="hi">Posterior Sag Sign (Godfrey's)</td><td>Supine, knees 90&#176;</td><td>Observe tibia from lateral view</td><td>Tibia sags posteriorly</td><td>PCL tear</td><td class="ok">SN:.78 / SP:1.00</td></tr>
-        <tr><td class="hi">Valgus Stress Test</td><td>Full ext, then 30&#176; flex</td><td>Apply valgus force to knee</td><td>Laxity or pain</td><td>MCL injury</td><td class="ok">SN:.91 / SP:.49</td></tr>
-        <tr><td class="hi">Varus Stress Test</td><td>Full ext, then 30&#176; flex</td><td>Apply varus force to knee</td><td>Laxity or pain</td><td>LCL injury</td><td class="bad">SN:.25 / SP: Unknown</td></tr>
-        <tr><td class="hi">Lateral Pivot Shift</td><td>Supine</td><td>IR tibia + valgus stress, move into flexion</td><td>Tibia "reduces" (clunk) at ~20&#176; = ACL</td><td>ACL tear + anterolateral instability</td><td>SN:.24 / SP:.98</td></tr>
-        <tr><td class="hi">Dial Test (Prone ER)</td><td>Prone</td><td>ER tibia at 30&#176; and 90&#176; knee flex</td><td>&gt;10&#176; more ER vs. opposite side</td><td>PLC involvement</td><td>Unknown</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Meniscal &amp; Patellofemoral Tests</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
-      <tbody>
-        <tr><td class="hi">McMurray's Test</td><td>Supine</td><td>Knee fully flexed; extend knee while IR tibia (tests lateral meniscus) or ER tibia (tests medial meniscus)</td><td>Click accompanied by pain</td><td>Meniscal tear</td><td>Medial: SN:.50 SP:.77; Lateral: SN:.21 SP:.94</td></tr>
-        <tr><td class="hi">Bounce Home Test</td><td>Supine</td><td>PT gently lets knee fully extend; assesses end feel</td><td>Rubbery block preventing full ext or pain at end range</td><td>Meniscal pathology; hard end feel = loose bodies</td><td>Unknown</td></tr>
-        <tr><td class="hi">Apley's Compression/Distraction</td><td>Prone, 90&#176; flex</td><td>Medial/lateral rotation with compression then distraction</td><td>Compression = meniscal tear; Distraction = capsule/ligament</td><td>Meniscal vs. ligamentous</td><td>Unknown</td></tr>
-        <tr><td class="hi">Thessaly Test</td><td>Standing (PT holds hands)</td><td>Patient rotates body IR/ER &#215;3 at 5&#176; and 20&#176; flexion</td><td>Replication of symptoms</td><td>Meniscal tear</td><td>SN:.64 / SP:.53 &#8212; send MRI to double check</td></tr>
-        <tr><td class="hi">Clarke's/Zohler Test</td><td>Supine</td><td>PT presses patella distally with hand on superior border; patient contracts quads</td><td>Reproduction of pain</td><td>Patellofemoral disorder (feels very uncomfortable for pt)</td><td>Unknown</td></tr>
-        <tr><td class="hi">Fairbank's Apprehension Test</td><td>Supine, 30&#176; flex</td><td>PT pushes patella laterally as far as possible</td><td>Pt extends knee or apprehension &#8212; scared of movement</td><td>Patellar dislocation tendency / PFPS</td><td>Unknown</td></tr>
-        <tr><td class="hi">McConnell Test</td><td>Supine</td><td>PT tests knee ext strength at 30&#176;, 60&#176;, 90&#176;</td><td>Pain + diminished strength</td><td>Patellofemoral alignment issues</td><td>Unknown</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Ottawa Knee Rules &#8212; When to X-Ray</div>
-    <div class="bl-strip red">
-      <div class="bl-label">X-Ray Indicated if ANY of the Following Present After Knee Trauma</div>
-      <p><strong>Most common trigger: Inability to bear weight immediately after injury AND for 4 steps during initial evaluation</strong> Bony tenderness at fibular head Bony tenderness at tibial tuberosity (isolated) Failure to flex knee to 90&#176; Patient age &gt;55</p>
-    </div>
-    <div class="bl-strip gold">
-      <div class="bl-label">Functional Outcome Tests for Return to Sport</div>
-      <p><strong>SL hop tests (80&#8211;85% contralateral LE = normal):</strong> Single hop for distance &#8226; Triple hop for distance &#8226; Timed 6m hop &#8226; Crossover triple hop for distance. These are your criteria-based return-to-sport benchmarks, especially post-ACL reconstruction.</p>
-    </div>
-  </div>
+<div class="section-title">Knee Special Tests with Diagnostic Accuracy</div>
+<div class="section-sub">Lachman's is the gold standard for ACL (highest SN + SP). Posterior drawer has excellent accuracy for PCL. McMurray has high specificity for lateral meniscus. Ottawa Knee Rules are used to decide if X-ray is needed post-trauma &#8212; highly sensitive rule-out tool.</div>
+<div class="bl-strip">
+<div class="bl-label">Ligament Tests</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead><tbody>
+<tr><td class="hi">Lachman's Test</td><td>Supine, 30&#176; flex</td><td>Stabilize femur; pull tibia anteriorly quickly</td><td>Soft/mushy end feel = ACL tear. Exclude PCL injury (gives false positive)</td><td>ACL rupture</td><td class="ok">SN:.85 / SP:.94</td></tr>
+<tr><td class="hi">Anterior Drawer</td><td>Supine, hip 45&#176;, knee 90&#176;</td><td>Pull tibia anteriorly with thumbs on joint line</td><td>Excessive anterior translation</td><td>ACL tear</td><td>Acute: SN:.49 SP:.58; Chronic: SN:.92 SP:.91</td></tr>
+<tr><td class="hi">Posterior Drawer</td><td>Supine, hip 45&#176;, knee 90&#176;</td><td>Push tibia posteriorly</td><td>Excessive posterior translation</td><td>PCL tear</td><td class="ok">SN:.90 / SP:.99</td></tr>
+<tr><td class="hi">Posterior Sag Sign (Godfrey's)</td><td>Supine, knees 90&#176;</td><td>Observe tibia from lateral view</td><td>Tibia sags posteriorly</td><td>PCL tear</td><td class="ok">SN:.78 / SP:1.00</td></tr>
+<tr><td class="hi">Valgus Stress Test</td><td>Full ext, then 30&#176; flex</td><td>Apply valgus force to knee</td><td>Laxity or pain</td><td>MCL injury</td><td class="ok">SN:.91 / SP:.49</td></tr>
+<tr><td class="hi">Varus Stress Test</td><td>Full ext, then 30&#176; flex</td><td>Apply varus force to knee</td><td>Laxity or pain</td><td>LCL injury</td><td class="bad">SN:.25 / SP: Unknown</td></tr>
+<tr><td class="hi">Lateral Pivot Shift</td><td>Supine</td><td>IR tibia + valgus stress, move into flexion</td><td>Tibia "reduces" (clunk) at ~20&#176; = ACL</td><td>ACL tear + anterolateral instability</td><td>SN:.24 / SP:.98</td></tr>
+<tr><td class="hi">Dial Test (Prone ER)</td><td>Prone</td><td>ER tibia at 30&#176; and 90&#176; knee flex</td><td>&gt;10&#176; more ER vs. opposite side</td><td>PLC involvement</td><td>Unknown</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== POST-OP ====== -->
+<div class="bl-strip">
+<div class="bl-label">Meniscal &amp; Patellofemoral Tests</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead><tbody>
+<tr><td class="hi">McMurray's Test</td><td>Supine</td><td>Knee fully flexed; extend knee while IR tibia (tests lateral meniscus) or ER tibia (tests medial meniscus)</td><td>Click accompanied by pain</td><td>Meniscal tear</td><td>Medial: SN:.50 SP:.77; Lateral: SN:.21 SP:.94</td></tr>
+<tr><td class="hi">Bounce Home Test</td><td>Supine</td><td>PT gently lets knee fully extend; assesses end feel</td><td>Rubbery block preventing full ext or pain at end range</td><td>Meniscal pathology; hard end feel = loose bodies</td><td>Unknown</td></tr>
+<tr><td class="hi">Apley's Compression/Distraction</td><td>Prone, 90&#176; flex</td><td>Medial/lateral rotation with compression then distraction</td><td>Compression = meniscal tear; Distraction = capsule/ligament</td><td>Meniscal vs. ligamentous</td><td>Unknown</td></tr>
+<tr><td class="hi">Thessaly Test</td><td>Standing (PT holds hands)</td><td>Patient rotates body IR/ER &#215;3 at 5&#176; and 20&#176; flexion</td><td>Replication of symptoms</td><td>Meniscal tear</td><td>SN:.64 / SP:.53 &#8212; send MRI to double check</td></tr>
+<tr><td class="hi">Clarke's/Zohler Test</td><td>Supine</td><td>PT presses patella distally with hand on superior border; patient contracts quads</td><td>Reproduction of pain</td><td>Patellofemoral disorder (feels very uncomfortable for pt)</td><td>Unknown</td></tr>
+<tr><td class="hi">Fairbank's Apprehension Test</td><td>Supine, 30&#176; flex</td><td>PT pushes patella laterally as far as possible</td><td>Pt extends knee or apprehension &#8212; scared of movement</td><td>Patellar dislocation tendency / PFPS</td><td>Unknown</td></tr>
+<tr><td class="hi">McConnell Test</td><td>Supine</td><td>PT tests knee ext strength at 30&#176;, 60&#176;, 90&#176;</td><td>Pain + diminished strength</td><td>Patellofemoral alignment issues</td><td>Unknown</td></tr></tbody></table>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Ottawa Knee Rules &#8212; When to X-Ray</div>
+<div class="bl-strip red">
+<div class="bl-label">X-Ray Indicated if ANY of the Following Present After Knee Trauma</div>
+<p><strong>Most common trigger: Inability to bear weight immediately after injury AND for 4 steps during initial evaluation</strong> Bony tenderness at fibular head Bony tenderness at tibial tuberosity (isolated) Failure to flex knee to 90&#176; Patient age &gt;55</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Functional Outcome Tests for Return to Sport</div>
+<p><strong>SL hop tests (80&#8211;85% contralateral LE = normal):</strong> Single hop for distance &#8226; Triple hop for distance &#8226; Timed 6m hop &#8226; Crossover triple hop for distance. These are your criteria-based return-to-sport benchmarks, especially post-ACL reconstruction.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-postop">
 <div class="container">
-  <div class="section-title">Knee Post-Operative Rehabilitation</div>
-  <div class="section-sub">Arthrogenic Muscle Inhibition (AMI) is the enemy. Even 20&#8211;30 mL of joint fluid produces quadriceps activation failure. Gaining full knee extension in the first 2 weeks is essential &#8212; extension loss of 3&#8211;5&#176; vs. contralateral increases OA risk. Extension always before flexion post-op.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>General Considerations &#8212; AMI, Extension Priority, Anterior Interval</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Arthrogenic Muscle Inhibition (AMI)</div>
-            <p>Ongoing inhibition of musculature surrounding a joint &#8212; a protective reflex mechanism. Even experimental knee effusions with just 20&#8211;30 mL saline produce quadriceps activation failure. <strong>Cycle:</strong> joint injury &#8594; AMI &#8594; muscle weakness &#8594; muscle atrophy &#8594; immobilization &#8594; perpetuates AMI. <strong>Treatment:</strong> NMES to quads (Russian protocol: 2&#215;/day, biphasic 50 pps, 250&#956;s pulse duration, 10s on:10s off); cryotherapy (disinhibitory); compression + elevation; patient education.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Extension Priority Rule</div>
-            <p>Normal knee extension = approximately +5&#176; hyperextension. <strong>A patient who "lacks 5&#176; from neutral" actually has 10&#176; of terminal extension loss.</strong> Loss of 3&#8211;5&#176; extension vs. contralateral = increased OA risk. &gt;5&#176; extension loss = more dramatic OA development. Post-op position of comfort is 10&#8211;20&#176; flexion &#8212; if maintained, patient stiffens in this position. Hamstrings and posterior capsule become tight. Anterior interval becomes fibrotic (Hoffa's syndrome).</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Anterior Interval (Patellofemoral Complex)</div>
-            <p>Infrapatellar area comprised of patellofemoral complex, bursa, and infrapatellar fat pad. Often becomes fibrotic following arthroscopy due to location of medial and lateral portals. <strong>Patellofemoral joint mobilizations are crucial</strong> to maintain proper gliding, decrease pain, and improve function. Assess patellar mobility (superior/inferior and medial/lateral) at every post-op knee session.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">OKC vs. CKC Exercise Selection &#8212; ACL Stress</div>
-            <p><strong>Greatest ACL stress: OKC 10&#8211;50&#176; flexion</strong> (peaks 10&#8211;30&#176;) Avoid OKC knee extension &gt;30&#176; early in ACL rehab CKC: deep knee flexion &gt;90&#176; also increases ACL load &#8212; avoid early Load changes with exercise technique (quad dominant squat = more ACL stress) No differences in final laxity, pain, and function between OKC and CKC at end of rehab</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Meniscus Rehab &#8212; Partial Meniscectomy vs. Meniscus Repair</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Partial Meniscectomy</div>
-            <p>For non-reparable tears (usually white zone). Wide range of patient population.<br><strong>Rehab:</strong> WBAT; no loaded deep knee flexion; ROM guidelines; address AMI; normalize gait early; gradually progress strength.<br><strong>Timeline:</strong> 4&#8211;8 weeks rehab course.<br><strong>Complication:</strong> 3&#215; increased risk of knee OA at 14-year follow up, especially with meniscal involvement.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Meniscus Repair</div>
-            <p>Suturing torn pieces together arthroscopically. Red zone tears only (blood supply needed for healing). Younger, active population.<br><strong>Rehab (longer &#8212; 4&#8211;6 months):</strong> Poor blood supply = increased healing time. Hinged knee brace.<br><strong>WB: NWB 4&#8211;6 weeks</strong> (surgeon-dependent); WB with brace locked in extension initially.<br><strong>No flexion &gt;90&#176; for 4&#8211;6 weeks.</strong> Priority: full terminal knee extension, quad neuro re-education, then flexion within precautions. Failure of repair = mechanical symptoms, inability to regain ROM, persistent pain.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>ACL Reconstruction &#8212; Graft Choices, Ligamentization &amp; 4-Phase Protocol</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Graft Options</div>
-            <p>Bone-Patellar-Bone autograft Hamstring autograft Quadriceps tendon autograft Allograft (cadaver tibialis anterior or Achilles tendon)</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Ligamentization Process</div>
-            <p>Graft fixation sites require time for incorporation into surrounding bone. Initial weakening + revascularization process. Graft must mature via "ligamentization." <strong>Graft is WEAKEST at 12 weeks.</strong> Tensile properties increase with time &#8212; this is why criteria-based (not time-based) progressions are essential.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Outcomes &amp; Re-injury Risk</div>
-            <p>6&#8211;25% re-injury rate overall <strong>15% re-tear if RTP within 7 months</strong> Athletes &lt;20 = 6&#215; greater re-injury risk Cutting/pivoting sports = 3.9&#215; re-injury; 5&#215; contralateral injury 33% attempted sport at pre-injury level at 1 year; 64% at 5 years</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">ACL Rehab &#8212; 4-Phase Protocol</div>
-            <p><strong>Phase 1 (ROM &amp; Pain Control):</strong> Full passive + active knee extension; &#8805;120&#176; passive flexion; quad activation isometrically; no SLR lag; edema control; symmetrical gait; low/no pain.<br><strong>Phase 2 (Endurance &amp; Motor Control):</strong> No pain/instability; full symmetrical AROM; CKC strength/endurance/motor control (sagittal first, then frontal); CV fitness + muscular endurance.<br><strong>Phase 3 (Hypertrophy &amp; Proprioception):</strong> Maximize strength all 3 planes; SL eccentric strength; dynamic pelvic/trunk stability; hamstring strengthening; return to jogging progression; early plyometrics (sagittal first).<br><strong>Phase 4 (Plyometrics &amp; RTP):</strong> Multiplanar plyometric power; dynamic balance; multiplanar agility; speed; CV endurance. 80&#8211;85% contralateral limb on SL hop battery = benchmark.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Total Knee Arthroplasty (TKA) &#8212; Rehab, ROM Goals &amp; Complications</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      ">
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Indications &amp; Population</div>
-            <p>Age &gt;55, women &gt; men. Indications: severe pain/stiffness limiting function; moderate-severe pain at rest; chronic knee inflammation not improving with rest/medications; deformity; failure of conservative treatment. Goal: resurfacing joint surfaces for pain relief.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">TKA ROM Goals</div>
-            <p>Start ROM ASAP &#8212; extension AND flexion <strong>2 weeks post-op: approaching 90&#176;</strong> <strong>6 weeks post-op: approaching 120&#176;</strong> Address barriers routinely: pain, swelling, fear avoidance Pre-op ROM linked to post-op ROM &#8212; prehab matters</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Outcomes</div>
-            <p>Full recovery 1&#8211;2 years. 91&#8211;96% prosthesis survival at 15-year follow-up. QoL improves significantly. Factors associated with worse QoL post-op: BMI, advanced age, comorbidities, chronic pain. <strong>Exercise programming is KEY.</strong></p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">TKA Rehabilitation Focus</div>
-            <p>WB goal: premorbid level or better. Walker &#8594; Cane &#8594; No device. <strong>Quad strength:</strong> consider NMES &#8212; directly linked to faster gait speeds, faster stair negotiation, higher outcome measure scores. Functional goals: gait mechanics, transfer safety, stair/curb training. First 2 weeks in clinic 5 days/week to prevent stiffness.</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">TKA Complication: Post-Op Stiffness</div>
-            <p>Defined as: <strong>flexion &lt;75&#176; AND 15&#176; lack of extension.</strong> If developing: PT ROM is the early emphasis &#8212; 5 days/week for first 2 weeks. If PT fails: <strong>Manipulation Under Anesthesia (MUA)</strong>. Other complications: DVT (Wells criteria), infection, implant issues (persistent pain, mechanical symptoms, failure to progress or sudden regression), chronic pain.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="section-title">Knee Post-Operative Rehabilitation</div>
+<div class="section-sub">Arthrogenic Muscle Inhibition (AMI) is the enemy. Even 20&#8211;30 mL of joint fluid produces quadriceps activation failure. Gaining full knee extension in the first 2 weeks is essential &#8212; extension loss of 3&#8211;5&#176; vs. contralateral increases OA risk. Extension always before flexion post-op.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>General Considerations &#8212; AMI, Extension Priority, Anterior Interval</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Arthrogenic Muscle Inhibition (AMI)</div>
+<p>Ongoing inhibition of musculature surrounding a joint &#8212; a protective reflex mechanism. Even experimental knee effusions with just 20&#8211;30 mL saline produce quadriceps activation failure. <strong>Cycle:</strong> joint injury &#8594; AMI &#8594; muscle weakness &#8594; muscle atrophy &#8594; immobilization &#8594; perpetuates AMI. <strong>Treatment:</strong> NMES to quads (Russian protocol: 2&#215;/day, biphasic 50 pps, 250&#956;s pulse duration, 10s on:10s off); cryotherapy (disinhibitory); compression + elevation; patient education.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Extension Priority Rule</div>
+<p>Normal knee extension = approximately +5&#176; hyperextension. <strong>A patient who "lacks 5&#176; from neutral" actually has 10&#176; of terminal extension loss.</strong> Loss of 3&#8211;5&#176; extension vs. contralateral = increased OA risk. &gt;5&#176; extension loss = more dramatic OA development. Post-op position of comfort is 10&#8211;20&#176; flexion &#8212; if maintained, patient stiffens in this position. Hamstrings and posterior capsule become tight. Anterior interval becomes fibrotic (Hoffa's syndrome).</p>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
+<div>
+<div class="bl-strip">
+<div class="bl-label">Anterior Interval (Patellofemoral Complex)</div>
+<p>Infrapatellar area comprised of patellofemoral complex, bursa, and infrapatellar fat pad. Often becomes fibrotic following arthroscopy due to location of medial and lateral portals. <strong>Patellofemoral joint mobilizations are crucial</strong> to maintain proper gliding, decrease pain, and improve function. Assess patellar mobility (superior/inferior and medial/lateral) at every post-op knee session.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">OKC vs. CKC Exercise Selection &#8212; ACL Stress</div>
+<p><strong>Greatest ACL stress: OKC 10&#8211;50&#176; flexion</strong> (peaks 10&#8211;30&#176;) Avoid OKC knee extension &gt;30&#176; early in ACL rehab CKC: deep knee flexion &gt;90&#176; also increases ACL load &#8212; avoid early Load changes with exercise technique (quad dominant squat = more ACL stress) No differences in final laxity, pain, and function between OKC and CKC at end of rehab</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Meniscus Rehab &#8212; Partial Meniscectomy vs. Meniscus Repair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Partial Meniscectomy</div>
+<p>For non-reparable tears (usually white zone). Wide range of patient population.<br><strong>Rehab:</strong> WBAT; no loaded deep knee flexion; ROM guidelines; address AMI; normalize gait early; gradually progress strength.<br><strong>Timeline:</strong> 4&#8211;8 weeks rehab course.<br><strong>Complication:</strong> 3&#215; increased risk of knee OA at 14-year follow up, especially with meniscal involvement.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Meniscus Repair</div>
+<p>Suturing torn pieces together arthroscopically. Red zone tears only (blood supply needed for healing). Younger, active population.<br><strong>Rehab (longer &#8212; 4&#8211;6 months):</strong> Poor blood supply = increased healing time. Hinged knee brace.<br><strong>WB: NWB 4&#8211;6 weeks</strong> (surgeon-dependent); WB with brace locked in extension initially.<br><strong>No flexion &gt;90&#176; for 4&#8211;6 weeks.</strong> Priority: full terminal knee extension, quad neuro re-education, then flexion within precautions. Failure of repair = mechanical symptoms, inability to regain ROM, persistent pain.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>ACL Reconstruction &#8212; Graft Choices, Ligamentization &amp; 4-Phase Protocol</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Graft Options</div>
+<p>Bone-Patellar-Bone autograft Hamstring autograft Quadriceps tendon autograft Allograft (cadaver tibialis anterior or Achilles tendon)</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Ligamentization Process</div>
+<p>Graft fixation sites require time for incorporation into surrounding bone. Initial weakening + revascularization process. Graft must mature via "ligamentization." <strong>Graft is WEAKEST at 12 weeks.</strong> Tensile properties increase with time &#8212; this is why criteria-based (not time-based) progressions are essential.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Outcomes &amp; Re-injury Risk</div>
+<p>6&#8211;25% re-injury rate overall <strong>15% re-tear if RTP within 7 months</strong> Athletes &lt;20 = 6&#215; greater re-injury risk Cutting/pivoting sports = 3.9&#215; re-injury; 5&#215; contralateral injury 33% attempted sport at pre-injury level at 1 year; 64% at 5 years</p>
+</div>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">ACL Rehab &#8212; 4-Phase Protocol</div>
+<p><strong>Phase 1 (ROM &amp; Pain Control):</strong> Full passive + active knee extension; &#8805;120&#176; passive flexion; quad activation isometrically; no SLR lag; edema control; symmetrical gait; low/no pain.<br><strong>Phase 2 (Endurance &amp; Motor Control):</strong> No pain/instability; full symmetrical AROM; CKC strength/endurance/motor control (sagittal first, then frontal); CV fitness + muscular endurance.<br><strong>Phase 3 (Hypertrophy &amp; Proprioception):</strong> Maximize strength all 3 planes; SL eccentric strength; dynamic pelvic/trunk stability; hamstring strengthening; return to jogging progression; early plyometrics (sagittal first).<br><strong>Phase 4 (Plyometrics &amp; RTP):</strong> Multiplanar plyometric power; dynamic balance; multiplanar agility; speed; CV endurance. 80&#8211;85% contralateral limb on SL hop battery = benchmark.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Total Knee Arthroplasty (TKA) &#8212; Rehab, ROM Goals &amp; Complications</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+  ">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Indications &amp; Population</div>
+<p>Age &gt;55, women &gt; men. Indications: severe pain/stiffness limiting function; moderate-severe pain at rest; chronic knee inflammation not improving with rest/medications; deformity; failure of conservative treatment. Goal: resurfacing joint surfaces for pain relief.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">TKA ROM Goals</div>
+<p>Start ROM ASAP &#8212; extension AND flexion <strong>2 weeks post-op: approaching 90&#176;</strong><strong>6 weeks post-op: approaching 120&#176;</strong> Address barriers routinely: pain, swelling, fear avoidance Pre-op ROM linked to post-op ROM &#8212; prehab matters</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Outcomes</div>
+<p>Full recovery 1&#8211;2 years. 91&#8211;96% prosthesis survival at 15-year follow-up. QoL improves significantly. Factors associated with worse QoL post-op: BMI, advanced age, comorbidities, chronic pain. <strong>Exercise programming is KEY.</strong></p>
+</div>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">TKA Rehabilitation Focus</div>
+<p>WB goal: premorbid level or better. Walker &#8594; Cane &#8594; No device. <strong>Quad strength:</strong> consider NMES &#8212; directly linked to faster gait speeds, faster stair negotiation, higher outcome measure scores. Functional goals: gait mechanics, transfer safety, stair/curb training. First 2 weeks in clinic 5 days/week to prevent stiffness.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">TKA Complication: Post-Op Stiffness</div>
+<p>Defined as: <strong>flexion &lt;75&#176; AND 15&#176; lack of extension.</strong> If developing: PT ROM is the early emphasis &#8212; 5 days/week for first 2 weeks. If PT fails: <strong>Manipulation Under Anesthesia (MUA)</strong>. Other complications: DVT (Wells criteria), infection, implant issues (persistent pain, mechanical symptoms, failure to progress or sudden regression), chronic pain.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 &mdash; ACL Injury</div><p>22-year-old female soccer player, valgus + IR mechanism, &ldquo;pop,&rdquo; effusion &lt;2 hours. Positive Lachman, positive pivot shift. <strong>Clinical reasoning:</strong> ACL tear. Rapid effusion = hemarthrosis = structural injury. Check MCL + medial meniscus (&ldquo;unhappy triad&rdquo;). Females 2&ndash;8&times; higher risk.</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 &mdash; Adolescent PFPS</div><p>16-year-old runner, bilateral anterior knee pain, worse downstairs and after sitting. Weak hip ABD/ER. Increased femoral IR during single-leg squat. <strong>Clinical reasoning:</strong> PFPS &mdash; not a patellar problem, it&rsquo;s a hip problem. Weak glute med &rarr; femoral IR &rarr; dynamic valgus &rarr; lateral tracking. Treat the hip first.</p></div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 &mdash; ACL Injury</div>
+<p>22-year-old female soccer player, valgus + IR mechanism, &ldquo;pop,&rdquo; effusion &lt;2 hours. Positive Lachman, positive pivot shift. <strong>Clinical reasoning:</strong> ACL tear. Rapid effusion = hemarthrosis = structural injury. Check MCL + medial meniscus (&ldquo;unhappy triad&rdquo;). Females 2&ndash;8&times; higher risk.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 &mdash; Adolescent PFPS</div>
+<p>16-year-old runner, bilateral anterior knee pain, worse downstairs and after sitting. Weak hip ABD/ER. Increased femoral IR during single-leg squat. <strong>Clinical reasoning:</strong> PFPS &mdash; not a patellar problem, it&rsquo;s a hip problem. Weak glute med &rarr; femoral IR &rarr; dynamic valgus &rarr; lateral tracking. Treat the hip first.</p>
 </div>
 </div>
-
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards &#8212; Knee</div>
-  <div class="section-sub">Tap any card to flip. High-yield clinical pearls for exams and practice.</div>
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What structures are involved in the "unhappy triad" and what MOI causes it in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">The unhappy triad (O'Donoghue's triad) = <strong>ACL + MCL + medial meniscus.</strong> MOI: <strong>valgus force with rotation</strong> at the knee &#8212; the same mechanism that damages all three structures simultaneously. This is why higher-grade MCL sprains have common concomitant damage to ACL and medial meniscus. The MCL has stronger attachment to the joint capsule (which commonly gets involved) and a deep band that blends with the medial meniscus &#8212; explaining the meniscal involvement. Important: the MCL has good blood supply and can sometimes be left untreated during surgery because it heals well on its own.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Lachman's vs. In this case, Anterior Drawer for ACL &#8212; which is more accurate and why?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Lachman's (30&#176; knee flexion):</strong> SN:.85 / SP:.94. More accurate. At 30&#176; flexion, the posterolateral ACL bundle is taut &#8212; maximum tension for testing anterior translation. Hamstrings are minimally activated at 30&#176;, so they don't splint the joint and hide the laxity. <strong>Anterior Drawer (90&#176; flexion):</strong> Acute: SN:.49 SP:.58; Chronic: SN:.92 SP:.91. Acute injuries: hamstrings and posterior capsule splint the tibia at 90&#176; &#8212; masking laxity. The PL bundle is lax at 90&#176;. Also: must exclude PCL injury first &#8212; posterior tibial sag at 90&#176; gives a false-positive anterior drawer. Lachman's is THE test to perform for suspected ACL injury.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is AMI and why is gaining full knee extension within 2 weeks so critical post-op in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>AMI (Arthrogenic Muscle Inhibition):</strong> ongoing inhibition of musculature surrounding a joint as a protective mechanism. Even 20&#8211;30 mL of saline (about 1 oz) in the knee produces quadriceps activation failure. Cycle: injury &#8594; AMI &#8594; weakness &#8594; atrophy &#8594; immobilization &#8594; perpetuates AMI. <strong>Why early extension matters:</strong> Post-op position of comfort is 10&#8211;20&#176; knee flexion. If maintained, the patient stiffens there: hamstrings + posterior capsule tighten; anterior interval becomes fibrotic (Hoffa's syndrome); decreased quad strength &#8594; decreased terminal knee extension &#8594; increased fall risk. Extension loss of 3&#8211;5&#176; vs. contralateral = increased OA risk. &gt;5&#176; loss = more dramatic OA. Normal knee extension = +5&#176; hyperextension &#8212; lacking 5&#176; from neutral = 10&#176; total loss.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Identify the ACL graft weakness timeline and the criteria for return to sport?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Ligamentization:</strong> After surgery, graft undergoes revascularization + maturation. <strong>GRAFT IS WEAKEST AT 12 WEEKS.</strong> Tensile properties increase with time &#8212; this is why time-based progressions are replaced by criteria-based progressions. <strong>Functional RTS criteria (Phase 4):</strong> Plyometric power in multiple planes; dynamic balance; multiplanar agility; speed; CV endurance. <strong>SL hop tests: 80&#8211;85% of contralateral LE = normal.</strong> Tests: single hop for distance, triple hop for distance, timed 6m hop, crossover triple hop. <strong>Re-injury stats:</strong> 15% re-tear if RTP within 7 months; athletes &lt;20 = 6&#215; re-injury risk; cutting/pivoting sports = 3.9&#215; re-injury; 64% returned to prior level at 5 years.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Identify the McMurray test technique differences for medial vs. lateral meniscus?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>McMurray's Test:</strong> Patient supine with knee fully flexed. PT extends knee while simultaneously rotating tibia. Positive = click accompanied by pain. <strong>Medial meniscus testing:</strong> ER tibia (external rotation of foot) while extending knee &#8212; loads and stresses the medial meniscus. <strong>Lateral meniscus testing:</strong> IR tibia (internal rotation) while extending knee &#8212; loads the lateral meniscus. Mnemonic: turn tibia lateral = test medial; turn tibia medial = test lateral. <strong>Accuracy:</strong> Medial: SN:.50 SP:.77; Lateral: SN:.21 SP:.94. Lateral meniscus testing has very high specificity &#8212; if positive, likely lateral meniscal tear. If patient has extreme flexion pain AND end-range extension pain AND popping/clicking/catching &#8212; add Bounce Home Test and Apley's to the meniscal cluster.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the TKA post-op stiffness definition, and what is the escalating treatment in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Post-op TKA stiffness defined as:</strong> Flexion &lt;75&#176; AND 15&#176; lack of extension (note: both must be present). <strong>Treatment escalation:</strong> First line = intensive PT (in clinic 5 days/week for first 2 weeks post-op; ROM is the early emphasis). If PT fails = <strong>Manipulation Under Anesthesia (MUA)</strong> &#8212; surgeon manually breaks the scar tissue under anesthesia, then immediate aggressive ROM PT follows. <strong>Prevention through monitoring:</strong> 2-week goal = approaching 90&#176;; 6-week goal = approaching 120&#176;. Address barriers routinely: pain, swelling, and fear avoidance. Pre-op ROM linked to post-op ROM &#8212; prehabilitation strengthening and ROM work before surgery directly predicts functional outcomes. Pre-op strength is also linked to post-op function &#8212; another reason prehab matters.</div>
-    </div>
-  </div>
+<div class="section-title">Review Cards &#8212; Knee</div>
+<div class="section-sub">Tap any card to flip. High-yield clinical pearls for exams and practice.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What structures are involved in the "unhappy triad" and what MOI causes it in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">The unhappy triad (O'Donoghue's triad) = <strong>ACL + MCL + medial meniscus.</strong> MOI: <strong>valgus force with rotation</strong> at the knee &#8212; the same mechanism that damages all three structures simultaneously. This is why higher-grade MCL sprains have common concomitant damage to ACL and medial meniscus. The MCL has stronger attachment to the joint capsule (which commonly gets involved) and a deep band that blends with the medial meniscus &#8212; explaining the meniscal involvement. Important: the MCL has good blood supply and can sometimes be left untreated during surgery because it heals well on its own.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Lachman's vs. In this case, Anterior Drawer for ACL &#8212; which is more accurate and why?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Lachman's (30&#176; knee flexion):</strong> SN:.85 / SP:.94. More accurate. At 30&#176; flexion, the posterolateral ACL bundle is taut &#8212; maximum tension for testing anterior translation. Hamstrings are minimally activated at 30&#176;, so they don't splint the joint and hide the laxity. <strong>Anterior Drawer (90&#176; flexion):</strong> Acute: SN:.49 SP:.58; Chronic: SN:.92 SP:.91. Acute injuries: hamstrings and posterior capsule splint the tibia at 90&#176; &#8212; masking laxity. The PL bundle is lax at 90&#176;. Also: must exclude PCL injury first &#8212; posterior tibial sag at 90&#176; gives a false-positive anterior drawer. Lachman's is THE test to perform for suspected ACL injury.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is AMI and why is gaining full knee extension within 2 weeks so critical post-op in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>AMI (Arthrogenic Muscle Inhibition):</strong> ongoing inhibition of musculature surrounding a joint as a protective mechanism. Even 20&#8211;30 mL of saline (about 1 oz) in the knee produces quadriceps activation failure. Cycle: injury &#8594; AMI &#8594; weakness &#8594; atrophy &#8594; immobilization &#8594; perpetuates AMI. <strong>Why early extension matters:</strong> Post-op position of comfort is 10&#8211;20&#176; knee flexion. If maintained, the patient stiffens there: hamstrings + posterior capsule tighten; anterior interval becomes fibrotic (Hoffa's syndrome); decreased quad strength &#8594; decreased terminal knee extension &#8594; increased fall risk. Extension loss of 3&#8211;5&#176; vs. contralateral = increased OA risk. &gt;5&#176; loss = more dramatic OA. Normal knee extension = +5&#176; hyperextension &#8212; lacking 5&#176; from neutral = 10&#176; total loss.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Identify the ACL graft weakness timeline and the criteria for return to sport?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Ligamentization:</strong> After surgery, graft undergoes revascularization + maturation. <strong>GRAFT IS WEAKEST AT 12 WEEKS.</strong> Tensile properties increase with time &#8212; this is why time-based progressions are replaced by criteria-based progressions. <strong>Functional RTS criteria (Phase 4):</strong> Plyometric power in multiple planes; dynamic balance; multiplanar agility; speed; CV endurance. <strong>SL hop tests: 80&#8211;85% of contralateral LE = normal.</strong> Tests: single hop for distance, triple hop for distance, timed 6m hop, crossover triple hop. <strong>Re-injury stats:</strong> 15% re-tear if RTP within 7 months; athletes &lt;20 = 6&#215; re-injury risk; cutting/pivoting sports = 3.9&#215; re-injury; 64% returned to prior level at 5 years.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Identify the McMurray test technique differences for medial vs. lateral meniscus?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>McMurray's Test:</strong> Patient supine with knee fully flexed. PT extends knee while simultaneously rotating tibia. Positive = click accompanied by pain. <strong>Medial meniscus testing:</strong> ER tibia (external rotation of foot) while extending knee &#8212; loads and stresses the medial meniscus. <strong>Lateral meniscus testing:</strong> IR tibia (internal rotation) while extending knee &#8212; loads the lateral meniscus. Mnemonic: turn tibia lateral = test medial; turn tibia medial = test lateral. <strong>Accuracy:</strong> Medial: SN:.50 SP:.77; Lateral: SN:.21 SP:.94. Lateral meniscus testing has very high specificity &#8212; if positive, likely lateral meniscal tear. If patient has extreme flexion pain AND end-range extension pain AND popping/clicking/catching &#8212; add Bounce Home Test and Apley's to the meniscal cluster.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the TKA post-op stiffness definition, and what is the escalating treatment in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Post-op TKA stiffness defined as:</strong> Flexion &lt;75&#176; AND 15&#176; lack of extension (note: both must be present). <strong>Treatment escalation:</strong> First line = intensive PT (in clinic 5 days/week for first 2 weeks post-op; ROM is the early emphasis). If PT fails = <strong>Manipulation Under Anesthesia (MUA)</strong> &#8212; surgeon manually breaks the scar tissue under anesthesia, then immediate aggressive ROM PT follows. <strong>Prevention through monitoring:</strong> 2-week goal = approaching 90&#176;; 6-week goal = approaching 120&#176;. Address barriers routinely: pain, swelling, and fear avoidance. Pre-op ROM linked to post-op ROM &#8212; prehabilitation strengthening and ROM work before surgery directly predicts functional outcomes. Pre-op strength is also linked to post-op function &#8212; another reason prehab matters.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -660,6 +599,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

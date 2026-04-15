@@ -1,229 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint &#8212; Thoracic Spine</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint &#8212; Thoracic Spine</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" class="active">Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
 <div class="hero">
-  <div class="hero-tag">MSK Spine &middot; Thoracic</div>
-  <h1>Thoracic Spine <span>&#8212; Ribs, Posture &amp; Dysfunction</span></h1>
-  <p>The thoracic spine is the most stable spinal region — the rib cage provides structural reinforcement that limits motion but also creates unique dysfunction patterns. It is the transition zone between the mobile cervical spine above and the load-bearing lumbar spine below. Thoracic dysfunction commonly contributes to neck pain, shoulder impingement, and low back pain through altered posture and movement patterns. This module covers thoracic vertebral characteristics, costovertebral joints, postural dysfunction, upper crossed syndrome, thoracic disc herniation, rib dysfunction, and Scheuermann&rsquo;s disease.</p>
+<div class="hero-tag">MSK Spine &middot; Thoracic</div>
+<h1>Thoracic Spine <span>&#8212; Ribs, Posture &amp; Dysfunction</span></h1>
+<p>The thoracic spine is the most stable spinal region — the rib cage provides structural reinforcement that limits motion but also creates unique dysfunction patterns. It is the transition zone between the mobile cervical spine above and the load-bearing lumbar spine below. Thoracic dysfunction commonly contributes to neck pain, shoulder impingement, and low back pain through altered posture and movement patterns. This module covers thoracic vertebral characteristics, costovertebral joints, postural dysfunction, upper crossed syndrome, thoracic disc herniation, rib dysfunction, and Scheuermann&rsquo;s disease.</p>
 </div>
-
 <div class="tab-panel active" id="tab-thoracic">
 <div class="container">
-  <div class="section-title">Thoracic Spine &amp; Rib Dysfunction</div>
-  <div class="section-sub">Most rigid region of spine. Important for load transfer between upper and lower body. Little research compared to C/S and L/S (15% of spine pain). Upper T-spine treated similar to cervical, lower T-spine similar to lumbar. High evidence for joint mobs and manips for mid-thoracic pain.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Thoracic Vertebral Anatomy &#8212; Detailed Reference</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip"><div class="bl-label">Thoracic Vertebrae Characteristics</div>
-          <p><strong>Body:</strong> heart-shaped with <strong>costal demifacets/facets</strong> for rib articulation. T1&#8211;T8 have 2 demifacets; T9 has 1 demifacet; T10&#8211;T12 have 1 full facet for same-numbered rib.</p>
-          <p><strong>Vertebral foramen:</strong> circular, smallest of all regions.</p>
-          <p><strong>Transverse processes:</strong> long; T1&#8211;T10 have <strong>transverse costal facets</strong> for rib tubercle articulation. T11&#8211;T12 lack transverse costal facets.</p>
-          <p><strong>Articular facets:</strong> superior facets face posterolaterally; inferior facets face anteromedially. Orientation is nearly coronal &#8594; facilitates <strong>rotation and lateral flexion</strong>, but ribs restrict actual motion.</p>
-          <p><strong>Spinous processes:</strong> long, slender, angled <strong>inferiorly</strong> (overlap the segment below &#8212; makes palpation tricky, SP of T6 is at level of T7 body).</p>
-          <p><strong>Transitions:</strong> Upper T-spine transitions from cervical characteristics. Lower T-spine transitions to lumbar characteristics (facets become more sagittal, SPs become more horizontal).</p></div>
-        <div>
-          <div class="bl-strip gold"><div class="bl-label">Costovertebral Joints</div>
-          <p><strong>Two articulations per rib (ribs 2&#8211;10):</strong></p>
-          <p>(1) <strong>Costocorporeal (head of rib):</strong> rib head articulates with vertebral body/bodies. Ribs 2&#8211;10 typically articulate with 2 adjacent bodies + intervening disc. Ribs 1, 11, 12 articulate with single vertebral body.</p>
-          <p>(2) <strong>Costotransverse:</strong> rib tubercle articulates with transverse process of same-numbered vertebra. Only ribs 1&#8211;10. Absent for ribs 11&#8211;12 (floating ribs).</p>
-          <p><strong>Rib types:</strong> True ribs (1&#8211;7) attach directly to sternum via costal cartilage. False ribs (8&#8211;10) attach indirectly via shared costal cartilage. Floating ribs (11&#8211;12) have no sternal attachment.</p>
-          <p><strong>Biomechanics:</strong> Disc:vertebral height ratio of <strong>1:6</strong> = least mobile region. Facets <em>allow</em> significant rotation and LF, but the rib cage <em>restricts</em> it. Coupled motion transitions from cervical pattern (upper T) to lumbar pattern (lower T).</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Thoracic Postural Dysfunction &amp; Kyphotic Deformities</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip">
-        <div class="bl-label">Postural Dysfunction</div>
-        <p>Very common. Hard to reproduce on exam &#8212; exacerbated by prolonged static postures. Worse with stress/fatigue. Middle-aged, F &gt; M, office workers, anyone who sits a lot. No true MOI &#8212; repetitive stress disorder. Complaints: interscapular, periscapular, upper traps, lev scap, midline T-spine, TL and CT junction. Stiffness. Worse with sustained positions and carrying heavy weights. &#8595; with rest. Objective: weak scapular muscles, poor scapulohumeral rhythm, poor T-spine mobility (extension and rotation).</p>
-      </div>
-      <table class="data-table">
-        <thead><tr><th>Deformity</th><th>Description</th><th>Cause</th></tr></thead>
-        <tbody>
-          <tr><td class="bad">Dowager's Hump</td><td>Severely kyphotic upper posterior region</td><td>Multiple anterior wedge compression fractures. Usually postmenopausal osteoporosis or long-term corticosteroids</td></tr>
-          <tr><td class="warn">Hump Back</td><td>Localized, sharp posterior angulation</td><td>Anterior wedging of 1&#8211;2 vertebrae. Infection, fracture, or congenital anomaly</td></tr>
-          <tr><td class="hi">Round Back</td><td>&#8595; pelvic inclination + excessive kyphosis</td><td>Postural &#8212; &#8595; pelvic inclination refers to types of tilts</td></tr>
-          <tr><td class="hi">Flat Back</td><td>&#8595; pelvic inclination + &#8593; kyphosis + mobile T-spine</td><td>Postural &#8212; mobile thoracic compensating for pelvic position</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip purple">
-        <div class="bl-label">Janda's Upper Cross Syndrome</div>
-        <p>Tight and strong pecs, lats, upper traps. Weak/lengthened scapular musculature (rhomboids, lower traps) and cervical flexors. Poor OH mobility and posture. &#8593; stress through posterior chain. Inhibited scapular force couples.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Thoracic Disc, Zyga Joint &amp; Rib Dysfunction</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip">
-        <div class="bl-label">Thoracic Disc Herniation</div>
-        <p>Constitutes only 0.25&#8211;0.75% of all disc herniations. Much more common in lower T-spine. Major cause = degenerative change. Rarely requires surgery. Disc height:body ratio = 1:5 (vs. cervical 2:5, lumbar 1:3). <strong>Herniations by level:</strong> T1&#8211;T2 = rare (rib protection), numbness/weakness hand, pain arm/medial forearm. T1 associated with Horner's disease. T2&#8211;T3 = rarest, refers to clavicle/spine of scapula. T3&#8211;T8 = symptoms at side/front of trunk. T6 compression can cause pain from base of neck to waist. T9&#8211;T11 = pain radiating to buttock (rule out lumbopelvic origin).</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Rib Dysfunction</div>
-        <p>Costovertebral joint may be involved in inflammatory or degenerative joint disease (ankylosing spondylitis). Inflammation causes localized pain 3&#8211;4 cm from midline. <strong>Pump handle:</strong> Ribs 2&#8211;7, sagittal plane motion. <strong>Bucket handle:</strong> Lower ribs 8&#8211;10, frontal plane motion. Floating ribs: 11&#8211;12. Rib dysfunctions: structural (true subluxation from trauma), torsional (twisting &#8594; held in IR/ER), respiratory (poor posture &#8594; restricted inspiration/expiration).</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Rib Fracture Considerations</div>
-        <p>10% of patients after blunt chest trauma have &#8805;1 rib fracture. Fractured ribs can lacerate pleura, lung, or abdominal organs &#8594; hemothorax, pneumothorax. Upper rib/clavicle fractures (3&#8211;15%) can cause brachial plexus or vascular injury. 1st rib fracture: injury to brachial plexus and subclavian A/V. <strong>Flail chest:</strong> 3+ rib segments fractured &#8594; paradoxical breathing (inspiration: ribs draw inward; expiration: ribs push outward).</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Scheuermann's Disease, T4 Syndrome &amp; Scoliosis</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip orange">
-        <div class="bl-label">Scheuermann's Disease</div>
-        <p>Defect in ring apophysis &#8594; anterior wedging from flexion overload. End plate can crack &#8594; disc material may bulge into vertebral body (Schmorl's node). Self-limiting past puberty. "Thoracic Kyphosis." Affects 10% of all people, M = F equally. Pubescent athletes. 20&#8211;30% also have scoliosis. Pain with T-spine extension and rotation. Treatment: stretching pecs, strengthening T-spine extensors and scapular adductors.</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">T4 Syndrome (Can Be T2&#8211;T7)</div>
-        <p>No known cause &#8212; thought to be sympathetic reaction to hypomobility (resolves with manual therapy). Sympathetic trunks lie on or just lateral to costovertebral joint. Abnormal deformation with poor posture (forward head, rounded shoulders). Women &gt; men (3:1). Night symptoms common. <strong>Bilateral stocking-glove paresthesia</strong> &#8212; confused with carpal tunnel and cervical radiculopathy. Headaches, neck pain, UE pain. (+) Slump, (+) ULTT, hypomobile segments.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Scoliosis</div>
-        <p>Progressive 3D deformity of spinal segments. <strong>Dextroscoliosis:</strong> Right-sided curve. <strong>Levoscoliosis:</strong> Left-sided curve &#8212; more severe, may damage internal organs and pulmonary function. May indicate neurological condition. Tietze Syndrome: inflammation of costosternal cartilage (2nd&#8211;3rd junction), gradual onset, worse with deep inspiration/coughing/sneezing, localized swelling.</p>
-      </div>
-      <div class="bl-strip green">
-        <div class="bl-label">Pain Neuroscience Education (PNE) Key Takeaways</div>
-        <p>There is NOT always a direct link between tissue damage and pain level. Pain is produced by the brain after concluding body is in danger. Nociceptive fibers are danger signal fibers, NOT "pain fibers." CNS interprets signal magnitude. Changes can occur along the entire nervous system (ion channel upregulation, immune response, demyelination, dorsal horn interneuron death). Pain is a matrix &#8212; no single brain center. Repeated signaling creates "pain memory." <strong>Types:</strong> Nociceptive (proportionate, clear aggravating/alleviating), Peripheral Neurogenic (dermatomal, (+) limb tension), Central Sensitization (disproportionate, diffuse, high SINSS, psychosocial components). <strong>Motion is lotion.</strong> 6 miles of running = endorphins equivalent to morphine. Exercise-induced analgesic effect starts at 10 min aerobic.</p>
-      </div>
-    </div>
-  </div>
+<div class="section-title">Thoracic Spine &amp; Rib Dysfunction</div>
+<div class="section-sub">Most rigid region of spine. Important for load transfer between upper and lower body. Little research compared to C/S and L/S (15% of spine pain). Upper T-spine treated similar to cervical, lower T-spine similar to lumbar. High evidence for joint mobs and manips for mid-thoracic pain.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Thoracic Vertebral Anatomy &#8212; Detailed Reference</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Thoracic Vertebrae Characteristics</div>
+<p><strong>Body:</strong> heart-shaped with <strong>costal demifacets/facets</strong> for rib articulation. T1&#8211;T8 have 2 demifacets; T9 has 1 demifacet; T10&#8211;T12 have 1 full facet for same-numbered rib.</p>
+<p><strong>Vertebral foramen:</strong> circular, smallest of all regions.</p>
+<p><strong>Transverse processes:</strong> long; T1&#8211;T10 have <strong>transverse costal facets</strong> for rib tubercle articulation. T11&#8211;T12 lack transverse costal facets.</p>
+<p><strong>Articular facets:</strong> superior facets face posterolaterally; inferior facets face anteromedially. Orientation is nearly coronal &#8594; facilitates <strong>rotation and lateral flexion</strong>, but ribs restrict actual motion.</p>
+<p><strong>Spinous processes:</strong> long, slender, angled <strong>inferiorly</strong> (overlap the segment below &#8212; makes palpation tricky, SP of T6 is at level of T7 body).</p>
+<p><strong>Transitions:</strong> Upper T-spine transitions from cervical characteristics. Lower T-spine transitions to lumbar characteristics (facets become more sagittal, SPs become more horizontal).</p>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Costovertebral Joints</div>
+<p><strong>Two articulations per rib (ribs 2&#8211;10):</strong></p>
+<p>(1) <strong>Costocorporeal (head of rib):</strong> rib head articulates with vertebral body/bodies. Ribs 2&#8211;10 typically articulate with 2 adjacent bodies + intervening disc. Ribs 1, 11, 12 articulate with single vertebral body.</p>
+<p>(2) <strong>Costotransverse:</strong> rib tubercle articulates with transverse process of same-numbered vertebra. Only ribs 1&#8211;10. Absent for ribs 11&#8211;12 (floating ribs).</p>
+<p><strong>Rib types:</strong> True ribs (1&#8211;7) attach directly to sternum via costal cartilage. False ribs (8&#8211;10) attach indirectly via shared costal cartilage. Floating ribs (11&#8211;12) have no sternal attachment.</p>
+<p><strong>Biomechanics:</strong> Disc:vertebral height ratio of <strong>1:6</strong> = least mobile region. Facets <em>allow</em> significant rotation and LF, but the rib cage <em>restricts</em> it. Coupled motion transitions from cervical pattern (upper T) to lumbar pattern (lower T).</p>
 </div>
 </div>
-
-<!-- ==================== SIJ & PELVIS TAB ==================== -->
-
-
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Thoracic Postural Dysfunction &amp; Kyphotic Deformities</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Postural Dysfunction</div>
+<p>Very common. Hard to reproduce on exam &#8212; exacerbated by prolonged static postures. Worse with stress/fatigue. Middle-aged, F &gt; M, office workers, anyone who sits a lot. No true MOI &#8212; repetitive stress disorder. Complaints: interscapular, periscapular, upper traps, lev scap, midline T-spine, TL and CT junction. Stiffness. Worse with sustained positions and carrying heavy weights. &#8595; with rest. Objective: weak scapular muscles, poor scapulohumeral rhythm, poor T-spine mobility (extension and rotation).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Deformity</th><th>Description</th><th>Cause</th></tr></thead><tbody>
+<tr><td class="bad">Dowager's Hump</td><td>Severely kyphotic upper posterior region</td><td>Multiple anterior wedge compression fractures. Usually postmenopausal osteoporosis or long-term corticosteroids</td></tr>
+<tr><td class="warn">Hump Back</td><td>Localized, sharp posterior angulation</td><td>Anterior wedging of 1&#8211;2 vertebrae. Infection, fracture, or congenital anomaly</td></tr>
+<tr><td class="hi">Round Back</td><td>&#8595; pelvic inclination + excessive kyphosis</td><td>Postural &#8212; &#8595; pelvic inclination refers to types of tilts</td></tr>
+<tr><td class="hi">Flat Back</td><td>&#8595; pelvic inclination + &#8593; kyphosis + mobile T-spine</td><td>Postural &#8212; mobile thoracic compensating for pelvic position</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Janda's Upper Cross Syndrome</div>
+<p>Tight and strong pecs, lats, upper traps. Weak/lengthened scapular musculature (rhomboids, lower traps) and cervical flexors. Poor OH mobility and posture. &#8593; stress through posterior chain. Inhibited scapular force couples.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Thoracic Disc, Zyga Joint &amp; Rib Dysfunction</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Thoracic Disc Herniation</div>
+<p>Constitutes only 0.25&#8211;0.75% of all disc herniations. Much more common in lower T-spine. Major cause = degenerative change. Rarely requires surgery. Disc height:body ratio = 1:5 (vs. cervical 2:5, lumbar 1:3). <strong>Herniations by level:</strong> T1&#8211;T2 = rare (rib protection), numbness/weakness hand, pain arm/medial forearm. T1 associated with Horner's disease. T2&#8211;T3 = rarest, refers to clavicle/spine of scapula. T3&#8211;T8 = symptoms at side/front of trunk. T6 compression can cause pain from base of neck to waist. T9&#8211;T11 = pain radiating to buttock (rule out lumbopelvic origin).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Rib Dysfunction</div>
+<p>Costovertebral joint may be involved in inflammatory or degenerative joint disease (ankylosing spondylitis). Inflammation causes localized pain 3&#8211;4 cm from midline. <strong>Pump handle:</strong> Ribs 2&#8211;7, sagittal plane motion. <strong>Bucket handle:</strong> Lower ribs 8&#8211;10, frontal plane motion. Floating ribs: 11&#8211;12. Rib dysfunctions: structural (true subluxation from trauma), torsional (twisting &#8594; held in IR/ER), respiratory (poor posture &#8594; restricted inspiration/expiration).</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Rib Fracture Considerations</div>
+<p>10% of patients after blunt chest trauma have &#8805;1 rib fracture. Fractured ribs can lacerate pleura, lung, or abdominal organs &#8594; hemothorax, pneumothorax. Upper rib/clavicle fractures (3&#8211;15%) can cause brachial plexus or vascular injury. 1st rib fracture: injury to brachial plexus and subclavian A/V. <strong>Flail chest:</strong> 3+ rib segments fractured &#8594; paradoxical breathing (inspiration: ribs draw inward; expiration: ribs push outward).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Scheuermann's Disease, T4 Syndrome &amp; Scoliosis</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip orange">
+<div class="bl-label">Scheuermann's Disease</div>
+<p>Defect in ring apophysis &#8594; anterior wedging from flexion overload. End plate can crack &#8594; disc material may bulge into vertebral body (Schmorl's node). Self-limiting past puberty. "Thoracic Kyphosis." Affects 10% of all people, M = F equally. Pubescent athletes. 20&#8211;30% also have scoliosis. Pain with T-spine extension and rotation. Treatment: stretching pecs, strengthening T-spine extensors and scapular adductors.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">T4 Syndrome (Can Be T2&#8211;T7)</div>
+<p>No known cause &#8212; thought to be sympathetic reaction to hypomobility (resolves with manual therapy). Sympathetic trunks lie on or just lateral to costovertebral joint. Abnormal deformation with poor posture (forward head, rounded shoulders). Women &gt; men (3:1). Night symptoms common. <strong>Bilateral stocking-glove paresthesia</strong> &#8212; confused with carpal tunnel and cervical radiculopathy. Headaches, neck pain, UE pain. (+) Slump, (+) ULTT, hypomobile segments.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Scoliosis</div>
+<p>Progressive 3D deformity of spinal segments. <strong>Dextroscoliosis:</strong> Right-sided curve. <strong>Levoscoliosis:</strong> Left-sided curve &#8212; more severe, may damage internal organs and pulmonary function. May indicate neurological condition. Tietze Syndrome: inflammation of costosternal cartilage (2nd&#8211;3rd junction), gradual onset, worse with deep inspiration/coughing/sneezing, localized swelling.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Pain Neuroscience Education (PNE) Key Takeaways</div>
+<p>There is NOT always a direct link between tissue damage and pain level. Pain is produced by the brain after concluding body is in danger. Nociceptive fibers are danger signal fibers, NOT "pain fibers." CNS interprets signal magnitude. Changes can occur along the entire nervous system (ion channel upregulation, immune response, demyelination, dorsal horn interneuron death). Pain is a matrix &#8212; no single brain center. Repeated signaling creates "pain memory." <strong>Types:</strong> Nociceptive (proportionate, clear aggravating/alleviating), Peripheral Neurogenic (dermatomal, (+) limb tension), Central Sensitization (disproportionate, diffuse, high SINSS, psychosocial components). <strong>Motion is lotion.</strong> 6 miles of running = endorphins equivalent to morphine. Exercise-induced analgesic effect starts at 10 min aerobic.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="chip-label">Review Cards</div>
 <div class="container">
-  <div class="section-title">Review Cards &#8212; Thoracic Spine</div>
-  <div class="section-sub">Tap any card to flip. High-yield clinical pearls.</div>
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the T4 syndrome and why is it confused with carpal tunnel in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>T4 syndrome</strong> (can be T2&#8211;T7) is thought to be a sympathetic reaction to a hypomobile thoracic segment &#8212; it resolves with manual therapy. Sympathetic trunks lie on/just lateral to costovertebral joints and can undergo abnormal deformation with poor posture (forward head, rounded shoulders). <strong>Women 3:1.</strong> Presents with: night symptoms, headaches, neck pain, UE pain, and crucially &#8212; <strong>bilateral stocking-glove paresthesia.</strong> This bilateral hand numbness is why it's confused with carpal tunnel or cervical radiculopathy. Key differentiators: (+) Slump, (+) ULTT, hypomobile T-spine segments, responds to thoracic mobilization.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is ankylosing spondylitis, and how does it present in the thoracic spine in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>"Bamboo Spine."</strong> Inflammatory arthritis affecting facets, tendons, ligaments. Enthesitis (inflammation at disc-vertebrae attachment) &#8594; bone erosion &#8594; calcification at facets, costotransverse, costovertebral joints &#8594; AF can calcify &#8594; segments fuse. <strong>Sacroiliitis usually first.</strong> 90% HLA-B27+. Men 3:1. Age 15&#8211;40. Key thoracic finding: <strong>chest expansion &lt;2.5 cm is pathologic</strong> (normal = 5 cm at nipple line). Stooped position. Morning stiffness &gt;30 min, improves with exercise, night pain, alternating buttock pain. Stress fractures where new bone forms &#8594; excessive kyphosis &#8594; may crowd organs.</div>
-    </div>
-  </div>
+<div class="section-title">Review Cards &#8212; Thoracic Spine</div>
+<div class="section-sub">Tap any card to flip. High-yield clinical pearls.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the T4 syndrome and why is it confused with carpal tunnel in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>T4 syndrome</strong> (can be T2&#8211;T7) is thought to be a sympathetic reaction to a hypomobile thoracic segment &#8212; it resolves with manual therapy. Sympathetic trunks lie on/just lateral to costovertebral joints and can undergo abnormal deformation with poor posture (forward head, rounded shoulders). <strong>Women 3:1.</strong> Presents with: night symptoms, headaches, neck pain, UE pain, and crucially &#8212; <strong>bilateral stocking-glove paresthesia.</strong> This bilateral hand numbness is why it's confused with carpal tunnel or cervical radiculopathy. Key differentiators: (+) Slump, (+) ULTT, hypomobile T-spine segments, responds to thoracic mobilization.</div>
 </div>
-
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is ankylosing spondylitis, and how does it present in the thoracic spine in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>"Bamboo Spine."</strong> Inflammatory arthritis affecting facets, tendons, ligaments. Enthesitis (inflammation at disc-vertebrae attachment) &#8594; bone erosion &#8594; calcification at facets, costotransverse, costovertebral joints &#8594; AF can calcify &#8594; segments fuse. <strong>Sacroiliitis usually first.</strong> 90% HLA-B27+. Men 3:1. Age 15&#8211;40. Key thoracic finding: <strong>chest expansion &lt;2.5 cm is pathologic</strong> (normal = 5 cm at nipple line). Stooped position. Morning stiffness &gt;30 min, improves with exercise, night pain, alternating buttock pain. Stress fractures where new bone forms &#8594; excessive kyphosis &#8594; may crowd organs.</div>
+</div>
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -245,6 +204,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

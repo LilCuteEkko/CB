@@ -1,335 +1,339 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — TMJ &amp; Headache DDx</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — TMJ &amp; Headache DDx</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat has-active">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" class="active">Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">MSK Spine &middot; TMJ &amp; Craniofacial</div>
-  <h1>TMJ &mdash; <span>Temporomandibular Joint &amp; Headache DDx</span></h1>
-  <p>The TMJ is the most frequently used joint in the body — activated over 2,000 times daily for talking, chewing, swallowing, and yawning. It is unique: covered by fibrocartilage (not hyaline), divided by an articular disc into 2 compartments, and obligated to move bilaterally in synchrony. TMD affects 5&ndash;12% of the population and frequently coexists with cervical dysfunction through the trigeminocervical complex. PTs are first-line providers for TMD. This module covers TMJ anatomy, muscles of mastication with pain referral patterns, kinematics, disc displacement, TMD examination, headache differential diagnosis, and evidence-based management.
+<div class="hero-tag">MSK Spine &middot; TMJ &amp; Craniofacial</div>
+<h1>TMJ &mdash; <span>Temporomandibular Joint &amp; Headache DDx</span></h1>
+<p>The TMJ is the most frequently used joint in the body — activated over 2,000 times daily for talking, chewing, swallowing, and yawning. It is unique: covered by fibrocartilage (not hyaline), divided by an articular disc into 2 compartments, and obligated to move bilaterally in synchrony. TMD affects 5&ndash;12% of the population and frequently coexists with cervical dysfunction through the trigeminocervical complex. PTs are first-line providers for TMD. This module covers TMJ anatomy, muscles of mastication with pain referral patterns, kinematics, disc displacement, TMD examination, headache differential diagnosis, and evidence-based management.
   <p>Patient A: clicking at ~25mm opening that has been present for 6 months. Opening = 42mm. Reciprocal click (opening + closing). No pain with chewing. Patient B: clicking suddenly STOPPED 2 weeks ago. Opening = 20mm. Jaw deflects to the right. No click. Pain with chewing on right side. <strong>Interpretation:</strong> Patient A = DDWR (disc displacement with reduction). The click IS the disc reducing — it pops back into place. Near-normal function. Treatment: controlled rotation exercises, patient education (not harmful, often self-limiting). Patient B = DDWOR (disc displacement without reduction) — the former clicking disc is now STUCK anteriorly. The disc can't reduce anymore, blocking translation → limited opening <25mm. Jaw deflects TOWARD the locked side. Treatment: joint mobilization (anterior glide to create space), mandibular distraction, gentle sustained opening exercises. May need advanced imaging if no improvement in 4–6 weeks.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('anatomy',this)">TMJ Anatomy</button>
-  <button onclick="showTab('muscles',this)">Muscles &amp; Pain Referral</button>
-  <button onclick="showTab('kinematics',this)">Kinematics</button>
-  <button onclick="showTab('pathology',this)">TMD &amp; Disc Displacement</button>
-  <button onclick="showTab('exam',this)">TMD Examination</button>
-  <button onclick="showTab('headache',this)">Headache DDx</button>
-  <button onclick="showTab('management',this)">PT Management</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('anatomy',this)">TMJ Anatomy</button>
+<button onclick="showTab('muscles',this)">Muscles &amp; Pain Referral</button>
+<button onclick="showTab('kinematics',this)">Kinematics</button>
+<button onclick="showTab('pathology',this)">TMD &amp; Disc Displacement</button>
+<button onclick="showTab('exam',this)">TMD Examination</button>
+<button onclick="showTab('headache',this)">Headache DDx</button>
+<button onclick="showTab('management',this)">PT Management</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-
-<!-- ====== TMJ ANATOMY ====== -->
 </div>
-
 <div class="tab-panel active" id="tab-anatomy">
 <div class="container">
-  <div class="section-title">TMJ Anatomy
+<div class="section-title">TMJ Anatomy
   <div class="section-sub">The TMJ is a modified synovial hinge joint with translation. It is unique among joints: covered by <strong>fibrocartilage</strong> (not hyaline), divided into 2 compartments by an articular disc, and used ~2,000 times/day (talking, chewing, swallowing, yawning). 5&ndash;12% of the population has TMD requiring treatment; &gt;1/3 will experience at least one TMD sign/symptom in their lifetime.
 
-  <table class="data-table"><thead><tr><th>Structure</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="warn">Mandibular Condyle</td><td>Convex articular surface on the condylar process of the mandible. Covered by fibrocartilage. Articulates within the mandibular fossa</td><td>Degenerative changes more common on condyle than temporal bone. Condylar fracture from direct blow to chin</td></tr>
-    <tr><td class="warn">Mandibular Fossa</td><td>Concave surface on inferior temporal bone. Posterior to articular eminence. Thin roof (close to middle cranial fossa)</td><td>Not a weight-bearing surface &mdash; the articular eminence bears the load during translation</td></tr>
-    <tr><td class="hi">Articular Eminence (Tubercle)</td><td>Convex bony prominence anterior to the fossa. The condyle + disc translate down and over this during opening</td><td>Steepness of eminence affects disc displacement risk. Flatter eminence = easier dislocation. Condyle must translate over eminence for full opening</td></tr>
-    <tr><td class="warn">Articular Disc</td><td>Biconcave fibrocartilage. 3 bands: anterior (thick), intermediate/pars gracilis (thinnest &mdash; primary WB zone, avascular, aneural), posterior (thickest). Divides joint into superior (discotemporal) and inferior (discomandibular) compartments</td><td>Pars gracilis = avascular/aneural, so disc itself doesn&rsquo;t generate pain. <strong>Posterior bilaminar zone</strong> IS innervated/vascularized &mdash; compression of retrodiscal tissue = pain (retrodiscitis)</td></tr>
-    <tr><td class="hi">Bilaminar (Retrodiscal) Zone</td><td>Posterior attachment of disc. <strong>Superior lamina:</strong> elastic (allows anterior translation, recoils disc posteriorly during closing). <strong>Inferior lamina:</strong> inelastic (tethers disc to condyle)</td><td>Richly vascularized + innervated. When disc displaces anteriorly, the condyle compresses this zone &rarr; pain, inflammation, retrodiscitis</td></tr>
-    <tr><td class="hi">Joint Capsule</td><td>Thin, loose fibrous capsule. Attaches to disc peripherally (disc divides capsule into 2 sealed compartments)</td><td>Capsulitis &rarr; capsular fibrosis if untreated. Capsular pattern: limited opening</td></tr>
-    <tr><td class="hi">TMJ Ligaments</td><td><strong>Lateral (temporomandibular) ligament:</strong> strongest, limits posterior translation + lateral movement. <strong>Sphenomandibular:</strong> limits opening. <strong>Stylomandibular:</strong> limits protrusion</td><td>Lateral ligament is the primary restraint. Sprain from trauma or chronic hypermobility</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip"><div class="bl-label">Trigeminocervical Complex<p>The TMJ sits at the convergence of the <strong>trigeminal nerve (CN V)</strong> and upper cervical nerve roots (C1&ndash;C4) in the brainstem/upper spinal cord. Afferent input from the TMJ, face, teeth, dura, and cervical spine all converge on the same second-order neurons in the <strong>trigeminocervical nucleus</strong>. This explains why: TMD causes headache, neck pain causes facial pain, and cervicogenic headache mimics migraine. Sensitization at this convergence zone creates <strong>nociplastic pain</strong> (centrally mediated hyperalgesia and allodynia). Always screen the cervical spine in TMD patients and vice versa.</p>
-
-
-
-<!-- ====== MUSCLES & PAIN REFERRAL ====== -->
+  <table class="data-table"><thead>
+<tr><th>Structure</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Mandibular Condyle</td><td>Convex articular surface on the condylar process of the mandible. Covered by fibrocartilage. Articulates within the mandibular fossa</td><td>Degenerative changes more common on condyle than temporal bone. Condylar fracture from direct blow to chin</td></tr>
+<tr><td class="warn">Mandibular Fossa</td><td>Concave surface on inferior temporal bone. Posterior to articular eminence. Thin roof (close to middle cranial fossa)</td><td>Not a weight-bearing surface &mdash; the articular eminence bears the load during translation</td></tr>
+<tr><td class="hi">Articular Eminence (Tubercle)</td><td>Convex bony prominence anterior to the fossa. The condyle + disc translate down and over this during opening</td><td>Steepness of eminence affects disc displacement risk. Flatter eminence = easier dislocation. Condyle must translate over eminence for full opening</td></tr>
+<tr><td class="warn">Articular Disc</td><td>Biconcave fibrocartilage. 3 bands: anterior (thick), intermediate/pars gracilis (thinnest &mdash; primary WB zone, avascular, aneural), posterior (thickest). Divides joint into superior (discotemporal) and inferior (discomandibular) compartments</td><td>Pars gracilis = avascular/aneural, so disc itself doesn&rsquo;t generate pain. <strong>Posterior bilaminar zone</strong> IS innervated/vascularized &mdash; compression of retrodiscal tissue = pain (retrodiscitis)</td></tr>
+<tr><td class="hi">Bilaminar (Retrodiscal) Zone</td><td>Posterior attachment of disc. <strong>Superior lamina:</strong> elastic (allows anterior translation, recoils disc posteriorly during closing). <strong>Inferior lamina:</strong> inelastic (tethers disc to condyle)</td><td>Richly vascularized + innervated. When disc displaces anteriorly, the condyle compresses this zone &rarr; pain, inflammation, retrodiscitis</td></tr>
+<tr><td class="hi">Joint Capsule</td><td>Thin, loose fibrous capsule. Attaches to disc peripherally (disc divides capsule into 2 sealed compartments)</td><td>Capsulitis &rarr; capsular fibrosis if untreated. Capsular pattern: limited opening</td></tr>
+<tr><td class="hi">TMJ Ligaments</td><td><strong>Lateral (temporomandibular) ligament:</strong> strongest, limits posterior translation + lateral movement. <strong>Sphenomandibular:</strong> limits opening. <strong>Stylomandibular:</strong> limits protrusion</td><td>Lateral ligament is the primary restraint. Sprain from trauma or chronic hypermobility</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Trigeminocervical Complex<p>The TMJ sits at the convergence of the <strong>trigeminal nerve (CN V)</strong> and upper cervical nerve roots (C1&ndash;C4) in the brainstem/upper spinal cord. Afferent input from the TMJ, face, teeth, dura, and cervical spine all converge on the same second-order neurons in the <strong>trigeminocervical nucleus</strong>. This explains why: TMD causes headache, neck pain causes facial pain, and cervicogenic headache mimics migraine. Sensitization at this convergence zone creates <strong>nociplastic pain</strong> (centrally mediated hyperalgesia and allodynia). Always screen the cervical spine in TMD patients and vice versa.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-
 <div class="tab-panel" id="tab-muscles">
 <div class="container">
-  <div class="section-title">Muscles of Mastication &amp; Pain Referral Patterns</div>
-  <div class="section-sub">All muscles of mastication are innervated by CN V3 (mandibular division of trigeminal). Pain referral from masticatory muscles is the most common source of orofacial pain. 85% of TMD patients have referred craniofacial pain on palpation (Wright, 2000). Knowing the referral patterns is essential for accurate diagnosis.</div>
-
-  <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th><th>Pain Referral Pattern</th></tr></thead><tbody>
-    <tr><td class="warn">Masseter</td><td>Zygomatic arch (superficial: anterior 2/3; deep: posterior 1/3)</td><td>Lateral ramus + angle of mandible</td><td>Elevates mandible (closes jaw). Strongest bite force by bulk</td><td>Lower teeth, lateral face, ear, periorbital region. <strong>MC source of referred jaw pain.</strong> Palpable externally over angle of jaw</td></tr>
-    <tr><td class="warn">Temporalis</td><td>Temporal fossa + temporal fascia</td><td>Coronoid process + anterior ramus of mandible</td><td>Anterior fibers: elevate. Posterior fibers: <strong>retract</strong> mandible. Positioning muscle</td><td>Upper teeth, temple, supra-orbital region, behind eye. Referred headache pattern mimics tension-type HA. Tendinopathy at coronoid insertion from clenching</td></tr>
-    <tr><td class="warn">Lateral Pterygoid</td><td><strong>Superior head:</strong> greater wing of sphenoid. <strong>Inferior head:</strong> lateral pterygoid plate</td><td>Superior: TMJ disc + capsule (anterior). Inferior: pterygoid fovea (condylar neck)</td><td>Inferior head: <strong>primary opener</strong> (depresses/protracts mandible). Superior head: active during closing (stabilizes disc). Bilateral: protrusion. Unilateral: contralateral deviation</td><td>Preauricular region, ear, cheek, deep behind eye. <strong>Not directly palpable</strong> externally. Suspected if preauricular pain + painful resisted protrusion. Key muscle in disc displacement (attaches to disc anteriorly)</td></tr>
-    <tr><td class="hi">Medial Pterygoid</td><td>Lateral pterygoid plate + maxillary tuberosity</td><td>Medial ramus + angle of mandible (mirror image of masseter)</td><td>Bilateral: elevates. Unilateral: contralateral deviation. Forms a &ldquo;mandibular sling&rdquo; with masseter</td><td>Tongue, throat, hard palate, behind TMJ into ear, posterior mandible. Palpable intraorally along medial mandible</td></tr>
-  </tbody></table>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Accessory Muscles &amp; Suprahyoid Depressors</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip gold"><div class="bl-label">Jaw Openers (Mandibular Depressors)</div><p>The lateral pterygoid is the primary opener. It is <strong>assisted</strong> by the suprahyoid muscles WHEN the infrahyoids fix the hyoid bone: <strong>digastric</strong> (anterior belly CN V3, posterior belly CN VII), <strong>mylohyoid</strong> (CN V3), <strong>geniohyoid</strong> (C1 via CN XII). Without infrahyoid fixation of the hyoid, the suprahyoids elevate the hyoid instead of depressing the mandible.</p></div>
-      <div class="bl-strip"><div class="bl-label">Other Referral Sources to Consider</div><p><strong>Trapezius</strong> trigger points refer to the temple and behind the ear (mimics TMD).<br><strong>SCM</strong> trigger points refer to the forehead, periorbital area, and ear.<br><strong>Suboccipital muscles</strong> refer to the occiput and temple. Always palpate cervical musculature in TMD patients &mdash; referred craniofacial pain from upper trapezius is the single most common non-masticatory trigger point finding in TMD populations.</p></div>
-    </div>
-  </div>
-
-  <div class="bl-strip red"><div class="bl-label">Clinical Rule</div><p><strong>Ipsilateral pain with jaw movement = muscular origin.</strong> The painful muscle is on the SAME side as the movement direction. <strong>Contralateral pain = joint origin.</strong> The painful joint is on the OPPOSITE side (being compressed/stretched). Example: pain on the right with right lateral excursion = right muscular. Pain on the LEFT with right lateral excursion = left TMJ articular.</p></div>
+<div class="section-title">Muscles of Mastication &amp; Pain Referral Patterns</div>
+<div class="section-sub">All muscles of mastication are innervated by CN V3 (mandibular division of trigeminal). Pain referral from masticatory muscles is the most common source of orofacial pain. 85% of TMD patients have referred craniofacial pain on palpation (Wright, 2000). Knowing the referral patterns is essential for accurate diagnosis.</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th><th>Pain Referral Pattern</th></tr></thead><tbody>
+<tr><td class="warn">Masseter</td><td>Zygomatic arch (superficial: anterior 2/3; deep: posterior 1/3)</td><td>Lateral ramus + angle of mandible</td><td>Elevates mandible (closes jaw). Strongest bite force by bulk</td><td>Lower teeth, lateral face, ear, periorbital region. <strong>MC source of referred jaw pain.</strong> Palpable externally over angle of jaw</td></tr>
+<tr><td class="warn">Temporalis</td><td>Temporal fossa + temporal fascia</td><td>Coronoid process + anterior ramus of mandible</td><td>Anterior fibers: elevate. Posterior fibers: <strong>retract</strong> mandible. Positioning muscle</td><td>Upper teeth, temple, supra-orbital region, behind eye. Referred headache pattern mimics tension-type HA. Tendinopathy at coronoid insertion from clenching</td></tr>
+<tr><td class="warn">Lateral Pterygoid</td><td><strong>Superior head:</strong> greater wing of sphenoid. <strong>Inferior head:</strong> lateral pterygoid plate</td><td>Superior: TMJ disc + capsule (anterior). Inferior: pterygoid fovea (condylar neck)</td><td>Inferior head: <strong>primary opener</strong> (depresses/protracts mandible). Superior head: active during closing (stabilizes disc). Bilateral: protrusion. Unilateral: contralateral deviation</td><td>Preauricular region, ear, cheek, deep behind eye. <strong>Not directly palpable</strong> externally. Suspected if preauricular pain + painful resisted protrusion. Key muscle in disc displacement (attaches to disc anteriorly)</td></tr>
+<tr><td class="hi">Medial Pterygoid</td><td>Lateral pterygoid plate + maxillary tuberosity</td><td>Medial ramus + angle of mandible (mirror image of masseter)</td><td>Bilateral: elevates. Unilateral: contralateral deviation. Forms a &ldquo;mandibular sling&rdquo; with masseter</td><td>Tongue, throat, hard palate, behind TMJ into ear, posterior mandible. Palpable intraorally along medial mandible</td></tr></tbody></table>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Accessory Muscles &amp; Suprahyoid Depressors</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip gold">
+<div class="bl-label">Jaw Openers (Mandibular Depressors)</div>
+<p>The lateral pterygoid is the primary opener. It is <strong>assisted</strong> by the suprahyoid muscles WHEN the infrahyoids fix the hyoid bone: <strong>digastric</strong> (anterior belly CN V3, posterior belly CN VII), <strong>mylohyoid</strong> (CN V3), <strong>geniohyoid</strong> (C1 via CN XII). Without infrahyoid fixation of the hyoid, the suprahyoids elevate the hyoid instead of depressing the mandible.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Other Referral Sources to Consider</div>
+<p><strong>Trapezius</strong> trigger points refer to the temple and behind the ear (mimics TMD).<br><strong>SCM</strong> trigger points refer to the forehead, periorbital area, and ear.<br><strong>Suboccipital muscles</strong> refer to the occiput and temple. Always palpate cervical musculature in TMD patients &mdash; referred craniofacial pain from upper trapezius is the single most common non-masticatory trigger point finding in TMD populations.</p>
 </div>
 </div>
-
-
-<!-- ====== KINEMATICS ====== -->
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Rule</div>
+<p><strong>Ipsilateral pain with jaw movement = muscular origin.</strong> The painful muscle is on the SAME side as the movement direction. <strong>Contralateral pain = joint origin.</strong> The painful joint is on the OPPOSITE side (being compressed/stretched). Example: pain on the right with right lateral excursion = right muscular. Pain on the LEFT with right lateral excursion = left TMJ articular.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-kinematics">
 <div class="container">
-  <div class="section-title">TMJ Kinematics &amp; Biomechanics</div>
-  <div class="section-sub">The TMJ is the only joint in the body that MUST move bilaterally and synchronously. Movement at one TMJ obligates movement at the other. Dysfunction at one joint immediately affects the contralateral side.</div>
-
-  <table class="data-table"><thead><tr><th>Motion</th><th>Normal ROM</th><th>Mechanism</th><th>Primary Muscles</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="warn">Depression (Opening)</td><td><strong>40&ndash;50mm</strong> interincisal distance. 2 knuckles = functional. 3 knuckles = normal AROM</td><td><strong>Phase 1 (0&ndash;25mm):</strong> rotation in inferior compartment (condyle rolls posteriorly on disc). <strong>Phase 2 (25&ndash;50mm):</strong> translation in superior compartment (condyle + disc glide anteroinferiorly down articular eminence)</td><td>Inferior lateral pterygoid (primary). Suprahyoids assist (when infrahyoids fix hyoid)</td><td>&lt;40mm = hypomobility (but compare to patient baseline &mdash; normal ranges 40&ndash;73mm). Pure rotation without translation = &lt;25mm opening (joint restriction)</td></tr>
-    <tr><td class="hi">Elevation (Closing)</td><td>Return to occlusion</td><td>Reverse of opening: translation (disc + condyle glide posterosuperiorly) then rotation</td><td>Masseter, temporalis, medial pterygoid (closers). Superior lateral pterygoid eccentrically controls disc during closing</td><td>Clenching/bruxism overloads closers. Masseter hypertrophy visible in chronic clenchers</td></tr>
-    <tr><td class="hi">Protrusion</td><td>6&ndash;9mm. Lower teeth pass beyond upper</td><td>Bilateral anterior translation in superior compartment ONLY (no rotation)</td><td>Bilateral lateral pterygoid (inferior head). Medial pterygoid + masseter assist</td><td>Limited protrusion suggests bilateral joint restriction. Painful resisted protrusion = lateral pterygoid involvement</td></tr>
-    <tr><td class="hi">Retrusion</td><td>3&ndash;4mm</td><td>Bilateral posterior translation</td><td>Posterior fibers of temporalis (primary retractor). Digastric (posterior belly)</td><td>Rarely tested in isolation. Important for returning mandible to centric relation</td></tr>
-    <tr><td class="warn">Lateral Excursion</td><td><strong>8&ndash;11mm</strong> each side</td><td>Ipsilateral condyle: spins/rotates posteriorly (working side). Contralateral condyle: translates anterior + medial + slightly inferior (non-working side)</td><td>Contralateral lateral pterygoid (primary). Ipsilateral temporalis (posterior fibers)</td><td>Tests unilateral joint and muscle function. Asymmetry = dysfunction on restricted side</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip gold"><div class="bl-label">Deviation vs Deflection</div><p><strong>Deviation (S-curve):</strong> jaw moves AWAY from midline during opening then <strong>returns to midline</strong> by end of movement. Indicates disc displacement with reduction (disc recaptures mid-opening).<br><strong>Deflection (C-curve):</strong> jaw moves away from midline and <strong>stays deviated</strong> at end of movement. Indicates: hypomobility on the deflection side (joint can&rsquo;t translate), disc displacement without reduction (locked), or unilateral muscle spasm/contracture. The jaw deflects TOWARD the restricted/locked side.</p></div>
-
-  <div class="bl-strip"><div class="bl-label">Arthrokinematics Summary</div><p><strong>Inferior compartment (discomandibular):</strong> rotation (spin) between condyle and disc.<br><strong>Superior compartment (discotemporal):</strong> translation (glide) between disc and temporal bone. The disc moves WITH the condyle during translation (pulled by lateral pterygoid attachment). Disc displacement = disc no longer moves synchronously with the condyle. Convex condyle on concave fossa: <strong>roll and glide occur in opposite directions</strong> (condyle rolls posteriorly while gliding anteriorly during opening).</p></div>
+<div class="section-title">TMJ Kinematics &amp; Biomechanics</div>
+<div class="section-sub">The TMJ is the only joint in the body that MUST move bilaterally and synchronously. Movement at one TMJ obligates movement at the other. Dysfunction at one joint immediately affects the contralateral side.</div>
+<table class="data-table"><thead>
+<tr><th>Motion</th><th>Normal ROM</th><th>Mechanism</th><th>Primary Muscles</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Depression (Opening)</td><td><strong>40&ndash;50mm</strong> interincisal distance. 2 knuckles = functional. 3 knuckles = normal AROM</td><td><strong>Phase 1 (0&ndash;25mm):</strong> rotation in inferior compartment (condyle rolls posteriorly on disc). <strong>Phase 2 (25&ndash;50mm):</strong> translation in superior compartment (condyle + disc glide anteroinferiorly down articular eminence)</td><td>Inferior lateral pterygoid (primary). Suprahyoids assist (when infrahyoids fix hyoid)</td><td>&lt;40mm = hypomobility (but compare to patient baseline &mdash; normal ranges 40&ndash;73mm). Pure rotation without translation = &lt;25mm opening (joint restriction)</td></tr>
+<tr><td class="hi">Elevation (Closing)</td><td>Return to occlusion</td><td>Reverse of opening: translation (disc + condyle glide posterosuperiorly) then rotation</td><td>Masseter, temporalis, medial pterygoid (closers). Superior lateral pterygoid eccentrically controls disc during closing</td><td>Clenching/bruxism overloads closers. Masseter hypertrophy visible in chronic clenchers</td></tr>
+<tr><td class="hi">Protrusion</td><td>6&ndash;9mm. Lower teeth pass beyond upper</td><td>Bilateral anterior translation in superior compartment ONLY (no rotation)</td><td>Bilateral lateral pterygoid (inferior head). Medial pterygoid + masseter assist</td><td>Limited protrusion suggests bilateral joint restriction. Painful resisted protrusion = lateral pterygoid involvement</td></tr>
+<tr><td class="hi">Retrusion</td><td>3&ndash;4mm</td><td>Bilateral posterior translation</td><td>Posterior fibers of temporalis (primary retractor). Digastric (posterior belly)</td><td>Rarely tested in isolation. Important for returning mandible to centric relation</td></tr>
+<tr><td class="warn">Lateral Excursion</td><td><strong>8&ndash;11mm</strong> each side</td><td>Ipsilateral condyle: spins/rotates posteriorly (working side). Contralateral condyle: translates anterior + medial + slightly inferior (non-working side)</td><td>Contralateral lateral pterygoid (primary). Ipsilateral temporalis (posterior fibers)</td><td>Tests unilateral joint and muscle function. Asymmetry = dysfunction on restricted side</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Deviation vs Deflection</div>
+<p><strong>Deviation (S-curve):</strong> jaw moves AWAY from midline during opening then <strong>returns to midline</strong> by end of movement. Indicates disc displacement with reduction (disc recaptures mid-opening).<br><strong>Deflection (C-curve):</strong> jaw moves away from midline and <strong>stays deviated</strong> at end of movement. Indicates: hypomobility on the deflection side (joint can&rsquo;t translate), disc displacement without reduction (locked), or unilateral muscle spasm/contracture. The jaw deflects TOWARD the restricted/locked side.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Arthrokinematics Summary</div>
+<p><strong>Inferior compartment (discomandibular):</strong> rotation (spin) between condyle and disc.<br><strong>Superior compartment (discotemporal):</strong> translation (glide) between disc and temporal bone. The disc moves WITH the condyle during translation (pulled by lateral pterygoid attachment). Disc displacement = disc no longer moves synchronously with the condyle. Convex condyle on concave fossa: <strong>roll and glide occur in opposite directions</strong> (condyle rolls posteriorly while gliding anteriorly during opening).</p>
 </div>
 </div>
-
-
-<!-- ====== TMD & DISC DISPLACEMENT ====== -->
+</div>
 <div class="tab-panel" id="tab-pathology">
 <div class="container">
-  <div class="section-title">Temporomandibular Disorders (TMD)</div>
-  <div class="section-sub">TMD is classified into 2 main categories: myogenous (muscle origin &mdash; 65% of TMD) and arthrogenous (joint origin &mdash; 35%). Use the Diagnostic Criteria for TMD (DC/TMD) framework for standardized classification.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Myogenous TMD</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Type</th><th>Presentation</th><th>Key Finding</th></tr></thead><tbody>
-        <tr><td class="hi">Local Myalgia</td><td>Pain confined to the palpation site only. Doesn&rsquo;t spread</td><td>Pain in masseter or temporalis during palpation. Doesn&rsquo;t refer beyond muscle boundary</td></tr>
-        <tr><td class="warn">Myofascial Pain</td><td>Pain spreads WITHIN the muscle boundary on palpation</td><td>Trigger points within muscle. Taut bands palpable. Familiar pain with palpation</td></tr>
-        <tr><td class="warn">Myofascial Pain with Referral</td><td>Pain spreads BEYOND muscle boundary to other structures (teeth, ear, head, neck)</td><td>Trigger points refer to distant areas. Masseter &rarr; lower teeth + ear. Temporalis &rarr; upper teeth + temple. Must map referral pattern</td></tr>
-        <tr><td class="hi">Muscle Spasm (Trismus)</td><td>Sudden involuntary contraction. Severe pain + severely limited opening</td><td>MC in masseter, temporalis, pterygoids. Causes: prolonged dental procedures, stress, bruxism, postural dysfunction</td></tr>
-        <tr><td class="hi">Centrally Mediated Myalgia</td><td>Prolonged uninterrupted pain &gt;1 month, multiple muscles, pain at rest + worse with function</td><td>Central sensitization component. Hyperalgesia + allodynia present. Requires pain neuroscience education approach</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Arthrogenous TMD &mdash; Disc Displacement</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip">
-          <div class="bl-label">Disc Displacement WITH Reduction (DDWR)</div>
-          <div class="bl-strip purple"><div class="bl-label">Mechanism</div><p>Disc is displaced anteriorly at rest. During opening, the condyle translates forward and the disc <strong>&ldquo;pops&rdquo; back into normal position</strong> (reduces). On closing, disc displaces anteriorly again. <strong>Reciprocal click:</strong> opening click (reduction) + closing click (re-displacement). The disc is recapturable.</p></div>
-          <div class="bl-strip"><div class="bl-label">Presentation</div><p>Click/pop with opening (usually ~25mm when translation begins). May have closing click. Opening may be near-normal range. Jaw may deviate toward affected side then correct (S-curve deviation). Intermittent locking possible.</p></div>
-        </div>
-        <div class="bl-strip">
-          <div class="bl-label">Disc Displacement WITHOUT Reduction (DDWOR)</div>
-          <div class="bl-strip red"><div class="bl-label">Mechanism</div><p>Disc is displaced anteriorly and <strong>does NOT recapture</strong> during opening. The disc stays anterior &mdash; acts as a physical block. <strong>&ldquo;Closed lock.&rdquo;</strong> No click (disc doesn&rsquo;t reduce). Often preceded by history of DDWR (clicking that suddenly stopped).</p></div>
-          <div class="bl-strip"><div class="bl-label">Presentation</div><p><strong>Limited opening &lt;25mm</strong> (can&rsquo;t translate past the stuck disc). Jaw deflects (C-curve) TOWARD affected side. No click (vs DDWR which has click). Significant functional limitation &mdash; difficulty eating. Pain in retrodiscal tissue (condyle compresses bilaminar zone).</p></div>
-        </div>
-      </div>
-      <div class="bl-strip gold"><div class="bl-label">Other Arthrogenous TMD</div><p><strong>Synovitis/capsulitis:</strong> inflammation of synovium/capsule. Pain at rest, worse at end-range.<br><strong>Retrodiscitis:</strong> inflammation of retrodiscal tissue from disc displacement or trauma. Severe pain, jaw deviates AWAY from painful side at rest.<br><strong>OA:</strong> crepitus (grinding), morning stiffness, reduced ROM.<br><strong>RA:</strong> bilateral TMJ involvement, morning stiffness &gt;30 min, progressive joint destruction.<br><strong>Dislocation:</strong> condyle translates anterior to eminence and cannot return. Jaw locked OPEN (vs closed lock = DDWOR). Manual reduction required.</p></div>
-    </div>
-  </div>
+<div class="section-title">Temporomandibular Disorders (TMD)</div>
+<div class="section-sub">TMD is classified into 2 main categories: myogenous (muscle origin &mdash; 65% of TMD) and arthrogenous (joint origin &mdash; 35%). Use the Diagnostic Criteria for TMD (DC/TMD) framework for standardized classification.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Myogenous TMD</h4><span class="ma-chevron">&#9660;</span>
 </div>
-
-
-
-<!-- ====== TMD EXAMINATION ====== -->
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Type</th><th>Presentation</th><th>Key Finding</th></tr></thead><tbody>
+<tr><td class="hi">Local Myalgia</td><td>Pain confined to the palpation site only. Doesn&rsquo;t spread</td><td>Pain in masseter or temporalis during palpation. Doesn&rsquo;t refer beyond muscle boundary</td></tr>
+<tr><td class="warn">Myofascial Pain</td><td>Pain spreads WITHIN the muscle boundary on palpation</td><td>Trigger points within muscle. Taut bands palpable. Familiar pain with palpation</td></tr>
+<tr><td class="warn">Myofascial Pain with Referral</td><td>Pain spreads BEYOND muscle boundary to other structures (teeth, ear, head, neck)</td><td>Trigger points refer to distant areas. Masseter &rarr; lower teeth + ear. Temporalis &rarr; upper teeth + temple. Must map referral pattern</td></tr>
+<tr><td class="hi">Muscle Spasm (Trismus)</td><td>Sudden involuntary contraction. Severe pain + severely limited opening</td><td>MC in masseter, temporalis, pterygoids. Causes: prolonged dental procedures, stress, bruxism, postural dysfunction</td></tr>
+<tr><td class="hi">Centrally Mediated Myalgia</td><td>Prolonged uninterrupted pain &gt;1 month, multiple muscles, pain at rest + worse with function</td><td>Central sensitization component. Hyperalgesia + allodynia present. Requires pain neuroscience education approach</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Arthrogenous TMD &mdash; Disc Displacement</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Disc Displacement WITH Reduction (DDWR)</div>
+<div class="bl-strip purple">
+<div class="bl-label">Mechanism</div>
+<p>Disc is displaced anteriorly at rest. During opening, the condyle translates forward and the disc <strong>&ldquo;pops&rdquo; back into normal position</strong> (reduces). On closing, disc displaces anteriorly again. <strong>Reciprocal click:</strong> opening click (reduction) + closing click (re-displacement). The disc is recapturable.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Presentation</div>
+<p>Click/pop with opening (usually ~25mm when translation begins). May have closing click. Opening may be near-normal range. Jaw may deviate toward affected side then correct (S-curve deviation). Intermittent locking possible.</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Disc Displacement WITHOUT Reduction (DDWOR)</div>
+<div class="bl-strip red">
+<div class="bl-label">Mechanism</div>
+<p>Disc is displaced anteriorly and <strong>does NOT recapture</strong> during opening. The disc stays anterior &mdash; acts as a physical block. <strong>&ldquo;Closed lock.&rdquo;</strong> No click (disc doesn&rsquo;t reduce). Often preceded by history of DDWR (clicking that suddenly stopped).</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Presentation</div>
+<p><strong>Limited opening &lt;25mm</strong> (can&rsquo;t translate past the stuck disc). Jaw deflects (C-curve) TOWARD affected side. No click (vs DDWR which has click). Significant functional limitation &mdash; difficulty eating. Pain in retrodiscal tissue (condyle compresses bilaminar zone).</p>
+</div>
+</div>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Other Arthrogenous TMD</div>
+<p><strong>Synovitis/capsulitis:</strong> inflammation of synovium/capsule. Pain at rest, worse at end-range.<br><strong>Retrodiscitis:</strong> inflammation of retrodiscal tissue from disc displacement or trauma. Severe pain, jaw deviates AWAY from painful side at rest.<br><strong>OA:</strong> crepitus (grinding), morning stiffness, reduced ROM.<br><strong>RA:</strong> bilateral TMJ involvement, morning stiffness &gt;30 min, progressive joint destruction.<br><strong>Dislocation:</strong> condyle translates anterior to eminence and cannot return. Jaw locked OPEN (vs closed lock = DDWOR). Manual reduction required.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-exam">
 <div class="container">
-  <div class="section-title">TMD Physical Examination</div>
-  <div class="section-sub">Always screen the cervical spine in TMD patients (trigeminocervical convergence). Ask permission before palpating the head, face, and neck &mdash; this can be a sensitive area, especially with trauma history.</div>
-
-  <table class="data-table"><thead><tr><th>Component</th><th>What to Assess</th><th>Key Findings</th></tr></thead><tbody>
-    <tr><td class="warn">Active ROM</td><td>Opening (mm with ruler), lateral excursion R/L, protrusion. Note: deviation vs deflection</td><td>&lt;40mm opening = hypomobility (but compare to baseline). &lt;25mm = rotation only (no translation). Asymmetric lateral excursion = unilateral restriction</td></tr>
-    <tr><td class="hi">Passive Overpressure</td><td>Gentle overpressure at end-range opening. Assess end-feel</td><td>Hard end-feel = bony block or disc without reduction. Springy = muscular restriction. Empty = pain before mechanical limit (acute inflammation)</td></tr>
-    <tr><td class="warn">Resisted Tests</td><td>Opening, closing, protrusion, lateral excursion. Assess pain + strength</td><td>Painful resisted opening = lateral pterygoid. Painful resisted closing = masseter/temporalis/medial pterygoid. Painful resisted protrusion = lateral pterygoid</td></tr>
-    <tr><td class="warn">Joint Sounds</td><td>Palpate TMJ bilaterally during opening/closing. Note timing, character</td><td><strong>Click/pop:</strong> disc displacement with reduction (note opening click vs closing click timing). <strong>Crepitus (grinding):</strong> OA, degenerative changes, disc damage. <strong>No sound + limited ROM:</strong> DDWOR</td></tr>
-    <tr><td class="hi">Palpation &mdash; Muscles</td><td>Masseter (external), temporalis (external), medial pterygoid (intraoral at medial mandible angle), lateral pterygoid (intraoral, posterior to maxillary tuberosity &mdash; difficult)</td><td>Reproduce familiar pain pattern? Referred pain? Taut bands? Trigger points? Asymmetric tenderness?</td></tr>
-    <tr><td class="hi">Palpation &mdash; Joint</td><td>Lateral pole of condyle (preauricular). Posterior capsule (finger in ear canal, patient opens). Retrodiscal tissue</td><td>Lateral pole tenderness = capsulitis or lateral ligament strain. Posterior capsule tenderness = retrodiscitis</td></tr>
-    <tr><td class="hi">Cervical Screen</td><td>Cervical ROM, upper cervical mobility (C0&ndash;C2), deep neck flexor endurance, posture (forward head)</td><td>76% of TMD patients have concurrent cervical dysfunction. Upper crossed syndrome = contributing factor. Always treat both regions</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip purple"><div class="bl-label">DC/TMD Diagnostic Criteria (2014)</div><p>Standardized diagnostic system replacing the old RDC/TMD. <strong>Axis I:</strong> physical diagnosis (myalgia, arthralgia, disc displacement with/without reduction, degenerative joint disease, subluxation, headache attributed to TMD). <strong>Axis II:</strong> psychosocial assessment (pain catastrophizing, depression, anxiety, functional limitation). Both axes must be assessed &mdash; central sensitization and psychosocial factors are major contributors to chronicity in TMD.</p></div>
+<div class="section-title">TMD Physical Examination</div>
+<div class="section-sub">Always screen the cervical spine in TMD patients (trigeminocervical convergence). Ask permission before palpating the head, face, and neck &mdash; this can be a sensitive area, especially with trauma history.</div>
+<table class="data-table"><thead>
+<tr><th>Component</th><th>What to Assess</th><th>Key Findings</th></tr></thead><tbody>
+<tr><td class="warn">Active ROM</td><td>Opening (mm with ruler), lateral excursion R/L, protrusion. Note: deviation vs deflection</td><td>&lt;40mm opening = hypomobility (but compare to baseline). &lt;25mm = rotation only (no translation). Asymmetric lateral excursion = unilateral restriction</td></tr>
+<tr><td class="hi">Passive Overpressure</td><td>Gentle overpressure at end-range opening. Assess end-feel</td><td>Hard end-feel = bony block or disc without reduction. Springy = muscular restriction. Empty = pain before mechanical limit (acute inflammation)</td></tr>
+<tr><td class="warn">Resisted Tests</td><td>Opening, closing, protrusion, lateral excursion. Assess pain + strength</td><td>Painful resisted opening = lateral pterygoid. Painful resisted closing = masseter/temporalis/medial pterygoid. Painful resisted protrusion = lateral pterygoid</td></tr>
+<tr><td class="warn">Joint Sounds</td><td>Palpate TMJ bilaterally during opening/closing. Note timing, character</td><td><strong>Click/pop:</strong> disc displacement with reduction (note opening click vs closing click timing). <strong>Crepitus (grinding):</strong> OA, degenerative changes, disc damage. <strong>No sound + limited ROM:</strong> DDWOR</td></tr>
+<tr><td class="hi">Palpation &mdash; Muscles</td><td>Masseter (external), temporalis (external), medial pterygoid (intraoral at medial mandible angle), lateral pterygoid (intraoral, posterior to maxillary tuberosity &mdash; difficult)</td><td>Reproduce familiar pain pattern? Referred pain? Taut bands? Trigger points? Asymmetric tenderness?</td></tr>
+<tr><td class="hi">Palpation &mdash; Joint</td><td>Lateral pole of condyle (preauricular). Posterior capsule (finger in ear canal, patient opens). Retrodiscal tissue</td><td>Lateral pole tenderness = capsulitis or lateral ligament strain. Posterior capsule tenderness = retrodiscitis</td></tr>
+<tr><td class="hi">Cervical Screen</td><td>Cervical ROM, upper cervical mobility (C0&ndash;C2), deep neck flexor endurance, posture (forward head)</td><td>76% of TMD patients have concurrent cervical dysfunction. Upper crossed syndrome = contributing factor. Always treat both regions</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">DC/TMD Diagnostic Criteria (2014)</div>
+<p>Standardized diagnostic system replacing the old RDC/TMD. <strong>Axis I:</strong> physical diagnosis (myalgia, arthralgia, disc displacement with/without reduction, degenerative joint disease, subluxation, headache attributed to TMD). <strong>Axis II:</strong> psychosocial assessment (pain catastrophizing, depression, anxiety, functional limitation). Both axes must be assessed &mdash; central sensitization and psychosocial factors are major contributors to chronicity in TMD.</p>
 </div>
 </div>
-
-
-<!-- ====== HEADACHE DDx ====== -->
+</div>
 <div class="tab-panel" id="tab-headache">
 <div class="container">
-  <div class="section-title">Headache Differential Diagnosis</div>
-  <div class="section-sub">Physical therapists must differentiate headache types to provide appropriate treatment and identify red flags requiring referral. Cervicogenic and TMD-related headaches are the most treatable with PT.</div>
-
-  <table class="data-table"><thead><tr><th>Type</th><th>Classification</th><th>Characteristics</th><th>Key Differentiating Features</th><th>PT Role</th></tr></thead><tbody>
-    <tr><td class="warn">Migraine</td><td>Primary</td><td>Pulsing/throbbing. Unilateral (may shift sides). 4&ndash;72 hours. Moderate-severe intensity</td><td><strong>Photophobia + phonophobia.</strong> Nausea/vomiting. Aura (visual/sensory) in 30%. Worse with physical activity. Family history. Cortical spreading depression mechanism</td><td>Limited direct treatment. Cervical dysfunction may be trigger &mdash; address if present. Exercise can be preventive (regular aerobic). Avoid manipulation during active migraine</td></tr>
-    <tr><td class="hi">Tension-Type</td><td>Primary</td><td>Bilateral pressing/tightening (&ldquo;band around head&rdquo;). 30 min to 7 days. Mild-moderate intensity</td><td>NO nausea/vomiting (may have mild nausea in chronic). NO photophobia AND phonophobia together (may have one). NOT worsened by routine physical activity. <strong>Most common headache type</strong></td><td>Moderate role. Postural correction, cervical/thoracic mobilization, relaxation training, trigger point release in cervical musculature</td></tr>
-    <tr><td class="warn">Cluster</td><td>Primary</td><td>Severe unilateral periorbital/temporal. 15&ndash;180 min. Occurs in &ldquo;clusters&rdquo; (daily for weeks, then remission)</td><td><strong>Autonomic features:</strong> ipsilateral lacrimation, nasal congestion, rhinorrhea, conjunctival injection, ptosis, miosis, eyelid edema. Restlessness (pacing, unlike migraine where patient is still). Males &gt; females 3:1. Trigeminal-hypothalamic pathway</td><td>Minimal &mdash; primarily pharmacological (oxygen, triptans). Refer to neurology. Screen and rule out</td></tr>
-    <tr><td class="warn">Cervicogenic</td><td>Secondary</td><td>Unilateral, <strong>side-locked</strong> (does NOT shift). Starts in neck/occiput, radiates anteriorly. Variable duration</td><td>Triggered by neck movement/posture. Decreased cervical ROM. Palpable upper cervical dysfunction. <strong>FRT positive</strong> (SN 90%, SP 88%). Referral patterns: C0&ndash;C1 occiput, C1&ndash;C2 temple (&ldquo;ram&rsquo;s horn&rdquo;), C2&ndash;C3 forehead (&ldquo;halo&rdquo;)</td><td><strong>Primary treatment provider.</strong> C-spine manipulation + deep neck flexor training (Jull 2002). SNAGs for C1&ndash;C2. 72% significant improvement</td></tr>
-    <tr><td class="hi">TMD-Related</td><td>Secondary</td><td>Temporal region. Associated with jaw function. Unilateral or bilateral</td><td>Pain with chewing, talking, yawning. Jaw clicking/locking. Temporal or preauricular tenderness. Reproduces with TMJ palpation or resisted jaw movement. May overlap with cervicogenic HA (trigeminocervical convergence)</td><td><strong>Primary treatment provider.</strong> TMJ manual therapy + muscle treatment + exercise + education. Dental referral for occlusal issues/bruxism splint</td></tr>
-    <tr><td class="hi">Medication Overuse</td><td>Secondary</td><td>Daily or near-daily headache in patient using acute headache medications &ge;10&ndash;15 days/month for &gt;3 months</td><td>&ldquo;Rebound headache.&rdquo; Headache worsens despite (or because of) increasing medication use. Must withdraw offending medication (supervised). Common with OTC analgesics, triptans, opioids</td><td>Education, support during withdrawal period. Address contributing mechanical factors</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip red"><div class="bl-label">Headache Red Flags &mdash; Refer Immediately</div><p><strong>&ldquo;SNOOP&rdquo;:</strong> <strong>S</strong>ystemic symptoms (fever, weight loss, cancer history).<br><strong>N</strong>eurological signs (confusion, seizures, focal deficits, papilledema).<br><strong>O</strong>nset sudden (&ldquo;thunderclap&rdquo; = worst headache ever = SAH until proven otherwise).<br><strong>O</strong>lder age (&gt;50 with new-onset headache = temporal arteritis, mass).<br><strong>P</strong>attern change (headache character fundamentally different from prior). Any of these = immediate medical referral before PT treatment.</p></div>
+<div class="section-title">Headache Differential Diagnosis</div>
+<div class="section-sub">Physical therapists must differentiate headache types to provide appropriate treatment and identify red flags requiring referral. Cervicogenic and TMD-related headaches are the most treatable with PT.</div>
+<table class="data-table"><thead>
+<tr><th>Type</th><th>Classification</th><th>Characteristics</th><th>Key Differentiating Features</th><th>PT Role</th></tr></thead><tbody>
+<tr><td class="warn">Migraine</td><td>Primary</td><td>Pulsing/throbbing. Unilateral (may shift sides). 4&ndash;72 hours. Moderate-severe intensity</td><td><strong>Photophobia + phonophobia.</strong> Nausea/vomiting. Aura (visual/sensory) in 30%. Worse with physical activity. Family history. Cortical spreading depression mechanism</td><td>Limited direct treatment. Cervical dysfunction may be trigger &mdash; address if present. Exercise can be preventive (regular aerobic). Avoid manipulation during active migraine</td></tr>
+<tr><td class="hi">Tension-Type</td><td>Primary</td><td>Bilateral pressing/tightening (&ldquo;band around head&rdquo;). 30 min to 7 days. Mild-moderate intensity</td><td>NO nausea/vomiting (may have mild nausea in chronic). NO photophobia AND phonophobia together (may have one). NOT worsened by routine physical activity. <strong>Most common headache type</strong></td><td>Moderate role. Postural correction, cervical/thoracic mobilization, relaxation training, trigger point release in cervical musculature</td></tr>
+<tr><td class="warn">Cluster</td><td>Primary</td><td>Severe unilateral periorbital/temporal. 15&ndash;180 min. Occurs in &ldquo;clusters&rdquo; (daily for weeks, then remission)</td><td><strong>Autonomic features:</strong> ipsilateral lacrimation, nasal congestion, rhinorrhea, conjunctival injection, ptosis, miosis, eyelid edema. Restlessness (pacing, unlike migraine where patient is still). Males &gt; females 3:1. Trigeminal-hypothalamic pathway</td><td>Minimal &mdash; primarily pharmacological (oxygen, triptans). Refer to neurology. Screen and rule out</td></tr>
+<tr><td class="warn">Cervicogenic</td><td>Secondary</td><td>Unilateral, <strong>side-locked</strong> (does NOT shift). Starts in neck/occiput, radiates anteriorly. Variable duration</td><td>Triggered by neck movement/posture. Decreased cervical ROM. Palpable upper cervical dysfunction. <strong>FRT positive</strong> (SN 90%, SP 88%). Referral patterns: C0&ndash;C1 occiput, C1&ndash;C2 temple (&ldquo;ram&rsquo;s horn&rdquo;), C2&ndash;C3 forehead (&ldquo;halo&rdquo;)</td><td><strong>Primary treatment provider.</strong> C-spine manipulation + deep neck flexor training (Jull 2002). SNAGs for C1&ndash;C2. 72% significant improvement</td></tr>
+<tr><td class="hi">TMD-Related</td><td>Secondary</td><td>Temporal region. Associated with jaw function. Unilateral or bilateral</td><td>Pain with chewing, talking, yawning. Jaw clicking/locking. Temporal or preauricular tenderness. Reproduces with TMJ palpation or resisted jaw movement. May overlap with cervicogenic HA (trigeminocervical convergence)</td><td><strong>Primary treatment provider.</strong> TMJ manual therapy + muscle treatment + exercise + education. Dental referral for occlusal issues/bruxism splint</td></tr>
+<tr><td class="hi">Medication Overuse</td><td>Secondary</td><td>Daily or near-daily headache in patient using acute headache medications &ge;10&ndash;15 days/month for &gt;3 months</td><td>&ldquo;Rebound headache.&rdquo; Headache worsens despite (or because of) increasing medication use. Must withdraw offending medication (supervised). Common with OTC analgesics, triptans, opioids</td><td>Education, support during withdrawal period. Address contributing mechanical factors</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Headache Red Flags &mdash; Refer Immediately</div>
+<p><strong>&ldquo;SNOOP&rdquo;:</strong><strong>S</strong>ystemic symptoms (fever, weight loss, cancer history).<br><strong>N</strong>eurological signs (confusion, seizures, focal deficits, papilledema).<br><strong>O</strong>nset sudden (&ldquo;thunderclap&rdquo; = worst headache ever = SAH until proven otherwise).<br><strong>O</strong>lder age (&gt;50 with new-onset headache = temporal arteritis, mass).<br><strong>P</strong>attern change (headache character fundamentally different from prior). Any of these = immediate medical referral before PT treatment.</p>
 </div>
 </div>
-
-
-<!-- ====== PT MANAGEMENT ====== -->
+</div>
 <div class="tab-panel" id="tab-management">
 <div class="container">
-  <div class="section-title">Evidence-Based PT Management of TMD</div>
-  <div class="section-sub">PT is first-line conservative treatment for TMD. Strong evidence for manual therapy + exercise + patient education. Always address both TMJ and cervical spine.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Manual Therapy</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">TMJ Techniques</div><p><strong>Joint mobilization:</strong> start with external techniques (closed mouth) before progressing to intraoral. Inferior glide (distraction) through molars is the most common but should NOT be first-line (requires pre-positioned opening which stretches capsule). Start with anterior/posterior/lateral glides externally.<br><strong>Disc recapture maneuver</strong> (DDWR): protract mandible past click point, then open/close from protruded position.<br><strong>Cervical/thoracic manipulation:</strong> address concurrent cervical dysfunction (76% of TMD patients). Thoracic manipulation is safe and effective adjunct.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Exercise &amp; Neuromuscular Re-education</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip gold"><div class="bl-label">Key Exercises</div><p><strong>Controlled opening:</strong> tongue on palate, open only in rotation range (0&ndash;25mm) to retrain motor control without aggravating translation.<br><strong>Rhythmic stabilization:</strong> gentle isometric resistance in all directions with jaw slightly open.<br><strong>6&times;6 protocol (Rocabado):</strong> (1) Tongue rest position (tongue on palate, teeth apart, breathe through nose), (2) Controlled rotation opening, (3) Rhythmic stabilization, (4) Axial extension (chin tuck), (5) Distraction/midline opening, (6) Mandibular stabilization.<br><strong>Postural correction:</strong> forward head posture correction, scapular retraction, deep neck flexor training (same exercises as cervicogenic headache management).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Patient Education &amp; Behavioral Modifications</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">Essential Education Points</div><p><strong>Resting jaw position:</strong> lips together, teeth apart, tongue on palate. Patients should maintain this throughout the day.<br><strong>Habit awareness:</strong> identify and reduce parafunctional habits (clenching, grinding, nail biting, gum chewing, pen chewing, leaning chin on hand).<br><strong>Soft food diet</strong> during acute phase (avoid chewy/hard foods, cut food into small pieces, don&rsquo;t bite into apples).<br><strong>Sleep position:</strong> avoid prone (forces lateral cervical rotation + jaw compression).<br><strong>Stress management:</strong> bruxism and clenching increase with stress. Relaxation techniques, jaw awareness cues (phone alarm &ldquo;unclench&rdquo; reminders).<br><strong>Refer to dentist</strong> for occlusal splint/night guard if bruxism confirmed.</p></div>
-    </div>
-  </div>
-
+<div class="section-title">Evidence-Based PT Management of TMD</div>
+<div class="section-sub">PT is first-line conservative treatment for TMD. Strong evidence for manual therapy + exercise + patient education. Always address both TMJ and cervical spine.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Manual Therapy</h4><span class="ma-chevron">&#9660;</span>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">TMJ Techniques</div>
+<p><strong>Joint mobilization:</strong> start with external techniques (closed mouth) before progressing to intraoral. Inferior glide (distraction) through molars is the most common but should NOT be first-line (requires pre-positioned opening which stretches capsule). Start with anterior/posterior/lateral glides externally.<br><strong>Disc recapture maneuver</strong> (DDWR): protract mandible past click point, then open/close from protruded position.<br><strong>Cervical/thoracic manipulation:</strong> address concurrent cervical dysfunction (76% of TMD patients). Thoracic manipulation is safe and effective adjunct.</p>
 </div>
-
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Exercise &amp; Neuromuscular Re-education</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip gold">
+<div class="bl-label">Key Exercises</div>
+<p><strong>Controlled opening:</strong> tongue on palate, open only in rotation range (0&ndash;25mm) to retrain motor control without aggravating translation.<br><strong>Rhythmic stabilization:</strong> gentle isometric resistance in all directions with jaw slightly open.<br><strong>6&times;6 protocol (Rocabado):</strong> (1) Tongue rest position (tongue on palate, teeth apart, breathe through nose), (2) Controlled rotation opening, (3) Rhythmic stabilization, (4) Axial extension (chin tuck), (5) Distraction/midline opening, (6) Mandibular stabilization.<br><strong>Postural correction:</strong> forward head posture correction, scapular retraction, deep neck flexor training (same exercises as cervicogenic headache management).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Patient Education &amp; Behavioral Modifications</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Essential Education Points</div>
+<p><strong>Resting jaw position:</strong> lips together, teeth apart, tongue on palate. Patients should maintain this throughout the day.<br><strong>Habit awareness:</strong> identify and reduce parafunctional habits (clenching, grinding, nail biting, gum chewing, pen chewing, leaning chin on hand).<br><strong>Soft food diet</strong> during acute phase (avoid chewy/hard foods, cut food into small pieces, don&rsquo;t bite into apples).<br><strong>Sleep position:</strong> avoid prone (forces lateral cervical rotation + jaw compression).<br><strong>Stress management:</strong> bruxism and clenching increase with stress. Relaxation techniques, jaw awareness cues (phone alarm &ldquo;unclench&rdquo; reminders).<br><strong>Refer to dentist</strong> for occlusal splint/night guard if bruxism confirmed.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 — DDWR vs DDWOR Differentiation</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 — Headache Differential in Clinical Practice</div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 — DDWR vs DDWOR Differentiation</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 — Headache Differential in Clinical Practice</div>
 </div>
 </div>
 </div>
 </div>
-
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to reveal answers.</div>
-
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Individual has clicking that occurs at ~25mm opening, then again on closing. Diagnosis?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Disc displacement WITH reduction (DDWR).</strong> Reciprocal click: opening click = disc reduces (condyle recaptures disc during translation at ~25mm). Closing click = disc re-displaces anteriorly. Click = reduction. If clicking suddenly stops + limited opening &rarr; progressed to DDWOR.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Individual&rsquo;s jaw deflects to the RIGHT during opening and stays deviated. Opening = 22mm. Diagnosis?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Disc displacement WITHOUT reduction (DDWOR) on the RIGHT.</strong> Deflection (C-curve) = jaw deviates toward the restricted side and stays there. &lt;25mm opening = rotation only, no translation (disc blocking). No click. &ldquo;Closed lock.&rdquo; Right TMJ cannot translate past the anteriorly displaced disc.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Why do TMD patients often have headaches and neck pain simultaneously in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Trigeminocervical complex.</strong> Afferent input from TMJ (CN V), face, teeth, dura, and cervical spine (C1&ndash;C4) all converge on the same second-order neurons in the brainstem. Sensitization at this convergence creates cross-referral: TMD &rarr; headache, neck pain &rarr; facial pain. 76% of TMD patients have concurrent cervical dysfunction.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Individual has unilateral side-locked headache triggered by neck movement. FRT positive. What headache type?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Cervicogenic headache.</strong> Side-locked (doesn&rsquo;t shift sides), triggered by neck movement/posture, FRT positive (SN 90%, SP 88%). Treatment: cervical manipulation + deep neck flexor training (Jull 2002 RCT). Not migraine (would shift sides, have photophobia/phonophobia/nausea).</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Masseter trigger points &mdash; where does the pain refer in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a">Lower teeth, lateral face, ear, periorbital region. Masseter is the <strong>most common source of referred jaw pain.</strong> Easily palpable externally over angle of jaw. Compare: temporalis refers to upper teeth + temple + behind eye. Lateral pterygoid refers preauricular + deep behind eye. Medial pterygoid refers to tongue + throat + ear.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">List the SNOOP headache red flags?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>S</strong> = Systemic symptoms (fever, weight loss, cancer). <strong>N</strong> = Neurological signs (confusion, seizures, focal deficits). <strong>O</strong> = Onset sudden (&ldquo;thunderclap&rdquo; = SAH). <strong>O</strong> = Older age (&gt;50 new onset = temporal arteritis, mass). <strong>P</strong> = Pattern change. Any SNOOP = immediate medical referral before PT treatment.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is the resting jaw position you should teach every TMD patient in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Lips together, teeth APART, tongue resting on palate.</strong> This is the true resting position &mdash; teeth should not be in contact except during chewing and swallowing (~20 min/day). Teeth clenching = sustained masseter/temporalis contraction = fatigue, trigger points, disc loading. Teach as a habit &mdash; phone reminders (&ldquo;unclench&rdquo;) help.</div></div>
-  </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to reveal answers.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Individual has clicking that occurs at ~25mm opening, then again on closing. Diagnosis?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Disc displacement WITH reduction (DDWR).</strong> Reciprocal click: opening click = disc reduces (condyle recaptures disc during translation at ~25mm). Closing click = disc re-displaces anteriorly. Click = reduction. If clicking suddenly stops + limited opening &rarr; progressed to DDWOR.</div>
 </div>
-
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Individual&rsquo;s jaw deflects to the RIGHT during opening and stays deviated. Opening = 22mm. Diagnosis?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Disc displacement WITHOUT reduction (DDWOR) on the RIGHT.</strong> Deflection (C-curve) = jaw deviates toward the restricted side and stays there. &lt;25mm opening = rotation only, no translation (disc blocking). No click. &ldquo;Closed lock.&rdquo; Right TMJ cannot translate past the anteriorly displaced disc.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Why do TMD patients often have headaches and neck pain simultaneously in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Trigeminocervical complex.</strong> Afferent input from TMJ (CN V), face, teeth, dura, and cervical spine (C1&ndash;C4) all converge on the same second-order neurons in the brainstem. Sensitization at this convergence creates cross-referral: TMD &rarr; headache, neck pain &rarr; facial pain. 76% of TMD patients have concurrent cervical dysfunction.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Individual has unilateral side-locked headache triggered by neck movement. FRT positive. What headache type?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Cervicogenic headache.</strong> Side-locked (doesn&rsquo;t shift sides), triggered by neck movement/posture, FRT positive (SN 90%, SP 88%). Treatment: cervical manipulation + deep neck flexor training (Jull 2002 RCT). Not migraine (would shift sides, have photophobia/phonophobia/nausea).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Masseter trigger points &mdash; where does the pain refer in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Lower teeth, lateral face, ear, periorbital region. Masseter is the <strong>most common source of referred jaw pain.</strong> Easily palpable externally over angle of jaw. Compare: temporalis refers to upper teeth + temple + behind eye. Lateral pterygoid refers preauricular + deep behind eye. Medial pterygoid refers to tongue + throat + ear.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">List the SNOOP headache red flags?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>S</strong> = Systemic symptoms (fever, weight loss, cancer). <strong>N</strong> = Neurological signs (confusion, seizures, focal deficits). <strong>O</strong> = Onset sudden (&ldquo;thunderclap&rdquo; = SAH). <strong>O</strong> = Older age (&gt;50 new onset = temporal arteritis, mass). <strong>P</strong> = Pattern change. Any SNOOP = immediate medical referral before PT treatment.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the resting jaw position you should teach every TMD patient in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Lips together, teeth APART, tongue resting on palate.</strong> This is the true resting position &mdash; teeth should not be in contact except during chewing and swallowing (~20 min/day). Teeth clenching = sustained masseter/temporalis contraction = fatigue, trigger points, disc loading. Teach as a habit &mdash; phone reminders (&ldquo;unclench&rdquo;) help.</div>
+</div>
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -350,6 +354,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

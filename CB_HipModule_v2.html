@@ -1,797 +1,736 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Hip Complex</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Hip Complex</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" class="active">Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">MSK Lower Extremity &middot; Hip Complex</div>
-  <h1>Hip <span>Complex</span></h1>
-  <p>The hip is the body&rsquo;s workhorse — a ball-and-socket joint built for both stability and mobility. It bears up to 8&times; body weight during running, transfers ground reaction forces to the trunk during gait, and anchors the core to the lower extremity. The deep acetabular socket and strong capsular ligaments make it far more stable than the shoulder, but it still requires dynamic muscular control — the gluteus medius is the &ldquo;deltoid of the hip&rdquo; and its dysfunction cascades up and down the kinetic chain.</p>
+<div class="hero-tag">MSK Lower Extremity &middot; Hip Complex</div>
+<h1>Hip <span>Complex</span></h1>
+<p>The hip is the body&rsquo;s workhorse — a ball-and-socket joint built for both stability and mobility. It bears up to 8&times; body weight during running, transfers ground reaction forces to the trunk during gait, and anchors the core to the lower extremity. The deep acetabular socket and strong capsular ligaments make it far more stable than the shoulder, but it still requires dynamic muscular control — the gluteus medius is the &ldquo;deltoid of the hip&rdquo; and its dysfunction cascades up and down the kinetic chain.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
-  <button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
-  <button onclick="showTab('pathology',this)">Pathology</button>
-  <button onclick="showTab('special',this)">Special Tests</button>
-  <button onclick="showTab('postop',this)">Post-Op Rehab</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('anatomy',this)">Anatomy</button>
+<button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
+<button onclick="showTab('pathology',this)">Pathology</button>
+<button onclick="showTab('special',this)">Special Tests</button>
+<button onclick="showTab('postop',this)">Post-Op Rehab</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== ANATOMY ====== -->
 <div class="tab-panel active" id="tab-anatomy">
 <div class="container">
-  <div class="section-title">Hip Anatomy &amp; Kinesiology</div>
-  <div class="section-sub">The hip is a ball-and-socket joint built for both stability and mobility &#8212; more stable than the shoulder due to deep acetabular coverage, thick capsule, and strong ligaments. The coxofemoral joint transmits 1.8&#8211;3.8&#215; body weight during normal gait; any force &gt;3&#215; BW raises risk of early degeneration. Hip dysfunction has downstream effects on gait, posture, and the entire kinetic chain.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Nerves of the Hip Region</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-      <table class="data-table">
-        <thead><tr><th>Nerve</th><th>Origin</th><th>Injury Mechanism</th><th>Sensory Distribution</th><th>Motor</th><th>Mnemonic</th></tr></thead>
-        <tbody>
-          <tr><td class="hi">Iliohypogastric</td><td>T12&#8211;L2</td><td>Abdominal surgery</td><td>Suprapubic region</td><td>Transverse abdomen</td><td>"Abdomin-ILL surgery damages the ILL-io"</td></tr>
-          <tr><td class="hi">Genitofemoral</td><td>L1&#8211;2</td><td>Laparoscopic surgery</td><td>Scrotum / labia</td><td>Cremaster</td><td>"Genital-femoral Nerve"</td></tr>
-          <tr><td class="hi">Lateral Femoral Cutaneous</td><td>L2&#8211;3</td><td>Tight clothes, obesity</td><td>Anterior/lateral thigh</td><td>None (purely sensory)</td><td>"LFC = Lazy Fat Clothing"</td></tr>
-          <tr><td class="hi">Obturator</td><td>L2&#8211;4</td><td>Pelvic surgery</td><td>Medial thigh</td><td>Adductors, obturator ext.</td><td>"Obturator damaged by the Operator"</td></tr>
-          <tr><td class="hi">Femoral</td><td>L2&#8211;4</td><td>Pelvic fracture</td><td>Anterior thigh, medial leg</td><td>Quads, iliopsoas, pectineus, sartorius</td><td>"FEMoral = Flexors of thigh, Extension of Medial leg"</td></tr>
-          <tr><td class="hi">Sciatic</td><td>L4&#8211;S3</td><td>Disc herniation, piriformis syndrome</td><td>All leg/foot except medial (saphenous)</td><td>Hamstrings, adductor magnus</td><td>All LE sensory except saphenous</td></tr>
-          <tr><td class="hi">Common Peroneal</td><td>L4&#8211;S2</td><td>Fibular neck injury</td><td>Dorsum of foot</td><td>Dorsiflexors, evertors</td><td>"PED = Peroneal Everts Dorsiflexes"</td></tr>
-          <tr><td class="hi">Tibial</td><td>L4&#8211;S3</td><td>Baker cyst, tarsal tunnel</td><td>Plantar surface</td><td>PF, invertors, foot flexors</td><td>"TIP = Tibial Inverts Plantarflexes"</td></tr>
-        </tbody>
-      </table>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Hip Muscles &#8212; Action Groups</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Flexors</div>
-            <p><strong>Prime:</strong> Iliopsoas (most powerful), Sartorius, TFL, Rectus femoris, Pectineus, Adductor longus.<br><strong>Assist:</strong> Adductor brevis, Gracilis, Gluteus minimus (anterior fibers).<br><strong>Key:</strong> TFL anteromedial fibers active during running/sprinting &#8212; overactivation leads to compressive bursa/tendinopathies at greater trochanter and proximal lateral tibia.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Extensors</div>
-            <p><strong>Prime:</strong> Gluteus maximus (most powerful, most active in hip flexion position), Semitendinosus, Semimembranosus, Biceps femoris (long head), Adductor magnus (posterior head). <strong>Assist:</strong> Gluteus medius (posterior fibers). Glute max is active with trunk extension, lateral sway control, and bipedal locomotion &#8212; greatest activity during sprinting.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Abductors</div>
-            <p><strong>Prime:</strong> Gluteus medius (<strong>deltoid of the hip</strong> &#8212; primary dynamic stabilizer, active ~60% of gait cycle, decelerates hip adduction), Gluteus minimus, TFL.<br><strong>Assist:</strong> Sartorius, Rectus femoris, Piriformis.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Adductors</div>
-            <p><strong>Prime:</strong> Adductor magnus (both heads), Adductor longus, Adductor brevis, Gracilis, Pectineus. <strong>Assist:</strong> Biceps femoris (long head), Gluteus maximus (posterior fibers). Adductor longus and magnus are the most common muscles involved in groin-region pain. Test adductor strength at 0&#176; (gracilis), 45&#176; (longus/brevis), 90&#176; (pectineus).</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">External Rotators</div>
-            <p><strong>Prime:</strong> Gluteus maximus, Gemelli inferior &amp; superior, Obturator internus, Quadratus femoris, Piriformis (at &lt;60&#176; hip flexion). <strong>Assist:</strong> Gluteus medius posterior fibers (ER in ext, IR in flexion), Biceps femoris, Sartorius, Obturator externus. Short ER muscles function like the rotator cuff &#8212; compressing the hip joint for stability.</p>
-          </div>
-          <div class="bl-strip orange">
-            <div class="bl-label">Internal Rotators &#8212; No Primary Muscle</div>
-            <p><strong>NO muscle has IR as its primary function.</strong> Secondary IR: anterior gluteus medius, gluteus minimus, TFL, adductor longus/brevis, pectineus, posterior head of adductor magnus. Semimembranosus, semitendinosus, gracilis, piriformis (at 90&#176; flexion) assist.</p>
-          </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Pelvic &amp; Femoral Osteology &#8212; Complete Landmark Reference</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip"><div class="bl-label">Pelvis &#8212; Three Bones Fuse at Acetabulum</div>
-          <p><strong>Ilium:</strong> body, ASIS/AIIS (sartorius/rectus femoris origins), PSIS/PIIS, iliac crest &amp; tubercle (IT band origin), iliac fossa (iliacus origin), gluteal lines (posterior/anterior/inferior &#8212; gluteal muscle zones), auricular surface (SI joint).</p>
-          <p><strong>Ischium:</strong> body, ischial tuberosity (hamstring origin &#8212; &#8220;sit bones&#8221;), ischial spine (sacrospinous lig, pudendal N landmark), greater sciatic notch (sciatic N exits pelvis), lesser sciatic notch, ischial ramus (joins with inferior pubic ramus &#8594; ischiopubic ramus).</p>
-          <p><strong>Pubis:</strong> body, pubic symphysis (fibrocartilaginous joint), pubic crest &amp; tubercle (inguinal lig attachment), superior ramus with pecten pubis (pectineus origin), inferior ramus, obturator foramen (formed with ischium).</p>
-          <p><strong>Acetabulum:</strong> deep socket facing inferolaterally. Lunate surface = articular (horseshoe-shaped). Acetabular fossa = non-articular (fat pad + ligamentum teres). Acetabular notch = inferior gap bridged by transverse acetabular ligament. <strong>Acetabular labrum</strong> = fibrocartilage rim deepening socket by ~50%, increasing contact area.</p></div>
-        <div>
-          <div class="bl-strip gold"><div class="bl-label">Femur &#8212; Longest, Strongest Bone</div>
-          <p><strong>Proximal:</strong> Head (2/3 sphere, fovea for ligamentum teres), neck (fracture-prone zone, connects head to shaft), <strong>neck-shaft angle ~125&#176;</strong> (angle of inclination &#8212; coxa vara &lt;120&#176;, coxa valga &gt;130&#176;), <strong>anteversion ~12&#176;</strong> (head faces slightly anterior). Greater trochanter (glut med/min, short ERs insert), lesser trochanter (iliopsoas inserts). Intertrochanteric line (anterior &#8212; iliofemoral lig), intertrochanteric crest (posterior &#8212; quadrate tubercle).</p>
-          <p><strong>Shaft:</strong> Slight anterior bow. <strong>Linea aspera</strong> = prominent posterior ridge with medial &amp; lateral lips (adductor/vastus origins). Gluteal tuberosity (glut max). Pectineal line. Medial &amp; lateral supracondylar lines.</p>
-          <p><strong>Distal:</strong> Medial condyle (larger, MCL attachment at epicondyle), lateral condyle (LCL at epicondyle), intercondylar notch (cruciate ligaments), patellar groove (trochlea &#8212; patella tracks here), adductor tubercle (superior to medial epicondyle &#8212; hamstring portion of adductor magnus inserts).</p></div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Hip Joint &#8212; Capsule, Labrum &amp; Ligaments</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Structure</th><th>Attachment</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">Iliofemoral Ligament (&#8220;Y&#8221; Ligament of Bigelow)</td><td>AIIS &#8594; intertrochanteric line (fans out in Y-shape)</td><td><strong>Strongest ligament in the body.</strong> Prevents hyperextension. Taut in extension &#8212; standing requires minimal muscle effort. Resists ER in extension</td><td>Prevents posterior dislocation. Must be stretched to improve hip extension ROM</td></tr>
-        <tr><td class="hi">Pubofemoral Ligament</td><td>Iliopubic eminence + superior pubic ramus &#8594; inferior femoral neck</td><td>Prevents excessive <strong>abduction</strong> and extension. Taut in extension + abduction</td><td>Tightens with extension &#8212; contributes to hip capsular pattern</td></tr>
-        <tr><td class="hi">Ischiofemoral Ligament</td><td>Ischium (posterior acetabulum) &#8594; greater trochanter (spirals posterosuperiorly)</td><td>Prevents excessive <strong>IR</strong> and extension. Weakest of the 3 capsular ligaments. Taut in extension</td><td>Posterior approach THA cuts through this area &#8594; posterior dislocation risk</td></tr>
-        <tr><td class="hi">Zona Orbicularis</td><td>Circular fibers within capsule encircling femoral neck (like a collar)</td><td>Compresses femoral head into acetabulum. Creates &#8220;vacuum seal&#8221; effect</td><td>Acts like a ring gasket &#8212; contributes to negative intra-articular pressure (suction stability)</td></tr>
-        <tr><td class="hi">Ligamentum Teres (Lig of Femoral Head)</td><td>Transverse acetabular ligament + acetabular notch &#8594; fovea of femoral head</td><td>Carries <strong>artery to head of femur</strong> (branch of obturator a.). Minimal mechanical role</td><td>Critical blood supply to femoral head in children. In adults, supply is mainly via circumflex arteries. AVN risk if both sources disrupted (femoral neck fracture)</td></tr>
-        <tr><td class="warn">Acetabular Labrum</td><td>Rim of acetabulum &#8212; fibrocartilage ring</td><td>Deepens socket by ~50%; increases contact area; creates suction seal; distributes load across articular surface</td><td>Labral tears: groin pain, clicking/catching, positive FADIR (SN .99). MRA for diagnosis. Arthroscopic repair/debridement</td></tr>
-        <tr><td class="hi">Transverse Acetabular Ligament</td><td>Bridges the acetabular notch inferiorly</td><td>Completes the acetabular ring; provides attachment for ligamentum teres</td><td></td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Fascia Lata, IT Band &amp; Thigh Compartments</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Fascia Lata &amp; Iliotibial Tract</div>
-      <p><strong>Fascia lata</strong> = dense thick deep fascia of the thigh. Attaches to inguinal ligament, iliac crest, sacrum, coccyx, sacrotuberous ligament, ischial tuberosity, and bony prominences around the knee. Functions with contracting muscles to pump blood and lymph toward thorax (like compression stockings).</p>
-      <p><strong>Iliotibial tract (IT band):</strong> lateral thickening of fascia lata. Conjoint aponeurosis of <strong>TFL + gluteus maximus</strong>. Extends from iliac tubercle &#8594; <strong>Gerdy's tubercle</strong> on lateral tibial condyle. Crosses both hip and knee &#8594; stabilizes both joints laterally.<br><strong>IT band syndrome:</strong> friction over lateral femoral epicondyle during repetitive knee flexion/extension &#8594; lateral knee pain in runners/cyclists.</p>
-      <p><strong>Three intermuscular septa</strong> divide thigh into compartments: <strong>Lateral</strong> (strongest, from IT band to lateral lip of linea aspera), <strong>Medial</strong> (to medial lip), <strong>Posterior</strong> (to linea aspera posteriorly).</p></div>
-      <div class="bl-strip gold"><div class="bl-label">Saphenous Opening &amp; Cribriform Fascia</div>
-      <p>Deficiency in fascia lata ~4cm distal to pubic tubercle. Medial margin is smooth; superior/lateral/inferior form the <strong>falciform margin</strong> (sharp crescent edge). Allows great saphenous vein to connect to femoral vein. Covered by <strong>cribriform fascia</strong> (sieve-like membrane allowing vessels/lymphatics to pass through).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Femoral Triangle, Femoral Sheath &amp; Adductor Canal</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip green"><div class="bl-label">Femoral Triangle</div>
-          <p><strong>Boundaries:</strong> Superior = inguinal ligament. Medial = adductor longus. Lateral = sartorius. Apex = where sartorius and adductor longus meet. Floor = adductor longus, pectineus, iliopsoas. Roof = fascia lata + cribriform fascia.</p>
-          <p><strong>Contents (lateral &#8594; medial):</strong> Femoral <strong>N</strong>erve, femoral <strong>A</strong>rtery, femoral <strong>V</strong>ein &#8212; mnemonic: <strong>NAVeL</strong> (Nerve, Artery, Vein, empty space/Lymphatics). Also: deep femoral artery, inguinal lymph nodes.</p></div>
-          <div class="bl-strip gold"><div class="bl-label">Femoral Sheath</div>
-          <p>Funnel-shaped fascial tube (continuation of extraperitoneal fascia). Contains 3 compartments: <strong>Lateral</strong> = femoral artery.<br><strong>Intermediate</strong> = femoral vein.<br><strong>Medial</strong> = femoral canal (lymph vessels, nodes, loose CT).<br><strong>Femoral canal</strong> ring boundaries: lateral = vein partition, posterior = pecten pubis/pectineus, medial = lacunar ligament, anterior = inguinal ligament.<br><strong>Femoral hernia</strong> enters through femoral ring &#8212; more common in females.</p></div>
-        </div>
-        <div>
-          <div class="bl-strip purple"><div class="bl-label">Adductor Canal (Subsartorial Canal)</div>
-          <p>Passage for femoral vessels from femoral triangle to popliteal fossa. <strong>Boundaries:</strong> Lateral = vastus medialis. Posterior = adductor longus + adductor magnus. Anterior/roof = sartorius + subsartorial fascia.</p>
-          <p><strong>Contents:</strong> Femoral artery, femoral vein, saphenous nerve, nerve to vastus medialis. Vessels exit through <strong>adductor hiatus</strong> (gap in adductor magnus) to become popliteal vessels behind the knee.</p></div>
-          <div class="bl-strip red"><div class="bl-label">Hip Region Bursae</div>
-          <p><strong>Trochanteric bursa:</strong> between superior glut max and greater trochanter &#8212; trochanteric bursitis/greater trochanteric pain syndrome.<br><strong>Ischial (sciatic) bursa:</strong> between inferior glut max and ischial tuberosity &#8212; &#8220;weaver's bottom.&#8221; <strong>Iliopsoas (iliopectineal) bursa:</strong> between iliopsoas tendon and hip capsule &#8212; may communicate with joint cavity; largest bursa in body.<br><strong>Obturator internus bursa:</strong> between tendon and lesser sciatic notch.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Lumbar &amp; Sacral Plexus &#8212; Complete Nerve Reference</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">Lumbar Plexus (VPR L1&#8211;L4, within psoas major)</div></div>
-      <table class="data-table"><thead><tr><th>Nerve</th><th>Root</th><th>Motor</th><th>Sensory</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="hi">Iliohypogastric</td><td>T12&#8211;L1</td><td>Transversus abdominis, internal oblique</td><td>Suprapubic region</td><td>Injured in abdominal surgery</td></tr>
-        <tr><td class="hi">Ilioinguinal</td><td>L1</td><td>Same as above (lower fibers)</td><td>Medial thigh (femoral triangle), inguinal region</td><td>Injured in inguinal hernia repair</td></tr>
-        <tr><td class="hi">Genitofemoral</td><td>L1&#8211;L2</td><td>Cremaster (genital branch)</td><td>Scrotum/labia; lateral femoral triangle</td><td>Cremasteric reflex; laparoscopic surgery injury</td></tr>
-        <tr><td class="warn">Lateral Femoral Cutaneous</td><td>L2&#8211;L3</td><td>None (purely sensory)</td><td>Anterolateral thigh (proximal 2/3)</td><td><strong>Meralgia paresthetica:</strong> compression under inguinal lig (tight clothing, obesity, pregnancy)</td></tr>
-        <tr><td class="warn">Femoral</td><td>L2&#8211;L4</td><td>Quads, iliopsoas, pectineus, sartorius</td><td>Anterior thigh; medial leg + foot (saphenous N continuation)</td><td>Pelvic fracture risk. &#8220;FEMoral = Flex thigh, Extend Medial leg&#8221;</td></tr>
-        <tr><td class="warn">Obturator</td><td>L2&#8211;L4</td><td>Adductors, obturator externus, gracilis</td><td>Medial thigh</td><td>Pelvic surgery/childbirth. Obturator nerve block for adductor spasm</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip gold"><div class="bl-label">Sacral Plexus (VPR L4&#8211;S3)</div><p>All deep nerves exit pelvis through <strong>greater sciatic foramen</strong>. All pass <strong>inferior to piriformis</strong> except superior gluteal nerve (exits superior to piriformis).</p></div>
-      <table class="data-table"><thead><tr><th>Nerve</th><th>Root</th><th>Exits</th><th>Supplies</th></tr></thead><tbody>
-        <tr><td class="warn">Superior Gluteal</td><td>L4&#8211;S1</td><td>Greater sciatic foramen <strong>ABOVE</strong> piriformis</td><td>Glut med, glut min, TFL. Injury &#8594; Trendelenburg gait</td></tr>
-        <tr><td class="hi">Inferior Gluteal</td><td>L5&#8211;S2</td><td>Below piriformis</td><td>Glut max only. Injury &#8594; difficulty rising from seated, stair climbing</td></tr>
-        <tr><td class="warn">Sciatic (largest nerve)</td><td>L4&#8211;S3</td><td>Below piriformis (inferior part of foramen)</td><td><strong>No gluteal muscles.</strong> Hamstrings + ALL muscles below knee (via tibial + common peroneal divisions). Divides into tibial + common peroneal (usually at superior popliteal fossa)</td></tr>
-        <tr><td class="hi">Posterior Femoral Cutaneous</td><td>S1&#8211;S3</td><td>Below piriformis (with sciatic)</td><td>Skin: inferior buttock, posterior thigh, proximal leg. Supplies more skin than any other cutaneous nerve</td></tr>
-        <tr><td class="hi">Nerve to Obturator Internus</td><td>L5&#8211;S2</td><td>Below piriformis</td><td>Superior gemellus + obturator internus; hip joint branch</td></tr>
-        <tr><td class="hi">Nerve to Quadratus Femoris</td><td>L4&#8211;S1</td><td>Below piriformis (deep to sciatic)</td><td>Inferior gemellus + quadratus femoris; hip joint branch</td></tr>
-        <tr><td class="hi">Pudendal</td><td>S2&#8211;S4</td><td>Below piriformis (most medial); re-enters pelvis via lesser sciatic foramen</td><td>Perineum. <strong>Supplies NO structures in gluteal region</strong></td></tr>
-      </tbody></table>
-
-      <div class="bl-strip red"><div class="bl-label">Blood Supply to Hip Region</div>
-      <p><strong>Femoral artery</strong> (continuation of external iliac) enters thigh under inguinal ligament &#8594; gives off <strong>deep femoral (profunda femoris)</strong> = chief artery of thigh.<br><strong>Medial femoral circumflex</strong> (most important for femoral head blood supply &#8212; disrupted in femoral neck fracture &#8594; AVN) + <strong>lateral femoral circumflex</strong> (ascending, transverse, descending branches) + perforating branches (supply posterior compartment).<br><strong>Obturator artery</strong> (branch of internal iliac) supplies ligamentum teres &#8594; femoral head (minor supply in adults, critical in children).</p>
-      <p><strong>Gluteal region:</strong> Superior gluteal artery (largest branch of internal iliac &#8212; exits above piriformis) + inferior gluteal artery (exits below piriformis) + internal pudendal artery (exits below piriformis, re-enters via lesser sciatic foramen &#8212; supplies NO gluteal structures).</p></div>
-    </div>
-  </div>
-
-
+<div class="section-title">Hip Anatomy &amp; Kinesiology</div>
+<div class="section-sub">The hip is a ball-and-socket joint built for both stability and mobility &#8212; more stable than the shoulder due to deep acetabular coverage, thick capsule, and strong ligaments. The coxofemoral joint transmits 1.8&#8211;3.8&#215; body weight during normal gait; any force &gt;3&#215; BW raises risk of early degeneration. Hip dysfunction has downstream effects on gait, posture, and the entire kinetic chain.</div>
 <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Detailed Muscle Anatomy &#8212; Origin, Insertion, Nerve, Action (OINA)</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Anterior Compartment &#8212; Femoral Nerve Territory</div><p>All anterior thigh muscles are innervated by the <strong>femoral nerve (L2, L3, L4)</strong> except TFL (superior gluteal nerve). Compartment formed by lateral and medial intermuscular septum.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="hi">Psoas Major</td><td>T12&#8211;L5 vertebrae/discs + transverse processes of all lumbar vertebrae</td><td>Lesser trochanter</td><td>Ventral rami L1, L2, L3</td><td>Flex thigh at hip; influences pelvic posture in WB; some ER</td></tr>
-        <tr><td class="hi">Iliacus</td><td>Iliac crest, iliac fossa, ala of sacrum, anterior SI ligaments</td><td>Tendon of psoas major, lesser trochanter</td><td>Femoral N (L2, L3)</td><td>Flex thigh at hip; influences pelvic posture in WB; some ER</td></tr>
-        <tr><td class="hi">Tensor Fasciae Latae</td><td>ASIS and anterior part of iliac crest</td><td>IT tract &#8594; lateral tibial condyle (Gerdy&#8217;s tubercle)</td><td>Superior Gluteal N (L4, L5, S1)</td><td>Abducts, IR, and flexes thigh; helps keep knee extended; steadies trunk on thigh</td></tr>
-        <tr><td class="hi">Sartorius</td><td>ASIS and superior part of notch inferior to it</td><td>Superior part of medial surface of tibia (pes anserinus)</td><td>Femoral N (L2, L3)</td><td>Flexes, abducts, and ER thigh at hip; flexes knee</td></tr>
-        <tr><td class="hi">Rectus Femoris</td><td>Direct head: AIIS. Reflected head: ilium superior to acetabulum</td><td>Base of patella &#8594; patellar ligament &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee; slightly flexes hip</td></tr>
-        <tr><td class="hi">Vastus Lateralis</td><td>Greater trochanter and lateral lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
-        <tr><td class="hi">Vastus Intermedius</td><td>Anterior and lateral surfaces of femoral body</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
-        <tr><td class="hi">Vastus Medialis</td><td>Intertrochanteric line and medial lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee. <strong>VMO</strong> (oblique distal fibers) prevents lateral patellar tracking</td></tr>
-        <tr><td class="hi">Articularis Genu</td><td>Anterior surface of distal femur</td><td>Apex of synovial membrane of knee</td><td>Femoral N (L2, L3, L4)</td><td>Pulls synovial capsule to prevent pinching during knee extension</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip gold"><div class="bl-label">Medial Compartment &#8212; Obturator Nerve Territory</div><p>Most medial compartment muscles are innervated by the <strong>obturator nerve (L2, L3, L4)</strong>. Compartment formed by posterior and medial intermuscular septum. <strong>Adductor magnus has dual innervation</strong> &#8212; adductor portion by obturator, hamstrings portion by tibial division of sciatic.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="hi">Pectineus</td><td>Superior ramus of pubis</td><td>Pectineal line of femur, just inferior to lesser trochanter</td><td>Femoral N (L2, L3, L4) &#177; obturator branch</td><td>Flexes and adducts; assists with rotation (both IR and ER)</td></tr>
-        <tr><td class="hi">Adductor Longus</td><td>Body of pubis inferior to pubic crest</td><td>Middle 1/3 of linea aspera</td><td>Obturator N, anterior division (L2, L3, L4)</td><td>Adducts thigh</td></tr>
-        <tr><td class="hi">Adductor Brevis</td><td>Body and inferior ramus of pubis</td><td>Pectineal line and proximal linea aspera</td><td>Obturator N, anterior division (L2, L3, L4)</td><td>Adducts thigh; some flexion</td></tr>
-        <tr><td class="warn">Adductor Magnus</td><td><strong>Adductor part:</strong> inferior ramus of pubis, ramus of ischium. <strong>Hamstrings part:</strong> ischial tuberosity</td><td><strong>Adductor part:</strong> gluteal tuberosity, linea aspera, medial supracondylar line. <strong>Hamstrings part:</strong> adductor tubercle</td><td><strong>Adductor part:</strong> Obturator N, posterior division (L2, L3, L4). <strong>Hamstrings part:</strong> Tibial division of sciatic N (L4, L5)</td><td>Adducts (both). <strong>Adductor part:</strong> also flexes. <strong>Hamstrings part:</strong> also extends</td></tr>
-        <tr><td class="hi">Gracilis</td><td>Body and inferior ramus of pubis</td><td>Superior part of medial surface of tibia (pes anserinus)</td><td>Obturator N, anterior division (L2, L3, L4)</td><td>Adducts thigh; flexes knee; helps IR leg</td></tr>
-        <tr><td class="hi">Obturator Externus</td><td>Margins of obturator foramen and obturator membrane</td><td>Trochanteric fossa</td><td>Obturator N (L2, L3, L4)</td><td>ER thigh; steadies femoral head in acetabulum</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip red"><div class="bl-label">Deep External Rotators &#8212; &#8220;Rotator Cuff of the Hip&#8221;</div><p>These short rotators compress the femoral head into the acetabulum for stability, similar to how the shoulder rotator cuff stabilizes the GH joint.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="hi">Piriformis</td><td>Anterior surface of sacrum; sacrotuberous ligament</td><td>Superior border of greater trochanter</td><td>Ventral rami S1, S2</td><td>ER at &lt;60&#176; flexion; <strong>SWITCHES to IR at &gt;60&#176; flexion.</strong> Abducts flexed thigh</td></tr>
-        <tr><td class="hi">Obturator Internus</td><td>Pelvic surface of obturator membrane and surrounding bone</td><td>Medial surface of greater trochanter</td><td>Nerve to obturator internus (L5, S1, S2)</td><td>ER extended thigh; abducts flexed thigh</td></tr>
-        <tr><td class="hi">Gemellus Superior</td><td>Ischial spine</td><td>Medial surface of greater trochanter (with obturator internus tendon)</td><td>Nerve to obturator internus (L5, S1, S2)</td><td>ER thigh; abducts flexed thigh</td></tr>
-        <tr><td class="hi">Gemellus Inferior</td><td>Ischial tuberosity</td><td>Medial surface of greater trochanter (with obturator internus tendon)</td><td>Nerve to quadratus femoris (L5, S1)</td><td>ER thigh; abducts flexed thigh</td></tr>
-        <tr><td class="hi">Quadratus Femoris</td><td>Lateral border of ischial tuberosity</td><td>Quadrate tubercle on intertrochanteric crest</td><td>Nerve to quadratus femoris (L5, S1)</td><td>ER thigh; stabilizes hip joint</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip purple"><div class="bl-label">Gluteal Muscles</div><p>The gluteals are technically in the posterior/gluteal compartment but are critical for hip function. Innervated by the <strong>superior (L4, L5, S1)</strong> and <strong>inferior (L5, S1, S2) gluteal nerves.</strong></p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Gluteus Maximus</td><td>Posterior gluteal line of ilium, dorsal sacrum/coccyx, sacrotuberous lig, aponeurosis of erector spinae</td><td>IT tract and gluteal tuberosity of femur</td><td><strong>Inferior gluteal N</strong> (L5, S1, S2)</td><td>Extends and ER thigh; upper fibers: abduction. Lower fibers: adduction. Most active during sprinting and stair climbing</td></tr>
-        <tr><td class="warn">Gluteus Medius</td><td>External surface of ilium between anterior and posterior gluteal lines</td><td>Lateral surface of greater trochanter</td><td><strong>Superior gluteal N</strong> (L4, L5, S1)</td><td>Abducts and IR thigh (anterior fibers); ER (posterior fibers). <strong>Primary dynamic stabilizer of pelvis in single-leg stance.</strong> Weakness = Trendelenburg</td></tr>
-        <tr><td class="hi">Gluteus Minimus</td><td>External surface of ilium between anterior and inferior gluteal lines</td><td>Anterior surface of greater trochanter</td><td><strong>Superior gluteal N</strong> (L4, L5, S1)</td><td>Abducts and IR thigh; steadies pelvis on femoral head during gait</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip green"><div class="bl-label">Key Anatomical Structures</div><p><strong>Femoral triangle:</strong> Boundaries = inguinal ligament (superior), adductor longus (medial), sartorius (lateral). Floor = adductor longus, pectineus, iliopsoas. Contents medial &#8594; lateral: Vein, Artery, Nerve (VAN).<br><strong>Femoral sheath:</strong> Funnel-shaped fascial tube. Lateral = artery; intermediate = vein; medial = femoral canal (lymph).<br><strong>Adductor canal (subsartorial):</strong> Lateral = vastus medialis; posterior = adductor longus/magnus; anterior/roof = sartorius. Contains femoral artery, femoral vein, saphenous nerve, nerve to vastus medialis.<br><strong>Saphenous opening:</strong> Deficiency in fascia lata ~4cm distal to pubic tubercle; allows great saphenous vein to connect to femoral vein.<br><strong>Adductor hiatus:</strong> Gap in adductor magnus where femoral vessels pass to become popliteal vessels.</p></div>
-    </div>
-  </div>
-
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Hip Ligaments &amp; Bursae</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Iliofemoral Ligament (Y Ligament)</div>
-            <p>Strongest ligament in the body. Reinforces anterior hip capsule. AIIS to intertrochanteric line. <strong>Function:</strong> limits hip extension and ER; prevents anterior translation; maintains upright posture, reducing need for hip extensor contraction in balanced stance. Hip adduction tightens its superior portion. Taut in extension.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Pubofemoral Ligament</div>
-            <p>Obturator crest to intertrochanteric line. <strong>Function:</strong> tightens in extension AND ER; reinforces medial capsule; prevents over-abduction. Works with iliofemoral to limit extension.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">Ischiofemoral Ligament &#8212; Most Commonly Injured</div>
-            <p>Posterior capsule thickening, winds posteriorly. <strong>Function:</strong> tightens IR in flexion AND extension; tightens with adduction of flexed hip. Most commonly injured hip ligament. Posterior surgical approach to THA can disrupt this &#8212; careful repair reduces posterior dislocation risk.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Ligamentum Teres (Capitis Femoris)</div>
-            <p>Acetabular notch to fovea capitis. Prevents subluxation when hip is ER in flexion or IR in extension. Tightens with adduction, flexion, and ER. <strong>Injury sign: deep posterior hip pain with hip flexion activities.</strong> Blood supply (internal iliac artery) passes through &#8212; injury disrupts vascularity &#8594; risk of AVN. Tears lead to microinstability &#8594; labral and cartilage damage.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Bursae</div>
-            <p><strong>Iliopsoas bursa:</strong> Largest (up to 7&#215;4 cm), present in 98% of adults. Deep to iliopsoas tendon between inguinal ligament and hip capsule. Inflamed with overuse, OA, RA, infection.<br><strong>Trochanteric bursae:</strong> Subgluteus medius (superoposterior GT) and subgluteus maximus (between GT and gluteus maximus/ITB).<br><strong>Ischiogluteal bursa:</strong> Between ischium and gluteus maximus. "Weaver's Bottom" &#8212; compressed by sitting on hard surfaces.</p>
-          </div>
-          <div class="bl-strip green">
-            <div class="bl-label">Femoral Triangle &#8212; VAN (Medial &#8594; Lateral)</div>
-            <p><strong>Borders:</strong> Superior = inguinal ligament; Medial = adductor longus; Lateral = sartorius. <strong>Contents (medial &#8594; lateral):</strong> Femoral Vein, Femoral Artery, Femoral Nerve (VAN). Use caution palpating here or applying soft tissue techniques.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Osteology, Load, &amp; Angles of Inclination</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Angle of Inclination</div>
-            <p><strong>Normal adult:</strong> 125&#8211;139&#176;.<br><strong>Coxa Vara (&lt;125&#176;):</strong> decreased limb length, increased load on femoral neck &#8594; predisposes to fracture.<br><strong>Coxa Valga (&gt;125&#176;):</strong> increased limb length, decreased stability &#8594; predisposes to dislocation/subluxation.<br><strong>Ward triangle:</strong> area of weakness in femoral neck trabecular system &#8212; common osteoporotic fracture site.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Hip Joint Loading</div>
-            <p>Coxofemoral joint peak forces during gait: <strong>1.8&#8211;3.8&#215; body weight.</strong> Forces &gt;3&#215; BW increase risk of early degeneration &#8212; driven by higher body mass and impact loading (running, jumping). Any force &gt;3&#215; BW &#8594; focus on mechanical weight acceptance. Femoral anteversion increases load more than retroversion.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Arthrokinematics (OKC)</div>
-            <p>OKC: convex femoral head moves on concave acetabulum &#8594; femoral head glides <strong>opposite</strong> to distal femur motion (rule of convex on concave). Anatomical flexion = parasagittal plane = Flex + Abd + IR. Extension = Ext + Add + ER. Abduction = Extension + ER of femoral head. Adduction = Flexion + ER.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Key Osteological Avulsion Sites</div>
-            <p><strong>ASIS:</strong> Sartorius &#8212; avulsion in adolescent runners.<br><strong>Pubic tubercle:</strong> Rectus abdominis, adductor brevis/longus &#8212; tendinopathy site, groin pain referral.<br><strong>Ischial tuberosity:</strong> Hamstring origin &#8212; avulsion in athletes, longer healing; hamstring syndrome = sciatic N compression mimicking hamstring strain.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Hip Assessment Framework &#8212; Subjective, Lumbar Screen, SIJ Screen</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Location-Based DDx</div>
-            <p><strong>Groin pain:</strong> Ask MOI (hockey, ballet, gymnastics). OA, labral, lumbar referral, inguinal hernia, adductor strain, iliopsoas, gynecological/vascular <strong>Posterior/buttock:</strong> Rule out SIJ, gluteal bursitis, hamstring syndrome, lumbar spine, labrum, posterior pubic symphysis <strong>Posterolateral:</strong> Trochanteric bursitis, gluteal insertional tendinopathy (Trendelenburg gait), THA component loosening <strong>Groin pain with sitting:</strong> Ant/superior acetabular labral compromise &#8212; posterior/inferior glide helps <strong>Posterior pain with sitting:</strong> Ischial bursitis, hamstring syndrome, LB spine <strong>Night-only pain:</strong> Red flag &#8212; rule out tumor (osteoid osteoma common in long bones)</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Age-Based Clinical Considerations</div>
-            <p>Boys 4&#8211;10: LCPD (painful limp, painless initially) Males &lt;6: Transient synovitis (most common sudden hip pain) Adolescent 11&#8211;14: SCFE (especially overweight boys, ER gait) Young athletic female: Stress fracture (female triad risk &#8212; disordered eating, amenorrhea, osteoporosis) 35&#8211;50: Labral lesions (wear &amp; tear, catching/clicking) &gt;40 males: Labral cysts, sacral pathologies, stress fractures &gt;45: OA (groin + knee pain; hip pain often presents first as knee pain)</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Lumbar Screening (Clear the Spine)</div>
-            <p><strong>Subjective:</strong> Dermatomal/myotomal distribution; achy/shooting/stabbing; must clear piriformis syndrome; sensation changes. <strong>Objective:</strong> AROM functionally; lumbosacral roots via dural testing (SLR, SLRD &#8212; good sensitivity and specificity). Bilateral knee pain &#8594; think lumbar referral.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">SIJ Screening &#8212; Laslett Cluster</div>
-            <p><strong>Subjective clues:</strong> unilateral pain, feeling of being stuck on one side, one-finger sign (PSIS), postpartum instability.<br><strong>Laslett cluster &#8212; 3 or more = highly likely SIJ:</strong> Dorsolateral provocation, Thigh Thrust, Gaenslen, Ventromedial provocation, Sacral Thrust.<br><strong>ASLR:</strong> perform SLR without assistance then with innominate stabilization &#8212; if pain changes, high probability of SIJ dysfunction.</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Motion Restrictions</div>
-            <p><strong>First motions to diminish in OA and labral issues: Flexion and IR.</strong> Capsular pattern: IR &gt; Flexion &gt; Extension (most limited = IR). Hard end-feels indicate OA or coxarthrosis. Significant motor function loss &#8594; consider subluxation, stress fracture, nerve injury &#8212; may need imaging. Foot drop + atrophy = refer out.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Nerves of the Hip Region</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<table class="data-table"><thead>
+<tr><th>Nerve</th><th>Origin</th><th>Injury Mechanism</th><th>Sensory Distribution</th><th>Motor</th><th>Mnemonic</th></tr></thead><tbody>
+<tr><td class="hi">Iliohypogastric</td><td>T12&#8211;L2</td><td>Abdominal surgery</td><td>Suprapubic region</td><td>Transverse abdomen</td><td>"Abdomin-ILL surgery damages the ILL-io"</td></tr>
+<tr><td class="hi">Genitofemoral</td><td>L1&#8211;2</td><td>Laparoscopic surgery</td><td>Scrotum / labia</td><td>Cremaster</td><td>"Genital-femoral Nerve"</td></tr>
+<tr><td class="hi">Lateral Femoral Cutaneous</td><td>L2&#8211;3</td><td>Tight clothes, obesity</td><td>Anterior/lateral thigh</td><td>None (purely sensory)</td><td>"LFC = Lazy Fat Clothing"</td></tr>
+<tr><td class="hi">Obturator</td><td>L2&#8211;4</td><td>Pelvic surgery</td><td>Medial thigh</td><td>Adductors, obturator ext.</td><td>"Obturator damaged by the Operator"</td></tr>
+<tr><td class="hi">Femoral</td><td>L2&#8211;4</td><td>Pelvic fracture</td><td>Anterior thigh, medial leg</td><td>Quads, iliopsoas, pectineus, sartorius</td><td>"FEMoral = Flexors of thigh, Extension of Medial leg"</td></tr>
+<tr><td class="hi">Sciatic</td><td>L4&#8211;S3</td><td>Disc herniation, piriformis syndrome</td><td>All leg/foot except medial (saphenous)</td><td>Hamstrings, adductor magnus</td><td>All LE sensory except saphenous</td></tr>
+<tr><td class="hi">Common Peroneal</td><td>L4&#8211;S2</td><td>Fibular neck injury</td><td>Dorsum of foot</td><td>Dorsiflexors, evertors</td><td>"PED = Peroneal Everts Dorsiflexes"</td></tr>
+<tr><td class="hi">Tibial</td><td>L4&#8211;S3</td><td>Baker cyst, tarsal tunnel</td><td>Plantar surface</td><td>PF, invertors, foot flexors</td><td>"TIP = Tibial Inverts Plantarflexes"</td></tr></tbody></table>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Hip Muscles &#8212; Action Groups</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Flexors</div>
+<p><strong>Prime:</strong> Iliopsoas (most powerful), Sartorius, TFL, Rectus femoris, Pectineus, Adductor longus.<br><strong>Assist:</strong> Adductor brevis, Gracilis, Gluteus minimus (anterior fibers).<br><strong>Key:</strong> TFL anteromedial fibers active during running/sprinting &#8212; overactivation leads to compressive bursa/tendinopathies at greater trochanter and proximal lateral tibia.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Extensors</div>
+<p><strong>Prime:</strong> Gluteus maximus (most powerful, most active in hip flexion position), Semitendinosus, Semimembranosus, Biceps femoris (long head), Adductor magnus (posterior head). <strong>Assist:</strong> Gluteus medius (posterior fibers). Glute max is active with trunk extension, lateral sway control, and bipedal locomotion &#8212; greatest activity during sprinting.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Abductors</div>
+<p><strong>Prime:</strong> Gluteus medius (<strong>deltoid of the hip</strong> &#8212; primary dynamic stabilizer, active ~60% of gait cycle, decelerates hip adduction), Gluteus minimus, TFL.<br><strong>Assist:</strong> Sartorius, Rectus femoris, Piriformis.</p>
 </div>
 </div>
-
-<!-- ====== MUSCLES & OINA ====== -->
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Adductors</div>
+<p><strong>Prime:</strong> Adductor magnus (both heads), Adductor longus, Adductor brevis, Gracilis, Pectineus. <strong>Assist:</strong> Biceps femoris (long head), Gluteus maximus (posterior fibers). Adductor longus and magnus are the most common muscles involved in groin-region pain. Test adductor strength at 0&#176; (gracilis), 45&#176; (longus/brevis), 90&#176; (pectineus).</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">External Rotators</div>
+<p><strong>Prime:</strong> Gluteus maximus, Gemelli inferior &amp; superior, Obturator internus, Quadratus femoris, Piriformis (at &lt;60&#176; hip flexion). <strong>Assist:</strong> Gluteus medius posterior fibers (ER in ext, IR in flexion), Biceps femoris, Sartorius, Obturator externus. Short ER muscles function like the rotator cuff &#8212; compressing the hip joint for stability.</p>
+</div>
+<div class="bl-strip orange">
+<div class="bl-label">Internal Rotators &#8212; No Primary Muscle</div>
+<p><strong>NO muscle has IR as its primary function.</strong> Secondary IR: anterior gluteus medius, gluteus minimus, TFL, adductor longus/brevis, pectineus, posterior head of adductor magnus. Semimembranosus, semitendinosus, gracilis, piriformis (at 90&#176; flexion) assist.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Pelvic &amp; Femoral Osteology &#8212; Complete Landmark Reference</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Pelvis &#8212; Three Bones Fuse at Acetabulum</div>
+<p><strong>Ilium:</strong> body, ASIS/AIIS (sartorius/rectus femoris origins), PSIS/PIIS, iliac crest &amp; tubercle (IT band origin), iliac fossa (iliacus origin), gluteal lines (posterior/anterior/inferior &#8212; gluteal muscle zones), auricular surface (SI joint).</p>
+<p><strong>Ischium:</strong> body, ischial tuberosity (hamstring origin &#8212; &#8220;sit bones&#8221;), ischial spine (sacrospinous lig, pudendal N landmark), greater sciatic notch (sciatic N exits pelvis), lesser sciatic notch, ischial ramus (joins with inferior pubic ramus &#8594; ischiopubic ramus).</p>
+<p><strong>Pubis:</strong> body, pubic symphysis (fibrocartilaginous joint), pubic crest &amp; tubercle (inguinal lig attachment), superior ramus with pecten pubis (pectineus origin), inferior ramus, obturator foramen (formed with ischium).</p>
+<p><strong>Acetabulum:</strong> deep socket facing inferolaterally. Lunate surface = articular (horseshoe-shaped). Acetabular fossa = non-articular (fat pad + ligamentum teres). Acetabular notch = inferior gap bridged by transverse acetabular ligament. <strong>Acetabular labrum</strong> = fibrocartilage rim deepening socket by ~50%, increasing contact area.</p>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Femur &#8212; Longest, Strongest Bone</div>
+<p><strong>Proximal:</strong> Head (2/3 sphere, fovea for ligamentum teres), neck (fracture-prone zone, connects head to shaft), <strong>neck-shaft angle ~125&#176;</strong> (angle of inclination &#8212; coxa vara &lt;120&#176;, coxa valga &gt;130&#176;), <strong>anteversion ~12&#176;</strong> (head faces slightly anterior). Greater trochanter (glut med/min, short ERs insert), lesser trochanter (iliopsoas inserts). Intertrochanteric line (anterior &#8212; iliofemoral lig), intertrochanteric crest (posterior &#8212; quadrate tubercle).</p>
+<p><strong>Shaft:</strong> Slight anterior bow. <strong>Linea aspera</strong> = prominent posterior ridge with medial &amp; lateral lips (adductor/vastus origins). Gluteal tuberosity (glut max). Pectineal line. Medial &amp; lateral supracondylar lines.</p>
+<p><strong>Distal:</strong> Medial condyle (larger, MCL attachment at epicondyle), lateral condyle (LCL at epicondyle), intercondylar notch (cruciate ligaments), patellar groove (trochlea &#8212; patella tracks here), adductor tubercle (superior to medial epicondyle &#8212; hamstring portion of adductor magnus inserts).</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Hip Joint &#8212; Capsule, Labrum &amp; Ligaments</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Structure</th><th>Attachment</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Iliofemoral Ligament (&#8220;Y&#8221; Ligament of Bigelow)</td><td>AIIS &#8594; intertrochanteric line (fans out in Y-shape)</td><td><strong>Strongest ligament in the body.</strong> Prevents hyperextension. Taut in extension &#8212; standing requires minimal muscle effort. Resists ER in extension</td><td>Prevents posterior dislocation. Must be stretched to improve hip extension ROM</td></tr>
+<tr><td class="hi">Pubofemoral Ligament</td><td>Iliopubic eminence + superior pubic ramus &#8594; inferior femoral neck</td><td>Prevents excessive <strong>abduction</strong> and extension. Taut in extension + abduction</td><td>Tightens with extension &#8212; contributes to hip capsular pattern</td></tr>
+<tr><td class="hi">Ischiofemoral Ligament</td><td>Ischium (posterior acetabulum) &#8594; greater trochanter (spirals posterosuperiorly)</td><td>Prevents excessive <strong>IR</strong> and extension. Weakest of the 3 capsular ligaments. Taut in extension</td><td>Posterior approach THA cuts through this area &#8594; posterior dislocation risk</td></tr>
+<tr><td class="hi">Zona Orbicularis</td><td>Circular fibers within capsule encircling femoral neck (like a collar)</td><td>Compresses femoral head into acetabulum. Creates &#8220;vacuum seal&#8221; effect</td><td>Acts like a ring gasket &#8212; contributes to negative intra-articular pressure (suction stability)</td></tr>
+<tr><td class="hi">Ligamentum Teres (Lig of Femoral Head)</td><td>Transverse acetabular ligament + acetabular notch &#8594; fovea of femoral head</td><td>Carries <strong>artery to head of femur</strong> (branch of obturator a.). Minimal mechanical role</td><td>Critical blood supply to femoral head in children. In adults, supply is mainly via circumflex arteries. AVN risk if both sources disrupted (femoral neck fracture)</td></tr>
+<tr><td class="warn">Acetabular Labrum</td><td>Rim of acetabulum &#8212; fibrocartilage ring</td><td>Deepens socket by ~50%; increases contact area; creates suction seal; distributes load across articular surface</td><td>Labral tears: groin pain, clicking/catching, positive FADIR (SN .99). MRA for diagnosis. Arthroscopic repair/debridement</td></tr>
+<tr><td class="hi">Transverse Acetabular Ligament</td><td>Bridges the acetabular notch inferiorly</td><td>Completes the acetabular ring; provides attachment for ligamentum teres</td><td></td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Fascia Lata, IT Band &amp; Thigh Compartments</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Fascia Lata &amp; Iliotibial Tract</div>
+<p><strong>Fascia lata</strong> = dense thick deep fascia of the thigh. Attaches to inguinal ligament, iliac crest, sacrum, coccyx, sacrotuberous ligament, ischial tuberosity, and bony prominences around the knee. Functions with contracting muscles to pump blood and lymph toward thorax (like compression stockings).</p>
+<p><strong>Iliotibial tract (IT band):</strong> lateral thickening of fascia lata. Conjoint aponeurosis of <strong>TFL + gluteus maximus</strong>. Extends from iliac tubercle &#8594; <strong>Gerdy's tubercle</strong> on lateral tibial condyle. Crosses both hip and knee &#8594; stabilizes both joints laterally.<br><strong>IT band syndrome:</strong> friction over lateral femoral epicondyle during repetitive knee flexion/extension &#8594; lateral knee pain in runners/cyclists.</p>
+<p><strong>Three intermuscular septa</strong> divide thigh into compartments: <strong>Lateral</strong> (strongest, from IT band to lateral lip of linea aspera), <strong>Medial</strong> (to medial lip), <strong>Posterior</strong> (to linea aspera posteriorly).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Saphenous Opening &amp; Cribriform Fascia</div>
+<p>Deficiency in fascia lata ~4cm distal to pubic tubercle. Medial margin is smooth; superior/lateral/inferior form the <strong>falciform margin</strong> (sharp crescent edge). Allows great saphenous vein to connect to femoral vein. Covered by <strong>cribriform fascia</strong> (sieve-like membrane allowing vessels/lymphatics to pass through).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Femoral Triangle, Femoral Sheath &amp; Adductor Canal</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip green">
+<div class="bl-label">Femoral Triangle</div>
+<p><strong>Boundaries:</strong> Superior = inguinal ligament. Medial = adductor longus. Lateral = sartorius. Apex = where sartorius and adductor longus meet. Floor = adductor longus, pectineus, iliopsoas. Roof = fascia lata + cribriform fascia.</p>
+<p><strong>Contents (lateral &#8594; medial):</strong> Femoral <strong>N</strong>erve, femoral <strong>A</strong>rtery, femoral <strong>V</strong>ein &#8212; mnemonic: <strong>NAVeL</strong> (Nerve, Artery, Vein, empty space/Lymphatics). Also: deep femoral artery, inguinal lymph nodes.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Femoral Sheath</div>
+<p>Funnel-shaped fascial tube (continuation of extraperitoneal fascia). Contains 3 compartments: <strong>Lateral</strong> = femoral artery.<br><strong>Intermediate</strong> = femoral vein.<br><strong>Medial</strong> = femoral canal (lymph vessels, nodes, loose CT).<br><strong>Femoral canal</strong> ring boundaries: lateral = vein partition, posterior = pecten pubis/pectineus, medial = lacunar ligament, anterior = inguinal ligament.<br><strong>Femoral hernia</strong> enters through femoral ring &#8212; more common in females.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Adductor Canal (Subsartorial Canal)</div>
+<p>Passage for femoral vessels from femoral triangle to popliteal fossa. <strong>Boundaries:</strong> Lateral = vastus medialis. Posterior = adductor longus + adductor magnus. Anterior/roof = sartorius + subsartorial fascia.</p>
+<p><strong>Contents:</strong> Femoral artery, femoral vein, saphenous nerve, nerve to vastus medialis. Vessels exit through <strong>adductor hiatus</strong> (gap in adductor magnus) to become popliteal vessels behind the knee.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Hip Region Bursae</div>
+<p><strong>Trochanteric bursa:</strong> between superior glut max and greater trochanter &#8212; trochanteric bursitis/greater trochanteric pain syndrome.<br><strong>Ischial (sciatic) bursa:</strong> between inferior glut max and ischial tuberosity &#8212; &#8220;weaver's bottom.&#8221; <strong>Iliopsoas (iliopectineal) bursa:</strong> between iliopsoas tendon and hip capsule &#8212; may communicate with joint cavity; largest bursa in body.<br><strong>Obturator internus bursa:</strong> between tendon and lesser sciatic notch.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Lumbar &amp; Sacral Plexus &#8212; Complete Nerve Reference</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Lumbar Plexus (VPR L1&#8211;L4, within psoas major)</div>
+</div>
+<table class="data-table"><thead>
+<tr><th>Nerve</th><th>Root</th><th>Motor</th><th>Sensory</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Iliohypogastric</td><td>T12&#8211;L1</td><td>Transversus abdominis, internal oblique</td><td>Suprapubic region</td><td>Injured in abdominal surgery</td></tr>
+<tr><td class="hi">Ilioinguinal</td><td>L1</td><td>Same as above (lower fibers)</td><td>Medial thigh (femoral triangle), inguinal region</td><td>Injured in inguinal hernia repair</td></tr>
+<tr><td class="hi">Genitofemoral</td><td>L1&#8211;L2</td><td>Cremaster (genital branch)</td><td>Scrotum/labia; lateral femoral triangle</td><td>Cremasteric reflex; laparoscopic surgery injury</td></tr>
+<tr><td class="warn">Lateral Femoral Cutaneous</td><td>L2&#8211;L3</td><td>None (purely sensory)</td><td>Anterolateral thigh (proximal 2/3)</td><td><strong>Meralgia paresthetica:</strong> compression under inguinal lig (tight clothing, obesity, pregnancy)</td></tr>
+<tr><td class="warn">Femoral</td><td>L2&#8211;L4</td><td>Quads, iliopsoas, pectineus, sartorius</td><td>Anterior thigh; medial leg + foot (saphenous N continuation)</td><td>Pelvic fracture risk. &#8220;FEMoral = Flex thigh, Extend Medial leg&#8221;</td></tr>
+<tr><td class="warn">Obturator</td><td>L2&#8211;L4</td><td>Adductors, obturator externus, gracilis</td><td>Medial thigh</td><td>Pelvic surgery/childbirth. Obturator nerve block for adductor spasm</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Sacral Plexus (VPR L4&#8211;S3)</div>
+<p>All deep nerves exit pelvis through <strong>greater sciatic foramen</strong>. All pass <strong>inferior to piriformis</strong> except superior gluteal nerve (exits superior to piriformis).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Nerve</th><th>Root</th><th>Exits</th><th>Supplies</th></tr></thead><tbody>
+<tr><td class="warn">Superior Gluteal</td><td>L4&#8211;S1</td><td>Greater sciatic foramen <strong>ABOVE</strong> piriformis</td><td>Glut med, glut min, TFL. Injury &#8594; Trendelenburg gait</td></tr>
+<tr><td class="hi">Inferior Gluteal</td><td>L5&#8211;S2</td><td>Below piriformis</td><td>Glut max only. Injury &#8594; difficulty rising from seated, stair climbing</td></tr>
+<tr><td class="warn">Sciatic (largest nerve)</td><td>L4&#8211;S3</td><td>Below piriformis (inferior part of foramen)</td><td><strong>No gluteal muscles.</strong> Hamstrings + ALL muscles below knee (via tibial + common peroneal divisions). Divides into tibial + common peroneal (usually at superior popliteal fossa)</td></tr>
+<tr><td class="hi">Posterior Femoral Cutaneous</td><td>S1&#8211;S3</td><td>Below piriformis (with sciatic)</td><td>Skin: inferior buttock, posterior thigh, proximal leg. Supplies more skin than any other cutaneous nerve</td></tr>
+<tr><td class="hi">Nerve to Obturator Internus</td><td>L5&#8211;S2</td><td>Below piriformis</td><td>Superior gemellus + obturator internus; hip joint branch</td></tr>
+<tr><td class="hi">Nerve to Quadratus Femoris</td><td>L4&#8211;S1</td><td>Below piriformis (deep to sciatic)</td><td>Inferior gemellus + quadratus femoris; hip joint branch</td></tr>
+<tr><td class="hi">Pudendal</td><td>S2&#8211;S4</td><td>Below piriformis (most medial); re-enters pelvis via lesser sciatic foramen</td><td>Perineum. <strong>Supplies NO structures in gluteal region</strong></td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Blood Supply to Hip Region</div>
+<p><strong>Femoral artery</strong> (continuation of external iliac) enters thigh under inguinal ligament &#8594; gives off <strong>deep femoral (profunda femoris)</strong> = chief artery of thigh.<br><strong>Medial femoral circumflex</strong> (most important for femoral head blood supply &#8212; disrupted in femoral neck fracture &#8594; AVN) + <strong>lateral femoral circumflex</strong> (ascending, transverse, descending branches) + perforating branches (supply posterior compartment).<br><strong>Obturator artery</strong> (branch of internal iliac) supplies ligamentum teres &#8594; femoral head (minor supply in adults, critical in children).</p>
+<p><strong>Gluteal region:</strong> Superior gluteal artery (largest branch of internal iliac &#8212; exits above piriformis) + inferior gluteal artery (exits below piriformis) + internal pudendal artery (exits below piriformis, re-enters via lesser sciatic foramen &#8212; supplies NO gluteal structures).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Detailed Muscle Anatomy &#8212; Origin, Insertion, Nerve, Action (OINA)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Anterior Compartment &#8212; Femoral Nerve Territory</div>
+<p>All anterior thigh muscles are innervated by the <strong>femoral nerve (L2, L3, L4)</strong> except TFL (superior gluteal nerve). Compartment formed by lateral and medial intermuscular septum.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="hi">Psoas Major</td><td>T12&#8211;L5 vertebrae/discs + transverse processes of all lumbar vertebrae</td><td>Lesser trochanter</td><td>Ventral rami L1, L2, L3</td><td>Flex thigh at hip; influences pelvic posture in WB; some ER</td></tr>
+<tr><td class="hi">Iliacus</td><td>Iliac crest, iliac fossa, ala of sacrum, anterior SI ligaments</td><td>Tendon of psoas major, lesser trochanter</td><td>Femoral N (L2, L3)</td><td>Flex thigh at hip; influences pelvic posture in WB; some ER</td></tr>
+<tr><td class="hi">Tensor Fasciae Latae</td><td>ASIS and anterior part of iliac crest</td><td>IT tract &#8594; lateral tibial condyle (Gerdy&#8217;s tubercle)</td><td>Superior Gluteal N (L4, L5, S1)</td><td>Abducts, IR, and flexes thigh; helps keep knee extended; steadies trunk on thigh</td></tr>
+<tr><td class="hi">Sartorius</td><td>ASIS and superior part of notch inferior to it</td><td>Superior part of medial surface of tibia (pes anserinus)</td><td>Femoral N (L2, L3)</td><td>Flexes, abducts, and ER thigh at hip; flexes knee</td></tr>
+<tr><td class="hi">Rectus Femoris</td><td>Direct head: AIIS. Reflected head: ilium superior to acetabulum</td><td>Base of patella &#8594; patellar ligament &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee; slightly flexes hip</td></tr>
+<tr><td class="hi">Vastus Lateralis</td><td>Greater trochanter and lateral lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
+<tr><td class="hi">Vastus Intermedius</td><td>Anterior and lateral surfaces of femoral body</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee</td></tr>
+<tr><td class="hi">Vastus Medialis</td><td>Intertrochanteric line and medial lip of linea aspera</td><td>Base of patella &#8594; tibial tuberosity</td><td>Femoral N (L2, L3, L4)</td><td>Extends knee. <strong>VMO</strong> (oblique distal fibers) prevents lateral patellar tracking</td></tr>
+<tr><td class="hi">Articularis Genu</td><td>Anterior surface of distal femur</td><td>Apex of synovial membrane of knee</td><td>Femoral N (L2, L3, L4)</td><td>Pulls synovial capsule to prevent pinching during knee extension</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Medial Compartment &#8212; Obturator Nerve Territory</div>
+<p>Most medial compartment muscles are innervated by the <strong>obturator nerve (L2, L3, L4)</strong>. Compartment formed by posterior and medial intermuscular septum. <strong>Adductor magnus has dual innervation</strong> &#8212; adductor portion by obturator, hamstrings portion by tibial division of sciatic.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="hi">Pectineus</td><td>Superior ramus of pubis</td><td>Pectineal line of femur, just inferior to lesser trochanter</td><td>Femoral N (L2, L3, L4) &#177; obturator branch</td><td>Flexes and adducts; assists with rotation (both IR and ER)</td></tr>
+<tr><td class="hi">Adductor Longus</td><td>Body of pubis inferior to pubic crest</td><td>Middle 1/3 of linea aspera</td><td>Obturator N, anterior division (L2, L3, L4)</td><td>Adducts thigh</td></tr>
+<tr><td class="hi">Adductor Brevis</td><td>Body and inferior ramus of pubis</td><td>Pectineal line and proximal linea aspera</td><td>Obturator N, anterior division (L2, L3, L4)</td><td>Adducts thigh; some flexion</td></tr>
+<tr><td class="warn">Adductor Magnus</td><td><strong>Adductor part:</strong> inferior ramus of pubis, ramus of ischium. <strong>Hamstrings part:</strong> ischial tuberosity</td><td><strong>Adductor part:</strong> gluteal tuberosity, linea aspera, medial supracondylar line. <strong>Hamstrings part:</strong> adductor tubercle</td><td><strong>Adductor part:</strong> Obturator N, posterior division (L2, L3, L4). <strong>Hamstrings part:</strong> Tibial division of sciatic N (L4, L5)</td><td>Adducts (both). <strong>Adductor part:</strong> also flexes. <strong>Hamstrings part:</strong> also extends</td></tr>
+<tr><td class="hi">Gracilis</td><td>Body and inferior ramus of pubis</td><td>Superior part of medial surface of tibia (pes anserinus)</td><td>Obturator N, anterior division (L2, L3, L4)</td><td>Adducts thigh; flexes knee; helps IR leg</td></tr>
+<tr><td class="hi">Obturator Externus</td><td>Margins of obturator foramen and obturator membrane</td><td>Trochanteric fossa</td><td>Obturator N (L2, L3, L4)</td><td>ER thigh; steadies femoral head in acetabulum</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Deep External Rotators &#8212; &#8220;Rotator Cuff of the Hip&#8221;</div>
+<p>These short rotators compress the femoral head into the acetabulum for stability, similar to how the shoulder rotator cuff stabilizes the GH joint.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="hi">Piriformis</td><td>Anterior surface of sacrum; sacrotuberous ligament</td><td>Superior border of greater trochanter</td><td>Ventral rami S1, S2</td><td>ER at &lt;60&#176; flexion; <strong>SWITCHES to IR at &gt;60&#176; flexion.</strong> Abducts flexed thigh</td></tr>
+<tr><td class="hi">Obturator Internus</td><td>Pelvic surface of obturator membrane and surrounding bone</td><td>Medial surface of greater trochanter</td><td>Nerve to obturator internus (L5, S1, S2)</td><td>ER extended thigh; abducts flexed thigh</td></tr>
+<tr><td class="hi">Gemellus Superior</td><td>Ischial spine</td><td>Medial surface of greater trochanter (with obturator internus tendon)</td><td>Nerve to obturator internus (L5, S1, S2)</td><td>ER thigh; abducts flexed thigh</td></tr>
+<tr><td class="hi">Gemellus Inferior</td><td>Ischial tuberosity</td><td>Medial surface of greater trochanter (with obturator internus tendon)</td><td>Nerve to quadratus femoris (L5, S1)</td><td>ER thigh; abducts flexed thigh</td></tr>
+<tr><td class="hi">Quadratus Femoris</td><td>Lateral border of ischial tuberosity</td><td>Quadrate tubercle on intertrochanteric crest</td><td>Nerve to quadratus femoris (L5, S1)</td><td>ER thigh; stabilizes hip joint</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Gluteal Muscles</div>
+<p>The gluteals are technically in the posterior/gluteal compartment but are critical for hip function. Innervated by the <strong>superior (L4, L5, S1)</strong> and <strong>inferior (L5, S1, S2) gluteal nerves.</strong></p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Gluteus Maximus</td><td>Posterior gluteal line of ilium, dorsal sacrum/coccyx, sacrotuberous lig, aponeurosis of erector spinae</td><td>IT tract and gluteal tuberosity of femur</td><td><strong>Inferior gluteal N</strong> (L5, S1, S2)</td><td>Extends and ER thigh; upper fibers: abduction. Lower fibers: adduction. Most active during sprinting and stair climbing</td></tr>
+<tr><td class="warn">Gluteus Medius</td><td>External surface of ilium between anterior and posterior gluteal lines</td><td>Lateral surface of greater trochanter</td><td><strong>Superior gluteal N</strong> (L4, L5, S1)</td><td>Abducts and IR thigh (anterior fibers); ER (posterior fibers). <strong>Primary dynamic stabilizer of pelvis in single-leg stance.</strong> Weakness = Trendelenburg</td></tr>
+<tr><td class="hi">Gluteus Minimus</td><td>External surface of ilium between anterior and inferior gluteal lines</td><td>Anterior surface of greater trochanter</td><td><strong>Superior gluteal N</strong> (L4, L5, S1)</td><td>Abducts and IR thigh; steadies pelvis on femoral head during gait</td></tr></tbody></table>
+<div class="bl-strip green">
+<div class="bl-label">Key Anatomical Structures</div>
+<p><strong>Femoral triangle:</strong> Boundaries = inguinal ligament (superior), adductor longus (medial), sartorius (lateral). Floor = adductor longus, pectineus, iliopsoas. Contents medial &#8594; lateral: Vein, Artery, Nerve (VAN).<br><strong>Femoral sheath:</strong> Funnel-shaped fascial tube. Lateral = artery; intermediate = vein; medial = femoral canal (lymph).<br><strong>Adductor canal (subsartorial):</strong> Lateral = vastus medialis; posterior = adductor longus/magnus; anterior/roof = sartorius. Contains femoral artery, femoral vein, saphenous nerve, nerve to vastus medialis.<br><strong>Saphenous opening:</strong> Deficiency in fascia lata ~4cm distal to pubic tubercle; allows great saphenous vein to connect to femoral vein.<br><strong>Adductor hiatus:</strong> Gap in adductor magnus where femoral vessels pass to become popliteal vessels.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Hip Ligaments &amp; Bursae</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Iliofemoral Ligament (Y Ligament)</div>
+<p>Strongest ligament in the body. Reinforces anterior hip capsule. AIIS to intertrochanteric line. <strong>Function:</strong> limits hip extension and ER; prevents anterior translation; maintains upright posture, reducing need for hip extensor contraction in balanced stance. Hip adduction tightens its superior portion. Taut in extension.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Pubofemoral Ligament</div>
+<p>Obturator crest to intertrochanteric line. <strong>Function:</strong> tightens in extension AND ER; reinforces medial capsule; prevents over-abduction. Works with iliofemoral to limit extension.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Ischiofemoral Ligament &#8212; Most Commonly Injured</div>
+<p>Posterior capsule thickening, winds posteriorly. <strong>Function:</strong> tightens IR in flexion AND extension; tightens with adduction of flexed hip. Most commonly injured hip ligament. Posterior surgical approach to THA can disrupt this &#8212; careful repair reduces posterior dislocation risk.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Ligamentum Teres (Capitis Femoris)</div>
+<p>Acetabular notch to fovea capitis. Prevents subluxation when hip is ER in flexion or IR in extension. Tightens with adduction, flexion, and ER. <strong>Injury sign: deep posterior hip pain with hip flexion activities.</strong> Blood supply (internal iliac artery) passes through &#8212; injury disrupts vascularity &#8594; risk of AVN. Tears lead to microinstability &#8594; labral and cartilage damage.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Bursae</div>
+<p><strong>Iliopsoas bursa:</strong> Largest (up to 7&#215;4 cm), present in 98% of adults. Deep to iliopsoas tendon between inguinal ligament and hip capsule. Inflamed with overuse, OA, RA, infection.<br><strong>Trochanteric bursae:</strong> Subgluteus medius (superoposterior GT) and subgluteus maximus (between GT and gluteus maximus/ITB).<br><strong>Ischiogluteal bursa:</strong> Between ischium and gluteus maximus. "Weaver's Bottom" &#8212; compressed by sitting on hard surfaces.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Femoral Triangle &#8212; VAN (Medial &#8594; Lateral)</div>
+<p><strong>Borders:</strong> Superior = inguinal ligament; Medial = adductor longus; Lateral = sartorius. <strong>Contents (medial &#8594; lateral):</strong> Femoral Vein, Femoral Artery, Femoral Nerve (VAN). Use caution palpating here or applying soft tissue techniques.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Osteology, Load, &amp; Angles of Inclination</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Angle of Inclination</div>
+<p><strong>Normal adult:</strong> 125&#8211;139&#176;.<br><strong>Coxa Vara (&lt;125&#176;):</strong> decreased limb length, increased load on femoral neck &#8594; predisposes to fracture.<br><strong>Coxa Valga (&gt;125&#176;):</strong> increased limb length, decreased stability &#8594; predisposes to dislocation/subluxation.<br><strong>Ward triangle:</strong> area of weakness in femoral neck trabecular system &#8212; common osteoporotic fracture site.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Hip Joint Loading</div>
+<p>Coxofemoral joint peak forces during gait: <strong>1.8&#8211;3.8&#215; body weight.</strong> Forces &gt;3&#215; BW increase risk of early degeneration &#8212; driven by higher body mass and impact loading (running, jumping). Any force &gt;3&#215; BW &#8594; focus on mechanical weight acceptance. Femoral anteversion increases load more than retroversion.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip">
+<div class="bl-label">Arthrokinematics (OKC)</div>
+<p>OKC: convex femoral head moves on concave acetabulum &#8594; femoral head glides <strong>opposite</strong> to distal femur motion (rule of convex on concave). Anatomical flexion = parasagittal plane = Flex + Abd + IR. Extension = Ext + Add + ER. Abduction = Extension + ER of femoral head. Adduction = Flexion + ER.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Key Osteological Avulsion Sites</div>
+<p><strong>ASIS:</strong> Sartorius &#8212; avulsion in adolescent runners.<br><strong>Pubic tubercle:</strong> Rectus abdominis, adductor brevis/longus &#8212; tendinopathy site, groin pain referral.<br><strong>Ischial tuberosity:</strong> Hamstring origin &#8212; avulsion in athletes, longer healing; hamstring syndrome = sciatic N compression mimicking hamstring strain.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Hip Assessment Framework &#8212; Subjective, Lumbar Screen, SIJ Screen</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Location-Based DDx</div>
+<p><strong>Groin pain:</strong> Ask MOI (hockey, ballet, gymnastics). OA, labral, lumbar referral, inguinal hernia, adductor strain, iliopsoas, gynecological/vascular <strong>Posterior/buttock:</strong> Rule out SIJ, gluteal bursitis, hamstring syndrome, lumbar spine, labrum, posterior pubic symphysis <strong>Posterolateral:</strong> Trochanteric bursitis, gluteal insertional tendinopathy (Trendelenburg gait), THA component loosening <strong>Groin pain with sitting:</strong> Ant/superior acetabular labral compromise &#8212; posterior/inferior glide helps <strong>Posterior pain with sitting:</strong> Ischial bursitis, hamstring syndrome, LB spine <strong>Night-only pain:</strong> Red flag &#8212; rule out tumor (osteoid osteoma common in long bones)</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Age-Based Clinical Considerations</div>
+<p>Boys 4&#8211;10: LCPD (painful limp, painless initially) Males &lt;6: Transient synovitis (most common sudden hip pain) Adolescent 11&#8211;14: SCFE (especially overweight boys, ER gait) Young athletic female: Stress fracture (female triad risk &#8212; disordered eating, amenorrhea, osteoporosis) 35&#8211;50: Labral lesions (wear &amp; tear, catching/clicking) &gt;40 males: Labral cysts, sacral pathologies, stress fractures &gt;45: OA (groin + knee pain; hip pain often presents first as knee pain)</p>
+</div>
+</div>
+<div>
+<div class="bl-strip">
+<div class="bl-label">Lumbar Screening (Clear the Spine)</div>
+<p><strong>Subjective:</strong> Dermatomal/myotomal distribution; achy/shooting/stabbing; must clear piriformis syndrome; sensation changes. <strong>Objective:</strong> AROM functionally; lumbosacral roots via dural testing (SLR, SLRD &#8212; good sensitivity and specificity). Bilateral knee pain &#8594; think lumbar referral.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">SIJ Screening &#8212; Laslett Cluster</div>
+<p><strong>Subjective clues:</strong> unilateral pain, feeling of being stuck on one side, one-finger sign (PSIS), postpartum instability.<br><strong>Laslett cluster &#8212; 3 or more = highly likely SIJ:</strong> Dorsolateral provocation, Thigh Thrust, Gaenslen, Ventromedial provocation, Sacral Thrust.<br><strong>ASLR:</strong> perform SLR without assistance then with innominate stabilization &#8212; if pain changes, high probability of SIJ dysfunction.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Motion Restrictions</div>
+<p><strong>First motions to diminish in OA and labral issues: Flexion and IR.</strong> Capsular pattern: IR &gt; Flexion &gt; Extension (most limited = IR). Hard end-feels indicate OA or coxarthrosis. Significant motor function loss &#8594; consider subluxation, stress fracture, nerve injury &#8212; may need imaging. Foot drop + atrophy = refer out.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-muscles">
 <div class="container">
-  <div class="section-title">Hip Muscles &mdash; Organized by Action</div>
-  <div class="section-sub">The hip has 22+ muscles crossing it. No muscle has internal rotation as its primary action &mdash; IR is always a secondary function. The gluteus medius is the &ldquo;deltoid of the hip&rdquo; and the most clinically important hip muscle.</div>
+<div class="section-title">Hip Muscles &mdash; Organized by Action</div>
+<div class="section-sub">The hip has 22+ muscles crossing it. No muscle has internal rotation as its primary action &mdash; IR is always a secondary function. The gluteus medius is the &ldquo;deltoid of the hip&rdquo; and the most clinically important hip muscle.</div>
 </div>
 </div>
-
-<!-- ====== PATHOLOGY ====== -->
 <div class="tab-panel" id="tab-pathology">
 <div class="container">
-  <div class="section-title">Hip Pathologies &#8212; Capsular, Noncapsular &amp; Intra-articular</div>
-  <div class="section-sub">Hip pathologies are organized by pattern of limitation. <strong>Capsular pattern</strong> (arthritis, synovitis): IR &gt; Flexion most limited. <strong>Noncapsular pattern</strong> (SCFE, AVN, loose body): any pattern other than capsular. <strong>Intra-articular</strong> (labral tear, FAI): common report is groin pain with mechanical symptoms.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Capsular Pattern &#8212; Osteoarthritis &amp; Synovitis</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Hip OA Background</div>
-            <p>28 million Americans estimated to have OA (2011). Generally &gt;50 years, overweight. Post-traumatic OA presents 10 years later. <strong>Pain at hip often presents first as knee pain.</strong> X-ray: joint space narrowing + marginal spurring. Conservative: cane, NSAIDs, exercise + weight loss (aquatics), acupuncture, PRP. Movement is critical &#8212; avoid immobility.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Traumatic Arthritis</div>
-            <p>Age &gt;20. Repetitive hyperextension + rotation from work or sports (kickers, soccer, horse riders). <strong>Pain:</strong> groin or anterior thigh with sitting, walking, ascending stairs. <strong>Objective:</strong> PROM limited in capsular pattern.</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Coxarthrosis &#8212; "Frozen Shoulder of the Hip"</div>
-            <p>Disorder of articular cartilage/bone balance &#8212; slow progressive course.<br><strong>Primary:</strong> genetic, older, female more common and more severe.<br><strong>Secondary:</strong> underlying pathology (instability, dysplasia, intra-articular fractures). Progression: pain with WB &#8594; constant pain at rest &#8594; pain subsides but movement limited (capsular pattern).<br><strong>Treatment:</strong> manual therapy, joint mobilization, ther ex for function (not pain), neuromuscular re-education + HEP.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip gold">
-            <div class="bl-label">OA Clinical Prediction Rule &#8212; 3 of 5</div>
-            <p><strong>(1)</strong> Squatting is an aggravating factor <strong>(2)</strong> Active hip flexion causes <strong>lateral</strong> hip pain <strong>(3)</strong> Scour test with adduction causes lateral hip pain or groin pain (catching may occur)<br><strong>(4)</strong> Active hip extension causes pain <strong>(5)</strong> Passive IR &lt;25&#176;</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">OA PT Treatment Protocol</div>
-            <p><strong>Mobilization/manipulation:</strong> ventral + lateral + caudal directed force at femur.<br><strong>Traction (long-axis):</strong> applied perpendicular; contraindicated with joint instability, degenerative bone disorders, anticoagulant therapy.<br><strong>Soft tissue:</strong> adductors typically hypertonic (wanting stability), abductors weaker.<br><strong>NMR:</strong> functional mobility focus &#8212; use UE reaching in decompressed mode to activate hip muscles during WB activities.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Transient Synovitis</div>
-            <p><strong>Males under age 6 &#8212; most common cause of sudden hip pain and limp.</strong> Viral, autoimmune, or microtrauma origin; 40% have preceding illness. Limited IR (capsular pattern). Antalgic gait. Imaging may be normal. Lasts 2&#8211;3 weeks; typically full recovery. Differentiate from sciatica. In some cases progresses to juvenile arthritis.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Noncapsular Pattern &#8212; AVN, SCFE, LCPD</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Avascular Necrosis (AVN) of Femoral Head</div>
-            <p>Disruption of blood supply to proximal femur (circumflex arteries).<br><strong>Adult causes:</strong> fracture, dislocation, surgery, alcohol, steroids, radiation.<br><strong>Presentation:</strong> gradual groin pain, possible hip movement limits, crepitation and gluteal pain with increased severity.<br><strong>Dx: CT scan or MRI</strong> (X-ray late to show changes).<br><strong>Treatment:</strong> Early = nonsurgical (stem cells, magnetics). Surgical = core decompression or osteotomy (PWB 3&#8211;6 months, AROM to tolerance). End-stage = THA (cemented shows most improvement in pain and function).</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">SCFE &#8212; Slipped Capital Femoral Epiphysis</div>
-            <p><strong>Background:</strong> femoral head slips posteriorly off femoral neck at growth plate. Adolescents 11&#8211;14; more common in boys; overweight (80&#8211;100th percentile); diabetes; cancer treatments.<br><strong>Presentation:</strong> hip/medial thigh/knee pain; antalgic gait; <strong>tends to walk with ER foot</strong>; positive log roll sign and SL raise against resistance; pain with IR relieved with ER. Radiograph: femoral head displaced posteriorly and inferiorly.<br><strong>Internal fixation ASAP &#8212; goal is to prevent AVN.</strong></p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Legg-Calv&#233;-Perthes Disease (LCPD)</div>
-            <p>Femoral head blood supply disrupted &#8594; AVN &#8594; collapse and flattening. Blood supply returns over months; bone replacement takes 2&#8211;3 years.<br><strong>Boys 4&#8211;10, unilateral.</strong> <strong>Presentation:</strong> painless limp (comes and goes), hip stiffness (flex/IR/abd), constant thigh/groin pain, limb length discrepancy, upper thigh atrophy. X-ray/MRI: small femoral epiphysis; sclerosis and flattening if chronic.<br><strong>Conservative:</strong> short bed rest, limited WB, possible casting, PT for strength and soft tissue. Surgery only if conservative fails.<br><strong>Prognosis:</strong> good if &lt;6 years; high deformity/arthritis risk if &gt;6 years.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">Trauma &amp; Fractures &#8212; Red Flags</div>
-            <p><strong>Fall &#8594; think fracture first:</strong> inability to bear weight = femoral hip fracture until proven otherwise <strong>Stress fractures:</strong> pelvic rami and femoral neck most common; X-ray only 10% sensitive early &#8212; bone scan better <strong>High risk:</strong> female triad, amenorrhea, low aerobic fitness, smoking, steroid use <strong>Myositis ossificans:</strong> bone forms inside muscle from blunt trauma &#8212; ask about mechanism and time since injury <strong>Hip pointer:</strong> contusion to iliac crest &#8212; lasts a long time; treat with soft tissue + ROM</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Intra-articular &#8212; Labral Tears, FAI, Loose Bodies</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Labral Tears</div>
-            <p><strong>Background:</strong> degenerative or repetitive (torsion/twisting, LCPD hx, dysplasia). Ages 35&#8211;50. Anterior labrum: greatest force in hip flexion + adduction.<br><strong>Presentation:</strong> anterolateral/anterosuperior groin pain; catching/locking/clicking in 50%; dull pain with intermittent sharp pain in IR/ER; prolonged sitting; antalgic or Trendelenburg gait.<br><strong>Exam:</strong> +FADIR, +FABER; loss/apprehension of IR; catching (mechanical symptoms).<br><strong>Imaging:</strong> MRA 90% SN, 100% SP.<br><strong>Conservative PT:</strong> glute max stabilization, quadriceps/hamstring co-contraction, myofascial work (adductor insertion, glute med insertion, piriformis, ITB), MWM for capsular restriction, weak hip abductors in CKC. Goal: full ROM with rotation in full WB at velocity.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Loose Bodies</div>
-            <p>Ossified or non-ossified fragments (osteochondral, chondral, fibrous, foreign). Usually secondary to other processes or trauma.<br><strong>Presentation:</strong> hx of dislocation or low-energy trauma; popping/catching/clicking/giving way; sudden leg pain "twinges" when WB; possible stiffness; springy end feel during passive extension.<br><strong>Imaging:</strong> X-ray, MRI with contrast, MRA.<br><strong>Surgery:</strong> arthroscopic removal &#8212; gold standard.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Femoroacetabular Impingement (FAI)</div>
-            <p><strong>Types (Ganz):</strong> <strong>CAM</strong> &#8212; bony abnormality of femoral head (blocky, non-spherical); young male athletes; impingement in flex + ADD + IR.<br><strong>Pincer</strong> &#8212; increased acetabular rim coverage; middle-aged women in athletics.<br><strong>Mixed:</strong> most common. Associated with labral and chondral damage; significant cause of hip OA.<br><strong>Cardinal sign:</strong> sharp anterior hip pain with deep flexion, deep squat, IR, or abduction. "C sign." <strong>Objective:</strong> limited IR &lt;20&#176; at 90&#176; flexion; +FADIR, +FABER. Common in hockey, dancers, soccer, football.<br><strong>Conservative PT:</strong> discontinue sport temporarily; joint mobs (create joint space); dry needling; hip abductor strengthening; CARS exercises; banded squats for valgus collapse control.<br><strong>Surgical:</strong> arthroscopic osteoplasty; 93% return rate (Philippon 2008).</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Hip Microinstability</div>
-            <p>Shallow acetabulum, excessive femoral anteversion, Ehlers-Danlos/Marfan/Down syndrome. Repetitive hip rotation + axial loading in dancers, ballet, martial arts, tennis, baseball.<br><strong>Presentation:</strong> "loosey-goosey" feeling, apprehension at end range; no motion loss but excessive motion (especially IR + ER); insidious anterior/groin pain.<br><strong>Treatment:</strong> core + global hip strengthening, biomechanical analysis; avoid repeated subluxations.<br><strong>Surgical:</strong> arthroscopic capsulorrhaphy if conservative fails.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="section-title">Hip Pathologies &#8212; Capsular, Noncapsular &amp; Intra-articular</div>
+<div class="section-sub">Hip pathologies are organized by pattern of limitation. <strong>Capsular pattern</strong> (arthritis, synovitis): IR &gt; Flexion most limited. <strong>Noncapsular pattern</strong> (SCFE, AVN, loose body): any pattern other than capsular. <strong>Intra-articular</strong> (labral tear, FAI): common report is groin pain with mechanical symptoms.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Capsular Pattern &#8212; Osteoarthritis &amp; Synovitis</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Hip OA Background</div>
+<p>28 million Americans estimated to have OA (2011). Generally &gt;50 years, overweight. Post-traumatic OA presents 10 years later. <strong>Pain at hip often presents first as knee pain.</strong> X-ray: joint space narrowing + marginal spurring. Conservative: cane, NSAIDs, exercise + weight loss (aquatics), acupuncture, PRP. Movement is critical &#8212; avoid immobility.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Traumatic Arthritis</div>
+<p>Age &gt;20. Repetitive hyperextension + rotation from work or sports (kickers, soccer, horse riders). <strong>Pain:</strong> groin or anterior thigh with sitting, walking, ascending stairs. <strong>Objective:</strong> PROM limited in capsular pattern.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Coxarthrosis &#8212; "Frozen Shoulder of the Hip"</div>
+<p>Disorder of articular cartilage/bone balance &#8212; slow progressive course.<br><strong>Primary:</strong> genetic, older, female more common and more severe.<br><strong>Secondary:</strong> underlying pathology (instability, dysplasia, intra-articular fractures). Progression: pain with WB &#8594; constant pain at rest &#8594; pain subsides but movement limited (capsular pattern).<br><strong>Treatment:</strong> manual therapy, joint mobilization, ther ex for function (not pain), neuromuscular re-education + HEP.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">OA Clinical Prediction Rule &#8212; 3 of 5</div>
+<p><strong>(1)</strong> Squatting is an aggravating factor <strong>(2)</strong> Active hip flexion causes <strong>lateral</strong> hip pain <strong>(3)</strong> Scour test with adduction causes lateral hip pain or groin pain (catching may occur)<br><strong>(4)</strong> Active hip extension causes pain <strong>(5)</strong> Passive IR &lt;25&#176;</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">OA PT Treatment Protocol</div>
+<p><strong>Mobilization/manipulation:</strong> ventral + lateral + caudal directed force at femur.<br><strong>Traction (long-axis):</strong> applied perpendicular; contraindicated with joint instability, degenerative bone disorders, anticoagulant therapy.<br><strong>Soft tissue:</strong> adductors typically hypertonic (wanting stability), abductors weaker.<br><strong>NMR:</strong> functional mobility focus &#8212; use UE reaching in decompressed mode to activate hip muscles during WB activities.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Transient Synovitis</div>
+<p><strong>Males under age 6 &#8212; most common cause of sudden hip pain and limp.</strong> Viral, autoimmune, or microtrauma origin; 40% have preceding illness. Limited IR (capsular pattern). Antalgic gait. Imaging may be normal. Lasts 2&#8211;3 weeks; typically full recovery. Differentiate from sciatica. In some cases progresses to juvenile arthritis.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Noncapsular Pattern &#8212; AVN, SCFE, LCPD</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Avascular Necrosis (AVN) of Femoral Head</div>
+<p>Disruption of blood supply to proximal femur (circumflex arteries).<br><strong>Adult causes:</strong> fracture, dislocation, surgery, alcohol, steroids, radiation.<br><strong>Presentation:</strong> gradual groin pain, possible hip movement limits, crepitation and gluteal pain with increased severity.<br><strong>Dx: CT scan or MRI</strong> (X-ray late to show changes).<br><strong>Treatment:</strong> Early = nonsurgical (stem cells, magnetics). Surgical = core decompression or osteotomy (PWB 3&#8211;6 months, AROM to tolerance). End-stage = THA (cemented shows most improvement in pain and function).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">SCFE &#8212; Slipped Capital Femoral Epiphysis</div>
+<p><strong>Background:</strong> femoral head slips posteriorly off femoral neck at growth plate. Adolescents 11&#8211;14; more common in boys; overweight (80&#8211;100th percentile); diabetes; cancer treatments.<br><strong>Presentation:</strong> hip/medial thigh/knee pain; antalgic gait; <strong>tends to walk with ER foot</strong>; positive log roll sign and SL raise against resistance; pain with IR relieved with ER. Radiograph: femoral head displaced posteriorly and inferiorly.<br><strong>Internal fixation ASAP &#8212; goal is to prevent AVN.</strong></p>
+</div>
+</div>
+<div>
+<div class="bl-strip purple">
+<div class="bl-label">Legg-Calv&#233;-Perthes Disease (LCPD)</div>
+<p>Femoral head blood supply disrupted &#8594; AVN &#8594; collapse and flattening. Blood supply returns over months; bone replacement takes 2&#8211;3 years.<br><strong>Boys 4&#8211;10, unilateral.</strong><strong>Presentation:</strong> painless limp (comes and goes), hip stiffness (flex/IR/abd), constant thigh/groin pain, limb length discrepancy, upper thigh atrophy. X-ray/MRI: small femoral epiphysis; sclerosis and flattening if chronic.<br><strong>Conservative:</strong> short bed rest, limited WB, possible casting, PT for strength and soft tissue. Surgery only if conservative fails.<br><strong>Prognosis:</strong> good if &lt;6 years; high deformity/arthritis risk if &gt;6 years.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Trauma &amp; Fractures &#8212; Red Flags</div>
+<p><strong>Fall &#8594; think fracture first:</strong> inability to bear weight = femoral hip fracture until proven otherwise <strong>Stress fractures:</strong> pelvic rami and femoral neck most common; X-ray only 10% sensitive early &#8212; bone scan better <strong>High risk:</strong> female triad, amenorrhea, low aerobic fitness, smoking, steroid use <strong>Myositis ossificans:</strong> bone forms inside muscle from blunt trauma &#8212; ask about mechanism and time since injury <strong>Hip pointer:</strong> contusion to iliac crest &#8212; lasts a long time; treat with soft tissue + ROM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Intra-articular &#8212; Labral Tears, FAI, Loose Bodies</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Labral Tears</div>
+<p><strong>Background:</strong> degenerative or repetitive (torsion/twisting, LCPD hx, dysplasia). Ages 35&#8211;50. Anterior labrum: greatest force in hip flexion + adduction.<br><strong>Presentation:</strong> anterolateral/anterosuperior groin pain; catching/locking/clicking in 50%; dull pain with intermittent sharp pain in IR/ER; prolonged sitting; antalgic or Trendelenburg gait.<br><strong>Exam:</strong> +FADIR, +FABER; loss/apprehension of IR; catching (mechanical symptoms).<br><strong>Imaging:</strong> MRA 90% SN, 100% SP.<br><strong>Conservative PT:</strong> glute max stabilization, quadriceps/hamstring co-contraction, myofascial work (adductor insertion, glute med insertion, piriformis, ITB), MWM for capsular restriction, weak hip abductors in CKC. Goal: full ROM with rotation in full WB at velocity.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Loose Bodies</div>
+<p>Ossified or non-ossified fragments (osteochondral, chondral, fibrous, foreign). Usually secondary to other processes or trauma.<br><strong>Presentation:</strong> hx of dislocation or low-energy trauma; popping/catching/clicking/giving way; sudden leg pain "twinges" when WB; possible stiffness; springy end feel during passive extension.<br><strong>Imaging:</strong> X-ray, MRI with contrast, MRA.<br><strong>Surgery:</strong> arthroscopic removal &#8212; gold standard.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Femoroacetabular Impingement (FAI)</div>
+<p><strong>Types (Ganz):</strong><strong>CAM</strong> &#8212; bony abnormality of femoral head (blocky, non-spherical); young male athletes; impingement in flex + ADD + IR.<br><strong>Pincer</strong> &#8212; increased acetabular rim coverage; middle-aged women in athletics.<br><strong>Mixed:</strong> most common. Associated with labral and chondral damage; significant cause of hip OA.<br><strong>Cardinal sign:</strong> sharp anterior hip pain with deep flexion, deep squat, IR, or abduction. "C sign." <strong>Objective:</strong> limited IR &lt;20&#176; at 90&#176; flexion; +FADIR, +FABER. Common in hockey, dancers, soccer, football.<br><strong>Conservative PT:</strong> discontinue sport temporarily; joint mobs (create joint space); dry needling; hip abductor strengthening; CARS exercises; banded squats for valgus collapse control.<br><strong>Surgical:</strong> arthroscopic osteoplasty; 93% return rate (Philippon 2008).</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Hip Microinstability</div>
+<p>Shallow acetabulum, excessive femoral anteversion, Ehlers-Danlos/Marfan/Down syndrome. Repetitive hip rotation + axial loading in dancers, ballet, martial arts, tennis, baseball.<br><strong>Presentation:</strong> "loosey-goosey" feeling, apprehension at end range; no motion loss but excessive motion (especially IR + ER); insidious anterior/groin pain.<br><strong>Treatment:</strong> core + global hip strengthening, biomechanical analysis; avoid repeated subluxations.<br><strong>Surgical:</strong> arthroscopic capsulorrhaphy if conservative fails.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="container">
-  <div class="section-title">Extra-articular Hip Pathologies</div>
-  <div class="section-sub">Extra-articular pathologies involve tendons, bursae, muscles, and nerves surrounding the hip joint &#8212; not the joint surface itself. They are often overlooked when a patient presents with "hip pain." Snapping hip, bursitis, adductor/hamstring strains, piriformis syndrome, and stress fractures all require distinct examination and management approaches.</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Coxa Saltans &#8212; Snapping Hip Syndrome</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Mechanisms of Snapping</div>
-            <p><strong>Internal (anterior):</strong> Iliopsoas tendon snapping over iliopectineal prominence or lesser tubercle &#8212; most common cause of groin pain in runners <strong>External (lateral):</strong> IT band snapping over greater trochanter &#8212; trochanteric bursitis Iliofemoral ligament over femoral head Long head biceps femoris over ischial tuberosity</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Internal Snapping Hip (Iliopsoas Tendinitis)</div>
-            <p>Pain or discomfort with internal snapping = indication of iliopsoas tendinitis. More common in ballet dancers (often not painful). Ask if activities were ramped up when pain started &#8212; overuse pattern. Chronic degeneration &#8594; tendinopathy (chronic pain + mental pain component). <strong>Presentation:</strong> anterior groin pain moving from hip extension to flexion; popping/clicking/catching; can be associated with LBP (hip flexors tied to pelvic and lumbar position).</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">ITB/Greater Trochanteric Bursitis &amp; External Snapping</div>
-            <p>Thickened ITB or glute max tendon snapping over greater trochanter = irritation and friction.<br><strong>Primary cause:</strong> increased hip adduction + knee IR.<br><strong>Presentation:</strong> pain over greater trochanter radiating down lateral thigh; painful with sleeping and direct pressure; <strong>stair climbing often painful</strong>; +Trendelenburg; associated hip abductor weakness; snapping with sidelying hip moved from flex to ext and IR to ER. More common in middle-aged women; growing prevalence in young runners. Diabetes, OA, and thyroid issues = increased risk.<br><strong>Treatment:</strong> STM + hold/relax stretching (ITB, rectus femoris, iliopsoas); manual + self-MFR to ITB; hip abductor strengthening in SLS; gait training; dry needling + KT tape (star pattern); address pronated foot or poor mechanical control.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Gluteus Medius/Minimus Injury &amp; Piriformis Syndrome</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Gluteus Medius/Minimus Injury</div>
-            <p>Gmed and Gmin = "rotator cuff of the hip." More common in women; recently active. Triggered by falls, prolonged single-leg WB, overuse, sports. <strong>Presentation:</strong> dull lateral hip/groin/buttock pain; focal tenderness at insertion; leg length discrepancy; weak hip abduction; pain with PROM/MMT of ER at 90&#176; hip flexion; +pain with SLS &gt;30 seconds. Tears &#8594; constant pain that feels better in therapy but doesn't improve overall. <strong>Intervention &#8212; 3 Phases:</strong> Phase 1: protection, low-load exercises, minimize dynamic influence, NO hip abd strength training yet. Phase 2: standing sagittal plane focus, static &#8594; dynamic, add planes one at a time. Phase 3: dynamic multiplanar with reaction, stress length-tension (posterolateral lunge).</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Piriformis Syndrome</div>
-            <p><strong>Background:</strong> compression of sciatic nerve as it exits pelvis under piriformis muscle. Pain in sciatic distribution.<br><strong>Three contributing conditions:</strong> (A) myofascial referred pain from trigger points in piriformis (most common); (B) adjacent muscle/nerve/vascular entrapment at greater sciatic foramen (12%); (C) SIJ dysfunction altering piriformis position.<br><strong>Presentation:</strong> chronic buttock pain, numbness, paresthesia; pain with sitting, squatting, standing, bowel movements, and dyspareunia in women; tenderness over sciatic notch; exacerbated by active hip ER; pain may lessen with lying down or bending knee.<br><strong>Tests:</strong> +Pace, +Freiberg, +Lasegue, +log roll, +FAIR test.<br><strong>DDx from radiculopathy:</strong> sciatic N entrapment pain increases with IR during SLR; lumbosacral radiculopathy doesn't change with hip rotation; sciatic N entrapment spares gluteal muscles (radiculopathy causes palpable atrophy).</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Adductor Strain, Hamstring Strain &amp; Stress Fractures</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Adductor Strain</div>
-            <p>MOI: forced push-off or kick in frontal plane, repetitive kicking, overuse during fatigue. Hockey, skating, soccer, rugby. Adductor longus and magnus most frequent.<br><strong>Testing by position:</strong> 0&#176; = gracilis; 45&#176; = adductor longus/brevis; 90&#176; + adduction = pectineus.<br><strong>Grades:</strong> 1 = pain, minimal strength loss; 2 = compromised strength, no complete loss; 3 = complete disruption + complete function loss.<br><strong>Predisposing factors:</strong> adductor weakness, adductor-abductor imbalance, restricted hip ROM.<br><strong>Treatment:</strong> non-surgical; collagen deposition management; return to sport with full strength/ROM; address adductor-abductor-abdominal imbalance.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Hamstring Strains</div>
-            <p>Biceps femoris most commonly involved (short sprint). <strong>MOI:</strong> short sprint, jump/kick, fall or collision. Increased anterior pelvic tilt (tight hip flexors or restricted anterior capsule) &#8594; increased hamstring tension &#8594; higher strain risk. <strong>Hamstring syndrome:</strong> mimics hamstring strain but is actually sciatic N compression at ischial tuberosity. Biceps femoris may be contributing.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Stress Fractures</div>
-            <p><strong>Two types:</strong> Fatigue fracture (normal bone + abnormal stress &#8212; runners) and Insufficiency fracture (normal stress + abnormal bone &#8212; osteoporosis).<br><strong>Most common sites:</strong> pelvic rami, femoral neck.<br><strong>Risk factors:</strong> female triad, amenorrhea, low aerobic fitness, smoking, steroid use, nutritional compromise.<br><strong>Exam:</strong> diffuse radiating groin/hip pain; +fulcrum test; X-ray only 10% sensitive early &#8212; bone scan is better. Night pain, inability to absorb shock during gait.<br><strong>Treatment:</strong> Tension-sided = surgical pinning to prevent AVN. Compression-sided = 6&#8211;8 weeks limited WB, PT for weakness/myofascial/neuromotor imbalances, cross-training (aquatics).</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Iliopsoas Strain</div>
-            <p>MOI: forced extension while hip is actively flexed. <strong>Presentation:</strong> pain with acceleration and high-stepping; RIMS &#8212; increased pain with resisted hip flexion, adduction, and ER. Recovery can be lengthy; reaggravation common.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="section-title">Extra-articular Hip Pathologies</div>
+<div class="section-sub">Extra-articular pathologies involve tendons, bursae, muscles, and nerves surrounding the hip joint &#8212; not the joint surface itself. They are often overlooked when a patient presents with "hip pain." Snapping hip, bursitis, adductor/hamstring strains, piriformis syndrome, and stress fractures all require distinct examination and management approaches.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Coxa Saltans &#8212; Snapping Hip Syndrome</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Mechanisms of Snapping</div>
+<p><strong>Internal (anterior):</strong> Iliopsoas tendon snapping over iliopectineal prominence or lesser tubercle &#8212; most common cause of groin pain in runners <strong>External (lateral):</strong> IT band snapping over greater trochanter &#8212; trochanteric bursitis Iliofemoral ligament over femoral head Long head biceps femoris over ischial tuberosity</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Internal Snapping Hip (Iliopsoas Tendinitis)</div>
+<p>Pain or discomfort with internal snapping = indication of iliopsoas tendinitis. More common in ballet dancers (often not painful). Ask if activities were ramped up when pain started &#8212; overuse pattern. Chronic degeneration &#8594; tendinopathy (chronic pain + mental pain component). <strong>Presentation:</strong> anterior groin pain moving from hip extension to flexion; popping/clicking/catching; can be associated with LBP (hip flexors tied to pelvic and lumbar position).</p>
 </div>
 </div>
-
-<!-- ====== SPECIAL TESTS ====== -->
+<div>
+<div class="bl-strip red">
+<div class="bl-label">ITB/Greater Trochanteric Bursitis &amp; External Snapping</div>
+<p>Thickened ITB or glute max tendon snapping over greater trochanter = irritation and friction.<br><strong>Primary cause:</strong> increased hip adduction + knee IR.<br><strong>Presentation:</strong> pain over greater trochanter radiating down lateral thigh; painful with sleeping and direct pressure; <strong>stair climbing often painful</strong>; +Trendelenburg; associated hip abductor weakness; snapping with sidelying hip moved from flex to ext and IR to ER. More common in middle-aged women; growing prevalence in young runners. Diabetes, OA, and thyroid issues = increased risk.<br><strong>Treatment:</strong> STM + hold/relax stretching (ITB, rectus femoris, iliopsoas); manual + self-MFR to ITB; hip abductor strengthening in SLS; gait training; dry needling + KT tape (star pattern); address pronated foot or poor mechanical control.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Gluteus Medius/Minimus Injury &amp; Piriformis Syndrome</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Gluteus Medius/Minimus Injury</div>
+<p>Gmed and Gmin = "rotator cuff of the hip." More common in women; recently active. Triggered by falls, prolonged single-leg WB, overuse, sports. <strong>Presentation:</strong> dull lateral hip/groin/buttock pain; focal tenderness at insertion; leg length discrepancy; weak hip abduction; pain with PROM/MMT of ER at 90&#176; hip flexion; +pain with SLS &gt;30 seconds. Tears &#8594; constant pain that feels better in therapy but doesn't improve overall. <strong>Intervention &#8212; 3 Phases:</strong> Phase 1: protection, low-load exercises, minimize dynamic influence, NO hip abd strength training yet. Phase 2: standing sagittal plane focus, static &#8594; dynamic, add planes one at a time. Phase 3: dynamic multiplanar with reaction, stress length-tension (posterolateral lunge).</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Piriformis Syndrome</div>
+<p><strong>Background:</strong> compression of sciatic nerve as it exits pelvis under piriformis muscle. Pain in sciatic distribution.<br><strong>Three contributing conditions:</strong> (A) myofascial referred pain from trigger points in piriformis (most common); (B) adjacent muscle/nerve/vascular entrapment at greater sciatic foramen (12%); (C) SIJ dysfunction altering piriformis position.<br><strong>Presentation:</strong> chronic buttock pain, numbness, paresthesia; pain with sitting, squatting, standing, bowel movements, and dyspareunia in women; tenderness over sciatic notch; exacerbated by active hip ER; pain may lessen with lying down or bending knee.<br><strong>Tests:</strong> +Pace, +Freiberg, +Lasegue, +log roll, +FAIR test.<br><strong>DDx from radiculopathy:</strong> sciatic N entrapment pain increases with IR during SLR; lumbosacral radiculopathy doesn't change with hip rotation; sciatic N entrapment spares gluteal muscles (radiculopathy causes palpable atrophy).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Adductor Strain, Hamstring Strain &amp; Stress Fractures</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Adductor Strain</div>
+<p>MOI: forced push-off or kick in frontal plane, repetitive kicking, overuse during fatigue. Hockey, skating, soccer, rugby. Adductor longus and magnus most frequent.<br><strong>Testing by position:</strong> 0&#176; = gracilis; 45&#176; = adductor longus/brevis; 90&#176; + adduction = pectineus.<br><strong>Grades:</strong> 1 = pain, minimal strength loss; 2 = compromised strength, no complete loss; 3 = complete disruption + complete function loss.<br><strong>Predisposing factors:</strong> adductor weakness, adductor-abductor imbalance, restricted hip ROM.<br><strong>Treatment:</strong> non-surgical; collagen deposition management; return to sport with full strength/ROM; address adductor-abductor-abdominal imbalance.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Hamstring Strains</div>
+<p>Biceps femoris most commonly involved (short sprint). <strong>MOI:</strong> short sprint, jump/kick, fall or collision. Increased anterior pelvic tilt (tight hip flexors or restricted anterior capsule) &#8594; increased hamstring tension &#8594; higher strain risk. <strong>Hamstring syndrome:</strong> mimics hamstring strain but is actually sciatic N compression at ischial tuberosity. Biceps femoris may be contributing.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Stress Fractures</div>
+<p><strong>Two types:</strong> Fatigue fracture (normal bone + abnormal stress &#8212; runners) and Insufficiency fracture (normal stress + abnormal bone &#8212; osteoporosis).<br><strong>Most common sites:</strong> pelvic rami, femoral neck.<br><strong>Risk factors:</strong> female triad, amenorrhea, low aerobic fitness, smoking, steroid use, nutritional compromise.<br><strong>Exam:</strong> diffuse radiating groin/hip pain; +fulcrum test; X-ray only 10% sensitive early &#8212; bone scan is better. Night pain, inability to absorb shock during gait.<br><strong>Treatment:</strong> Tension-sided = surgical pinning to prevent AVN. Compression-sided = 6&#8211;8 weeks limited WB, PT for weakness/myofascial/neuromotor imbalances, cross-training (aquatics).</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Iliopsoas Strain</div>
+<p>MOI: forced extension while hip is actively flexed. <strong>Presentation:</strong> pain with acceleration and high-stepping; RIMS &#8212; increased pain with resisted hip flexion, adduction, and ER. Recovery can be lengthy; reaggravation common.</p>
+</div>
 <div class="tab-panel" id="tab-special">
 <div class="container">
-  <div class="section-title">Hip Special Tests with Diagnostic Accuracy</div>
-  <div class="section-sub">Special tests at the hip are organized by clinical purpose. No single test is definitive &#8212; combine with subjective history and functional screening. FADIR has high sensitivity (rule out); valgus stress and specific cluster tests have higher specificity. Always test bilaterally and note quality vs. quantity of response.</div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Intra-articular Tests (Labral, FAI, OA)</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
-      <tbody>
-        <tr><td class="hi">FADIR Test</td><td>Supine</td><td>PT passively flexes, adducts, and internally rotates hip at 90&#176; flexion</td><td>Pain reproduced in groin</td><td>Labral tear / FAI</td><td class="warn">SN:.99 / SP:.25</td></tr>
-        <tr><td class="hi">FABER Test (Patrick)</td><td>Supine</td><td>Foot of involved side on opposite knee (figure 4). Overpressure on flexed knee + opposite ASIS</td><td>Anterior/groin pain = intra-articular (OA, labrum, FAI, loose bodies); Posterior pain = SIJ or posterior labral</td><td>Hip pathology (OA, labrum, FAI); SIJ</td><td class="warn">SI: SN:.77 SP:1.0; OA: SN:.53 SP:.71; FAI/Impingement: SN:.81 SP:.25</td></tr>
-        <tr><td class="hi">Hip Scour Test</td><td>Supine</td><td>Flex + adduct hip to resistance; move through abduction in 2 full arcs. Repeat with long-axis compression</td><td>Replication of symptoms (OA/DJD); catching = labral/FAI</td><td>OA, labral tear, FAI</td><td class="bad">SN:.50 / SP:.29</td></tr>
-        <tr><td class="hi">Active SLR (Stinchfield)</td><td>Supine</td><td>Patient lifts leg to 20 cm above table; PT resists with downward force distal to knee</td><td>Recreation of complaint = intra-articular pain</td><td>Intra-articular pain</td><td>SN:.56</td></tr>
-        <tr><td class="hi">Anterior Labral Tear (Fitzgerald Ant.)</td><td>Supine</td><td>Full hip flex + ER + full abduction &#8594; extend hip combined with IR + adduction</td><td>Reproduction of symptoms &#177; click</td><td>Anterior labral tear</td><td class="ok">SN:.96</td></tr>
-        <tr><td class="hi">Posterior Labral Tear (Fitzgerald Post.)</td><td>Supine</td><td>Full hip flex + adduction + IR &#8594; extend hip with combined abduction + ER</td><td>Reproduction of symptoms &#177; click</td><td>Posterior labral tear</td><td class="ok">SN:.96</td></tr>
-        <tr><td class="hi">Log Roll Test</td><td>Supine</td><td>Leg passively rolled into full IR and ER in neutral hip position</td><td>Increased ER = iliofemoral ligament laxity; clicking = labral tear</td><td>Ligament laxity, labral tear</td><td>Unknown</td></tr>
-        <tr><td class="hi">Snapping Hip Test</td><td>Supine</td><td>Patient actively flexes hip and ER, then extends hip</td><td>Snapping sounds &#177; pain</td><td>Iliopsoas tendinitis / coxa saltans</td><td>Unknown</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Muscular Length &amp; Tendinopathy Tests</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
-      <tbody>
-        <tr><td class="hi">Thomas Test</td><td>Supine</td><td>Patient holds one knee to chest; other leg lies flat. Stabilize pelvis under lumbar spine</td><td>Thigh rises off table</td><td>Hip flexion contracture (iliopsoas)</td><td>&#8212;</td></tr>
-        <tr><td class="hi">Modified Thomas Test</td><td>Supine (knees 4" over edge)</td><td>Thomas position + extend knee: if hip extends further = tight rectus femoris; if hip abducts = ITB tightness; knee &lt;90&#176; = tight rectus femoris</td><td>Thigh rises + knee response guides structure</td><td>Rectus femoris vs. hip flexor vs. ITB tightness</td><td>&#8212;</td></tr>
-        <tr><td class="hi">Ober's Test</td><td>Sidelying (involved side up)</td><td>Abduct leg, flex knee 90&#176;, extend hip, slowly release while stabilizing pelvis</td><td>Thigh remains abducted when released</td><td>ITB/fascia lata tightness</td><td>&#8212;</td></tr>
-        <tr><td class="hi">Ely Test</td><td>Prone</td><td>Flex knee; attempt to bring heel to ipsilateral buttock</td><td>Pelvis rotates anteriorly with hip flexion</td><td>Tight rectus femoris</td><td>&#8212;</td></tr>
-        <tr><td class="hi">Trendelenburg Test</td><td>Standing</td><td>Stand behind; observe PSIS; patient stands on one leg</td><td>Opposite pelvis drops</td><td>Weak/non-functioning gluteus medius on stance leg</td><td class="ok">SN:.77 / SP:.72 gluteal tendinopathy</td></tr>
-        <tr><td class="hi">Resisted External Derotation Test</td><td>Supine</td><td>Flex hip to 90&#176; + ER; resist as patient derotates LE back to neutral</td><td>Reproduction of symptoms along greater trochanter</td><td>Gluteus medius tendinopathy / GTPS</td><td class="ok">SN:.88 / SP:.97</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Neurodynamic &amp; SIJ Tests</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead>
-      <tbody>
-        <tr><td class="hi">FAIR Test (Piriformis)</td><td>Sidelying</td><td>Top hip flexed 60&#176;, knee flexed; PT stabilizes hip, applies downward pressure to knee</td><td>Pain near piriformis/sciatic nerve intersection</td><td>Piriformis syndrome</td><td class="ok">SN:.88 / SP:.83</td></tr>
-        <tr><td class="hi">SLR (Laseque)</td><td>Supine</td><td>Passive hip flexion with knee extended; sensitize with ankle DF, hip ADD, hip IR</td><td>Radicular pain &lt;30&#176; = disc herniation/root pathology; &lt;70&#176; = also indicates nerve root involvement</td><td>Disc herniation, nerve root irritation</td><td>SN:.91 / SP:.26</td></tr>
-        <tr><td class="hi">Crossed SLR</td><td>Supine</td><td>Same as SLR on unaffected leg; if radicular pain produced on affected side</td><td>Radicular symptoms on opposite (affected) side</td><td>Posterolateral disc herniation</td><td>SN:.29 / SP:.88</td></tr>
-        <tr><td class="hi">Slump Test</td><td>Sitting slumped, arms behind back</td><td>Patient extends affected leg + DF foot; neck flexion adds tension</td><td>Pain in sciatic distribution (posterior buttock/thigh/calf)</td><td>Neurological irritation</td><td>&#8212;</td></tr>
-        <tr><td class="hi">Craig Test</td><td>Prone, knee flexed 90&#176;</td><td>IR/ER femur while palpating greater trochanter for maximum lateral prominence; measure angle with goniometer</td><td>Normal torsion = 8&#8211;15&#176; anteversion; &gt;average = anteversion; &lt;average = retroversion</td><td>Femoral torsion assessment</td><td>Unknown</td></tr>
-        <tr><td class="hi">True Leg Length</td><td>Supine</td><td>ASIS (or navel) to medial malleolus; &lt;1 cm difference = normal</td><td>&gt;1 cm difference = abnormal; use flexed knees to determine femur vs. tibia source</td><td>True limb length discrepancy</td><td>&#8212;</td></tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Laslett Cluster for SIJ &#8212; Sensitivity/Specificity by Number of Positives</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Number of Positive Tests</th><th>Sensitivity</th><th>Specificity</th><th>Interpretation</th></tr></thead>
-      <tbody>
-        <tr><td>1+</td><td class="ok">1.00</td><td>.44</td><td>Rules OUT SIJ (very sensitive) &#8212; if all 5 negative, SIJ very unlikely</td></tr>
-        <tr><td>2+</td><td>.93</td><td>.66</td><td>Moderate support for SIJ</td></tr>
-        <tr><td class="hi">3+</td><td>.94</td><td class="ok">.78</td><td><strong>Highly likely SIJ &#8212; clinical threshold for treatment</strong></td></tr>
-        <tr><td>4+</td><td>.60</td><td>.81</td><td>Even more specific for SIJ</td></tr>
-        <tr><td>5 (all positive)</td><td>.27</td><td>.88</td><td>Very specific but insensitive &#8212; don't require all 5</td></tr>
-      </tbody>
-    </table>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">The 5 Laslett Tests</div>
-      <p>SI Distraction &#8226; SI Compression &#8226; Thigh Thrust &#8226; Gaenslen's &#8226; Sacral Thrust (Spring). FABER is often added as a 6th.<br><strong>Thigh Thrust:</strong> supine; flex hip 90&#176;, adduct slightly; apply force through long axis of femur creating A-P shear on SIJ.<br><strong>Distraction:</strong> supine; cross-armed pressure to ASIS gapping the SIJ.<br><strong>Sacral Spring:</strong> prone; vigorous downward pressure on sacrum at S3 (up to 6 times).</p>
-    </div>
-  </div>
-
+<div class="section-title">Hip Special Tests with Diagnostic Accuracy</div>
+<div class="section-sub">Special tests at the hip are organized by clinical purpose. No single test is definitive &#8212; combine with subjective history and functional screening. FADIR has high sensitivity (rule out); valgus stress and specific cluster tests have higher specificity. Always test bilaterally and note quality vs. quantity of response.</div>
+<div class="bl-strip">
+<div class="bl-label">Intra-articular Tests (Labral, FAI, OA)</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead><tbody>
+<tr><td class="hi">FADIR Test</td><td>Supine</td><td>PT passively flexes, adducts, and internally rotates hip at 90&#176; flexion</td><td>Pain reproduced in groin</td><td>Labral tear / FAI</td><td class="warn">SN:.99 / SP:.25</td></tr>
+<tr><td class="hi">FABER Test (Patrick)</td><td>Supine</td><td>Foot of involved side on opposite knee (figure 4). Overpressure on flexed knee + opposite ASIS</td><td>Anterior/groin pain = intra-articular (OA, labrum, FAI, loose bodies); Posterior pain = SIJ or posterior labral</td><td>Hip pathology (OA, labrum, FAI); SIJ</td><td class="warn">SI: SN:.77 SP:1.0; OA: SN:.53 SP:.71; FAI/Impingement: SN:.81 SP:.25</td></tr>
+<tr><td class="hi">Hip Scour Test</td><td>Supine</td><td>Flex + adduct hip to resistance; move through abduction in 2 full arcs. Repeat with long-axis compression</td><td>Replication of symptoms (OA/DJD); catching = labral/FAI</td><td>OA, labral tear, FAI</td><td class="bad">SN:.50 / SP:.29</td></tr>
+<tr><td class="hi">Active SLR (Stinchfield)</td><td>Supine</td><td>Patient lifts leg to 20 cm above table; PT resists with downward force distal to knee</td><td>Recreation of complaint = intra-articular pain</td><td>Intra-articular pain</td><td>SN:.56</td></tr>
+<tr><td class="hi">Anterior Labral Tear (Fitzgerald Ant.)</td><td>Supine</td><td>Full hip flex + ER + full abduction &#8594; extend hip combined with IR + adduction</td><td>Reproduction of symptoms &#177; click</td><td>Anterior labral tear</td><td class="ok">SN:.96</td></tr>
+<tr><td class="hi">Posterior Labral Tear (Fitzgerald Post.)</td><td>Supine</td><td>Full hip flex + adduction + IR &#8594; extend hip with combined abduction + ER</td><td>Reproduction of symptoms &#177; click</td><td>Posterior labral tear</td><td class="ok">SN:.96</td></tr>
+<tr><td class="hi">Log Roll Test</td><td>Supine</td><td>Leg passively rolled into full IR and ER in neutral hip position</td><td>Increased ER = iliofemoral ligament laxity; clicking = labral tear</td><td>Ligament laxity, labral tear</td><td>Unknown</td></tr>
+<tr><td class="hi">Snapping Hip Test</td><td>Supine</td><td>Patient actively flexes hip and ER, then extends hip</td><td>Snapping sounds &#177; pain</td><td>Iliopsoas tendinitis / coxa saltans</td><td>Unknown</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== POST-OP ====== -->
+<div class="bl-strip">
+<div class="bl-label">Muscular Length &amp; Tendinopathy Tests</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead><tbody>
+<tr><td class="hi">Thomas Test</td><td>Supine</td><td>Patient holds one knee to chest; other leg lies flat. Stabilize pelvis under lumbar spine</td><td>Thigh rises off table</td><td>Hip flexion contracture (iliopsoas)</td><td>&#8212;</td></tr>
+<tr><td class="hi">Modified Thomas Test</td><td>Supine (knees 4" over edge)</td><td>Thomas position + extend knee: if hip extends further = tight rectus femoris; if hip abducts = ITB tightness; knee &lt;90&#176; = tight rectus femoris</td><td>Thigh rises + knee response guides structure</td><td>Rectus femoris vs. hip flexor vs. ITB tightness</td><td>&#8212;</td></tr>
+<tr><td class="hi">Ober's Test</td><td>Sidelying (involved side up)</td><td>Abduct leg, flex knee 90&#176;, extend hip, slowly release while stabilizing pelvis</td><td>Thigh remains abducted when released</td><td>ITB/fascia lata tightness</td><td>&#8212;</td></tr>
+<tr><td class="hi">Ely Test</td><td>Prone</td><td>Flex knee; attempt to bring heel to ipsilateral buttock</td><td>Pelvis rotates anteriorly with hip flexion</td><td>Tight rectus femoris</td><td>&#8212;</td></tr>
+<tr><td class="hi">Trendelenburg Test</td><td>Standing</td><td>Stand behind; observe PSIS; patient stands on one leg</td><td>Opposite pelvis drops</td><td>Weak/non-functioning gluteus medius on stance leg</td><td class="ok">SN:.77 / SP:.72 gluteal tendinopathy</td></tr>
+<tr><td class="hi">Resisted External Derotation Test</td><td>Supine</td><td>Flex hip to 90&#176; + ER; resist as patient derotates LE back to neutral</td><td>Reproduction of symptoms along greater trochanter</td><td>Gluteus medius tendinopathy / GTPS</td><td class="ok">SN:.88 / SP:.97</td></tr></tbody></table>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Neurodynamic &amp; SIJ Tests</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>Position</th><th>Technique</th><th>Positive</th><th>Indicates</th><th>SN / SP</th></tr></thead><tbody>
+<tr><td class="hi">FAIR Test (Piriformis)</td><td>Sidelying</td><td>Top hip flexed 60&#176;, knee flexed; PT stabilizes hip, applies downward pressure to knee</td><td>Pain near piriformis/sciatic nerve intersection</td><td>Piriformis syndrome</td><td class="ok">SN:.88 / SP:.83</td></tr>
+<tr><td class="hi">SLR (Laseque)</td><td>Supine</td><td>Passive hip flexion with knee extended; sensitize with ankle DF, hip ADD, hip IR</td><td>Radicular pain &lt;30&#176; = disc herniation/root pathology; &lt;70&#176; = also indicates nerve root involvement</td><td>Disc herniation, nerve root irritation</td><td>SN:.91 / SP:.26</td></tr>
+<tr><td class="hi">Crossed SLR</td><td>Supine</td><td>Same as SLR on unaffected leg; if radicular pain produced on affected side</td><td>Radicular symptoms on opposite (affected) side</td><td>Posterolateral disc herniation</td><td>SN:.29 / SP:.88</td></tr>
+<tr><td class="hi">Slump Test</td><td>Sitting slumped, arms behind back</td><td>Patient extends affected leg + DF foot; neck flexion adds tension</td><td>Pain in sciatic distribution (posterior buttock/thigh/calf)</td><td>Neurological irritation</td><td>&#8212;</td></tr>
+<tr><td class="hi">Craig Test</td><td>Prone, knee flexed 90&#176;</td><td>IR/ER femur while palpating greater trochanter for maximum lateral prominence; measure angle with goniometer</td><td>Normal torsion = 8&#8211;15&#176; anteversion; &gt;average = anteversion; &lt;average = retroversion</td><td>Femoral torsion assessment</td><td>Unknown</td></tr>
+<tr><td class="hi">True Leg Length</td><td>Supine</td><td>ASIS (or navel) to medial malleolus; &lt;1 cm difference = normal</td><td>&gt;1 cm difference = abnormal; use flexed knees to determine femur vs. tibia source</td><td>True limb length discrepancy</td><td>&#8212;</td></tr></tbody></table>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Laslett Cluster for SIJ &#8212; Sensitivity/Specificity by Number of Positives</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Number of Positive Tests</th><th>Sensitivity</th><th>Specificity</th><th>Interpretation</th></tr></thead><tbody>
+<tr><td>1+</td><td class="ok">1.00</td><td>.44</td><td>Rules OUT SIJ (very sensitive) &#8212; if all 5 negative, SIJ very unlikely</td></tr>
+<tr><td>2+</td><td>.93</td><td>.66</td><td>Moderate support for SIJ</td></tr>
+<tr><td class="hi">3+</td><td>.94</td><td class="ok">.78</td><td><strong>Highly likely SIJ &#8212; clinical threshold for treatment</strong></td></tr>
+<tr><td>4+</td><td>.60</td><td>.81</td><td>Even more specific for SIJ</td></tr>
+<tr><td>5 (all positive)</td><td>.27</td><td>.88</td><td>Very specific but insensitive &#8212; don't require all 5</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">The 5 Laslett Tests</div>
+<p>SI Distraction &#8226; SI Compression &#8226; Thigh Thrust &#8226; Gaenslen's &#8226; Sacral Thrust (Spring). FABER is often added as a 6th.<br><strong>Thigh Thrust:</strong> supine; flex hip 90&#176;, adduct slightly; apply force through long axis of femur creating A-P shear on SIJ.<br><strong>Distraction:</strong> supine; cross-armed pressure to ASIS gapping the SIJ.<br><strong>Sacral Spring:</strong> prone; vigorous downward pressure on sacrum at S3 (up to 6 times).</p>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-postop">
 <div class="container">
-  <div class="section-title">Hip Post-Operative Rehabilitation</div>
-  <div class="section-sub">Key post-op protocols for THA, hip arthroscopy, and hip fracture ORIF.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Total Hip Arthroplasty (THA) &mdash; Posterior Approach</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip red"><div class="bl-label">Posterior Precautions</div><p><strong>No hip flexion &gt;90&deg;. No adduction past midline. No internal rotation.</strong> Duration: 6&ndash;12 weeks (surgeon dependent). These precautions protect the posterior capsule repair. Anterior approach: fewer precautions (avoid ER + extension). Use elevated toilet seat, reacher, sock aide, long-handled shoe horn. Sleep with pillow between legs.</p></div>
-      <table class="data-table"><thead><tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th></tr></thead><tbody>
-        <tr><td class="hi">I &mdash; Acute</td><td>0&ndash;2 weeks</td><td>Protect repair, WBAT, independent transfers</td><td>Bed mobility training, sit-to-stand within precautions, gait training with walker &rarr; cane, ankle pumps, quad/glute sets, supine hip abduction</td></tr>
-        <tr><td class="warn">II &mdash; Strengthening</td><td>2&ndash;6 weeks</td><td>Normalize gait, progressive strengthening</td><td>Standing hip exercises (flexion, extension, abduction within precautions), mini-squats, step-ups, stationary bike (raised seat), balance training</td></tr>
-        <tr><td class="warn">III &mdash; Function</td><td>6&ndash;12 weeks</td><td>Precautions lifted, return to full activity</td><td>Progressive resistance, single-leg activities, stair training, community ambulation, sport-specific if appropriate. THA = no high-impact sports (running, jumping discouraged)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Hip Arthroscopy (Labral Repair / FAI)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Phase</th><th>Timeline</th><th>Key Points</th></tr></thead><tbody>
-        <tr><td class="hi">I &mdash; Protection</td><td>0&ndash;2 weeks</td><td>WBAT or TTWB (surgeon specific). CPM if prescribed. Gentle PROM (avoid combined flex + IR + add = FADIR position). Ankle pumps, quad/glute sets</td></tr>
-        <tr><td class="hi">II &mdash; Early Motion</td><td>2&ndash;6 weeks</td><td>Restore ROM (avoid impingement positions). Stationary bike, pool. Progressive WB. Core activation</td></tr>
-        <tr><td class="warn">III &mdash; Strengthening</td><td>6&ndash;12 weeks</td><td>Progressive hip strengthening all planes. Glute med emphasis. Single-leg balance. Sport-specific foundations</td></tr>
-        <tr><td class="warn">IV &mdash; Return to Sport</td><td>3&ndash;6 months</td><td>Running progression, agility, plyometrics. Full return 4&ndash;6 months typical. Y-balance test + single-leg hop symmetry for clearance</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Hip Post-Operative Rehabilitation</div>
+<div class="section-sub">Key post-op protocols for THA, hip arthroscopy, and hip fracture ORIF.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Total Hip Arthroplasty (THA) &mdash; Posterior Approach</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">Posterior Precautions</div>
+<p><strong>No hip flexion &gt;90&deg;. No adduction past midline. No internal rotation.</strong> Duration: 6&ndash;12 weeks (surgeon dependent). These precautions protect the posterior capsule repair. Anterior approach: fewer precautions (avoid ER + extension). Use elevated toilet seat, reacher, sock aide, long-handled shoe horn. Sleep with pillow between legs.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th></tr></thead><tbody>
+<tr><td class="hi">I &mdash; Acute</td><td>0&ndash;2 weeks</td><td>Protect repair, WBAT, independent transfers</td><td>Bed mobility training, sit-to-stand within precautions, gait training with walker &rarr; cane, ankle pumps, quad/glute sets, supine hip abduction</td></tr>
+<tr><td class="warn">II &mdash; Strengthening</td><td>2&ndash;6 weeks</td><td>Normalize gait, progressive strengthening</td><td>Standing hip exercises (flexion, extension, abduction within precautions), mini-squats, step-ups, stationary bike (raised seat), balance training</td></tr>
+<tr><td class="warn">III &mdash; Function</td><td>6&ndash;12 weeks</td><td>Precautions lifted, return to full activity</td><td>Progressive resistance, single-leg activities, stair training, community ambulation, sport-specific if appropriate. THA = no high-impact sports (running, jumping discouraged)</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Hip Arthroscopy (Labral Repair / FAI)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Phase</th><th>Timeline</th><th>Key Points</th></tr></thead><tbody>
+<tr><td class="hi">I &mdash; Protection</td><td>0&ndash;2 weeks</td><td>WBAT or TTWB (surgeon specific). CPM if prescribed. Gentle PROM (avoid combined flex + IR + add = FADIR position). Ankle pumps, quad/glute sets</td></tr>
+<tr><td class="hi">II &mdash; Early Motion</td><td>2&ndash;6 weeks</td><td>Restore ROM (avoid impingement positions). Stationary bike, pool. Progressive WB. Core activation</td></tr>
+<tr><td class="warn">III &mdash; Strengthening</td><td>6&ndash;12 weeks</td><td>Progressive hip strengthening all planes. Glute med emphasis. Single-leg balance. Sport-specific foundations</td></tr>
+<tr><td class="warn">IV &mdash; Return to Sport</td><td>3&ndash;6 months</td><td>Running progression, agility, plyometrics. Full return 4&ndash;6 months typical. Y-balance test + single-leg hop symmetry for clearance</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 &mdash; FAI Presentation</div><p>28-year-old CrossFitter with deep groin pain, worse deep squats. FADIR positive (SN .99), positive scour, limited IR at 90&deg; flexion. <strong>Clinical reasoning:</strong> FADIR + groin pain + limited IR = intra-articular pathology (FAI/labral). Conservative care 8&ndash;12 weeks &rarr; MRA if fails.</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 &mdash; Trendelenburg Gait</div><p>68-year-old female 8 weeks post-right THA, left pelvic drop during right stance. Trendelenburg positive right. Hip ABD 3/5. <strong>Clinical reasoning:</strong> Right glute med weakness. Pelvis drops OPPOSITE side. Progressive glute med strengthening program.</p></div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 &mdash; FAI Presentation</div>
+<p>28-year-old CrossFitter with deep groin pain, worse deep squats. FADIR positive (SN .99), positive scour, limited IR at 90&deg; flexion. <strong>Clinical reasoning:</strong> FADIR + groin pain + limited IR = intra-articular pathology (FAI/labral). Conservative care 8&ndash;12 weeks &rarr; MRA if fails.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 &mdash; Trendelenburg Gait</div>
+<p>68-year-old female 8 weeks post-right THA, left pelvic drop during right stance. Trendelenburg positive right. Hip ABD 3/5. <strong>Clinical reasoning:</strong> Right glute med weakness. Pelvis drops OPPOSITE side. Progressive glute med strengthening program.</p>
 </div>
 </div>
-
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards &#8212; Hip</div>
-  <div class="section-sub">Tap any card to flip. High-yield clinical pearls for exams and practice.</div>
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the hip capsular pattern, and what is the OA Clinical Prediction Rule in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Capsular pattern:</strong> IR &gt; Flexion &gt; Extension (IR is most limited). Most limited = IR. <strong>OA CPR &#8212; 3 of 5:</strong> (1) squatting aggravates; (2) active hip flexion causes lateral hip pain; (3) scour test with adduction causes lateral hip/groin pain (±catching); (4) active hip extension causes pain; (5) passive IR &lt;25&#176;. These three things drive OA treatment: mobilization with ventral+lateral+caudal force at femur, long-axis traction, and soft tissue (hypertonic adductors, weak abductors).</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">List the THA posterior approach precautions, and why?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Posterior approach cuts:</strong> capsule and short external rotators (released to gain access). Protect sciatic nerve and superior gluteal nerve/artery. <strong>Precautions &#215;3 months:</strong> No hip flexion &gt;90&#176;; no hip adduction past midline; no IR of operated hip. Reason: these combined motions recreate the position that would dislocate the hip posteriorly &#8212; through the cut posterior capsule/ER tendons before healing is complete. Careful repair of posterior capsule and ER tendons significantly reduces dislocation risk. Anterior approach spares short ER muscles &#8212; different precautions (no posterior dislocation risk).</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Identify the hip arthroscopy post-op ROM and WB restrictions by procedure?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>All procedures:</strong> Flexion restricted to 0&#8211;90&#176;. <strong>Labral repair:</strong> TTWB &#215;3&#8211;4 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Microfracture:</strong> NWB &#215;0&#8211;6 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Osteoplasty:</strong> PWB &#215;0&#8211;4 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Capsular repair (most restrictive):</strong> TTWB &#215;3&#8211;4 weeks; ER = 0&#176;; Extension = 0&#176;. <strong>Critical:</strong> Avoid long lever arm exercises early (SLR, prone planks) &#8212; can spike inflammation via hip flexor overactivation. Hip flexor tendinopathy is the most common post-arthroscopy complication.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">SCFE vs. In this case, LCPD &#8212; demographics, presentation, and clinical distinguishing features?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>SCFE (Slipped Capital Femoral Epiphysis):</strong> Adolescents 11&#8211;14, more common in boys, overweight (80&#8211;100th percentile), diabetes, cancer treatment. Femoral head slips posteriorly off femoral neck. Presentation: hip/medial thigh/knee pain; <strong>tends to walk with ER foot</strong>; pain with IR relieved with ER; positive log roll and SL raise against resistance; antalgic gait. Treatment: internal fixation ASAP to prevent AVN. <strong>LCPD (Legg-Calv&#233;-Perthes):</strong> Boys 4&#8211;10, unilateral. Blood supply disrupted &#8594; AVN &#8594; femoral head flattens. Presentation: <strong>painless limp</strong> (comes and goes); hip stiffness (flex/IR/abd); constant thigh/groin pain; limb length discrepancy; upper thigh atrophy. Prognosis: good if &lt;6 yo; high deformity/arthritis risk if &gt;6 yo.</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the FADIR test, what does it indicate, and what's its diagnostic accuracy in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>FADIR (Flexion, ADduction, Internal Rotation):</strong> Patient supine; PT passively flexes hip to 90&#176;, adducts, and internally rotates. <strong>Positive:</strong> pain reproduced in the groin. <strong>Indicates:</strong> labral tear or femoroacetabular impingement (FAI). <strong>Diagnostic accuracy:</strong> SN:.99 / SP:.25. Interpretation: very high sensitivity (excellent rule-OUT test &#8212; if negative, labral/FAI very unlikely), but very low specificity (positive result alone is not diagnostic &#8212; many people without labral tears will be positive). Must combine with other tests (FABER, scour, Fitzgerald anterior/posterior) and clinical history. In FAI: also expect limited IR &lt;20&#176; at 90&#176; flexion and possible C-sign (patient cups hand over lateral hip/waist area to describe pain location).</div>
-    </div><div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the Laslett Cluster for SIJ, and at what threshold do you treat in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Laslett Cluster (5 tests):</strong> SI Distraction, SI Compression, Thigh Thrust, Gaenslen's, Sacral Spring Test. FABER often added as 6th. <strong>Clinical threshold: 3 or more positive tests = highly likely SIJ &#8212; treat accordingly.</strong> Sensitivity/specificity at each threshold: 1+ = SN:1.00 (rules out perfectly if all negative); 3+ = SN:.94 SP:.78 (best clinical balance); 5+ = SN:.27 SP:.88 (very specific, too insensitive to require all 5). <strong>Subjective clues for SIJ:</strong> unilateral pain; feeling of being stuck on one side; one-finger pointing to PSIS; postpartum instability. <strong>ASLR:</strong> if pain changes when you provide innominate stability, high probability of SIJ dysfunction.</div>
-    </div>
-  </div>
+<div class="section-title">Review Cards &#8212; Hip</div>
+<div class="section-sub">Tap any card to flip. High-yield clinical pearls for exams and practice.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the hip capsular pattern, and what is the OA Clinical Prediction Rule in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Capsular pattern:</strong> IR &gt; Flexion &gt; Extension (IR is most limited). Most limited = IR. <strong>OA CPR &#8212; 3 of 5:</strong> (1) squatting aggravates; (2) active hip flexion causes lateral hip pain; (3) scour test with adduction causes lateral hip/groin pain (±catching); (4) active hip extension causes pain; (5) passive IR &lt;25&#176;. These three things drive OA treatment: mobilization with ventral+lateral+caudal force at femur, long-axis traction, and soft tissue (hypertonic adductors, weak abductors).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">List the THA posterior approach precautions, and why?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Posterior approach cuts:</strong> capsule and short external rotators (released to gain access). Protect sciatic nerve and superior gluteal nerve/artery. <strong>Precautions &#215;3 months:</strong> No hip flexion &gt;90&#176;; no hip adduction past midline; no IR of operated hip. Reason: these combined motions recreate the position that would dislocate the hip posteriorly &#8212; through the cut posterior capsule/ER tendons before healing is complete. Careful repair of posterior capsule and ER tendons significantly reduces dislocation risk. Anterior approach spares short ER muscles &#8212; different precautions (no posterior dislocation risk).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Identify the hip arthroscopy post-op ROM and WB restrictions by procedure?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>All procedures:</strong> Flexion restricted to 0&#8211;90&#176;. <strong>Labral repair:</strong> TTWB &#215;3&#8211;4 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Microfracture:</strong> NWB &#215;0&#8211;6 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Osteoplasty:</strong> PWB &#215;0&#8211;4 weeks; ER &lt;30&#176;; ABD &lt;30&#176;. <strong>Capsular repair (most restrictive):</strong> TTWB &#215;3&#8211;4 weeks; ER = 0&#176;; Extension = 0&#176;. <strong>Critical:</strong> Avoid long lever arm exercises early (SLR, prone planks) &#8212; can spike inflammation via hip flexor overactivation. Hip flexor tendinopathy is the most common post-arthroscopy complication.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">SCFE vs. In this case, LCPD &#8212; demographics, presentation, and clinical distinguishing features?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>SCFE (Slipped Capital Femoral Epiphysis):</strong> Adolescents 11&#8211;14, more common in boys, overweight (80&#8211;100th percentile), diabetes, cancer treatment. Femoral head slips posteriorly off femoral neck. Presentation: hip/medial thigh/knee pain; <strong>tends to walk with ER foot</strong>; pain with IR relieved with ER; positive log roll and SL raise against resistance; antalgic gait. Treatment: internal fixation ASAP to prevent AVN. <strong>LCPD (Legg-Calv&#233;-Perthes):</strong> Boys 4&#8211;10, unilateral. Blood supply disrupted &#8594; AVN &#8594; femoral head flattens. Presentation: <strong>painless limp</strong> (comes and goes); hip stiffness (flex/IR/abd); constant thigh/groin pain; limb length discrepancy; upper thigh atrophy. Prognosis: good if &lt;6 yo; high deformity/arthritis risk if &gt;6 yo.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the FADIR test, what does it indicate, and what's its diagnostic accuracy in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>FADIR (Flexion, ADduction, Internal Rotation):</strong> Patient supine; PT passively flexes hip to 90&#176;, adducts, and internally rotates. <strong>Positive:</strong> pain reproduced in the groin. <strong>Indicates:</strong> labral tear or femoroacetabular impingement (FAI). <strong>Diagnostic accuracy:</strong> SN:.99 / SP:.25. Interpretation: very high sensitivity (excellent rule-OUT test &#8212; if negative, labral/FAI very unlikely), but very low specificity (positive result alone is not diagnostic &#8212; many people without labral tears will be positive). Must combine with other tests (FABER, scour, Fitzgerald anterior/posterior) and clinical history. In FAI: also expect limited IR &lt;20&#176; at 90&#176; flexion and possible C-sign (patient cups hand over lateral hip/waist area to describe pain location).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the Laslett Cluster for SIJ, and at what threshold do you treat in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Laslett Cluster (5 tests):</strong> SI Distraction, SI Compression, Thigh Thrust, Gaenslen's, Sacral Spring Test. FABER often added as 6th. <strong>Clinical threshold: 3 or more positive tests = highly likely SIJ &#8212; treat accordingly.</strong> Sensitivity/specificity at each threshold: 1+ = SN:1.00 (rules out perfectly if all negative); 3+ = SN:.94 SP:.78 (best clinical balance); 5+ = SN:.27 SP:.88 (very specific, too insensitive to require all 5). <strong>Subjective clues for SIJ:</strong> unilateral pain; feeling of being stuck on one side; one-finger pointing to PSIS; postpartum instability. <strong>ASLR:</strong> if pain changes when you provide innominate stability, high probability of SIJ dysfunction.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -812,6 +751,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

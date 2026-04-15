@@ -1,1142 +1,961 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Brain &amp; CNS</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Brain &amp; CNS</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat has-active">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" class="active">Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">Neuroscience · Neuroanatomy</div>
-  <h1>Brain &amp; <span>CNS</span></h1>
-  <p>The brain is the command center for all human movement, sensation, cognition, and emotion — and understanding its structure is essential for every neurological diagnosis you will encounter in PT. Each lobe has specific functions, each vascular territory produces a distinct stroke syndrome, and each lesion level (cortex, brainstem, cerebellum, spinal cord) creates a predictable pattern of deficits. This module covers the cerebral cortex, white matter tracts, basal ganglia, diencephalon, brainstem, cerebellum, spinal cord, ventricular system, and vascular supply.</p>
+<div class="hero-tag">Neuroscience · Neuroanatomy</div>
+<h1>Brain &amp; <span>CNS</span></h1>
+<p>The brain is the command center for all human movement, sensation, cognition, and emotion — and understanding its structure is essential for every neurological diagnosis you will encounter in PT. Each lobe has specific functions, each vascular territory produces a distinct stroke syndrome, and each lesion level (cortex, brainstem, cerebellum, spinal cord) creates a predictable pattern of deficits. This module covers the cerebral cortex, white matter tracts, basal ganglia, diencephalon, brainstem, cerebellum, spinal cord, ventricular system, and vascular supply.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('overview',this)">NS Overview</button>
-  <button onclick="showTab('cortex',this)">Cerebral Cortex</button>
-  <button onclick="showTab('lobes',this)">Lobes &amp; Functions</button>
-  <button onclick="showTab('white',this)">White Matter &amp; BG</button>
-  <button onclick="showTab('diencephalon',this)">Diencephalon</button>
-  <button onclick="showTab('brainstem',this)">Brainstem &amp; Cerebellum</button>
-  <button onclick="showTab('spinalcord',this)">Spinal Cord</button>
-  <button onclick="showTab('cells',this)">NS Cells</button>
-  <button onclick="showTab('clinical',this)">Clinical Pathology</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('overview',this)">NS Overview</button>
+<button onclick="showTab('cortex',this)">Cerebral Cortex</button>
+<button onclick="showTab('lobes',this)">Lobes &amp; Functions</button>
+<button onclick="showTab('white',this)">White Matter &amp; BG</button>
+<button onclick="showTab('diencephalon',this)">Diencephalon</button>
+<button onclick="showTab('brainstem',this)">Brainstem &amp; Cerebellum</button>
+<button onclick="showTab('spinalcord',this)">Spinal Cord</button>
+<button onclick="showTab('cells',this)">NS Cells</button>
+<button onclick="showTab('clinical',this)">Clinical Pathology</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== NS OVERVIEW ====== -->
 <div class="tab-panel active" id="tab-overview">
 <div class="container">
-
-  <div class="section-title">Organization of the Nervous System</div>
-  <div class="section-sub">The nervous system divides into the CNS (brain + spinal cord) and the PNS (cranial + spinal nerves). Each major CNS structure has distinct anatomy and function — injury at any level produces predictable clinical deficits.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Central Nervous System (CNS)</div>
-      <p><strong>Brain</strong>
-          <p><strong>Cerebrum</strong> = Telencephalon + Diencephalon <strong>Brainstem</strong> = Midbrain + Pons + Medulla <strong>Cerebellum</strong></p> <strong>Spinal Cord</strong></p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Peripheral Nervous System (PNS)</div>
-      <p><strong>Cranial Nerves</strong> (CN I–XII) <strong>Spinal Nerves</strong> (31 pairs) Somatic nervous system (voluntary) Autonomic nervous system (involuntary)</p>
-      <div class="bl-strip gold">
-        <div class="bl-label">Key Distinction</div>
-        <p>Myelin in CNS = oligodendrocytes. Myelin in PNS = Schwann cells. Disease targeting each produces different syndromes (MS = CNS; GBS = PNS).</p>
-      </div>
-
-  <div class="section-title">Brain — Structural Landmarks</div>
-  <div class="bl-strip">
-      <div class="bl-label">Major Fissures &amp; Sulci</div>
-      <table class="data-table">
-        <thead><tr><th>Structure</th><th>Separates</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Longitudinal Fissure</strong></td><td>Left / Right hemispheres</td></tr>
-          <tr><td><strong>Transverse Fissure</strong></td><td>Cerebellum / Cerebrum</td></tr>
-          <tr><td><strong>Central Sulcus</strong></td><td>Frontal / Parietal lobes (motor vs. sensory)</td></tr>
-          <tr><td><strong>Lateral Sulcus (Fissure)</strong></td><td>Temporal lobe (below)</td></tr>
-          <tr><td><strong>Parieto-Occipital Sulcus</strong></td><td>Parietal / Occipital lobes</td></tr>
-        </tbody>
-      </table>
-    <div class="bl-strip">
-      <div class="bl-label">Telencephalon Components</div>
-      <p><strong>Cerebral Cortex</strong> — gray matter; arranged in columns; 5 lobes <strong>White Matter</strong> — circuitry connecting cortical regions and CNS <strong>Basal Ganglia</strong> — deep nuclei between cortex and thalamus; motor refinement</p>
-      <div class="bl-strip">
-        <div class="bl-label">Gray vs. White Matter</div>
-        <p>Gray matter = cell bodies (neurons). White matter = myelinated axons (circuitry). Function or movement = specific combination/sequence of gray matter columns.</p>
-      </div>
-
-  <div class="section-title">Primary vs. Association Areas</div>
-  <div class="bl-strip">
-      <div class="bl-label">Primary Areas</div>
-      <p>First place sensory information reaches the cortex OR where motor information exits the cortex. <strong>"First in, last out."</strong> Direct, point-to-point processing. Smaller but critical.</p>
-      <p>Primary Motor Cortex (Area 4) — precentral gyrus Primary Somatosensory (Areas 3,1,2) — postcentral gyrus Primary Visual — occipital lobe Primary Auditory — temporal lobe</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Association Areas</div>
-      <p>Where <strong>integration</strong> of sensory and motor information occurs. Compare and combine inputs from multiple modalities. Make up the <strong>vast majority (~75%) of the cerebral cortex</strong>. Basis of <strong>cognition</strong> — awareness, perception, thinking, knowledge, memory.</p>
-    </div>
-
+<div class="section-title">Organization of the Nervous System</div>
+<div class="section-sub">The nervous system divides into the CNS (brain + spinal cord) and the PNS (cranial + spinal nerves). Each major CNS structure has distinct anatomy and function — injury at any level produces predictable clinical deficits.</div>
+<div class="bl-strip">
+<div class="bl-label">Central Nervous System (CNS)</div>
+<p><strong>Brain</strong>
+<p><strong>Cerebrum</strong> = Telencephalon + Diencephalon <strong>Brainstem</strong> = Midbrain + Pons + Medulla <strong>Cerebellum</strong></p><strong>Spinal Cord</strong></p>
 </div>
-
-<!-- ====== CEREBRAL CORTEX ====== -->
+<div class="bl-strip">
+<div class="bl-label">Peripheral Nervous System (PNS)</div>
+<p><strong>Cranial Nerves</strong> (CN I–XII) <strong>Spinal Nerves</strong> (31 pairs) Somatic nervous system (voluntary) Autonomic nervous system (involuntary)</p>
+<div class="bl-strip gold">
+<div class="bl-label">Key Distinction</div>
+<p>Myelin in CNS = oligodendrocytes. Myelin in PNS = Schwann cells. Disease targeting each produces different syndromes (MS = CNS; GBS = PNS).</p>
+</div>
+<div class="section-title">Brain — Structural Landmarks</div>
+<div class="bl-strip">
+<div class="bl-label">Major Fissures &amp; Sulci</div>
+<table class="data-table"><thead>
+<tr><th>Structure</th><th>Separates</th></tr></thead><tbody>
+<tr><td><strong>Longitudinal Fissure</strong></td><td>Left / Right hemispheres</td></tr>
+<tr><td><strong>Transverse Fissure</strong></td><td>Cerebellum / Cerebrum</td></tr>
+<tr><td><strong>Central Sulcus</strong></td><td>Frontal / Parietal lobes (motor vs. sensory)</td></tr>
+<tr><td><strong>Lateral Sulcus (Fissure)</strong></td><td>Temporal lobe (below)</td></tr>
+<tr><td><strong>Parieto-Occipital Sulcus</strong></td><td>Parietal / Occipital lobes</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Telencephalon Components</div>
+<p><strong>Cerebral Cortex</strong> — gray matter; arranged in columns; 5 lobes <strong>White Matter</strong> — circuitry connecting cortical regions and CNS <strong>Basal Ganglia</strong> — deep nuclei between cortex and thalamus; motor refinement</p>
+<div class="bl-strip">
+<div class="bl-label">Gray vs. White Matter</div>
+<p>Gray matter = cell bodies (neurons). White matter = myelinated axons (circuitry). Function or movement = specific combination/sequence of gray matter columns.</p>
+</div>
+<div class="section-title">Primary vs. Association Areas</div>
+<div class="bl-strip">
+<div class="bl-label">Primary Areas</div>
+<p>First place sensory information reaches the cortex OR where motor information exits the cortex. <strong>"First in, last out."</strong> Direct, point-to-point processing. Smaller but critical.</p>
+<p>Primary Motor Cortex (Area 4) — precentral gyrus Primary Somatosensory (Areas 3,1,2) — postcentral gyrus Primary Visual — occipital lobe Primary Auditory — temporal lobe</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Association Areas</div>
+<p>Where <strong>integration</strong> of sensory and motor information occurs. Compare and combine inputs from multiple modalities. Make up the <strong>vast majority (~75%) of the cerebral cortex</strong>. Basis of <strong>cognition</strong> — awareness, perception, thinking, knowledge, memory.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-cortex">
 <div class="container">
-
-  <div class="section-title">Cerebral Cortex — Five Lobes</div>
-  <div class="section-sub">Each lobe is named for the overlying bone. The insula is buried behind the lateral sulcus. All lobes have both primary and association areas.</div>
-
-  <div>
-    <div>
-      <div>Anterior to Central Sulcus</div>
-      <strong>Frontal Lobe</strong>
-    </div>
-    <div>
-      <div>Posterior to Central Sulcus</div>
-      <strong>Parietal Lobe</strong>
-    </div>
-    <div>
-      <div>Below Lateral Sulcus</div>
-      <strong>Temporal Lobe</strong>
-    </div>
-    <div>
-      <div>Posterior Pole</div>
-      <strong>Occipital Lobe</strong>
-    </div>
-  </div>
-  <div>
-    <div>Behind Lateral Sulcus (hidden)</div>
-    <strong>Insula Lobe</strong>
-  </div>
-
-  <div class="section-title">Brodmann Areas — Key Ones to Know</div>
-  <table class="data-table">
-    <thead>
-      <tr><th>Area</th><th>Brodmann #</th><th>Location</th><th>Function</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><strong>Primary Motor Cortex</strong></td><td class="hi">Area 4</td><td>Precentral gyrus (frontal)</td><td>Motor output; motor homunculus; contralateral body control</td></tr>
-      <tr><td><strong>Premotor Area</strong></td><td class="hi">Area 6</td><td>Anterior to Area 4 (frontal)</td><td>Motor association; movement planning</td></tr>
-      <tr><td><strong>Frontal Eye Field</strong></td><td class="hi">Area 8</td><td>Frontal lobe</td><td>Voluntary eye movements</td></tr>
-      <tr><td><strong>Primary Somatosensory</strong></td><td class="hi">Areas 3,1,2</td><td>Postcentral gyrus (parietal)</td><td>Tactile/proprioceptive input; sensory homunculus</td></tr>
-      <tr><td><strong>Primary Visual</strong></td><td class="hi">Area 17</td><td>Calcarine sulcus (occipital)</td><td>Initial visual processing</td></tr>
-      <tr><td><strong>Primary Auditory</strong></td><td class="hi">Areas 41,42</td><td>Superior temporal gyrus</td><td>Hearing</td></tr>
-      <tr><td><strong>Broca's Area</strong></td><td class="hi">Areas 44,45</td><td>Inferior frontal gyrus (L)</td><td>Motor program for speech production</td></tr>
-      <tr><td><strong>Wernicke's Area</strong></td><td class="hi">Area 22</td><td>Superior temporal gyrus (L)</td><td>Language comprehension</td></tr>
-    </tbody>
-  </table>
-
-  <div class="section-title">Motor &amp; Sensory Homunculi</div>
-  <div class="bl-strip">
-      <div class="bl-label">Motor Homunculus — Area 4</div>
-      <p>Map of the <strong>precentral gyrus</strong> showing which areas of cortex control which body regions. Key features:</p>
-      <p>Areas with finer motor control = <strong>larger cortical representation</strong> Face and hands have disproportionately large areas Supplies muscles of the <strong>contralateral side</strong> (due to pyramidal decussation at medulla) Right brain controls left body; left brain controls right body</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Sensory Homunculus — Areas 3,1,2</div>
-      <p>Map of the <strong>postcentral gyrus</strong> showing which areas receive input from each body region. Key features:</p>
-      <p>More sensitive body regions = <strong>more cortical space</strong> Proportional to number of receptors in that body region Hands and lips have disproportionately large areas CNS adapts: <strong>neuroplasticity</strong> can change homuncular maps with use/training</p>
-    </div>
-
+<div class="section-title">Cerebral Cortex — Five Lobes</div>
+<div class="section-sub">Each lobe is named for the overlying bone. The insula is buried behind the lateral sulcus. All lobes have both primary and association areas.</div>
+<div>
+<div>
+<div>Anterior to Central Sulcus</div><strong>Frontal Lobe</strong>
 </div>
-
-<!-- ====== LOBES ====== -->
+<div>
+<div>Posterior to Central Sulcus</div><strong>Parietal Lobe</strong>
+</div>
+<div>
+<div>Below Lateral Sulcus</div><strong>Temporal Lobe</strong>
+</div>
+<div>
+<div>Posterior Pole</div><strong>Occipital Lobe</strong>
+</div>
+</div>
+<div>
+<div>Behind Lateral Sulcus (hidden)</div><strong>Insula Lobe</strong>
+</div>
+<div class="section-title">Brodmann Areas — Key Ones to Know</div>
+<table class="data-table"><thead>
+<tr><th>Area</th><th>Brodmann #</th><th>Location</th><th>Function</th></tr></thead><tbody>
+<tr><td><strong>Primary Motor Cortex</strong></td><td class="hi">Area 4</td><td>Precentral gyrus (frontal)</td><td>Motor output; motor homunculus; contralateral body control</td></tr>
+<tr><td><strong>Premotor Area</strong></td><td class="hi">Area 6</td><td>Anterior to Area 4 (frontal)</td><td>Motor association; movement planning</td></tr>
+<tr><td><strong>Frontal Eye Field</strong></td><td class="hi">Area 8</td><td>Frontal lobe</td><td>Voluntary eye movements</td></tr>
+<tr><td><strong>Primary Somatosensory</strong></td><td class="hi">Areas 3,1,2</td><td>Postcentral gyrus (parietal)</td><td>Tactile/proprioceptive input; sensory homunculus</td></tr>
+<tr><td><strong>Primary Visual</strong></td><td class="hi">Area 17</td><td>Calcarine sulcus (occipital)</td><td>Initial visual processing</td></tr>
+<tr><td><strong>Primary Auditory</strong></td><td class="hi">Areas 41,42</td><td>Superior temporal gyrus</td><td>Hearing</td></tr>
+<tr><td><strong>Broca's Area</strong></td><td class="hi">Areas 44,45</td><td>Inferior frontal gyrus (L)</td><td>Motor program for speech production</td></tr>
+<tr><td><strong>Wernicke's Area</strong></td><td class="hi">Area 22</td><td>Superior temporal gyrus (L)</td><td>Language comprehension</td></tr></tbody></table>
+<div class="section-title">Motor &amp; Sensory Homunculi</div>
+<div class="bl-strip">
+<div class="bl-label">Motor Homunculus — Area 4</div>
+<p>Map of the <strong>precentral gyrus</strong> showing which areas of cortex control which body regions. Key features:</p>
+<p>Areas with finer motor control = <strong>larger cortical representation</strong> Face and hands have disproportionately large areas Supplies muscles of the <strong>contralateral side</strong> (due to pyramidal decussation at medulla) Right brain controls left body; left brain controls right body</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Sensory Homunculus — Areas 3,1,2</div>
+<p>Map of the <strong>postcentral gyrus</strong> showing which areas receive input from each body region. Key features:</p>
+<p>More sensitive body regions = <strong>more cortical space</strong> Proportional to number of receptors in that body region Hands and lips have disproportionately large areas CNS adapts: <strong>neuroplasticity</strong> can change homuncular maps with use/training</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-lobes">
 <div class="container">
-
-  <div class="section-title">Lobes — Functions, Areas &amp; Clinical Notes</div>
-  <div class="section-sub">Each lobe has primary and association areas. Wernicke's and Broca's areas are the two critical language centers. Memory is distributed across multiple structures.</div>
-
-  <div class="bl-strip">
-    <h3>Frontal Lobe</h3>
-    <p><strong>Primary Motor (Area 4)</strong> — precentral gyrus; motor homunculus; contralateral control <strong>Premotor Area (Area 6)</strong> — motor association; plans movement sequences <strong>Broca's Area</strong> — dominant hemisphere (L in 95%); generates motor program for <em>larynx, tongue, lips</em>; premotor area for language; transmits to primary motor cortex for speech output <strong>Frontal Eye Field (Area 8)</strong> — voluntary eye movements</p>
-      <div>
-        <div class="bl-strip">
-          <div class="bl-label">Prefrontal Cortex</div>
-          <p><strong>Functions:</strong> Decision-making, planning, moral judgment, short-term/working memory, emotional control.<br><strong>Damage:</strong> <em>Perseveration</em> — inability to stop doing something (sandpapering through a table; continuing a topic after conversation moves on).<br><strong>Classic case:</strong> Phineas Gage — ventromedial frontal lobe destruction → personality change to irreverent, fitful behavior.</p>
-        </div>
-  </div>
-
-  <div class="bl-strip">
-    <h3>Parietal Lobe</h3>
-    <p><strong>Primary Somatosensory (Areas 3,1,2)</strong> — postcentral gyrus; sensory homunculus <strong>Somatosensory Association Area</strong> — interpret sensory info; vast majority of cortex Proprioception — position of limbs Location of touch or pain Shape, weight, and texture of objects Wernicke's area is at the confluence of temporal, parietal, and occipital lobes</p>
-      <div class="bl-strip gold">
-        <div class="bl-label">Sensory Association — Somesthetic</div>
-        <p>The somesthetic association area integrates sensory modalities — allowing you to recognize objects by touch without vision, and to know where your limbs are in space without looking. Damage → astereognosis (inability to identify objects by touch).</p>
-      </div>
-  </div>
-
-  <div class="bl-strip">
-    <h3>Temporal Lobe</h3>
-    <p><strong>Primary Auditory Area</strong> — input from cochlea (via CN VIII)<br><strong>Auditory Association Area</strong> — remember names of music, identify voices <strong>Wernicke's Area</strong> — left hemisphere in most people; <strong>permits recognition of spoken AND written language</strong>; creates a plan of speech; at confluence of temporal, parietal, and occipital lobes <strong>Face recognition</strong> — faces recognized in temporal lobe (fusiform face area)</p>
-      <div class="bl-strip purple">
-        <div class="bl-label">Language Centers — Broca vs. Wernicke</div>
-        <p><strong>Broca's</strong> (frontal, L): generates the <em>motor program</em> for speech. Damage → Broca's aphasia: non-fluent, effortful speech, understands language. <strong>Wernicke's</strong> (temporal, L): <em>comprehension</em> of language. Damage → Wernicke's aphasia: fluent but nonsensical speech, cannot understand. Lesion to Wernicke's may allow describing a pencil but not finding the word "pencil."</p>
-      </div>
-  </div>
-
-  <div class="bl-strip">
-    <h3>Occipital Lobe</h3>
-    <p><strong>Primary Visual Area (Area 17)</strong> — calcarine sulcus; initial visual processing <strong>Visual Association Area</strong> — identifies the things we see Note: <strong>Faces are recognized in the temporal lobe</strong>, not occipital</p>
-      <div class="bl-strip green">
-        <div class="bl-label">Visual Pathway</div>
-        <p>Lateral geniculate body of thalamus → visual cortex (occipital). Thalamus is the relay point for all sensory input to cortex — vision included (CN I = olfaction is the one exception that bypasses thalamus).</p>
-      </div>
-  </div>
-
-  <div class="bl-strip">
-    <h3>Insula (Insular Cortex)</h3>
-    <p><strong>Location:</strong> Behind lateral sulcus — hidden, must retract temporal lobe to see <strong>Gustatory cortex</strong> — taste <strong>Emotional aspects of pain</strong> — the "suffering" component of pain experience</p>
-  </div>
-
-  <div class="section-title">Limbic System &amp; Memory</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Limbic System Components</div>
-      <p>Loop of cortical structures surrounding deep brain</p>
-      <p><strong>Hippocampus</strong> — declarative memory; required to put facts into long-term memory; lesions → inability to form NEW memories (anterograde amnesia); no influence on recalling old memories; larger in people with better memories; <em>can change size with use</em> <strong>Amygdala</strong> — emotional memory; fear; aversive learning <strong>Fornix</strong> — connects hippocampus to hypothalamus and other structures <strong>Cingulate Gyrus</strong> — mood; emotional processing</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Memory Types by Structure</div>
-      <table class="data-table">
-        <thead><tr><th>Memory Type</th><th>Structure</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Declarative (facts)</strong></td><td class="hi">Hippocampus</td></tr>
-          <tr><td><strong>Procedural / Motor Learning</strong></td><td class="hi">Cerebellum</td></tr>
-          <tr><td><strong>Working / Short-Term</strong></td><td class="hi">Prefrontal Cortex</td></tr>
-          <tr><td><strong>Emotional / Fear</strong></td><td class="hi">Amygdala</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip purple">
-        <div class="bl-label">Amnesia Types</div>
-        <p><strong>Anterograde amnesia</strong>: cannot store NEW data (hippocampal damage). <strong>Retrograde amnesia</strong>: cannot remember OLD data. H.M. case study: bilateral hippocampal lesion → classic anterograde amnesia — could not form new memories but recalled pre-surgical events.</p>
-      </div>
-
+<div class="section-title">Lobes — Functions, Areas &amp; Clinical Notes</div>
+<div class="section-sub">Each lobe has primary and association areas. Wernicke's and Broca's areas are the two critical language centers. Memory is distributed across multiple structures.</div>
+<div class="bl-strip"><h3>Frontal Lobe</h3>
+<p><strong>Primary Motor (Area 4)</strong> — precentral gyrus; motor homunculus; contralateral control <strong>Premotor Area (Area 6)</strong> — motor association; plans movement sequences <strong>Broca's Area</strong> — dominant hemisphere (L in 95%); generates motor program for <em>larynx, tongue, lips</em>; premotor area for language; transmits to primary motor cortex for speech output <strong>Frontal Eye Field (Area 8)</strong> — voluntary eye movements</p>
+<div>
+<div class="bl-strip">
+<div class="bl-label">Prefrontal Cortex</div>
+<p><strong>Functions:</strong> Decision-making, planning, moral judgment, short-term/working memory, emotional control.<br><strong>Damage:</strong><em>Perseveration</em> — inability to stop doing something (sandpapering through a table; continuing a topic after conversation moves on).<br><strong>Classic case:</strong> Phineas Gage — ventromedial frontal lobe destruction → personality change to irreverent, fitful behavior.</p>
 </div>
-
-<!-- ====== WHITE MATTER & BG ====== -->
+</div>
+<div class="bl-strip"><h3>Parietal Lobe</h3>
+<p><strong>Primary Somatosensory (Areas 3,1,2)</strong> — postcentral gyrus; sensory homunculus <strong>Somatosensory Association Area</strong> — interpret sensory info; vast majority of cortex Proprioception — position of limbs Location of touch or pain Shape, weight, and texture of objects Wernicke's area is at the confluence of temporal, parietal, and occipital lobes</p>
+<div class="bl-strip gold">
+<div class="bl-label">Sensory Association — Somesthetic</div>
+<p>The somesthetic association area integrates sensory modalities — allowing you to recognize objects by touch without vision, and to know where your limbs are in space without looking. Damage → astereognosis (inability to identify objects by touch).</p>
+</div>
+</div>
+<div class="bl-strip"><h3>Temporal Lobe</h3>
+<p><strong>Primary Auditory Area</strong> — input from cochlea (via CN VIII)<br><strong>Auditory Association Area</strong> — remember names of music, identify voices <strong>Wernicke's Area</strong> — left hemisphere in most people; <strong>permits recognition of spoken AND written language</strong>; creates a plan of speech; at confluence of temporal, parietal, and occipital lobes <strong>Face recognition</strong> — faces recognized in temporal lobe (fusiform face area)</p>
+<div class="bl-strip purple">
+<div class="bl-label">Language Centers — Broca vs. Wernicke</div>
+<p><strong>Broca's</strong> (frontal, L): generates the <em>motor program</em> for speech. Damage → Broca's aphasia: non-fluent, effortful speech, understands language. <strong>Wernicke's</strong> (temporal, L): <em>comprehension</em> of language. Damage → Wernicke's aphasia: fluent but nonsensical speech, cannot understand. Lesion to Wernicke's may allow describing a pencil but not finding the word "pencil."</p>
+</div>
+</div>
+<div class="bl-strip"><h3>Occipital Lobe</h3>
+<p><strong>Primary Visual Area (Area 17)</strong> — calcarine sulcus; initial visual processing <strong>Visual Association Area</strong> — identifies the things we see Note: <strong>Faces are recognized in the temporal lobe</strong>, not occipital</p>
+<div class="bl-strip green">
+<div class="bl-label">Visual Pathway</div>
+<p>Lateral geniculate body of thalamus → visual cortex (occipital). Thalamus is the relay point for all sensory input to cortex — vision included (CN I = olfaction is the one exception that bypasses thalamus).</p>
+</div>
+</div>
+<div class="bl-strip"><h3>Insula (Insular Cortex)</h3>
+<p><strong>Location:</strong> Behind lateral sulcus — hidden, must retract temporal lobe to see <strong>Gustatory cortex</strong> — taste <strong>Emotional aspects of pain</strong> — the "suffering" component of pain experience</p>
+</div>
+<div class="section-title">Limbic System &amp; Memory</div>
+<div class="bl-strip">
+<div class="bl-label">Limbic System Components</div>
+<p>Loop of cortical structures surrounding deep brain</p>
+<p><strong>Hippocampus</strong> — declarative memory; required to put facts into long-term memory; lesions → inability to form NEW memories (anterograde amnesia); no influence on recalling old memories; larger in people with better memories; <em>can change size with use</em><strong>Amygdala</strong> — emotional memory; fear; aversive learning <strong>Fornix</strong> — connects hippocampus to hypothalamus and other structures <strong>Cingulate Gyrus</strong> — mood; emotional processing</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Memory Types by Structure</div>
+<table class="data-table"><thead>
+<tr><th>Memory Type</th><th>Structure</th></tr></thead><tbody>
+<tr><td><strong>Declarative (facts)</strong></td><td class="hi">Hippocampus</td></tr>
+<tr><td><strong>Procedural / Motor Learning</strong></td><td class="hi">Cerebellum</td></tr>
+<tr><td><strong>Working / Short-Term</strong></td><td class="hi">Prefrontal Cortex</td></tr>
+<tr><td><strong>Emotional / Fear</strong></td><td class="hi">Amygdala</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Amnesia Types</div>
+<p><strong>Anterograde amnesia</strong>: cannot store NEW data (hippocampal damage). <strong>Retrograde amnesia</strong>: cannot remember OLD data. H.M. case study: bilateral hippocampal lesion → classic anterograde amnesia — could not form new memories but recalled pre-surgical events.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-white">
 <div class="container">
-
-  <div class="section-title">White Matter &amp; Basal Ganglia</div>
-  <div class="section-sub">White matter is the wiring of the brain — myelinated axon bundles organized into three types. The basal ganglia are deep gray matter nuclei that refine motor output through a brake/disinhibition mechanism.</div>
-
-  <div class="section-title">White Matter — Three Types</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Commissures (Transverse)</div>
-      <p>Connect <strong>left ↔ right hemispheres</strong>. Site where fibers cross to the contralateral side.</p>
-      <p><strong>Corpus Callosum</strong> — major interhemispheric connection; 4 regions: <strong>Rostrum</strong> (anterior-most tip) → <strong>Genu</strong> (knee; frontal fibers) → <strong>Body</strong> (main trunk) → <strong>Splenium</strong> (posterior; visual/parietal fibers)<br><strong>Anterior Commissure</strong> <strong>Hippocampal Commissure</strong> (commissure of the fornix)</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Projection Fibers (Vertical)</div>
-      <p>Connect <strong>cortex ↔ lower CNS</strong>.</p>
-      <p><strong>Afferent fibers</strong> — input TO cortex (sensory); e.g., visual pathway (lateral geniculate → visual cortex)<br><strong>Efferent fibers</strong> — output FROM cortex (motor); e.g., <strong>Corticospinal Tract (CST)</strong> — from motor cortex to spinal cord anterior horn Travel through <strong>internal capsule</strong></p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Association Fibers (Horizontal)</div>
-      <p>Connect <strong>regions within the same hemisphere</strong>.</p>
-      <p>Short fibers: adjacent gyri Long fibers: distant lobes <strong>Fasciculus</strong> = bundle/tract of fibers (e.g., cuneate fasciculus = proprioception for C and T regions)</p>
-    </div>
-
-  <div class="section-title">Basal Ganglia</div>
-
-  <div class="bl-strip gold">
-    <div class="bl-label">Location</div>
-    <p>Deep gray matter nuclei located between the <strong>cerebral cortex and thalamus</strong>, also in midbrain and near thalamus. Surrounded by white matter (internal capsule).</p>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Structure — Nuclei</div>
-      <table class="data-table">
-        <thead><tr><th>Nucleus</th><th>Role</th><th>Terminology</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Caudate Nucleus</strong></td><td>Receives input (striatum)</td><td>Part of striatum</td></tr>
-          <tr><td><strong>Putamen</strong></td><td>Receives input (striatum)</td><td>Striatum + lentiform</td></tr>
-          <tr><td><strong>Globus Pallidus</strong></td><td>Sends output outside BG</td><td>Lentiform nucleus</td></tr>
-          <tr><td><strong>Substantia Nigra</strong></td><td>Dopamine; <strong>intrinsic</strong> nuclei (all projections within BG)</td><td class="bad">Loss = Parkinson's</td></tr>
-          <tr><td><strong>Subthalamic Nucleus</strong></td><td>Functionally part of BG</td><td class="bad">Lesion = Hemiballismus</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip">
-        <div class="bl-label">Terminology</div>
-        <p><strong>Striatum</strong> = Caudate + Putamen (input nuclei). <strong>Lentiform</strong> = Putamen + Globus Pallidus. <strong>Corpus Striatum</strong> = all three (Caudate + Putamen + Globus Pallidus).</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">Function — Brake/Disinhibition Hypothesis</div>
-      <p>The BG operates as a <strong>braking system</strong> on movement. At rest, the BG continuously <em>inhibits</em> the thalamus — suppressing unwanted movement. To produce movement, the cortex <em>inhibits the inhibitor</em> = <strong>disinhibition</strong>.</p>
-      <p>Cortical INPUT to BG = <strong>excitatory</strong> BG OUTPUT → <strong>thalamus + brainstem</strong> BG <strong>refines</strong> movement — inhibits "incorrect" motor activity while allowing desired movement BG is <strong>unlikely to initiate</strong> movement <strong>"Releasing the brake"</strong> = disinhibition → desired movement accomplished, wrong movements still inhibited</p>
-      <div class="bl-strip red">
-        <div class="bl-label">Clinical: Thalamic Drive</div>
-        <p><strong>Parkinson's</strong>: ↑ BG inhibition → <strong>↓ thalamic drive</strong> → hypo-motor (rigidity, bradykinesia, tremor).<br><strong>Huntington's</strong>: ↓ BG inhibition → <strong>↑ thalamic drive</strong> → hyper-motor (chorea = involuntary writhing).</p>
-      </div>
-
+<div class="section-title">White Matter &amp; Basal Ganglia</div>
+<div class="section-sub">White matter is the wiring of the brain — myelinated axon bundles organized into three types. The basal ganglia are deep gray matter nuclei that refine motor output through a brake/disinhibition mechanism.</div>
+<div class="section-title">White Matter — Three Types</div>
+<div class="bl-strip">
+<div class="bl-label">Commissures (Transverse)</div>
+<p>Connect <strong>left ↔ right hemispheres</strong>. Site where fibers cross to the contralateral side.</p>
+<p><strong>Corpus Callosum</strong> — major interhemispheric connection; 4 regions: <strong>Rostrum</strong> (anterior-most tip) → <strong>Genu</strong> (knee; frontal fibers) → <strong>Body</strong> (main trunk) → <strong>Splenium</strong> (posterior; visual/parietal fibers)<br><strong>Anterior Commissure</strong><strong>Hippocampal Commissure</strong> (commissure of the fornix)</p>
 </div>
-
-<!-- ====== DIENCEPHALON ====== -->
+<div class="bl-strip">
+<div class="bl-label">Projection Fibers (Vertical)</div>
+<p>Connect <strong>cortex ↔ lower CNS</strong>.</p>
+<p><strong>Afferent fibers</strong> — input TO cortex (sensory); e.g., visual pathway (lateral geniculate → visual cortex)<br><strong>Efferent fibers</strong> — output FROM cortex (motor); e.g., <strong>Corticospinal Tract (CST)</strong> — from motor cortex to spinal cord anterior horn Travel through <strong>internal capsule</strong></p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Association Fibers (Horizontal)</div>
+<p>Connect <strong>regions within the same hemisphere</strong>.</p>
+<p>Short fibers: adjacent gyri Long fibers: distant lobes <strong>Fasciculus</strong> = bundle/tract of fibers (e.g., cuneate fasciculus = proprioception for C and T regions)</p>
+</div>
+<div class="section-title">Basal Ganglia</div>
+<div class="bl-strip gold">
+<div class="bl-label">Location</div>
+<p>Deep gray matter nuclei located between the <strong>cerebral cortex and thalamus</strong>, also in midbrain and near thalamus. Surrounded by white matter (internal capsule).</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Structure — Nuclei</div>
+<table class="data-table"><thead>
+<tr><th>Nucleus</th><th>Role</th><th>Terminology</th></tr></thead><tbody>
+<tr><td><strong>Caudate Nucleus</strong></td><td>Receives input (striatum)</td><td>Part of striatum</td></tr>
+<tr><td><strong>Putamen</strong></td><td>Receives input (striatum)</td><td>Striatum + lentiform</td></tr>
+<tr><td><strong>Globus Pallidus</strong></td><td>Sends output outside BG</td><td>Lentiform nucleus</td></tr>
+<tr><td><strong>Substantia Nigra</strong></td><td>Dopamine; <strong>intrinsic</strong> nuclei (all projections within BG)</td><td class="bad">Loss = Parkinson's</td></tr>
+<tr><td><strong>Subthalamic Nucleus</strong></td><td>Functionally part of BG</td><td class="bad">Lesion = Hemiballismus</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Terminology</div>
+<p><strong>Striatum</strong> = Caudate + Putamen (input nuclei). <strong>Lentiform</strong> = Putamen + Globus Pallidus. <strong>Corpus Striatum</strong> = all three (Caudate + Putamen + Globus Pallidus).</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Function — Brake/Disinhibition Hypothesis</div>
+<p>The BG operates as a <strong>braking system</strong> on movement. At rest, the BG continuously <em>inhibits</em> the thalamus — suppressing unwanted movement. To produce movement, the cortex <em>inhibits the inhibitor</em> = <strong>disinhibition</strong>.</p>
+<p>Cortical INPUT to BG = <strong>excitatory</strong> BG OUTPUT → <strong>thalamus + brainstem</strong> BG <strong>refines</strong> movement — inhibits "incorrect" motor activity while allowing desired movement BG is <strong>unlikely to initiate</strong> movement <strong>"Releasing the brake"</strong> = disinhibition → desired movement accomplished, wrong movements still inhibited</p>
+<div class="bl-strip red">
+<div class="bl-label">Clinical: Thalamic Drive</div>
+<p><strong>Parkinson's</strong>: ↑ BG inhibition → <strong>↓ thalamic drive</strong> → hypo-motor (rigidity, bradykinesia, tremor).<br><strong>Huntington's</strong>: ↓ BG inhibition → <strong>↑ thalamic drive</strong> → hyper-motor (chorea = involuntary writhing).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-diencephalon">
 <div class="container">
-
-  <div class="section-title">Diencephalon</div>
-  <div class="section-sub">The diencephalon contains the thalamus, hypothalamus, subthalamus, and epithalamus. It sits between the cerebral hemispheres and the brainstem — functioning as the critical relay and regulatory hub of the brain.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Thalamus — "Gateway to the Cortex"</div>
-      <p>The thalamus is a <strong>relay center that MODIFIES</strong> sensory information before projecting it to the correct cortical region. Not a passive switch — it shapes what reaches consciousness.</p>
-      <p><strong>All sensory input passes through EXCEPT CN I</strong> (olfaction goes directly to cortex) Input is modified at the thalamus Motor signals pass through via basal ganglia → thalamus → cortex Limbic system connects to thalamus → role in emotional behavior Most output goes to cortex; some to hypothalamus and BG Each region (nucleus) of thalamus connects to specific cortical region</p>
-      <div class="bl-strip">
-        <div class="bl-label">Visual Pathway Example</div>
-        <p>Visual input → <strong>lateral geniculate body</strong> of thalamus → visual cortex (occipital). Demonstrates the thalamic relay for specific sensory modalities.</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">Hypothalamus — Homeostatic Regulator</div>
-      <p><strong>Location:</strong> Base of diencephalon, inferior to thalamus. Influences three systems: <strong>ANS, Endocrine, Limbic</strong>.</p>
-      <table class="data-table">
-        <thead><tr><th>Function</th><th>Mechanism</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Regulate ANS</strong></td><td>Posterior → sympathetic; Anterior → parasympathetic</td></tr>
-          <tr><td><strong>Body Temp</strong></td><td>↑ temp → shiver; conserve → vasoconstriction; ↓ temp → sweat + vasodilation</td></tr>
-          <tr><td><strong>Water Balance</strong></td><td>Produces ADH (vasopressin) → kidney reabsorbs H₂O; sends to posterior pituitary</td></tr>
-          <tr><td><strong>Anterior Pituitary</strong></td><td>Inhibit or stimulate hormone release</td></tr>
-          <tr><td><strong>Circadian Rhythm</strong></td><td>Suprachiasmatic nucleus = internal body clock; sleep-wake cycles</td></tr>
-          <tr><td><strong>Emotion</strong></td><td>Via limbic connections — rage, fear, pleasure</td></tr>
-        </tbody>
-      </table>
-
-  <div class="bl-strip purple">
-    <div class="bl-label">Subthalamus</div>
-    <p>Located in close proximity to substantia nigra and red nucleus. Functionally part of the basal ganglia. <strong>Lesion → Hemiballismus</strong> — violent, involuntary flinging movements of the contralateral limbs.</p>
-  </div>
-
+<div class="section-title">Diencephalon</div>
+<div class="section-sub">The diencephalon contains the thalamus, hypothalamus, subthalamus, and epithalamus. It sits between the cerebral hemispheres and the brainstem — functioning as the critical relay and regulatory hub of the brain.</div>
+<div class="bl-strip">
+<div class="bl-label">Thalamus — "Gateway to the Cortex"</div>
+<p>The thalamus is a <strong>relay center that MODIFIES</strong> sensory information before projecting it to the correct cortical region. Not a passive switch — it shapes what reaches consciousness.</p>
+<p><strong>All sensory input passes through EXCEPT CN I</strong> (olfaction goes directly to cortex) Input is modified at the thalamus Motor signals pass through via basal ganglia → thalamus → cortex Limbic system connects to thalamus → role in emotional behavior Most output goes to cortex; some to hypothalamus and BG Each region (nucleus) of thalamus connects to specific cortical region</p>
+<div class="bl-strip">
+<div class="bl-label">Visual Pathway Example</div>
+<p>Visual input → <strong>lateral geniculate body</strong> of thalamus → visual cortex (occipital). Demonstrates the thalamic relay for specific sensory modalities.</p>
 </div>
-
-<!-- ====== BRAINSTEM & CEREBELLUM ====== -->
+<div class="bl-strip">
+<div class="bl-label">Hypothalamus — Homeostatic Regulator</div>
+<p><strong>Location:</strong> Base of diencephalon, inferior to thalamus. Influences three systems: <strong>ANS, Endocrine, Limbic</strong>.</p>
+<table class="data-table"><thead>
+<tr><th>Function</th><th>Mechanism</th></tr></thead><tbody>
+<tr><td><strong>Regulate ANS</strong></td><td>Posterior → sympathetic; Anterior → parasympathetic</td></tr>
+<tr><td><strong>Body Temp</strong></td><td>↑ temp → shiver; conserve → vasoconstriction; ↓ temp → sweat + vasodilation</td></tr>
+<tr><td><strong>Water Balance</strong></td><td>Produces ADH (vasopressin) → kidney reabsorbs H₂O; sends to posterior pituitary</td></tr>
+<tr><td><strong>Anterior Pituitary</strong></td><td>Inhibit or stimulate hormone release</td></tr>
+<tr><td><strong>Circadian Rhythm</strong></td><td>Suprachiasmatic nucleus = internal body clock; sleep-wake cycles</td></tr>
+<tr><td><strong>Emotion</strong></td><td>Via limbic connections — rage, fear, pleasure</td></tr></tbody></table>
+<div class="bl-strip purple">
+<div class="bl-label">Subthalamus</div>
+<p>Located in close proximity to substantia nigra and red nucleus. Functionally part of the basal ganglia. <strong>Lesion → Hemiballismus</strong> — violent, involuntary flinging movements of the contralateral limbs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-brainstem">
 <div class="container">
-
-  <div class="section-title">Brainstem &amp; Cerebellum</div>
-  <div class="section-sub">The brainstem contains critical life-support centers and is the junction point for all ascending/descending CNS pathways. The cerebellum coordinates movement and motor learning.</div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Brainstem — Three Vertical Divisions</div>
-    <p><strong>Tectum</strong> (roof of midbrain) · <strong>Tegmentum</strong> (middle — CN nuclei, reticular system, other nuclei) · <strong>Basis/Base</strong> (contains major motor tracts and some nuclei)</p>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Midbrain</div>
-      <p><strong>Substantia Nigra</strong> — dopamine-containing cells; loss = Parkinson's Disease <strong>Red Nucleus</strong> — motor coordination <strong>Cerebral Peduncles</strong> — pathway for corticospinal motor tract <strong>Superior Colliculus</strong> — visual/ocular reflexes <strong>Inferior Colliculus</strong> — auditory reflexes <strong>Reticular Activating System</strong> — damage → coma</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Pons</div>
-      <p>Pathways for <strong>motor tracts</strong> Attachment for <strong>superior and middle cerebellar peduncles</strong> CN nuclei (CN V, VI, VII, VIII originate here) Reticular system continuation Respiratory regulation (apneustic + pneumotaxic centers)</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Medulla Oblongata</div>
-      <p>Most <strong>cardiovascular and respiratory</strong> control centers Attachment for <strong>inferior cerebellar peduncle</strong> <strong>Pyramidal Decussation</strong> — corticospinal tract crosses midline at caudal inferior medulla → right brain controls left body CN nuclei (CN IX, X, XI, XII)</p>
-    </div>
-
-  <div class="bl-strip red">
-    <div class="bl-label">Brainstem Contents Summary</div>
-    <p>Ascending/descending CNS tracts · Nuclei for <strong>CN 3–12</strong> in brainstem · Cerebellar peduncle attachments · ANS pathways · Reticular activating system (consciousness/arousal/sleep-wake)</p>
-  </div>
-
-  <div class="section-title">Reticular Activating System (RAS)</div>
-  <div class="bl-strip">
-      <div class="bl-label">Structure</div>
-      <p>Network of neural connections in the <strong>tegmentum of the brainstem</strong>. Not a discrete structure — diffuse clusters of gray matter (nuclei) scattered throughout pons, midbrain, and medulla. Connections with hypothalamus and thalamus.</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Function</div>
-      <p>Control of <strong>cardiovascular system</strong> Control of <strong>respiratory system</strong> <strong>Level of consciousness, arousal, sleep-wake cycle</strong> (reticular activating system) <strong>Damage in midbrain RAS → coma</strong></p>
-    </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Brainstem Divisions &#8212; Detailed Internal Anatomy</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Three Cross-Sectional Zones (All 3 Divisions)</div>
-      <p>Each brainstem division has 3 zones from posterior to anterior: <strong>Tectum</strong> (roof &#8212; only in midbrain: superior + inferior colliculi), <strong>Tegmentum</strong> (middle &#8212; CN nuclei, reticular formation, ascending sensory tracts, some motor nuclei), <strong>Basis/Base</strong> (anterior &#8212; major descending motor tracts, some nuclei). Think of it like a sandwich: the filling (tegmentum) contains the vital nuclei, the bottom bun (basis) carries the motor highways.</p></div>
-
-      <table class="data-table"><thead><tr><th>Division</th><th>Cranial Nerves</th><th>Key Nuclei &amp; Structures</th><th>Key Tracts</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn"><strong>Midbrain</strong><br>(mesencephalon)</td><td>CN III (oculomotor) &#8212; ventral midbrain<br>CN IV (trochlear) &#8212; dorsal midbrain (only CN that exits posteriorly)</td><td><strong>Superior colliculus:</strong> visual reflexes (orienting to visual stimuli). <strong>Inferior colliculus:</strong> auditory reflexes (startle response). <strong>Substantia nigra:</strong> dopaminergic neurons &#8594; BG modulation (loss = Parkinson&#8217;s). <strong>Red nucleus:</strong> origin of rubrospinal tract (facilitates flexors). <strong>Cerebral peduncles:</strong> contain corticospinal + corticobulbar tracts. <strong>Periaqueductal gray (PAG):</strong> pain modulation center</td><td>CST passes through cerebral peduncles. Medial lemniscus (ascending touch/proprioception). Spinothalamic tract ascending</td><td><strong>Weber&#8217;s syndrome:</strong> midbrain stroke &#8594; ipsilateral CN III palsy (ptosis, &#8220;down &amp; out&#8221; eye, dilated pupil) + contralateral hemiplegia (CST). <strong>Parinaud&#8217;s syndrome:</strong> superior colliculus lesion &#8594; vertical gaze palsy (can&#8217;t look up). Midbrain damage to RAS &#8594; <strong>coma</strong></td></tr>
-        <tr><td class="warn"><strong>Pons</strong></td><td>CN V (trigeminal) &#8212; mid-pons<br>CN VI (abducens) &#8212; pontomedullary junction<br>CN VII (facial) &#8212; pontomedullary junction<br>CN VIII (vestibulocochlear) &#8212; pontomedullary junction</td><td><strong>Pontine nuclei:</strong> relay cortical input to cerebellum (corticopontocerebellar pathway). <strong>Superior + middle cerebellar peduncles</strong> attach here. <strong>Vestibular nuclei:</strong> CN VIII processing &#8594; vestibulospinal tract origin. <strong>Facial nucleus:</strong> CN VII motor (upper vs. lower face distinction for Bell&#8217;s vs. stroke). <strong>Locus coeruleus:</strong> norepinephrine source &#8594; arousal, attention (involved in anxiety, PTSD)</td><td>CST passes through basis pontis. Middle cerebellar peduncle = largest peduncle (afferent to cerebellum from cortex via pontine nuclei)</td><td><strong>Locked-in syndrome:</strong> ventral pons lesion &#8594; bilateral CST + corticobulbar destruction &#8594; complete paralysis EXCEPT vertical eye movements (CN III/IV in midbrain spared). Consciousness fully intact &#8212; patient is aware but can&#8217;t move or speak. <strong>CN VII nuclear lesion in pons:</strong> ipsilateral complete facial paralysis (same as Bell&#8217;s presentation)</td></tr>
-        <tr><td class="warn"><strong>Medulla Oblongata</strong></td><td>CN IX (glossopharyngeal)<br>CN X (vagus)<br>CN XI (accessory &#8212; spinal root enters here)<br>CN XII (hypoglossal)</td><td><strong>Cardiovascular center:</strong> heart rate and blood pressure regulation. <strong>Respiratory center:</strong> breathing rhythm. <strong>Vomiting center</strong> (area postrema). <strong>Nucleus gracilis + nucleus cuneatus:</strong> 2nd-order neurons of DC/ML pathway. <strong>Inferior olivary nucleus:</strong> relays to cerebellum (motor learning, error correction). <strong>Inferior cerebellar peduncle</strong> attaches here. <strong>Pyramids:</strong> bulge on ventral medulla containing CST fibers</td><td><strong>Pyramidal decussation:</strong> ~85% of CST fibers cross here &#8594; contralateral motor control. This is why a RIGHT cortical stroke causes LEFT-sided weakness. DC/ML pathway: 1st synapse in nucleus gracilis/cuneatus &#8594; internal arcuate fibers cross &#8594; medial lemniscus ascends to thalamus</td><td><strong>Lateral medullary (Wallenberg) syndrome:</strong> PICA occlusion &#8594; ipsilateral: Horner&#8217;s, facial pain/temp loss (CN V spinal nucleus), ataxia (inferior cerebellar peduncle), dysphagia/hoarseness (CN IX/X); contralateral: body pain/temp loss (lateral STT). <strong>Medullary lesions</strong> can be rapidly fatal due to cardiovascular/respiratory center damage</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip red"><div class="bl-label">Reticular Formation &#8212; Runs Through All 3 Divisions</div>
-      <p>A diffuse network of neurons in the tegmentum extending from medulla through pons to midbrain. NOT a discrete anatomical structure &#8212; more like a distributed &#8220;mesh network.&#8221; Contains: <strong>Reticular activating system (RAS)</strong> &#8212; level of consciousness, arousal, sleep-wake cycle (damage = coma).<br><strong>Cardiovascular center</strong> (medulla).<br><strong>Respiratory center</strong> (medulla/pons).<br><strong>Pain modulation</strong> &#8212; descending inhibition via periaqueductal gray &#8594; nucleus raphe magnus &#8594; dorsal horn (serotonin-mediated).<br><strong>Reticulospinal tracts:</strong> pontine (medial) = excitatory to extensors; medullary (lateral) = inhibitory. Imbalance after UMN lesion &#8594; spasticity (loss of medullary inhibition).</p></div>
-  </div>
-
-
-  <div class='divider'></div>
-
+<div class="section-title">Brainstem &amp; Cerebellum</div>
+<div class="section-sub">The brainstem contains critical life-support centers and is the junction point for all ascending/descending CNS pathways. The cerebellum coordinates movement and motor learning.</div>
+<div class="bl-strip">
+<div class="bl-label">Brainstem — Three Vertical Divisions</div>
+<p><strong>Tectum</strong> (roof of midbrain) · <strong>Tegmentum</strong> (middle — CN nuclei, reticular system, other nuclei) · <strong>Basis/Base</strong> (contains major motor tracts and some nuclei)</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Midbrain</div>
+<p><strong>Substantia Nigra</strong> — dopamine-containing cells; loss = Parkinson's Disease <strong>Red Nucleus</strong> — motor coordination <strong>Cerebral Peduncles</strong> — pathway for corticospinal motor tract <strong>Superior Colliculus</strong> — visual/ocular reflexes <strong>Inferior Colliculus</strong> — auditory reflexes <strong>Reticular Activating System</strong> — damage → coma</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Pons</div>
+<p>Pathways for <strong>motor tracts</strong> Attachment for <strong>superior and middle cerebellar peduncles</strong> CN nuclei (CN V, VI, VII, VIII originate here) Reticular system continuation Respiratory regulation (apneustic + pneumotaxic centers)</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Medulla Oblongata</div>
+<p>Most <strong>cardiovascular and respiratory</strong> control centers Attachment for <strong>inferior cerebellar peduncle</strong><strong>Pyramidal Decussation</strong> — corticospinal tract crosses midline at caudal inferior medulla → right brain controls left body CN nuclei (CN IX, X, XI, XII)</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Brainstem Contents Summary</div>
+<p>Ascending/descending CNS tracts · Nuclei for <strong>CN 3–12</strong> in brainstem · Cerebellar peduncle attachments · ANS pathways · Reticular activating system (consciousness/arousal/sleep-wake)</p>
+</div>
+<div class="section-title">Reticular Activating System (RAS)</div>
+<div class="bl-strip">
+<div class="bl-label">Structure</div>
+<p>Network of neural connections in the <strong>tegmentum of the brainstem</strong>. Not a discrete structure — diffuse clusters of gray matter (nuclei) scattered throughout pons, midbrain, and medulla. Connections with hypothalamus and thalamus.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Function</div>
+<p>Control of <strong>cardiovascular system</strong> Control of <strong>respiratory system</strong><strong>Level of consciousness, arousal, sleep-wake cycle</strong> (reticular activating system) <strong>Damage in midbrain RAS → coma</strong></p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Brainstem Divisions &#8212; Detailed Internal Anatomy</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Three Cross-Sectional Zones (All 3 Divisions)</div>
+<p>Each brainstem division has 3 zones from posterior to anterior: <strong>Tectum</strong> (roof &#8212; only in midbrain: superior + inferior colliculi), <strong>Tegmentum</strong> (middle &#8212; CN nuclei, reticular formation, ascending sensory tracts, some motor nuclei), <strong>Basis/Base</strong> (anterior &#8212; major descending motor tracts, some nuclei). Think of it like a sandwich: the filling (tegmentum) contains the vital nuclei, the bottom bun (basis) carries the motor highways.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Division</th><th>Cranial Nerves</th><th>Key Nuclei &amp; Structures</th><th>Key Tracts</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn"><strong>Midbrain</strong><br>(mesencephalon)</td><td>CN III (oculomotor) &#8212; ventral midbrain<br>CN IV (trochlear) &#8212; dorsal midbrain (only CN that exits posteriorly)</td><td><strong>Superior colliculus:</strong> visual reflexes (orienting to visual stimuli). <strong>Inferior colliculus:</strong> auditory reflexes (startle response). <strong>Substantia nigra:</strong> dopaminergic neurons &#8594; BG modulation (loss = Parkinson&#8217;s). <strong>Red nucleus:</strong> origin of rubrospinal tract (facilitates flexors). <strong>Cerebral peduncles:</strong> contain corticospinal + corticobulbar tracts. <strong>Periaqueductal gray (PAG):</strong> pain modulation center</td><td>CST passes through cerebral peduncles. Medial lemniscus (ascending touch/proprioception). Spinothalamic tract ascending</td><td><strong>Weber&#8217;s syndrome:</strong> midbrain stroke &#8594; ipsilateral CN III palsy (ptosis, &#8220;down &amp; out&#8221; eye, dilated pupil) + contralateral hemiplegia (CST). <strong>Parinaud&#8217;s syndrome:</strong> superior colliculus lesion &#8594; vertical gaze palsy (can&#8217;t look up). Midbrain damage to RAS &#8594; <strong>coma</strong></td></tr>
+<tr><td class="warn"><strong>Pons</strong></td><td>CN V (trigeminal) &#8212; mid-pons<br>CN VI (abducens) &#8212; pontomedullary junction<br>CN VII (facial) &#8212; pontomedullary junction<br>CN VIII (vestibulocochlear) &#8212; pontomedullary junction</td><td><strong>Pontine nuclei:</strong> relay cortical input to cerebellum (corticopontocerebellar pathway). <strong>Superior + middle cerebellar peduncles</strong> attach here. <strong>Vestibular nuclei:</strong> CN VIII processing &#8594; vestibulospinal tract origin. <strong>Facial nucleus:</strong> CN VII motor (upper vs. lower face distinction for Bell&#8217;s vs. stroke). <strong>Locus coeruleus:</strong> norepinephrine source &#8594; arousal, attention (involved in anxiety, PTSD)</td><td>CST passes through basis pontis. Middle cerebellar peduncle = largest peduncle (afferent to cerebellum from cortex via pontine nuclei)</td><td><strong>Locked-in syndrome:</strong> ventral pons lesion &#8594; bilateral CST + corticobulbar destruction &#8594; complete paralysis EXCEPT vertical eye movements (CN III/IV in midbrain spared). Consciousness fully intact &#8212; patient is aware but can&#8217;t move or speak. <strong>CN VII nuclear lesion in pons:</strong> ipsilateral complete facial paralysis (same as Bell&#8217;s presentation)</td></tr>
+<tr><td class="warn"><strong>Medulla Oblongata</strong></td><td>CN IX (glossopharyngeal)<br>CN X (vagus)<br>CN XI (accessory &#8212; spinal root enters here)<br>CN XII (hypoglossal)</td><td><strong>Cardiovascular center:</strong> heart rate and blood pressure regulation. <strong>Respiratory center:</strong> breathing rhythm. <strong>Vomiting center</strong> (area postrema). <strong>Nucleus gracilis + nucleus cuneatus:</strong> 2nd-order neurons of DC/ML pathway. <strong>Inferior olivary nucleus:</strong> relays to cerebellum (motor learning, error correction). <strong>Inferior cerebellar peduncle</strong> attaches here. <strong>Pyramids:</strong> bulge on ventral medulla containing CST fibers</td><td><strong>Pyramidal decussation:</strong> ~85% of CST fibers cross here &#8594; contralateral motor control. This is why a RIGHT cortical stroke causes LEFT-sided weakness. DC/ML pathway: 1st synapse in nucleus gracilis/cuneatus &#8594; internal arcuate fibers cross &#8594; medial lemniscus ascends to thalamus</td><td><strong>Lateral medullary (Wallenberg) syndrome:</strong> PICA occlusion &#8594; ipsilateral: Horner&#8217;s, facial pain/temp loss (CN V spinal nucleus), ataxia (inferior cerebellar peduncle), dysphagia/hoarseness (CN IX/X); contralateral: body pain/temp loss (lateral STT). <strong>Medullary lesions</strong> can be rapidly fatal due to cardiovascular/respiratory center damage</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Reticular Formation &#8212; Runs Through All 3 Divisions</div>
+<p>A diffuse network of neurons in the tegmentum extending from medulla through pons to midbrain. NOT a discrete anatomical structure &#8212; more like a distributed &#8220;mesh network.&#8221; Contains: <strong>Reticular activating system (RAS)</strong> &#8212; level of consciousness, arousal, sleep-wake cycle (damage = coma).<br><strong>Cardiovascular center</strong> (medulla).<br><strong>Respiratory center</strong> (medulla/pons).<br><strong>Pain modulation</strong> &#8212; descending inhibition via periaqueductal gray &#8594; nucleus raphe magnus &#8594; dorsal horn (serotonin-mediated).<br><strong>Reticulospinal tracts:</strong> pontine (medial) = excitatory to extensors; medullary (lateral) = inhibitory. Imbalance after UMN lesion &#8594; spasticity (loss of medullary inhibition).</p>
+</div>
+</div>
+<div class='divider'>
+</div>
 <div class="section-title">Cerebellum</div>
-  <div class="bl-strip">
-      <div class="bl-label">Functions</div>
-      <p><strong>Coordination of voluntary movement</strong> — smooth, accurate execution <strong>Equilibrium</strong> — balance and postural coordination <strong>Motor/Procedural Learning</strong> — "how to" memories; skill acquisition</p>
-      <div class="bl-strip">
-        <div class="bl-label">Clinical Note</div>
-        <p>Cerebellar damage → ataxia (incoordination), dysmetria (over/undershoot), nystagmus, intention tremor, dysdiadochokinesia. Ipsilateral signs (unlike cortical lesions which are contralateral).</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Cerebellar Peduncles</div>
-      <p>White matter connections between cerebellum and brainstem (bidirectional):</p>
-      <p><strong>Superior peduncle</strong> — attaches to midbrain; primarily efferent (output)<br><strong>Middle peduncle</strong> — attaches to pons; primarily afferent (input from cortex)<br><strong>Inferior peduncle</strong> — attaches to medulla; mixed (spinocerebellar tracts)</p>
-      <p>Vermis = midline structure of cerebellum; connects left and right cerebellar hemispheres</p>
-    </div>
-  </div>
-
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Cranial Nerves &#8212; Complete OINA Reference</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Cranial Nerve Summary Table</div><p>Mnemonic for type: <strong>S</strong>ome <strong>S</strong>ay <strong>M</strong>arry <strong>M</strong>oney <strong>B</strong>ut <strong>M</strong>y <strong>B</strong>rother <strong>S</strong>ays <strong>B</strong>ig <strong>B</strong>rains <strong>M</strong>atter <strong>M</strong>ore (S=Sensory, M=Motor, B=Both). Mnemonic for names: <strong>O</strong>h <strong>O</strong>h <strong>O</strong>h <strong>T</strong>o <strong>T</strong>ouch <strong>A</strong>nd <strong>F</strong>eel <strong>V</strong>ery <strong>G</strong>ood <strong>V</strong>elvet, <strong>A</strong>h <strong>H</strong>eaven.</p></div>
-      <table class="data-table"><thead><tr><th>CN</th><th>Name</th><th>Type</th><th>Foramen</th><th>Function</th><th>Test</th></tr></thead><tbody>
-        <tr><td class="hi">I</td><td>Olfactory</td><td>Sensory</td><td>Cribriform plate</td><td>Smell. Only CN that does NOT pass through thalamus</td><td>Identify familiar scent</td></tr>
-        <tr><td class="hi">II</td><td>Optic</td><td>Sensory</td><td>Optic canal</td><td>Vision</td><td>Visual acuity; visual fields</td></tr>
-        <tr><td class="warn">III</td><td>Oculomotor</td><td>Motor</td><td>Superior orbital fissure</td><td>Eye movement (SR, IR, MR, IO); levator palpebrae; pupil constriction + accommodation</td><td>H-test eye movements; pupillary light reflex</td></tr>
-        <tr><td class="hi">IV</td><td>Trochlear</td><td>Motor</td><td>Superior orbital fissure</td><td>Superior oblique &#8212; depresses, abducts, IR eye</td><td>Look down &amp; in (&#8220;SO<sub>4</sub>&#8221;)</td></tr>
-        <tr><td class="warn">V</td><td>Trigeminal</td><td>Both</td><td>V1: SOF. V2: foramen rotundum. V3: foramen ovale</td><td><strong>Sensory:</strong> face (3 divisions). <strong>Motor:</strong> muscles of mastication. Clinical: trigeminal neuralgia</td><td>Light touch 3 facial zones; bite down (masseter)</td></tr>
-        <tr><td class="hi">VI</td><td>Abducens</td><td>Motor</td><td>Superior orbital fissure</td><td>Lateral rectus &#8212; abducts eye</td><td>Look laterally (&#8220;LR<sub>6</sub>&#8221;)</td></tr>
-        <tr><td class="warn">VII</td><td>Facial</td><td>Both</td><td>Internal acoustic meatus &#8594; stylomastoid foramen</td><td><strong>Motor:</strong> muscles of facial expression. <strong>Sensory:</strong> taste anterior 2/3 tongue. <strong>Parasympathetic:</strong> lacrimal, submandibular, sublingual glands</td><td>Smile, frown, raise eyebrows, puff cheeks</td></tr>
-        <tr><td class="hi">VIII</td><td>Vestibulocochlear</td><td>Sensory</td><td>Internal acoustic meatus</td><td>Hearing (cochlear) + balance/equilibrium (vestibular)</td><td>Hearing screen; Weber &amp; Rinne tests</td></tr>
-        <tr><td class="hi">IX</td><td>Glossopharyngeal</td><td>Both</td><td>Jugular foramen</td><td><strong>Sensory:</strong> posterior 1/3 tongue, pharynx. <strong>Motor:</strong> stylopharyngeus. <strong>Para:</strong> parotid gland</td><td>Gag reflex (afferent limb); say &#8220;ah&#8221;</td></tr>
-        <tr><td class="warn">X</td><td>Vagus</td><td>Both</td><td>Jugular foramen</td><td><strong>Motor:</strong> pharynx &amp; larynx muscles. <strong>Sensory:</strong> thoracic/abdominal viscera. <strong>Para:</strong> heart, lungs, GI (to splenic flexure)</td><td>Say &#8220;ah&#8221; &#8212; uvula deviation (deviates AWAY from lesion)</td></tr>
-        <tr><td class="hi">XI</td><td>Accessory</td><td>Motor</td><td>Jugular foramen</td><td>Trapezius &amp; SCM</td><td>Shrug shoulders (trapezius); turn head against resistance (SCM)</td></tr>
-        <tr><td class="hi">XII</td><td>Hypoglossal</td><td>Motor</td><td>Hypoglossal canal</td><td>Tongue muscles (genioglossus)</td><td>Protrude tongue &#8212; deviates TOWARD lesion</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip red"><div class="bl-label">Key Brain Structure Functions &#8212; Clinical Reference</div><p>Quick reference for localization of lesions.</p></div>
-      <table class="data-table"><thead><tr><th>Structure</th><th>Location</th><th>Function</th><th>Lesion Effect</th></tr></thead><tbody>
-        <tr><td class="warn">Primary Motor Cortex (Area 4)</td><td>Precentral gyrus, frontal lobe</td><td>Motor output; motor homunculus</td><td>Contralateral hemiparesis/plegia</td></tr>
-        <tr><td class="warn">Primary Somatosensory (Area 3,1,2)</td><td>Postcentral gyrus, parietal lobe</td><td>Sensory input; sensory homunculus</td><td>Contralateral sensory loss</td></tr>
-        <tr><td class="hi">Broca&#8217;s Area</td><td>Frontal lobe (dominant hemisphere)</td><td>Motor speech production; premotor for language</td><td>Expressive aphasia (non-fluent; understands but cannot produce speech)</td></tr>
-        <tr><td class="hi">Wernicke&#8217;s Area</td><td>Temporal&#8211;parietal&#8211;occipital junction (dominant)</td><td>Language comprehension</td><td>Receptive aphasia (fluent but meaningless speech)</td></tr>
-        <tr><td class="hi">Prefrontal Cortex</td><td>Anterior frontal lobe</td><td>Executive function, planning, moral judgment, working memory, emotional control</td><td>Perseveration; impaired judgment; personality change</td></tr>
-        <tr><td class="warn">Basal Ganglia</td><td>Between cortex and thalamus</td><td>Motor refinement via disinhibition (&#8220;brake hypothesis&#8221;); probable role in cognition</td><td>PD (substantia nigra loss &#8594; overactive BG); Huntington&#8217;s; hemiballismus (subthalamus)</td></tr>
-        <tr><td class="warn">Thalamus</td><td>Diencephalon</td><td>Sensory relay &#8212; ALL sensory passes through EXCEPT CN I. Gateway to cortex. Motor relay via BG</td><td>Thalamic pain syndrome; sensory loss</td></tr>
-        <tr><td class="hi">Hypothalamus</td><td>Base of diencephalon</td><td>Homeostasis: ANS, endocrine, limbic. Regulates temp, H<sub>2</sub>O balance, circadian rhythm, hunger</td><td>Dysautonomia; endocrine dysfunction</td></tr>
-        <tr><td class="hi">Hippocampus</td><td>Medial temporal lobe (limbic)</td><td>Declarative memory &#8594; long-term memory. Larger in people with better memories</td><td>Inability to form new memories (anterograde amnesia)</td></tr>
-        <tr><td class="hi">Amygdala</td><td>Medial temporal lobe (limbic)</td><td>Emotional memory; fear; aversive learning</td><td>Loss of fear conditioning</td></tr>
-        <tr><td class="warn">Cerebellum</td><td>Posterior fossa</td><td>Motor learning; procedural memory; coordination; balance; timing</td><td>Ataxia; dysmetria; intention tremor; dysdiadochokinesia</td></tr>
-        <tr><td class="hi">Reticular Formation</td><td>Brainstem tegmentum</td><td>Cardiovascular &amp; respiratory control; consciousness level; pain modulation</td><td>Coma; altered consciousness</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip green"><div class="bl-label">Memory Types &amp; Localization</div><p><strong>Declarative (facts):</strong> hippocampus &#8594; long-term.<br><strong>Procedural (motor learning):</strong> cerebellum + basal ganglia.<br><strong>Working/short-term:</strong> prefrontal cortex.<br><strong>Emotional:</strong> amygdala.<br><strong>Anterograde amnesia</strong> = cannot store new data (hippocampal damage).<br><strong>Retrograde amnesia</strong> = cannot remember old data.</p></div>
-    </div>
-  </div>
-
+<div class="bl-strip">
+<div class="bl-label">Functions</div>
+<p><strong>Coordination of voluntary movement</strong> — smooth, accurate execution <strong>Equilibrium</strong> — balance and postural coordination <strong>Motor/Procedural Learning</strong> — "how to" memories; skill acquisition</p>
+<div class="bl-strip">
+<div class="bl-label">Clinical Note</div>
+<p>Cerebellar damage → ataxia (incoordination), dysmetria (over/undershoot), nystagmus, intention tremor, dysdiadochokinesia. Ipsilateral signs (unlike cortical lesions which are contralateral).</p>
 </div>
 </div>
-
-<!-- ====== SPINAL CORD ====== -->
+<div class="bl-strip">
+<div class="bl-label">Cerebellar Peduncles</div>
+<p>White matter connections between cerebellum and brainstem (bidirectional):</p>
+<p><strong>Superior peduncle</strong> — attaches to midbrain; primarily efferent (output)<br><strong>Middle peduncle</strong> — attaches to pons; primarily afferent (input from cortex)<br><strong>Inferior peduncle</strong> — attaches to medulla; mixed (spinocerebellar tracts)</p>
+<p>Vermis = midline structure of cerebellum; connects left and right cerebellar hemispheres</p>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Cranial Nerves &#8212; Complete OINA Reference</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Cranial Nerve Summary Table</div>
+<p>Mnemonic for type: <strong>S</strong>ome <strong>S</strong>ay <strong>M</strong>arry <strong>M</strong>oney <strong>B</strong>ut <strong>M</strong>y <strong>B</strong>rother <strong>S</strong>ays <strong>B</strong>ig <strong>B</strong>rains <strong>M</strong>atter <strong>M</strong>ore (S=Sensory, M=Motor, B=Both). Mnemonic for names: <strong>O</strong>h <strong>O</strong>h <strong>O</strong>h <strong>T</strong>o <strong>T</strong>ouch <strong>A</strong>nd <strong>F</strong>eel <strong>V</strong>ery <strong>G</strong>ood <strong>V</strong>elvet, <strong>A</strong>h <strong>H</strong>eaven.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>CN</th><th>Name</th><th>Type</th><th>Foramen</th><th>Function</th><th>Test</th></tr></thead><tbody>
+<tr><td class="hi">I</td><td>Olfactory</td><td>Sensory</td><td>Cribriform plate</td><td>Smell. Only CN that does NOT pass through thalamus</td><td>Identify familiar scent</td></tr>
+<tr><td class="hi">II</td><td>Optic</td><td>Sensory</td><td>Optic canal</td><td>Vision</td><td>Visual acuity; visual fields</td></tr>
+<tr><td class="warn">III</td><td>Oculomotor</td><td>Motor</td><td>Superior orbital fissure</td><td>Eye movement (SR, IR, MR, IO); levator palpebrae; pupil constriction + accommodation</td><td>H-test eye movements; pupillary light reflex</td></tr>
+<tr><td class="hi">IV</td><td>Trochlear</td><td>Motor</td><td>Superior orbital fissure</td><td>Superior oblique &#8212; depresses, abducts, IR eye</td><td>Look down &amp; in (&#8220;SO<sub>4</sub>&#8221;)</td></tr>
+<tr><td class="warn">V</td><td>Trigeminal</td><td>Both</td><td>V1: SOF. V2: foramen rotundum. V3: foramen ovale</td><td><strong>Sensory:</strong> face (3 divisions). <strong>Motor:</strong> muscles of mastication. Clinical: trigeminal neuralgia</td><td>Light touch 3 facial zones; bite down (masseter)</td></tr>
+<tr><td class="hi">VI</td><td>Abducens</td><td>Motor</td><td>Superior orbital fissure</td><td>Lateral rectus &#8212; abducts eye</td><td>Look laterally (&#8220;LR<sub>6</sub>&#8221;)</td></tr>
+<tr><td class="warn">VII</td><td>Facial</td><td>Both</td><td>Internal acoustic meatus &#8594; stylomastoid foramen</td><td><strong>Motor:</strong> muscles of facial expression. <strong>Sensory:</strong> taste anterior 2/3 tongue. <strong>Parasympathetic:</strong> lacrimal, submandibular, sublingual glands</td><td>Smile, frown, raise eyebrows, puff cheeks</td></tr>
+<tr><td class="hi">VIII</td><td>Vestibulocochlear</td><td>Sensory</td><td>Internal acoustic meatus</td><td>Hearing (cochlear) + balance/equilibrium (vestibular)</td><td>Hearing screen; Weber &amp; Rinne tests</td></tr>
+<tr><td class="hi">IX</td><td>Glossopharyngeal</td><td>Both</td><td>Jugular foramen</td><td><strong>Sensory:</strong> posterior 1/3 tongue, pharynx. <strong>Motor:</strong> stylopharyngeus. <strong>Para:</strong> parotid gland</td><td>Gag reflex (afferent limb); say &#8220;ah&#8221;</td></tr>
+<tr><td class="warn">X</td><td>Vagus</td><td>Both</td><td>Jugular foramen</td><td><strong>Motor:</strong> pharynx &amp; larynx muscles. <strong>Sensory:</strong> thoracic/abdominal viscera. <strong>Para:</strong> heart, lungs, GI (to splenic flexure)</td><td>Say &#8220;ah&#8221; &#8212; uvula deviation (deviates AWAY from lesion)</td></tr>
+<tr><td class="hi">XI</td><td>Accessory</td><td>Motor</td><td>Jugular foramen</td><td>Trapezius &amp; SCM</td><td>Shrug shoulders (trapezius); turn head against resistance (SCM)</td></tr>
+<tr><td class="hi">XII</td><td>Hypoglossal</td><td>Motor</td><td>Hypoglossal canal</td><td>Tongue muscles (genioglossus)</td><td>Protrude tongue &#8212; deviates TOWARD lesion</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Key Brain Structure Functions &#8212; Clinical Reference</div>
+<p>Quick reference for localization of lesions.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Structure</th><th>Location</th><th>Function</th><th>Lesion Effect</th></tr></thead><tbody>
+<tr><td class="warn">Primary Motor Cortex (Area 4)</td><td>Precentral gyrus, frontal lobe</td><td>Motor output; motor homunculus</td><td>Contralateral hemiparesis/plegia</td></tr>
+<tr><td class="warn">Primary Somatosensory (Area 3,1,2)</td><td>Postcentral gyrus, parietal lobe</td><td>Sensory input; sensory homunculus</td><td>Contralateral sensory loss</td></tr>
+<tr><td class="hi">Broca&#8217;s Area</td><td>Frontal lobe (dominant hemisphere)</td><td>Motor speech production; premotor for language</td><td>Expressive aphasia (non-fluent; understands but cannot produce speech)</td></tr>
+<tr><td class="hi">Wernicke&#8217;s Area</td><td>Temporal&#8211;parietal&#8211;occipital junction (dominant)</td><td>Language comprehension</td><td>Receptive aphasia (fluent but meaningless speech)</td></tr>
+<tr><td class="hi">Prefrontal Cortex</td><td>Anterior frontal lobe</td><td>Executive function, planning, moral judgment, working memory, emotional control</td><td>Perseveration; impaired judgment; personality change</td></tr>
+<tr><td class="warn">Basal Ganglia</td><td>Between cortex and thalamus</td><td>Motor refinement via disinhibition (&#8220;brake hypothesis&#8221;); probable role in cognition</td><td>PD (substantia nigra loss &#8594; overactive BG); Huntington&#8217;s; hemiballismus (subthalamus)</td></tr>
+<tr><td class="warn">Thalamus</td><td>Diencephalon</td><td>Sensory relay &#8212; ALL sensory passes through EXCEPT CN I. Gateway to cortex. Motor relay via BG</td><td>Thalamic pain syndrome; sensory loss</td></tr>
+<tr><td class="hi">Hypothalamus</td><td>Base of diencephalon</td><td>Homeostasis: ANS, endocrine, limbic. Regulates temp, H<sub>2</sub>O balance, circadian rhythm, hunger</td><td>Dysautonomia; endocrine dysfunction</td></tr>
+<tr><td class="hi">Hippocampus</td><td>Medial temporal lobe (limbic)</td><td>Declarative memory &#8594; long-term memory. Larger in people with better memories</td><td>Inability to form new memories (anterograde amnesia)</td></tr>
+<tr><td class="hi">Amygdala</td><td>Medial temporal lobe (limbic)</td><td>Emotional memory; fear; aversive learning</td><td>Loss of fear conditioning</td></tr>
+<tr><td class="warn">Cerebellum</td><td>Posterior fossa</td><td>Motor learning; procedural memory; coordination; balance; timing</td><td>Ataxia; dysmetria; intention tremor; dysdiadochokinesia</td></tr>
+<tr><td class="hi">Reticular Formation</td><td>Brainstem tegmentum</td><td>Cardiovascular &amp; respiratory control; consciousness level; pain modulation</td><td>Coma; altered consciousness</td></tr></tbody></table>
+<div class="bl-strip green">
+<div class="bl-label">Memory Types &amp; Localization</div>
+<p><strong>Declarative (facts):</strong> hippocampus &#8594; long-term.<br><strong>Procedural (motor learning):</strong> cerebellum + basal ganglia.<br><strong>Working/short-term:</strong> prefrontal cortex.<br><strong>Emotional:</strong> amygdala.<br><strong>Anterograde amnesia</strong> = cannot store new data (hippocampal damage).<br><strong>Retrograde amnesia</strong> = cannot remember old data.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-spinalcord">
 <div class="container">
-
-  <div class="section-title">Spinal Cord</div>
-  <div class="section-sub">The spinal cord extends from the medulla to approximately T12–L1 (conus medullaris). It transmits sensory information superiorly and motor commands inferiorly, and serves as the pathway for reflex arcs.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Gross Anatomy</div>
-      <p><strong>Conus Medullaris</strong> — tapered inferior end of spinal cord; terminates at <strong>T12–L1</strong> <strong>Cauda Equina</strong> — bundle of nerve roots descending below L1 ("horse's tail")<br><strong>Filum Terminale</strong> — fibrous extension anchoring spinal cord to coccyx Spinal cord injury is identified by <strong>spinal segmental level, NOT bony vertebral level</strong></p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Gray Matter Horns</div>
-      <table class="data-table">
-        <thead><tr><th>Horn</th><th>Function</th><th>Cell Somas</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Dorsal Horn (posterior)</strong></td><td>Sensory/afferent</td><td>Dorsal root ganglion</td></tr>
-          <tr><td><strong>Ventral Horn (anterior)</strong></td><td>Somatic motor/efferent</td><td>Ventral horn</td></tr>
-          <tr><td><strong>Lateral Horn</strong></td><td>Visceral motor (ANS)</td><td>Lateral horn</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">White Matter Columns</div>
-      <p><strong>Dorsal columns</strong> — afferent only; ascending to brainstem and thalamus <strong>Lateral and anterior columns</strong> — mixed (both afferent and efferent)<br><strong>Ascending tracts</strong> — carry sensory input up <strong>Descending tracts</strong> — carry motor commands down (from cortex + brainstem) Corticospinal tract decussates at <strong>pyramidal decussation</strong> (inferior medulla) → contralateral control</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Meninges</div>
-      <table class="data-table">
-        <thead><tr><th>Layer</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Dura Mater</strong></td><td>"Tough" — outer periosteal + inner meningeal layers; separated = dural sinuses → internal jugular veins</td></tr>
-          <tr><td><strong>Arachnoid</strong></td><td>"Spider" — highly vascular; subarachnoid space contains CSF</td></tr>
-          <tr><td><strong>Pia Mater</strong></td><td>"Gentle" — vascular layer; blood supply to brain surface; forms denticulate ligaments and filum terminale</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="section-title">Clinical — Segmental Anatomy</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Nerve Root vs. Peripheral Nerve Injury</div>
-      <table class="data-table">
-        <thead><tr><th>Feature</th><th>Nerve Root Injury</th><th>Peripheral Nerve Injury</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Weakness</strong></td><td>In myotome of spinal segment</td><td>In muscles supplied by peripheral nerve</td></tr>
-          <tr><td><strong>Sensory</strong></td><td>Dermatome pattern</td><td>Cutaneous region of peripheral nerve</td></tr>
-          <tr><td><strong>DTR</strong></td><td>Reduced in DTR of segment</td><td>Usually not affected</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Disc Herniation / Nerve Root Lesion</div>
-      <p><strong>Dermatome</strong> — pain and sensory changes follow dermatome pattern <strong>Myotome</strong> — weakness in corresponding myotome <strong>Reflexes</strong> — decreased DTR of specific spinal segment Disc, tumor, osteophytes can all compress segmental nerve root</p>
-      <div class="bl-strip gold">
-        <div class="bl-label">C5 Example</div>
-        <p>Dermatome: lateral arm numbness/tingling. Myotome: biceps weakness (elbow flexion). DTR: ↓ biceps tendon reflex.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-title">Lumbar Puncture &amp; Epidural</div>
-  <div class="bl-strip">
-      <div class="bl-label">Lumbar Puncture (Spinal Tap)</div>
-      <p>Access CSF from subarachnoid space. Insert needle at <strong>L3–4 or L4–5</strong> intervertebral space (below conus medullaris at L1 — safe, no cord). Needle inserted until small "pop" indicates penetration of <strong>ligamentum flavum</strong>. Assess for CSF return.</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Epidural</div>
-      <p>Epidural needle placed in <strong>epidural space</strong> (between dura and bone). Local anesthetic bathes the nerve roots. Used for pain management (labor, post-surgical). Does not penetrate dura — different from spinal tap which enters subarachnoid space.</p>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Spinal Cord Structure &#8212; Cross-Section, Enlargements &amp; Attachments</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip"><div class="bl-label">Gross Structure</div>
-          <p>Cylindrical structure ~1cm diameter. Average length: ~45cm (male), ~42cm (female). Extends from <strong>medulla oblongata</strong> to <strong>conus medullaris (T12&#8211;L1)</strong>. Below conus: <strong>cauda equina</strong> (lumbosacral nerve roots) and <strong>filum terminale</strong> (pia + dura extension anchoring cord to coccyx).</p>
-          <p><strong>Two enlargements:</strong> <strong>Cervical (C5&#8211;T1)</strong> &#8212; gives rise to brachial plexus (UE innervation).<br><strong>Lumbar (L1&#8211;S2)</strong> &#8212; gives rise to lumbosacral plexus (LE innervation). These enlargements contain more gray matter (more motor neurons for the extremities).</p>
-          <p><strong>31 spinal nerve pairs:</strong> 8 cervical (C1&#8211;C8), 12 thoracic, 5 lumbar, 5 sacral, 1 coccygeal. Cervical nerves exit <strong>above</strong> their numbered vertebra (except C8 which exits below C7). Thoracic and below exit <strong>below</strong> their numbered vertebra.</p></div>
-        </div>
-        <div>
-          <div class="bl-strip gold"><div class="bl-label">Cord Attachments &amp; Meninges</div>
-          <p><strong>Denticulate (dentate) ligaments:</strong> lateral extensions of <strong>pia mater</strong> that anchor the spinal cord to the inner surface of the dura. ~21 pairs, like a picket fence along each side of the cord. Suspend and stabilize the cord within the dural sac.</p>
-          <p><strong>Filum terminale:</strong> pia mater filament extending from conus medullaris (L1) through the dural sac. At S2 it picks up dural covering and attaches as a fibrous cord to the coccyx. Anchors the cord inferiorly.</p>
-          <p><strong>Spinal meninges:</strong> Same 3 layers as cranial meninges but with key differences.<br><strong>Dura:</strong> in spine, meningeal and periosteal layers <strong>separate</strong> creating a true <strong>epidural space</strong> (contains fat + venous plexus &#8212; target for epidural anesthesia). In cranium, these layers are fused (no true epidural space).<br><strong>Arachnoid:</strong> subarachnoid space filled with CSF extends to <strong>S2</strong> (lumbar cistern L3&#8211;S2 = LP target).<br><strong>Pia:</strong> intimate with cord surface, sends extensions as denticulate ligaments.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Spinal Cord Gray &amp; White Matter &#8212; Complete Tract Reference</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Gray Matter (Butterfly/H-Shape) &#8212; Horns &amp; Laminae</div>
-      <p>Gray matter is arranged in <strong>layers (laminae I&#8211;X, Rexed laminae)</strong> organized into three horns:</p>
-      <p><strong>Dorsal (posterior) horn:</strong> receives <strong>sensory/afferent</strong> input. Cell bodies of 1st-order sensory neurons are in the <strong>dorsal root ganglion</strong> (outside the cord). Lamina I = marginal zone (pain/temp relay). Lamina II = substantia gelatinosa (pain modulation &#8212; gate control theory site). Laminae III&#8211;VI = nucleus proprius (discriminative touch).</p>
-      <p><strong>Ventral (anterior) horn:</strong> contains <strong>somatic motor neuron pools</strong> &#8212; the &#8220;final common pathway.&#8221; Alpha motor neurons innervate extrafusal muscle fibers (voluntary contraction). Gamma motor neurons innervate intrafusal fibers (muscle spindle sensitivity). Medial motor neurons = axial muscles; lateral motor neurons = limb muscles.</p>
-      <p><strong>Lateral horn:</strong> present only at <strong>T1&#8211;L2 (sympathetic)</strong> and <strong>S2&#8211;S4 (parasympathetic)</strong>. Contains preganglionic <strong>autonomic motor neurons</strong>. Efferent output to glands, cardiac muscle, smooth muscle.</p></div>
-
-      <div class="bl-strip gold"><div class="bl-label">White Matter &#8212; Three Columns (Funiculi)</div><p>White matter surrounds gray matter in three columns. Each contains named tracts (fasciculi).<br><strong>Dorsal columns</strong> = ascending sensory only.<br><strong>Lateral columns</strong> = mixed ascending + descending.<br><strong>Anterior columns</strong> = mixed ascending + descending.</p></div>
-      <table class="data-table"><thead><tr><th>Direction</th><th>Tract</th><th>Column</th><th>Modality</th><th>Decussation</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td rowspan="4" class="warn"><strong>Ascending<br>(Sensory)</strong></td><td><strong>Fasciculus Gracilis</strong></td><td>Dorsal</td><td>Discriminative touch, vibration, conscious proprioception from <strong>LE + lower trunk</strong> (below T6)</td><td>Medulla (nucleus gracilis &#8594; internal arcuate fibers &#8594; medial lemniscus)</td><td rowspan="2"><strong>DC/ML pathway.</strong> Ipsilateral cord deficit. Loss = loss of vibration, proprioception, 2-point discrimination on SAME side as lesion</td></tr>
-        <tr><td><strong>Fasciculus Cuneatus</strong></td><td>Dorsal</td><td>Same modalities from <strong>UE + upper trunk</strong> (above T6)</td><td>Medulla (nucleus cuneatus &#8594; same pathway)</td></tr>
-        <tr><td><strong>Lateral Spinothalamic</strong></td><td>Lateral</td><td><strong>Pain &amp; temperature</strong></td><td><strong>At spinal level of entry</strong> (crosses immediately via anterior gray commissure)</td><td><strong>Contralateral cord deficit.</strong> Loss = loss of pain/temp on OPPOSITE side. Key for Brown-S&#233;quard</td></tr>
-        <tr><td><strong>Anterior Spinothalamic</strong></td><td>Anterior</td><td>Crude/light touch, pressure</td><td>At spinal level (crosses via anterior commissure)</td><td>Bilateral pathway &#8212; rarely isolated deficit</td></tr>
-        <tr><td rowspan="5" class="warn"><strong>Descending<br>(Motor)</strong></td><td><strong>Lateral Corticospinal (CST)</strong></td><td>Lateral</td><td><strong>Voluntary motor &#8212; skilled, discrete limb movements</strong></td><td><strong>Pyramidal decussation</strong> (inferior medulla). ~85% of CST fibers cross here</td><td>Primary motor tract. UMN lesion above decussation = contralateral deficits. Lesion in cord = ipsilateral deficits below level</td></tr>
-        <tr><td><strong>Anterior Corticospinal</strong></td><td>Anterior</td><td>Voluntary motor &#8212; axial/proximal muscles</td><td>At spinal level (crosses in anterior commissure)</td><td>~15% of CST fibers that don&#8217;t cross at pyramids. Bilateral innervation of trunk muscles</td></tr>
-        <tr><td><strong>Rubrospinal</strong></td><td>Lateral</td><td>Facilitates flexors; assists with limb motor control</td><td>Crosses immediately in midbrain</td><td>Red nucleus origin. Largely replaced by CST in humans; may assist recovery after CST damage</td></tr>
-        <tr><td><strong>Vestibulospinal</strong></td><td>Anterior</td><td>Postural tone; extensor facilitation; balance</td><td>Ipsilateral (does NOT cross)</td><td>Vestibular nuclei origin. Facilitates extensors for antigravity support. Important in decerebrate rigidity</td></tr>
-        <tr><td><strong>Reticulospinal</strong></td><td>Anterior + Lateral</td><td>Postural control; locomotion; tone modulation</td><td>Bilateral (some cross, some don&#8217;t)</td><td>Reticular formation origin. Pontine = excitatory (extensors). Medullary = inhibitory. Regulates muscle tone</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip red"><div class="bl-label">Somatotopy in the Cord</div><p>Tracts are organized somatotopically (body map within the tract).<br><strong>Dorsal columns:</strong> sacral fibers are most medial (gracilis), cervical most lateral (cuneatus).<br><strong>Lateral spinothalamic:</strong> sacral fibers are most <strong>posterolateral</strong>, cervical most <strong>anteromedial</strong>.<br><strong>Lateral CST:</strong> cervical fibers are most medial, sacral most lateral. This somatotopy explains why an expanding <strong>central cord lesion</strong> (e.g., syringomyelia) affects arms before legs &#8212; cervical fibers are closer to the center.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Ventricles &amp; CSF Circulation</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">Ventricular System</div>
-      <p>Four interconnected cavities within the brain filled with CSF:</p>
-      <p><strong>Lateral ventricles (2):</strong> one in each cerebral hemisphere. Largest ventricles. C-shaped, with frontal (anterior), body, temporal (inferior), and occipital (posterior) horns. Connected to 3rd ventricle via <strong>interventricular foramina (of Monro)</strong>.</p>
-      <p><strong>Third ventricle:</strong> midline slit in diencephalon between R/L thalami. Connected to 4th ventricle via <strong>cerebral aqueduct (of Sylvius)</strong> through the midbrain. Narrowest point &#8212; most common site of obstructive hydrocephalus.</p>
-      <p><strong>Fourth ventricle:</strong> between pons/medulla anteriorly and cerebellum posteriorly. Diamond-shaped. CSF exits via 2 <strong>lateral apertures (foramina of Luschka)</strong> and 1 <strong>median aperture (foramen of Magendie)</strong> into the subarachnoid space. Continues inferiorly as the <strong>central canal</strong> of the spinal cord.</p></div>
-      <div class="bl-strip gold"><div class="bl-label">CSF Circulation</div>
-      <p><strong>Production:</strong> <strong>Choroid plexus</strong> (specialized ependymal cells) within each ventricle produces ~500mL/day. Total CSF volume at any time ~150mL (turns over ~3x/day).</p>
-      <p><strong>Pathway:</strong> Lateral ventricles &#8594; interventricular foramina (Monro) &#8594; 3rd ventricle &#8594; cerebral aqueduct (Sylvius) &#8594; 4th ventricle &#8594; foramina of Luschka + Magendie &#8594; subarachnoid space (circulates around brain and spinal cord down to S2) &#8594; absorbed by <strong>arachnoid granulations</strong> into superior sagittal sinus &#8594; venous blood.</p>
-      <p><strong>Functions:</strong> Buoyancy (brain &#8220;floats&#8221; &#8212; effective weight reduced from 1400g to ~50g), shock absorption, nutrient transport, waste removal, maintains constant intracranial pressure.</p></div>
-      <div class="bl-strip red"><div class="bl-label">Hydrocephalus</div>
-      <p><strong>Obstructive (non-communicating):</strong> blockage within ventricular system (most commonly at cerebral aqueduct). CSF builds up proximal to obstruction &#8594; ventricles enlarge &#8594; increased ICP. Causes: tumor, congenital stenosis, hemorrhage.</p>
-      <p><strong>Communicating:</strong> impaired CSF absorption at arachnoid granulations (no obstruction within ventricles). All ventricles enlarge uniformly. Causes: meningitis, subarachnoid hemorrhage (blood clogs granulations).</p>
-      <p><strong>Normal pressure hydrocephalus (NPH):</strong> classic triad = <strong>&#8220;wet, wacky, wobbly&#8221;</strong> (urinary incontinence, dementia, gait ataxia). Treatable with VP shunt. Important DDx in elderly &#8212; reversible cause of dementia.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Spinal Cord Injury Patterns &#8212; Clinical Syndromes</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Syndrome</th><th>Lesion</th><th>Motor</th><th>Sensory</th><th>Mechanism / Notes</th></tr></thead><tbody>
-        <tr><td class="warn">Complete Transection</td><td>Entire cord at one level</td><td>Complete paralysis below level (UMN signs after spinal shock resolves)</td><td>Complete loss of all sensation below level</td><td>Trauma, severe compression. Initially: spinal shock (flaccid, areflexic). Weeks later: spasticity, hyperreflexia, Babinski +</td></tr>
-        <tr><td class="warn">Brown-S&#233;quard (Hemisection)</td><td>One lateral half of cord</td><td><strong>Ipsilateral:</strong> UMN paralysis below level (lateral CST)</td><td><strong>Ipsilateral:</strong> loss of proprioception, vibration, discriminative touch (dorsal columns). <strong>Contralateral:</strong> loss of pain &amp; temperature (lateral STT crossed at entry)</td><td>Stab wound, unilateral tumor. <strong>Best prognosis</strong> of incomplete SCIs. Remember: DC/ML ipsilateral, STT contralateral</td></tr>
-        <tr><td class="warn">Central Cord</td><td>Central gray matter + adjacent white matter</td><td><strong>Arms &gt;&gt; legs</strong> (cervical motor fibers are medial in lateral CST &#8594; damaged first by central expanding lesion)</td><td>Variable &#8212; &#8220;cape&#8221; distribution of pain/temp loss (fibers crossing in anterior commissure disrupted)</td><td><strong>MC incomplete SCI.</strong> Older adults + cervical hyperextension with pre-existing stenosis. Syringomyelia causes similar pattern</td></tr>
-        <tr><td class="hi">Anterior Cord</td><td>Anterior 2/3 of cord (ventral horns + lateral/anterior columns)</td><td>Complete motor paralysis below level (CST + ventral horn destroyed)</td><td><strong>Loss of pain &amp; temperature</strong> (STT). <strong>Proprioception and vibration PRESERVED</strong> (dorsal columns spared)</td><td>Anterior spinal artery occlusion. <strong>Worst prognosis</strong> of incompletes. Disc herniation can also cause this</td></tr>
-        <tr><td class="hi">Posterior Cord</td><td>Dorsal columns only</td><td>Motor preserved</td><td>Loss of proprioception, vibration, discriminative touch. Pain &amp; temp preserved</td><td>Rare in isolation. Tabes dorsalis (tertiary syphilis), vitamin B12 deficiency, MS. Sensory ataxia (wide-based gait, positive Romberg)</td></tr>
-        <tr><td class="hi">Cauda Equina</td><td>Nerve roots below L1&#8211;L2 (NOT cord)</td><td>LMN paralysis (flaccid, areflexic)</td><td>Saddle anesthesia (S2&#8211;S4). Bowel/bladder dysfunction</td><td><strong>Surgical emergency.</strong> Large central disc herniation. LMN signs (not UMN) because it's nerve roots, not cord. Asymmetric presentation possible</td></tr>
-      </tbody></table>
-      <div class="bl-strip"><div class="bl-label">UMN vs LMN Review</div>
-      <p><strong>UMN lesion (above anterior horn):</strong> spasticity, hyperreflexia, clonus, Babinski +, NO atrophy (disuse only).<br><strong>LMN lesion (anterior horn or below):</strong> flaccidity, areflexia/hyporeflexia, fasciculations, rapid atrophy, Babinski absent.<br><strong>Mixed:</strong> at the level of SCI you get LMN signs (anterior horn destroyed); below the level you get UMN signs (descending tracts interrupted).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Peripheral Nerve Structure &amp; Injury Classification</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Peripheral Nerve Organization</div>
-      <p>A peripheral nerve is a <strong>conduit of thousands of individual neurons</strong> bundled together. Three layers of connective tissue: <strong>Endoneurium</strong> (surrounds individual axons), <strong>Perineurium</strong> (surrounds fascicles &#8212; bundles of axons; provides blood-nerve barrier), <strong>Epineurium</strong> (outermost layer surrounding entire nerve). Has its own intrinsic blood supply (vasa nervorum) that allows the nerve to stretch and glide during movement.</p></div>
-      <table class="data-table"><thead><tr><th>Classification</th><th>Seddon</th><th>Sunderland</th><th>Pathology</th><th>Recovery</th></tr></thead><tbody>
-        <tr><td class="hi">Mildest</td><td><strong>Neurapraxia</strong></td><td>Grade I</td><td>Focal demyelination only. Axon intact. Conduction block at lesion site</td><td><strong>Full recovery</strong> in days to weeks. No Wallerian degeneration. &#8220;Saturday night palsy&#8221;</td></tr>
-        <tr><td class="warn">Moderate</td><td><strong>Axonotmesis</strong></td><td>Grade II&#8211;IV</td><td>Axon disrupted. Wallerian degeneration distal to injury. Endoneurial tubes may be intact (II) or disrupted (III&#8211;IV)</td><td>Regeneration possible at <strong>~1mm/day (~1 inch/month)</strong>. Grade II: good recovery. Grade III&#8211;IV: may need surgery. Tinel&#8217;s sign tracks regeneration</td></tr>
-        <tr><td class="warn">Severe</td><td><strong>Neurotmesis</strong></td><td>Grade V</td><td>Complete nerve transection. All layers disrupted</td><td><strong>No spontaneous recovery.</strong> Requires surgical repair (neurorrhaphy) or nerve grafting. Recovery depends on surgical timing and gap distance</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">CNS vs PNS Regeneration</div><p><strong>PNS CAN regenerate</strong> &#8212; Schwann cells provide guidance tubes + neurotrophic factors that support axon regrowth (~1mm/day). <strong>CNS CANNOT regenerate effectively</strong> &#8212; oligodendrocytes produce myelin-associated inhibitory factors (Nogo, MAG) that block regrowth, and glial scarring (astrocytes) creates a physical barrier. This fundamental difference is why a peripheral nerve laceration can recover but a spinal cord injury cannot (yet).</p></div>
-    </div>
-  </div>
-
-
-  <div class='divider'></div>
-
-  <div class="section-title">PNS — Nerve Root to Peripheral Nerve</div>
-  <div class="section-sub">The pathway from spinal cord to peripheral nerve: nerve roots → plexus → peripheral nerve. This architecture explains why nerve root injuries differ from peripheral nerve injuries in pattern.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Nerve Root Anatomy</div>
-      <p><strong>Dorsal Nerve Root</strong> — afferent (sensory); cell bodies in dorsal root ganglion <strong>Ventral Nerve Root</strong> — efferent (motor); cell bodies in ventral horn <strong>Dorsal Ramus</strong> — posterior branch; supplies deep muscles + skin of back <strong>Ventral Ramus</strong> — anterior branch; supplies limbs and anterior/lateral trunk; forms plexuses Nerve root exits through <strong>intervertebral foramen</strong></p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Pathway: Root → Plexus → Peripheral Nerve</div>
-      <p>Ventral rami combine to form nerve plexuses (cervical, brachial, lumbar, sacral), which then reorganize into named peripheral nerves. This is why one peripheral nerve carries fibers from multiple spinal levels.</p>
-      <div class="bl-strip red">
-        <div class="bl-label">Clinical Consequence</div>
-        <p>A nerve root lesion = dermatomal/myotomal pattern. A peripheral nerve lesion = cutaneous territory of that nerve (crosses multiple dermatomes). Distinguishing the two localizes the pathology to either spine or limb.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Autonomic Nervous System &#8212; Sympathetic &amp; Parasympathetic Pathways</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">ANS Overview</div>
-      <p>The ANS controls involuntary functions via a <strong>2-neuron chain:</strong> preganglionic neuron (cell body in CNS) &#8594; synapse in an autonomic ganglion &#8594; postganglionic neuron &#8594; target organ (smooth muscle, cardiac muscle, glands). Two divisions with generally <strong>opposing</strong> effects. Think of sympathetic as the &#8220;gas pedal&#8221; and parasympathetic as the &#8220;brake&#8221; &#8212; though the reality is more nuanced.</p></div>
-      <table class="data-table"><thead><tr><th>Feature</th><th>Sympathetic (&#8220;Fight or Flight&#8221;)</th><th>Parasympathetic (&#8220;Rest &amp; Digest&#8221;)</th></tr></thead><tbody>
-        <tr><td class="warn">Outflow</td><td><strong>Thoracolumbar: T1&#8211;L2</strong> lateral horn</td><td><strong>Craniosacral:</strong> CN III, VII, IX, X (brainstem) + S2&#8211;S4 (sacral)</td></tr>
-        <tr><td class="hi">Preganglionic</td><td>Short (exits cord &#8594; nearby sympathetic chain ganglia or prevertebral ganglia)</td><td>Long (travels all the way to target organ before synapsing)</td></tr>
-        <tr><td class="hi">Postganglionic</td><td>Long (from ganglion to distant target)</td><td>Short (synapse occurs near or within target organ)</td></tr>
-        <tr><td class="hi">Ganglia Location</td><td><strong>Sympathetic chain</strong> (paravertebral ganglia along spine) + <strong>prevertebral ganglia</strong> (celiac, superior/inferior mesenteric)</td><td><strong>Terminal ganglia</strong> (near or within target organ wall)</td></tr>
-        <tr><td class="hi">Neurotransmitter</td><td>Preganglionic: <strong>ACh</strong> (nicotinic). Postganglionic: <strong>norepinephrine (NE)</strong> (adrenergic) &#8212; except sweat glands which use ACh</td><td>Preganglionic: <strong>ACh</strong> (nicotinic). Postganglionic: <strong>ACh</strong> (muscarinic)</td></tr>
-        <tr><td class="warn">Effects</td><td>&#8593; HR, &#8593; BP, dilated pupils, bronchodilation, &#8593; blood glucose, &#8595; GI motility, vasoconstriction (skin/gut), vasodilation (skeletal muscle), sweat glands active</td><td>&#8595; HR, &#8595; BP, constricted pupils, bronchoconstriction, &#8593; GI motility/secretions, bladder contraction, erection (S2&#8211;S4)</td></tr>
-      </tbody></table>
-      <div class="bl-strip gold"><div class="bl-label">Sympathetic Pathway Detail</div>
-      <p>Preganglionic neuron exits cord via <strong>ventral root</strong> &#8594; enters spinal nerve &#8594; leaves via <strong>white ramus communicans</strong> &#8594; enters <strong>sympathetic chain</strong> (paravertebral ganglia running along both sides of vertebral column). Three options: (1) synapse in ganglion at same level, (2) ascend/descend chain to synapse at different level, (3) pass through chain without synapsing to reach prevertebral ganglion (e.g., splanchnic nerves &#8594; celiac ganglion). Postganglionic fiber returns to spinal nerve via <strong>gray ramus communicans</strong> &#8594; reaches target via peripheral nerve.<br><strong>Adrenal medulla</strong> is a modified sympathetic ganglion &#8212; preganglionic fibers synapse directly on chromaffin cells that release epinephrine/NE into blood.</p></div>
-      <div class="bl-strip red"><div class="bl-label">Clinical ANS Considerations</div>
-      <p><strong>Horner&#8217;s syndrome:</strong> disruption of sympathetic pathway to face/eye &#8594; ipsilateral miosis (small pupil) + ptosis (partial, Müller&#8217;s muscle) + anhidrosis (no sweating). Causes: Pancoast tumor, carotid dissection, lateral medullary stroke, syringomyelia.<br><strong>Autonomic dysreflexia:</strong> SCI at T6 or above &#8594; noxious stimulus below injury level triggers massive sympathetic response (severe HTN, bradycardia, headache, flushing above level, pallor below).<br><strong>Medical emergency</strong> &#8212; can cause stroke/death. Sit patient upright, remove stimulus (full bladder most common cause).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Dermatome, Myotome &amp; DTR Reference &#8212; Complete Clinical Table</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Definitions</div>
-      <p><strong>Dermatome:</strong> area of skin innervated by sensory fibers of a single spinal nerve.<br><strong>Myotome:</strong> group of muscles innervated by motor fibers of a single spinal nerve.<br><strong>Sclerotome:</strong> bones and ligaments innervated by fibers of a single spinal nerve (less clinically tested). Note: there is significant <strong>overlap</strong> between adjacent dermatomes &#8212; loss of a single root may produce only diminished (not absent) sensation.</p></div>
-      <table class="data-table"><thead><tr><th>Level</th><th>Dermatome Landmark</th><th>Myotome (Key Muscle)</th><th>Reflex (DTR)</th></tr></thead><tbody>
-        <tr><td class="hi">C1&#8211;C2</td><td>Posterior skull / vertex</td><td>Cervical flexion (deep neck flexors)</td><td>&#8212;</td></tr>
-        <tr><td class="hi">C3</td><td>Posterior neck, supraclavicular</td><td>Cervical lateral flexion</td><td>&#8212;</td></tr>
-        <tr><td class="hi">C4</td><td>Top of shoulder (cape distribution)</td><td>Shoulder shrug (upper trapezius)</td><td>&#8212;</td></tr>
-        <tr><td class="warn">C5</td><td><strong>Lateral arm</strong> (regimental badge area)</td><td><strong>Elbow flexion (biceps)</strong>; shoulder abduction (deltoid)</td><td><strong>Biceps (C5, C6)</strong></td></tr>
-        <tr><td class="warn">C6</td><td><strong>Lateral forearm + thumb + index finger</strong></td><td><strong>Wrist extension (ECRL/ECRB)</strong>; elbow flexion (brachioradialis)</td><td><strong>Brachioradialis (C5, C6)</strong></td></tr>
-        <tr><td class="warn">C7</td><td><strong>Middle finger</strong> + posterior forearm</td><td><strong>Elbow extension (triceps)</strong>; wrist flexion; finger extension</td><td><strong>Triceps (C7, C8)</strong></td></tr>
-        <tr><td class="warn">C8</td><td><strong>Ring + little finger</strong> + medial forearm</td><td><strong>Finger flexion (FDP)</strong>; grip strength; thumb opposition</td><td>&#8212;</td></tr>
-        <tr><td class="hi">T1</td><td>Medial arm + axilla</td><td><strong>Finger abduction (interossei)</strong></td><td>&#8212;</td></tr>
-        <tr><td class="hi">T4</td><td><strong>Nipple line</strong></td><td>&#8212; (intercostals)</td><td>&#8212;</td></tr>
-        <tr><td class="hi">T10</td><td><strong>Umbilicus</strong></td><td>&#8212; (abdominals)</td><td>&#8212;</td></tr>
-        <tr><td class="hi">T12</td><td>Inguinal region</td><td>&#8212;</td><td>&#8212;</td></tr>
-        <tr><td class="warn">L1&#8211;L2</td><td>Anterior/medial proximal thigh</td><td>Hip flexion (iliopsoas)</td><td><strong>Cremasteric (L1, L2)</strong></td></tr>
-        <tr><td class="warn">L3</td><td>Anterior thigh to knee</td><td><strong>Knee extension (quads)</strong></td><td>&#8212;</td></tr>
-        <tr><td class="warn">L4</td><td><strong>Medial leg + medial foot</strong></td><td><strong>Ankle dorsiflexion (tibialis anterior)</strong></td><td><strong>Patellar (L3, L4)</strong></td></tr>
-        <tr><td class="warn">L5</td><td><strong>Lateral leg + dorsum of foot + great toe</strong></td><td><strong>Great toe extension (EHL)</strong>; hip abduction (glut med)</td><td>&#8212; (medial hamstring sometimes)</td></tr>
-        <tr><td class="warn">S1</td><td><strong>Lateral foot + sole + little toe</strong></td><td><strong>Ankle plantarflexion (gastroc/soleus)</strong>; hip extension (glut max); ankle eversion (peroneals)</td><td><strong>Achilles (S1, S2)</strong></td></tr>
-        <tr><td class="hi">S2</td><td>Posterior thigh (midline)</td><td>Knee flexion (hamstrings)</td><td>&#8212;</td></tr>
-        <tr><td class="hi">S2&#8211;S4</td><td><strong>Saddle area</strong> (perineum)</td><td>Bladder/bowel sphincters; pelvic floor</td><td><strong>Bulbocavernosus (S3, S4)</strong>; anal wink (S4, S5)</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Clinical Application</div>
-      <p><strong>Quick screen mnemonics:</strong> C5 = deltoid/biceps (&#8220;flexion five&#8221;). C6 = wrist extensors (&#8220;six-shooters&#8221; &#8212; cock the wrist). C7 = triceps (&#8220;lucky 7 pushes away&#8221;). C8 = grip (&#8220;gr8 grip&#8221;). T1 = finger spread (interossei). L4 = TA (&#8220;L4 hits the fLoor&#8221; = dorsiflexion). L5 = EHL (&#8220;L5 makes the big toe jive&#8221;). S1 = gastroc (&#8220;S1 = stand on 1 toe&#8221;).<br><strong>Key reflexes:</strong> Biceps (C5), Brachioradialis (C6), Triceps (C7), Patellar (L4), Achilles (S1). Mnemonic: <strong>1-2-3-4-5-6-7-8</strong> with &#8220;S1, 2; L3, 4; C5, 6; C7, 8&#8221; &#8212; reflexes go in ascending pairs.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Spinal Cord Blood Supply &#8212; Arteries &amp; Watershed Zones</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">Arterial Supply</div>
-      <p><strong>3 longitudinal arteries</strong> run the length of the cord:</p>
-      <p><strong>Anterior spinal artery (1):</strong> runs in the anterior median fissure. Supplies the <strong>anterior 2/3 of the cord</strong> (ventral horns, lateral columns, anterior columns). Formed by branches of the vertebral arteries that unite at the medulla.<br><strong>Occlusion = anterior cord syndrome</strong> (motor paralysis + pain/temp loss; dorsal columns spared &#8594; proprioception/vibration intact).</p>
-      <p><strong>Posterior spinal arteries (2):</strong> run along posterolateral cord near dorsal rootlets. Supply the <strong>posterior 1/3</strong> (dorsal columns, dorsal horns). Also from vertebral arteries. Occlusion = posterior cord syndrome (proprioception/vibration loss; rare in isolation).</p>
-      <p><strong>Segmental (radicular) arteries:</strong> reinforce the longitudinal arteries at various levels. Enter through intervertebral foramina. Not present at every level &#8212; variable.</p>
-      <p><strong>Artery of Adamkiewicz</strong> (great anterior radiculomedullary artery): the <strong>largest segmental artery</strong>, typically arising from the left side between <strong>T9&#8211;T12</strong> (sometimes L1&#8211;L2). Critically important &#8212; supplies the lumbar enlargement. Damage during aortic surgery or thoracolumbar fracture &#8594; anterior cord syndrome of the lower cord &#8594; paraplegia.</p></div>
-      <div class="bl-strip red"><div class="bl-label">Watershed Zones</div>
-      <p>Areas between the territories of two arterial supplies where blood flow is most tenuous: <strong>T4&#8211;T8 region</strong> is the most vulnerable watershed zone (between the upper segmental arteries from vertebral/subclavian and the lower segmental arteries including Adamkiewicz). During systemic hypotension (cardiac arrest, hemorrhagic shock, aortic cross-clamp), this zone is at highest risk of ischemic injury. <strong>Clinical:</strong> hypoperfusion injury at this level can produce paraplegia with preserved upper extremity function.</p></div>
-    </div>
-  </div>
-
+<div class="section-title">Spinal Cord</div>
+<div class="section-sub">The spinal cord extends from the medulla to approximately T12–L1 (conus medullaris). It transmits sensory information superiorly and motor commands inferiorly, and serves as the pathway for reflex arcs.</div>
+<div class="bl-strip">
+<div class="bl-label">Gross Anatomy</div>
+<p><strong>Conus Medullaris</strong> — tapered inferior end of spinal cord; terminates at <strong>T12–L1</strong><strong>Cauda Equina</strong> — bundle of nerve roots descending below L1 ("horse's tail")<br><strong>Filum Terminale</strong> — fibrous extension anchoring spinal cord to coccyx Spinal cord injury is identified by <strong>spinal segmental level, NOT bony vertebral level</strong></p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Gray Matter Horns</div>
+<table class="data-table"><thead>
+<tr><th>Horn</th><th>Function</th><th>Cell Somas</th></tr></thead><tbody>
+<tr><td><strong>Dorsal Horn (posterior)</strong></td><td>Sensory/afferent</td><td>Dorsal root ganglion</td></tr>
+<tr><td><strong>Ventral Horn (anterior)</strong></td><td>Somatic motor/efferent</td><td>Ventral horn</td></tr>
+<tr><td><strong>Lateral Horn</strong></td><td>Visceral motor (ANS)</td><td>Lateral horn</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== CELLS ====== -->
+<div class="bl-strip">
+<div class="bl-label">White Matter Columns</div>
+<p><strong>Dorsal columns</strong> — afferent only; ascending to brainstem and thalamus <strong>Lateral and anterior columns</strong> — mixed (both afferent and efferent)<br><strong>Ascending tracts</strong> — carry sensory input up <strong>Descending tracts</strong> — carry motor commands down (from cortex + brainstem) Corticospinal tract decussates at <strong>pyramidal decussation</strong> (inferior medulla) → contralateral control</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Meninges</div>
+<table class="data-table"><thead>
+<tr><th>Layer</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>Dura Mater</strong></td><td>"Tough" — outer periosteal + inner meningeal layers; separated = dural sinuses → internal jugular veins</td></tr>
+<tr><td><strong>Arachnoid</strong></td><td>"Spider" — highly vascular; subarachnoid space contains CSF</td></tr>
+<tr><td><strong>Pia Mater</strong></td><td>"Gentle" — vascular layer; blood supply to brain surface; forms denticulate ligaments and filum terminale</td></tr></tbody></table>
+</div>
+</div>
+<div class="section-title">Clinical — Segmental Anatomy</div>
+<div class="bl-strip">
+<div class="bl-label">Nerve Root vs. Peripheral Nerve Injury</div>
+<table class="data-table"><thead>
+<tr><th>Feature</th><th>Nerve Root Injury</th><th>Peripheral Nerve Injury</th></tr></thead><tbody>
+<tr><td><strong>Weakness</strong></td><td>In myotome of spinal segment</td><td>In muscles supplied by peripheral nerve</td></tr>
+<tr><td><strong>Sensory</strong></td><td>Dermatome pattern</td><td>Cutaneous region of peripheral nerve</td></tr>
+<tr><td><strong>DTR</strong></td><td>Reduced in DTR of segment</td><td>Usually not affected</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Disc Herniation / Nerve Root Lesion</div>
+<p><strong>Dermatome</strong> — pain and sensory changes follow dermatome pattern <strong>Myotome</strong> — weakness in corresponding myotome <strong>Reflexes</strong> — decreased DTR of specific spinal segment Disc, tumor, osteophytes can all compress segmental nerve root</p>
+<div class="bl-strip gold">
+<div class="bl-label">C5 Example</div>
+<p>Dermatome: lateral arm numbness/tingling. Myotome: biceps weakness (elbow flexion). DTR: ↓ biceps tendon reflex.</p>
+</div>
+</div>
+</div>
+<div class="section-title">Lumbar Puncture &amp; Epidural</div>
+<div class="bl-strip">
+<div class="bl-label">Lumbar Puncture (Spinal Tap)</div>
+<p>Access CSF from subarachnoid space. Insert needle at <strong>L3–4 or L4–5</strong> intervertebral space (below conus medullaris at L1 — safe, no cord). Needle inserted until small "pop" indicates penetration of <strong>ligamentum flavum</strong>. Assess for CSF return.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Epidural</div>
+<p>Epidural needle placed in <strong>epidural space</strong> (between dura and bone). Local anesthetic bathes the nerve roots. Used for pain management (labor, post-surgical). Does not penetrate dura — different from spinal tap which enters subarachnoid space.</p>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Spinal Cord Structure &#8212; Cross-Section, Enlargements &amp; Attachments</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Gross Structure</div>
+<p>Cylindrical structure ~1cm diameter. Average length: ~45cm (male), ~42cm (female). Extends from <strong>medulla oblongata</strong> to <strong>conus medullaris (T12&#8211;L1)</strong>. Below conus: <strong>cauda equina</strong> (lumbosacral nerve roots) and <strong>filum terminale</strong> (pia + dura extension anchoring cord to coccyx).</p>
+<p><strong>Two enlargements:</strong><strong>Cervical (C5&#8211;T1)</strong> &#8212; gives rise to brachial plexus (UE innervation).<br><strong>Lumbar (L1&#8211;S2)</strong> &#8212; gives rise to lumbosacral plexus (LE innervation). These enlargements contain more gray matter (more motor neurons for the extremities).</p>
+<p><strong>31 spinal nerve pairs:</strong> 8 cervical (C1&#8211;C8), 12 thoracic, 5 lumbar, 5 sacral, 1 coccygeal. Cervical nerves exit <strong>above</strong> their numbered vertebra (except C8 which exits below C7). Thoracic and below exit <strong>below</strong> their numbered vertebra.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Cord Attachments &amp; Meninges</div>
+<p><strong>Denticulate (dentate) ligaments:</strong> lateral extensions of <strong>pia mater</strong> that anchor the spinal cord to the inner surface of the dura. ~21 pairs, like a picket fence along each side of the cord. Suspend and stabilize the cord within the dural sac.</p>
+<p><strong>Filum terminale:</strong> pia mater filament extending from conus medullaris (L1) through the dural sac. At S2 it picks up dural covering and attaches as a fibrous cord to the coccyx. Anchors the cord inferiorly.</p>
+<p><strong>Spinal meninges:</strong> Same 3 layers as cranial meninges but with key differences.<br><strong>Dura:</strong> in spine, meningeal and periosteal layers <strong>separate</strong> creating a true <strong>epidural space</strong> (contains fat + venous plexus &#8212; target for epidural anesthesia). In cranium, these layers are fused (no true epidural space).<br><strong>Arachnoid:</strong> subarachnoid space filled with CSF extends to <strong>S2</strong> (lumbar cistern L3&#8211;S2 = LP target).<br><strong>Pia:</strong> intimate with cord surface, sends extensions as denticulate ligaments.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Spinal Cord Gray &amp; White Matter &#8212; Complete Tract Reference</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Gray Matter (Butterfly/H-Shape) &#8212; Horns &amp; Laminae</div>
+<p>Gray matter is arranged in <strong>layers (laminae I&#8211;X, Rexed laminae)</strong> organized into three horns:</p>
+<p><strong>Dorsal (posterior) horn:</strong> receives <strong>sensory/afferent</strong> input. Cell bodies of 1st-order sensory neurons are in the <strong>dorsal root ganglion</strong> (outside the cord). Lamina I = marginal zone (pain/temp relay). Lamina II = substantia gelatinosa (pain modulation &#8212; gate control theory site). Laminae III&#8211;VI = nucleus proprius (discriminative touch).</p>
+<p><strong>Ventral (anterior) horn:</strong> contains <strong>somatic motor neuron pools</strong> &#8212; the &#8220;final common pathway.&#8221; Alpha motor neurons innervate extrafusal muscle fibers (voluntary contraction). Gamma motor neurons innervate intrafusal fibers (muscle spindle sensitivity). Medial motor neurons = axial muscles; lateral motor neurons = limb muscles.</p>
+<p><strong>Lateral horn:</strong> present only at <strong>T1&#8211;L2 (sympathetic)</strong> and <strong>S2&#8211;S4 (parasympathetic)</strong>. Contains preganglionic <strong>autonomic motor neurons</strong>. Efferent output to glands, cardiac muscle, smooth muscle.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">White Matter &#8212; Three Columns (Funiculi)</div>
+<p>White matter surrounds gray matter in three columns. Each contains named tracts (fasciculi).<br><strong>Dorsal columns</strong> = ascending sensory only.<br><strong>Lateral columns</strong> = mixed ascending + descending.<br><strong>Anterior columns</strong> = mixed ascending + descending.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Direction</th><th>Tract</th><th>Column</th><th>Modality</th><th>Decussation</th><th>Clinical</th></tr></thead><tbody>
+<tr><td rowspan="4" class="warn"><strong>Ascending<br>(Sensory)</strong></td><td><strong>Fasciculus Gracilis</strong></td><td>Dorsal</td><td>Discriminative touch, vibration, conscious proprioception from <strong>LE + lower trunk</strong> (below T6)</td><td>Medulla (nucleus gracilis &#8594; internal arcuate fibers &#8594; medial lemniscus)</td><td rowspan="2"><strong>DC/ML pathway.</strong> Ipsilateral cord deficit. Loss = loss of vibration, proprioception, 2-point discrimination on SAME side as lesion</td></tr>
+<tr><td><strong>Fasciculus Cuneatus</strong></td><td>Dorsal</td><td>Same modalities from <strong>UE + upper trunk</strong> (above T6)</td><td>Medulla (nucleus cuneatus &#8594; same pathway)</td></tr>
+<tr><td><strong>Lateral Spinothalamic</strong></td><td>Lateral</td><td><strong>Pain &amp; temperature</strong></td><td><strong>At spinal level of entry</strong> (crosses immediately via anterior gray commissure)</td><td><strong>Contralateral cord deficit.</strong> Loss = loss of pain/temp on OPPOSITE side. Key for Brown-S&#233;quard</td></tr>
+<tr><td><strong>Anterior Spinothalamic</strong></td><td>Anterior</td><td>Crude/light touch, pressure</td><td>At spinal level (crosses via anterior commissure)</td><td>Bilateral pathway &#8212; rarely isolated deficit</td></tr>
+<tr><td rowspan="5" class="warn"><strong>Descending<br>(Motor)</strong></td><td><strong>Lateral Corticospinal (CST)</strong></td><td>Lateral</td><td><strong>Voluntary motor &#8212; skilled, discrete limb movements</strong></td><td><strong>Pyramidal decussation</strong> (inferior medulla). ~85% of CST fibers cross here</td><td>Primary motor tract. UMN lesion above decussation = contralateral deficits. Lesion in cord = ipsilateral deficits below level</td></tr>
+<tr><td><strong>Anterior Corticospinal</strong></td><td>Anterior</td><td>Voluntary motor &#8212; axial/proximal muscles</td><td>At spinal level (crosses in anterior commissure)</td><td>~15% of CST fibers that don&#8217;t cross at pyramids. Bilateral innervation of trunk muscles</td></tr>
+<tr><td><strong>Rubrospinal</strong></td><td>Lateral</td><td>Facilitates flexors; assists with limb motor control</td><td>Crosses immediately in midbrain</td><td>Red nucleus origin. Largely replaced by CST in humans; may assist recovery after CST damage</td></tr>
+<tr><td><strong>Vestibulospinal</strong></td><td>Anterior</td><td>Postural tone; extensor facilitation; balance</td><td>Ipsilateral (does NOT cross)</td><td>Vestibular nuclei origin. Facilitates extensors for antigravity support. Important in decerebrate rigidity</td></tr>
+<tr><td><strong>Reticulospinal</strong></td><td>Anterior + Lateral</td><td>Postural control; locomotion; tone modulation</td><td>Bilateral (some cross, some don&#8217;t)</td><td>Reticular formation origin. Pontine = excitatory (extensors). Medullary = inhibitory. Regulates muscle tone</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Somatotopy in the Cord</div>
+<p>Tracts are organized somatotopically (body map within the tract).<br><strong>Dorsal columns:</strong> sacral fibers are most medial (gracilis), cervical most lateral (cuneatus).<br><strong>Lateral spinothalamic:</strong> sacral fibers are most <strong>posterolateral</strong>, cervical most <strong>anteromedial</strong>.<br><strong>Lateral CST:</strong> cervical fibers are most medial, sacral most lateral. This somatotopy explains why an expanding <strong>central cord lesion</strong> (e.g., syringomyelia) affects arms before legs &#8212; cervical fibers are closer to the center.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Ventricles &amp; CSF Circulation</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Ventricular System</div>
+<p>Four interconnected cavities within the brain filled with CSF:</p>
+<p><strong>Lateral ventricles (2):</strong> one in each cerebral hemisphere. Largest ventricles. C-shaped, with frontal (anterior), body, temporal (inferior), and occipital (posterior) horns. Connected to 3rd ventricle via <strong>interventricular foramina (of Monro)</strong>.</p>
+<p><strong>Third ventricle:</strong> midline slit in diencephalon between R/L thalami. Connected to 4th ventricle via <strong>cerebral aqueduct (of Sylvius)</strong> through the midbrain. Narrowest point &#8212; most common site of obstructive hydrocephalus.</p>
+<p><strong>Fourth ventricle:</strong> between pons/medulla anteriorly and cerebellum posteriorly. Diamond-shaped. CSF exits via 2 <strong>lateral apertures (foramina of Luschka)</strong> and 1 <strong>median aperture (foramen of Magendie)</strong> into the subarachnoid space. Continues inferiorly as the <strong>central canal</strong> of the spinal cord.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">CSF Circulation</div>
+<p><strong>Production:</strong><strong>Choroid plexus</strong> (specialized ependymal cells) within each ventricle produces ~500mL/day. Total CSF volume at any time ~150mL (turns over ~3x/day).</p>
+<p><strong>Pathway:</strong> Lateral ventricles &#8594; interventricular foramina (Monro) &#8594; 3rd ventricle &#8594; cerebral aqueduct (Sylvius) &#8594; 4th ventricle &#8594; foramina of Luschka + Magendie &#8594; subarachnoid space (circulates around brain and spinal cord down to S2) &#8594; absorbed by <strong>arachnoid granulations</strong> into superior sagittal sinus &#8594; venous blood.</p>
+<p><strong>Functions:</strong> Buoyancy (brain &#8220;floats&#8221; &#8212; effective weight reduced from 1400g to ~50g), shock absorption, nutrient transport, waste removal, maintains constant intracranial pressure.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Hydrocephalus</div>
+<p><strong>Obstructive (non-communicating):</strong> blockage within ventricular system (most commonly at cerebral aqueduct). CSF builds up proximal to obstruction &#8594; ventricles enlarge &#8594; increased ICP. Causes: tumor, congenital stenosis, hemorrhage.</p>
+<p><strong>Communicating:</strong> impaired CSF absorption at arachnoid granulations (no obstruction within ventricles). All ventricles enlarge uniformly. Causes: meningitis, subarachnoid hemorrhage (blood clogs granulations).</p>
+<p><strong>Normal pressure hydrocephalus (NPH):</strong> classic triad = <strong>&#8220;wet, wacky, wobbly&#8221;</strong> (urinary incontinence, dementia, gait ataxia). Treatable with VP shunt. Important DDx in elderly &#8212; reversible cause of dementia.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Spinal Cord Injury Patterns &#8212; Clinical Syndromes</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Syndrome</th><th>Lesion</th><th>Motor</th><th>Sensory</th><th>Mechanism / Notes</th></tr></thead><tbody>
+<tr><td class="warn">Complete Transection</td><td>Entire cord at one level</td><td>Complete paralysis below level (UMN signs after spinal shock resolves)</td><td>Complete loss of all sensation below level</td><td>Trauma, severe compression. Initially: spinal shock (flaccid, areflexic). Weeks later: spasticity, hyperreflexia, Babinski +</td></tr>
+<tr><td class="warn">Brown-S&#233;quard (Hemisection)</td><td>One lateral half of cord</td><td><strong>Ipsilateral:</strong> UMN paralysis below level (lateral CST)</td><td><strong>Ipsilateral:</strong> loss of proprioception, vibration, discriminative touch (dorsal columns). <strong>Contralateral:</strong> loss of pain &amp; temperature (lateral STT crossed at entry)</td><td>Stab wound, unilateral tumor. <strong>Best prognosis</strong> of incomplete SCIs. Remember: DC/ML ipsilateral, STT contralateral</td></tr>
+<tr><td class="warn">Central Cord</td><td>Central gray matter + adjacent white matter</td><td><strong>Arms &gt;&gt; legs</strong> (cervical motor fibers are medial in lateral CST &#8594; damaged first by central expanding lesion)</td><td>Variable &#8212; &#8220;cape&#8221; distribution of pain/temp loss (fibers crossing in anterior commissure disrupted)</td><td><strong>MC incomplete SCI.</strong> Older adults + cervical hyperextension with pre-existing stenosis. Syringomyelia causes similar pattern</td></tr>
+<tr><td class="hi">Anterior Cord</td><td>Anterior 2/3 of cord (ventral horns + lateral/anterior columns)</td><td>Complete motor paralysis below level (CST + ventral horn destroyed)</td><td><strong>Loss of pain &amp; temperature</strong> (STT). <strong>Proprioception and vibration PRESERVED</strong> (dorsal columns spared)</td><td>Anterior spinal artery occlusion. <strong>Worst prognosis</strong> of incompletes. Disc herniation can also cause this</td></tr>
+<tr><td class="hi">Posterior Cord</td><td>Dorsal columns only</td><td>Motor preserved</td><td>Loss of proprioception, vibration, discriminative touch. Pain &amp; temp preserved</td><td>Rare in isolation. Tabes dorsalis (tertiary syphilis), vitamin B12 deficiency, MS. Sensory ataxia (wide-based gait, positive Romberg)</td></tr>
+<tr><td class="hi">Cauda Equina</td><td>Nerve roots below L1&#8211;L2 (NOT cord)</td><td>LMN paralysis (flaccid, areflexic)</td><td>Saddle anesthesia (S2&#8211;S4). Bowel/bladder dysfunction</td><td><strong>Surgical emergency.</strong> Large central disc herniation. LMN signs (not UMN) because it's nerve roots, not cord. Asymmetric presentation possible</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">UMN vs LMN Review</div>
+<p><strong>UMN lesion (above anterior horn):</strong> spasticity, hyperreflexia, clonus, Babinski +, NO atrophy (disuse only).<br><strong>LMN lesion (anterior horn or below):</strong> flaccidity, areflexia/hyporeflexia, fasciculations, rapid atrophy, Babinski absent.<br><strong>Mixed:</strong> at the level of SCI you get LMN signs (anterior horn destroyed); below the level you get UMN signs (descending tracts interrupted).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Peripheral Nerve Structure &amp; Injury Classification</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Peripheral Nerve Organization</div>
+<p>A peripheral nerve is a <strong>conduit of thousands of individual neurons</strong> bundled together. Three layers of connective tissue: <strong>Endoneurium</strong> (surrounds individual axons), <strong>Perineurium</strong> (surrounds fascicles &#8212; bundles of axons; provides blood-nerve barrier), <strong>Epineurium</strong> (outermost layer surrounding entire nerve). Has its own intrinsic blood supply (vasa nervorum) that allows the nerve to stretch and glide during movement.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Classification</th><th>Seddon</th><th>Sunderland</th><th>Pathology</th><th>Recovery</th></tr></thead><tbody>
+<tr><td class="hi">Mildest</td><td><strong>Neurapraxia</strong></td><td>Grade I</td><td>Focal demyelination only. Axon intact. Conduction block at lesion site</td><td><strong>Full recovery</strong> in days to weeks. No Wallerian degeneration. &#8220;Saturday night palsy&#8221;</td></tr>
+<tr><td class="warn">Moderate</td><td><strong>Axonotmesis</strong></td><td>Grade II&#8211;IV</td><td>Axon disrupted. Wallerian degeneration distal to injury. Endoneurial tubes may be intact (II) or disrupted (III&#8211;IV)</td><td>Regeneration possible at <strong>~1mm/day (~1 inch/month)</strong>. Grade II: good recovery. Grade III&#8211;IV: may need surgery. Tinel&#8217;s sign tracks regeneration</td></tr>
+<tr><td class="warn">Severe</td><td><strong>Neurotmesis</strong></td><td>Grade V</td><td>Complete nerve transection. All layers disrupted</td><td><strong>No spontaneous recovery.</strong> Requires surgical repair (neurorrhaphy) or nerve grafting. Recovery depends on surgical timing and gap distance</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">CNS vs PNS Regeneration</div>
+<p><strong>PNS CAN regenerate</strong> &#8212; Schwann cells provide guidance tubes + neurotrophic factors that support axon regrowth (~1mm/day). <strong>CNS CANNOT regenerate effectively</strong> &#8212; oligodendrocytes produce myelin-associated inhibitory factors (Nogo, MAG) that block regrowth, and glial scarring (astrocytes) creates a physical barrier. This fundamental difference is why a peripheral nerve laceration can recover but a spinal cord injury cannot (yet).</p>
+</div>
+</div>
+</div>
+<div class='divider'>
+</div>
+<div class="section-title">PNS — Nerve Root to Peripheral Nerve</div>
+<div class="section-sub">The pathway from spinal cord to peripheral nerve: nerve roots → plexus → peripheral nerve. This architecture explains why nerve root injuries differ from peripheral nerve injuries in pattern.</div>
+<div class="bl-strip">
+<div class="bl-label">Nerve Root Anatomy</div>
+<p><strong>Dorsal Nerve Root</strong> — afferent (sensory); cell bodies in dorsal root ganglion <strong>Ventral Nerve Root</strong> — efferent (motor); cell bodies in ventral horn <strong>Dorsal Ramus</strong> — posterior branch; supplies deep muscles + skin of back <strong>Ventral Ramus</strong> — anterior branch; supplies limbs and anterior/lateral trunk; forms plexuses Nerve root exits through <strong>intervertebral foramen</strong></p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Pathway: Root → Plexus → Peripheral Nerve</div>
+<p>Ventral rami combine to form nerve plexuses (cervical, brachial, lumbar, sacral), which then reorganize into named peripheral nerves. This is why one peripheral nerve carries fibers from multiple spinal levels.</p>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Consequence</div>
+<p>A nerve root lesion = dermatomal/myotomal pattern. A peripheral nerve lesion = cutaneous territory of that nerve (crosses multiple dermatomes). Distinguishing the two localizes the pathology to either spine or limb.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Autonomic Nervous System &#8212; Sympathetic &amp; Parasympathetic Pathways</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">ANS Overview</div>
+<p>The ANS controls involuntary functions via a <strong>2-neuron chain:</strong> preganglionic neuron (cell body in CNS) &#8594; synapse in an autonomic ganglion &#8594; postganglionic neuron &#8594; target organ (smooth muscle, cardiac muscle, glands). Two divisions with generally <strong>opposing</strong> effects. Think of sympathetic as the &#8220;gas pedal&#8221; and parasympathetic as the &#8220;brake&#8221; &#8212; though the reality is more nuanced.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Feature</th><th>Sympathetic (&#8220;Fight or Flight&#8221;)</th><th>Parasympathetic (&#8220;Rest &amp; Digest&#8221;)</th></tr></thead><tbody>
+<tr><td class="warn">Outflow</td><td><strong>Thoracolumbar: T1&#8211;L2</strong> lateral horn</td><td><strong>Craniosacral:</strong> CN III, VII, IX, X (brainstem) + S2&#8211;S4 (sacral)</td></tr>
+<tr><td class="hi">Preganglionic</td><td>Short (exits cord &#8594; nearby sympathetic chain ganglia or prevertebral ganglia)</td><td>Long (travels all the way to target organ before synapsing)</td></tr>
+<tr><td class="hi">Postganglionic</td><td>Long (from ganglion to distant target)</td><td>Short (synapse occurs near or within target organ)</td></tr>
+<tr><td class="hi">Ganglia Location</td><td><strong>Sympathetic chain</strong> (paravertebral ganglia along spine) + <strong>prevertebral ganglia</strong> (celiac, superior/inferior mesenteric)</td><td><strong>Terminal ganglia</strong> (near or within target organ wall)</td></tr>
+<tr><td class="hi">Neurotransmitter</td><td>Preganglionic: <strong>ACh</strong> (nicotinic). Postganglionic: <strong>norepinephrine (NE)</strong> (adrenergic) &#8212; except sweat glands which use ACh</td><td>Preganglionic: <strong>ACh</strong> (nicotinic). Postganglionic: <strong>ACh</strong> (muscarinic)</td></tr>
+<tr><td class="warn">Effects</td><td>&#8593; HR, &#8593; BP, dilated pupils, bronchodilation, &#8593; blood glucose, &#8595; GI motility, vasoconstriction (skin/gut), vasodilation (skeletal muscle), sweat glands active</td><td>&#8595; HR, &#8595; BP, constricted pupils, bronchoconstriction, &#8593; GI motility/secretions, bladder contraction, erection (S2&#8211;S4)</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Sympathetic Pathway Detail</div>
+<p>Preganglionic neuron exits cord via <strong>ventral root</strong> &#8594; enters spinal nerve &#8594; leaves via <strong>white ramus communicans</strong> &#8594; enters <strong>sympathetic chain</strong> (paravertebral ganglia running along both sides of vertebral column). Three options: (1) synapse in ganglion at same level, (2) ascend/descend chain to synapse at different level, (3) pass through chain without synapsing to reach prevertebral ganglion (e.g., splanchnic nerves &#8594; celiac ganglion). Postganglionic fiber returns to spinal nerve via <strong>gray ramus communicans</strong> &#8594; reaches target via peripheral nerve.<br><strong>Adrenal medulla</strong> is a modified sympathetic ganglion &#8212; preganglionic fibers synapse directly on chromaffin cells that release epinephrine/NE into blood.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Clinical ANS Considerations</div>
+<p><strong>Horner&#8217;s syndrome:</strong> disruption of sympathetic pathway to face/eye &#8594; ipsilateral miosis (small pupil) + ptosis (partial, Müller&#8217;s muscle) + anhidrosis (no sweating). Causes: Pancoast tumor, carotid dissection, lateral medullary stroke, syringomyelia.<br><strong>Autonomic dysreflexia:</strong> SCI at T6 or above &#8594; noxious stimulus below injury level triggers massive sympathetic response (severe HTN, bradycardia, headache, flushing above level, pallor below).<br><strong>Medical emergency</strong> &#8212; can cause stroke/death. Sit patient upright, remove stimulus (full bladder most common cause).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Dermatome, Myotome &amp; DTR Reference &#8212; Complete Clinical Table</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Definitions</div>
+<p><strong>Dermatome:</strong> area of skin innervated by sensory fibers of a single spinal nerve.<br><strong>Myotome:</strong> group of muscles innervated by motor fibers of a single spinal nerve.<br><strong>Sclerotome:</strong> bones and ligaments innervated by fibers of a single spinal nerve (less clinically tested). Note: there is significant <strong>overlap</strong> between adjacent dermatomes &#8212; loss of a single root may produce only diminished (not absent) sensation.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Level</th><th>Dermatome Landmark</th><th>Myotome (Key Muscle)</th><th>Reflex (DTR)</th></tr></thead><tbody>
+<tr><td class="hi">C1&#8211;C2</td><td>Posterior skull / vertex</td><td>Cervical flexion (deep neck flexors)</td><td>&#8212;</td></tr>
+<tr><td class="hi">C3</td><td>Posterior neck, supraclavicular</td><td>Cervical lateral flexion</td><td>&#8212;</td></tr>
+<tr><td class="hi">C4</td><td>Top of shoulder (cape distribution)</td><td>Shoulder shrug (upper trapezius)</td><td>&#8212;</td></tr>
+<tr><td class="warn">C5</td><td><strong>Lateral arm</strong> (regimental badge area)</td><td><strong>Elbow flexion (biceps)</strong>; shoulder abduction (deltoid)</td><td><strong>Biceps (C5, C6)</strong></td></tr>
+<tr><td class="warn">C6</td><td><strong>Lateral forearm + thumb + index finger</strong></td><td><strong>Wrist extension (ECRL/ECRB)</strong>; elbow flexion (brachioradialis)</td><td><strong>Brachioradialis (C5, C6)</strong></td></tr>
+<tr><td class="warn">C7</td><td><strong>Middle finger</strong> + posterior forearm</td><td><strong>Elbow extension (triceps)</strong>; wrist flexion; finger extension</td><td><strong>Triceps (C7, C8)</strong></td></tr>
+<tr><td class="warn">C8</td><td><strong>Ring + little finger</strong> + medial forearm</td><td><strong>Finger flexion (FDP)</strong>; grip strength; thumb opposition</td><td>&#8212;</td></tr>
+<tr><td class="hi">T1</td><td>Medial arm + axilla</td><td><strong>Finger abduction (interossei)</strong></td><td>&#8212;</td></tr>
+<tr><td class="hi">T4</td><td><strong>Nipple line</strong></td><td>&#8212; (intercostals)</td><td>&#8212;</td></tr>
+<tr><td class="hi">T10</td><td><strong>Umbilicus</strong></td><td>&#8212; (abdominals)</td><td>&#8212;</td></tr>
+<tr><td class="hi">T12</td><td>Inguinal region</td><td>&#8212;</td><td>&#8212;</td></tr>
+<tr><td class="warn">L1&#8211;L2</td><td>Anterior/medial proximal thigh</td><td>Hip flexion (iliopsoas)</td><td><strong>Cremasteric (L1, L2)</strong></td></tr>
+<tr><td class="warn">L3</td><td>Anterior thigh to knee</td><td><strong>Knee extension (quads)</strong></td><td>&#8212;</td></tr>
+<tr><td class="warn">L4</td><td><strong>Medial leg + medial foot</strong></td><td><strong>Ankle dorsiflexion (tibialis anterior)</strong></td><td><strong>Patellar (L3, L4)</strong></td></tr>
+<tr><td class="warn">L5</td><td><strong>Lateral leg + dorsum of foot + great toe</strong></td><td><strong>Great toe extension (EHL)</strong>; hip abduction (glut med)</td><td>&#8212; (medial hamstring sometimes)</td></tr>
+<tr><td class="warn">S1</td><td><strong>Lateral foot + sole + little toe</strong></td><td><strong>Ankle plantarflexion (gastroc/soleus)</strong>; hip extension (glut max); ankle eversion (peroneals)</td><td><strong>Achilles (S1, S2)</strong></td></tr>
+<tr><td class="hi">S2</td><td>Posterior thigh (midline)</td><td>Knee flexion (hamstrings)</td><td>&#8212;</td></tr>
+<tr><td class="hi">S2&#8211;S4</td><td><strong>Saddle area</strong> (perineum)</td><td>Bladder/bowel sphincters; pelvic floor</td><td><strong>Bulbocavernosus (S3, S4)</strong>; anal wink (S4, S5)</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Application</div>
+<p><strong>Quick screen mnemonics:</strong> C5 = deltoid/biceps (&#8220;flexion five&#8221;). C6 = wrist extensors (&#8220;six-shooters&#8221; &#8212; cock the wrist). C7 = triceps (&#8220;lucky 7 pushes away&#8221;). C8 = grip (&#8220;gr8 grip&#8221;). T1 = finger spread (interossei). L4 = TA (&#8220;L4 hits the fLoor&#8221; = dorsiflexion). L5 = EHL (&#8220;L5 makes the big toe jive&#8221;). S1 = gastroc (&#8220;S1 = stand on 1 toe&#8221;).<br><strong>Key reflexes:</strong> Biceps (C5), Brachioradialis (C6), Triceps (C7), Patellar (L4), Achilles (S1). Mnemonic: <strong>1-2-3-4-5-6-7-8</strong> with &#8220;S1, 2; L3, 4; C5, 6; C7, 8&#8221; &#8212; reflexes go in ascending pairs.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Spinal Cord Blood Supply &#8212; Arteries &amp; Watershed Zones</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Arterial Supply</div>
+<p><strong>3 longitudinal arteries</strong> run the length of the cord:</p>
+<p><strong>Anterior spinal artery (1):</strong> runs in the anterior median fissure. Supplies the <strong>anterior 2/3 of the cord</strong> (ventral horns, lateral columns, anterior columns). Formed by branches of the vertebral arteries that unite at the medulla.<br><strong>Occlusion = anterior cord syndrome</strong> (motor paralysis + pain/temp loss; dorsal columns spared &#8594; proprioception/vibration intact).</p>
+<p><strong>Posterior spinal arteries (2):</strong> run along posterolateral cord near dorsal rootlets. Supply the <strong>posterior 1/3</strong> (dorsal columns, dorsal horns). Also from vertebral arteries. Occlusion = posterior cord syndrome (proprioception/vibration loss; rare in isolation).</p>
+<p><strong>Segmental (radicular) arteries:</strong> reinforce the longitudinal arteries at various levels. Enter through intervertebral foramina. Not present at every level &#8212; variable.</p>
+<p><strong>Artery of Adamkiewicz</strong> (great anterior radiculomedullary artery): the <strong>largest segmental artery</strong>, typically arising from the left side between <strong>T9&#8211;T12</strong> (sometimes L1&#8211;L2). Critically important &#8212; supplies the lumbar enlargement. Damage during aortic surgery or thoracolumbar fracture &#8594; anterior cord syndrome of the lower cord &#8594; paraplegia.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Watershed Zones
+  <p>Areas between the territories of two arterial supplies where blood flow is most tenuous: <strong>T4&#8211;T8 region</strong> is the most vulnerable watershed zone (between the upper segmental arteries from vertebral/subclavian and the lower segmental arteries including Adamkiewicz). During systemic hypotension (cardiac arrest, hemorrhagic shock, aortic cross-clamp), this zone is at highest risk of ischemic injury. <strong>Clinical:</strong> hypoperfusion injury at this level can produce paraplegia with preserved upper extremity function.</p>
 <div class="tab-panel" id="tab-cells">
 <div class="container">
-
-  <div class="section-title">Cells of the Nervous System</div>
-  <div class="section-sub">The nervous system contains two major cell types: neurons (functional conductors) and glial cells (support). Glial cells vastly outnumber neurons — and most CNS pathology involves disruption of one or both cell types.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Neurons</div>
-      <p><strong>10% of cells by number; 50% by volume</strong> "Electrical" conductors of action potentials Parts: Dendrites → Soma (cell body) → Axon Hillock → Axon Most CNS neurons are <strong>post-mitotic</strong> — cannot regenerate after injury (unlike PNS)</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Glial Cells</div>
-      <p><strong>90% of cells by number</strong> "Connective tissue" of the nervous system Five major types: Astrocytes, Oligodendrocytes, Schwann cells, Ependymal cells, Microglia</p>
-    </div>
-  </div>
-
-  <div class="section-title">Glial Cell Types</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Astrocytes (Astroglia)</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p><strong>Most abundant glial cell</strong> in CNS Maintain neural spatial relationships <strong>Induce formation of blood-brain barrier</strong> Chemical protection of neurons Control interstitial environment Absorb and degrade glutamate and GABA (neurotransmitters) — prevent excitotoxicity Control K⁺, Na⁺, and CO₂ levels around neurons</p>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Oligodendrocytes (CNS) / Schwann Cells (PNS)</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <p>Oligodendrocytes — CNS</p>
-          <p>Myelinate <strong>multiple axons</strong> in the CNS Demyelinating CNS diseases attack oligodendrocytes <strong>Multiple Sclerosis (MS)</strong> — classic oligodendrocyte demyelination <strong>ALS</strong> — also involves oligodendrocyte damage</p>
-        </div>
-        <div>
-          <p>Schwann Cells — PNS</p>
-          <p>Myelinate portions of <strong>individual axons</strong> in PNS <strong>Guillain-Barré Syndrome (GBS)</strong> — autoimmune attack on Schwann cells Unlike oligodendrocytes, Schwann cells can support PNS regeneration</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Ependymal Cells (Ependymoglia)</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p>Line the ventricles of the brain and central canal of spinal cord Choroid plexus ependymal cells — <strong>secrete CSF</strong> CSF provides buoyancy, shock absorption, and nutrient transport for the CNS</p>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Microglial Cells</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p><strong>Phagocytosis</strong> of degenerative debris in CNS Immune response of the CNS Smallest glial cell Activated in response to injury, infection, or neurodegenerative disease</p>
-    </div>
-  </div>
-
+<div class="section-title">Cells of the Nervous System</div>
+<div class="section-sub">The nervous system contains two major cell types: neurons (functional conductors) and glial cells (support). Glial cells vastly outnumber neurons — and most CNS pathology involves disruption of one or both cell types.</div>
+<div class="bl-strip">
+<div class="bl-label">Neurons</div>
+<p><strong>10% of cells by number; 50% by volume</strong> "Electrical" conductors of action potentials Parts: Dendrites → Soma (cell body) → Axon Hillock → Axon Most CNS neurons are <strong>post-mitotic</strong> — cannot regenerate after injury (unlike PNS)</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Glial Cells</div>
+<p><strong>90% of cells by number</strong> "Connective tissue" of the nervous system Five major types: Astrocytes, Oligodendrocytes, Schwann cells, Ependymal cells, Microglia</p>
 </div>
 </div>
-
-<!-- ====== CLINICAL PATHOLOGY ====== -->
+<div class="section-title">Glial Cell Types</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Astrocytes (Astroglia)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p><strong>Most abundant glial cell</strong> in CNS Maintain neural spatial relationships <strong>Induce formation of blood-brain barrier</strong> Chemical protection of neurons Control interstitial environment Absorb and degrade glutamate and GABA (neurotransmitters) — prevent excitotoxicity Control K⁺, Na⁺, and CO₂ levels around neurons</p>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Oligodendrocytes (CNS) / Schwann Cells (PNS)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<p>Oligodendrocytes — CNS</p>
+<p>Myelinate <strong>multiple axons</strong> in the CNS Demyelinating CNS diseases attack oligodendrocytes <strong>Multiple Sclerosis (MS)</strong> — classic oligodendrocyte demyelination <strong>ALS</strong> — also involves oligodendrocyte damage</p>
+</div>
+<div>
+<p>Schwann Cells — PNS</p>
+<p>Myelinate portions of <strong>individual axons</strong> in PNS <strong>Guillain-Barré Syndrome (GBS)</strong> — autoimmune attack on Schwann cells Unlike oligodendrocytes, Schwann cells can support PNS regeneration</p>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Ependymal Cells (Ependymoglia)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p>Line the ventricles of the brain and central canal of spinal cord Choroid plexus ependymal cells — <strong>secrete CSF</strong> CSF provides buoyancy, shock absorption, and nutrient transport for the CNS</p>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Microglial Cells</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p><strong>Phagocytosis</strong> of degenerative debris in CNS Immune response of the CNS Smallest glial cell Activated in response to injury, infection, or neurodegenerative disease</p>
+</div>
+</div>
 <div class="tab-panel" id="tab-clinical">
 <div class="container">
-
-  <div class="section-title">Clinical Pathology</div>
-  <div class="section-sub">Key neurological conditions — understand the anatomical basis of each disorder and the clinical presentation pattern. Each maps directly to a specific structure or pathway.</div>
-
-  <div class="bl-strip">
-    Basal Ganglia · Dopamine</div>
-    <h3>Parkinson's Disease</h3>
-    <div>
-        <div class="bl-strip red">
-          <div class="bl-label">Pathology</div>
-          <p>Loss of <strong>dopaminergic neurons in the substantia nigra</strong> → loss of dopamine input to striatum → BG remains in inhibitory state → <strong>decreased thalamic drive</strong> → hypo-motor symptoms.</p>
-        </div>
-      </div>
-      <div>
-        <div class="bl-strip gold">
-          <div class="bl-label">Clinical Presentation (TRAP)</div>
-          <p><strong>T</strong>remor (resting, pill-rolling) · <strong>R</strong>igidity · <strong>A</strong>kinesia/Bradykinesia · <strong>P</strong>ostural instability. Kinesia paradoxa: can suddenly move normally with visual cues (e.g., stepping over lines on floor).</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    Basal Ganglia · Caudate Nucleus</div>
-    <h3>Huntington's Disease</h3>
-    <div>
-        <div class="bl-strip red">
-          <div class="bl-label">Pathology</div>
-          <p>Autosomal dominant. <strong>Caudate nucleus and BG global atrophy</strong> → loss of BG inhibition → <strong>increased thalamic drive</strong> → hyper-motor symptoms. Caudate nuclei appear flattened/atrophied on coronal section; ventricles dilated.</p>
-        </div>
-      </div>
-      <div>
-        <div class="bl-strip gold">
-          <div class="bl-label">Clinical Presentation</div>
-          <p><strong>Chorea</strong> — involuntary, writhing, dance-like movements. Progressive cognitive and psychiatric decline. HD = Caudate nuclei and BG damage. Fatal; no cure. Genetic testing available.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    Global · Cortical Atrophy</div>
-    <h3>Alzheimer's Disease</h3>
-    <div>
-        <div class="bl-strip red">
-          <div class="bl-label">Pathology</div>
-          <p><strong>Meninges wrinkling, widened sulci, diffuse cortical atrophy</strong>. Loss of cholinergic neurons (nucleus basalis of Meynert). Amyloid plaques + neurofibrillary tangles (tau protein). Global cerebral atrophy.</p>
-        </div>
-      </div>
-      <div>
-        <div class="bl-strip gold">
-          <div class="bl-label">Clinical Presentation</div>
-          <p>Progressive memory loss (hippocampal involvement early), behavioral changes, language impairment, loss of ADL independence. Most common dementia. Risk increases with age.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    CNS Demyelination · Oligodendrocytes</div>
-    <h3>Multiple Sclerosis (MS)</h3>
-    <div>
-        <div class="bl-strip red">
-          <div class="bl-label">Pathology</div>
-          <p>Autoimmune demyelination of <strong>oligodendrocytes</strong> → irregular demyelinating plaques in white matter (periventricular distribution on MRI). Sclerosis = hardening/scar tissue at plaque sites.</p>
-        </div>
-      </div>
-      <div>
-        <div class="bl-strip gold">
-          <div class="bl-label">Clinical Presentation</div>
-          <p>Variable depending on lesion location. Common: optic neuritis, limb weakness/spasticity, sensory deficits, ataxia, fatigue, bladder dysfunction. Relapsing-remitting most common course. Heat intolerance (Uhthoff's phenomenon).</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    PNS Demyelination · Schwann Cells</div>
-    <h3>Guillain-Barré Syndrome (GBS)</h3>
-    <div>
-        <div class="bl-strip red">
-          <div class="bl-label">Pathology</div>
-          <p>Autoimmune demyelination of <strong>Schwann cells</strong> in PNS. Self-limiting. Related to autoimmune dysfunction, surgical complication, some vaccines, Hodgkin's disease, some drug reactions.</p>
-        </div>
-      </div>
-      <div>
-        <div class="bl-strip gold">
-          <div class="bl-label">Clinical Presentation</div>
-          <p>Motor and/or sensory dysfunction begins in <strong>extremities and moves proximally</strong> (ascending paralysis). May progress to respiratory failure requiring ventilatory support. Function usually restored within weeks to months. Also known as Landry paralysis.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    Subthalamic Nucleus</div>
-    <h3>Hemiballismus</h3>
-    <div>
-        <div class="bl-strip red">
-          <div class="bl-label">Pathology</div>
-          <p>Lesion to the <strong>subthalamic nucleus</strong> (functionally part of BG). Loss of subthalamic regulation of BG output.</p>
-        </div>
-      </div>
-      <div>
-        <div class="bl-strip gold">
-          <div class="bl-label">Clinical Presentation</div>
-          <p>Violent, involuntary <strong>flinging/ballistic movements</strong> of the contralateral limbs (proximal > distal). Unilateral. Often caused by stroke to subthalamic nucleus. Can be treated with BG-modulating medications or DBS.</p>
-        </div>
-      </div>
-    </div>
-
-
-<!-- ====== REVIEW ====== -->
+<div class="section-title">Clinical Pathology</div>
+<div class="section-sub">Key neurological conditions — understand the anatomical basis of each disorder and the clinical presentation pattern. Each maps directly to a specific structure or pathway.</div>
+<div class="bl-strip">
+  Basal Ganglia · Dopamine</div><h3>Parkinson's Disease</h3>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Pathology</div>
+<p>Loss of <strong>dopaminergic neurons in the substantia nigra</strong> → loss of dopamine input to striatum → BG remains in inhibitory state → <strong>decreased thalamic drive</strong> → hypo-motor symptoms.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Presentation (TRAP)</div>
+<p><strong>T</strong>remor (resting, pill-rolling) · <strong>R</strong>igidity · <strong>A</strong>kinesia/Bradykinesia · <strong>P</strong>ostural instability. Kinesia paradoxa: can suddenly move normally with visual cues (e.g., stepping over lines on floor).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+  Basal Ganglia · Caudate Nucleus</div><h3>Huntington's Disease</h3>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Pathology</div>
+<p>Autosomal dominant. <strong>Caudate nucleus and BG global atrophy</strong> → loss of BG inhibition → <strong>increased thalamic drive</strong> → hyper-motor symptoms. Caudate nuclei appear flattened/atrophied on coronal section; ventricles dilated.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Presentation</div>
+<p><strong>Chorea</strong> — involuntary, writhing, dance-like movements. Progressive cognitive and psychiatric decline. HD = Caudate nuclei and BG damage. Fatal; no cure. Genetic testing available.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+  Global · Cortical Atrophy</div><h3>Alzheimer's Disease</h3>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Pathology</div>
+<p><strong>Meninges wrinkling, widened sulci, diffuse cortical atrophy</strong>. Loss of cholinergic neurons (nucleus basalis of Meynert). Amyloid plaques + neurofibrillary tangles (tau protein). Global cerebral atrophy.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Presentation</div>
+<p>Progressive memory loss (hippocampal involvement early), behavioral changes, language impairment, loss of ADL independence. Most common dementia. Risk increases with age.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+  CNS Demyelination · Oligodendrocytes</div><h3>Multiple Sclerosis (MS)</h3>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Pathology</div>
+<p>Autoimmune demyelination of <strong>oligodendrocytes</strong> → irregular demyelinating plaques in white matter (periventricular distribution on MRI). Sclerosis = hardening/scar tissue at plaque sites.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Presentation</div>
+<p>Variable depending on lesion location. Common: optic neuritis, limb weakness/spasticity, sensory deficits, ataxia, fatigue, bladder dysfunction. Relapsing-remitting most common course. Heat intolerance (Uhthoff's phenomenon).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+  PNS Demyelination · Schwann Cells</div><h3>Guillain-Barré Syndrome (GBS)</h3>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Pathology</div>
+<p>Autoimmune demyelination of <strong>Schwann cells</strong> in PNS. Self-limiting. Related to autoimmune dysfunction, surgical complication, some vaccines, Hodgkin's disease, some drug reactions.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Presentation</div>
+<p>Motor and/or sensory dysfunction begins in <strong>extremities and moves proximally</strong> (ascending paralysis). May progress to respiratory failure requiring ventilatory support. Function usually restored within weeks to months. Also known as Landry paralysis.</p>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+  Subthalamic Nucleus
+  <h3>Hemiballismus</h3>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Pathology
+  <p>Lesion to the <strong>subthalamic nucleus</strong> (functionally part of BG). Loss of subthalamic regulation of BG output.</p>
+<div>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Presentation
+  <p>Violent, involuntary <strong>flinging/ballistic movements</strong> of the contralateral limbs (proximal> distal). Unilateral. Often caused by stroke to subthalamic nucleus. Can be treated with BG-modulating medications or DBS.</p>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to flip. Covers all CNS structures, functions, clinical correlations.</div>
-
-  <div class="mnemonic-box">
-    <div class="mn-title">Key Clinical Associations</div>
-    <div class="mn-phrase">PD · HD · MS · GBS · AD</div>
-    <div class="mn-expand">
-      <span>PD</span>: Substantia nigra (dopamine loss) ·
-      <span>HD</span>: Caudate + BG (chorea) ·
-      <span>MS</span>: Oligodendrocytes (CNS demyelination) ·
-      <span>GBS</span>: Schwann cells (PNS, ascending) ·
-      <span>AD</span>: Global cortical atrophy
-    </div>
-
-  <div class="rc2-grid">
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Name the 4 regions of the corpus callosum in order from anterior to posterior.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Rostrum</strong> (anterior-most tip) → <strong>Genu</strong> ("knee"; frontal lobe fibers) → <strong>Body</strong> (main trunk) → <strong>Splenium</strong> (posterior; carries visual and parietal fibers). All connect left ↔ right hemispheres.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">List the 3 white matter fiber types and what does each connect?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Commissures</strong>: L ↔ R hemispheres (corpus callosum, anterior commissure, hippocampal commissure). <strong>Projection fibers</strong>: cortex ↔ lower CNS (afferent = sensory in; efferent = CST out; travel through internal capsule). <strong>Association fibers</strong>: regions within same hemisphere.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the pathway from spinal cord to peripheral nerve, and why does it matter clinically in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Nerve roots → ventral rami → plexus → peripheral nerve. Each peripheral nerve carries fibers from <strong>multiple spinal levels</strong>. So nerve root injury = dermatomal/myotomal pattern; peripheral nerve injury = cutaneous territory of that nerve crossing multiple dermatomes. Pattern localizes the lesion.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the Reticular Activating System and what happens if it's damaged in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">A diffuse network in the <strong>tegmentum of the brainstem</strong> (pons, midbrain, medulla) connecting to hypothalamus and thalamus. Controls sleep/wake cycle, arousal, and level of consciousness. <strong>Damage in the midbrain RAS → coma.</strong> Also controls cardiovascular and respiratory centers.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Dorsal horn vs. In this case, ventral horn — which is sensory, which is motor, and where are the cell bodies?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Dorsal horn</strong> = sensory/afferent; cell bodies in <strong>dorsal root ganglion</strong>. <strong>Ventral horn</strong> = somatic motor/efferent; cell bodies <strong>in the ventral horn itself</strong>. Lateral horn = ANS/visceral motor. Dorsal columns carry sensory ascending; descending tracts carry motor commands from cortex and brainstem.</div>
-    </div>
-
-
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>CN I — Olfaction</strong>. All other sensory input passes through the thalamus first before reaching the cortex. Olfactory fibers project directly to the olfactory cortex (piriform cortex) without a thalamic relay.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the difference between Broca's aphasia and Wernicke's aphasia in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Broca's</strong> (frontal, Area 44/45): non-fluent speech, effortful, understands language — <em>production</em> deficit. <strong>Wernicke's</strong> (temporal, Area 22): fluent but meaningless speech, cannot understand — <em>comprehension</em> deficit. Both in left hemisphere in 95% of people.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Name the 4 memory types and the brain structure responsible for each.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Declarative</strong> (facts) → Hippocampus. <strong>Procedural/Motor</strong> learning → Cerebellum. <strong>Working/Short-term</strong> → Prefrontal Cortex. <strong>Emotional/Fear</strong> → Amygdala.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is perseveration and what structure's damage causes it in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Inability to stop doing something — e.g., sandpapering through a table, or continuing to talk about a topic after conversation has moved on. Caused by damage to the <strong>prefrontal cortex</strong> (executive functions, decision-making, emotional control).</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Summarize the basal ganglia brake/disinhibition hypothesis.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">BG continuously <strong>inhibits the thalamus</strong> (brake = no movement). To move, the cortex inhibits the BG's inhibitor = <strong>disinhibition</strong> → thalamus is released → motor cortex activates → desired movement. BG refines movement; doesn't initiate it.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the corpus striatum and its components in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Corpus Striatum = Caudate + Putamen + Globus Pallidus</strong>. Striatum (input) = Caudate + Putamen. Lentiform = Putamen + Globus Pallidus. Globus Pallidus = BG output nucleus. Caudate/Putamen = receive cortical excitatory input.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Where does the corticospinal tract cross midline and what does this mean clinically in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Pyramidal decussation</strong> at the caudal/inferior medulla oblongata. This is why the <strong>right cerebral cortex controls the left side of the body</strong> and vice versa. Stroke in left motor cortex → right-sided weakness/paralysis.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Which glial cell myelinates in the CNS vs. In this case, PNS, and what disease attacks each?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>CNS: Oligodendrocytes</strong> (myelinate multiple axons) — attacked in <strong>MS/ALS</strong>. <strong>PNS: Schwann cells</strong> (myelinate individual axon segments) — attacked in <strong>GBS</strong>. Key: one oligodendrocyte wraps many axons; one Schwann cell wraps one axon segment.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Distinguish anterograde from retrograde amnesia and which structure causes each.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Anterograde amnesia</strong>: cannot store NEW memories — caused by hippocampal damage (H.M. case study). <strong>Retrograde amnesia</strong>: cannot recall OLD memories. Hippocampus required for encoding new declarative memories into long-term storage, but not for retrieving old ones.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">List the three hypothalamic system influences and give one example of each?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>ANS</strong>: posterior hypothalamus → sympathetic; anterior → parasympathetic. <strong>Endocrine</strong>: produces ADH (vasopressin), regulates anterior pituitary hormone release. <strong>Limbic</strong>: emotional expression (rage, fear, pleasure) via limbic connections. Also regulates circadian rhythm (suprachiasmatic nucleus).</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the clinical difference between nerve root injury and peripheral nerve injury in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Nerve root: weakness in <strong>myotome</strong>, sensory in <strong>dermatome</strong>, ↓ DTR of that segment. Peripheral nerve: weakness in <strong>specific muscles of that nerve</strong>, sensory in <strong>cutaneous territory of nerve</strong>, DTR usually spared. Pattern of deficit localizes the lesion.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is hemiballismus and what structure is damaged in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Violent, involuntary flinging movements of contralateral limbs. Caused by lesion to the <strong>subthalamic nucleus</strong> (functionally part of BG). Often from stroke. Loss of subthalamic regulation → BG output disinhibited → excessive motor activity.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Where does the spinal cord end and what structures are below in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Conus medullaris at <strong>T12–L1</strong>. Below: <strong>cauda equina</strong> (bundle of nerve roots descending within the dural sac). <strong>Filum terminale</strong> anchors cord to coccyx. Lumbar puncture done at L3–4 or L4–5 — below the conus, only nerve roots present = safe.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Name the three cerebellar functions and which one makes it clinically unique?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>(1) Coordination of voluntary movement</strong>, <strong>(2) Equilibrium</strong>, <strong>(3) Motor/procedural learning</strong>. Unique: cerebellar lesions produce <strong>ipsilateral</strong> signs (same side as lesion) — opposite of cortical lesions which are contralateral. Classic: ataxia, dysmetria, intention tremor.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Why does GBS present with ascending paralysis and what is its prognosis in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">GBS is autoimmune demyelination of <strong>Schwann cells</strong> in PNS. Starts in extremities (longest nerves affected first) and moves proximally — ascending pattern. <strong>Self-limiting</strong> — function usually restored within weeks to months. Can cause respiratory failure requiring mechanical ventilation during acute phase.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Name the three white matter fiber types in the brain?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Commissures</strong>: transverse connections between hemispheres (corpus callosum, anterior commissure). <strong>Projection fibers</strong>: connect cortex to/from lower CNS (afferent = sensory in; efferent = CST out). <strong>Association fibers</strong>: connect regions within the same hemisphere.</div>
-    </div>
-
-
-
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to flip. Covers all CNS structures, functions, clinical correlations.</div>
+<div class="mnemonic-box">
+<div class="mn-title">Key Clinical Associations</div>
+<div class="mn-phrase">PD · HD · MS · GBS · AD</div>
+<div class="mn-expand"><span>PD</span>: Substantia nigra (dopamine loss) ·
+  <span>HD</span>: Caudate + BG (chorea) ·
+  <span>MS</span>: Oligodendrocytes (CNS demyelination) ·
+  <span>GBS</span>: Schwann cells (PNS, ascending) ·
+  <span>AD</span>: Global cortical atrophy
+  </div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Name the 4 regions of the corpus callosum in order from anterior to posterior.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Rostrum</strong> (anterior-most tip) → <strong>Genu</strong> ("knee"; frontal lobe fibers) → <strong>Body</strong> (main trunk) → <strong>Splenium</strong> (posterior; carries visual and parietal fibers). All connect left ↔ right hemispheres.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">List the 3 white matter fiber types and what does each connect?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Commissures</strong>: L ↔ R hemispheres (corpus callosum, anterior commissure, hippocampal commissure). <strong>Projection fibers</strong>: cortex ↔ lower CNS (afferent = sensory in; efferent = CST out; travel through internal capsule). <strong>Association fibers</strong>: regions within same hemisphere.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the pathway from spinal cord to peripheral nerve, and why does it matter clinically in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Nerve roots → ventral rami → plexus → peripheral nerve. Each peripheral nerve carries fibers from <strong>multiple spinal levels</strong>. So nerve root injury = dermatomal/myotomal pattern; peripheral nerve injury = cutaneous territory of that nerve crossing multiple dermatomes. Pattern localizes the lesion.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the Reticular Activating System and what happens if it's damaged in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">A diffuse network in the <strong>tegmentum of the brainstem</strong> (pons, midbrain, medulla) connecting to hypothalamus and thalamus. Controls sleep/wake cycle, arousal, and level of consciousness. <strong>Damage in the midbrain RAS → coma.</strong> Also controls cardiovascular and respiratory centers.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Dorsal horn vs. In this case, ventral horn — which is sensory, which is motor, and where are the cell bodies?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Dorsal horn</strong> = sensory/afferent; cell bodies in <strong>dorsal root ganglion</strong>. <strong>Ventral horn</strong> = somatic motor/efferent; cell bodies <strong>in the ventral horn itself</strong>. Lateral horn = ANS/visceral motor. Dorsal columns carry sensory ascending; descending tracts carry motor commands from cortex and brainstem.</div>
+</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>CN I — Olfaction</strong>. All other sensory input passes through the thalamus first before reaching the cortex. Olfactory fibers project directly to the olfactory cortex (piriform cortex) without a thalamic relay.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the difference between Broca's aphasia and Wernicke's aphasia in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Broca's</strong> (frontal, Area 44/45): non-fluent speech, effortful, understands language — <em>production</em> deficit. <strong>Wernicke's</strong> (temporal, Area 22): fluent but meaningless speech, cannot understand — <em>comprehension</em> deficit. Both in left hemisphere in 95% of people.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Name the 4 memory types and the brain structure responsible for each.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Declarative</strong> (facts) → Hippocampus. <strong>Procedural/Motor</strong> learning → Cerebellum. <strong>Working/Short-term</strong> → Prefrontal Cortex. <strong>Emotional/Fear</strong> → Amygdala.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is perseveration and what structure's damage causes it in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Inability to stop doing something — e.g., sandpapering through a table, or continuing to talk about a topic after conversation has moved on. Caused by damage to the <strong>prefrontal cortex</strong> (executive functions, decision-making, emotional control).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Summarize the basal ganglia brake/disinhibition hypothesis.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">BG continuously <strong>inhibits the thalamus</strong> (brake = no movement). To move, the cortex inhibits the BG's inhibitor = <strong>disinhibition</strong> → thalamus is released → motor cortex activates → desired movement. BG refines movement; doesn't initiate it.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the corpus striatum and its components in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Corpus Striatum = Caudate + Putamen + Globus Pallidus</strong>. Striatum (input) = Caudate + Putamen. Lentiform = Putamen + Globus Pallidus. Globus Pallidus = BG output nucleus. Caudate/Putamen = receive cortical excitatory input.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Where does the corticospinal tract cross midline and what does this mean clinically in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Pyramidal decussation</strong> at the caudal/inferior medulla oblongata. This is why the <strong>right cerebral cortex controls the left side of the body</strong> and vice versa. Stroke in left motor cortex → right-sided weakness/paralysis.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Which glial cell myelinates in the CNS vs. In this case, PNS, and what disease attacks each?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>CNS: Oligodendrocytes</strong> (myelinate multiple axons) — attacked in <strong>MS/ALS</strong>. <strong>PNS: Schwann cells</strong> (myelinate individual axon segments) — attacked in <strong>GBS</strong>. Key: one oligodendrocyte wraps many axons; one Schwann cell wraps one axon segment.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Distinguish anterograde from retrograde amnesia and which structure causes each.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Anterograde amnesia</strong>: cannot store NEW memories — caused by hippocampal damage (H.M. case study). <strong>Retrograde amnesia</strong>: cannot recall OLD memories. Hippocampus required for encoding new declarative memories into long-term storage, but not for retrieving old ones.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">List the three hypothalamic system influences and give one example of each?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>ANS</strong>: posterior hypothalamus → sympathetic; anterior → parasympathetic. <strong>Endocrine</strong>: produces ADH (vasopressin), regulates anterior pituitary hormone release. <strong>Limbic</strong>: emotional expression (rage, fear, pleasure) via limbic connections. Also regulates circadian rhythm (suprachiasmatic nucleus).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the clinical difference between nerve root injury and peripheral nerve injury in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Nerve root: weakness in <strong>myotome</strong>, sensory in <strong>dermatome</strong>, ↓ DTR of that segment. Peripheral nerve: weakness in <strong>specific muscles of that nerve</strong>, sensory in <strong>cutaneous territory of nerve</strong>, DTR usually spared. Pattern of deficit localizes the lesion.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is hemiballismus and what structure is damaged in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Violent, involuntary flinging movements of contralateral limbs. Caused by lesion to the <strong>subthalamic nucleus</strong> (functionally part of BG). Often from stroke. Loss of subthalamic regulation → BG output disinhibited → excessive motor activity.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Where does the spinal cord end and what structures are below in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Conus medullaris at <strong>T12–L1</strong>. Below: <strong>cauda equina</strong> (bundle of nerve roots descending within the dural sac). <strong>Filum terminale</strong> anchors cord to coccyx. Lumbar puncture done at L3–4 or L4–5 — below the conus, only nerve roots present = safe.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Name the three cerebellar functions and which one makes it clinically unique?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>(1) Coordination of voluntary movement</strong>, <strong>(2) Equilibrium</strong>, <strong>(3) Motor/procedural learning</strong>. Unique: cerebellar lesions produce <strong>ipsilateral</strong> signs (same side as lesion) — opposite of cortical lesions which are contralateral. Classic: ataxia, dysmetria, intention tremor.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Why does GBS present with ascending paralysis and what is its prognosis in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">GBS is autoimmune demyelination of <strong>Schwann cells</strong> in PNS. Starts in extremities (longest nerves affected first) and moves proximally — ascending pattern. <strong>Self-limiting</strong> — function usually restored within weeks to months. Can cause respiratory failure requiring mechanical ventilation during acute phase.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Name the three white matter fiber types in the brain?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Commissures</strong>: transverse connections between hemispheres (corpus callosum, anterior commissure). <strong>Projection fibers</strong>: connect cortex to/from lower CNS (afferent = sensory in; efferent = CST out). <strong>Association fibers</strong>: connect regions within the same hemisphere.</div>
+</div>
+</div>
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -1157,6 +976,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

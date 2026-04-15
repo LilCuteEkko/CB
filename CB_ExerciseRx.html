@@ -1,429 +1,438 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Exercise Prescription</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Exercise Prescription</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">Exercise Science &middot; Clinical Exercise Prescription</div>
-  <h1>Exercise <span>Prescription</span></h1>
-  <p>ACSM guidelines, heart rate training zones, RPE scales, vital sign monitoring, exercise precautions and contraindications, warm-up and cool-down protocols, recovery science, special population modifications, and lifting mechanics for safe clinical exercise prescription.</p>
+<div class="hero-tag">Exercise Science &middot; Clinical Exercise Prescription</div>
+<h1>Exercise <span>Prescription</span></h1>
+<p>ACSM guidelines, heart rate training zones, RPE scales, vital sign monitoring, exercise precautions and contraindications, warm-up and cool-down protocols, recovery science, special population modifications, and lifting mechanics for safe clinical exercise prescription.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('vitals',this)">Vital Signs</button>
-  <button onclick="showTab('hr',this)">Heart Rate Zones</button>
-  <button onclick="showTab('rpe',this)">RPE &amp; Intensity</button>
-  <button onclick="showTab('acsm',this)">ACSM Rx Guidelines</button>
-  <button onclick="showTab('precautions',this)">Precautions</button>
-  <button onclick="showTab('warmup',this)">Warm-Up &amp; Cool-Down</button>
-  <button onclick="showTab('mechanics',this)">Lifting Mechanics</button>
-  <button onclick="showTab('recovery',this)">Recovery Science</button>
-  <button onclick="showTab('special',this)">Special Populations</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('vitals',this)">Vital Signs</button>
+<button onclick="showTab('hr',this)">Heart Rate Zones</button>
+<button onclick="showTab('rpe',this)">RPE &amp; Intensity</button>
+<button onclick="showTab('acsm',this)">ACSM Rx Guidelines</button>
+<button onclick="showTab('precautions',this)">Precautions</button>
+<button onclick="showTab('warmup',this)">Warm-Up &amp; Cool-Down</button>
+<button onclick="showTab('mechanics',this)">Lifting Mechanics</button>
+<button onclick="showTab('recovery',this)">Recovery Science</button>
+<button onclick="showTab('special',this)">Special Populations</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== VITAL SIGNS ====== -->
 <div class="tab-panel active" id="tab-vitals">
 <div class="container">
-  <div class="section-title">Vital Sign Monitoring During Exercise</div>
-  <div class="section-sub">Every exercise session should begin with baseline vital signs and include monitoring throughout. Abnormal responses are your earliest warning of cardiac, pulmonary, or metabolic decompensation. Know when to stop.</div>
-
-  <div class="section-title">Resting Vital Sign Norms</div>
-  <table class="data-table"><thead><tr><th>Parameter</th><th>Normal Range</th><th>Abnormal Response</th><th>Action</th></tr></thead><tbody>
-    <tr><td class="hi">Heart Rate</td><td>60&ndash;100 bpm</td><td>&lt;60 (bradycardia) or &gt;100 (tachycardia) at rest</td><td>Bradycardia: check medications (beta-blockers). Tachycardia: assess for pain, fever, dehydration, anxiety, cardiac pathology</td></tr>
-    <tr><td class="hi">Blood Pressure</td><td>Systolic &lt;120 / Diastolic &lt;80 mmHg</td><td>Hypertension: &ge;130/80 (Stage 1), &ge;140/90 (Stage 2), &ge;180/120 (crisis). Hypotension: SBP &lt;90</td><td>Do NOT exercise if SBP &gt;200 or DBP &gt;110. Hypotension: lay flat, elevate legs, call for help if symptomatic</td></tr>
-    <tr><td class="hi">Respiratory Rate</td><td>12&ndash;20 breaths/min</td><td>&lt;12 (bradypnea) or &gt;20 (tachypnea) at rest</td><td>Tachypnea at rest may indicate respiratory distress, pain, anxiety, metabolic acidosis</td></tr>
-    <tr><td class="hi">SpO2</td><td>&ge;95%</td><td>&lt;90% = significant hypoxemia</td><td>Stop exercise if SpO2 drops below 88&ndash;90%. Supplemental O2 may be needed. &lt;85% = medical emergency</td></tr>
-    <tr><td class="hi">Temperature</td><td>36.1&ndash;37.2&deg;C (97&ndash;99&deg;F)</td><td>&gt;38&deg;C (100.4&deg;F) = fever</td><td>Do NOT exercise with active fever &mdash; increases cardiac demand + risk of myocarditis</td></tr>
-  </tbody></table>
-
-  <div class="section-title">Normal Exercise Responses</div>
-  <table class="data-table"><thead><tr><th>Parameter</th><th>Normal Exercise Response</th><th>Abnormal Response &mdash; STOP Exercise</th></tr></thead><tbody>
-    <tr><td class="hi">Systolic BP</td><td>Rises proportionally with intensity (increase 8&ndash;12 mmHg per MET). Peak exercise SBP ~160&ndash;220 mmHg</td><td><strong>SBP drops &gt;10 mmHg with increasing workload</strong> = cardiac pump failure (very serious). SBP &gt;250 mmHg. Failure to rise with increasing workload</td></tr>
-    <tr><td class="hi">Diastolic BP</td><td>Stays roughly the same or decreases slightly (&plusmn;10 mmHg)</td><td><strong>DBP rises &gt;110 mmHg</strong> during exercise. DBP rises &gt;15 mmHg from baseline = excessive afterload</td></tr>
-    <tr><td class="hi">Heart Rate</td><td>Rises linearly with increasing workload. Proportional to oxygen demand</td><td>Failure to rise with increasing workload (chronotropic incompetence). Excessive rise disproportionate to workload. New irregular rhythm</td></tr>
-    <tr><td class="hi">SpO2</td><td>Maintains &ge;95% (may drop 1&ndash;2% with intense exercise)</td><td>Drops &gt;4% from baseline. Falls below 88&ndash;90%. Desaturation with minimal exertion</td></tr>
-    <tr><td class="hi">Respiratory Rate</td><td>Increases proportionally. Normal exercise RR 30&ndash;40+ at peak</td><td>Excessive dyspnea disproportionate to workload. Inability to speak in sentences (severe)</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip red">
-    <div class="bl-label">Immediate Stop Criteria &mdash; Terminate Exercise</div>
-    <p>SBP drops &gt;10 mmHg with increasing workload &bull; SBP &gt;250 or DBP &gt;115 mmHg &bull; SpO2 &lt;88% &bull; New onset chest pain, pressure, or tightness &bull; Severe dyspnea disproportionate to exertion &bull; Dizziness, lightheadedness, near-syncope &bull; Pallor, cyanosis, cold/clammy skin &bull; New arrhythmia (irregular pulse) &bull; Ataxia or confusion &bull; Patient requests to stop. <strong>When in doubt, STOP.</strong></p>
-  </div>
+<div class="section-title">Vital Sign Monitoring During Exercise</div>
+<div class="section-sub">Every exercise session should begin with baseline vital signs and include monitoring throughout. Abnormal responses are your earliest warning of cardiac, pulmonary, or metabolic decompensation. Know when to stop.</div>
+<div class="section-title">Resting Vital Sign Norms</div>
+<table class="data-table"><thead>
+<tr><th>Parameter</th><th>Normal Range</th><th>Abnormal Response</th><th>Action</th></tr></thead><tbody>
+<tr><td class="hi">Heart Rate</td><td>60&ndash;100 bpm</td><td>&lt;60 (bradycardia) or &gt;100 (tachycardia) at rest</td><td>Bradycardia: check medications (beta-blockers). Tachycardia: assess for pain, fever, dehydration, anxiety, cardiac pathology</td></tr>
+<tr><td class="hi">Blood Pressure</td><td>Systolic &lt;120 / Diastolic &lt;80 mmHg</td><td>Hypertension: &ge;130/80 (Stage 1), &ge;140/90 (Stage 2), &ge;180/120 (crisis). Hypotension: SBP &lt;90</td><td>Do NOT exercise if SBP &gt;200 or DBP &gt;110. Hypotension: lay flat, elevate legs, call for help if symptomatic</td></tr>
+<tr><td class="hi">Respiratory Rate</td><td>12&ndash;20 breaths/min</td><td>&lt;12 (bradypnea) or &gt;20 (tachypnea) at rest</td><td>Tachypnea at rest may indicate respiratory distress, pain, anxiety, metabolic acidosis</td></tr>
+<tr><td class="hi">SpO2</td><td>&ge;95%</td><td>&lt;90% = significant hypoxemia</td><td>Stop exercise if SpO2 drops below 88&ndash;90%. Supplemental O2 may be needed. &lt;85% = medical emergency</td></tr>
+<tr><td class="hi">Temperature</td><td>36.1&ndash;37.2&deg;C (97&ndash;99&deg;F)</td><td>&gt;38&deg;C (100.4&deg;F) = fever</td><td>Do NOT exercise with active fever &mdash; increases cardiac demand + risk of myocarditis</td></tr></tbody></table>
+<div class="section-title">Normal Exercise Responses</div>
+<table class="data-table"><thead>
+<tr><th>Parameter</th><th>Normal Exercise Response</th><th>Abnormal Response &mdash; STOP Exercise</th></tr></thead><tbody>
+<tr><td class="hi">Systolic BP</td><td>Rises proportionally with intensity (increase 8&ndash;12 mmHg per MET). Peak exercise SBP ~160&ndash;220 mmHg</td><td><strong>SBP drops &gt;10 mmHg with increasing workload</strong> = cardiac pump failure (very serious). SBP &gt;250 mmHg. Failure to rise with increasing workload</td></tr>
+<tr><td class="hi">Diastolic BP</td><td>Stays roughly the same or decreases slightly (&plusmn;10 mmHg)</td><td><strong>DBP rises &gt;110 mmHg</strong> during exercise. DBP rises &gt;15 mmHg from baseline = excessive afterload</td></tr>
+<tr><td class="hi">Heart Rate</td><td>Rises linearly with increasing workload. Proportional to oxygen demand</td><td>Failure to rise with increasing workload (chronotropic incompetence). Excessive rise disproportionate to workload. New irregular rhythm</td></tr>
+<tr><td class="hi">SpO2</td><td>Maintains &ge;95% (may drop 1&ndash;2% with intense exercise)</td><td>Drops &gt;4% from baseline. Falls below 88&ndash;90%. Desaturation with minimal exertion</td></tr>
+<tr><td class="hi">Respiratory Rate</td><td>Increases proportionally. Normal exercise RR 30&ndash;40+ at peak</td><td>Excessive dyspnea disproportionate to workload. Inability to speak in sentences (severe)</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Immediate Stop Criteria &mdash; Terminate Exercise</div>
+<p>SBP drops &gt;10 mmHg with increasing workload &bull; SBP &gt;250 or DBP &gt;115 mmHg &bull; SpO2 &lt;88% &bull; New onset chest pain, pressure, or tightness &bull; Severe dyspnea disproportionate to exertion &bull; Dizziness, lightheadedness, near-syncope &bull; Pallor, cyanosis, cold/clammy skin &bull; New arrhythmia (irregular pulse) &bull; Ataxia or confusion &bull; Patient requests to stop. <strong>When in doubt, STOP.</strong></p>
 </div>
-
-<!-- ====== HEART RATE ZONES ====== -->
+</div>
+</div>
 <div class="tab-panel" id="tab-hr">
 <div class="container">
-  <div class="section-title">Heart Rate Training Zones</div>
-  <div class="section-sub">Heart rate is the most common intensity metric. Know the formulas, their limitations, and when NOT to use HR (beta-blockers, pacemakers, AFib).</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>HR Calculation Methods</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Method</th><th>Formula</th><th>Pros</th><th>Cons</th></tr></thead><tbody>
-        <tr><td class="warn">Age-Predicted HRmax</td><td><strong>220 &minus; age</strong></td><td>Simple, quick, no equipment needed</td><td>Standard deviation &plusmn;10&ndash;12 bpm. Inaccurate for older adults, deconditioned, or athletes. Least accurate method</td></tr>
-        <tr><td class="warn">Karvonen (HRR)</td><td><strong>THR = (HRmax &minus; HRrest) &times; %intensity + HRrest</strong></td><td>Accounts for resting HR (fitness level). More individualized. %HRR correlates closely with %VO2R</td><td>Still relies on predicted HRmax unless measured. Gold standard calculation for clinical use</td></tr>
-        <tr><td class="hi">Measured HRmax</td><td>From graded exercise test (GXT)</td><td>Most accurate. Uses actual patient data</td><td>Requires exercise testing equipment and physician supervision for high-risk patients</td></tr>
-      </tbody></table>
-
-      <div class="bl-strip gold"><div class="bl-label">Karvonen Example</div>
-      <p>Patient: 50 years old, resting HR = 70 bpm. Target: 60&ndash;80% intensity.<br>
-      HRmax = 220 &minus; 50 = 170 bpm. HRR = 170 &minus; 70 = 100 bpm.<br>
-      <strong>Lower target:</strong> (100 &times; 0.60) + 70 = <strong>130 bpm</strong><br>
-      <strong>Upper target:</strong> (100 &times; 0.80) + 70 = <strong>150 bpm</strong><br>
-      Training zone = <strong>130&ndash;150 bpm</strong></p></div>
-    </div>
-  </div>
-
-  <div class="section-title">Training Zones</div>
-  <table class="data-table"><thead><tr><th>Zone</th><th>% HRmax</th><th>% HRR (Karvonen)</th><th>Feels Like</th><th>Training Effect</th></tr></thead><tbody>
-    <tr><td class="hi">Zone 1 &mdash; Recovery</td><td>50&ndash;60%</td><td>30&ndash;45%</td><td>Very easy. Full conversation. Walking pace</td><td>Active recovery, warm-up, cool-down, deconditioned patients</td></tr>
-    <tr><td class="hi">Zone 2 &mdash; Aerobic Base</td><td>60&ndash;70%</td><td>45&ndash;60%</td><td>Comfortable. Can talk in sentences</td><td>Fat oxidation, aerobic base building, endurance. Most rehab patients should train here</td></tr>
-    <tr><td class="warn">Zone 3 &mdash; Tempo</td><td>70&ndash;80%</td><td>60&ndash;75%</td><td>Moderate. Conversation limited to phrases</td><td>Improved aerobic capacity, lactate threshold training</td></tr>
-    <tr><td class="warn">Zone 4 &mdash; Threshold</td><td>80&ndash;90%</td><td>75&ndash;90%</td><td>Hard. Only single words. Breathing heavily</td><td>VO2max improvement, anaerobic threshold, race-pace training</td></tr>
-    <tr><td class="hi">Zone 5 &mdash; Max</td><td>90&ndash;100%</td><td>90&ndash;100%</td><td>Maximal effort. Cannot speak. Unsustainable</td><td>Max power output, sprint training. Rarely appropriate for rehab patients</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip red"><div class="bl-label">When NOT to Use Heart Rate</div>
-  <p><strong>Beta-blockers</strong> blunt HR response &mdash; patient cannot reach target HR. Use RPE (Borg 12&ndash;14) or METs instead.<br><strong>Pacemaker</strong> (rate-responsive or fixed-rate) &mdash; HR is artificially controlled.<br><strong>Atrial fibrillation</strong> &mdash; HR is irregular and unreliable.<br><strong>Autonomic neuropathy</strong> (diabetic) &mdash; HR response is blunted.<br><strong>Transplant heart</strong> &mdash; denervated, relies on circulating catecholamines for HR increase (delayed response). In all these cases: use RPE as primary intensity monitor.</p></div>
+<div class="section-title">Heart Rate Training Zones</div>
+<div class="section-sub">Heart rate is the most common intensity metric. Know the formulas, their limitations, and when NOT to use HR (beta-blockers, pacemakers, AFib).</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>HR Calculation Methods</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Method</th><th>Formula</th><th>Pros</th><th>Cons</th></tr></thead><tbody>
+<tr><td class="warn">Age-Predicted HRmax</td><td><strong>220 &minus; age</strong></td><td>Simple, quick, no equipment needed</td><td>Standard deviation &plusmn;10&ndash;12 bpm. Inaccurate for older adults, deconditioned, or athletes. Least accurate method</td></tr>
+<tr><td class="warn">Karvonen (HRR)</td><td><strong>THR = (HRmax &minus; HRrest) &times; %intensity + HRrest</strong></td><td>Accounts for resting HR (fitness level). More individualized. %HRR correlates closely with %VO2R</td><td>Still relies on predicted HRmax unless measured. Gold standard calculation for clinical use</td></tr>
+<tr><td class="hi">Measured HRmax</td><td>From graded exercise test (GXT)</td><td>Most accurate. Uses actual patient data</td><td>Requires exercise testing equipment and physician supervision for high-risk patients</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Karvonen Example</div>
+<p>Patient: 50 years old, resting HR = 70 bpm. Target: 60&ndash;80% intensity.<br>
+  HRmax = 220 &minus; 50 = 170 bpm. HRR = 170 &minus; 70 = 100 bpm.<br><strong>Lower target:</strong> (100 &times; 0.60) + 70 = <strong>130 bpm</strong><br><strong>Upper target:</strong> (100 &times; 0.80) + 70 = <strong>150 bpm</strong><br>
+  Training zone = <strong>130&ndash;150 bpm</strong></p>
 </div>
 </div>
-
-<!-- ====== RPE & INTENSITY ====== -->
+</div>
+<div class="section-title">Training Zones</div>
+<table class="data-table"><thead>
+<tr><th>Zone</th><th>% HRmax</th><th>% HRR (Karvonen)</th><th>Feels Like</th><th>Training Effect</th></tr></thead><tbody>
+<tr><td class="hi">Zone 1 &mdash; Recovery</td><td>50&ndash;60%</td><td>30&ndash;45%</td><td>Very easy. Full conversation. Walking pace</td><td>Active recovery, warm-up, cool-down, deconditioned patients</td></tr>
+<tr><td class="hi">Zone 2 &mdash; Aerobic Base</td><td>60&ndash;70%</td><td>45&ndash;60%</td><td>Comfortable. Can talk in sentences</td><td>Fat oxidation, aerobic base building, endurance. Most rehab patients should train here</td></tr>
+<tr><td class="warn">Zone 3 &mdash; Tempo</td><td>70&ndash;80%</td><td>60&ndash;75%</td><td>Moderate. Conversation limited to phrases</td><td>Improved aerobic capacity, lactate threshold training</td></tr>
+<tr><td class="warn">Zone 4 &mdash; Threshold</td><td>80&ndash;90%</td><td>75&ndash;90%</td><td>Hard. Only single words. Breathing heavily</td><td>VO2max improvement, anaerobic threshold, race-pace training</td></tr>
+<tr><td class="hi">Zone 5 &mdash; Max</td><td>90&ndash;100%</td><td>90&ndash;100%</td><td>Maximal effort. Cannot speak. Unsustainable</td><td>Max power output, sprint training. Rarely appropriate for rehab patients</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">When NOT to Use Heart Rate</div>
+<p><strong>Beta-blockers</strong> blunt HR response &mdash; patient cannot reach target HR. Use RPE (Borg 12&ndash;14) or METs instead.<br><strong>Pacemaker</strong> (rate-responsive or fixed-rate) &mdash; HR is artificially controlled.<br><strong>Atrial fibrillation</strong> &mdash; HR is irregular and unreliable.<br><strong>Autonomic neuropathy</strong> (diabetic) &mdash; HR response is blunted.<br><strong>Transplant heart</strong> &mdash; denervated, relies on circulating catecholamines for HR increase (delayed response). In all these cases: use RPE as primary intensity monitor.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-rpe">
 <div class="container">
-  <div class="section-title">RPE &amp; Intensity Monitoring</div>
-  <div class="section-sub">Rating of Perceived Exertion (RPE) is the most versatile intensity tool &mdash; works for every patient including those on beta-blockers, with pacemakers, or with irregular rhythms. Teach it to every patient.</div>
-
-  <div class="section-title">Borg RPE Scale (6&ndash;20)</div>
-  <table class="data-table"><thead><tr><th>RPE</th><th>Descriptor</th><th>~% HRmax</th><th>~% VO2max</th><th>Clinical Use</th></tr></thead><tbody>
-    <tr><td class="hi">6</td><td>No exertion (sitting)</td><td>&mdash;</td><td>&mdash;</td><td>Baseline</td></tr>
-    <tr><td class="hi">7&ndash;8</td><td>Extremely light</td><td>~45%</td><td>~30%</td><td>Very gentle warm-up</td></tr>
-    <tr><td class="hi">9&ndash;10</td><td>Very light</td><td>~55%</td><td>~40%</td><td>Light walking, warm-up</td></tr>
-    <tr><td class="hi">11&ndash;12</td><td>Light / Fairly light</td><td>~65%</td><td>~55%</td><td><strong>Lower end of moderate.</strong> Good starting point for deconditioned patients</td></tr>
-    <tr><td class="warn">13&ndash;14</td><td>Somewhat hard</td><td>~75%</td><td>~70%</td><td><strong>TARGET for most rehab patients.</strong> &ldquo;Moderate intensity&rdquo; per ACSM. Can still talk but breathing noticeably harder</td></tr>
-    <tr><td class="warn">15&ndash;16</td><td>Hard</td><td>~85%</td><td>~80%</td><td>Vigorous intensity. Short phrases only. Appropriate for conditioned patients</td></tr>
-    <tr><td class="hi">17&ndash;18</td><td>Very hard</td><td>~93%</td><td>~90%</td><td>Near maximal. Rarely appropriate for clinical rehab</td></tr>
-    <tr><td class="hi">19&ndash;20</td><td>Extremely hard / Maximal</td><td>~100%</td><td>~100%</td><td>Exercise testing only</td></tr>
-  </tbody></table>
-  <div class="bl-strip"><div class="bl-label">Why 6&ndash;20?</div><p>Borg designed the scale so that <strong>RPE &times; 10 &asymp; heart rate</strong> in young healthy adults. RPE 13 &times; 10 = ~130 bpm. This correlation breaks down with age and medications but the scale itself remains valid as a subjective measure.</p></div>
-
-  <div class="section-title">Modified Borg (CR-10 Scale)</div>
-  <table class="data-table"><thead><tr><th>Score</th><th>Descriptor</th><th>Use</th></tr></thead><tbody>
-    <tr><td class="hi">0</td><td>Nothing at all</td><td rowspan="3">Warm-up, cool-down, gentle recovery</td></tr>
-    <tr><td class="hi">1&ndash;2</td><td>Very weak / Weak</td></tr>
-    <tr><td class="hi">3</td><td>Moderate</td></tr>
-    <tr><td class="warn">4&ndash;5</td><td>Somewhat strong / Strong</td><td><strong>Target for most rehab.</strong> Moderate-to-vigorous</td></tr>
-    <tr><td class="hi">6&ndash;7</td><td>Very strong</td><td>High intensity training</td></tr>
-    <tr><td class="hi">10</td><td>Maximal</td><td>Testing only</td></tr>
-  </tbody></table>
-  <div class="bl-strip gold"><div class="bl-label">Talk Test &mdash; Simplest Intensity Monitor</div><p><strong>Can talk comfortably in full sentences</strong> = light/moderate (&lt;VT1).<br><strong>Can talk in short phrases only</strong> = moderate/vigorous (at VT1).<br><strong>Cannot talk at all</strong> = vigorous/near-max (&gt;VT2). VT1 = first ventilatory threshold. The talk test correlates well with ventilatory thresholds and is easiest for patients to use independently.</p></div>
-
-  <div class="section-title">MET Levels</div>
-  <table class="data-table"><thead><tr><th>Intensity</th><th>METs</th><th>Examples</th></tr></thead><tbody>
-    <tr><td class="hi">Sedentary</td><td>1.0&ndash;1.5</td><td>Sitting, lying down, desk work</td></tr>
-    <tr><td class="hi">Light</td><td>2.0&ndash;2.9</td><td>Slow walking (2 mph), light housework, cooking</td></tr>
-    <tr><td class="warn">Moderate</td><td>3.0&ndash;5.9</td><td>Brisk walking (3&ndash;4 mph), cycling &lt;10 mph, water aerobics, raking leaves</td></tr>
-    <tr><td class="warn">Vigorous</td><td>&ge;6.0</td><td>Running, swimming laps, fast cycling, basketball, shoveling snow</td></tr>
-  </tbody></table>
-  <div class="bl-strip"><div class="bl-label">1 MET Definition</div><p>1 MET = 3.5 mL&middot;kg&supmin;&sup1;&middot;min&supmin;&sup1; oxygen consumption = resting metabolic rate. A 4-MET activity uses 4&times; resting oxygen consumption. Key clinical point: older or deconditioned adults working at the same MET level as younger adults are at a <strong>higher % of their VO2max</strong> &mdash; same absolute intensity = greater relative intensity.</p></div>
+<div class="section-title">RPE &amp; Intensity Monitoring</div>
+<div class="section-sub">Rating of Perceived Exertion (RPE) is the most versatile intensity tool &mdash; works for every patient including those on beta-blockers, with pacemakers, or with irregular rhythms. Teach it to every patient.</div>
+<div class="section-title">Borg RPE Scale (6&ndash;20)</div>
+<table class="data-table"><thead>
+<tr><th>RPE</th><th>Descriptor</th><th>~% HRmax</th><th>~% VO2max</th><th>Clinical Use</th></tr></thead><tbody>
+<tr><td class="hi">6</td><td>No exertion (sitting)</td><td>&mdash;</td><td>&mdash;</td><td>Baseline</td></tr>
+<tr><td class="hi">7&ndash;8</td><td>Extremely light</td><td>~45%</td><td>~30%</td><td>Very gentle warm-up</td></tr>
+<tr><td class="hi">9&ndash;10</td><td>Very light</td><td>~55%</td><td>~40%</td><td>Light walking, warm-up</td></tr>
+<tr><td class="hi">11&ndash;12</td><td>Light / Fairly light</td><td>~65%</td><td>~55%</td><td><strong>Lower end of moderate.</strong> Good starting point for deconditioned patients</td></tr>
+<tr><td class="warn">13&ndash;14</td><td>Somewhat hard</td><td>~75%</td><td>~70%</td><td><strong>TARGET for most rehab patients.</strong> &ldquo;Moderate intensity&rdquo; per ACSM. Can still talk but breathing noticeably harder</td></tr>
+<tr><td class="warn">15&ndash;16</td><td>Hard</td><td>~85%</td><td>~80%</td><td>Vigorous intensity. Short phrases only. Appropriate for conditioned patients</td></tr>
+<tr><td class="hi">17&ndash;18</td><td>Very hard</td><td>~93%</td><td>~90%</td><td>Near maximal. Rarely appropriate for clinical rehab</td></tr>
+<tr><td class="hi">19&ndash;20</td><td>Extremely hard / Maximal</td><td>~100%</td><td>~100%</td><td>Exercise testing only</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Why 6&ndash;20?</div>
+<p>Borg designed the scale so that <strong>RPE &times; 10 &asymp; heart rate</strong> in young healthy adults. RPE 13 &times; 10 = ~130 bpm. This correlation breaks down with age and medications but the scale itself remains valid as a subjective measure.</p>
+</div>
+<div class="section-title">Modified Borg (CR-10 Scale)</div>
+<table class="data-table"><thead>
+<tr><th>Score</th><th>Descriptor</th><th>Use</th></tr></thead><tbody>
+<tr><td class="hi">0</td><td>Nothing at all</td><td rowspan="3">Warm-up, cool-down, gentle recovery</td></tr>
+<tr><td class="hi">1&ndash;2</td><td>Very weak / Weak</td></tr>
+<tr><td class="hi">3</td><td>Moderate</td></tr>
+<tr><td class="warn">4&ndash;5</td><td>Somewhat strong / Strong</td><td><strong>Target for most rehab.</strong> Moderate-to-vigorous</td></tr>
+<tr><td class="hi">6&ndash;7</td><td>Very strong</td><td>High intensity training</td></tr>
+<tr><td class="hi">10</td><td>Maximal</td><td>Testing only</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Talk Test &mdash; Simplest Intensity Monitor</div>
+<p><strong>Can talk comfortably in full sentences</strong> = light/moderate (&lt;VT1).<br><strong>Can talk in short phrases only</strong> = moderate/vigorous (at VT1).<br><strong>Cannot talk at all</strong> = vigorous/near-max (&gt;VT2). VT1 = first ventilatory threshold. The talk test correlates well with ventilatory thresholds and is easiest for patients to use independently.</p>
+</div>
+<div class="section-title">MET Levels</div>
+<table class="data-table"><thead>
+<tr><th>Intensity</th><th>METs</th><th>Examples</th></tr></thead><tbody>
+<tr><td class="hi">Sedentary</td><td>1.0&ndash;1.5</td><td>Sitting, lying down, desk work</td></tr>
+<tr><td class="hi">Light</td><td>2.0&ndash;2.9</td><td>Slow walking (2 mph), light housework, cooking</td></tr>
+<tr><td class="warn">Moderate</td><td>3.0&ndash;5.9</td><td>Brisk walking (3&ndash;4 mph), cycling &lt;10 mph, water aerobics, raking leaves</td></tr>
+<tr><td class="warn">Vigorous</td><td>&ge;6.0</td><td>Running, swimming laps, fast cycling, basketball, shoveling snow</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">1 MET Definition</div>
+<p>1 MET = 3.5 mL&middot;kg&supmin;&sup1;&middot;min&supmin;&sup1; oxygen consumption = resting metabolic rate. A 4-MET activity uses 4&times; resting oxygen consumption. Key clinical point: older or deconditioned adults working at the same MET level as younger adults are at a <strong>higher % of their VO2max</strong> &mdash; same absolute intensity = greater relative intensity.</p>
 </div>
 </div>
-
-<!-- ====== ACSM GUIDELINES ====== -->
+</div>
 <div class="tab-panel" id="tab-acsm">
 <div class="container">
-  <div class="section-title">ACSM Exercise Prescription Guidelines</div>
-  <div class="section-sub">The ACSM FITT-VP framework is the clinical standard for exercise dosage. These are the numbers you need for the NPTE and for writing every exercise prescription in clinical practice.</div>
-
-  <div class="section-title">Aerobic Exercise Prescription</div>
-  <table class="data-table"><thead><tr><th>FITT Component</th><th>Recommendation</th></tr></thead><tbody>
-    <tr><td class="warn">Frequency</td><td><strong>Moderate:</strong> &ge;5 days/week. <strong>Vigorous:</strong> &ge;3 days/week. <strong>Combination:</strong> 3&ndash;5 days/week</td></tr>
-    <tr><td class="warn">Intensity</td><td><strong>Moderate:</strong> 40&ndash;59% HRR / RPE 12&ndash;13 / 3&ndash;5.9 METs. <strong>Vigorous:</strong> 60&ndash;89% HRR / RPE 14&ndash;17 / &ge;6 METs</td></tr>
-    <tr><td class="warn">Time</td><td><strong>Moderate:</strong> 30&ndash;60 min/day (&ge;150 min/week). <strong>Vigorous:</strong> 20&ndash;60 min/day (&ge;75 min/week). Bouts &ge;10 min acceptable</td></tr>
-    <tr><td class="warn">Type</td><td>Rhythmic, continuous, large muscle group activity (walking, cycling, swimming, elliptical)</td></tr>
-    <tr><td class="hi">Volume</td><td>&ge;500&ndash;1,000 MET-min/week &asymp; 1,000 kcal/week &asymp; ~10,000 steps/day</td></tr>
-    <tr><td class="hi">Progression</td><td>Increase duration first, then frequency, then intensity. No more than 10% increase per week in total volume</td></tr>
-  
-  
-  </tbody></table>
-
-  <div class="section-title">Resistance Training Prescription</div>
-  <table class="data-table"><thead><tr><th>Goal</th><th>Load (% 1RM)</th><th>Reps</th><th>Sets</th><th>Rest</th><th>Frequency</th></tr></thead><tbody>
-    <tr><td class="warn">Endurance</td><td>&le;67% (&lt;2/3 max)</td><td>&ge;12</td><td>2&ndash;4</td><td>&le;30 sec</td><td>2&ndash;3 days/week</td></tr>
-    <tr><td class="warn">Hypertrophy</td><td>67&ndash;85%</td><td>6&ndash;12</td><td>3&ndash;6</td><td>30&ndash;90 sec</td><td>2&ndash;4 days/week</td></tr>
-    <tr><td class="warn">Strength</td><td>&ge;85%</td><td>&le;6</td><td>2&ndash;6</td><td>2&ndash;5 min</td><td>2&ndash;3 days/week</td></tr>
-    <tr><td class="hi">Power</td><td>30&ndash;60% (speed emphasis)</td><td>1&ndash;6</td><td>3&ndash;6</td><td>2&ndash;5 min</td><td>2&ndash;3 days/week</td></tr>
-  </tbody></table>
-  <div class="bl-strip"><div class="bl-label">Progression Rule</div><p>When patient can comfortably perform <strong>1&ndash;2 extra reps over target on 2 consecutive sessions</strong>, increase load by 2&ndash;10%. Upper body: increase 2&ndash;5%. Lower body: increase 5&ndash;10%. Avoid &gt;10% jumps &mdash; injury risk increases sharply.</p></div>
-
-  <div class="section-title">Flexibility &amp; Neuromotor Exercise</div>
-  <table class="data-table"><thead><tr><th>Component</th><th>Recommendation</th></tr></thead><tbody>
-    <tr><td class="hi">Flexibility</td><td>&ge;2&ndash;3 days/week (daily is most effective). Hold static stretch 15&ndash;30 sec (60 sec for older adults). 2&ndash;4 reps per muscle group. Stretch to point of tightness or slight discomfort, NOT pain</td></tr>
-    <tr><td class="hi">Neuromotor</td><td>&ge;2&ndash;3 days/week. Balance, agility, coordination, gait training. 20&ndash;30 min/session. Tai Chi, yoga, multicomponent exercise. Especially important for older adults (fall prevention)</td></tr>
-  </tbody></table>
+<div class="section-title">ACSM Exercise Prescription Guidelines</div>
+<div class="section-sub">The ACSM FITT-VP framework is the clinical standard for exercise dosage. These are the numbers you need for the NPTE and for writing every exercise prescription in clinical practice.</div>
+<div class="section-title">Aerobic Exercise Prescription</div>
+<table class="data-table"><thead>
+<tr><th>FITT Component</th><th>Recommendation</th></tr></thead><tbody>
+<tr><td class="warn">Frequency</td><td><strong>Moderate:</strong> &ge;5 days/week. <strong>Vigorous:</strong> &ge;3 days/week. <strong>Combination:</strong> 3&ndash;5 days/week</td></tr>
+<tr><td class="warn">Intensity</td><td><strong>Moderate:</strong> 40&ndash;59% HRR / RPE 12&ndash;13 / 3&ndash;5.9 METs. <strong>Vigorous:</strong> 60&ndash;89% HRR / RPE 14&ndash;17 / &ge;6 METs</td></tr>
+<tr><td class="warn">Time</td><td><strong>Moderate:</strong> 30&ndash;60 min/day (&ge;150 min/week). <strong>Vigorous:</strong> 20&ndash;60 min/day (&ge;75 min/week). Bouts &ge;10 min acceptable</td></tr>
+<tr><td class="warn">Type</td><td>Rhythmic, continuous, large muscle group activity (walking, cycling, swimming, elliptical)</td></tr>
+<tr><td class="hi">Volume</td><td>&ge;500&ndash;1,000 MET-min/week &asymp; 1,000 kcal/week &asymp; ~10,000 steps/day</td></tr>
+<tr><td class="hi">Progression</td><td>Increase duration first, then frequency, then intensity. No more than 10% increase per week in total volume</td></tr></tbody></table>
+<div class="section-title">Resistance Training Prescription</div>
+<table class="data-table"><thead>
+<tr><th>Goal</th><th>Load (% 1RM)</th><th>Reps</th><th>Sets</th><th>Rest</th><th>Frequency</th></tr></thead><tbody>
+<tr><td class="warn">Endurance</td><td>&le;67% (&lt;2/3 max)</td><td>&ge;12</td><td>2&ndash;4</td><td>&le;30 sec</td><td>2&ndash;3 days/week</td></tr>
+<tr><td class="warn">Hypertrophy</td><td>67&ndash;85%</td><td>6&ndash;12</td><td>3&ndash;6</td><td>30&ndash;90 sec</td><td>2&ndash;4 days/week</td></tr>
+<tr><td class="warn">Strength</td><td>&ge;85%</td><td>&le;6</td><td>2&ndash;6</td><td>2&ndash;5 min</td><td>2&ndash;3 days/week</td></tr>
+<tr><td class="hi">Power</td><td>30&ndash;60% (speed emphasis)</td><td>1&ndash;6</td><td>3&ndash;6</td><td>2&ndash;5 min</td><td>2&ndash;3 days/week</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Progression Rule</div>
+<p>When patient can comfortably perform <strong>1&ndash;2 extra reps over target on 2 consecutive sessions</strong>, increase load by 2&ndash;10%. Upper body: increase 2&ndash;5%. Lower body: increase 5&ndash;10%. Avoid &gt;10% jumps &mdash; injury risk increases sharply.</p>
+</div>
+<div class="section-title">Flexibility &amp; Neuromotor Exercise</div>
+<table class="data-table"><thead>
+<tr><th>Component</th><th>Recommendation</th></tr></thead><tbody>
+<tr><td class="hi">Flexibility</td><td>&ge;2&ndash;3 days/week (daily is most effective). Hold static stretch 15&ndash;30 sec (60 sec for older adults). 2&ndash;4 reps per muscle group. Stretch to point of tightness or slight discomfort, NOT pain</td></tr>
+<tr><td class="hi">Neuromotor</td><td>&ge;2&ndash;3 days/week. Balance, agility, coordination, gait training. 20&ndash;30 min/session. Tai Chi, yoga, multicomponent exercise. Especially important for older adults (fall prevention)</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== PRECAUTIONS ====== -->
 <div class="tab-panel" id="tab-precautions">
 <div class="container">
-  <div class="section-title">Exercise Precautions &amp; Contraindications</div>
-  <div class="section-sub">Know the absolute contraindications (NEVER exercise) vs relative contraindications (may exercise with modifications). These are patient safety fundamentals &mdash; tested heavily on NPTE.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Absolute Contraindications to Exercise</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip red"><div class="bl-label">DO NOT EXERCISE &mdash; Medical Clearance Required</div>
-      <p>&bull; Acute MI (within 2 days) &bull; Unstable angina not yet stabilized by medical therapy &bull; Uncontrolled cardiac arrhythmias causing symptoms or hemodynamic compromise &bull; Active endocarditis or myocarditis &bull; Symptomatic severe aortic stenosis &bull; Decompensated heart failure &bull; Acute pulmonary embolism or pulmonary infarction &bull; Acute aortic dissection &bull; Acute systemic infection with fever &bull; Uncontrolled diabetes (glucose &gt;300 mg/dL or &lt;70 with symptoms) &bull; Resting SBP &gt;200 or DBP &gt;110 mmHg &bull; Acute deep vein thrombosis</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Relative Contraindications &mdash; Exercise With Caution</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip gold"><div class="bl-label">May Exercise with Modifications &amp; Close Monitoring</div>
-      <p>&bull; Known obstructive left main coronary stenosis &bull; Moderate stenotic valvular heart disease &bull; Electrolyte abnormalities (hypokalemia, hypomagnesemia) &bull; Tachyarrhythmias or bradyarrhythmias &bull; High-degree AV block &bull; Hypertrophic cardiomyopathy &bull; Mental or physical impairment leading to inability to exercise adequately &bull; Uncontrolled hypertension (SBP &gt;180 or DBP &gt;110) &bull; Recent stroke or TIA (timing depends on type/severity)</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Lab Value Precautions</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Parameter</th><th>Hold/Modify If</th><th>Rationale</th></tr></thead><tbody>
-        <tr><td class="warn">Hemoglobin</td><td>&lt;8 g/dL (some sources &lt;10)</td><td>Anemia: inadequate oxygen delivery. Increased cardiac demand with exercise</td></tr>
-        <tr><td class="warn">Platelets</td><td>&lt;20,000/&mu;L = no exercise. 20&ndash;50K = light AROM only. &gt;50K = gentle resistance OK</td><td>Thrombocytopenia: bleeding risk. No resistive, eccentric, or contact activities at low counts</td></tr>
-        <tr><td class="hi">WBC (ANC)</td><td>ANC &lt;500 = protective isolation. &lt;1,000 = limit contact/shared equipment</td><td>Neutropenia: infection risk. Clean equipment, avoid crowded gyms</td></tr>
-        <tr><td class="hi">Blood Glucose</td><td>&lt;70 mg/dL (hypoglycemia) or &gt;300 mg/dL (hyperglycemia with symptoms)</td><td>Hypoglycemia during exercise = medical emergency. Hyperglycemia: risk of DKA. Check glucose before, during, after in diabetic patients</td></tr>
-        <tr><td class="hi">INR</td><td>&gt;3.5 = hold contact activities</td><td>Anticoagulation: increased bleeding risk with falls or trauma</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Exercise Precautions &amp; Contraindications</div>
+<div class="section-sub">Know the absolute contraindications (NEVER exercise) vs relative contraindications (may exercise with modifications). These are patient safety fundamentals &mdash; tested heavily on NPTE.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Absolute Contraindications to Exercise</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">DO NOT EXERCISE &mdash; Medical Clearance Required</div>
+<p>&bull; Acute MI (within 2 days) &bull; Unstable angina not yet stabilized by medical therapy &bull; Uncontrolled cardiac arrhythmias causing symptoms or hemodynamic compromise &bull; Active endocarditis or myocarditis &bull; Symptomatic severe aortic stenosis &bull; Decompensated heart failure &bull; Acute pulmonary embolism or pulmonary infarction &bull; Acute aortic dissection &bull; Acute systemic infection with fever &bull; Uncontrolled diabetes (glucose &gt;300 mg/dL or &lt;70 with symptoms) &bull; Resting SBP &gt;200 or DBP &gt;110 mmHg &bull; Acute deep vein thrombosis</p>
 </div>
 </div>
-
-<!-- ====== WARM-UP & COOL-DOWN ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Relative Contraindications &mdash; Exercise With Caution</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip gold">
+<div class="bl-label">May Exercise with Modifications &amp; Close Monitoring</div>
+<p>&bull; Known obstructive left main coronary stenosis &bull; Moderate stenotic valvular heart disease &bull; Electrolyte abnormalities (hypokalemia, hypomagnesemia) &bull; Tachyarrhythmias or bradyarrhythmias &bull; High-degree AV block &bull; Hypertrophic cardiomyopathy &bull; Mental or physical impairment leading to inability to exercise adequately &bull; Uncontrolled hypertension (SBP &gt;180 or DBP &gt;110) &bull; Recent stroke or TIA (timing depends on type/severity)</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Lab Value Precautions</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Parameter</th><th>Hold/Modify If</th><th>Rationale</th></tr></thead><tbody>
+<tr><td class="warn">Hemoglobin</td><td>&lt;8 g/dL (some sources &lt;10)</td><td>Anemia: inadequate oxygen delivery. Increased cardiac demand with exercise</td></tr>
+<tr><td class="warn">Platelets</td><td>&lt;20,000/&mu;L = no exercise. 20&ndash;50K = light AROM only. &gt;50K = gentle resistance OK</td><td>Thrombocytopenia: bleeding risk. No resistive, eccentric, or contact activities at low counts</td></tr>
+<tr><td class="hi">WBC (ANC)</td><td>ANC &lt;500 = protective isolation. &lt;1,000 = limit contact/shared equipment</td><td>Neutropenia: infection risk. Clean equipment, avoid crowded gyms</td></tr>
+<tr><td class="hi">Blood Glucose</td><td>&lt;70 mg/dL (hypoglycemia) or &gt;300 mg/dL (hyperglycemia with symptoms)</td><td>Hypoglycemia during exercise = medical emergency. Hyperglycemia: risk of DKA. Check glucose before, during, after in diabetic patients</td></tr>
+<tr><td class="hi">INR</td><td>&gt;3.5 = hold contact activities</td><td>Anticoagulation: increased bleeding risk with falls or trauma</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-warmup">
 <div class="container">
-  <div class="section-title">Warm-Up &amp; Cool-Down Protocols</div>
-  <div class="section-sub">Every exercise session has 3 phases: warm-up, conditioning (training), and cool-down. Skipping these increases injury risk and adverse cardiac events.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Warm-Up (5&ndash;10 minutes)</div>
-      <div class="bl-strip"><div class="bl-label">Purpose</div><p>Gradually increases HR, BP, core temperature, muscle blood flow, and nerve conduction velocity. Reduces viscosity of synovial fluid. Prepares the cardiovascular system for increased demand &mdash; prevents ischemia from sudden high-intensity work on a cold heart.</p></div>
-      <div class="bl-strip gold"><div class="bl-label">Components</div><p><strong>General warm-up:</strong> 5&ndash;10 min of low-intensity aerobic activity at 40&ndash;60% HRmax (walking, light cycling, arm ergometer).<br><strong>Dynamic stretching:</strong> active movements through ROM (leg swings, arm circles, walking lunges).<br><strong>NOT static stretching</strong> before activity &mdash; static stretching pre-exercise can reduce force production by 5&ndash;10% and does NOT prevent injury.</p></div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Cool-Down (5&ndash;10 minutes)</div>
-      <div class="bl-strip"><div class="bl-label">Purpose</div><p>Gradually returns HR and BP toward resting levels. Prevents venous pooling in lower extremities (which can cause hypotension and syncope if you stop abruptly). Facilitates metabolite clearance. Reduces post-exercise cardiac arrhythmia risk &mdash; the post-exercise period is actually the highest-risk time for cardiac events.</p></div>
-      <div class="bl-strip purple"><div class="bl-label">Components</div><p><strong>Active cool-down:</strong> 5&ndash;10 min of progressively decreasing intensity (slow walking, gentle cycling).<br><strong>Static stretching:</strong> NOW is the appropriate time. Hold 15&ndash;30 sec per stretch (60 sec for older adults), 2&ndash;4 reps. Muscles are warm = better stretch tolerance and reduced injury risk.<br><strong>Never have a patient sit/lie down immediately after intense exercise</strong> &mdash; keep them moving until HR is within 20 bpm of resting.</p></div>
-    </div>
-  </div>
+<div class="section-title">Warm-Up &amp; Cool-Down Protocols</div>
+<div class="section-sub">Every exercise session has 3 phases: warm-up, conditioning (training), and cool-down. Skipping these increases injury risk and adverse cardiac events.</div>
+<div class="bl-strip">
+<div class="bl-label">Warm-Up (5&ndash;10 minutes)</div>
+<div class="bl-strip">
+<div class="bl-label">Purpose</div>
+<p>Gradually increases HR, BP, core temperature, muscle blood flow, and nerve conduction velocity. Reduces viscosity of synovial fluid. Prepares the cardiovascular system for increased demand &mdash; prevents ischemia from sudden high-intensity work on a cold heart.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Components</div>
+<p><strong>General warm-up:</strong> 5&ndash;10 min of low-intensity aerobic activity at 40&ndash;60% HRmax (walking, light cycling, arm ergometer).<br><strong>Dynamic stretching:</strong> active movements through ROM (leg swings, arm circles, walking lunges).<br><strong>NOT static stretching</strong> before activity &mdash; static stretching pre-exercise can reduce force production by 5&ndash;10% and does NOT prevent injury.</p>
 </div>
 </div>
-
-<!-- ====== LIFTING MECHANICS ====== -->
+<div class="bl-strip">
+<div class="bl-label">Cool-Down (5&ndash;10 minutes)</div>
+<div class="bl-strip">
+<div class="bl-label">Purpose</div>
+<p>Gradually returns HR and BP toward resting levels. Prevents venous pooling in lower extremities (which can cause hypotension and syncope if you stop abruptly). Facilitates metabolite clearance. Reduces post-exercise cardiac arrhythmia risk &mdash; the post-exercise period is actually the highest-risk time for cardiac events.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Components</div>
+<p><strong>Active cool-down:</strong> 5&ndash;10 min of progressively decreasing intensity (slow walking, gentle cycling).<br><strong>Static stretching:</strong> NOW is the appropriate time. Hold 15&ndash;30 sec per stretch (60 sec for older adults), 2&ndash;4 reps. Muscles are warm = better stretch tolerance and reduced injury risk.<br><strong>Never have a patient sit/lie down immediately after intense exercise</strong> &mdash; keep them moving until HR is within 20 bpm of resting.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-mechanics">
 <div class="container">
-  <div class="section-title">Lifting Mechanics &amp; Safety</div>
-  <div class="section-sub">Proper body mechanics protect both the patient and the clinician. Teach every patient these principles before progressing to loaded exercise.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Principles of Safe Lifting</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Core Principles</div>
-      <p>&bull; <strong>Keep load close to body</strong> &mdash; moment arm increases exponentially with distance. Holding 10 lbs at arm&rsquo;s length = 100+ lbs of spinal compressive force<br>
-      &bull; <strong>Maintain neutral spine</strong> &mdash; lumbar lordosis preserved. Avoid flexion under load. Hinge at hips, not lumbar spine<br>
-      &bull; <strong>Brace core before lifting</strong> &mdash; Valsalva-lite (not full breath-hold): inhale, brace abdominals as if bracing for a punch, lift on exertion exhale<br>
-      &bull; <strong>Wide base of support</strong> &mdash; feet shoulder-width, staggered stance for asymmetric loads<br>
-      &bull; <strong>Lift with legs</strong> &mdash; squat pattern (quads + glutes) not stoop pattern (lumbar erectors)<br>
-      &bull; <strong>Avoid twisting under load</strong> &mdash; pivot feet to turn, don&rsquo;t rotate trunk with weight<br>
-      &bull; <strong>Breathe</strong> &mdash; exhale on exertion (concentric), inhale on return (eccentric). Never hold breath during sustained effort (Valsalva &rarr; dangerous BP spike in cardiac patients)</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Valsalva Maneuver &mdash; When to Avoid</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip red"><div class="bl-label">Valsalva Response</div>
-      <p>Forced expiration against a closed glottis &rarr; increases intrathoracic pressure &rarr; brief BP spike (can exceed 300/200 mmHg in heavy lifters) followed by BP drop when released. <strong>Dangerous in:</strong> hypertension, cardiac disease, cerebral aneurysm, glaucoma (increases intraocular pressure), post-surgical patients, pregnancy. <strong>Teach patients to exhale continuously during exertion</strong> &mdash; counting aloud or saying &ldquo;blow out the candles&rdquo; prevents inadvertent Valsalva.</p></div>
-    </div>
-  </div>
+<div class="section-title">Lifting Mechanics &amp; Safety</div>
+<div class="section-sub">Proper body mechanics protect both the patient and the clinician. Teach every patient these principles before progressing to loaded exercise.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Principles of Safe Lifting</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Core Principles</div>
+<p>&bull; <strong>Keep load close to body</strong> &mdash; moment arm increases exponentially with distance. Holding 10 lbs at arm&rsquo;s length = 100+ lbs of spinal compressive force<br>
+  &bull; <strong>Maintain neutral spine</strong> &mdash; lumbar lordosis preserved. Avoid flexion under load. Hinge at hips, not lumbar spine<br>
+  &bull; <strong>Brace core before lifting</strong> &mdash; Valsalva-lite (not full breath-hold): inhale, brace abdominals as if bracing for a punch, lift on exertion exhale<br>
+  &bull; <strong>Wide base of support</strong> &mdash; feet shoulder-width, staggered stance for asymmetric loads<br>
+  &bull; <strong>Lift with legs</strong> &mdash; squat pattern (quads + glutes) not stoop pattern (lumbar erectors)<br>
+  &bull; <strong>Avoid twisting under load</strong> &mdash; pivot feet to turn, don&rsquo;t rotate trunk with weight<br>
+  &bull; <strong>Breathe</strong> &mdash; exhale on exertion (concentric), inhale on return (eccentric). Never hold breath during sustained effort (Valsalva &rarr; dangerous BP spike in cardiac patients)</p>
 </div>
 </div>
-
-<!-- ====== RECOVERY SCIENCE ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Valsalva Maneuver &mdash; When to Avoid</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">Valsalva Response</div>
+<p>Forced expiration against a closed glottis &rarr; increases intrathoracic pressure &rarr; brief BP spike (can exceed 300/200 mmHg in heavy lifters) followed by BP drop when released. <strong>Dangerous in:</strong> hypertension, cardiac disease, cerebral aneurysm, glaucoma (increases intraocular pressure), post-surgical patients, pregnancy. <strong>Teach patients to exhale continuously during exertion</strong> &mdash; counting aloud or saying &ldquo;blow out the candles&rdquo; prevents inadvertent Valsalva.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-recovery">
 <div class="container">
-  <div class="section-title">Recovery Science</div>
-  <div class="section-sub">Recovery is when adaptation occurs. Without adequate recovery, training produces injury instead of improvement. Understand the mechanisms, timelines, and evidence for recovery strategies.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Recovery Timelines by Training Type</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>System</th><th>Recovery Time</th><th>Implication</th></tr></thead><tbody>
-        <tr><td class="hi">Phosphocreatine (ATP-CP)</td><td>3&ndash;5 minutes</td><td>Full recovery between max-effort sets. Rest 2&ndash;5 min for power/strength training</td></tr>
-        <tr><td class="hi">Muscle Glycogen</td><td>24&ndash;48 hours (with adequate nutrition)</td><td>Don&rsquo;t train same muscle group at high intensity on consecutive days</td></tr>
-        <tr><td class="warn">Muscle Repair (DOMS)</td><td>24&ndash;72 hours peak, resolves 5&ndash;7 days</td><td>DOMS peaks 24&ndash;48 hours post-exercise. Eccentric exercise produces more DOMS. Light activity during DOMS is beneficial</td></tr>
-        <tr><td class="hi">Tendon Adaptation</td><td>48&ndash;72 hours</td><td>Tendons adapt slower than muscle. Heavy load tendon training needs 48+ hour recovery</td></tr>
-        <tr><td class="warn">CNS Recovery</td><td>48&ndash;72 hours after max-effort</td><td>Neural fatigue from heavy/explosive training. Performance decrements if CNS not recovered</td></tr>
-        <tr><td class="hi">Full Neuromuscular</td><td>48&ndash;96 hours after intense session</td><td>Explains why 2&ndash;3 days/week per muscle group is optimal for most populations</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Overtraining Syndrome</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip red"><div class="bl-label">Signs &amp; Symptoms</div>
-      <p><strong>Performance:</strong> decreased performance despite maintained/increased training. Inability to recover between sessions.<br><strong>Physical:</strong> persistent fatigue, elevated resting HR, frequent illness/infection, persistent muscle soreness, insomnia despite exhaustion, loss of appetite, weight loss.<br><strong>Psychological:</strong> mood disturbance, irritability, depression, loss of motivation, decreased concentration.<br><strong>Management:</strong> primary treatment is REST (days to weeks depending on severity). Reduce volume 50&ndash;70%. Ensure nutrition adequacy (protein, carbohydrate, hydration). Gradual return to training. This is NOT &ldquo;mental weakness&rdquo; &mdash; it is a physiological failure of the recovery/adaptation system.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Active Recovery vs Passive Rest</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">Evidence-Based Recovery Strategies</div>
-      <p><strong>Active recovery</strong> (light walking, swimming, cycling at 30&ndash;50% HRmax) is superior to passive rest for: lactate clearance, maintaining blood flow, reducing perceived soreness, maintaining ROM. Do this 24 hours after hard training.<br><strong>Sleep:</strong> 7&ndash;9 hours. Most important recovery variable. Growth hormone release peaks during deep sleep.<br><strong>Nutrition:</strong> 20&ndash;40g protein + carbohydrate within 2 hours post-exercise for optimal muscle protein synthesis.<br><strong>Hydration:</strong> replace 150% of fluid lost (1.5L per kg of body weight lost during exercise).</p></div>
-    </div>
-  </div>
+<div class="section-title">Recovery Science</div>
+<div class="section-sub">Recovery is when adaptation occurs. Without adequate recovery, training produces injury instead of improvement. Understand the mechanisms, timelines, and evidence for recovery strategies.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Recovery Timelines by Training Type</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>System</th><th>Recovery Time</th><th>Implication</th></tr></thead><tbody>
+<tr><td class="hi">Phosphocreatine (ATP-CP)</td><td>3&ndash;5 minutes</td><td>Full recovery between max-effort sets. Rest 2&ndash;5 min for power/strength training</td></tr>
+<tr><td class="hi">Muscle Glycogen</td><td>24&ndash;48 hours (with adequate nutrition)</td><td>Don&rsquo;t train same muscle group at high intensity on consecutive days</td></tr>
+<tr><td class="warn">Muscle Repair (DOMS)</td><td>24&ndash;72 hours peak, resolves 5&ndash;7 days</td><td>DOMS peaks 24&ndash;48 hours post-exercise. Eccentric exercise produces more DOMS. Light activity during DOMS is beneficial</td></tr>
+<tr><td class="hi">Tendon Adaptation</td><td>48&ndash;72 hours</td><td>Tendons adapt slower than muscle. Heavy load tendon training needs 48+ hour recovery</td></tr>
+<tr><td class="warn">CNS Recovery</td><td>48&ndash;72 hours after max-effort</td><td>Neural fatigue from heavy/explosive training. Performance decrements if CNS not recovered</td></tr>
+<tr><td class="hi">Full Neuromuscular</td><td>48&ndash;96 hours after intense session</td><td>Explains why 2&ndash;3 days/week per muscle group is optimal for most populations</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== SPECIAL POPULATIONS ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Overtraining Syndrome</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">Signs &amp; Symptoms</div>
+<p><strong>Performance:</strong> decreased performance despite maintained/increased training. Inability to recover between sessions.<br><strong>Physical:</strong> persistent fatigue, elevated resting HR, frequent illness/infection, persistent muscle soreness, insomnia despite exhaustion, loss of appetite, weight loss.<br><strong>Psychological:</strong> mood disturbance, irritability, depression, loss of motivation, decreased concentration.<br><strong>Management:</strong> primary treatment is REST (days to weeks depending on severity). Reduce volume 50&ndash;70%. Ensure nutrition adequacy (protein, carbohydrate, hydration). Gradual return to training. This is NOT &ldquo;mental weakness&rdquo; &mdash; it is a physiological failure of the recovery/adaptation system.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Active Recovery vs Passive Rest</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Evidence-Based Recovery Strategies</div>
+<p><strong>Active recovery</strong> (light walking, swimming, cycling at 30&ndash;50% HRmax) is superior to passive rest for: lactate clearance, maintaining blood flow, reducing perceived soreness, maintaining ROM. Do this 24 hours after hard training.<br><strong>Sleep:</strong> 7&ndash;9 hours. Most important recovery variable. Growth hormone release peaks during deep sleep.<br><strong>Nutrition:</strong> 20&ndash;40g protein + carbohydrate within 2 hours post-exercise for optimal muscle protein synthesis.<br><strong>Hydration:</strong> replace 150% of fluid lost (1.5L per kg of body weight lost during exercise).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-special">
 <div class="container">
-  <div class="section-title">Special Population Modifications</div>
-  <div class="section-sub">Exercise prescription must be modified for specific populations. These are the most commonly tested modifications on the NPTE.</div>
-
-  <table class="data-table"><thead><tr><th>Population</th><th>Key Modifications</th><th>Precautions</th></tr></thead><tbody>
-    <tr><td class="warn">Cardiac Rehab</td><td>Start at 40&ndash;60% HRR. RPE 11&ndash;14. Continuous telemetry monitoring in Phase I/II. Interval training well-tolerated. Progress slowly (10%/week)</td><td>Know symptom limits. SBP drop with increasing workload = stop immediately. Teach angina recognition. Beta-blocker patients: use RPE not HR</td></tr>
-    <tr><td class="warn">Diabetes (Type 2)</td><td>150+ min/week moderate aerobic + resistance 2&ndash;3x/week. Check blood glucose before, during, after. Carry fast-acting carbs. Exercise 1&ndash;3 hrs after meal</td><td>Hypoglycemia risk (especially with insulin/sulfonylureas). Avoid exercise if glucose &gt;300 or &lt;70 with symptoms. Inspect feet before/after. Autonomic neuropathy: blunted HR response &mdash; use RPE</td></tr>
-    <tr><td class="hi">Older Adults (&ge;65)</td><td>Same ACSM guidelines but start lower intensity. Emphasize neuromotor (balance, coordination) &ge;2&ndash;3x/week. Stretch hold 30&ndash;60 sec (longer than younger adults)</td><td>Fall risk assessment first. Orthostatic hypotension screening. Polypharmacy effects on exercise response. Bone density considerations (avoid high-impact if osteoporotic)</td></tr>
-    <tr><td class="hi">Pregnancy</td><td>150 min/week moderate aerobic. Avoid supine after 1st trimester (IVC compression). Avoid contact sports, hot yoga, scuba. Pelvic floor strengthening important</td><td>Stop if: vaginal bleeding, preterm labor signs, amniotic fluid leakage, chest pain, calf pain/swelling, dizziness. Absolute contraindications: preeclampsia, incompetent cervix, placenta previa</td></tr>
-    <tr><td class="hi">Osteoporosis</td><td>Weight-bearing exercise (walking, stair climbing, dancing). Resistance training 2&ndash;3x/week. Balance training for fall prevention</td><td>Avoid trunk flexion exercises (crunches, toe touches &mdash; vertebral compression fracture risk). Avoid high-impact, explosive, twisting under load. No spinal flexion &gt;45&deg; under load</td></tr>
-    <tr><td class="hi">Pulmonary Disease (COPD)</td><td>Both aerobic + resistance. Interval training often better tolerated than continuous. Pursed lip breathing during exercise. Upper + lower extremity training</td><td>SpO2 monitoring essential. Supplement O2 if SpO2 &lt;88&ndash;90%. RPE preferred over HR (medications affect HR). Dyspnea scale (0&ndash;10) alongside RPE</td></tr>
-  </tbody></table>
+<div class="section-title">Special Population Modifications</div>
+<div class="section-sub">Exercise prescription must be modified for specific populations. These are the most commonly tested modifications on the NPTE.</div>
+<table class="data-table"><thead>
+<tr><th>Population</th><th>Key Modifications</th><th>Precautions</th></tr></thead><tbody>
+<tr><td class="warn">Cardiac Rehab</td><td>Start at 40&ndash;60% HRR. RPE 11&ndash;14. Continuous telemetry monitoring in Phase I/II. Interval training well-tolerated. Progress slowly (10%/week)</td><td>Know symptom limits. SBP drop with increasing workload = stop immediately. Teach angina recognition. Beta-blocker patients: use RPE not HR</td></tr>
+<tr><td class="warn">Diabetes (Type 2)</td><td>150+ min/week moderate aerobic + resistance 2&ndash;3x/week. Check blood glucose before, during, after. Carry fast-acting carbs. Exercise 1&ndash;3 hrs after meal</td><td>Hypoglycemia risk (especially with insulin/sulfonylureas). Avoid exercise if glucose &gt;300 or &lt;70 with symptoms. Inspect feet before/after. Autonomic neuropathy: blunted HR response &mdash; use RPE</td></tr>
+<tr><td class="hi">Older Adults (&ge;65)</td><td>Same ACSM guidelines but start lower intensity. Emphasize neuromotor (balance, coordination) &ge;2&ndash;3x/week. Stretch hold 30&ndash;60 sec (longer than younger adults)</td><td>Fall risk assessment first. Orthostatic hypotension screening. Polypharmacy effects on exercise response. Bone density considerations (avoid high-impact if osteoporotic)</td></tr>
+<tr><td class="hi">Pregnancy</td><td>150 min/week moderate aerobic. Avoid supine after 1st trimester (IVC compression). Avoid contact sports, hot yoga, scuba. Pelvic floor strengthening important</td><td>Stop if: vaginal bleeding, preterm labor signs, amniotic fluid leakage, chest pain, calf pain/swelling, dizziness. Absolute contraindications: preeclampsia, incompetent cervix, placenta previa</td></tr>
+<tr><td class="hi">Osteoporosis</td><td>Weight-bearing exercise (walking, stair climbing, dancing). Resistance training 2&ndash;3x/week. Balance training for fall prevention</td><td>Avoid trunk flexion exercises (crunches, toe touches &mdash; vertebral compression fracture risk). Avoid high-impact, explosive, twisting under load. No spinal flexion &gt;45&deg; under load</td></tr>
+<tr><td class="hi">Pulmonary Disease (COPD)</td><td>Both aerobic + resistance. Interval training often better tolerated than continuous. Pursed lip breathing during exercise. Upper + lower extremity training</td><td>SpO2 monitoring essential. Supplement O2 if SpO2 &lt;88&ndash;90%. RPE preferred over HR (medications affect HR). Dyspnea scale (0&ndash;10) alongside RPE</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 — Aerobic Rx for Deconditioned SNF Patient</div><p>72-year-old female, post-hip fracture ORIF, deconditioned, resting HR 82, BP 138/78, on metoprolol (beta-blocker). <strong>Rx:</strong> Frequency 5x/week. Intensity: RPE 11–13 (cannot use HR due to beta-blocker). Time: start 10 min, progress to 20–30 min over 4 weeks. Type: seated NuStep → standing recumbent bike → hallway ambulation. Volume target: increase 10%/week. <strong>Key:</strong> use RPE not HR because of beta-blocker. Monitor BP response — SBP should rise proportionally, not drop.</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 — Resistance Rx for Post-TKA Quad Strengthening</div><p>65-year-old male, 6 weeks post-TKA, cleared for progressive resistance. Goal: rebuild quad strength to restore stair negotiation. <strong>Rx:</strong> Frequency 3x/week (48 hr rest between sessions). Intensity: 60–70% estimated 1RM (endurance → hypertrophy). Reps: 10–15. Sets: 3. Rest: 60 sec between sets. Exercises: seated knee extension, leg press (limited ROM per surgeon), wall squats, step-ups (4-inch). Progression: when patient performs 2 extra reps over target on 2 consecutive sessions → increase weight 5%. <strong>Key:</strong> progress by reps first, then load. Pain >4/10 NPRS during exercise = back off.</p></div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 — Aerobic Rx for Deconditioned SNF Patient</div>
+<p>72-year-old female, post-hip fracture ORIF, deconditioned, resting HR 82, BP 138/78, on metoprolol (beta-blocker). <strong>Rx:</strong> Frequency 5x/week. Intensity: RPE 11–13 (cannot use HR due to beta-blocker). Time: start 10 min, progress to 20–30 min over 4 weeks. Type: seated NuStep → standing recumbent bike → hallway ambulation. Volume target: increase 10%/week. <strong>Key:</strong> use RPE not HR because of beta-blocker. Monitor BP response — SBP should rise proportionally, not drop.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 — Resistance Rx for Post-TKA Quad Strengthening</div>
+<p>65-year-old male, 6 weeks post-TKA, cleared for progressive resistance. Goal: rebuild quad strength to restore stair negotiation. <strong>Rx:</strong> Frequency 3x/week (48 hr rest between sessions). Intensity: 60–70% estimated 1RM (endurance → hypertrophy). Reps: 10–15. Sets: 3. Rest: 60 sec between sets. Exercises: seated knee extension, leg press (limited ROM per surgeon), wall squats, step-ups (4-inch). Progression: when patient performs 2 extra reps over target on 2 consecutive sessions → increase weight 5%. <strong>Key:</strong> progress by reps first, then load. Pain>4/10 NPRS during exercise = back off.</p>
 </div>
 </div>
-
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to reveal answers.</div>
-
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Individual on metoprolol (beta-blocker). Describe how to prescribe exercise intensity?</div><span class="rc2-flip">tap</span><div class="rc2-a">Do NOT use heart rate &mdash; beta-blockers blunt the HR response. Use <strong>RPE (Borg 12&ndash;14 for moderate)</strong> or METs as primary intensity guide. Talk test also valid. The patient will never reach their age-predicted HRmax.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Calculate THR using Karvonen for a 60-year-old, resting HR 75, at 50&ndash;70% intensity.</div><span class="rc2-flip">tap</span><div class="rc2-a">HRmax = 220 &minus; 60 = 160. HRR = 160 &minus; 75 = 85. Lower: (85 &times; 0.50) + 75 = <strong>117.5 bpm</strong>. Upper: (85 &times; 0.70) + 75 = <strong>134.5 bpm</strong>. THR zone = <strong>118&ndash;135 bpm</strong>.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Individual&rsquo;s SBP drops from 140 to 128 mmHg as treadmill speed increases. What do you do?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>STOP exercise immediately.</strong> SBP drop &gt;10 mmHg with increasing workload = cardiac pump failure (the heart can&rsquo;t increase output to match demand). This is a serious sign &mdash; notify physician. Do NOT resume exercise.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">ACSM resistance training Rx for hypertrophy: load, reps, sets, rest in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Load:</strong> 67&ndash;85% 1RM. <strong>Reps:</strong> 6&ndash;12. <strong>Sets:</strong> 3&ndash;6. <strong>Rest:</strong> 30&ndash;90 seconds. <strong>Frequency:</strong> 2&ndash;4 days/week. Progress when patient can do 1&ndash;2 extra reps on 2 consecutive sessions &mdash; increase load 2&ndash;10%.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Should you do static stretching before exercise in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>No.</strong> Static stretching before exercise reduces force production by 5&ndash;10% and does NOT prevent injury. Use <strong>dynamic stretching</strong> (active movements through ROM) as part of warm-up. Save static stretching for the <strong>cool-down</strong> when muscles are warm.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Diabetic patient&rsquo;s glucose is 310 mg/dL before PT. In this case, What do you do?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Do not exercise.</strong> Blood glucose &gt;300 mg/dL = risk of diabetic ketoacidosis (DKA) which exercise can worsen. Check for ketones if possible. Hydrate. Recheck glucose. Notify nursing/physician. Exercise only when glucose is in safe range with no symptoms.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Client with osteoporosis &mdash; which exercises should be AVOIDED?</div><span class="rc2-flip">tap</span><div class="rc2-a">Avoid <strong>trunk flexion exercises</strong> (crunches, sit-ups, toe touches) &mdash; vertebral compression fracture risk. Avoid high-impact, explosive loading, and twisting under load. Emphasize weight-bearing exercise, resistance training, and balance training for fall prevention.</div></div>
-  </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to reveal answers.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Individual on metoprolol (beta-blocker). Describe how to prescribe exercise intensity?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Do NOT use heart rate &mdash; beta-blockers blunt the HR response. Use <strong>RPE (Borg 12&ndash;14 for moderate)</strong> or METs as primary intensity guide. Talk test also valid. The patient will never reach their age-predicted HRmax.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Calculate THR using Karvonen for a 60-year-old, resting HR 75, at 50&ndash;70% intensity.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">HRmax = 220 &minus; 60 = 160. HRR = 160 &minus; 75 = 85. Lower: (85 &times; 0.50) + 75 = <strong>117.5 bpm</strong>. Upper: (85 &times; 0.70) + 75 = <strong>134.5 bpm</strong>. THR zone = <strong>118&ndash;135 bpm</strong>.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Individual&rsquo;s SBP drops from 140 to 128 mmHg as treadmill speed increases. What do you do?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>STOP exercise immediately.</strong> SBP drop &gt;10 mmHg with increasing workload = cardiac pump failure (the heart can&rsquo;t increase output to match demand). This is a serious sign &mdash; notify physician. Do NOT resume exercise.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">ACSM resistance training Rx for hypertrophy: load, reps, sets, rest in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Load:</strong> 67&ndash;85% 1RM. <strong>Reps:</strong> 6&ndash;12. <strong>Sets:</strong> 3&ndash;6. <strong>Rest:</strong> 30&ndash;90 seconds. <strong>Frequency:</strong> 2&ndash;4 days/week. Progress when patient can do 1&ndash;2 extra reps on 2 consecutive sessions &mdash; increase load 2&ndash;10%.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Should you do static stretching before exercise in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>No.</strong> Static stretching before exercise reduces force production by 5&ndash;10% and does NOT prevent injury. Use <strong>dynamic stretching</strong> (active movements through ROM) as part of warm-up. Save static stretching for the <strong>cool-down</strong> when muscles are warm.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Diabetic patient&rsquo;s glucose is 310 mg/dL before PT. In this case, What do you do?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Do not exercise.</strong> Blood glucose &gt;300 mg/dL = risk of diabetic ketoacidosis (DKA) which exercise can worsen. Check for ketones if possible. Hydrate. Recheck glucose. Notify nursing/physician. Exercise only when glucose is in safe range with no symptoms.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Client with osteoporosis &mdash; which exercises should be AVOIDED?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Avoid <strong>trunk flexion exercises</strong> (crunches, sit-ups, toe touches) &mdash; vertebral compression fracture risk. Avoid high-impact, explosive loading, and twisting under load. Emphasize weight-bearing exercise, resistance training, and balance training for fall prevention.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -444,6 +453,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

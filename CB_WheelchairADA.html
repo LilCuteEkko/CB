@@ -1,894 +1,713 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Wheelchair &amp; ADA Accessibility</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Wheelchair &amp; ADA Accessibility</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat has-active">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" class="active">Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">Clinical Skills &middot; Adaptive Equipment</div>
-  <h1>Wheelchair <span>&amp; ADA Accessibility</span></h1>
-  <p>Wheelchair types, components, measurement, fitting, propulsion, and functional mobility skills. Plus ADA accessibility standards for built environments &mdash; the regulatory framework every clinician needs to know for discharge planning and community integration.</p>
+<div class="hero-tag">Clinical Skills &middot; Adaptive Equipment</div>
+<h1>Wheelchair <span>&amp; ADA Accessibility</span></h1>
+<p>Wheelchair types, components, measurement, fitting, propulsion, and functional mobility skills. Plus ADA accessibility standards for built environments &mdash; the regulatory framework every clinician needs to know for discharge planning and community integration.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('wctypes',this)">WC Types</button>
-  <button onclick="showTab('components',this)">Components</button>
-  <button onclick="showTab('fitting',this)">Fitting &amp; Measurement</button>
-  <button onclick="showTab('propulsion',this)">Propulsion</button>
-  <button onclick="showTab('functional',this)">Functional Mobility</button>
-  <button onclick="showTab('ada',this)">ADA Accessibility</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('wctypes',this)">WC Types</button>
+<button onclick="showTab('components',this)">Components</button>
+<button onclick="showTab('fitting',this)">Fitting &amp; Measurement</button>
+<button onclick="showTab('propulsion',this)">Propulsion</button>
+<button onclick="showTab('functional',this)">Functional Mobility</button>
+<button onclick="showTab('ada',this)">ADA Accessibility</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== WC TYPES ====== -->
 <div class="tab-panel active" id="tab-wctypes">
 <div class="container">
-
-  <div class="section-title">Wheelchair Types</div>
-  <div class="section-sub">Wheelchair selection is driven by patient goals, functional abilities, environment, and prognosis. Every W/C is a trade-off between stability, maneuverability, weight, cost, and independence. Know the indications for each type.</div>
-
-  <div class="section-title">Selection Factors — Before Choosing Any W/C</div>
-  <div class="bl-strip">
-      <div class="bl-label">Patient-Centered Factors</div>
-      <p><strong>Patient's goals and desires</strong> &mdash; what they want to do <strong>Anticipated use</strong> &mdash; indoors only, community, sports <strong>Abilities vs. limitations</strong> &mdash; UE strength, cognition, vision, tone <strong>Age, height, and weight</strong> &mdash; drives size and weight capacity <strong>Projected changes over time / prognosis</strong> &mdash; progressive vs. stable condition</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Contextual Factors</div>
-      <p><strong>Caregiver needs</strong> &mdash; ability to push, lift, manage equipment <strong>Financial resources</strong> &mdash; insurance coverage, funding sources <strong>Community and social resources</strong> &mdash; accessible environment <strong>Home environment</strong> &mdash; doorways, ramps, flooring surface</p>
-      <div class="bl-strip gold">
-        <div class="bl-label">Key Principle</div>
-        <p>Wheelchair options present many trade-offs for the user. No single W/C is optimal for all situations. Good W/C fit increases functional independence; poor fit limits function and can cause injury.</p>
-      </div>
-
-  
-  <div class="section-title">Standard Wheelchair Structure</div>
-  <div class="section-sub">All wheelchairs consist of two main systems: a <strong>postural support system</strong> and a <strong>mobility base</strong>.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Postural Support System</div>
-      <p><strong>Seat</strong> &mdash; primary weight-bearing surface; depth and width critical <strong>Back</strong> &mdash; height determines trunk support level <strong>Armrests</strong> &mdash; height affects posture and propulsion <strong>Front rigging</strong> &mdash; legrests and footplates; support LEs</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Mobility Base</div>
-      <p><strong>Frame</strong> &mdash; folding vs. rigid; weight and durability trade-offs <strong>Axle</strong> &mdash; position affects stability and propulsion efficiency <strong>Drive wheels, tires, and locks</strong> &mdash; rear large wheels; propulsion surface <strong>Casters</strong> &mdash; front small wheels; maneuvering</p>
-    </div>
-
-  
-  <div class="section-title">Wheelchair Types</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Standard Adult Wheelchair</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p>Most commonly prescribed manual wheelchair. Foldable for transport. Suited for patients with adequate UE strength for self-propulsion, or for dependent propulsion by a caregiver. Comes in a range of seat widths and depths. The baseline against which other W/C types are compared.</p>
-    </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Transport Wheelchair</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p>Smaller, lighter, with smaller rear wheels &mdash; patient cannot self-propel (no large handrims accessible). Designed strictly for caregiver-assisted transport. Useful for patients who will never self-propel. Lighter and easier to fold/stow.</p>
-    </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>One-Arm Drive Wheelchair</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p>Designed for patients with one functional UE (e.g., hemiplegia post-CVA). Uses a double-pushrim system on the functional side &mdash; two pushrims on one wheel control both wheels. Inner rim controls ipsilateral wheel; outer rim controls contralateral. Alternatively: lever-drive system. Allows independent propulsion with one arm. Can also be propelled with one UE and one LE.</p>
-    </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Amputee Wheelchair</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p>Rear axle is positioned further posterior than in a standard W/C. This compensates for the posterior shift in center of gravity (CoG) caused by the absence of one or both lower extremities. Without this modification, an amputee in a standard W/C would be at high risk of tipping backward. As the patient is fitted for a prosthesis and begins bearing weight through the LE, the axle may be repositioned forward.</p>
-    </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Reclining Wheelchair</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p>Back reclines to various angles, allowing partial or near-full supine positioning. Useful for patients who cannot tolerate prolonged upright sitting (orthostatic hypotension, spasticity, tone management), or who need catheter care while in W/C. Heavier and less maneuverable than standard W/C.</p>
-    </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Tilt-in-Space Wheelchair</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p>The entire seat-to-back angle stays the same as the chair tilts posteriorly. This distributes weight off the ischial tuberosities onto the posterior back and head &mdash; effective pressure relief without changing the hip-to-trunk angle. Used for patients with high spasticity (changing seat angle would increase spasm), poor trunk control, or severe pressure injury risk. Very different from a reclining W/C which changes the back-to-seat angle.</p>
-      <div class="bl-strip red">
-        <div class="bl-label">Tilt vs. Recline</div>
-        <p><strong>Tilt-in-space:</strong> Whole unit tilts back; seat-to-back angle stays fixed. Better for spasticity. <strong>Reclining:</strong> Only the back reclines; seat-to-back angle changes. May increase extensor tone.</p>
-      </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Power Wheelchair &amp; Scooter</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <p>Power Wheelchair</p>
-          <p>For patients who cannot manually propel (insufficient UE strength, endurance, or coordination). Controlled via joystick, sip-and-puff, head control, or eye-gaze systems depending on level of function. Requires adequate cognition and visual-perceptual skills for safe operation.</p>
-        </div>
-        <div>
-          <p>Scooter &mdash; Competency Checklist</p>
-          <p>Speed control Effective braking Maneuvering through doorways, bedrooms, bathrooms Smooth and safe parking at tables</p>
-        </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Other Specialized Types</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <p><strong>Sports wheelchairs</strong> &mdash; lightweight, angled wheels for stability and speed; sport-specific designs (basketball, racing, tennis)<br><strong>Pediatric W/C</strong> &mdash; sized for children; adjustable to accommodate growth <strong>Integrated Standing W/C</strong> &mdash; allows controlled transition to partial or full standing while in chair; promotes bone density, circulation, ROM <strong>Custom/specialty configurations</strong> &mdash; e.g., chair designed for patient with hemiplegia + transtibial amputation (modified footrest on one side, adapted armrest)</p>
-    </div>
-
+<div class="section-title">Wheelchair Types</div>
+<div class="section-sub">Wheelchair selection is driven by patient goals, functional abilities, environment, and prognosis. Every W/C is a trade-off between stability, maneuverability, weight, cost, and independence. Know the indications for each type.</div>
+<div class="section-title">Selection Factors — Before Choosing Any W/C</div>
+<div class="bl-strip">
+<div class="bl-label">Patient-Centered Factors</div>
+<p><strong>Patient's goals and desires</strong> &mdash; what they want to do <strong>Anticipated use</strong> &mdash; indoors only, community, sports <strong>Abilities vs. limitations</strong> &mdash; UE strength, cognition, vision, tone <strong>Age, height, and weight</strong> &mdash; drives size and weight capacity <strong>Projected changes over time / prognosis</strong> &mdash; progressive vs. stable condition</p>
 </div>
-
-<!-- ====== COMPONENTS ====== -->
+<div class="bl-strip">
+<div class="bl-label">Contextual Factors</div>
+<p><strong>Caregiver needs</strong> &mdash; ability to push, lift, manage equipment <strong>Financial resources</strong> &mdash; insurance coverage, funding sources <strong>Community and social resources</strong> &mdash; accessible environment <strong>Home environment</strong> &mdash; doorways, ramps, flooring surface</p>
+<div class="bl-strip gold">
+<div class="bl-label">Key Principle</div>
+<p>Wheelchair options present many trade-offs for the user. No single W/C is optimal for all situations. Good W/C fit increases functional independence; poor fit limits function and can cause injury.</p>
+</div>
+<div class="section-title">Standard Wheelchair Structure</div>
+<div class="section-sub">All wheelchairs consist of two main systems: a <strong>postural support system</strong> and a <strong>mobility base</strong>.</div>
+<div class="bl-strip">
+<div class="bl-label">Postural Support System</div>
+<p><strong>Seat</strong> &mdash; primary weight-bearing surface; depth and width critical <strong>Back</strong> &mdash; height determines trunk support level <strong>Armrests</strong> &mdash; height affects posture and propulsion <strong>Front rigging</strong> &mdash; legrests and footplates; support LEs</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Mobility Base</div>
+<p><strong>Frame</strong> &mdash; folding vs. rigid; weight and durability trade-offs <strong>Axle</strong> &mdash; position affects stability and propulsion efficiency <strong>Drive wheels, tires, and locks</strong> &mdash; rear large wheels; propulsion surface <strong>Casters</strong> &mdash; front small wheels; maneuvering</p>
+</div>
+<div class="section-title">Wheelchair Types</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Standard Adult Wheelchair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p>Most commonly prescribed manual wheelchair. Foldable for transport. Suited for patients with adequate UE strength for self-propulsion, or for dependent propulsion by a caregiver. Comes in a range of seat widths and depths. The baseline against which other W/C types are compared.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Transport Wheelchair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p>Smaller, lighter, with smaller rear wheels &mdash; patient cannot self-propel (no large handrims accessible). Designed strictly for caregiver-assisted transport. Useful for patients who will never self-propel. Lighter and easier to fold/stow.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>One-Arm Drive Wheelchair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p>Designed for patients with one functional UE (e.g., hemiplegia post-CVA). Uses a double-pushrim system on the functional side &mdash; two pushrims on one wheel control both wheels. Inner rim controls ipsilateral wheel; outer rim controls contralateral. Alternatively: lever-drive system. Allows independent propulsion with one arm. Can also be propelled with one UE and one LE.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Amputee Wheelchair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p>Rear axle is positioned further posterior than in a standard W/C. This compensates for the posterior shift in center of gravity (CoG) caused by the absence of one or both lower extremities. Without this modification, an amputee in a standard W/C would be at high risk of tipping backward. As the patient is fitted for a prosthesis and begins bearing weight through the LE, the axle may be repositioned forward.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Reclining Wheelchair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p>Back reclines to various angles, allowing partial or near-full supine positioning. Useful for patients who cannot tolerate prolonged upright sitting (orthostatic hypotension, spasticity, tone management), or who need catheter care while in W/C. Heavier and less maneuverable than standard W/C.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Tilt-in-Space Wheelchair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p>The entire seat-to-back angle stays the same as the chair tilts posteriorly. This distributes weight off the ischial tuberosities onto the posterior back and head &mdash; effective pressure relief without changing the hip-to-trunk angle. Used for patients with high spasticity (changing seat angle would increase spasm), poor trunk control, or severe pressure injury risk. Very different from a reclining W/C which changes the back-to-seat angle.</p>
+<div class="bl-strip red">
+<div class="bl-label">Tilt vs. Recline</div>
+<p><strong>Tilt-in-space:</strong> Whole unit tilts back; seat-to-back angle stays fixed. Better for spasticity. <strong>Reclining:</strong> Only the back reclines; seat-to-back angle changes. May increase extensor tone.</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Power Wheelchair &amp; Scooter</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<p>Power Wheelchair</p>
+<p>For patients who cannot manually propel (insufficient UE strength, endurance, or coordination). Controlled via joystick, sip-and-puff, head control, or eye-gaze systems depending on level of function. Requires adequate cognition and visual-perceptual skills for safe operation.</p>
+</div>
+<div>
+<p>Scooter &mdash; Competency Checklist</p>
+<p>Speed control Effective braking Maneuvering through doorways, bedrooms, bathrooms Smooth and safe parking at tables</p>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Other Specialized Types</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p><strong>Sports wheelchairs</strong> &mdash; lightweight, angled wheels for stability and speed; sport-specific designs (basketball, racing, tennis)<br><strong>Pediatric W/C</strong> &mdash; sized for children; adjustable to accommodate growth <strong>Integrated Standing W/C</strong> &mdash; allows controlled transition to partial or full standing while in chair; promotes bone density, circulation, ROM <strong>Custom/specialty configurations</strong> &mdash; e.g., chair designed for patient with hemiplegia + transtibial amputation (modified footrest on one side, adapted armrest)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-components">
 <div class="container">
-
-  <div class="section-title">Wheelchair Components</div>
-  <div class="section-sub">Every component serves a functional or postural purpose. Know each part, its function, and how to adjust it. Poor component selection or adjustment directly compromises posture, propulsion, and skin integrity.</div>
-
-  <div class="section-title">All Components</div>
-  <table class="data-table">
-    <thead><tr><th>Component</th><th>Function</th><th>Clinical Considerations</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Frame</strong></td><td>Structural base; folding or rigid</td><td>Rigid = lighter, better propulsion efficiency. Folding = transport-friendly.</td></tr>
-      <tr><td><strong>Push handles</strong></td><td>Caregiver propulsion and maneuvering</td><td>Height matters for caregiver body mechanics. Foldable or removable in some models.</td></tr>
-      <tr><td><strong>Tipping lever</strong></td><td>Footrest for caregiver to tip chair back</td><td>Used for ascending curbs, uneven terrain, lifting front casters.</td></tr>
-      <tr><td><strong>Wheel locks (brakes)</strong></td><td>Immobilize the chair when stationary</td><td>Must be applied before any transfer. Wheel locks are NOT for slowing while moving.</td></tr>
-      <tr><td><strong>Positioning belt (lap belt)</strong></td><td>Prevent sliding forward from seat</td><td>Apply at ~45° angle to prevent sacral sliding. Not a safety restraint.</td></tr>
-      <tr><td><strong>Caster wheels</strong></td><td>Front swivel wheels for steering</td><td>Smaller casters = less stable on uneven terrain. Larger casters for outdoor use.</td></tr>
-      <tr><td><strong>Drive wheels</strong></td><td>Rear large wheels; primary propulsion</td><td>Axle position affects stability and propulsion biomechanics.</td></tr>
-      <tr><td><strong>Handrims (pushrims)</strong></td><td>Surface for patient hand propulsion</td><td>Various coatings (rubber, vinyl) for patients with grip limitations.</td></tr>
-      <tr><td><strong>Armrests</strong></td><td>Upper extremity support; transfer assist</td><td>Fixed vs. removable/flip-back (needed for lateral transfers). Clothing guard prevents clothing from catching in wheels.</td></tr>
-      <tr><td><strong>Clothing guard</strong></td><td>Prevents clothing from contacting wheels</td><td>Important for hygiene and safety; often integrated with armrests.</td></tr>
-      <tr><td><strong>Legrests / footplates</strong></td><td>Supports lower extremities; elevating for edema</td><td>Removable for transfers. Elevating legrests for LE edema management.</td></tr>
-    </tbody>
-  </table>
-
-  
-  <div class="section-title">Seating &amp; Positioning Goals</div>
-  <div class="bl-strip"><div class="bl-label">Alignment</div><p>Improve postural alignment &mdash; head, trunk, pelvis in neutral as possible</p></div>
-    <div class="bl-strip"><div class="bl-label">Deformity Prevention</div><p>Decrease risk of developing secondary deformities from prolonged abnormal positioning</p></div>
-    <div class="bl-strip"><div class="bl-label">Tissue Integrity</div><p>Prevent tissue damage &mdash; distribute pressure over maximum surface area</p></div>
-    <div class="bl-strip"><div class="bl-label">Function</div><p>Enhance UE function, communication, feeding, and interaction with environment</p></div>
-
-  <div class="section-title">Seating &mdash; Comfort Factors</div>
-  <div class="bl-strip">
-      <div class="bl-label">Clinical Seating Goals</div>
-      <p><strong>Support for pelvis</strong> &mdash; foundation of all sitting posture <strong>Stability</strong> &mdash; enough postural support to feel secure <strong>Sitting balance</strong> &mdash; positioned to allow maximal available balance <strong>Pressure distribution</strong> &mdash; avoid focal pressure on bony prominences <strong>Comfort</strong> &mdash; sustainable posture over hours</p>
-      <div class="bl-strip red">
-        <div class="bl-label">Sacral Sitting &mdash; Watch For This</div>
-        <p>Pelvis posterior-tilted, patient "sitting on tailbone." Reverse lumbar curve. Causes IT pressure → pressure injury, and limits UE function. Quick check: look for posterior pelvic tilt before confirming fit.</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">Cushion Types</div>
-      <div class="ma-item">
-        <div>
-          <p>Standard Foam</p>
-          <p>Basic comfort and distribution. Compresses over time. Least expensive.</p>
-        </div>
-      </div>
-      <div class="ma-item">
-        <div>
-          <p>Gel Cushion</p>
-          <p>Better pressure distribution; heavier. Good for moderate pressure risk patients.</p>
-        </div>
-      </div>
-      <div class="ma-item">
-        <div>
-          <p>Air Cushion (Roho)</p>
-          <p>Highest pressure relief. Interconnected air cells distribute load. Requires correct inflation. For high pressure risk (SCI, non-sensate patients).</p>
-        </div>
-      </div>
-      <div class="ma-item">
-        <div>
-          <p>Solid Seat Insert</p>
-          <p>Prevents sling seat hammocking. Provides firm base for positioning. Often used under foam/gel cushion.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Wheelchair Components</div>
+<div class="section-sub">Every component serves a functional or postural purpose. Know each part, its function, and how to adjust it. Poor component selection or adjustment directly compromises posture, propulsion, and skin integrity.</div>
+<div class="section-title">All Components</div>
+<table class="data-table"><thead>
+<tr><th>Component</th><th>Function</th><th>Clinical Considerations</th></tr></thead><tbody>
+<tr><td><strong>Frame</strong></td><td>Structural base; folding or rigid</td><td>Rigid = lighter, better propulsion efficiency. Folding = transport-friendly.</td></tr>
+<tr><td><strong>Push handles</strong></td><td>Caregiver propulsion and maneuvering</td><td>Height matters for caregiver body mechanics. Foldable or removable in some models.</td></tr>
+<tr><td><strong>Tipping lever</strong></td><td>Footrest for caregiver to tip chair back</td><td>Used for ascending curbs, uneven terrain, lifting front casters.</td></tr>
+<tr><td><strong>Wheel locks (brakes)</strong></td><td>Immobilize the chair when stationary</td><td>Must be applied before any transfer. Wheel locks are NOT for slowing while moving.</td></tr>
+<tr><td><strong>Positioning belt (lap belt)</strong></td><td>Prevent sliding forward from seat</td><td>Apply at ~45° angle to prevent sacral sliding. Not a safety restraint.</td></tr>
+<tr><td><strong>Caster wheels</strong></td><td>Front swivel wheels for steering</td><td>Smaller casters = less stable on uneven terrain. Larger casters for outdoor use.</td></tr>
+<tr><td><strong>Drive wheels</strong></td><td>Rear large wheels; primary propulsion</td><td>Axle position affects stability and propulsion biomechanics.</td></tr>
+<tr><td><strong>Handrims (pushrims)</strong></td><td>Surface for patient hand propulsion</td><td>Various coatings (rubber, vinyl) for patients with grip limitations.</td></tr>
+<tr><td><strong>Armrests</strong></td><td>Upper extremity support; transfer assist</td><td>Fixed vs. removable/flip-back (needed for lateral transfers). Clothing guard prevents clothing from catching in wheels.</td></tr>
+<tr><td><strong>Clothing guard</strong></td><td>Prevents clothing from contacting wheels</td><td>Important for hygiene and safety; often integrated with armrests.</td></tr>
+<tr><td><strong>Legrests / footplates</strong></td><td>Supports lower extremities; elevating for edema</td><td>Removable for transfers. Elevating legrests for LE edema management.</td></tr></tbody></table>
+<div class="section-title">Seating &amp; Positioning Goals</div>
+<div class="bl-strip">
+<div class="bl-label">Alignment</div>
+<p>Improve postural alignment &mdash; head, trunk, pelvis in neutral as possible</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Deformity Prevention</div>
+<p>Decrease risk of developing secondary deformities from prolonged abnormal positioning</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Tissue Integrity</div>
+<p>Prevent tissue damage &mdash; distribute pressure over maximum surface area</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Function</div>
+<p>Enhance UE function, communication, feeding, and interaction with environment</p>
+</div>
+<div class="section-title">Seating &mdash; Comfort Factors</div>
+<div class="bl-strip">
+<div class="bl-label">Clinical Seating Goals</div>
+<p><strong>Support for pelvis</strong> &mdash; foundation of all sitting posture <strong>Stability</strong> &mdash; enough postural support to feel secure <strong>Sitting balance</strong> &mdash; positioned to allow maximal available balance <strong>Pressure distribution</strong> &mdash; avoid focal pressure on bony prominences <strong>Comfort</strong> &mdash; sustainable posture over hours</p>
+<div class="bl-strip red">
+<div class="bl-label">Sacral Sitting &mdash; Watch For This</div>
+<p>Pelvis posterior-tilted, patient "sitting on tailbone." Reverse lumbar curve. Causes IT pressure → pressure injury, and limits UE function. Quick check: look for posterior pelvic tilt before confirming fit.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Cushion Types</div>
+<div class="ma-item">
+<div>
+<p>Standard Foam</p>
+<p>Basic comfort and distribution. Compresses over time. Least expensive.</p>
 </div>
 </div>
-
-<!-- ====== FITTING & MEASUREMENT ====== -->
+<div class="ma-item">
+<div>
+<p>Gel Cushion</p>
+<p>Better pressure distribution; heavier. Good for moderate pressure risk patients.</p>
+</div>
+</div>
+<div class="ma-item">
+<div>
+<p>Air Cushion (Roho)</p>
+<p>Highest pressure relief. Interconnected air cells distribute load. Requires correct inflation. For high pressure risk (SCI, non-sensate patients).</p>
+</div>
+</div>
+<div class="ma-item">
+<div>
+<p>Solid Seat Insert</p>
+<p>Prevents sling seat hammocking. Provides firm base for positioning. Often used under foam/gel cushion.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-fitting">
 <div class="container">
-
-  <div class="section-title">Wheelchair Fitting &amp; Measurement</div>
-  <div class="section-sub">Measurements are converted to W/C dimensions. Good fit = independence and skin protection. Poor fit = injury, poor posture, limited function. Measure with patient in optimal position (~90&deg;&ndash;90&deg;&ndash;90&deg;: hips/knees/ankles) and accommodate typical clothing, footwear, and cushion.</div>
-
-  <div class="bl-strip gold">
-    <div class="bl-label">Measurement Principles</div>
-    <p>Measure patient in optimal position (~90&deg;&ndash;90&deg;&ndash;90&deg;) &middot; Do NOT contour tape measure to follow body contours &middot; Accommodate typical clothing, footwear, and cushion thickness &middot; <strong>Positioning the pelvis well will help position the rest of the body well</strong> &middot; Beware of sacral sitting during measurement</p>
-  </div>
-
-  <div class="section-title">The 5 Key Measurements</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Seat Depth</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <p>How to Measure</p>
-          <p><strong>(1)</strong> Measure from <strong>back of hips to popliteal fold</strong> <strong>(2)</strong> Subtract <strong>2 inches</strong> to determine seat depth</p>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Too Much Seat Depth</div>
-            <p>Popliteal pressure &rarr; restricts circulation, nerve compression behind knee. Patient slides forward into sacral sitting to relieve pressure.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Too Little Seat Depth</div>
-            <p>Inadequate ischial tuberosity support &rarr; increased focal IT pressure + lack of trunk support.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Seat Width</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <p>How to Measure</p>
-          <p><strong>(1)</strong> Measure <strong>distance between outside edges of hips</strong> <strong>(2)</strong> Add <strong>1 to 2 inches</strong> to determine seat width</p>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Too Wide</div>
-            <p>Difficulty propelling &mdash; arms abduct too much to reach pushrims efficiently. Harder to maneuver through doorways.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Too Narrow</div>
-            <p>Excessive lateral pressure on hips and thighs &rarr; pressure injury risk. Difficulty with pressure relief shifts.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Seat-to-Floor Height (Front Rigging Length)</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <p>How to Measure</p>
-          <p><strong>(1)</strong> Measure from <strong>sole of the shoe to the popliteal fold</strong> <strong>(2)</strong> Subtract the thickness of the compressed cushion (if used)<br><strong>(3)</strong> Add <strong>~2 inches for footrest clearance</strong> to determine front rigging length</p>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Too High</div>
-            <p>Footrests too low &rarr; thighs hang; increased IT pressure; lack of trunk support.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Too Low</div>
-            <p>Footrest strikes the ground &rarr; difficulty with transfers; potential tipping hazard on uneven terrain.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Seat Back Height</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <p>How to Measure</p>
-          <p><strong>(1)</strong> Height varies depending on level of support needed <strong>(2)</strong> For standard W/C: measure from seating surface to <strong>inferior angle of scapula</strong> (or to axilla)<br><strong>(3)</strong> Subtract <strong>~4 inches</strong> <strong>(4)</strong> Add compressed cushion thickness if used</p>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Too High</div>
-            <p>Restricts shoulder movement and arm function &mdash; difficulty using arms for propulsion or table activities.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Too Low</div>
-            <p>Insufficient trunk support &rarr; fatigue, poor posture, risk of falling backward.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Armrest Height</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <p>How to Measure</p>
-          <p><strong>(1)</strong> Position upper arm close to trunk; flex elbow to <strong>90&deg;</strong> <strong>(2)</strong> Measure from <strong>olecranon process</strong> vertically to seating surface <strong>(3)</strong> Add compressed cushion thickness if used <strong>(4)</strong> Add <strong>1 inch</strong> to determine armrest height</p>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Too High</div>
-            <p>Shoulder shrug &rarr; poor functional position; increased upper trapezius tension; difficult to reach items.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Too Low</div>
-            <p>Poor posture &mdash; patient leans to one side or forward to reach armrest; spinal asymmetry over time.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="section-title">Two-Finger Confirmation of Fit</div>
-  <div class="section-sub">After fitting, confirm the chair fits correctly with these 5 two-finger checks. All should have approximately 2 fingers of clearance &mdash; enough to confirm proper sizing without excess.</div>
-
-  <div class="bl-strip">
-      <div>Seat Width</div>
-      <div>2 fingers</div>
-      <div>Between hip and side of W/C &mdash; vertical or horizontal orientation</div>
-    </div>
-    <div class="bl-strip">
-      <div>Seat Depth</div>
-      <div>2 fingers</div>
-      <div>Horizontally between popliteal fold and front edge of seat</div>
-    </div>
-    <div class="bl-strip">
-      <div>Seat Height</div>
-      <div>2 fingers</div>
-      <div>Horizontally between front surface of chair and distal thigh</div>
-    </div>
-    <div class="bl-strip">
-      <div>Legrest Length</div>
-      <div>2 fingers</div>
-      <div>Vertically between footplate and floor</div>
-    </div>
-    <div class="bl-strip">
-      <div>Back Height</div>
-      <div>2 fingers</div>
-      <div>Vertically between top of W/C back and patient's axilla</div>
-    </div>
-  </div>
-
-  
-  <div class="section-title">Effects of Improper Fit &mdash; Summary Table</div>
-  <table class="data-table">
-    <thead><tr><th>Measurement</th><th>Too Much</th><th>Too Little</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Seat Height</strong></td><td class="bad">Thighs hang &rarr; increased IT pressure; poor trunk support</td><td class="warn">Footplate strikes ground; difficulty with transfers</td></tr>
-      <tr><td><strong>Seat Depth</strong></td><td class="bad">Popliteal pressure; patient slides forward into sacral sitting</td><td class="warn">IT pressure; inadequate trunk support</td></tr>
-      <tr><td><strong>Seat Width</strong></td><td class="warn">Difficulty propelling; harder to fit through doorways</td><td class="bad">Excessive lateral pressure &rarr; pressure injury</td></tr>
-      <tr><td><strong>Back Height</strong></td><td class="warn">Restricts arm use; difficulty propelling</td><td class="bad">Less trunk support; fatigue; falls risk</td></tr>
-      <tr><td><strong>Armrest Height</strong></td><td class="warn">Poor functional position; shoulder shrug</td><td class="bad">Poor posture; lateral spinal lean</td></tr>
-    </tbody>
-  </table>
-
-  
-  <div class="section-title">Patient &amp; Family Education</div>
-  <div class="bl-strip">
-      <div class="bl-label">Pressure Management &mdash; Non-Negotiables</div>
-      <p><strong>(1)</strong> Skin inspection at <strong>bony prominences</strong> daily (ITs, sacrum, trochanters, heels)<br><strong>(2)</strong> Pressure relief schedule &mdash; every 15&ndash;30 minutes in W/C <strong>(3)</strong> <strong>W/C cushion does NOT eliminate the need for pressure relief</strong> <strong>(4)</strong> Check for changes in circulation (color, temperature, swelling)</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Wheelchair Measurement Form &mdash; Key Measurements</div>
-      <p>Top of head to bottom of buttocks Top of shoulder to bottom of buttocks Armpit to bottom of buttocks Elbow to bottom of buttocks Back of buttocks to back of knee (popliteal fold) Foot length Head width &middot; Shoulder width &middot; Armpit to armpit &middot; Hip width Popliteal to heel (left) &middot; Popliteal to heel (right)</p>
-    </div>
-  </div>
-
+<div class="section-title">Wheelchair Fitting &amp; Measurement</div>
+<div class="section-sub">Measurements are converted to W/C dimensions. Good fit = independence and skin protection. Poor fit = injury, poor posture, limited function. Measure with patient in optimal position (~90&deg;&ndash;90&deg;&ndash;90&deg;: hips/knees/ankles) and accommodate typical clothing, footwear, and cushion.</div>
+<div class="bl-strip gold">
+<div class="bl-label">Measurement Principles</div>
+<p>Measure patient in optimal position (~90&deg;&ndash;90&deg;&ndash;90&deg;) &middot; Do NOT contour tape measure to follow body contours &middot; Accommodate typical clothing, footwear, and cushion thickness &middot; <strong>Positioning the pelvis well will help position the rest of the body well</strong> &middot; Beware of sacral sitting during measurement</p>
+</div>
+<div class="section-title">The 5 Key Measurements</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Seat Depth</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<p>How to Measure</p>
+<p><strong>(1)</strong> Measure from <strong>back of hips to popliteal fold</strong><strong>(2)</strong> Subtract <strong>2 inches</strong> to determine seat depth</p>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Too Much Seat Depth</div>
+<p>Popliteal pressure &rarr; restricts circulation, nerve compression behind knee. Patient slides forward into sacral sitting to relieve pressure.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Too Little Seat Depth</div>
+<p>Inadequate ischial tuberosity support &rarr; increased focal IT pressure + lack of trunk support.</p>
 </div>
 </div>
-
-<!-- ====== PROPULSION ====== -->
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Seat Width</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<p>How to Measure</p>
+<p><strong>(1)</strong> Measure <strong>distance between outside edges of hips</strong><strong>(2)</strong> Add <strong>1 to 2 inches</strong> to determine seat width</p>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Too Wide</div>
+<p>Difficulty propelling &mdash; arms abduct too much to reach pushrims efficiently. Harder to maneuver through doorways.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Too Narrow</div>
+<p>Excessive lateral pressure on hips and thighs &rarr; pressure injury risk. Difficulty with pressure relief shifts.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Seat-to-Floor Height (Front Rigging Length)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<p>How to Measure</p>
+<p><strong>(1)</strong> Measure from <strong>sole of the shoe to the popliteal fold</strong><strong>(2)</strong> Subtract the thickness of the compressed cushion (if used)<br><strong>(3)</strong> Add <strong>~2 inches for footrest clearance</strong> to determine front rigging length</p>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Too High</div>
+<p>Footrests too low &rarr; thighs hang; increased IT pressure; lack of trunk support.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Too Low</div>
+<p>Footrest strikes the ground &rarr; difficulty with transfers; potential tipping hazard on uneven terrain.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Seat Back Height</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<p>How to Measure</p>
+<p><strong>(1)</strong> Height varies depending on level of support needed <strong>(2)</strong> For standard W/C: measure from seating surface to <strong>inferior angle of scapula</strong> (or to axilla)<br><strong>(3)</strong> Subtract <strong>~4 inches</strong><strong>(4)</strong> Add compressed cushion thickness if used</p>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Too High</div>
+<p>Restricts shoulder movement and arm function &mdash; difficulty using arms for propulsion or table activities.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Too Low</div>
+<p>Insufficient trunk support &rarr; fatigue, poor posture, risk of falling backward.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Armrest Height</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<p>How to Measure</p>
+<p><strong>(1)</strong> Position upper arm close to trunk; flex elbow to <strong>90&deg;</strong><strong>(2)</strong> Measure from <strong>olecranon process</strong> vertically to seating surface <strong>(3)</strong> Add compressed cushion thickness if used <strong>(4)</strong> Add <strong>1 inch</strong> to determine armrest height</p>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Too High</div>
+<p>Shoulder shrug &rarr; poor functional position; increased upper trapezius tension; difficult to reach items.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Too Low</div>
+<p>Poor posture &mdash; patient leans to one side or forward to reach armrest; spinal asymmetry over time.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-title">Two-Finger Confirmation of Fit</div>
+<div class="section-sub">After fitting, confirm the chair fits correctly with these 5 two-finger checks. All should have approximately 2 fingers of clearance &mdash; enough to confirm proper sizing without excess.</div>
+<div class="bl-strip">
+<div>Seat Width</div>
+<div>2 fingers</div>
+<div>Between hip and side of W/C &mdash; vertical or horizontal orientation</div>
+</div>
+<div class="bl-strip">
+<div>Seat Depth</div>
+<div>2 fingers</div>
+<div>Horizontally between popliteal fold and front edge of seat</div>
+</div>
+<div class="bl-strip">
+<div>Seat Height</div>
+<div>2 fingers</div>
+<div>Horizontally between front surface of chair and distal thigh</div>
+</div>
+<div class="bl-strip">
+<div>Legrest Length</div>
+<div>2 fingers</div>
+<div>Vertically between footplate and floor</div>
+</div>
+<div class="bl-strip">
+<div>Back Height</div>
+<div>2 fingers</div>
+<div>Vertically between top of W/C back and patient's axilla</div>
+</div>
+</div>
+<div class="section-title">Effects of Improper Fit &mdash; Summary Table</div>
+<table class="data-table"><thead>
+<tr><th>Measurement</th><th>Too Much</th><th>Too Little</th></tr></thead><tbody>
+<tr><td><strong>Seat Height</strong></td><td class="bad">Thighs hang &rarr; increased IT pressure; poor trunk support</td><td class="warn">Footplate strikes ground; difficulty with transfers</td></tr>
+<tr><td><strong>Seat Depth</strong></td><td class="bad">Popliteal pressure; patient slides forward into sacral sitting</td><td class="warn">IT pressure; inadequate trunk support</td></tr>
+<tr><td><strong>Seat Width</strong></td><td class="warn">Difficulty propelling; harder to fit through doorways</td><td class="bad">Excessive lateral pressure &rarr; pressure injury</td></tr>
+<tr><td><strong>Back Height</strong></td><td class="warn">Restricts arm use; difficulty propelling</td><td class="bad">Less trunk support; fatigue; falls risk</td></tr>
+<tr><td><strong>Armrest Height</strong></td><td class="warn">Poor functional position; shoulder shrug</td><td class="bad">Poor posture; lateral spinal lean</td></tr></tbody></table>
+<div class="section-title">Patient &amp; Family Education</div>
+<div class="bl-strip">
+<div class="bl-label">Pressure Management &mdash; Non-Negotiables
+  <p><strong>(1)</strong> Skin inspection at <strong>bony prominences</strong> daily (ITs, sacrum, trochanters, heels)<br><strong>(2)</strong> Pressure relief schedule &mdash; every 15&ndash;30 minutes in W/C <strong>(3)</strong><strong>W/C cushion does NOT eliminate the need for pressure relief</strong><strong>(4)</strong> Check for changes in circulation (color, temperature, swelling)</p>
+<div class="bl-strip">
+<div class="bl-label">Wheelchair Measurement Form &mdash; Key Measurements
+  <p>Top of head to bottom of buttocks Top of shoulder to bottom of buttocks Armpit to bottom of buttocks Elbow to bottom of buttocks Back of buttocks to back of knee (popliteal fold) Foot length Head width &middot; Shoulder width &middot; Armpit to armpit &middot; Hip width Popliteal to heel (left) &middot; Popliteal to heel (right)</p>
 <div class="tab-panel" id="tab-propulsion">
 <div class="container">
-
-  <div class="section-title">Wheelchair Propulsion</div>
-  <div class="section-sub">Propulsion technique affects efficiency, upper extremity health, and patient dignity. For the clinician assisting with dependent propulsion, body mechanics are critical. Good W/C fit is the prerequisite for efficient independent propulsion.</div>
-
-  <div class="section-title">Independent Propulsion &mdash; Level Surfaces</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Both Hands (Standard)</div>
-      <p><strong>Start position: 10 o'clock</strong> on the pushrim <strong>Release at 2 or 3 o'clock</strong> &mdash; smooth follow-through Long, smooth strokes are more efficient and less damaging to shoulders than short rapid strokes <strong>Turning:</strong> move one pushrim forward while holding the other still or pulling it back</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Other Propulsion Methods</div>
-      <p><strong>One or both feet:</strong> requires good shoe grip and low enough seat height; effective for hemiplegia <strong>Combined UE + LE:</strong> one hand on pushrim, opposite foot on floor; efficient for hemiplegia <strong>One-arm drive W/C:</strong> double pushrim system allows bilateral wheel control from one side</p>
-    </div>
-  </div>
-
-  <div class="section-title">Dependent Propulsion</div>
-  <div class="bl-strip">
-      <div class="bl-label">Level Surfaces</div>
-      <p>Good body mechanics &mdash; use LEs for pushing; bend knees slightly Smooth, even pace &mdash; <strong>protect patient's dignity</strong> <strong>Apply wheel locks when stationary</strong> &mdash; always, even briefly Keep patient's feet on footrests; watch for foot-to-floor contact on tight turns</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Uneven Surfaces</div>
-      <p>Carpet, grass, gravel, and sand increase resistance significantly May need to <strong>tip W/C back</strong> to lift casters off surface to prevent casters from catching or digging in Use tipping lever with foot; maintain wide stance for stability Maintain patient communication &mdash; tipping can be alarming</p>
-    </div>
-  </div>
-
-  <div class="section-title">Wheelies</div>
-  <div class="bl-strip">
-    <div class="bl-label">Independent Advanced Skill</div>
-    <p>Balancing the W/C on the drive wheels only (casters lifted off the ground). Necessary for independent community mobility: curbs, rough terrain, soft surfaces. Requires strong UE, excellent balance, and practice. <strong>Must be practiced in an appropriate supervised setting</strong> with a spotter until proficiency is demonstrated.</p>
-  </div>
-
+<div class="section-title">Wheelchair Propulsion</div>
+<div class="section-sub">Propulsion technique affects efficiency, upper extremity health, and patient dignity. For the clinician assisting with dependent propulsion, body mechanics are critical. Good W/C fit is the prerequisite for efficient independent propulsion.</div>
+<div class="section-title">Independent Propulsion &mdash; Level Surfaces</div>
+<div class="bl-strip">
+<div class="bl-label">Both Hands (Standard)</div>
+<p><strong>Start position: 10 o'clock</strong> on the pushrim <strong>Release at 2 or 3 o'clock</strong> &mdash; smooth follow-through Long, smooth strokes are more efficient and less damaging to shoulders than short rapid strokes <strong>Turning:</strong> move one pushrim forward while holding the other still or pulling it back</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Other Propulsion Methods</div>
+<p><strong>One or both feet:</strong> requires good shoe grip and low enough seat height; effective for hemiplegia <strong>Combined UE + LE:</strong> one hand on pushrim, opposite foot on floor; efficient for hemiplegia <strong>One-arm drive W/C:</strong> double pushrim system allows bilateral wheel control from one side</p>
 </div>
 </div>
-
-<!-- ====== FUNCTIONAL MOBILITY ====== -->
+<div class="section-title">Dependent Propulsion</div>
+<div class="bl-strip">
+<div class="bl-label">Level Surfaces</div>
+<p>Good body mechanics &mdash; use LEs for pushing; bend knees slightly Smooth, even pace &mdash; <strong>protect patient's dignity</strong><strong>Apply wheel locks when stationary</strong> &mdash; always, even briefly Keep patient's feet on footrests; watch for foot-to-floor contact on tight turns</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Uneven Surfaces</div>
+<p>Carpet, grass, gravel, and sand increase resistance significantly May need to <strong>tip W/C back</strong> to lift casters off surface to prevent casters from catching or digging in Use tipping lever with foot; maintain wide stance for stability Maintain patient communication &mdash; tipping can be alarming</p>
+</div>
+</div>
+<div class="section-title">Wheelies</div>
+<div class="bl-strip">
+<div class="bl-label">Independent Advanced Skill</div>
+<p>Balancing the W/C on the drive wheels only (casters lifted off the ground). Necessary for independent community mobility: curbs, rough terrain, soft surfaces. Requires strong UE, excellent balance, and practice. <strong>Must be practiced in an appropriate supervised setting</strong> with a spotter until proficiency is demonstrated.</p>
+</div>
 <div class="tab-panel" id="tab-functional">
 <div class="container">
-
-  <div class="section-title">Functional Wheelchair Mobility</div>
-  <div class="section-sub">Teach patients and caregivers to safely manage the environments they will actually encounter. Doorways, ramps, curbs, and steps are daily challenges. Technique matters — for patient safety and clinician back health.</div>
-
-  <div class="section-title">Doorways</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Dependent &mdash; Door Opens Away from Patient</div>
-      <p><strong>(1)</strong> Clinician moves <strong>backward through door</strong> while pushing W/C <strong>(2)</strong> Once through, turn W/C to face direction of travel</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Dependent &mdash; Door Opens Toward Patient</div>
-      <p><strong>(1)</strong> Clinician steers W/C <strong>beyond the door</strong> to one side <strong>(2)</strong> Opens the door fully <strong>(3)</strong> Moves W/C through the doorway while preventing door from closing on patient</p>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Independent &mdash; Door Opens Away</div>
-      <p><strong>(1)</strong> Push door open wide <strong>(2)</strong> Propel quickly through doorway <strong>(3)</strong> Use front rigging or hand to block door from closing</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Independent &mdash; Door Opens Toward</div>
-      <p><strong>(1)</strong> Pull door open wide <strong>(2)</strong> Propel W/C through doorway <strong>(3)</strong> Use front rigging or hand to block door from closing</p>
-    </div>
-  </div>
-
-  
-  <div class="section-title">Ramps</div>
-
-  <div class="bl-strip gold">
-    <div class="bl-label">Ramp Standards (ADA)</div>
-    <p>Maximum slope: <strong>1:12</strong> (1 inch rise per 12 inches of length). Maximum overall rise: <strong>30 inches</strong> between landings.</p>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Ascending &mdash; Dependent</div>
-      <p><strong>Up forward</strong> with all four wheels on the ground Can <strong>zigzag</strong> if slope is steep Patient facilitates by <strong>leaning forward and pushing on handrims</strong></p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Descending &mdash; Dependent</div>
-      <p><strong>Option 1 (preferred):</strong> Backward, all four wheels on ground; attendant focuses on fixed object ahead to maintain straight path, glances back periodically; patient maintains erect trunk, applies friction to pushrims with palms of <strong>gloved hands</strong> <strong>Option 2:</strong> Forward in tipped position; attendant wide BOS, deep stance</p>
-    </div>
-  </div>
-
-  
-  <div class="section-title">Curbs &mdash; Dependent</div>
-  <div class="section-sub">Four methods depending on direction of approach and descent. Ascending forward is easiest; descending backward is also generally easier. Know which direction is more challenging for each.</div>
-
-  <div class="ma-item">
-      <div class="ma-header" onclick="toggleMA(this)">
-        <h4>Ascending Forward (Easiest)</h4>
-        <span class="ma-chevron">&#9660;</span>
-      </div>
-      <div class="ma-body">
-        <p><strong>(1)</strong> <strong>Tip wheelchair back</strong> &mdash; lift casters onto curb <strong>(2)</strong> Place casters up on curb <strong>(3)</strong> Roll drive wheels up against and over the curb <strong>(4)</strong> Use LEs to power the roll of drive wheels up onto curb</p>
-      </div>
-    </div>
-    <div class="ma-item">
-      <div class="ma-header" onclick="toggleMA(this)">
-        <h4>Descending Backward (Easiest)</h4>
-        <span class="ma-chevron">&#9660;</span>
-      </div>
-      <div class="ma-body">
-        <p><strong>(1)</strong> Back drive wheels <strong>close to edge</strong> of curb <strong>(2)</strong> <strong>Control roll</strong> of drive wheels down over curb &mdash; use forward LE against wheelchair back as brake <strong>(3)</strong> Tip wheelchair back to <strong>lift casters off curb</strong> <strong>(4)</strong> Set casters down <strong>gently</strong> once they clear curb</p>
-      </div>
-    </div>
-    <div class="ma-item">
-      <div class="ma-header" onclick="toggleMA(this)">
-        <h4>Ascending Backward (More Difficult)</h4>
-        <span class="ma-chevron">&#9660;</span>
-      </div>
-      <div class="ma-body">
-        <p><strong>(1)</strong> Roll drive wheels <strong>back against curb</strong> <strong>(2)</strong> Tip chair back <strong>(3)</strong> Use LEs to roll drive wheels up onto curb <strong>(4)</strong> Set casters down <strong>gently</strong> once safely up on curb</p>
-      </div>
-    </div>
-    <div class="ma-item">
-      <div class="ma-header" onclick="toggleMA(this)">
-        <h4>Descending Forward (More Difficult)</h4>
-        <span class="ma-chevron">&#9660;</span>
-      </div>
-      <div class="ma-body">
-        <p><strong>(1)</strong> <strong>Tip wheelchair back</strong> <strong>(2)</strong> Roll drive wheels forward to edge of curb <strong>(3)</strong> Control descent of drive wheels down over curb with <strong>LEs in deep stance</strong> <strong>(4)</strong> Set casters down <strong>gently</strong> once chair is fully down</p>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="section-title">Steps &mdash; Dependent</div>
-  <div class="bl-strip red">
-    <div class="bl-label">Steps Require 3 People</div>
-    <p>Managing steps with a wheelchair requires three attendants. Tallest/strongest behind the chair (leading). Two others hold at sides of chair using <strong>non-removable parts only</strong>. This can be frightening for patients &mdash; communicate throughout. Use good body mechanics throughout.</p>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Up Steps (3 People)</div>
-      <p><strong>(1)</strong> Back the chair up against the first step <strong>(2)</strong> Tip the chair <strong>well back</strong> <strong>(3)</strong> On "three": lead attendant pulls drive wheels up over step; side helpers assist <strong>(4)</strong> <strong>Pause at every step</strong></p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Down Steps (3 People)</div>
-      <p><strong>(1)</strong> Roll chair close to top step <strong>(2)</strong> Tip the chair <strong>well back</strong> <strong>(3)</strong> On "three": lead attendant controls roll of drive wheels down over step; side helpers assist <strong>(4)</strong> <strong>Pause at every step</strong></p>
-    </div>
-  </div>
-
+<div class="section-title">Functional Wheelchair Mobility</div>
+<div class="section-sub">Teach patients and caregivers to safely manage the environments they will actually encounter. Doorways, ramps, curbs, and steps are daily challenges. Technique matters — for patient safety and clinician back health.</div>
+<div class="section-title">Doorways</div>
+<div class="bl-strip">
+<div class="bl-label">Dependent &mdash; Door Opens Away from Patient</div>
+<p><strong>(1)</strong> Clinician moves <strong>backward through door</strong> while pushing W/C <strong>(2)</strong> Once through, turn W/C to face direction of travel</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Dependent &mdash; Door Opens Toward Patient</div>
+<p><strong>(1)</strong> Clinician steers W/C <strong>beyond the door</strong> to one side <strong>(2)</strong> Opens the door fully <strong>(3)</strong> Moves W/C through the doorway while preventing door from closing on patient</p>
 </div>
 </div>
-
-<!-- ====== ADA ====== -->
+<div class="bl-strip">
+<div class="bl-label">Independent &mdash; Door Opens Away</div>
+<p><strong>(1)</strong> Push door open wide <strong>(2)</strong> Propel quickly through doorway <strong>(3)</strong> Use front rigging or hand to block door from closing</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Independent &mdash; Door Opens Toward</div>
+<p><strong>(1)</strong> Pull door open wide <strong>(2)</strong> Propel W/C through doorway <strong>(3)</strong> Use front rigging or hand to block door from closing</p>
+</div>
+</div>
+<div class="section-title">Ramps</div>
+<div class="bl-strip gold">
+<div class="bl-label">Ramp Standards (ADA)</div>
+<p>Maximum slope: <strong>1:12</strong> (1 inch rise per 12 inches of length). Maximum overall rise: <strong>30 inches</strong> between landings.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Ascending &mdash; Dependent</div>
+<p><strong>Up forward</strong> with all four wheels on the ground Can <strong>zigzag</strong> if slope is steep Patient facilitates by <strong>leaning forward and pushing on handrims</strong></p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Descending &mdash; Dependent</div>
+<p><strong>Option 1 (preferred):</strong> Backward, all four wheels on ground; attendant focuses on fixed object ahead to maintain straight path, glances back periodically; patient maintains erect trunk, applies friction to pushrims with palms of <strong>gloved hands</strong><strong>Option 2:</strong> Forward in tipped position; attendant wide BOS, deep stance</p>
+</div>
+</div>
+<div class="section-title">Curbs &mdash; Dependent</div>
+<div class="section-sub">Four methods depending on direction of approach and descent. Ascending forward is easiest; descending backward is also generally easier. Know which direction is more challenging for each.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Ascending Forward (Easiest)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p><strong>(1)</strong><strong>Tip wheelchair back</strong> &mdash; lift casters onto curb <strong>(2)</strong> Place casters up on curb <strong>(3)</strong> Roll drive wheels up against and over the curb <strong>(4)</strong> Use LEs to power the roll of drive wheels up onto curb</p>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Descending Backward (Easiest)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p><strong>(1)</strong> Back drive wheels <strong>close to edge</strong> of curb <strong>(2)</strong><strong>Control roll</strong> of drive wheels down over curb &mdash; use forward LE against wheelchair back as brake <strong>(3)</strong> Tip wheelchair back to <strong>lift casters off curb</strong><strong>(4)</strong> Set casters down <strong>gently</strong> once they clear curb</p>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Ascending Backward (More Difficult)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p><strong>(1)</strong> Roll drive wheels <strong>back against curb</strong><strong>(2)</strong> Tip chair back <strong>(3)</strong> Use LEs to roll drive wheels up onto curb <strong>(4)</strong> Set casters down <strong>gently</strong> once safely up on curb</p>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Descending Forward (More Difficult)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<p><strong>(1)</strong><strong>Tip wheelchair back</strong><strong>(2)</strong> Roll drive wheels forward to edge of curb <strong>(3)</strong> Control descent of drive wheels down over curb with <strong>LEs in deep stance</strong><strong>(4)</strong> Set casters down <strong>gently</strong> once chair is fully down</p>
+</div>
+</div>
+</div>
+<div class="section-title">Steps &mdash; Dependent</div>
+<div class="bl-strip red">
+<div class="bl-label">Steps Require 3 People</div>
+<p>Managing steps with a wheelchair requires three attendants. Tallest/strongest behind the chair (leading). Two others hold at sides of chair using <strong>non-removable parts only</strong>. This can be frightening for patients &mdash; communicate throughout. Use good body mechanics throughout.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Up Steps (3 People)</div>
+<p><strong>(1)</strong> Back the chair up against the first step <strong>(2)</strong> Tip the chair <strong>well back</strong><strong>(3)</strong> On "three": lead attendant pulls drive wheels up over step; side helpers assist <strong>(4)</strong><strong>Pause at every step</strong></p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Down Steps (3 People)
+  <p><strong>(1)</strong> Roll chair close to top step <strong>(2)</strong> Tip the chair <strong>well back</strong><strong>(3)</strong> On "three": lead attendant controls roll of drive wheels down over step; side helpers assist <strong>(4)</strong><strong>Pause at every step</strong></p>
 <div class="tab-panel" id="tab-ada">
 <div class="container">
-
-  <div class="section-title">ADA Accessibility Standards</div>
-  <div class="section-sub">Title III of the Americans with Disabilities Act requires public accommodations to remove architectural barriers when "readily achievable." As PTs, ADA knowledge drives home assessment, community reintegration planning, and advocacy for patients who use assistive devices.</div>
-
-  <div class="bl-strip gold">
-    <div class="bl-label">Four ADA Priorities for Barrier Removal</div>
-    <p><strong>Priority 1:</strong> Accessible approach and entrance &middot; <strong>Priority 2:</strong> Access to goods and services &middot; <strong>Priority 3:</strong> Access to restrooms &middot; <strong>Priority 4:</strong> Any other measures necessary. Address in this order when resources are limited.</p>
-  </div>
-
-  <div class="section-title">Priority 1 &mdash; Accessible Approach &amp; Entrance</div>
-
-  <div class="bl-strip">
-    <div>Route of Travel</div>
-    <h4>Accessible Path Requirements</h4>
-    <table class="data-table">
-      <thead><tr><th>Element</th><th>Requirement</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Route width</strong></td><td class="hi">Minimum 36 inches</td></tr>
-        <tr><td><strong>Surface</strong></td><td>Stable, firm, and slip-resistant</td></tr>
-        <tr><td><strong>Overhead clearance</strong></td><td>Objects must be higher than 80 inches or within 27 inches of ground (cane-detectable)</td></tr>
-        <tr><td><strong>Curb cuts</strong></td><td>Required at all drives, parking, and drop-offs on accessible route</td></tr>
-        <tr><td><strong>Turning space</strong></td><td>5-foot diameter circle or T-shaped space for W/C reversal</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="bl-strip">
-    <div>Ramps</div>
-    <h4>Ramp Standards</h4>
-    <table class="data-table">
-      <thead><tr><th>Element</th><th>Requirement</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Maximum slope</strong></td><td class="hi">1:12 (1" rise per 12" length)</td></tr>
-        <tr><td><strong>Maximum rise between landings</strong></td><td class="hi">30 inches</td></tr>
-        <tr><td><strong>Ramps &gt; 6 feet long</strong></td><td>Handrails on both sides</td></tr>
-        <tr><td><strong>Handrail height</strong></td><td>34&ndash;38 inches high; sturdy</td></tr>
-        <tr><td><strong>Width between railings</strong></td><td>Minimum 36 inches</td></tr>
-        <tr><td><strong>Surface</strong></td><td>Non-slip</td></tr>
-        <tr><td><strong>Landings</strong></td><td>5-foot level landing at every 30 feet of horizontal length, at top and bottom, and at switchbacks</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="bl-strip">
-    <div>Parking &amp; Entrance Doors</div>
-    <h4>Accessible Parking &amp; Door Requirements</h4>
-    <table class="data-table">
-      <thead><tr><th>Element</th><th>Requirement</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Accessible space width</strong></td><td>8 feet for car + 5-foot access aisle</td></tr>
-        <tr><td><strong>Van-accessible spaces</strong></td><td>8-foot space + minimum 8-foot access aisle + 98 inches vertical clearance; 1 of every 8 accessible spaces</td></tr>
-        <tr><td><strong>Door clear opening</strong></td><td class="hi">Minimum 32 inches</td></tr>
-        <tr><td><strong>Pull-side clear space</strong></td><td class="hi">18 inches of clear wall space on pull side, next to handle</td></tr>
-        <tr><td><strong>Door handle height</strong></td><td>Maximum 48 inches; operable with closed fist (lever, loop &mdash; not round knob)</td></tr>
-        <tr><td><strong>Threshold height</strong></td><td>&frac14; inch or less; if beveled, max &frac34; inch</td></tr>
-        <tr><td><strong>Interior door force</strong></td><td>Maximum 5 lbf</td></tr>
-        <tr><td><strong>Door closer speed</strong></td><td>Minimum 3 seconds to close</td></tr>
-        <tr><td><strong>Carpet/mats</strong></td><td>Maximum &frac12; inch high; secured at edges</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  
-  <div class="section-title">Priority 2 &mdash; Access to Goods &amp; Services</div>
-
-  <div class="bl-strip">
-    <div>Interior Circulation &amp; Reach Ranges</div>
-    <h4>Interior Access Requirements</h4>
-    <table class="data-table">
-      <thead><tr><th>Element</th><th>Requirement</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Aisle width</strong></td><td class="hi">Minimum 36 inches</td></tr>
-        <tr><td><strong>Turning space</strong></td><td>5-foot circle or T-shaped space</td></tr>
-        <tr><td><strong>Forward reach range</strong></td><td class="hi">15&ndash;48 inches from floor</td></tr>
-        <tr><td><strong>Side reach range</strong></td><td class="hi">9&ndash;54 inches from floor</td></tr>
-        <tr><td><strong>Counter height</strong></td><td>Maximum 36 inches at cashier or service counters</td></tr>
-        <tr><td><strong>Knee clearance at tables</strong></td><td>Min 27" H &times; 30" W &times; 19" D</td></tr>
-        <tr><td><strong>Table/counter height</strong></td><td>28&ndash;34 inches for accessible seating</td></tr>
-        <tr><td><strong>Controls</strong></td><td>Operable with closed fist; within reach range</td></tr>
-        <tr><td><strong>Signage (permanent rooms)</strong></td><td>Raised characters + Grade II Braille; centerline 60" from floor; mounted on wall adjacent to latch side of door</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  
-  <div class="section-title">Priority 3 &mdash; Restroom Accessibility</div>
-
-  <div class="bl-strip">
-    <div>Restroom Requirements</div>
-    <h4>Accessible Restroom Standards</h4>
-    <table class="data-table">
-      <thead><tr><th>Element</th><th>Requirement</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Accessible stall dimensions</strong></td><td class="hi">5 feet &times; 5 feet clear of door swing</td></tr>
-        <tr><td><strong>Grab bars</strong></td><td>Behind and on side wall nearest toilet</td></tr>
-        <tr><td><strong>Toilet seat height</strong></td><td class="hi">17&ndash;19 inches</td></tr>
-        <tr><td><strong>Lavatory clear space</strong></td><td>30-inch wide &times; 48-inch deep (max 19" under lavatory)</td></tr>
-        <tr><td><strong>Lavatory rim height</strong></td><td>Maximum 34 inches</td></tr>
-        <tr><td><strong>Lavatory underside clearance</strong></td><td>Minimum 29 inches from floor (excluding pipes)</td></tr>
-        <tr><td><strong>Faucet</strong></td><td>Operable with one closed fist (paddle handles)</td></tr>
-        <tr><td><strong>Mirror bottom edge</strong></td><td>Maximum 40 inches from floor</td></tr>
-        <tr><td><strong>Path to fixtures</strong></td><td>Minimum 36 inches wide</td></tr>
-        <tr><td><strong>Maneuvering space</strong></td><td>5-foot diameter or T-shaped clear space; 48" between two vestibule doors</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  
-  <div class="section-title">Priority 4 &mdash; Additional Access</div>
-
-  <div class="bl-strip">
-    <div>Drinking Fountains &amp; Phones</div>
-    <h4>Additional Accessibility Elements</h4>
-    <table class="data-table">
-      <thead><tr><th>Element</th><th>Requirement</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Drinking fountain spout height</strong></td><td>Maximum 36 inches from ground (plus standard-height fountain)</td></tr>
-        <tr><td><strong>Fountain clear space</strong></td><td>30" &times; 48" clear in front</td></tr>
-        <tr><td><strong>Phone highest operable part</strong></td><td>Maximum 48 inches (up to 54 inches with side approach)</td></tr>
-        <tr><td><strong>Phone clear space</strong></td><td>30" &times; 48" clear in front</td></tr>
-        <tr><td><strong>TDD/Text telephone</strong></td><td>Required if 4+ public phones in building; identified with International TDD Symbol</td></tr>
-        <tr><td><strong>Emergency systems</strong></td><td>Both flashing lights AND audible signals</td></tr>
-        <tr><td><strong>Elevator call buttons</strong></td><td>Maximum 42 inches high; raised + braille controls inside cab</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">PT Clinical Application &mdash; Why ADA Matters in Practice</div>
-    <p>ADA knowledge is essential for <strong>home assessment</strong> (identifying barriers before discharge), <strong>community mobility training</strong> (teaching patients to navigate accessible and inaccessible spaces), and <strong>documentation</strong> (supporting adaptive equipment justification and home modification recommendations). When patients use wheelchairs or assistive devices, environmental barriers become clinical barriers to independence.</p>
-  </div>
-
+<div class="section-title">ADA Accessibility Standards</div>
+<div class="section-sub">Title III of the Americans with Disabilities Act requires public accommodations to remove architectural barriers when "readily achievable." As PTs, ADA knowledge drives home assessment, community reintegration planning, and advocacy for patients who use assistive devices.</div>
+<div class="bl-strip gold">
+<div class="bl-label">Four ADA Priorities for Barrier Removal</div>
+<p><strong>Priority 1:</strong> Accessible approach and entrance &middot; <strong>Priority 2:</strong> Access to goods and services &middot; <strong>Priority 3:</strong> Access to restrooms &middot; <strong>Priority 4:</strong> Any other measures necessary. Address in this order when resources are limited.</p>
+</div>
+<div class="section-title">Priority 1 &mdash; Accessible Approach &amp; Entrance</div>
+<div class="bl-strip">
+<div>Route of Travel</div>
+<h4>Accessible Path Requirements</h4>
+<table class="data-table"><thead>
+<tr><th>Element</th><th>Requirement</th></tr></thead><tbody>
+<tr><td><strong>Route width</strong></td><td class="hi">Minimum 36 inches</td></tr>
+<tr><td><strong>Surface</strong></td><td>Stable, firm, and slip-resistant</td></tr>
+<tr><td><strong>Overhead clearance</strong></td><td>Objects must be higher than 80 inches or within 27 inches of ground (cane-detectable)</td></tr>
+<tr><td><strong>Curb cuts</strong></td><td>Required at all drives, parking, and drop-offs on accessible route</td></tr>
+<tr><td><strong>Turning space</strong></td><td>5-foot diameter circle or T-shaped space for W/C reversal</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div>Ramps</div>
+<h4>Ramp Standards</h4>
+<table class="data-table"><thead>
+<tr><th>Element</th><th>Requirement</th></tr></thead><tbody>
+<tr><td><strong>Maximum slope</strong></td><td class="hi">1:12 (1" rise per 12" length)</td></tr>
+<tr><td><strong>Maximum rise between landings</strong></td><td class="hi">30 inches</td></tr>
+<tr><td><strong>Ramps &gt; 6 feet long</strong></td><td>Handrails on both sides</td></tr>
+<tr><td><strong>Handrail height</strong></td><td>34&ndash;38 inches high; sturdy</td></tr>
+<tr><td><strong>Width between railings</strong></td><td>Minimum 36 inches</td></tr>
+<tr><td><strong>Surface</strong></td><td>Non-slip</td></tr>
+<tr><td><strong>Landings</strong></td><td>5-foot level landing at every 30 feet of horizontal length, at top and bottom, and at switchbacks</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div>Parking &amp; Entrance Doors</div>
+<h4>Accessible Parking &amp; Door Requirements</h4>
+<table class="data-table"><thead>
+<tr><th>Element</th><th>Requirement</th></tr></thead><tbody>
+<tr><td><strong>Accessible space width</strong></td><td>8 feet for car + 5-foot access aisle</td></tr>
+<tr><td><strong>Van-accessible spaces</strong></td><td>8-foot space + minimum 8-foot access aisle + 98 inches vertical clearance; 1 of every 8 accessible spaces</td></tr>
+<tr><td><strong>Door clear opening</strong></td><td class="hi">Minimum 32 inches</td></tr>
+<tr><td><strong>Pull-side clear space</strong></td><td class="hi">18 inches of clear wall space on pull side, next to handle</td></tr>
+<tr><td><strong>Door handle height</strong></td><td>Maximum 48 inches; operable with closed fist (lever, loop &mdash; not round knob)</td></tr>
+<tr><td><strong>Threshold height</strong></td><td>&frac14; inch or less; if beveled, max &frac34; inch</td></tr>
+<tr><td><strong>Interior door force</strong></td><td>Maximum 5 lbf</td></tr>
+<tr><td><strong>Door closer speed</strong></td><td>Minimum 3 seconds to close</td></tr>
+<tr><td><strong>Carpet/mats</strong></td><td>Maximum &frac12; inch high; secured at edges</td></tr></tbody></table>
+</div>
+<div class="section-title">Priority 2 &mdash; Access to Goods &amp; Services</div>
+<div class="bl-strip">
+<div>Interior Circulation &amp; Reach Ranges</div>
+<h4>Interior Access Requirements</h4>
+<table class="data-table"><thead>
+<tr><th>Element</th><th>Requirement</th></tr></thead><tbody>
+<tr><td><strong>Aisle width</strong></td><td class="hi">Minimum 36 inches</td></tr>
+<tr><td><strong>Turning space</strong></td><td>5-foot circle or T-shaped space</td></tr>
+<tr><td><strong>Forward reach range</strong></td><td class="hi">15&ndash;48 inches from floor</td></tr>
+<tr><td><strong>Side reach range</strong></td><td class="hi">9&ndash;54 inches from floor</td></tr>
+<tr><td><strong>Counter height</strong></td><td>Maximum 36 inches at cashier or service counters</td></tr>
+<tr><td><strong>Knee clearance at tables</strong></td><td>Min 27" H &times; 30" W &times; 19" D</td></tr>
+<tr><td><strong>Table/counter height</strong></td><td>28&ndash;34 inches for accessible seating</td></tr>
+<tr><td><strong>Controls</strong></td><td>Operable with closed fist; within reach range</td></tr>
+<tr><td><strong>Signage (permanent rooms)</strong></td><td>Raised characters + Grade II Braille; centerline 60" from floor; mounted on wall adjacent to latch side of door</td></tr></tbody></table>
+</div>
+<div class="section-title">Priority 3 &mdash; Restroom Accessibility</div>
+<div class="bl-strip">
+<div>Restroom Requirements</div>
+<h4>Accessible Restroom Standards</h4>
+<table class="data-table"><thead>
+<tr><th>Element</th><th>Requirement</th></tr></thead><tbody>
+<tr><td><strong>Accessible stall dimensions</strong></td><td class="hi">5 feet &times; 5 feet clear of door swing</td></tr>
+<tr><td><strong>Grab bars</strong></td><td>Behind and on side wall nearest toilet</td></tr>
+<tr><td><strong>Toilet seat height</strong></td><td class="hi">17&ndash;19 inches</td></tr>
+<tr><td><strong>Lavatory clear space</strong></td><td>30-inch wide &times; 48-inch deep (max 19" under lavatory)</td></tr>
+<tr><td><strong>Lavatory rim height</strong></td><td>Maximum 34 inches</td></tr>
+<tr><td><strong>Lavatory underside clearance</strong></td><td>Minimum 29 inches from floor (excluding pipes)</td></tr>
+<tr><td><strong>Faucet</strong></td><td>Operable with one closed fist (paddle handles)</td></tr>
+<tr><td><strong>Mirror bottom edge</strong></td><td>Maximum 40 inches from floor</td></tr>
+<tr><td><strong>Path to fixtures</strong></td><td>Minimum 36 inches wide</td></tr>
+<tr><td><strong>Maneuvering space</strong></td><td>5-foot diameter or T-shaped clear space; 48" between two vestibule doors</td></tr></tbody></table>
+</div>
+<div class="section-title">Priority 4 &mdash; Additional Access</div>
+<div class="bl-strip">
+<div>Drinking Fountains &amp; Phones</div>
+<h4>Additional Accessibility Elements</h4>
+<table class="data-table"><thead>
+<tr><th>Element</th><th>Requirement</th></tr></thead><tbody>
+<tr><td><strong>Drinking fountain spout height</strong></td><td>Maximum 36 inches from ground (plus standard-height fountain)</td></tr>
+<tr><td><strong>Fountain clear space</strong></td><td>30" &times; 48" clear in front</td></tr>
+<tr><td><strong>Phone highest operable part</strong></td><td>Maximum 48 inches (up to 54 inches with side approach)</td></tr>
+<tr><td><strong>Phone clear space</strong></td><td>30" &times; 48" clear in front</td></tr>
+<tr><td><strong>TDD/Text telephone</strong></td><td>Required if 4+ public phones in building; identified with International TDD Symbol</td></tr>
+<tr><td><strong>Emergency systems</strong></td><td>Both flashing lights AND audible signals</td></tr>
+<tr><td><strong>Elevator call buttons</strong></td><td>Maximum 42 inches high; raised + braille controls inside cab</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">PT Clinical Application &mdash; Why ADA Matters in Practice</div>
+<p>ADA knowledge is essential for <strong>home assessment</strong> (identifying barriers before discharge), <strong>community mobility training</strong> (teaching patients to navigate accessible and inaccessible spaces), and <strong>documentation</strong> (supporting adaptive equipment justification and home modification recommendations). When patients use wheelchairs or assistive devices, environmental barriers become clinical barriers to independence.</p>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to flip. Covers wheelchair types, fitting measurements, two-finger confirmation, propulsion, functional mobility, and ADA standards.</div>
-
-  <div class="mnemonic-box">
-    <div class="mn-title">Fitting Formulas Summary</div>
-    <div class="mn-phrase">Depth &minus;2 &middot; Width +1&ndash;2 &middot; Height +2 &middot; Back &minus;4 &middot; Arm +1</div>
-    <div class="mn-expand">
-      <span>Seat Depth:</span> Hips to popliteal fold, then minus 2 inches &middot;
-      <span>Seat Width:</span> Outside hips, then plus 1&ndash;2 inches &middot;
-      <span>Seat Height:</span> Sole to popliteal fold, minus cushion, plus 2 inches (footrest clearance) &middot;
-      <span>Back Height:</span> Seat to inferior scapular angle, minus 4 inches &middot;
-      <span>Armrest:</span> Olecranon to seat, plus cushion, plus 1 inch
-    </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to flip. Covers wheelchair types, fitting measurements, two-finger confirmation, propulsion, functional mobility, and ADA standards.</div>
+<div class="mnemonic-box">
+<div class="mn-title">Fitting Formulas Summary</div>
+<div class="mn-phrase">Depth &minus;2 &middot; Width +1&ndash;2 &middot; Height +2 &middot; Back &minus;4 &middot; Arm +1</div>
+<div class="mn-expand"><span>Seat Depth:</span> Hips to popliteal fold, then minus 2 inches &middot;
+  <span>Seat Width:</span> Outside hips, then plus 1&ndash;2 inches &middot;
+  <span>Seat Height:</span> Sole to popliteal fold, minus cushion, plus 2 inches (footrest clearance) &middot;
+  <span>Back Height:</span> Seat to inferior scapular angle, minus 4 inches &middot;
+  <span>Armrest:</span> Olecranon to seat, plus cushion, plus 1 inch
   </div>
-
-  <div class="rc2-grid">
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Why does an amputee wheelchair have the rear axle shifted posteriorly in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">The absence of one or both lower extremities shifts the patient's center of gravity <strong>posteriorly</strong>. Shifting the rear axle back compensates for this shift, preventing the chair from tipping backward. As the patient begins WB through a prosthesis, the axle may be moved forward.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Tilt-in-space vs. In this case, reclining wheelchair — what's the key difference?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Tilt-in-space:</strong> the entire unit tilts back; the seat-to-back angle stays FIXED. Better for patients with high spasticity (changing seat angle would increase spasm). <strong>Reclining:</strong> only the back reclines; seat-to-back angle changes. May increase extensor tone. Tilt provides pressure relief without postural disruption.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the method to measure for seat depth and what's the formula?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Measure from <strong>back of hips to popliteal fold</strong>. Then subtract <strong>2 inches</strong> to get seat depth. The 2-inch subtraction prevents popliteal pressure while keeping adequate IT support. Confirmation: 2 fingers horizontally between popliteal fold and front edge of seat.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Identify the 5 two-finger confirmation checks for W/C fit?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>(1) Seat width:</strong> 2 fingers between hip and side of chair. <strong>(2) Seat depth:</strong> 2 fingers between popliteal fold and front edge of seat. <strong>(3) Seat height:</strong> 2 fingers between front of chair and distal thigh. <strong>(4) Legrest length:</strong> 2 fingers between footplate and floor. <strong>(5) Back height:</strong> 2 fingers between top of back and patient's axilla.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What is the most critical patient/family education point about W/C cushions in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>A wheelchair cushion does NOT eliminate the need for pressure relief.</strong> Patients must still perform pressure relief every 15–30 minutes regardless of cushion type. Even the most advanced air cushion (Roho) does not replace active pressure relief. Also: daily skin inspection at bony prominences (ITs, sacrum, trochanters, heels).</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Independent propulsion on level surfaces — what is the correct stroke technique in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Start hands at <strong>10 o'clock</strong> on the pushrim, release at <strong>2 or 3 o'clock</strong>. Long, smooth strokes are more efficient and less damaging to shoulder structures than short rapid strokes. Turning: move one pushrim forward while holding the other still or pulling it back.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Descending a ramp dependently — which direction and what does your patient do?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Preferred method: <strong>backward</strong>, all four wheels on the ground. Attendant focuses on a fixed object ahead to maintain straight path, glancing back periodically. Patient maintains erect trunk and applies <strong>friction to pushrims with palms of gloved hands</strong> to help control speed. Alternative: forward in tipped position with attendant in wide BOS, deep stance.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Curb management — which combination is easiest in this scenario? Which is hardest?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Easiest ascending:</strong> Forward (tip back → casters up → roll drive wheels up). <strong>Easiest descending:</strong> Backward (back to edge → control drive wheel roll down → tip to clear casters → set down gently). <strong>Harder:</strong> ascending backward, descending forward. Always set casters down gently after clearing the curb.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">How many people are needed to take a wheelchair up steps, and who leads in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Three attendants required.</strong> The tallest/strongest leads from behind the chair. Two others hold at the sides using <strong>non-removable parts only</strong> of the frame. On "three," lead pulls drive wheels up over step. <strong>Pause at every step.</strong> This can be frightening for patients — communicate throughout. Use good body mechanics.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">ADA: What is the minimum door clear opening and what must the pull side have in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Minimum <strong>32 inches</strong> clear door opening. Pull side must have <strong>18 inches of clear wall space next to the handle</strong> — a person using a wheelchair needs this space to approach close enough to pull the door open. Handle must be operable with a closed fist (lever or loop — not round knob) at maximum 48 inches height. Interior door force: maximum 5 lbf.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">ADA: List the ramp slope and rise requirements?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Maximum slope: <strong>1:12</strong> (1 inch rise per 12 inches of length). Maximum rise between landings: <strong>30 inches</strong>. Ramps longer than 6 feet need railings on both sides at 34–38 inches height. 5-foot level landing required at every 30 feet of horizontal length, at top and bottom, and at switchbacks. Surface must be non-slip.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">ADA: Name the 4 priorities for barrier removal, in order?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Priority 1:</strong> Accessible approach and entrance (route, ramps, parking, doors). <strong>Priority 2:</strong> Access to goods and services (interior circulation, counters, controls, signage). <strong>Priority 3:</strong> Access to restrooms (stall, grab bars, lavatory, toilet height). <strong>Priority 4:</strong> Any other measures (fountains, phones, elevators). Address in this order when resources are limited.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">ADA: Accessible restroom stall dimensions and toilet seat height in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Accessible stall: <strong>5 feet &times; 5 feet</strong> clear of door swing. Grab bars behind and on side wall nearest toilet. Toilet seat height: <strong>17&ndash;19 inches</strong> (standard is 15" — ADA requires raised height). Lavatory rim: max 34". Clear space in front of lavatory: 30" &times; 48". Faucet: closed-fist operable. Mirror bottom edge: max 40".</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Seat back height — how to measure and what does the formula account for in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Measure from seating surface to <strong>inferior angle of scapula</strong> (or axilla), then subtract <strong>~4 inches</strong>. Add compressed cushion thickness if used. The 4-inch subtraction allows free arm movement for propulsion and upper extremity function. Too high = restricts arm use; too low = insufficient trunk support.</div>
-    </div>
-
-  </div>
-
-
+</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Why does an amputee wheelchair have the rear axle shifted posteriorly in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">The absence of one or both lower extremities shifts the patient's center of gravity <strong>posteriorly</strong>. Shifting the rear axle back compensates for this shift, preventing the chair from tipping backward. As the patient begins WB through a prosthesis, the axle may be moved forward.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Tilt-in-space vs. In this case, reclining wheelchair — what's the key difference?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Tilt-in-space:</strong> the entire unit tilts back; the seat-to-back angle stays FIXED. Better for patients with high spasticity (changing seat angle would increase spasm). <strong>Reclining:</strong> only the back reclines; seat-to-back angle changes. May increase extensor tone. Tilt provides pressure relief without postural disruption.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the method to measure for seat depth and what's the formula?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Measure from <strong>back of hips to popliteal fold</strong>. Then subtract <strong>2 inches</strong> to get seat depth. The 2-inch subtraction prevents popliteal pressure while keeping adequate IT support. Confirmation: 2 fingers horizontally between popliteal fold and front edge of seat.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Identify the 5 two-finger confirmation checks for W/C fit?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>(1) Seat width:</strong> 2 fingers between hip and side of chair. <strong>(2) Seat depth:</strong> 2 fingers between popliteal fold and front edge of seat. <strong>(3) Seat height:</strong> 2 fingers between front of chair and distal thigh. <strong>(4) Legrest length:</strong> 2 fingers between footplate and floor. <strong>(5) Back height:</strong> 2 fingers between top of back and patient's axilla.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the most critical patient/family education point about W/C cushions in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>A wheelchair cushion does NOT eliminate the need for pressure relief.</strong> Patients must still perform pressure relief every 15–30 minutes regardless of cushion type. Even the most advanced air cushion (Roho) does not replace active pressure relief. Also: daily skin inspection at bony prominences (ITs, sacrum, trochanters, heels).</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Independent propulsion on level surfaces — what is the correct stroke technique in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Start hands at <strong>10 o'clock</strong> on the pushrim, release at <strong>2 or 3 o'clock</strong>. Long, smooth strokes are more efficient and less damaging to shoulder structures than short rapid strokes. Turning: move one pushrim forward while holding the other still or pulling it back.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Descending a ramp dependently — which direction and what does your patient do?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Preferred method: <strong>backward</strong>, all four wheels on the ground. Attendant focuses on a fixed object ahead to maintain straight path, glancing back periodically. Patient maintains erect trunk and applies <strong>friction to pushrims with palms of gloved hands</strong> to help control speed. Alternative: forward in tipped position with attendant in wide BOS, deep stance.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Curb management — which combination is easiest in this scenario? Which is hardest?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Easiest ascending:</strong> Forward (tip back → casters up → roll drive wheels up). <strong>Easiest descending:</strong> Backward (back to edge → control drive wheel roll down → tip to clear casters → set down gently). <strong>Harder:</strong> ascending backward, descending forward. Always set casters down gently after clearing the curb.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">How many people are needed to take a wheelchair up steps, and who leads in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Three attendants required.</strong> The tallest/strongest leads from behind the chair. Two others hold at the sides using <strong>non-removable parts only</strong> of the frame. On "three," lead pulls drive wheels up over step. <strong>Pause at every step.</strong> This can be frightening for patients — communicate throughout. Use good body mechanics.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">ADA: What is the minimum door clear opening and what must the pull side have in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Minimum <strong>32 inches</strong> clear door opening. Pull side must have <strong>18 inches of clear wall space next to the handle</strong> — a person using a wheelchair needs this space to approach close enough to pull the door open. Handle must be operable with a closed fist (lever or loop — not round knob) at maximum 48 inches height. Interior door force: maximum 5 lbf.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">ADA: List the ramp slope and rise requirements?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Maximum slope: <strong>1:12</strong> (1 inch rise per 12 inches of length). Maximum rise between landings: <strong>30 inches</strong>. Ramps longer than 6 feet need railings on both sides at 34–38 inches height. 5-foot level landing required at every 30 feet of horizontal length, at top and bottom, and at switchbacks. Surface must be non-slip.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">ADA: Name the 4 priorities for barrier removal, in order?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Priority 1:</strong> Accessible approach and entrance (route, ramps, parking, doors). <strong>Priority 2:</strong> Access to goods and services (interior circulation, counters, controls, signage). <strong>Priority 3:</strong> Access to restrooms (stall, grab bars, lavatory, toilet height). <strong>Priority 4:</strong> Any other measures (fountains, phones, elevators). Address in this order when resources are limited.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">ADA: Accessible restroom stall dimensions and toilet seat height in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Accessible stall: <strong>5 feet &times; 5 feet</strong> clear of door swing. Grab bars behind and on side wall nearest toilet. Toilet seat height: <strong>17&ndash;19 inches</strong> (standard is 15" — ADA requires raised height). Lavatory rim: max 34". Clear space in front of lavatory: 30" &times; 48". Faucet: closed-fist operable. Mirror bottom edge: max 40".</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Seat back height — how to measure and what does the formula account for in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Measure from seating surface to <strong>inferior angle of scapula</strong> (or axilla), then subtract <strong>~4 inches</strong>. Add compressed cushion thickness if used. The 4-inch subtraction allows free arm movement for propulsion and upper extremity function. Too high = restricts arm use; too low = insufficient trunk support.</div>
+</div>
+</div>
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -909,6 +728,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

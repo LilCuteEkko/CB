@@ -1,380 +1,424 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Ankle &amp; Foot</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Ankle &amp; Foot</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" class="active">Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">MSK Lower Extremity &middot; Ankle &amp; Foot</div>
-  <h1>Ankle &amp; Foot &mdash; <span>Anatomy, Pathology &amp; Post-Op</span></h1>
-  <p>The ankle and foot are the body&rsquo;s foundation — the interface between you and the ground. With 26 bones, 33 joints, and over 100 ligaments, the foot must accomplish two contradictory tasks: absorb shock as a flexible adapter at heel strike, then become a rigid lever for push-off. The talar dome&rsquo;s wedge shape, the windlass mechanism, and the arch system make this possible. The lateral ankle sprain is the most common MSK injury in sports, and loss of ankle dorsiflexion cascades dysfunction up the entire kinetic chain.</p>
+<div class="hero-tag">MSK Lower Extremity &middot; Ankle &amp; Foot</div>
+<h1>Ankle &amp; Foot &mdash; <span>Anatomy, Pathology &amp; Post-Op</span></h1>
+<p>The ankle and foot are the body&rsquo;s foundation — the interface between you and the ground. With 26 bones, 33 joints, and over 100 ligaments, the foot must accomplish two contradictory tasks: absorb shock as a flexible adapter at heel strike, then become a rigid lever for push-off. The talar dome&rsquo;s wedge shape, the windlass mechanism, and the arch system make this possible. The lateral ankle sprain is the most common MSK injury in sports, and loss of ankle dorsiflexion cascades dysfunction up the entire kinetic chain.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('bones',this)">Osteology &amp; Joints</button>
-  <button onclick="showTab('ligaments',this)">Ligaments</button>
-  <button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
-  <button onclick="showTab('neurovasc',this)">Neurovasculature</button>
-  <button onclick="showTab('pathology',this)">Pathology</button>
-  <button onclick="showTab('postop',this)">Post-Op Rehab</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('bones',this)">Osteology &amp; Joints</button>
+<button onclick="showTab('ligaments',this)">Ligaments</button>
+<button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
+<button onclick="showTab('neurovasc',this)">Neurovasculature</button>
+<button onclick="showTab('pathology',this)">Pathology</button>
+<button onclick="showTab('postop',this)">Post-Op Rehab</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== OSTEOLOGY & JOINTS ====== -->
 <div class="tab-panel active" id="tab-bones">
 <div class="container">
-  <div class="section-title">Osteology &amp; Joints of the Ankle &amp; Foot</div>
-  <div class="section-sub">The foot contains 26 bones (7 tarsals, 5 metatarsals, 14 phalanges), 33 joints, and over 100 ligaments. The ankle is a modified hinge joint; the subtalar joint provides the triplanar motion that makes walking on uneven surfaces possible.</div>
-
-  <div class="section-title">Bones of the Foot</div>
-  <table class="data-table"><thead><tr><th>Region</th><th>Bones</th><th>Key Features</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="hi">Distal Tibia</td><td>Tibial plafond (ceiling of ankle mortise), medial malleolus</td><td>Weight-bearing surface for talus. Medial malleolus = palpable medial ankle bump</td><td>Pilon fracture = axial compression of tibial plafond. Medial malleolus fracture = eversion/ER injury</td></tr>
-    <tr><td class="hi">Distal Fibula</td><td>Lateral malleolus</td><td>Extends more distally and posteriorly than medial malleolus. Lateral wall of ankle mortise</td><td>Most commonly fractured ankle bone. Weber classification: A (below syndesmosis), B (at), C (above = syndesmosis disruption)</td></tr>
-    <tr><td class="warn">Talus</td><td>Body, neck, head. Dome (trochlea) articulates with mortise</td><td>Wider anteriorly than posteriorly (&ldquo;wedge&rdquo;). No muscle attachments. 60% covered by articular cartilage. Tenuous blood supply (posterior tibial artery branches)</td><td>Avascular necrosis risk with talar neck fractures (Hawkins classification). OCD (osteochondral defect) of talar dome</td></tr>
-    <tr><td class="warn">Calcaneus</td><td>Largest tarsal. Sustentaculum tali (medial shelf supporting talus), calcaneal tuberosity</td><td>Achilles inserts on posterior tuberosity. Sustentaculum tali supports FHL tendon and spring ligament</td><td>Calcaneus fracture: fall from height (axial load). Lover&rsquo;s fracture. Often associated with lumbar burst fracture (10%)</td></tr>
-    <tr><td class="hi">Navicular</td><td>Medial foot, between talus and cuneiforms</td><td>Keystone of medial longitudinal arch. Tibialis posterior inserts on tuberosity</td><td>Navicular stress fracture: running athletes, vague medial foot pain. Accessory navicular (os tibiale externum) in 10&ndash;14% of population &mdash; can be symptomatic</td></tr>
-    <tr><td class="hi">Cuboid</td><td>Lateral foot, between calcaneus and 4th/5th metatarsals</td><td>Peroneus longus tendon grooves its plantar surface (forms a pulley)</td><td>Cuboid syndrome: subluxation following inversion sprain. Cuboid whip mobilization</td></tr>
-    <tr><td class="hi">Cuneiforms (&times;3)</td><td>Medial, intermediate, lateral. Wedge-shaped</td><td>Articulate with navicular proximally and MT 1&ndash;3 distally. Lisfranc joint complex</td><td>Lisfranc injury: tarsometatarsal joint disruption. Missed on initial X-ray in 20% of cases. Weight-bearing AP films essential</td></tr>
-    <tr><td class="hi">Metatarsals (&times;5)</td><td>1st is shortest and thickest; 2nd is longest</td><td>1st MT head = 2 sesamoid bones (within FHB tendons). 5th MT base = peroneus brevis insertion</td><td>Jones fracture: 5th MT metadiaphyseal junction (watershed blood supply &rarr; poor healing). Stress fractures: 2nd and 3rd MT most common (&ldquo;march fracture&rdquo;)</td></tr>
-    <tr><td class="hi">Phalanges (14)</td><td>Great toe: 2 (proximal + distal). Toes 2&ndash;5: 3 each (proximal, middle, distal)</td><td>IP joints = hinge. MTP joints = condyloid</td><td>Hallux valgus (bunion): lateral deviation of great toe at 1st MTP. Hallux rigidus: OA of 1st MTP (limited extension for push-off)</td></tr>
-  </tbody></table>
-
-  <div class="section-title">Key Joints</div>
-  <table class="data-table"><thead><tr><th>Joint</th><th>Type</th><th>Surfaces</th><th>Movement</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="warn">Talocrural (Ankle Mortise)</td><td>Modified hinge (synovial)</td><td>Tibial plafond + medial/lateral malleoli on talus dome</td><td>DF/PF. Talar dome wider anteriorly &rarr; <strong>joint most stable in DF</strong> (close-packed). Most lax in PF (loose-packed) &rarr; sprains occur in PF</td><td>Capsular pattern: PF &gt; DF. 10&deg; DF needed for normal gait. Loss of DF = compensatory pronation</td></tr>
-    <tr><td class="warn">Subtalar (Talocalcaneal)</td><td>Plane/gliding (modified)</td><td>Inferior talus on superior calcaneus. 3 facets (anterior, middle, posterior)</td><td>Inversion/eversion (triplanar: supination = INV + PF + adduction; pronation = EV + DF + abduction)</td><td>Sinus tarsi syndrome. SIJ fixation can refer symptoms distally. Key joint for shock absorption</td></tr>
-    <tr><td class="hi">Transverse Tarsal (Chopart)</td><td>Combined: talonavicular + calcaneocuboid</td><td>S-shaped joint line across midfoot</td><td>Allows midfoot flexibility during loading. Axes of both joints parallel in pronation = flexible foot; diverge in supination = rigid lever for push-off</td><td>Chopart amputation level. Joint locking mechanism essential for understanding gait biomechanics</td></tr>
-    <tr><td class="hi">Tarsometatarsal (Lisfranc)</td><td>Plane joints</td><td>Cuneiforms + cuboid on MT bases. 2nd MT &ldquo;recessed&rdquo; (keystone)</td><td>Minimal motion. Provides rigidity for push-off</td><td>Lisfranc injury: often missed. 2nd MT base is the keystone &mdash; fracture or ligament tear here = instability</td></tr>
-    <tr><td class="hi">Distal Tibiofibular (Syndesmosis)</td><td>Fibrous (syndesmosis)</td><td>Distal tibia + distal fibula. Not a true synovial joint</td><td>Slight fibular ER + superior glide during DF (tibia &ldquo;spreads&rdquo; to accept wider anterior talus)</td><td>High ankle sprain = syndesmosis injury. Squeeze test, external rotation stress test. Recovery 2&ndash;3&times; longer than lateral sprain</td></tr>
-    <tr><td class="hi">1st MTP</td><td>Condyloid (ellipsoid)</td><td>1st MT head on proximal phalanx base. 2 sesamoids within FHB</td><td>Flex/ext + some abd/add. 65&ndash;75&deg; extension needed for push-off (windlass mechanism)</td><td>Hallux rigidus: limited extension. Hallux valgus: lateral deviation. Turf toe: hyperextension injury of 1st MTP</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip green"><div class="bl-label">Arches of the Foot</div><p>Maintained by 3 mechanisms: (1)<br><strong>Bone shape</strong> (passive), (2)<br><strong>Ligaments</strong> (passive &mdash; plantar aponeurosis, spring ligament, long/short plantar ligaments), (3)<br><strong>Muscles</strong> (active &mdash; extrinsic: tibialis posterior + peroneus longus; intrinsic: all plantar muscles). Function as spring/shock absorber &mdash; store and release energy during gait.</p></div>
-  <table class="data-table"><thead><tr><th>Arch</th><th>Bones</th><th>Key Support</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="warn">Medial Longitudinal (highest)</td><td>Calcaneus &rarr; talus (keystone) &rarr; navicular &rarr; 3 cuneiforms &rarr; MT 1&ndash;3</td><td>Spring ligament, plantar aponeurosis, tibialis posterior, FHL</td><td>Most clinically significant. Pes planus = medial arch collapse. Tibialis posterior dysfunction = adult-acquired flatfoot. &ldquo;Too many toes&rdquo; sign</td></tr>
-    <tr><td class="hi">Lateral Longitudinal</td><td>Calcaneus &rarr; cuboid &rarr; MT 4&ndash;5</td><td>Long plantar ligament, peroneus longus, plantar aponeurosis</td><td>Lower, more rigid. Bears weight during stance. Rarely collapses</td></tr>
-    <tr><td class="hi">Transverse (Metatarsal)</td><td>Across MT heads + cuneiforms + cuboid</td><td>Peroneus longus (crosses plantar foot from lateral to medial), intermetatarsal ligaments</td><td>Metatarsalgia from transverse arch collapse. Morton&rsquo;s neuroma between 3rd/4th MT heads</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip"><div class="bl-label">Windlass Mechanism</div><p>The <strong>plantar aponeurosis</strong> wraps around the MT heads like a cable around a windlass. During toe extension (push-off), the aponeurosis tightens, pulling the calcaneus toward the MT heads &rarr; medial longitudinal arch rises &rarr; foot becomes a rigid lever for propulsion. This is the mechanical basis of the <strong>heel-to-toe gait cycle</strong>. Plantar fasciitis disrupts this mechanism.</p></div>
+<div class="section-title">Osteology &amp; Joints of the Ankle &amp; Foot</div>
+<div class="section-sub">The foot contains 26 bones (7 tarsals, 5 metatarsals, 14 phalanges), 33 joints, and over 100 ligaments. The ankle is a modified hinge joint; the subtalar joint provides the triplanar motion that makes walking on uneven surfaces possible.</div>
+<div class="section-title">Bones of the Foot</div>
+<table class="data-table"><thead>
+<tr><th>Region</th><th>Bones</th><th>Key Features</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Distal Tibia</td><td>Tibial plafond (ceiling of ankle mortise), medial malleolus</td><td>Weight-bearing surface for talus. Medial malleolus = palpable medial ankle bump</td><td>Pilon fracture = axial compression of tibial plafond. Medial malleolus fracture = eversion/ER injury</td></tr>
+<tr><td class="hi">Distal Fibula</td><td>Lateral malleolus</td><td>Extends more distally and posteriorly than medial malleolus. Lateral wall of ankle mortise</td><td>Most commonly fractured ankle bone. Weber classification: A (below syndesmosis), B (at), C (above = syndesmosis disruption)</td></tr>
+<tr><td class="warn">Talus</td><td>Body, neck, head. Dome (trochlea) articulates with mortise</td><td>Wider anteriorly than posteriorly (&ldquo;wedge&rdquo;). No muscle attachments. 60% covered by articular cartilage. Tenuous blood supply (posterior tibial artery branches)</td><td>Avascular necrosis risk with talar neck fractures (Hawkins classification). OCD (osteochondral defect) of talar dome</td></tr>
+<tr><td class="warn">Calcaneus</td><td>Largest tarsal. Sustentaculum tali (medial shelf supporting talus), calcaneal tuberosity</td><td>Achilles inserts on posterior tuberosity. Sustentaculum tali supports FHL tendon and spring ligament</td><td>Calcaneus fracture: fall from height (axial load). Lover&rsquo;s fracture. Often associated with lumbar burst fracture (10%)</td></tr>
+<tr><td class="hi">Navicular</td><td>Medial foot, between talus and cuneiforms</td><td>Keystone of medial longitudinal arch. Tibialis posterior inserts on tuberosity</td><td>Navicular stress fracture: running athletes, vague medial foot pain. Accessory navicular (os tibiale externum) in 10&ndash;14% of population &mdash; can be symptomatic</td></tr>
+<tr><td class="hi">Cuboid</td><td>Lateral foot, between calcaneus and 4th/5th metatarsals</td><td>Peroneus longus tendon grooves its plantar surface (forms a pulley)</td><td>Cuboid syndrome: subluxation following inversion sprain. Cuboid whip mobilization</td></tr>
+<tr><td class="hi">Cuneiforms (&times;3)</td><td>Medial, intermediate, lateral. Wedge-shaped</td><td>Articulate with navicular proximally and MT 1&ndash;3 distally. Lisfranc joint complex</td><td>Lisfranc injury: tarsometatarsal joint disruption. Missed on initial X-ray in 20% of cases. Weight-bearing AP films essential</td></tr>
+<tr><td class="hi">Metatarsals (&times;5)</td><td>1st is shortest and thickest; 2nd is longest</td><td>1st MT head = 2 sesamoid bones (within FHB tendons). 5th MT base = peroneus brevis insertion</td><td>Jones fracture: 5th MT metadiaphyseal junction (watershed blood supply &rarr; poor healing). Stress fractures: 2nd and 3rd MT most common (&ldquo;march fracture&rdquo;)</td></tr>
+<tr><td class="hi">Phalanges (14)</td><td>Great toe: 2 (proximal + distal). Toes 2&ndash;5: 3 each (proximal, middle, distal)</td><td>IP joints = hinge. MTP joints = condyloid</td><td>Hallux valgus (bunion): lateral deviation of great toe at 1st MTP. Hallux rigidus: OA of 1st MTP (limited extension for push-off)</td></tr></tbody></table>
+<div class="section-title">Key Joints</div>
+<table class="data-table"><thead>
+<tr><th>Joint</th><th>Type</th><th>Surfaces</th><th>Movement</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Talocrural (Ankle Mortise)</td><td>Modified hinge (synovial)</td><td>Tibial plafond + medial/lateral malleoli on talus dome</td><td>DF/PF. Talar dome wider anteriorly &rarr; <strong>joint most stable in DF</strong> (close-packed). Most lax in PF (loose-packed) &rarr; sprains occur in PF</td><td>Capsular pattern: PF &gt; DF. 10&deg; DF needed for normal gait. Loss of DF = compensatory pronation</td></tr>
+<tr><td class="warn">Subtalar (Talocalcaneal)</td><td>Plane/gliding (modified)</td><td>Inferior talus on superior calcaneus. 3 facets (anterior, middle, posterior)</td><td>Inversion/eversion (triplanar: supination = INV + PF + adduction; pronation = EV + DF + abduction)</td><td>Sinus tarsi syndrome. SIJ fixation can refer symptoms distally. Key joint for shock absorption</td></tr>
+<tr><td class="hi">Transverse Tarsal (Chopart)</td><td>Combined: talonavicular + calcaneocuboid</td><td>S-shaped joint line across midfoot</td><td>Allows midfoot flexibility during loading. Axes of both joints parallel in pronation = flexible foot; diverge in supination = rigid lever for push-off</td><td>Chopart amputation level. Joint locking mechanism essential for understanding gait biomechanics</td></tr>
+<tr><td class="hi">Tarsometatarsal (Lisfranc)</td><td>Plane joints</td><td>Cuneiforms + cuboid on MT bases. 2nd MT &ldquo;recessed&rdquo; (keystone)</td><td>Minimal motion. Provides rigidity for push-off</td><td>Lisfranc injury: often missed. 2nd MT base is the keystone &mdash; fracture or ligament tear here = instability</td></tr>
+<tr><td class="hi">Distal Tibiofibular (Syndesmosis)</td><td>Fibrous (syndesmosis)</td><td>Distal tibia + distal fibula. Not a true synovial joint</td><td>Slight fibular ER + superior glide during DF (tibia &ldquo;spreads&rdquo; to accept wider anterior talus)</td><td>High ankle sprain = syndesmosis injury. Squeeze test, external rotation stress test. Recovery 2&ndash;3&times; longer than lateral sprain</td></tr>
+<tr><td class="hi">1st MTP</td><td>Condyloid (ellipsoid)</td><td>1st MT head on proximal phalanx base. 2 sesamoids within FHB</td><td>Flex/ext + some abd/add. 65&ndash;75&deg; extension needed for push-off (windlass mechanism)</td><td>Hallux rigidus: limited extension. Hallux valgus: lateral deviation. Turf toe: hyperextension injury of 1st MTP</td></tr></tbody></table>
+<div class="bl-strip green">
+<div class="bl-label">Arches of the Foot</div>
+<p>Maintained by 3 mechanisms: (1)<br><strong>Bone shape</strong> (passive), (2)<br><strong>Ligaments</strong> (passive &mdash; plantar aponeurosis, spring ligament, long/short plantar ligaments), (3)<br><strong>Muscles</strong> (active &mdash; extrinsic: tibialis posterior + peroneus longus; intrinsic: all plantar muscles). Function as spring/shock absorber &mdash; store and release energy during gait.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Arch</th><th>Bones</th><th>Key Support</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Medial Longitudinal (highest)</td><td>Calcaneus &rarr; talus (keystone) &rarr; navicular &rarr; 3 cuneiforms &rarr; MT 1&ndash;3</td><td>Spring ligament, plantar aponeurosis, tibialis posterior, FHL</td><td>Most clinically significant. Pes planus = medial arch collapse. Tibialis posterior dysfunction = adult-acquired flatfoot. &ldquo;Too many toes&rdquo; sign</td></tr>
+<tr><td class="hi">Lateral Longitudinal</td><td>Calcaneus &rarr; cuboid &rarr; MT 4&ndash;5</td><td>Long plantar ligament, peroneus longus, plantar aponeurosis</td><td>Lower, more rigid. Bears weight during stance. Rarely collapses</td></tr>
+<tr><td class="hi">Transverse (Metatarsal)</td><td>Across MT heads + cuneiforms + cuboid</td><td>Peroneus longus (crosses plantar foot from lateral to medial), intermetatarsal ligaments</td><td>Metatarsalgia from transverse arch collapse. Morton&rsquo;s neuroma between 3rd/4th MT heads</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Windlass Mechanism</div>
+<p>The <strong>plantar aponeurosis</strong> wraps around the MT heads like a cable around a windlass. During toe extension (push-off), the aponeurosis tightens, pulling the calcaneus toward the MT heads &rarr; medial longitudinal arch rises &rarr; foot becomes a rigid lever for propulsion. This is the mechanical basis of the <strong>heel-to-toe gait cycle</strong>. Plantar fasciitis disrupts this mechanism.</p>
 </div>
 </div>
-
-<!-- ====== LIGAMENTS ====== -->
+</div>
 <div class="tab-panel" id="tab-ligaments">
 <div class="container">
-  <div class="section-title">Ligament Complexes</div>
-  <div class="section-sub">Ligament strength ranking (lateral ankle, weakest to strongest): ATFL &lt; CFL &lt; PTFL &lt; Deltoid complex. The ATFL is the most commonly injured ligament in the body.</div>
-
-  <table class="data-table"><thead><tr><th>Complex</th><th>Ligament</th><th>Attachment</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td rowspan="3" class="warn"><strong>Lateral</strong></td><td class="warn">ATFL</td><td>Anterior lateral malleolus &rarr; talar neck</td><td>Limits IR + anterior translation of talus. Taut in PF</td><td><strong>MC injured ligament in the body.</strong> Injured in PF + inversion (ankle sprain). Positive anterior drawer. Weakest lateral ligament</td></tr>
-    <tr><td class="hi">CFL</td><td>Tip of lateral malleolus &rarr; lateral calcaneus</td><td>Limits inversion. Only ligament spanning BOTH talocrural AND subtalar joints</td><td>Injured in more severe inversion sprains (Grade II+). Positive talar tilt test. Extracapsular</td></tr>
-    <tr><td class="hi">PTFL</td><td>Posterior lateral malleolus &rarr; posterior talus</td><td>Limits ER + posterior translation. Taut in DF</td><td>Strongest lateral ligament. Rarely injured unless dislocation. Near-horizontal orientation</td></tr>
-    <tr><td class="warn" rowspan="4"><strong>Medial (Deltoid)</strong></td><td class="warn">Superficial layer</td><td>Medial malleolus &rarr; navicular (tibionavicular), spring ligament (tibiocalcaneonavicular), calcaneus (tibiocalcaneal)</td><td>Limits eversion + lateral translation</td><td rowspan="2"><strong>Strongest ankle ligament complex.</strong> Fan-shaped (delta &delta;). Injury = high-energy mechanism (eversion/ER). Associated with fibula fracture (Maisonneuve), syndesmosis injury. Medial clear space &gt;4mm on X-ray = deltoid disruption</td></tr>
-    <tr><td class="hi">Deep layer</td><td>Medial malleolus &rarr; talus (anterior + posterior tibiotalar)</td><td>Limits lateral shift/ER of talus in mortise. Deep layer most important for mortise stability</td></tr>
-    <tr><td colspan="4"><em>Deltoid injury rarely isolated &mdash; always assess syndesmosis and proximal fibula (Maisonneuve fracture)</em></td></tr>
-    <tr><td class="hi" colspan="4">&nbsp;</td></tr>
-    <tr><td class="warn"><strong>Syndesmosis</strong></td><td>AITFL, PITFL, Interosseous membrane, Transverse tibiofibular lig.</td><td>Distal tibia &harr; distal fibula</td><td>Maintains tibiofibular mortise width. Allows slight fibular ER + superior glide in DF</td><td><strong>High ankle sprain.</strong> Squeeze test (proximal compression &rarr; pain distally). ER stress test. 2&ndash;3&times; longer recovery than lateral sprain. Must restore syndesmosis stability before return to sport</td></tr>
-    <tr><td class="hi"><strong>Spring (Plantar Calcaneonavicular)</strong></td><td>&mdash;</td><td>Sustentaculum tali of calcaneus &rarr; plantar navicular</td><td>Supports talar head. Primary passive support of medial longitudinal arch</td><td>Spring ligament failure + tibialis posterior dysfunction = <strong>adult-acquired flatfoot deformity</strong></td></tr>
-    <tr><td class="hi"><strong>Plantar Aponeurosis (Fascia)</strong></td><td>&mdash;</td><td>Calcaneal tuberosity &rarr; proximal phalanges via plantar plates</td><td>Primary passive arch support. Windlass mechanism. Shock absorption + energy return</td><td>Plantar fasciitis: MC cause of heel pain. Worse with first steps in morning. Pain at medial calcaneal tuberosity</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip red"><div class="bl-label">Ottawa Ankle Rules</div><p>X-ray required if: bony tenderness at <strong>distal 6 cm of fibula or lateral malleolus</strong>, <strong>medial malleolus</strong>, <strong>base of 5th metatarsal</strong>, or <strong>navicular</strong>. Also: inability to bear weight immediately after injury AND for 4 steps at initial evaluation. Sensitivity &gt;98% for fracture detection.</p></div>
+<div class="section-title">Ligament Complexes</div>
+<div class="section-sub">Ligament strength ranking (lateral ankle, weakest to strongest): ATFL &lt; CFL &lt; PTFL &lt; Deltoid complex. The ATFL is the most commonly injured ligament in the body.</div>
+<table class="data-table"><thead>
+<tr><th>Complex</th><th>Ligament</th><th>Attachment</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
+<tr><td rowspan="3" class="warn"><strong>Lateral</strong></td><td class="warn">ATFL</td><td>Anterior lateral malleolus &rarr; talar neck</td><td>Limits IR + anterior translation of talus. Taut in PF</td><td><strong>MC injured ligament in the body.</strong> Injured in PF + inversion (ankle sprain). Positive anterior drawer. Weakest lateral ligament</td></tr>
+<tr><td class="hi">CFL</td><td>Tip of lateral malleolus &rarr; lateral calcaneus</td><td>Limits inversion. Only ligament spanning BOTH talocrural AND subtalar joints</td><td>Injured in more severe inversion sprains (Grade II+). Positive talar tilt test. Extracapsular</td></tr>
+<tr><td class="hi">PTFL</td><td>Posterior lateral malleolus &rarr; posterior talus</td><td>Limits ER + posterior translation. Taut in DF</td><td>Strongest lateral ligament. Rarely injured unless dislocation. Near-horizontal orientation</td></tr>
+<tr><td class="warn" rowspan="4"><strong>Medial (Deltoid)</strong></td><td class="warn">Superficial layer</td><td>Medial malleolus &rarr; navicular (tibionavicular), spring ligament (tibiocalcaneonavicular), calcaneus (tibiocalcaneal)</td><td>Limits eversion + lateral translation</td><td rowspan="2"><strong>Strongest ankle ligament complex.</strong> Fan-shaped (delta &delta;). Injury = high-energy mechanism (eversion/ER). Associated with fibula fracture (Maisonneuve), syndesmosis injury. Medial clear space &gt;4mm on X-ray = deltoid disruption</td></tr>
+<tr><td class="hi">Deep layer</td><td>Medial malleolus &rarr; talus (anterior + posterior tibiotalar)</td><td>Limits lateral shift/ER of talus in mortise. Deep layer most important for mortise stability</td></tr>
+<tr><td colspan="4"><em>Deltoid injury rarely isolated &mdash; always assess syndesmosis and proximal fibula (Maisonneuve fracture)</em></td></tr>
+<tr><td class="hi" colspan="4">&nbsp;</td></tr>
+<tr><td class="warn"><strong>Syndesmosis</strong></td><td>AITFL, PITFL, Interosseous membrane, Transverse tibiofibular lig.</td><td>Distal tibia &harr; distal fibula</td><td>Maintains tibiofibular mortise width. Allows slight fibular ER + superior glide in DF</td><td><strong>High ankle sprain.</strong> Squeeze test (proximal compression &rarr; pain distally). ER stress test. 2&ndash;3&times; longer recovery than lateral sprain. Must restore syndesmosis stability before return to sport</td></tr>
+<tr><td class="hi"><strong>Spring (Plantar Calcaneonavicular)</strong></td><td>&mdash;</td><td>Sustentaculum tali of calcaneus &rarr; plantar navicular</td><td>Supports talar head. Primary passive support of medial longitudinal arch</td><td>Spring ligament failure + tibialis posterior dysfunction = <strong>adult-acquired flatfoot deformity</strong></td></tr>
+<tr><td class="hi"><strong>Plantar Aponeurosis (Fascia)</strong></td><td>&mdash;</td><td>Calcaneal tuberosity &rarr; proximal phalanges via plantar plates</td><td>Primary passive arch support. Windlass mechanism. Shock absorption + energy return</td><td>Plantar fasciitis: MC cause of heel pain. Worse with first steps in morning. Pain at medial calcaneal tuberosity</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Ottawa Ankle Rules</div>
+<p>X-ray required if: bony tenderness at <strong>distal 6 cm of fibula or lateral malleolus</strong>, <strong>medial malleolus</strong>, <strong>base of 5th metatarsal</strong>, or <strong>navicular</strong>. Also: inability to bear weight immediately after injury AND for 4 steps at initial evaluation. Sensitivity &gt;98% for fracture detection.</p>
 </div>
 </div>
-
-<!-- ====== MUSCLES & OINA ====== -->
+</div>
 <div class="tab-panel" id="tab-muscles">
 <div class="container">
-  <div class="section-title">Leg Compartments &amp; Muscles &mdash; OINA</div>
-  <div class="section-sub">The leg has 4 compartments separated by intermuscular septa and the interosseous membrane. Each compartment has a distinct nerve supply and action theme. Know these for compartment syndrome recognition.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Anterior Compartment &mdash; Deep Peroneal (Fibular) Nerve</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Action Theme: Dorsiflexion + Toe Extension</div><p>All muscles innervated by <strong>deep peroneal (fibular) nerve (L4, L5, S1)</strong>. Injury = <strong>drop foot</strong>. Foot slap during initial contact, steppage gait.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Tibialis Anterior</td><td>Lateral tibial condyle, proximal 2/3 lateral tibial shaft, interosseous membrane</td><td>Medial cuneiform + base of 1st MT (plantar/medial surfaces)</td><td>Deep peroneal (L4, L5)</td><td><strong>Primary dorsiflexor.</strong> Inverts foot. Eccentrically controls PF during loading response (prevents foot slap)</td></tr>
-        <tr><td class="hi">Extensor Hallucis Longus</td><td>Middle 1/2 anterior fibula, interosseous membrane</td><td>Base of distal phalanx of great toe</td><td>Deep peroneal (L5, S1)</td><td>Extends great toe (IP + MTP). Assists DF</td></tr>
-        <tr><td class="hi">Extensor Digitorum Longus</td><td>Lateral tibial condyle, proximal 3/4 anterior fibula, interosseous membrane</td><td>Middle and distal phalanges of toes 2&ndash;5 (via extensor expansion)</td><td>Deep peroneal (L5, S1)</td><td>Extends toes 2&ndash;5. Assists DF + eversion</td></tr>
-        <tr><td class="hi">Peroneus (Fibularis) Tertius</td><td>Distal 1/3 anterior fibula (continuous with EDL)</td><td>Dorsal base of 5th MT</td><td>Deep peroneal (L5, S1)</td><td>DF + eversion. Not always present (~5&ndash;17% absent)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Lateral Compartment &mdash; Superficial Peroneal (Fibular) Nerve</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip gold"><div class="bl-label">Action Theme: Eversion</div><p>Innervated by <strong>superficial peroneal (fibular) nerve (L4, L5, S1)</strong>. Primary evertors. Peroneus longus crosses plantar foot to support transverse arch.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Peroneus (Fibularis) Longus</td><td>Head + proximal 2/3 lateral fibula</td><td>Plantar base of 1st MT + medial cuneiform (crosses plantar foot laterally &rarr; medially)</td><td>Superficial peroneal (L5, S1)</td><td><strong>Primary evertor.</strong> PF. Supports transverse arch (pulls 1st ray into PF). Peroneus longus + tibialis anterior form a &ldquo;stirrup&rdquo; supporting the foot</td></tr>
-        <tr><td class="hi">Peroneus (Fibularis) Brevis</td><td>Distal 2/3 lateral fibula</td><td>Tuberosity of base of 5th MT</td><td>Superficial peroneal (L5, S1)</td><td>Eversion + PF. Avulsion fracture at 5th MT base with severe inversion sprain (&ldquo;pseudo-Jones fracture&rdquo;)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Posterior Compartment &mdash; Superficial (Tibial Nerve)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip purple"><div class="bl-label">Action Theme: Plantarflexion (Power)</div><p>Innervated by <strong>tibial nerve (S1, S2)</strong>. The gastrocnemius-soleus complex generates the most force of any muscle group in the body during push-off.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Gastrocnemius</td><td>Medial head: posterior medial femoral condyle. Lateral head: posterior lateral femoral condyle</td><td>Calcaneal tuberosity via Achilles tendon</td><td>Tibial (S1, S2)</td><td><strong>PF + knee flexion</strong> (2-joint muscle). Stronger PF with knee extended. Active during push-off phase of gait</td></tr>
-        <tr><td class="warn">Soleus</td><td>Posterior tibia (soleal line), proximal 1/3 posterior fibula, soleal arch</td><td>Calcaneal tuberosity via Achilles tendon</td><td>Tibial (S1, S2)</td><td><strong>PF</strong> (1-joint muscle). Active throughout stance phase. Postural muscle (tonic). Deep vein pump (&ldquo;peripheral heart&rdquo;)</td></tr>
-        <tr><td class="hi">Plantaris</td><td>Lateral supracondylar line of femur</td><td>Calcaneal tuberosity (medial to Achilles)</td><td>Tibial (S1, S2)</td><td>Weak PF + knee flexion. Long thin tendon used for tendon grafts. Absent in ~7&ndash;10%</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Silverskj&ouml;ld Test</div><p>Differentiates gastrocnemius vs soleus tightness. Test ankle DF with knee extended (both muscles on stretch) then with knee flexed (gastroc relaxed). If DF improves with knee flexion &rarr; <strong>gastrocnemius tightness</strong> (MC). If DF remains limited with knee flexed &rarr; <strong>soleus tightness</strong>.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Posterior Compartment &mdash; Deep (Tibial Nerve)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Action Theme: Inversion + Toe Flexion + Arch Support</div><p><strong>Tom, Dick, ANd Harry</strong> &mdash; mnemonic for structures passing posterior to medial malleolus through the tarsal tunnel (anterior to posterior): <strong>T</strong>ibialis posterior, <strong>D</strong>igitorum longus (FDL), posterior tibial <strong>A</strong>rtery + tibial <strong>N</strong>erve, flexor <strong>H</strong>allucis longus (FHL).</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Tibialis Posterior</td><td>Interosseous membrane, posterior tibia inferior to soleal line, posterior fibula</td><td>Tuberosity of navicular, cuneiforms, cuboid, bases of 2nd&ndash;4th MTs</td><td>Tibial (L5, S1)</td><td><strong>Primary invertor. Key arch support.</strong> Dysfunction = adult-acquired flatfoot. Single heel raise test: can&rsquo;t invert calcaneus during rise = positive</td></tr>
-        <tr><td class="hi">Flexor Digitorum Longus</td><td>Posterior tibia (medial to tibialis posterior)</td><td>Plantar base of distal phalanges toes 2&ndash;5</td><td>Tibial (L5, S1)</td><td>Flexes toes 2&ndash;5 (distal IP primarily). Assists PF + inversion</td></tr>
-        <tr><td class="hi">Flexor Hallucis Longus</td><td>Posterior distal 2/3 fibula, interosseous membrane</td><td>Plantar base of distal phalanx of great toe</td><td>Tibial (L5, S2)</td><td>Flexes great toe (critical for push-off). Assists PF. Runs through groove on sustentaculum tali. Stenosing tenosynovitis in dancers</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="bl-strip red"><div class="bl-label">Acute Compartment Syndrome &mdash; Surgical Emergency</div><p><strong>5 P&rsquo;s:</strong> Pain (out of proportion, especially with passive stretch), Pressure (tense compartment), Paresthesias, Paralysis (late), Pulselessness (very late &mdash; do NOT wait for this).<br><strong>Most reliable sign:</strong> pain with passive stretch of compartment muscles. Anterior compartment = passive PF causes pain. Compartment pressure &gt;30 mmHg or within 30 mmHg of diastolic = <strong>emergent fasciotomy</strong>. Delay &gt;6 hours = irreversible necrosis (Volkmann&rsquo;s equivalent in leg).</p></div>
+<div class="section-title">Leg Compartments &amp; Muscles &mdash; OINA</div>
+<div class="section-sub">The leg has 4 compartments separated by intermuscular septa and the interosseous membrane. Each compartment has a distinct nerve supply and action theme. Know these for compartment syndrome recognition.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Anterior Compartment &mdash; Deep Peroneal (Fibular) Nerve</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Action Theme: Dorsiflexion + Toe Extension</div>
+<p>All muscles innervated by <strong>deep peroneal (fibular) nerve (L4, L5, S1)</strong>. Injury = <strong>drop foot</strong>. Foot slap during initial contact, steppage gait.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Tibialis Anterior</td><td>Lateral tibial condyle, proximal 2/3 lateral tibial shaft, interosseous membrane</td><td>Medial cuneiform + base of 1st MT (plantar/medial surfaces)</td><td>Deep peroneal (L4, L5)</td><td><strong>Primary dorsiflexor.</strong> Inverts foot. Eccentrically controls PF during loading response (prevents foot slap)</td></tr>
+<tr><td class="hi">Extensor Hallucis Longus</td><td>Middle 1/2 anterior fibula, interosseous membrane</td><td>Base of distal phalanx of great toe</td><td>Deep peroneal (L5, S1)</td><td>Extends great toe (IP + MTP). Assists DF</td></tr>
+<tr><td class="hi">Extensor Digitorum Longus</td><td>Lateral tibial condyle, proximal 3/4 anterior fibula, interosseous membrane</td><td>Middle and distal phalanges of toes 2&ndash;5 (via extensor expansion)</td><td>Deep peroneal (L5, S1)</td><td>Extends toes 2&ndash;5. Assists DF + eversion</td></tr>
+<tr><td class="hi">Peroneus (Fibularis) Tertius</td><td>Distal 1/3 anterior fibula (continuous with EDL)</td><td>Dorsal base of 5th MT</td><td>Deep peroneal (L5, S1)</td><td>DF + eversion. Not always present (~5&ndash;17% absent)</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== NEUROVASCULATURE ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Lateral Compartment &mdash; Superficial Peroneal (Fibular) Nerve</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip gold">
+<div class="bl-label">Action Theme: Eversion</div>
+<p>Innervated by <strong>superficial peroneal (fibular) nerve (L4, L5, S1)</strong>. Primary evertors. Peroneus longus crosses plantar foot to support transverse arch.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Peroneus (Fibularis) Longus</td><td>Head + proximal 2/3 lateral fibula</td><td>Plantar base of 1st MT + medial cuneiform (crosses plantar foot laterally &rarr; medially)</td><td>Superficial peroneal (L5, S1)</td><td><strong>Primary evertor.</strong> PF. Supports transverse arch (pulls 1st ray into PF). Peroneus longus + tibialis anterior form a &ldquo;stirrup&rdquo; supporting the foot</td></tr>
+<tr><td class="hi">Peroneus (Fibularis) Brevis</td><td>Distal 2/3 lateral fibula</td><td>Tuberosity of base of 5th MT</td><td>Superficial peroneal (L5, S1)</td><td>Eversion + PF. Avulsion fracture at 5th MT base with severe inversion sprain (&ldquo;pseudo-Jones fracture&rdquo;)</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Posterior Compartment &mdash; Superficial (Tibial Nerve)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip purple">
+<div class="bl-label">Action Theme: Plantarflexion (Power)</div>
+<p>Innervated by <strong>tibial nerve (S1, S2)</strong>. The gastrocnemius-soleus complex generates the most force of any muscle group in the body during push-off.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Gastrocnemius</td><td>Medial head: posterior medial femoral condyle. Lateral head: posterior lateral femoral condyle</td><td>Calcaneal tuberosity via Achilles tendon</td><td>Tibial (S1, S2)</td><td><strong>PF + knee flexion</strong> (2-joint muscle). Stronger PF with knee extended. Active during push-off phase of gait</td></tr>
+<tr><td class="warn">Soleus</td><td>Posterior tibia (soleal line), proximal 1/3 posterior fibula, soleal arch</td><td>Calcaneal tuberosity via Achilles tendon</td><td>Tibial (S1, S2)</td><td><strong>PF</strong> (1-joint muscle). Active throughout stance phase. Postural muscle (tonic). Deep vein pump (&ldquo;peripheral heart&rdquo;)</td></tr>
+<tr><td class="hi">Plantaris</td><td>Lateral supracondylar line of femur</td><td>Calcaneal tuberosity (medial to Achilles)</td><td>Tibial (S1, S2)</td><td>Weak PF + knee flexion. Long thin tendon used for tendon grafts. Absent in ~7&ndash;10%</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Silverskj&ouml;ld Test</div>
+<p>Differentiates gastrocnemius vs soleus tightness. Test ankle DF with knee extended (both muscles on stretch) then with knee flexed (gastroc relaxed). If DF improves with knee flexion &rarr; <strong>gastrocnemius tightness</strong> (MC). If DF remains limited with knee flexed &rarr; <strong>soleus tightness</strong>.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Posterior Compartment &mdash; Deep (Tibial Nerve)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Action Theme: Inversion + Toe Flexion + Arch Support</div>
+<p><strong>Tom, Dick, ANd Harry</strong> &mdash; mnemonic for structures passing posterior to medial malleolus through the tarsal tunnel (anterior to posterior): <strong>T</strong>ibialis posterior, <strong>D</strong>igitorum longus (FDL), posterior tibial <strong>A</strong>rtery + tibial <strong>N</strong>erve, flexor <strong>H</strong>allucis longus (FHL).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Tibialis Posterior</td><td>Interosseous membrane, posterior tibia inferior to soleal line, posterior fibula</td><td>Tuberosity of navicular, cuneiforms, cuboid, bases of 2nd&ndash;4th MTs</td><td>Tibial (L5, S1)</td><td><strong>Primary invertor. Key arch support.</strong> Dysfunction = adult-acquired flatfoot. Single heel raise test: can&rsquo;t invert calcaneus during rise = positive</td></tr>
+<tr><td class="hi">Flexor Digitorum Longus</td><td>Posterior tibia (medial to tibialis posterior)</td><td>Plantar base of distal phalanges toes 2&ndash;5</td><td>Tibial (L5, S1)</td><td>Flexes toes 2&ndash;5 (distal IP primarily). Assists PF + inversion</td></tr>
+<tr><td class="hi">Flexor Hallucis Longus</td><td>Posterior distal 2/3 fibula, interosseous membrane</td><td>Plantar base of distal phalanx of great toe</td><td>Tibial (L5, S2)</td><td>Flexes great toe (critical for push-off). Assists PF. Runs through groove on sustentaculum tali. Stenosing tenosynovitis in dancers</td></tr></tbody></table>
+</div>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Acute Compartment Syndrome &mdash; Surgical Emergency</div>
+<p><strong>5 P&rsquo;s:</strong> Pain (out of proportion, especially with passive stretch), Pressure (tense compartment), Paresthesias, Paralysis (late), Pulselessness (very late &mdash; do NOT wait for this).<br><strong>Most reliable sign:</strong> pain with passive stretch of compartment muscles. Anterior compartment = passive PF causes pain. Compartment pressure &gt;30 mmHg or within 30 mmHg of diastolic = <strong>emergent fasciotomy</strong>. Delay &gt;6 hours = irreversible necrosis (Volkmann&rsquo;s equivalent in leg).</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-neurovasc">
 <div class="container">
-  <div class="section-title">Neurovascular Supply</div>
-  <div class="section-sub">The common peroneal nerve at the fibular head is the most commonly injured nerve in the lower extremity. Know the motor and sensory distributions for clinical localization.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Nerve Supply</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Nerve</th><th>Origin</th><th>Motor</th><th>Sensory</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">Common Peroneal (Fibular)</td><td>Sciatic (L4&ndash;S2)</td><td>Divides into deep + superficial at fibular neck</td><td>Lateral leg (via sural communicating branch)</td><td><strong>MC injured LE nerve.</strong> Vulnerable at fibular head (cast pressure, leg crossing, fibular neck fracture). Injury = drop foot + sensory loss</td></tr>
-        <tr><td class="hi">Deep Peroneal</td><td>Common peroneal</td><td>Anterior compartment (tibialis anterior, EHL, EDL, peroneus tertius)</td><td><strong>1st dorsal web space only</strong> (tiny area between great + 2nd toes)</td><td>Drop foot (can&rsquo;t DF). Steppage gait. Foot slap at initial contact</td></tr>
-        <tr><td class="hi">Superficial Peroneal</td><td>Common peroneal</td><td>Lateral compartment (peroneus longus + brevis)</td><td>Dorsum of foot (except 1st web space)</td><td>Can&rsquo;t evert. Recurrent inversion sprains from lack of eversion stability</td></tr>
-        <tr><td class="warn">Tibial</td><td>Sciatic (L4&ndash;S3)</td><td>Posterior compartment (both superficial + deep): gastroc, soleus, tibialis posterior, FHL, FDL</td><td>Sole of foot (via medial + lateral plantar nerves)</td><td>Tarsal tunnel syndrome: compression posterior to medial malleolus. Burning/tingling sole of foot. Tinel&rsquo;s sign at tarsal tunnel</td></tr>
-        <tr><td class="hi">Sural</td><td>Tibial + common peroneal branches merge</td><td>None (purely sensory)</td><td>Lateral foot + ankle, lateral heel</td><td>Commonly used for nerve biopsy and nerve graft donor (expendable). Sural nerve flap for foot defects</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Arterial &amp; Venous Supply</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip green"><div class="bl-label">Arterial</div><p><strong>Popliteal artery</strong> trifurcates below knee: <strong>Anterior tibial</strong> (crosses interosseous membrane anteriorly &rarr; becomes dorsalis pedis on dorsum of foot &mdash; palpate between EHL and EDL tendons).<br><strong>Posterior tibial</strong> (descends posterior compartment &rarr; palpate posterior to medial malleolus &rarr; divides into medial + lateral plantar arteries in sole).<br><strong>Peroneal (fibular) artery</strong> (lateral, deep &mdash; supplies lateral compartment muscles, may substitute for absent dorsalis pedis in 5&ndash;12%).</p></div>
-      <div class="bl-strip gold"><div class="bl-label">Venous + Lymphatic</div><p><strong>Deep veins:</strong> follow arteries (anterior tibial veins, posterior tibial veins, peroneal veins &rarr; popliteal vein).<br><strong>Superficial veins:</strong> Great saphenous (longest vein in body: medial malleolus &rarr; anteromedial leg &rarr; saphenous opening/femoral vein). Small saphenous (posterior to lateral malleolus &rarr; posterior calf &rarr; popliteal vein).<br><strong>DVT:</strong> calf veins (soleal sinuses) are the most common site of venous thrombosis. Homan&rsquo;s sign (unreliable): calf pain with passive DF.</p></div>
-    </div>
-  </div>
+<div class="section-title">Neurovascular Supply</div>
+<div class="section-sub">The common peroneal nerve at the fibular head is the most commonly injured nerve in the lower extremity. Know the motor and sensory distributions for clinical localization.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Nerve Supply</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Nerve</th><th>Origin</th><th>Motor</th><th>Sensory</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Common Peroneal (Fibular)</td><td>Sciatic (L4&ndash;S2)</td><td>Divides into deep + superficial at fibular neck</td><td>Lateral leg (via sural communicating branch)</td><td><strong>MC injured LE nerve.</strong> Vulnerable at fibular head (cast pressure, leg crossing, fibular neck fracture). Injury = drop foot + sensory loss</td></tr>
+<tr><td class="hi">Deep Peroneal</td><td>Common peroneal</td><td>Anterior compartment (tibialis anterior, EHL, EDL, peroneus tertius)</td><td><strong>1st dorsal web space only</strong> (tiny area between great + 2nd toes)</td><td>Drop foot (can&rsquo;t DF). Steppage gait. Foot slap at initial contact</td></tr>
+<tr><td class="hi">Superficial Peroneal</td><td>Common peroneal</td><td>Lateral compartment (peroneus longus + brevis)</td><td>Dorsum of foot (except 1st web space)</td><td>Can&rsquo;t evert. Recurrent inversion sprains from lack of eversion stability</td></tr>
+<tr><td class="warn">Tibial</td><td>Sciatic (L4&ndash;S3)</td><td>Posterior compartment (both superficial + deep): gastroc, soleus, tibialis posterior, FHL, FDL</td><td>Sole of foot (via medial + lateral plantar nerves)</td><td>Tarsal tunnel syndrome: compression posterior to medial malleolus. Burning/tingling sole of foot. Tinel&rsquo;s sign at tarsal tunnel</td></tr>
+<tr><td class="hi">Sural</td><td>Tibial + common peroneal branches merge</td><td>None (purely sensory)</td><td>Lateral foot + ankle, lateral heel</td><td>Commonly used for nerve biopsy and nerve graft donor (expendable). Sural nerve flap for foot defects</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== PATHOLOGY ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Arterial &amp; Venous Supply</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip green">
+<div class="bl-label">Arterial</div>
+<p><strong>Popliteal artery</strong> trifurcates below knee: <strong>Anterior tibial</strong> (crosses interosseous membrane anteriorly &rarr; becomes dorsalis pedis on dorsum of foot &mdash; palpate between EHL and EDL tendons).<br><strong>Posterior tibial</strong> (descends posterior compartment &rarr; palpate posterior to medial malleolus &rarr; divides into medial + lateral plantar arteries in sole).<br><strong>Peroneal (fibular) artery</strong> (lateral, deep &mdash; supplies lateral compartment muscles, may substitute for absent dorsalis pedis in 5&ndash;12%).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Venous + Lymphatic</div>
+<p><strong>Deep veins:</strong> follow arteries (anterior tibial veins, posterior tibial veins, peroneal veins &rarr; popliteal vein).<br><strong>Superficial veins:</strong> Great saphenous (longest vein in body: medial malleolus &rarr; anteromedial leg &rarr; saphenous opening/femoral vein). Small saphenous (posterior to lateral malleolus &rarr; posterior calf &rarr; popliteal vein).<br><strong>DVT:</strong> calf veins (soleal sinuses) are the most common site of venous thrombosis. Homan&rsquo;s sign (unreliable): calf pain with passive DF.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-pathology">
 <div class="container">
-  <div class="section-title">Ankle &amp; Foot Pathologies</div>
-  <div class="section-sub">The lateral ankle sprain is the most common MSK injury in sports. Know the mechanism, grading, and evidence-based rehab for each condition.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Lateral Ankle Sprain (Inversion Sprain)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Grade</th><th>Ligament Damage</th><th>Presentation</th><th>Recovery</th></tr></thead><tbody>
-        <tr><td class="hi">I (Mild)</td><td>ATFL stretch/microscopic tear. No laxity</td><td>Mild swelling, point tender over ATFL. Full WB. Negative drawer/tilt</td><td>1&ndash;2 weeks. PRICE + early ROM + proprioception</td></tr>
-        <tr><td class="warn">II (Moderate)</td><td>ATFL complete tear + CFL partial tear. Mild laxity</td><td>Moderate swelling + ecchymosis. Difficulty WB. Positive anterior drawer, mild talar tilt</td><td>3&ndash;6 weeks. Progressive WB, proprioception, peroneal strengthening</td></tr>
-        <tr><td class="warn">III (Severe)</td><td>ATFL + CFL complete tears &plusmn; PTFL involvement. Gross laxity</td><td>Severe swelling, bruising, NWB or significantly impaired WB. Positive drawer + talar tilt. &ldquo;Egg on the ankle&rdquo; swelling</td><td>6&ndash;12 weeks. May need immobilization initially. Consider surgical consult if chronic instability</td></tr>
-      </tbody></table>
-      <div class="bl-strip gold"><div class="bl-label">Special Tests</div><p><strong>Anterior Drawer:</strong> stabilize tibia, translate calcaneus/talus anteriorly with ankle in slight PF (relaxes ATFL). Positive = excessive anterior translation + soft end-feel. Tests ATFL. <strong>Talar Tilt (Inversion Stress):</strong> stabilize tibia, invert calcaneus. Positive = excessive tilt &gt;10&deg; or &gt;5&deg; compared to other side. Tests CFL.</p></div>
-      <div class="bl-strip red"><div class="bl-label">Chronic Ankle Instability (CAI)</div><p>30&ndash;40% of lateral ankle sprains develop chronic instability. Combination of: (1) mechanical instability (ligament laxity), (2) functional instability (proprioceptive deficit, peroneal weakness, altered neuromuscular control). <strong>Evidence:</strong> balance/proprioception training is the most effective intervention for CAI prevention. Single-leg stance on unstable surface, BAPS board, star excursion balance test for monitoring.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Achilles Tendinopathy &amp; Rupture</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Tendinopathy</div><p>Overuse degeneration (tendinosis, not tendinitis &mdash; minimal inflammation). Two types: <strong>Insertional</strong> (at calcaneal attachment, associated with Haglund&rsquo;s deformity, calcification) and <strong>Mid-substance</strong> (2&ndash;6 cm proximal to insertion &mdash; watershed zone of poor blood supply). Pain with activity, morning stiffness, palpable thickening.<br><strong>Best evidence:</strong> eccentric loading program (Alfredson protocol: 3&times;15 reps, 2&times;/day, 12 weeks). Heavy slow resistance training also effective.</p></div>
-      <div class="bl-strip red"><div class="bl-label">Achilles Rupture</div><p><strong>Mechanism:</strong> sudden forceful PF (pushing off, landing). &ldquo;Pop&rdquo; + sudden pain + inability to push off. Palpable gap 2&ndash;6 cm proximal to insertion (watershed zone).<br><strong>Thompson (Simmonds) test:</strong> prone, squeeze calf &mdash; normal = foot PFs; positive = <strong>no PF movement</strong> = rupture. Patient can still actively PF (other PFs compensate) &mdash; do NOT rely on active PF alone to rule out rupture.<br><strong>Management:</strong> surgical repair vs functional rehab (both have similar outcomes in most studies). Early WB and ROM in both approaches. Avoid excessive stretch for 6&ndash;8 weeks.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Plantar Fasciitis</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Pathology &amp; Presentation</div><p>MC cause of plantar heel pain. Degeneration of plantar aponeurosis at its origin on the <strong>medial calcaneal tuberosity</strong>. Risk factors: obesity, prolonged standing, tight gastroc-soleus, pes planus, sudden increase in activity.<br><strong>Classic presentation:</strong> sharp heel pain with <strong>first steps in the morning</strong> (fascia contracts overnight, forced lengthening on first WB). Pain improves with activity but returns after prolonged WB.</p></div>
-      <div class="bl-strip gold"><div class="bl-label">Evidence-Based Treatment</div><p><strong>Stretching:</strong> gastroc-soleus stretching + plantar fascia-specific stretch (cross-leg stretch: seated, cross affected leg over, pull toes into extension &mdash; palpate taut fascia band while stretching).<br><strong>Strengthening:</strong> intrinsic foot muscle training (towel curls, short foot exercises).<br><strong>Taping:</strong> low-dye taping for immediate relief.<br><strong>Orthotics:</strong> prefabricated insoles effective for most.<br><strong>Night splints</strong> maintain DF overnight (prevents morning pain). Heel calcaneal spur is NOT the cause &mdash; it&rsquo;s a result of chronic traction. 90% resolve with conservative care in 12 months.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Other Conditions</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Condition</th><th>Pathology</th><th>Presentation</th><th>Management</th></tr></thead><tbody>
-        <tr><td class="warn">High Ankle Sprain (Syndesmosis)</td><td>AITFL + interosseous membrane disruption from ER/DF force</td><td>Pain with ER stress test, squeeze test, pain walking (push-off), proximal lateral ankle pain. Minimal swelling compared to lateral sprain</td><td>2&ndash;3&times; longer recovery than lateral sprain. Boot immobilization 4&ndash;6 weeks. If diastasis on XR &rarr; surgical fixation</td></tr>
-        <tr><td class="hi">Tarsal Tunnel Syndrome</td><td>Tibial nerve compression posterior to medial malleolus (within flexor retinaculum)</td><td>Burning/tingling sole of foot. Worse with prolonged standing/walking. Tinel&rsquo;s sign at tarsal tunnel</td><td>Orthotics (correct pronation which stretches nerve), NSAIDs, nerve glides. Surgical release if conservative fails</td></tr>
-        <tr><td class="hi">Stress Fracture</td><td>Repetitive microtrauma exceeding bone remodeling capacity. MC: 2nd/3rd MT (&ldquo;march fracture&rdquo;), navicular, calcaneus</td><td>Insidious onset with increased activity. Point tenderness. Pain with WB, relieved by rest. Negative initial X-ray (positive at 2&ndash;3 weeks). MRI = gold standard</td><td>Relative rest (NWB or WBAT depending on location), boot, bone stimulator for delayed healing. Navicular stress fracture = NWB 6&ndash;8 weeks</td></tr>
-        <tr><td class="hi">Morton&rsquo;s Neuroma</td><td>Perineural fibrosis of common digital nerve (MC between 3rd/4th MT heads)</td><td>Burning pain between MT heads radiating to toes. Worse in tight shoes. Mulder&rsquo;s click (squeeze forefoot while pressing between MT heads)</td><td>Wide toe box shoes, metatarsal pad (proximal to MT heads), injection, surgical excision</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
+<div class="section-title">Ankle &amp; Foot Pathologies</div>
+<div class="section-sub">The lateral ankle sprain is the most common MSK injury in sports. Know the mechanism, grading, and evidence-based rehab for each condition.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Lateral Ankle Sprain (Inversion Sprain)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Grade</th><th>Ligament Damage</th><th>Presentation</th><th>Recovery</th></tr></thead><tbody>
+<tr><td class="hi">I (Mild)</td><td>ATFL stretch/microscopic tear. No laxity</td><td>Mild swelling, point tender over ATFL. Full WB. Negative drawer/tilt</td><td>1&ndash;2 weeks. PRICE + early ROM + proprioception</td></tr>
+<tr><td class="warn">II (Moderate)</td><td>ATFL complete tear + CFL partial tear. Mild laxity</td><td>Moderate swelling + ecchymosis. Difficulty WB. Positive anterior drawer, mild talar tilt</td><td>3&ndash;6 weeks. Progressive WB, proprioception, peroneal strengthening</td></tr>
+<tr><td class="warn">III (Severe)</td><td>ATFL + CFL complete tears &plusmn; PTFL involvement. Gross laxity</td><td>Severe swelling, bruising, NWB or significantly impaired WB. Positive drawer + talar tilt. &ldquo;Egg on the ankle&rdquo; swelling</td><td>6&ndash;12 weeks. May need immobilization initially. Consider surgical consult if chronic instability</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Special Tests</div>
+<p><strong>Anterior Drawer:</strong> stabilize tibia, translate calcaneus/talus anteriorly with ankle in slight PF (relaxes ATFL). Positive = excessive anterior translation + soft end-feel. Tests ATFL. <strong>Talar Tilt (Inversion Stress):</strong> stabilize tibia, invert calcaneus. Positive = excessive tilt &gt;10&deg; or &gt;5&deg; compared to other side. Tests CFL.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Chronic Ankle Instability (CAI)</div>
+<p>30&ndash;40% of lateral ankle sprains develop chronic instability. Combination of: (1) mechanical instability (ligament laxity), (2) functional instability (proprioceptive deficit, peroneal weakness, altered neuromuscular control). <strong>Evidence:</strong> balance/proprioception training is the most effective intervention for CAI prevention. Single-leg stance on unstable surface, BAPS board, star excursion balance test for monitoring.</p>
 </div>
 </div>
-
-<!-- ====== POST-OP REHAB ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Achilles Tendinopathy &amp; Rupture</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Tendinopathy</div>
+<p>Overuse degeneration (tendinosis, not tendinitis &mdash; minimal inflammation). Two types: <strong>Insertional</strong> (at calcaneal attachment, associated with Haglund&rsquo;s deformity, calcification) and <strong>Mid-substance</strong> (2&ndash;6 cm proximal to insertion &mdash; watershed zone of poor blood supply). Pain with activity, morning stiffness, palpable thickening.<br><strong>Best evidence:</strong> eccentric loading program (Alfredson protocol: 3&times;15 reps, 2&times;/day, 12 weeks). Heavy slow resistance training also effective.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Achilles Rupture</div>
+<p><strong>Mechanism:</strong> sudden forceful PF (pushing off, landing). &ldquo;Pop&rdquo; + sudden pain + inability to push off. Palpable gap 2&ndash;6 cm proximal to insertion (watershed zone).<br><strong>Thompson (Simmonds) test:</strong> prone, squeeze calf &mdash; normal = foot PFs; positive = <strong>no PF movement</strong> = rupture. Patient can still actively PF (other PFs compensate) &mdash; do NOT rely on active PF alone to rule out rupture.<br><strong>Management:</strong> surgical repair vs functional rehab (both have similar outcomes in most studies). Early WB and ROM in both approaches. Avoid excessive stretch for 6&ndash;8 weeks.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Plantar Fasciitis</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Pathology &amp; Presentation</div>
+<p>MC cause of plantar heel pain. Degeneration of plantar aponeurosis at its origin on the <strong>medial calcaneal tuberosity</strong>. Risk factors: obesity, prolonged standing, tight gastroc-soleus, pes planus, sudden increase in activity.<br><strong>Classic presentation:</strong> sharp heel pain with <strong>first steps in the morning</strong> (fascia contracts overnight, forced lengthening on first WB). Pain improves with activity but returns after prolonged WB.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Evidence-Based Treatment</div>
+<p><strong>Stretching:</strong> gastroc-soleus stretching + plantar fascia-specific stretch (cross-leg stretch: seated, cross affected leg over, pull toes into extension &mdash; palpate taut fascia band while stretching).<br><strong>Strengthening:</strong> intrinsic foot muscle training (towel curls, short foot exercises).<br><strong>Taping:</strong> low-dye taping for immediate relief.<br><strong>Orthotics:</strong> prefabricated insoles effective for most.<br><strong>Night splints</strong> maintain DF overnight (prevents morning pain). Heel calcaneal spur is NOT the cause &mdash; it&rsquo;s a result of chronic traction. 90% resolve with conservative care in 12 months.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Other Conditions</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Condition</th><th>Pathology</th><th>Presentation</th><th>Management</th></tr></thead><tbody>
+<tr><td class="warn">High Ankle Sprain (Syndesmosis)</td><td>AITFL + interosseous membrane disruption from ER/DF force</td><td>Pain with ER stress test, squeeze test, pain walking (push-off), proximal lateral ankle pain. Minimal swelling compared to lateral sprain</td><td>2&ndash;3&times; longer recovery than lateral sprain. Boot immobilization 4&ndash;6 weeks. If diastasis on XR &rarr; surgical fixation</td></tr>
+<tr><td class="hi">Tarsal Tunnel Syndrome</td><td>Tibial nerve compression posterior to medial malleolus (within flexor retinaculum)</td><td>Burning/tingling sole of foot. Worse with prolonged standing/walking. Tinel&rsquo;s sign at tarsal tunnel</td><td>Orthotics (correct pronation which stretches nerve), NSAIDs, nerve glides. Surgical release if conservative fails</td></tr>
+<tr><td class="hi">Stress Fracture</td><td>Repetitive microtrauma exceeding bone remodeling capacity. MC: 2nd/3rd MT (&ldquo;march fracture&rdquo;), navicular, calcaneus</td><td>Insidious onset with increased activity. Point tenderness. Pain with WB, relieved by rest. Negative initial X-ray (positive at 2&ndash;3 weeks). MRI = gold standard</td><td>Relative rest (NWB or WBAT depending on location), boot, bone stimulator for delayed healing. Navicular stress fracture = NWB 6&ndash;8 weeks</td></tr>
+<tr><td class="hi">Morton&rsquo;s Neuroma</td><td>Perineural fibrosis of common digital nerve (MC between 3rd/4th MT heads)</td><td>Burning pain between MT heads radiating to toes. Worse in tight shoes. Mulder&rsquo;s click (squeeze forefoot while pressing between MT heads)</td><td>Wide toe box shoes, metatarsal pad (proximal to MT heads), injection, surgical excision</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-postop">
 <div class="container">
-  <div class="section-title">Post-Operative Rehabilitation</div>
-  <div class="section-sub">Post-surgical ankle rehab follows tissue healing timelines. The biggest mistake is returning to activity before neuromuscular control is restored &mdash; this is why 30&ndash;40% of ankle sprains become chronic.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Lateral Ankle Ligament Reconstruction (Modified Brostrom)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th><th>Precautions</th></tr></thead><tbody>
-        <tr><td class="hi">I &mdash; Protection</td><td>0&ndash;2 weeks</td><td>Protect repair, control swelling, maintain proximal strength</td><td>NWB in boot/splint. Ankle pumps, toe curls. Hip/knee strengthening. Upper body cardio</td><td>NO inversion/eversion. NO WB. Elevate + ice</td></tr>
-        <tr><td class="hi">II &mdash; Early Motion</td><td>2&ndash;6 weeks</td><td>Restore pain-free ROM, progress WB</td><td>WBAT in boot. Active DF/PF (no inversion until 4&ndash;6 weeks). Gentle scar mobilization. Stationary bike (boot on). Pool walking</td><td>Avoid forced inversion for 6 weeks. Progress WB per surgeon protocol</td></tr>
-        <tr><td class="warn">III &mdash; Strengthening</td><td>6&ndash;12 weeks</td><td>Full ROM, progressive strengthening, proprioception</td><td>Theraband 4-way ankle. Single-leg stance. BAPS board. Heel raises. Closed chain: squats, lunges, step-ups. Peroneal emphasis</td><td>No running until &ge;12 weeks and adequate strength</td></tr>
-        <tr><td class="warn">IV &mdash; Return to Sport</td><td>12&ndash;24 weeks</td><td>Sport-specific training, agility, confidence</td><td>Plyometrics, cutting, lateral agility drills. Sport-specific drills. Bracing for return to sport initially. Star excursion balance test for clearance</td><td>Full clearance: single-leg hop symmetry &ge;90%, no pain, no giving way</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Achilles Tendon Repair</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th><th>Precautions</th></tr></thead><tbody>
-        <tr><td class="hi">I &mdash; Protection</td><td>0&ndash;2 weeks</td><td>Protect repair, control swelling</td><td>NWB in equinus cast/boot (PF position protects repair). Ankle pumps within cast, toe wiggling. Proximal strengthening</td><td><strong>NO dorsiflexion past neutral for 6&ndash;8 weeks.</strong> NO stretch. Boot at all times including sleep</td></tr>
-        <tr><td class="hi">II &mdash; Early WB</td><td>2&ndash;6 weeks</td><td>Progressive WB, gentle ROM</td><td>WBAT in boot with heel wedges (gradually removed to decrease PF). Gentle active PF. Passive DF to neutral only. Pool walking. Bike (low resistance)</td><td>NO resisted PF. NO passive DF past neutral. Heel wedges protect repair</td></tr>
-        <tr><td class="warn">III &mdash; Strengthening</td><td>6&ndash;12 weeks</td><td>Full ROM, progressive calf strengthening</td><td>Wean boot. Active ROM all planes. Double-leg heel raise &rarr; progress to eccentric lowering. Theraband. Bike, elliptical. Pool running. Proprioception training</td><td>No single-leg heel raise until ~12 weeks. Progress gradually &mdash; tendon still remodeling</td></tr>
-        <tr><td class="warn">IV &mdash; Return to Activity</td><td>4&ndash;9 months</td><td>Full strength, sport-specific</td><td>Single-leg heel raise (goal: 25+ reps = adequate endurance). Plyometrics gradually. Running progression (flat &rarr; incline &rarr; speed). Sport-specific drills</td><td>Full return to sport typically 6&ndash;9 months. Re-rupture rate 2&ndash;6% (surgical) vs 6&ndash;12% (conservative)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>ORIF Ankle Fracture (Bimalleolar / Trimalleolar)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th><th>Precautions</th></tr></thead><tbody>
-        <tr><td class="hi">I &mdash; Protection</td><td>0&ndash;6 weeks</td><td>Protect fixation, control edema, maintain proximal strength</td><td>NWB in boot/cast. Ankle pumps, toe curls. Hip/knee/core strengthening. UE cardio</td><td>NWB per surgeon (typically 6 weeks for bi/trimalleolar). Strict elevation</td></tr>
-        <tr><td class="warn">II &mdash; Early WB</td><td>6&ndash;10 weeks</td><td>Progressive WB, restore ROM</td><td>WBAT in boot &rarr; wean to shoe. Active/passive ROM DF/PF/inv/ev. Joint mobilization (talocrural, subtalar). Scar mobilization. Gait training in boot then shoe</td><td>ROM recovery priority: DF (often restricted from immobilization). Monitor incision healing</td></tr>
-        <tr><td class="warn">III &mdash; Strengthening</td><td>10&ndash;16+ weeks</td><td>Full ROM, progressive strengthening, gait normalization</td><td>Progressive resistance. Heel raises (double &rarr; single). Balance training. Step-ups, squats, lunges. Normal gait pattern without compensation. Pool therapy</td><td>Hardware may limit full ROM permanently in some patients. Pain with palpation over hardware = normal</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Post-Operative Rehabilitation</div>
+<div class="section-sub">Post-surgical ankle rehab follows tissue healing timelines. The biggest mistake is returning to activity before neuromuscular control is restored &mdash; this is why 30&ndash;40% of ankle sprains become chronic.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Lateral Ankle Ligament Reconstruction (Modified Brostrom)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th><th>Precautions</th></tr></thead><tbody>
+<tr><td class="hi">I &mdash; Protection</td><td>0&ndash;2 weeks</td><td>Protect repair, control swelling, maintain proximal strength</td><td>NWB in boot/splint. Ankle pumps, toe curls. Hip/knee strengthening. Upper body cardio</td><td>NO inversion/eversion. NO WB. Elevate + ice</td></tr>
+<tr><td class="hi">II &mdash; Early Motion</td><td>2&ndash;6 weeks</td><td>Restore pain-free ROM, progress WB</td><td>WBAT in boot. Active DF/PF (no inversion until 4&ndash;6 weeks). Gentle scar mobilization. Stationary bike (boot on). Pool walking</td><td>Avoid forced inversion for 6 weeks. Progress WB per surgeon protocol</td></tr>
+<tr><td class="warn">III &mdash; Strengthening</td><td>6&ndash;12 weeks</td><td>Full ROM, progressive strengthening, proprioception</td><td>Theraband 4-way ankle. Single-leg stance. BAPS board. Heel raises. Closed chain: squats, lunges, step-ups. Peroneal emphasis</td><td>No running until &ge;12 weeks and adequate strength</td></tr>
+<tr><td class="warn">IV &mdash; Return to Sport</td><td>12&ndash;24 weeks</td><td>Sport-specific training, agility, confidence</td><td>Plyometrics, cutting, lateral agility drills. Sport-specific drills. Bracing for return to sport initially. Star excursion balance test for clearance</td><td>Full clearance: single-leg hop symmetry &ge;90%, no pain, no giving way</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Achilles Tendon Repair</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th><th>Precautions</th></tr></thead><tbody>
+<tr><td class="hi">I &mdash; Protection</td><td>0&ndash;2 weeks</td><td>Protect repair, control swelling</td><td>NWB in equinus cast/boot (PF position protects repair). Ankle pumps within cast, toe wiggling. Proximal strengthening</td><td><strong>NO dorsiflexion past neutral for 6&ndash;8 weeks.</strong> NO stretch. Boot at all times including sleep</td></tr>
+<tr><td class="hi">II &mdash; Early WB</td><td>2&ndash;6 weeks</td><td>Progressive WB, gentle ROM</td><td>WBAT in boot with heel wedges (gradually removed to decrease PF). Gentle active PF. Passive DF to neutral only. Pool walking. Bike (low resistance)</td><td>NO resisted PF. NO passive DF past neutral. Heel wedges protect repair</td></tr>
+<tr><td class="warn">III &mdash; Strengthening</td><td>6&ndash;12 weeks</td><td>Full ROM, progressive calf strengthening</td><td>Wean boot. Active ROM all planes. Double-leg heel raise &rarr; progress to eccentric lowering. Theraband. Bike, elliptical. Pool running. Proprioception training</td><td>No single-leg heel raise until ~12 weeks. Progress gradually &mdash; tendon still remodeling</td></tr>
+<tr><td class="warn">IV &mdash; Return to Activity</td><td>4&ndash;9 months</td><td>Full strength, sport-specific</td><td>Single-leg heel raise (goal: 25+ reps = adequate endurance). Plyometrics gradually. Running progression (flat &rarr; incline &rarr; speed). Sport-specific drills</td><td>Full return to sport typically 6&ndash;9 months. Re-rupture rate 2&ndash;6% (surgical) vs 6&ndash;12% (conservative)</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>ORIF Ankle Fracture (Bimalleolar / Trimalleolar)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Phase</th><th>Timeline</th><th>Goals</th><th>Interventions</th><th>Precautions</th></tr></thead><tbody>
+<tr><td class="hi">I &mdash; Protection</td><td>0&ndash;6 weeks</td><td>Protect fixation, control edema, maintain proximal strength</td><td>NWB in boot/cast. Ankle pumps, toe curls. Hip/knee/core strengthening. UE cardio</td><td>NWB per surgeon (typically 6 weeks for bi/trimalleolar). Strict elevation</td></tr>
+<tr><td class="warn">II &mdash; Early WB</td><td>6&ndash;10 weeks</td><td>Progressive WB, restore ROM</td><td>WBAT in boot &rarr; wean to shoe. Active/passive ROM DF/PF/inv/ev. Joint mobilization (talocrural, subtalar). Scar mobilization. Gait training in boot then shoe</td><td>ROM recovery priority: DF (often restricted from immobilization). Monitor incision healing</td></tr>
+<tr><td class="warn">III &mdash; Strengthening</td><td>10&ndash;16+ weeks</td><td>Full ROM, progressive strengthening, gait normalization</td><td>Progressive resistance. Heel raises (double &rarr; single). Balance training. Step-ups, squats, lunges. Normal gait pattern without compensation. Pool therapy</td><td>Hardware may limit full ROM permanently in some patients. Pain with palpation over hardware = normal</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 &mdash; Grade II Lateral Ankle Sprain</div><p>19-year-old basketball player inverted right ankle. Moderate swelling, ecchymosis over lateral malleolus. Positive anterior drawer, mild talar tilt. Ottawa rules negative. <strong>Clinical reasoning:</strong> Grade II lateral sprain (ATFL complete + CFL partial). No XR needed (Ottawa SN &gt;98%). Management: PRICE &rarr; early ROM &rarr; peroneal strengthening &rarr; proprioception. 30&ndash;40% develop chronic instability.</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 &mdash; Plantar Fasciitis</div><p>55-year-old nurse with 6 weeks right heel pain, worst first steps AM. Tender medial calcaneal tuberosity. BMI 32. Tight gastroc. <strong>Clinical reasoning:</strong> Classic plantar fasciitis. Treatment: plantar fascia-specific stretch, gastroc stretching, intrinsic foot strengthening, low-dye taping, night splint. Spur is consequence, not cause. 90% resolve conservatively.</p></div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 &mdash; Grade II Lateral Ankle Sprain</div>
+<p>19-year-old basketball player inverted right ankle. Moderate swelling, ecchymosis over lateral malleolus. Positive anterior drawer, mild talar tilt. Ottawa rules negative. <strong>Clinical reasoning:</strong> Grade II lateral sprain (ATFL complete + CFL partial). No XR needed (Ottawa SN &gt;98%). Management: PRICE &rarr; early ROM &rarr; peroneal strengthening &rarr; proprioception. 30&ndash;40% develop chronic instability.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 &mdash; Plantar Fasciitis</div>
+<p>55-year-old nurse with 6 weeks right heel pain, worst first steps AM. Tender medial calcaneal tuberosity. BMI 32. Tight gastroc. <strong>Clinical reasoning:</strong> Classic plantar fasciitis. Treatment: plantar fascia-specific stretch, gastroc stretching, intrinsic foot strengthening, low-dye taping, night splint. Spur is consequence, not cause. 90% resolve conservatively.</p>
 </div>
 </div>
-
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to reveal answers.</div>
-
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Which is the most commonly injured ligament in the body, and what is its mechanism of injury in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>ATFL (anterior talofibular ligament).</strong> Injured in plantarflexion + inversion (lateral ankle sprain). It is the weakest lateral ankle ligament and is taut in PF. Positive anterior drawer test. 85% of ankle sprains involve the ATFL.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Individual has a &ldquo;pop,&rdquo; sudden calf pain, palpable gap 4 cm above the heel, and negative Thompson test. Diagnosis?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Achilles tendon rupture.</strong> Thompson test: prone, squeeze calf &mdash; positive = NO PF movement. Palpable gap 2&ndash;6 cm proximal to insertion (watershed zone). Patient CAN still actively PF (other plantarflexors compensate) &mdash; never rule out rupture by active PF alone.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What passes through the tarsal tunnel in this scenario? Use the mnemonic.</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Tom, Dick, ANd Harry.</strong> Posterior to medial malleolus: <strong>T</strong>ibialis posterior, flexor <strong>D</strong>igitorum longus, posterior tibial <strong>A</strong>rtery + tibial <strong>N</strong>erve, flexor <strong>H</strong>allucis longus. Tarsal tunnel syndrome = tibial nerve compression here.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Why is the ankle most stable in dorsiflexion and most vulnerable in plantarflexion in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a">The talar dome is <strong>wider anteriorly</strong> than posteriorly (wedge shape). In DF, the wider anterior talus fills the mortise completely = <strong>close-packed position</strong> (maximum bony congruence). In PF, the narrow posterior talus allows play in the mortise = <strong>loose-packed</strong>. This is why most sprains occur in PF.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Drop foot: what nerve is injured, where is the vulnerable point, and what muscles are lost in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Common peroneal (fibular) nerve</strong> at the <strong>fibular head</strong> (superficial, vulnerable to compression). Loss of deep peroneal &rarr; anterior compartment (tibialis anterior, EHL, EDL) = can&rsquo;t dorsiflex. Loss of superficial peroneal &rarr; lateral compartment (peroneus longus/brevis) = can&rsquo;t evert. Steppage gait + foot slap.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Client with medial heel pain, worst with first steps in the morning. Diagnosis and best evidence treatment?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Plantar fasciitis.</strong> Degeneration at medial calcaneal tuberosity. Best evidence: plantar fascia-specific stretch (cross-leg, pull toes into extension) + gastroc-soleus stretching + intrinsic foot strengthening. Night splints maintain DF. Low-dye taping for immediate relief. 90% resolve conservatively.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Silverskj&ouml;ld test: how does it work and what does it tell you in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a">Tests ankle DF with <strong>knee extended</strong> (both gastroc + soleus on stretch) then <strong>knee flexed</strong> (gastroc relaxed, soleus still stretched). If DF improves with knee flexion = <strong>gastrocnemius tightness</strong> (MC). If DF still limited with knee flexion = <strong>soleus tightness</strong>. Determines which muscle to target in treatment.</div></div>
-  </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to reveal answers.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Which is the most commonly injured ligament in the body, and what is its mechanism of injury in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>ATFL (anterior talofibular ligament).</strong> Injured in plantarflexion + inversion (lateral ankle sprain). It is the weakest lateral ankle ligament and is taut in PF. Positive anterior drawer test. 85% of ankle sprains involve the ATFL.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Individual has a &ldquo;pop,&rdquo; sudden calf pain, palpable gap 4 cm above the heel, and negative Thompson test. Diagnosis?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Achilles tendon rupture.</strong> Thompson test: prone, squeeze calf &mdash; positive = NO PF movement. Palpable gap 2&ndash;6 cm proximal to insertion (watershed zone). Patient CAN still actively PF (other plantarflexors compensate) &mdash; never rule out rupture by active PF alone.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What passes through the tarsal tunnel in this scenario? Use the mnemonic.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Tom, Dick, ANd Harry.</strong> Posterior to medial malleolus: <strong>T</strong>ibialis posterior, flexor <strong>D</strong>igitorum longus, posterior tibial <strong>A</strong>rtery + tibial <strong>N</strong>erve, flexor <strong>H</strong>allucis longus. Tarsal tunnel syndrome = tibial nerve compression here.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Why is the ankle most stable in dorsiflexion and most vulnerable in plantarflexion in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">The talar dome is <strong>wider anteriorly</strong> than posteriorly (wedge shape). In DF, the wider anterior talus fills the mortise completely = <strong>close-packed position</strong> (maximum bony congruence). In PF, the narrow posterior talus allows play in the mortise = <strong>loose-packed</strong>. This is why most sprains occur in PF.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Drop foot: what nerve is injured, where is the vulnerable point, and what muscles are lost in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Common peroneal (fibular) nerve</strong> at the <strong>fibular head</strong> (superficial, vulnerable to compression). Loss of deep peroneal &rarr; anterior compartment (tibialis anterior, EHL, EDL) = can&rsquo;t dorsiflex. Loss of superficial peroneal &rarr; lateral compartment (peroneus longus/brevis) = can&rsquo;t evert. Steppage gait + foot slap.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Client with medial heel pain, worst with first steps in the morning. Diagnosis and best evidence treatment?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Plantar fasciitis.</strong> Degeneration at medial calcaneal tuberosity. Best evidence: plantar fascia-specific stretch (cross-leg, pull toes into extension) + gastroc-soleus stretching + intrinsic foot strengthening. Night splints maintain DF. Low-dye taping for immediate relief. 90% resolve conservatively.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Silverskj&ouml;ld test: how does it work and what does it tell you in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Tests ankle DF with <strong>knee extended</strong> (both gastroc + soleus on stretch) then <strong>knee flexed</strong> (gastroc relaxed, soleus still stretched). If DF improves with knee flexion = <strong>gastrocnemius tightness</strong> (MC). If DF still limited with knee flexion = <strong>soleus tightness</strong>. Determines which muscle to target in treatment.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -395,6 +439,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

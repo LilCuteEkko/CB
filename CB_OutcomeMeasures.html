@@ -1,544 +1,643 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Standardized Outcome Measures</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Standardized Outcome Measures</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" class="active">Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">Clinical Assessment &middot; Standardized Outcome Measures</div>
-  <h1>Standardized <span>Outcome Measures</span></h1>
-  <p>Comprehensive guide to the most commonly used PT standardized tests &mdash; administration protocols, scoring, normative values, MDC/MCID, fall-risk cutoffs, conditions tested, clinical tips, and NPTE-tested content. Every test you need from SNF to outpatient to neuro rehab.</p>
+<div class="hero-tag">Clinical Assessment &middot; Standardized Outcome Measures</div>
+<h1>Standardized <span>Outcome Measures</span></h1>
+<p>Comprehensive guide to the most commonly used PT standardized tests &mdash; administration protocols, scoring, normative values, MDC/MCID, fall-risk cutoffs, conditions tested, clinical tips, and NPTE-tested content. Every test you need from SNF to outpatient to neuro rehab.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('balance',this)">Balance Tests</button>
-  <button onclick="showTab('gait',this)">Gait &amp; Endurance</button>
-  <button onclick="showTab('functional',this)">Functional Mobility</button>
-  <button onclick="showTab('ue',this)">Upper Extremity</button>
-  <button onclick="showTab('spine',this)">Spine &amp; Pain</button>
-  <button onclick="showTab('neuro',this)">Neuro-Specific</button>
-  <button onclick="showTab('quickref',this)">Quick Reference</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('balance',this)">Balance Tests</button>
+<button onclick="showTab('gait',this)">Gait &amp; Endurance</button>
+<button onclick="showTab('functional',this)">Functional Mobility</button>
+<button onclick="showTab('ue',this)">Upper Extremity</button>
+<button onclick="showTab('spine',this)">Spine &amp; Pain</button>
+<button onclick="showTab('neuro',this)">Neuro-Specific</button>
+<button onclick="showTab('quickref',this)">Quick Reference</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== BALANCE TESTS ====== -->
 <div class="tab-panel active" id="tab-balance">
 <div class="container">
-  <div class="section-title">Balance &amp; Fall Risk Assessment</div>
-  <div class="section-sub">Balance testing is the cornerstone of fall prevention programs. The ANPT Core Set recommends BBS, FGA, and ABC for all neuro patients. Know the cutoffs &mdash; they drive your plan of care and justify skilled services.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Berg Balance Scale (BBS)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">What It Tests</div><p>Static and dynamic balance through 14 functional tasks of increasing difficulty. Assesses ability to maintain balance during sitting, standing, transferring, reaching, turning, and single-leg stance. The gold standard balance assessment in PT.</p></div>
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Scoring</td><td>14 items, each scored 0&ndash;4. <strong>Total: 0&ndash;56 points.</strong> Higher = better balance</td></tr>
-        <tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&le;45/56 = increased fall risk.</strong> 41&ndash;56 = low risk (independent). 21&ndash;40 = medium risk (assist needed). 0&ndash;20 = high risk (wheelchair level)</td></tr>
-        <tr><td class="hi">MDC</td><td>Stroke: 4.6&ndash;7 points. Older adults: 3.3&ndash;5 points. PD: 5 points</td></tr>
-        <tr><td class="hi">MCID</td><td>Stroke: 4&ndash;7 points. MS: 3 points. Older adults: 3&ndash;4 points</td></tr>
-        <tr><td class="hi">Time</td><td>15&ndash;20 minutes</td></tr>
-        <tr><td class="hi">Equipment</td><td>Stopwatch, ruler, step/stool, 2 chairs (one with arms, one without)</td></tr>
-        <tr><td class="hi">Populations</td><td>Stroke, PD, MS, TBI, SCI, older adults, vestibular disorders, hip fracture</td></tr>
-        <tr><td class="hi">Reliability</td><td>Excellent inter-rater (ICC 0.95&ndash;0.98) and intra-rater (ICC 0.97)</td></tr>
-      </tbody></table>
-      <div class="bl-strip gold"><div class="bl-label">14 Items (In Order)</div><p>(1) Sitting to standing (2) Standing unsupported (3) Sitting unsupported (4) Standing to sitting (5) Transfers (6) Standing with eyes closed (7) Standing with feet together (8) Reaching forward with outstretched arm (9) Retrieving object from floor (10) Turning to look behind (11) Turning 360&deg; (12) Alternating foot on step (13) Standing with one foot in front (14) Standing on one foot</p></div>
-      <div class="bl-strip red"><div class="bl-label">Clinical Tips</div><p><strong>Ceiling effect:</strong> high-functioning patients can score 56/56 and still fall &mdash; consider the Mini-BESTest or FGA for these patients.<br><strong>1-point change per item</strong> = clinically meaningful within that task.<br><strong>Each 1-point drop below 56</strong> is associated with 3&ndash;4% increase in fall risk. Use same chair height and testing conditions each time for reliable re-testing.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Functional Reach Test (FRT)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">What It Tests</div><p>Dynamic standing balance and limits of stability in the anterior direction. Measures the maximum distance a person can reach forward beyond arm&rsquo;s length while maintaining a fixed base of support (feet flat, no stepping).</p></div>
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Protocol</td><td>Patient stands with feet shoulder-width apart, dominant arm raised to 90&deg; shoulder flexion, fist closed. Ruler/yardstick mounted on wall at shoulder height. Record position of 3rd metacarpal. Patient reaches forward as far as possible without stepping. Record final position. <strong>Score = difference in cm/inches</strong>. Best of 3 trials</td></tr>
-        <tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&le;6 inches (15 cm) = significant fall risk.</strong> 6&ndash;10 inches = moderate risk. &gt;10 inches = low risk. <strong>Unable to reach or needs to step = unable to perform</strong></td></tr>
-        <tr><td class="hi">Norms</td><td>Males 20&ndash;40: 16.7&Prime;. Males 41&ndash;69: 14.9&Prime;. Males 70&ndash;87: 13.2&Prime;. Females 20&ndash;40: 14.6&Prime;. Females 41&ndash;69: 13.8&Prime;. Females 70&ndash;87: 10.5&Prime;</td></tr>
-        <tr><td class="hi">MDC</td><td>Older adults: ~3.3 cm (1.3&Prime;). Stroke: 4.6 cm</td></tr>
-        <tr><td class="hi">Time</td><td>&lt;3 minutes</td></tr>
-        <tr><td class="hi">Populations</td><td>Older adults, stroke, PD, vestibular, hip fracture, general orthopedic</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Clinical Tips</div><p>Ensure patient does NOT step, pivot, or use external support. Watch for <strong>trunk rotation substitution</strong> or hip hiking &mdash; these inflate the score. The modified FRT can be done seated for wheelchair-bound patients. Correlates with center of pressure excursion during standing. Quick screen for anterior limits of stability.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Activity-Specific Balance Confidence Scale (ABC)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">What It Tests</div><p>Self-reported confidence in maintaining balance during 16 specific daily activities. Measures <strong>balance self-efficacy</strong> &mdash; the patient&rsquo;s perceived confidence, not actual balance ability. Low confidence predicts activity avoidance and future falls.</p></div>
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Scoring</td><td>16 items, each rated 0&ndash;100% confidence. <strong>Average all 16 = total score (0&ndash;100%)</strong></td></tr>
-        <tr><td class="warn">Cutoffs</td><td><strong>&lt;67% = fall risk</strong> in older adults. &lt;50% = low level of functioning (may need AD). 50&ndash;80% = moderate. &gt;80% = high functioning</td></tr>
-        <tr><td class="hi">MDC</td><td>Stroke: 12&ndash;13 points. PD: 11 points. Older adults: 10&ndash;13 points</td></tr>
-        <tr><td class="hi">MCID</td><td>Vestibular: 11 points. Older adults: varies 10&ndash;15 points</td></tr>
-        <tr><td class="hi">Time</td><td>5&ndash;10 minutes (self-report questionnaire)</td></tr>
-        <tr><td class="hi">Populations</td><td>Older adults, stroke, PD, MS, vestibular, TBI, lower extremity amputation</td></tr>
-      </tbody></table>
-      <div class="bl-strip gold"><div class="bl-label">Sample Items</div><p>Walking around the house, going up/down stairs, reaching on tiptoes, walking in a crowd, walking on icy sidewalks, stepping on/off an escalator. Activities range from easy (walking in house) to challenging (icy surfaces, escalators).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Tinetti Performance-Oriented Mobility Assessment (POMA)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>Balance AND gait in a single assessment. Two sections: Balance (16 points) + Gait (12 points)</td></tr>
-        <tr><td class="hi">Scoring</td><td><strong>Total: 0&ndash;28 points.</strong> Balance section: 0&ndash;16. Gait section: 0&ndash;12. Higher = better</td></tr>
-        <tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&le;18 = high fall risk.</strong> 19&ndash;23 = moderate risk. &ge;24 = low risk</td></tr>
-        <tr><td class="hi">Time</td><td>10&ndash;15 minutes</td></tr>
-        <tr><td class="hi">Populations</td><td>Older adults (originally designed for nursing home residents), PD, stroke</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Balance &amp; Fall Risk Assessment</div>
+<div class="section-sub">Balance testing is the cornerstone of fall prevention programs. The ANPT Core Set recommends BBS, FGA, and ABC for all neuro patients. Know the cutoffs &mdash; they drive your plan of care and justify skilled services.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Berg Balance Scale (BBS)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">What It Tests</div>
+<p>Static and dynamic balance through 14 functional tasks of increasing difficulty. Assesses ability to maintain balance during sitting, standing, transferring, reaching, turning, and single-leg stance. The gold standard balance assessment in PT.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Scoring</td><td>14 items, each scored 0&ndash;4. <strong>Total: 0&ndash;56 points.</strong> Higher = better balance</td></tr>
+<tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&le;45/56 = increased fall risk.</strong> 41&ndash;56 = low risk (independent). 21&ndash;40 = medium risk (assist needed). 0&ndash;20 = high risk (wheelchair level)</td></tr>
+<tr><td class="hi">MDC</td><td>Stroke: 4.6&ndash;7 points. Older adults: 3.3&ndash;5 points. PD: 5 points</td></tr>
+<tr><td class="hi">MCID</td><td>Stroke: 4&ndash;7 points. MS: 3 points. Older adults: 3&ndash;4 points</td></tr>
+<tr><td class="hi">Time</td><td>15&ndash;20 minutes</td></tr>
+<tr><td class="hi">Equipment</td><td>Stopwatch, ruler, step/stool, 2 chairs (one with arms, one without)</td></tr>
+<tr><td class="hi">Populations</td><td>Stroke, PD, MS, TBI, SCI, older adults, vestibular disorders, hip fracture</td></tr>
+<tr><td class="hi">Reliability</td><td>Excellent inter-rater (ICC 0.95&ndash;0.98) and intra-rater (ICC 0.97)</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">14 Items (In Order)</div>
+<p>(1) Sitting to standing (2) Standing unsupported (3) Sitting unsupported (4) Standing to sitting (5) Transfers (6) Standing with eyes closed (7) Standing with feet together (8) Reaching forward with outstretched arm (9) Retrieving object from floor (10) Turning to look behind (11) Turning 360&deg; (12) Alternating foot on step (13) Standing with one foot in front (14) Standing on one foot</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Tips</div>
+<p><strong>Ceiling effect:</strong> high-functioning patients can score 56/56 and still fall &mdash; consider the Mini-BESTest or FGA for these patients.<br><strong>1-point change per item</strong> = clinically meaningful within that task.<br><strong>Each 1-point drop below 56</strong> is associated with 3&ndash;4% increase in fall risk. Use same chair height and testing conditions each time for reliable re-testing.</p>
 </div>
 </div>
-
-<!-- ====== GAIT & ENDURANCE ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Functional Reach Test (FRT)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">What It Tests</div>
+<p>Dynamic standing balance and limits of stability in the anterior direction. Measures the maximum distance a person can reach forward beyond arm&rsquo;s length while maintaining a fixed base of support (feet flat, no stepping).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Protocol</td><td>Patient stands with feet shoulder-width apart, dominant arm raised to 90&deg; shoulder flexion, fist closed. Ruler/yardstick mounted on wall at shoulder height. Record position of 3rd metacarpal. Patient reaches forward as far as possible without stepping. Record final position. <strong>Score = difference in cm/inches</strong>. Best of 3 trials</td></tr>
+<tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&le;6 inches (15 cm) = significant fall risk.</strong> 6&ndash;10 inches = moderate risk. &gt;10 inches = low risk. <strong>Unable to reach or needs to step = unable to perform</strong></td></tr>
+<tr><td class="hi">Norms</td><td>Males 20&ndash;40: 16.7&Prime;. Males 41&ndash;69: 14.9&Prime;. Males 70&ndash;87: 13.2&Prime;. Females 20&ndash;40: 14.6&Prime;. Females 41&ndash;69: 13.8&Prime;. Females 70&ndash;87: 10.5&Prime;</td></tr>
+<tr><td class="hi">MDC</td><td>Older adults: ~3.3 cm (1.3&Prime;). Stroke: 4.6 cm</td></tr>
+<tr><td class="hi">Time</td><td>&lt;3 minutes</td></tr>
+<tr><td class="hi">Populations</td><td>Older adults, stroke, PD, vestibular, hip fracture, general orthopedic</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Tips</div>
+<p>Ensure patient does NOT step, pivot, or use external support. Watch for <strong>trunk rotation substitution</strong> or hip hiking &mdash; these inflate the score. The modified FRT can be done seated for wheelchair-bound patients. Correlates with center of pressure excursion during standing. Quick screen for anterior limits of stability.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Activity-Specific Balance Confidence Scale (ABC)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">What It Tests</div>
+<p>Self-reported confidence in maintaining balance during 16 specific daily activities. Measures <strong>balance self-efficacy</strong> &mdash; the patient&rsquo;s perceived confidence, not actual balance ability. Low confidence predicts activity avoidance and future falls.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Scoring</td><td>16 items, each rated 0&ndash;100% confidence. <strong>Average all 16 = total score (0&ndash;100%)</strong></td></tr>
+<tr><td class="warn">Cutoffs</td><td><strong>&lt;67% = fall risk</strong> in older adults. &lt;50% = low level of functioning (may need AD). 50&ndash;80% = moderate. &gt;80% = high functioning</td></tr>
+<tr><td class="hi">MDC</td><td>Stroke: 12&ndash;13 points. PD: 11 points. Older adults: 10&ndash;13 points</td></tr>
+<tr><td class="hi">MCID</td><td>Vestibular: 11 points. Older adults: varies 10&ndash;15 points</td></tr>
+<tr><td class="hi">Time</td><td>5&ndash;10 minutes (self-report questionnaire)</td></tr>
+<tr><td class="hi">Populations</td><td>Older adults, stroke, PD, MS, vestibular, TBI, lower extremity amputation</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Sample Items</div>
+<p>Walking around the house, going up/down stairs, reaching on tiptoes, walking in a crowd, walking on icy sidewalks, stepping on/off an escalator. Activities range from easy (walking in house) to challenging (icy surfaces, escalators).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Tinetti Performance-Oriented Mobility Assessment (POMA)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>Balance AND gait in a single assessment. Two sections: Balance (16 points) + Gait (12 points)</td></tr>
+<tr><td class="hi">Scoring</td><td><strong>Total: 0&ndash;28 points.</strong> Balance section: 0&ndash;16. Gait section: 0&ndash;12. Higher = better</td></tr>
+<tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&le;18 = high fall risk.</strong> 19&ndash;23 = moderate risk. &ge;24 = low risk</td></tr>
+<tr><td class="hi">Time</td><td>10&ndash;15 minutes</td></tr>
+<tr><td class="hi">Populations</td><td>Older adults (originally designed for nursing home residents), PD, stroke</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-gait">
 <div class="container">
-  <div class="section-title">Gait &amp; Endurance Tests</div>
-  <div class="section-sub">Gait speed is the &ldquo;6th vital sign&rdquo; in geriatrics. The 6MWT is the standard for functional endurance. Both are ANPT Core Set measures.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>10-Meter Walk Test (10MWT) &mdash; Gait Speed</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">What It Tests</div><p>Walking speed over a short distance. Measures comfortable and/or fast gait speed. <strong>Gait speed is the single best predictor of functional status in older adults.</strong></p></div>
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Protocol</td><td>14-meter walkway: 2m acceleration + <strong>10m timed</strong> + 2m deceleration. Time the middle 10 meters. AD permitted. Test both comfortable and fast speed. <strong>Speed = 10m &divide; time (sec) = m/s</strong></td></tr>
-        <tr><td class="warn">Key Cutoffs</td><td><strong>&lt;0.4 m/s = household ambulator.</strong> 0.4&ndash;0.8 m/s = limited community ambulator. <strong>&gt;0.8 m/s = community ambulator.</strong> &gt;1.0 m/s = full community ambulator. &lt;0.6 m/s = increased fall risk and mortality</td></tr>
-        <tr><td class="hi">Norms</td><td>Healthy 60&ndash;69: ~1.3&ndash;1.4 m/s. 70&ndash;79: ~1.1&ndash;1.3 m/s. 80+: ~0.9&ndash;1.1 m/s</td></tr>
-        <tr><td class="hi">MDC</td><td>Stroke (acute): 0.16 m/s. Stroke (chronic): 0.06 m/s. PD: 0.18 m/s. Older adults: 0.05 m/s</td></tr>
-        <tr><td class="hi">MCID</td><td><strong>0.10&ndash;0.16 m/s</strong> (small meaningful change) across most populations</td></tr>
-        <tr><td class="hi">Time</td><td>&lt;5 minutes</td></tr>
-        <tr><td class="hi">Populations</td><td>Stroke, PD, MS, SCI, TBI, older adults, hip fracture, total joint, cardiac/pulmonary rehab</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Clinical Tips</div><p>Gait speed &lt;1.0 m/s is required to safely cross a standard intersection (walk signal timing). <strong>0.1 m/s improvement</strong> is associated with a meaningful reduction in mortality risk and disability. Always report with the assistive device used. Record both comfortable and fast speed &mdash; the difference tells you about reserve capacity.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>6-Minute Walk Test (6MWT)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">What It Tests</div><p>Submaximal exercise capacity and functional endurance. Measures <strong>total distance walked in 6 minutes</strong> on a flat, hard surface. Reflects ability to perform daily activities requiring sustained walking.</p></div>
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Protocol</td><td>30-meter (100-ft) hallway with cones at each end. Patient walks at own pace for 6 minutes. Rest breaks allowed (timer continues). Standardized encouragement at each minute (&ldquo;You are doing well, you have X minutes left&rdquo;). Record total distance in meters. Record HR, BP, SpO2, RPE before + after</td></tr>
-        <tr><td class="warn">Key Cutoffs</td><td><strong>&lt;300m = limited community ambulation.</strong> &lt;200m = severe functional limitation (consider wheelchair for community). Normal healthy: 400&ndash;700m depending on age/sex. <strong>&lt;350m post-cardiac surgery = poor prognosis</strong></td></tr>
-        <tr><td class="hi">Norms</td><td>Males 60&ndash;69: ~572m. 70&ndash;79: ~527m. 80+: ~417m. Females 60&ndash;69: ~538m. 70&ndash;79: ~471m. 80+: ~392m</td></tr>
-        <tr><td class="hi">MDC</td><td>COPD: 54&ndash;80m. Heart failure: 36m. Stroke: 34&ndash;61m. Older adults: 20&ndash;50m</td></tr>
-        <tr><td class="hi">MCID</td><td>COPD: 25&ndash;33m. Heart failure: 32m. Stroke: 34.4m. Older adults: 20&ndash;50m</td></tr>
-        <tr><td class="hi">Time</td><td>6 minutes test + setup/vitals = ~15 min total</td></tr>
-        <tr><td class="hi">Populations</td><td>Cardiac, pulmonary (COPD), stroke, MS, PD, SCI, post-surgical, heart failure, PAD</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Precautions &amp; Tips</div><p><strong>Stop if:</strong> chest pain, intolerable dyspnea, leg cramps, staggering, diaphoresis, pale/ashen appearance, SpO2 &lt;88%. Rest breaks allowed but <strong>timer does NOT stop</strong>. Do NOT walk with the patient or set pace. Use standardized encouragement phrases only. Record number of rest breaks and reasons. Testing learning effect: perform 2 tests &ge;30 min apart, use the better distance.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Dynamic Gait Index (DGI) / Functional Gait Assessment (FGA)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Test</th><th>Items</th><th>Scoring</th><th>Fall Risk Cutoff</th><th>Tests</th></tr></thead><tbody>
-        <tr><td class="warn">DGI</td><td>8 items</td><td>0&ndash;24 (each item 0&ndash;3)</td><td><strong>&le;19/24 = fall risk</strong></td><td>Gait on level surface, gait with speed changes, head turns horizontal/vertical, gait over/around obstacles, pivot turn, stairs</td></tr>
-        <tr><td class="hi">FGA</td><td>10 items</td><td>0&ndash;30 (each item 0&ndash;3)</td><td><strong>&le;22/30 = fall risk</strong> in older adults</td><td>Same as DGI + narrow BOS walking, backward walking, eyes closed walking. Developed to address DGI ceiling effect</td></tr>
-      </tbody></table>
-      <div class="bl-strip gold"><div class="bl-label">DGI vs FGA</div><p>FGA was developed because the DGI has a <strong>ceiling effect</strong> in higher-functioning patients. FGA adds more challenging tasks (narrow BOS, backward walking, eyes closed) and is now the ANPT Core Set recommended measure over the DGI. Use the FGA for community-dwelling adults; DGI remains useful for lower-functioning patients.</p></div>
-    </div>
-  </div>
+<div class="section-title">Gait &amp; Endurance Tests</div>
+<div class="section-sub">Gait speed is the &ldquo;6th vital sign&rdquo; in geriatrics. The 6MWT is the standard for functional endurance. Both are ANPT Core Set measures.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>10-Meter Walk Test (10MWT) &mdash; Gait Speed</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">What It Tests</div>
+<p>Walking speed over a short distance. Measures comfortable and/or fast gait speed. <strong>Gait speed is the single best predictor of functional status in older adults.</strong></p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Protocol</td><td>14-meter walkway: 2m acceleration + <strong>10m timed</strong> + 2m deceleration. Time the middle 10 meters. AD permitted. Test both comfortable and fast speed. <strong>Speed = 10m &divide; time (sec) = m/s</strong></td></tr>
+<tr><td class="warn">Key Cutoffs</td><td><strong>&lt;0.4 m/s = household ambulator.</strong> 0.4&ndash;0.8 m/s = limited community ambulator. <strong>&gt;0.8 m/s = community ambulator.</strong> &gt;1.0 m/s = full community ambulator. &lt;0.6 m/s = increased fall risk and mortality</td></tr>
+<tr><td class="hi">Norms</td><td>Healthy 60&ndash;69: ~1.3&ndash;1.4 m/s. 70&ndash;79: ~1.1&ndash;1.3 m/s. 80+: ~0.9&ndash;1.1 m/s</td></tr>
+<tr><td class="hi">MDC</td><td>Stroke (acute): 0.16 m/s. Stroke (chronic): 0.06 m/s. PD: 0.18 m/s. Older adults: 0.05 m/s</td></tr>
+<tr><td class="hi">MCID</td><td><strong>0.10&ndash;0.16 m/s</strong> (small meaningful change) across most populations</td></tr>
+<tr><td class="hi">Time</td><td>&lt;5 minutes</td></tr>
+<tr><td class="hi">Populations</td><td>Stroke, PD, MS, SCI, TBI, older adults, hip fracture, total joint, cardiac/pulmonary rehab</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Tips</div>
+<p>Gait speed &lt;1.0 m/s is required to safely cross a standard intersection (walk signal timing). <strong>0.1 m/s improvement</strong> is associated with a meaningful reduction in mortality risk and disability. Always report with the assistive device used. Record both comfortable and fast speed &mdash; the difference tells you about reserve capacity.</p>
 </div>
 </div>
-
-<!-- ====== FUNCTIONAL MOBILITY ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>6-Minute Walk Test (6MWT)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">What It Tests</div>
+<p>Submaximal exercise capacity and functional endurance. Measures <strong>total distance walked in 6 minutes</strong> on a flat, hard surface. Reflects ability to perform daily activities requiring sustained walking.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Protocol</td><td>30-meter (100-ft) hallway with cones at each end. Patient walks at own pace for 6 minutes. Rest breaks allowed (timer continues). Standardized encouragement at each minute (&ldquo;You are doing well, you have X minutes left&rdquo;). Record total distance in meters. Record HR, BP, SpO2, RPE before + after</td></tr>
+<tr><td class="warn">Key Cutoffs</td><td><strong>&lt;300m = limited community ambulation.</strong> &lt;200m = severe functional limitation (consider wheelchair for community). Normal healthy: 400&ndash;700m depending on age/sex. <strong>&lt;350m post-cardiac surgery = poor prognosis</strong></td></tr>
+<tr><td class="hi">Norms</td><td>Males 60&ndash;69: ~572m. 70&ndash;79: ~527m. 80+: ~417m. Females 60&ndash;69: ~538m. 70&ndash;79: ~471m. 80+: ~392m</td></tr>
+<tr><td class="hi">MDC</td><td>COPD: 54&ndash;80m. Heart failure: 36m. Stroke: 34&ndash;61m. Older adults: 20&ndash;50m</td></tr>
+<tr><td class="hi">MCID</td><td>COPD: 25&ndash;33m. Heart failure: 32m. Stroke: 34.4m. Older adults: 20&ndash;50m</td></tr>
+<tr><td class="hi">Time</td><td>6 minutes test + setup/vitals = ~15 min total</td></tr>
+<tr><td class="hi">Populations</td><td>Cardiac, pulmonary (COPD), stroke, MS, PD, SCI, post-surgical, heart failure, PAD</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Precautions &amp; Tips</div>
+<p><strong>Stop if:</strong> chest pain, intolerable dyspnea, leg cramps, staggering, diaphoresis, pale/ashen appearance, SpO2 &lt;88%. Rest breaks allowed but <strong>timer does NOT stop</strong>. Do NOT walk with the patient or set pace. Use standardized encouragement phrases only. Record number of rest breaks and reasons. Testing learning effect: perform 2 tests &ge;30 min apart, use the better distance.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Dynamic Gait Index (DGI) / Functional Gait Assessment (FGA)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Test</th><th>Items</th><th>Scoring</th><th>Fall Risk Cutoff</th><th>Tests</th></tr></thead><tbody>
+<tr><td class="warn">DGI</td><td>8 items</td><td>0&ndash;24 (each item 0&ndash;3)</td><td><strong>&le;19/24 = fall risk</strong></td><td>Gait on level surface, gait with speed changes, head turns horizontal/vertical, gait over/around obstacles, pivot turn, stairs</td></tr>
+<tr><td class="hi">FGA</td><td>10 items</td><td>0&ndash;30 (each item 0&ndash;3)</td><td><strong>&le;22/30 = fall risk</strong> in older adults</td><td>Same as DGI + narrow BOS walking, backward walking, eyes closed walking. Developed to address DGI ceiling effect</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">DGI vs FGA</div>
+<p>FGA was developed because the DGI has a <strong>ceiling effect</strong> in higher-functioning patients. FGA adds more challenging tasks (narrow BOS, backward walking, eyes closed) and is now the ANPT Core Set recommended measure over the DGI. Use the FGA for community-dwelling adults; DGI remains useful for lower-functioning patients.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-functional">
 <div class="container">
-  <div class="section-title">Functional Mobility Tests</div>
-  <div class="section-sub">These tests assess the ability to perform transfers, sit-to-stand, and basic mobility tasks. Essential for SNF, acute care, and home health practice.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Timed Up and Go (TUG)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">What It Tests</div><p>Functional mobility, balance, and fall risk in a single timed task. Combines sit-to-stand, walking, turning, and stand-to-sit. The most widely used quick mobility screen in PT.</p></div>
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Protocol</td><td>Standard armchair. Cone/mark at <strong>3 meters (10 feet)</strong>. Patient starts seated, back against chair. On &ldquo;Go&rdquo;: stand up, walk to cone at comfortable safe pace, turn around, walk back, sit down. Timing starts on &ldquo;Go,&rdquo; stops when buttocks touch chair. AD permitted. Record device used</td></tr>
-        <tr><td class="warn">Cutoffs</td><td><strong>&le;10 sec = normal mobility.</strong> 10&ndash;12 sec = emerging risk. <strong>&gt;12 sec = increased fall risk.</strong> &gt;14 sec = high fall risk per CDC STEADI. &gt;30 sec = severe mobility impairment, likely needs AD</td></tr>
-        <tr><td class="hi">MDC</td><td>Stroke: 2.9 sec. PD: 3.5 sec. Hip fracture: 2.4 sec. Older adults: 2.1&ndash;4.1 sec</td></tr>
-        <tr><td class="hi">MCID</td><td>Frail older adults: 0.8&ndash;1.4 sec. Stroke: 2.9 sec. Hip OA: 1.1 sec</td></tr>
-        <tr><td class="hi">Time</td><td>&lt;3 minutes</td></tr>
-        <tr><td class="hi">Populations</td><td>Older adults, stroke, PD, MS, hip fracture, total joint, vestibular, general rehab</td></tr>
-      </tbody></table>
-      <div class="bl-strip gold"><div class="bl-label">Variations</div><p><strong>TUG-Cognitive (TUG-C):</strong> perform TUG while counting backwards by 3s from a random number. Dual-task cost &gt;20% increase in time suggests attention-demanding balance and fall risk in real-world environments. <strong>TUG-Manual:</strong> carry a cup of water during TUG.</p></div>
-      <div class="bl-strip red"><div class="bl-label">Clinical Tips</div><p>Watch the <strong>transitions</strong> &mdash; the stand-up and sit-down reveal the most. Observe: use of arms to push up (LE weakness), hesitation at turn (vestibular or fear of falling), wide BOS, shuffling. The turn is the most balance-challenging part &mdash; stepping turn vs pivot turn matters. Always record the same chair and AD for re-test.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>5 Times Sit-to-Stand (5TSTS)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">What It Tests</div><p>Functional lower extremity strength, dynamic balance, and transfer ability. Measures the time to complete 5 full sit-to-stand cycles. Part of the ANPT Core Set of outcome measures.</p></div>
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Protocol</td><td>Standard chair (43&ndash;45 cm seat height). Arms crossed over chest (stroke patients may have impaired arm at side or in sling). Chair NOT against a wall. Instructions: &ldquo;Stand up and sit down 5 times as quickly as you can when I say Go.&rdquo; Timing starts on &ldquo;Go,&rdquo; stops when buttocks touch seat after 5th stand. <strong>Patient must fully stand and fully sit each time</strong></td></tr>
-        <tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&gt;12 sec = increased fall risk.</strong> &gt;15 sec = recurrent falls risk in community-dwelling adults &ge;65. Unable to complete = significant functional impairment</td></tr>
-        <tr><td class="hi">Norms (Age-Matched)</td><td>60&ndash;69 years: <strong>11.4 sec.</strong> 70&ndash;79 years: <strong>12.6 sec.</strong> 80&ndash;89 years: <strong>14.8 sec.</strong> 14&ndash;19 years: 6.5 sec</td></tr>
-        <tr><td class="hi">MDC</td><td><strong>3.6&ndash;4.2 sec</strong> (older adults). 2.5 sec (older females)</td></tr>
-        <tr><td class="hi">MCID</td><td><strong>2.3 sec</strong> (general). Stroke limited community ambulators: ~3 sec</td></tr>
-        <tr><td class="hi">Reliability</td><td>Intra-rater ICC 0.91&ndash;0.93. Test-retest ICC 0.99. Excellent reliability</td></tr>
-        <tr><td class="hi">Time</td><td>&lt;2 minutes</td></tr>
-        <tr><td class="hi">Populations</td><td>Older adults, stroke, PD, MS, hip/knee OA, post-surgical (TKA/THA), SCI, LBP, vestibular</td></tr>
-      </tbody></table>
-      <div class="bl-strip red"><div class="bl-label">Clinical Tips</div><p><strong>Observe quality, not just time:</strong> asymmetric weight shift (leans to one side), excessive trunk flexion momentum (&ldquo;rocking&rdquo;), use of hands on thighs (&ldquo;climbing up legs&rdquo; = quad weakness), feet placement asymmetry (stroke patients place uninvolved foot forward). <strong>Correlates strongly</strong> with quad strength (r = -0.75 to -0.83), TUG (r = 0.64), and fall history. Excellent for tracking strength gains in post-TKA/THA patients.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>30-Second Sit-to-Stand (30s STS)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>Lower body strength and endurance. Count number of full sit-to-stand cycles in 30 seconds. Part of the Senior Fitness Test battery</td></tr>
-        <tr><td class="hi">Protocol</td><td>Arms crossed on chest. Count full stands in 30 sec. If more than halfway up when timer stops, count it</td></tr>
-        <tr><td class="warn">Norms</td><td>Males 60&ndash;64: 14&ndash;19 reps. 65&ndash;69: 12&ndash;18. 70&ndash;74: 12&ndash;17. 75&ndash;79: 11&ndash;17. 80&ndash;84: 10&ndash;15. 85&ndash;89: 8&ndash;14. 90&ndash;94: 7&ndash;12. Females 60&ndash;64: 12&ndash;17. 65&ndash;69: 11&ndash;16. 70&ndash;74: 10&ndash;15. 75&ndash;79: 10&ndash;15. 80&ndash;84: 9&ndash;14. 85&ndash;89: 8&ndash;13. 90&ndash;94: 4&ndash;11</td></tr>
-        <tr><td class="hi">When to Use</td><td>Alternative to 5TSTS when you want endurance + strength combined. Better for higher-functioning community-dwelling adults</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Functional Mobility Tests</div>
+<div class="section-sub">These tests assess the ability to perform transfers, sit-to-stand, and basic mobility tasks. Essential for SNF, acute care, and home health practice.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Timed Up and Go (TUG)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">What It Tests</div>
+<p>Functional mobility, balance, and fall risk in a single timed task. Combines sit-to-stand, walking, turning, and stand-to-sit. The most widely used quick mobility screen in PT.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Protocol</td><td>Standard armchair. Cone/mark at <strong>3 meters (10 feet)</strong>. Patient starts seated, back against chair. On &ldquo;Go&rdquo;: stand up, walk to cone at comfortable safe pace, turn around, walk back, sit down. Timing starts on &ldquo;Go,&rdquo; stops when buttocks touch chair. AD permitted. Record device used</td></tr>
+<tr><td class="warn">Cutoffs</td><td><strong>&le;10 sec = normal mobility.</strong> 10&ndash;12 sec = emerging risk. <strong>&gt;12 sec = increased fall risk.</strong> &gt;14 sec = high fall risk per CDC STEADI. &gt;30 sec = severe mobility impairment, likely needs AD</td></tr>
+<tr><td class="hi">MDC</td><td>Stroke: 2.9 sec. PD: 3.5 sec. Hip fracture: 2.4 sec. Older adults: 2.1&ndash;4.1 sec</td></tr>
+<tr><td class="hi">MCID</td><td>Frail older adults: 0.8&ndash;1.4 sec. Stroke: 2.9 sec. Hip OA: 1.1 sec</td></tr>
+<tr><td class="hi">Time</td><td>&lt;3 minutes</td></tr>
+<tr><td class="hi">Populations</td><td>Older adults, stroke, PD, MS, hip fracture, total joint, vestibular, general rehab</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Variations</div>
+<p><strong>TUG-Cognitive (TUG-C):</strong> perform TUG while counting backwards by 3s from a random number. Dual-task cost &gt;20% increase in time suggests attention-demanding balance and fall risk in real-world environments. <strong>TUG-Manual:</strong> carry a cup of water during TUG.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Tips</div>
+<p>Watch the <strong>transitions</strong> &mdash; the stand-up and sit-down reveal the most. Observe: use of arms to push up (LE weakness), hesitation at turn (vestibular or fear of falling), wide BOS, shuffling. The turn is the most balance-challenging part &mdash; stepping turn vs pivot turn matters. Always record the same chair and AD for re-test.</p>
 </div>
 </div>
-
-<!-- ====== UPPER EXTREMITY ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>5 Times Sit-to-Stand (5TSTS)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">What It Tests</div>
+<p>Functional lower extremity strength, dynamic balance, and transfer ability. Measures the time to complete 5 full sit-to-stand cycles. Part of the ANPT Core Set of outcome measures.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Protocol</td><td>Standard chair (43&ndash;45 cm seat height). Arms crossed over chest (stroke patients may have impaired arm at side or in sling). Chair NOT against a wall. Instructions: &ldquo;Stand up and sit down 5 times as quickly as you can when I say Go.&rdquo; Timing starts on &ldquo;Go,&rdquo; stops when buttocks touch seat after 5th stand. <strong>Patient must fully stand and fully sit each time</strong></td></tr>
+<tr><td class="warn">Fall Risk Cutoffs</td><td><strong>&gt;12 sec = increased fall risk.</strong> &gt;15 sec = recurrent falls risk in community-dwelling adults &ge;65. Unable to complete = significant functional impairment</td></tr>
+<tr><td class="hi">Norms (Age-Matched)</td><td>60&ndash;69 years: <strong>11.4 sec.</strong> 70&ndash;79 years: <strong>12.6 sec.</strong> 80&ndash;89 years: <strong>14.8 sec.</strong> 14&ndash;19 years: 6.5 sec</td></tr>
+<tr><td class="hi">MDC</td><td><strong>3.6&ndash;4.2 sec</strong> (older adults). 2.5 sec (older females)</td></tr>
+<tr><td class="hi">MCID</td><td><strong>2.3 sec</strong> (general). Stroke limited community ambulators: ~3 sec</td></tr>
+<tr><td class="hi">Reliability</td><td>Intra-rater ICC 0.91&ndash;0.93. Test-retest ICC 0.99. Excellent reliability</td></tr>
+<tr><td class="hi">Time</td><td>&lt;2 minutes</td></tr>
+<tr><td class="hi">Populations</td><td>Older adults, stroke, PD, MS, hip/knee OA, post-surgical (TKA/THA), SCI, LBP, vestibular</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Clinical Tips</div>
+<p><strong>Observe quality, not just time:</strong> asymmetric weight shift (leans to one side), excessive trunk flexion momentum (&ldquo;rocking&rdquo;), use of hands on thighs (&ldquo;climbing up legs&rdquo; = quad weakness), feet placement asymmetry (stroke patients place uninvolved foot forward). <strong>Correlates strongly</strong> with quad strength (r = -0.75 to -0.83), TUG (r = 0.64), and fall history. Excellent for tracking strength gains in post-TKA/THA patients.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>30-Second Sit-to-Stand (30s STS)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>Lower body strength and endurance. Count number of full sit-to-stand cycles in 30 seconds. Part of the Senior Fitness Test battery</td></tr>
+<tr><td class="hi">Protocol</td><td>Arms crossed on chest. Count full stands in 30 sec. If more than halfway up when timer stops, count it</td></tr>
+<tr><td class="warn">Norms</td><td>Males 60&ndash;64: 14&ndash;19 reps. 65&ndash;69: 12&ndash;18. 70&ndash;74: 12&ndash;17. 75&ndash;79: 11&ndash;17. 80&ndash;84: 10&ndash;15. 85&ndash;89: 8&ndash;14. 90&ndash;94: 7&ndash;12. Females 60&ndash;64: 12&ndash;17. 65&ndash;69: 11&ndash;16. 70&ndash;74: 10&ndash;15. 75&ndash;79: 10&ndash;15. 80&ndash;84: 9&ndash;14. 85&ndash;89: 8&ndash;13. 90&ndash;94: 4&ndash;11</td></tr>
+<tr><td class="hi">When to Use</td><td>Alternative to 5TSTS when you want endurance + strength combined. Better for higher-functioning community-dwelling adults</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-ue">
 <div class="container">
-  <div class="section-title">Upper Extremity Outcome Measures</div>
-  <div class="section-sub">Patient-reported outcome measures for upper extremity function. Essential for outpatient ortho, hand therapy, and post-surgical tracking.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>DASH (Disabilities of the Arm, Shoulder and Hand)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>Self-reported UE disability and symptoms. 30 items covering physical function and symptoms in any or all joints of the UE</td></tr>
-        <tr><td class="hi">Scoring</td><td>0&ndash;100 (0 = no disability, 100 = most severe). Optional work and sports/performing arts modules</td></tr>
-        <tr><td class="hi">MDC</td><td>Shoulder: 10.7&ndash;12.8 points. Mixed UE: 10.8 points</td></tr>
-        <tr><td class="hi">MCID</td><td><strong>10&ndash;15 points</strong> (commonly cited 10.8 for general UE conditions)</td></tr>
-        <tr><td class="hi">QuickDASH</td><td>11-item shortened version. Strongly correlated with full DASH (r &gt;0.9). More practical for clinical use. MCID: 8&ndash;12 points</td></tr>
-        <tr><td class="hi">Populations</td><td>Rotator cuff, frozen shoulder, fractures, CTS, lateral epicondylalgia, post-surgical UE</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>UEFI (Upper Extremity Functional Index)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">Scoring</td><td>20 items, each 0&ndash;4. Total 0&ndash;80 (80 = full function, 0 = max disability)</td></tr>
-        <tr><td class="hi">MDC</td><td>9 points</td></tr>
-        <tr><td class="hi">MCID</td><td>8&ndash;9 points</td></tr>
-        <tr><td class="hi">Advantage</td><td>Free, no copyright fees (unlike DASH). Quick to complete (~5 min)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Upper Extremity Outcome Measures</div>
+<div class="section-sub">Patient-reported outcome measures for upper extremity function. Essential for outpatient ortho, hand therapy, and post-surgical tracking.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>DASH (Disabilities of the Arm, Shoulder and Hand)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>Self-reported UE disability and symptoms. 30 items covering physical function and symptoms in any or all joints of the UE</td></tr>
+<tr><td class="hi">Scoring</td><td>0&ndash;100 (0 = no disability, 100 = most severe). Optional work and sports/performing arts modules</td></tr>
+<tr><td class="hi">MDC</td><td>Shoulder: 10.7&ndash;12.8 points. Mixed UE: 10.8 points</td></tr>
+<tr><td class="hi">MCID</td><td><strong>10&ndash;15 points</strong> (commonly cited 10.8 for general UE conditions)</td></tr>
+<tr><td class="hi">QuickDASH</td><td>11-item shortened version. Strongly correlated with full DASH (r &gt;0.9). More practical for clinical use. MCID: 8&ndash;12 points</td></tr>
+<tr><td class="hi">Populations</td><td>Rotator cuff, frozen shoulder, fractures, CTS, lateral epicondylalgia, post-surgical UE</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== SPINE & PAIN ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>UEFI (Upper Extremity Functional Index)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">Scoring</td><td>20 items, each 0&ndash;4. Total 0&ndash;80 (80 = full function, 0 = max disability)</td></tr>
+<tr><td class="hi">MDC</td><td>9 points</td></tr>
+<tr><td class="hi">MCID</td><td>8&ndash;9 points</td></tr>
+<tr><td class="hi">Advantage</td><td>Free, no copyright fees (unlike DASH). Quick to complete (~5 min)</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-spine">
 <div class="container">
-  <div class="section-title">Spine &amp; Pain Outcome Measures</div>
-  <div class="section-sub">Region-specific disability indexes and pain scales. Required for documentation, insurance justification, and tracking treatment effectiveness.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Oswestry Disability Index (ODI) &mdash; Low Back</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>Self-reported low back pain&ndash;related disability. 10 sections covering pain intensity, personal care, lifting, walking, sitting, standing, sleeping, sex life, social life, traveling</td></tr>
-        <tr><td class="hi">Scoring</td><td>Each section 0&ndash;5. Total / 50 &times; 100 = <strong>0&ndash;100%.</strong> 0&ndash;20% = minimal. 21&ndash;40% = moderate. 41&ndash;60% = severe. 61&ndash;80% = crippled. 81&ndash;100% = bed-bound</td></tr>
-        <tr><td class="hi">MDC</td><td>10.5 points (chronic LBP)</td></tr>
-        <tr><td class="hi">MCID</td><td><strong>6&ndash;12 points</strong> (commonly cited: 6 points or 12.8 points depending on population)</td></tr>
-        <tr><td class="hi">Populations</td><td>Acute and chronic LBP, post-surgical spine (fusion, discectomy), radiculopathy</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Neck Disability Index (NDI)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>Cervical spine&ndash;related disability. 10 sections (pain intensity, personal care, lifting, reading, headaches, concentration, work, driving, sleeping, recreation)</td></tr>
-        <tr><td class="hi">Scoring</td><td>Same as ODI: each 0&ndash;5, total 0&ndash;100%. 0&ndash;4 = none. 5&ndash;14 = mild. 15&ndash;24 = moderate. 25&ndash;34 = severe. &ge;35 = complete</td></tr>
-        <tr><td class="hi">MDC</td><td>5&ndash;10.2 points</td></tr>
-        <tr><td class="hi">MCID</td><td><strong>3.5&ndash;7.5 points</strong> (varies by population and chronicity)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>LEFS (Lower Extremity Functional Scale)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>Self-reported LE function. 20 items covering activities from bed mobility to running</td></tr>
-        <tr><td class="hi">Scoring</td><td>Each item 0&ndash;4. <strong>Total 0&ndash;80</strong> (80 = full function). Lower score = more disability</td></tr>
-        <tr><td class="hi">MDC</td><td>9 points</td></tr>
-        <tr><td class="hi">MCID</td><td><strong>9 points</strong></td></tr>
-        <tr><td class="hi">Populations</td><td>Hip/knee OA, ACL, ankle sprain, TKA/THA, LE fracture. Non-condition-specific &mdash; applicable to any LE problem</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Pain Scales &mdash; NPRS &amp; VAS</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Scale</th><th>Format</th><th>MDC</th><th>MCID</th><th>Notes</th></tr></thead><tbody>
-        <tr><td class="warn">NPRS (Numeric Pain Rating Scale)</td><td>0&ndash;10 verbal. 0 = no pain, 10 = worst imaginable</td><td>2 points</td><td><strong>2 points</strong> (or 30% change from baseline)</td><td>Most commonly used in PT. Quick. Document best/worst/current. Mild: 1&ndash;3, moderate: 4&ndash;6, severe: 7&ndash;10</td></tr>
-        <tr><td class="hi">VAS (Visual Analog Scale)</td><td>100mm horizontal line. Patient marks their pain level. Measure in mm</td><td>13&ndash;18 mm</td><td><strong>12&ndash;20 mm</strong></td><td>More sensitive to small changes than NPRS. Research gold standard for pain. Requires visual + motor ability to mark the line</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Spine &amp; Pain Outcome Measures</div>
+<div class="section-sub">Region-specific disability indexes and pain scales. Required for documentation, insurance justification, and tracking treatment effectiveness.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Oswestry Disability Index (ODI) &mdash; Low Back</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>Self-reported low back pain&ndash;related disability. 10 sections covering pain intensity, personal care, lifting, walking, sitting, standing, sleeping, sex life, social life, traveling</td></tr>
+<tr><td class="hi">Scoring</td><td>Each section 0&ndash;5. Total / 50 &times; 100 = <strong>0&ndash;100%.</strong> 0&ndash;20% = minimal. 21&ndash;40% = moderate. 41&ndash;60% = severe. 61&ndash;80% = crippled. 81&ndash;100% = bed-bound</td></tr>
+<tr><td class="hi">MDC</td><td>10.5 points (chronic LBP)</td></tr>
+<tr><td class="hi">MCID</td><td><strong>6&ndash;12 points</strong> (commonly cited: 6 points or 12.8 points depending on population)</td></tr>
+<tr><td class="hi">Populations</td><td>Acute and chronic LBP, post-surgical spine (fusion, discectomy), radiculopathy</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== NEURO-SPECIFIC ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Neck Disability Index (NDI)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>Cervical spine&ndash;related disability. 10 sections (pain intensity, personal care, lifting, reading, headaches, concentration, work, driving, sleeping, recreation)</td></tr>
+<tr><td class="hi">Scoring</td><td>Same as ODI: each 0&ndash;5, total 0&ndash;100%. 0&ndash;4 = none. 5&ndash;14 = mild. 15&ndash;24 = moderate. 25&ndash;34 = severe. &ge;35 = complete</td></tr>
+<tr><td class="hi">MDC</td><td>5&ndash;10.2 points</td></tr>
+<tr><td class="hi">MCID</td><td><strong>3.5&ndash;7.5 points</strong> (varies by population and chronicity)</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>LEFS (Lower Extremity Functional Scale)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>Self-reported LE function. 20 items covering activities from bed mobility to running</td></tr>
+<tr><td class="hi">Scoring</td><td>Each item 0&ndash;4. <strong>Total 0&ndash;80</strong> (80 = full function). Lower score = more disability</td></tr>
+<tr><td class="hi">MDC</td><td>9 points</td></tr>
+<tr><td class="hi">MCID</td><td><strong>9 points</strong></td></tr>
+<tr><td class="hi">Populations</td><td>Hip/knee OA, ACL, ankle sprain, TKA/THA, LE fracture. Non-condition-specific &mdash; applicable to any LE problem</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Pain Scales &mdash; NPRS &amp; VAS</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Scale</th><th>Format</th><th>MDC</th><th>MCID</th><th>Notes</th></tr></thead><tbody>
+<tr><td class="warn">NPRS (Numeric Pain Rating Scale)</td><td>0&ndash;10 verbal. 0 = no pain, 10 = worst imaginable</td><td>2 points</td><td><strong>2 points</strong> (or 30% change from baseline)</td><td>Most commonly used in PT. Quick. Document best/worst/current. Mild: 1&ndash;3, moderate: 4&ndash;6, severe: 7&ndash;10</td></tr>
+<tr><td class="hi">VAS (Visual Analog Scale)</td><td>100mm horizontal line. Patient marks their pain level. Measure in mm</td><td>13&ndash;18 mm</td><td><strong>12&ndash;20 mm</strong></td><td>More sensitive to small changes than NPRS. Research gold standard for pain. Requires visual + motor ability to mark the line</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-neuro">
 <div class="container">
-  <div class="section-title">Neuro-Specific Outcome Measures</div>
-  <div class="section-sub">Measures designed for or validated in neurological populations. The ANPT Core Set (2018 CPG) recommends: BBS, FGA, ABC, 10MWT, 6MWT, and 5TSTS for all adults with neurologic conditions.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Functional Independence Measure (FIM)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>Level of disability and burden of care. <strong>18 items</strong> across 6 domains: self-care, sphincter control, transfers, locomotion, communication, social cognition</td></tr>
-        <tr><td class="hi">Scoring</td><td>Each item 1&ndash;7. <strong>Total 18&ndash;126.</strong> 1 = total assist, 2 = maximal assist, 3 = moderate, 4 = minimal contact, 5 = supervision/setup, 6 = modified independent, 7 = complete independent</td></tr>
-        <tr><td class="hi">Setting</td><td>Standard in inpatient rehab (IRF). Required for CMS reporting (IRF-PAI). Administered by interdisciplinary team</td></tr>
-        <tr><td class="hi">Motor FIM</td><td>13 items (motor domains). Total 13&ndash;91. More relevant to PT. 1-point change per item per week = expected progress in stroke rehab</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Functional Ambulation Category (FAC)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Level</th><th>Description</th><th>What It Means</th></tr></thead><tbody>
-        <tr><td class="hi">0</td><td>Non-functional ambulator</td><td>Cannot walk or needs 2-person assist</td></tr>
-        <tr><td class="hi">1</td><td>Dependent &mdash; Level II</td><td>Requires continuous manual contact to support body weight</td></tr>
-        <tr><td class="hi">2</td><td>Dependent &mdash; Level I</td><td>Requires intermittent or continuous light touch for balance</td></tr>
-        <tr><td class="warn">3</td><td>Dependent &mdash; Supervision</td><td>Can ambulate on level surface without manual contact but needs standby guarding</td></tr>
-        <tr><td class="hi">4</td><td>Independent &mdash; Level surfaces</td><td>Independent on level but needs supervision on stairs, slopes, uneven surfaces</td></tr>
-        <tr><td class="hi">5</td><td>Independent</td><td>Can walk everywhere independently including stairs and uneven surfaces</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Mini-BESTest (Balance Evaluation Systems Test)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Detail</th><th>Information</th></tr></thead><tbody>
-        <tr><td class="hi">What It Tests</td><td>4 balance control systems: anticipatory postural adjustments, reactive postural control, sensory orientation, dynamic gait</td></tr>
-        <tr><td class="hi">Scoring</td><td>14 items, each 0&ndash;2. <strong>Total 0&ndash;28.</strong> Higher = better</td></tr>
-        <tr><td class="warn">Why Use It</td><td>Addresses the BBS ceiling effect. Identifies WHICH balance system is impaired &mdash; directs treatment. Better discrimination in high-functioning patients</td></tr>
-        <tr><td class="hi">Populations</td><td>PD, stroke, MS, vestibular, TBI, older adults (especially higher-functioning)</td></tr>
-        <tr><td class="hi">MDC</td><td>PD: 3.5 points. Stroke: 3.5 points</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Neuro-Specific Outcome Measures</div>
+<div class="section-sub">Measures designed for or validated in neurological populations. The ANPT Core Set (2018 CPG) recommends: BBS, FGA, ABC, 10MWT, 6MWT, and 5TSTS for all adults with neurologic conditions.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Functional Independence Measure (FIM)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>Level of disability and burden of care. <strong>18 items</strong> across 6 domains: self-care, sphincter control, transfers, locomotion, communication, social cognition</td></tr>
+<tr><td class="hi">Scoring</td><td>Each item 1&ndash;7. <strong>Total 18&ndash;126.</strong> 1 = total assist, 2 = maximal assist, 3 = moderate, 4 = minimal contact, 5 = supervision/setup, 6 = modified independent, 7 = complete independent</td></tr>
+<tr><td class="hi">Setting</td><td>Standard in inpatient rehab (IRF). Required for CMS reporting (IRF-PAI). Administered by interdisciplinary team</td></tr>
+<tr><td class="hi">Motor FIM</td><td>13 items (motor domains). Total 13&ndash;91. More relevant to PT. 1-point change per item per week = expected progress in stroke rehab</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== QUICK REFERENCE ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Functional Ambulation Category (FAC)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Level</th><th>Description</th><th>What It Means</th></tr></thead><tbody>
+<tr><td class="hi">0</td><td>Non-functional ambulator</td><td>Cannot walk or needs 2-person assist</td></tr>
+<tr><td class="hi">1</td><td>Dependent &mdash; Level II</td><td>Requires continuous manual contact to support body weight</td></tr>
+<tr><td class="hi">2</td><td>Dependent &mdash; Level I</td><td>Requires intermittent or continuous light touch for balance</td></tr>
+<tr><td class="warn">3</td><td>Dependent &mdash; Supervision</td><td>Can ambulate on level surface without manual contact but needs standby guarding</td></tr>
+<tr><td class="hi">4</td><td>Independent &mdash; Level surfaces</td><td>Independent on level but needs supervision on stairs, slopes, uneven surfaces</td></tr>
+<tr><td class="hi">5</td><td>Independent</td><td>Can walk everywhere independently including stairs and uneven surfaces</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Mini-BESTest (Balance Evaluation Systems Test)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Detail</th><th>Information</th></tr></thead><tbody>
+<tr><td class="hi">What It Tests</td><td>4 balance control systems: anticipatory postural adjustments, reactive postural control, sensory orientation, dynamic gait</td></tr>
+<tr><td class="hi">Scoring</td><td>14 items, each 0&ndash;2. <strong>Total 0&ndash;28.</strong> Higher = better</td></tr>
+<tr><td class="warn">Why Use It</td><td>Addresses the BBS ceiling effect. Identifies WHICH balance system is impaired &mdash; directs treatment. Better discrimination in high-functioning patients</td></tr>
+<tr><td class="hi">Populations</td><td>PD, stroke, MS, vestibular, TBI, older adults (especially higher-functioning)</td></tr>
+<tr><td class="hi">MDC</td><td>PD: 3.5 points. Stroke: 3.5 points</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-quickref">
 <div class="container">
-  <div class="section-title">Quick Reference &mdash; All Tests at a Glance</div>
-  <div class="section-sub">One table to rule them all. Print this, laminate it, keep it in your clinic.</div>
+<div class="section-title">Quick Reference &mdash; All Tests at a Glance</div>
+<div class="section-sub">One table to rule them all. Print this, laminate it, keep it in your clinic.</div>
+<table class="data-table"><thead>
+<tr><th>Test</th><th>Measures</th><th>Score Range</th><th>Fall Risk / Key Cutoff</th><th>MDC</th><th>MCID</th><th>Time</th></tr></thead><tbody>
+<tr><td class="warn">BBS</td><td>Static + dynamic balance</td><td>0&ndash;56</td><td>&le;45 = fall risk</td><td>3&ndash;7 pts</td><td>3&ndash;7 pts</td><td>15&ndash;20 min</td></tr>
+<tr><td class="hi">FRT</td><td>Anterior limits of stability</td><td>Distance (inches/cm)</td><td>&le;6&Prime; = fall risk</td><td>1.3&Prime;</td><td>&mdash;</td><td>&lt;3 min</td></tr>
+<tr><td class="hi">ABC</td><td>Balance self-efficacy</td><td>0&ndash;100%</td><td>&lt;67% = fall risk</td><td>10&ndash;13</td><td>11&ndash;15</td><td>5&ndash;10 min</td></tr>
+<tr><td class="hi">Tinetti</td><td>Balance + gait</td><td>0&ndash;28</td><td>&le;18 = high risk</td><td>&mdash;</td><td>&mdash;</td><td>10&ndash;15 min</td></tr>
+<tr><td class="warn">10MWT</td><td>Gait speed</td><td>m/s</td><td>&lt;0.8 = limited comm. amb.</td><td>0.05&ndash;0.18</td><td>0.10&ndash;0.16</td><td>&lt;5 min</td></tr>
+<tr><td class="warn">6MWT</td><td>Endurance</td><td>meters</td><td>&lt;300m = limited</td><td>20&ndash;80m</td><td>25&ndash;50m</td><td>~15 min</td></tr>
+<tr><td class="hi">DGI</td><td>Dynamic gait</td><td>0&ndash;24</td><td>&le;19 = fall risk</td><td>2.6&ndash;3.2</td><td>&mdash;</td><td>10 min</td></tr>
+<tr><td class="hi">FGA</td><td>Dynamic gait (expanded)</td><td>0&ndash;30</td><td>&le;22 = fall risk</td><td>4.2&ndash;6</td><td>4&ndash;6</td><td>10 min</td></tr>
+<tr><td class="warn">TUG</td><td>Functional mobility</td><td>seconds</td><td>&gt;12s = fall risk</td><td>2.1&ndash;4.1s</td><td>0.8&ndash;2.9s</td><td>&lt;3 min</td></tr>
+<tr><td class="warn">5TSTS</td><td>LE strength + transfers</td><td>seconds</td><td>&gt;12&ndash;15s = fall risk</td><td>3.6&ndash;4.2s</td><td>2.3s</td><td>&lt;2 min</td></tr>
+<tr><td class="hi">ODI</td><td>LBP disability</td><td>0&ndash;100%</td><td>&gt;40% = severe</td><td>10.5</td><td>6&ndash;12</td><td>5 min</td></tr>
+<tr><td class="hi">NDI</td><td>Neck disability</td><td>0&ndash;100%</td><td>&ge;25 = severe</td><td>5&ndash;10</td><td>3.5&ndash;7.5</td><td>5 min</td></tr>
+<tr><td class="hi">LEFS</td><td>LE function</td><td>0&ndash;80</td><td>&mdash;</td><td>9</td><td>9</td><td>5 min</td></tr>
+<tr><td class="hi">DASH</td><td>UE disability</td><td>0&ndash;100</td><td>&mdash;</td><td>10.7</td><td>10&ndash;15</td><td>10 min</td></tr>
+<tr><td class="hi">NPRS</td><td>Pain</td><td>0&ndash;10</td><td>&ge;7 = severe</td><td>2</td><td>2</td><td>&lt;1 min</td></tr></tbody></table>
+<div class="bl-strip green">
+<div class="bl-label">MDC vs MCID &mdash; What&rsquo;s the Difference?</div>
+<p><strong>Minimal Detectable Change (MDC):</strong> the smallest change that exceeds measurement error. If a patient improves by more than the MDC, you can be confident the change is REAL (not just test-retest variability).<br><strong>Minimal Clinically Important Difference (MCID):</strong> the smallest change that is meaningful to the PATIENT. A change exceeding the MCID means the patient would notice and care about the improvement.<br><strong>Always report both</strong> &mdash; a change can be real (exceeds MDC) but not meaningful
 
-  <table class="data-table"><thead><tr><th>Test</th><th>Measures</th><th>Score Range</th><th>Fall Risk / Key Cutoff</th><th>MDC</th><th>MCID</th><th>Time</th></tr></thead><tbody>
-    <tr><td class="warn">BBS</td><td>Static + dynamic balance</td><td>0&ndash;56</td><td>&le;45 = fall risk</td><td>3&ndash;7 pts</td><td>3&ndash;7 pts</td><td>15&ndash;20 min</td></tr>
-    <tr><td class="hi">FRT</td><td>Anterior limits of stability</td><td>Distance (inches/cm)</td><td>&le;6&Prime; = fall risk</td><td>1.3&Prime;</td><td>&mdash;</td><td>&lt;3 min</td></tr>
-    <tr><td class="hi">ABC</td><td>Balance self-efficacy</td><td>0&ndash;100%</td><td>&lt;67% = fall risk</td><td>10&ndash;13</td><td>11&ndash;15</td><td>5&ndash;10 min</td></tr>
-    <tr><td class="hi">Tinetti</td><td>Balance + gait</td><td>0&ndash;28</td><td>&le;18 = high risk</td><td>&mdash;</td><td>&mdash;</td><td>10&ndash;15 min</td></tr>
-    <tr><td class="warn">10MWT</td><td>Gait speed</td><td>m/s</td><td>&lt;0.8 = limited comm. amb.</td><td>0.05&ndash;0.18</td><td>0.10&ndash;0.16</td><td>&lt;5 min</td></tr>
-    <tr><td class="warn">6MWT</td><td>Endurance</td><td>meters</td><td>&lt;300m = limited</td><td>20&ndash;80m</td><td>25&ndash;50m</td><td>~15 min</td></tr>
-    <tr><td class="hi">DGI</td><td>Dynamic gait</td><td>0&ndash;24</td><td>&le;19 = fall risk</td><td>2.6&ndash;3.2</td><td>&mdash;</td><td>10 min</td></tr>
-    <tr><td class="hi">FGA</td><td>Dynamic gait (expanded)</td><td>0&ndash;30</td><td>&le;22 = fall risk</td><td>4.2&ndash;6</td><td>4&ndash;6</td><td>10 min</td></tr>
-    <tr><td class="warn">TUG</td><td>Functional mobility</td><td>seconds</td><td>&gt;12s = fall risk</td><td>2.1&ndash;4.1s</td><td>0.8&ndash;2.9s</td><td>&lt;3 min</td></tr>
-    <tr><td class="warn">5TSTS</td><td>LE strength + transfers</td><td>seconds</td><td>&gt;12&ndash;15s = fall risk</td><td>3.6&ndash;4.2s</td><td>2.3s</td><td>&lt;2 min</td></tr>
-    <tr><td class="hi">ODI</td><td>LBP disability</td><td>0&ndash;100%</td><td>&gt;40% = severe</td><td>10.5</td><td>6&ndash;12</td><td>5 min</td></tr>
-    <tr><td class="hi">NDI</td><td>Neck disability</td><td>0&ndash;100%</td><td>&ge;25 = severe</td><td>5&ndash;10</td><td>3.5&ndash;7.5</td><td>5 min</td></tr>
-    <tr><td class="hi">LEFS</td><td>LE function</td><td>0&ndash;80</td><td>&mdash;</td><td>9</td><td>9</td><td>5 min</td></tr>
-    <tr><td class="hi">DASH</td><td>UE disability</td><td>0&ndash;100</td><td>&mdash;</td><td>10.7</td><td>10&ndash;15</td><td>10 min</td></tr>
-    <tr><td class="hi">NPRS</td><td>Pain</td><td>0&ndash;10</td><td>&ge;7 = severe</td><td>2</td><td>2</td><td>&lt;1 min</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip green"><div class="bl-label">MDC vs MCID &mdash; What&rsquo;s the Difference?</div><p><strong>Minimal Detectable Change (MDC):</strong> the smallest change that exceeds measurement error. If a patient improves by more than the MDC, you can be confident the change is REAL (not just test-retest variability).<br><strong>Minimal Clinically Important Difference (MCID):</strong> the smallest change that is meaningful to the PATIENT. A change exceeding the MCID means the patient would notice and care about the improvement.<br><strong>Always report both</strong> &mdash; a change can be real (exceeds MDC) but not meaningful
-  
-   (doesn&rsquo;t reach MCID), or vice versa.</p></div>
-  <div class="section-title">Detailed Scoring Calculations</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Berg Balance Scale &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">How to Score</div><p>Each of the 14 items is scored on a <strong>0&ndash;4 ordinal scale</strong> based on ability and/or time.<br><strong>4</strong> = patient can perform independently, meets time/distance criteria.<br><strong>3</strong> = can perform but needs supervision or doesn&rsquo;t fully meet criteria.<br><strong>2</strong> = can perform with minimal assist or modified.<br><strong>1</strong> = needs moderate to maximum assist.<br><strong>0</strong> = unable to perform or needs maximum assist.<br><strong>Total = sum of all 14 items (0&ndash;56).</strong> Items progress in difficulty &mdash; if patient scores 0 on an item, remaining harder items will likely also score 0 or 1. Score each item based on the <strong>lowest criteria met</strong>. Example: Item 14 (single-leg stance) &mdash; 4 = &gt;10 sec, 3 = 5&ndash;10 sec, 2 = 3&ndash;5 sec, 1 = attempts but &lt;3 sec, 0 = unable/needs assist to prevent fall.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>TUG &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">How to Score</div><p>Score = <strong>time in seconds</strong> from &ldquo;Go&rdquo; to buttocks touching chair after completing the circuit (stand, walk 3m, turn, walk back, sit). Use a stopwatch. Record to <strong>nearest 0.1 second</strong>. Record the assistive device used (none, SPC, FWW, etc.) &mdash; must use same device on re-test. Allow 1 practice trial, then score the timed trial (some protocols average 2&ndash;3 timed trials).<br><strong>Lower time = better performance.</strong> Document any deviations (loss of balance, grabbed furniture, needed tactile cue).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>5TSTS &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">How to Score</div><p>Score = <strong>time in seconds</strong> to complete 5 full sit-to-stand cycles. Start timing on &ldquo;Go&rdquo; &mdash; stop when buttocks touch chair after 5th stand. Record to nearest 0.1 sec. Patient must <strong>fully stand (hips and knees extended)</strong> and <strong>fully sit (back touches backrest)</strong> each rep. Arms crossed on chest throughout (stroke patients: impaired arm at side or in sling is acceptable). Chair height 43&ndash;45 cm, <strong>NOT secured to wall</strong>. If patient cannot complete all 5 without using arms or stopping, document as &ldquo;unable to complete&rdquo; and note how many completed or what assistance was needed.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>10MWT &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">How to Score</div><p>Measure a 14-meter walkway. Mark 2m (acceleration), 10m (timed zone), 2m (deceleration). Patient starts walking at the 0m mark. Start timing when the patient&rsquo;s lead foot crosses the 2m mark; stop when lead foot crosses the 12m mark.<br><strong>Speed = 10 &divide; time (sec) = m/s.</strong> Example: patient walks 10m in 8.3 sec &rarr; 10 &divide; 8.3 = <strong>1.20 m/s</strong>. Test <strong>both</strong> comfortable (self-selected) speed and fast (maximum safe) speed. Record AD used. Best of 2&ndash;3 trials for each speed. The acceleration/deceleration zones eliminate startup and braking effects from the measurement.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>6MWT &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">How to Score</div><p>Score = <strong>total distance in meters</strong> walked in 6 minutes. Use a 30m (100 ft) hallway with cones at each end. Patient walks back and forth. Count laps and measure partial laps at the 6-minute mark.<br><strong>Distance = (# complete laps &times; 30m) + partial distance.</strong> Record: resting HR, BP, SpO2, RPE before and after. Record number of rest breaks, duration, and reason.<br><strong>Do NOT walk with the patient</strong> or set pace. Use standardized encouragement phrases at each minute (&ldquo;You are doing well, you have X minutes remaining&rdquo;). Two tests &ge;30 min apart recommended &mdash; use the <strong>better distance</strong> (learning effect expected on 1st test).</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>FRT &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">How to Score</div><p>Mount a yardstick/ruler on the wall at the height of the patient&rsquo;s acromion. Patient stands with feet shoulder-width apart, dominant arm raised to 90&deg; shoulder flexion, fist closed. Record the <strong>starting position</strong> of the 3rd metacarpal on the ruler. Patient reaches forward as far as possible <strong>without stepping, pivoting, or using external support</strong>. Record the <strong>ending position</strong> of the 3rd metacarpal.<br><strong>Score = ending position &minus; starting position (in inches or cm).</strong> Perform 3 trials, use the <strong>average or best</strong> (protocols vary &mdash; be consistent). Watch for trunk rotation, hip hiking, or rising onto toes &mdash; these invalidate the trial.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Patient-Reported Measures (ODI, NDI, LEFS, DASH) &mdash; Scoring</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Measure</th><th>Calculation</th><th>Score Interpretation</th></tr></thead><tbody>
-        <tr><td class="warn">ODI</td><td>10 sections, each 0&ndash;5. Total possible = 50. <strong>Score = (total points / 50) &times; 100 = %.</strong> If a section is skipped: (total / max possible) &times; 100</td><td>0&ndash;20% minimal, 21&ndash;40% moderate, 41&ndash;60% severe, 61&ndash;80% crippling, 81&ndash;100% bed-bound</td></tr>
-        <tr><td class="hi">NDI</td><td>10 sections, each 0&ndash;5. Same calculation as ODI: <strong>(total / 50) &times; 100 = %</strong></td><td>0&ndash;4 none, 5&ndash;14 mild, 15&ndash;24 moderate, 25&ndash;34 severe, &ge;35 complete disability</td></tr>
-        <tr><td class="hi">LEFS</td><td>20 items, each 0&ndash;4 (4 = no difficulty). <strong>Sum all items = 0&ndash;80.</strong> Higher = better function</td><td>80 = full function. Lower scores = more disability. No official severity categories</td></tr>
-        <tr><td class="hi">DASH</td><td>30 items, each 1&ndash;5 (1 = no difficulty, 5 = unable). <strong>Score = [(sum/n) &minus; 1] &times; 25</strong> where n = number of completed items. Result = 0&ndash;100</td><td>0 = no disability, 100 = most severe. At least 27 of 30 items must be completed</td></tr>
-        <tr><td class="hi">NPRS</td><td>Patient rates pain 0&ndash;10 verbally. <strong>No calculation needed.</strong> Document current, best, and worst in last 24 hours</td><td>0 = no pain, 1&ndash;3 mild, 4&ndash;6 moderate, 7&ndash;10 severe. MCID = 2-point change or 30% reduction from baseline</td></tr>
-        <tr><td class="hi">ABC Scale</td><td>16 items, each 0&ndash;100%. <strong>Average all 16 items = total score (0&ndash;100%)</strong></td><td>&lt;50% low functioning, 50&ndash;80% moderate, &gt;80% high functioning. &lt;67% = fall risk</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>FIM &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Level</th><th>Score</th><th>Definition</th><th>Helper Does</th></tr></thead><tbody>
-        <tr><td class="hi">Complete Independence</td><td>7</td><td>All tasks safely, no modification, reasonable time, no helper</td><td>0%</td></tr>
-        <tr><td class="hi">Modified Independence</td><td>6</td><td>Assistive device, extra time, or safety concern &mdash; but no helper</td><td>0%</td></tr>
-        <tr><td class="warn">Supervision / Setup</td><td>5</td><td>Standby assist, cueing, coaxing, setup of needed items</td><td>&lt;25%</td></tr>
-        <tr><td class="warn">Minimal Contact Assist</td><td>4</td><td>Patient performs &ge;75% of effort. Light touch only</td><td>25%</td></tr>
-        <tr><td class="hi">Moderate Assist</td><td>3</td><td>Patient performs 50&ndash;74% of effort</td><td>25&ndash;50%</td></tr>
-        <tr><td class="hi">Maximal Assist</td><td>2</td><td>Patient performs 25&ndash;49% of effort</td><td>50&ndash;75%</td></tr>
-        <tr><td class="hi">Total Assist</td><td>1</td><td>Patient performs &lt;25% of effort</td><td>&gt;75%</td></tr>
-      </tbody></table>
-      <div class="bl-strip"><div class="bl-label">Calculation</div><p><strong>18 items total.</strong> Motor subscale: 13 items (13&ndash;91). Cognitive subscale: 5 items (5&ndash;35). <strong>Total FIM = Motor + Cognitive (18&ndash;126).</strong> FIM score at admission is the strongest predictor of discharge destination in inpatient rehab. A 1-point FIM improvement per item per week is considered expected progress for stroke rehabilitation. Motor FIM is most relevant to PT practice.</p></div>
-    </div>
-  </div>
-
+  (doesn&rsquo;t reach MCID), or vice versa.</p>
+</div>
+<div class="section-title">Detailed Scoring Calculations</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Berg Balance Scale &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">How to Score</div>
+<p>Each of the 14 items is scored on a <strong>0&ndash;4 ordinal scale</strong> based on ability and/or time.<br><strong>4</strong> = patient can perform independently, meets time/distance criteria.<br><strong>3</strong> = can perform but needs supervision or doesn&rsquo;t fully meet criteria.<br><strong>2</strong> = can perform with minimal assist or modified.<br><strong>1</strong> = needs moderate to maximum assist.<br><strong>0</strong> = unable to perform or needs maximum assist.<br><strong>Total = sum of all 14 items (0&ndash;56).</strong> Items progress in difficulty &mdash; if patient scores 0 on an item, remaining harder items will likely also score 0 or 1. Score each item based on the <strong>lowest criteria met</strong>. Example: Item 14 (single-leg stance) &mdash; 4 = &gt;10 sec, 3 = 5&ndash;10 sec, 2 = 3&ndash;5 sec, 1 = attempts but &lt;3 sec, 0 = unable/needs assist to prevent fall.</p>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>TUG &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">How to Score</div>
+<p>Score = <strong>time in seconds</strong> from &ldquo;Go&rdquo; to buttocks touching chair after completing the circuit (stand, walk 3m, turn, walk back, sit). Use a stopwatch. Record to <strong>nearest 0.1 second</strong>. Record the assistive device used (none, SPC, FWW, etc.) &mdash; must use same device on re-test. Allow 1 practice trial, then score the timed trial (some protocols average 2&ndash;3 timed trials).<br><strong>Lower time = better performance.</strong> Document any deviations (loss of balance, grabbed furniture, needed tactile cue).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>5TSTS &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">How to Score</div>
+<p>Score = <strong>time in seconds</strong> to complete 5 full sit-to-stand cycles. Start timing on &ldquo;Go&rdquo; &mdash; stop when buttocks touch chair after 5th stand. Record to nearest 0.1 sec. Patient must <strong>fully stand (hips and knees extended)</strong> and <strong>fully sit (back touches backrest)</strong> each rep. Arms crossed on chest throughout (stroke patients: impaired arm at side or in sling is acceptable). Chair height 43&ndash;45 cm, <strong>NOT secured to wall</strong>. If patient cannot complete all 5 without using arms or stopping, document as &ldquo;unable to complete&rdquo; and note how many completed or what assistance was needed.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>10MWT &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">How to Score</div>
+<p>Measure a 14-meter walkway. Mark 2m (acceleration), 10m (timed zone), 2m (deceleration). Patient starts walking at the 0m mark. Start timing when the patient&rsquo;s lead foot crosses the 2m mark; stop when lead foot crosses the 12m mark.<br><strong>Speed = 10 &divide; time (sec) = m/s.</strong> Example: patient walks 10m in 8.3 sec &rarr; 10 &divide; 8.3 = <strong>1.20 m/s</strong>. Test <strong>both</strong> comfortable (self-selected) speed and fast (maximum safe) speed. Record AD used. Best of 2&ndash;3 trials for each speed. The acceleration/deceleration zones eliminate startup and braking effects from the measurement.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>6MWT &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">How to Score</div>
+<p>Score = <strong>total distance in meters</strong> walked in 6 minutes. Use a 30m (100 ft) hallway with cones at each end. Patient walks back and forth. Count laps and measure partial laps at the 6-minute mark.<br><strong>Distance = (# complete laps &times; 30m) + partial distance.</strong> Record: resting HR, BP, SpO2, RPE before and after. Record number of rest breaks, duration, and reason.<br><strong>Do NOT walk with the patient</strong> or set pace. Use standardized encouragement phrases at each minute (&ldquo;You are doing well, you have X minutes remaining&rdquo;). Two tests &ge;30 min apart recommended &mdash; use the <strong>better distance</strong> (learning effect expected on 1st test).</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>FRT &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">How to Score</div>
+<p>Mount a yardstick/ruler on the wall at the height of the patient&rsquo;s acromion. Patient stands with feet shoulder-width apart, dominant arm raised to 90&deg; shoulder flexion, fist closed. Record the <strong>starting position</strong> of the 3rd metacarpal on the ruler. Patient reaches forward as far as possible <strong>without stepping, pivoting, or using external support</strong>. Record the <strong>ending position</strong> of the 3rd metacarpal.<br><strong>Score = ending position &minus; starting position (in inches or cm).</strong> Perform 3 trials, use the <strong>average or best</strong> (protocols vary &mdash; be consistent). Watch for trunk rotation, hip hiking, or rising onto toes &mdash; these invalidate the trial.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Patient-Reported Measures (ODI, NDI, LEFS, DASH) &mdash; Scoring</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Measure</th><th>Calculation</th><th>Score Interpretation</th></tr></thead><tbody>
+<tr><td class="warn">ODI</td><td>10 sections, each 0&ndash;5. Total possible = 50. <strong>Score = (total points / 50) &times; 100 = %.</strong> If a section is skipped: (total / max possible) &times; 100</td><td>0&ndash;20% minimal, 21&ndash;40% moderate, 41&ndash;60% severe, 61&ndash;80% crippling, 81&ndash;100% bed-bound</td></tr>
+<tr><td class="hi">NDI</td><td>10 sections, each 0&ndash;5. Same calculation as ODI: <strong>(total / 50) &times; 100 = %</strong></td><td>0&ndash;4 none, 5&ndash;14 mild, 15&ndash;24 moderate, 25&ndash;34 severe, &ge;35 complete disability</td></tr>
+<tr><td class="hi">LEFS</td><td>20 items, each 0&ndash;4 (4 = no difficulty). <strong>Sum all items = 0&ndash;80.</strong> Higher = better function</td><td>80 = full function. Lower scores = more disability. No official severity categories</td></tr>
+<tr><td class="hi">DASH</td><td>30 items, each 1&ndash;5 (1 = no difficulty, 5 = unable). <strong>Score = [(sum/n) &minus; 1] &times; 25</strong> where n = number of completed items. Result = 0&ndash;100</td><td>0 = no disability, 100 = most severe. At least 27 of 30 items must be completed</td></tr>
+<tr><td class="hi">NPRS</td><td>Patient rates pain 0&ndash;10 verbally. <strong>No calculation needed.</strong> Document current, best, and worst in last 24 hours</td><td>0 = no pain, 1&ndash;3 mild, 4&ndash;6 moderate, 7&ndash;10 severe. MCID = 2-point change or 30% reduction from baseline</td></tr>
+<tr><td class="hi">ABC Scale</td><td>16 items, each 0&ndash;100%. <strong>Average all 16 items = total score (0&ndash;100%)</strong></td><td>&lt;50% low functioning, 50&ndash;80% moderate, &gt;80% high functioning. &lt;67% = fall risk</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>FIM &mdash; Scoring Detail</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Level</th><th>Score</th><th>Definition</th><th>Helper Does</th></tr></thead><tbody>
+<tr><td class="hi">Complete Independence</td><td>7</td><td>All tasks safely, no modification, reasonable time, no helper</td><td>0%</td></tr>
+<tr><td class="hi">Modified Independence</td><td>6</td><td>Assistive device, extra time, or safety concern &mdash; but no helper</td><td>0%</td></tr>
+<tr><td class="warn">Supervision / Setup</td><td>5</td><td>Standby assist, cueing, coaxing, setup of needed items</td><td>&lt;25%</td></tr>
+<tr><td class="warn">Minimal Contact Assist</td><td>4</td><td>Patient performs &ge;75% of effort. Light touch only</td><td>25%</td></tr>
+<tr><td class="hi">Moderate Assist</td><td>3</td><td>Patient performs 50&ndash;74% of effort</td><td>25&ndash;50%</td></tr>
+<tr><td class="hi">Maximal Assist</td><td>2</td><td>Patient performs 25&ndash;49% of effort</td><td>50&ndash;75%</td></tr>
+<tr><td class="hi">Total Assist</td><td>1</td><td>Patient performs &lt;25% of effort</td><td>&gt;75%</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Calculation</div>
+<p><strong>18 items total.</strong> Motor subscale: 13 items (13&ndash;91). Cognitive subscale: 5 items (5&ndash;35). <strong>Total FIM = Motor + Cognitive (18&ndash;126).</strong> FIM score at admission is the strongest predictor of discharge destination in inpatient rehab. A 1-point FIM improvement per item per week is considered expected progress for stroke rehabilitation. Motor FIM is most relevant to PT practice.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 — Using MDC/MCID to Justify Continued Care</div><p>78-year-old female in SNF after hip fracture. Initial TUG: 28 seconds. After 3 weeks of PT: TUG: 19 seconds. Improvement: 9 seconds. TUG MDC for hip fracture: 2.4 sec. TUG MCID: 1.1 sec. <strong>Interpretation:</strong> 9-second improvement exceeds BOTH the MDC (change is real, not measurement error) AND the MCID (change is meaningful to the patient). This is strong justification for continued skilled PT — document: "Patient demonstrates statistically significant and clinically meaningful improvement in functional mobility (TUG improved 9 seconds, exceeding both MDC of 2.4s and MCID of 1.1s). Patient remains above fall-risk cutoff (>12s) indicating continued skilled PT is warranted."</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 — Selecting the Right Outcome Measure</div><p>You have a 70-year-old outpatient with chronic LBP + bilateral LE numbness while walking. Which measures? <strong>Step 1:</strong> ODI (LBP-specific disability — tracks self-reported function).<br><strong>Step 2:</strong> 10MWT (gait speed — is this patient a community ambulator?).<br><strong>Step 3:</strong> 6MWT (endurance — correlates with claudication symptoms).<br><strong>Step 4:</strong> NPRS (pain). Why NOT Berg? Berg measures balance — this patient's primary problem is walking tolerance, not balance. Match the measure to the patient's primary functional limitation. Use at least one performance-based measure (10MWT/6MWT) AND one patient-reported measure (ODI) — they capture different dimensions of function.</p></div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 — Using MDC/MCID to Justify Continued Care</div>
+<p>78-year-old female in SNF after hip fracture. Initial TUG: 28 seconds. After 3 weeks of PT: TUG: 19 seconds. Improvement: 9 seconds. TUG MDC for hip fracture: 2.4 sec. TUG MCID: 1.1 sec. <strong>Interpretation:</strong> 9-second improvement exceeds BOTH the MDC (change is real, not measurement error) AND the MCID (change is meaningful to the patient). This is strong justification for continued skilled PT — document: "Patient demonstrates statistically significant and clinically meaningful improvement in functional mobility (TUG improved 9 seconds, exceeding both MDC of 2.4s and MCID of 1.1s). Patient remains above fall-risk cutoff (>12s) indicating continued skilled PT is warranted."</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 — Selecting the Right Outcome Measure</div>
+<p>You have a 70-year-old outpatient with chronic LBP + bilateral LE numbness while walking. Which measures? <strong>Step 1:</strong> ODI (LBP-specific disability — tracks self-reported function).<br><strong>Step 2:</strong> 10MWT (gait speed — is this patient a community ambulator?).<br><strong>Step 3:</strong> 6MWT (endurance — correlates with claudication symptoms).<br><strong>Step 4:</strong> NPRS (pain). Why NOT Berg? Berg measures balance — this patient's primary problem is walking tolerance, not balance. Match the measure to the patient's primary functional limitation. Use at least one performance-based measure (10MWT/6MWT) AND one patient-reported measure (ODI) — they capture different dimensions of function.</p>
 </div>
 </div>
-
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to reveal answers.</div>
-
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">The patient scores 42/56 on the Berg Balance Scale. What does this mean?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Medium fall risk.</strong> BBS &le;45 = increased fall risk. 21&ndash;40 = medium, 41&ndash;56 = low. At 42, this patient is just below the fall-risk threshold. Each 1-point drop below 56 = 3&ndash;4% increase in fall risk. Intervention indicated.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Client&rsquo;s TUG is 15 seconds. What&rsquo;s your interpretation?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>High fall risk.</strong> TUG &gt;12 sec = increased fall risk. &gt;14 sec = high fall risk (CDC STEADI). &gt;30 sec = severe impairment. This patient likely needs an assistive device and a targeted balance/strength program.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What&rsquo;s the difference between the 5TSTS and 30-sec STS in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>5TSTS:</strong> time to complete 5 reps (measures speed/power). <strong>30-sec STS:</strong> count reps in 30 seconds (measures endurance + strength). 5TSTS is better for fall risk screening. 30-sec STS is part of the Senior Fitness Test and better for tracking LE endurance gains.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Gait speed is 0.65 m/s. In this case, What functional level is this?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Limited community ambulator</strong> (0.4&ndash;0.8 m/s). Cannot safely cross intersections (&lt;1.0 m/s required). Not a household ambulator (&gt;0.4). Needs gait training to reach community ambulation level (&gt;0.8 m/s). A 0.1 m/s improvement is associated with meaningful reduction in mortality.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Client&rsquo;s functional reach is 5 inches. What does this indicate?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Significant fall risk.</strong> FRT &le;6 inches (15 cm) = significant fall risk. 6&ndash;10 = moderate. &gt;10 = low. This patient has severely limited anterior limits of stability and needs balance training with emphasis on weight shifting and ankle strategy development.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">An individual on your caseload improves their ODI from 48% to 38%. Is this a meaningful change?</div><span class="rc2-flip">tap</span><div class="rc2-a">The change is <strong>10 points</strong>. ODI MDC = 10.5 points, MCID = 6&ndash;12 points. The change <strong>meets the MCID</strong> (meaningful to the patient) but <strong>may not exceed the MDC</strong> (could be measurement error). Clinically: the patient reports improvement, which matters. Statistically: borderline. Continue treatment and re-measure.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Which balance test should you use if the BBS has a ceiling effect for your patient in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Mini-BESTest</strong> or <strong>FGA (Functional Gait Assessment).</strong> Both were developed specifically to address the BBS ceiling effect. The Mini-BESTest also identifies WHICH balance system is impaired (anticipatory, reactive, sensory, dynamic gait), which directs treatment planning.</div></div>
-  </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to reveal answers.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">The patient scores 42/56 on the Berg Balance Scale. What does this mean?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Medium fall risk.</strong> BBS &le;45 = increased fall risk. 21&ndash;40 = medium, 41&ndash;56 = low. At 42, this patient is just below the fall-risk threshold. Each 1-point drop below 56 = 3&ndash;4% increase in fall risk. Intervention indicated.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Client&rsquo;s TUG is 15 seconds. What&rsquo;s your interpretation?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>High fall risk.</strong> TUG &gt;12 sec = increased fall risk. &gt;14 sec = high fall risk (CDC STEADI). &gt;30 sec = severe impairment. This patient likely needs an assistive device and a targeted balance/strength program.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What&rsquo;s the difference between the 5TSTS and 30-sec STS in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>5TSTS:</strong> time to complete 5 reps (measures speed/power). <strong>30-sec STS:</strong> count reps in 30 seconds (measures endurance + strength). 5TSTS is better for fall risk screening. 30-sec STS is part of the Senior Fitness Test and better for tracking LE endurance gains.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Gait speed is 0.65 m/s. In this case, What functional level is this?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Limited community ambulator</strong> (0.4&ndash;0.8 m/s). Cannot safely cross intersections (&lt;1.0 m/s required). Not a household ambulator (&gt;0.4). Needs gait training to reach community ambulation level (&gt;0.8 m/s). A 0.1 m/s improvement is associated with meaningful reduction in mortality.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Client&rsquo;s functional reach is 5 inches. What does this indicate?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Significant fall risk.</strong> FRT &le;6 inches (15 cm) = significant fall risk. 6&ndash;10 = moderate. &gt;10 = low. This patient has severely limited anterior limits of stability and needs balance training with emphasis on weight shifting and ankle strategy development.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">An individual on your caseload improves their ODI from 48% to 38%. Is this a meaningful change?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">The change is <strong>10 points</strong>. ODI MDC = 10.5 points, MCID = 6&ndash;12 points. The change <strong>meets the MCID</strong> (meaningful to the patient) but <strong>may not exceed the MDC</strong> (could be measurement error). Clinically: the patient reports improvement, which matters. Statistically: borderline. Continue treatment and re-measure.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Which balance test should you use if the BBS has a ceiling effect for your patient in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Mini-BESTest</strong> or <strong>FGA (Functional Gait Assessment).</strong> Both were developed specifically to address the BBS ceiling effect. The Mini-BESTest also identifies WHICH balance system is impaired (anticipatory, reactive, sensory, dynamic gait), which directs treatment planning.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -559,6 +658,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

@@ -1,321 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Back &amp; Vertebral Column</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Back &amp; Vertebral Column</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat has-active">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" class="active" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">MSK Spine &middot; Back &amp; Vertebral Column</div>
-  <h1>Back &amp; <span>Vertebral Column</span></h1>
-  <p>The vertebral column is the body&rsquo;s central pillar — it protects the spinal cord, supports the head and trunk, anchors the ribs, and serves as the attachment point for hundreds of muscles. Its 4 curvatures balance load while 23 intervertebral discs absorb shock and allow motion. The spine must solve an impossible engineering problem: be rigid enough to support vertical load yet flexible enough to bend, twist, and rotate. Understanding how it does this — through the three-joint complex, facet orientation, and core stabilization — is fundamental to treating the most common reason patients seek PT: back pain.</p>
+<div class="hero-tag">MSK Spine &middot; Back &amp; Vertebral Column</div>
+<h1>Back &amp; <span>Vertebral Column</span></h1>
+<p>The vertebral column is the body&rsquo;s central pillar — it protects the spinal cord, supports the head and trunk, anchors the ribs, and serves as the attachment point for hundreds of muscles. Its 4 curvatures balance load while 23 intervertebral discs absorb shock and allow motion. The spine must solve an impossible engineering problem: be rigid enough to support vertical load yet flexible enough to bend, twist, and rotate. Understanding how it does this — through the three-joint complex, facet orientation, and core stabilization — is fundamental to treating the most common reason patients seek PT: back pain.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('column',this)">Vertebral Column</button>
-  <button onclick="showTab('vertebrae',this)">Regional Vertebrae</button>
-  <button onclick="showTab('joints',this)">Joints &amp; Ligaments</button>
-  <button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
-  <button onclick="showTab('kinesiology',this)">Kinesiology</button>
-  <button onclick="showTab('clinical',this)">Clinical Pathology</button>
-  <button onclick="showTab('examples',this)">Clinical Examples</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('column',this)">Vertebral Column</button>
+<button onclick="showTab('vertebrae',this)">Regional Vertebrae</button>
+<button onclick="showTab('joints',this)">Joints &amp; Ligaments</button>
+<button onclick="showTab('muscles',this)">Muscles &amp; OINA</button>
+<button onclick="showTab('kinesiology',this)">Kinesiology</button>
+<button onclick="showTab('clinical',this)">Clinical Pathology</button>
+<button onclick="showTab('examples',this)">Clinical Examples</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== VERTEBRAL COLUMN ====== -->
 <div class="tab-panel active" id="tab-column">
 <div class="container">
-  <div class="section-title">Vertebral Column &mdash; Structure &amp; Curvatures</div>
-  <div class="section-sub">The vertebral column is the axial skeleton&rsquo;s central pillar: 33 vertebrae (7 cervical, 12 thoracic, 5 lumbar, 5 sacral fused, 4 coccygeal fused), 23 intervertebral discs, and 4 curvatures that balance load and absorb shock.</div>
-
-  <div class="section-title">Spinal Curvatures</div>
-  <table class="data-table"><thead><tr><th>Curvature</th><th>Type</th><th>Development</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="hi">Thoracic + Sacral</td><td><strong>Primary (kyphotic)</strong> &mdash; concave anteriorly</td><td>Present at birth. Original fetal &ldquo;C-curve&rdquo;</td><td>Excessive thoracic kyphosis: osteoporosis compression fractures, Scheuermann&rsquo;s disease</td></tr>
-    <tr><td class="hi">Cervical + Lumbar</td><td><strong>Secondary (lordotic)</strong> &mdash; concave posteriorly</td><td>Cervical: develops 3&ndash;4 months (head control). Lumbar: 12&ndash;18 months (standing/walking)</td><td>Excessive lordosis: postural habits, pregnancy, weak abdominals, hip flexor tightness</td></tr>
-    <tr><td class="warn">Scoliosis</td><td>Lateral deviation with rotational component</td><td>Named for convexity. Most commonly idiopathic in adolescents</td><td>Adam&rsquo;s forward bend test. Treatment depends on severity: observation, bracing, surgical</td></tr>
-  </tbody></table>
-
-  <div class="section-title">Typical Vertebra &mdash; Components</div>
-  <table class="data-table"><thead><tr><th>Component</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="hi">Vertebral Body</td><td>Anterior weight-bearing cylinder. Size increases from C3 to L5 (proportional to load). Cancellous core + cortical shell</td><td>Compression fractures most common at thoracolumbar junction (T12&ndash;L1)</td></tr>
-    <tr><td class="hi">Vertebral Arch</td><td>Posterior. Pedicles (connect body to arch) + Laminae (connect pedicles to spinous process). Encloses vertebral foramen</td><td>Spondylolysis = pars interarticularis fracture (between sup + inf articular processes)</td></tr>
-    <tr><td class="hi">Processes (7)</td><td>Spinous process (&times;1), Transverse processes (&times;2), Superior articular facets (&times;2), Inferior articular facets (&times;2)</td><td>Facet orientation determines available motion at each level</td></tr>
-    <tr><td class="hi">Vertebral Foramen</td><td>Space between body and arch housing spinal cord. Vertebral foramina stack = vertebral canal</td><td>Stenosis = narrowing of canal compressing cord/roots</td></tr>
-    <tr><td class="hi">Intervertebral Foramen (IVF)</td><td>Lateral opening between adjacent pedicles. Spinal nerve root exits here</td><td>Disc herniation, osteophytes, or facet hypertrophy can narrow IVF &rarr; radiculopathy</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip"><div class="bl-label">Intervertebral Disc</div>
-  <p><strong>Annulus fibrosus:</strong> concentric rings of type I collagen (outer) and type II collagen (inner). Resists tension. Outer 1/3 innervated (sinuvertebral nerve) &mdash; disc tears here cause pain.<br><strong>Nucleus pulposus:</strong> gel-like center rich in proteoglycans (aggrecan attracts/binds water). Resists compression. Highest water content in the morning (disc imbibes fluid overnight), loses height during the day (creep).<br><strong>Cartilaginous endplates:</strong> hyaline cartilage on vertebral body surfaces. Primary route for disc nutrition (avascular disc depends on diffusion through endplates). Endplate damage = disc degeneration cascade. No disc between C0&ndash;C1 or C1&ndash;C2.</p></div>
+<div class="section-title">Vertebral Column &mdash; Structure &amp; Curvatures</div>
+<div class="section-sub">The vertebral column is the axial skeleton&rsquo;s central pillar: 33 vertebrae (7 cervical, 12 thoracic, 5 lumbar, 5 sacral fused, 4 coccygeal fused), 23 intervertebral discs, and 4 curvatures that balance load and absorb shock.</div>
+<div class="section-title">Spinal Curvatures</div>
+<table class="data-table"><thead>
+<tr><th>Curvature</th><th>Type</th><th>Development</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Thoracic + Sacral</td><td><strong>Primary (kyphotic)</strong> &mdash; concave anteriorly</td><td>Present at birth. Original fetal &ldquo;C-curve&rdquo;</td><td>Excessive thoracic kyphosis: osteoporosis compression fractures, Scheuermann&rsquo;s disease</td></tr>
+<tr><td class="hi">Cervical + Lumbar</td><td><strong>Secondary (lordotic)</strong> &mdash; concave posteriorly</td><td>Cervical: develops 3&ndash;4 months (head control). Lumbar: 12&ndash;18 months (standing/walking)</td><td>Excessive lordosis: postural habits, pregnancy, weak abdominals, hip flexor tightness</td></tr>
+<tr><td class="warn">Scoliosis</td><td>Lateral deviation with rotational component</td><td>Named for convexity. Most commonly idiopathic in adolescents</td><td>Adam&rsquo;s forward bend test. Treatment depends on severity: observation, bracing, surgical</td></tr></tbody></table>
+<div class="section-title">Typical Vertebra &mdash; Components</div>
+<table class="data-table"><thead>
+<tr><th>Component</th><th>Description</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Vertebral Body</td><td>Anterior weight-bearing cylinder. Size increases from C3 to L5 (proportional to load). Cancellous core + cortical shell</td><td>Compression fractures most common at thoracolumbar junction (T12&ndash;L1)</td></tr>
+<tr><td class="hi">Vertebral Arch</td><td>Posterior. Pedicles (connect body to arch) + Laminae (connect pedicles to spinous process). Encloses vertebral foramen</td><td>Spondylolysis = pars interarticularis fracture (between sup + inf articular processes)</td></tr>
+<tr><td class="hi">Processes (7)</td><td>Spinous process (&times;1), Transverse processes (&times;2), Superior articular facets (&times;2), Inferior articular facets (&times;2)</td><td>Facet orientation determines available motion at each level</td></tr>
+<tr><td class="hi">Vertebral Foramen</td><td>Space between body and arch housing spinal cord. Vertebral foramina stack = vertebral canal</td><td>Stenosis = narrowing of canal compressing cord/roots</td></tr>
+<tr><td class="hi">Intervertebral Foramen (IVF)</td><td>Lateral opening between adjacent pedicles. Spinal nerve root exits here</td><td>Disc herniation, osteophytes, or facet hypertrophy can narrow IVF &rarr; radiculopathy</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Intervertebral Disc</div>
+<p><strong>Annulus fibrosus:</strong> concentric rings of type I collagen (outer) and type II collagen (inner). Resists tension. Outer 1/3 innervated (sinuvertebral nerve) &mdash; disc tears here cause pain.<br><strong>Nucleus pulposus:</strong> gel-like center rich in proteoglycans (aggrecan attracts/binds water). Resists compression. Highest water content in the morning (disc imbibes fluid overnight), loses height during the day (creep).<br><strong>Cartilaginous endplates:</strong> hyaline cartilage on vertebral body surfaces. Primary route for disc nutrition (avascular disc depends on diffusion through endplates). Endplate damage = disc degeneration cascade. No disc between C0&ndash;C1 or C1&ndash;C2.</p>
 </div>
 </div>
-
-<!-- ====== REGIONAL VERTEBRAE ====== -->
+</div>
 <div class="tab-panel" id="tab-vertebrae">
 <div class="container">
-  <div class="section-title">Regional Vertebral Characteristics</div>
-  <div class="section-sub">Each region has distinct features that determine available motion and clinical presentation. Facet orientation is the single most important factor determining movement at each level.</div>
-
-  <table class="data-table"><thead><tr><th>Region</th><th>Key Features</th><th>Facet Orientation</th><th>Primary Motion</th><th>Clinical</th></tr></thead><tbody>
-    <tr><td class="warn">Cervical (C3&ndash;C7)</td><td>Smallest bodies. Bifid spinous processes (C3&ndash;C6). <strong>Transverse foramina</strong> (vertebral artery C6&rarr;C1). Uncinate processes (uncovertebral joints of Luschka)</td><td>~45&deg; between coronal and horizontal</td><td>Most mobile region. Flex/ext, rotation, lateral flexion all substantial</td><td>Vertebral artery enters at C6. Uncovertebral osteophytes &rarr; radiculopathy or vertebral artery compression</td></tr>
-    <tr><td class="hi">C1 (Atlas)</td><td>No body, no spinous process. Ring shape. Superior facets = concave (receive occipital condyles). Widest transverse processes of any cervical vertebra</td><td>Superior: concave, accept occipital condyles</td><td>&ldquo;Yes&rdquo; joint: primarily flex/ext (~15&deg;)</td><td>Jefferson fracture: axial compression (diving) &rarr; burst fracture of C1 ring</td></tr>
-    <tr><td class="hi">C2 (Axis)</td><td><strong>Dens (odontoid process)</strong> projects superiorly from body. Acts as pivot for C1 rotation. Strongest cervical vertebra</td><td>Superior: convex, articulate with C1</td><td>&ldquo;No&rdquo; joint: ~50% of total cervical rotation</td><td>Hangman&rsquo;s fracture: bilateral pars fracture of C2. Dens fracture: Type II most common + most unstable</td></tr>
-    <tr><td class="warn">Thoracic (T1&ndash;T12)</td><td>Heart-shaped bodies. Long, inferiorly-angled spinous processes. <strong>Costal facets</strong> on bodies + TPs for rib articulation. Most kyphotic region</td><td>~60&deg; from horizontal (nearly coronal/frontal plane)</td><td>Rotation is primary motion. Flex/ext limited by ribs and SP overlap</td><td>Most stable region (rib cage). Compression fractures common with osteoporosis. Disc herniations rare</td></tr>
-    <tr><td class="warn">Lumbar (L1&ndash;L5)</td><td>Largest bodies (most load). Short, thick SPs. <strong>Mammillary processes</strong> on superior articular processes (multifidus attachment). Pars interarticularis</td><td>~90&deg; from horizontal (sagittal plane)</td><td>Flex/ext dominant. Rotation very limited (facets block it)</td><td>MC disc herniation level: L4&ndash;L5 and L5&ndash;S1. Spondylolysis at pars. Spinal stenosis most symptomatic here</td></tr>
-    <tr><td class="hi">Sacrum</td><td>5 fused vertebrae. Triangular. Anterior/posterior sacral foramina (nerve root exit). Sacral canal, sacral hiatus, sacral cornua. Auricular surface (SI joint)</td><td>N/A (fused)</td><td>Nutation/counternutation at SIJ</td><td>Sacral fractures: insufficiency fractures in osteoporosis. Caudal epidural through sacral hiatus</td></tr>
-  </tbody></table>
+<div class="section-title">Regional Vertebral Characteristics</div>
+<div class="section-sub">Each region has distinct features that determine available motion and clinical presentation. Facet orientation is the single most important factor determining movement at each level.</div>
+<table class="data-table"><thead>
+<tr><th>Region</th><th>Key Features</th><th>Facet Orientation</th><th>Primary Motion</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">Cervical (C3&ndash;C7)</td><td>Smallest bodies. Bifid spinous processes (C3&ndash;C6). <strong>Transverse foramina</strong> (vertebral artery C6&rarr;C1). Uncinate processes (uncovertebral joints of Luschka)</td><td>~45&deg; between coronal and horizontal</td><td>Most mobile region. Flex/ext, rotation, lateral flexion all substantial</td><td>Vertebral artery enters at C6. Uncovertebral osteophytes &rarr; radiculopathy or vertebral artery compression</td></tr>
+<tr><td class="hi">C1 (Atlas)</td><td>No body, no spinous process. Ring shape. Superior facets = concave (receive occipital condyles). Widest transverse processes of any cervical vertebra</td><td>Superior: concave, accept occipital condyles</td><td>&ldquo;Yes&rdquo; joint: primarily flex/ext (~15&deg;)</td><td>Jefferson fracture: axial compression (diving) &rarr; burst fracture of C1 ring</td></tr>
+<tr><td class="hi">C2 (Axis)</td><td><strong>Dens (odontoid process)</strong> projects superiorly from body. Acts as pivot for C1 rotation. Strongest cervical vertebra</td><td>Superior: convex, articulate with C1</td><td>&ldquo;No&rdquo; joint: ~50% of total cervical rotation</td><td>Hangman&rsquo;s fracture: bilateral pars fracture of C2. Dens fracture: Type II most common + most unstable</td></tr>
+<tr><td class="warn">Thoracic (T1&ndash;T12)</td><td>Heart-shaped bodies. Long, inferiorly-angled spinous processes. <strong>Costal facets</strong> on bodies + TPs for rib articulation. Most kyphotic region</td><td>~60&deg; from horizontal (nearly coronal/frontal plane)</td><td>Rotation is primary motion. Flex/ext limited by ribs and SP overlap</td><td>Most stable region (rib cage). Compression fractures common with osteoporosis. Disc herniations rare</td></tr>
+<tr><td class="warn">Lumbar (L1&ndash;L5)</td><td>Largest bodies (most load). Short, thick SPs. <strong>Mammillary processes</strong> on superior articular processes (multifidus attachment). Pars interarticularis</td><td>~90&deg; from horizontal (sagittal plane)</td><td>Flex/ext dominant. Rotation very limited (facets block it)</td><td>MC disc herniation level: L4&ndash;L5 and L5&ndash;S1. Spondylolysis at pars. Spinal stenosis most symptomatic here</td></tr>
+<tr><td class="hi">Sacrum</td><td>5 fused vertebrae. Triangular. Anterior/posterior sacral foramina (nerve root exit). Sacral canal, sacral hiatus, sacral cornua. Auricular surface (SI joint)</td><td>N/A (fused)</td><td>Nutation/counternutation at SIJ</td><td>Sacral fractures: insufficiency fractures in osteoporosis. Caudal epidural through sacral hiatus</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== JOINTS & LIGAMENTS ====== -->
 <div class="tab-panel" id="tab-joints">
 <div class="container">
-  <div class="section-title">Spinal Joints &amp; Ligaments</div>
-  <div class="section-sub">Each motion segment (2 adjacent vertebrae + disc + ligaments) has 3 joints: 1 disc (anterior) + 2 facets (posterior). The &ldquo;three-joint complex&rdquo; determines motion and stability at each level.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Spinal Ligaments</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Ligament</th><th>Attachment</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">ALL (Anterior Longitudinal)</td><td>Occiput to sacrum along ANTERIOR vertebral bodies</td><td>Limits extension. Reinforces anterior annulus</td><td>Damaged in hyperextension injuries. Widest at thoracic level</td></tr>
-        <tr><td class="warn">PLL (Posterior Longitudinal)</td><td>C2 to sacrum along POSTERIOR bodies WITHIN vertebral canal</td><td>Limits flexion. Reinforces posterior annulus</td><td>Narrows as it descends (hourglass) &mdash; thinnest at L4&ndash;L5 (explains posterolateral disc herniations). OPLL = canal stenosis</td></tr>
-        <tr><td class="hi">Ligamentum Flavum</td><td>Connects adjacent laminae</td><td>~80% elastin (highest of any ligament). Allows smooth flexion without buckling into canal</td><td>Thickens with age &rarr; major contributor to lumbar stenosis. Yellow color (flavum = yellow)</td></tr>
-        <tr><td class="hi">Interspinous</td><td>Between adjacent spinous processes</td><td>Limits flexion. Weakest spinal ligaments</td><td>First to fail in flexion-distraction injuries</td></tr>
-        <tr><td class="hi">Supraspinous</td><td>Tips of spinous processes C7 to sacrum</td><td>Limits flexion. Palpable midline taut band</td><td>Merges with nuchal ligament superiorly</td></tr>
-        <tr><td class="hi">Nuchal Ligament</td><td>EOP to C7 along cervical SP tips</td><td>Limits cervical flexion. Median septum separating R/L posterior muscles</td><td>Cervical homolog of supraspinous ligament</td></tr>
-        <tr><td class="hi">Intertransverse</td><td>Between transverse processes</td><td>Limits contralateral lateral flexion</td><td>More distinct in lumbar; rudimentary in cervical</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Craniovertebral (Upper Cervical) Joints &amp; Ligaments</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <table class="data-table"><thead><tr><th>Joint/Ligament</th><th>Structure</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="warn">C0&ndash;C1 (Atlanto-Occipital)</td><td>Occipital condyles on C1 superior facets. Biconvex</td><td>&ldquo;Yes&rdquo; joint: flex/ext ~15&deg;, lateral flexion ~8&deg;. Minimal rotation. No disc</td><td>AO membranes (anterior + posterior) connect C1 arches to foramen magnum</td></tr>
-        <tr><td class="warn">C1&ndash;C2 (Atlantoaxial) &mdash; 3 joints</td><td>Median: dens + anterior arch C1. Lateral (&times;2): C1/C2 facets</td><td>&ldquo;No&rdquo; joint: ~45&deg; rotation per side (50% of total cervical rotation). Minimal flex/ext</td><td>ADI &gt;3mm = instability. Sharp-Purser test</td></tr>
-        <tr><td class="hi">Transverse Ligament</td><td>Arches between lateral masses of C1, holds dens against anterior arch</td><td><strong>Most critical upper cervical ligament.</strong> Prevents anterior translation of C1 on C2</td><td>Rupture = life-threatening. RA erosion, Down syndrome (screen before sports). ADI monitoring</td></tr>
-        <tr><td class="hi">Alar Ligaments</td><td>Dens to occipital condyles (paired)</td><td>Limit rotation and lateral flexion of C0&ndash;C1&ndash;C2</td><td>Alar ligament stress test: lateral flexion of head with C2 stabilized</td></tr>
-        <tr><td class="hi">Tectorial Membrane</td><td>Continuation of PLL from C2 to occiput (inside canal)</td><td>Limits flexion of upper cervical spine</td><td>Covers the transverse ligament posteriorly</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Facet (Zygapophyseal) Joints</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Facet Joint Anatomy</div><p>Synovial plane joints between superior and inferior articular processes of adjacent vertebrae. Lined with hyaline cartilage, contain synovial fluid, enclosed in a joint capsule. <strong>Facet orientation determines available motion</strong> &mdash; this is the most important concept in spinal biomechanics. Facets are richly innervated by the <strong>medial branch of the dorsal ramus</strong> (2 levels: same level + one above) &mdash; target for facet blocks and radiofrequency ablation for facet-mediated pain. Capsular pattern: equal limitation of extension and lateral flexion in all directions.</p></div>
-    </div>
-  </div>
+<div class="section-title">Spinal Joints &amp; Ligaments</div>
+<div class="section-sub">Each motion segment (2 adjacent vertebrae + disc + ligaments) has 3 joints: 1 disc (anterior) + 2 facets (posterior). The &ldquo;three-joint complex&rdquo; determines motion and stability at each level.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Spinal Ligaments</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Ligament</th><th>Attachment</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">ALL (Anterior Longitudinal)</td><td>Occiput to sacrum along ANTERIOR vertebral bodies</td><td>Limits extension. Reinforces anterior annulus</td><td>Damaged in hyperextension injuries. Widest at thoracic level</td></tr>
+<tr><td class="warn">PLL (Posterior Longitudinal)</td><td>C2 to sacrum along POSTERIOR bodies WITHIN vertebral canal</td><td>Limits flexion. Reinforces posterior annulus</td><td>Narrows as it descends (hourglass) &mdash; thinnest at L4&ndash;L5 (explains posterolateral disc herniations). OPLL = canal stenosis</td></tr>
+<tr><td class="hi">Ligamentum Flavum</td><td>Connects adjacent laminae</td><td>~80% elastin (highest of any ligament). Allows smooth flexion without buckling into canal</td><td>Thickens with age &rarr; major contributor to lumbar stenosis. Yellow color (flavum = yellow)</td></tr>
+<tr><td class="hi">Interspinous</td><td>Between adjacent spinous processes</td><td>Limits flexion. Weakest spinal ligaments</td><td>First to fail in flexion-distraction injuries</td></tr>
+<tr><td class="hi">Supraspinous</td><td>Tips of spinous processes C7 to sacrum</td><td>Limits flexion. Palpable midline taut band</td><td>Merges with nuchal ligament superiorly</td></tr>
+<tr><td class="hi">Nuchal Ligament</td><td>EOP to C7 along cervical SP tips</td><td>Limits cervical flexion. Median septum separating R/L posterior muscles</td><td>Cervical homolog of supraspinous ligament</td></tr>
+<tr><td class="hi">Intertransverse</td><td>Between transverse processes</td><td>Limits contralateral lateral flexion</td><td>More distinct in lumbar; rudimentary in cervical</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== MUSCLES & OINA ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Craniovertebral (Upper Cervical) Joints &amp; Ligaments</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<table class="data-table"><thead>
+<tr><th>Joint/Ligament</th><th>Structure</th><th>Function</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="warn">C0&ndash;C1 (Atlanto-Occipital)</td><td>Occipital condyles on C1 superior facets. Biconvex</td><td>&ldquo;Yes&rdquo; joint: flex/ext ~15&deg;, lateral flexion ~8&deg;. Minimal rotation. No disc</td><td>AO membranes (anterior + posterior) connect C1 arches to foramen magnum</td></tr>
+<tr><td class="warn">C1&ndash;C2 (Atlantoaxial) &mdash; 3 joints</td><td>Median: dens + anterior arch C1. Lateral (&times;2): C1/C2 facets</td><td>&ldquo;No&rdquo; joint: ~45&deg; rotation per side (50% of total cervical rotation). Minimal flex/ext</td><td>ADI &gt;3mm = instability. Sharp-Purser test</td></tr>
+<tr><td class="hi">Transverse Ligament</td><td>Arches between lateral masses of C1, holds dens against anterior arch</td><td><strong>Most critical upper cervical ligament.</strong> Prevents anterior translation of C1 on C2</td><td>Rupture = life-threatening. RA erosion, Down syndrome (screen before sports). ADI monitoring</td></tr>
+<tr><td class="hi">Alar Ligaments</td><td>Dens to occipital condyles (paired)</td><td>Limit rotation and lateral flexion of C0&ndash;C1&ndash;C2</td><td>Alar ligament stress test: lateral flexion of head with C2 stabilized</td></tr>
+<tr><td class="hi">Tectorial Membrane</td><td>Continuation of PLL from C2 to occiput (inside canal)</td><td>Limits flexion of upper cervical spine</td><td>Covers the transverse ligament posteriorly</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Facet (Zygapophyseal) Joints</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Facet Joint Anatomy</div>
+<p>Synovial plane joints between superior and inferior articular processes of adjacent vertebrae. Lined with hyaline cartilage, contain synovial fluid, enclosed in a joint capsule. <strong>Facet orientation determines available motion</strong> &mdash; this is the most important concept in spinal biomechanics. Facets are richly innervated by the <strong>medial branch of the dorsal ramus</strong> (2 levels: same level + one above) &mdash; target for facet blocks and radiofrequency ablation for facet-mediated pain. Capsular pattern: equal limitation of extension and lateral flexion in all directions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-muscles">
 <div class="container">
-  <div class="section-title">Back Muscles &mdash; OINA Reference</div>
-  <div class="section-sub">Organized by layer and function. The erector spinae provide gross movement; the transversospinalis group provides segmental stabilization and fine-tuning. Multifidus is the most clinically important spinal muscle.</div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Erector Spinae &mdash; 3 Columns (&ldquo;I Love Spine&rdquo;)</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip"><div class="bl-label">Mnemonic: I Love Spine (lateral &rarr; medial)</div><p><strong>I</strong>liocostalis (lateral) &rarr; <strong>L</strong>ongissimus (intermediate) &rarr; <strong>S</strong>pinalis (medial). All innervated by <strong>dorsal primary rami</strong>. Bilateral: extends spine. Unilateral: ipsilateral lateral flexion. The primary gross extensors of the vertebral column.</p></div>
-      <table class="data-table"><thead><tr><th>Column</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="warn">Iliocostalis (lateral)</td><td>Sacrum, iliac crest, spinous processes</td><td>Angles of ribs, cervical TPs</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Unilateral: ipsilateral lateral flexion</td></tr>
-        <tr><td class="warn">Longissimus (intermediate)</td><td>Sacrum, iliac crest, spinous + transverse processes</td><td>TPs of thoracic/cervical, mastoid process (capitis)</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Unilateral: ipsilateral lateral flexion + rotation</td></tr>
-        <tr><td class="hi">Spinalis (medial)</td><td>Spinous processes (lower)</td><td>Spinous processes (upper)</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Smallest column, often blends with semispinalis</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Transversospinalis Group &mdash; Deep Stabilizers</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip gold"><div class="bl-label">Key Concept</div><p>These muscles run from transverse processes to spinous processes (hence &ldquo;transversospinalis&rdquo;). They span fewer segments than erector spinae &mdash; providing <strong>segmental control and fine-tuning</strong>. All produce contralateral rotation and extension. All innervated by dorsal primary rami.</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Spans</th><th>Origin</th><th>Insertion</th><th>Action</th><th>Clinical</th></tr></thead><tbody>
-        <tr><td class="hi">Semispinalis</td><td>4&ndash;6 segments</td><td>TPs</td><td>SPs 4&ndash;6 levels above</td><td>Extends, contralateral rotation</td><td>Semispinalis capitis = largest posterior neck muscle. Covers suboccipital triangle</td></tr>
-        <tr><td class="warn">Multifidus</td><td>2&ndash;4 segments</td><td>Sacrum, TPs T1&ndash;L5, articular pillars C4&ndash;C7</td><td>SPs 2&ndash;4 levels above (mammillary processes in lumbar)</td><td>Bilateral: extension, segmental stabilization. Unilateral: contralateral rotation</td><td><strong>THE KEY SPINAL STABILIZER.</strong> Atrophies within DAYS of acute LBP and does NOT spontaneously recover. Must be specifically retrained. Poor feedforward activation in chronic LBP. Target with motor control exercises</td></tr>
-        <tr><td class="hi">Rotatores</td><td>1&ndash;2 segments</td><td>TPs</td><td>SPs 1&ndash;2 levels above</td><td>Contralateral rotation, proprioception</td><td>Best developed in thoracic region. Likely primarily proprioceptive rather than force-producing</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Deep Local Stabilizers &mdash; Core</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip red"><div class="bl-label">The Core Stability System</div><p>True &ldquo;core&rdquo; stability comes from 4 structures working as a pressure canister: <strong>Transversus abdominis (TrA)</strong> &mdash; wraps like a corset, increases intra-abdominal pressure, fires feedforward in healthy individuals.<br><strong>Multifidus</strong> &mdash; posterior segmental stabilizer, atrophies rapidly with LBP.<br><strong>Pelvic floor muscles</strong> &mdash; bottom of the canister, co-activates with TrA.<br><strong>Diaphragm</strong> &mdash; top of the canister, must maintain respiratory function while stabilizing. Loss of feedforward activation of TrA and multifidus is the hallmark finding in chronic LBP patients.</p></div>
-    </div>
-  </div>
-
-  <div class="ma-item"><div class="ma-header" onclick="toggleMA(this)"><h4>Suboccipital Triangle</h4><span class="ma-chevron">&#9660;</span></div>
-    <div class="ma-body">
-      <div class="bl-strip purple"><div class="bl-label">Triangle Boundaries &amp; Contents</div><p><strong>Medial border:</strong> Rectus capitis posterior major.<br><strong>Lateral border:</strong> Obliquus capitis superior.<br><strong>Inferior border:</strong> Obliquus capitis inferior.<br><strong>Floor:</strong> posterior arch of atlas + posterior atlanto-occipital membrane.<br><strong>Roof:</strong> semispinalis capitis.<br><strong>Contents:</strong> vertebral artery (loop at C1) + suboccipital nerve (DPR C1). All 4 suboccipital muscles innervated by suboccipital nerve. Rich in proprioceptors &mdash; role in gaze stabilization and cervicogenic headache. Rectus capitis posterior minor has CT bridge to posterior dura (proposed mechanism for suboccipital tension headaches).</p></div>
-      <table class="data-table"><thead><tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th></tr></thead><tbody>
-        <tr><td class="hi">RCP Major</td><td>SP of C2</td><td>Lateral inferior nuchal line</td><td>Extends head; ipsilateral rotation</td></tr>
-        <tr><td class="hi">RCP Minor</td><td>Post. tubercle C1</td><td>Medial inferior nuchal line</td><td>Extends head. NOT a triangle border</td></tr>
-        <tr><td class="hi">Obliquus Cap. Inferior</td><td>SP of C2</td><td>TP of C1</td><td>Pure C1&ndash;C2 rotation. Only one NOT attached to occiput. Largest</td></tr>
-        <tr><td class="hi">Obliquus Cap. Superior</td><td>TP of C1</td><td>Occipital bone above INL</td><td>Extends head; ipsilateral lateral flexion + rotation</td></tr>
-      </tbody></table>
-    </div>
-  </div>
+<div class="section-title">Back Muscles &mdash; OINA Reference</div>
+<div class="section-sub">Organized by layer and function. The erector spinae provide gross movement; the transversospinalis group provides segmental stabilization and fine-tuning. Multifidus is the most clinically important spinal muscle.</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Erector Spinae &mdash; 3 Columns (&ldquo;I Love Spine&rdquo;)</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip">
+<div class="bl-label">Mnemonic: I Love Spine (lateral &rarr; medial)</div>
+<p><strong>I</strong>liocostalis (lateral) &rarr; <strong>L</strong>ongissimus (intermediate) &rarr; <strong>S</strong>pinalis (medial). All innervated by <strong>dorsal primary rami</strong>. Bilateral: extends spine. Unilateral: ipsilateral lateral flexion. The primary gross extensors of the vertebral column.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Column</th><th>Origin</th><th>Insertion</th><th>Nerve</th><th>Action</th></tr></thead><tbody>
+<tr><td class="warn">Iliocostalis (lateral)</td><td>Sacrum, iliac crest, spinous processes</td><td>Angles of ribs, cervical TPs</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Unilateral: ipsilateral lateral flexion</td></tr>
+<tr><td class="warn">Longissimus (intermediate)</td><td>Sacrum, iliac crest, spinous + transverse processes</td><td>TPs of thoracic/cervical, mastoid process (capitis)</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Unilateral: ipsilateral lateral flexion + rotation</td></tr>
+<tr><td class="hi">Spinalis (medial)</td><td>Spinous processes (lower)</td><td>Spinous processes (upper)</td><td>Dorsal primary rami</td><td>Bilateral: extends spine. Smallest column, often blends with semispinalis</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== KINESIOLOGY ====== -->
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Transversospinalis Group &mdash; Deep Stabilizers</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip gold">
+<div class="bl-label">Key Concept</div>
+<p>These muscles run from transverse processes to spinous processes (hence &ldquo;transversospinalis&rdquo;). They span fewer segments than erector spinae &mdash; providing <strong>segmental control and fine-tuning</strong>. All produce contralateral rotation and extension. All innervated by dorsal primary rami.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Spans</th><th>Origin</th><th>Insertion</th><th>Action</th><th>Clinical</th></tr></thead><tbody>
+<tr><td class="hi">Semispinalis</td><td>4&ndash;6 segments</td><td>TPs</td><td>SPs 4&ndash;6 levels above</td><td>Extends, contralateral rotation</td><td>Semispinalis capitis = largest posterior neck muscle. Covers suboccipital triangle</td></tr>
+<tr><td class="warn">Multifidus</td><td>2&ndash;4 segments</td><td>Sacrum, TPs T1&ndash;L5, articular pillars C4&ndash;C7</td><td>SPs 2&ndash;4 levels above (mammillary processes in lumbar)</td><td>Bilateral: extension, segmental stabilization. Unilateral: contralateral rotation</td><td><strong>THE KEY SPINAL STABILIZER.</strong> Atrophies within DAYS of acute LBP and does NOT spontaneously recover. Must be specifically retrained. Poor feedforward activation in chronic LBP. Target with motor control exercises</td></tr>
+<tr><td class="hi">Rotatores</td><td>1&ndash;2 segments</td><td>TPs</td><td>SPs 1&ndash;2 levels above</td><td>Contralateral rotation, proprioception</td><td>Best developed in thoracic region. Likely primarily proprioceptive rather than force-producing</td></tr></tbody></table>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Deep Local Stabilizers &mdash; Core</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip red">
+<div class="bl-label">The Core Stability System</div>
+<p>True &ldquo;core&rdquo; stability comes from 4 structures working as a pressure canister: <strong>Transversus abdominis (TrA)</strong> &mdash; wraps like a corset, increases intra-abdominal pressure, fires feedforward in healthy individuals.<br><strong>Multifidus</strong> &mdash; posterior segmental stabilizer, atrophies rapidly with LBP.<br><strong>Pelvic floor muscles</strong> &mdash; bottom of the canister, co-activates with TrA.<br><strong>Diaphragm</strong> &mdash; top of the canister, must maintain respiratory function while stabilizing. Loss of feedforward activation of TrA and multifidus is the hallmark finding in chronic LBP patients.</p>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Suboccipital Triangle</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div class="bl-strip purple">
+<div class="bl-label">Triangle Boundaries &amp; Contents</div>
+<p><strong>Medial border:</strong> Rectus capitis posterior major.<br><strong>Lateral border:</strong> Obliquus capitis superior.<br><strong>Inferior border:</strong> Obliquus capitis inferior.<br><strong>Floor:</strong> posterior arch of atlas + posterior atlanto-occipital membrane.<br><strong>Roof:</strong> semispinalis capitis.<br><strong>Contents:</strong> vertebral artery (loop at C1) + suboccipital nerve (DPR C1). All 4 suboccipital muscles innervated by suboccipital nerve. Rich in proprioceptors &mdash; role in gaze stabilization and cervicogenic headache. Rectus capitis posterior minor has CT bridge to posterior dura (proposed mechanism for suboccipital tension headaches).</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Muscle</th><th>Origin</th><th>Insertion</th><th>Action</th></tr></thead><tbody>
+<tr><td class="hi">RCP Major</td><td>SP of C2</td><td>Lateral inferior nuchal line</td><td>Extends head; ipsilateral rotation</td></tr>
+<tr><td class="hi">RCP Minor</td><td>Post. tubercle C1</td><td>Medial inferior nuchal line</td><td>Extends head. NOT a triangle border</td></tr>
+<tr><td class="hi">Obliquus Cap. Inferior</td><td>SP of C2</td><td>TP of C1</td><td>Pure C1&ndash;C2 rotation. Only one NOT attached to occiput. Largest</td></tr>
+<tr><td class="hi">Obliquus Cap. Superior</td><td>TP of C1</td><td>Occipital bone above INL</td><td>Extends head; ipsilateral lateral flexion + rotation</td></tr></tbody></table>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-kinesiology">
 <div class="container">
-  <div class="section-title">Spinal Kinesiology &amp; Coupled Motion</div>
-  <div class="section-sub">Spinal motion is never pure &mdash; movements are always coupled. Understanding coupling patterns is essential for manual therapy and clinical reasoning.</div>
-
-  <div class="section-title">Available ROM by Region</div>
-  <table class="data-table"><thead><tr><th>Region</th><th>Flexion/Extension</th><th>Lateral Flexion</th><th>Rotation</th><th>Limiting Factors</th></tr></thead><tbody>
-    <tr><td class="warn">Cervical</td><td>~80&ndash;90&deg; flex, ~70&deg; ext</td><td>~35&ndash;45&deg; each side</td><td>~80&ndash;90&deg; each (50% at C1&ndash;C2)</td><td>Uncovertebral joints, facet orientation, ligaments</td></tr>
-    <tr><td class="hi">Thoracic</td><td>~30&ndash;40&deg; flex, ~20&ndash;25&deg; ext</td><td>~25&ndash;30&deg;</td><td>~30&ndash;35&deg;</td><td>Rib cage (most restrictive), long overlapping SPs, facet orientation</td></tr>
-    <tr><td class="warn">Lumbar</td><td>~50&ndash;60&deg; flex, ~15&ndash;20&deg; ext</td><td>~15&ndash;20&deg;</td><td>~5&ndash;7&deg; (very limited)</td><td>Sagittal facets block rotation. IVD and ligaments</td></tr>
-  </tbody></table>
-
-  <div class="section-title">Coupled Motion</div>
-  <div class="bl-strip gold"><div class="bl-label">Fryette&rsquo;s Laws of Spinal Motion</div>
-  <p><strong>Law I (Neutral/Type I):</strong> When the spine is in neutral (no flexion or extension), sidebending and rotation occur to <strong>OPPOSITE</strong> sides. Group coupling &mdash; involves multiple segments.<br><strong>Law II (Non-neutral/Type II):</strong> When the spine is flexed or extended (non-neutral), sidebending and rotation occur to the <strong>SAME</strong> side. Single segment coupling.<br><strong>Law III:</strong> Motion introduced in one plane will reduce available motion in the other two planes.<br><strong>Clinical application:</strong> Type I dysfunctions are typically adaptive (compensation). Type II dysfunctions are typically traumatic (localized). These laws guide manual therapy assessment and treatment direction.</p></div>
-
-  <div class="bl-strip"><div class="bl-label">Lumbar Coupled Motion</div><p>In the lumbar spine, the coupling pattern is debated, but clinically: the lumbar facets (sagittal orientation) strongly limit rotation. During lateral flexion, the lumbar vertebrae tend to rotate to the <strong>opposite side</strong> in neutral (Type I) and to the <strong>same side</strong> in flexed/extended positions (Type II). The SIJ couples with lumbar motion &mdash; lateral flexion of the trunk creates SIJ torsion on the weight-bearing side.</p></div>
+<div class="section-title">Spinal Kinesiology &amp; Coupled Motion</div>
+<div class="section-sub">Spinal motion is never pure &mdash; movements are always coupled. Understanding coupling patterns is essential for manual therapy and clinical reasoning.</div>
+<div class="section-title">Available ROM by Region</div>
+<table class="data-table"><thead>
+<tr><th>Region</th><th>Flexion/Extension</th><th>Lateral Flexion</th><th>Rotation</th><th>Limiting Factors</th></tr></thead><tbody>
+<tr><td class="warn">Cervical</td><td>~80&ndash;90&deg; flex, ~70&deg; ext</td><td>~35&ndash;45&deg; each side</td><td>~80&ndash;90&deg; each (50% at C1&ndash;C2)</td><td>Uncovertebral joints, facet orientation, ligaments</td></tr>
+<tr><td class="hi">Thoracic</td><td>~30&ndash;40&deg; flex, ~20&ndash;25&deg; ext</td><td>~25&ndash;30&deg;</td><td>~30&ndash;35&deg;</td><td>Rib cage (most restrictive), long overlapping SPs, facet orientation</td></tr>
+<tr><td class="warn">Lumbar</td><td>~50&ndash;60&deg; flex, ~15&ndash;20&deg; ext</td><td>~15&ndash;20&deg;</td><td>~5&ndash;7&deg; (very limited)</td><td>Sagittal facets block rotation. IVD and ligaments</td></tr></tbody></table>
+<div class="section-title">Coupled Motion</div>
+<div class="bl-strip gold">
+<div class="bl-label">Fryette&rsquo;s Laws of Spinal Motion</div>
+<p><strong>Law I (Neutral/Type I):</strong> When the spine is in neutral (no flexion or extension), sidebending and rotation occur to <strong>OPPOSITE</strong> sides. Group coupling &mdash; involves multiple segments.<br><strong>Law II (Non-neutral/Type II):</strong> When the spine is flexed or extended (non-neutral), sidebending and rotation occur to the <strong>SAME</strong> side. Single segment coupling.<br><strong>Law III:</strong> Motion introduced in one plane will reduce available motion in the other two planes.<br><strong>Clinical application:</strong> Type I dysfunctions are typically adaptive (compensation). Type II dysfunctions are typically traumatic (localized). These laws guide manual therapy assessment and treatment direction.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Lumbar Coupled Motion</div>
+<p>In the lumbar spine, the coupling pattern is debated, but clinically: the lumbar facets (sagittal orientation) strongly limit rotation. During lateral flexion, the lumbar vertebrae tend to rotate to the <strong>opposite side</strong> in neutral (Type I) and to the <strong>same side</strong> in flexed/extended positions (Type II). The SIJ couples with lumbar motion &mdash; lateral flexion of the trunk creates SIJ torsion on the weight-bearing side.</p>
 </div>
 </div>
-
-<!-- ====== CLINICAL PATHOLOGY ====== -->
+</div>
 <div class="tab-panel" id="tab-clinical">
 <div class="container">
-  <div class="section-title">Clinical Pathology</div>
-  <div class="section-sub">The most commonly tested spinal conditions. Know the mechanism, presentation, imaging findings, and management for each.</div>
-
-  <table class="data-table"><thead><tr><th>Condition</th><th>Pathology</th><th>Presentation</th><th>Management</th></tr></thead><tbody>
-    <tr><td class="warn">Spondylosis</td><td>Degenerative disc disease + osteophytes + facet OA. Normal aging cascade</td><td>Stiffness, progressive loss of motion. May develop radiculopathy from osteophyte compression of IVF. Cervical spondylotic myelopathy = MC cause of cord dysfunction in adults &gt;55</td><td>Conservative: NSAIDs, PT (mobility, stabilization). Surgical decompression if myelopathy</td></tr>
-    <tr><td class="hi">Spondylolysis</td><td>Stress fracture of <strong>pars interarticularis</strong>. Almost always L4 or L5. Found in ~6% of population</td><td>LBP worse with extension + axial loading. Young athletes (gymnasts, football linemen). Bilateral pars defects &rarr; spondylolisthesis</td><td>Activity modification, bracing, extension avoidance, PT. Surgery rare</td></tr>
-    <tr><td class="warn">Spondylolisthesis</td><td>Anterior slippage of one vertebra over the one below. MC at L4&ndash;L5 (degenerative) and L5&ndash;S1 (isthmic)</td><td>LBP, hamstring tightness, palpable &ldquo;step-off&rdquo; at SPs. Meyerding grading: I (&lt;25%), II (25&ndash;50%), III (50&ndash;75%), IV (75&ndash;100%), V (spondyloptosis)</td><td>Grade I&ndash;II: conservative (stabilization, bracing). Grade III+: typically surgical fusion. CES at any grade = surgery</td></tr>
-    <tr><td class="warn">Spinal Stenosis</td><td>Narrowing of vertebral canal or IVFs. Central stenosis (canal) or lateral stenosis (foraminal). Causes: disc bulge + facet hypertrophy + ligamentum flavum thickening</td><td><strong>Neurogenic claudication:</strong> bilateral LE pain/numbness with walking, relieved by sitting/flexion (opens canal). Distinguished from vascular claudication by: relief with flexion (not just rest), worse downhill (extension), &ldquo;shopping cart sign&rdquo; (leans forward)</td><td>PT: flexion-based exercises, cycling, aquatic therapy. Epidural injections. Surgical decompression (laminectomy) for severe cases</td></tr>
-    <tr><td class="hi">Disc Herniation</td><td>Nucleus pulposus extrudes through torn annulus. MC at L4&ndash;L5 and L5&ndash;S1. Posterolateral direction (PLL thinnest here + weaker posterolateral annulus)</td><td>Radiculopathy in dermatomal pattern. Positive SLR (L4&ndash;S1) or femoral nerve stretch (L2&ndash;L4). Worse with flexion, sitting, Valsalva. Better with extension (McKenzie)</td><td>90% resolve conservatively in 6&ndash;12 weeks. PT: McKenzie, motor control, nerve mobilization. Surgery (microdiscectomy) for failed conservative or CES</td></tr>
-    <tr><td class="hi">Cauda Equina Syndrome</td><td>Compression of cauda equina (nerve roots below L1&ndash;L2). MC cause: massive central disc herniation</td><td><strong>Red flag:</strong> saddle anesthesia (S2&ndash;S4), bowel/bladder dysfunction (retention or incontinence), bilateral LE weakness. LMN signs (flaccid, areflexic)</td><td><strong>SURGICAL EMERGENCY.</strong> Decompression within 24&ndash;48 hours for best outcomes. Delay = permanent neurologic deficit</td></tr>
-  </tbody></table>
-
-  <div class="bl-strip red"><div class="bl-label">Red Flags &mdash; Immediate Referral</div><p>Cauda equina signs (saddle anesthesia, bladder dysfunction) &bull; Progressive neurological deficit &bull; Bilateral neurological signs &bull; History of cancer with new spine pain (metastasis) &bull; Fever + spine pain (infection/abscess) &bull; Trauma + pain (fracture) &bull; Night pain unrelieved by rest (tumor) &bull; Weight loss + fatigue + spine pain &bull; Age &lt;20 or &gt;50 with new onset spine pain without clear mechanical cause</p></div>
-
+<div class="section-title">Clinical Pathology</div>
+<div class="section-sub">The most commonly tested spinal conditions. Know the mechanism, presentation, imaging findings, and management for each.</div>
+<table class="data-table"><thead>
+<tr><th>Condition</th><th>Pathology</th><th>Presentation</th><th>Management</th></tr></thead><tbody>
+<tr><td class="warn">Spondylosis</td><td>Degenerative disc disease + osteophytes + facet OA. Normal aging cascade</td><td>Stiffness, progressive loss of motion. May develop radiculopathy from osteophyte compression of IVF. Cervical spondylotic myelopathy = MC cause of cord dysfunction in adults &gt;55</td><td>Conservative: NSAIDs, PT (mobility, stabilization). Surgical decompression if myelopathy</td></tr>
+<tr><td class="hi">Spondylolysis</td><td>Stress fracture of <strong>pars interarticularis</strong>. Almost always L4 or L5. Found in ~6% of population</td><td>LBP worse with extension + axial loading. Young athletes (gymnasts, football linemen). Bilateral pars defects &rarr; spondylolisthesis</td><td>Activity modification, bracing, extension avoidance, PT. Surgery rare</td></tr>
+<tr><td class="warn">Spondylolisthesis</td><td>Anterior slippage of one vertebra over the one below. MC at L4&ndash;L5 (degenerative) and L5&ndash;S1 (isthmic)</td><td>LBP, hamstring tightness, palpable &ldquo;step-off&rdquo; at SPs. Meyerding grading: I (&lt;25%), II (25&ndash;50%), III (50&ndash;75%), IV (75&ndash;100%), V (spondyloptosis)</td><td>Grade I&ndash;II: conservative (stabilization, bracing). Grade III+: typically surgical fusion. CES at any grade = surgery</td></tr>
+<tr><td class="warn">Spinal Stenosis</td><td>Narrowing of vertebral canal or IVFs. Central stenosis (canal) or lateral stenosis (foraminal). Causes: disc bulge + facet hypertrophy + ligamentum flavum thickening</td><td><strong>Neurogenic claudication:</strong> bilateral LE pain/numbness with walking, relieved by sitting/flexion (opens canal). Distinguished from vascular claudication by: relief with flexion (not just rest), worse downhill (extension), &ldquo;shopping cart sign&rdquo; (leans forward)</td><td>PT: flexion-based exercises, cycling, aquatic therapy. Epidural injections. Surgical decompression (laminectomy) for severe cases</td></tr>
+<tr><td class="hi">Disc Herniation</td><td>Nucleus pulposus extrudes through torn annulus. MC at L4&ndash;L5 and L5&ndash;S1. Posterolateral direction (PLL thinnest here + weaker posterolateral annulus)</td><td>Radiculopathy in dermatomal pattern. Positive SLR (L4&ndash;S1) or femoral nerve stretch (L2&ndash;L4). Worse with flexion, sitting, Valsalva. Better with extension (McKenzie)</td><td>90% resolve conservatively in 6&ndash;12 weeks. PT: McKenzie, motor control, nerve mobilization. Surgery (microdiscectomy) for failed conservative or CES</td></tr>
+<tr><td class="hi">Cauda Equina Syndrome</td><td>Compression of cauda equina (nerve roots below L1&ndash;L2). MC cause: massive central disc herniation</td><td><strong>Red flag:</strong> saddle anesthesia (S2&ndash;S4), bowel/bladder dysfunction (retention or incontinence), bilateral LE weakness. LMN signs (flaccid, areflexic)</td><td><strong>SURGICAL EMERGENCY.</strong> Decompression within 24&ndash;48 hours for best outcomes. Delay = permanent neurologic deficit</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Red Flags &mdash; Immediate Referral</div>
+<p>Cauda equina signs (saddle anesthesia, bladder dysfunction) &bull; Progressive neurological deficit &bull; Bilateral neurological signs &bull; History of cancer with new spine pain (metastasis) &bull; Fever + spine pain (infection/abscess) &bull; Trauma + pain (fracture) &bull; Night pain unrelieved by rest (tumor) &bull; Weight loss + fatigue + spine pain &bull; Age &lt;20 or &gt;50 with new onset spine pain without clear mechanical cause</p>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
-
-<!-- ====== CLINICAL EXAMPLES ====== -->
+</div>
 <div class="tab-panel" id="tab-examples">
 <div class="container">
-  <div class="section-title">Clinical Examples</div>
-  <div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 1 &mdash; Disc Herniation with Centralization</div><p>38-year-old office worker with 2 weeks right LBP radiating to posterior thigh and lateral calf (L5). SLR positive 45&deg; right. Weak EHL. Repeated extension: pain centralizes. <strong>Clinical reasoning:</strong> L4&ndash;L5 disc herniation, L5 root. Centralization = excellent prognosis. Treatment: prone press-ups, avoid flexion. 90% resolve conservatively 6&ndash;12 weeks.</p></div>
-
-  <div class="bl-strip green"><div class="bl-label">Clinical Example 2 &mdash; Neurogenic vs Vascular Claudication</div><p>72-year-old with bilateral leg pain after walking 200m. <strong>Neurogenic:</strong> relieved by flexion (sitting), worse downhill, shopping cart sign, normal pulses. <strong>Vascular:</strong> relieved by rest (standing still), worse uphill, diminished pulses, skin changes. Key differentiator: flexion relief vs rest relief.</p></div>
-
+<div class="section-title">Clinical Examples</div>
+<div class="section-sub">Applied clinical scenarios demonstrating examination findings, clinical reasoning, and treatment decision-making.</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 1 &mdash; Disc Herniation with Centralization</div>
+<p>38-year-old office worker with 2 weeks right LBP radiating to posterior thigh and lateral calf (L5). SLR positive 45&deg; right. Weak EHL. Repeated extension: pain centralizes. <strong>Clinical reasoning:</strong> L4&ndash;L5 disc herniation, L5 root. Centralization = excellent prognosis. Treatment: prone press-ups, avoid flexion. 90% resolve conservatively 6&ndash;12 weeks.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Clinical Example 2 &mdash; Neurogenic vs Vascular Claudication</div>
+<p>72-year-old with bilateral leg pain after walking 200m. <strong>Neurogenic:</strong> relieved by flexion (sitting), worse downhill, shopping cart sign, normal pulses. <strong>Vascular:</strong> relieved by rest (standing still), worse uphill, diminished pulses, skin changes. Key differentiator: flexion relief vs rest relief.</p>
 </div>
 </div>
-
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to reveal answers.</div>
-
-  <div class="rc2-grid">
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is the ligamentum flavum, and why does it contribute to spinal stenosis in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a">Connects adjacent laminae. <strong>~80% elastin</strong> (highest of any ligament) &mdash; allows smooth flexion without buckling into canal. With aging, it <strong>hypertrophies and fibroses</strong> (elastin replaced by collagen), thickening into the posterior canal, especially during extension. Major contributor to lumbar spinal stenosis.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Why do lumbar disc herniations occur posterolaterally in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a">The <strong>PLL narrows as it descends</strong> (hourglass shape) &mdash; thinnest and weakest at L4&ndash;L5. The posterolateral annulus is also thinner than the posterior midline. The combination of a weak PLL and thin annulus posterolaterally creates the path of least resistance for nucleus pulposus herniation.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Distinguish neurogenic claudication from vascular claudication.</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Neurogenic:</strong> bilateral LE pain with walking, relieved by <strong>flexion</strong> (sitting, leaning on cart &mdash; &ldquo;shopping cart sign&rdquo;), worse going downhill (extension), normal pulses. <strong>Vascular:</strong> calf cramping with walking, relieved by <strong>rest</strong> (standing still), worse uphill, diminished pulses, skin/nail changes.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">What is multifidus and why is it the most important spinal muscle clinically in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a">Deepest transversospinalis muscle. Segmental (spans 2&ndash;4 levels). <strong>Atrophies within DAYS of acute LBP and does NOT spontaneously recover</strong> even after pain resolves. Loss of feedforward activation is the hallmark of chronic LBP. Must be specifically retrained with motor control exercises. Inserts on mammillary processes in lumbar spine.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Client has saddle anesthesia, urinary retention, and bilateral LE weakness. Diagnosis and action?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Cauda equina syndrome.</strong> MC cause: massive central disc herniation compressing nerve roots below L1&ndash;L2. <strong>SURGICAL EMERGENCY</strong> &mdash; decompression within 24&ndash;48 hours. LMN signs (flaccid, areflexic) because it&rsquo;s nerve roots, not cord. Delay = permanent neurologic deficit including bowel/bladder dysfunction.</div></div>
-    <div class="rc2" onclick="flipCard(this)"><div class="rc2-q">Fryette&rsquo;s Law I vs Law II &mdash; when does sidebending and rotation go to the same vs opposite sides in this scenario?</div><span class="rc2-flip">tap</span><div class="rc2-a"><strong>Law I (neutral):</strong> sidebend and rotation go to <strong>OPPOSITE</strong> sides. Group coupling, multiple segments. <strong>Law II (non-neutral / flexed or extended):</strong> sidebend and rotation go to the <strong>SAME</strong> side. Single segment. Law I = adaptive dysfunction. Law II = traumatic dysfunction.</div></div>
-  </div>
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to reveal answers.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is the ligamentum flavum, and why does it contribute to spinal stenosis in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Connects adjacent laminae. <strong>~80% elastin</strong> (highest of any ligament) &mdash; allows smooth flexion without buckling into canal. With aging, it <strong>hypertrophies and fibroses</strong> (elastin replaced by collagen), thickening into the posterior canal, especially during extension. Major contributor to lumbar spinal stenosis.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Why do lumbar disc herniations occur posterolaterally in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">The <strong>PLL narrows as it descends</strong> (hourglass shape) &mdash; thinnest and weakest at L4&ndash;L5. The posterolateral annulus is also thinner than the posterior midline. The combination of a weak PLL and thin annulus posterolaterally creates the path of least resistance for nucleus pulposus herniation.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Distinguish neurogenic claudication from vascular claudication.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Neurogenic:</strong> bilateral LE pain with walking, relieved by <strong>flexion</strong> (sitting, leaning on cart &mdash; &ldquo;shopping cart sign&rdquo;), worse going downhill (extension), normal pulses. <strong>Vascular:</strong> calf cramping with walking, relieved by <strong>rest</strong> (standing still), worse uphill, diminished pulses, skin/nail changes.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What is multifidus and why is it the most important spinal muscle clinically in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Deepest transversospinalis muscle. Segmental (spans 2&ndash;4 levels). <strong>Atrophies within DAYS of acute LBP and does NOT spontaneously recover</strong> even after pain resolves. Loss of feedforward activation is the hallmark of chronic LBP. Must be specifically retrained with motor control exercises. Inserts on mammillary processes in lumbar spine.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Client has saddle anesthesia, urinary retention, and bilateral LE weakness. Diagnosis and action?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Cauda equina syndrome.</strong> MC cause: massive central disc herniation compressing nerve roots below L1&ndash;L2. <strong>SURGICAL EMERGENCY</strong> &mdash; decompression within 24&ndash;48 hours. LMN signs (flaccid, areflexic) because it&rsquo;s nerve roots, not cord. Delay = permanent neurologic deficit including bowel/bladder dysfunction.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Fryette&rsquo;s Law I vs Law II &mdash; when does sidebending and rotation go to the same vs opposite sides in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Law I (neutral):</strong> sidebend and rotation go to <strong>OPPOSITE</strong> sides. Group coupling, multiple segments. <strong>Law II (non-neutral / flexed or extended):</strong> sidebend and rotation go to the <strong>SAME</strong> side. Single segment. Law I = adaptive dysfunction. Law II = traumatic dysfunction.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -336,6 +337,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>

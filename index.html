@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — PT Education Platform</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-<style>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — PT Education Platform</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"><style>
 /* ===== INDEX-ONLY STYLES ===== */
 .idx-hero{max-width:1120px;margin:0 auto;padding:80px 28px 60px;text-align:center;position:relative}
 .idx-hero h1{font-family:'Source Serif 4',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:700;line-height:1.1;letter-spacing:-.035em;margin-bottom:16px}
@@ -141,391 +133,354 @@
   .stats-row{flex-direction:column;gap:16px}
   .cta-row{flex-direction:column;align-items:center}
 }
-</style>
-</head>
-<body>
-<div class="color-orb orb1"></div>
-<div class="color-orb orb2"></div>
-
-<!-- NAV -->
+</style></head><body>
+<div class="color-orb orb1">
+</div>
+<div class="color-orb orb2">
+</div>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat ">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" >Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
-<!-- HERO -->
 <div class="idx-hero">
-  <h1>The clinical reference<br>built <em>for how you actually learn</em></h1>
-  <p class="sub">42 in-depth modules. Real lecture notes, not textbook summaries. Organized by body system so you can browse or deep-dive. Founded by Dr. David Luong, PT, DPT &amp; Dr. Diego Martinez, PT, DPT, AIB-VC.</p>
-  <div class="cta-row">
-    <a href="#modules-section" class="cta-primary">Browse modules &#8594;</a>
-    <div class="cta-ghost" onclick="openSearch()">Search all content</div>
-  </div>
-  <div class="stats-row reveal">
-    <div class="stat-item"><div class="stat-num">42</div><div class="stat-label">Modules</div></div>
-    <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Body Systems</div></div>
-    <div class="stat-item"><div class="stat-num">80+</div><div class="stat-label">Review Cards</div></div>
-    <div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">OINA Tables</div></div>
-  </div>
+<h1>The clinical reference<br>built <em>for how you actually learn</em></h1><p class="sub">42 in-depth modules. Real lecture notes, not textbook summaries. Organized by body system so you can browse or deep-dive. Founded by Dr. David Luong, PT, DPT &amp; Dr. Diego Martinez, PT, DPT, AIB-VC.</p>
+<div class="cta-row"><a href="#modules-section" class="cta-primary">Browse modules &#8594;</a>
+<div class="cta-ghost" onclick="openSearch()">Search all content</div>
 </div>
-
-<div class="section-divider"></div>
-
-<!-- FEATURES -->
+<div class="stats-row reveal">
+<div class="stat-item">
+<div class="stat-num">42</div>
+<div class="stat-label">Modules</div>
+</div>
+<div class="stat-item">
+<div class="stat-num">10+</div>
+<div class="stat-label">Body Systems</div>
+</div>
+<div class="stat-item">
+<div class="stat-num">80+</div>
+<div class="stat-label">Review Cards</div>
+</div>
+<div class="stat-item">
+<div class="stat-num">200+</div>
+<div class="stat-label">OINA Tables</div>
+</div>
+</div>
+</div>
+<div class="section-divider">
+</div>
 <div class="features reveal" id="features">
-  <div class="sec-tag">Why students love this</div>
-  <div class="sec-title">Not another Quizlet deck</div>
-  <div class="sec-sub">Every module was built from actual lecture notes, case studies, and clinical reasoning &#8212; then organized so complex topics don't feel overwhelming.</div>
-  <div class="feat-grid">
-    <div class="feat-card reveal">
-      <div class="feat-icon">&#9881;</div>
-      <h3>Progressive Disclosure</h3>
-      <p>Tabs break massive topics into digestible chunks. Accordions let you drill into details only when you're ready. No wall-of-text anxiety.</p>
-    </div>
-    <div class="feat-card reveal">
-      <div class="feat-icon">&#9733;</div>
-      <h3>Flip Review Cards</h3>
-      <p>Every module ends with clinical scenario cards. Tap to test yourself. Written as the questions a CI would ask you on clinical rotation.</p>
-    </div>
-    <div class="feat-card reveal">
-      <div class="feat-icon">&#9670;</div>
-      <h3>Real Clinical Cases</h3>
-      <p>Lab value interpretation with "would you treat?" decisions. Stroke cases with arterial territory mapping. SCI functional goal planning. Not hypothetical &#8212; real patient scenarios.</p>
-    </div>
-    <div class="feat-card reveal">
-      <div class="feat-icon">&#9878;</div>
-      <h3>Color-Coded Mnemonics</h3>
-      <p>MURDER for hyperkalemia. SALT LOSS for hyponatremia. CATS for hypocalcemia. Every mnemonic is color-tagged and embedded where you need it.</p>
-    </div>
-    <div class="feat-card reveal">
-      <div class="feat-icon">&#9775;</div>
-      <h3>4 Beautiful Themes</h3>
-      <p>Light for daytime study. Dark for late-night cramming. Pink because why not. Cat for the cat lovers. Scroll chroma bar shows your progress. Grain texture adds depth.</p>
-    </div>
-    <div class="feat-card reveal">
-      <div class="feat-icon">&#9879;</div>
-      <h3>Free Core + Premium Tools</h3>
-      <p>All 34 modules are free to browse. Premium unlocks AI-generated practice questions, note-taking, progress tracking, learning awards, and case study generators.</p>
-    </div>
-  </div>
+<div class="sec-tag">Why students love this</div>
+<div class="sec-title">Not another Quizlet deck</div>
+<div class="sec-sub">Every module was built from actual lecture notes, case studies, and clinical reasoning &#8212; then organized so complex topics don't feel overwhelming.</div>
+<div class="feat-grid">
+<div class="feat-card reveal">
+<div class="feat-icon">&#9881;</div><h3>Progressive Disclosure</h3>
+<p>Tabs break massive topics into digestible chunks. Accordions let you drill into details only when you're ready. No wall-of-text anxiety.</p>
 </div>
-
-<div class="section-divider"></div>
-
-<!-- QUOTE -->
+<div class="feat-card reveal">
+<div class="feat-icon">&#9733;</div><h3>Flip Review Cards</h3>
+<p>Every module ends with clinical scenario cards. Tap to test yourself. Written as the questions a CI would ask you on clinical rotation.</p>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon">&#9670;</div><h3>Real Clinical Cases</h3>
+<p>Lab value interpretation with "would you treat?" decisions. Stroke cases with arterial territory mapping. SCI functional goal planning. Not hypothetical &#8212; real patient scenarios.</p>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon">&#9878;</div><h3>Color-Coded Mnemonics</h3>
+<p>MURDER for hyperkalemia. SALT LOSS for hyponatremia. CATS for hypocalcemia. Every mnemonic is color-tagged and embedded where you need it.</p>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon">&#9775;</div><h3>4 Beautiful Themes</h3>
+<p>Light for daytime study. Dark for late-night cramming. Pink because why not. Cat for the cat lovers. Scroll chroma bar shows your progress. Grain texture adds depth.</p>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon">&#9879;</div><h3>Free Core + Premium Tools</h3>
+<p>All 34 modules are free to browse. Premium unlocks AI-generated practice questions, note-taking, progress tracking, learning awards, and case study generators.</p>
+</div>
+</div>
+</div>
+<div class="section-divider">
+</div>
 <div class="quote-section reveal">
-  <div class="quote-block">
-    <blockquote>&#8220;The goal of education is not to increase the amount of knowledge but to create the possibilities for a child to invent and discover, to create men who are capable of doing new things.&#8221;</blockquote>
-    <div class="q-attr">&#8212; Jean Piaget</div>
-  </div>
+<div class="quote-block"><blockquote>&#8220;The goal of education is not to increase the amount of knowledge but to create the possibilities for a child to invent and discover, to create men who are capable of doing new things.&#8221;</blockquote>
+<div class="q-attr">&#8212; Jean Piaget</div>
 </div>
-
-<div class="section-divider"></div>
-
-
-<!-- FOUNDERS -->
-<div class="section-divider"></div>
+</div>
+<div class="section-divider">
+</div>
+<div class="section-divider">
+</div>
 <div class="features reveal" id="founders">
-  <div class="sec-tag">Who we are</div>
-  <div class="sec-title">Built by clinicians, for clinicians</div>
-  <div class="sec-sub">Clinicians Blueprint was born from the frustration of studying scattered notes, disorganized Quizlet decks, and textbooks that don't match how professors actually teach.</div>
-  <div class="feat-grid" style="grid-template-columns:1fr 1fr;max-width:720px">
-    <div class="feat-card reveal" style="text-align:center">
-      <div class="feat-icon" style="margin:0 auto 12px;width:56px;height:56px;font-size:24px;border-radius:50%">DL</div>
-      <h3>Dr. David Luong, PT, DPT</h3>
-      <p style="font-size:13px">Co-Founder &amp; Lead Author</p>
-    </div>
-    <div class="feat-card reveal" style="text-align:center">
-      <div class="feat-icon" style="margin:0 auto 12px;width:56px;height:56px;font-size:24px;border-radius:50%">DM</div>
-      <h3>Dr. Diego Martinez, PT, DPT, AIB-VC</h3>
-      <p style="font-size:13px">Co-Founder &amp; Co-Author</p>
-    </div>
-  </div>
+<div class="sec-tag">Who we are</div>
+<div class="sec-title">Built by clinicians, for clinicians</div>
+<div class="sec-sub">Clinicians Blueprint was born from the frustration of studying scattered notes, disorganized Quizlet decks, and textbooks that don't match how professors actually teach.</div>
+<div class="feat-grid" style="grid-template-columns:1fr 1fr;max-width:720px">
+<div class="feat-card reveal" style="text-align:center">
+<div class="feat-icon" style="margin:0 auto 12px;width:56px;height:56px;font-size:24px;border-radius:50%">DL</div><h3>Dr. David Luong, PT, DPT</h3><p style="font-size:13px">Co-Founder &amp; Lead Author</p>
 </div>
-
-
-<!-- PRICING / FREE vs PREMIUM -->
-<div class="section-divider"></div>
+<div class="feat-card reveal" style="text-align:center">
+<div class="feat-icon" style="margin:0 auto 12px;width:56px;height:56px;font-size:24px;border-radius:50%">DM</div><h3>Dr. Diego Martinez, PT, DPT, AIB-VC</h3><p style="font-size:13px">Co-Founder &amp; Co-Author</p>
+</div>
+</div>
+</div>
+<div class="section-divider">
+</div>
 <div class="features reveal" id="pricing">
-  <div class="sec-tag">Free + Premium</div>
-  <div class="sec-title">Study free. Level up when you&#8217;re ready.</div>
-  <div class="sec-sub">Every module is free to read. Premium gives you the tools to learn deeper, track progress, and actually retain what you study.</div>
-  <div class="feat-grid" style="grid-template-columns:1fr 1fr;max-width:760px">
-    <div class="feat-card reveal">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);margin-bottom:8px">Free &#8212; forever</div>
-      <h3 style="margin-bottom:12px">Core Access</h3>
-      <ul style="list-style:none;padding:0">
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> All 34 modules &#8212; full content</li>
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Flip review cards</li>
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Search across all content</li>
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> 3 themes (light, dark, pink)</li>
-        <li style="padding:6px 0;font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Works on any device</li>
-      </ul>
-    </div>
-    <div class="feat-card reveal" style="border-color:var(--accent);background:var(--soft)">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin-bottom:8px">Premium &#8212; now live</div>
-      <h3 style="margin-bottom:12px">Pro Tools</h3>
-      <ul style="list-style:none;padding:0">
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#9733;</span> AI-generated practice questions</li>
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> In-module note taking <span style="font-size:9px;color:var(--accent);font-family:'IBM Plex Mono',monospace">LIVE</span></li>
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Progress tracking &amp; streaks <span style="font-size:9px;color:var(--accent);font-family:'IBM Plex Mono',monospace">LIVE</span></li>
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#9733;</span> Case study generator</li>
-        <li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Learning awards &amp; trophy system <span style="font-size:9px;color:var(--accent);font-family:'IBM Plex Mono',monospace">LIVE</span></li>
-        <li style="padding:6px 0;font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#9733;</span> Randomized review quizzes</li>
-      </ul>
-    </div>
-  </div>
+<div class="sec-tag">Free + Premium</div>
+<div class="sec-title">Study free. Level up when you&#8217;re ready.</div>
+<div class="sec-sub">Every module is free to read. Premium gives you the tools to learn deeper, track progress, and actually retain what you study.</div>
+<div class="feat-grid" style="grid-template-columns:1fr 1fr;max-width:760px">
+<div class="feat-card reveal">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);margin-bottom:8px">Free &#8212; forever</div><h3 style="margin-bottom:12px">Core Access</h3><ul style="list-style:none;padding:0"><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> All 34 modules &#8212; full content</li><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Flip review cards</li><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Search across all content</li><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> 3 themes (light, dark, pink)</li><li style="padding:6px 0;font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Works on any device</li></ul>
 </div>
-
-<!-- COMPARISON -->
+<div class="feat-card reveal" style="border-color:var(--accent);background:var(--soft)">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin-bottom:8px">Premium &#8212; now live</div><h3 style="margin-bottom:12px">Pro Tools</h3><ul style="list-style:none;padding:0"><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#9733;</span> AI-generated practice questions</li><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> In-module note taking <span style="font-size:9px;color:var(--accent);font-family:'IBM Plex Mono',monospace">LIVE</span></li><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Progress tracking &amp; streaks <span style="font-size:9px;color:var(--accent);font-family:'IBM Plex Mono',monospace">LIVE</span></li><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#9733;</span> Case study generator</li><li style="padding:6px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#10003;</span> Learning awards &amp; trophy system <span style="font-size:9px;color:var(--accent);font-family:'IBM Plex Mono',monospace">LIVE</span></li><li style="padding:6px 0;font-size:14px;color:var(--text2);display:flex;align-items:center;gap:8px"><span style="color:var(--accent);font-weight:700">&#9733;</span> Randomized review quizzes</li></ul>
+</div>
+</div>
+</div>
 <div class="compare reveal">
-  <div class="sec-tag">How we're different</div>
-  <div class="sec-title">Clinicians Blueprint vs. everything else</div>
-  <div class="compare-grid">
-    <div class="compare-card highlight">
-      <div class="cc-tag">Clinicians Blueprint</div>
-      <h3>Built from real lectures</h3>
-      <ul>
-        <li>Written from actual PT school lecture notes and case studies</li>
-        <li>Clinical reasoning built in &#8212; "would you treat this patient?"</li>
-        <li>Organized by body system with tabbed progressive disclosure</li>
-        <li>Mnemonics embedded where you need them, not on a separate card</li>
-        <li>Free core content. Premium tools for deeper learning</li>
-        <li>Dark mode, pink mode, scroll effects &#8212; actually enjoyable to use</li>
-      </ul>
-    </div>
-    <div class="compare-card other">
-      <div class="cc-tag">Traditional Resources</div>
-      <h3>Generic study tools</h3>
-      <ul>
-        <li>Textbook summaries that don't match how your professor teaches</li>
-        <li>Flashcards with isolated facts, no clinical context</li>
-        <li>Overwhelming walls of text with no visual hierarchy</li>
-        <li>Mnemonics scattered across 12 different Quizlet decks</li>
-        <li>Subscription fees, login walls, ads everywhere</li>
-        <li>Same bland white interface since 2015</li>
-      </ul>
-    </div>
-  </div>
+<div class="sec-tag">How we're different</div>
+<div class="sec-title">Clinicians Blueprint vs. everything else</div>
+<div class="compare-grid">
+<div class="compare-card highlight">
+<div class="cc-tag">Clinicians Blueprint</div><h3>Built from real lectures</h3><ul><li>Written from actual PT school lecture notes and case studies</li><li>Clinical reasoning built in &#8212; "would you treat this patient?"</li><li>Organized by body system with tabbed progressive disclosure</li><li>Mnemonics embedded where you need them, not on a separate card</li><li>Free core content. Premium tools for deeper learning</li><li>Dark mode, pink mode, scroll effects &#8212; actually enjoyable to use</li></ul>
 </div>
-
-<div class="section-divider"></div>
-
-<!-- REVIEWS -->
+<div class="compare-card other">
+<div class="cc-tag">Traditional Resources</div><h3>Generic study tools</h3><ul><li>Textbook summaries that don't match how your professor teaches</li><li>Flashcards with isolated facts, no clinical context</li><li>Overwhelming walls of text with no visual hierarchy</li><li>Mnemonics scattered across 12 different Quizlet decks</li><li>Subscription fees, login walls, ads everywhere</li><li>Same bland white interface since 2015</li></ul>
+</div>
+</div>
+</div>
+<div class="section-divider">
+</div>
 <div class="reviews reveal" id="reviews">
-  <div class="sec-tag">What students say</div>
-  <div class="sec-title">Used during clinicals and board prep</div>
-  <div class="review-grid">
-    <div class="review-card reveal">
-      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <div class="review-text">"I wish this existed when I was in my first year. The shoulder module alone has more organized content than my entire MSK textbook chapter."</div>
-      <div class="review-author">&#8212; 3rd Year DPT Student</div>
-    </div>
-    <div class="review-card reveal">
-      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <div class="review-text">"The multi-system module saved me during my acute care rotation. Being able to look up lab values with the 'would you treat?' cases was exactly what I needed at the bedside."</div>
-      <div class="review-author">&#8212; DPT Student on Clinical Rotation</div>
-    </div>
-    <div class="review-card reveal">
-      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <div class="review-text">"Neuro was my worst subject until I found this. The way it breaks down the vestibular system into 4 treatment categories with progressions finally made it click."</div>
-      <div class="review-author">&#8212; 2nd Year DPT Student</div>
-    </div>
-  </div>
+<div class="sec-tag">What students say</div>
+<div class="sec-title">Used during clinicals and board prep</div>
+<div class="review-grid">
+<div class="review-card reveal">
+<div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<div class="review-text">"I wish this existed when I was in my first year. The shoulder module alone has more organized content than my entire MSK textbook chapter."</div>
+<div class="review-author">&#8212; 3rd Year DPT Student</div>
 </div>
-
-<div class="section-divider"></div>
-
-<!-- MODULES -->
+<div class="review-card reveal">
+<div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<div class="review-text">"The multi-system module saved me during my acute care rotation. Being able to look up lab values with the 'would you treat?' cases was exactly what I needed at the bedside."</div>
+<div class="review-author">&#8212; DPT Student on Clinical Rotation</div>
+</div>
+<div class="review-card reveal">
+<div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<div class="review-text">"Neuro was my worst subject until I found this. The way it breaks down the vestibular system into 4 treatment categories with progressions finally made it click."</div>
+<div class="review-author">&#8212; 2nd Year DPT Student</div>
+</div>
+</div>
+</div>
+<div class="section-divider">
+</div>
 <div class="modules" id="modules-section">
 <div class="sec-tag reveal">All modules</div>
-<div class="sec-title reveal" style="margin-bottom:4px">Organized by body system</div>
-<p class="sec-sub reveal" style="margin-bottom:0">Click any module to start studying. Use <kbd style="background:var(--bg3);border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-family:'IBM Plex Mono',monospace;font-size:11px">/</kbd> to search across everything.</p>
-
+<div class="sec-title reveal" style="margin-bottom:4px">Organized by body system</div><p class="sec-sub reveal" style="margin-bottom:0">Click any module to start studying. Use <kbd style="background:var(--bg3);border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-family:'IBM Plex Mono',monospace;font-size:11px">/</kbd> to search across everything.</p>
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9670;</div><h2 class="cat-title">Foundations</h2><span class="cat-count">6</span></div>
-  <p class="cat-desc">Core clinical science &#8212; pathophysiology, pharmacology, research, clinical exam, and health promotion.</p>
-  <div class="module-grid">
-    <a href="CB_ClinicalFoundations.html" class="module-card"><span class="mc-tag">Foundations</span><div class="mc-title">Clinical Foundations</div><div class="mc-desc">Vitals, patient interview, documentation, ICF model</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_Pathophysiology.html" class="module-card"><span class="mc-tag">Foundations</span><div class="mc-title">Pathophysiology</div><div class="mc-desc">Cellular injury, inflammation, healing cascade</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_Pharmacology.html" class="module-card"><span class="mc-tag">Foundations</span><div class="mc-title">Pharmacology</div><div class="mc-desc">Drug classes, mechanisms, PT implications</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_ResearchMethods.html" class="module-card"><span class="mc-tag">Foundations</span><div class="mc-title">Research Methods</div><div class="mc-desc">Study design, statistics, EBP, critical appraisal</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_HealthPromotion.html" class="module-card"><span class="mc-tag">Foundations</span><div class="mc-title">Health Promotion</div><div class="mc-desc">Wellness, prevention, exercise prescription</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_MedicalConditions.html" class="module-card"><span class="mc-tag">Foundations</span><div class="mc-title">Medical Conditions</div><div class="mc-desc">Systemic conditions, comorbidities, red flags</div><span class="mc-arrow">&#8594;</span></a>
-  </div>
+<div class="cat-header">
+<div class="cat-icon">&#9670;</div><h2 class="cat-title">Foundations</h2><span class="cat-count">6</span>
+</div><p class="cat-desc">Core clinical science &#8212; pathophysiology, pharmacology, research, clinical exam, and health promotion.</p>
+<div class="module-grid"><a href="CB_ClinicalFoundations.html" class="module-card"><span class="mc-tag">Foundations</span>
+<div class="mc-title">Clinical Foundations</div>
+<div class="mc-desc">Vitals, patient interview, documentation, ICF model</div><span class="mc-arrow">&#8594;</span></a><a href="CB_Pathophysiology.html" class="module-card"><span class="mc-tag">Foundations</span>
+<div class="mc-title">Pathophysiology</div>
+<div class="mc-desc">Cellular injury, inflammation, healing cascade</div><span class="mc-arrow">&#8594;</span></a><a href="CB_Pharmacology.html" class="module-card"><span class="mc-tag">Foundations</span>
+<div class="mc-title">Pharmacology</div>
+<div class="mc-desc">Drug classes, mechanisms, PT implications</div><span class="mc-arrow">&#8594;</span></a><a href="CB_ResearchMethods.html" class="module-card"><span class="mc-tag">Foundations</span>
+<div class="mc-title">Research Methods</div>
+<div class="mc-desc">Study design, statistics, EBP, critical appraisal</div><span class="mc-arrow">&#8594;</span></a><a href="CB_HealthPromotion.html" class="module-card"><span class="mc-tag">Foundations</span>
+<div class="mc-title">Health Promotion</div>
+<div class="mc-desc">Wellness, prevention, exercise prescription</div><span class="mc-arrow">&#8594;</span></a><a href="CB_MedicalConditions.html" class="module-card"><span class="mc-tag">Foundations</span>
+<div class="mc-title">Medical Conditions</div>
+<div class="mc-desc">Systemic conditions, comorbidities, red flags</div><span class="mc-arrow">&#8594;</span></a>
 </div>
-
+</div>
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9671;</div><h2 class="cat-title">MSK &#8212; Upper Extremity &amp; Trunk</h2><span class="cat-count">6</span></div>
-  <p class="cat-desc">Shoulder complex through wrist/hand, plus head, neck, and abdomen/thorax.</p>
-  <div class="module-grid">
-    <a href="CB_ShoulderModule.html" class="module-card"><span class="mc-tag">UE</span><div class="mc-title">Shoulder Complex</div><div class="mc-desc">GH, AC, SC joints, RTC, instability, impingement, post-op</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_ElbowModule.html" class="module-card"><span class="mc-tag">UE</span><div class="mc-title">Elbow</div><div class="mc-desc">Epicondylitis, fractures, nerve entrapments</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_WristHandModule.html" class="module-card"><span class="mc-tag">UE</span><div class="mc-title">Wrist &amp; Hand</div><div class="mc-desc">Carpal tunnel, fractures, tendon injuries, splinting</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_HeadModule.html" class="module-card"><span class="mc-tag">UE</span><div class="mc-title">Head</div><div class="mc-desc">Headache DDx, TMJ screening, cranial nerves</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_NeckModule.html" class="module-card"><span class="mc-tag">UE</span><div class="mc-title">Neck</div><div class="mc-desc">Cervical radiculopathy, WAD, TOS, VBI</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_AbdomenThoraxModule.html" class="module-card"><span class="mc-tag">Trunk</span><div class="mc-title">Abdomen &amp; Thorax</div><div class="mc-desc">Core stability, diastasis recti, visceral referral</div><span class="mc-arrow">&#8594;</span></a>
-  </div>
+<div class="cat-header">
+<div class="cat-icon">&#9671;</div><h2 class="cat-title">MSK &#8212; Upper Extremity &amp; Trunk</h2><span class="cat-count">6</span>
+</div><p class="cat-desc">Shoulder complex through wrist/hand, plus head, neck, and abdomen/thorax.</p>
+<div class="module-grid"><a href="CB_ShoulderModule.html" class="module-card"><span class="mc-tag">UE</span>
+<div class="mc-title">Shoulder Complex</div>
+<div class="mc-desc">GH, AC, SC joints, RTC, instability, impingement, post-op</div><span class="mc-arrow">&#8594;</span></a><a href="CB_ElbowModule.html" class="module-card"><span class="mc-tag">UE</span>
+<div class="mc-title">Elbow</div>
+<div class="mc-desc">Epicondylitis, fractures, nerve entrapments</div><span class="mc-arrow">&#8594;</span></a><a href="CB_WristHandModule.html" class="module-card"><span class="mc-tag">UE</span>
+<div class="mc-title">Wrist &amp; Hand</div>
+<div class="mc-desc">Carpal tunnel, fractures, tendon injuries, splinting</div><span class="mc-arrow">&#8594;</span></a><a href="CB_HeadModule.html" class="module-card"><span class="mc-tag">UE</span>
+<div class="mc-title">Head</div>
+<div class="mc-desc">Headache DDx, TMJ screening, cranial nerves</div><span class="mc-arrow">&#8594;</span></a><a href="CB_NeckModule.html" class="module-card"><span class="mc-tag">UE</span>
+<div class="mc-title">Neck</div>
+<div class="mc-desc">Cervical radiculopathy, WAD, TOS, VBI</div><span class="mc-arrow">&#8594;</span></a><a href="CB_AbdomenThoraxModule.html" class="module-card"><span class="mc-tag">Trunk</span>
+<div class="mc-title">Abdomen &amp; Thorax</div>
+<div class="mc-desc">Core stability, diastasis recti, visceral referral</div><span class="mc-arrow">&#8594;</span></a>
 </div>
-
+</div>
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9671;</div><h2 class="cat-title">MSK &#8212; Lower Extremity &amp; Back</h2><span class="cat-count">4</span></div>
-  <p class="cat-desc">Hip through foot, plus back and MSK lumbar pathology.</p>
-  <div class="module-grid">
-    <a href="CB_HipModule_v2.html" class="module-card"><span class="mc-tag">LE</span><div class="mc-title">Hip</div><div class="mc-desc">FAI, labral tears, OA, THA protocols</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_KneeModule_v2.html" class="module-card"><span class="mc-tag">LE</span><div class="mc-title">Knee</div><div class="mc-desc">ACL/PCL/meniscus, TKA, patellofemoral</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_AnkleFootModule.html" class="module-card"><span class="mc-tag">LE</span><div class="mc-title">Ankle &amp; Foot</div><div class="mc-desc">Sprains, Achilles, plantar fasciitis, orthotics</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_BackModule.html" class="module-card"><span class="mc-tag">LE</span><div class="mc-title">Back</div><div class="mc-desc">Disc herniation, stenosis, SI joint, muscle dysfunction</div><span class="mc-arrow">&#8594;</span></a>
-  </div>
+<div class="cat-header">
+<div class="cat-icon">&#9671;</div><h2 class="cat-title">MSK &#8212; Lower Extremity &amp; Back</h2><span class="cat-count">4</span>
+</div><p class="cat-desc">Hip through foot, plus back and MSK lumbar pathology.</p>
+<div class="module-grid"><a href="CB_HipModule_v2.html" class="module-card"><span class="mc-tag">LE</span>
+<div class="mc-title">Hip</div>
+<div class="mc-desc">FAI, labral tears, OA, THA protocols</div><span class="mc-arrow">&#8594;</span></a><a href="CB_KneeModule_v2.html" class="module-card"><span class="mc-tag">LE</span>
+<div class="mc-title">Knee</div>
+<div class="mc-desc">ACL/PCL/meniscus, TKA, patellofemoral</div><span class="mc-arrow">&#8594;</span></a><a href="CB_AnkleFootModule.html" class="module-card"><span class="mc-tag">LE</span>
+<div class="mc-title">Ankle &amp; Foot</div>
+<div class="mc-desc">Sprains, Achilles, plantar fasciitis, orthotics</div><span class="mc-arrow">&#8594;</span></a><a href="CB_BackModule.html" class="module-card"><span class="mc-tag">LE</span>
+<div class="mc-title">Back</div>
+<div class="mc-desc">Disc herniation, stenosis, SI joint, muscle dysfunction</div><span class="mc-arrow">&#8594;</span></a>
 </div>
-
+</div>
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9674;</div><h2 class="cat-title">Spine</h2><span class="cat-count">5</span></div>
-  <p class="cat-desc">Region-by-region spine reference &#8212; red flags, radiculopathy, special tests, and CPRs.</p>
-  <div class="module-grid">
-    <a href="CB_SpineLumbar.html" class="module-card"><span class="mc-tag">Spine</span><div class="mc-title">Lumbar Spine</div><div class="mc-desc">McKenzie, stenosis, spondylolisthesis, disc pathology</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_SpineCervical.html" class="module-card"><span class="mc-tag">Spine</span><div class="mc-title">Cervical Spine</div><div class="mc-desc">Myelopathy, WAD, cervicogenic HA, brachial plexus</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_SpineThoracic.html" class="module-card"><span class="mc-tag">Spine</span><div class="mc-title">Thoracic Spine</div><div class="mc-desc">Rib dysfunction, Scheuermann's, T4 syndrome</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_SpineSIJ.html" class="module-card"><span class="mc-tag">Spine</span><div class="mc-title">SIJ &amp; Pelvis</div><div class="mc-desc">Laslett's cluster, pelvic girdle pain</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_SpineTMJ.html" class="module-card"><span class="mc-tag">Spine</span><div class="mc-title">TMJ</div><div class="mc-desc">Disc displacement, TMD management</div><span class="mc-arrow">&#8594;</span></a>
-  </div>
+<div class="cat-header">
+<div class="cat-icon">&#9674;</div><h2 class="cat-title">Spine</h2><span class="cat-count">5</span>
+</div><p class="cat-desc">Region-by-region spine reference &#8212; red flags, radiculopathy, special tests, and CPRs.</p>
+<div class="module-grid"><a href="CB_SpineLumbar.html" class="module-card"><span class="mc-tag">Spine</span>
+<div class="mc-title">Lumbar Spine</div>
+<div class="mc-desc">McKenzie, stenosis, spondylolisthesis, disc pathology</div><span class="mc-arrow">&#8594;</span></a><a href="CB_SpineCervical.html" class="module-card"><span class="mc-tag">Spine</span>
+<div class="mc-title">Cervical Spine</div>
+<div class="mc-desc">Myelopathy, WAD, cervicogenic HA, brachial plexus</div><span class="mc-arrow">&#8594;</span></a><a href="CB_SpineThoracic.html" class="module-card"><span class="mc-tag">Spine</span>
+<div class="mc-title">Thoracic Spine</div>
+<div class="mc-desc">Rib dysfunction, Scheuermann's, T4 syndrome</div><span class="mc-arrow">&#8594;</span></a><a href="CB_SpineSIJ.html" class="module-card"><span class="mc-tag">Spine</span>
+<div class="mc-title">SIJ &amp; Pelvis</div>
+<div class="mc-desc">Laslett's cluster, pelvic girdle pain</div><span class="mc-arrow">&#8594;</span></a><a href="CB_SpineTMJ.html" class="module-card"><span class="mc-tag">Spine</span>
+<div class="mc-title">TMJ</div>
+<div class="mc-desc">Disc displacement, TMD management</div><span class="mc-arrow">&#8594;</span></a>
 </div>
-
+</div>
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9702;</div><h2 class="cat-title">Neuroscience &amp; Neuro Rehab</h2><span class="cat-count">5</span></div>
-  <p class="cat-desc">Brain structure through clinical neuro management &#8212; stroke, SCI, MS, ALS, vestibular, concussion, PNF.</p>
-  <div class="module-grid">
-    <a href="CB_BrainModule.html" class="module-card"><span class="mc-tag">Neuro</span><div class="mc-title">Brain Module</div><div class="mc-desc">Lobes, cortical function, blood supply</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_Neuroanatomy.html" class="module-card"><span class="mc-tag">Neuro</span><div class="mc-title">Neuroanatomy</div><div class="mc-desc">Spinal cord, tracts, brainstem, cerebellum</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_MotorControl.html" class="module-card"><span class="mc-tag">Neuro</span><div class="mc-title">Motor Control</div><div class="mc-desc">Motor learning, postural control, balance systems</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_NeuroRehab.html" class="module-card"><span class="mc-tag">Neuro</span><div class="mc-title">Neuro Rehabilitation</div><div class="mc-desc">Plasticity, neuro exam, PD, vestibular, concussion</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_NeuroClinMgt.html" class="module-card"><span class="mc-tag">Neuro</span><div class="mc-title">Neuro Clinical Management</div><div class="mc-desc">Stroke, brain tumors, cerebellar, SCI, HIV, MS, ALS, PNF, TBI</div><span class="mc-arrow">&#8594;</span></a>
-  </div>
+<div class="cat-header">
+<div class="cat-icon">&#9702;</div><h2 class="cat-title">Neuroscience &amp; Neuro Rehab</h2><span class="cat-count">5</span>
+</div><p class="cat-desc">Brain structure through clinical neuro management &#8212; stroke, SCI, MS, ALS, vestibular, concussion, PNF.</p>
+<div class="module-grid"><a href="CB_BrainModule.html" class="module-card"><span class="mc-tag">Neuro</span>
+<div class="mc-title">Brain Module</div>
+<div class="mc-desc">Lobes, cortical function, blood supply</div><span class="mc-arrow">&#8594;</span></a><a href="CB_Neuroanatomy.html" class="module-card"><span class="mc-tag">Neuro</span>
+<div class="mc-title">Neuroanatomy</div>
+<div class="mc-desc">Spinal cord, tracts, brainstem, cerebellum</div><span class="mc-arrow">&#8594;</span></a><a href="CB_MotorControl.html" class="module-card"><span class="mc-tag">Neuro</span>
+<div class="mc-title">Motor Control</div>
+<div class="mc-desc">Motor learning, postural control, balance systems</div><span class="mc-arrow">&#8594;</span></a><a href="CB_NeuroRehab.html" class="module-card"><span class="mc-tag">Neuro</span>
+<div class="mc-title">Neuro Rehabilitation</div>
+<div class="mc-desc">Plasticity, neuro exam, PD, vestibular, concussion</div><span class="mc-arrow">&#8594;</span></a><a href="CB_NeuroClinMgt.html" class="module-card"><span class="mc-tag">Neuro</span>
+<div class="mc-title">Neuro Clinical Management</div>
+<div class="mc-desc">Stroke, brain tumors, cerebellar, SCI, HIV, MS, ALS, PNF, TBI</div><span class="mc-arrow">&#8594;</span></a>
 </div>
-
+</div>
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9829;</div><h2 class="cat-title">Cardiopulmonary &amp; Systems</h2><span class="cat-count">5</span></div>
-  <p class="cat-desc">Cardiopulm, integumentary, imaging, physical agents, and multi-system acute care management.</p>
-  <div class="module-grid">
-    <a href="CB_Cardiopulmonary.html" class="module-card"><span class="mc-tag">Systems</span><div class="mc-title">Cardiopulmonary</div><div class="mc-desc">O&#8322; transport, ECG, heart failure, cardiac rehab</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_Integumentary.html" class="module-card"><span class="mc-tag">Systems</span><div class="mc-title">Integumentary</div><div class="mc-desc">Wound healing, pressure injuries, burns, dressings</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_Imaging.html" class="module-card"><span class="mc-tag">Diagnostics</span><div class="mc-title">Imaging &amp; Diagnostics</div><div class="mc-desc">X-ray, MRI, ultrasound, clinical decision rules</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_PhysicalAgents.html" class="module-card"><span class="mc-tag">Systems</span><div class="mc-title">Physical Agents</div><div class="mc-desc">Thermal, electrical, mechanical modalities</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_MultiSystem.html" class="module-card"><span class="mc-tag">Acute Care</span><div class="mc-title">Multi-System Management</div><div class="mc-desc">Lab values, ICU, infections, surgery, transplants, emergency</div><span class="mc-arrow">&#8594;</span></a>
-  </div>
+<div class="cat-header">
+<div class="cat-icon">&#9829;</div><h2 class="cat-title">Cardiopulmonary &amp; Systems</h2><span class="cat-count">5</span>
+</div><p class="cat-desc">Cardiopulm, integumentary, imaging, physical agents, and multi-system acute care management.</p>
+<div class="module-grid"><a href="CB_Cardiopulmonary.html" class="module-card"><span class="mc-tag">Systems</span>
+<div class="mc-title">Cardiopulmonary</div>
+<div class="mc-desc">O&#8322; transport, ECG, heart failure, cardiac rehab</div><span class="mc-arrow">&#8594;</span></a><a href="CB_Integumentary.html" class="module-card"><span class="mc-tag">Systems</span>
+<div class="mc-title">Integumentary</div>
+<div class="mc-desc">Wound healing, pressure injuries, burns, dressings</div><span class="mc-arrow">&#8594;</span></a><a href="CB_Imaging.html" class="module-card"><span class="mc-tag">Diagnostics</span>
+<div class="mc-title">Imaging &amp; Diagnostics</div>
+<div class="mc-desc">X-ray, MRI, ultrasound, clinical decision rules</div><span class="mc-arrow">&#8594;</span></a><a href="CB_PhysicalAgents.html" class="module-card"><span class="mc-tag">Systems</span>
+<div class="mc-title">Physical Agents</div>
+<div class="mc-desc">Thermal, electrical, mechanical modalities</div><span class="mc-arrow">&#8594;</span></a><a href="CB_MultiSystem.html" class="module-card"><span class="mc-tag">Acute Care</span>
+<div class="mc-title">Multi-System Management</div>
+<div class="mc-desc">Lab values, ICU, infections, surgery, transplants, emergency</div><span class="mc-arrow">&#8594;</span></a>
 </div>
-
+</div>
 <div class="category reveal">
-  <div class="cat-header"><div class="cat-icon">&#9650;</div><h2 class="cat-title">Functional &amp; Special Topics</h2><span class="cat-count">7</span></div>
-  <p class="cat-desc">Therapeutic exercise, gait and assistive devices, wheelchair prescription, professional development, and career planning.</p>
-  <div class="module-grid">
-    <a href="CB_TherEx.html" class="module-card"><span class="mc-tag">Functional</span><div class="mc-title">Therapeutic Exercise</div><div class="mc-desc">Exercise prescription, ROM, strengthening, flexibility</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_GaitAD.html" class="module-card"><span class="mc-tag">Functional</span><div class="mc-title">Gait &amp; Assistive Devices</div><div class="mc-desc">Normal gait, deviations, AD fitting, stair training</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_WheelchairADA.html" class="module-card"><span class="mc-tag">Functional</span><div class="mc-title">Wheelchair &amp; ADA</div><div class="mc-desc">Wheelchair prescription, seating, positioning</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_ProfessionalDev.html" class="module-card"><span class="mc-tag">Special</span><div class="mc-title">Professional Dev</div><div class="mc-desc">Evidence-based practice, continuing education, career growth</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_OutcomeMeasures.html" class="module-card"><span class="mc-tag">Clinical</span><div class="mc-title">Outcome Measures</div><div class="mc-desc">BBS, TUG, 6MWT, FRT, 5TSTS, DASH, LEFS, ODI — MDC/MCID, protocols, cutoffs</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_ExerciseRx.html" class="module-card"><span class="mc-tag">Functional</span><div class="mc-title">Exercise Prescription</div><div class="mc-desc">ACSM guidelines, HR zones, RPE, precautions, recovery science</div><span class="mc-arrow">&#8594;</span></a>
-    <a href="CB_CareerGuide.html" class="module-card"><span class="mc-tag">Career</span><div class="mc-title">PT Career Guide</div><div class="mc-desc">Salary by state, practice settings, laws, PT Compact, career planning</div><span class="mc-arrow">&#8594;</span></a>
-  </div>
+<div class="cat-header">
+<div class="cat-icon">&#9650;</div><h2 class="cat-title">Functional &amp; Special Topics</h2><span class="cat-count">7</span>
+</div><p class="cat-desc">Therapeutic exercise, gait and assistive devices, wheelchair prescription, professional development, and career planning.</p>
+<div class="module-grid"><a href="CB_TherEx.html" class="module-card"><span class="mc-tag">Functional</span>
+<div class="mc-title">Therapeutic Exercise</div>
+<div class="mc-desc">Exercise prescription, ROM, strengthening, flexibility</div><span class="mc-arrow">&#8594;</span></a><a href="CB_GaitAD.html" class="module-card"><span class="mc-tag">Functional</span>
+<div class="mc-title">Gait &amp; Assistive Devices</div>
+<div class="mc-desc">Normal gait, deviations, AD fitting, stair training</div><span class="mc-arrow">&#8594;</span></a><a href="CB_WheelchairADA.html" class="module-card"><span class="mc-tag">Functional</span>
+<div class="mc-title">Wheelchair &amp; ADA</div>
+<div class="mc-desc">Wheelchair prescription, seating, positioning</div><span class="mc-arrow">&#8594;</span></a><a href="CB_ProfessionalDev.html" class="module-card"><span class="mc-tag">Special</span>
+<div class="mc-title">Professional Dev</div>
+<div class="mc-desc">Evidence-based practice, continuing education, career growth</div><span class="mc-arrow">&#8594;</span></a><a href="CB_OutcomeMeasures.html" class="module-card"><span class="mc-tag">Clinical</span>
+<div class="mc-title">Outcome Measures</div>
+<div class="mc-desc">BBS, TUG, 6MWT, FRT, 5TSTS, DASH, LEFS, ODI — MDC/MCID, protocols, cutoffs</div><span class="mc-arrow">&#8594;</span></a><a href="CB_ExerciseRx.html" class="module-card"><span class="mc-tag">Functional</span>
+<div class="mc-title">Exercise Prescription</div>
+<div class="mc-desc">ACSM guidelines, HR zones, RPE, precautions, recovery science</div><span class="mc-arrow">&#8594;</span></a><a href="CB_CareerGuide.html" class="module-card"><span class="mc-tag">Career</span>
+<div class="mc-title">PT Career Guide</div>
+<div class="mc-desc">Salary by state, practice settings, laws, PT Compact, career planning</div><span class="mc-arrow">&#8594;</span></a>
 </div>
 </div>
-
-<!-- FOOTER -->
+</div>
 <div class="footer">
-  <div class="footer-brand"><div class="fmark">CB</div><span>Clinicians Blueprint</span></div>
-  <div class="footer-right">Founded by Dr. David Luong, PT, DPT &amp; Dr. Diego Martinez, PT, DPT, AIB-VC &middot; Built from real lecture notes</div>
+<div class="footer-brand">
+<div class="fmark">CB</div><span>Clinicians Blueprint</span>
 </div>
-
-<!-- SEARCH MODAL -->
+<div class="footer-right">Founded by Dr. David Luong, PT, DPT &amp; Dr. Diego Martinez, PT, DPT, AIB-VC &middot; Built from real lecture notes</div>
+</div>
 <div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
-  <div class="search-modal">
-    <div class="search-input-wrap">
-      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6.5" cy="6.5" r="5"/><line x1="10" y1="10" x2="14" y2="14"/></svg>
-      <input class="search-input" id="searchInput" type="text" placeholder="Search all 40 modules..." oninput="filterModules(this.value)" autocomplete="off">
-    </div>
-    <div class="search-results" id="searchResults"></div>
-  </div>
+<div class="search-modal">
+<div class="search-input-wrap"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6.5" cy="6.5" r="5"/><line x1="10" y1="10" x2="14" y2="14"/></svg><input class="search-input" id="searchInput" type="text" placeholder="Search all 40 modules..." oninput="filterModules(this.value)" autocomplete="off">
 </div>
-
+<div class="search-results" id="searchResults">
+</div>
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -593,8 +548,9 @@ function filterModules(q){
   var c=document.getElementById('searchResults'),l=q.toLowerCase();
   var m=q?modules.filter(function(x){return x.title.toLowerCase().includes(l)||x.desc.toLowerCase().includes(l)||x.cat.toLowerCase().includes(l)}):modules;
   if(!m.length){c.innerHTML='<div class="search-empty">No modules found</div>';return}
-  c.innerHTML=m.map(function(x){return '<a href="'+x.href+'" class="search-result"><div class="sr-cat">'+x.cat+'</div><div class="sr-title">'+x.title+'</div><div class="sr-desc">'+x.desc+'</div></a>'}).join('');
+  c.innerHTML=m.map(function(x){return '<a href="'+x.href+'" class="search-result">
+<div class="sr-cat">'+x.cat+'</div>
+<div class="sr-title">'+x.title+'</div>
+<div class="sr-desc">'+x.desc+'</div></a>'}).join('');
 }
-</script>
-</body>
-</html>
+</script></body></html>

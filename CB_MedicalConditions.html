@@ -1,1041 +1,867 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinicians Blueprint — Medical Conditions &amp; PT Practice</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="theme.css?v=2">
-</head>
-<body>
-
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Clinicians Blueprint — Medical Conditions &amp; PT Practice</title><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css?v=2"></head><body>
 <nav class="site-nav">
-  <a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
-  <div class="nav-cat has-active">
-    <button>Foundations <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_ClinicalFoundations.html" >Clinical Foundations</a>
-      <a href="CB_Pathophysiology.html" >Pathophysiology</a>
-      <a href="CB_Pharmacology.html" >Pharmacology</a>
-      <a href="CB_ResearchMethods.html" >Research Methods</a>
-      <a href="CB_HealthPromotion.html" >Health Promotion</a>
-      <a href="CB_MedicalConditions.html" class="active">Medical Conditions</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>MSK <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <div class="nav-drop-label">Upper Extremity</div>
-      <a href="CB_ShoulderModule.html" >Shoulder Complex</a>
-      <a href="CB_ElbowModule.html" >Elbow</a>
-      <a href="CB_WristHandModule.html" >Wrist &amp; Hand</a>
-      <a href="CB_HeadModule.html" >Head</a>
-      <a href="CB_NeckModule.html" >Neck</a>
-      <a href="CB_AbdomenThoraxModule.html" >Abdomen &amp; Thorax</a>
-      <div class="nav-drop-label">Lower Extremity</div>
-      <a href="CB_HipModule_v2.html" >Hip</a>
-      <a href="CB_KneeModule_v2.html" >Knee</a>
-      <a href="CB_AnkleFootModule.html" >Ankle &amp; Foot</a>
-      <a href="CB_BackModule.html" >Back</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Spine <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SpineCervical.html" >Cervical</a>
-      <a href="CB_SpineThoracic.html" >Thoracic</a>
-      <a href="CB_SpineLumbar.html" >Lumbar</a>
-      <a href="CB_SpineSIJ.html" >SIJ &amp; Pelvis</a>
-      <a href="CB_SpineTMJ.html" >TMJ</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Neuro <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_BrainModule.html" >Brain</a>
-      <a href="CB_Neuroanatomy.html" >Neuroanatomy</a>
-      <a href="CB_MotorControl.html" >Motor Control</a>
-      <a href="CB_NeuroRehab.html" >Neuro Rehab</a>
-      <a href="CB_NeuroClinMgt.html" >Neuro Clinical Mgt</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Systems <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_Cardiopulmonary.html" >Cardiopulmonary</a>
-      <a href="CB_Integumentary.html" >Integumentary</a>
-      <a href="CB_Imaging.html" >Imaging</a>
-      <a href="CB_PhysicalAgents.html" >Physical Agents</a>
-      <a href="CB_MultiSystem.html" >Multi-System</a>
-    </div>
-  </div>
-  <div class="nav-cat ">
-    <button>Special <span class="nav-chev">&#9660;</span></button>
-    <div class="nav-drop">
-      <a href="CB_SportsInjury.html" >Sports Injury</a>
-      <a href="CB_AdvancedOrtho.html" >Advanced Ortho</a>
-      <a href="CB_OrthoticsProsthetics.html" >Orthotics &amp; Prosthetics</a>
-      <a href="CB_Pediatrics.html" >Pediatrics</a>
-      <a href="CB_TherEx.html" >Therapeutic Exercise</a>
-      <a href="CB_GaitAD.html" >Gait &amp; AD</a>
-      <a href="CB_WheelchairADA.html" >Wheelchair &amp; ADA</a>
-      <a href="CB_OutcomeMeasures.html" >Outcome Measures</a>
-      <a href="CB_ExerciseRx.html" >Exercise Rx</a>
-      <a href="CB_ProfessionalDev.html" >Professional Dev</a>
-      <a href="CB_CareerGuide.html" >PT Career Guide</a>
-    </div>
-  </div>
-  <div class="nav-spacer"></div>
-  <div class="theme-toggle">
-    <button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
-    <button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
-    <button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
-    <button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
-  </div>
+<a href="index.html" class="logo-link"><div class="mark">CB</div><span class="brand-text">Clinicians Blueprint</span></a>
+<div class="nav-cat"><button>Foundations <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_ClinicalFoundations.html">Clinical Foundations</a>
+<a href="CB_Pathophysiology.html">Pathophysiology</a>
+<a href="CB_Pharmacology.html">Pharmacology</a>
+<a href="CB_ResearchMethods.html">Research Methods</a>
+<a href="CB_HealthPromotion.html">Health Promotion</a>
+<a href="CB_MedicalConditions.html">Medical Conditions</a>
+</div></div>
+<div class="nav-cat"><button>MSK <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<div class="nav-drop-label">Upper Extremity</div>
+<a href="CB_ShoulderModule.html">Shoulder Complex</a>
+<a href="CB_ElbowModule.html">Elbow</a>
+<a href="CB_WristHandModule.html">Wrist &amp; Hand</a>
+<a href="CB_HeadModule.html">Head</a>
+<a href="CB_NeckModule.html">Neck</a>
+<a href="CB_AbdomenThoraxModule.html">Abdomen &amp; Thorax</a>
+<div class="nav-drop-label">Lower Extremity</div>
+<a href="CB_HipModule_v2.html">Hip</a>
+<a href="CB_KneeModule_v2.html">Knee</a>
+<a href="CB_AnkleFootModule.html">Ankle &amp; Foot</a>
+<a href="CB_BackModule.html">Back</a>
+</div></div>
+<div class="nav-cat"><button>Spine <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SpineCervical.html">Cervical</a>
+<a href="CB_SpineThoracic.html">Thoracic</a>
+<a href="CB_SpineLumbar.html">Lumbar</a>
+<a href="CB_SpineSIJ.html">SIJ &amp; Pelvis</a>
+<a href="CB_SpineTMJ.html">TMJ</a>
+</div></div>
+<div class="nav-cat"><button>Neuro <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_BrainModule.html">Brain</a>
+<a href="CB_Neuroanatomy.html">Neuroanatomy</a>
+<a href="CB_MotorControl.html">Motor Control</a>
+<a href="CB_NeuroRehab.html">Neuro Rehab</a>
+<a href="CB_NeuroClinMgt.html">Neuro Clinical Mgt</a>
+</div></div>
+<div class="nav-cat"><button>Systems <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_Cardiopulmonary.html">Cardiopulmonary</a>
+<a href="CB_Integumentary.html">Integumentary</a>
+<a href="CB_Imaging.html">Imaging</a>
+<a href="CB_PhysicalAgents.html">Physical Agents</a>
+<a href="CB_MultiSystem.html">Multi-System</a>
+</div></div>
+<div class="nav-cat"><button>Special <span class="nav-chev">&#9660;</span></button><div class="nav-drop">
+<a href="CB_SportsInjury.html">Sports Injury</a>
+<a href="CB_AdvancedOrtho.html">Advanced Ortho</a>
+<a href="CB_OrthoticsProsthetics.html">Orthotics &amp; Prosthetics</a>
+<a href="CB_Pediatrics.html">Pediatrics</a>
+<a href="CB_TherEx.html">Therapeutic Exercise</a>
+<a href="CB_ExerciseRx.html">Exercise Rx</a>
+<a href="CB_OutcomeMeasures.html">Outcome Measures</a>
+<a href="CB_GaitAD.html">Gait &amp; AD</a>
+<a href="CB_WheelchairADA.html">Wheelchair &amp; ADA</a>
+<a href="CB_ProfessionalDev.html">Professional Dev</a>
+<a href="CB_CareerGuide.html">PT Career Guide</a>
+</div></div>
+<div class="nav-spacer"></div>
+<div class="theme-toggle">
+<button class="theme-btn" data-theme="light" title="Light">&#9788;</button>
+<button class="theme-btn" data-theme="dark" title="Dark">&#9790;</button>
+<button class="theme-btn" data-theme="pink" title="Pink">&#9829;</button>
+<button class="theme-btn" data-theme="cat" title="Cat">&#128049;</button>
+</div>
 </nav>
 
-
 <div class="hero">
-  <div class="hero-tag">Systems Medicine &middot; PT Clinical Practice</div>
-  <h1>Medical Conditions <span>&amp; PT Practice</span></h1>
-  <p>These conditions are in your patient's chart every day in SNF, outpatient, and acute care. They change your exercise prescription, your precautions, your monitoring protocols, and how you talk to your patients. This is not background noise — it is clinical practice.</p>
+<div class="hero-tag">Systems Medicine &middot; PT Clinical Practice</div>
+<h1>Medical Conditions <span>&amp; PT Practice</span></h1>
+<p>These conditions are in your patient's chart every day in SNF, outpatient, and acute care. They change your exercise prescription, your precautions, your monitoring protocols, and how you talk to your patients. This is not background noise — it is clinical practice.</p>
 </div>
-
 <div class="chip-nav" id="chipNav">
-  <button class="active" onclick="showTab('diabetes',this)">Type 2 Diabetes</button>
-  <button onclick="showTab('htn',this)">Hypertension</button>
-  <button onclick="showTab('cardiac',this)">Heart Disease</button>
-  <button onclick="showTab('pulm',this)">COPD &amp; Pulmonary</button>
-  <button onclick="showTab('osteo',this)">Osteoporosis</button>
-  <button onclick="showTab('obesity',this)">Obesity &amp; Metabolic</button>
-  <button onclick="showTab('onco',this)">Oncology</button>
-  <button onclick="showTab('renal',this)">Renal Disease</button>
-  <button onclick="showTab('review',this)">Review</button>
+<button class="active" onclick="showTab('diabetes',this)">Type 2 Diabetes</button>
+<button onclick="showTab('htn',this)">Hypertension</button>
+<button onclick="showTab('cardiac',this)">Heart Disease</button>
+<button onclick="showTab('pulm',this)">COPD &amp; Pulmonary</button>
+<button onclick="showTab('osteo',this)">Osteoporosis</button>
+<button onclick="showTab('obesity',this)">Obesity &amp; Metabolic</button>
+<button onclick="showTab('onco',this)">Oncology</button>
+<button onclick="showTab('renal',this)">Renal Disease</button>
+<button onclick="showTab('review',this)">Review</button>
 </div>
-
-<!-- ====== TYPE 2 DIABETES ====== -->
 <div class="tab-panel active" id="tab-diabetes">
 <div class="container">
-
-  <div class="section-title">Type 2 Diabetes Mellitus</div>
-  <div class="section-sub">Chronic metabolic disease characterized by hyperglycemia from insulin resistance. Complications include cardiovascular disease, peripheral vascular disease, retinopathy, nephropathy, neuropathy, and loss of physical function. People with T2DM have significantly less muscular strength and exercise capacity than those without — both of which predict mortality and loss of physical function. Exercise is an evidence-based intervention (ADA + ACSM position statements). PT-directed exercise counseling combined with fitness center training produces outcomes equivalent to directly supervised sessions (Taylor et al., Phys Ther 2009).</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Complications That Directly Affect PT</div>
-      <p><strong>Cardiovascular disease</strong> — increased cardiac risk during exercise; vitals monitoring essential; atypical angina presentations common <strong>Peripheral vascular disease (PVD)</strong> — reduced perfusion to extremities; wound healing impaired; claudication limits exercise tolerance <strong>Peripheral neuropathy</strong> — loss of protective sensation; foot inspection mandatory; increased fall risk; balance impairment <strong>Autonomic neuropathy</strong> — blunted HR response to exercise; unable to reach age-predicted max HR; use RPE instead of HR; orthostatic hypotension risk <strong>Retinopathy (proliferative)</strong> — high-intensity exercise can increase intraocular pressure → retinal hemorrhage; contraindication to vigorous exercise <strong>Nephropathy</strong> — renal function impaired; fluid balance considerations; exercise contraindication if severe <strong>Accelerated muscle strength loss</strong> — older adults with T2DM lose muscular strength significantly faster than peers (Park et al., Diabetes Care 2007)<br><strong>Reduced exercise capacity</strong> — inverse relationship between exercise capacity and mortality in men with diabetes (Church et al., Diabetes Care 2004)</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Exercise Contraindications &amp; Precautions</div>
-      <div class="bl-strip red">
-        <div class="bl-label">Absolute Stop — Glucose Thresholds (ADA)</div>
-        <p>Exercise is <strong>contraindicated if fasting plasma glucose &gt;300 mg/dL</strong>, or <strong>&gt;250 mg/dL with ketosis present</strong>. Exercising with marked hyperglycemia can worsen ketoacidosis.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Exclude from Exercise Program If:</div>
-        <p>Uncontrolled hypertension · Proliferative retinopathy · Severe peripheral neuropathy · Nephropathy · Autonomic neuropathy · AHA absolute contraindications to exercise testing present · Physical impairment precluding participation.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Hypoglycemia Risk — Active Management</div>
-        <p>Patients must <strong>carry a glucose food source</strong> during all exercise sessions. Hypoglycemia risk is greatest with insulin or sulfonylurea medications. Signs: shakiness, sweating, confusion, weakness. Action: stop exercise immediately, provide 15g fast-acting carbohydrate, recheck glucose in 15 minutes.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Monitoring During Exercise</div>
-        <p>Blood pressure monitored throughout graded exercise testing. Heart rate continuously monitored. <strong>Stop test at 85% age-predicted max HR</strong> (220 − age) or patient voluntary cessation. With autonomic neuropathy: HR unreliable — use RPE exclusively.</p>
-      </div>
-
-  
-  <div class="section-title">Exercise Prescription — ADA/ACSM Protocol</div>
-  <div class="section-sub">From Taylor et al. (Phys Ther 2009), Sigal et al. (Diabetes Care 2006 — ADA position), Albright et al. (Med Sci Sports Exerc 2000 — ACSM position). Combined resistance + aerobic training is the evidence-based standard.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Resistance Training Protocol</div>
-      <p><strong>Intensity:</strong> 80% of 1-RM (heavy enough to improve strength; adequate dose for glycemic benefit)<br><strong>Volume:</strong> 4 sets × up to 8 repetitions per exercise <strong>Frequency:</strong> 2 nonconsecutive days per week (e.g., Mon/Thu)<br><strong>Progression:</strong> When 4×8 at current weight is achieved → increase by 2.27–4.54 kg (5–10 lbs) next session <strong>Rest:</strong> 1–3 minutes between sets <strong>Exercises:</strong> Multi-joint, multi-muscle group — chest press, row, leg press as minimum; add others as appropriate <strong>Equipment:</strong> Range-of-motion limiting machines preferred over free weights for safety in this population (Taylor et al.)<br><strong>Duration:</strong> 2-month program demonstrated significant improvements; ongoing maintenance essential</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Aerobic Training Protocol</div>
-      <p><strong>Mode:</strong> Walking or jogging on treadmill (any low-impact continuous aerobic activity)<br><strong>Intensity:</strong> RPE 12 ("somewhat hard") on Borg RPE Scale — important because HR may be unreliable (autonomic neuropathy, beta-blockers)<br><strong>Duration:</strong> 20 minutes per session (start here; build to 150 min/week per ADA recommendation)<br><strong>Frequency:</strong> Same days as resistance training (2×/week minimum; goal 5×/week)<br><strong>Progression:</strong> Increase speed or grade to patient tolerance; do not exceed RPE 12 <strong>Functional testing:</strong> Modified Bruce treadmill protocol for exercise capacity; duration in minutes = exercise capacity measure <strong>Timing:</strong> Avoid exercise at peak insulin action; best 1–3 hours after a meal</p>
-      <div class="bl-strip gold">
-        <div class="bl-label">Key Finding — Taylor et al. RCT (n=24)</div>
-        <p>PT-directed exercise counseling + independent fitness center training = <strong>equivalent outcomes to directly supervised exercise</strong> for muscular strength and exercise capacity. Determining factor: dose and adherence — not whether a PT is in the room. This validates a cost-effective counseling model for T2DM management.</p>
-      </div>
-
-  
-  <div class="section-title">PT Counseling Model — 5 A's Framework</div>
-  <div class="section-sub">Evidence-based health behavior counseling strategy for PT-directed exercise counseling. Used in Taylor et al. (2009) and Pinto et al. (Prev Med 1998). Tailored to the patient's current <strong>Stage of Exercise Behavior</strong> (Prochaska transtheoretical model).</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">The 5 A's — Exercise Counseling</div>
-      <p><strong>Address the Agenda</strong> — establish what the patient wants to discuss; set the session focus collaboratively; align exercise goals with patient priorities <strong>Assess</strong> — current physical activity level, barriers to exercise, readiness to change, stage of exercise behavior, medical status, relevant contraindications <strong>Advise</strong> — evidence-based recommendation: benefits of exercise for T2DM, specific exercise prescription (type/intensity/frequency/duration), safety guidelines <strong>Assist</strong> — help the patient overcome barriers; review the exercise program; problem-solve schedule conflicts; provide written exercise program; ensure equipment familiarity <strong>Arrange Follow-Up</strong> — schedule face-to-face and phone check-ins; weekly phone calls (~10 min) to monitor adherence and troubleshoot; adjust program as needed</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Stages of Exercise Behavior (Prochaska)</div>
-      <table class="data-table">
-        <thead><tr><th>Stage</th><th>Description</th><th>PT Approach</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Precontemplation</strong></td><td>Not exercising; does not intend to start</td><td>Raise awareness; explore ambivalence; avoid confrontation</td></tr>
-          <tr><td><strong>Contemplation</strong></td><td>Not exercising; intends to start</td><td>Discuss benefits and barriers; resolve ambivalence; build self-efficacy</td></tr>
-          <tr><td><strong>Preparation</strong></td><td>Exercising, but not yet regularly (&lt;2×/wk)</td><td>Goal setting; action plan; remove barriers</td></tr>
-          <tr><td><strong>Action</strong></td><td>Exercising regularly, but &lt;6 months</td><td>Reinforce behavior; problem-solve setbacks; build habit</td></tr>
-          <tr><td><strong>Maintenance</strong></td><td>Exercising regularly for 6+ months</td><td>Prevent relapse; advance program; long-term self-management</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip gold">
-        <div class="bl-label">Clinical Application</div>
-        <p>Tailor counseling to the stage — a Precontemplator needs motivational conversation, not an exercise program handout. A Maintainer needs program advancement. Assess stage at each visit; patients move forward and backward. Stage-matched counseling improves adherence.</p>
-      </div>
-
-  
-  <div class="section-title">PT-Specific Clinical Considerations</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Foot &amp; Wound Care</div>
-      <p>Inspect feet before and after every session — loss of protective sensation = patient may not feel injury Proper footwear required — no barefoot exercise; cushioned socks Any wound, blister, or skin breakdown = PT documents and notifies nursing/physician — diabetic wounds → ulcers → infection → amputation risk Monofilament testing: 10-g Semmes-Weinstein monofilament at plantar sites — inability to detect = loss of protective sensation Avoid exercises that increase shear forces on plantar surface in active neuropathic foot</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Medication Effects on PT</div>
-      <p><strong>Insulin:</strong> Hypoglycemia risk during and after exercise; time exercise 1–3 hrs post-meal; patient carries glucose source always <strong>Sulfonylureas</strong> (glipizide, glyburide): Also cause hypoglycemia with exercise — same precautions as insulin <strong>Metformin:</strong> Does not cause hypoglycemia; no direct exercise interaction; most common first-line agent <strong>SGLT-2 inhibitors</strong> (empagliflozin, canagliflozin): Euglycemic DKA risk; monitor for unusual fatigue; hypotension risk <strong>Beta-blockers</strong> (if on for CV comorbidity): Blunts HR — use RPE not target HR for exercise intensity <strong>ACE inhibitors / ARBs:</strong> May cause hypotension, especially post-exercise; monitor BP and transitions</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">SNF / Inpatient Clinical Pearls</div>
-      <p>Check glucose level before therapy session — many SNFs have glucose log in chart; <strong>do not treat if fasting glucose &gt;300 or &lt;70 mg/dL</strong> Glucose &lt;70 mg/dL (hypoglycemia): hold therapy, notify nursing, initiate hypoglycemia protocol, re-check in 15 min Document pre/post glucose, symptoms, any adverse events in PT notes Balance and fall risk: neuropathy + vision changes (retinopathy) + orthostatic hypotension = high fall risk; assess Berg/TUG; alert bed alarm/fall precautions Skin integrity rounds: check heels, sacrum, ankles every visit — pressure injury prevention is shared PT responsibility Nutrition timing: coordinate with dietary for meal/therapy scheduling to optimize glucose management Energy levels: T2DM patients may have fatigue from hyperglycemia or hypoglycemia episodes — adapt intensity accordingly</p>
-    </div>
-  
-  <div class="section-title">Diabetes — Deep Pathophysiology &amp; Clinical Distinctions</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Pancreatic Cell Types &amp; T1 vs T2 DM</div>
-      <div class="bl-strip">
-        <div class="bl-label">Islets of Langerhans — Cell Types</div>
-        <p><strong>Alpha cells:</strong> secrete glucagon (raises blood glucose).<br><strong>Beta cells:</strong> secrete insulin (lowers blood glucose; transports glucose into cells).<br><strong>Delta cells:</strong> secrete somatostatin (inhibits glucagon and insulin). T1DM = autoimmune destruction of <em>beta cells</em>.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Type 1 vs. Type 2 — Side by Side</div>
-        <table>
-          <tr><td>Feature</td><td>Type 1 (IDDM)</td><td>Type 2 (NIDDM)</td></tr>
-          <tr><td>Prevalence</td><td>~10% of DM</td><td>~90% of DM</td></tr>
-          <tr><td>Mechanism</td><td>Autoimmune destruction of beta cells → no insulin produced</td><td>Insulin resistance + impaired secretion → insulin ineffective</td></tr>
-          <tr><td>Body habitus</td><td>Typically lean</td><td>Typically obese (BMI &gt;25)</td></tr>
-          <tr><td>Exercise effect</td><td>Lowers remaining glucose → hypoglycemia risk highest</td><td>Improves insulin sensitivity → glucose uptake improved</td></tr>
-          <tr><td>PT key concern</td><td>Hypoglycemia during exercise; always carry glucose</td><td>Glucose thresholds; medication timing; foot inspection</td></tr>
-        </table>
-      <div class="bl-strip gold">
-        <div class="bl-label">T2DM Pathogenesis Sequence</div>
-        <p>(1) Increased blood glucose → pancreas secretes insulin → (2) Muscle/liver cannot use glucose due to insulin resistance (receptor problem — "lock changed") → (3) Glucose accumulates in blood → hyperglycemia → (4) Kidney excretes excess glucose → glucosuria → (5) Beta cells eventually fail to compensate → insulin secretion also impairs → progressive decline. <strong>Diet and exercise are MORE effective than drugs</strong> for T2DM prevention and management (most modifiable factors).</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">Cardinal Signs &amp; Complications</div>
-      <div class="bl-strip">
-        <div class="bl-label">The "3 Polys" + Other Signs</div>
-        <p><strong>Polyuria</strong> — abnormally large volumes of dilute urine (kidneys excreting excess glucose)<br><strong>Polydipsia</strong> — abnormally great thirst (from fluid loss)<br><strong>Polyphagia</strong> — excessive hunger (cells starving despite high blood glucose)<br><strong>Weight loss</strong> — glucose unavailable to cells; body breaks down fat and protein; dehydration <strong>Ketonuria</strong> — abnormal ketone bodies in urine from fat catabolism <strong>Weakness / fatigue / dizziness</strong> <strong>Recurrent blurred vision</strong> Many T2DM patients are initially <strong>asymptomatic</strong> — discovered incidentally on labs</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Macro &amp; Microvascular Complications — Healing Impact</div>
-        <p><strong>Macrovascular:</strong> Hyperglycemia + increased fat metabolism → atherosclerosis → poor tissue perfusion → impaired wound healing → ischemic heart disease.<br><strong>Microvascular:</strong> Ischemia from small vessel disease → wounds fail to get blood/O2/cells needed to heal. Increased glucose in body fluids/tissues fosters bacterial growth → increased infection risk.<br><strong>Diabetic neuropathy foot ulcer sites:</strong> plantar areas of metatarsal heads, toes, plantar hallux — all high-pressure zones with poor sensory feedback.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">T2DM Risk Factors — Most Modifiable</div>
-        <p><strong>Most modifiable: Diet + Exercise</strong> (more effective than medications for prevention). Others: BMI &gt;25, sedentary lifestyle, smoking, HTN (&gt;140/90), HDL &lt;35 mg/dL, triglycerides &gt;250 mg/dL. Adipose tissue: local low-grade inflammatory process → excess adipose tissue → insulin resistance. Leptin (from fat cells) activates killer cells, contributing to chronic inflammation in obesity.</p>
-      </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">DKA vs. HHS vs. Alcoholic Ketoacidosis</div>
-      <div class="bl-strip red">
-        <div class="bl-label">DKA (Diabetic Ketoacidosis) — Type 1 Classic</div>
-        <p>Insufficient insulin → biological starvation → counterregulatory hormones (glucagon, catecholamines, cortisol) → hyperglycemia + lipolysis → incomplete fat metabolism → ketone production → metabolic acidosis. <strong>Hallmarks: high glucose + high ketones + acidosis</strong>. Life-threatening. Exercise contraindicated if glucose &gt;250 mg/dL with ketosis.</p>
-      </div>
-      <table class="data-table">
-        <thead><tr><th>Feature</th><th>DKA</th><th>HHS</th><th>Alcoholic KA</th></tr></thead>
-        <tbody>
-          <tr><td>Glucose</td><td class="bad">HIGH</td><td class="bad">HIGH (extreme)</td><td class="ok">Low/Normal</td></tr>
-          <tr><td>Ketones</td><td class="bad">HIGH</td><td class="ok">Low/Normal</td><td class="bad">HIGH</td></tr>
-          <tr><td>Acidosis</td><td class="bad">YES</td><td class="ok">NO (key difference)</td><td class="bad">YES</td></tr>
-          <tr><td>Typical in</td><td>Type 1 DM</td><td>Type 2 DM</td><td>Alcohol + fasting</td></tr>
-          <tr><td>Key feature</td><td>Beta cells absent</td><td>Residual insulin prevents ketosis</td><td>Ketosis from fasting + ETOH</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip gold">
-        <div class="bl-label">HHS — Hyperosmolar Hyperglycemic Syndrome</div>
-        <p>Extreme hyperglycemia; mild or undetectable ketonuria; NO acidosis. Occurs in T2DM because residual insulin prevents fat mobilization/ketosis. Triggers: infection, inadequate fluid intake, medications, stress. Dehydration is severe. Medical emergency.</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">Hypoglycemia vs. Hyperglycemia — Clinical Recognition</div>
-      <div class="bl-strip red">
-        <div class="bl-label">Hypoglycemia (&lt;70 mg/dL) — Recognize and Act</div>
-        <p><strong>Symptoms (onset rapid — minutes):</strong> Shakiness, sweating (diaphoresis), tachycardia, pallor, anxiety, confusion, weakness, hunger, headache. Severe: seizure, loss of consciousness.<br><strong>During PT:</strong> stop exercise immediately → 15g fast-acting carbohydrate (OJ, glucose tablets, glucose gel) → recheck in 15 min → do not resume therapy until ≥80 mg/dL and asymptomatic. Always document and notify nursing.<br><strong>Dizziness + diaphoresis during exercise in DM patient = hypoglycemia until proven otherwise.</strong></p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Hyperglycemia — Signs and PT Thresholds</div>
-        <p><strong>Symptoms (onset gradual — hours/days):</strong> Polydipsia, polyuria, fatigue, blurred vision, slow wound healing, recurrent infections, fruity breath (if ketotic). <strong>PT thresholds:</strong> Hold therapy if fasting glucose &gt;300 mg/dL (absolute) or &gt;250 mg/dL with ketosis present. With hyperglycemia 180–299 and no ketosis: PT can proceed with monitoring and glucose source available. Hyperglycemia blunts immune response → even minor PT-related skin irritation warrants documentation.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">DM → Cardiomyopathy Pathway</div>
-        <p>Hyperglycemia → atherosclerosis (fat metabolism byproducts → plaque) → poor tissue perfusion → impaired wound healing → ischemic heart disease → ischemic cardiomyopathy. This is why DM patients in cardiac rehab need careful glucose monitoring: silent ischemia is common in DM (autonomic neuropathy blunts anginal pain signal).</p>
-      </div>
-
+<div class="section-title">Type 2 Diabetes Mellitus</div>
+<div class="section-sub">Chronic metabolic disease characterized by hyperglycemia from insulin resistance. Complications include cardiovascular disease, peripheral vascular disease, retinopathy, nephropathy, neuropathy, and loss of physical function. People with T2DM have significantly less muscular strength and exercise capacity than those without — both of which predict mortality and loss of physical function. Exercise is an evidence-based intervention (ADA + ACSM position statements). PT-directed exercise counseling combined with fitness center training produces outcomes equivalent to directly supervised sessions (Taylor et al., Phys Ther 2009).</div>
+<div class="bl-strip">
+<div class="bl-label">Complications That Directly Affect PT</div>
+<p><strong>Cardiovascular disease</strong> — increased cardiac risk during exercise; vitals monitoring essential; atypical angina presentations common <strong>Peripheral vascular disease (PVD)</strong> — reduced perfusion to extremities; wound healing impaired; claudication limits exercise tolerance <strong>Peripheral neuropathy</strong> — loss of protective sensation; foot inspection mandatory; increased fall risk; balance impairment <strong>Autonomic neuropathy</strong> — blunted HR response to exercise; unable to reach age-predicted max HR; use RPE instead of HR; orthostatic hypotension risk <strong>Retinopathy (proliferative)</strong> — high-intensity exercise can increase intraocular pressure → retinal hemorrhage; contraindication to vigorous exercise <strong>Nephropathy</strong> — renal function impaired; fluid balance considerations; exercise contraindication if severe <strong>Accelerated muscle strength loss</strong> — older adults with T2DM lose muscular strength significantly faster than peers (Park et al., Diabetes Care 2007)<br><strong>Reduced exercise capacity</strong> — inverse relationship between exercise capacity and mortality in men with diabetes (Church et al., Diabetes Care 2004)</p>
 </div>
-
-<!-- ====== HYPERTENSION ====== -->
+<div class="bl-strip">
+<div class="bl-label">Exercise Contraindications &amp; Precautions</div>
+<div class="bl-strip red">
+<div class="bl-label">Absolute Stop — Glucose Thresholds (ADA)</div>
+<p>Exercise is <strong>contraindicated if fasting plasma glucose &gt;300 mg/dL</strong>, or <strong>&gt;250 mg/dL with ketosis present</strong>. Exercising with marked hyperglycemia can worsen ketoacidosis.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Exclude from Exercise Program If:</div>
+<p>Uncontrolled hypertension · Proliferative retinopathy · Severe peripheral neuropathy · Nephropathy · Autonomic neuropathy · AHA absolute contraindications to exercise testing present · Physical impairment precluding participation.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Hypoglycemia Risk — Active Management</div>
+<p>Patients must <strong>carry a glucose food source</strong> during all exercise sessions. Hypoglycemia risk is greatest with insulin or sulfonylurea medications. Signs: shakiness, sweating, confusion, weakness. Action: stop exercise immediately, provide 15g fast-acting carbohydrate, recheck glucose in 15 minutes.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Monitoring During Exercise</div>
+<p>Blood pressure monitored throughout graded exercise testing. Heart rate continuously monitored. <strong>Stop test at 85% age-predicted max HR</strong> (220 − age) or patient voluntary cessation. With autonomic neuropathy: HR unreliable — use RPE exclusively.</p>
+</div>
+<div class="section-title">Exercise Prescription — ADA/ACSM Protocol</div>
+<div class="section-sub">From Taylor et al. (Phys Ther 2009), Sigal et al. (Diabetes Care 2006 — ADA position), Albright et al. (Med Sci Sports Exerc 2000 — ACSM position). Combined resistance + aerobic training is the evidence-based standard.</div>
+<div class="bl-strip">
+<div class="bl-label">Resistance Training Protocol</div>
+<p><strong>Intensity:</strong> 80% of 1-RM (heavy enough to improve strength; adequate dose for glycemic benefit)<br><strong>Volume:</strong> 4 sets × up to 8 repetitions per exercise <strong>Frequency:</strong> 2 nonconsecutive days per week (e.g., Mon/Thu)<br><strong>Progression:</strong> When 4×8 at current weight is achieved → increase by 2.27–4.54 kg (5–10 lbs) next session <strong>Rest:</strong> 1–3 minutes between sets <strong>Exercises:</strong> Multi-joint, multi-muscle group — chest press, row, leg press as minimum; add others as appropriate <strong>Equipment:</strong> Range-of-motion limiting machines preferred over free weights for safety in this population (Taylor et al.)<br><strong>Duration:</strong> 2-month program demonstrated significant improvements; ongoing maintenance essential</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Aerobic Training Protocol</div>
+<p><strong>Mode:</strong> Walking or jogging on treadmill (any low-impact continuous aerobic activity)<br><strong>Intensity:</strong> RPE 12 ("somewhat hard") on Borg RPE Scale — important because HR may be unreliable (autonomic neuropathy, beta-blockers)<br><strong>Duration:</strong> 20 minutes per session (start here; build to 150 min/week per ADA recommendation)<br><strong>Frequency:</strong> Same days as resistance training (2×/week minimum; goal 5×/week)<br><strong>Progression:</strong> Increase speed or grade to patient tolerance; do not exceed RPE 12 <strong>Functional testing:</strong> Modified Bruce treadmill protocol for exercise capacity; duration in minutes = exercise capacity measure <strong>Timing:</strong> Avoid exercise at peak insulin action; best 1–3 hours after a meal</p>
+<div class="bl-strip gold">
+<div class="bl-label">Key Finding — Taylor et al. RCT (n=24)</div>
+<p>PT-directed exercise counseling + independent fitness center training = <strong>equivalent outcomes to directly supervised exercise</strong> for muscular strength and exercise capacity. Determining factor: dose and adherence — not whether a PT is in the room. This validates a cost-effective counseling model for T2DM management.</p>
+</div>
+<div class="section-title">PT Counseling Model — 5 A's Framework</div>
+<div class="section-sub">Evidence-based health behavior counseling strategy for PT-directed exercise counseling. Used in Taylor et al. (2009) and Pinto et al. (Prev Med 1998). Tailored to the patient's current <strong>Stage of Exercise Behavior</strong> (Prochaska transtheoretical model).</div>
+<div class="bl-strip">
+<div class="bl-label">The 5 A's — Exercise Counseling</div>
+<p><strong>Address the Agenda</strong> — establish what the patient wants to discuss; set the session focus collaboratively; align exercise goals with patient priorities <strong>Assess</strong> — current physical activity level, barriers to exercise, readiness to change, stage of exercise behavior, medical status, relevant contraindications <strong>Advise</strong> — evidence-based recommendation: benefits of exercise for T2DM, specific exercise prescription (type/intensity/frequency/duration), safety guidelines <strong>Assist</strong> — help the patient overcome barriers; review the exercise program; problem-solve schedule conflicts; provide written exercise program; ensure equipment familiarity <strong>Arrange Follow-Up</strong> — schedule face-to-face and phone check-ins; weekly phone calls (~10 min) to monitor adherence and troubleshoot; adjust program as needed</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Stages of Exercise Behavior (Prochaska)</div>
+<table class="data-table"><thead>
+<tr><th>Stage</th><th>Description</th><th>PT Approach</th></tr></thead><tbody>
+<tr><td><strong>Precontemplation</strong></td><td>Not exercising; does not intend to start</td><td>Raise awareness; explore ambivalence; avoid confrontation</td></tr>
+<tr><td><strong>Contemplation</strong></td><td>Not exercising; intends to start</td><td>Discuss benefits and barriers; resolve ambivalence; build self-efficacy</td></tr>
+<tr><td><strong>Preparation</strong></td><td>Exercising, but not yet regularly (&lt;2×/wk)</td><td>Goal setting; action plan; remove barriers</td></tr>
+<tr><td><strong>Action</strong></td><td>Exercising regularly, but &lt;6 months</td><td>Reinforce behavior; problem-solve setbacks; build habit</td></tr>
+<tr><td><strong>Maintenance</strong></td><td>Exercising regularly for 6+ months</td><td>Prevent relapse; advance program; long-term self-management</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Application</div>
+<p>Tailor counseling to the stage — a Precontemplator needs motivational conversation, not an exercise program handout. A Maintainer needs program advancement. Assess stage at each visit; patients move forward and backward. Stage-matched counseling improves adherence.</p>
+</div>
+<div class="section-title">PT-Specific Clinical Considerations</div>
+<div class="bl-strip">
+<div class="bl-label">Foot &amp; Wound Care</div>
+<p>Inspect feet before and after every session — loss of protective sensation = patient may not feel injury Proper footwear required — no barefoot exercise; cushioned socks Any wound, blister, or skin breakdown = PT documents and notifies nursing/physician — diabetic wounds → ulcers → infection → amputation risk Monofilament testing: 10-g Semmes-Weinstein monofilament at plantar sites — inability to detect = loss of protective sensation Avoid exercises that increase shear forces on plantar surface in active neuropathic foot</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Medication Effects on PT</div>
+<p><strong>Insulin:</strong> Hypoglycemia risk during and after exercise; time exercise 1–3 hrs post-meal; patient carries glucose source always <strong>Sulfonylureas</strong> (glipizide, glyburide): Also cause hypoglycemia with exercise — same precautions as insulin <strong>Metformin:</strong> Does not cause hypoglycemia; no direct exercise interaction; most common first-line agent <strong>SGLT-2 inhibitors</strong> (empagliflozin, canagliflozin): Euglycemic DKA risk; monitor for unusual fatigue; hypotension risk <strong>Beta-blockers</strong> (if on for CV comorbidity): Blunts HR — use RPE not target HR for exercise intensity <strong>ACE inhibitors / ARBs:</strong> May cause hypotension, especially post-exercise; monitor BP and transitions</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">SNF / Inpatient Clinical Pearls</div>
+<p>Check glucose level before therapy session — many SNFs have glucose log in chart; <strong>do not treat if fasting glucose &gt;300 or &lt;70 mg/dL</strong> Glucose &lt;70 mg/dL (hypoglycemia): hold therapy, notify nursing, initiate hypoglycemia protocol, re-check in 15 min Document pre/post glucose, symptoms, any adverse events in PT notes Balance and fall risk: neuropathy + vision changes (retinopathy) + orthostatic hypotension = high fall risk; assess Berg/TUG; alert bed alarm/fall precautions Skin integrity rounds: check heels, sacrum, ankles every visit — pressure injury prevention is shared PT responsibility Nutrition timing: coordinate with dietary for meal/therapy scheduling to optimize glucose management Energy levels: T2DM patients may have fatigue from hyperglycemia or hypoglycemia episodes — adapt intensity accordingly</p>
+</div>
+<div class="section-title">Diabetes — Deep Pathophysiology &amp; Clinical Distinctions</div>
+<div class="bl-strip">
+<div class="bl-label">Pancreatic Cell Types &amp; T1 vs T2 DM</div>
+<div class="bl-strip">
+<div class="bl-label">Islets of Langerhans — Cell Types</div>
+<p><strong>Alpha cells:</strong> secrete glucagon (raises blood glucose).<br><strong>Beta cells:</strong> secrete insulin (lowers blood glucose; transports glucose into cells).<br><strong>Delta cells:</strong> secrete somatostatin (inhibits glucagon and insulin). T1DM = autoimmune destruction of <em>beta cells</em>.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Type 1 vs. Type 2 — Side by Side</div>
+<table>
+<tr><td>Feature</td><td>Type 1 (IDDM)</td><td>Type 2 (NIDDM)</td></tr>
+<tr><td>Prevalence</td><td>~10% of DM</td><td>~90% of DM</td></tr>
+<tr><td>Mechanism</td><td>Autoimmune destruction of beta cells → no insulin produced</td><td>Insulin resistance + impaired secretion → insulin ineffective</td></tr>
+<tr><td>Body habitus</td><td>Typically lean</td><td>Typically obese (BMI &gt;25)</td></tr>
+<tr><td>Exercise effect</td><td>Lowers remaining glucose → hypoglycemia risk highest</td><td>Improves insulin sensitivity → glucose uptake improved</td></tr>
+<tr><td>PT key concern</td><td>Hypoglycemia during exercise; always carry glucose</td><td>Glucose thresholds; medication timing; foot inspection</td></tr></table>
+<div class="bl-strip gold">
+<div class="bl-label">T2DM Pathogenesis Sequence</div>
+<p>(1) Increased blood glucose → pancreas secretes insulin → (2) Muscle/liver cannot use glucose due to insulin resistance (receptor problem — "lock changed") → (3) Glucose accumulates in blood → hyperglycemia → (4) Kidney excretes excess glucose → glucosuria → (5) Beta cells eventually fail to compensate → insulin secretion also impairs → progressive decline. <strong>Diet and exercise are MORE effective than drugs</strong> for T2DM prevention and management (most modifiable factors).</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Cardinal Signs &amp; Complications</div>
+<div class="bl-strip">
+<div class="bl-label">The "3 Polys" + Other Signs</div>
+<p><strong>Polyuria</strong> — abnormally large volumes of dilute urine (kidneys excreting excess glucose)<br><strong>Polydipsia</strong> — abnormally great thirst (from fluid loss)<br><strong>Polyphagia</strong> — excessive hunger (cells starving despite high blood glucose)<br><strong>Weight loss</strong> — glucose unavailable to cells; body breaks down fat and protein; dehydration <strong>Ketonuria</strong> — abnormal ketone bodies in urine from fat catabolism <strong>Weakness / fatigue / dizziness</strong><strong>Recurrent blurred vision</strong> Many T2DM patients are initially <strong>asymptomatic</strong> — discovered incidentally on labs</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Macro &amp; Microvascular Complications — Healing Impact</div>
+<p><strong>Macrovascular:</strong> Hyperglycemia + increased fat metabolism → atherosclerosis → poor tissue perfusion → impaired wound healing → ischemic heart disease.<br><strong>Microvascular:</strong> Ischemia from small vessel disease → wounds fail to get blood/O2/cells needed to heal. Increased glucose in body fluids/tissues fosters bacterial growth → increased infection risk.<br><strong>Diabetic neuropathy foot ulcer sites:</strong> plantar areas of metatarsal heads, toes, plantar hallux — all high-pressure zones with poor sensory feedback.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">T2DM Risk Factors — Most Modifiable</div>
+<p><strong>Most modifiable: Diet + Exercise</strong> (more effective than medications for prevention). Others: BMI &gt;25, sedentary lifestyle, smoking, HTN (&gt;140/90), HDL &lt;35 mg/dL, triglycerides &gt;250 mg/dL. Adipose tissue: local low-grade inflammatory process → excess adipose tissue → insulin resistance. Leptin (from fat cells) activates killer cells, contributing to chronic inflammation in obesity.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">DKA vs. HHS vs. Alcoholic Ketoacidosis</div>
+<div class="bl-strip red">
+<div class="bl-label">DKA (Diabetic Ketoacidosis) — Type 1 Classic</div>
+<p>Insufficient insulin → biological starvation → counterregulatory hormones (glucagon, catecholamines, cortisol) → hyperglycemia + lipolysis → incomplete fat metabolism → ketone production → metabolic acidosis. <strong>Hallmarks: high glucose + high ketones + acidosis</strong>. Life-threatening. Exercise contraindicated if glucose &gt;250 mg/dL with ketosis.</p>
+</div>
+<table class="data-table"><thead>
+<tr><th>Feature</th><th>DKA</th><th>HHS</th><th>Alcoholic KA</th></tr></thead><tbody>
+<tr><td>Glucose</td><td class="bad">HIGH</td><td class="bad">HIGH (extreme)</td><td class="ok">Low/Normal</td></tr>
+<tr><td>Ketones</td><td class="bad">HIGH</td><td class="ok">Low/Normal</td><td class="bad">HIGH</td></tr>
+<tr><td>Acidosis</td><td class="bad">YES</td><td class="ok">NO (key difference)</td><td class="bad">YES</td></tr>
+<tr><td>Typical in</td><td>Type 1 DM</td><td>Type 2 DM</td><td>Alcohol + fasting</td></tr>
+<tr><td>Key feature</td><td>Beta cells absent</td><td>Residual insulin prevents ketosis</td><td>Ketosis from fasting + ETOH</td></tr></tbody></table>
+<div class="bl-strip gold">
+<div class="bl-label">HHS — Hyperosmolar Hyperglycemic Syndrome</div>
+<p>Extreme hyperglycemia; mild or undetectable ketonuria; NO acidosis. Occurs in T2DM because residual insulin prevents fat mobilization/ketosis. Triggers: infection, inadequate fluid intake, medications, stress. Dehydration is severe. Medical emergency.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Hypoglycemia vs. Hyperglycemia — Clinical Recognition</div>
+<div class="bl-strip red">
+<div class="bl-label">Hypoglycemia (&lt;70 mg/dL) — Recognize and Act</div>
+<p><strong>Symptoms (onset rapid — minutes):</strong> Shakiness, sweating (diaphoresis), tachycardia, pallor, anxiety, confusion, weakness, hunger, headache. Severe: seizure, loss of consciousness.<br><strong>During PT:</strong> stop exercise immediately → 15g fast-acting carbohydrate (OJ, glucose tablets, glucose gel) → recheck in 15 min → do not resume therapy until ≥80 mg/dL and asymptomatic. Always document and notify nursing.<br><strong>Dizziness + diaphoresis during exercise in DM patient = hypoglycemia until proven otherwise.</strong></p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Hyperglycemia — Signs and PT Thresholds</div>
+<p><strong>Symptoms (onset gradual — hours/days):</strong> Polydipsia, polyuria, fatigue, blurred vision, slow wound healing, recurrent infections, fruity breath (if ketotic). <strong>PT thresholds:</strong> Hold therapy if fasting glucose &gt;300 mg/dL (absolute) or &gt;250 mg/dL with ketosis present. With hyperglycemia 180–299 and no ketosis: PT can proceed with monitoring and glucose source available. Hyperglycemia blunts immune response → even minor PT-related skin irritation warrants documentation.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">DM → Cardiomyopathy Pathway</div>
+<p>Hyperglycemia → atherosclerosis (fat metabolism byproducts → plaque) → poor tissue perfusion → impaired wound healing → ischemic heart disease → ischemic cardiomyopathy. This is why DM patients in cardiac rehab need careful glucose monitoring: silent ischemia is common in DM (autonomic neuropathy blunts anginal pain signal).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-htn">
 <div class="container">
-
-  <div class="section-title">Hypertension</div>
-  <div class="section-sub">The most common cardiovascular condition PT encounters. Present in the majority of SNF patients and a large percentage of outpatient orthopedic patients. HTN changes exercise prescription, vital sign monitoring protocols, and requires recognition of hypertensive urgency/emergency. Understanding antihypertensive medications is essential because they directly alter the exercise response.</div>
-
-  <div class="bl-strip">
-    <div class="bl-label">BP Classification — JNC 8 / ACC-AHA 2017</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Category</th><th>Systolic (mmHg)</th><th>Diastolic (mmHg)</th><th>PT Action</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Normal</strong></td><td class="ok">&lt;120</td><td class="ok">&lt;80</td><td>Proceed with therapy as planned</td></tr>
-        <tr><td><strong>Elevated</strong></td><td class="warn">120–129</td><td class="ok">&lt;80</td><td>Proceed; document; lifestyle education</td></tr>
-        <tr><td><strong>Stage 1 HTN</strong></td><td class="warn">130–139</td><td class="warn">80–89</td><td>Proceed; monitor during exercise; document trend</td></tr>
-        <tr><td><strong>Stage 2 HTN</strong></td><td class="warn">≥140</td><td class="warn">≥90</td><td>Proceed with caution; notify MD if new finding; monitor closely</td></tr>
-        <tr><td><strong>Hypertensive Urgency</strong></td><td class="bad">≥180</td><td class="bad">≥110 (no symptoms)</td><td><strong>Hold therapy; notify nursing/MD immediately</strong></td></tr>
-        <tr><td><strong>Hypertensive Emergency</strong></td><td class="bad">≥180 + symptoms</td><td class="bad">≥120 + end-organ damage</td><td><strong>Stop all activity; call emergency services; document time</strong></td></tr>
-      </tbody>
-    </table>
-    <div class="bl-strip red">
-      <div class="bl-label">Hypertensive Emergency — Symptoms Requiring Immediate Action</div>
-      <p>Severe headache · Chest pain · Shortness of breath · Vision changes · Neurological symptoms (confusion, slurred speech, weakness) · Nausea/vomiting. These symptoms + severely elevated BP = end-organ damage. Do NOT wait — call for emergency help immediately.</p>
-    </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Normal Exercise BP Response vs. Hypertensive Response</div>
-      <div class="bl-strip">
-        <div class="bl-label">Normal Response to Aerobic Exercise</div>
-        <p>SBP increases progressively with intensity (expected: +10–50 mmHg during maximal exercise). DBP remains relatively stable or decreases slightly. SBP should not exceed 220 mmHg in males or 190 mmHg in females during exercise. Post-exercise: BP returns to resting values within minutes.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Exertional Hypertension — Stop Exercise If:</div>
-        <p>SBP &gt;250 mmHg during exercise · DBP &gt;115 mmHg during exercise · SBP drops &gt;10 mmHg from resting despite increasing workload (= exercise-induced hypotension — sign of cardiac compromise) · Any cardiac symptoms develop.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Post-Exercise Hypotension</div>
-        <p>BP drops after exercise — especially common in HTN patients on antihypertensives. Can persist 4–9 hours. Always supervise transfers and position changes post-exercise. Have patient sit 3–5 minutes before standing. SNF: document and communicate to nursing if significant.</p>
-      </div>
-    <div class="bl-strip">
-      <div class="bl-label">Antihypertensive Medications &amp; Exercise Effects</div>
-      <table class="data-table">
-        <thead><tr><th>Drug Class</th><th>Exercise Effect</th><th>PT Implication</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Beta-blockers</strong><br><em>(metoprolol, carvedilol, atenolol)</em></td><td>Blunts HR response; lower max HR; lower exercise capacity</td><td class="warn"><strong>Use RPE, not target HR.</strong> Target HR formulas are invalid. RPE 11–13 for moderate intensity.</td></tr>
-          <tr><td><strong>ACE inhibitors</strong><br><em>(lisinopril, enalapril)</em></td><td>May cause hypotension, especially post-exercise; dry cough</td><td>Monitor BP post-exercise; supervise transitions; cough ≠ cardiac symptom</td></tr>
-          <tr><td><strong>ARBs</strong><br><em>(losartan, valsartan)</em></td><td>Similar to ACE inhibitors; no cough</td><td>Monitor BP post-exercise; watch transitions</td></tr>
-          <tr><td><strong>Calcium channel blockers</strong><br><em>(amlodipine, diltiazem)</em></td><td>Reduced peripheral resistance; may attenuate HR (non-dihydropyridines)</td><td>Monitor BP; non-dihydropyridines also slow HR slightly</td></tr>
-          <tr><td><strong>Diuretics</strong><br><em>(HCTZ, furosemide)</em></td><td>Volume depletion; electrolyte imbalance (hypokalemia, hyponatremia)</td><td>Watch for fatigue, cramping, dizziness; dehydration risk in heat; orthostatic hypotension</td></tr>
-          <tr><td><strong>Alpha-blockers</strong><br><em>(doxazosin, prazosin)</em></td><td>Significant orthostatic hypotension, especially first-dose</td><td>High fall risk with position changes; always dangle before standing; log and report</td></tr>
-        </tbody>
-      </table>
-
-  <div class="bl-strip">
-      <div class="bl-label">Exercise Prescription for HTN</div>
-      <div class="bl-strip green">
-        <div class="bl-label">Exercise IS Treatment for HTN</div>
-        <p>Regular aerobic exercise reduces resting SBP by an average of 5–8 mmHg and DBP 3–5 mmHg in hypertensive individuals. This is equivalent to medication effect for Stage 1 HTN. PT-directed exercise is a first-line non-pharmacological intervention.</p>
-      </div>
-      <p><strong>Aerobic:</strong> 5–7 days/week; moderate intensity (RPE 12–13); 30–60 min/day (can accumulate); walking, cycling, swimming <strong>Resistance:</strong> 2–3 days/week; 60–80% 1-RM; avoid Valsalva maneuver (breath holding drives acute BP spikes — instruct to exhale on exertion)<br><strong>Isometrics:</strong> Bilateral handgrip isometrics 4×2 min at 30% MVC, 3×/week has good evidence for BP reduction <strong>Avoid:</strong> High-intensity isometric exercises at &gt;80% MVC; sustained overhead positions; Valsalva in all patients</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Vital Signs Monitoring Protocol in PT</div>
-      <p><strong>Pre-exercise:</strong> Always measure BP and HR before initiating exercise — establish resting baseline; document in notes <strong>During exercise:</strong> Monitor HR continuously (pulse ox or HR monitor); check BP at each intensity change in cardiac or Stage 2 HTN patients <strong>Post-exercise:</strong> Check BP + HR 3–5 minutes after stopping; watch for post-exercise hypotension before allowing ambulation to discharge home <strong>SNF:</strong> Pre/post vitals documentation required in skilled notes; any BP &gt;180/110 → hold therapy, notify nurse, document <strong>Orthostatic check:</strong> Supine → sitting → standing with 1–2 min between positions; drop ≥20 mmHg SBP or ≥10 mmHg DBP = orthostatic hypotension → document, notify MD, fall precautions</p>
-      <div class="bl-strip red">
-        <div class="bl-label">Orthostatic Hypotension — Definition &amp; Action</div>
-        <p>Drop of ≥20 mmHg SBP or ≥10 mmHg DBP within 3 minutes of standing. Symptoms: dizziness, lightheadedness, syncope risk. Action: sit/lie patient immediately, elevate legs, monitor until BP normalizes, document, notify MD. Highest risk: morning, post-meal, first stand after prolonged bed rest, in patients on alpha-blockers or diuretics.</p>
-      </div>
-
+<div class="section-title">Hypertension</div>
+<div class="section-sub">The most common cardiovascular condition PT encounters. Present in the majority of SNF patients and a large percentage of outpatient orthopedic patients. HTN changes exercise prescription, vital sign monitoring protocols, and requires recognition of hypertensive urgency/emergency. Understanding antihypertensive medications is essential because they directly alter the exercise response.</div>
+<div class="bl-strip">
+<div class="bl-label">BP Classification — JNC 8 / ACC-AHA 2017</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Category</th><th>Systolic (mmHg)</th><th>Diastolic (mmHg)</th><th>PT Action</th></tr></thead><tbody>
+<tr><td><strong>Normal</strong></td><td class="ok">&lt;120</td><td class="ok">&lt;80</td><td>Proceed with therapy as planned</td></tr>
+<tr><td><strong>Elevated</strong></td><td class="warn">120–129</td><td class="ok">&lt;80</td><td>Proceed; document; lifestyle education</td></tr>
+<tr><td><strong>Stage 1 HTN</strong></td><td class="warn">130–139</td><td class="warn">80–89</td><td>Proceed; monitor during exercise; document trend</td></tr>
+<tr><td><strong>Stage 2 HTN</strong></td><td class="warn">≥140</td><td class="warn">≥90</td><td>Proceed with caution; notify MD if new finding; monitor closely</td></tr>
+<tr><td><strong>Hypertensive Urgency</strong></td><td class="bad">≥180</td><td class="bad">≥110 (no symptoms)</td><td><strong>Hold therapy; notify nursing/MD immediately</strong></td></tr>
+<tr><td><strong>Hypertensive Emergency</strong></td><td class="bad">≥180 + symptoms</td><td class="bad">≥120 + end-organ damage</td><td><strong>Stop all activity; call emergency services; document time</strong></td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Hypertensive Emergency — Symptoms Requiring Immediate Action</div>
+<p>Severe headache · Chest pain · Shortness of breath · Vision changes · Neurological symptoms (confusion, slurred speech, weakness) · Nausea/vomiting. These symptoms + severely elevated BP = end-organ damage. Do NOT wait — call for emergency help immediately.</p>
 </div>
-
-<!-- ====== HEART DISEASE ====== -->
+<div class="bl-strip">
+<div class="bl-label">Normal Exercise BP Response vs. Hypertensive Response</div>
+<div class="bl-strip">
+<div class="bl-label">Normal Response to Aerobic Exercise</div>
+<p>SBP increases progressively with intensity (expected: +10–50 mmHg during maximal exercise). DBP remains relatively stable or decreases slightly. SBP should not exceed 220 mmHg in males or 190 mmHg in females during exercise. Post-exercise: BP returns to resting values within minutes.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Exertional Hypertension — Stop Exercise If:</div>
+<p>SBP &gt;250 mmHg during exercise · DBP &gt;115 mmHg during exercise · SBP drops &gt;10 mmHg from resting despite increasing workload (= exercise-induced hypotension — sign of cardiac compromise) · Any cardiac symptoms develop.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Post-Exercise Hypotension</div>
+<p>BP drops after exercise — especially common in HTN patients on antihypertensives. Can persist 4–9 hours. Always supervise transfers and position changes post-exercise. Have patient sit 3–5 minutes before standing. SNF: document and communicate to nursing if significant.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Antihypertensive Medications &amp; Exercise Effects</div>
+<table class="data-table"><thead>
+<tr><th>Drug Class</th><th>Exercise Effect</th><th>PT Implication</th></tr></thead><tbody>
+<tr><td><strong>Beta-blockers</strong><br><em>(metoprolol, carvedilol, atenolol)</em></td><td>Blunts HR response; lower max HR; lower exercise capacity</td><td class="warn"><strong>Use RPE, not target HR.</strong> Target HR formulas are invalid. RPE 11–13 for moderate intensity.</td></tr>
+<tr><td><strong>ACE inhibitors</strong><br><em>(lisinopril, enalapril)</em></td><td>May cause hypotension, especially post-exercise; dry cough</td><td>Monitor BP post-exercise; supervise transitions; cough ≠ cardiac symptom</td></tr>
+<tr><td><strong>ARBs</strong><br><em>(losartan, valsartan)</em></td><td>Similar to ACE inhibitors; no cough</td><td>Monitor BP post-exercise; watch transitions</td></tr>
+<tr><td><strong>Calcium channel blockers</strong><br><em>(amlodipine, diltiazem)</em></td><td>Reduced peripheral resistance; may attenuate HR (non-dihydropyridines)</td><td>Monitor BP; non-dihydropyridines also slow HR slightly</td></tr>
+<tr><td><strong>Diuretics</strong><br><em>(HCTZ, furosemide)</em></td><td>Volume depletion; electrolyte imbalance (hypokalemia, hyponatremia)</td><td>Watch for fatigue, cramping, dizziness; dehydration risk in heat; orthostatic hypotension</td></tr>
+<tr><td><strong>Alpha-blockers</strong><br><em>(doxazosin, prazosin)</em></td><td>Significant orthostatic hypotension, especially first-dose</td><td>High fall risk with position changes; always dangle before standing; log and report</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Exercise Prescription for HTN</div>
+<div class="bl-strip green">
+<div class="bl-label">Exercise IS Treatment for HTN</div>
+<p>Regular aerobic exercise reduces resting SBP by an average of 5–8 mmHg and DBP 3–5 mmHg in hypertensive individuals. This is equivalent to medication effect for Stage 1 HTN. PT-directed exercise is a first-line non-pharmacological intervention.</p>
+</div>
+<p><strong>Aerobic:</strong> 5–7 days/week; moderate intensity (RPE 12–13); 30–60 min/day (can accumulate); walking, cycling, swimming <strong>Resistance:</strong> 2–3 days/week; 60–80% 1-RM; avoid Valsalva maneuver (breath holding drives acute BP spikes — instruct to exhale on exertion)<br><strong>Isometrics:</strong> Bilateral handgrip isometrics 4×2 min at 30% MVC, 3×/week has good evidence for BP reduction <strong>Avoid:</strong> High-intensity isometric exercises at &gt;80% MVC; sustained overhead positions; Valsalva in all patients</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Vital Signs Monitoring Protocol in PT</div>
+<p><strong>Pre-exercise:</strong> Always measure BP and HR before initiating exercise — establish resting baseline; document in notes <strong>During exercise:</strong> Monitor HR continuously (pulse ox or HR monitor); check BP at each intensity change in cardiac or Stage 2 HTN patients <strong>Post-exercise:</strong> Check BP + HR 3–5 minutes after stopping; watch for post-exercise hypotension before allowing ambulation to discharge home <strong>SNF:</strong> Pre/post vitals documentation required in skilled notes; any BP &gt;180/110 → hold therapy, notify nurse, document <strong>Orthostatic check:</strong> Supine → sitting → standing with 1–2 min between positions; drop ≥20 mmHg SBP or ≥10 mmHg DBP = orthostatic hypotension → document, notify MD, fall precautions</p>
+<div class="bl-strip red">
+<div class="bl-label">Orthostatic Hypotension — Definition &amp; Action</div>
+<p>Drop of ≥20 mmHg SBP or ≥10 mmHg DBP within 3 minutes of standing. Symptoms: dizziness, lightheadedness, syncope risk. Action: sit/lie patient immediately, elevate legs, monitor until BP normalizes, document, notify MD. Highest risk: morning, post-meal, first stand after prolonged bed rest, in patients on alpha-blockers or diuretics.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-cardiac">
 <div class="container">
-
-  <div class="section-title">Heart Disease &amp; Cardiac Conditions</div>
-  <div class="section-sub">Coronary artery disease, heart failure, post-MI, post-cardiac surgery — these patients are in SNF and outpatient PT daily. Exercise is therapeutic but requires precise monitoring. Know the contraindications, warning signs, medication effects, and cardiac rehabilitation framework before putting these patients on a treadmill.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Absolute Contraindications to Exercise (AHA)</div>
-      <p>Unstable angina (not yet stabilized) Uncontrolled cardiac arrhythmia with hemodynamic compromise Symptomatic severe aortic stenosis Uncontrolled symptomatic heart failure Acute pulmonary embolism or pulmonary infarction Acute myocarditis or pericarditis Acute aortic dissection Recent MI (&lt;2 days) without physician clearance</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Stop Exercise Immediately — Warning Signs</div>
-      <p><strong>Angina or anginal equivalent</strong> — chest pressure/pain, jaw pain, L arm ache during exercise <strong>SBP drops &gt;10 mmHg</strong> despite increasing workload <strong>SBP &gt;250 mmHg or DBP &gt;115 mmHg</strong> during exercise <strong>Significant arrhythmia</strong> — new onset, irregular rhythm, palpitations with hemodynamic symptoms <strong>Signs of poor perfusion</strong> — pallor, cyanosis, cold/clammy skin, mottling <strong>Neurological symptoms</strong> — ataxia, dizziness, confusion, syncope <strong>Severe dyspnea</strong> — out of proportion to exercise level <strong>Patient requests to stop</strong> — always honor this</p>
-    </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Cardiac Rehabilitation — 4 Phases</div>
-    <div>
-    <table class="data-table">
-      <thead><tr><th>Phase</th><th>Setting</th><th>Timing</th><th>PT Focus</th><th>Exercise Parameters</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Phase I</strong></td><td>Inpatient (hospital)</td><td>Immediately post-event/surgery</td><td>Early mobilization, education, ambulation, ADLs, discharge planning</td><td>Low intensity; 1–2 METs; ambulation in hall; no RPP limits yet established</td></tr>
-        <tr><td><strong>Phase II</strong></td><td>Outpatient (supervised)</td><td>1–2 weeks post-discharge; 36 sessions covered by Medicare</td><td>Graded aerobic training, resistance, education, risk factor modification</td><td>Target HR 40–85% HR reserve or RPE 11–14; ECG monitoring; 20–60 min/session</td></tr>
-        <tr><td><strong>Phase III</strong></td><td>Community / gym (transitional)</td><td>After Phase II completion</td><td>Independent supervised program; maintain gains; ongoing lifestyle change</td><td>Similar to Phase II; less intensive monitoring; self-monitoring skills</td></tr>
-        <tr><td><strong>Phase IV</strong></td><td>Independent maintenance</td><td>Long-term / lifetime</td><td>Self-managed; periodic PT check-ins as needed</td><td>Self-monitored; RPE; symptom-based exercise adjustments</td></tr>
-      </tbody>
-    </table>
-
-  <div class="bl-strip">
-      <div class="bl-label">Rate Pressure Product (RPP) &amp; MET Levels</div>
-      <div class="bl-strip">
-        <div class="bl-label">Rate Pressure Product (Double Product)</div>
-        <p>RPP = HR × SBP. Estimates myocardial oxygen demand. If patient had angina during stress testing: note the RPP at which symptoms occurred — keep exercise RPP below that threshold. Normal at rest: ~7,000–10,000. During moderate exercise: ~20,000–25,000. Ischemic threshold is individual.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">MET Levels for Common Activities</div>
-        <table>
-          <tr><td>METs</td><td>Activity</td></tr>
-          <tr><td>1–2</td><td>Sitting, slow walking, dressing, bed mobility</td></tr>
-          <tr><td>2–4</td><td>Walking 2–3 mph, slow stair climbing, light housework</td></tr>
-          <tr><td>4–6</td><td>Walking 3.5–4 mph, cycling, moderate exercise</td></tr>
-          <tr><td>6–8</td><td>Jogging, heavy yard work, doubles tennis</td></tr>
-          <tr><td>&gt;8</td><td>Running, singles tennis, vigorous sports</td></tr>
-        </table>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Cardiac Medications &amp; PT Implications</div>
-      <table class="data-table">
-        <thead><tr><th>Medication</th><th>PT Impact</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Beta-blockers</strong></td><td>Blunted HR — use RPE, not target HR; lower max HR than age-predicted; lower exercise capacity</td></tr>
-          <tr><td><strong>Nitrates</strong> (nitroglycerin)</td><td>Vasodilation → hypotension; take if angina during exercise; do NOT exercise immediately after sublingual NTG — wait for symptom resolution + medical review</td></tr>
-          <tr><td><strong>Digoxin</strong></td><td>May cause bradycardia; toxicity signs (nausea, visual changes, bradycardia) — document and report; narrow therapeutic window</td></tr>
-          <tr><td><strong>Antiarrhythmics</strong></td><td>Variable HR effects; may cause fatigue, dizziness; monitor rhythm quality; any palpitations → check HR, BP, symptom assess</td></tr>
-          <tr><td><strong>Statins</strong></td><td>Myopathy/myalgia side effect — unexplained muscle pain or weakness in a cardiac patient on statins → document and report; can be severe (rhabdomyolysis)</td></tr>
-          <tr><td><strong>Warfarin / Novel anticoagulants</strong></td><td>Bleeding risk — no contact sports; fall prevention priority; any bruising or bleeding → document; INR instability = no change to PT plan without MD guidance</td></tr>
-          <tr><td><strong>Diuretics</strong></td><td>Electrolyte imbalance; dehydration; orthostatic hypotension; watch for cramping, weakness, arrhythmia risk</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Heart Failure — PT Considerations</div>
-    <div>
-        <div class="bl-strip red">
-          <div class="bl-label">Signs of Decompensated HF — Hold Therapy</div>
-          <p>Rapid weight gain (&gt;2–3 lbs overnight / &gt;5 lbs/week) · Increased dyspnea at rest or with minimal activity · Orthopnea (can't lie flat) · Paroxysmal nocturnal dyspnea · New or increased peripheral edema · S3 gallop · Resting SpO2 &lt;90%. <strong>Hold PT and notify nursing/MD immediately.</strong></p>
-        </div>
-        <div class="bl-strip gold">
-          <div class="bl-label">EF Classification</div>
-          <p><strong>HFrEF (reduced EF &lt;40%):</strong> Systolic dysfunction; can exercise but at lower loads; ACEI/ARB/beta-blocker/diuretic treatment. <strong>HFpEF (preserved EF ≥50%):</strong> Diastolic dysfunction; exercise tolerance limited by diastolic filling; often older female + HTN + T2DM + obesity. Both benefit from graded exercise but require careful monitoring.</p>
-        </div>
-      </div>
-      <div>
-        <div class="bl-strip">
-          <div class="bl-label">Exercise Prescription for Stable HF</div>
-          <p>Begin at low intensity (40–50% HRR or RPE 9–11). Build duration before intensity. Interval training often better tolerated than continuous. Resistance training (40–60% 1-RM) is safe and improves functional capacity. Avoid isometric Valsalva. Monitor SpO2 — supplement O2 if needed to keep SpO2 ≥92%.</p>
-        </div>
-        <div class="bl-strip">
-          <div class="bl-label">6-Minute Walk Test (6MWT)</div>
-          <p>Standard outcome measure in HF. Patient walks as far as possible in 6 minutes on flat surface. Normative values vary by age/sex. MCID: ~30–50 meters. Monitor HR, BP, SpO2, Borg dyspnea before/during/after. Stop test if SpO2 &lt;88%, angina, severe dyspnea, SBP &gt;250, or patient cannot continue.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="section-title">Cardiovascular Symptom Encyclopedia</div>
-  <div class="section-sub">These symptoms present in your patients daily. Each one has a specific cardiac vs. non-cardiac differential. Know the pattern, know when to refer, know when to hold PT and call nursing.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Chest Pain, Angina &amp; Palpitations</div>
-      <div class="bl-strip red">
-        <div class="bl-label">Chest Pain / Angina Pectoris</div>
-        <p>Cardiac workload exceeds myocardial O2 supply → ischemia → temporary pain. Location: substernal or retrosternal, radiates to left shoulder/ulnar border of arm into fingers, jaw, neck, upper back. Quality: "squeezing," "burning," "pressing," "heartburn," "choking." Associated: diaphoresis, dyspnea, pallor, nausea. <strong>Women</strong>: SOB, fatigue, neck/jaw/back pain — often no crushing chest pain. Sublingual nitroglycerin relieves in 1–2 minutes. After angina episode: resume exercise at reduced intensity; wait several hours before resuming. Exercise at &lt;anginal threshold (record vitals at ischemia onset).</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Angina Types — Know These</div>
-        <table>
-          <tr><td>Type</td><td>Description</td></tr>
-          <tr><td>Chronic stable</td><td>Predictable level of exertion; classic exertional angina</td></tr>
-          <tr><td>New-onset</td><td>Developed for first time within past 2 weeks</td></tr>
-          <tr><td>Nocturnal</td><td>Awakens from sleep; caused by increased HR with dreams or CHF</td></tr>
-          <tr><td>Unstable (pre-infarct)</td><td>Unpredictable; lasts &gt;15 min; worsening CAD — medical emergency</td></tr>
-          <tr><td>Prinzmetal</td><td>Coronary artery spasm; more common in women &lt;50; at rest</td></tr>
-          <tr><td>Post-infarct</td><td>Residual ischemia triggers angina after MI</td></tr>
-        </table>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Palpitations</div>
-        <p>Irregular, fast, or "extra" heartbeat. <strong>Benign causes:</strong> mitral valve prolapse, caffeine, anxiety, exercise, athletic heart. <strong>Serious causes:</strong> CAD, cardiomyopathy, ventricular arrhythmia, aortic/mitral stenosis. In women: may be caused by drops in estrogen (perimenopause) or hypothyroidism. Associated dizziness or syncope = refer immediately.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Dyspnea, Syncope &amp; Edema — PT Red Flags</div>
-      <div class="bl-strip red">
-        <div class="bl-label">Dyspnea — 4× Risk of Sudden Death</div>
-        <p>Dyspnea alone predicts death from cardiac causes at <strong>4× the rate of angina alone</strong> (2× the risk). May be cardiac (impaired LV unable to contract fully → pulmonary congestion) or pulmonary.<br><strong>Paroxysmal nocturnal dyspnea (PND):</strong> awakens from supine sleep gasping — classic CHF.<br><strong>Orthopnea:</strong> breathlessness relieved by sitting upright; occurs any time of day.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Cardiac Syncope vs. Vasovagal Syncope</div>
-        <p><strong>Cardiac syncope:</strong> decreased O2 to brain from poor cardiac output; caused by arrhythmia, orthostatic hypotension, aortic dissection, hypertrophic cardiomyopathy, CAD. Predictors: prior stroke/TIA, cardiac medications, HTN, obesity, DM. Aortic stenosis = prone to postural hypotension and Valsalva-induced syncope. <strong>Vasovagal:</strong> strong parasympathetic response → HR slows + vessels dilate → hypotension; after prolonged standing/sitting; donating blood; generally not serious.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Peripheral Edema — Right vs. Left Heart</div>
-        <p><strong>Right ventricular failure:</strong> bilateral dependent edema + jugular venous distention + cyanosis + abdominal distention. Right upper quadrant pain = enlarged liver (hepatomegaly).<br><strong>Left ventricular failure:</strong> pulmonary edema (SOB, orthopnea, PND).<br><strong>Non-cardiac:</strong> pulmonary HTN, renal dysfunction, cirrhosis, lymphatic obstruction, burns, infection.<br><strong>Pitting edema + leg pain = venous disease</strong> (DVT territory).</p>
-      </div>
-      <div class="bl-strip purple">
-        <div class="bl-label">Claudication — PVD in PT</div>
-        <p>Cramping/leg pain brought on by consistent exercise; subsides with rest. Result of peripheral vascular disease (arterial or venous). More debilitating than angina or dyspnea but can coexist with both. Pitting edema + leg pain = venous. No edema + leg pain with exertion only = arterial (PAD). Exercise: aerobic encouraged; high-impact jogging/step aerobics avoided in varicose veins; walking programs are primary treatment for PAD claudication.</p>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="section-title">Common Cardiovascular Pathologies — PT Clinical Framework</div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Myocardial Infarction (MI) — Zones, Signs, PT Timing</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Pathogenesis — 3 Zones</div>
-            <p>Coronary artery occlusion (thrombus on ruptured plaque) → deprivation of O2 → progressive tissue damage.<br><strong>Zone of Infarction:</strong> cells die → necrosis → fibrous scar (complete in 6–8 weeks).<br><strong>Zone of Hypoxic Injury:</strong> surrounding zone; can return to normal in 2–3 weeks.<br><strong>Zone of Ischemia:</strong> outermost reversible zone. Electrolyte disturbance: cellular loss of K⁺, Ca²⁺, Mg²⁺ → reduced contractility. Most common site: <strong>left ventricle</strong> (highest workload). Scar formation is complete in 6–8 weeks — this is why PT progressions must respect this timeline.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Signs &amp; Symptoms — Men vs. Women</div>
-            <p><strong>Classic (men):</strong> sudden crushing chest pressure, radiates to arms/throat/neck/back, constant pain 30–60 min, pallor, SOB, diaphoresis. <strong>Women:</strong> SOB, middle-of-night waking, chronic unexplained fatigue — often NO crushing chest pain. Women delay longer seeking help ("decision delay") → worse outcomes. Heart attacks occur more in early morning hours (catecholamine surge) and have seasonal peaks (Thanksgiving/New Year's).</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip green">
-            <div class="bl-label">PT Timing After MI</div>
-            <p>Majority of exercise testing can begin within <strong>3 days of MI</strong> with very low complication rate. Phase I cardiac rehab begins in hospital: early mobilization, hall ambulation (1–2 METs), ADLs, education. Post-MI complications to screen: CHF, cardiogenic shock, pericarditis, thromboembolism, recurrent infarct, sudden death. Monitor for: dyspnea, new chest pain, arrhythmia, significant BP changes.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">Angina vs. MI — The Clinical Distinction</div>
-            <p><strong>Angina:</strong> narrowed (not blocked) artery → reduced O2 → temporary ischemia → no permanent damage; relieved by rest or nitrates in minutes. <strong>MI:</strong> complete occlusion → sustained ischemia → irreversible cell death → permanent scar. Duration distinguishes them: angina lasts &lt;15 minutes; MI pain lasts 30–60+ minutes and does NOT respond to rest or nitrates alone.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Atherosclerosis &amp; CAD — Pathogenesis, Risk Factors, Exercise</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Pathogenesis Sequence</div>
-            <p>(1) LDL cholesterol modified by free radicals → arterial wall injury. (2) Injury permits infiltration of macromolecules. (3) Naked collagen acts as "flypaper" → platelet adherence. (4) Platelets release chemicals → proliferation of smooth muscle cells + fibrous clots → lesion grows outward first (positive remodeling) then inward. (5) Fibrous cap forms over plaque; <strong>cap rupture → thrombus → MI or stroke</strong>. Capped plaques are less likely to rupture. Symptoms only appear when coronary lumen narrows &gt;75%.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Non-Modifiable vs. Modifiable Risk Factors</div>
-            <p><strong>Non-modifiable:</strong> Age (men ≥45, women ≥55), gender (men worse until menopause), family history, ethnicity (Black and Mexican-American highest risk), infections. <strong>Modifiable:</strong> Smoking (leading preventable cause — nicotine increases fibrinogen + plaque), HTN, DM, obesity, physical inactivity, elevated LDL, low HDL, high triglycerides, psychologic/oxidative stress.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">Newer Predictors of CAD</div>
-            <p><strong>CRP (C-reactive protein):</strong> acute-phase reactant reflecting low-grade systemic inflammation; elevated levels increase CAD risk regardless of age/gender/other risk factors; high in smokers; predicts response to statins and aspirin.<br><strong>Homocysteine:</strong> elevated levels may be as significant as high cholesterol or smoking.<br><strong>Fibrinogen:</strong> predicts first heart attacks in unstable CAD.<br><strong>Lipoprotein(a):</strong> LDL + extra protein; slows clot breakdown; high levels = greater MI risk.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip green">
-            <div class="bl-label">How Exercise Influences CAD — PT Role</div>
-            <p>Exercise keeps inner lining of arteries healthy and less prone to injury leading to plaque. Mechanisms: regular arterial expansion/contraction maintains vessel shape; maintains endothelial function; limits plaque attachment; inhibits clot formation (makes platelets less "sticky"); promotes clot-dissolving enzymes. <strong>HDL effect:</strong> exercise raises HDL by avg 4.6%; every 1% HDL increase = 3.5% reduction in cardiac death risk. <strong>Frequency may be more important than intensity</strong> for improving HDL. Low-intensity activity (65–70% max HR) 3×/week is as effective as high-intensity for BP reduction. Delayed heart rate recovery (≤12 bpm decrease in first minute post-exercise) is an independent risk factor — exercise improves this.</p>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Women &amp; CAD — Specific PT Knowledge</div>
-            <p>Women's hearts are smaller, respond differently to hypertrophic stimuli. Women have longer QT intervals → 3× greater risk of fatal arrhythmias from certain medications (QT-prolonging drugs). "Syndrome X" (coronary microvascular dysfunction): doesn't show on angiogram; false-positive stress tests (abnormal result, clear arteries). Women more likely to have diffuse plaque buildup (vs. focal in men). Estrogen cardioprotective: stimulates HDL, acts as Ca²⁺ channel blocker, reduces platelet aggregation. After menopause: CAD incidence matches men within 10 years.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>Cardiomyopathy, Aneurysm &amp; Valve Disease</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip">
-            <div class="bl-label">Cardiomyopathy — Types &amp; PT</div>
-            <p><strong>Dilated cardiomyopathy:</strong> impaired contraction/relaxation → LV ejects less efficiently → large blood volume remains post-systole → 4-chamber dilation → CHF. Causes: heavy alcohol (direct toxicity + nutritional deficiency), obesity. Symptoms = same as HF (dyspnea, orthopnea, tachycardia, palpitations, peripheral edema, JVD). 75% die within 5 years of diagnosis if idiopathic. PT: avoid strenuous exercise; assess current activity levels; monitor HR/vitals/rhythm.</p>
-          </div>
-          <div class="bl-strip red">
-            <div class="bl-label">Hypertrophic Cardiomyopathy (HCM) — SCD Risk</div>
-            <p>Inherited (1:500 athletes); LV wall thickness &gt;13–30mm is pathologic. Normal athletes may have 13–15mm hypertrophy without symptoms.<br><strong>Most common cause of sudden cardiac death in young athletes</strong> — basketball, football players, African-American athletes. 55% of SCD victims have NO identified risk factors.<br><strong>SCD risk factors:</strong> prior cardiac arrest, family history, syncope/near-syncope, ventricular tachycardia on Holter, hypotensive BP response to exercise, LVH &gt;30mm.<br><strong>PT role:</strong> follow AHA guidelines for preparticipation screening; recognize murmur on PPE.</p>
-          </div>
-          <div class="bl-strip orange">
-            <div class="bl-label">Commotio Cordis — Know This</div>
-            <p>Blunt, non-penetrating chest blow (innocent appearing) that causes virtually instantaneous cardiac death. Mechanism: blow directly over heart + precise timing to vulnerable repolarization phase (just before T-wave peak) → ventricular fibrillation. Average age: 14 years. Typically low energy/velocity projectile (baseball, lacrosse ball). Athletic trainers/PT at sporting events must know: immediate CPR + AED is the only intervention.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip red">
-            <div class="bl-label">Aortic Aneurysm — PT Palpation Rule</div>
-            <p><strong>Always palpate the abdomen for a pulsating mass before performing any anterior abdominal therapy.</strong> AAA: below diaphragm, occurs 4× more often than thoracic; 25–30% have midabdominal or low back pain. Back pain may be only symptom before rupture. Post-op: restrict pushing/pulling/lifting &gt;10 lbs for 6–10 weeks. Throbbing pain that increases with exertion → monitor vitals + palpate pulses. Thoracic aneurysm: above diaphragm, hypertensive men 40–70, more life-threatening. Cerebral aneurysm: 50–80% do not rupture in lifetime.</p>
-          </div>
-          <div class="bl-strip purple">
-            <div class="bl-label">Mitral Valve Prolapse (MVP)</div>
-            <p>LV contracts → one or both mitral leaflets prolapse into LA → incomplete seal → arrhythmia. Classic triad: <strong>profound fatigue + palpitations + dyspnea</strong> with exertion. More common in connective tissue disorders (Marfan's). <strong>Exercise is a key management component</strong> — not to alter valve function but to improve overall cardiovascular fitness. PT may encounter requests for conditioning programs.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Aortic Stenosis — PT Flag</div>
-            <p>Progressive valvular calcification (aging); risk factors same as CVD (obesity, sedentary, smoking, high cholesterol). Cardiac output maintained until stenosis is severe. <strong>Classic triad indicating poor prognosis: Angina + Exertional Syncope + Left Ventricular Failure.</strong> Onset of these symptoms = medical referral immediately. Exertional syncope in an older patient = aortic stenosis until proven otherwise. Prophylactic antibiotics against infective endocarditis for asymptomatic patients.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ma-item">
-    <div class="ma-header" onclick="toggleMA(this)">
-      <h4>DVT, PE &amp; Peripheral Vascular Disease</h4>
-      <span class="ma-chevron">&#9660;</span>
-    </div>
-    <div class="ma-body">
-      <div>
-          <div class="bl-strip red">
-            <div class="bl-label">DVT → PE Pathway</div>
-            <p>Thrombophlebitis: inflammation of vein + thrombus. <strong>DVT:</strong> distal = below knee; proximal = popliteal or above (higher PE risk). Most common DVT site: femoral or iliac vein. Superficial thrombosis: saphenous vein. <strong>PE:</strong> DVT thrombus breaks loose → travels through right heart → lodges in pulmonary artery → can be fatal. Virchow's triad (DVT risk): stasis + hypercoagulability + endothelial injury.</p>
-          </div>
-          <div class="bl-strip gold">
-            <div class="bl-label">Wells DVT Criteria — PT Must Know</div>
-            <p>Score-based clinical decision tool. Key components: active cancer, paralysis/immobilization, bedridden &gt;3 days or surgery within 12 weeks, localized deep vein tenderness, entire leg swollen, calf &gt;3cm larger than asymptomatic, pitting edema, collateral superficial veins, alternative diagnosis at least as likely (subtract 2 points). Score ≤0 = low probability; 1–2 = moderate; ≥3 = high probability → refer for Doppler ultrasound. In SNF: any new unexplained calf swelling, warmth, tenderness, Homans' sign (low sensitivity, high false positive) → hold PT and notify MD.</p>
-          </div>
-        </div>
-        <div>
-          <div class="bl-strip">
-            <div class="bl-label">Arterial (PAD) vs. Venous — Clinical Distinction</div>
-            <table>
-              <tr><td>Feature</td><td>Arterial (PAD)</td><td>Venous</td></tr>
-              <tr><td>Pain onset</td><td>With exertion (claudication)</td><td>With standing/dependent</td></tr>
-              <tr><td>Relief</td><td>Rest (immediately)</td><td>Elevation</td></tr>
-              <tr><td>Edema</td><td>Absent or minimal</td><td>Pitting edema (dependent)</td></tr>
-              <tr><td>Skin</td><td>Pale, cool, shiny, hairless</td><td>Brawny, warm, stasis changes</td></tr>
-              <tr><td>Pulses</td><td>Diminished or absent</td><td>Present</td></tr>
-            </table>
-          </div>
-          <div class="bl-strip">
-            <div class="bl-label">Varicose Veins &amp; Exercise</div>
-            <p>Abnormal dilation of saphenous veins with valve incompetence → tortuous vessels → thrombosis propensity. High venous pressure with prolonged sitting/standing = major risk factor. Dull aching heaviness when standing; nocturnal cramps. <strong>PT exercise guidance:</strong> aerobic, strengthening, and resistive exercise encouraged; use movement breaks with deep breathing; avoid high-impact jogging/step aerobics. Compression stockings during prolonged standing.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Heart Disease &amp; Cardiac Conditions</div>
+<div class="section-sub">Coronary artery disease, heart failure, post-MI, post-cardiac surgery — these patients are in SNF and outpatient PT daily. Exercise is therapeutic but requires precise monitoring. Know the contraindications, warning signs, medication effects, and cardiac rehabilitation framework before putting these patients on a treadmill.</div>
+<div class="bl-strip">
+<div class="bl-label">Absolute Contraindications to Exercise (AHA)</div>
+<p>Unstable angina (not yet stabilized) Uncontrolled cardiac arrhythmia with hemodynamic compromise Symptomatic severe aortic stenosis Uncontrolled symptomatic heart failure Acute pulmonary embolism or pulmonary infarction Acute myocarditis or pericarditis Acute aortic dissection Recent MI (&lt;2 days) without physician clearance</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Stop Exercise Immediately — Warning Signs</div>
+<p><strong>Angina or anginal equivalent</strong> — chest pressure/pain, jaw pain, L arm ache during exercise <strong>SBP drops &gt;10 mmHg</strong> despite increasing workload <strong>SBP &gt;250 mmHg or DBP &gt;115 mmHg</strong> during exercise <strong>Significant arrhythmia</strong> — new onset, irregular rhythm, palpitations with hemodynamic symptoms <strong>Signs of poor perfusion</strong> — pallor, cyanosis, cold/clammy skin, mottling <strong>Neurological symptoms</strong> — ataxia, dizziness, confusion, syncope <strong>Severe dyspnea</strong> — out of proportion to exercise level <strong>Patient requests to stop</strong> — always honor this</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Cardiac Rehabilitation — 4 Phases</div>
+<div>
+<table class="data-table"><thead>
+<tr><th>Phase</th><th>Setting</th><th>Timing</th><th>PT Focus</th><th>Exercise Parameters</th></tr></thead><tbody>
+<tr><td><strong>Phase I</strong></td><td>Inpatient (hospital)</td><td>Immediately post-event/surgery</td><td>Early mobilization, education, ambulation, ADLs, discharge planning</td><td>Low intensity; 1–2 METs; ambulation in hall; no RPP limits yet established</td></tr>
+<tr><td><strong>Phase II</strong></td><td>Outpatient (supervised)</td><td>1–2 weeks post-discharge; 36 sessions covered by Medicare</td><td>Graded aerobic training, resistance, education, risk factor modification</td><td>Target HR 40–85% HR reserve or RPE 11–14; ECG monitoring; 20–60 min/session</td></tr>
+<tr><td><strong>Phase III</strong></td><td>Community / gym (transitional)</td><td>After Phase II completion</td><td>Independent supervised program; maintain gains; ongoing lifestyle change</td><td>Similar to Phase II; less intensive monitoring; self-monitoring skills</td></tr>
+<tr><td><strong>Phase IV</strong></td><td>Independent maintenance</td><td>Long-term / lifetime</td><td>Self-managed; periodic PT check-ins as needed</td><td>Self-monitored; RPE; symptom-based exercise adjustments</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">Rate Pressure Product (RPP) &amp; MET Levels</div>
+<div class="bl-strip">
+<div class="bl-label">Rate Pressure Product (Double Product)</div>
+<p>RPP = HR × SBP. Estimates myocardial oxygen demand. If patient had angina during stress testing: note the RPP at which symptoms occurred — keep exercise RPP below that threshold. Normal at rest: ~7,000–10,000. During moderate exercise: ~20,000–25,000. Ischemic threshold is individual.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">MET Levels for Common Activities</div>
+<table>
+<tr><td>METs</td><td>Activity</td></tr>
+<tr><td>1–2</td><td>Sitting, slow walking, dressing, bed mobility</td></tr>
+<tr><td>2–4</td><td>Walking 2–3 mph, slow stair climbing, light housework</td></tr>
+<tr><td>4–6</td><td>Walking 3.5–4 mph, cycling, moderate exercise</td></tr>
+<tr><td>6–8</td><td>Jogging, heavy yard work, doubles tennis</td></tr>
+<tr><td>&gt;8</td><td>Running, singles tennis, vigorous sports</td></tr></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Cardiac Medications &amp; PT Implications</div>
+<table class="data-table"><thead>
+<tr><th>Medication</th><th>PT Impact</th></tr></thead><tbody>
+<tr><td><strong>Beta-blockers</strong></td><td>Blunted HR — use RPE, not target HR; lower max HR than age-predicted; lower exercise capacity</td></tr>
+<tr><td><strong>Nitrates</strong> (nitroglycerin)</td><td>Vasodilation → hypotension; take if angina during exercise; do NOT exercise immediately after sublingual NTG — wait for symptom resolution + medical review</td></tr>
+<tr><td><strong>Digoxin</strong></td><td>May cause bradycardia; toxicity signs (nausea, visual changes, bradycardia) — document and report; narrow therapeutic window</td></tr>
+<tr><td><strong>Antiarrhythmics</strong></td><td>Variable HR effects; may cause fatigue, dizziness; monitor rhythm quality; any palpitations → check HR, BP, symptom assess</td></tr>
+<tr><td><strong>Statins</strong></td><td>Myopathy/myalgia side effect — unexplained muscle pain or weakness in a cardiac patient on statins → document and report; can be severe (rhabdomyolysis)</td></tr>
+<tr><td><strong>Warfarin / Novel anticoagulants</strong></td><td>Bleeding risk — no contact sports; fall prevention priority; any bruising or bleeding → document; INR instability = no change to PT plan without MD guidance</td></tr>
+<tr><td><strong>Diuretics</strong></td><td>Electrolyte imbalance; dehydration; orthostatic hypotension; watch for cramping, weakness, arrhythmia risk</td></tr></tbody></table>
 </div>
 </div>
-
-<!-- ====== COPD ====== -->
+<div class="bl-strip">
+<div class="bl-label">Heart Failure — PT Considerations</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Signs of Decompensated HF — Hold Therapy</div>
+<p>Rapid weight gain (&gt;2–3 lbs overnight / &gt;5 lbs/week) · Increased dyspnea at rest or with minimal activity · Orthopnea (can't lie flat) · Paroxysmal nocturnal dyspnea · New or increased peripheral edema · S3 gallop · Resting SpO2 &lt;90%. <strong>Hold PT and notify nursing/MD immediately.</strong></p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">EF Classification</div>
+<p><strong>HFrEF (reduced EF &lt;40%):</strong> Systolic dysfunction; can exercise but at lower loads; ACEI/ARB/beta-blocker/diuretic treatment. <strong>HFpEF (preserved EF ≥50%):</strong> Diastolic dysfunction; exercise tolerance limited by diastolic filling; often older female + HTN + T2DM + obesity. Both benefit from graded exercise but require careful monitoring.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip">
+<div class="bl-label">Exercise Prescription for Stable HF</div>
+<p>Begin at low intensity (40–50% HRR or RPE 9–11). Build duration before intensity. Interval training often better tolerated than continuous. Resistance training (40–60% 1-RM) is safe and improves functional capacity. Avoid isometric Valsalva. Monitor SpO2 — supplement O2 if needed to keep SpO2 ≥92%.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">6-Minute Walk Test (6MWT)</div>
+<p>Standard outcome measure in HF. Patient walks as far as possible in 6 minutes on flat surface. Normative values vary by age/sex. MCID: ~30–50 meters. Monitor HR, BP, SpO2, Borg dyspnea before/during/after. Stop test if SpO2 &lt;88%, angina, severe dyspnea, SBP &gt;250, or patient cannot continue.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section-title">Cardiovascular Symptom Encyclopedia</div>
+<div class="section-sub">These symptoms present in your patients daily. Each one has a specific cardiac vs. non-cardiac differential. Know the pattern, know when to refer, know when to hold PT and call nursing.</div>
+<div class="bl-strip">
+<div class="bl-label">Chest Pain, Angina &amp; Palpitations</div>
+<div class="bl-strip red">
+<div class="bl-label">Chest Pain / Angina Pectoris</div>
+<p>Cardiac workload exceeds myocardial O2 supply → ischemia → temporary pain. Location: substernal or retrosternal, radiates to left shoulder/ulnar border of arm into fingers, jaw, neck, upper back. Quality: "squeezing," "burning," "pressing," "heartburn," "choking." Associated: diaphoresis, dyspnea, pallor, nausea. <strong>Women</strong>: SOB, fatigue, neck/jaw/back pain — often no crushing chest pain. Sublingual nitroglycerin relieves in 1–2 minutes. After angina episode: resume exercise at reduced intensity; wait several hours before resuming. Exercise at &lt;anginal threshold (record vitals at ischemia onset).</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Angina Types — Know These</div>
+<table>
+<tr><td>Type</td><td>Description</td></tr>
+<tr><td>Chronic stable</td><td>Predictable level of exertion; classic exertional angina</td></tr>
+<tr><td>New-onset</td><td>Developed for first time within past 2 weeks</td></tr>
+<tr><td>Nocturnal</td><td>Awakens from sleep; caused by increased HR with dreams or CHF</td></tr>
+<tr><td>Unstable (pre-infarct)</td><td>Unpredictable; lasts &gt;15 min; worsening CAD — medical emergency</td></tr>
+<tr><td>Prinzmetal</td><td>Coronary artery spasm; more common in women &lt;50; at rest</td></tr>
+<tr><td>Post-infarct</td><td>Residual ischemia triggers angina after MI</td></tr></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Palpitations</div>
+<p>Irregular, fast, or "extra" heartbeat. <strong>Benign causes:</strong> mitral valve prolapse, caffeine, anxiety, exercise, athletic heart. <strong>Serious causes:</strong> CAD, cardiomyopathy, ventricular arrhythmia, aortic/mitral stenosis. In women: may be caused by drops in estrogen (perimenopause) or hypothyroidism. Associated dizziness or syncope = refer immediately.</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Dyspnea, Syncope &amp; Edema — PT Red Flags</div>
+<div class="bl-strip red">
+<div class="bl-label">Dyspnea — 4× Risk of Sudden Death</div>
+<p>Dyspnea alone predicts death from cardiac causes at <strong>4× the rate of angina alone</strong> (2× the risk). May be cardiac (impaired LV unable to contract fully → pulmonary congestion) or pulmonary.<br><strong>Paroxysmal nocturnal dyspnea (PND):</strong> awakens from supine sleep gasping — classic CHF.<br><strong>Orthopnea:</strong> breathlessness relieved by sitting upright; occurs any time of day.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Cardiac Syncope vs. Vasovagal Syncope</div>
+<p><strong>Cardiac syncope:</strong> decreased O2 to brain from poor cardiac output; caused by arrhythmia, orthostatic hypotension, aortic dissection, hypertrophic cardiomyopathy, CAD. Predictors: prior stroke/TIA, cardiac medications, HTN, obesity, DM. Aortic stenosis = prone to postural hypotension and Valsalva-induced syncope. <strong>Vasovagal:</strong> strong parasympathetic response → HR slows + vessels dilate → hypotension; after prolonged standing/sitting; donating blood; generally not serious.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Peripheral Edema — Right vs. Left Heart</div>
+<p><strong>Right ventricular failure:</strong> bilateral dependent edema + jugular venous distention + cyanosis + abdominal distention. Right upper quadrant pain = enlarged liver (hepatomegaly).<br><strong>Left ventricular failure:</strong> pulmonary edema (SOB, orthopnea, PND).<br><strong>Non-cardiac:</strong> pulmonary HTN, renal dysfunction, cirrhosis, lymphatic obstruction, burns, infection.<br><strong>Pitting edema + leg pain = venous disease</strong> (DVT territory).</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Claudication — PVD in PT</div>
+<p>Cramping/leg pain brought on by consistent exercise; subsides with rest. Result of peripheral vascular disease (arterial or venous). More debilitating than angina or dyspnea but can coexist with both. Pitting edema + leg pain = venous. No edema + leg pain with exertion only = arterial (PAD). Exercise: aerobic encouraged; high-impact jogging/step aerobics avoided in varicose veins; walking programs are primary treatment for PAD claudication.</p>
+</div>
+</div>
+</div>
+<div class="section-title">Common Cardiovascular Pathologies — PT Clinical Framework</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Myocardial Infarction (MI) — Zones, Signs, PT Timing</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Pathogenesis — 3 Zones</div>
+<p>Coronary artery occlusion (thrombus on ruptured plaque) → deprivation of O2 → progressive tissue damage.<br><strong>Zone of Infarction:</strong> cells die → necrosis → fibrous scar (complete in 6–8 weeks).<br><strong>Zone of Hypoxic Injury:</strong> surrounding zone; can return to normal in 2–3 weeks.<br><strong>Zone of Ischemia:</strong> outermost reversible zone. Electrolyte disturbance: cellular loss of K⁺, Ca²⁺, Mg²⁺ → reduced contractility. Most common site: <strong>left ventricle</strong> (highest workload). Scar formation is complete in 6–8 weeks — this is why PT progressions must respect this timeline.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Signs &amp; Symptoms — Men vs. Women</div>
+<p><strong>Classic (men):</strong> sudden crushing chest pressure, radiates to arms/throat/neck/back, constant pain 30–60 min, pallor, SOB, diaphoresis. <strong>Women:</strong> SOB, middle-of-night waking, chronic unexplained fatigue — often NO crushing chest pain. Women delay longer seeking help ("decision delay") → worse outcomes. Heart attacks occur more in early morning hours (catecholamine surge) and have seasonal peaks (Thanksgiving/New Year's).</p>
+</div>
+</div>
+<div>
+<div class="bl-strip green">
+<div class="bl-label">PT Timing After MI</div>
+<p>Majority of exercise testing can begin within <strong>3 days of MI</strong> with very low complication rate. Phase I cardiac rehab begins in hospital: early mobilization, hall ambulation (1–2 METs), ADLs, education. Post-MI complications to screen: CHF, cardiogenic shock, pericarditis, thromboembolism, recurrent infarct, sudden death. Monitor for: dyspnea, new chest pain, arrhythmia, significant BP changes.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Angina vs. MI — The Clinical Distinction</div>
+<p><strong>Angina:</strong> narrowed (not blocked) artery → reduced O2 → temporary ischemia → no permanent damage; relieved by rest or nitrates in minutes. <strong>MI:</strong> complete occlusion → sustained ischemia → irreversible cell death → permanent scar. Duration distinguishes them: angina lasts &lt;15 minutes; MI pain lasts 30–60+ minutes and does NOT respond to rest or nitrates alone.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Atherosclerosis &amp; CAD — Pathogenesis, Risk Factors, Exercise</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Pathogenesis Sequence</div>
+<p>(1) LDL cholesterol modified by free radicals → arterial wall injury. (2) Injury permits infiltration of macromolecules. (3) Naked collagen acts as "flypaper" → platelet adherence. (4) Platelets release chemicals → proliferation of smooth muscle cells + fibrous clots → lesion grows outward first (positive remodeling) then inward. (5) Fibrous cap forms over plaque; <strong>cap rupture → thrombus → MI or stroke</strong>. Capped plaques are less likely to rupture. Symptoms only appear when coronary lumen narrows &gt;75%.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Non-Modifiable vs. Modifiable Risk Factors</div>
+<p><strong>Non-modifiable:</strong> Age (men ≥45, women ≥55), gender (men worse until menopause), family history, ethnicity (Black and Mexican-American highest risk), infections. <strong>Modifiable:</strong> Smoking (leading preventable cause — nicotine increases fibrinogen + plaque), HTN, DM, obesity, physical inactivity, elevated LDL, low HDL, high triglycerides, psychologic/oxidative stress.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Newer Predictors of CAD</div>
+<p><strong>CRP (C-reactive protein):</strong> acute-phase reactant reflecting low-grade systemic inflammation; elevated levels increase CAD risk regardless of age/gender/other risk factors; high in smokers; predicts response to statins and aspirin.<br><strong>Homocysteine:</strong> elevated levels may be as significant as high cholesterol or smoking.<br><strong>Fibrinogen:</strong> predicts first heart attacks in unstable CAD.<br><strong>Lipoprotein(a):</strong> LDL + extra protein; slows clot breakdown; high levels = greater MI risk.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip green">
+<div class="bl-label">How Exercise Influences CAD — PT Role</div>
+<p>Exercise keeps inner lining of arteries healthy and less prone to injury leading to plaque. Mechanisms: regular arterial expansion/contraction maintains vessel shape; maintains endothelial function; limits plaque attachment; inhibits clot formation (makes platelets less "sticky"); promotes clot-dissolving enzymes. <strong>HDL effect:</strong> exercise raises HDL by avg 4.6%; every 1% HDL increase = 3.5% reduction in cardiac death risk. <strong>Frequency may be more important than intensity</strong> for improving HDL. Low-intensity activity (65–70% max HR) 3×/week is as effective as high-intensity for BP reduction. Delayed heart rate recovery (≤12 bpm decrease in first minute post-exercise) is an independent risk factor — exercise improves this.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Women &amp; CAD — Specific PT Knowledge</div>
+<p>Women's hearts are smaller, respond differently to hypertrophic stimuli. Women have longer QT intervals → 3× greater risk of fatal arrhythmias from certain medications (QT-prolonging drugs). "Syndrome X" (coronary microvascular dysfunction): doesn't show on angiogram; false-positive stress tests (abnormal result, clear arteries). Women more likely to have diffuse plaque buildup (vs. focal in men). Estrogen cardioprotective: stimulates HDL, acts as Ca²⁺ channel blocker, reduces platelet aggregation. After menopause: CAD incidence matches men within 10 years.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>Cardiomyopathy, Aneurysm &amp; Valve Disease</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip">
+<div class="bl-label">Cardiomyopathy — Types &amp; PT</div>
+<p><strong>Dilated cardiomyopathy:</strong> impaired contraction/relaxation → LV ejects less efficiently → large blood volume remains post-systole → 4-chamber dilation → CHF. Causes: heavy alcohol (direct toxicity + nutritional deficiency), obesity. Symptoms = same as HF (dyspnea, orthopnea, tachycardia, palpitations, peripheral edema, JVD). 75% die within 5 years of diagnosis if idiopathic. PT: avoid strenuous exercise; assess current activity levels; monitor HR/vitals/rhythm.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Hypertrophic Cardiomyopathy (HCM) — SCD Risk</div>
+<p>Inherited (1:500 athletes); LV wall thickness &gt;13–30mm is pathologic. Normal athletes may have 13–15mm hypertrophy without symptoms.<br><strong>Most common cause of sudden cardiac death in young athletes</strong> — basketball, football players, African-American athletes. 55% of SCD victims have NO identified risk factors.<br><strong>SCD risk factors:</strong> prior cardiac arrest, family history, syncope/near-syncope, ventricular tachycardia on Holter, hypotensive BP response to exercise, LVH &gt;30mm.<br><strong>PT role:</strong> follow AHA guidelines for preparticipation screening; recognize murmur on PPE.</p>
+</div>
+<div class="bl-strip orange">
+<div class="bl-label">Commotio Cordis — Know This</div>
+<p>Blunt, non-penetrating chest blow (innocent appearing) that causes virtually instantaneous cardiac death. Mechanism: blow directly over heart + precise timing to vulnerable repolarization phase (just before T-wave peak) → ventricular fibrillation. Average age: 14 years. Typically low energy/velocity projectile (baseball, lacrosse ball). Athletic trainers/PT at sporting events must know: immediate CPR + AED is the only intervention.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip red">
+<div class="bl-label">Aortic Aneurysm — PT Palpation Rule</div>
+<p><strong>Always palpate the abdomen for a pulsating mass before performing any anterior abdominal therapy.</strong> AAA: below diaphragm, occurs 4× more often than thoracic; 25–30% have midabdominal or low back pain. Back pain may be only symptom before rupture. Post-op: restrict pushing/pulling/lifting &gt;10 lbs for 6–10 weeks. Throbbing pain that increases with exertion → monitor vitals + palpate pulses. Thoracic aneurysm: above diaphragm, hypertensive men 40–70, more life-threatening. Cerebral aneurysm: 50–80% do not rupture in lifetime.</p>
+</div>
+<div class="bl-strip purple">
+<div class="bl-label">Mitral Valve Prolapse (MVP)</div>
+<p>LV contracts → one or both mitral leaflets prolapse into LA → incomplete seal → arrhythmia. Classic triad: <strong>profound fatigue + palpitations + dyspnea</strong> with exertion. More common in connective tissue disorders (Marfan's). <strong>Exercise is a key management component</strong> — not to alter valve function but to improve overall cardiovascular fitness. PT may encounter requests for conditioning programs.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Aortic Stenosis — PT Flag</div>
+<p>Progressive valvular calcification (aging); risk factors same as CVD (obesity, sedentary, smoking, high cholesterol). Cardiac output maintained until stenosis is severe. <strong>Classic triad indicating poor prognosis: Angina + Exertional Syncope + Left Ventricular Failure.</strong> Onset of these symptoms = medical referral immediately. Exertional syncope in an older patient = aortic stenosis until proven otherwise. Prophylactic antibiotics against infective endocarditis for asymptomatic patients.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ma-item">
+<div class="ma-header" onclick="toggleMA(this)">
+<h4>DVT, PE &amp; Peripheral Vascular Disease</h4><span class="ma-chevron">&#9660;</span>
+</div>
+<div class="ma-body">
+<div>
+<div class="bl-strip red">
+<div class="bl-label">DVT → PE Pathway</div>
+<p>Thrombophlebitis: inflammation of vein + thrombus. <strong>DVT:</strong> distal = below knee; proximal = popliteal or above (higher PE risk). Most common DVT site: femoral or iliac vein. Superficial thrombosis: saphenous vein. <strong>PE:</strong> DVT thrombus breaks loose → travels through right heart → lodges in pulmonary artery → can be fatal. Virchow's triad (DVT risk): stasis + hypercoagulability + endothelial injury.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Wells DVT Criteria — PT Must Know</div>
+<p>Score-based clinical decision tool. Key components: active cancer, paralysis/immobilization, bedridden &gt;3 days or surgery within 12 weeks, localized deep vein tenderness, entire leg swollen, calf &gt;3cm larger than asymptomatic, pitting edema, collateral superficial veins, alternative diagnosis at least as likely (subtract 2 points). Score ≤0 = low probability; 1–2 = moderate; ≥3 = high probability → refer for Doppler ultrasound. In SNF: any new unexplained calf swelling, warmth, tenderness, Homans' sign (low sensitivity, high false positive) → hold PT and notify MD.</p>
+</div>
+</div>
+<div>
+<div class="bl-strip">
+<div class="bl-label">Arterial (PAD) vs. Venous — Clinical Distinction</div>
+<table>
+<tr><td>Feature</td><td>Arterial (PAD)</td><td>Venous</td></tr>
+<tr><td>Pain onset</td><td>With exertion (claudication)</td><td>With standing/dependent</td></tr>
+<tr><td>Relief</td><td>Rest (immediately)</td><td>Elevation</td></tr>
+<tr><td>Edema</td><td>Absent or minimal</td><td>Pitting edema (dependent)</td></tr>
+<tr><td>Skin</td><td>Pale, cool, shiny, hairless</td><td>Brawny, warm, stasis changes</td></tr>
+<tr><td>Pulses</td><td>Diminished or absent</td><td>Present</td></tr></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Varicose Veins &amp; Exercise</div>
+<p>Abnormal dilation of saphenous veins with valve incompetence → tortuous vessels → thrombosis propensity. High venous pressure with prolonged sitting/standing = major risk factor. Dull aching heaviness when standing; nocturnal cramps. <strong>PT exercise guidance:</strong> aerobic, strengthening, and resistive exercise encouraged; use movement breaks with deep breathing; avoid high-impact jogging/step aerobics. Compression stockings during prolonged standing.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-pulm">
 <div class="container">
-
-  <div class="section-title">COPD &amp; Pulmonary Disease</div>
-  <div class="section-sub">COPD affects ~16 million Americans and is the third leading cause of death. The hallmark is dyspnea with exertion — which means pulmonary patients are always in PT's caseload. SpO2 monitoring, dyspnea scales, pursed-lip breathing, energy conservation, and inhaler timing are all PT-essential skills.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">GOLD Classification — COPD Severity</div>
-      <table class="data-table">
-        <thead><tr><th>GOLD Grade</th><th>FEV1 (% predicted)</th><th>Severity</th><th>PT Implication</th></tr></thead>
-        <tbody>
-          <tr><td><strong>GOLD 1</strong></td><td class="ok">≥80%</td><td>Mild</td><td>Exercise-limited by dyspnea; monitor SpO2; standard exercise precautions</td></tr>
-          <tr><td><strong>GOLD 2</strong></td><td class="warn">50–79%</td><td>Moderate</td><td>Significant exercise limitation; energy conservation education; pursed-lip breathing</td></tr>
-          <tr><td><strong>GOLD 3</strong></td><td class="bad">30–49%</td><td>Severe</td><td>High dyspnea burden; supplemental O2 likely; interval training; dyspnea first approach</td></tr>
-          <tr><td><strong>GOLD 4</strong></td><td class="bad">&lt;30%</td><td>Very Severe</td><td>Extreme limitation; very low intensity; airway clearance; pulmonary rehab program</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip red">
-        <div class="bl-label">&#9888; SpO2 Thresholds — When to Stop or Supplement</div>
-        <p>Monitor SpO2 continuously during exercise in COPD. <strong>Stop exercise if SpO2 drops below 88%.</strong> Supplement oxygen (per MD order) to maintain SpO2 ≥90–92% during activity. Document resting SpO2, lowest SpO2 during exercise, and recovery SpO2 in PT notes.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Dyspnea Scales</div>
-      <p>Modified MRC Dyspnea Scale (mMRC)</p>
-      <table class="data-table">
-        <thead><tr><th>Grade</th><th>Description</th></tr></thead>
-        <tbody>
-          <tr><td><strong>0</strong></td><td>Dyspnea only with strenuous exercise</td></tr>
-          <tr><td><strong>1</strong></td><td>Dyspnea when hurrying on level or slight hill</td></tr>
-          <tr><td><strong>2</strong></td><td>Walks slower than peers; stops for breath on level after ~100m</td></tr>
-          <tr><td><strong>3</strong></td><td>Stops for breath after a few minutes of walking on level</td></tr>
-          <tr><td><strong>4</strong></td><td>Too breathless to leave house; dyspnea with dressing/undressing</td></tr>
-        </tbody>
-      </table>
-      <p>Modified Borg Dyspnea Scale — Exercise</p>
-      <p>0 = Nothing at all · 1 = Very slight · 3 = Moderate · 5 = Severe · 7 = Very severe · 10 = Maximal. Target: Borg 3–5 during exercise ("moderate to somewhat severe"). Stop if Borg dyspnea ≥7 with minimal activity or patient distress.</p>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Pursed-Lip Breathing (PLB)</div>
-      <p>Inhale slowly through nose (2 counts) Purse lips as if blowing out a candle Exhale slowly through pursed lips (4–6 counts — 2× as long as inhale) <strong>Mechanism:</strong> Increases positive end-expiratory pressure (PEEP) → prevents airway collapse during exhalation → reduces air trapping → improves gas exchange Use during exertion, stair climbing, transfers — any activity that increases dyspnea Also teaches patient to control breathing rate during anxiety/panic</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Energy Conservation Strategies</div>
-      <p><strong>Plan:</strong> Schedule high-energy tasks for when energy is best (typically mid-morning)<br><strong>Prioritize:</strong> Identify essential vs. optional tasks; eliminate or delegate lower-priority activities <strong>Position:</strong> Sit to perform tasks; forward lean (elbows on table) offloads accessory muscles and improves diaphragmatic mechanics <strong>Pace:</strong> Slow down; rest before fatigue onset; work-to-rest ratios (e.g., 2 min work: 1 min rest)<br><strong>ADL modifications:</strong> Long-handled tools (reduce bending), seated shower, grab bars, raised toilet seat, clothing selection (avoid tight waistbands)<br><strong>Breathing coordination:</strong> Exhale on exertion (exhale when pushing/pulling/lifting)</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Inhaler Timing &amp; Exercise</div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Short-Acting Bronchodilators (SABA)</div>
-        <p>Albuterol/salbutamol — instruct patient to use SABA 15–30 minutes before exercise session. This maximizes bronchodilation during peak exertion. Document pre-exercise inhaler use in PT notes.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Long-Acting Bronchodilators (LABA/LAMA)</div>
-        <p>Salmeterol, tiotropium — taken at scheduled times; PT does not time around these. Ensure patient has taken scheduled medications before session.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Inhaler Use During Session</div>
-        <p>If patient uses rescue inhaler during PT session: stop exercise, allow 5–10 minutes for bronchodilation, reassess SpO2 and dyspnea before considering resuming at lower intensity. Document inhaler use during session. Frequent rescue inhaler use = poorly controlled COPD → communicate to MD team.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-    <div class="bl-label">Pulmonary Rehabilitation — Exercise Prescription</div>
-    <p><strong>Aerobic:</strong> Interval training often better tolerated than continuous (30-sec work: 30-sec rest → build to 3-min work intervals). Walking, cycle ergometer, treadmill. Target: Borg dyspnea 3–5.<br><strong>Resistance:</strong> UE + LE strengthening reduces dyspnea burden (stronger muscles = lower O2 demand for same task). 2–3 sets × 10–15 reps, 50–70% 1-RM. Include UE ergometer for upper extremity endurance (functional: carrying, reaching).<br><strong>Inspiratory Muscle Training (IMT):</strong> Threshold IMT device at 30% maximal inspiratory pressure (MIP); 5×/week; improves inspiratory muscle strength in COPD with respiratory muscle weakness.</p>
-      <div>
-        <div class="bl-strip green">
-          <div class="bl-label">Evidence for Pulmonary Rehab</div>
-          <p>Pulmonary rehabilitation is Level A evidence for COPD: reduces dyspnea, improves exercise capacity, improves quality of life, reduces hospitalizations. 6MWT + SGRQ (St George's Respiratory Questionnaire) are standard outcome measures. MCID for 6MWT in COPD: 30 meters.</p>
-        </div>
-        <div class="bl-strip red">
-          <div class="bl-label">SNF / Acute Care COPD Pearls</div>
-          <p>Check O2 prescription before mobilizing — confirm flow rate and delivery method. Portable O2 for ambulation. Document resting and exertional SpO2 every visit. Ensure patient uses PLB during transfers. Coordinate with respiratory therapy. Any rapid decline in SpO2 or increased work of breathing → stop, position upright, notify nursing immediately.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">COPD &amp; Pulmonary Disease</div>
+<div class="section-sub">COPD affects ~16 million Americans and is the third leading cause of death. The hallmark is dyspnea with exertion — which means pulmonary patients are always in PT's caseload. SpO2 monitoring, dyspnea scales, pursed-lip breathing, energy conservation, and inhaler timing are all PT-essential skills.</div>
+<div class="bl-strip">
+<div class="bl-label">GOLD Classification — COPD Severity</div>
+<table class="data-table"><thead>
+<tr><th>GOLD Grade</th><th>FEV1 (% predicted)</th><th>Severity</th><th>PT Implication</th></tr></thead><tbody>
+<tr><td><strong>GOLD 1</strong></td><td class="ok">≥80%</td><td>Mild</td><td>Exercise-limited by dyspnea; monitor SpO2; standard exercise precautions</td></tr>
+<tr><td><strong>GOLD 2</strong></td><td class="warn">50–79%</td><td>Moderate</td><td>Significant exercise limitation; energy conservation education; pursed-lip breathing</td></tr>
+<tr><td><strong>GOLD 3</strong></td><td class="bad">30–49%</td><td>Severe</td><td>High dyspnea burden; supplemental O2 likely; interval training; dyspnea first approach</td></tr>
+<tr><td><strong>GOLD 4</strong></td><td class="bad">&lt;30%</td><td>Very Severe</td><td>Extreme limitation; very low intensity; airway clearance; pulmonary rehab program</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">&#9888; SpO2 Thresholds — When to Stop or Supplement</div>
+<p>Monitor SpO2 continuously during exercise in COPD. <strong>Stop exercise if SpO2 drops below 88%.</strong> Supplement oxygen (per MD order) to maintain SpO2 ≥90–92% during activity. Document resting SpO2, lowest SpO2 during exercise, and recovery SpO2 in PT notes.</p>
 </div>
 </div>
-
-<!-- ====== OSTEOPOROSIS ====== -->
+<div class="bl-strip">
+<div class="bl-label">Dyspnea Scales</div>
+<p>Modified MRC Dyspnea Scale (mMRC)</p>
+<table class="data-table"><thead>
+<tr><th>Grade</th><th>Description</th></tr></thead><tbody>
+<tr><td><strong>0</strong></td><td>Dyspnea only with strenuous exercise</td></tr>
+<tr><td><strong>1</strong></td><td>Dyspnea when hurrying on level or slight hill</td></tr>
+<tr><td><strong>2</strong></td><td>Walks slower than peers; stops for breath on level after ~100m</td></tr>
+<tr><td><strong>3</strong></td><td>Stops for breath after a few minutes of walking on level</td></tr>
+<tr><td><strong>4</strong></td><td>Too breathless to leave house; dyspnea with dressing/undressing</td></tr></tbody></table>
+<p>Modified Borg Dyspnea Scale — Exercise</p>
+<p>0 = Nothing at all · 1 = Very slight · 3 = Moderate · 5 = Severe · 7 = Very severe · 10 = Maximal. Target: Borg 3–5 during exercise ("moderate to somewhat severe"). Stop if Borg dyspnea ≥7 with minimal activity or patient distress.</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Pursed-Lip Breathing (PLB)</div>
+<p>Inhale slowly through nose (2 counts) Purse lips as if blowing out a candle Exhale slowly through pursed lips (4–6 counts — 2× as long as inhale) <strong>Mechanism:</strong> Increases positive end-expiratory pressure (PEEP) → prevents airway collapse during exhalation → reduces air trapping → improves gas exchange Use during exertion, stair climbing, transfers — any activity that increases dyspnea Also teaches patient to control breathing rate during anxiety/panic</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Energy Conservation Strategies</div>
+<p><strong>Plan:</strong> Schedule high-energy tasks for when energy is best (typically mid-morning)<br><strong>Prioritize:</strong> Identify essential vs. optional tasks; eliminate or delegate lower-priority activities <strong>Position:</strong> Sit to perform tasks; forward lean (elbows on table) offloads accessory muscles and improves diaphragmatic mechanics <strong>Pace:</strong> Slow down; rest before fatigue onset; work-to-rest ratios (e.g., 2 min work: 1 min rest)<br><strong>ADL modifications:</strong> Long-handled tools (reduce bending), seated shower, grab bars, raised toilet seat, clothing selection (avoid tight waistbands)<br><strong>Breathing coordination:</strong> Exhale on exertion (exhale when pushing/pulling/lifting)</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Inhaler Timing &amp; Exercise</div>
+<div class="bl-strip gold">
+<div class="bl-label">Short-Acting Bronchodilators (SABA)</div>
+<p>Albuterol/salbutamol — instruct patient to use SABA 15–30 minutes before exercise session. This maximizes bronchodilation during peak exertion. Document pre-exercise inhaler use in PT notes.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Long-Acting Bronchodilators (LABA/LAMA)</div>
+<p>Salmeterol, tiotropium — taken at scheduled times; PT does not time around these. Ensure patient has taken scheduled medications before session.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Inhaler Use During Session</div>
+<p>If patient uses rescue inhaler during PT session: stop exercise, allow 5–10 minutes for bronchodilation, reassess SpO2 and dyspnea before considering resuming at lower intensity. Document inhaler use during session. Frequent rescue inhaler use = poorly controlled COPD → communicate to MD team.</p>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Pulmonary Rehabilitation — Exercise Prescription</div>
+<p><strong>Aerobic:</strong> Interval training often better tolerated than continuous (30-sec work: 30-sec rest → build to 3-min work intervals). Walking, cycle ergometer, treadmill. Target: Borg dyspnea 3–5.<br><strong>Resistance:</strong> UE + LE strengthening reduces dyspnea burden (stronger muscles = lower O2 demand for same task). 2–3 sets × 10–15 reps, 50–70% 1-RM. Include UE ergometer for upper extremity endurance (functional: carrying, reaching).<br><strong>Inspiratory Muscle Training (IMT):</strong> Threshold IMT device at 30% maximal inspiratory pressure (MIP); 5×/week; improves inspiratory muscle strength in COPD with respiratory muscle weakness.</p>
+<div>
+<div class="bl-strip green">
+<div class="bl-label">Evidence for Pulmonary Rehab</div>
+<p>Pulmonary rehabilitation is Level A evidence for COPD: reduces dyspnea, improves exercise capacity, improves quality of life, reduces hospitalizations. 6MWT + SGRQ (St George's Respiratory Questionnaire) are standard outcome measures. MCID for 6MWT in COPD: 30 meters.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">SNF / Acute Care COPD Pearls</div>
+<p>Check O2 prescription before mobilizing — confirm flow rate and delivery method. Portable O2 for ambulation. Document resting and exertional SpO2 every visit. Ensure patient uses PLB during transfers. Coordinate with respiratory therapy. Any rapid decline in SpO2 or increased work of breathing → stop, position upright, notify nursing immediately.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-osteo">
 <div class="container">
-
-  <div class="section-title">Osteoporosis &amp; Bone Health</div>
-  <div class="section-sub">One in two women and one in four men over 50 will have an osteoporosis-related fracture. In SNF, essentially every older adult is at risk. The PT's role is fracture prevention, safe exercise prescription, and recognizing which movements are contraindicated to avoid vertebral compression fractures — which can occur with activities as minor as bending to pick something up.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Bone Mineral Density — T-Score Classification (WHO)</div>
-      <table class="data-table">
-        <thead><tr><th>T-Score</th><th>Classification</th><th>PT Implication</th></tr></thead>
-        <tbody>
-          <tr><td class="ok"><strong>≥ −1.0</strong></td><td>Normal bone density</td><td>Standard exercise; weight-bearing encouraged</td></tr>
-          <tr><td class="warn"><strong>−1.0 to −2.5</strong></td><td>Osteopenia (low bone mass)</td><td>Fracture risk elevated; balance training; weight-bearing; avoid high-risk movements</td></tr>
-          <tr><td class="bad"><strong>≤ −2.5</strong></td><td>Osteoporosis</td><td>High fracture risk; strict movement precautions; fall prevention priority</td></tr>
-          <tr><td class="bad"><strong>≤ −2.5 + fracture</strong></td><td>Severe / Established Osteoporosis</td><td>Extreme caution; spinal precautions; multidisciplinary fall prevention</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip">
-        <div class="bl-label">FRAX Tool</div>
-        <p>WHO Fracture Risk Assessment Tool — estimates 10-year probability of major osteoporotic fracture (hip, wrist, shoulder, vertebra) using clinical risk factors (age, sex, BMI, smoking, alcohol, prior fracture, family history, steroid use, RA, secondary osteoporosis). Available at frax.shef.ac.uk. Guides treatment decisions alongside DXA T-score.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Contraindicated Movements — Vertebral Fracture Risk</div>
-      <div class="bl-strip red">
-        <div class="bl-label">High-Risk Movements to AVOID in Osteoporosis</div>
-        <p>The vertebral body is most vulnerable to <strong>compressive + flexion loading</strong> and <strong>compressive + rotation under load</strong>. These loads can fracture an osteoporotic vertebra even with very light forces.</p>
-      </div>
-      <p><strong>Full trunk flexion</strong> — toe touches, sit-ups, crunches, forward bending under load <strong>Trunk rotation under load</strong> — trunk twists with resistance, golf swing, tennis swing <strong>Combined flexion + rotation</strong> — most dangerous; avoid in all osteoporosis <strong>High-impact activities</strong> — running, jumping, step aerobics (unless bone density is adequate)<br><strong>Spinal extension</strong> — generally safe and therapeutic, but extreme extension under load avoided <strong>Coughing/sneezing caution</strong> — educate patient to support spine (hand on thigh, slightly extended) during forceful cough or sneeze</p>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Safe &amp; Therapeutic Exercise for Osteoporosis</div>
-      <div class="bl-strip green">
-        <div class="bl-label">Weight-Bearing = Bone-Loading = Treatment</div>
-        <p>Bone adapts to mechanical loading (Wolff's Law). Weight-bearing exercise stimulates osteoblast activity. Walking, dancing, stair climbing, heel drops — all provide bone-beneficial loads. Goal: 30 min weight-bearing activity most days.</p>
-      </div>
-      <p><strong>Weight-bearing aerobics:</strong> Walking, dancing, low-impact aerobics, Tai Chi <strong>Resistance training:</strong> Hip extensors, hip abductors, spinal extensors — highest bone-loading benefit; 8–12 reps, 2–3 sets, progressive <strong>Balance training:</strong> Single-leg stance, tandem stance, perturbation training — primary fall prevention mechanism <strong>Spinal extension exercises:</strong> Prone back extension, standing posture exercises — reduce fracture risk at thoracic spine; counteract kyphosis <strong>Hip extension:</strong> Bridges, prone hip extension — protects femoral neck <strong>Heel drops:</strong> Standing heel raise + drop — heel strike sends vibration proximally to hip; evidence for hip BMD benefit</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Medications &amp; SNF/Clinical Considerations</div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Bisphosphonates (Fosamax, Boniva, Reclast)</div>
-        <p>Inhibit osteoclast activity → reduce bone resorption → maintain or improve BMD. IV infusion (zoledronic acid/Reclast) can cause flu-like reaction 24–48 hrs post-infusion — avoid vigorous PT during this window. Rare: atypical femoral fracture (lateral thigh pain = flag) and osteonecrosis of jaw (dental procedures — PT not directly affected but document).</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Corticosteroids — Bone Loss Alert</div>
-        <p>Long-term oral corticosteroids (prednisone) = most common cause of secondary osteoporosis. Any patient on chronic steroids (≥5 mg prednisone × 3+ months) = high fracture risk regardless of DXA. Treat as osteoporosis even if T-score is not yet below −2.5.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">SNF Fall Prevention — Osteoporosis Priority</div>
-        <p>In SNF, every fall in an osteoporotic patient is a potential hip or vertebral fracture. Bed alarm, call light within reach, non-skid footwear, adequate lighting, clear pathway to bathroom. Document fall risk assessment (Berg, TUG, or facility tool). Hip protectors in high-risk patients.</p>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Osteoporosis &amp; Bone Health</div>
+<div class="section-sub">One in two women and one in four men over 50 will have an osteoporosis-related fracture. In SNF, essentially every older adult is at risk. The PT's role is fracture prevention, safe exercise prescription, and recognizing which movements are contraindicated to avoid vertebral compression fractures — which can occur with activities as minor as bending to pick something up.</div>
+<div class="bl-strip">
+<div class="bl-label">Bone Mineral Density — T-Score Classification (WHO)</div>
+<table class="data-table"><thead>
+<tr><th>T-Score</th><th>Classification</th><th>PT Implication</th></tr></thead><tbody>
+<tr><td class="ok"><strong>≥ −1.0</strong></td><td>Normal bone density</td><td>Standard exercise; weight-bearing encouraged</td></tr>
+<tr><td class="warn"><strong>−1.0 to −2.5</strong></td><td>Osteopenia (low bone mass)</td><td>Fracture risk elevated; balance training; weight-bearing; avoid high-risk movements</td></tr>
+<tr><td class="bad"><strong>≤ −2.5</strong></td><td>Osteoporosis</td><td>High fracture risk; strict movement precautions; fall prevention priority</td></tr>
+<tr><td class="bad"><strong>≤ −2.5 + fracture</strong></td><td>Severe / Established Osteoporosis</td><td>Extreme caution; spinal precautions; multidisciplinary fall prevention</td></tr></tbody></table>
+<div class="bl-strip">
+<div class="bl-label">FRAX Tool</div>
+<p>WHO Fracture Risk Assessment Tool — estimates 10-year probability of major osteoporotic fracture (hip, wrist, shoulder, vertebra) using clinical risk factors (age, sex, BMI, smoking, alcohol, prior fracture, family history, steroid use, RA, secondary osteoporosis). Available at frax.shef.ac.uk. Guides treatment decisions alongside DXA T-score.</p>
 </div>
 </div>
-
-<!-- ====== OBESITY ====== -->
+<div class="bl-strip">
+<div class="bl-label">Contraindicated Movements — Vertebral Fracture Risk</div>
+<div class="bl-strip red">
+<div class="bl-label">High-Risk Movements to AVOID in Osteoporosis</div>
+<p>The vertebral body is most vulnerable to <strong>compressive + flexion loading</strong> and <strong>compressive + rotation under load</strong>. These loads can fracture an osteoporotic vertebra even with very light forces.</p>
+</div>
+<p><strong>Full trunk flexion</strong> — toe touches, sit-ups, crunches, forward bending under load <strong>Trunk rotation under load</strong> — trunk twists with resistance, golf swing, tennis swing <strong>Combined flexion + rotation</strong> — most dangerous; avoid in all osteoporosis <strong>High-impact activities</strong> — running, jumping, step aerobics (unless bone density is adequate)<br><strong>Spinal extension</strong> — generally safe and therapeutic, but extreme extension under load avoided <strong>Coughing/sneezing caution</strong> — educate patient to support spine (hand on thigh, slightly extended) during forceful cough or sneeze</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Safe &amp; Therapeutic Exercise for Osteoporosis</div>
+<div class="bl-strip green">
+<div class="bl-label">Weight-Bearing = Bone-Loading = Treatment</div>
+<p>Bone adapts to mechanical loading (Wolff's Law). Weight-bearing exercise stimulates osteoblast activity. Walking, dancing, stair climbing, heel drops — all provide bone-beneficial loads. Goal: 30 min weight-bearing activity most days.</p>
+</div>
+<p><strong>Weight-bearing aerobics:</strong> Walking, dancing, low-impact aerobics, Tai Chi <strong>Resistance training:</strong> Hip extensors, hip abductors, spinal extensors — highest bone-loading benefit; 8–12 reps, 2–3 sets, progressive <strong>Balance training:</strong> Single-leg stance, tandem stance, perturbation training — primary fall prevention mechanism <strong>Spinal extension exercises:</strong> Prone back extension, standing posture exercises — reduce fracture risk at thoracic spine; counteract kyphosis <strong>Hip extension:</strong> Bridges, prone hip extension — protects femoral neck <strong>Heel drops:</strong> Standing heel raise + drop — heel strike sends vibration proximally to hip; evidence for hip BMD benefit</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Medications &amp; SNF/Clinical Considerations</div>
+<div class="bl-strip gold">
+<div class="bl-label">Bisphosphonates (Fosamax, Boniva, Reclast)</div>
+<p>Inhibit osteoclast activity → reduce bone resorption → maintain or improve BMD. IV infusion (zoledronic acid/Reclast) can cause flu-like reaction 24–48 hrs post-infusion — avoid vigorous PT during this window. Rare: atypical femoral fracture (lateral thigh pain = flag) and osteonecrosis of jaw (dental procedures — PT not directly affected but document).</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Corticosteroids — Bone Loss Alert</div>
+<p>Long-term oral corticosteroids (prednisone) = most common cause of secondary osteoporosis. Any patient on chronic steroids (≥5 mg prednisone × 3+ months) = high fracture risk regardless of DXA. Treat as osteoporosis even if T-score is not yet below −2.5.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">SNF Fall Prevention — Osteoporosis Priority</div>
+<p>In SNF, every fall in an osteoporotic patient is a potential hip or vertebral fracture. Bed alarm, call light within reach, non-skid footwear, adequate lighting, clear pathway to bathroom. Document fall risk assessment (Berg, TUG, or facility tool). Hip protectors in high-risk patients.</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-obesity">
 <div class="container">
-
-  <div class="section-title">Obesity &amp; Metabolic Syndrome</div>
-  <div class="section-sub">Obesity affects 42% of U.S. adults and is present in the majority of PT's caseload in SNF and orthopedic settings. It changes biomechanics, exercise capacity, equipment requirements, positioning, joint loading, and patient communication. Metabolic syndrome clusters multiple conditions that amplify cardiovascular and orthopedic risk.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">BMI Classification &amp; Clinical Implications</div>
-      <table class="data-table">
-        <thead><tr><th>BMI (kg/m²)</th><th>Classification</th><th>PT Considerations</th></tr></thead>
-        <tbody>
-          <tr><td class="ok">18.5–24.9</td><td>Normal weight</td><td>Standard protocols</td></tr>
-          <tr><td class="warn">25.0–29.9</td><td>Overweight</td><td>Monitor joint loading; cardiovascular screen</td></tr>
-          <tr><td class="warn">30.0–34.9</td><td>Obesity Class I</td><td>Equipment weight ratings; modified positions; cardiovascular precautions</td></tr>
-          <tr><td class="bad">35.0–39.9</td><td>Obesity Class II</td><td>High cardiovascular risk; bariatric equipment; fall risk; skin integrity</td></tr>
-          <tr><td class="bad">≥40.0</td><td>Obesity Class III (Severe)</td><td>Bariatric bed/lift/equipment; 2-person assist for transfers; high cardiopulmonary demand from activity alone</td></tr>
-        </tbody>
-      </table>
-      <div class="bl-strip red">
-        <div class="bl-label">Equipment Weight Limits — Know Before You Transfer</div>
-        <p>Standard hospital bed: ~350 lbs. Standard walker: 300 lbs (heavy-duty: 400–500 lbs). Standard wheelchair: 250–300 lbs (bariatric: 450–700 lbs). Standard gait belt: 350 lbs. Always verify weight limits before using equipment with bariatric patients. Document patient weight and equipment used. Two-person assist is standard for transfers in severe obesity.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Metabolic Syndrome — Diagnostic Criteria (ATP III)</div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Diagnosis: 3 or More of the Following</div>
-        <table>
-          <tr><td>Waist circumference</td><td>&gt;40 in (men) / &gt;35 in (women)</td></tr>
-          <tr><td>Triglycerides</td><td>≥150 mg/dL</td></tr>
-          <tr><td>HDL cholesterol</td><td>&lt;40 mg/dL (men) / &lt;50 mg/dL (women)</td></tr>
-          <tr><td>Blood pressure</td><td>≥130/85 mmHg or on medication</td></tr>
-          <tr><td>Fasting glucose</td><td>≥100 mg/dL or on medication</td></tr>
-        </table>
-      </div>
-      <p>Metabolic syndrome = 3× risk of cardiovascular disease, 5× risk of T2DM. Treat all individual components. Exercise is the most powerful intervention for reversing metabolic syndrome — more effective than any single medication.</p>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Biomechanical &amp; Joint Loading Effects</div>
-      <p>Each pound of body weight = <strong>4 lbs of knee joint force</strong> during gait; 6–8 lbs during stair climbing High BMI accelerates OA progression, especially knee and hip Altered gait kinematics: wider base of support, reduced step length, increased hip/knee valgus Increased lumbar lordosis and anterior pelvic tilt → lumbar spine loading Fat distribution (visceral adiposity) impairs diaphragmatic mechanics → reduced respiratory capacity Lymphedema risk from adipose tissue compression of lymphatics</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Exercise Modifications</div>
-      <p><strong>Aquatic therapy:</strong> Reduces joint loading 40–90% depending on depth; excellent for severe obesity; maintain 84°F water; address skin hygiene <strong>Seated or recumbent exercises:</strong> Reduce cardiopulmonary demand from weight-bearing; cycle ergometer; seated aerobics <strong>Interval training:</strong> Often better tolerated than continuous exercise; shorter high-intensity bouts with rest <strong>Start low, go slow:</strong> 10 minutes/day is a legitimate starting point for severely deconditioned obese patients — build to 150 min/week <strong>Monitor HR and RPE</strong> — obese patients often have autonomic changes and higher resting HR; use RPE 12–14 for moderate intensity <strong>Skin integrity:</strong> Check skin folds every visit — moisture, friction = pressure injury risk in obesity</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Communication &amp; Patient-Centered Care</div>
-      <div class="bl-strip purple">
-        <div class="bl-label">Weight-Neutral Language</div>
-        <p>Focus on function and health — not weight. "Let's work on building your walking tolerance" not "let's help you lose weight." Obesity is not a character flaw or motivation failure — it has genetic, hormonal, social, and environmental drivers. Stigma from healthcare providers is documented and measurable harm.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Set Goals Around Function</div>
-        <p>Walking tolerance · Stair climbing · Return to ADLs · Pain reduction · Activity endurance. These are measurable, motivating, and patient-centered — not weight-dependent. Celebrate functional gains regardless of scale changes.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Motivational Interviewing</div>
-        <p>Use open-ended questions, reflective listening, and affirmations. Avoid prescriptive language. Explore ambivalence. Roll with resistance — do not confront. Elicit the patient's own reasons for change (intrinsic motivation = more durable behavior change).</p>
-      </div>
-    </div>
-  </div>
-
+<div class="section-title">Obesity &amp; Metabolic Syndrome</div>
+<div class="section-sub">Obesity affects 42% of U.S. adults and is present in the majority of PT's caseload in SNF and orthopedic settings. It changes biomechanics, exercise capacity, equipment requirements, positioning, joint loading, and patient communication. Metabolic syndrome clusters multiple conditions that amplify cardiovascular and orthopedic risk.</div>
+<div class="bl-strip">
+<div class="bl-label">BMI Classification &amp; Clinical Implications</div>
+<table class="data-table"><thead>
+<tr><th>BMI (kg/m²)</th><th>Classification</th><th>PT Considerations</th></tr></thead><tbody>
+<tr><td class="ok">18.5–24.9</td><td>Normal weight</td><td>Standard protocols</td></tr>
+<tr><td class="warn">25.0–29.9</td><td>Overweight</td><td>Monitor joint loading; cardiovascular screen</td></tr>
+<tr><td class="warn">30.0–34.9</td><td>Obesity Class I</td><td>Equipment weight ratings; modified positions; cardiovascular precautions</td></tr>
+<tr><td class="bad">35.0–39.9</td><td>Obesity Class II</td><td>High cardiovascular risk; bariatric equipment; fall risk; skin integrity</td></tr>
+<tr><td class="bad">≥40.0</td><td>Obesity Class III (Severe)</td><td>Bariatric bed/lift/equipment; 2-person assist for transfers; high cardiopulmonary demand from activity alone</td></tr></tbody></table>
+<div class="bl-strip red">
+<div class="bl-label">Equipment Weight Limits — Know Before You Transfer</div>
+<p>Standard hospital bed: ~350 lbs. Standard walker: 300 lbs (heavy-duty: 400–500 lbs). Standard wheelchair: 250–300 lbs (bariatric: 450–700 lbs). Standard gait belt: 350 lbs. Always verify weight limits before using equipment with bariatric patients. Document patient weight and equipment used. Two-person assist is standard for transfers in severe obesity.</p>
 </div>
 </div>
-
-<!-- ====== ONCOLOGY ====== -->
+<div class="bl-strip">
+<div class="bl-label">Metabolic Syndrome — Diagnostic Criteria (ATP III)</div>
+<div class="bl-strip gold">
+<div class="bl-label">Diagnosis: 3 or More of the Following</div>
+<table>
+<tr><td>Waist circumference</td><td>&gt;40 in (men) / &gt;35 in (women)</td></tr>
+<tr><td>Triglycerides</td><td>≥150 mg/dL</td></tr>
+<tr><td>HDL cholesterol</td><td>&lt;40 mg/dL (men) / &lt;50 mg/dL (women)</td></tr>
+<tr><td>Blood pressure</td><td>≥130/85 mmHg or on medication</td></tr>
+<tr><td>Fasting glucose</td><td>≥100 mg/dL or on medication</td></tr></table>
+</div>
+<p>Metabolic syndrome = 3× risk of cardiovascular disease, 5× risk of T2DM. Treat all individual components. Exercise is the most powerful intervention for reversing metabolic syndrome — more effective than any single medication.</p>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Biomechanical &amp; Joint Loading Effects</div>
+<p>Each pound of body weight = <strong>4 lbs of knee joint force</strong> during gait; 6–8 lbs during stair climbing High BMI accelerates OA progression, especially knee and hip Altered gait kinematics: wider base of support, reduced step length, increased hip/knee valgus Increased lumbar lordosis and anterior pelvic tilt → lumbar spine loading Fat distribution (visceral adiposity) impairs diaphragmatic mechanics → reduced respiratory capacity Lymphedema risk from adipose tissue compression of lymphatics</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Exercise Modifications</div>
+<p><strong>Aquatic therapy:</strong> Reduces joint loading 40–90% depending on depth; excellent for severe obesity; maintain 84°F water; address skin hygiene <strong>Seated or recumbent exercises:</strong> Reduce cardiopulmonary demand from weight-bearing; cycle ergometer; seated aerobics <strong>Interval training:</strong> Often better tolerated than continuous exercise; shorter high-intensity bouts with rest <strong>Start low, go slow:</strong> 10 minutes/day is a legitimate starting point for severely deconditioned obese patients — build to 150 min/week <strong>Monitor HR and RPE</strong> — obese patients often have autonomic changes and higher resting HR; use RPE 12–14 for moderate intensity <strong>Skin integrity:</strong> Check skin folds every visit — moisture, friction = pressure injury risk in obesity</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Communication &amp; Patient-Centered Care</div>
+<div class="bl-strip purple">
+<div class="bl-label">Weight-Neutral Language</div>
+<p>Focus on function and health — not weight. "Let's work on building your walking tolerance" not "let's help you lose weight." Obesity is not a character flaw or motivation failure — it has genetic, hormonal, social, and environmental drivers. Stigma from healthcare providers is documented and measurable harm.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Set Goals Around Function</div>
+<p>Walking tolerance · Stair climbing · Return to ADLs · Pain reduction · Activity endurance. These are measurable, motivating, and patient-centered — not weight-dependent. Celebrate functional gains regardless of scale changes.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Motivational Interviewing</div>
+<p>Use open-ended questions, reflective listening, and affirmations. Avoid prescriptive language. Explore ambivalence. Roll with resistance — do not confront. Elicit the patient's own reasons for change (intrinsic motivation = more durable behavior change).</p>
+</div>
+</div>
+</div>
 <div class="tab-panel" id="tab-onco">
 <div class="container">
-
-  <div class="section-title">Oncology &amp; Cancer Rehabilitation</div>
-  <div class="section-sub">PT plays a critical role across the cancer continuum — prehabilitation, during active treatment, post-treatment recovery, and palliative care. Cancer and its treatments cause fatigue, neuropathy, lymphedema, bone metastasis, deconditioning, and muscle loss. Exercise is now recognized as safe and beneficial during chemotherapy and radiation — it is NOT contraindicated for most cancer patients.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Bone Metastasis — Critical Precautions</div>
-      <div class="bl-strip red">
-        <div class="bl-label">&#9888; Bone Metastasis = No Resistance to Affected Segment</div>
-        <p>Bone metastases cause <strong>pathological fracture risk</strong>. Resistance exercise, aggressive PROM, or even standard transfers can fracture a metastatic bone. Always check imaging + oncology notes before treating. Common sites: thoracic spine, lumbar spine, femur, humerus, pelvis, ribs.</p>
-      </div>
-      <div class="bl-strip red">
-        <div class="bl-label">Mirels' Scoring System — Fracture Risk</div>
-        <p>Score 0–12 based on: site (upper limb/lower limb/peritrochanteric), pain (mild/moderate/functional), lesion nature (blastic/mixed/lytic), and size (&lt;1/3, 1/3–2/3, &gt;2/3 of cortex). Score ≤7 = prophylactic fixation not recommended; <strong>Score ≥9 = surgical fixation before weight-bearing</strong>. PT should know score and restrict WB accordingly.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Clinical Action</div>
-        <p>If bone metastasis is present: confirm weight-bearing status with oncologist before any WB or resistance exercise to that limb/segment. Document precautions. Use assistive devices per MD-specified WB restrictions. No manual therapy to metastatic sites.</p>
-      </div>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Cancer-Related Fatigue (CRF)</div>
-      <div class="bl-strip">
-        <div class="bl-label">What CRF Is (and Isn't)</div>
-        <p>CRF is <strong>the most common side effect of cancer and treatment</strong> (60–96% prevalence). It is NOT the same as normal fatigue — it is not relieved by rest and is disproportionate to exertion. Causes: anemia, cytokines (inflammatory), hormonal changes, poor sleep, deconditioning, psychological distress, malnutrition.</p>
-      </div>
-      <div class="bl-strip green">
-        <div class="bl-label">Exercise Is the #1 Intervention for CRF</div>
-        <p>Multiple meta-analyses: aerobic exercise reduces CRF during and after treatment. Counterintuitive but true — rest worsens CRF; graded activity improves it. Minimum effective dose: 30 min, 3×/week, moderate intensity (RPE 12–14). Start low; progress based on fatigue levels, not just performance.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Fatigue Assessment</div>
-        <p>Brief Fatigue Inventory (BFI) or 0–10 fatigue NRS. Ask about: severity, pattern (AM vs PM), relationship to activity, impact on function. Fatigue NRS ≥7 = significant; consider activity modification, sleep hygiene referral, nutritional assessment, psychological support.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Lymphedema — PT Role</div>
-      <p>Disruption of lymph nodes (surgery/radiation) → lymphatic insufficiency → protein-rich fluid accumulation in interstitium Most common: post-mastectomy/axillary dissection (UE) or post-prostatectomy/pelvic node dissection (LE)<br><strong>No BP measurement on affected arm</strong> (post-axillary dissection)<br><strong>No venipuncture/IV on affected arm</strong> <strong>Avoid constriction</strong> — no tight clothing, watch bands, or jewelry on affected limb <strong>Exercise is SAFE and beneficial</strong> — previous restriction from exercise was incorrect; gradual progressive resistance training reduces lymphedema severity Complete Decongestive Therapy (CDT): manual lymph drainage + compression bandaging + remedial exercise + skin care Compression garments for air travel and vigorous exercise</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Neutropenia — Infection Precautions</div>
-      <p>Neutrophil count &lt;1,500/mm³ = neutropenia; &lt;500/mm³ = severe (febrile neutropenia risk) Check absolute neutrophil count (ANC) in chart before therapy in active chemotherapy patients <strong>ANC &lt;500:</strong> strict infection precautions; no gym or pool exercise; treat in room; strict hand hygiene; no fresh flowers or fruit in room <strong>ANC 500–1,000:</strong> proceed with caution; mask; hand hygiene; avoid crowds Fever ≥38.3°C (101°F) in neutropenic patient = medical emergency — hold PT, notify nursing immediately PT must use proper PPE and be vigilant about hand hygiene — you are the patient's biggest infection risk</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Chemotherapy-Induced Peripheral Neuropathy (CIPN)</div>
-      <p>Common agents: taxanes (paclitaxel, docetaxel), platinum compounds (cisplatin, oxaliplatin), vincristine, bortezomib Presentation: stocking-glove paresthesias, numbness, burning, loss of proprioception, balance impairment, fall risk Assess: monofilament (protective sensation), proprioception (Romberg, tandem stance), balance (Berg), gait pattern Balance training is primary PT intervention — reduces fall risk Foot inspection: loss of protective sensation = same wound care vigilance as diabetic neuropathy Adaptive equipment: non-skid footwear, shower chair, grab bars, nightlights — fall prevention priority CIPN may be permanent even after chemo cessation — PT manages residual deficits long-term</p>
-    </div>
-  </div>
-
+<div class="section-title">Oncology &amp; Cancer Rehabilitation</div>
+<div class="section-sub">PT plays a critical role across the cancer continuum — prehabilitation, during active treatment, post-treatment recovery, and palliative care. Cancer and its treatments cause fatigue, neuropathy, lymphedema, bone metastasis, deconditioning, and muscle loss. Exercise is now recognized as safe and beneficial during chemotherapy and radiation — it is NOT contraindicated for most cancer patients.</div>
+<div class="bl-strip">
+<div class="bl-label">Bone Metastasis — Critical Precautions</div>
+<div class="bl-strip red">
+<div class="bl-label">&#9888; Bone Metastasis = No Resistance to Affected Segment</div>
+<p>Bone metastases cause <strong>pathological fracture risk</strong>. Resistance exercise, aggressive PROM, or even standard transfers can fracture a metastatic bone. Always check imaging + oncology notes before treating. Common sites: thoracic spine, lumbar spine, femur, humerus, pelvis, ribs.</p>
+</div>
+<div class="bl-strip red">
+<div class="bl-label">Mirels' Scoring System — Fracture Risk</div>
+<p>Score 0–12 based on: site (upper limb/lower limb/peritrochanteric), pain (mild/moderate/functional), lesion nature (blastic/mixed/lytic), and size (&lt;1/3, 1/3–2/3, &gt;2/3 of cortex). Score ≤7 = prophylactic fixation not recommended; <strong>Score ≥9 = surgical fixation before weight-bearing</strong>. PT should know score and restrict WB accordingly.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Clinical Action</div>
+<p>If bone metastasis is present: confirm weight-bearing status with oncologist before any WB or resistance exercise to that limb/segment. Document precautions. Use assistive devices per MD-specified WB restrictions. No manual therapy to metastatic sites.</p>
 </div>
 </div>
-
-<!-- ====== RENAL DISEASE ====== -->
+<div class="bl-strip">
+<div class="bl-label">Cancer-Related Fatigue (CRF)</div>
+<div class="bl-strip">
+<div class="bl-label">What CRF Is (and Isn't)</div>
+<p>CRF is <strong>the most common side effect of cancer and treatment</strong> (60–96% prevalence). It is NOT the same as normal fatigue — it is not relieved by rest and is disproportionate to exertion. Causes: anemia, cytokines (inflammatory), hormonal changes, poor sleep, deconditioning, psychological distress, malnutrition.</p>
+</div>
+<div class="bl-strip green">
+<div class="bl-label">Exercise Is the #1 Intervention for CRF</div>
+<p>Multiple meta-analyses: aerobic exercise reduces CRF during and after treatment. Counterintuitive but true — rest worsens CRF; graded activity improves it. Minimum effective dose: 30 min, 3×/week, moderate intensity (RPE 12–14). Start low; progress based on fatigue levels, not just performance.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Fatigue Assessment</div>
+<p>Brief Fatigue Inventory (BFI) or 0–10 fatigue NRS. Ask about: severity, pattern (AM vs PM), relationship to activity, impact on function. Fatigue NRS ≥7 = significant; consider activity modification, sleep hygiene referral, nutritional assessment, psychological support.</p>
+</div>
+</div>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Lymphedema — PT Role</div>
+<p>Disruption of lymph nodes (surgery/radiation) → lymphatic insufficiency → protein-rich fluid accumulation in interstitium Most common: post-mastectomy/axillary dissection (UE) or post-prostatectomy/pelvic node dissection (LE)<br><strong>No BP measurement on affected arm</strong> (post-axillary dissection)<br><strong>No venipuncture/IV on affected arm</strong><strong>Avoid constriction</strong> — no tight clothing, watch bands, or jewelry on affected limb <strong>Exercise is SAFE and beneficial</strong> — previous restriction from exercise was incorrect; gradual progressive resistance training reduces lymphedema severity Complete Decongestive Therapy (CDT): manual lymph drainage + compression bandaging + remedial exercise + skin care Compression garments for air travel and vigorous exercise</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Neutropenia — Infection Precautions</div>
+<p>Neutrophil count &lt;1,500/mm³ = neutropenia; &lt;500/mm³ = severe (febrile neutropenia risk) Check absolute neutrophil count (ANC) in chart before therapy in active chemotherapy patients <strong>ANC &lt;500:</strong> strict infection precautions; no gym or pool exercise; treat in room; strict hand hygiene; no fresh flowers or fruit in room <strong>ANC 500–1,000:</strong> proceed with caution; mask; hand hygiene; avoid crowds Fever ≥38.3°C (101°F) in neutropenic patient = medical emergency — hold PT, notify nursing immediately PT must use proper PPE and be vigilant about hand hygiene — you are the patient's biggest infection risk</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Chemotherapy-Induced Peripheral Neuropathy (CIPN)</div>
+<p>Common agents: taxanes (paclitaxel, docetaxel), platinum compounds (cisplatin, oxaliplatin), vincristine, bortezomib Presentation: stocking-glove paresthesias, numbness, burning, loss of proprioception, balance impairment, fall risk Assess: monofilament (protective sensation), proprioception (Romberg, tandem stance), balance (Berg), gait pattern Balance training is primary PT intervention — reduces fall risk Foot inspection: loss of protective sensation = same wound care vigilance as diabetic neuropathy Adaptive equipment: non-skid footwear, shower chair, grab bars, nightlights — fall prevention priority CIPN may be permanent even after chemo cessation — PT manages residual deficits long-term</p>
+</div>
+</div>
 <div class="tab-panel" id="tab-renal">
 <div class="container">
-
-  <div class="section-title">Renal Disease &amp; Dialysis</div>
-  <div class="section-sub">Chronic kidney disease (CKD) affects 15% of U.S. adults. End-stage renal disease (ESRD) patients on dialysis are among the most complex, deconditioned, and frail patients in PT's caseload — and they have specific timing, fluid, and electrolyte considerations that directly impact therapy scheduling and exercise tolerance.</div>
-
-  <div class="bl-strip">
-      <div class="bl-label">CKD Stages &amp; PT Relevance</div>
-      <table class="data-table">
-        <thead><tr><th>Stage</th><th>GFR (mL/min)</th><th>Description</th><th>PT Consideration</th></tr></thead>
-        <tbody>
-          <tr><td><strong>1</strong></td><td class="ok">≥90</td><td>Normal/high (with kidney damage)</td><td>Standard; monitor BP; cardiovascular risk screen</td></tr>
-          <tr><td><strong>2</strong></td><td class="ok">60–89</td><td>Mildly decreased</td><td>Monitor BP; watch NSAID use (worsens renal function)</td></tr>
-          <tr><td><strong>3a/3b</strong></td><td class="warn">30–59</td><td>Moderately decreased</td><td>Anemia likely → fatigue limits exercise; electrolyte monitoring; fall risk</td></tr>
-          <tr><td><strong>4</strong></td><td class="bad">15–29</td><td>Severely decreased</td><td>Significant fatigue; fluid restrictions; pre-dialysis planning; frailty</td></tr>
-          <tr><td><strong>5 (ESRD)</strong></td><td class="bad">&lt;15</td><td>Kidney failure</td><td>Dialysis-dependent; strict scheduling around dialysis; fluid/electrolyte precautions</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Dialysis Scheduling — When to Treat</div>
-      <div class="bl-strip red">
-        <div class="bl-label">Post-Dialysis Fatigue — Most Important Timing Issue</div>
-        <p>Hemodialysis sessions (typically 3–4 hours, 3×/week) leave patients profoundly fatigued for <strong>4–6 hours post-session</strong>. Scheduling PT immediately post-dialysis is ineffective and potentially unsafe. Best timing: <strong>non-dialysis days</strong> or the day after dialysis.</p>
-      </div>
-      <div class="bl-strip gold">
-        <div class="bl-label">Intradialytic Exercise — Growing Evidence</div>
-        <p>Exercise performed <em>during</em> the last 1–2 hours of hemodialysis (cycle ergometer at bedside or resistance bands) is increasingly supported. Benefits: improved exercise capacity, reduced fatigue, better dialysis adequacy (Kt/V). May be the most feasible window for ESRD patients. Coordinate with dialysis nurse for permission and monitoring.</p>
-      </div>
-      <div class="bl-strip">
-        <div class="bl-label">Dialysis Access — Fistula/Graft/Catheter Precautions</div>
-        <p>No BP cuff on fistula arm. No IV or venipuncture on fistula arm. No extreme arm positions that could compromise access. Tunneled catheters (chest): no overhead reaching restrictions per MD orders. Document access location and precautions in PT notes.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bl-strip">
-      <div class="bl-label">Fluid &amp; Electrolyte Considerations</div>
-      <p><strong>Fluid restriction:</strong> ESRD patients often restricted to 1–1.5 L/day; during exercise sweating = fluid output — monitor; no excessive hydration encouragement <strong>Hyperkalemia</strong> (K+ &gt;5.5 mEq/L): risk of cardiac arrhythmia; pre-exercise potassium check for high-risk patients; cardiac monitoring if hyperkalemic <strong>Hyperphosphatemia:</strong> Causes bone fragility (renal osteodystrophy) → fracture risk; treat like CKD-related osteoporosis <strong>Anemia of CKD:</strong> ESA (erythropoietin) therapy; low Hgb → reduced O2 delivery → fatigue + dyspnea with minimal exertion; use RPE not HR <strong>Uremic neuropathy:</strong> Peripheral neuropathy from uremic toxins; same precautions as CIPN/diabetic neuropathy</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">BP Instability in Renal Patients</div>
-      <p>ESRD patients have exaggerated BP swings — can be hypertensive and hypotensive within same session Pre-dialysis: BP elevated from fluid overload Post-dialysis: BP drops as excess fluid removed → orthostatic hypotension risk Always measure pre/post BP; dangle before standing post-dialysis SBP &lt;90 or symptomatic hypotension → hold PT; elevate legs; notify nursing SBP &gt;180/110 → hold PT; notify nursing Document BP trends — wide swings may indicate need for medication adjustment</p>
-    </div>
-    <div class="bl-strip">
-      <div class="bl-label">Exercise Prescription &amp; SNF Pearls</div>
-      <p>Start low intensity: RPE 11–13 for aerobic; 40–60% 1-RM resistance 10–20 minute sessions initially; build duration before intensity Monitor SpO2 — anemia reduces O2-carrying capacity → lower threshold for supplemental O2 Resistance training reduces muscle wasting (uremic myopathy) — prioritize in ESRD Avoid exercise if: SBP &gt;180 or &lt;90; K+ &gt;6.0 mEq/L on recent labs; uncontrolled fluid overload (severe edema, respiratory distress) Coordinate dialysis schedule with nursing/physician for optimal PT timing Renal diet restriction affects energy levels — note meal timing relative to PT session Goal: 150 min/week moderate intensity (same as general population — just requires more time to reach)</p>
-    </div>
-  </div>
-
+<div class="section-title">Renal Disease &amp; Dialysis</div>
+<div class="section-sub">Chronic kidney disease (CKD) affects 15% of U.S. adults. End-stage renal disease (ESRD) patients on dialysis are among the most complex, deconditioned, and frail patients in PT's caseload — and they have specific timing, fluid, and electrolyte considerations that directly impact therapy scheduling and exercise tolerance.</div>
+<div class="bl-strip">
+<div class="bl-label">CKD Stages &amp; PT Relevance</div>
+<table class="data-table"><thead>
+<tr><th>Stage</th><th>GFR (mL/min)</th><th>Description</th><th>PT Consideration</th></tr></thead><tbody>
+<tr><td><strong>1</strong></td><td class="ok">≥90</td><td>Normal/high (with kidney damage)</td><td>Standard; monitor BP; cardiovascular risk screen</td></tr>
+<tr><td><strong>2</strong></td><td class="ok">60–89</td><td>Mildly decreased</td><td>Monitor BP; watch NSAID use (worsens renal function)</td></tr>
+<tr><td><strong>3a/3b</strong></td><td class="warn">30–59</td><td>Moderately decreased</td><td>Anemia likely → fatigue limits exercise; electrolyte monitoring; fall risk</td></tr>
+<tr><td><strong>4</strong></td><td class="bad">15–29</td><td>Severely decreased</td><td>Significant fatigue; fluid restrictions; pre-dialysis planning; frailty</td></tr>
+<tr><td><strong>5 (ESRD)</strong></td><td class="bad">&lt;15</td><td>Kidney failure</td><td>Dialysis-dependent; strict scheduling around dialysis; fluid/electrolyte precautions</td></tr></tbody></table>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Dialysis Scheduling — When to Treat</div>
+<div class="bl-strip red">
+<div class="bl-label">Post-Dialysis Fatigue — Most Important Timing Issue</div>
+<p>Hemodialysis sessions (typically 3–4 hours, 3×/week) leave patients profoundly fatigued for <strong>4–6 hours post-session</strong>. Scheduling PT immediately post-dialysis is ineffective and potentially unsafe. Best timing: <strong>non-dialysis days</strong> or the day after dialysis.</p>
+</div>
+<div class="bl-strip gold">
+<div class="bl-label">Intradialytic Exercise — Growing Evidence</div>
+<p>Exercise performed <em>during</em> the last 1–2 hours of hemodialysis (cycle ergometer at bedside or resistance bands) is increasingly supported. Benefits: improved exercise capacity, reduced fatigue, better dialysis adequacy (Kt/V). May be the most feasible window for ESRD patients. Coordinate with dialysis nurse for permission and monitoring.</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Dialysis Access — Fistula/Graft/Catheter Precautions</div>
+<p>No BP cuff on fistula arm. No IV or venipuncture on fistula arm. No extreme arm positions that could compromise access. Tunneled catheters (chest): no overhead reaching restrictions per MD orders. Document access location and precautions in PT notes.</p>
 </div>
 </div>
-
-<!-- ====== REVIEW ====== -->
+</div>
+<div class="bl-strip">
+<div class="bl-label">Fluid &amp; Electrolyte Considerations</div>
+<p><strong>Fluid restriction:</strong> ESRD patients often restricted to 1–1.5 L/day; during exercise sweating = fluid output — monitor; no excessive hydration encouragement <strong>Hyperkalemia</strong> (K+ &gt;5.5 mEq/L): risk of cardiac arrhythmia; pre-exercise potassium check for high-risk patients; cardiac monitoring if hyperkalemic <strong>Hyperphosphatemia:</strong> Causes bone fragility (renal osteodystrophy) → fracture risk; treat like CKD-related osteoporosis <strong>Anemia of CKD:</strong> ESA (erythropoietin) therapy; low Hgb → reduced O2 delivery → fatigue + dyspnea with minimal exertion; use RPE not HR <strong>Uremic neuropathy:</strong> Peripheral neuropathy from uremic toxins; same precautions as CIPN/diabetic neuropathy</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">BP Instability in Renal Patients</div>
+<p>ESRD patients have exaggerated BP swings — can be hypertensive and hypotensive within same session Pre-dialysis: BP elevated from fluid overload Post-dialysis: BP drops as excess fluid removed → orthostatic hypotension risk Always measure pre/post BP; dangle before standing post-dialysis SBP &lt;90 or symptomatic hypotension → hold PT; elevate legs; notify nursing SBP &gt;180/110 → hold PT; notify nursing Document BP trends — wide swings may indicate need for medication adjustment</p>
+</div>
+<div class="bl-strip">
+<div class="bl-label">Exercise Prescription &amp; SNF Pearls</div>
+<p>Start low intensity: RPE 11–13 for aerobic; 40–60% 1-RM resistance 10–20 minute sessions initially; build duration before intensity Monitor SpO2 — anemia reduces O2-carrying capacity → lower threshold for supplemental O2 Resistance training reduces muscle wasting (uremic myopathy) — prioritize in ESRD Avoid exercise if: SBP &gt;180 or &lt;90; K+ &gt;6.0 mEq/L on recent labs; uncontrolled fluid overload (severe edema, respiratory distress) Coordinate dialysis schedule with nursing/physician for optimal PT timing Renal diet restriction affects energy levels — note meal timing relative to PT session Goal: 150 min/week moderate intensity (same as general population — just requires more time to reach)</p>
+</div>
+</div>
 <div class="tab-panel" id="tab-review">
 <div class="container">
-
-  <div class="section-title">Review Cards</div>
-  <div class="section-sub">Tap to flip. Covers glucose thresholds, medication effects, exercise contraindications, precautions, and clinical protocols across all eight medical conditions.</div>
-
-  <div class="rc2-grid">
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">T2DM — at what glucose level do you hold therapy and why in this scenario? What do you do for hypoglycemia?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Hold therapy if fasting glucose &gt;300 mg/dL</strong> (or &gt;250 mg/dL with ketosis) — exercise worsens ketoacidosis at this level. Also hold if glucose &lt;70 mg/dL (hypoglycemia). <strong>Hypoglycemia protocol:</strong> stop therapy immediately → notify nursing → administer 15g fast-acting carbohydrate (OJ, glucose tablets) → recheck in 15 min → do not resume therapy until glucose is stable ≥80 mg/dL. All T2DM patients on insulin or sulfonylureas must carry glucose source during exercise. Document pre-therapy glucose in SNF notes.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">What did Taylor et al. In this case, (Phys Ther 2009) demonstrate about PT-directed exercise counseling for T2DM?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">RCT (n=24): PT-directed exercise counseling + independent fitness center training produced <strong>equivalent improvements in muscular strength and exercise capacity</strong> vs. directly supervised exercise. Protocol: 80% 1-RM resistance training (chest press/row/leg press, 4×8, 2×/wk) + aerobic training (RPE 12, 20 min treadmill, same days). High adherence in both groups; no adverse events. <strong>Key conclusion:</strong> dose and adherence are the determining factors — not whether a PT is in the room. PT counseling (5 A's + weekly phone calls) is a valid, cost-effective model. PT-directed exercise is evidence-based for T2DM management.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Beta-blockers — why can't you use target heart rate, and what do you use instead in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Beta-blockers blunt the HR response to exercise — the heart cannot increase rate as expected. Age-predicted max HR formulas (220−age) and target HR ranges are <strong>invalid for patients on beta-blockers</strong>. The patient may never reach a "target" HR. Use <strong>Borg RPE Scale instead</strong>: moderate intensity = RPE 12–13 ("somewhat hard"). Also consider Talk Test: patient should be able to speak in short sentences but not comfortably hold a full conversation. Document medication class in PT notes; communicate to supervising PT when adapting exercise prescription.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">When do you STOP exercise for a cardiac patient — list 5 absolute criteria.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Stop immediately if: (1) <strong>Angina or anginal equivalent</strong> (chest pressure, jaw pain, L arm ache); (2) <strong>SBP drops &gt;10 mmHg</strong> from resting despite increasing workload; (3) <strong>SBP &gt;250 or DBP &gt;115 mmHg</strong> during exercise; (4) <strong>Significant arrhythmia</strong> — new irregular rhythm, palpitations with hemodynamic symptoms; (5) <strong>Signs of poor perfusion</strong> — pallor, cyanosis, cold/clammy, mottling. Also stop for: severe dyspnea disproportionate to effort, neurological symptoms (confusion, syncope, ataxia), or patient request. Document, notify nursing/MD, record VS and time.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Hypertensive urgency vs. In this case, emergency — definition and PT action for each.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Hypertensive urgency:</strong> SBP ≥180 and/or DBP ≥110 mmHg WITHOUT symptoms of end-organ damage. Action: hold therapy, do not exercise, notify nursing/MD immediately, document and recheck in 15–30 min. <strong>Hypertensive emergency:</strong> SBP ≥180 + symptoms of end-organ damage (severe headache, chest pain, SOB, visual changes, neurological symptoms, nausea). Action: stop all activity, call emergency services (911 or code team), stay with patient, keep patient calm and seated/supine, document time and vitals. Emergency requires immediate medical intervention — BP must be reduced under controlled medical supervision.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">COPD — SpO2 threshold for stopping exercise and what you do if SpO2 drops below it.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Stop exercise if SpO2 drops below 88%.</strong> Action: stop activity immediately → sit patient upright (tripod position or forward lean) → apply supplemental O2 per physician order → instruct pursed-lip breathing → monitor SpO2 continuously until recovery to ≥90% → document lowest SpO2 reached, activity at time of drop, recovery time. If O2 available and ordered: 2–4 L via nasal cannula. If no O2 order and SpO2 &lt;88% persists: notify nursing/MD urgently. In SNF: all COPD patients should have O2 order reviewed before initiating ambulation. Document resting and exertional SpO2 every session.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Osteoporosis — 3 movements contraindicated and why they fracture the vertebral body.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">The osteoporotic vertebral body is most vulnerable to <strong>compressive + flexion loading</strong> and <strong>compressive + rotational loading</strong>. Three contraindicated movements: (1) <strong>Full trunk flexion</strong> — toe touches, sit-ups, forward bending under load; (2) <strong>Trunk rotation under load</strong> — weighted twists, golf swing, tennis; (3) <strong>Combined flexion + rotation</strong> — most dangerous; avoidance is absolute. Also avoid high-impact activities in severe osteoporosis. Safe alternatives: spinal extension (therapeutic), weight-bearing (bone-loading), balance training (fall prevention), hip extension (femoral neck protection). Teach coughing/sneezing technique: support spine in slight extension with hand on thigh.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Cancer patient with bone metastasis to femur — what does PT need to know before treating in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">Bone metastasis = pathological fracture risk — standard transfers, PROM, or resistance exercise can fracture a metastatic bone. <strong>Before treating:</strong> (1) Confirm WB status with oncologist; (2) Review imaging for metastatic sites and Mirels' score if available; (3) Mirels' score ≥9 = surgical fixation required before WB — do NOT WB until cleared; (4) No resistance exercise to the affected segment; (5) No manual therapy to metastatic sites; (6) Use assistive device per MD-specified WB restrictions; (7) Document precautions explicitly in PT notes. Most common mets: thoracic/lumbar spine, femur, humerus, pelvis, ribs. When in doubt: call the oncologist before initiating WB.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Dialysis patient — when is the worst time to schedule PT and why in this scenario? What is the best timing?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Worst time: immediately post-hemodialysis.</strong> A 3–4 hour dialysis session causes profound fatigue lasting 4–6 hours post-session — patients are depleted, hemodynamically unstable, and cannot perform meaningful therapy. <strong>Best timing: non-dialysis days</strong> (patients on MWF or TThSa schedules; schedule PT on off days). Alternative: intradialytic exercise during the last 1–2 hours of dialysis (cycle ergometer, resistance bands at bedside) — evidence is growing that this is the most feasible window. In SNF: coordinate with nursing to identify dialysis schedule; document in plan of care. Also avoid first thing in the AM after dialysis day — orthostatic hypotension risk from volume shifts.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">5 A's of exercise counseling — name each and describe the PT's role in each step.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">(1) <strong>Address the Agenda</strong> — set collaborative focus for the session; align exercise goals with patient's priorities. (2) <strong>Assess</strong> — current activity level, readiness to change (Prochaska stage), barriers, medical contraindications, social support. (3) <strong>Advise</strong> — evidence-based recommendation: specific type/intensity/frequency/duration + safety guidelines; explain benefits relevant to patient's condition. (4) <strong>Assist</strong> — overcome barriers; review the exercise program; equipment orientation; provide written program; problem-solve schedule conflicts. (5) <strong>Arrange Follow-Up</strong> — scheduled face-to-face + weekly phone calls (~10 min); monitor adherence; troubleshoot; adjust program. Tailor to Prochaska stage — Precontemplator needs motivational conversation, not a handout.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Orthostatic hypotension — definition, highest-risk patients, and PT management protocol.</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a"><strong>Definition:</strong> Drop of ≥20 mmHg SBP or ≥10 mmHg DBP within 3 minutes of standing. Symptoms: dizziness, lightheadedness, syncope risk. <strong>Highest-risk patients:</strong> alpha-blocker or diuretic medications, post-dialysis, morning (post-overnight recumbence), post-meal, prolonged bed rest, autonomic neuropathy (T2DM, Parkinson's), volume depletion. <strong>PT protocol:</strong> Always dangle 3–5 min before standing; check orthostatic vitals (supine → sit → stand with 1–2 min between); if positive → sit/lie immediately, elevate legs, monitor until BP normalizes, document, notify MD; reinforce fall precautions; consider compression stockings or abdominal binder (per MD); ensure adequate hydration if not restricted.</div>
-    </div>
-
-    <div class="rc2" onclick="flipCard(this)">
-      <div class="rc2-q">Cancer-related fatigue — what is it, what's the #1 PT intervention, and how do you dose it in this scenario?</div>
-      <span class="rc2-flip">tap</span>
-      <div class="rc2-a">CRF is the most common side effect of cancer and treatment (60–96% prevalence). It is <strong>NOT relieved by rest</strong> — that distinguishes it from normal fatigue. Caused by inflammatory cytokines, anemia, hormonal changes, deconditioning, and psychological distress. <strong>#1 PT intervention: aerobic exercise</strong> — multiple meta-analyses confirm exercise reduces CRF during and after treatment (counterintuitive: rest worsens CRF). <strong>Minimum effective dose:</strong> 30 min, 3×/week, moderate intensity (RPE 12–14). Start at patient's current capacity — even 10 min is valid. Progress duration before intensity. CRF NRS ≥7 = significant; adapt session (shorter, lower intensity) rather than canceling — movement helps.</div>
-    </div>
-
-  </div>
-
+<div class="section-title">Review Cards</div>
+<div class="section-sub">Tap to flip. Covers glucose thresholds, medication effects, exercise contraindications, precautions, and clinical protocols across all eight medical conditions.</div>
+<div class="rc2-grid">
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">T2DM — at what glucose level do you hold therapy and why in this scenario? What do you do for hypoglycemia?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Hold therapy if fasting glucose &gt;300 mg/dL</strong> (or &gt;250 mg/dL with ketosis) — exercise worsens ketoacidosis at this level. Also hold if glucose &lt;70 mg/dL (hypoglycemia). <strong>Hypoglycemia protocol:</strong> stop therapy immediately → notify nursing → administer 15g fast-acting carbohydrate (OJ, glucose tablets) → recheck in 15 min → do not resume therapy until glucose is stable ≥80 mg/dL. All T2DM patients on insulin or sulfonylureas must carry glucose source during exercise. Document pre-therapy glucose in SNF notes.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">What did Taylor et al. In this case, (Phys Ther 2009) demonstrate about PT-directed exercise counseling for T2DM?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">RCT (n=24): PT-directed exercise counseling + independent fitness center training produced <strong>equivalent improvements in muscular strength and exercise capacity</strong> vs. directly supervised exercise. Protocol: 80% 1-RM resistance training (chest press/row/leg press, 4×8, 2×/wk) + aerobic training (RPE 12, 20 min treadmill, same days). High adherence in both groups; no adverse events. <strong>Key conclusion:</strong> dose and adherence are the determining factors — not whether a PT is in the room. PT counseling (5 A's + weekly phone calls) is a valid, cost-effective model. PT-directed exercise is evidence-based for T2DM management.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Beta-blockers — why can't you use target heart rate, and what do you use instead in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Beta-blockers blunt the HR response to exercise — the heart cannot increase rate as expected. Age-predicted max HR formulas (220−age) and target HR ranges are <strong>invalid for patients on beta-blockers</strong>. The patient may never reach a "target" HR. Use <strong>Borg RPE Scale instead</strong>: moderate intensity = RPE 12–13 ("somewhat hard"). Also consider Talk Test: patient should be able to speak in short sentences but not comfortably hold a full conversation. Document medication class in PT notes; communicate to supervising PT when adapting exercise prescription.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">When do you STOP exercise for a cardiac patient — list 5 absolute criteria.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Stop immediately if: (1) <strong>Angina or anginal equivalent</strong> (chest pressure, jaw pain, L arm ache); (2) <strong>SBP drops &gt;10 mmHg</strong> from resting despite increasing workload; (3) <strong>SBP &gt;250 or DBP &gt;115 mmHg</strong> during exercise; (4) <strong>Significant arrhythmia</strong> — new irregular rhythm, palpitations with hemodynamic symptoms; (5) <strong>Signs of poor perfusion</strong> — pallor, cyanosis, cold/clammy, mottling. Also stop for: severe dyspnea disproportionate to effort, neurological symptoms (confusion, syncope, ataxia), or patient request. Document, notify nursing/MD, record VS and time.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Hypertensive urgency vs. In this case, emergency — definition and PT action for each.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Hypertensive urgency:</strong> SBP ≥180 and/or DBP ≥110 mmHg WITHOUT symptoms of end-organ damage. Action: hold therapy, do not exercise, notify nursing/MD immediately, document and recheck in 15–30 min. <strong>Hypertensive emergency:</strong> SBP ≥180 + symptoms of end-organ damage (severe headache, chest pain, SOB, visual changes, neurological symptoms, nausea). Action: stop all activity, call emergency services (911 or code team), stay with patient, keep patient calm and seated/supine, document time and vitals. Emergency requires immediate medical intervention — BP must be reduced under controlled medical supervision.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">COPD — SpO2 threshold for stopping exercise and what you do if SpO2 drops below it.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Stop exercise if SpO2 drops below 88%.</strong> Action: stop activity immediately → sit patient upright (tripod position or forward lean) → apply supplemental O2 per physician order → instruct pursed-lip breathing → monitor SpO2 continuously until recovery to ≥90% → document lowest SpO2 reached, activity at time of drop, recovery time. If O2 available and ordered: 2–4 L via nasal cannula. If no O2 order and SpO2 &lt;88% persists: notify nursing/MD urgently. In SNF: all COPD patients should have O2 order reviewed before initiating ambulation. Document resting and exertional SpO2 every session.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Osteoporosis — 3 movements contraindicated and why they fracture the vertebral body.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">The osteoporotic vertebral body is most vulnerable to <strong>compressive + flexion loading</strong> and <strong>compressive + rotational loading</strong>. Three contraindicated movements: (1) <strong>Full trunk flexion</strong> — toe touches, sit-ups, forward bending under load; (2) <strong>Trunk rotation under load</strong> — weighted twists, golf swing, tennis; (3) <strong>Combined flexion + rotation</strong> — most dangerous; avoidance is absolute. Also avoid high-impact activities in severe osteoporosis. Safe alternatives: spinal extension (therapeutic), weight-bearing (bone-loading), balance training (fall prevention), hip extension (femoral neck protection). Teach coughing/sneezing technique: support spine in slight extension with hand on thigh.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Cancer patient with bone metastasis to femur — what does PT need to know before treating in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">Bone metastasis = pathological fracture risk — standard transfers, PROM, or resistance exercise can fracture a metastatic bone. <strong>Before treating:</strong> (1) Confirm WB status with oncologist; (2) Review imaging for metastatic sites and Mirels' score if available; (3) Mirels' score ≥9 = surgical fixation required before WB — do NOT WB until cleared; (4) No resistance exercise to the affected segment; (5) No manual therapy to metastatic sites; (6) Use assistive device per MD-specified WB restrictions; (7) Document precautions explicitly in PT notes. Most common mets: thoracic/lumbar spine, femur, humerus, pelvis, ribs. When in doubt: call the oncologist before initiating WB.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Dialysis patient — when is the worst time to schedule PT and why in this scenario? What is the best timing?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Worst time: immediately post-hemodialysis.</strong> A 3–4 hour dialysis session causes profound fatigue lasting 4–6 hours post-session — patients are depleted, hemodynamically unstable, and cannot perform meaningful therapy. <strong>Best timing: non-dialysis days</strong> (patients on MWF or TThSa schedules; schedule PT on off days). Alternative: intradialytic exercise during the last 1–2 hours of dialysis (cycle ergometer, resistance bands at bedside) — evidence is growing that this is the most feasible window. In SNF: coordinate with nursing to identify dialysis schedule; document in plan of care. Also avoid first thing in the AM after dialysis day — orthostatic hypotension risk from volume shifts.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">5 A's of exercise counseling — name each and describe the PT's role in each step.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">(1) <strong>Address the Agenda</strong> — set collaborative focus for the session; align exercise goals with patient's priorities. (2) <strong>Assess</strong> — current activity level, readiness to change (Prochaska stage), barriers, medical contraindications, social support. (3) <strong>Advise</strong> — evidence-based recommendation: specific type/intensity/frequency/duration + safety guidelines; explain benefits relevant to patient's condition. (4) <strong>Assist</strong> — overcome barriers; review the exercise program; equipment orientation; provide written program; problem-solve schedule conflicts. (5) <strong>Arrange Follow-Up</strong> — scheduled face-to-face + weekly phone calls (~10 min); monitor adherence; troubleshoot; adjust program. Tailor to Prochaska stage — Precontemplator needs motivational conversation, not a handout.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Orthostatic hypotension — definition, highest-risk patients, and PT management protocol.</div><span class="rc2-flip">tap</span>
+<div class="rc2-a"><strong>Definition:</strong> Drop of ≥20 mmHg SBP or ≥10 mmHg DBP within 3 minutes of standing. Symptoms: dizziness, lightheadedness, syncope risk. <strong>Highest-risk patients:</strong> alpha-blocker or diuretic medications, post-dialysis, morning (post-overnight recumbence), post-meal, prolonged bed rest, autonomic neuropathy (T2DM, Parkinson's), volume depletion. <strong>PT protocol:</strong> Always dangle 3–5 min before standing; check orthostatic vitals (supine → sit → stand with 1–2 min between); if positive → sit/lie immediately, elevate legs, monitor until BP normalizes, document, notify MD; reinforce fall precautions; consider compression stockings or abdominal binder (per MD); ensure adequate hydration if not restricted.</div>
+</div>
+<div class="rc2" onclick="flipCard(this)">
+<div class="rc2-q">Cancer-related fatigue — what is it, what's the #1 PT intervention, and how do you dose it in this scenario?</div><span class="rc2-flip">tap</span>
+<div class="rc2-a">CRF is the most common side effect of cancer and treatment (60–96% prevalence). It is <strong>NOT relieved by rest</strong> — that distinguishes it from normal fatigue. Caused by inflammatory cytokines, anemia, hormonal changes, deconditioning, and psychological distress. <strong>#1 PT intervention: aerobic exercise</strong> — multiple meta-analyses confirm exercise reduces CRF during and after treatment (counterintuitive: rest worsens CRF). <strong>Minimum effective dose:</strong> 30 min, 3×/week, moderate intensity (RPE 12–14). Start at patient's current capacity — even 10 min is valid. Progress duration before intensity. CRF NRS ≥7 = significant; adapt session (shorter, lower intensity) rather than canceling — movement helps.</div>
 </div>
 </div>
-
+</div>
+</div>
 <script src="themes.js?v=2"></script>
 <script src="premium.js?v=2"></script>
 <script>
@@ -1056,6 +882,4 @@ function toggleMA(header) {
 function flipCard(card) {
   card.querySelector('.rc2-a').classList.toggle('open');
 }
-</script>
-</body>
-</html>
+</script></body></html>
