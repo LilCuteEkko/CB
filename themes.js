@@ -1,12 +1,7 @@
 (function(){
 var saved = localStorage.getItem('cb-theme') || 'light';
 document.documentElement.setAttribute('data-theme', saved);
-var scale = parseFloat(localStorage.getItem('cb-font-scale') || '1');
-document.documentElement.style.setProperty('--font-scale', scale);
-var fontPref = localStorage.getItem('cb-font-body') || 'Manrope';
-if(fontPref !== 'Manrope') {
-document.documentElement.style.setProperty('--font-body', fontPref + ', sans-serif');
-}
+
 document.addEventListener('DOMContentLoaded', function(){
 var btns = document.querySelectorAll('.theme-btn');
 btns.forEach(function(btn){
@@ -20,41 +15,22 @@ this.classList.add('active');
 });
 });
 var nav = document.querySelector('.site-nav');
-if(nav && !document.querySelector('.font-controls')){
-var fc = document.createElement('div');
-fc.className = 'font-controls';
-fc.innerHTML = '<button class="font-sz-btn" data-dir="-1" title="Smaller text">A\u2212</button>' +
-'<button class="font-sz-btn" data-dir="1" title="Larger text">A+</button>' +
-'<select class="font-select" title="Font family">' +
-'<option value="Manrope"' + (fontPref==='Manrope'?' selected':'') + '>Manrope</option>' +
-'<option value="Inter"' + (fontPref==='Inter'?' selected':'') + '>Inter</option>' +
-'<option value="Source Sans 3"' + (fontPref==='Source Sans 3'?' selected':'') + '>Source Sans</option>' +
-'<option value="Georgia"' + (fontPref==='Georgia'?' selected':'') + '>Georgia</option>' +
-'<option value="Atkinson Hyperlegible"' + (fontPref==='Atkinson Hyperlegible'?' selected':'') + '>Atkinson</option>' +
-'</select>';
-var themeToggle = nav.querySelector('.theme-toggle');
-if(themeToggle) nav.insertBefore(fc, themeToggle);
-else nav.appendChild(fc);
-var link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap';
-document.head.appendChild(link);
+
 }
 document.querySelectorAll('.font-sz-btn').forEach(function(btn){
 btn.addEventListener('click', function(){
 var dir = parseInt(this.dataset.dir);
 scale = Math.max(0.85, Math.min(1.25, scale + dir * 0.05));
-document.documentElement.style.setProperty('--font-scale', scale);
-localStorage.setItem('cb-font-scale', scale);
+
 });
 });
 var fontSel = document.querySelector('.font-select');
 if(fontSel){
 fontSel.addEventListener('change', function(){
 var f = this.value;
-document.documentElement.style.setProperty('--font-body', f + ', sans-serif');
+
 document.body.style.fontFamily = f + ', sans-serif';
-localStorage.setItem('cb-font-body', f);
+
 });
 }
 window.addEventListener('scroll', function(){
